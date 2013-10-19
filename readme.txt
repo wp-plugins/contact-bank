@@ -1,6 +1,6 @@
 ﻿=== Contact Bank ===
 Contributors: contact-banker
-Tags: Contact Form, text, contact, form, contacts, request, contact me, feedback form, feedback, easy contact form, best contact form plugin, admin, Post, widget
+Tags: Contact Form, text, contact, form, contacts, request, contact me, feedback form, feedback, easy contact form, best contact form plugin, admin, Post, widget, contact bank
 Requires at least: 2.9
 Tested up to: 3.6
 Stable tag: 1.0
