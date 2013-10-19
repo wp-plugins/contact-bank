@@ -12,7 +12,7 @@ Adds Contact Bank to your WordPress website.
 
 == Description ==
 
-Contact Form allows you to add a feedback form easilly and simply to a post or a page.
+**Contact Form allows you to add a feedback form easilly and simply to a post or a page.**
 
 == Installation ==
 
