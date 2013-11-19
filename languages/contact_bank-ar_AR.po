@@ -1,0 +1,1046 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2013-11-16 12:23+0530\n"
+"PO-Revision-Date: 2013-11-16 16:01+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: C:\\wamp\\www\\contact-bank3.7\\wp-content\\plugins"
+"\\contact-bank\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: contact-bank.php:62
+msgid "Contact Bank"
+msgstr ""
+
+#: contact-bank.php:63 contact-bank.php:431
+msgid "Dashboard"
+msgstr "لوحة أجهزة القياس"
+
+#: contact-bank.php:64 contact-bank.php:437 views/contact_view.php:6
+#: views/dashboard.php:8
+msgid "Add New Form"
+msgstr "إضافة نموذج جديد"
+
+#: contact-bank.php:65 contact-bank.php:443 views/contact_email.php:6
+msgid "Email Settings"
+msgstr "إعدادات البريد الإلكتروني"
+
+#: contact-bank.php:66 contact-bank.php:449 views/contact_frontend_data.php:5
+msgid "Form Entries"
+msgstr "شكل إدخالات"
+
+#: includes/cb_checkbox.php:8 includes/cb_checkbox.php:50
+#: includes/cb_checkbox.php:83 includes/cb_dropdown.php:8
+#: includes/cb_dropdown.php:50 includes/cb_dropdown.php:83
+#: includes/cb_multiple.php:8 includes/cb_multiple.php:49
+#: includes/cb_multiple.php:82 includes/cb_text.php:8 includes/cb_text.php:50
+#: includes/cb_text.php:85 includes/cb_textarea.php:9
+#: includes/cb_textarea.php:52 includes/cb_textarea.php:93
+#: views/edit_contact_view.php:992 views/edit_contact_view.php:1050
+#: views/edit_contact_view.php:1179 views/edit_contact_view.php:1235
+#: views/edit_contact_view.php:1305
+msgid "Untitled"
+msgstr "بدون اسم"
+
+#: includes/cb_checkbox.php:13 includes/cb_checkbox.php:42
+#: includes/cb_date.php:62 includes/cb_date.php:92 includes/cb_dropdown.php:14
+#: includes/cb_dropdown.php:42 includes/cb_email.php:13
+#: includes/cb_email.php:44 includes/cb_file_upload.php:12
+#: includes/cb_file_upload.php:60 includes/cb_hidden.php:12
+#: includes/cb_multiple.php:13 includes/cb_multiple.php:41
+#: includes/cb_password.php:12 includes/cb_password.php:43
+#: includes/cb_text.php:12 includes/cb_text.php:42 includes/cb_textarea.php:13
+#: includes/cb_textarea.php:44 includes/cb_time.php:75
+#: includes/cb_time.php:105
+msgid "Settings"
+msgstr "إعدادات"
+
+#: includes/cb_checkbox.php:29
+msgid "Checkbox Control"
+msgstr "التحكم في خانة اختيار"
+
+#: includes/cb_checkbox.php:36 includes/cb_date.php:86
+#: includes/cb_dropdown.php:36 includes/cb_email.php:38
+#: includes/cb_file_upload.php:54 includes/cb_hidden.php:36
+#: includes/cb_multiple.php:35 includes/cb_password.php:37
+#: includes/cb_text.php:36 includes/cb_textarea.php:38 includes/cb_time.php:99
+msgid "Advanced"
+msgstr "متقدم"
+
+#: includes/cb_checkbox.php:39 includes/cb_checkbox.php:68
+#: includes/cb_date.php:89 includes/cb_dropdown.php:39
+#: includes/cb_dropdown.php:68 includes/cb_email.php:41
+#: includes/cb_file_upload.php:57 includes/cb_multiple.php:38
+#: includes/cb_multiple.php:67 includes/cb_password.php:40
+#: includes/cb_text.php:39 includes/cb_textarea.php:41
+#: includes/cb_time.php:102
+msgid "Options"
+msgstr "خيارات"
+
+#: includes/cb_checkbox.php:48 includes/cb_checkbox.php:134
+#: includes/cb_date.php:98 includes/cb_date.php:238
+#: includes/cb_dropdown.php:48 includes/cb_dropdown.php:120
+#: includes/cb_email.php:50 includes/cb_email.php:121
+#: includes/cb_file_upload.php:66 includes/cb_file_upload.php:159
+#: includes/cb_hidden.php:42 includes/cb_multiple.php:47
+#: includes/cb_multiple.php:133 includes/cb_password.php:49
+#: includes/cb_password.php:119 includes/cb_text.php:48
+#: includes/cb_text.php:122 includes/cb_textarea.php:50
+#: includes/cb_textarea.php:130 includes/cb_time.php:111
+#: includes/cb_time.php:293
+msgid "Label"
+msgstr "التسمية"
+
+#: includes/cb_checkbox.php:50 includes/cb_date.php:100
+#: includes/cb_dropdown.php:50 includes/cb_email.php:52
+#: includes/cb_file_upload.php:68 includes/cb_hidden.php:44
+#: includes/cb_multiple.php:49 includes/cb_password.php:51
+#: includes/cb_text.php:50 includes/cb_time.php:113
+msgid "Enter Label"
+msgstr "أدخل التسمية"
+
+#: includes/cb_checkbox.php:54 includes/cb_checkbox.php:56
+#: includes/cb_date.php:110 includes/cb_date.php:112
+#: includes/cb_dropdown.php:54 includes/cb_dropdown.php:56
+#: includes/cb_email.php:62 includes/cb_email.php:64
+#: includes/cb_file_upload.php:78 includes/cb_file_upload.php:80
+#: includes/cb_multiple.php:53 includes/cb_multiple.php:55
+#: includes/cb_password.php:61 includes/cb_password.php:63
+#: includes/cb_text.php:60 includes/cb_text.php:62 includes/cb_textarea.php:62
+#: includes/cb_textarea.php:64 includes/cb_time.php:123
+#: includes/cb_time.php:125
+msgid "Required"
+msgstr "مطلوب"
+
+#: includes/cb_checkbox.php:57 includes/cb_date.php:113
+#: includes/cb_dropdown.php:57 includes/cb_email.php:65
+#: includes/cb_file_upload.php:81 includes/cb_multiple.php:56
+#: includes/cb_password.php:64 includes/cb_text.php:63
+#: includes/cb_textarea.php:65 includes/cb_time.php:126
+msgid "Not Required"
+msgstr "غير مطلوب"
+
+#: includes/cb_checkbox.php:61 includes/cb_date.php:117
+#: includes/cb_dropdown.php:61 includes/cb_email.php:69
+#: includes/cb_file_upload.php:85 includes/cb_multiple.php:60
+#: includes/cb_password.php:68 includes/cb_text.php:67
+#: includes/cb_time.php:130
+msgid "Tooltip Text"
+msgstr "تلميح الأدوات النص"
+
+#: includes/cb_checkbox.php:63 includes/cb_date.php:119
+#: includes/cb_dropdown.php:63 includes/cb_email.php:71
+#: includes/cb_file_upload.php:87 includes/cb_password.php:70
+#: includes/cb_textarea.php:71 includes/cb_time.php:132
+msgid "Enter Tooltip"
+msgstr "أدخل توولتيب"
+
+#: includes/cb_checkbox.php:70 includes/cb_checkbox.php:127
+msgid "Enter Options"
+msgstr "أدخل خيارات"
+
+#: includes/cb_checkbox.php:70 includes/cb_dropdown.php:70
+#: includes/cb_multiple.php:69
+msgid "Add option"
+msgstr "إضافة خيار"
+
+#: includes/cb_checkbox.php:81 includes/cb_dropdown.php:81
+#: includes/cb_file_upload.php:100 includes/cb_password.php:79
+#: includes/cb_time.php:141
+msgid "Admin Label"
+msgstr "التسمية الادارية"
+
+#: includes/cb_checkbox.php:83 includes/cb_date.php:130
+#: includes/cb_dropdown.php:83 includes/cb_email.php:83
+#: includes/cb_file_upload.php:102 includes/cb_multiple.php:82
+#: includes/cb_password.php:81 includes/cb_time.php:143
+msgid "Enter Admin Label"
+msgstr "أدخل التسمية الادارية"
+
+#: includes/cb_checkbox.php:87 includes/cb_date.php:134
+#: includes/cb_dropdown.php:87 includes/cb_email.php:87
+#: includes/cb_file_upload.php:106 includes/cb_hidden.php:60
+#: includes/cb_multiple.php:86 includes/cb_password.php:85
+#: includes/cb_text.php:89 includes/cb_textarea.php:97
+#: includes/cb_time.php:147
+msgid "Do not show in the email"
+msgstr "عدم إظهار- ففي البريد الالكتروني"
+
+#: includes/cb_checkbox.php:97 includes/cb_multiple.php:96
+msgid "Css Label :"
+msgstr "المغلق التسمية:"
+
+#: includes/cb_checkbox.php:99 includes/cb_date.php:196
+#: includes/cb_dropdown.php:99 includes/cb_email.php:100
+#: includes/cb_file_upload.php:145 includes/cb_multiple.php:98
+#: includes/cb_password.php:97 includes/cb_text.php:101
+#: includes/cb_time.php:251
+msgid "Enter Css Label"
+msgstr "أدخل المغلق التسمية"
+
+#: includes/cb_checkbox.php:104
+msgid "CSS Description :"
+msgstr "المغلق الوصف:"
+
+#: includes/cb_checkbox.php:106 includes/cb_date.php:210
+#: includes/cb_dropdown.php:113 includes/cb_email.php:114
+#: includes/cb_file_upload.php:152 includes/cb_multiple.php:105
+#: includes/cb_password.php:112 includes/cb_text.php:115
+#: includes/cb_time.php:265
+msgid "Enter Css Description"
+msgstr "أدخل المغلق الوصف"
+
+#: includes/cb_checkbox.php:111
+msgid "CSS Options outer wrapper :"
+msgstr "خيارات المغلق إزار الخارجي:"
+
+#: includes/cb_checkbox.php:113
+msgid "Enter Css Outer Wrapper"
+msgstr "أدخل المغلق إزار الخارجي."
+
+#: includes/cb_checkbox.php:118
+msgid "CSS Option Wrapper :"
+msgstr "المغلق الخيار إزار:"
+
+#: includes/cb_checkbox.php:120
+msgid "Enter Css Option Wrapper"
+msgstr "أدخل المغلق الخيار إزار:"
+
+#: includes/cb_checkbox.php:125
+msgid "CSS Options Label :"
+msgstr "المغلق  التسمية خيارات:"
+
+#: includes/cb_checkbox.php:132 includes/cb_date.php:236
+#: includes/cb_dropdown.php:118 includes/cb_email.php:119
+#: includes/cb_file_upload.php:157 includes/cb_multiple.php:131
+#: includes/cb_password.php:117 includes/cb_text.php:120
+#: includes/cb_textarea.php:128 includes/cb_time.php:291
+msgid "Add a style to"
+msgstr "إضافة نمط إلى"
+
+#: includes/cb_checkbox.php:135 includes/cb_date.php:104
+#: includes/cb_date.php:240 includes/cb_dropdown.php:122
+#: includes/cb_email.php:56 includes/cb_email.php:123
+#: includes/cb_file_upload.php:72 includes/cb_file_upload.php:160
+#: includes/cb_multiple.php:134 includes/cb_password.php:55
+#: includes/cb_password.php:121 includes/cb_text.php:54
+#: includes/cb_text.php:124 includes/cb_textarea.php:56
+#: includes/cb_textarea.php:132 includes/cb_time.php:117
+#: includes/cb_time.php:295
+msgid "Description"
+msgstr "وصف"
+
+#: includes/cb_checkbox.php:136 includes/cb_multiple.php:135
+msgid "Options outer wrapper"
+msgstr "خيارات-الخارجي  إزار:"
+
+#: includes/cb_checkbox.php:137
+msgid "Options wrapper"
+msgstr "الخيارات-إزار"
+
+#: includes/cb_checkbox.php:138 includes/cb_multiple.php:137
+msgid "Options label"
+msgstr "خيارات.التسمية"
+
+#: includes/cb_checkbox.php:148 includes/cb_date.php:253
+#: includes/cb_dropdown.php:132 includes/cb_email.php:143
+#: includes/cb_file_upload.php:170 includes/cb_hidden.php:72
+#: includes/cb_multiple.php:147 includes/cb_password.php:141
+#: includes/cb_text.php:144 includes/cb_textarea.php:152
+#: includes/cb_time.php:308 views/contact_email.php:183
+#: views/contact_view.php:34 views/edit_contact_view.php:83
+msgid "Save"
+msgstr "انقاذ"
+
+#: includes/cb_checkbox.php:202 includes/cb_checkbox.php:267
+#: includes/cb_dropdown.php:228 includes/cb_dropdown.php:278
+#: includes/cb_multiple.php:202 includes/cb_multiple.php:268
+msgid "Update"
+msgstr "قم بتحديث"
+
+#: includes/cb_checkbox.php:256 includes/cb_dropdown.php:270
+#: includes/cb_multiple.php:257
+msgid "Please Fill an Option."
+msgstr "يرجى شغل ل خيارا."
+
+#: includes/cb_checkbox.php:272 includes/cb_multiple.php:273
+msgid "This Option Already Exists."
+msgstr "هذا الخيار موجود بالفعل."
+
+#: includes/cb_checkbox.php:294 includes/cb_dropdown.php:286
+#: includes/cb_dropdown.php:308 includes/cb_multiple.php:295
+msgid "This Option Already Exists. "
+msgstr "هذا الخيار موجود بالفعل."
+
+#: includes/cb_checkbox.php:305 includes/cb_dropdown.php:319
+#: includes/cb_multiple.php:306
+msgid "Option updated"
+msgstr "خيار تحديثها"
+
+#: includes/cb_date.php:8 includes/cb_date.php:100 includes/cb_date.php:130
+#: views/contact_view.php:66 views/edit_contact_view.php:114
+#: views/edit_contact_view.php:1421
+msgid "Date"
+msgstr "تاريخ"
+
+#: includes/cb_date.php:12 includes/cb_date.php:155 includes/cb_date.php:308
+#: includes/cb_date.php:380 views/contact_bank_frontend.php:679
+msgid "Day"
+msgstr "يوم"
+
+#: includes/cb_date.php:32 includes/cb_date.php:159 includes/cb_date.php:323
+#: includes/cb_date.php:395 views/contact_bank_frontend.php:707
+msgid "Month"
+msgstr "شهر"
+
+#: includes/cb_date.php:47 includes/cb_date.php:162 includes/cb_date.php:357
+#: includes/cb_date.php:417 views/contact_bank_frontend.php:729
+msgid "Year"
+msgstr "سنة"
+
+#: includes/cb_date.php:79
+msgid "Date Control"
+msgstr "التسجيل التحكم"
+
+#: includes/cb_date.php:106 includes/cb_email.php:58
+#: includes/cb_file_upload.php:74 includes/cb_password.php:57
+#: includes/cb_text.php:56 includes/cb_time.php:119
+msgid "Enter Description"
+msgstr "أدخل الوصف"
+
+#: includes/cb_date.php:128 includes/cb_email.php:81 includes/cb_hidden.php:54
+#: includes/cb_multiple.php:80 includes/cb_text.php:83
+#: includes/cb_textarea.php:91
+msgid "Admin label"
+msgstr "تسمية الادارية"
+
+#: includes/cb_date.php:140
+msgid "Start year"
+msgstr "بدء تشغيل العام"
+
+#: includes/cb_date.php:142
+msgid "Enter Start Year"
+msgstr "أدخل بدء-العام"
+
+#: includes/cb_date.php:146
+msgid "End year"
+msgstr "نهاية-السنة"
+
+#: includes/cb_date.php:148
+msgid "Enter End Year "
+msgstr "أدخل نهاية-العام"
+
+#: includes/cb_date.php:152 includes/cb_text.php:77
+#: includes/cb_textarea.php:85 includes/cb_time.php:175
+msgid "Default value"
+msgstr "قيمة افتراضية"
+
+#: includes/cb_date.php:167
+msgid "Error message if invalid date"
+msgstr "رسالة خطأ إذا كان تاريخ غير صالح"
+
+#: includes/cb_date.php:169
+msgid "Enter Error Message"
+msgstr "أدخل-رسالة خطأ"
+
+#: includes/cb_date.php:173
+msgid "Date format"
+msgstr "تنسيق التاريخ"
+
+#: includes/cb_date.php:194 includes/cb_dropdown.php:97
+#: includes/cb_email.php:98 includes/cb_file_upload.php:143
+#: includes/cb_password.php:95 includes/cb_text.php:99
+#: includes/cb_time.php:249
+msgid "Css Label"
+msgstr "المغلق تسمية"
+
+#: includes/cb_date.php:201 includes/cb_email.php:105 includes/cb_time.php:256
+msgid "Css Text Input"
+msgstr "المغلق إدخال النص"
+
+#: includes/cb_date.php:203 includes/cb_text.php:108 includes/cb_time.php:258
+msgid "Enter Css Text Input"
+msgstr "أدخل المغلق إدخال النصوص"
+
+#: includes/cb_date.php:208 includes/cb_dropdown.php:111
+#: includes/cb_email.php:112 includes/cb_file_upload.php:150
+#: includes/cb_password.php:110 includes/cb_time.php:263
+msgid "Css Description"
+msgstr "المغلق الوصف"
+
+#: includes/cb_date.php:215
+msgid "Css Day"
+msgstr "المغلق يوم"
+
+#: includes/cb_date.php:217
+msgid "Enter Css Day"
+msgstr "أدخل المغلق يوم"
+
+#: includes/cb_date.php:222
+msgid "Css Month"
+msgstr "المغلق شهر"
+
+#: includes/cb_date.php:224
+msgid "Enter Css Month"
+msgstr "أدخل المغلق شهر"
+
+#: includes/cb_date.php:229
+msgid "Css Year"
+msgstr "المغلق سنة"
+
+#: includes/cb_date.php:231
+msgid "Enter Css Year"
+msgstr "أدخل المغلق سنة"
+
+#: includes/cb_date.php:239 includes/cb_email.php:122
+#: includes/cb_password.php:120 includes/cb_textarea.php:131
+#: includes/cb_time.php:294
+msgid "Text input"
+msgstr "إدخال النص"
+
+#: includes/cb_date.php:241
+msgid "Date day dropdown"
+msgstr "تاريخ يوم منسدله"
+
+#: includes/cb_date.php:242
+msgid "Date month dropdown"
+msgstr "التسجيل شهر منسدله"
+
+#: includes/cb_date.php:243
+msgid "Date year dropdown"
+msgstr "التسجيل سنة منسدله"
+
+#: includes/cb_dropdown.php:12 includes/cb_dropdown.php:344
+#: views/contact_bank_frontend.php:385 views/contact_bank_frontend.php:398
+msgid "Select option"
+msgstr "حدد خيارا"
+
+#: includes/cb_dropdown.php:29
+msgid "Dropdown Control"
+msgstr "التحكم منسدله"
+
+#: includes/cb_dropdown.php:70 includes/cb_multiple.php:69
+msgid "Enter Option"
+msgstr "أدخل الخيار"
+
+#: includes/cb_dropdown.php:104
+msgid "Css Dropdown Menu"
+msgstr "المغلق القائمة المنسدلة"
+
+#: includes/cb_dropdown.php:106
+msgid "Enter Css Dropdown Menu"
+msgstr "أدخل المغلق القائمة المنسدلة"
+
+#: includes/cb_dropdown.php:121
+msgid "Dropdown menu"
+msgstr " القائمة منسدله"
+
+#: includes/cb_email.php:9 includes/cb_email.php:52 includes/cb_email.php:83
+#: views/contact_email.php:72 views/contact_email.php:138
+#: views/edit_contact_view.php:1113
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+#: includes/cb_email.php:30
+msgid "Email Control"
+msgstr "تحكم البريد الالكتروني"
+
+#: includes/cb_email.php:107 includes/cb_password.php:105
+msgid "Enter Css Input Text"
+msgstr "أدخل المغلق نص الإدخال"
+
+#: includes/cb_email.php:127 includes/cb_password.php:125
+#: includes/cb_text.php:128 includes/cb_textarea.php:136
+msgid "Add a filter"
+msgstr "إضافة محددات تصفية"
+
+#: includes/cb_email.php:129 includes/cb_password.php:127
+#: includes/cb_text.php:130 includes/cb_textarea.php:138
+msgid "Alpha"
+msgstr "ألفا"
+
+#: includes/cb_email.php:130 includes/cb_password.php:128
+#: includes/cb_text.php:131 includes/cb_textarea.php:139
+msgid "Alpha Numeric"
+msgstr "ألفا رقمى"
+
+#: includes/cb_email.php:131 includes/cb_password.php:129
+#: includes/cb_text.php:132 includes/cb_textarea.php:140
+msgid "Digits"
+msgstr "سيارة رباعي"
+
+#: includes/cb_email.php:132 includes/cb_password.php:130
+#: includes/cb_text.php:133 includes/cb_textarea.php:141
+msgid "Strip Tags"
+msgstr " افسخ الدليلية"
+
+#: includes/cb_email.php:133 includes/cb_password.php:131
+#: includes/cb_text.php:134 includes/cb_textarea.php:142
+msgid "Trim"
+msgstr "تقليم"
+
+#: includes/cb_file_upload.php:9 includes/cb_file_upload.php:68
+#: includes/cb_file_upload.php:102 views/contact_view.php:63
+#: views/edit_contact_view.php:111 views/edit_contact_view.php:1374
+msgid "File Upload"
+msgstr "إيداع الملف"
+
+#: includes/cb_file_upload.php:46
+msgid "Fileupload Control"
+msgstr "إيداع ملف تحكم"
+
+#: includes/cb_file_upload.php:112
+msgid "Allow Multiple Uploads"
+msgstr "تسمح الإضافات متعددة"
+
+#: includes/cb_file_upload.php:118
+msgid "Allowed File Extensions"
+msgstr "امتدادات الملفات المسموحة"
+
+#: includes/cb_file_upload.php:120
+msgid "Enter File Extensions"
+msgstr "أدخل امتدادات الملفات"
+
+#: includes/cb_file_upload.php:122
+msgid "The file extensions must be seperated with semicolons(' ; ')"
+msgstr "يجب فصل ملحقات الملفات مع الفاصلة المنقوطة ('؛')"
+
+#: includes/cb_file_upload.php:126
+msgid "Allowed File Size"
+msgstr "حجم الملفات المسموح بها"
+
+#: includes/cb_file_upload.php:130
+msgid "File Size must be in Kb"
+msgstr "حجم ملف يجب أن يكون في كيلو بايت"
+
+#: includes/cb_hidden.php:8
+msgid "Untitled (hidden)"
+msgstr "بدون اسم (مخفي)"
+
+#: includes/cb_hidden.php:11 views/contact_bank_frontend.php:952
+#: views/contact_view.php:72 views/edit_contact_view.php:120
+msgid "Hidden"
+msgstr "مخفي"
+
+#: includes/cb_hidden.php:29
+msgid "Hidden Control"
+msgstr "تحكم مخفية"
+
+#: includes/cb_hidden.php:44 includes/cb_hidden.php:56
+#: views/edit_contact_view.php:1619
+msgid "Untitled(hidden)"
+msgstr "بدون اسم (مخفي)"
+
+#: includes/cb_hidden.php:48
+msgid "Default Value"
+msgstr "قيمة افتراضية"
+
+#: includes/cb_hidden.php:50 includes/cb_text.php:79
+msgid "Enter Default Value"
+msgstr "أدخل قيمة افتراضية"
+
+#: includes/cb_hidden.php:56 includes/cb_text.php:85
+#: includes/cb_textarea.php:93
+msgid "Enter Admin label"
+msgstr "أدخل التسمية الادارية"
+
+#: includes/cb_multiple.php:28
+msgid "Radio Buttons"
+msgstr "أزرار الراديو"
+
+#: includes/cb_multiple.php:62 includes/cb_text.php:69
+msgid "Enter Tooltip Text"
+msgstr "أدخل توولتيب-النص"
+
+#: includes/cb_multiple.php:103
+msgid "Css Description :"
+msgstr "المغلق الوصف:"
+
+#: includes/cb_multiple.php:110
+msgid "Css Options outer wrapper :"
+msgstr "خيارات المغلق إزار الخارجي:"
+
+#: includes/cb_multiple.php:112
+msgid "Enter Css Options outer wrapper"
+msgstr "أدخل خيارات المغلق إزار الخارجي:"
+
+#: includes/cb_multiple.php:117
+msgid "CSS Options Wrapper :"
+msgstr "المغلق الخيار إزار:"
+
+#: includes/cb_multiple.php:119
+msgid "Enter Css Options Wrapper"
+msgstr "أدخل المغلق الخيار-إزار"
+
+#: includes/cb_multiple.php:124
+msgid "CSS Option Label :"
+msgstr "المغلق خيارا-التسمية :"
+
+#: includes/cb_multiple.php:126
+msgid "Enter Css Option Label"
+msgstr "أدخل المغلق خيارا-التسمية :"
+
+#: includes/cb_multiple.php:136
+msgid "Options  wrapper"
+msgstr " الخيار-إزار"
+
+#: includes/cb_password.php:8 includes/cb_password.php:51
+#: includes/cb_password.php:81 views/contact_view.php:75
+#: views/edit_contact_view.php:123 views/edit_contact_view.php:1629
+msgid "Password"
+msgstr "كلمة السر"
+
+#: includes/cb_password.php:29
+msgid "Password Control"
+msgstr "كلمة السر مراقبة"
+
+#: includes/cb_password.php:103
+msgid "Css Input Text"
+msgstr " المغلق الإدخال- نص"
+
+#: includes/cb_text.php:29
+msgid "Textbox Control"
+msgstr "التحكم مربع نص"
+
+#: includes/cb_text.php:106
+msgid " Css Text Input"
+msgstr "المغلق إدخال النص"
+
+#: includes/cb_text.php:113
+msgid " Css Description"
+msgstr "المغلق الوصف"
+
+#: includes/cb_text.php:123
+msgid "Text Input"
+msgstr "إدخال النص"
+
+#: includes/cb_textarea.php:30
+msgid "Textarea Control"
+msgstr "ناحية النص تحكم"
+
+#: includes/cb_textarea.php:52
+msgid "Enter label"
+msgstr "أدخل التسمية"
+
+#: includes/cb_textarea.php:58
+msgid "Enter  Description"
+msgstr "أدخل الوصف"
+
+#: includes/cb_textarea.php:69
+msgid "Tooltip text"
+msgstr "توولتيب النص"
+
+#: includes/cb_textarea.php:87
+msgid "Enter Default value"
+msgstr "أدخل قيمة افتراضية"
+
+#: includes/cb_textarea.php:107
+msgid "CSS label"
+msgstr "التسمية المغلق"
+
+#: includes/cb_textarea.php:109
+msgid "Enter css Label"
+msgstr "أدخل  المغلق التسمية"
+
+#: includes/cb_textarea.php:114
+msgid "CSS textinput"
+msgstr "إدخال النص المغلق"
+
+#: includes/cb_textarea.php:116
+msgid "Enter css textinput"
+msgstr "أدخل المغلق  النص إدخال"
+
+#: includes/cb_textarea.php:121
+msgid "CSS description"
+msgstr "المغلق الوصف"
+
+#: includes/cb_textarea.php:123
+msgid "Enter css description"
+msgstr "أدخل المغلق الوصف"
+
+#: includes/cb_time.php:8 includes/cb_time.php:113 includes/cb_time.php:143
+#: views/contact_view.php:69 views/edit_contact_view.php:117
+#: views/edit_contact_view.php:1514
+msgid "Time"
+msgstr "وقت"
+
+#: includes/cb_time.php:12 includes/cb_time.php:32 includes/cb_time.php:178
+#: includes/cb_time.php:198 views/contact_bank_frontend.php:821
+#: views/contact_bank_frontend.php:847 views/contact_bank_frontend.php:873
+msgid "Hour"
+msgstr "ساعة"
+
+#: includes/cb_time.php:52 includes/cb_time.php:218
+#: views/contact_bank_frontend.php:897
+msgid "Minute"
+msgstr "الدقيقة"
+
+#: includes/cb_time.php:92
+msgid "Time Control"
+msgstr "السيطرة على الوقت"
+
+#: includes/cb_time.php:153
+msgid "12/24 hour time"
+msgstr "12/24 ساعة مرة"
+
+#: includes/cb_time.php:162
+msgid "Time format"
+msgstr "تنسيق الوقت"
+
+#: includes/cb_time.php:270
+msgid "Css Hour"
+msgstr "المغلق ساعة"
+
+#: includes/cb_time.php:272
+msgid "Enter Css Hour"
+msgstr "أدخل المغلق ساعة"
+
+#: includes/cb_time.php:277
+msgid "Css Minute"
+msgstr "المغلق الدقيقة"
+
+#: includes/cb_time.php:279
+msgid "Enter Css Minute"
+msgstr "أدخل المغلق الدقيقة"
+
+#: includes/cb_time.php:284
+msgid "Css am/pm"
+msgstr "سي اس اس ص / م"
+
+#: includes/cb_time.php:286
+msgid "Enter Css am/pm"
+msgstr "أدخل سي اس اس ص / م"
+
+#: includes/cb_time.php:296
+msgid "Time hour dropdown"
+msgstr "وقت-ساعة منسدله"
+
+#: includes/cb_time.php:297
+msgid "Time minute dropdown"
+msgstr "وقت-الدقيقة منسدله"
+
+#: includes/cb_time.php:298
+msgid "Time am/pm dropdown"
+msgstr "وقت  ص / م منسدله"
+
+#: views/contact_bank_frontend.php:153
+msgid "Enter Text"
+msgstr "إدخال نص"
+
+#: views/contact_bank_frontend.php:342 views/contact_email.php:84
+#: views/contact_email.php:144
+msgid "Enter Email Address"
+msgstr "إدخال عنوان البريد الإلكتروني"
+
+#: views/contact_bank_frontend.php:952
+msgid "Enter Hidden Text"
+msgstr "أدخل النص المخفي"
+
+#: views/contact_bank_frontend.php:1040
+msgid "Enter Password"
+msgstr "أدخل كلمة"
+
+#: views/contact_bank_frontend.php:1051
+msgid "Submit Form"
+msgstr "انقاذ النموذج"
+
+#: views/contact_email.php:9 views/contact_frontend_data.php:8
+#: views/contact_view.php:9 views/edit_contact_view.php:31
+msgid "Back to Dashboard"
+msgstr "العودة الى وحة المعلومات"
+
+#: views/contact_email.php:13
+msgid "Email Settings Saved. Kindly wait for the redirect."
+msgstr "إعدادات البريد الإلكتروني المحفوظة. يرجى الانتظار لإعادة توجيه."
+
+#: views/contact_email.php:18 views/contact_email.php:49
+#: views/contact_frontend_data.php:19 views/contact_frontend_data.php:32
+msgid "Select Form"
+msgstr "اختر الشكل الصيدلاني"
+
+#: views/contact_email.php:65
+msgid "Admin Email"
+msgstr "الادارية إرسال لصديق"
+
+#: views/contact_email.php:76
+msgid "To"
+msgstr "إلى"
+
+#: views/contact_email.php:78
+msgid "Enter Admin Email"
+msgstr "أدخل الادارية-البريد الالكتروني"
+
+#: views/contact_email.php:82 views/contact_email.php:142
+msgid "From"
+msgstr "من"
+
+#: views/contact_email.php:89 views/contact_email.php:148
+msgid "Subject"
+msgstr "تخضع"
+
+#: views/contact_email.php:91 views/contact_email.php:150
+msgid "Enter Subject"
+msgstr "أدخل تخضع"
+
+#: views/contact_email.php:100 views/contact_email.php:160
+msgid "Email Content"
+msgstr "البريد الالكتروني المحتوى"
+
+#: views/contact_email.php:115 views/contact_email.php:175
+msgid "Short Code Controls for Email"
+msgstr "رمز قصيرة عناصر التحكم ل البريد الالكتروني"
+
+#: views/contact_email.php:129
+msgid "Client Email"
+msgstr "العميل-البريد الالكتروني"
+
+#: views/contact_frontend_data.php:14 views/contact_view.php:20
+#: views/dashboard.php:15 views/dashboard.php:21
+msgid "Form"
+msgstr "شكل"
+
+#: views/contact_view.php:13
+msgid "Form Submited. Kindly wait for the redirect."
+msgstr "شكل أنقذ. يرجى الانتظار لإعادة توجيه."
+
+#: views/contact_view.php:24 views/edit_contact_view.php:46
+msgid "Form Name :"
+msgstr "استمارة-اسم:"
+
+#: views/contact_view.php:27 views/edit_contact_view.php:49
+msgid "Enter Form Name"
+msgstr "أدخل استمارة-اسم:"
+
+#: views/contact_view.php:40 views/edit_contact_view.php:89
+msgid "Control Buttons"
+msgstr "أزرار التحكم"
+
+#: views/contact_view.php:45 views/edit_contact_view.php:93
+msgid "Text Box"
+msgstr "مربع النص"
+
+#: views/contact_view.php:48 views/edit_contact_view.php:96
+msgid "Text Area"
+msgstr "منطقة النص"
+
+#: views/contact_view.php:51 views/edit_contact_view.php:99
+msgid "Email Address"
+msgstr "عنوان البريد الإلكتروني"
+
+#: views/contact_view.php:54 views/edit_contact_view.php:102
+msgid "Dropdown Menu"
+msgstr "القائمة المنسدلة"
+
+#: views/contact_view.php:57 views/edit_contact_view.php:105
+msgid "Checkboxes"
+msgstr "خانات الاختيار"
+
+#: views/contact_view.php:60 views/edit_contact_view.php:108
+msgid "Multiple Choice"
+msgstr "الاختيار من متعدد"
+
+#: views/dashboard.php:5
+msgid "Dashboard - Contact Bank"
+msgstr "لوحة أجهزة القياس-الاتصال البنك"
+
+#: views/dashboard.php:9
+msgid "Delete All Forms"
+msgstr "حذف جميع أشكال"
+
+#: views/dashboard.php:22
+msgid "Shortcode"
+msgstr "رمز قصير"
+
+#: views/dashboard.php:23
+msgid "Action"
+msgstr "الإجراءات"
+
+#: views/dashboard.php:43
+msgid "Edit"
+msgstr "تحرير"
+
+#: views/dashboard.php:46
+msgid "Delete"
+msgstr "حذف"
+
+#: views/dashboard.php:62
+msgid "Server Settings"
+msgstr "إعدادات الخادم"
+
+#: views/dashboard.php:73
+msgid "Not set"
+msgstr "تقم بتعيين"
+
+#: views/dashboard.php:75 views/dashboard.php:78
+msgid "On"
+msgstr "على"
+
+#: views/dashboard.php:76 views/dashboard.php:79
+msgid "Off"
+msgstr "متفرع من"
+
+#: views/dashboard.php:82 views/dashboard.php:85 views/dashboard.php:88
+#: views/dashboard.php:91 views/dashboard.php:94 views/dashboard.php:97
+msgid "N/A"
+msgstr "N/A"
+
+#: views/dashboard.php:96
+msgid " MByte"
+msgstr "ميجابايت"
+
+#: views/dashboard.php:99 views/dashboard.php:102 views/dashboard.php:105
+#: views/dashboard.php:155
+msgid "Yes"
+msgstr "نعم"
+
+#: views/dashboard.php:100 views/dashboard.php:103 views/dashboard.php:106
+#: views/dashboard.php:157
+msgid "No"
+msgstr "لا"
+
+#: views/dashboard.php:108
+msgid "Operating System"
+msgstr "نظام التشغيل"
+
+#: views/dashboard.php:109
+msgid "Server"
+msgstr "خادم"
+
+#: views/dashboard.php:110
+msgid "Memory usage"
+msgstr "استخدام الذاكرة"
+
+#: views/dashboard.php:111
+msgid "MYSQL Version"
+msgstr "MYSQL النسخة"
+
+#: views/dashboard.php:112
+msgid "SQL Mode"
+msgstr "الوضع SQL"
+
+#: views/dashboard.php:113
+msgid "PHP Version"
+msgstr "PHP الإصدار"
+
+#: views/dashboard.php:114
+msgid "PHP Safe Mode"
+msgstr "PHP الوضع الآمن"
+
+#: views/dashboard.php:115
+msgid "PHP Allow URL fopen"
+msgstr "PHP السماح رابط FOPEN"
+
+#: views/dashboard.php:116
+msgid "PHP Memory Limit"
+msgstr "PHP الذاكرة الحد"
+
+#: views/dashboard.php:117
+msgid "PHP Max Upload Size"
+msgstr "PHP ماكس تصل-حمولة حجم"
+
+#: views/dashboard.php:118
+msgid "PHP Max Post Size"
+msgstr "PHP ماكس بوست الحجم"
+
+#: views/dashboard.php:119
+msgid "PCRE Backtracking Limit"
+msgstr "PCRE رسم المسار المستعاد الحد"
+
+#: views/dashboard.php:120
+msgid "PHP Max Script Execute Time"
+msgstr "PHP ماكس سيناريو تنفيذ التوقيت"
+
+#: views/dashboard.php:121
+msgid "PHP Exif support"
+msgstr "PHP إإكسيف  دعم "
+
+#: views/dashboard.php:122
+msgid "PHP IPTC support"
+msgstr "IPTC PHP دعم "
+
+#: views/dashboard.php:123
+msgid "PHP XML support"
+msgstr "XML فب دعم "
+
+#: views/dashboard.php:131
+msgid "Graphic Library Settings"
+msgstr "إعدادات مكتبة الرسم"
+
+#: views/dashboard.php:150
+msgid "No GD support"
+msgstr "لا يوجد دعم GD"
+
+#: views/dashboard.php:186
+msgid "Are you sure to delete this form ?"
+msgstr "هل أنت متأكد من حذف هذا شكل؟"
+
+#: views/dashboard.php:197
+msgid "Are you sure to delete all forms ?"
+msgstr "هل أنت متأكد من حذف جميع أشكال؟"
+
+#: views/edit_contact_view.php:28
+msgid "Edit Existing Form"
+msgstr "تحرير نموذج موجود"
+
+#: views/edit_contact_view.php:35
+msgid "Form Updated. Kindly wait for the redirect."
+msgstr "شكل التحديث. يرجى الانتظار لإعادة توجيه."
+
+#: views/edit_contact_view.php:42
+msgid "Edit Form"
+msgstr "تحرير شكل"
+
+#: views/edit_contact_view.php:289 views/edit_contact_view.php:324
+#: views/edit_contact_view.php:393 views/edit_contact_view.php:442
+#: views/edit_contact_view.php:490
+msgid "Untitled :"
+msgstr "بدون اسم:"
+
+#: views/edit_contact_view.php:359
+msgid "Email :"
+msgstr "البريد الإلكتروني:"
+
+#: views/edit_contact_view.php:539
+msgid "File Upload :"
+msgstr "رفع ملف:"
+
+#: views/edit_contact_view.php:586
+msgid "Date :"
+msgstr "التسجيل:"
+
+#: views/edit_contact_view.php:657
+msgid "Time :"
+msgstr "الوقت:"
+
+#: views/edit_contact_view.php:715
+msgid "Untitled(hidden) :"
+msgstr "بدون اسم (مخفي):"
+
+#: views/edit_contact_view.php:747
+msgid "Password : "
+msgstr "كلمة السر:"
+
+#: views/edit_contact_view.php:1398
+msgid "1024"
+msgstr ""
+
+#~ msgid "Enter Defualt value"
+#~ msgstr "أدخل قيمة افتراضية"
+
+#~ msgid "Enter Do Not Show In Email"
+#~ msgstr "أدخل عدم إظهار تفعل ففي البريد الالكتروني"
+
+#~ msgid "Enter Do Not Show In Email "
+#~ msgstr "أدخل القيام عدم إظهار ففي البريد الالكتروني"
+
+#~ msgid "Attach uploaded files to the notification email"
+#~ msgstr "نعلق تم الرفع الملفات  إلى الإخطار- البريد الالكتروني"
+
+#~ msgid "Form Data"
+#~ msgstr "بيانات النموذج"

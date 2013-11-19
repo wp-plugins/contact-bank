@@ -1,0 +1,1034 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2013-11-16 10:04+0530\n"
+"PO-Revision-Date: 2013-11-16 15:51+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: C:\\wamp\\www\\contact-bank3.7\\wp-content\\plugins"
+"\\contact-bank\\\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: contact-bank.php:62
+msgid "Contact Bank"
+msgstr ""
+
+#: contact-bank.php:63 contact-bank.php:431
+msgid "Dashboard"
+msgstr "仪表盘"
+
+#: contact-bank.php:64 contact-bank.php:437 views/contact_view.php:6
+#: views/dashboard.php:8
+msgid "Add New Form"
+msgstr "添加新的形式"
+
+#: contact-bank.php:65 contact-bank.php:443 views/contact_email.php:6
+msgid "Email Settings"
+msgstr "邮箱设置"
+
+#: contact-bank.php:66 contact-bank.php:449 views/contact_frontend_data.php:5
+msgid "Form Entries"
+msgstr "的表单项"
+
+#: includes/cb_checkbox.php:8 includes/cb_checkbox.php:50
+#: includes/cb_checkbox.php:83 includes/cb_dropdown.php:8
+#: includes/cb_dropdown.php:50 includes/cb_dropdown.php:83
+#: includes/cb_multiple.php:8 includes/cb_multiple.php:49
+#: includes/cb_multiple.php:82 includes/cb_text.php:8 includes/cb_text.php:50
+#: includes/cb_text.php:85 includes/cb_textarea.php:9
+#: includes/cb_textarea.php:52 includes/cb_textarea.php:93
+#: views/edit_contact_view.php:992 views/edit_contact_view.php:1050
+#: views/edit_contact_view.php:1179 views/edit_contact_view.php:1235
+#: views/edit_contact_view.php:1305
+msgid "Untitled"
+msgstr "无标题"
+
+#: includes/cb_checkbox.php:13 includes/cb_checkbox.php:42
+#: includes/cb_date.php:62 includes/cb_date.php:92 includes/cb_dropdown.php:14
+#: includes/cb_dropdown.php:42 includes/cb_email.php:13
+#: includes/cb_email.php:44 includes/cb_file_upload.php:12
+#: includes/cb_file_upload.php:60 includes/cb_hidden.php:12
+#: includes/cb_multiple.php:13 includes/cb_multiple.php:41
+#: includes/cb_password.php:12 includes/cb_password.php:43
+#: includes/cb_text.php:12 includes/cb_text.php:42 includes/cb_textarea.php:13
+#: includes/cb_textarea.php:44 includes/cb_time.php:75
+#: includes/cb_time.php:105
+msgid "Settings"
+msgstr "设定"
+
+#: includes/cb_checkbox.php:29
+msgid "Checkbox Control"
+msgstr "核取方块 控制"
+
+#: includes/cb_checkbox.php:36 includes/cb_date.php:86
+#: includes/cb_dropdown.php:36 includes/cb_email.php:38
+#: includes/cb_file_upload.php:54 includes/cb_hidden.php:36
+#: includes/cb_multiple.php:35 includes/cb_password.php:37
+#: includes/cb_text.php:36 includes/cb_textarea.php:38 includes/cb_time.php:99
+msgid "Advanced"
+msgstr "先进"
+
+#: includes/cb_checkbox.php:39 includes/cb_checkbox.php:68
+#: includes/cb_date.php:89 includes/cb_dropdown.php:39
+#: includes/cb_dropdown.php:68 includes/cb_email.php:41
+#: includes/cb_file_upload.php:57 includes/cb_multiple.php:38
+#: includes/cb_multiple.php:67 includes/cb_password.php:40
+#: includes/cb_text.php:39 includes/cb_textarea.php:41
+#: includes/cb_time.php:102
+msgid "Options"
+msgstr "选项"
+
+#: includes/cb_checkbox.php:48 includes/cb_checkbox.php:134
+#: includes/cb_date.php:98 includes/cb_date.php:238
+#: includes/cb_dropdown.php:48 includes/cb_dropdown.php:120
+#: includes/cb_email.php:50 includes/cb_email.php:121
+#: includes/cb_file_upload.php:66 includes/cb_file_upload.php:159
+#: includes/cb_hidden.php:42 includes/cb_multiple.php:47
+#: includes/cb_multiple.php:133 includes/cb_password.php:49
+#: includes/cb_password.php:119 includes/cb_text.php:48
+#: includes/cb_text.php:122 includes/cb_textarea.php:50
+#: includes/cb_textarea.php:130 includes/cb_time.php:111
+#: includes/cb_time.php:293
+msgid "Label"
+msgstr "标签"
+
+#: includes/cb_checkbox.php:50 includes/cb_date.php:100
+#: includes/cb_dropdown.php:50 includes/cb_email.php:52
+#: includes/cb_file_upload.php:68 includes/cb_hidden.php:44
+#: includes/cb_multiple.php:49 includes/cb_password.php:51
+#: includes/cb_text.php:50 includes/cb_time.php:113
+msgid "Enter Label"
+msgstr "输入标签"
+
+#: includes/cb_checkbox.php:54 includes/cb_checkbox.php:56
+#: includes/cb_date.php:110 includes/cb_date.php:112
+#: includes/cb_dropdown.php:54 includes/cb_dropdown.php:56
+#: includes/cb_email.php:62 includes/cb_email.php:64
+#: includes/cb_file_upload.php:78 includes/cb_file_upload.php:80
+#: includes/cb_multiple.php:53 includes/cb_multiple.php:55
+#: includes/cb_password.php:61 includes/cb_password.php:63
+#: includes/cb_text.php:60 includes/cb_text.php:62 includes/cb_textarea.php:62
+#: includes/cb_textarea.php:64 includes/cb_time.php:123
+#: includes/cb_time.php:125
+msgid "Required"
+msgstr "所需"
+
+#: includes/cb_checkbox.php:57 includes/cb_date.php:113
+#: includes/cb_dropdown.php:57 includes/cb_email.php:65
+#: includes/cb_file_upload.php:81 includes/cb_multiple.php:56
+#: includes/cb_password.php:64 includes/cb_text.php:63
+#: includes/cb_textarea.php:65 includes/cb_time.php:126
+msgid "Not Required"
+msgstr "不要求"
+
+#: includes/cb_checkbox.php:61 includes/cb_date.php:117
+#: includes/cb_dropdown.php:61 includes/cb_email.php:69
+#: includes/cb_file_upload.php:85 includes/cb_multiple.php:60
+#: includes/cb_password.php:68 includes/cb_text.php:67
+#: includes/cb_time.php:130
+msgid "Tooltip Text"
+msgstr "工具提示文字"
+
+#: includes/cb_checkbox.php:63 includes/cb_date.php:119
+#: includes/cb_dropdown.php:63 includes/cb_email.php:71
+#: includes/cb_file_upload.php:87 includes/cb_password.php:70
+#: includes/cb_textarea.php:71 includes/cb_time.php:132
+msgid "Enter Tooltip"
+msgstr "中输入提示工具"
+
+#: includes/cb_checkbox.php:70 includes/cb_checkbox.php:127
+msgid "Enter Options"
+msgstr "中输入期权"
+
+#: includes/cb_checkbox.php:70 includes/cb_dropdown.php:70
+#: includes/cb_multiple.php:69
+msgid "Add option"
+msgstr "添加选项"
+
+#: includes/cb_checkbox.php:81 includes/cb_dropdown.php:81
+#: includes/cb_file_upload.php:100 includes/cb_password.php:79
+#: includes/cb_time.php:141
+msgid "Admin Label"
+msgstr "管理员入口 的标签"
+
+#: includes/cb_checkbox.php:83 includes/cb_date.php:130
+#: includes/cb_dropdown.php:83 includes/cb_email.php:83
+#: includes/cb_file_upload.php:102 includes/cb_multiple.php:82
+#: includes/cb_password.php:81 includes/cb_time.php:143
+msgid "Enter Admin Label"
+msgstr "中输入 管理员入口 的标签"
+
+#: includes/cb_checkbox.php:87 includes/cb_date.php:134
+#: includes/cb_dropdown.php:87 includes/cb_email.php:87
+#: includes/cb_file_upload.php:106 includes/cb_hidden.php:60
+#: includes/cb_multiple.php:86 includes/cb_password.php:85
+#: includes/cb_text.php:89 includes/cb_textarea.php:97
+#: includes/cb_time.php:147
+msgid "Do not show in the email"
+msgstr "办 未 表明 电子邮件"
+
+#: includes/cb_checkbox.php:97 includes/cb_multiple.php:96
+msgid "Css Label :"
+msgstr "CSS标签："
+
+#: includes/cb_checkbox.php:99 includes/cb_date.php:196
+#: includes/cb_dropdown.php:99 includes/cb_email.php:100
+#: includes/cb_file_upload.php:145 includes/cb_multiple.php:98
+#: includes/cb_password.php:97 includes/cb_text.php:101
+#: includes/cb_time.php:251
+msgid "Enter Css Label"
+msgstr "输入CSS标签"
+
+#: includes/cb_checkbox.php:104
+msgid "CSS Description :"
+msgstr "CSS的描述："
+
+#: includes/cb_checkbox.php:106 includes/cb_date.php:210
+#: includes/cb_dropdown.php:113 includes/cb_email.php:114
+#: includes/cb_file_upload.php:152 includes/cb_multiple.php:105
+#: includes/cb_password.php:112 includes/cb_text.php:115
+#: includes/cb_time.php:265
+msgid "Enter Css Description"
+msgstr "输入 CSS 的描述 "
+
+#: includes/cb_checkbox.php:111
+msgid "CSS Options outer wrapper :"
+msgstr "CSS选项外层的包装器："
+
+#: includes/cb_checkbox.php:113
+msgid "Enter Css Outer Wrapper"
+msgstr "输入CSS外侧包皮"
+
+#: includes/cb_checkbox.php:118
+msgid "CSS Option Wrapper :"
+msgstr "CSS选项包装器："
+
+#: includes/cb_checkbox.php:120
+msgid "Enter Css Option Wrapper"
+msgstr "输入CSS选项包装器"
+
+#: includes/cb_checkbox.php:125
+msgid "CSS Options Label :"
+msgstr "CSS选配件标签："
+
+#: includes/cb_checkbox.php:132 includes/cb_date.php:236
+#: includes/cb_dropdown.php:118 includes/cb_email.php:119
+#: includes/cb_file_upload.php:157 includes/cb_multiple.php:131
+#: includes/cb_password.php:117 includes/cb_text.php:120
+#: includes/cb_textarea.php:128 includes/cb_time.php:291
+msgid "Add a style to"
+msgstr "风格添加至"
+
+#: includes/cb_checkbox.php:135 includes/cb_date.php:104
+#: includes/cb_date.php:240 includes/cb_dropdown.php:122
+#: includes/cb_email.php:56 includes/cb_email.php:123
+#: includes/cb_file_upload.php:72 includes/cb_file_upload.php:160
+#: includes/cb_multiple.php:134 includes/cb_password.php:55
+#: includes/cb_password.php:121 includes/cb_text.php:54
+#: includes/cb_text.php:124 includes/cb_textarea.php:56
+#: includes/cb_textarea.php:132 includes/cb_time.php:117
+#: includes/cb_time.php:295
+msgid "Description"
+msgstr "的描述"
+
+#: includes/cb_checkbox.php:136 includes/cb_multiple.php:135
+msgid "Options outer wrapper"
+msgstr "选项外层包装器"
+
+#: includes/cb_checkbox.php:137
+msgid "Options wrapper"
+msgstr "选项包装器"
+
+#: includes/cb_checkbox.php:138 includes/cb_multiple.php:137
+msgid "Options label"
+msgstr "选项-标签"
+
+#: includes/cb_checkbox.php:148 includes/cb_date.php:253
+#: includes/cb_dropdown.php:132 includes/cb_email.php:143
+#: includes/cb_file_upload.php:170 includes/cb_hidden.php:72
+#: includes/cb_multiple.php:147 includes/cb_password.php:141
+#: includes/cb_text.php:144 includes/cb_textarea.php:152
+#: includes/cb_time.php:308 views/contact_email.php:183
+#: views/contact_view.php:34 views/edit_contact_view.php:83
+msgid "Save"
+msgstr "节省"
+
+#: includes/cb_checkbox.php:202 includes/cb_checkbox.php:267
+#: includes/cb_dropdown.php:228 includes/cb_dropdown.php:278
+#: includes/cb_multiple.php:202 includes/cb_multiple.php:268
+msgid "Update"
+msgstr "更新"
+
+#: includes/cb_checkbox.php:256 includes/cb_dropdown.php:270
+#: includes/cb_multiple.php:257
+msgid "Please Fill an Option."
+msgstr "请填充股权。"
+
+#: includes/cb_checkbox.php:272 includes/cb_multiple.php:273
+msgid "This Option Already Exists."
+msgstr "这个选项中已存在。"
+
+#: includes/cb_checkbox.php:294 includes/cb_dropdown.php:286
+#: includes/cb_dropdown.php:308 includes/cb_multiple.php:295
+msgid "This Option Already Exists. "
+msgstr "这个选项中已存在。"
+
+#: includes/cb_checkbox.php:305 includes/cb_dropdown.php:319
+#: includes/cb_multiple.php:306
+msgid "Option updated"
+msgstr "选项更新日期"
+
+#: includes/cb_date.php:8 includes/cb_date.php:100 includes/cb_date.php:130
+#: views/contact_view.php:66 views/edit_contact_view.php:114
+#: views/edit_contact_view.php:1421
+msgid "Date"
+msgstr "日期"
+
+#: includes/cb_date.php:12 includes/cb_date.php:155 includes/cb_date.php:308
+#: includes/cb_date.php:380 views/contact_bank_frontend.php:679
+msgid "Day"
+msgstr "天"
+
+#: includes/cb_date.php:32 includes/cb_date.php:159 includes/cb_date.php:323
+#: includes/cb_date.php:395 views/contact_bank_frontend.php:707
+msgid "Month"
+msgstr "月"
+
+#: includes/cb_date.php:47 includes/cb_date.php:162 includes/cb_date.php:357
+#: includes/cb_date.php:417 views/contact_bank_frontend.php:729
+msgid "Year"
+msgstr "年"
+
+#: includes/cb_date.php:79
+msgid "Date Control"
+msgstr "日期控件"
+
+#: includes/cb_date.php:106 includes/cb_email.php:58
+#: includes/cb_file_upload.php:74 includes/cb_password.php:57
+#: includes/cb_text.php:56 includes/cb_time.php:119
+msgid "Enter Description"
+msgstr "输入的描述"
+
+#: includes/cb_date.php:128 includes/cb_email.php:81 includes/cb_hidden.php:54
+#: includes/cb_multiple.php:80 includes/cb_text.php:83
+#: includes/cb_textarea.php:91
+msgid "Admin label"
+msgstr "管理员入口标签"
+
+#: includes/cb_date.php:140
+msgid "Start year"
+msgstr "开始年份"
+
+#: includes/cb_date.php:142
+msgid "Enter Start Year"
+msgstr "输入开始年份"
+
+#: includes/cb_date.php:146
+msgid "End year"
+msgstr "结束年内"
+
+#: includes/cb_date.php:148
+msgid "Enter End Year "
+msgstr "输入结束年份"
+
+#: includes/cb_date.php:152 includes/cb_text.php:77
+#: includes/cb_textarea.php:85 includes/cb_time.php:175
+msgid "Default value"
+msgstr "默认价值"
+
+#: includes/cb_date.php:167
+msgid "Error message if invalid date"
+msgstr "错误消息，如果无效的日期"
+
+#: includes/cb_date.php:169
+msgid "Enter Error Message"
+msgstr "输入的错误讯息"
+
+#: includes/cb_date.php:173
+msgid "Date format"
+msgstr "日期格式"
+
+#: includes/cb_date.php:194 includes/cb_dropdown.php:97
+#: includes/cb_email.php:98 includes/cb_file_upload.php:143
+#: includes/cb_password.php:95 includes/cb_text.php:99
+#: includes/cb_time.php:249
+msgid "Css Label"
+msgstr "CSS标签"
+
+#: includes/cb_date.php:201 includes/cb_email.php:105 includes/cb_time.php:256
+msgid "Css Text Input"
+msgstr "CSS文本输入"
+
+#: includes/cb_date.php:203 includes/cb_text.php:108 includes/cb_time.php:258
+msgid "Enter Css Text Input"
+msgstr "输入CSS文本输入"
+
+#: includes/cb_date.php:208 includes/cb_dropdown.php:111
+#: includes/cb_email.php:112 includes/cb_file_upload.php:150
+#: includes/cb_password.php:110 includes/cb_time.php:263
+msgid "Css Description"
+msgstr "css的描述"
+
+#: includes/cb_date.php:215
+msgid "Css Day"
+msgstr "CSS天"
+
+#: includes/cb_date.php:217
+msgid "Enter Css Day"
+msgstr "中输入CSS日"
+
+#: includes/cb_date.php:222
+msgid "Css Month"
+msgstr "css月"
+
+#: includes/cb_date.php:224
+msgid "Enter Css Month"
+msgstr "中输入CSS月"
+
+#: includes/cb_date.php:229
+msgid "Css Year"
+msgstr "css的年份"
+
+#: includes/cb_date.php:231
+msgid "Enter Css Year"
+msgstr "中输入CSS年"
+
+#: includes/cb_date.php:239 includes/cb_email.php:122
+#: includes/cb_password.php:120 includes/cb_textarea.php:131
+#: includes/cb_time.php:294
+msgid "Text input"
+msgstr "文字输入"
+
+#: includes/cb_date.php:241
+msgid "Date day dropdown"
+msgstr "日期  日子下拉式 "
+
+#: includes/cb_date.php:242
+msgid "Date month dropdown"
+msgstr "日期个月下拉式"
+
+#: includes/cb_date.php:243
+msgid "Date year dropdown"
+msgstr "日期年内下拉式"
+
+#: includes/cb_dropdown.php:12 includes/cb_dropdown.php:344
+#: views/contact_bank_frontend.php:385 views/contact_bank_frontend.php:398
+msgid "Select option"
+msgstr "选择选项"
+
+#: includes/cb_dropdown.php:29
+msgid "Dropdown Control"
+msgstr "下拉式控制"
+
+#: includes/cb_dropdown.php:70 includes/cb_multiple.php:69
+msgid "Enter Option"
+msgstr "中输入选项"
+
+#: includes/cb_dropdown.php:104
+msgid "Css Dropdown Menu"
+msgstr "CSS下拉菜单"
+
+#: includes/cb_dropdown.php:106
+msgid "Enter Css Dropdown Menu"
+msgstr "回车CSS下拉菜单"
+
+#: includes/cb_dropdown.php:121
+msgid "Dropdown menu"
+msgstr "下拉菜单"
+
+#: includes/cb_email.php:9 includes/cb_email.php:52 includes/cb_email.php:83
+#: views/contact_email.php:72 views/contact_email.php:138
+#: views/edit_contact_view.php:1113
+msgid "Email"
+msgstr "电子邮件"
+
+#: includes/cb_email.php:30
+msgid "Email Control"
+msgstr "电子邮件控件"
+
+#: includes/cb_email.php:107 includes/cb_password.php:105
+msgid "Enter Css Input Text"
+msgstr "回车CSS输入文字"
+
+#: includes/cb_email.php:127 includes/cb_password.php:125
+#: includes/cb_text.php:128 includes/cb_textarea.php:136
+msgid "Add a filter"
+msgstr "添加一个过滤器"
+
+#: includes/cb_email.php:129 includes/cb_password.php:127
+#: includes/cb_text.php:130 includes/cb_textarea.php:138
+msgid "Alpha"
+msgstr "阿尔法"
+
+#: includes/cb_email.php:130 includes/cb_password.php:128
+#: includes/cb_text.php:131 includes/cb_textarea.php:139
+msgid "Alpha Numeric"
+msgstr "字母数字"
+
+#: includes/cb_email.php:131 includes/cb_password.php:129
+#: includes/cb_text.php:132 includes/cb_textarea.php:140
+msgid "Digits"
+msgstr "位数字"
+
+#: includes/cb_email.php:132 includes/cb_password.php:130
+#: includes/cb_text.php:133 includes/cb_textarea.php:141
+msgid "Strip Tags"
+msgstr "地带标签"
+
+#: includes/cb_email.php:133 includes/cb_password.php:131
+#: includes/cb_text.php:134 includes/cb_textarea.php:142
+msgid "Trim"
+msgstr "修剪"
+
+#: includes/cb_file_upload.php:9 includes/cb_file_upload.php:68
+#: includes/cb_file_upload.php:102 views/contact_view.php:63
+#: views/edit_contact_view.php:111 views/edit_contact_view.php:1374
+msgid "File Upload"
+msgstr "文件上传"
+
+#: includes/cb_file_upload.php:46
+msgid "Fileupload Control"
+msgstr "的文件上传控件"
+
+#: includes/cb_file_upload.php:112
+msgid "Allow Multiple Uploads"
+msgstr "允许多个上传"
+
+#: includes/cb_file_upload.php:118
+msgid "Allowed File Extensions"
+msgstr "宠物的文件扩展名"
+
+#: includes/cb_file_upload.php:120
+msgid "Enter File Extensions"
+msgstr "回车文件扩展"
+
+#: includes/cb_file_upload.php:122
+msgid "The file extensions must be seperated with semicolons(' ; ')"
+msgstr "分隔的文件扩展名必须用分号（';'）"
+
+#: includes/cb_file_upload.php:126
+msgid "Allowed File Size"
+msgstr "允许文件大小"
+
+#: includes/cb_file_upload.php:130
+msgid "File Size must be in Kb"
+msgstr "文件大小必须在KB"
+
+#: includes/cb_hidden.php:8
+msgid "Untitled (hidden)"
+msgstr "无题（隐藏）"
+
+#: includes/cb_hidden.php:11 views/contact_bank_frontend.php:952
+#: views/contact_view.php:72 views/edit_contact_view.php:120
+msgid "Hidden"
+msgstr "隐"
+
+#: includes/cb_hidden.php:29
+msgid "Hidden Control"
+msgstr "隐藏式的控制"
+
+#: includes/cb_hidden.php:44 includes/cb_hidden.php:56
+#: views/edit_contact_view.php:1619
+msgid "Untitled(hidden)"
+msgstr "无题（隐藏）"
+
+#: includes/cb_hidden.php:48
+msgid "Default Value"
+msgstr "默认价值"
+
+#: includes/cb_hidden.php:50 includes/cb_text.php:79
+msgid "Enter Default Value"
+msgstr "回车默认价值"
+
+#: includes/cb_hidden.php:56 includes/cb_text.php:85
+#: includes/cb_textarea.php:93
+msgid "Enter Admin label"
+msgstr "回车管理员入口的标签"
+
+#: includes/cb_multiple.php:28
+msgid "Radio Buttons"
+msgstr "单选按钮"
+
+#: includes/cb_multiple.php:62 includes/cb_text.php:69
+msgid "Enter Tooltip Text"
+msgstr "回车工具提示文本"
+
+#: includes/cb_multiple.php:103
+msgid "Css Description :"
+msgstr "CSS说明："
+
+#: includes/cb_multiple.php:110
+msgid "Css Options outer wrapper :"
+msgstr "CSS购股权外层的包装器："
+
+#: includes/cb_multiple.php:112
+msgid "Enter Css Options outer wrapper"
+msgstr "回车CSS购股权外层包装器"
+
+#: includes/cb_multiple.php:117
+msgid "CSS Options Wrapper :"
+msgstr "CSS购股权包装器："
+
+#: includes/cb_multiple.php:119
+msgid "Enter Css Options Wrapper"
+msgstr "回车CSS选项包装器"
+
+#: includes/cb_multiple.php:124
+msgid "CSS Option Label :"
+msgstr "CSS选项标签："
+
+#: includes/cb_multiple.php:126
+msgid "Enter Css Option Label"
+msgstr "回车CSS选项标签"
+
+#: includes/cb_multiple.php:136
+msgid "Options  wrapper"
+msgstr "购股权包装器"
+
+#: includes/cb_password.php:8 includes/cb_password.php:51
+#: includes/cb_password.php:81 views/contact_view.php:75
+#: views/edit_contact_view.php:123 views/edit_contact_view.php:1629
+msgid "Password"
+msgstr "密码"
+
+#: includes/cb_password.php:29
+msgid "Password Control"
+msgstr "密码控制"
+
+#: includes/cb_password.php:103
+msgid "Css Input Text"
+msgstr "CSS输入文本"
+
+#: includes/cb_text.php:29
+msgid "Textbox Control"
+msgstr "文本框控件"
+
+#: includes/cb_text.php:106
+msgid " Css Text Input"
+msgstr "CSS文本输入"
+
+#: includes/cb_text.php:113
+msgid " Css Description"
+msgstr "css的描述"
+
+#: includes/cb_text.php:123
+msgid "Text Input"
+msgstr "文字输入"
+
+#: includes/cb_textarea.php:30
+msgid "Textarea Control"
+msgstr "文本区域控制"
+
+#: includes/cb_textarea.php:52
+msgid "Enter label"
+msgstr "回车的标签"
+
+#: includes/cb_textarea.php:58
+msgid "Enter  Description"
+msgstr "输入的描述"
+
+#: includes/cb_textarea.php:69
+msgid "Tooltip text"
+msgstr "工具提示文本"
+
+#: includes/cb_textarea.php:87
+msgid "Enter Default value"
+msgstr "回车默认值"
+
+#: includes/cb_textarea.php:107
+msgid "CSS label"
+msgstr "CSS的标签"
+
+#: includes/cb_textarea.php:109
+msgid "Enter css Label"
+msgstr "回车CSS标签"
+
+#: includes/cb_textarea.php:114
+msgid "CSS textinput"
+msgstr "CSS文本输入"
+
+#: includes/cb_textarea.php:116
+msgid "Enter css textinput"
+msgstr "回车CSS文本输入"
+
+#: includes/cb_textarea.php:121
+msgid "CSS description"
+msgstr "CSS描述"
+
+#: includes/cb_textarea.php:123
+msgid "Enter css description"
+msgstr "回车CSS描述"
+
+#: includes/cb_time.php:8 includes/cb_time.php:113 includes/cb_time.php:143
+#: views/contact_view.php:69 views/edit_contact_view.php:117
+#: views/edit_contact_view.php:1514
+msgid "Time"
+msgstr "时间"
+
+#: includes/cb_time.php:12 includes/cb_time.php:32 includes/cb_time.php:178
+#: includes/cb_time.php:198 views/contact_bank_frontend.php:821
+#: views/contact_bank_frontend.php:847 views/contact_bank_frontend.php:873
+msgid "Hour"
+msgstr "小时"
+
+#: includes/cb_time.php:52 includes/cb_time.php:218
+#: views/contact_bank_frontend.php:897
+msgid "Minute"
+msgstr "分钟"
+
+#: includes/cb_time.php:92
+msgid "Time Control"
+msgstr "时间控制"
+
+#: includes/cb_time.php:153
+msgid "12/24 hour time"
+msgstr "12/24小时制时间"
+
+#: includes/cb_time.php:162
+msgid "Time format"
+msgstr "时间格式"
+
+#: includes/cb_time.php:270
+msgid "Css Hour"
+msgstr "css hour"
+
+#: includes/cb_time.php:272
+msgid "Enter Css Hour"
+msgstr "回车CSS小时"
+
+#: includes/cb_time.php:277
+msgid "Css Minute"
+msgstr "css分钟"
+
+#: includes/cb_time.php:279
+msgid "Enter Css Minute"
+msgstr "回车CSS分钟"
+
+#: includes/cb_time.php:284
+msgid "Css am/pm"
+msgstr "CSS上午/下午"
+
+#: includes/cb_time.php:286
+msgid "Enter Css am/pm"
+msgstr "回车CSS上午/下午"
+
+#: includes/cb_time.php:296
+msgid "Time hour dropdown"
+msgstr "下拉菜时间小时"
+
+#: includes/cb_time.php:297
+msgid "Time minute dropdown"
+msgstr "时间分钟下拉菜单"
+
+#: includes/cb_time.php:298
+msgid "Time am/pm dropdown"
+msgstr "时间上午/下午下拉式"
+
+#: views/contact_bank_frontend.php:153
+msgid "Enter Text"
+msgstr "回车文字"
+
+#: views/contact_bank_frontend.php:342 views/contact_email.php:84
+#: views/contact_email.php:144
+msgid "Enter Email Address"
+msgstr "输入电邮地址"
+
+#: views/contact_bank_frontend.php:952
+msgid "Enter Hidden Text"
+msgstr "回车隐藏文本"
+
+#: views/contact_bank_frontend.php:1040
+msgid "Enter Password"
+msgstr "输入密码"
+
+#: views/contact_bank_frontend.php:1051
+msgid "Submit Form"
+msgstr "提交表单"
+
+#: views/contact_email.php:9 views/contact_frontend_data.php:8
+#: views/contact_view.php:9 views/edit_contact_view.php:31
+msgid "Back to Dashboard"
+msgstr "回到仪表板"
+
+#: views/contact_email.php:13
+msgid "Email Settings Saved. Kindly wait for the redirect."
+msgstr "电子邮件设置已保存。请等待重定向。"
+
+#: views/contact_email.php:18 views/contact_email.php:49
+#: views/contact_frontend_data.php:19 views/contact_frontend_data.php:32
+msgid "Select Form"
+msgstr "选取形式"
+
+#: views/contact_email.php:65
+msgid "Admin Email"
+msgstr "管理者邮箱"
+
+#: views/contact_email.php:76
+msgid "To"
+msgstr "至"
+
+#: views/contact_email.php:78
+msgid "Enter Admin Email"
+msgstr "回车管理员入口的电子邮件"
+
+#: views/contact_email.php:82 views/contact_email.php:142
+msgid "From"
+msgstr "从"
+
+#: views/contact_email.php:89 views/contact_email.php:148
+msgid "Subject"
+msgstr "主体"
+
+#: views/contact_email.php:91 views/contact_email.php:150
+msgid "Enter Subject"
+msgstr "输入主题"
+
+#: views/contact_email.php:100 views/contact_email.php:160
+msgid "Email Content"
+msgstr "电子邮件内容"
+
+#: views/contact_email.php:115 views/contact_email.php:175
+msgid "Short Code Controls for Email"
+msgstr "短代码控制电子邮件"
+
+#: views/contact_email.php:129
+msgid "Client Email"
+msgstr "客户端电子邮件"
+
+#: views/contact_frontend_data.php:14 views/contact_view.php:20
+#: views/dashboard.php:15 views/dashboard.php:21
+msgid "Form"
+msgstr "形式"
+
+#: views/contact_view.php:13
+msgid "Form Submited. Kindly wait for the redirect."
+msgstr "表单提交。请等待重定向。"
+
+#: views/contact_view.php:24 views/edit_contact_view.php:46
+msgid "Form Name :"
+msgstr "表格姓名："
+
+#: views/contact_view.php:27 views/edit_contact_view.php:49
+msgid "Enter Form Name"
+msgstr "回车形式名"
+
+#: views/contact_view.php:40 views/edit_contact_view.php:89
+msgid "Control Buttons"
+msgstr "控制按钮"
+
+#: views/contact_view.php:45 views/edit_contact_view.php:93
+msgid "Text Box"
+msgstr "文本框"
+
+#: views/contact_view.php:48 views/edit_contact_view.php:96
+msgid "Text Area"
+msgstr "文本区域"
+
+#: views/contact_view.php:51 views/edit_contact_view.php:99
+msgid "Email Address"
+msgstr "电子邮件地址"
+
+#: views/contact_view.php:54 views/edit_contact_view.php:102
+msgid "Dropdown Menu"
+msgstr "下拉菜单"
+
+#: views/contact_view.php:57 views/edit_contact_view.php:105
+msgid "Checkboxes"
+msgstr "复选框"
+
+#: views/contact_view.php:60 views/edit_contact_view.php:108
+msgid "Multiple Choice"
+msgstr "选择题"
+
+#: views/dashboard.php:5
+msgid "Dashboard - Contact Bank"
+msgstr "控制板 - 联络银行"
+
+#: views/dashboard.php:9
+msgid "Delete All Forms"
+msgstr "删除的所有窗体"
+
+#: views/dashboard.php:22
+msgid "Shortcode"
+msgstr "短码"
+
+#: views/dashboard.php:23
+msgid "Action"
+msgstr "行动"
+
+#: views/dashboard.php:43
+msgid "Edit"
+msgstr "编辑"
+
+#: views/dashboard.php:46
+msgid "Delete"
+msgstr "删除"
+
+#: views/dashboard.php:62
+msgid "Server Settings"
+msgstr "服务器设置"
+
+#: views/dashboard.php:73
+msgid "Not set"
+msgstr "未设置"
+
+#: views/dashboard.php:75 views/dashboard.php:78
+msgid "On"
+msgstr "上"
+
+#: views/dashboard.php:76 views/dashboard.php:79
+msgid "Off"
+msgstr ""
+
+#: views/dashboard.php:82 views/dashboard.php:85 views/dashboard.php:88
+#: views/dashboard.php:91 views/dashboard.php:94 views/dashboard.php:97
+msgid "N/A"
+msgstr ""
+
+#: views/dashboard.php:96
+msgid " MByte"
+msgstr "兆字节"
+
+#: views/dashboard.php:99 views/dashboard.php:102 views/dashboard.php:105
+#: views/dashboard.php:155
+msgid "Yes"
+msgstr "是的"
+
+#: views/dashboard.php:100 views/dashboard.php:103 views/dashboard.php:106
+#: views/dashboard.php:157
+msgid "No"
+msgstr "无"
+
+#: views/dashboard.php:108
+msgid "Operating System"
+msgstr "操作系统"
+
+#: views/dashboard.php:109
+msgid "Server"
+msgstr "服务器"
+
+#: views/dashboard.php:110
+msgid "Memory usage"
+msgstr "内存使用率"
+
+#: views/dashboard.php:111
+msgid "MYSQL Version"
+msgstr "MySQL版本"
+
+#: views/dashboard.php:112
+msgid "SQL Mode"
+msgstr "SQL模式"
+
+#: views/dashboard.php:113
+msgid "PHP Version"
+msgstr "PHP版本"
+
+#: views/dashboard.php:114
+msgid "PHP Safe Mode"
+msgstr "PHP的安全模式"
+
+#: views/dashboard.php:115
+msgid "PHP Allow URL fopen"
+msgstr "PHP允许URL FOPEN"
+
+#: views/dashboard.php:116
+msgid "PHP Memory Limit"
+msgstr "PHP内存限制"
+
+#: views/dashboard.php:117
+msgid "PHP Max Upload Size"
+msgstr "PHP最大上传大小"
+
+#: views/dashboard.php:118
+msgid "PHP Max Post Size"
+msgstr "PHP最大尺寸帖子"
+
+#: views/dashboard.php:119
+msgid "PCRE Backtracking Limit"
+msgstr "PCRE回溯限制"
+
+#: views/dashboard.php:120
+msgid "PHP Max Script Execute Time"
+msgstr "PHP的最大脚本执行时间"
+
+#: views/dashboard.php:121
+msgid "PHP Exif support"
+msgstr "PHP EXIF支持"
+
+#: views/dashboard.php:122
+msgid "PHP IPTC support"
+msgstr "PHP IPTC 支持"
+
+#: views/dashboard.php:123
+msgid "PHP XML support"
+msgstr "PHP XML支持"
+
+#: views/dashboard.php:131
+msgid "Graphic Library Settings"
+msgstr "图形库设置"
+
+#: views/dashboard.php:150
+msgid "No GD support"
+msgstr "无支持GD"
+
+#: views/dashboard.php:186
+msgid "Are you sure to delete this form ?"
+msgstr "你确定要删除这种形式？"
+
+#: views/dashboard.php:197
+msgid "Are you sure to delete all forms ?"
+msgstr "都是 你一定要删除所有形式？"
+
+#: views/edit_contact_view.php:28
+msgid "Edit Existing Form"
+msgstr "编辑现有的形式"
+
+#: views/edit_contact_view.php:35
+msgid "Form Updated. Kindly wait for the redirect."
+msgstr "形式更新时间。请等待重定向。"
+
+#: views/edit_contact_view.php:42
+msgid "Edit Form"
+msgstr "编辑表单"
+
+#: views/edit_contact_view.php:289 views/edit_contact_view.php:324
+#: views/edit_contact_view.php:393 views/edit_contact_view.php:442
+#: views/edit_contact_view.php:490
+msgid "Untitled :"
+msgstr "无题："
+
+#: views/edit_contact_view.php:359
+msgid "Email :"
+msgstr "电子邮件："
+
+#: views/edit_contact_view.php:539
+msgid "File Upload :"
+msgstr "文件上传："
+
+#: views/edit_contact_view.php:586
+msgid "Date :"
+msgstr "日期："
+
+#: views/edit_contact_view.php:657
+msgid "Time :"
+msgstr "时间："
+
+#: views/edit_contact_view.php:715
+msgid "Untitled(hidden) :"
+msgstr "无题（隐藏）："
+
+#: views/edit_contact_view.php:747
+msgid "Password : "
+msgstr "密码："
+
+#: views/edit_contact_view.php:1398
+msgid "1024"
+msgstr ""
+
+#~ msgid "Enter Defualt value"
+#~ msgstr "输入默认价值"

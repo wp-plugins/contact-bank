@@ -1,0 +1,1031 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2013-11-16 12:08+0530\n"
+"PO-Revision-Date: 2013-11-16 16:00+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: C:\\wamp\\www\\contact-bank3.7\\wp-content\\plugins"
+"\\contact-bank\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: contact-bank.php:62
+msgid "Contact Bank"
+msgstr ""
+
+#: contact-bank.php:63 contact-bank.php:431
+msgid "Dashboard"
+msgstr "přístrojová deska"
+
+#: contact-bank.php:64 contact-bank.php:437 views/contact_view.php:6
+#: views/dashboard.php:8
+msgid "Add New Form"
+msgstr "Přidat nový formulář"
+
+#: contact-bank.php:65 contact-bank.php:443 views/contact_email.php:6
+msgid "Email Settings"
+msgstr "elektronickou połtu"
+
+#: contact-bank.php:66 contact-bank.php:449 views/contact_frontend_data.php:5
+msgid "Form Entries"
+msgstr "Formulář-vjezd"
+
+#: includes/cb_checkbox.php:8 includes/cb_checkbox.php:50
+#: includes/cb_checkbox.php:83 includes/cb_dropdown.php:8
+#: includes/cb_dropdown.php:50 includes/cb_dropdown.php:83
+#: includes/cb_multiple.php:8 includes/cb_multiple.php:49
+#: includes/cb_multiple.php:82 includes/cb_text.php:8 includes/cb_text.php:50
+#: includes/cb_text.php:85 includes/cb_textarea.php:9
+#: includes/cb_textarea.php:52 includes/cb_textarea.php:93
+#: views/edit_contact_view.php:992 views/edit_contact_view.php:1050
+#: views/edit_contact_view.php:1179 views/edit_contact_view.php:1235
+#: views/edit_contact_view.php:1305
+msgid "Untitled"
+msgstr "Bez názvu"
+
+#: includes/cb_checkbox.php:13 includes/cb_checkbox.php:42
+#: includes/cb_date.php:62 includes/cb_date.php:92 includes/cb_dropdown.php:14
+#: includes/cb_dropdown.php:42 includes/cb_email.php:13
+#: includes/cb_email.php:44 includes/cb_file_upload.php:12
+#: includes/cb_file_upload.php:60 includes/cb_hidden.php:12
+#: includes/cb_multiple.php:13 includes/cb_multiple.php:41
+#: includes/cb_password.php:12 includes/cb_password.php:43
+#: includes/cb_text.php:12 includes/cb_text.php:42 includes/cb_textarea.php:13
+#: includes/cb_textarea.php:44 includes/cb_time.php:75
+#: includes/cb_time.php:105
+msgid "Settings"
+msgstr "seřízení"
+
+#: includes/cb_checkbox.php:29
+msgid "Checkbox Control"
+msgstr "ovladač Zaškrtávací políčko"
+
+#: includes/cb_checkbox.php:36 includes/cb_date.php:86
+#: includes/cb_dropdown.php:36 includes/cb_email.php:38
+#: includes/cb_file_upload.php:54 includes/cb_hidden.php:36
+#: includes/cb_multiple.php:35 includes/cb_password.php:37
+#: includes/cb_text.php:36 includes/cb_textarea.php:38 includes/cb_time.php:99
+msgid "Advanced"
+msgstr "pokročilý"
+
+#: includes/cb_checkbox.php:39 includes/cb_checkbox.php:68
+#: includes/cb_date.php:89 includes/cb_dropdown.php:39
+#: includes/cb_dropdown.php:68 includes/cb_email.php:41
+#: includes/cb_file_upload.php:57 includes/cb_multiple.php:38
+#: includes/cb_multiple.php:67 includes/cb_password.php:40
+#: includes/cb_text.php:39 includes/cb_textarea.php:41
+#: includes/cb_time.php:102
+msgid "Options"
+msgstr "Možnosti"
+
+#: includes/cb_checkbox.php:48 includes/cb_checkbox.php:134
+#: includes/cb_date.php:98 includes/cb_date.php:238
+#: includes/cb_dropdown.php:48 includes/cb_dropdown.php:120
+#: includes/cb_email.php:50 includes/cb_email.php:121
+#: includes/cb_file_upload.php:66 includes/cb_file_upload.php:159
+#: includes/cb_hidden.php:42 includes/cb_multiple.php:47
+#: includes/cb_multiple.php:133 includes/cb_password.php:49
+#: includes/cb_password.php:119 includes/cb_text.php:48
+#: includes/cb_text.php:122 includes/cb_textarea.php:50
+#: includes/cb_textarea.php:130 includes/cb_time.php:111
+#: includes/cb_time.php:293
+msgid "Label"
+msgstr "štítek"
+
+#: includes/cb_checkbox.php:50 includes/cb_date.php:100
+#: includes/cb_dropdown.php:50 includes/cb_email.php:52
+#: includes/cb_file_upload.php:68 includes/cb_hidden.php:44
+#: includes/cb_multiple.php:49 includes/cb_password.php:51
+#: includes/cb_text.php:50 includes/cb_time.php:113
+msgid "Enter Label"
+msgstr "Zadejte štítek"
+
+#: includes/cb_checkbox.php:54 includes/cb_checkbox.php:56
+#: includes/cb_date.php:110 includes/cb_date.php:112
+#: includes/cb_dropdown.php:54 includes/cb_dropdown.php:56
+#: includes/cb_email.php:62 includes/cb_email.php:64
+#: includes/cb_file_upload.php:78 includes/cb_file_upload.php:80
+#: includes/cb_multiple.php:53 includes/cb_multiple.php:55
+#: includes/cb_password.php:61 includes/cb_password.php:63
+#: includes/cb_text.php:60 includes/cb_text.php:62 includes/cb_textarea.php:62
+#: includes/cb_textarea.php:64 includes/cb_time.php:123
+#: includes/cb_time.php:125
+msgid "Required"
+msgstr "potřebný"
+
+#: includes/cb_checkbox.php:57 includes/cb_date.php:113
+#: includes/cb_dropdown.php:57 includes/cb_email.php:65
+#: includes/cb_file_upload.php:81 includes/cb_multiple.php:56
+#: includes/cb_password.php:64 includes/cb_text.php:63
+#: includes/cb_textarea.php:65 includes/cb_time.php:126
+msgid "Not Required"
+msgstr "není požadováno"
+
+#: includes/cb_checkbox.php:61 includes/cb_date.php:117
+#: includes/cb_dropdown.php:61 includes/cb_email.php:69
+#: includes/cb_file_upload.php:85 includes/cb_multiple.php:60
+#: includes/cb_password.php:68 includes/cb_text.php:67
+#: includes/cb_time.php:130
+msgid "Tooltip Text"
+msgstr "nápovědný-odkazová"
+
+#: includes/cb_checkbox.php:63 includes/cb_date.php:119
+#: includes/cb_dropdown.php:63 includes/cb_email.php:71
+#: includes/cb_file_upload.php:87 includes/cb_password.php:70
+#: includes/cb_textarea.php:71 includes/cb_time.php:132
+msgid "Enter Tooltip"
+msgstr "vstoupit nápovědný"
+
+#: includes/cb_checkbox.php:70 includes/cb_checkbox.php:127
+msgid "Enter Options"
+msgstr "vstoupit Možnosti"
+
+#: includes/cb_checkbox.php:70 includes/cb_dropdown.php:70
+#: includes/cb_multiple.php:69
+msgid "Add option"
+msgstr "Přidat možnost"
+
+#: includes/cb_checkbox.php:81 includes/cb_dropdown.php:81
+#: includes/cb_file_upload.php:100 includes/cb_password.php:79
+#: includes/cb_time.php:141
+msgid "Admin Label"
+msgstr "bebey štítku"
+
+#: includes/cb_checkbox.php:83 includes/cb_date.php:130
+#: includes/cb_dropdown.php:83 includes/cb_email.php:83
+#: includes/cb_file_upload.php:102 includes/cb_multiple.php:82
+#: includes/cb_password.php:81 includes/cb_time.php:143
+msgid "Enter Admin Label"
+msgstr "vstoupit bebey štítku"
+
+#: includes/cb_checkbox.php:87 includes/cb_date.php:134
+#: includes/cb_dropdown.php:87 includes/cb_email.php:87
+#: includes/cb_file_upload.php:106 includes/cb_hidden.php:60
+#: includes/cb_multiple.php:86 includes/cb_password.php:85
+#: includes/cb_text.php:89 includes/cb_textarea.php:97
+#: includes/cb_time.php:147
+msgid "Do not show in the email"
+msgstr "Nezobrazovat v e-mailu"
+
+#: includes/cb_checkbox.php:97 includes/cb_multiple.php:96
+msgid "Css Label :"
+msgstr "css štítku:"
+
+#: includes/cb_checkbox.php:99 includes/cb_date.php:196
+#: includes/cb_dropdown.php:99 includes/cb_email.php:100
+#: includes/cb_file_upload.php:145 includes/cb_multiple.php:98
+#: includes/cb_password.php:97 includes/cb_text.php:101
+#: includes/cb_time.php:251
+msgid "Enter Css Label"
+msgstr "Vstoupit,css štítku:"
+
+#: includes/cb_checkbox.php:104
+msgid "CSS Description :"
+msgstr "CSS Popis:"
+
+#: includes/cb_checkbox.php:106 includes/cb_date.php:210
+#: includes/cb_dropdown.php:113 includes/cb_email.php:114
+#: includes/cb_file_upload.php:152 includes/cb_multiple.php:105
+#: includes/cb_password.php:112 includes/cb_text.php:115
+#: includes/cb_time.php:265
+msgid "Enter Css Description"
+msgstr "Vstoupit CSS Popis:"
+
+#: includes/cb_checkbox.php:111
+msgid "CSS Options outer wrapper :"
+msgstr "CSS Možnosti vnějšího balič:"
+
+#: includes/cb_checkbox.php:113
+msgid "Enter Css Outer Wrapper"
+msgstr "Vstoupit CSS vnějšího balič:"
+
+#: includes/cb_checkbox.php:118
+msgid "CSS Option Wrapper :"
+msgstr "CSS možností krýt:"
+
+#: includes/cb_checkbox.php:120
+msgid "Enter Css Option Wrapper"
+msgstr "Vstoupit CSS možností krýt:"
+
+#: includes/cb_checkbox.php:125
+msgid "CSS Options Label :"
+msgstr "CSS Možností,etiketa:"
+
+#: includes/cb_checkbox.php:132 includes/cb_date.php:236
+#: includes/cb_dropdown.php:118 includes/cb_email.php:119
+#: includes/cb_file_upload.php:157 includes/cb_multiple.php:131
+#: includes/cb_password.php:117 includes/cb_text.php:120
+#: includes/cb_textarea.php:128 includes/cb_time.php:291
+msgid "Add a style to"
+msgstr "Přidat jeden styl na"
+
+#: includes/cb_checkbox.php:135 includes/cb_date.php:104
+#: includes/cb_date.php:240 includes/cb_dropdown.php:122
+#: includes/cb_email.php:56 includes/cb_email.php:123
+#: includes/cb_file_upload.php:72 includes/cb_file_upload.php:160
+#: includes/cb_multiple.php:134 includes/cb_password.php:55
+#: includes/cb_password.php:121 includes/cb_text.php:54
+#: includes/cb_text.php:124 includes/cb_textarea.php:56
+#: includes/cb_textarea.php:132 includes/cb_time.php:117
+#: includes/cb_time.php:295
+msgid "Description"
+msgstr "Popis"
+
+#: includes/cb_checkbox.php:136 includes/cb_multiple.php:135
+msgid "Options outer wrapper"
+msgstr "Možnosti vnějšího balič"
+
+#: includes/cb_checkbox.php:137
+msgid "Options wrapper"
+msgstr "Možnosti-zalomit"
+
+#: includes/cb_checkbox.php:138 includes/cb_multiple.php:137
+msgid "Options label"
+msgstr "Možnosti-štítku"
+
+#: includes/cb_checkbox.php:148 includes/cb_date.php:253
+#: includes/cb_dropdown.php:132 includes/cb_email.php:143
+#: includes/cb_file_upload.php:170 includes/cb_hidden.php:72
+#: includes/cb_multiple.php:147 includes/cb_password.php:141
+#: includes/cb_text.php:144 includes/cb_textarea.php:152
+#: includes/cb_time.php:308 views/contact_email.php:183
+#: views/contact_view.php:34 views/edit_contact_view.php:83
+msgid "Save"
+msgstr "uložit"
+
+#: includes/cb_checkbox.php:202 includes/cb_checkbox.php:267
+#: includes/cb_dropdown.php:228 includes/cb_dropdown.php:278
+#: includes/cb_multiple.php:202 includes/cb_multiple.php:268
+msgid "Update"
+msgstr "aktualizovat"
+
+#: includes/cb_checkbox.php:256 includes/cb_dropdown.php:270
+#: includes/cb_multiple.php:257
+msgid "Please Fill an Option."
+msgstr "Prosím, vyplňte možnost."
+
+#: includes/cb_checkbox.php:272 includes/cb_multiple.php:273
+msgid "This Option Already Exists."
+msgstr "Tato možnost již existuje."
+
+#: includes/cb_checkbox.php:294 includes/cb_dropdown.php:286
+#: includes/cb_dropdown.php:308 includes/cb_multiple.php:295
+msgid "This Option Already Exists. "
+msgstr "Tato možnost již existuje."
+
+#: includes/cb_checkbox.php:305 includes/cb_dropdown.php:319
+#: includes/cb_multiple.php:306
+msgid "Option updated"
+msgstr "Varianta aktualizovat"
+
+#: includes/cb_date.php:8 includes/cb_date.php:100 includes/cb_date.php:130
+#: views/contact_view.php:66 views/edit_contact_view.php:114
+#: views/edit_contact_view.php:1421
+msgid "Date"
+msgstr "datum"
+
+#: includes/cb_date.php:12 includes/cb_date.php:155 includes/cb_date.php:308
+#: includes/cb_date.php:380 views/contact_bank_frontend.php:679
+msgid "Day"
+msgstr "den"
+
+#: includes/cb_date.php:32 includes/cb_date.php:159 includes/cb_date.php:323
+#: includes/cb_date.php:395 views/contact_bank_frontend.php:707
+msgid "Month"
+msgstr "měsíc"
+
+#: includes/cb_date.php:47 includes/cb_date.php:162 includes/cb_date.php:357
+#: includes/cb_date.php:417 views/contact_bank_frontend.php:729
+msgid "Year"
+msgstr "rok"
+
+#: includes/cb_date.php:79
+msgid "Date Control"
+msgstr "datum-ovládání"
+
+#: includes/cb_date.php:106 includes/cb_email.php:58
+#: includes/cb_file_upload.php:74 includes/cb_password.php:57
+#: includes/cb_text.php:56 includes/cb_time.php:119
+msgid "Enter Description"
+msgstr "Vstoupit Popis"
+
+#: includes/cb_date.php:128 includes/cb_email.php:81 includes/cb_hidden.php:54
+#: includes/cb_multiple.php:80 includes/cb_text.php:83
+#: includes/cb_textarea.php:91
+msgid "Admin label"
+msgstr "bebey štítku"
+
+#: includes/cb_date.php:140
+msgid "Start year"
+msgstr "Začněte rok"
+
+#: includes/cb_date.php:142
+msgid "Enter Start Year"
+msgstr "Vstoupit Začněte rok"
+
+#: includes/cb_date.php:146
+msgid "End year"
+msgstr "Nejčastější ukončení-rok"
+
+#: includes/cb_date.php:148
+msgid "Enter End Year "
+msgstr "Vstoupit Nejčastější ukončení-rok"
+
+#: includes/cb_date.php:152 includes/cb_text.php:77
+#: includes/cb_textarea.php:85 includes/cb_time.php:175
+msgid "Default value"
+msgstr "výchozí hodnota"
+
+#: includes/cb_date.php:167
+msgid "Error message if invalid date"
+msgstr "Chybová zpráva Pokud neplatné datum"
+
+#: includes/cb_date.php:169
+msgid "Enter Error Message"
+msgstr "Vstoupit chybová zpráva"
+
+#: includes/cb_date.php:173
+msgid "Date format"
+msgstr "formátu datumu"
+
+#: includes/cb_date.php:194 includes/cb_dropdown.php:97
+#: includes/cb_email.php:98 includes/cb_file_upload.php:143
+#: includes/cb_password.php:95 includes/cb_text.php:99
+#: includes/cb_time.php:249
+msgid "Css Label"
+msgstr "css etiketa"
+
+#: includes/cb_date.php:201 includes/cb_email.php:105 includes/cb_time.php:256
+msgid "Css Text Input"
+msgstr "Css zadávání textu"
+
+#: includes/cb_date.php:203 includes/cb_text.php:108 includes/cb_time.php:258
+msgid "Enter Css Text Input"
+msgstr "Vstoupit Css zadávání textu"
+
+#: includes/cb_date.php:208 includes/cb_dropdown.php:111
+#: includes/cb_email.php:112 includes/cb_file_upload.php:150
+#: includes/cb_password.php:110 includes/cb_time.php:263
+msgid "Css Description"
+msgstr "CSS Popis"
+
+#: includes/cb_date.php:215
+msgid "Css Day"
+msgstr "css den"
+
+#: includes/cb_date.php:217
+msgid "Enter Css Day"
+msgstr "Vstoupit css den"
+
+#: includes/cb_date.php:222
+msgid "Css Month"
+msgstr "css měsíc"
+
+#: includes/cb_date.php:224
+msgid "Enter Css Month"
+msgstr "Vstoupit css měsíc"
+
+#: includes/cb_date.php:229
+msgid "Css Year"
+msgstr "css rok"
+
+#: includes/cb_date.php:231
+msgid "Enter Css Year"
+msgstr "Vstoupit css rok"
+
+#: includes/cb_date.php:239 includes/cb_email.php:122
+#: includes/cb_password.php:120 includes/cb_textarea.php:131
+#: includes/cb_time.php:294
+msgid "Text input"
+msgstr "textový vstup"
+
+#: includes/cb_date.php:241
+msgid "Date day dropdown"
+msgstr "Datum Den rozevíracího"
+
+#: includes/cb_date.php:242
+msgid "Date month dropdown"
+msgstr "Datum měsíc rozevíracího"
+
+#: includes/cb_date.php:243
+msgid "Date year dropdown"
+msgstr "Datum rok rozevíracího-dolů"
+
+#: includes/cb_dropdown.php:12 includes/cb_dropdown.php:344
+#: views/contact_bank_frontend.php:385 views/contact_bank_frontend.php:398
+msgid "Select option"
+msgstr "Vyberte Možnosti"
+
+#: includes/cb_dropdown.php:29
+msgid "Dropdown Control"
+msgstr "rozevírací ovládání"
+
+#: includes/cb_dropdown.php:70 includes/cb_multiple.php:69
+msgid "Enter Option"
+msgstr "Vstoupit varianta"
+
+#: includes/cb_dropdown.php:104
+msgid "Css Dropdown Menu"
+msgstr "CSS rozbalovací nabídce"
+
+#: includes/cb_dropdown.php:106
+msgid "Enter Css Dropdown Menu"
+msgstr "Vstoupit CSS rozbalovací nabídce"
+
+#: includes/cb_dropdown.php:121
+msgid "Dropdown menu"
+msgstr "rozbalovací nabídka"
+
+#: includes/cb_email.php:9 includes/cb_email.php:52 includes/cb_email.php:83
+#: views/contact_email.php:72 views/contact_email.php:138
+#: views/edit_contact_view.php:1113
+msgid "Email"
+msgstr "přihlášení email"
+
+#: includes/cb_email.php:30
+msgid "Email Control"
+msgstr "přihlášení email ovládání"
+
+#: includes/cb_email.php:107 includes/cb_password.php:105
+msgid "Enter Css Input Text"
+msgstr "Vstoupit CSS vstupního textu"
+
+#: includes/cb_email.php:127 includes/cb_password.php:125
+#: includes/cb_text.php:128 includes/cb_textarea.php:136
+msgid "Add a filter"
+msgstr "Přidat jeden filtr"
+
+#: includes/cb_email.php:129 includes/cb_password.php:127
+#: includes/cb_text.php:130 includes/cb_textarea.php:138
+msgid "Alpha"
+msgstr "Alfa"
+
+#: includes/cb_email.php:130 includes/cb_password.php:128
+#: includes/cb_text.php:131 includes/cb_textarea.php:139
+msgid "Alpha Numeric"
+msgstr "alfa číselné"
+
+#: includes/cb_email.php:131 includes/cb_password.php:129
+#: includes/cb_text.php:132 includes/cb_textarea.php:140
+msgid "Digits"
+msgstr "číslic"
+
+#: includes/cb_email.php:132 includes/cb_password.php:130
+#: includes/cb_text.php:133 includes/cb_textarea.php:141
+msgid "Strip Tags"
+msgstr "Gazy Štítky"
+
+#: includes/cb_email.php:133 includes/cb_password.php:131
+#: includes/cb_text.php:134 includes/cb_textarea.php:142
+msgid "Trim"
+msgstr "přistřihnout"
+
+#: includes/cb_file_upload.php:9 includes/cb_file_upload.php:68
+#: includes/cb_file_upload.php:102 views/contact_view.php:63
+#: views/edit_contact_view.php:111 views/edit_contact_view.php:1374
+msgid "File Upload"
+msgstr " Soubor nahrát"
+
+#: includes/cb_file_upload.php:46
+msgid "Fileupload Control"
+msgstr " Soubor nahrát ovládání"
+
+#: includes/cb_file_upload.php:112
+msgid "Allow Multiple Uploads"
+msgstr "Povolit vícenásobné Nejnovější obrázky"
+
+#: includes/cb_file_upload.php:118
+msgid "Allowed File Extensions"
+msgstr "Povolené přípony souborů"
+
+#: includes/cb_file_upload.php:120
+msgid "Enter File Extensions"
+msgstr "vstoupit přípony souborů"
+
+#: includes/cb_file_upload.php:122
+msgid "The file extensions must be seperated with semicolons(' ; ')"
+msgstr "Přípony souborů musí být odděleny středníkem (\";\")"
+
+#: includes/cb_file_upload.php:126
+msgid "Allowed File Size"
+msgstr "zvířata povolena velikost souboru"
+
+#: includes/cb_file_upload.php:130
+msgid "File Size must be in Kb"
+msgstr "velikost souboru musí být v Kb"
+
+#: includes/cb_hidden.php:8
+msgid "Untitled (hidden)"
+msgstr "Bez názvu (skryté)"
+
+#: includes/cb_hidden.php:11 views/contact_bank_frontend.php:952
+#: views/contact_view.php:72 views/edit_contact_view.php:120
+msgid "Hidden"
+msgstr "skryté"
+
+#: includes/cb_hidden.php:29
+msgid "Hidden Control"
+msgstr "skryté ovládání"
+
+#: includes/cb_hidden.php:44 includes/cb_hidden.php:56
+#: views/edit_contact_view.php:1619
+msgid "Untitled(hidden)"
+msgstr "Bez názvu (skryté)"
+
+#: includes/cb_hidden.php:48
+msgid "Default Value"
+msgstr "výchozí hodnota"
+
+#: includes/cb_hidden.php:50 includes/cb_text.php:79
+msgid "Enter Default Value"
+msgstr "Vstoupit výchozí hodnota"
+
+#: includes/cb_hidden.php:56 includes/cb_text.php:85
+#: includes/cb_textarea.php:93
+msgid "Enter Admin label"
+msgstr "Vstoupit bebey štítku"
+
+#: includes/cb_multiple.php:28
+msgid "Radio Buttons"
+msgstr "rádiové tlačítek"
+
+#: includes/cb_multiple.php:62 includes/cb_text.php:69
+msgid "Enter Tooltip Text"
+msgstr "Vstoupit nápovědný-odkazová"
+
+#: includes/cb_multiple.php:103
+msgid "Css Description :"
+msgstr "CSS Popis:"
+
+#: includes/cb_multiple.php:110
+msgid "Css Options outer wrapper :"
+msgstr "CSS Možnosti vnějšího balič:"
+
+#: includes/cb_multiple.php:112
+msgid "Enter Css Options outer wrapper"
+msgstr "Vstoupit CSS Možnosti vnějšího balič:"
+
+#: includes/cb_multiple.php:117
+msgid "CSS Options Wrapper :"
+msgstr "CSS Možnosti obálka:"
+
+#: includes/cb_multiple.php:119
+msgid "Enter Css Options Wrapper"
+msgstr "Vstoupit CSS Možnosti obálka:"
+
+#: includes/cb_multiple.php:124
+msgid "CSS Option Label :"
+msgstr "CSS Varianta štítku:"
+
+#: includes/cb_multiple.php:126
+msgid "Enter Css Option Label"
+msgstr "Vstoupit CSS Varianta štítku"
+
+#: includes/cb_multiple.php:136
+msgid "Options  wrapper"
+msgstr "Možnosti krýt"
+
+#: includes/cb_password.php:8 includes/cb_password.php:51
+#: includes/cb_password.php:81 views/contact_view.php:75
+#: views/edit_contact_view.php:123 views/edit_contact_view.php:1629
+msgid "Password"
+msgstr "heslo"
+
+#: includes/cb_password.php:29
+msgid "Password Control"
+msgstr "heslo ovládání "
+
+#: includes/cb_password.php:103
+msgid "Css Input Text"
+msgstr "Css vstupního textu"
+
+#: includes/cb_text.php:29
+msgid "Textbox Control"
+msgstr "ovládací prvek textové pole"
+
+#: includes/cb_text.php:106
+msgid " Css Text Input"
+msgstr "Css zadávání textu"
+
+#: includes/cb_text.php:113
+msgid " Css Description"
+msgstr "CSS Popis"
+
+#: includes/cb_text.php:123
+msgid "Text Input"
+msgstr "zadávání textu"
+
+#: includes/cb_textarea.php:30
+msgid "Textarea Control"
+msgstr "textové oblasti ovládání"
+
+#: includes/cb_textarea.php:52
+msgid "Enter label"
+msgstr "vstoupit štítek"
+
+#: includes/cb_textarea.php:58
+msgid "Enter  Description"
+msgstr "Vstoupit Popis"
+
+#: includes/cb_textarea.php:69
+msgid "Tooltip text"
+msgstr "nápovědný-odkazová"
+
+#: includes/cb_textarea.php:87
+msgid "Enter Default value"
+msgstr "vstoupit výchozí hodnotu"
+
+#: includes/cb_textarea.php:107
+msgid "CSS label"
+msgstr "CSS štítku"
+
+#: includes/cb_textarea.php:109
+msgid "Enter css Label"
+msgstr "Vstoupit CSS štítku"
+
+#: includes/cb_textarea.php:114
+msgid "CSS textinput"
+msgstr "CSS zadávání textu"
+
+#: includes/cb_textarea.php:116
+msgid "Enter css textinput"
+msgstr "Vstoupit CSS zadávání textu"
+
+#: includes/cb_textarea.php:121
+msgid "CSS description"
+msgstr "CSS Popis"
+
+#: includes/cb_textarea.php:123
+msgid "Enter css description"
+msgstr "Vstoupit CSS Popis"
+
+#: includes/cb_time.php:8 includes/cb_time.php:113 includes/cb_time.php:143
+#: views/contact_view.php:69 views/edit_contact_view.php:117
+#: views/edit_contact_view.php:1514
+msgid "Time"
+msgstr "čas"
+
+#: includes/cb_time.php:12 includes/cb_time.php:32 includes/cb_time.php:178
+#: includes/cb_time.php:198 views/contact_bank_frontend.php:821
+#: views/contact_bank_frontend.php:847 views/contact_bank_frontend.php:873
+msgid "Hour"
+msgstr "hodina"
+
+#: includes/cb_time.php:52 includes/cb_time.php:218
+#: views/contact_bank_frontend.php:897
+msgid "Minute"
+msgstr "minutový"
+
+#: includes/cb_time.php:92
+msgid "Time Control"
+msgstr "Casove nastaveni"
+
+#: includes/cb_time.php:153
+msgid "12/24 hour time"
+msgstr "12/24 hodinový čas"
+
+#: includes/cb_time.php:162
+msgid "Time format"
+msgstr "formát času"
+
+#: includes/cb_time.php:270
+msgid "Css Hour"
+msgstr "css hodina"
+
+#: includes/cb_time.php:272
+msgid "Enter Css Hour"
+msgstr "Vstoupit CSS hodina"
+
+#: includes/cb_time.php:277
+msgid "Css Minute"
+msgstr "css minutový"
+
+#: includes/cb_time.php:279
+msgid "Enter Css Minute"
+msgstr "Vstoupit css minutový"
+
+#: includes/cb_time.php:284
+msgid "Css am/pm"
+msgstr "Css am/pm"
+
+#: includes/cb_time.php:286
+msgid "Enter Css am/pm"
+msgstr "Vstoupit CSS am/pm"
+
+#: includes/cb_time.php:296
+msgid "Time hour dropdown"
+msgstr "Čas hodinu rozevíracího-dolů"
+
+#: includes/cb_time.php:297
+msgid "Time minute dropdown"
+msgstr "Čas minuta rozevíracího-dolů"
+
+#: includes/cb_time.php:298
+msgid "Time am/pm dropdown"
+msgstr "Čas am/pm rozevíracího-dolů"
+
+#: views/contact_bank_frontend.php:153
+msgid "Enter Text"
+msgstr "Vstoupit Textu"
+
+#: views/contact_bank_frontend.php:342 views/contact_email.php:84
+#: views/contact_email.php:144
+msgid "Enter Email Address"
+msgstr "Zadejte e-mailovou adresu"
+
+#: views/contact_bank_frontend.php:952
+msgid "Enter Hidden Text"
+msgstr "vstoupit skrytý text"
+
+#: views/contact_bank_frontend.php:1040
+msgid "Enter Password"
+msgstr "vstoupit heslo"
+
+#: views/contact_bank_frontend.php:1051
+msgid "Submit Form"
+msgstr "Odeslat formulář"
+
+#: views/contact_email.php:9 views/contact_frontend_data.php:8
+#: views/contact_view.php:9 views/edit_contact_view.php:31
+msgid "Back to Dashboard"
+msgstr "Zpět na řídicího panelu"
+
+#: views/contact_email.php:13
+msgid "Email Settings Saved. Kindly wait for the redirect."
+msgstr "Uložit nastavení e-mailu. Laskavě počkejte na přesměrování."
+
+#: views/contact_email.php:18 views/contact_email.php:49
+#: views/contact_frontend_data.php:19 views/contact_frontend_data.php:32
+msgid "Select Form"
+msgstr "Vybrat formulář"
+
+#: views/contact_email.php:65
+msgid "Admin Email"
+msgstr "bebey přihlášení Email"
+
+#: views/contact_email.php:76
+msgid "To"
+msgstr "na"
+
+#: views/contact_email.php:78
+msgid "Enter Admin Email"
+msgstr "vstoupit přihlášení Email bebey"
+
+#: views/contact_email.php:82 views/contact_email.php:142
+msgid "From"
+msgstr "z"
+
+#: views/contact_email.php:89 views/contact_email.php:148
+msgid "Subject"
+msgstr "předmět"
+
+#: views/contact_email.php:91 views/contact_email.php:150
+msgid "Enter Subject"
+msgstr "vstoupit předmět"
+
+#: views/contact_email.php:100 views/contact_email.php:160
+msgid "Email Content"
+msgstr "přihlášení Email Obsah"
+
+#: views/contact_email.php:115 views/contact_email.php:175
+msgid "Short Code Controls for Email"
+msgstr "Krátký kód Ovládací prvky za přihlášení Email"
+
+#: views/contact_email.php:129
+msgid "Client Email"
+msgstr "Klientem-přihlášení email"
+
+#: views/contact_frontend_data.php:14 views/contact_view.php:20
+#: views/dashboard.php:15 views/dashboard.php:21
+msgid "Form"
+msgstr "formulář"
+
+#: views/contact_view.php:13
+msgid "Form Submited. Kindly wait for the redirect."
+msgstr "Forma předkládané . Laskavě počkejte na přesměrování."
+
+#: views/contact_view.php:24 views/edit_contact_view.php:46
+msgid "Form Name :"
+msgstr "Název formuláře:"
+
+#: views/contact_view.php:27 views/edit_contact_view.php:49
+msgid "Enter Form Name"
+msgstr "Vstoupit formulář Jméno"
+
+#: views/contact_view.php:40 views/edit_contact_view.php:89
+msgid "Control Buttons"
+msgstr "Ovládací tlačítka"
+
+#: views/contact_view.php:45 views/edit_contact_view.php:93
+msgid "Text Box"
+msgstr "textového pole"
+
+#: views/contact_view.php:48 views/edit_contact_view.php:96
+msgid "Text Area"
+msgstr "Textová oblast"
+
+#: views/contact_view.php:51 views/edit_contact_view.php:99
+msgid "Email Address"
+msgstr "emailová adresa"
+
+#: views/contact_view.php:54 views/edit_contact_view.php:102
+msgid "Dropdown Menu"
+msgstr "rozbalovací nabídce"
+
+#: views/contact_view.php:57 views/edit_contact_view.php:105
+msgid "Checkboxes"
+msgstr "Zaškrtávací políčka"
+
+#: views/contact_view.php:60 views/edit_contact_view.php:108
+msgid "Multiple Choice"
+msgstr "Vícenásobná volba"
+
+#: views/dashboard.php:5
+msgid "Dashboard - Contact Bank"
+msgstr "Palubní deska - Kontakt banky"
+
+#: views/dashboard.php:9
+msgid "Delete All Forms"
+msgstr "Smazat všech forem"
+
+#: views/dashboard.php:22
+msgid "Shortcode"
+msgstr "Zkrácený kód"
+
+#: views/dashboard.php:23
+msgid "Action"
+msgstr "akce"
+
+#: views/dashboard.php:43
+msgid "Edit"
+msgstr "Úpravy"
+
+#: views/dashboard.php:46
+msgid "Delete"
+msgstr "Smazat"
+
+#: views/dashboard.php:62
+msgid "Server Settings"
+msgstr "nastavení serveru"
+
+#: views/dashboard.php:73
+msgid "Not set"
+msgstr "není nastavena"
+
+#: views/dashboard.php:75 views/dashboard.php:78
+msgid "On"
+msgstr "On"
+
+#: views/dashboard.php:76 views/dashboard.php:79
+msgid "Off"
+msgstr "Vypnuto"
+
+#: views/dashboard.php:82 views/dashboard.php:85 views/dashboard.php:88
+#: views/dashboard.php:91 views/dashboard.php:94 views/dashboard.php:97
+msgid "N/A"
+msgstr "N/A"
+
+#: views/dashboard.php:96
+msgid " MByte"
+msgstr " MByte"
+
+#: views/dashboard.php:99 views/dashboard.php:102 views/dashboard.php:105
+#: views/dashboard.php:155
+msgid "Yes"
+msgstr "ano"
+
+#: views/dashboard.php:100 views/dashboard.php:103 views/dashboard.php:106
+#: views/dashboard.php:157
+msgid "No"
+msgstr "ne"
+
+#: views/dashboard.php:108
+msgid "Operating System"
+msgstr "Operační systém"
+
+#: views/dashboard.php:109
+msgid "Server"
+msgstr "serverem"
+
+#: views/dashboard.php:110
+msgid "Memory usage"
+msgstr "využití paměti"
+
+#: views/dashboard.php:111
+msgid "MYSQL Version"
+msgstr "MySQL verzí"
+
+#: views/dashboard.php:112
+msgid "SQL Mode"
+msgstr "SQL režim"
+
+#: views/dashboard.php:113
+msgid "PHP Version"
+msgstr "PHP verzí"
+
+#: views/dashboard.php:114
+msgid "PHP Safe Mode"
+msgstr "PHP Bezpečný režim"
+
+#: views/dashboard.php:115
+msgid "PHP Allow URL fopen"
+msgstr "PHP Povolit URL fopen"
+
+#: views/dashboard.php:116
+msgid "PHP Memory Limit"
+msgstr "PHP paměti Mezní"
+
+#: views/dashboard.php:117
+msgid "PHP Max Upload Size"
+msgstr "PHP max. velikost nahrávaných souborů"
+
+#: views/dashboard.php:118
+msgid "PHP Max Post Size"
+msgstr "PHP Max Příspěvek velikost"
+
+#: views/dashboard.php:119
+msgid "PCRE Backtracking Limit"
+msgstr "PCRE ranní reorientace limitní"
+
+#: views/dashboard.php:120
+msgid "PHP Max Script Execute Time"
+msgstr "PHP max skript,vykonat čas "
+
+#: views/dashboard.php:121
+msgid "PHP Exif support"
+msgstr "PHP Exif podpora"
+
+#: views/dashboard.php:122
+msgid "PHP IPTC support"
+msgstr "PHP IPTC podpora"
+
+#: views/dashboard.php:123
+msgid "PHP XML support"
+msgstr "PHP XML podpora"
+
+#: views/dashboard.php:131
+msgid "Graphic Library Settings"
+msgstr "Grafické Nastavení knihovny"
+
+#: views/dashboard.php:150
+msgid "No GD support"
+msgstr "Žádná GD podpora "
+
+#: views/dashboard.php:186
+msgid "Are you sure to delete this form ?"
+msgstr "Jste si jisti odstranit tento formulář?"
+
+#: views/dashboard.php:197
+msgid "Are you sure to delete all forms ?"
+msgstr "Jste si jisti na smazat všechny formy?"
+
+#: views/edit_contact_view.php:28
+msgid "Edit Existing Form"
+msgstr "Upravovat existujícího formuláře"
+
+#: views/edit_contact_view.php:35
+msgid "Form Updated. Kindly wait for the redirect."
+msgstr "Formulář Čas hlášení. Laskavě počkejte na přesměrování."
+
+#: views/edit_contact_view.php:42
+msgid "Edit Form"
+msgstr "Upravit formulář"
+
+#: views/edit_contact_view.php:289 views/edit_contact_view.php:324
+#: views/edit_contact_view.php:393 views/edit_contact_view.php:442
+#: views/edit_contact_view.php:490
+msgid "Untitled :"
+msgstr "Bez názvu:"
+
+#: views/edit_contact_view.php:359
+msgid "Email :"
+msgstr "přihlášení email:"
+
+#: views/edit_contact_view.php:539
+msgid "File Upload :"
+msgstr " Soubor nahrát:"
+
+#: views/edit_contact_view.php:586
+msgid "Date :"
+msgstr "Datum:"
+
+#: views/edit_contact_view.php:657
+msgid "Time :"
+msgstr "Čas:"
+
+#: views/edit_contact_view.php:715
+msgid "Untitled(hidden) :"
+msgstr "Bez názvu (skryté):"
+
+#: views/edit_contact_view.php:747
+msgid "Password : "
+msgstr "Heslo:"
+
+#: views/edit_contact_view.php:1398
+msgid "1024"
+msgstr ""

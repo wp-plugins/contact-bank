@@ -1,321 +1,536 @@
 <?php
-/*
-Plugin Name: Contact Bank
-Description: Plugin for Contact Form.
-Author: contact-banker
-Version: 1.0
-License: GPLv2 or later
-*/
-/*  Copyright 2013  Contact Banker
-
-    This program is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License, version 2, as 
-    published by the Free Software Foundation.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program; if not, write to the Free Software
-    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
-*/
-function css_styles()
+/**
+ Plugin Name: Contact Bank
+ Plugin URI: http://wordpress.org/plugins/contact-bank/
+ Description: Contact Bank allows you to add a feedback form easilly and simply to a post or a page.
+ Author: contact-banker
+ Version: 1.1
+ Author URI: http://wordpress.org/plugins/contact-bank/
+ */
+ 
+ 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	//   D e f i n e     CONSTANTS //////////////////////////////////////////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	if (!defined('CONTACT_DEBUG_MODE'))    define('CONTACT_DEBUG_MODE',  false );
+	if (!defined('CONTACT_BK_FILE'))       define('CONTACT_BK_FILE',  __FILE__ );
+	if (!defined('CONTACT_CONTENT_DIR'))      define('CONTACT_CONTENT_DIR', ABSPATH . 'wp-content');
+	if (!defined('CONTACT_CONTENT_URL'))      define('CONTACT_CONTENT_URL', site_url() . '/wp-content');
+	if (!defined('CONTACT_PLUGIN_DIR'))       define('CONTACT_PLUGIN_DIR', CONTACT_CONTENT_DIR . '/plugins');
+	if (!defined('CONTACT_PLUGIN_URL'))       define('CONTACT_PLUGIN_URL', CONTACT_CONTENT_URL . '/plugins');
+	if (!defined('CONTACT_BK_PLUGIN_FILENAME'))  define('CONTACT_BK_PLUGIN_FILENAME',  basename( __FILE__ ) );
+	if (!defined('CONTACT_BK_PLUGIN_DIRNAME'))   define('CONTACT_BK_PLUGIN_DIRNAME',  plugin_basename(dirname(__FILE__)) );
+	if (!defined('CONTACT_BK_PLUGIN_DIR')) define('CONTACT_BK_PLUGIN_DIR', CONTACT_PLUGIN_DIR.'/'.CONTACT_BK_PLUGIN_DIRNAME );
+	if (!defined('CONTACT_BK_PLUGIN_URL')) define('CONTACT_BK_PLUGIN_URL', site_url().'/wp-content/plugins/'.CONTACT_BK_PLUGIN_DIRNAME );
+	if (!defined('contact_bank')) define('contact_bank', 'contact_bank');
+if(file_exists(CONTACT_BK_PLUGIN_DIR .'/create-tables.php'))
 {
-	wp_enqueue_style( 'cntctfrmStylesheet', ABSPATH .'/wp-content/plugins/' . plugin_basename(dirname(__FILE__)) . '/style.css');
+	include_once CONTACT_BK_PLUGIN_DIR .'/create-tables.php';
 }
-add_action( 'init', 'css_styles' );
-// Add option page in admin menu
-if( ! function_exists( 'contact_bank_admin_menu' ) ) {
-	function contact_bank_admin_menu() {
-		add_options_page( "Contact Form Options", "Contact Form", 'manage_options',  __FILE__, 'contact_bank_settings_page' );
-
-		//call register settings function
-		add_action( 'admin_init', 'contact_bank_settings' );
-	}
+function plugin_uninstall_script_for_contact_bank()
+{
+	global $wpdb;
+	include_once CONTACT_BK_PLUGIN_DIR .'/contact_bank_uninstall.php';
 }
-
-// Register settings for plugin
-if( ! function_exists( 'contact_bank_settings' ) ) {
-	function contact_bank_settings() {
-		global $contact_bank_options;
-
-		$cntctfrm_option_defaults = array(
-			'cntctfrm_user_email' => 'admin',
-			'cntctfrm_custom_email' => '',
-			'cntctfrm_select_email' => 'user',
-		);
-
-		if( ! get_option( 'contact_bank_options' ) )
-			add_option( 'contact_bank_options', $cntctfrm_option_defaults, '', 'yes' );
-
-		$contact_bank_options = get_option( 'contact_bank_options' );
-
-		$contact_bank_options = array_merge( $cntctfrm_option_defaults, $contact_bank_options );
-	}
+/* Function Name : plugin_install_script_for_contact_bank
+ * Paramters : None
+ * Return : None
+ * Description : This Function check the version number of the plugin database and performs necessary actions related to the plugin database upgrade.
+ * Created in Version 1.0 
+ * Last Modified : 1.0
+ * Reasons for change : None
+ */ 
+function plugin_install_script_for_contact_bank()
+{
+	global $wpdb;
+	$version = "1.0";
+	$plugin_version = get_option('contact-bank-version-number');
+	if($plugin_version < $version)
+	{
+		update_option('contact-bank-version-number', $version);
+	}	
 }
-
-// Add settings page in admin area
-if( ! function_exists( 'contact_bank_settings_page' ) ) {
-	function contact_bank_settings_page() {
-		global $contact_bank_options;
-		$error = "";	
-		// Save data for settings page
-		if( isset( $_REQUEST['cntctfrm_form_submit'] ) ) {
-			$cntctfrm_options_submit['cntctfrm_user_email'] = $_REQUEST['cntctfrm_user_email'];
-			$cntctfrm_options_submit['cntctfrm_custom_email'] = $_REQUEST['cntctfrm_custom_email'];
-			$cntctfrm_options_submit['cntctfrm_select_email'] = $_REQUEST['cntctfrm_select_email'];
-			$contact_bank_options = array_merge( $contact_bank_options, $cntctfrm_options_submit  );
-			if( 'user' == $cntctfrm_options_submit['cntctfrm_select_email'] ) {
-				if( false !== get_userdatabylogin( $cntctfrm_options_submit['cntctfrm_user_email'] ) )
-				{
-					update_option( 'contact_bank_options', $contact_bank_options, '', 'yes' );
-					$message = "Options saved.";
-				}
-				else {
-					$error = "Such user is not exist. Settings are not saved.";
-				}
-			}
-			else {
-				if( $cntctfrm_options_submit['cntctfrm_custom_email']  != "" && preg_match( "/^(?:[a-z0-9]+(?:[-_\.]?[a-z0-9]+)?@[a-z0-9]+(?:[-\.]?[a-z0-9]+)?\.[a-z]{2,5})$/i", trim( $cntctfrm_options_submit['cntctfrm_custom_email'] ) ) ) {
-					update_option( 'contact_bank_options', $contact_bank_options, '', 'yes' );
-					$message = "Options saved.";
-				}
-				else {
-					$error = "Please input correct email. Settings are not saved.";
-				}
-			}
+/* Function Name : create_global_menus_for_contact_bank
+ * Paramters : None
+ * Return : None
+ * Description : This Function creates menus in the admin menu sidebar and related mention function in each menu are being called.
+ * Created in Version 1.0 
+ * Last Modified : 1.0
+ * Reasons for change : None
+ */ 
+function create_global_menus_for_contact_bank()
+{
+	add_menu_page('Contact Bank', __('Contact Bank', contact_bank), 'administrator', 'dashboard','',CONTACT_BK_PLUGIN_URL . '/assets/images/icon.png');
+	add_submenu_page('dashboard', 'Dashboard', __('Dashboard', contact_bank), 'administrator', 'dashboard', 'dashboard');
+	add_submenu_page('dashboard', 'Add New Form', __('Add New Form', contact_bank), 'administrator', 'contact_bank', 'contact_bank');
+	add_submenu_page('dashboard', 'Email Settings', __('Email Settings', contact_bank), 'administrator', 'contact_email', 'contact_email');
+	add_submenu_page('dashboard', 'Form Entries', __('Form Entries', contact_bank), 'administrator', 'frontend_data', 'frontend_data');
+	add_submenu_page('dashboard', '','', 'administrator', 'edit_contact_view', 'edit_contact_view');
+}
+/* Function Name : contact_bank
+ * Paramters : None
+ * Return : None
+ * Description : This Function used to linked menu page is requested.
+ * Created in Version 1.0 
+ * Last Modified : 1.0
+ * Reasons for change : None
+ */ 
+function contact_bank()
+{
+	global $wpdb;
+	include_once CONTACT_BK_PLUGIN_DIR .'/views/header.php';
+	include_once CONTACT_BK_PLUGIN_DIR .'/views/contact_view.php';
+	include_once CONTACT_BK_PLUGIN_DIR .'/views/footer.php';
+}
+function dashboard()
+{
+	global $wpdb;
+	include_once CONTACT_BK_PLUGIN_DIR .'/views/header.php';
+	include_once CONTACT_BK_PLUGIN_DIR .'/views/dashboard.php';
+	include_once CONTACT_BK_PLUGIN_DIR .'/views/footer.php';
+}
+function edit_contact_view()
+{
+	global $wpdb;
+	include_once CONTACT_BK_PLUGIN_DIR .'/views/header.php';
+	include_once CONTACT_BK_PLUGIN_DIR .'/views/edit_contact_view.php';
+	include_once CONTACT_BK_PLUGIN_DIR .'/views/footer.php';
+}
+function contact_email()
+{
+	global $wpdb;
+	include_once CONTACT_BK_PLUGIN_DIR .'/views/header.php';
+	include_once CONTACT_BK_PLUGIN_DIR .'/views/contact_email.php';
+	include_once CONTACT_BK_PLUGIN_DIR .'/views/footer.php';
+}
+function frontend_data()
+{
+	global $wpdb;
+	include_once CONTACT_BK_PLUGIN_DIR .'/views/header.php';
+	include_once CONTACT_BK_PLUGIN_DIR .'/views/contact_frontend_data.php';
+	include_once CONTACT_BK_PLUGIN_DIR .'/views/footer.php';
+}
+/* Function Name : backend_plugin_js_scripts_contact_bank
+ * Paramters : None
+ * Return : None
+ * Description : This Function is used to call the javascript on the backend of the wordpress.   
+ * Created in Version 1.0 
+ * Last Modified : 1.0
+ * Reasons for change : None
+ */ 
+function backend_plugin_js_scripts_contact_bank()
+{
+	wp_enqueue_script('jquery');
+	wp_enqueue_script('jquery-ui-sortable');
+	wp_enqueue_script('jquery-ui-droppable');
+	wp_enqueue_script('jquery-ui-draggable');
+	wp_enqueue_script('jquery.dataTables.min', CONTACT_BK_PLUGIN_URL .'/assets/js/jquery.dataTables.min.js');
+	wp_enqueue_script('jquery.validate.min', CONTACT_BK_PLUGIN_URL .'/assets/js/jquery.validate.min.js');
+	wp_enqueue_script('jquery.Tooltip.js', CONTACT_BK_PLUGIN_URL .'/assets/js/jquery.Tooltip.js');
+}
+/* Function Name : frontend_plugin_js_scripts_contact_bank
+ * Paramters : None
+ * Return : None
+ * Description : This Function is used to call the javascript on the frontend of the wordpress.   
+ * Created in Version 1.0 
+ * Last Modified : 1.0
+ * Reasons for change : None
+ */ 
+function frontend_plugin_js_scripts_contact_bank()
+{
+	wp_enqueue_script('jquery');
+	wp_enqueue_script('jquery.Tooltip.js', CONTACT_BK_PLUGIN_URL .'/assets/js/jquery.Tooltip.js');
+	wp_enqueue_script('jquery.validate.min', CONTACT_BK_PLUGIN_URL .'/assets/js/jquery.validate.min.js');
+	
+}
+/* Function Name : backend_plugin_css_styles_contact_bank
+ * Paramters : None
+ * Return : None
+ * Description : This Function is used to call the css styles on the backend of the wordpress.
+ * Created in Version 1.0 
+ * Last Modified : 1.0
+ * Reasons for change : None
+ */ 
+function backend_plugin_css_styles_contact_bank()
+{
+	wp_enqueue_style('stylesheet', CONTACT_BK_PLUGIN_URL .'/assets/css/stylesheet.css');
+	wp_enqueue_style('font-awesome', CONTACT_BK_PLUGIN_URL .'/assets/css/font-awesome.css');
+	wp_enqueue_style('system-message', CONTACT_BK_PLUGIN_URL .'/assets/css/system-message.css');
+}
+/* Function Name : frontend_plugin_css_styles_contact_bank
+ * Paramters : None
+ * Return : None
+ * Description : This Function is used to call the css styles on the frontend of the wordpress.
+ * Created in Version 1.0 
+ * Last Modified : 1.0
+ * Reasons for change : None
+ */ 
+function frontend_plugin_css_styles_contact_bank()
+{
+	wp_enqueue_style('stylesheet', CONTACT_BK_PLUGIN_URL .'/assets/css/stylesheet.css');
+}
+/* 
+ * Description : REGISTER AJAX BASED FUNCTIONS TO BE CALLED ON ACTION TYPE AS PER WORDPRESS GUIDELINES
+ * Created in Version 1.0 
+ * Last Modified : 1.0
+ * Reasons for change : None
+ */ 
+if(isset($_REQUEST['action']))
+{
+	switch($_REQUEST['action'])
+	{
+		case "add_contact_form_library":
+		add_action( 'admin_init', 'add_contact_form_library');
+		function add_contact_form_library()
+		{
+			global $wpdb;
+			include_once CONTACT_BK_PLUGIN_DIR . '/lib/contact_view-class.php';
 		}
-		// Display form on the setting page
+		break;
+		case "create_textbox_library":
+		add_action( 'admin_init', 'create_textbox_library');
+		function create_textbox_library()
+		{
+			global $wpdb;
+			include_once CONTACT_BK_PLUGIN_DIR . '/includes/cb_text.php';
+		}
+		break;
+		case "create_textarea_library":
+		add_action( 'admin_init', 'create_textarea_library');
+		function create_textarea_library()
+		{
+			global $wpdb;
+			include_once CONTACT_BK_PLUGIN_DIR . '/includes/cb_textarea.php';
+		}
+		break;
+		case "create_email_library":
+		add_action( 'admin_init', 'create_email_library');
+		function create_email_library()
+		{
+			global $wpdb;
+			include_once CONTACT_BK_PLUGIN_DIR . '/includes/cb_email.php';
+		}
+		break;
+		case "create_dropdown_library":
+		add_action( 'admin_init', 'create_dropdown_library');
+		function create_dropdown_library()
+		{
+			global $wpdb;
+			include_once CONTACT_BK_PLUGIN_DIR . '/includes/cb_dropdown.php';
+		}
+		break;
+		case "create_checkbox_library":
+		add_action( 'admin_init', 'create_checkbox_library');
+		function create_checkbox_library()
+		{
+			global $wpdb;
+			include_once CONTACT_BK_PLUGIN_DIR . '/includes/cb_checkbox.php';
+		}
+		break;
+		case "create_multiple_library":
+		add_action( 'admin_init', 'create_multiple_library');
+		function create_multiple_library()
+		{
+			global $wpdb;
+			include_once CONTACT_BK_PLUGIN_DIR . '/includes/cb_multiple.php';
+		}
+		break;
+		case "create_captcha_library":
+		add_action( 'admin_init', 'create_captcha_library');
+		function create_captcha_library()
+		{
+			global $wpdb;
+			include_once CONTACT_BK_PLUGIN_DIR . '/includes/cb_captcha.php';
+		}
+		break;
+		
+		case "create_group_library":
+		add_action( 'admin_init', 'create_group_library');
+		function create_group_library()
+		{
+			global $wpdb;
+			include_once CONTACT_BK_PLUGIN_DIR . '/includes/cb_group.php';
+		}
+		break;
+		
+		case "create_txt_file_library":
+		add_action( 'admin_init', 'create_txt_file_library');
+		function create_txt_file_library()
+		{
+			global $wpdb;
+			include_once CONTACT_BK_PLUGIN_DIR . '/includes/cb_file_upload.php';
+		}
+		break;
+		case "create_recaptcha_library":
+		add_action( 'admin_init', 'create_recaptcha_library');
+		function create_recaptcha_library()
+		{
+			global $wpdb;
+			include_once CONTACT_BK_PLUGIN_DIR . '/includes/cb_recaptcha.php';
+		}
+		break;
+		
+		case "create_html_library":
+		add_action( 'admin_init', 'create_html_library');
+		function create_html_library()
+		{
+			global $wpdb;
+			include_once CONTACT_BK_PLUGIN_DIR . '/includes/cb_html.php';
+		}
+		break;
+		case "create_date_library":
+		add_action( 'admin_init', 'create_date_library');
+		function create_date_library()
+		{
+			global $wpdb;
+			include_once CONTACT_BK_PLUGIN_DIR . '/includes/cb_date.php';
+		}
+		break;
+		
+		case "create_time_library":
+		add_action( 'admin_init', 'create_time_library');
+		function create_time_library()
+		{
+			global $wpdb;
+			include_once CONTACT_BK_PLUGIN_DIR . '/includes/cb_time.php';
+		}
+		break;
+		
+		case "create_hidden_library":
+		add_action( 'admin_init', 'create_hidden_library');
+		function create_hidden_library()
+		{
+			global $wpdb;
+			include_once CONTACT_BK_PLUGIN_DIR . '/includes/cb_hidden.php';
+		}
+		break;
+		
+		case "create_password_library":
+		add_action( 'admin_init', 'create_password_library');
+		function create_password_library()
+		{
+			global $wpdb;
+			include_once CONTACT_BK_PLUGIN_DIR . '/includes/cb_password.php';
+		}
+		break;
+		case "edit_contact_form_library":
+		add_action( 'admin_init', 'edit_contact_form_library');
+		function edit_contact_form_library()
+		{
+			global $wpdb;
+			include_once CONTACT_BK_PLUGIN_DIR . '/lib/edit_contact_view-class.php';
+		}
+		break;
+		case "frontend_contact_form_library":
+		add_action( 'admin_init', 'frontend_contact_form_library');
+		function frontend_contact_form_library()
+		{
+			global $wpdb;
+			include_once CONTACT_BK_PLUGIN_DIR . '/lib/contact_bank_frontend-class.php';
+		}
+		break;
+		case "email_contact_form_library":
+		add_action( 'admin_init', 'email_contact_form_library');
+		function email_contact_form_library()
+		{
+			global $wpdb;
+			include_once CONTACT_BK_PLUGIN_DIR . '/lib/contact_bank_email-class.php';
+		}
+		break;
+		case "email_management_contact_form_library":
+		add_action( 'admin_init', 'email_management_contact_form_library');
+		function email_management_contact_form_library()
+		{
+			global $wpdb;
+			include_once CONTACT_BK_PLUGIN_DIR . '/views/contact_bank_email_management.php';
+		}
+		break;
+		case "frontend_data_contact_library":
+		add_action( 'admin_init', 'frontend_data_contact_library');
+		function frontend_data_contact_library()
+		{
+			global $wpdb;
+			include_once CONTACT_BK_PLUGIN_DIR . '/lib/contact_frontend_data_class.php';
+		}
+		break;
+	}
+}
+/* 
+ * Description : THESE FUNCTIONS USED FOR REPLACING TABLE NAMES
+ * Created in Version 1.0 
+ * Last Modified : 1.0
+ * Reasons for change : None
+ */ 
+function contact_bank_contact_form()
+{
+	global $wpdb;
+	return $wpdb->prefix . 'cb_contact_form';
+}
+function contact_bank_dynamic_settings_form()
+{
+	global $wpdb;
+	return $wpdb->prefix . 'cb_dynamic_settings';
+}
+function create_control_Table()
+{
+	global $wpdb;
+	return $wpdb->prefix . 'cb_create_control_form';
+}
+function dynamic_setting_advance()
+{
+	global $wpdb;
+	return $wpdb->prefix . 'cb_dynamic_settings_advance';
+}
+function frontend_controls_data_Table()
+{
+	global $wpdb;
+	return $wpdb->prefix . 'cb_frontend_data_table';
+}
+function contact_bank_email_template_admin()
+{
+	global $wpdb;
+	return $wpdb->prefix . 'cb_email_template_admin';
+}
+function contact_bank_frontend_forms_Table()
+{
+	global $wpdb;
+	return $wpdb->prefix . 'cb_frontend_forms_table';
+}
+
+function contact_bank_short_code($atts) 
+{
+	extract(shortcode_atts(array(
+	"form_id" => '',
+	), $atts));
+	$con = '';
+	foreach((array)$form_id as $f)
+	{
+		$con .=  $f;
+	}
+	return extract_short_code($con);
+}
+function extract_short_code($con) 
+{
+	$form_id = $con;
+	ob_start();
+	require CONTACT_BK_PLUGIN_DIR.'/views/contact_bank_frontend.php';
+	$contactbank_output = ob_get_clean();
+	wp_reset_query();
+	return $contactbank_output;
+}
+function add_contact_bank_icon($meta = TRUE) 
+{
+	global $wp_admin_bar;  
+	if ( !is_user_logged_in() ) { return; }  
+	if ( !is_super_admin() || !is_admin_bar_showing() ) { return; }  
+	$wp_admin_bar->add_menu( array(
+	'id' => 'contact_bank_links',
+	'title' =>  '<img src="'.CONTACT_BK_PLUGIN_URL.'/icon.png" width="25" height="25" style="vertical-align:text-top; margin-right:5px;" />Contact Bank' , 
+	'href' => site_url() .'/wp-admin/admin.php?page=dashboard',
+	) );
+	
+	$wp_admin_bar->add_menu( array(  
+		'parent' => 'contact_bank_links',
+		'id'     => 'dashboard_links',
+		'href'  => site_url() .'/wp-admin/admin.php?page=dashboard',  
+		'title' => __( 'Dashboard') )         /* set the sub-menu name */  
+	);
+	$wp_admin_bar->add_menu( array(  
+		'parent' => 'contact_bank_links',
+		'id'     => 'global_settings_links',
+		'href'  => site_url() .'/wp-admin/admin.php?page=contact_bank',
+		'title' => __( 'Add New Form') )         /* set the sub-menu name */  
+	);
+	$wp_admin_bar->add_menu( array(  
+		'parent' => 'contact_bank_links',  
+		'id'     => 'email_links',
+		'href'  => site_url() .'/wp-admin/admin.php?page=contact_email',
+		'title' => __( 'Email Settings') )         /* set the sub-menu name */  
+	);
+	$wp_admin_bar->add_menu( array(  
+		'parent' => 'contact_bank_links',  
+		'id'     => 'frontend_data_links',
+		'href'  => site_url() .'/wp-admin/admin.php?page=frontend_data',
+		'title' => __( 'Form Entries'))         /* set the sub-menu name */  
+	);
+}
+
+function thsp_enqueue_pointer_script_style( $hook_suffix ) {
+		// Assume pointer shouldn't be shown
+
+	$enqueue_pointer_script_style = false;
+ 
+		// Get array list of dismissed pointers for current user and convert it to array
+
+	$dismissed_pointers = explode( ',', get_user_meta( get_current_user_id(), 'dismissed_wp_pointers', true ) );
+ 
+		// Check if our pointer is not among dismissed ones
+	if( !in_array( 'thsp_gallery_bank_pointer', $dismissed_pointers ) ) {
+		$enqueue_pointer_script_style = true;
+
+		// Add footer scripts using callback function
+		add_action( 'admin_print_footer_scripts', 'thsp_pointer_print_scripts' );
+	}
+ 
+		// Enqueue pointer CSS and JS files, if needed
+	if( $enqueue_pointer_script_style ) {
+		wp_enqueue_style( 'wp-pointer' );
+		wp_enqueue_script( 'wp-pointer' );
+	}
+}
+add_action( 'admin_enqueue_scripts', 'thsp_enqueue_pointer_script_style' );
+ 
+function thsp_pointer_print_scripts() {
+ 
+	$pointer_content  = "<h3>Contact Bank</h3>";
+	$pointer_content .= "<p>If you ever activated a plugin, then had no idea where its settings page is, raise your hand.</p>";
 	?>
-	<div class="wrap">
-		<div class="icon32" id="icon-options-general"><br></div>
-		<h2>Contact Form Options</h2>
-		<div class="updated fade" <?php if( ! isset( $_REQUEST['cntctfrm_form_submit'] ) || $error != "" ) echo "style=\"display:none\""; ?>><p><strong><?php echo $message; ?></strong></p></div>
-		<div class="error" <?php if( "" == $error ) echo "style=\"display:none\""; ?>><p><strong><?php echo $error; ?></strong></p></div>
-		<form method="post" action="options-general.php?page=contact-form-plugin/contact_form.php">
-			<span style="border-bottom:1px dashed;margin-bottom:15px;">
-				<p>If you would like to add a Contact Form to your website, just copy and put this shortcode onto your post or page: [contact_form]</p>
-				If information in the below fields are empty then the message will be send to an address which was specified during registration.
-			</span>
-			<table class="form-table">
-				<tr valign="top">
-					<th scope="row" style="width:195px;">Use email of wordpress user: </th>
-					<td>
-						<input type="radio" id="cntctfrm_select_email_user" name="cntctfrm_select_email" value="user" <?php if($contact_bank_options['cntctfrm_select_email'] == 'user') echo "checked=\"checked\" "; ?>/>
-					</td>
-					<td>
-						<input type="text" name="cntctfrm_user_email" value="<?php echo $contact_bank_options['cntctfrm_user_email']; ?>" onfocus="document.getElementById('cntctfrm_select_email_user').checked = true;" />
-						<span style="color: rgb(136, 136, 136); font-size: 10px;clear:both;">Set a name of user wo will get messages from a contact form.</span>
-					</td>
-				</tr>
-				<tr valign="top">
-					<th scope="row" style="width:195px;">Use this email: </th>
-					<td>
-						<input type="radio" id="cntctfrm_select_email_custom" name="cntctfrm_select_email" value="custom" <?php if($contact_bank_options['cntctfrm_select_email'] == 'custom') echo "checked=\"checked\" "; ?>/>
-					</td>
-					<td>
-						<input type="text" name="cntctfrm_custom_email" value="<?php echo $contact_bank_options['cntctfrm_custom_email']; ?>" onfocus="document.getElementById('cntctfrm_select_email_custom').checked = true;" />
-						<span style="color: rgb(136, 136, 136); font-size: 10px;clear:both;">Set an email address which will be used for messages receiving.</span>
-					</td>
-				</tr>
-				</tr>
-			</table>    
-			<input type="hidden" name="cntctfrm_form_submit" value="submit" />
-			<p class="submit">
-				<input type="submit" class="button-primary" value="<?php _e('Save Changes') ?>" />
-			</p>
-		</form>
-	</div>
-	<?php 
-	}
-}
 
-// Display contact form in front end - page or post
-if( ! function_exists( 'contact_bank_display_form' ) ) {
-	function contact_bank_display_form() {
-		global $error_message;
-		$content = "";
-
-		$result = "";	
-		// If contact form submited
-		$name = isset( $_REQUEST['cntctfrm_contact_name'] ) ? $_REQUEST['cntctfrm_contact_name'] : "";
-		$email = isset( $_REQUEST['cntctfrm_contact_emai'] ) ? $_REQUEST['cntctfrm_contact_emai'] : "";
-		$subject = isset( $_REQUEST['cntctfrm_contact_subject'] ) ? $_REQUEST['cntctfrm_contact_subject'] : "";
-		$message = isset( $_REQUEST['cntctfrm_contact_message'] ) ? $_REQUEST['cntctfrm_contact_message'] : "";
-		if( isset( $_REQUEST['cntctfrm_contact_action'] ) )
-		{
-			// Check all input data
-			$result = cntctfrm_check_form();
-		}
-		// If it is good
-		if( true === $result ) {
-			$content .= __( "Thank you for contact.", "cmntfrm" );
-		}
-		else if( false === $result )
-		{
-			// If email not be delivered
-			$error_message['error_form'] = __( "Sorry, your e-mail could not be delivered.", "cmntfrm" );
-		}
-		else { 
-			// Output form
-			$content .= '<form method="post" id="cntctfrm_contact_form" action="" enctype="multipart/form-data">';
-			if( isset( $error_message['error_form'] ) ) { 
-				$content .= '<div style="text-align: left; color: red;">'.$error_message['error_form'].'</div>';
-				}
-				$content .= '<div style="text-align: left; padding-top: 5px;">
-					<label for="cntctfrm_contact_name">Name:<span class="required"> *</span></label>
-				</div>';
-			if( isset( $error_message['error_name'] ) ) {
-				$content .= '<div style="text-align: left; color: red;">'.$error_message['error_name'].'</div>';
+	<script type="text/javascript">
+	//<![CDATA[
+	jQuery(document).ready( function($) {
+		$('#toplevel_page_dashboard').pointer({
+			content:'<?php echo $pointer_content; ?>',
+			position:{
+				edge:   'left', // arrow direction
+				align:  'center' // vertical alignment
+				},
+			pointerWidth:   350,
+			close:function() {
+					$.post( ajaxurl, {
+					pointer: 'thsp_gallery_bank_pointer', // pointer ID
+					action: 'dismiss-wp-pointer'
+				});
 			}
-				$content .= '<div style="text-align: left;">
-					<input class="text" type="text" size="40" value="'.$name.'" name="cntctfrm_contact_name" id="cntctfrm_contact_name" style="text-align: left; margin: 0;">
-				</div>
-
-				<div style="text-align: left;">
-					<label for="cntctfrm_contact_email">E-Mail Address:<span class="required"> *</span></label>
-				</div>';
-			if( isset( $error_message['error_email'] ) ) {
-				$content .= '<div style="text-align: left; color: red;">'.$error_message['error_email'].'</div>';
-				}
-				$content .= '<div style="text-align: left;">
-					<input class="text" type="text" size="40" value="'.$email.'" name="cntctfrm_contact_emai" id="cntctfrm_contact_email" style="text-align: left; margin: 0;">
-				</div>
-
-				<div style="text-align: left;">
-					<label for="cntctfrm_contact_subject1">Subject:<span class="required"> *</span></label>
-				</div>';
-			if( isset( $error_message['error_subject'] ) ) {
-				$content .= '<div style="text-align: left; color: red;">'.$error_message['error_subject'].'</div>';
-			}
-				$content .= '<div style="text-align: left;">
-					<input class="text" type="text" size="40" value="'.$subject.'" name="cntctfrm_contact_subject" id="cntctfrm_contact_subject" style="text-align: left; margin: 0;">
-				</div>
-
-				<div style="text-align: left;">
-					<label for="cntctfrm_contact_message">Message:<span class="required"> *</span></label>
-				</div>';
-			if( isset( $error_message['error_message'] ) ) {
-				$content .= '<div style="text-align: left; color: red;">'.$error_message['error_message'].'</div>';
-			}
-				$content .= '<div style="text-align: left;">
-					<textarea rows="10" cols="30" name="cntctfrm_contact_message" id="cntctfrm_contact_message1">'.$message.'</textarea>
-				</div>';
-			$content .= apply_filters( 'cntctfrm_display_captcha' , $error_message );
-				
-				$content .= '<div style="text-align: left; padding-top: 8px;">
-					<input type="hidden" value="send" name="cntctfrm_contact_action">
-					<input type="submit" value="Submit" style="cursor: pointer; margin: 0pt; text-align: center;margin-bottom:10px;"> 
-				</div>
-				</form>';
-		}
-		return $content ;
+		}).pointer('open');
+	});
+	//]]>
+	</script>
+<?php
+}
+function plugin_load_textdomain() 
+{
+	if(function_exists( 'load_plugin_textdomain' ))
+	{
+		load_plugin_textdomain(contact_bank, false, CONTACT_BK_PLUGIN_DIRNAME .'/languages');
 	}
 }
-
-// Check all input data
-if( ! function_exists( 'cntctfrm_check_form' ) ) {
-	function cntctfrm_check_form() {
-		global $error_message;
-		$result = "";
-		// Error messages array
-		$error_message = array();
-		$error_message['error_name'] = __( "Your name is required.", "cmntfrm" );
-		$error_message['error_email'] = __( "A proper e-mail address is required.", "cmntfrm" );
-		$error_message['error_subject'] = __( "Subject text is required.", "cmntfrm" );
-		$error_message['error_message'] = __( "Message text is required.", "cmntfrm" );
-		$error_message['error_form'] = __( "Please make corrections below and try again.", "cmntfrm" );
-		// Check information wich was input in fields
-		if( "" != $_REQUEST['cntctfrm_contact_name'] )
-			unset( $error_message['error_name'] );
-		if( "" != $_REQUEST['cntctfrm_contact_emai'] && preg_match( "/^(?:[a-z0-9]+(?:[-_\.]?[a-z0-9]+)?@[a-z0-9]+(?:[-\.]?[a-z0-9]+)?\.[a-z]{2,5})$/i", trim( $_REQUEST['cntctfrm_contact_emai'] ) ) )
-			unset( $error_message['error_email'] );
-		if( "" != $_REQUEST['cntctfrm_contact_subject'] )
-			unset( $error_message['error_subject'] );
-		if( "" != $_REQUEST['cntctfrm_contact_message'] )
-			unset( $error_message['error_message'] );
-		// If captcha plugin exists
-		if( ! apply_filters( 'cntctfrm_check_form', $_REQUEST ) )
-			$error_message['error_captcha'] = __( "Please complete the CAPTCHA.", "cmntfrm" );
-		if( 1 == count( $error_message ) ) {
-			unset( $error_message['error_form'] );
-			// If all is good - send mail
-			$result = cntctfrm_send_mail();
-		}
-		return $result;
-	}
-}
-
-// Send mail function
-if( ! function_exists( 'cntctfrm_send_mail' ) ) {
-	function cntctfrm_send_mail() {
-		global $contact_bank_options;
-		$to = "";
-		if($contact_bank_options['cntctfrm_select_email'] == 'user') {
-			if( false !== $user = get_userdatabylogin($cntctfrm_options_submit['cntctfrm_user_email'] ) )
-				$to = $user['user_email'];
-		}
-		else {
-			$to = $contact_bank_options['cntctfrm_custom_email'];
-		}
-		if( "" == $to ) {
-			// If email options are not certain choose admin email
-			$to = get_option("admin_email");
-		}
-		if( "" != $to ) {
-			// subject
-			$subject = $_REQUEST['cntctfrm_contact_subject'];
-			// message
-			$message = '
-			<html>
-			<head>
-				<title>Contact from'.get_bloginfo('name').'</title>
-			</head>
-			<body>
-				<table>
-					<tr>
-						<td width="160">Name</td><td>'.$_REQUEST['cntctfrm_contact_name'].'</td>
-					</tr>
-					<tr>
-						<td>Email</td><td>'.$_REQUEST['cntctfrm_contact_emai'].'</td>
-					</tr>
-					<tr>
-						<td>Subject</td><td>'.$_REQUEST['cntctfrm_contact_subject'].'</td>
-					</tr>
-					<tr>
-						<td>Message</td><td>'.$_REQUEST['cntctfrm_contact_message'].'</td>
-					</tr>
-				</table>
-			</body>
-			</html>
-			';
-
-			// To send HTML mail, the Content-type header must be set
-			$headers  = 'MIME-Version: 1.0' . "\r\n";
-			$headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-
-			// Additional headers
-			$headers .= 'From: '.$_REQUEST['cntctfrm_contact_emai']. "\r\n";
-			// Mail it
-			return @mail($to, $subject, $message, $headers);
-		}
-		return false;
-	}
-}
-
-// Add the link on setting page in the plugin activation page
-if( ! function_exists('contact_bank_settings') ) {
-	function contact_bank_settings( $links, $file ) {
-		$base = plugin_basename( __FILE__ );
-		if ( $file == $base ) {
-			$links[] = '<a href="options-general.php?page=contact-bank/contact-bank.php">' . __( 'Settings', 'Settings' ) . '</a>';
-		}
-		return $links;
-	}
-}
-add_shortcode( 'contact_form', 'contact_bank_display_form' );
-add_action( 'admin_menu', 'contact_bank_admin_menu' );
-
+add_action('plugins_loaded', 'plugin_load_textdomain');
+/*************************************************************************************/
+add_action('admin_bar_menu', 'add_contact_bank_icon',100);
+// add_action Hook called for function frontend_plugin_css_scripts_contact_bank  
+add_action('init','frontend_plugin_css_styles_contact_bank');
+// add_action Hook called for function backend_plugin_css_scripts_contact_bank
+add_action('admin_init','backend_plugin_css_styles_contact_bank');
+// add_action Hook called for function frontend_plugin_js_scripts_contact_bank
+add_action('init','frontend_plugin_js_scripts_contact_bank');
+// add_action Hook called for function backend_plugin_js_scripts_contact_bank
+add_action('admin_init','backend_plugin_js_scripts_contact_bank');
+// add_action Hook called for function create_global_menus_for_contact_bank
+add_action('admin_menu','create_global_menus_for_contact_bank');
+// Activation Hook called for function plugin_install_script_for_contact_bank
+register_activation_hook(__FILE__,'plugin_install_script_for_contact_bank');
+// add_Shortcode Hook called for function contact_bank_short_code for FrontEnd
+add_shortcode('contact_bank', 'contact_bank_short_code' );
+// Uninstall Hook called for function plugin_install_script_for_contact_bank
+register_uninstall_hook(__FILE__,'plugin_uninstall_script_for_contact_bank');
 ?>

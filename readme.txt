@@ -3,7 +3,7 @@ Contributors: contact-banker
 Tags: Contact Form, text, contact, form, contacts, request, contact me, feedback form, feedback, easy contact form, best contact form plugin, admin, Post, widget, contact bank, easy contact form, contact form 7
 Requires at least: 2.9
 Tested up to: 3.6
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,6 +13,50 @@ Adds Contact Bank to your WordPress website.
 == Description ==
 
 **Contact Form allows you to add a feedback form easilly and simply to a post or a page.**
+
+= Full list of Features =
+
+* Online Contact Form builder.
+* Contact form fields are easy to add, remove, edit and re-order anytime. 
+* Customizable contact form fields label.
+* Manage multiple contact forms within a single dashboard.	
+* Allow unlimited contact form entries.
+* Upload jpg, png, gif or zip type of file format in your contact form.
+* Contact form field validation within a click.
+* Email Confirmations to admin and user.
+* Create multiple fields in a single contact form. 	
+* Just click on the field to add date and time field in your contact form.	
+* Allow to enable form fields compulsary using avaliable Required option.
+
+= Conatct Bank is available in the following Languages = 
+
+* Albanian (sq_AL)
+* Arabic (ar_AR)
+* Brazilian Portuguese (pt_BR)
+* Bulgarian (bg_BG)
+* Chinese (zh_CN)
+* Czech (cs_CZ)
+* Danish (da_DA)
+* Dutch (nl_NL)
+* English (en)
+* Finnish (fi_FI)
+* French (fr_FR)
+* German (de_DE)
+* Hebrew (he_IL)
+* Hungarian (hu_HU)
+* Korean (ko_KR)
+* Indonesian (id_ID)
+* Italian (it_IT)
+* Korean (hu_HU)
+* Polish (pl_PL) 
+* Romanian (ro_RO)
+* Russian (ru_RU)
+* Serbian (sr_RS)
+* Slovak (sk_SK)
+* Spanish (es_ES)
+* Swedish (sv_SV)
+* Turkish (tr_TR)
+
 
 == Installation ==
 
@@ -41,5 +85,12 @@ Adds Contact Bank to your WordPress website.
 
 == Changelog ==
 
-= 1.00 =
+= 1.1 =
+
+* Introduction of Dynamic Form Creation
+* Email Confirmations
+* Records of forms filled shown
+
+
+= 1.0 =
 Release

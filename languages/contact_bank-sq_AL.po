@@ -1,0 +1,1031 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2013-11-15 16:51+0530\n"
+"PO-Revision-Date: 2013-11-16 16:09+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: C:\\wamp\\www\\contact-bank3.7\\wp-content\\plugins"
+"\\contact-bank\\\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: contact-bank.php:62
+msgid "Contact Bank"
+msgstr ""
+
+#: contact-bank.php:63 contact-bank.php:431
+msgid "Dashboard"
+msgstr "baltëpritëse"
+
+#: contact-bank.php:64 contact-bank.php:437 views/contact_view.php:6
+#: views/dashboard.php:8
+msgid "Add New Form"
+msgstr "Shto Formularin e re"
+
+#: contact-bank.php:65 contact-bank.php:443 views/contact_email.php:6
+msgid "Email Settings"
+msgstr " Email Cilësimet"
+
+#: contact-bank.php:66 contact-bank.php:449 views/contact_frontend_data.php:5
+msgid "Form Entries"
+msgstr " Forma hyrjet"
+
+#: includes/cb_checkbox.php:8 includes/cb_checkbox.php:50
+#: includes/cb_checkbox.php:83 includes/cb_dropdown.php:8
+#: includes/cb_dropdown.php:50 includes/cb_dropdown.php:83
+#: includes/cb_multiple.php:8 includes/cb_multiple.php:49
+#: includes/cb_multiple.php:82 includes/cb_text.php:8 includes/cb_text.php:50
+#: includes/cb_text.php:85 includes/cb_textarea.php:9
+#: includes/cb_textarea.php:52 includes/cb_textarea.php:93
+#: views/edit_contact_view.php:991 views/edit_contact_view.php:1049
+#: views/edit_contact_view.php:1178 views/edit_contact_view.php:1234
+#: views/edit_contact_view.php:1304
+msgid "Untitled"
+msgstr "patitulluar"
+
+#: includes/cb_checkbox.php:13 includes/cb_checkbox.php:42
+#: includes/cb_date.php:62 includes/cb_date.php:92 includes/cb_dropdown.php:14
+#: includes/cb_dropdown.php:42 includes/cb_email.php:13
+#: includes/cb_email.php:44 includes/cb_file_upload.php:12
+#: includes/cb_file_upload.php:60 includes/cb_hidden.php:12
+#: includes/cb_multiple.php:13 includes/cb_multiple.php:41
+#: includes/cb_password.php:12 includes/cb_password.php:43
+#: includes/cb_text.php:12 includes/cb_text.php:42 includes/cb_textarea.php:13
+#: includes/cb_textarea.php:44 includes/cb_time.php:75
+#: includes/cb_time.php:105
+msgid "Settings"
+msgstr "Cilësimet"
+
+#: includes/cb_checkbox.php:29
+msgid "Checkbox Control"
+msgstr "Kuti selektimi kontrolli"
+
+#: includes/cb_checkbox.php:36 includes/cb_date.php:86
+#: includes/cb_dropdown.php:36 includes/cb_email.php:38
+#: includes/cb_file_upload.php:54 includes/cb_hidden.php:36
+#: includes/cb_multiple.php:35 includes/cb_password.php:37
+#: includes/cb_text.php:36 includes/cb_textarea.php:38 includes/cb_time.php:99
+msgid "Advanced"
+msgstr "i avancuar"
+
+#: includes/cb_checkbox.php:39 includes/cb_checkbox.php:68
+#: includes/cb_date.php:89 includes/cb_dropdown.php:39
+#: includes/cb_dropdown.php:68 includes/cb_email.php:41
+#: includes/cb_file_upload.php:57 includes/cb_multiple.php:38
+#: includes/cb_multiple.php:67 includes/cb_password.php:40
+#: includes/cb_text.php:39 includes/cb_textarea.php:41
+#: includes/cb_time.php:102
+msgid "Options"
+msgstr "Mundësitë"
+
+#: includes/cb_checkbox.php:48 includes/cb_checkbox.php:134
+#: includes/cb_date.php:98 includes/cb_date.php:238
+#: includes/cb_dropdown.php:48 includes/cb_dropdown.php:120
+#: includes/cb_email.php:50 includes/cb_email.php:121
+#: includes/cb_file_upload.php:66 includes/cb_file_upload.php:159
+#: includes/cb_hidden.php:42 includes/cb_multiple.php:47
+#: includes/cb_multiple.php:133 includes/cb_password.php:49
+#: includes/cb_password.php:119 includes/cb_text.php:48
+#: includes/cb_text.php:122 includes/cb_textarea.php:50
+#: includes/cb_textarea.php:130 includes/cb_time.php:111
+#: includes/cb_time.php:293
+msgid "Label"
+msgstr "etiketë"
+
+#: includes/cb_checkbox.php:50 includes/cb_date.php:100
+#: includes/cb_dropdown.php:50 includes/cb_email.php:52
+#: includes/cb_file_upload.php:68 includes/cb_hidden.php:44
+#: includes/cb_multiple.php:49 includes/cb_password.php:51
+#: includes/cb_text.php:50 includes/cb_time.php:113
+msgid "Enter Label"
+msgstr "Hyjnë etiketë"
+
+#: includes/cb_checkbox.php:54 includes/cb_checkbox.php:56
+#: includes/cb_date.php:110 includes/cb_date.php:112
+#: includes/cb_dropdown.php:54 includes/cb_dropdown.php:56
+#: includes/cb_email.php:62 includes/cb_email.php:64
+#: includes/cb_file_upload.php:78 includes/cb_file_upload.php:80
+#: includes/cb_multiple.php:53 includes/cb_multiple.php:55
+#: includes/cb_password.php:61 includes/cb_password.php:63
+#: includes/cb_text.php:60 includes/cb_text.php:62 includes/cb_textarea.php:62
+#: includes/cb_textarea.php:64 includes/cb_time.php:123
+#: includes/cb_time.php:125
+msgid "Required"
+msgstr "kërkohen"
+
+#: includes/cb_checkbox.php:57 includes/cb_date.php:113
+#: includes/cb_dropdown.php:57 includes/cb_email.php:65
+#: includes/cb_file_upload.php:81 includes/cb_multiple.php:56
+#: includes/cb_password.php:64 includes/cb_text.php:63
+#: includes/cb_textarea.php:65 includes/cb_time.php:126
+msgid "Not Required"
+msgstr "nuk kërkohet"
+
+#: includes/cb_checkbox.php:61 includes/cb_date.php:117
+#: includes/cb_dropdown.php:61 includes/cb_email.php:69
+#: includes/cb_file_upload.php:85 includes/cb_multiple.php:60
+#: includes/cb_password.php:68 includes/cb_text.php:67
+#: includes/cb_time.php:130
+msgid "Tooltip Text"
+msgstr "mjet tip i teksti"
+
+#: includes/cb_checkbox.php:63 includes/cb_date.php:119
+#: includes/cb_dropdown.php:63 includes/cb_email.php:71
+#: includes/cb_file_upload.php:87 includes/cb_password.php:70
+#: includes/cb_textarea.php:71 includes/cb_time.php:132
+msgid "Enter Tooltip"
+msgstr "Hyjnë mjet tip i"
+
+#: includes/cb_checkbox.php:70 includes/cb_checkbox.php:127
+msgid "Enter Options"
+msgstr "Hyjnë mundësitë"
+
+#: includes/cb_checkbox.php:70 includes/cb_dropdown.php:70
+#: includes/cb_multiple.php:69
+msgid "Add option"
+msgstr "Shto opsionin"
+
+#: includes/cb_checkbox.php:81 includes/cb_dropdown.php:81
+#: includes/cb_file_upload.php:100 includes/cb_password.php:79
+#: includes/cb_time.php:141
+msgid "Admin Label"
+msgstr "Admin etiketën "
+
+#: includes/cb_checkbox.php:83 includes/cb_date.php:130
+#: includes/cb_dropdown.php:83 includes/cb_email.php:83
+#: includes/cb_file_upload.php:102 includes/cb_multiple.php:82
+#: includes/cb_password.php:81 includes/cb_time.php:143
+msgid "Enter Admin Label"
+msgstr "hyjnë admin etiketën "
+
+#: includes/cb_checkbox.php:87 includes/cb_date.php:134
+#: includes/cb_dropdown.php:87 includes/cb_email.php:87
+#: includes/cb_file_upload.php:106 includes/cb_hidden.php:60
+#: includes/cb_multiple.php:86 includes/cb_password.php:85
+#: includes/cb_text.php:89 includes/cb_textarea.php:97
+#: includes/cb_time.php:147
+msgid "Do not show in the email"
+msgstr "A nuk e tregojnë,në Email"
+
+#: includes/cb_checkbox.php:97 includes/cb_multiple.php:96
+msgid "Css Label :"
+msgstr "CSS etiketën :"
+
+#: includes/cb_checkbox.php:99 includes/cb_date.php:196
+#: includes/cb_dropdown.php:99 includes/cb_email.php:100
+#: includes/cb_file_upload.php:145 includes/cb_multiple.php:98
+#: includes/cb_password.php:97 includes/cb_text.php:101
+#: includes/cb_time.php:251
+msgid "Enter Css Label"
+msgstr "Futni CSS etiketën"
+
+#: includes/cb_checkbox.php:104
+msgid "CSS Description :"
+msgstr "CSS Përshkrimi :"
+
+#: includes/cb_checkbox.php:106 includes/cb_date.php:210
+#: includes/cb_dropdown.php:113 includes/cb_email.php:114
+#: includes/cb_file_upload.php:152 includes/cb_multiple.php:105
+#: includes/cb_password.php:112 includes/cb_text.php:115
+#: includes/cb_time.php:265
+msgid "Enter Css Description"
+msgstr "Futni CSS Përshkrimi"
+
+#: includes/cb_checkbox.php:111
+msgid "CSS Options outer wrapper :"
+msgstr "CSS Mundësitë,këmishë e jashtme:"
+
+#: includes/cb_checkbox.php:113
+msgid "Enter Css Outer Wrapper"
+msgstr "Futni CSS këmishë e jashtme :"
+
+#: includes/cb_checkbox.php:118
+msgid "CSS Option Wrapper :"
+msgstr "CSS Opsioni,robdëshambër:"
+
+#: includes/cb_checkbox.php:120
+msgid "Enter Css Option Wrapper"
+msgstr "Futni CSS Opsioni,robdëshambër:"
+
+#: includes/cb_checkbox.php:125
+msgid "CSS Options Label :"
+msgstr "CSS Opsionet,etiketën:"
+
+#: includes/cb_checkbox.php:132 includes/cb_date.php:236
+#: includes/cb_dropdown.php:118 includes/cb_email.php:119
+#: includes/cb_file_upload.php:157 includes/cb_multiple.php:131
+#: includes/cb_password.php:117 includes/cb_text.php:120
+#: includes/cb_textarea.php:128 includes/cb_time.php:291
+msgid "Add a style to"
+msgstr "Shtoni një stilin te"
+
+#: includes/cb_checkbox.php:135 includes/cb_date.php:104
+#: includes/cb_date.php:240 includes/cb_dropdown.php:122
+#: includes/cb_email.php:56 includes/cb_email.php:123
+#: includes/cb_file_upload.php:72 includes/cb_file_upload.php:160
+#: includes/cb_multiple.php:134 includes/cb_password.php:55
+#: includes/cb_password.php:121 includes/cb_text.php:54
+#: includes/cb_text.php:124 includes/cb_textarea.php:56
+#: includes/cb_textarea.php:132 includes/cb_time.php:117
+#: includes/cb_time.php:295
+msgid "Description"
+msgstr "përshkrim"
+
+#: includes/cb_checkbox.php:136 includes/cb_multiple.php:135
+msgid "Options outer wrapper"
+msgstr "Opsionet,këmishë e jashtme :"
+
+#: includes/cb_checkbox.php:137
+msgid "Options wrapper"
+msgstr "Opsionet robdëshambër"
+
+#: includes/cb_checkbox.php:138 includes/cb_multiple.php:137
+msgid "Options label"
+msgstr "Opsionet etiketë"
+
+#: includes/cb_checkbox.php:148 includes/cb_date.php:253
+#: includes/cb_dropdown.php:132 includes/cb_email.php:143
+#: includes/cb_file_upload.php:170 includes/cb_hidden.php:72
+#: includes/cb_multiple.php:147 includes/cb_password.php:141
+#: includes/cb_text.php:144 includes/cb_textarea.php:152
+#: includes/cb_time.php:308 views/contact_email.php:183
+#: views/contact_view.php:34 views/edit_contact_view.php:82
+msgid "Save"
+msgstr "ruaj"
+
+#: includes/cb_checkbox.php:202 includes/cb_checkbox.php:267
+#: includes/cb_dropdown.php:228 includes/cb_dropdown.php:278
+#: includes/cb_multiple.php:202 includes/cb_multiple.php:268
+msgid "Update"
+msgstr "Përditësoni"
+
+#: includes/cb_checkbox.php:256 includes/cb_dropdown.php:270
+#: includes/cb_multiple.php:257
+msgid "Please Fill an Option."
+msgstr "Ju lutem Plotësoni një opsion."
+
+#: includes/cb_checkbox.php:272 includes/cb_multiple.php:273
+msgid "This Option Already Exists."
+msgstr "Këtij opsioni tashmë ekziston."
+
+#: includes/cb_checkbox.php:294 includes/cb_dropdown.php:286
+#: includes/cb_dropdown.php:308 includes/cb_multiple.php:295
+msgid "This Option Already Exists. "
+msgstr "Këtij opsioni tashmë ekziston."
+
+#: includes/cb_checkbox.php:305 includes/cb_dropdown.php:319
+#: includes/cb_multiple.php:306
+msgid "Option updated"
+msgstr "Opsioni Rifreskimi i"
+
+#: includes/cb_date.php:8 includes/cb_date.php:100 includes/cb_date.php:130
+#: views/contact_view.php:66 views/edit_contact_view.php:113
+#: views/edit_contact_view.php:1420
+msgid "Date"
+msgstr "data"
+
+#: includes/cb_date.php:12 includes/cb_date.php:155
+#: views/contact_bank_frontend.php:679
+msgid "Day"
+msgstr "ditë"
+
+#: includes/cb_date.php:32 includes/cb_date.php:159
+#: views/contact_bank_frontend.php:707
+msgid "Month"
+msgstr "muaj"
+
+#: includes/cb_date.php:47 includes/cb_date.php:162
+#: views/contact_bank_frontend.php:729
+msgid "Year"
+msgstr "Viti"
+
+#: includes/cb_date.php:79
+msgid "Date Control"
+msgstr "Data Kontrolli "
+
+#: includes/cb_date.php:106 includes/cb_email.php:58
+#: includes/cb_file_upload.php:74 includes/cb_password.php:57
+#: includes/cb_text.php:56 includes/cb_time.php:119
+msgid "Enter Description"
+msgstr "Futni Përshkrimi"
+
+#: includes/cb_date.php:128 includes/cb_email.php:81 includes/cb_hidden.php:54
+#: includes/cb_multiple.php:80 includes/cb_text.php:83
+#: includes/cb_textarea.php:91
+msgid "Admin label"
+msgstr "Admin etiketë "
+
+#: includes/cb_date.php:140
+msgid "Start year"
+msgstr "filloni vit"
+
+#: includes/cb_date.php:142
+msgid "Enter Start Year"
+msgstr "Futni filloni vit"
+
+#: includes/cb_date.php:146
+msgid "End year"
+msgstr "Fundi vitit"
+
+#: includes/cb_date.php:148
+msgid "Enter End Year "
+msgstr "Futni Fundi, vitit"
+
+#: includes/cb_date.php:152 includes/cb_text.php:77
+#: includes/cb_textarea.php:85 includes/cb_time.php:175
+msgid "Default value"
+msgstr "Vlera e albumit"
+
+#: includes/cb_date.php:167
+msgid "Error message if invalid date"
+msgstr "mesazhi i gabimit nëse data e pavlefshme"
+
+#: includes/cb_date.php:169
+msgid "Enter Error Message"
+msgstr "Shkruani mesazhi gabimit"
+
+#: includes/cb_date.php:173
+msgid "Date format"
+msgstr "Data Formati "
+
+#: includes/cb_date.php:194 includes/cb_dropdown.php:97
+#: includes/cb_email.php:98 includes/cb_file_upload.php:143
+#: includes/cb_password.php:95 includes/cb_text.php:99
+#: includes/cb_time.php:249
+msgid "Css Label"
+msgstr "CSS etiketën"
+
+#: includes/cb_date.php:201 includes/cb_email.php:105 includes/cb_time.php:256
+msgid "Css Text Input"
+msgstr "Css Teksti Inputi"
+
+#: includes/cb_date.php:203 includes/cb_text.php:108 includes/cb_time.php:258
+msgid "Enter Css Text Input"
+msgstr "Enter CSS Text Input"
+
+#: includes/cb_date.php:208 includes/cb_dropdown.php:111
+#: includes/cb_email.php:112 includes/cb_file_upload.php:150
+#: includes/cb_password.php:110 includes/cb_time.php:263
+msgid "Css Description"
+msgstr "CSS Përshkrimi"
+
+#: includes/cb_date.php:215
+msgid "Css Day"
+msgstr "CSS Dita"
+
+#: includes/cb_date.php:217
+msgid "Enter Css Day"
+msgstr "Futni CSS Dita"
+
+#: includes/cb_date.php:222
+msgid "Css Month"
+msgstr "CSS Muaji"
+
+#: includes/cb_date.php:224
+msgid "Enter Css Month"
+msgstr "Futni CSS Muaji"
+
+#: includes/cb_date.php:229
+msgid "Css Year"
+msgstr "CSS Viti"
+
+#: includes/cb_date.php:231
+msgid "Enter Css Year"
+msgstr "Futni CSS Viti"
+
+#: includes/cb_date.php:239 includes/cb_email.php:122
+#: includes/cb_password.php:120 includes/cb_textarea.php:131
+#: includes/cb_time.php:294
+msgid "Text input"
+msgstr "të futet tekst"
+
+#: includes/cb_date.php:241
+msgid "Date day dropdown"
+msgstr "Data Ditë shpalosjes duhet"
+
+#: includes/cb_date.php:242
+msgid "Date month dropdown"
+msgstr "Data Muaj shpalosjes duhet"
+
+#: includes/cb_date.php:243
+msgid "Date year dropdown"
+msgstr "Data Viti,shpalosjes duhet"
+
+#: includes/cb_dropdown.php:12 includes/cb_dropdown.php:344
+#: views/contact_bank_frontend.php:385 views/contact_bank_frontend.php:398
+msgid "Select option"
+msgstr "zgjidhni opsionin"
+
+#: includes/cb_dropdown.php:29
+msgid "Dropdown Control"
+msgstr "shpalosjes duhet Kontrolli"
+
+#: includes/cb_dropdown.php:70 includes/cb_multiple.php:69
+msgid "Enter Option"
+msgstr "Futni opcioni"
+
+#: includes/cb_dropdown.php:104
+msgid "Css Dropdown Menu"
+msgstr " CSS shpalosjes duhet Menuja "
+
+#: includes/cb_dropdown.php:106
+msgid "Enter Css Dropdown Menu"
+msgstr " Futni CSS shpalosjes duhet Menuja"
+
+#: includes/cb_dropdown.php:121
+msgid "Dropdown menu"
+msgstr "shpalosjes duhet Menuja"
+
+#: includes/cb_email.php:9 includes/cb_email.php:52 includes/cb_email.php:83
+#: views/contact_email.php:72 views/contact_email.php:138
+#: views/edit_contact_view.php:1112
+msgid "Email"
+msgstr "maili"
+
+#: includes/cb_email.php:30
+msgid "Email Control"
+msgstr "maili Kontrolli"
+
+#: includes/cb_email.php:107 includes/cb_password.php:105
+msgid "Enter Css Input Text"
+msgstr "Futni CSS Inputi-tekst"
+
+#: includes/cb_email.php:127 includes/cb_password.php:125
+#: includes/cb_text.php:128 includes/cb_textarea.php:136
+msgid "Add a filter"
+msgstr "Shto një filtër"
+
+#: includes/cb_email.php:129 includes/cb_password.php:127
+#: includes/cb_text.php:130 includes/cb_textarea.php:138
+msgid "Alpha"
+msgstr "alfa"
+
+#: includes/cb_email.php:130 includes/cb_password.php:128
+#: includes/cb_text.php:131 includes/cb_textarea.php:139
+msgid "Alpha Numeric"
+msgstr "alfa numerike"
+
+#: includes/cb_email.php:131 includes/cb_password.php:129
+#: includes/cb_text.php:132 includes/cb_textarea.php:140
+msgid "Digits"
+msgstr "numër"
+
+#: includes/cb_email.php:132 includes/cb_password.php:130
+#: includes/cb_text.php:133 includes/cb_textarea.php:141
+msgid "Strip Tags"
+msgstr "zhvesh etiketimet"
+
+#: includes/cb_email.php:133 includes/cb_password.php:131
+#: includes/cb_text.php:134 includes/cb_textarea.php:142
+msgid "Trim"
+msgstr "Gjendje e"
+
+#: includes/cb_file_upload.php:9 includes/cb_file_upload.php:68
+#: includes/cb_file_upload.php:102 views/contact_view.php:63
+#: views/edit_contact_view.php:110 views/edit_contact_view.php:1373
+msgid "File Upload"
+msgstr "Skedar-ngarko"
+
+#: includes/cb_file_upload.php:46
+msgid "Fileupload Control"
+msgstr "Skedar-ngarko Kontrolli"
+
+#: includes/cb_file_upload.php:112
+msgid "Allow Multiple Uploads"
+msgstr "Lejo shumëfishta Ngarkimet "
+
+#: includes/cb_file_upload.php:118
+msgid "Allowed File Extensions"
+msgstr "Zgjerime Lejuara Kartelash"
+
+#: includes/cb_file_upload.php:120
+msgid "Enter File Extensions"
+msgstr "Futni kartelash zgjerime"
+
+#: includes/cb_file_upload.php:122
+msgid "The file extensions must be seperated with semicolons(' ; ')"
+msgstr "Kartelash Zgjerime duhet të ndahen me pikpresje (';') "
+
+#: includes/cb_file_upload.php:126
+msgid "Allowed File Size"
+msgstr "lejuar,skedar përmasa"
+
+#: includes/cb_file_upload.php:130
+msgid "File Size must be in Kb"
+msgstr "Madhësia e dokumentit duhet jenë në në Kb"
+
+#: includes/cb_hidden.php:8
+msgid "Untitled (hidden)"
+msgstr "Patitulluar (fshehur)"
+
+#: includes/cb_hidden.php:11 views/contact_bank_frontend.php:952
+#: views/contact_view.php:72 views/edit_contact_view.php:119
+msgid "Hidden"
+msgstr "fshehur:"
+
+#: includes/cb_hidden.php:29
+msgid "Hidden Control"
+msgstr "Kontrolli i fshehur"
+
+#: includes/cb_hidden.php:44 includes/cb_hidden.php:56
+#: views/edit_contact_view.php:1618
+msgid "Untitled(hidden)"
+msgstr "Patitulluar (fshehur)"
+
+#: includes/cb_hidden.php:48
+msgid "Default Value"
+msgstr "Vlera e albumit"
+
+#: includes/cb_hidden.php:50 includes/cb_text.php:79
+msgid "Enter Default Value"
+msgstr "Futni Vlera e albumit"
+
+#: includes/cb_hidden.php:56 includes/cb_text.php:85
+#: includes/cb_textarea.php:93
+msgid "Enter Admin label"
+msgstr "hyjnë admin etiketë "
+
+#: includes/cb_multiple.php:28
+msgid "Radio Buttons"
+msgstr "butonat e radios"
+
+#: includes/cb_multiple.php:62 includes/cb_text.php:69
+msgid "Enter Tooltip Text"
+msgstr "Hyjnë mjet tip i,teksti"
+
+#: includes/cb_multiple.php:103
+msgid "Css Description :"
+msgstr "Css Description :"
+
+#: includes/cb_multiple.php:110
+msgid "Css Options outer wrapper :"
+msgstr "CSS Mundësitë,këmishë e jashtme :"
+
+#: includes/cb_multiple.php:112
+msgid "Enter Css Options outer wrapper"
+msgstr "Futni CSS Mundësitë,këmishë e jashtme :"
+
+#: includes/cb_multiple.php:117
+msgid "CSS Options Wrapper :"
+msgstr "CSS opcionet,mbështjellëse :"
+
+#: includes/cb_multiple.php:119
+msgid "Enter Css Options Wrapper"
+msgstr "Futni CSS opcionet,mbështjellëse :"
+
+#: includes/cb_multiple.php:124
+msgid "CSS Option Label :"
+msgstr "CSS Opsioni Etiketë "
+
+#: includes/cb_multiple.php:126
+msgid "Enter Css Option Label"
+msgstr "Futni CSS Opsioni etiketë "
+
+#: includes/cb_multiple.php:136
+msgid "Options  wrapper"
+msgstr "Opcionet mbështjellëse"
+
+#: includes/cb_password.php:8 includes/cb_password.php:51
+#: includes/cb_password.php:81 views/contact_view.php:75
+#: views/edit_contact_view.php:122 views/edit_contact_view.php:1628
+msgid "Password"
+msgstr "fjalëkalim"
+
+#: includes/cb_password.php:29
+msgid "Password Control"
+msgstr "fjalëkalimi Kontrolli "
+
+#: includes/cb_password.php:103
+msgid "Css Input Text"
+msgstr "CSS Inputi,teksti "
+
+#: includes/cb_text.php:29
+msgid "Textbox Control"
+msgstr " teksti kuti kontrollit"
+
+#: includes/cb_text.php:106
+msgid " Css Text Input"
+msgstr "Css Teksti Inputi"
+
+#: includes/cb_text.php:113
+msgid " Css Description"
+msgstr "CSS Përshkrimi"
+
+#: includes/cb_text.php:123
+msgid "Text Input"
+msgstr "Teksti Inputi"
+
+#: includes/cb_textarea.php:30
+msgid "Textarea Control"
+msgstr " teksti zona Kontrolli"
+
+#: includes/cb_textarea.php:52
+msgid "Enter label"
+msgstr "hyjë etiketë"
+
+#: includes/cb_textarea.php:58
+msgid "Enter  Description"
+msgstr "Futni Përshkrimi"
+
+#: includes/cb_textarea.php:69
+msgid "Tooltip text"
+msgstr "mjet tip i teksti"
+
+#: includes/cb_textarea.php:87
+msgid "Enter Default value"
+msgstr "Futni vlerën e albumit"
+
+#: includes/cb_textarea.php:107
+msgid "CSS label"
+msgstr "CSS etiketën"
+
+#: includes/cb_textarea.php:109
+msgid "Enter css Label"
+msgstr "Futni CSS etiketën"
+
+#: includes/cb_textarea.php:114
+msgid "CSS textinput"
+msgstr "Css Teksti Inputi"
+
+#: includes/cb_textarea.php:116
+msgid "Enter css textinput"
+msgstr "Futni Css Teksti Inputi"
+
+#: includes/cb_textarea.php:121
+msgid "CSS description"
+msgstr "CSS Përshkrimi"
+
+#: includes/cb_textarea.php:123
+msgid "Enter css description"
+msgstr "Futni CSS Përshkrimi"
+
+#: includes/cb_time.php:8 includes/cb_time.php:113 includes/cb_time.php:143
+#: views/contact_view.php:69 views/edit_contact_view.php:116
+#: views/edit_contact_view.php:1513
+msgid "Time"
+msgstr "kohë"
+
+#: includes/cb_time.php:12 includes/cb_time.php:32 includes/cb_time.php:178
+#: includes/cb_time.php:198 views/contact_bank_frontend.php:821
+#: views/contact_bank_frontend.php:847 views/contact_bank_frontend.php:873
+msgid "Hour"
+msgstr "orë"
+
+#: includes/cb_time.php:52 includes/cb_time.php:218
+#: views/contact_bank_frontend.php:897
+msgid "Minute"
+msgstr "minutë"
+
+#: includes/cb_time.php:92
+msgid "Time Control"
+msgstr "koha kontrolli "
+
+#: includes/cb_time.php:153
+msgid "12/24 hour time"
+msgstr "12/24 orë Ora "
+
+#: includes/cb_time.php:162
+msgid "Time format"
+msgstr "Koha formati "
+
+#: includes/cb_time.php:270
+msgid "Css Hour"
+msgstr "CSS Ore "
+
+#: includes/cb_time.php:272
+msgid "Enter Css Hour"
+msgstr "Futni CSS Ore "
+
+#: includes/cb_time.php:277
+msgid "Css Minute"
+msgstr "CSS minutë"
+
+#: includes/cb_time.php:279
+msgid "Enter Css Minute"
+msgstr "Futni CSS minutë"
+
+#: includes/cb_time.php:284
+msgid "Css am/pm"
+msgstr "CSS MO / MD"
+
+#: includes/cb_time.php:286
+msgid "Enter Css am/pm"
+msgstr "Futni CSS PD/ MD"
+
+#: includes/cb_time.php:296
+msgid "Time hour dropdown"
+msgstr "Koha Ore,shpalosjes duhet"
+
+#: includes/cb_time.php:297
+msgid "Time minute dropdown"
+msgstr "Koha minutë, shpalosjes duhet"
+
+#: includes/cb_time.php:298
+msgid "Time am/pm dropdown"
+msgstr "Koha am/pm shpalosjes duhet"
+
+#: views/contact_bank_frontend.php:153
+msgid "Enter Text"
+msgstr "futni Tekst"
+
+#: views/contact_bank_frontend.php:342 views/contact_email.php:84
+#: views/contact_email.php:144
+msgid "Enter Email Address"
+msgstr "Futni maili Adresa"
+
+#: views/contact_bank_frontend.php:952
+msgid "Enter Hidden Text"
+msgstr "Futni tekstin e fshehur"
+
+#: views/contact_bank_frontend.php:1040
+msgid "Enter Password"
+msgstr "Jep fjalëkalimin"
+
+#: views/contact_bank_frontend.php:1051
+msgid "Submit Form"
+msgstr "parashtroj formularin"
+
+#: views/contact_email.php:9 views/contact_frontend_data.php:8
+#: views/contact_view.php:9 views/edit_contact_view.php:31
+msgid "Back to Dashboard"
+msgstr "Mbrapsht në Paneli i drejtimit"
+
+#: views/contact_email.php:13
+msgid "Email Settings Saved. Kindly wait for the redirect."
+msgstr "Cilësimet maili shpëtova. Mirësi të presë për përcjellim."
+
+#: views/contact_email.php:18 views/contact_email.php:49
+#: views/contact_frontend_data.php:19 views/contact_frontend_data.php:32
+msgid "Select Form"
+msgstr "Përzgjidhni formularin"
+
+#: views/contact_email.php:65
+msgid "Admin Email"
+msgstr "Admin e-mail"
+
+#: views/contact_email.php:76
+msgid "To"
+msgstr "tek"
+
+#: views/contact_email.php:78
+msgid "Enter Admin Email"
+msgstr "Futni admin maili"
+
+#: views/contact_email.php:82 views/contact_email.php:142
+msgid "From"
+msgstr "nga të"
+
+#: views/contact_email.php:89 views/contact_email.php:148
+msgid "Subject"
+msgstr "lëndë"
+
+#: views/contact_email.php:91 views/contact_email.php:150
+msgid "Enter Subject"
+msgstr "futni subjekt"
+
+#: views/contact_email.php:100 views/contact_email.php:160
+msgid "Email Content"
+msgstr "Përmbajtja maili"
+
+#: views/contact_email.php:115 views/contact_email.php:175
+msgid "Short Code Controls for Email"
+msgstr "shkurtër Kodi kontrollin për maili"
+
+#: views/contact_email.php:129
+msgid "Client Email"
+msgstr "Klienti e-maili "
+
+#: views/contact_frontend_data.php:14 views/contact_view.php:20
+#: views/dashboard.php:15 views/dashboard.php:21
+msgid "Form"
+msgstr "formë"
+
+#: views/contact_view.php:13
+msgid "Form Submited. Kindly wait for the redirect."
+msgstr "Formular Parashtrohet. Mirësi të presë për përcjellim."
+
+#: views/contact_view.php:24 views/edit_contact_view.php:46
+msgid "Form Name :"
+msgstr "Formulari Emri :"
+
+#: views/contact_view.php:27 views/edit_contact_view.php:49
+msgid "Enter Form Name"
+msgstr "hyj formulari emri"
+
+#: views/contact_view.php:40 views/edit_contact_view.php:88
+msgid "Control Buttons"
+msgstr "butonat e kontrollit"
+
+#: views/contact_view.php:45 views/edit_contact_view.php:92
+msgid "Text Box"
+msgstr "Tekst kutia"
+
+#: views/contact_view.php:48 views/edit_contact_view.php:95
+msgid "Text Area"
+msgstr "Tekst zona "
+
+#: views/contact_view.php:51 views/edit_contact_view.php:98
+msgid "Email Address"
+msgstr "maili Adresa "
+
+#: views/contact_view.php:54 views/edit_contact_view.php:101
+msgid "Dropdown Menu"
+msgstr "shpalosjes duhet menyja "
+
+#: views/contact_view.php:57 views/edit_contact_view.php:104
+msgid "Checkboxes"
+msgstr "kutitë e zgjedhjes"
+
+#: views/contact_view.php:60 views/edit_contact_view.php:107
+msgid "Multiple Choice"
+msgstr "shumëfishta zgjedhje"
+
+#: views/dashboard.php:5
+msgid "Dashboard - Contact Bank"
+msgstr "baltëpritëse - Kontakt  Banka"
+
+#: views/dashboard.php:9
+msgid "Delete All Forms"
+msgstr "Fshijë të Gjitha Formave"
+
+#: views/dashboard.php:22
+msgid "Shortcode"
+msgstr "Kodi shkurtër"
+
+#: views/dashboard.php:23
+msgid "Action"
+msgstr "veprim"
+
+#: views/dashboard.php:43
+msgid "Edit"
+msgstr "redaktoj"
+
+#: views/dashboard.php:46
+msgid "Delete"
+msgstr "fshini"
+
+#: views/dashboard.php:62
+msgid "Server Settings"
+msgstr "cilësimet e serverit"
+
+#: views/dashboard.php:73
+msgid "Not set"
+msgstr "nuk është caktuar"
+
+#: views/dashboard.php:75 views/dashboard.php:78
+msgid "On"
+msgstr "MBI"
+
+#: views/dashboard.php:76 views/dashboard.php:79
+msgid "Off"
+msgstr "hequr"
+
+#: views/dashboard.php:82 views/dashboard.php:85 views/dashboard.php:88
+#: views/dashboard.php:91 views/dashboard.php:94 views/dashboard.php:97
+msgid "N/A"
+msgstr "N/A"
+
+#: views/dashboard.php:96
+msgid " MByte"
+msgstr "MByte"
+
+#: views/dashboard.php:99 views/dashboard.php:102 views/dashboard.php:105
+#: views/dashboard.php:155
+msgid "Yes"
+msgstr "po"
+
+#: views/dashboard.php:100 views/dashboard.php:103 views/dashboard.php:106
+#: views/dashboard.php:157
+msgid "No"
+msgstr "Nuk ka"
+
+#: views/dashboard.php:108
+msgid "Operating System"
+msgstr "Operimit të Sistemit"
+
+#: views/dashboard.php:109
+msgid "Server"
+msgstr "shërbyesi"
+
+#: views/dashboard.php:110
+msgid "Memory usage"
+msgstr "përdorimin e kujtesës"
+
+#: views/dashboard.php:111
+msgid "MYSQL Version"
+msgstr "MySQL Versioni"
+
+#: views/dashboard.php:112
+msgid "SQL Mode"
+msgstr "SQL Menyre"
+
+#: views/dashboard.php:113
+msgid "PHP Version"
+msgstr "PHP Versioni"
+
+#: views/dashboard.php:114
+msgid "PHP Safe Mode"
+msgstr "PHP sigurt Menyre"
+
+#: views/dashboard.php:115
+msgid "PHP Allow URL fopen"
+msgstr "PHP Lejo URL fopen "
+
+#: views/dashboard.php:116
+msgid "PHP Memory Limit"
+msgstr "PHP Memoria Kufizo"
+
+#: views/dashboard.php:117
+msgid "PHP Max Upload Size"
+msgstr "PHP Max Ngarko Madhësi "
+
+#: views/dashboard.php:118
+msgid "PHP Max Post Size"
+msgstr "PHP Max Posta Madhësi "
+
+#: views/dashboard.php:119
+msgid "PCRE Backtracking Limit"
+msgstr "Mbrapa ndjekja Kufizo"
+
+#: views/dashboard.php:120
+msgid "PHP Max Script Execute Time"
+msgstr "PHP Max Script Ekzekutojë Koha"
+
+#: views/dashboard.php:121
+msgid "PHP Exif support"
+msgstr "PHP Exif mbështetje "
+
+#: views/dashboard.php:122
+msgid "PHP IPTC support"
+msgstr "PHP IPTC mbështetje "
+
+#: views/dashboard.php:123
+msgid "PHP XML support"
+msgstr "PHP XML mbështetje "
+
+#: views/dashboard.php:131
+msgid "Graphic Library Settings"
+msgstr "Cilësimet Grafike Biblioteka"
+
+#: views/dashboard.php:150
+msgid "No GD support"
+msgstr "Nuk ka GD mbështetje"
+
+#: views/dashboard.php:186
+msgid "Are you sure to delete this form ?"
+msgstr "A jeni të sigurt për të fshini këtë formë?"
+
+#: views/dashboard.php:197
+msgid "Are you sure to delete all forms ?"
+msgstr "A jeni të sigurt për të fshirë të gjitha formave?"
+
+#: views/edit_contact_view.php:28
+msgid "Edit Existing Form"
+msgstr "Redakto ekzistuese formës "
+
+#: views/edit_contact_view.php:35
+msgid "Form Updated. Kindly wait for the redirect."
+msgstr "Formular-Rifreskimi i. Mirësi të presë për përcjellim."
+
+#: views/edit_contact_view.php:42
+msgid "Edit Form"
+msgstr "Redakto formës "
+
+#: views/edit_contact_view.php:288 views/edit_contact_view.php:323
+#: views/edit_contact_view.php:392 views/edit_contact_view.php:441
+#: views/edit_contact_view.php:489
+msgid "Untitled :"
+msgstr "Patitulluar :"
+
+#: views/edit_contact_view.php:358
+msgid "Email :"
+msgstr "maili :"
+
+#: views/edit_contact_view.php:538
+msgid "File Upload :"
+msgstr "Skedar-ngarko:"
+
+#: views/edit_contact_view.php:585
+msgid "Date :"
+msgstr "Data:"
+
+#: views/edit_contact_view.php:656
+msgid "Time :"
+msgstr "koha:"
+
+#: views/edit_contact_view.php:714
+msgid "Untitled(hidden) :"
+msgstr "Patitulluar (fshehur) :"
+
+#: views/edit_contact_view.php:746
+msgid "Password : "
+msgstr "fjalëkalimi:"
+
+#: views/edit_contact_view.php:1397
+msgid "1024"
+msgstr ""

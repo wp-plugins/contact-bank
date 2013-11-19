@@ -1,0 +1,1031 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2013-11-16 11:40+0530\n"
+"PO-Revision-Date: 2013-11-16 11:40+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: C:\\wamp\\www\\contact-bank3.7\\wp-content\\plugins"
+"\\contact-bank\\\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: contact-bank.php:62
+msgid "Contact Bank"
+msgstr ""
+
+#: contact-bank.php:63 contact-bank.php:431
+msgid "Dashboard"
+msgstr "Műszerfal"
+
+#: contact-bank.php:64 contact-bank.php:437 views/contact_view.php:6
+#: views/dashboard.php:8
+msgid "Add New Form"
+msgstr "hozzáad j űrlap"
+
+#: contact-bank.php:65 contact-bank.php:443 views/contact_email.php:6
+msgid "Email Settings"
+msgstr "mail beállítások"
+
+#: contact-bank.php:66 contact-bank.php:449 views/contact_frontend_data.php:5
+msgid "Form Entries"
+msgstr "formájában- bejegyzések"
+
+#: includes/cb_checkbox.php:8 includes/cb_checkbox.php:50
+#: includes/cb_checkbox.php:83 includes/cb_dropdown.php:8
+#: includes/cb_dropdown.php:50 includes/cb_dropdown.php:83
+#: includes/cb_multiple.php:8 includes/cb_multiple.php:49
+#: includes/cb_multiple.php:82 includes/cb_text.php:8 includes/cb_text.php:50
+#: includes/cb_text.php:85 includes/cb_textarea.php:9
+#: includes/cb_textarea.php:52 includes/cb_textarea.php:93
+#: views/edit_contact_view.php:992 views/edit_contact_view.php:1050
+#: views/edit_contact_view.php:1179 views/edit_contact_view.php:1235
+#: views/edit_contact_view.php:1305
+msgid "Untitled"
+msgstr "cím nélküli"
+
+#: includes/cb_checkbox.php:13 includes/cb_checkbox.php:42
+#: includes/cb_date.php:62 includes/cb_date.php:92 includes/cb_dropdown.php:14
+#: includes/cb_dropdown.php:42 includes/cb_email.php:13
+#: includes/cb_email.php:44 includes/cb_file_upload.php:12
+#: includes/cb_file_upload.php:60 includes/cb_hidden.php:12
+#: includes/cb_multiple.php:13 includes/cb_multiple.php:41
+#: includes/cb_password.php:12 includes/cb_password.php:43
+#: includes/cb_text.php:12 includes/cb_text.php:42 includes/cb_textarea.php:13
+#: includes/cb_textarea.php:44 includes/cb_time.php:75
+#: includes/cb_time.php:105
+msgid "Settings"
+msgstr "beállításokat"
+
+#: includes/cb_checkbox.php:29
+msgid "Checkbox Control"
+msgstr "Jelölőnégyzetet vezérlés"
+
+#: includes/cb_checkbox.php:36 includes/cb_date.php:86
+#: includes/cb_dropdown.php:36 includes/cb_email.php:38
+#: includes/cb_file_upload.php:54 includes/cb_hidden.php:36
+#: includes/cb_multiple.php:35 includes/cb_password.php:37
+#: includes/cb_text.php:36 includes/cb_textarea.php:38 includes/cb_time.php:99
+msgid "Advanced"
+msgstr "előrehaladott"
+
+#: includes/cb_checkbox.php:39 includes/cb_checkbox.php:68
+#: includes/cb_date.php:89 includes/cb_dropdown.php:39
+#: includes/cb_dropdown.php:68 includes/cb_email.php:41
+#: includes/cb_file_upload.php:57 includes/cb_multiple.php:38
+#: includes/cb_multiple.php:67 includes/cb_password.php:40
+#: includes/cb_text.php:39 includes/cb_textarea.php:41
+#: includes/cb_time.php:102
+msgid "Options"
+msgstr "Beállítások"
+
+#: includes/cb_checkbox.php:48 includes/cb_checkbox.php:134
+#: includes/cb_date.php:98 includes/cb_date.php:238
+#: includes/cb_dropdown.php:48 includes/cb_dropdown.php:120
+#: includes/cb_email.php:50 includes/cb_email.php:121
+#: includes/cb_file_upload.php:66 includes/cb_file_upload.php:159
+#: includes/cb_hidden.php:42 includes/cb_multiple.php:47
+#: includes/cb_multiple.php:133 includes/cb_password.php:49
+#: includes/cb_password.php:119 includes/cb_text.php:48
+#: includes/cb_text.php:122 includes/cb_textarea.php:50
+#: includes/cb_textarea.php:130 includes/cb_time.php:111
+#: includes/cb_time.php:293
+msgid "Label"
+msgstr "Címkézési"
+
+#: includes/cb_checkbox.php:50 includes/cb_date.php:100
+#: includes/cb_dropdown.php:50 includes/cb_email.php:52
+#: includes/cb_file_upload.php:68 includes/cb_hidden.php:44
+#: includes/cb_multiple.php:49 includes/cb_password.php:51
+#: includes/cb_text.php:50 includes/cb_time.php:113
+msgid "Enter Label"
+msgstr "Adja  Címkézési"
+
+#: includes/cb_checkbox.php:54 includes/cb_checkbox.php:56
+#: includes/cb_date.php:110 includes/cb_date.php:112
+#: includes/cb_dropdown.php:54 includes/cb_dropdown.php:56
+#: includes/cb_email.php:62 includes/cb_email.php:64
+#: includes/cb_file_upload.php:78 includes/cb_file_upload.php:80
+#: includes/cb_multiple.php:53 includes/cb_multiple.php:55
+#: includes/cb_password.php:61 includes/cb_password.php:63
+#: includes/cb_text.php:60 includes/cb_text.php:62 includes/cb_textarea.php:62
+#: includes/cb_textarea.php:64 includes/cb_time.php:123
+#: includes/cb_time.php:125
+msgid "Required"
+msgstr "kötelező"
+
+#: includes/cb_checkbox.php:57 includes/cb_date.php:113
+#: includes/cb_dropdown.php:57 includes/cb_email.php:65
+#: includes/cb_file_upload.php:81 includes/cb_multiple.php:56
+#: includes/cb_password.php:64 includes/cb_text.php:63
+#: includes/cb_textarea.php:65 includes/cb_time.php:126
+msgid "Not Required"
+msgstr "Ne  Kötelező"
+
+#: includes/cb_checkbox.php:61 includes/cb_date.php:117
+#: includes/cb_dropdown.php:61 includes/cb_email.php:69
+#: includes/cb_file_upload.php:85 includes/cb_multiple.php:60
+#: includes/cb_password.php:68 includes/cb_text.php:67
+#: includes/cb_time.php:130
+msgid "Tooltip Text"
+msgstr "Eszköztippben szöveg"
+
+#: includes/cb_checkbox.php:63 includes/cb_date.php:119
+#: includes/cb_dropdown.php:63 includes/cb_email.php:71
+#: includes/cb_file_upload.php:87 includes/cb_password.php:70
+#: includes/cb_textarea.php:71 includes/cb_time.php:132
+msgid "Enter Tooltip"
+msgstr "Adja - eszköztippben"
+
+#: includes/cb_checkbox.php:70 includes/cb_checkbox.php:127
+msgid "Enter Options"
+msgstr "Írja be Opciók"
+
+#: includes/cb_checkbox.php:70 includes/cb_dropdown.php:70
+#: includes/cb_multiple.php:69
+msgid "Add option"
+msgstr "hozzáadni opció"
+
+#: includes/cb_checkbox.php:81 includes/cb_dropdown.php:81
+#: includes/cb_file_upload.php:100 includes/cb_password.php:79
+#: includes/cb_time.php:141
+msgid "Admin Label"
+msgstr "Adminisztrációs -Címkézési"
+
+#: includes/cb_checkbox.php:83 includes/cb_date.php:130
+#: includes/cb_dropdown.php:83 includes/cb_email.php:83
+#: includes/cb_file_upload.php:102 includes/cb_multiple.php:82
+#: includes/cb_password.php:81 includes/cb_time.php:143
+msgid "Enter Admin Label"
+msgstr "Adja meg- Adminisztráció- Címkézési"
+
+#: includes/cb_checkbox.php:87 includes/cb_date.php:134
+#: includes/cb_dropdown.php:87 includes/cb_email.php:87
+#: includes/cb_file_upload.php:106 includes/cb_hidden.php:60
+#: includes/cb_multiple.php:86 includes/cb_password.php:85
+#: includes/cb_text.php:89 includes/cb_textarea.php:97
+#: includes/cb_time.php:147
+msgid "Do not show in the email"
+msgstr "Ne mutassa levo az e-mail"
+
+#: includes/cb_checkbox.php:97 includes/cb_multiple.php:96
+msgid "Css Label :"
+msgstr "Css Címkézési:"
+
+#: includes/cb_checkbox.php:99 includes/cb_date.php:196
+#: includes/cb_dropdown.php:99 includes/cb_email.php:100
+#: includes/cb_file_upload.php:145 includes/cb_multiple.php:98
+#: includes/cb_password.php:97 includes/cb_text.php:101
+#: includes/cb_time.php:251
+msgid "Enter Css Label"
+msgstr "Adja meg Css Címkézési"
+
+#: includes/cb_checkbox.php:104
+msgid "CSS Description :"
+msgstr "CSS Leírás:"
+
+#: includes/cb_checkbox.php:106 includes/cb_date.php:210
+#: includes/cb_dropdown.php:113 includes/cb_email.php:114
+#: includes/cb_file_upload.php:152 includes/cb_multiple.php:105
+#: includes/cb_password.php:112 includes/cb_text.php:115
+#: includes/cb_time.php:265
+msgid "Enter Css Description"
+msgstr "Adja meg Css Leírás"
+
+#: includes/cb_checkbox.php:111
+msgid "CSS Options outer wrapper :"
+msgstr "CSS Opciók- külső- borítékkal"
+
+#: includes/cb_checkbox.php:113
+msgid "Enter Css Outer Wrapper"
+msgstr "Adja Css borítékkal"
+
+#: includes/cb_checkbox.php:118
+msgid "CSS Option Wrapper :"
+msgstr "CSS-opció -borítékkal:"
+
+#: includes/cb_checkbox.php:120
+msgid "Enter Css Option Wrapper"
+msgstr "Írja be Css  Opciók   -borítékkal:"
+
+#: includes/cb_checkbox.php:125
+msgid "CSS Options Label :"
+msgstr "CSS az Opciók Címkézési:"
+
+#: includes/cb_checkbox.php:132 includes/cb_date.php:236
+#: includes/cb_dropdown.php:118 includes/cb_email.php:119
+#: includes/cb_file_upload.php:157 includes/cb_multiple.php:131
+#: includes/cb_password.php:117 includes/cb_text.php:120
+#: includes/cb_textarea.php:128 includes/cb_time.php:291
+msgid "Add a style to"
+msgstr "Hozzá egy  stílust a "
+
+#: includes/cb_checkbox.php:135 includes/cb_date.php:104
+#: includes/cb_date.php:240 includes/cb_dropdown.php:122
+#: includes/cb_email.php:56 includes/cb_email.php:123
+#: includes/cb_file_upload.php:72 includes/cb_file_upload.php:160
+#: includes/cb_multiple.php:134 includes/cb_password.php:55
+#: includes/cb_password.php:121 includes/cb_text.php:54
+#: includes/cb_text.php:124 includes/cb_textarea.php:56
+#: includes/cb_textarea.php:132 includes/cb_time.php:117
+#: includes/cb_time.php:295
+msgid "Description"
+msgstr "leírás"
+
+#: includes/cb_checkbox.php:136 includes/cb_multiple.php:135
+msgid "Options outer wrapper"
+msgstr "az Opciók -külső borítékkal:"
+
+#: includes/cb_checkbox.php:137
+msgid "Options wrapper"
+msgstr "az Opciók- borítékkal:"
+
+#: includes/cb_checkbox.php:138 includes/cb_multiple.php:137
+msgid "Options label"
+msgstr "az Opciók címkén"
+
+#: includes/cb_checkbox.php:148 includes/cb_date.php:253
+#: includes/cb_dropdown.php:132 includes/cb_email.php:143
+#: includes/cb_file_upload.php:170 includes/cb_hidden.php:72
+#: includes/cb_multiple.php:147 includes/cb_password.php:141
+#: includes/cb_text.php:144 includes/cb_textarea.php:152
+#: includes/cb_time.php:308 views/contact_email.php:183
+#: views/contact_view.php:34 views/edit_contact_view.php:83
+msgid "Save"
+msgstr "megment"
+
+#: includes/cb_checkbox.php:202 includes/cb_checkbox.php:267
+#: includes/cb_dropdown.php:228 includes/cb_dropdown.php:278
+#: includes/cb_multiple.php:202 includes/cb_multiple.php:268
+msgid "Update"
+msgstr "frissítése"
+
+#: includes/cb_checkbox.php:256 includes/cb_dropdown.php:270
+#: includes/cb_multiple.php:257
+msgid "Please Fill an Option."
+msgstr "Kérjük töltse Opciós."
+
+#: includes/cb_checkbox.php:272 includes/cb_multiple.php:273
+msgid "This Option Already Exists."
+msgstr "Ez az opció már létezik."
+
+#: includes/cb_checkbox.php:294 includes/cb_dropdown.php:286
+#: includes/cb_dropdown.php:308 includes/cb_multiple.php:295
+msgid "This Option Already Exists. "
+msgstr "Ez az opció már létezik."
+
+#: includes/cb_checkbox.php:305 includes/cb_dropdown.php:319
+#: includes/cb_multiple.php:306
+msgid "Option updated"
+msgstr "Opciós- frissítette"
+
+#: includes/cb_date.php:8 includes/cb_date.php:100 includes/cb_date.php:130
+#: views/contact_view.php:66 views/edit_contact_view.php:114
+#: views/edit_contact_view.php:1421
+msgid "Date"
+msgstr "dátuma"
+
+#: includes/cb_date.php:12 includes/cb_date.php:155 includes/cb_date.php:308
+#: includes/cb_date.php:380 views/contact_bank_frontend.php:679
+msgid "Day"
+msgstr "nap"
+
+#: includes/cb_date.php:32 includes/cb_date.php:159 includes/cb_date.php:323
+#: includes/cb_date.php:395 views/contact_bank_frontend.php:707
+msgid "Month"
+msgstr "hónapban"
+
+#: includes/cb_date.php:47 includes/cb_date.php:162 includes/cb_date.php:357
+#: includes/cb_date.php:417 views/contact_bank_frontend.php:729
+msgid "Year"
+msgstr "évre"
+
+#: includes/cb_date.php:79
+msgid "Date Control"
+msgstr "Dátum vezérlő"
+
+#: includes/cb_date.php:106 includes/cb_email.php:58
+#: includes/cb_file_upload.php:74 includes/cb_password.php:57
+#: includes/cb_text.php:56 includes/cb_time.php:119
+msgid "Enter Description"
+msgstr "Adja leírás"
+
+#: includes/cb_date.php:128 includes/cb_email.php:81 includes/cb_hidden.php:54
+#: includes/cb_multiple.php:80 includes/cb_text.php:83
+#: includes/cb_textarea.php:91
+msgid "Admin label"
+msgstr "Adminisztrációs -Címkézési"
+
+#: includes/cb_date.php:140
+msgid "Start year"
+msgstr "Kezdő év"
+
+#: includes/cb_date.php:142
+msgid "Enter Start Year"
+msgstr "Írja be a kezdési évre"
+
+#: includes/cb_date.php:146
+msgid "End year"
+msgstr " végén -év"
+
+#: includes/cb_date.php:148
+msgid "Enter End Year "
+msgstr "Adja meg- évében -vég"
+
+#: includes/cb_date.php:152 includes/cb_text.php:77
+#: includes/cb_textarea.php:85 includes/cb_time.php:175
+msgid "Default value"
+msgstr "alapértelmezett- értéke"
+
+#: includes/cb_date.php:167
+msgid "Error message if invalid date"
+msgstr "Hibaüzenet, ha érvénytelen dátum"
+
+#: includes/cb_date.php:169
+msgid "Enter Error Message"
+msgstr "Adja meg- hibaüzenet"
+
+#: includes/cb_date.php:173
+msgid "Date format"
+msgstr "Dátum formátumban"
+
+#: includes/cb_date.php:194 includes/cb_dropdown.php:97
+#: includes/cb_email.php:98 includes/cb_file_upload.php:143
+#: includes/cb_password.php:95 includes/cb_text.php:99
+#: includes/cb_time.php:249
+msgid "Css Label"
+msgstr "css Címkézési"
+
+#: includes/cb_date.php:201 includes/cb_email.php:105 includes/cb_time.php:256
+msgid "Css Text Input"
+msgstr " Css szövegbeviteli-bemenő"
+
+#: includes/cb_date.php:203 includes/cb_text.php:108 includes/cb_time.php:258
+msgid "Enter Css Text Input"
+msgstr "Adja meg- Css szövegbeviteli-bemenő"
+
+#: includes/cb_date.php:208 includes/cb_dropdown.php:111
+#: includes/cb_email.php:112 includes/cb_file_upload.php:150
+#: includes/cb_password.php:110 includes/cb_time.php:263
+msgid "Css Description"
+msgstr "css Leírás"
+
+#: includes/cb_date.php:215
+msgid "Css Day"
+msgstr "css nap"
+
+#: includes/cb_date.php:217
+msgid "Enter Css Day"
+msgstr "Adja meg Css nap"
+
+#: includes/cb_date.php:222
+msgid "Css Month"
+msgstr " Css hónapban"
+
+#: includes/cb_date.php:224
+msgid "Enter Css Month"
+msgstr "Adja meg- Css hónapban"
+
+#: includes/cb_date.php:229
+msgid "Css Year"
+msgstr "css évre"
+
+#: includes/cb_date.php:231
+msgid "Enter Css Year"
+msgstr "Adja meg -Css évre"
+
+#: includes/cb_date.php:239 includes/cb_email.php:122
+#: includes/cb_password.php:120 includes/cb_textarea.php:131
+#: includes/cb_time.php:294
+msgid "Text input"
+msgstr "Szövegbeviteli"
+
+#: includes/cb_date.php:241
+msgid "Date day dropdown"
+msgstr "Dátum- nap -legördülı"
+
+#: includes/cb_date.php:242
+msgid "Date month dropdown"
+msgstr "dátumot hónap- lenyíló"
+
+#: includes/cb_date.php:243
+msgid "Date year dropdown"
+msgstr "Dátum Év lenyíló"
+
+#: includes/cb_dropdown.php:12 includes/cb_dropdown.php:344
+#: views/contact_bank_frontend.php:385 views/contact_bank_frontend.php:398
+msgid "Select option"
+msgstr "Válassza a opció"
+
+#: includes/cb_dropdown.php:29
+msgid "Dropdown Control"
+msgstr "legördülı vezérlő"
+
+#: includes/cb_dropdown.php:70 includes/cb_multiple.php:69
+msgid "Enter Option"
+msgstr "Adja meg Opciós"
+
+#: includes/cb_dropdown.php:104
+msgid "Css Dropdown Menu"
+msgstr "Css legördülő menü"
+
+#: includes/cb_dropdown.php:106
+msgid "Enter Css Dropdown Menu"
+msgstr "Adja meg- Css legördülő menü"
+
+#: includes/cb_dropdown.php:121
+msgid "Dropdown menu"
+msgstr " legördülő menü"
+
+#: includes/cb_email.php:9 includes/cb_email.php:52 includes/cb_email.php:83
+#: views/contact_email.php:72 views/contact_email.php:138
+#: views/edit_contact_view.php:1113
+msgid "Email"
+msgstr "mail"
+
+#: includes/cb_email.php:30
+msgid "Email Control"
+msgstr "mail vezérlő"
+
+#: includes/cb_email.php:107 includes/cb_password.php:105
+msgid "Enter Css Input Text"
+msgstr "Adja meg- Css  -Bemeneti -szöveg"
+
+#: includes/cb_email.php:127 includes/cb_password.php:125
+#: includes/cb_text.php:128 includes/cb_textarea.php:136
+msgid "Add a filter"
+msgstr "Hozzá egy szűrőt"
+
+#: includes/cb_email.php:129 includes/cb_password.php:127
+#: includes/cb_text.php:130 includes/cb_textarea.php:138
+msgid "Alpha"
+msgstr "az alfa"
+
+#: includes/cb_email.php:130 includes/cb_password.php:128
+#: includes/cb_text.php:131 includes/cb_textarea.php:139
+msgid "Alpha Numeric"
+msgstr "alfa-numerikus"
+
+#: includes/cb_email.php:131 includes/cb_password.php:129
+#: includes/cb_text.php:132 includes/cb_textarea.php:140
+msgid "Digits"
+msgstr "számjegyek"
+
+#: includes/cb_email.php:132 includes/cb_password.php:130
+#: includes/cb_text.php:133 includes/cb_textarea.php:141
+msgid "Strip Tags"
+msgstr "Strip címkék"
+
+#: includes/cb_email.php:133 includes/cb_password.php:131
+#: includes/cb_text.php:134 includes/cb_textarea.php:142
+msgid "Trim"
+msgstr "METSZ"
+
+#: includes/cb_file_upload.php:9 includes/cb_file_upload.php:68
+#: includes/cb_file_upload.php:102 views/contact_view.php:63
+#: views/edit_contact_view.php:111 views/edit_contact_view.php:1374
+msgid "File Upload"
+msgstr "fájlba -feltöltése"
+
+#: includes/cb_file_upload.php:46
+msgid "Fileupload Control"
+msgstr "Fájlfeltöltés vezérlő"
+
+#: includes/cb_file_upload.php:112
+msgid "Allow Multiple Uploads"
+msgstr "Engedélyezünk több különböző Feltöltések"
+
+#: includes/cb_file_upload.php:118
+msgid "Allowed File Extensions"
+msgstr "megengedett fájlba kiterjesztések"
+
+#: includes/cb_file_upload.php:120
+msgid "Enter File Extensions"
+msgstr "Adja meg- fájlba kiterjesztések"
+
+#: includes/cb_file_upload.php:122
+msgid "The file extensions must be seperated with semicolons(' ; ')"
+msgstr "A fájl kiterjesztések kell elválasztva pontosvesszővel (\";\")"
+
+#: includes/cb_file_upload.php:126
+msgid "Allowed File Size"
+msgstr "megengedve fájl Méret"
+
+#: includes/cb_file_upload.php:130
+msgid "File Size must be in Kb"
+msgstr "Fájl Méret kell, hogy legyen -ban Kb"
+
+#: includes/cb_hidden.php:8
+msgid "Untitled (hidden)"
+msgstr "Cím nélküli (rejtett)"
+
+#: includes/cb_hidden.php:11 views/contact_bank_frontend.php:952
+#: views/contact_view.php:72 views/edit_contact_view.php:120
+msgid "Hidden"
+msgstr "rejtett"
+
+#: includes/cb_hidden.php:29
+msgid "Hidden Control"
+msgstr "Rejtett vezérlő"
+
+#: includes/cb_hidden.php:44 includes/cb_hidden.php:56
+#: views/edit_contact_view.php:1619
+msgid "Untitled(hidden)"
+msgstr "Cím nélküli (rejtett)"
+
+#: includes/cb_hidden.php:48
+msgid "Default Value"
+msgstr "alapértelmezett- értéke"
+
+#: includes/cb_hidden.php:50 includes/cb_text.php:79
+msgid "Enter Default Value"
+msgstr "alapértelmezett- értéke Adja meg"
+
+#: includes/cb_hidden.php:56 includes/cb_text.php:85
+#: includes/cb_textarea.php:93
+msgid "Enter Admin label"
+msgstr " Írja be  Adminisztrációs -Címkézési"
+
+#: includes/cb_multiple.php:28
+msgid "Radio Buttons"
+msgstr "rádiógombok"
+
+#: includes/cb_multiple.php:62 includes/cb_text.php:69
+msgid "Enter Tooltip Text"
+msgstr "Adja meg eszköztippben szöveget"
+
+#: includes/cb_multiple.php:103
+msgid "Css Description :"
+msgstr "Css Leírás:"
+
+#: includes/cb_multiple.php:110
+msgid "Css Options outer wrapper :"
+msgstr "CSS Opciók- külső- borítékkal"
+
+#: includes/cb_multiple.php:112
+msgid "Enter Css Options outer wrapper"
+msgstr "Adja meg- CSS- Opciók- külső- borítékkal:"
+
+#: includes/cb_multiple.php:117
+msgid "CSS Options Wrapper :"
+msgstr "CSS-opció -borítékkal:"
+
+#: includes/cb_multiple.php:119
+msgid "Enter Css Options Wrapper"
+msgstr "Írja be Css  Opciók   -borítékkal:"
+
+#: includes/cb_multiple.php:124
+msgid "CSS Option Label :"
+msgstr "CSS az Opciók Címkézési:"
+
+#: includes/cb_multiple.php:126
+msgid "Enter Css Option Label"
+msgstr "Adja meg- CSS az Opciók -Címkézési:"
+
+#: includes/cb_multiple.php:136
+msgid "Options  wrapper"
+msgstr " Opciók- borítékkal:"
+
+#: includes/cb_password.php:8 includes/cb_password.php:51
+#: includes/cb_password.php:81 views/contact_view.php:75
+#: views/edit_contact_view.php:123 views/edit_contact_view.php:1629
+msgid "Password"
+msgstr "jelszó"
+
+#: includes/cb_password.php:29
+msgid "Password Control"
+msgstr "jelszavas vezérlő"
+
+#: includes/cb_password.php:103
+msgid "Css Input Text"
+msgstr "Css Bemeneti szöveget"
+
+#: includes/cb_text.php:29
+msgid "Textbox Control"
+msgstr "szövegdoboz- vezérlő"
+
+#: includes/cb_text.php:106
+msgid " Css Text Input"
+msgstr "Css szövegbeviteli mód"
+
+#: includes/cb_text.php:113
+msgid " Css Description"
+msgstr "css Leírás"
+
+#: includes/cb_text.php:123
+msgid "Text Input"
+msgstr "szövegbeviteli mód"
+
+#: includes/cb_textarea.php:30
+msgid "Textarea Control"
+msgstr "szövegterület -vezérlő"
+
+#: includes/cb_textarea.php:52
+msgid "Enter label"
+msgstr "Adja meg címkén:"
+
+#: includes/cb_textarea.php:58
+msgid "Enter  Description"
+msgstr "Adja meg leírás"
+
+#: includes/cb_textarea.php:69
+msgid "Tooltip text"
+msgstr "Eszközzel-hegy szöveget"
+
+#: includes/cb_textarea.php:87
+msgid "Enter Default value"
+msgstr "Alapértelmezett érték Adja meg a "
+
+#: includes/cb_textarea.php:107
+msgid "CSS label"
+msgstr "CSS címkén"
+
+#: includes/cb_textarea.php:109
+msgid "Enter css Label"
+msgstr "Adja meg- CSS címkén"
+
+#: includes/cb_textarea.php:114
+msgid "CSS textinput"
+msgstr "CSS szövegetbemenet"
+
+#: includes/cb_textarea.php:116
+msgid "Enter css textinput"
+msgstr "Adja -CSS- szövegetbemenet"
+
+#: includes/cb_textarea.php:121
+msgid "CSS description"
+msgstr "CSS- leírása"
+
+#: includes/cb_textarea.php:123
+msgid "Enter css description"
+msgstr "Adja - css leírása"
+
+#: includes/cb_time.php:8 includes/cb_time.php:113 includes/cb_time.php:143
+#: views/contact_view.php:69 views/edit_contact_view.php:117
+#: views/edit_contact_view.php:1514
+msgid "Time"
+msgstr "ideje"
+
+#: includes/cb_time.php:12 includes/cb_time.php:32 includes/cb_time.php:178
+#: includes/cb_time.php:198 views/contact_bank_frontend.php:821
+#: views/contact_bank_frontend.php:847 views/contact_bank_frontend.php:873
+msgid "Hour"
+msgstr "órát"
+
+#: includes/cb_time.php:52 includes/cb_time.php:218
+#: views/contact_bank_frontend.php:897
+msgid "Minute"
+msgstr "perc"
+
+#: includes/cb_time.php:92
+msgid "Time Control"
+msgstr "idővezérlés"
+
+#: includes/cb_time.php:153
+msgid "12/24 hour time"
+msgstr "12/24 órás idő"
+
+#: includes/cb_time.php:162
+msgid "Time format"
+msgstr "Időformátum "
+
+#: includes/cb_time.php:270
+msgid "Css Hour"
+msgstr "css órát"
+
+#: includes/cb_time.php:272
+msgid "Enter Css Hour"
+msgstr "Adja meg Css -órát"
+
+#: includes/cb_time.php:277
+msgid "Css Minute"
+msgstr "css perces"
+
+#: includes/cb_time.php:279
+msgid "Enter Css Minute"
+msgstr "Adja Css perces"
+
+#: includes/cb_time.php:284
+msgid "Css am/pm"
+msgstr "Css am/pm"
+
+#: includes/cb_time.php:286
+msgid "Enter Css am/pm"
+msgstr "Adja meg Css am / pm"
+
+#: includes/cb_time.php:296
+msgid "Time hour dropdown"
+msgstr "Ideje- órás legördülı"
+
+#: includes/cb_time.php:297
+msgid "Time minute dropdown"
+msgstr "Idő perc legördülı"
+
+#: includes/cb_time.php:298
+msgid "Time am/pm dropdown"
+msgstr "Ideje -AM / PM legördülı"
+
+#: views/contact_bank_frontend.php:153
+msgid "Enter Text"
+msgstr "Adja  szöveg"
+
+#: views/contact_bank_frontend.php:342 views/contact_email.php:84
+#: views/contact_email.php:144
+msgid "Enter Email Address"
+msgstr "Adja  Email címét"
+
+#: views/contact_bank_frontend.php:952
+msgid "Enter Hidden Text"
+msgstr "Adja meg Rejtett szöveg"
+
+#: views/contact_bank_frontend.php:1040
+msgid "Enter Password"
+msgstr "Adja  jelszót"
+
+#: views/contact_bank_frontend.php:1051
+msgid "Submit Form"
+msgstr "Nyomtatvány elküldése"
+
+#: views/contact_email.php:9 views/contact_frontend_data.php:8
+#: views/contact_view.php:9 views/edit_contact_view.php:31
+msgid "Back to Dashboard"
+msgstr "Vissza a Műszerfal"
+
+#: views/contact_email.php:13
+msgid "Email Settings Saved. Kindly wait for the redirect."
+msgstr "E-mail beállítások Mentett. Kérjük várjon az átirányítás."
+
+#: views/contact_email.php:18 views/contact_email.php:49
+#: views/contact_frontend_data.php:19 views/contact_frontend_data.php:32
+msgid "Select Form"
+msgstr "Válassza ki  Jogi forma"
+
+#: views/contact_email.php:65
+msgid "Admin Email"
+msgstr "beadása -mail"
+
+#: views/contact_email.php:76
+msgid "To"
+msgstr "To"
+
+#: views/contact_email.php:78
+msgid "Enter Admin Email"
+msgstr "Adja - adminisztrációs mail"
+
+#: views/contact_email.php:82 views/contact_email.php:142
+msgid "From"
+msgstr "-tól"
+
+#: views/contact_email.php:89 views/contact_email.php:148
+msgid "Subject"
+msgstr "fenn van"
+
+#: views/contact_email.php:91 views/contact_email.php:150
+msgid "Enter Subject"
+msgstr "Adja fenn van"
+
+#: views/contact_email.php:100 views/contact_email.php:160
+msgid "Email Content"
+msgstr "mail tartalom"
+
+#: views/contact_email.php:115 views/contact_email.php:175
+msgid "Short Code Controls for Email"
+msgstr "Rövid kód vezérlések számára mail"
+
+#: views/contact_email.php:129
+msgid "Client Email"
+msgstr "kliens E-mail"
+
+#: views/contact_frontend_data.php:14 views/contact_view.php:20
+#: views/dashboard.php:15 views/dashboard.php:21
+msgid "Form"
+msgstr "nyomtatvány"
+
+#: views/contact_view.php:13
+msgid "Form Submited. Kindly wait for the redirect."
+msgstr "nyomtatvány- benyújtani. Kérjük várjon az átirányítás."
+
+#: views/contact_view.php:24 views/edit_contact_view.php:46
+msgid "Form Name :"
+msgstr "nyomtatvány Név:"
+
+#: views/contact_view.php:27 views/edit_contact_view.php:49
+msgid "Enter Form Name"
+msgstr "Adja meg nyomtatvány Név:"
+
+#: views/contact_view.php:40 views/edit_contact_view.php:89
+msgid "Control Buttons"
+msgstr "Vezérlő gombok"
+
+#: views/contact_view.php:45 views/edit_contact_view.php:93
+msgid "Text Box"
+msgstr "szövege trezor"
+
+#: views/contact_view.php:48 views/edit_contact_view.php:96
+msgid "Text Area"
+msgstr "szövege- területen"
+
+#: views/contact_view.php:51 views/edit_contact_view.php:99
+msgid "Email Address"
+msgstr "Email címe"
+
+#: views/contact_view.php:54 views/edit_contact_view.php:102
+msgid "Dropdown Menu"
+msgstr "legördülő Menü gombot"
+
+#: views/contact_view.php:57 views/edit_contact_view.php:105
+msgid "Checkboxes"
+msgstr "jelölőnégyzetek"
+
+#: views/contact_view.php:60 views/edit_contact_view.php:108
+msgid "Multiple Choice"
+msgstr "többszörös választás"
+
+#: views/dashboard.php:5
+msgid "Dashboard - Contact Bank"
+msgstr "Műszerfal - Kapcsolat Banknak"
+
+#: views/dashboard.php:9
+msgid "Delete All Forms"
+msgstr "Törölni minden formájának"
+
+#: views/dashboard.php:22
+msgid "Shortcode"
+msgstr "érvényesítőkód"
+
+#: views/dashboard.php:23
+msgid "Action"
+msgstr "Fellépés"
+
+#: views/dashboard.php:43
+msgid "Edit"
+msgstr "szerkeszt"
+
+#: views/dashboard.php:46
+msgid "Delete"
+msgstr "törölni"
+
+#: views/dashboard.php:62
+msgid "Server Settings"
+msgstr "Kiszolgáló beállításai"
+
+#: views/dashboard.php:73
+msgid "Not set"
+msgstr "nincs beállítva"
+
+#: views/dashboard.php:75 views/dashboard.php:78
+msgid "On"
+msgstr "Azon"
+
+#: views/dashboard.php:76 views/dashboard.php:79
+msgid "Off"
+msgstr "le"
+
+#: views/dashboard.php:82 views/dashboard.php:85 views/dashboard.php:88
+#: views/dashboard.php:91 views/dashboard.php:94 views/dashboard.php:97
+msgid "N/A"
+msgstr "N/A"
+
+#: views/dashboard.php:96
+msgid " MByte"
+msgstr "MB kapacitású"
+
+#: views/dashboard.php:99 views/dashboard.php:102 views/dashboard.php:105
+#: views/dashboard.php:155
+msgid "Yes"
+msgstr "igen"
+
+#: views/dashboard.php:100 views/dashboard.php:103 views/dashboard.php:106
+#: views/dashboard.php:157
+msgid "No"
+msgstr "semmilyen"
+
+#: views/dashboard.php:108
+msgid "Operating System"
+msgstr "Operációs rendszer"
+
+#: views/dashboard.php:109
+msgid "Server"
+msgstr "szerveren"
+
+#: views/dashboard.php:110
+msgid "Memory usage"
+msgstr "Memória használat"
+
+#: views/dashboard.php:111
+msgid "MYSQL Version"
+msgstr "MYSQL verzió"
+
+#: views/dashboard.php:112
+msgid "SQL Mode"
+msgstr "SQL mód"
+
+#: views/dashboard.php:113
+msgid "PHP Version"
+msgstr "PHP verzió"
+
+#: views/dashboard.php:114
+msgid "PHP Safe Mode"
+msgstr "PHP csökkentett módban"
+
+#: views/dashboard.php:115
+msgid "PHP Allow URL fopen"
+msgstr "PHP engedélyezése URL az fopen"
+
+#: views/dashboard.php:116
+msgid "PHP Memory Limit"
+msgstr "PHP memória korlátjának"
+
+#: views/dashboard.php:117
+msgid "PHP Max Upload Size"
+msgstr "PHP Maximális- feltöltési méret"
+
+#: views/dashboard.php:118
+msgid "PHP Max Post Size"
+msgstr "PHP Maximális Hozzászólás méret"
+
+#: views/dashboard.php:119
+msgid "PCRE Backtracking Limit"
+msgstr "PCRE visszalépéses határérték"
+
+#: views/dashboard.php:120
+msgid "PHP Max Script Execute Time"
+msgstr "PHP--Maximális- parancsfájl- kivégez- Ideje"
+
+#: views/dashboard.php:121
+msgid "PHP Exif support"
+msgstr "PHP Exif támogatás"
+
+#: views/dashboard.php:122
+msgid "PHP IPTC support"
+msgstr "PHP IPTC támogatás"
+
+#: views/dashboard.php:123
+msgid "PHP XML support"
+msgstr "PHP XML-támogatás"
+
+#: views/dashboard.php:131
+msgid "Graphic Library Settings"
+msgstr "Grafikus könyvtár a Beállítások"
+
+#: views/dashboard.php:150
+msgid "No GD support"
+msgstr "semmilyen GD támogatást"
+
+#: views/dashboard.php:186
+msgid "Are you sure to delete this form ?"
+msgstr "Biztos benne, hogy törli ezt az űrlapot?"
+
+#: views/dashboard.php:197
+msgid "Are you sure to delete all forms ?"
+msgstr "Biztos benne, hogy törli -minden formájára?"
+
+#: views/edit_contact_view.php:28
+msgid "Edit Existing Form"
+msgstr "Szerkeszi  létező nyomtatvány"
+
+#: views/edit_contact_view.php:35
+msgid "Form Updated. Kindly wait for the redirect."
+msgstr "Alkotnak -frissítve. Kedvesen  várjon  átirányítás."
+
+#: views/edit_contact_view.php:42
+msgid "Edit Form"
+msgstr "Szerkesztés Űrlapot"
+
+#: views/edit_contact_view.php:289 views/edit_contact_view.php:324
+#: views/edit_contact_view.php:393 views/edit_contact_view.php:442
+#: views/edit_contact_view.php:490
+msgid "Untitled :"
+msgstr "cím nélküli:"
+
+#: views/edit_contact_view.php:359
+msgid "Email :"
+msgstr "E-mail:"
+
+#: views/edit_contact_view.php:539
+msgid "File Upload :"
+msgstr "Fájl feltöltés:"
+
+#: views/edit_contact_view.php:586
+msgid "Date :"
+msgstr "Dátum:"
+
+#: views/edit_contact_view.php:657
+msgid "Time :"
+msgstr "Ideje:"
+
+#: views/edit_contact_view.php:715
+msgid "Untitled(hidden) :"
+msgstr "cím nélküli (rejtett):"
+
+#: views/edit_contact_view.php:747
+msgid "Password : "
+msgstr "Jelszó:"
+
+#: views/edit_contact_view.php:1398
+msgid "1024"
+msgstr "1024"
