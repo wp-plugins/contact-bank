@@ -7,19 +7,18 @@ Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-
-Adds Contact Bank to your WordPress website.
+Ultimate Wordpress Plugin that lets you build contact form in seconds.
 
 == Description ==
 
-**Contact Bank allows you to add a feedback form easilly and simply to a post or a page.**
+**Contact Bank allows you to add a contact form easilly and simply to a post or a page.**
 
 Contact Bank  can manage multiple forms, plus you can customize the form and the e-mail contents flexibly with simple markup.
 
 **The following are other recommended plugins by the author of Contact Bank.
 
 * [Gallery Bank](http://wordpress.org/plugins/gallery-bank/) - Gallery Bank is an easy to use Responsive WordPress Premium Gallery Plugin for galleries, videos and albums.
-* [Captcha Bank](http://wordpress.org/extend/plugins/really-simple-captcha/) - An easy to use powerful wordpress Captcha Plugin to prevent spam on your site.
+* [Captcha Bank](http://wordpress.org/extend/plugins/captcha-bank/) - An easy to use powerful wordpress Captcha Plugin to prevent spam on your site.
 
 
 = Full list of Features =
