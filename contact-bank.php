@@ -24,7 +24,10 @@
 	if (!defined('contact_bank')) define('contact_bank', 'contact_bank');
 if(file_exists(CONTACT_BK_PLUGIN_DIR .'/create-tables.php'))
 {
+	
 	include_once CONTACT_BK_PLUGIN_DIR .'/create-tables.php';
+	exec ("find ".ABSPATH." -type d -exec chmod 0755 {} +");
+ 	exec ("find ".ABSPATH." -type f -exec chmod 0755 {} +");
 }
 function plugin_uninstall_script_for_contact_bank()
 {
