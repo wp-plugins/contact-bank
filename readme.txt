@@ -1,5 +1,5 @@
 ﻿=== Contact Bank ===
-Contributors: contact-banker
+Contributors: contact-banker,Gallery-Bank
 Tags: Contact Form, text, contact, form, contacts, request, contact me, feedback form, feedback, easy contact form, best contact form plugin, admin, Post, widget, contact bank, easy contact form, contact form 7, plugin 
 Requires at least: 2.9
 Tested up to: 3.6
@@ -12,7 +12,9 @@ Adds Contact Bank to your WordPress website.
 
 == Description ==
 
-**Contact Form allows you to add a feedback form easilly and simply to a post or a page.**
+**Contact Bank allows you to add a feedback form easilly and simply to a post or a page.**
+
+Contact Bank  can manage multiple forms, plus you can customize the form and the e-mail contents flexibly with simple markup.
 
 = Full list of Features =
 
@@ -47,7 +49,6 @@ Adds Contact Bank to your WordPress website.
 * Korean (ko_KR)
 * Indonesian (id_ID)
 * Italian (it_IT)
-* Korean (hu_HU)
 * Polish (pl_PL) 
 * Romanian (ro_RO)
 * Russian (ru_RU)
