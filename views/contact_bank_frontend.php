@@ -807,9 +807,25 @@ $fields = $wpdb->get_results
 									
 									$index = array_search("cb_time_format", $keys);
 									$cb_time_format_time = $fields_dynamic_controls[$index]->dynamic_settings_value;
+									
+									$index = array_search("cb_button_set_outer_label", $keys);
+									$cb_button_set_outer_label = $fields_dynamic_controls[$index]->dynamic_settings_value;
+									
+									$index = array_search("cb_button_set_description", $keys);
+									$cb_button_set_description = $fields_dynamic_controls[$index]->dynamic_settings_value;
+									
+									$index = array_search("cb_button_set_time_hour_dropdown", $keys);
+									$cb_button_set_time_hour_dropdown = $fields_dynamic_controls[$index]->dynamic_settings_value;
+									
+									$index = array_search("cb_button_set_time_minute_dropdown", $keys);
+									$cb_button_set_time_minute_dropdown = $fields_dynamic_controls[$index]->dynamic_settings_value;
+									
+									$index = array_search("cb_button_set_time_am_pm_dropdown", $keys);
+									$cb_button_set_time_am_pm_dropdown = $fields_dynamic_controls[$index]->dynamic_settings_value;
+									
 									?>
 									<div class="layout-control-group"  id="div_<?php echo $dynamicId; ?>">
-										<label class="layout-control-label" id="control_label_<?php echo $dynamicId; ?>" ><?php echo $label_time ; ?> : </label>
+										<label style="<?php echo $cb_button_set_outer_label; ?>" class="layout-control-label" id="control_label_<?php echo $dynamicId; ?>"><?php echo $label_time ; ?> : </label>
 											<?php
 												if($control_required_time == 1)
 												{
@@ -823,7 +839,7 @@ $fields = $wpdb->get_results
 												if($cb_hour_format_time == 12)
 												{
 													?>
-												<select class="layout-span3" type="select_time" id="select_hr_<?php echo $dynamicId; ?>" name="select_hr_<?php echo $dynamicId; ?>">
+												<select style="<?php echo $cb_button_set_time_hour_dropdown; ?>" class="layout-span3" type="select_time" id="select_hr_<?php echo $dynamicId; ?>" name="select_hr_<?php echo $dynamicId; ?>">
 													<option value=""><?php _e("Hour",contact_bank);?></option>
 													<?php
 													for($flag3=1; $flag3 <= 12; $flag3++)
@@ -849,7 +865,7 @@ $fields = $wpdb->get_results
 												else if($cb_hour_format_time == 24)
 												{
 													?>
-												<select class="layout-span3" type="select_time" id="select_hr_<?php echo $dynamicId; ?>" name="select_hr_<?php echo $dynamicId; ?>">
+												<select style="<?php echo $cb_button_set_time_hour_dropdown; ?>" class="layout-span3" type="select_time" id="select_hr_<?php echo $dynamicId; ?>" name="select_hr_<?php echo $dynamicId; ?>">
 												<option value=""><?php _e("Hour", contact_bank); ?></option>
 													<?php
 													for($flag9=1; $flag9 <= 24; $flag9++)
@@ -875,7 +891,7 @@ $fields = $wpdb->get_results
 											else
 												{
 												?>
-												<select class="layout-span3" type="select_time" id="select_hr_<?php echo $dynamicId; ?>" name="select_hr_<?php echo $dynamicId; ?>">
+												<select style="<?php echo $cb_button_set_time_hour_dropdown; ?>" class="layout-span3" type="select_time" id="select_hr_<?php echo $dynamicId; ?>" name="select_hr_<?php echo $dynamicId; ?>">
 													<option selected="selected" value=""><?php _e("Hour",contact_bank);?></option>
 													<?php
 													for($flag15=0; $flag15 <= 12; $flag15++)
@@ -899,7 +915,7 @@ $fields = $wpdb->get_results
 												<?php
 												}
 												?>
-												<select class="layout-span3" type="select_time" id="select_min_<?php echo $dynamicId; ?>" name="select_min_<?php echo $dynamicId; ?>">
+												<select style="<?php echo $cb_button_set_time_minute_dropdown; ?>" class="layout-span3" type="select_time" id="select_min_<?php echo $dynamicId; ?>" name="select_min_<?php echo $dynamicId; ?>">
 													<option value=""><?php _e("Minute",contact_bank);?></option>
 													<?php
 													for($flag4=0; $flag4 < 60;)
@@ -914,7 +930,7 @@ $fields = $wpdb->get_results
 													
 													</select>
 												<script>jQuery("#select_min_<?php echo $dynamicId; ?>").val(<?php echo $minutes_time; ?>)</script>
-												<select class="layout-span3" id="select_am_<?php echo $dynamicId; ?>" name="select_am_<?php echo $dynamicId; ?>">
+												<select style="<?php echo $cb_button_set_time_am_pm_dropdown; ?>" class="layout-span3" id="select_am_<?php echo $dynamicId; ?>" name="select_am_<?php echo $dynamicId; ?>">
 													<option value="0">AM</option>
 													<option value="1">PM</option>
 												</select>
@@ -940,7 +956,7 @@ $fields = $wpdb->get_results
 												?>
 												<span id="error_message_time_<?php echo $dynamicId; ?>"></span>
 												<br />
-												<span class="span-description"  id="txt_description_<?php echo $dynamicId; ?>"><?php echo $description_time; ?></span>
+												<span style="<?php echo $cb_button_set_description; ?>" class="span-description"  id="txt_description_<?php echo $dynamicId; ?>"><?php echo $description_time; ?></span>
 											</div>
 									</div>
 									<?php

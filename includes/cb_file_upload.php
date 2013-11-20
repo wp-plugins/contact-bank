@@ -13,17 +13,17 @@ if($_REQUEST["param"] == "create_txt_file_control")
 					<a style="cursor:pointer;" onclick="delete_textbox(div_<?php echo $dynamicId; ?>_9,<?php echo $dynamicId; ?>,9)" id="anchor_del_<?php echo $dynamicId; ?>" >
 						<img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="margin-left: 1%;vertical-align: middle;"/>
 					</a>
-				<label class="layout-controls hovertip" id="tip<?php echo $dynamicId; ?>" style="margin-left:-92%;">
+				<label class="layout-controls hovertip" id="tip<?php echo $dynamicId; ?>" style="margin-left:-75%;">
 				<div id="file_upload_content" style="float:left;width:357px;">
 					
 					<?php 
 					$uploader=new PhpUploader();
 					$uploader->MultipleFilesUpload=false;
-					$uploader->InsertText="Please choose Files";
-					$uploader->MaxSizeKB=1024;
-					$uploader->AllowedFileExtensions="*.jpg,*.png,*.gif,*.bmp,*.txt,*.zip,*.rar";
+					$uploader->InsertText = "Please choose Files";
+					$uploader->MaxSizeKB = 1024;
+					$uploader->AllowedFileExtensions = "*.jpg,*.png,*.gif,*.bmp,*.txt,*.zip,*.rar";
 					$uploader->SaveDirectory= CONTACT_BK_PLUGIN_DIR ."/phpfileuploader/savefiles/";
-					$uploader->FlashUploadMode="Partial";
+					$uploader->FlashUploadMode = "Partial";
 					$uploader->Render();
 					?>
 				</div>

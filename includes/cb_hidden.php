@@ -97,6 +97,7 @@ else
 		array_hidden[dynamicId].push(jQuery("#ux_admin_label_"+dynamicId).val());
 		array_hidden[dynamicId].push(jQuery("#ux_show_email_"+dynamicId).prop("checked"));
 		jQuery("#txt_hide_"+dynamicId).val(jQuery("#ux_default_value_"+dynamicId).val());
+		jQuery("#control_label_"+dynamicId).html(jQuery("#ux_label_text_"+dynamicId).val());
 		CloseLightbox();
 	}
 	function enter_admin_label(dynamicId)

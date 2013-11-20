@@ -41,7 +41,7 @@ else
 			);
 			if($email_data2 != "")
 			{
-				echo $email_data2->email_to ."|".$email_data2->email_from."|".$email_data2->body_content."|".$email_data2->subject;
+				echo $email_data2->email_to ."|".$email_data2->email_from."|".stripslashes($email_data2->body_content)."|".$email_data2->subject;
 			}
 			die();
 		}
