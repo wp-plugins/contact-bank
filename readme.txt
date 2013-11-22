@@ -11,7 +11,7 @@ Ultimate Wordpress Plugin that lets you build contact form easily in seconds.
 
 == Description ==
 
-**Contact Bank allows you to add a contact form easilly and simply to a post or a page.**
+**Contact Bank allows you to add a contact form easily and simply to a post or a page.**
 
 Contact Bank  can manage multiple forms, plus you can customize the form and the e-mail contents flexibly with simple markup.
 
