@@ -7,7 +7,7 @@ Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Ultimate Wordpress Plugin that lets you build contact form in seconds.
+Ultimate Wordpress Plugin that lets you build contact form easily in seconds.
 
 == Description ==
 
