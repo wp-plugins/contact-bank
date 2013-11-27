@@ -1,0 +1,1031 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2013-11-15 16:51+0530\n"
+"PO-Revision-Date: 2013-11-18 16:31+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: C:\\wamp\\www\\contact-bank3.7\\wp-content\\plugins"
+"\\contact-bank\\\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: contact-bank.php:62
+msgid "Contact Bank"
+msgstr ""
+
+#: contact-bank.php:63 contact-bank.php:431
+msgid "Dashboard"
+msgstr "계기판"
+
+#: contact-bank.php:64 contact-bank.php:437 views/contact_view.php:6
+#: views/dashboard.php:8
+msgid "Add New Form"
+msgstr "추가 ~ 뉴 형태"
+
+#: contact-bank.php:65 contact-bank.php:443 views/contact_email.php:6
+msgid "Email Settings"
+msgstr "이메일 설정에"
+
+#: contact-bank.php:66 contact-bank.php:449 views/contact_frontend_data.php:5
+msgid "Form Entries"
+msgstr "양식 데이터"
+
+#: includes/cb_checkbox.php:8 includes/cb_checkbox.php:50
+#: includes/cb_checkbox.php:83 includes/cb_dropdown.php:8
+#: includes/cb_dropdown.php:50 includes/cb_dropdown.php:83
+#: includes/cb_multiple.php:8 includes/cb_multiple.php:49
+#: includes/cb_multiple.php:82 includes/cb_text.php:8 includes/cb_text.php:50
+#: includes/cb_text.php:85 includes/cb_textarea.php:9
+#: includes/cb_textarea.php:52 includes/cb_textarea.php:93
+#: views/edit_contact_view.php:991 views/edit_contact_view.php:1049
+#: views/edit_contact_view.php:1178 views/edit_contact_view.php:1234
+#: views/edit_contact_view.php:1304
+msgid "Untitled"
+msgstr "제목없는"
+
+#: includes/cb_checkbox.php:13 includes/cb_checkbox.php:42
+#: includes/cb_date.php:62 includes/cb_date.php:92 includes/cb_dropdown.php:14
+#: includes/cb_dropdown.php:42 includes/cb_email.php:13
+#: includes/cb_email.php:44 includes/cb_file_upload.php:12
+#: includes/cb_file_upload.php:60 includes/cb_hidden.php:12
+#: includes/cb_multiple.php:13 includes/cb_multiple.php:41
+#: includes/cb_password.php:12 includes/cb_password.php:43
+#: includes/cb_text.php:12 includes/cb_text.php:42 includes/cb_textarea.php:13
+#: includes/cb_textarea.php:44 includes/cb_time.php:75
+#: includes/cb_time.php:105
+msgid "Settings"
+msgstr "설정 값"
+
+#: includes/cb_checkbox.php:29
+msgid "Checkbox Control"
+msgstr "확인란-상자 제어"
+
+#: includes/cb_checkbox.php:36 includes/cb_date.php:86
+#: includes/cb_dropdown.php:36 includes/cb_email.php:38
+#: includes/cb_file_upload.php:54 includes/cb_hidden.php:36
+#: includes/cb_multiple.php:35 includes/cb_password.php:37
+#: includes/cb_text.php:36 includes/cb_textarea.php:38 includes/cb_time.php:99
+msgid "Advanced"
+msgstr "고급"
+
+#: includes/cb_checkbox.php:39 includes/cb_checkbox.php:68
+#: includes/cb_date.php:89 includes/cb_dropdown.php:39
+#: includes/cb_dropdown.php:68 includes/cb_email.php:41
+#: includes/cb_file_upload.php:57 includes/cb_multiple.php:38
+#: includes/cb_multiple.php:67 includes/cb_password.php:40
+#: includes/cb_text.php:39 includes/cb_textarea.php:41
+#: includes/cb_time.php:102
+msgid "Options"
+msgstr "옵션"
+
+#: includes/cb_checkbox.php:48 includes/cb_checkbox.php:134
+#: includes/cb_date.php:98 includes/cb_date.php:238
+#: includes/cb_dropdown.php:48 includes/cb_dropdown.php:120
+#: includes/cb_email.php:50 includes/cb_email.php:121
+#: includes/cb_file_upload.php:66 includes/cb_file_upload.php:159
+#: includes/cb_hidden.php:42 includes/cb_multiple.php:47
+#: includes/cb_multiple.php:133 includes/cb_password.php:49
+#: includes/cb_password.php:119 includes/cb_text.php:48
+#: includes/cb_text.php:122 includes/cb_textarea.php:50
+#: includes/cb_textarea.php:130 includes/cb_time.php:111
+#: includes/cb_time.php:293
+msgid "Label"
+msgstr "레이블이"
+
+#: includes/cb_checkbox.php:50 includes/cb_date.php:100
+#: includes/cb_dropdown.php:50 includes/cb_email.php:52
+#: includes/cb_file_upload.php:68 includes/cb_hidden.php:44
+#: includes/cb_multiple.php:49 includes/cb_password.php:51
+#: includes/cb_text.php:50 includes/cb_time.php:113
+msgid "Enter Label"
+msgstr "입력하고 -레이블이"
+
+#: includes/cb_checkbox.php:54 includes/cb_checkbox.php:56
+#: includes/cb_date.php:110 includes/cb_date.php:112
+#: includes/cb_dropdown.php:54 includes/cb_dropdown.php:56
+#: includes/cb_email.php:62 includes/cb_email.php:64
+#: includes/cb_file_upload.php:78 includes/cb_file_upload.php:80
+#: includes/cb_multiple.php:53 includes/cb_multiple.php:55
+#: includes/cb_password.php:61 includes/cb_password.php:63
+#: includes/cb_text.php:60 includes/cb_text.php:62 includes/cb_textarea.php:62
+#: includes/cb_textarea.php:64 includes/cb_time.php:123
+#: includes/cb_time.php:125
+msgid "Required"
+msgstr "필수"
+
+#: includes/cb_checkbox.php:57 includes/cb_date.php:113
+#: includes/cb_dropdown.php:57 includes/cb_email.php:65
+#: includes/cb_file_upload.php:81 includes/cb_multiple.php:56
+#: includes/cb_password.php:64 includes/cb_text.php:63
+#: includes/cb_textarea.php:65 includes/cb_time.php:126
+msgid "Not Required"
+msgstr "필요하지 않음"
+
+#: includes/cb_checkbox.php:61 includes/cb_date.php:117
+#: includes/cb_dropdown.php:61 includes/cb_email.php:69
+#: includes/cb_file_upload.php:85 includes/cb_multiple.php:60
+#: includes/cb_password.php:68 includes/cb_text.php:67
+#: includes/cb_time.php:130
+msgid "Tooltip Text"
+msgstr "도구 설명 텍스트를"
+
+#: includes/cb_checkbox.php:63 includes/cb_date.php:119
+#: includes/cb_dropdown.php:63 includes/cb_email.php:71
+#: includes/cb_file_upload.php:87 includes/cb_password.php:70
+#: includes/cb_textarea.php:71 includes/cb_time.php:132
+msgid "Enter Tooltip"
+msgstr " 입력합니다 도구 설명"
+
+#: includes/cb_checkbox.php:70 includes/cb_checkbox.php:127
+msgid "Enter Options"
+msgstr "입력합니다-옵션"
+
+#: includes/cb_checkbox.php:70 includes/cb_dropdown.php:70
+#: includes/cb_multiple.php:69
+msgid "Add option"
+msgstr "옵션을 추가합니다"
+
+#: includes/cb_checkbox.php:81 includes/cb_dropdown.php:81
+#: includes/cb_file_upload.php:100 includes/cb_password.php:79
+#: includes/cb_time.php:141
+msgid "Admin Label"
+msgstr "관리 레이블"
+
+#: includes/cb_checkbox.php:83 includes/cb_date.php:130
+#: includes/cb_dropdown.php:83 includes/cb_email.php:83
+#: includes/cb_file_upload.php:102 includes/cb_multiple.php:82
+#: includes/cb_password.php:81 includes/cb_time.php:143
+msgid "Enter Admin Label"
+msgstr "입력합니다관리자에-레이블이"
+
+#: includes/cb_checkbox.php:87 includes/cb_date.php:134
+#: includes/cb_dropdown.php:87 includes/cb_email.php:87
+#: includes/cb_file_upload.php:106 includes/cb_hidden.php:60
+#: includes/cb_multiple.php:86 includes/cb_password.php:85
+#: includes/cb_text.php:89 includes/cb_textarea.php:97
+#: includes/cb_time.php:147
+msgid "Do not show in the email"
+msgstr "표시 안 함전자 우편에서"
+
+#: includes/cb_checkbox.php:97 includes/cb_multiple.php:96
+msgid "Css Label :"
+msgstr "CSS 레이블 :"
+
+#: includes/cb_checkbox.php:99 includes/cb_date.php:196
+#: includes/cb_dropdown.php:99 includes/cb_email.php:100
+#: includes/cb_file_upload.php:145 includes/cb_multiple.php:98
+#: includes/cb_password.php:97 includes/cb_text.php:101
+#: includes/cb_time.php:251
+msgid "Enter Css Label"
+msgstr "입력합니다CSS-레이블이"
+
+#: includes/cb_checkbox.php:104
+msgid "CSS Description :"
+msgstr "CSS 설명 :"
+
+#: includes/cb_checkbox.php:106 includes/cb_date.php:210
+#: includes/cb_dropdown.php:113 includes/cb_email.php:114
+#: includes/cb_file_upload.php:152 includes/cb_multiple.php:105
+#: includes/cb_password.php:112 includes/cb_text.php:115
+#: includes/cb_time.php:265
+msgid "Enter Css Description"
+msgstr "CSS입력합니다설명을"
+
+#: includes/cb_checkbox.php:111
+msgid "CSS Options outer wrapper :"
+msgstr "CSS옵션을-래퍼 아우터:"
+
+#: includes/cb_checkbox.php:113
+msgid "Enter Css Outer Wrapper"
+msgstr "입력합니다CSS아우터-래퍼"
+
+#: includes/cb_checkbox.php:118
+msgid "CSS Option Wrapper :"
+msgstr "CSS 옵션 래퍼 :"
+
+#: includes/cb_checkbox.php:120
+msgid "Enter Css Option Wrapper"
+msgstr "입력하십시오CSS 옵션-래퍼"
+
+#: includes/cb_checkbox.php:125
+msgid "CSS Options Label :"
+msgstr "CSS 옵션 -레이블 :"
+
+#: includes/cb_checkbox.php:132 includes/cb_date.php:236
+#: includes/cb_dropdown.php:118 includes/cb_email.php:119
+#: includes/cb_file_upload.php:157 includes/cb_multiple.php:131
+#: includes/cb_password.php:117 includes/cb_text.php:120
+#: includes/cb_textarea.php:128 includes/cb_time.php:291
+msgid "Add a style to"
+msgstr "에 스타일을 추가"
+
+#: includes/cb_checkbox.php:135 includes/cb_date.php:104
+#: includes/cb_date.php:240 includes/cb_dropdown.php:122
+#: includes/cb_email.php:56 includes/cb_email.php:123
+#: includes/cb_file_upload.php:72 includes/cb_file_upload.php:160
+#: includes/cb_multiple.php:134 includes/cb_password.php:55
+#: includes/cb_password.php:121 includes/cb_text.php:54
+#: includes/cb_text.php:124 includes/cb_textarea.php:56
+#: includes/cb_textarea.php:132 includes/cb_time.php:117
+#: includes/cb_time.php:295
+msgid "Description"
+msgstr "설명이"
+
+#: includes/cb_checkbox.php:136 includes/cb_multiple.php:135
+msgid "Options outer wrapper"
+msgstr "옵션 아우터 래퍼"
+
+#: includes/cb_checkbox.php:137
+msgid "Options wrapper"
+msgstr "옵션 -래퍼"
+
+#: includes/cb_checkbox.php:138 includes/cb_multiple.php:137
+msgid "Options label"
+msgstr "옵션 레이블이"
+
+#: includes/cb_checkbox.php:148 includes/cb_date.php:253
+#: includes/cb_dropdown.php:132 includes/cb_email.php:143
+#: includes/cb_file_upload.php:170 includes/cb_hidden.php:72
+#: includes/cb_multiple.php:147 includes/cb_password.php:141
+#: includes/cb_text.php:144 includes/cb_textarea.php:152
+#: includes/cb_time.php:308 views/contact_email.php:183
+#: views/contact_view.php:34 views/edit_contact_view.php:82
+msgid "Save"
+msgstr "저장할"
+
+#: includes/cb_checkbox.php:202 includes/cb_checkbox.php:267
+#: includes/cb_dropdown.php:228 includes/cb_dropdown.php:278
+#: includes/cb_multiple.php:202 includes/cb_multiple.php:268
+msgid "Update"
+msgstr "업데이트"
+
+#: includes/cb_checkbox.php:256 includes/cb_dropdown.php:270
+#: includes/cb_multiple.php:257
+msgid "Please Fill an Option."
+msgstr "옵션을 기입 해주세요."
+
+#: includes/cb_checkbox.php:272 includes/cb_multiple.php:273
+msgid "This Option Already Exists."
+msgstr "이 옵션이이미 존재합니다."
+
+#: includes/cb_checkbox.php:294 includes/cb_dropdown.php:286
+#: includes/cb_dropdown.php:308 includes/cb_multiple.php:295
+msgid "This Option Already Exists. "
+msgstr "이 옵션 벌써 존재합니다."
+
+#: includes/cb_checkbox.php:305 includes/cb_dropdown.php:319
+#: includes/cb_multiple.php:306
+msgid "Option updated"
+msgstr "옵션을-업데이트 됨"
+
+#: includes/cb_date.php:8 includes/cb_date.php:100 includes/cb_date.php:130
+#: views/contact_view.php:66 views/edit_contact_view.php:113
+#: views/edit_contact_view.php:1420
+msgid "Date"
+msgstr "날짜"
+
+#: includes/cb_date.php:12 includes/cb_date.php:155
+#: views/contact_bank_frontend.php:679
+msgid "Day"
+msgstr "하루"
+
+#: includes/cb_date.php:32 includes/cb_date.php:159
+#: views/contact_bank_frontend.php:707
+msgid "Month"
+msgstr "달"
+
+#: includes/cb_date.php:47 includes/cb_date.php:162
+#: views/contact_bank_frontend.php:729
+msgid "Year"
+msgstr "년"
+
+#: includes/cb_date.php:79
+msgid "Date Control"
+msgstr "날짜 제어"
+
+#: includes/cb_date.php:106 includes/cb_email.php:58
+#: includes/cb_file_upload.php:74 includes/cb_password.php:57
+#: includes/cb_text.php:56 includes/cb_time.php:119
+msgid "Enter Description"
+msgstr "입력하십-설명"
+
+#: includes/cb_date.php:128 includes/cb_email.php:81 includes/cb_hidden.php:54
+#: includes/cb_multiple.php:80 includes/cb_text.php:83
+#: includes/cb_textarea.php:91
+msgid "Admin label"
+msgstr "관리 레이블"
+
+#: includes/cb_date.php:140
+msgid "Start year"
+msgstr "년 시작"
+
+#: includes/cb_date.php:142
+msgid "Enter Start Year"
+msgstr "입력하십시오- 시작시작 연도"
+
+#: includes/cb_date.php:146
+msgid "End year"
+msgstr "엔드-년"
+
+#: includes/cb_date.php:148
+msgid "Enter End Year "
+msgstr "입력합니다-종료-수정 연도"
+
+#: includes/cb_date.php:152 includes/cb_text.php:77
+#: includes/cb_textarea.php:85 includes/cb_time.php:175
+msgid "Default value"
+msgstr "디폴트 값 값"
+
+#: includes/cb_date.php:167
+msgid "Error message if invalid date"
+msgstr "경우에오류 메시지잘못된 날짜"
+
+#: includes/cb_date.php:169
+msgid "Enter Error Message"
+msgstr "라는 오류 메시지 를 입력하십시오"
+
+#: includes/cb_date.php:173
+msgid "Date format"
+msgstr "날짜 형식으로"
+
+#: includes/cb_date.php:194 includes/cb_dropdown.php:97
+#: includes/cb_email.php:98 includes/cb_file_upload.php:143
+#: includes/cb_password.php:95 includes/cb_text.php:99
+#: includes/cb_time.php:249
+msgid "Css Label"
+msgstr "CSS 레이 블"
+
+#: includes/cb_date.php:201 includes/cb_email.php:105 includes/cb_time.php:256
+msgid "Css Text Input"
+msgstr "CSS -텍스트 입력"
+
+#: includes/cb_date.php:203 includes/cb_text.php:108 includes/cb_time.php:258
+msgid "Enter Css Text Input"
+msgstr "CSS를을 입력합니다본문입력을"
+
+#: includes/cb_date.php:208 includes/cb_dropdown.php:111
+#: includes/cb_email.php:112 includes/cb_file_upload.php:150
+#: includes/cb_password.php:110 includes/cb_time.php:263
+msgid "Css Description"
+msgstr "CSS--설명"
+
+#: includes/cb_date.php:215
+msgid "Css Day"
+msgstr "CSS의 날"
+
+#: includes/cb_date.php:217
+msgid "Enter Css Day"
+msgstr "입력합니다CSS날"
+
+#: includes/cb_date.php:222
+msgid "Css Month"
+msgstr "CSS는-달을"
+
+#: includes/cb_date.php:224
+msgid "Enter Css Month"
+msgstr "입력합니다CSS는-달 "
+
+#: includes/cb_date.php:229
+msgid "Css Year"
+msgstr "CSS는-수정 연도"
+
+#: includes/cb_date.php:231
+msgid "Enter Css Year"
+msgstr "입력합니다-CSS -수정 연도"
+
+#: includes/cb_date.php:239 includes/cb_email.php:122
+#: includes/cb_password.php:120 includes/cb_textarea.php:131
+#: includes/cb_time.php:294
+msgid "Text input"
+msgstr "텍스트 입력"
+
+#: includes/cb_date.php:241
+msgid "Date day dropdown"
+msgstr "날짜하루-드롭아래로"
+
+#: includes/cb_date.php:242
+msgid "Date month dropdown"
+msgstr "날짜 -달드롭 다운 "
+
+#: includes/cb_date.php:243
+msgid "Date year dropdown"
+msgstr "Date-year drop-down"
+
+#: includes/cb_dropdown.php:12 includes/cb_dropdown.php:344
+#: views/contact_bank_frontend.php:385 views/contact_bank_frontend.php:398
+msgid "Select option"
+msgstr "옵션을 선택"
+
+#: includes/cb_dropdown.php:29
+msgid "Dropdown Control"
+msgstr "드롭 다운 -컨트롤"
+
+#: includes/cb_dropdown.php:70 includes/cb_multiple.php:69
+msgid "Enter Option"
+msgstr "옵션을을 입력합니다"
+
+#: includes/cb_dropdown.php:104
+msgid "Css Dropdown Menu"
+msgstr "CSS드롭 다운 메뉴의"
+
+#: includes/cb_dropdown.php:106
+msgid "Enter Css Dropdown Menu"
+msgstr "CSS를 입력하고드롭 다운-메뉴"
+
+#: includes/cb_dropdown.php:121
+msgid "Dropdown menu"
+msgstr "드롭 다운 메뉴"
+
+#: includes/cb_email.php:9 includes/cb_email.php:52 includes/cb_email.php:83
+#: views/contact_email.php:72 views/contact_email.php:138
+#: views/edit_contact_view.php:1112
+msgid "Email"
+msgstr "이메일"
+
+#: includes/cb_email.php:30
+msgid "Email Control"
+msgstr "전자 메일 제어"
+
+#: includes/cb_email.php:107 includes/cb_password.php:105
+msgid "Enter Css Input Text"
+msgstr "CSS를 입력하고입력-본문"
+
+#: includes/cb_email.php:127 includes/cb_password.php:125
+#: includes/cb_text.php:128 includes/cb_textarea.php:136
+msgid "Add a filter"
+msgstr "추가 -필터"
+
+#: includes/cb_email.php:129 includes/cb_password.php:127
+#: includes/cb_text.php:130 includes/cb_textarea.php:138
+msgid "Alpha"
+msgstr "알파"
+
+#: includes/cb_email.php:130 includes/cb_password.php:128
+#: includes/cb_text.php:131 includes/cb_textarea.php:139
+msgid "Alpha Numeric"
+msgstr "알파 숫자 형"
+
+#: includes/cb_email.php:131 includes/cb_password.php:129
+#: includes/cb_text.php:132 includes/cb_textarea.php:140
+msgid "Digits"
+msgstr "디지트"
+
+#: includes/cb_email.php:132 includes/cb_password.php:130
+#: includes/cb_text.php:133 includes/cb_textarea.php:141
+msgid "Strip Tags"
+msgstr "스트립 태그"
+
+#: includes/cb_email.php:133 includes/cb_password.php:131
+#: includes/cb_text.php:134 includes/cb_textarea.php:142
+msgid "Trim"
+msgstr "손질"
+
+#: includes/cb_file_upload.php:9 includes/cb_file_upload.php:68
+#: includes/cb_file_upload.php:102 views/contact_view.php:63
+#: views/edit_contact_view.php:110 views/edit_contact_view.php:1373
+msgid "File Upload"
+msgstr "파일업로드"
+
+#: includes/cb_file_upload.php:46
+msgid "Fileupload Control"
+msgstr "파일 업로드 -제어"
+
+#: includes/cb_file_upload.php:112
+msgid "Allow Multiple Uploads"
+msgstr "다중 업로드합니다 허용"
+
+#: includes/cb_file_upload.php:118
+msgid "Allowed File Extensions"
+msgstr "허용 파일확장명을"
+
+#: includes/cb_file_upload.php:120
+msgid "Enter File Extensions"
+msgstr "를 입력하고-파일확장명"
+
+#: includes/cb_file_upload.php:122
+msgid "The file extensions must be seperated with semicolons(' ; ')"
+msgstr "파일 확장명 구분하여함께 수 있어야세미콜론을( ';')"
+
+#: includes/cb_file_upload.php:126
+msgid "Allowed File Size"
+msgstr "허용 화일 크기"
+
+#: includes/cb_file_upload.php:130
+msgid "File Size must be in Kb"
+msgstr "파일 크기 수 있어야-에있는-KB"
+
+#: includes/cb_hidden.php:8
+msgid "Untitled (hidden)"
+msgstr "제목없는 (숨겨진)"
+
+#: includes/cb_hidden.php:11 views/contact_bank_frontend.php:952
+#: views/contact_view.php:72 views/edit_contact_view.php:119
+msgid "Hidden"
+msgstr "숨겨진"
+
+#: includes/cb_hidden.php:29
+msgid "Hidden Control"
+msgstr "숨겨진 제어"
+
+#: includes/cb_hidden.php:44 includes/cb_hidden.php:56
+#: views/edit_contact_view.php:1618
+msgid "Untitled(hidden)"
+msgstr "제목없는(숨겨진)"
+
+#: includes/cb_hidden.php:48
+msgid "Default Value"
+msgstr "디폴트 밸류"
+
+#: includes/cb_hidden.php:50 includes/cb_text.php:79
+msgid "Enter Default Value"
+msgstr "입력합니다-디폴트 밸류"
+
+#: includes/cb_hidden.php:56 includes/cb_text.php:85
+#: includes/cb_textarea.php:93
+msgid "Enter Admin label"
+msgstr "입력합니다관리자에-레이블이"
+
+#: includes/cb_multiple.php:28
+msgid "Radio Buttons"
+msgstr "라디오- 선택 단추"
+
+#: includes/cb_multiple.php:62 includes/cb_text.php:69
+msgid "Enter Tooltip Text"
+msgstr "입력합니다툴팁이본문"
+
+#: includes/cb_multiple.php:103
+msgid "Css Description :"
+msgstr "CSS설명 :"
+
+#: includes/cb_multiple.php:110
+msgid "Css Options outer wrapper :"
+msgstr "CSS옵션-아우터 래퍼"
+
+#: includes/cb_multiple.php:112
+msgid "Enter Css Options outer wrapper"
+msgstr "입력합니다 CSS옵션을-래퍼 아우터"
+
+#: includes/cb_multiple.php:117
+msgid "CSS Options Wrapper :"
+msgstr "CSS옵션을-래퍼"
+
+#: includes/cb_multiple.php:119
+msgid "Enter Css Options Wrapper"
+msgstr "를 입력하고CSS옵션을-래퍼"
+
+#: includes/cb_multiple.php:124
+msgid "CSS Option Label :"
+msgstr "CSS옵션레이블 :"
+
+#: includes/cb_multiple.php:126
+msgid "Enter Css Option Label"
+msgstr "입력하십시오 CSS옵션-레이블 :"
+
+#: includes/cb_multiple.php:136
+msgid "Options  wrapper"
+msgstr "옵션 싸개"
+
+#: includes/cb_password.php:8 includes/cb_password.php:51
+#: includes/cb_password.php:81 views/contact_view.php:75
+#: views/edit_contact_view.php:122 views/edit_contact_view.php:1628
+msgid "Password"
+msgstr "암호"
+
+#: includes/cb_password.php:29
+msgid "Password Control"
+msgstr "암호 통제"
+
+#: includes/cb_password.php:103
+msgid "Css Input Text"
+msgstr "CSS -입력 텍스트"
+
+#: includes/cb_text.php:29
+msgid "Textbox Control"
+msgstr "텍스트 -상자 통제"
+
+#: includes/cb_text.php:106
+msgid " Css Text Input"
+msgstr "CSS 된 텍스트 입력"
+
+#: includes/cb_text.php:113
+msgid " Css Description"
+msgstr "CSS설명이"
+
+#: includes/cb_text.php:123
+msgid "Text Input"
+msgstr "원본 입력"
+
+#: includes/cb_textarea.php:30
+msgid "Textarea Control"
+msgstr "텍스트 영역- 통제"
+
+#: includes/cb_textarea.php:52
+msgid "Enter label"
+msgstr "입력하십시오-레이블이"
+
+#: includes/cb_textarea.php:58
+msgid "Enter  Description"
+msgstr "입력하십시오-설명이"
+
+#: includes/cb_textarea.php:69
+msgid "Tooltip text"
+msgstr "툴팁이텍스트를"
+
+#: includes/cb_textarea.php:87
+msgid "Enter Default value"
+msgstr "입력하십시오 -디폴트- 값"
+
+#: includes/cb_textarea.php:107
+msgid "CSS label"
+msgstr "CSS 레이블"
+
+#: includes/cb_textarea.php:109
+msgid "Enter css Label"
+msgstr "입력하십시오 css- 라벨"
+
+#: includes/cb_textarea.php:114
+msgid "CSS textinput"
+msgstr "CSS텍스트 입력"
+
+#: includes/cb_textarea.php:116
+msgid "Enter css textinput"
+msgstr "입력하십시오CSS -본문입력"
+
+#: includes/cb_textarea.php:121
+msgid "CSS description"
+msgstr "CSS 설명"
+
+#: includes/cb_textarea.php:123
+msgid "Enter css description"
+msgstr "입력하십시오- CSS 설명"
+
+#: includes/cb_time.php:8 includes/cb_time.php:113 includes/cb_time.php:143
+#: views/contact_view.php:69 views/edit_contact_view.php:116
+#: views/edit_contact_view.php:1513
+msgid "Time"
+msgstr "시간"
+
+#: includes/cb_time.php:12 includes/cb_time.php:32 includes/cb_time.php:178
+#: includes/cb_time.php:198 views/contact_bank_frontend.php:821
+#: views/contact_bank_frontend.php:847 views/contact_bank_frontend.php:873
+msgid "Hour"
+msgstr "시간 운영"
+
+#: includes/cb_time.php:52 includes/cb_time.php:218
+#: views/contact_bank_frontend.php:897
+msgid "Minute"
+msgstr "분"
+
+#: includes/cb_time.php:92
+msgid "Time Control"
+msgstr "시간 제어"
+
+#: includes/cb_time.php:153
+msgid "12/24 hour time"
+msgstr "12 / 24 시간 시간"
+
+#: includes/cb_time.php:162
+msgid "Time format"
+msgstr "시간 형식을"
+
+#: includes/cb_time.php:270
+msgid "Css Hour"
+msgstr "CSS 시간 운영"
+
+#: includes/cb_time.php:272
+msgid "Enter Css Hour"
+msgstr "입력하십시오CSS 시간 운영"
+
+#: includes/cb_time.php:277
+msgid "Css Minute"
+msgstr "CSS분 단위"
+
+#: includes/cb_time.php:279
+msgid "Enter Css Minute"
+msgstr "입력하십시오CSS 미닛"
+
+#: includes/cb_time.php:284
+msgid "Css am/pm"
+msgstr "CSS AM / PM"
+
+#: includes/cb_time.php:286
+msgid "Enter Css am/pm"
+msgstr "입력하십시오CSS AM / PM"
+
+#: includes/cb_time.php:296
+msgid "Time hour dropdown"
+msgstr "시간이-시간 운영드롭 다운"
+
+#: includes/cb_time.php:297
+msgid "Time minute dropdown"
+msgstr "시간이-분드롭 다운"
+
+#: includes/cb_time.php:298
+msgid "Time am/pm dropdown"
+msgstr "타임오전 / 오후드롭 다운"
+
+#: views/contact_bank_frontend.php:153
+msgid "Enter Text"
+msgstr "입력하십시오텍스트"
+
+#: views/contact_bank_frontend.php:342 views/contact_email.php:84
+#: views/contact_email.php:144
+msgid "Enter Email Address"
+msgstr "입력합니다-이메일- 주소를"
+
+#: views/contact_bank_frontend.php:952
+msgid "Enter Hidden Text"
+msgstr "입력합니다숨겨진원본"
+
+#: views/contact_bank_frontend.php:1040
+msgid "Enter Password"
+msgstr "입력합니다-암호"
+
+#: views/contact_bank_frontend.php:1051
+msgid "Submit Form"
+msgstr "제출할-형태"
+
+#: views/contact_email.php:9 views/contact_frontend_data.php:8
+#: views/contact_view.php:9 views/edit_contact_view.php:31
+msgid "Back to Dashboard"
+msgstr "등을 맞댄-대시 보드"
+
+#: views/contact_email.php:13
+msgid "Email Settings Saved. Kindly wait for the redirect."
+msgstr "이메일 설정 저장된..친절하게기다려야용리디렉션합니다.."
+
+#: views/contact_email.php:18 views/contact_email.php:49
+#: views/contact_frontend_data.php:19 views/contact_frontend_data.php:32
+msgid "Select Form"
+msgstr "를 선택-형태"
+
+#: views/contact_email.php:65
+msgid "Admin Email"
+msgstr "관리자에이메일"
+
+#: views/contact_email.php:76
+msgid "To"
+msgstr "에"
+
+#: views/contact_email.php:78
+msgid "Enter Admin Email"
+msgstr "입력합니다-관리자에이메일"
+
+#: views/contact_email.php:82 views/contact_email.php:142
+msgid "From"
+msgstr "부터"
+
+#: views/contact_email.php:89 views/contact_email.php:148
+msgid "Subject"
+msgstr "제목"
+
+#: views/contact_email.php:91 views/contact_email.php:150
+msgid "Enter Subject"
+msgstr "입력합니다피사체"
+
+#: views/contact_email.php:100 views/contact_email.php:160
+msgid "Email Content"
+msgstr "이메일함유량"
+
+#: views/contact_email.php:115 views/contact_email.php:175
+msgid "Short Code Controls for Email"
+msgstr "짧은코드컨트롤-용-이메일"
+
+#: views/contact_email.php:129
+msgid "Client Email"
+msgstr "클라이언트-이메일"
+
+#: views/contact_frontend_data.php:14 views/contact_view.php:20
+#: views/dashboard.php:15 views/dashboard.php:21
+msgid "Form"
+msgstr "형태"
+
+#: views/contact_view.php:13
+msgid "Form Submited. Kindly wait for the redirect."
+msgstr "형태-제출합니다..친절하게기다려야용리디렉션합니다.."
+
+#: views/contact_view.php:24 views/edit_contact_view.php:46
+msgid "Form Name :"
+msgstr "형태-이름 :"
+
+#: views/contact_view.php:27 views/edit_contact_view.php:49
+msgid "Enter Form Name"
+msgstr "입력합니다형태-이름 :"
+
+#: views/contact_view.php:40 views/edit_contact_view.php:88
+msgid "Control Buttons"
+msgstr "통제단추를"
+
+#: views/contact_view.php:45 views/edit_contact_view.php:92
+msgid "Text Box"
+msgstr "텍스트 상자"
+
+#: views/contact_view.php:48 views/edit_contact_view.php:95
+msgid "Text Area"
+msgstr "텍스트 영역"
+
+#: views/contact_view.php:51 views/edit_contact_view.php:98
+msgid "Email Address"
+msgstr "이메일주소를"
+
+#: views/contact_view.php:54 views/edit_contact_view.php:101
+msgid "Dropdown Menu"
+msgstr "드롭 다운 메뉴"
+
+#: views/contact_view.php:57 views/edit_contact_view.php:104
+msgid "Checkboxes"
+msgstr "체크 박스"
+
+#: views/contact_view.php:60 views/edit_contact_view.php:107
+msgid "Multiple Choice"
+msgstr "객관식"
+
+#: views/dashboard.php:5
+msgid "Dashboard - Contact Bank"
+msgstr "대시 보드 - 연락처 은행"
+
+#: views/dashboard.php:9
+msgid "Delete All Forms"
+msgstr "삭제할-모든양식"
+
+#: views/dashboard.php:22
+msgid "Shortcode"
+msgstr "단축 코드"
+
+#: views/dashboard.php:23
+msgid "Action"
+msgstr "행동"
+
+#: views/dashboard.php:43
+msgid "Edit"
+msgstr "편집을"
+
+#: views/dashboard.php:46
+msgid "Delete"
+msgstr "삭제할"
+
+#: views/dashboard.php:62
+msgid "Server Settings"
+msgstr "서버설정에"
+
+#: views/dashboard.php:73
+msgid "Not set"
+msgstr "하지집합"
+
+#: views/dashboard.php:75 views/dashboard.php:78
+msgid "On"
+msgstr "온"
+
+#: views/dashboard.php:76 views/dashboard.php:79
+msgid "Off"
+msgstr "떨어져서"
+
+#: views/dashboard.php:82 views/dashboard.php:85 views/dashboard.php:88
+#: views/dashboard.php:91 views/dashboard.php:94 views/dashboard.php:97
+msgid "N/A"
+msgstr "N / A"
+
+#: views/dashboard.php:96
+msgid " MByte"
+msgstr "메가바이트"
+
+#: views/dashboard.php:99 views/dashboard.php:102 views/dashboard.php:105
+#: views/dashboard.php:155
+msgid "Yes"
+msgstr "예"
+
+#: views/dashboard.php:100 views/dashboard.php:103 views/dashboard.php:106
+#: views/dashboard.php:157
+msgid "No"
+msgstr "아니"
+
+#: views/dashboard.php:108
+msgid "Operating System"
+msgstr "운영-체계"
+
+#: views/dashboard.php:109
+msgid "Server"
+msgstr "서버"
+
+#: views/dashboard.php:110
+msgid "Memory usage"
+msgstr "기억-용법"
+
+#: views/dashboard.php:111
+msgid "MYSQL Version"
+msgstr "MYSQL 버젼"
+
+#: views/dashboard.php:112
+msgid "SQL Mode"
+msgstr "SQL 모드"
+
+#: views/dashboard.php:113
+msgid "PHP Version"
+msgstr "PHP 버젼"
+
+#: views/dashboard.php:114
+msgid "PHP Safe Mode"
+msgstr "PHP -안전 모드"
+
+#: views/dashboard.php:115
+msgid "PHP Allow URL fopen"
+msgstr "PHP허용URL-FOPEN"
+
+#: views/dashboard.php:116
+msgid "PHP Memory Limit"
+msgstr "PHP 메모리 제한"
+
+#: views/dashboard.php:117
+msgid "PHP Max Upload Size"
+msgstr "PHP 맥스업로드 -크기"
+
+#: views/dashboard.php:118
+msgid "PHP Max Post Size"
+msgstr "PHP 맥스 포스트 크기"
+
+#: views/dashboard.php:119
+msgid "PCRE Backtracking Limit"
+msgstr "PCRE역 추적은한도"
+
+#: views/dashboard.php:120
+msgid "PHP Max Script Execute Time"
+msgstr "PHP 맥스 스크립트 시간이 실행할"
+
+#: views/dashboard.php:121
+msgid "PHP Exif support"
+msgstr "PHP Exif 지원"
+
+#: views/dashboard.php:122
+msgid "PHP IPTC support"
+msgstr "PHP IPTC 지원"
+
+#: views/dashboard.php:123
+msgid "PHP XML support"
+msgstr "PHP XML 지원"
+
+#: views/dashboard.php:131
+msgid "Graphic Library Settings"
+msgstr "문자로 쓰는 라이브러리 설정"
+
+#: views/dashboard.php:150
+msgid "No GD support"
+msgstr "GD 없음지원"
+
+#: views/dashboard.php:186
+msgid "Are you sure to delete this form ?"
+msgstr "있습니다당신은 확실히 삭제하려면-이 양식을?"
+
+#: views/dashboard.php:197
+msgid "Are you sure to delete all forms ?"
+msgstr "당신은 모든 양식 를 삭제 하시겠습니까?"
+
+#: views/edit_contact_view.php:28
+msgid "Edit Existing Form"
+msgstr "편집을현존하는형태"
+
+#: views/edit_contact_view.php:35
+msgid "Form Updated. Kindly wait for the redirect."
+msgstr "형태-업데이트.친절하게기다려야용리디렉션합니다"
+
+#: views/edit_contact_view.php:42
+msgid "Edit Form"
+msgstr "을 편집합니다-양식"
+
+#: views/edit_contact_view.php:288 views/edit_contact_view.php:323
+#: views/edit_contact_view.php:392 views/edit_contact_view.php:441
+#: views/edit_contact_view.php:489
+msgid "Untitled :"
+msgstr "제목없는 :"
+
+#: views/edit_contact_view.php:358
+msgid "Email :"
+msgstr "이메일 :"
+
+#: views/edit_contact_view.php:538
+msgid "File Upload :"
+msgstr "파일업로드 :"
+
+#: views/edit_contact_view.php:585
+msgid "Date :"
+msgstr "날짜 :"
+
+#: views/edit_contact_view.php:656
+msgid "Time :"
+msgstr "시간 :"
+
+#: views/edit_contact_view.php:714
+msgid "Untitled(hidden) :"
+msgstr "제목없는 (숨겨진 ) :"
+
+#: views/edit_contact_view.php:746
+msgid "Password : "
+msgstr "비밀번호 :"
+
+#: views/edit_contact_view.php:1397
+msgid "1024"
+msgstr "1024"

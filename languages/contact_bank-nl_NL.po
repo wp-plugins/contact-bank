@@ -1,0 +1,1040 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2013-11-16 11:28+0530\n"
+"PO-Revision-Date: 2013-11-18 13:08+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: C:\\wamp\\www\\contact-bank3.7\\wp-content\\plugins"
+"\\contact-bank\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: contact-bank.php:62
+msgid "Contact Bank"
+msgstr ""
+
+#: contact-bank.php:63 contact-bank.php:431
+msgid "Dashboard"
+msgstr "Dashboard van"
+
+#: contact-bank.php:64 contact-bank.php:437 views/contact_view.php:6
+#: views/dashboard.php:8
+msgid "Add New Form"
+msgstr "Voeg nieuwe vorm"
+
+#: contact-bank.php:65 contact-bank.php:443 views/contact_email.php:6
+msgid "Email Settings"
+msgstr "E-mailinstellingen"
+
+#: contact-bank.php:66 contact-bank.php:449 views/contact_frontend_data.php:5
+msgid "Form Entries"
+msgstr "Vorm vermeldingen"
+
+#: includes/cb_checkbox.php:8 includes/cb_checkbox.php:50
+#: includes/cb_checkbox.php:83 includes/cb_dropdown.php:8
+#: includes/cb_dropdown.php:50 includes/cb_dropdown.php:83
+#: includes/cb_multiple.php:8 includes/cb_multiple.php:49
+#: includes/cb_multiple.php:82 includes/cb_text.php:8 includes/cb_text.php:50
+#: includes/cb_text.php:85 includes/cb_textarea.php:9
+#: includes/cb_textarea.php:52 includes/cb_textarea.php:93
+#: views/edit_contact_view.php:992 views/edit_contact_view.php:1050
+#: views/edit_contact_view.php:1179 views/edit_contact_view.php:1235
+#: views/edit_contact_view.php:1305
+msgid "Untitled"
+msgstr "Untitled"
+
+#: includes/cb_checkbox.php:13 includes/cb_checkbox.php:42
+#: includes/cb_date.php:62 includes/cb_date.php:92 includes/cb_dropdown.php:14
+#: includes/cb_dropdown.php:42 includes/cb_email.php:13
+#: includes/cb_email.php:44 includes/cb_file_upload.php:12
+#: includes/cb_file_upload.php:60 includes/cb_hidden.php:12
+#: includes/cb_multiple.php:13 includes/cb_multiple.php:41
+#: includes/cb_password.php:12 includes/cb_password.php:43
+#: includes/cb_text.php:12 includes/cb_text.php:42 includes/cb_textarea.php:13
+#: includes/cb_textarea.php:44 includes/cb_time.php:75
+#: includes/cb_time.php:105
+msgid "Settings"
+msgstr "Berichten Instellingen"
+
+#: includes/cb_checkbox.php:29
+msgid "Checkbox Control"
+msgstr "Selectievakje Controle"
+
+#: includes/cb_checkbox.php:36 includes/cb_date.php:86
+#: includes/cb_dropdown.php:36 includes/cb_email.php:38
+#: includes/cb_file_upload.php:54 includes/cb_hidden.php:36
+#: includes/cb_multiple.php:35 includes/cb_password.php:37
+#: includes/cb_text.php:36 includes/cb_textarea.php:38 includes/cb_time.php:99
+msgid "Advanced"
+msgstr "Vergevorderd"
+
+#: includes/cb_checkbox.php:39 includes/cb_checkbox.php:68
+#: includes/cb_date.php:89 includes/cb_dropdown.php:39
+#: includes/cb_dropdown.php:68 includes/cb_email.php:41
+#: includes/cb_file_upload.php:57 includes/cb_multiple.php:38
+#: includes/cb_multiple.php:67 includes/cb_password.php:40
+#: includes/cb_text.php:39 includes/cb_textarea.php:41
+#: includes/cb_time.php:102
+msgid "Options"
+msgstr "Opties"
+
+#: includes/cb_checkbox.php:48 includes/cb_checkbox.php:134
+#: includes/cb_date.php:98 includes/cb_date.php:238
+#: includes/cb_dropdown.php:48 includes/cb_dropdown.php:120
+#: includes/cb_email.php:50 includes/cb_email.php:121
+#: includes/cb_file_upload.php:66 includes/cb_file_upload.php:159
+#: includes/cb_hidden.php:42 includes/cb_multiple.php:47
+#: includes/cb_multiple.php:133 includes/cb_password.php:49
+#: includes/cb_password.php:119 includes/cb_text.php:48
+#: includes/cb_text.php:122 includes/cb_textarea.php:50
+#: includes/cb_textarea.php:130 includes/cb_time.php:111
+#: includes/cb_time.php:293
+msgid "Label"
+msgstr "het Etiket"
+
+#: includes/cb_checkbox.php:50 includes/cb_date.php:100
+#: includes/cb_dropdown.php:50 includes/cb_email.php:52
+#: includes/cb_file_upload.php:68 includes/cb_hidden.php:44
+#: includes/cb_multiple.php:49 includes/cb_password.php:51
+#: includes/cb_text.php:50 includes/cb_time.php:113
+msgid "Enter Label"
+msgstr " Invoeren  het Etiket"
+
+#: includes/cb_checkbox.php:54 includes/cb_checkbox.php:56
+#: includes/cb_date.php:110 includes/cb_date.php:112
+#: includes/cb_dropdown.php:54 includes/cb_dropdown.php:56
+#: includes/cb_email.php:62 includes/cb_email.php:64
+#: includes/cb_file_upload.php:78 includes/cb_file_upload.php:80
+#: includes/cb_multiple.php:53 includes/cb_multiple.php:55
+#: includes/cb_password.php:61 includes/cb_password.php:63
+#: includes/cb_text.php:60 includes/cb_text.php:62 includes/cb_textarea.php:62
+#: includes/cb_textarea.php:64 includes/cb_time.php:123
+#: includes/cb_time.php:125
+msgid "Required"
+msgstr "Verplicht"
+
+#: includes/cb_checkbox.php:57 includes/cb_date.php:113
+#: includes/cb_dropdown.php:57 includes/cb_email.php:65
+#: includes/cb_file_upload.php:81 includes/cb_multiple.php:56
+#: includes/cb_password.php:64 includes/cb_text.php:63
+#: includes/cb_textarea.php:65 includes/cb_time.php:126
+msgid "Not Required"
+msgstr "niet die Verplicht"
+
+#: includes/cb_checkbox.php:61 includes/cb_date.php:117
+#: includes/cb_dropdown.php:61 includes/cb_email.php:69
+#: includes/cb_file_upload.php:85 includes/cb_multiple.php:60
+#: includes/cb_password.php:68 includes/cb_text.php:67
+#: includes/cb_time.php:130
+msgid "Tooltip Text"
+msgstr "Knopinfo Tekst"
+
+#: includes/cb_checkbox.php:63 includes/cb_date.php:119
+#: includes/cb_dropdown.php:63 includes/cb_email.php:71
+#: includes/cb_file_upload.php:87 includes/cb_password.php:70
+#: includes/cb_textarea.php:71 includes/cb_time.php:132
+msgid "Enter Tooltip"
+msgstr "invoeren knopinfo"
+
+#: includes/cb_checkbox.php:70 includes/cb_checkbox.php:127
+msgid "Enter Options"
+msgstr "Invoeren u Opties"
+
+#: includes/cb_checkbox.php:70 includes/cb_dropdown.php:70
+#: includes/cb_multiple.php:69
+msgid "Add option"
+msgstr "optie toevoegen"
+
+#: includes/cb_checkbox.php:81 includes/cb_dropdown.php:81
+#: includes/cb_file_upload.php:100 includes/cb_password.php:79
+#: includes/cb_time.php:141
+msgid "Admin Label"
+msgstr "Admin het Etiket"
+
+#: includes/cb_checkbox.php:83 includes/cb_date.php:130
+#: includes/cb_dropdown.php:83 includes/cb_email.php:83
+#: includes/cb_file_upload.php:102 includes/cb_multiple.php:82
+#: includes/cb_password.php:81 includes/cb_time.php:143
+msgid "Enter Admin Label"
+msgstr "invoeren Admin het Etiket"
+
+#: includes/cb_checkbox.php:87 includes/cb_date.php:134
+#: includes/cb_dropdown.php:87 includes/cb_email.php:87
+#: includes/cb_file_upload.php:106 includes/cb_hidden.php:60
+#: includes/cb_multiple.php:86 includes/cb_password.php:85
+#: includes/cb_text.php:89 includes/cb_textarea.php:97
+#: includes/cb_time.php:147
+msgid "Do not show in the email"
+msgstr "Doen Niet laten zien bij de e-mail"
+
+#: includes/cb_checkbox.php:97 includes/cb_multiple.php:96
+msgid "Css Label :"
+msgstr "Css het Etiket:"
+
+#: includes/cb_checkbox.php:99 includes/cb_date.php:196
+#: includes/cb_dropdown.php:99 includes/cb_email.php:100
+#: includes/cb_file_upload.php:145 includes/cb_multiple.php:98
+#: includes/cb_password.php:97 includes/cb_text.php:101
+#: includes/cb_time.php:251
+msgid "Enter Css Label"
+msgstr "invoeren Css het Etiket"
+
+#: includes/cb_checkbox.php:104
+msgid "CSS Description :"
+msgstr "CSS Beschrijving:"
+
+#: includes/cb_checkbox.php:106 includes/cb_date.php:210
+#: includes/cb_dropdown.php:113 includes/cb_email.php:114
+#: includes/cb_file_upload.php:152 includes/cb_multiple.php:105
+#: includes/cb_password.php:112 includes/cb_text.php:115
+#: includes/cb_time.php:265
+msgid "Enter Css Description"
+msgstr "invoeren Css Beschrijving"
+
+#: includes/cb_checkbox.php:111
+msgid "CSS Options outer wrapper :"
+msgstr "CSS u Opties uiterlijke dekblad:"
+
+#: includes/cb_checkbox.php:113
+msgid "Enter Css Outer Wrapper"
+msgstr "invoeren Css Buitenste  Dekblad"
+
+#: includes/cb_checkbox.php:118
+msgid "CSS Option Wrapper :"
+msgstr "CSS Optie Dekblad:"
+
+#: includes/cb_checkbox.php:120
+msgid "Enter Css Option Wrapper"
+msgstr "Invoeren Css  Optie wikkelaar"
+
+#: includes/cb_checkbox.php:125
+msgid "CSS Options Label :"
+msgstr "CSS u Opties het Etiket:"
+
+#: includes/cb_checkbox.php:132 includes/cb_date.php:236
+#: includes/cb_dropdown.php:118 includes/cb_email.php:119
+#: includes/cb_file_upload.php:157 includes/cb_multiple.php:131
+#: includes/cb_password.php:117 includes/cb_text.php:120
+#: includes/cb_textarea.php:128 includes/cb_time.php:291
+msgid "Add a style to"
+msgstr "toevoegen een stijl aan"
+
+#: includes/cb_checkbox.php:135 includes/cb_date.php:104
+#: includes/cb_date.php:240 includes/cb_dropdown.php:122
+#: includes/cb_email.php:56 includes/cb_email.php:123
+#: includes/cb_file_upload.php:72 includes/cb_file_upload.php:160
+#: includes/cb_multiple.php:134 includes/cb_password.php:55
+#: includes/cb_password.php:121 includes/cb_text.php:54
+#: includes/cb_text.php:124 includes/cb_textarea.php:56
+#: includes/cb_textarea.php:132 includes/cb_time.php:117
+#: includes/cb_time.php:295
+msgid "Description"
+msgstr "Beschrijving van"
+
+#: includes/cb_checkbox.php:136 includes/cb_multiple.php:135
+msgid "Options outer wrapper"
+msgstr "Opties dekblad"
+
+#: includes/cb_checkbox.php:137
+msgid "Options wrapper"
+msgstr "Opties dekblad"
+
+#: includes/cb_checkbox.php:138 includes/cb_multiple.php:137
+msgid "Options label"
+msgstr "Opties etiket"
+
+#: includes/cb_checkbox.php:148 includes/cb_date.php:253
+#: includes/cb_dropdown.php:132 includes/cb_email.php:143
+#: includes/cb_file_upload.php:170 includes/cb_hidden.php:72
+#: includes/cb_multiple.php:147 includes/cb_password.php:141
+#: includes/cb_text.php:144 includes/cb_textarea.php:152
+#: includes/cb_time.php:308 views/contact_email.php:183
+#: views/contact_view.php:34 views/edit_contact_view.php:83
+msgid "Save"
+msgstr "Sparen"
+
+#: includes/cb_checkbox.php:202 includes/cb_checkbox.php:267
+#: includes/cb_dropdown.php:228 includes/cb_dropdown.php:278
+#: includes/cb_multiple.php:202 includes/cb_multiple.php:268
+msgid "Update"
+msgstr "bijwerken"
+
+#: includes/cb_checkbox.php:256 includes/cb_dropdown.php:270
+#: includes/cb_multiple.php:257
+msgid "Please Fill an Option."
+msgstr "Gelieve  Invullen  een Optie."
+
+#: includes/cb_checkbox.php:272 includes/cb_multiple.php:273
+msgid "This Option Already Exists."
+msgstr "Deze Optie reeds Bestaat."
+
+#: includes/cb_checkbox.php:294 includes/cb_dropdown.php:286
+#: includes/cb_dropdown.php:308 includes/cb_multiple.php:295
+msgid "This Option Already Exists. "
+msgstr "Deze Optie reeds Bestaat."
+
+#: includes/cb_checkbox.php:305 includes/cb_dropdown.php:319
+#: includes/cb_multiple.php:306
+msgid "Option updated"
+msgstr "Optie bijgewerkte"
+
+#: includes/cb_date.php:8 includes/cb_date.php:100 includes/cb_date.php:130
+#: views/contact_view.php:66 views/edit_contact_view.php:114
+#: views/edit_contact_view.php:1421
+msgid "Date"
+msgstr "Datum"
+
+#: includes/cb_date.php:12 includes/cb_date.php:155 includes/cb_date.php:308
+#: includes/cb_date.php:380 views/contact_bank_frontend.php:679
+msgid "Day"
+msgstr "de Dag"
+
+#: includes/cb_date.php:32 includes/cb_date.php:159 includes/cb_date.php:323
+#: includes/cb_date.php:395 views/contact_bank_frontend.php:707
+msgid "Month"
+msgstr "maand"
+
+#: includes/cb_date.php:47 includes/cb_date.php:162 includes/cb_date.php:357
+#: includes/cb_date.php:417 views/contact_bank_frontend.php:729
+msgid "Year"
+msgstr "Bouwjaar"
+
+#: includes/cb_date.php:79
+msgid "Date Control"
+msgstr "Datum waarop deze controle"
+
+#: includes/cb_date.php:106 includes/cb_email.php:58
+#: includes/cb_file_upload.php:74 includes/cb_password.php:57
+#: includes/cb_text.php:56 includes/cb_time.php:119
+msgid "Enter Description"
+msgstr "Invoeren Beschrijving van"
+
+#: includes/cb_date.php:128 includes/cb_email.php:81 includes/cb_hidden.php:54
+#: includes/cb_multiple.php:80 includes/cb_text.php:83
+#: includes/cb_textarea.php:91
+msgid "Admin label"
+msgstr "Admin Etiket"
+
+#: includes/cb_date.php:140
+msgid "Start year"
+msgstr "op Start jaar"
+
+#: includes/cb_date.php:142
+msgid "Enter Start Year"
+msgstr "In te voeren op Start Bouwjaar"
+
+#: includes/cb_date.php:146
+msgid "End year"
+msgstr " jaar Uiteinde"
+
+#: includes/cb_date.php:148
+msgid "Enter End Year "
+msgstr " Invoeren einde  Bouwjaar"
+
+#: includes/cb_date.php:152 includes/cb_text.php:77
+#: includes/cb_textarea.php:85 includes/cb_time.php:175
+msgid "Default value"
+msgstr "Stand.waarde"
+
+#: includes/cb_date.php:167
+msgid "Error message if invalid date"
+msgstr "Foutmelding als ongeldige datum"
+
+#: includes/cb_date.php:169
+msgid "Enter Error Message"
+msgstr "invoeren Foutbericht"
+
+#: includes/cb_date.php:173
+msgid "Date format"
+msgstr " formaat Datum"
+
+#: includes/cb_date.php:194 includes/cb_dropdown.php:97
+#: includes/cb_email.php:98 includes/cb_file_upload.php:143
+#: includes/cb_password.php:95 includes/cb_text.php:99
+#: includes/cb_time.php:249
+msgid "Css Label"
+msgstr "css het Etiket"
+
+#: includes/cb_date.php:201 includes/cb_email.php:105 includes/cb_time.php:256
+msgid "Css Text Input"
+msgstr "Css tekst toe Invoer"
+
+#: includes/cb_date.php:203 includes/cb_text.php:108 includes/cb_time.php:258
+msgid "Enter Css Text Input"
+msgstr "invoeren Css tekst toe Invoer"
+
+#: includes/cb_date.php:208 includes/cb_dropdown.php:111
+#: includes/cb_email.php:112 includes/cb_file_upload.php:150
+#: includes/cb_password.php:110 includes/cb_time.php:263
+msgid "Css Description"
+msgstr "css Beschrijving"
+
+#: includes/cb_date.php:215
+msgid "Css Day"
+msgstr "css de Dag"
+
+#: includes/cb_date.php:217
+msgid "Enter Css Day"
+msgstr "invoeren Css de Dag"
+
+#: includes/cb_date.php:222
+msgid "Css Month"
+msgstr "css Maandnummer"
+
+#: includes/cb_date.php:224
+msgid "Enter Css Month"
+msgstr "invoeren Css Maandnummer"
+
+#: includes/cb_date.php:229
+msgid "Css Year"
+msgstr " Css Jaar"
+
+#: includes/cb_date.php:231
+msgid "Enter Css Year"
+msgstr "invoeren Css Jaar"
+
+#: includes/cb_date.php:239 includes/cb_email.php:122
+#: includes/cb_password.php:120 includes/cb_textarea.php:131
+#: includes/cb_time.php:294
+msgid "Text input"
+msgstr "tekstinvoer"
+
+#: includes/cb_date.php:241
+msgid "Date day dropdown"
+msgstr "Datum dag vervolgkeuzemenu"
+
+#: includes/cb_date.php:242
+msgid "Date month dropdown"
+msgstr "Datum maand vervolgkeuzemenu"
+
+#: includes/cb_date.php:243
+msgid "Date year dropdown"
+msgstr "Datum jaar vervolgkeuzemenu"
+
+#: includes/cb_dropdown.php:12 includes/cb_dropdown.php:344
+#: views/contact_bank_frontend.php:385 views/contact_bank_frontend.php:398
+msgid "Select option"
+msgstr "Selecteer mogelijkheid"
+
+#: includes/cb_dropdown.php:29
+msgid "Dropdown Control"
+msgstr "Laten vallen Neer Controle"
+
+#: includes/cb_dropdown.php:70 includes/cb_multiple.php:69
+msgid "Enter Option"
+msgstr "optie  Invoeren "
+
+#: includes/cb_dropdown.php:104
+msgid "Css Dropdown Menu"
+msgstr "Css Vervolgkeuzemenu Menu"
+
+#: includes/cb_dropdown.php:106
+msgid "Enter Css Dropdown Menu"
+msgstr "invoeren Css Vervolgkeuzemenu u Menu"
+
+#: includes/cb_dropdown.php:121
+msgid "Dropdown menu"
+msgstr "vervolgkeuzemenu"
+
+#: includes/cb_email.php:9 includes/cb_email.php:52 includes/cb_email.php:83
+#: views/contact_email.php:72 views/contact_email.php:138
+#: views/edit_contact_view.php:1113
+msgid "Email"
+msgstr "E-mail"
+
+#: includes/cb_email.php:30
+msgid "Email Control"
+msgstr "E-Mail controle "
+
+#: includes/cb_email.php:107 includes/cb_password.php:105
+msgid "Enter Css Input Text"
+msgstr "Invoeren css Invoer Tekst "
+
+#: includes/cb_email.php:127 includes/cb_password.php:125
+#: includes/cb_text.php:128 includes/cb_textarea.php:136
+msgid "Add a filter"
+msgstr "toevoegen een filter"
+
+#: includes/cb_email.php:129 includes/cb_password.php:127
+#: includes/cb_text.php:130 includes/cb_textarea.php:138
+msgid "Alpha"
+msgstr "alfa"
+
+#: includes/cb_email.php:130 includes/cb_password.php:128
+#: includes/cb_text.php:131 includes/cb_textarea.php:139
+msgid "Alpha Numeric"
+msgstr "alfa Numeric"
+
+#: includes/cb_email.php:131 includes/cb_password.php:129
+#: includes/cb_text.php:132 includes/cb_textarea.php:140
+msgid "Digits"
+msgstr "Getallen"
+
+#: includes/cb_email.php:132 includes/cb_password.php:130
+#: includes/cb_text.php:133 includes/cb_textarea.php:141
+msgid "Strip Tags"
+msgstr " Strook tags  te"
+
+#: includes/cb_email.php:133 includes/cb_password.php:131
+#: includes/cb_text.php:134 includes/cb_textarea.php:142
+msgid "Trim"
+msgstr "Bijknippen"
+
+#: includes/cb_file_upload.php:9 includes/cb_file_upload.php:68
+#: includes/cb_file_upload.php:102 views/contact_view.php:63
+#: views/edit_contact_view.php:111 views/edit_contact_view.php:1374
+msgid "File Upload"
+msgstr "Bestandsgrootte uploaden "
+
+#: includes/cb_file_upload.php:46
+msgid "Fileupload Control"
+msgstr "Bestandsgrootte Uploaden controle"
+
+#: includes/cb_file_upload.php:112
+msgid "Allow Multiple Uploads"
+msgstr "Laat Meerdere Neergelegde"
+
+#: includes/cb_file_upload.php:118
+msgid "Allowed File Extensions"
+msgstr "toegestaan Bestand  Verlengingen"
+
+#: includes/cb_file_upload.php:120
+msgid "Enter File Extensions"
+msgstr "invoeren Bestand  Verlengingen"
+
+#: includes/cb_file_upload.php:122
+msgid "The file extensions must be seperated with semicolons(' ; ')"
+msgstr "De bestand extensies moeten worden gescheiden met puntkomma (';')"
+
+#: includes/cb_file_upload.php:126
+msgid "Allowed File Size"
+msgstr "toegestaan ​​Bestand Grootte"
+
+#: includes/cb_file_upload.php:130
+msgid "File Size must be in Kb"
+msgstr "Bestand Grootte moet in Kilo byte"
+
+#: includes/cb_hidden.php:8
+msgid "Untitled (hidden)"
+msgstr "Zonder titel (verborgen)"
+
+#: includes/cb_hidden.php:11 views/contact_bank_frontend.php:952
+#: views/contact_view.php:72 views/edit_contact_view.php:120
+msgid "Hidden"
+msgstr "Verscholen"
+
+#: includes/cb_hidden.php:29
+msgid "Hidden Control"
+msgstr "verscholen controle "
+
+#: includes/cb_hidden.php:44 includes/cb_hidden.php:56
+#: views/edit_contact_view.php:1619
+msgid "Untitled(hidden)"
+msgstr "Zonder titel (verborgen)"
+
+#: includes/cb_hidden.php:48
+msgid "Default Value"
+msgstr "Waarde Verzuim "
+
+#: includes/cb_hidden.php:50 includes/cb_text.php:79
+msgid "Enter Default Value"
+msgstr "binnenkomen  Waarde verzuim"
+
+#: includes/cb_hidden.php:56 includes/cb_text.php:85
+#: includes/cb_textarea.php:93
+msgid "Enter Admin label"
+msgstr "binnenkomen admin  etiket "
+
+#: includes/cb_multiple.php:28
+msgid "Radio Buttons"
+msgstr "Radio In Knoppen"
+
+#: includes/cb_multiple.php:62 includes/cb_text.php:69
+msgid "Enter Tooltip Text"
+msgstr "invoeren knopinfo tekst"
+
+#: includes/cb_multiple.php:103
+msgid "Css Description :"
+msgstr "Css beschrijving:"
+
+#: includes/cb_multiple.php:110
+msgid "Css Options outer wrapper :"
+msgstr "Css u Opties uiterlijke dekblad:"
+
+#: includes/cb_multiple.php:112
+msgid "Enter Css Options outer wrapper"
+msgstr "invoeren css u Opties uiterlijke dekblad"
+
+#: includes/cb_multiple.php:117
+msgid "CSS Options Wrapper :"
+msgstr "Css u Opties wrapper:"
+
+#: includes/cb_multiple.php:119
+msgid "Enter Css Options Wrapper"
+msgstr "invoeren Css u Opties wrapper"
+
+#: includes/cb_multiple.php:124
+msgid "CSS Option Label :"
+msgstr "CSS Optie het Etiket:"
+
+#: includes/cb_multiple.php:126
+msgid "Enter Css Option Label"
+msgstr "invoeren CSS Optie het Etiket"
+
+#: includes/cb_multiple.php:136
+msgid "Options  wrapper"
+msgstr "Opties dekblad"
+
+#: includes/cb_password.php:8 includes/cb_password.php:51
+#: includes/cb_password.php:81 views/contact_view.php:75
+#: views/edit_contact_view.php:123 views/edit_contact_view.php:1629
+msgid "Password"
+msgstr "mailadres Wachtwoord"
+
+#: includes/cb_password.php:29
+msgid "Password Control"
+msgstr "mailadres Wachtwoord Controle"
+
+#: includes/cb_password.php:103
+msgid "Css Input Text"
+msgstr "Css Invoer tekst toe"
+
+#: includes/cb_text.php:29
+msgid "Textbox Control"
+msgstr "Tekstvak Controle"
+
+#: includes/cb_text.php:106
+msgid " Css Text Input"
+msgstr "Css-Tekstinvoer"
+
+#: includes/cb_text.php:113
+msgid " Css Description"
+msgstr "css Beschrijving"
+
+#: includes/cb_text.php:123
+msgid "Text Input"
+msgstr "tekstinvoer"
+
+#: includes/cb_textarea.php:30
+msgid "Textarea Control"
+msgstr "Tekstgebied Controle"
+
+#: includes/cb_textarea.php:52
+msgid "Enter label"
+msgstr " Etiket Invoeren"
+
+#: includes/cb_textarea.php:58
+msgid "Enter  Description"
+msgstr "Invoeren  Beschrijving van  "
+
+#: includes/cb_textarea.php:69
+msgid "Tooltip text"
+msgstr "Knopinfo Tekst"
+
+#: includes/cb_textarea.php:87
+msgid "Enter Default value"
+msgstr "Voer Stand.waarde"
+
+#: includes/cb_textarea.php:107
+msgid "CSS label"
+msgstr "CSS Etiket"
+
+#: includes/cb_textarea.php:109
+msgid "Enter css Label"
+msgstr "invoeren CSS Etiket"
+
+#: includes/cb_textarea.php:114
+msgid "CSS textinput"
+msgstr "CSS tekst invoer"
+
+#: includes/cb_textarea.php:116
+msgid "Enter css textinput"
+msgstr "invoeren CSS tekst invoer"
+
+#: includes/cb_textarea.php:121
+msgid "CSS description"
+msgstr "CSS beschrijving"
+
+#: includes/cb_textarea.php:123
+msgid "Enter css description"
+msgstr "invoeren CSS beschrijving"
+
+#: includes/cb_time.php:8 includes/cb_time.php:113 includes/cb_time.php:143
+#: views/contact_view.php:69 views/edit_contact_view.php:117
+#: views/edit_contact_view.php:1514
+msgid "Time"
+msgstr "Keer"
+
+#: includes/cb_time.php:12 includes/cb_time.php:32 includes/cb_time.php:178
+#: includes/cb_time.php:198 views/contact_bank_frontend.php:821
+#: views/contact_bank_frontend.php:847 views/contact_bank_frontend.php:873
+msgid "Hour"
+msgstr "uurs"
+
+#: includes/cb_time.php:52 includes/cb_time.php:218
+#: views/contact_bank_frontend.php:897
+msgid "Minute"
+msgstr "minuut"
+
+#: includes/cb_time.php:92
+msgid "Time Control"
+msgstr "controle Tijd"
+
+#: includes/cb_time.php:153
+msgid "12/24 hour time"
+msgstr "12/24 uur tijd"
+
+#: includes/cb_time.php:162
+msgid "Time format"
+msgstr "Tijdformaat"
+
+#: includes/cb_time.php:270
+msgid "Css Hour"
+msgstr "css Uurs"
+
+#: includes/cb_time.php:272
+msgid "Enter Css Hour"
+msgstr "invoeren css Uurs"
+
+#: includes/cb_time.php:277
+msgid "Css Minute"
+msgstr "css Minuut"
+
+#: includes/cb_time.php:279
+msgid "Enter Css Minute"
+msgstr "invoeren css Minuut"
+
+#: includes/cb_time.php:284
+msgid "Css am/pm"
+msgstr "css am / pm"
+
+#: includes/cb_time.php:286
+msgid "Enter Css am/pm"
+msgstr "invoeren css am / pm"
+
+#: includes/cb_time.php:296
+msgid "Time hour dropdown"
+msgstr "Tijd uur vervolgkeuzemenu"
+
+#: includes/cb_time.php:297
+msgid "Time minute dropdown"
+msgstr "Tijd minuut vervolgkeuzemenu"
+
+#: includes/cb_time.php:298
+msgid "Time am/pm dropdown"
+msgstr "Tijd am / pm vervolgkeuzemenu"
+
+#: views/contact_bank_frontend.php:153
+msgid "Enter Text"
+msgstr "Tekst Invoeren"
+
+#: views/contact_bank_frontend.php:342 views/contact_email.php:84
+#: views/contact_email.php:144
+msgid "Enter Email Address"
+msgstr "E-mail Adres invoeren"
+
+#: views/contact_bank_frontend.php:952
+msgid "Enter Hidden Text"
+msgstr "invoeren Verborgen Tekst"
+
+#: views/contact_bank_frontend.php:1040
+msgid "Enter Password"
+msgstr "invoeren mailadres Wachtwoord"
+
+#: views/contact_bank_frontend.php:1051
+msgid "Submit Form"
+msgstr "Voorleggen Formulier"
+
+#: views/contact_email.php:9 views/contact_frontend_data.php:8
+#: views/contact_view.php:9 views/edit_contact_view.php:31
+msgid "Back to Dashboard"
+msgstr "Terug naar Dashboard"
+
+#: views/contact_email.php:13
+msgid "Email Settings Saved. Kindly wait for the redirect."
+msgstr "E-mailinstellingen Opgeslagen. Vriendelijk wacht op de redirect."
+
+#: views/contact_email.php:18 views/contact_email.php:49
+#: views/contact_frontend_data.php:19 views/contact_frontend_data.php:32
+msgid "Select Form"
+msgstr "Selecteer Formulier"
+
+#: views/contact_email.php:65
+msgid "Admin Email"
+msgstr "Admin E-mail"
+
+#: views/contact_email.php:76
+msgid "To"
+msgstr "Naar"
+
+#: views/contact_email.php:78
+msgid "Enter Admin Email"
+msgstr "invoeren Admin E-mail"
+
+#: views/contact_email.php:82 views/contact_email.php:142
+msgid "From"
+msgstr "Vanuit"
+
+#: views/contact_email.php:89 views/contact_email.php:148
+msgid "Subject"
+msgstr "Betreft"
+
+#: views/contact_email.php:91 views/contact_email.php:150
+msgid "Enter Subject"
+msgstr " Betreft Invoeren"
+
+#: views/contact_email.php:100 views/contact_email.php:160
+msgid "Email Content"
+msgstr "e-mail Inhoud"
+
+#: views/contact_email.php:115 views/contact_email.php:175
+msgid "Short Code Controls for Email"
+msgstr "kort Code Controls voor e-mail"
+
+#: views/contact_email.php:129
+msgid "Client Email"
+msgstr "opdrachtgever E-mail"
+
+#: views/contact_frontend_data.php:14 views/contact_view.php:20
+#: views/dashboard.php:15 views/dashboard.php:21
+msgid "Form"
+msgstr "Formulier"
+
+#: views/contact_view.php:13
+msgid "Form Submited. Kindly wait for the redirect."
+msgstr "Vormen Ingediend. Vriendelijk wacht op de redirect."
+
+#: views/contact_view.php:24 views/edit_contact_view.php:46
+msgid "Form Name :"
+msgstr "Formulier Naam:"
+
+#: views/contact_view.php:27 views/edit_contact_view.php:49
+msgid "Enter Form Name"
+msgstr "invoeren Formulier Naam"
+
+#: views/contact_view.php:40 views/edit_contact_view.php:89
+msgid "Control Buttons"
+msgstr "Controle knoppen"
+
+#: views/contact_view.php:45 views/edit_contact_view.php:93
+msgid "Text Box"
+msgstr "Doos Tekst"
+
+#: views/contact_view.php:48 views/edit_contact_view.php:96
+msgid "Text Area"
+msgstr "Tekst-Gebied"
+
+#: views/contact_view.php:51 views/edit_contact_view.php:99
+msgid "Email Address"
+msgstr "E-mail Adres"
+
+#: views/contact_view.php:54 views/edit_contact_view.php:102
+msgid "Dropdown Menu"
+msgstr "Vervolgkeuzemenu u Menu"
+
+#: views/contact_view.php:57 views/edit_contact_view.php:105
+msgid "Checkboxes"
+msgstr "Selectievakjes"
+
+#: views/contact_view.php:60 views/edit_contact_view.php:108
+msgid "Multiple Choice"
+msgstr "Meerkeuze"
+
+#: views/dashboard.php:5
+msgid "Dashboard - Contact Bank"
+msgstr "instrumentenbord - BERICHTJE STUREN Jordaanoever"
+
+#: views/dashboard.php:9
+msgid "Delete All Forms"
+msgstr "Verwijderen Alle Vormen"
+
+#: views/dashboard.php:22
+msgid "Shortcode"
+msgstr "Korte-het repertorium"
+
+#: views/dashboard.php:23
+msgid "Action"
+msgstr "Aktie"
+
+#: views/dashboard.php:43
+msgid "Edit"
+msgstr "Bewerk"
+
+#: views/dashboard.php:46
+msgid "Delete"
+msgstr "Verwijderen"
+
+#: views/dashboard.php:62
+msgid "Server Settings"
+msgstr "serverinstellingen"
+
+#: views/dashboard.php:73
+msgid "Not set"
+msgstr " instellen Niet"
+
+#: views/dashboard.php:75 views/dashboard.php:78
+msgid "On"
+msgstr "Op"
+
+#: views/dashboard.php:76 views/dashboard.php:79
+msgid "Off"
+msgstr "Af"
+
+#: views/dashboard.php:82 views/dashboard.php:85 views/dashboard.php:88
+#: views/dashboard.php:91 views/dashboard.php:94 views/dashboard.php:97
+msgid "N/A"
+msgstr "N/A"
+
+#: views/dashboard.php:96
+msgid " MByte"
+msgstr "MByte"
+
+#: views/dashboard.php:99 views/dashboard.php:102 views/dashboard.php:105
+#: views/dashboard.php:155
+msgid "Yes"
+msgstr "Ja"
+
+#: views/dashboard.php:100 views/dashboard.php:103 views/dashboard.php:106
+#: views/dashboard.php:157
+msgid "No"
+msgstr "Nee"
+
+#: views/dashboard.php:108
+msgid "Operating System"
+msgstr "Besturingssysteem"
+
+#: views/dashboard.php:109
+msgid "Server"
+msgstr "serve"
+
+#: views/dashboard.php:110
+msgid "Memory usage"
+msgstr "Gebruik van geheugen"
+
+#: views/dashboard.php:111
+msgid "MYSQL Version"
+msgstr "MYSQL Versie"
+
+#: views/dashboard.php:112
+msgid "SQL Mode"
+msgstr "SQL Modus"
+
+#: views/dashboard.php:113
+msgid "PHP Version"
+msgstr "PHP Versie"
+
+#: views/dashboard.php:114
+msgid "PHP Safe Mode"
+msgstr "PHP Veilige modus"
+
+#: views/dashboard.php:115
+msgid "PHP Allow URL fopen"
+msgstr "PHP toestaan ​​URL fopen"
+
+#: views/dashboard.php:116
+msgid "PHP Memory Limit"
+msgstr "PHP Herinnering Grens "
+
+#: views/dashboard.php:117
+msgid "PHP Max Upload Size"
+msgstr "PHP Max Uploaden Grootte"
+
+#: views/dashboard.php:118
+msgid "PHP Max Post Size"
+msgstr "PHP Max inzending Grootte"
+
+#: views/dashboard.php:119
+msgid "PCRE Backtracking Limit"
+msgstr "PCRE Terugbijhouden Beperken"
+
+#: views/dashboard.php:120
+msgid "PHP Max Script Execute Time"
+msgstr "PHP Max Manuscript van Uitvoeren Keer"
+
+#: views/dashboard.php:121
+msgid "PHP Exif support"
+msgstr "PHP Exif ondersteuning"
+
+#: views/dashboard.php:122
+msgid "PHP IPTC support"
+msgstr "PHP IPTC ondersteuning"
+
+#: views/dashboard.php:123
+msgid "PHP XML support"
+msgstr "PHP XML-ondersteuning"
+
+#: views/dashboard.php:131
+msgid "Graphic Library Settings"
+msgstr "Grafische Bibliotheekinstellingen"
+
+#: views/dashboard.php:150
+msgid "No GD support"
+msgstr "Nee GD ondersteuning"
+
+#: views/dashboard.php:186
+msgid "Are you sure to delete this form ?"
+msgstr "Weet je zeker dat je dit formulier wilt verwijderen?"
+
+#: views/dashboard.php:197
+msgid "Are you sure to delete all forms ?"
+msgstr "Weet u zeker dat alle vormen verwijderen?"
+
+#: views/edit_contact_view.php:28
+msgid "Edit Existing Form"
+msgstr "Bestaande Vorm bewerken"
+
+#: views/edit_contact_view.php:35
+msgid "Form Updated. Kindly wait for the redirect."
+msgstr "Vormenactualisering. Vriendelijk wacht op de redirect."
+
+#: views/edit_contact_view.php:42
+msgid "Edit Form"
+msgstr " Bewerk Formulier"
+
+#: views/edit_contact_view.php:289 views/edit_contact_view.php:324
+#: views/edit_contact_view.php:393 views/edit_contact_view.php:442
+#: views/edit_contact_view.php:490
+msgid "Untitled :"
+msgstr "Zonder titel:"
+
+#: views/edit_contact_view.php:359
+msgid "Email :"
+msgstr "Email:"
+
+#: views/edit_contact_view.php:539
+msgid "File Upload :"
+msgstr "Bestand uploaden:"
+
+#: views/edit_contact_view.php:586
+msgid "Date :"
+msgstr "Datum:"
+
+#: views/edit_contact_view.php:657
+msgid "Time :"
+msgstr "Keer:"
+
+#: views/edit_contact_view.php:715
+msgid "Untitled(hidden) :"
+msgstr "Zonder titel (verborgen):"
+
+#: views/edit_contact_view.php:747
+msgid "Password : "
+msgstr "mailadres Wachtwoord:"
+
+#: views/edit_contact_view.php:1398
+msgid "1024"
+msgstr "1024"
+
+#~ msgid "Attach uploaded files to the notification email"
+#~ msgstr "Hechten geüploade bestanden naar de  notificatie e-mail"
+
+#~ msgid "Enter Defualt value"
+#~ msgstr "invoeren Defualt waarde"
+
+#~ msgid "Form Data"
+#~ msgstr "Vorm gegevens "
