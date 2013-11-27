@@ -200,6 +200,7 @@
 		var form_id = jQuery("#select_").val();
 		jQuery.post(ajaxurl, jQuery("#email_form").serialize() +"&form_id="+form_id+"&param=email_admin_controls&action=email_contact_form_library", function(data) 
 		{
+			
 			var dat = data.split("|"); 
 			if(dat[0] == "" || dat[0] == undefined)
 			{
@@ -210,7 +211,15 @@
 			{
 				jQuery("#ux_email_to").val(dat == undefined ? "" : dat[0]);
 			}
-			jQuery("#ux_email_from").val(dat == undefined ? "" : dat[1]);
+			if(dat[1] == "" || dat[1] == undefined)
+			{
+				<?php $admin_email = get_option( 'admin_email' ); ?>
+				jQuery("#ux_email_from").val("<?php echo get_option( 'admin_email' ); ?>");
+			}
+			else
+			{
+				jQuery("#ux_email_from").val(dat == undefined ? "" : dat[1]);
+			}
 			jQuery("#uxadminEmailTemplate").val(dat == undefined ? "" : dat[2]);
 			if(dat[2] == "" || dat[2] == undefined)
 			{
@@ -221,10 +230,10 @@
 				tinyMCE.get('uxadminEmailTemplate').setContent(dat[2]);
 			}
 			jQuery("#ux_email_subject").val(dat == undefined ? "" : dat[3]);
-			
 		});
 		jQuery.post(ajaxurl, "form_id="+form_id+"&param=admin_control_buttons&action=email_contact_form_library", function(data) 
 		{
+			
 			jQuery("#form_control_buttons").html(data);
 		});
 		jQuery.post(ajaxurl, "form_id="+form_id+"&param=client_control_buttons&action=email_contact_form_library", function(data) 
@@ -302,11 +311,12 @@
 		submitHandler: function(form)
 		{
 			jQuery("#email_success_message").css("display","block");
+			jQuery('body,html').animate({
+			scrollTop: jQuery('body,html').position().top}, 'slow');
 			var form_id = jQuery("#select_").val();
 			if (jQuery("#wp-uxadminEmailTemplate-wrap").hasClass("tmce-active"))
 			{
 				var uxDescription_admin  =  encodeURIComponent(tinyMCE.get('uxadminEmailTemplate').getContent());
-				
 			}
 			else
 			{

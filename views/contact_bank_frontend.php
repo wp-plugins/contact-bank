@@ -356,7 +356,7 @@ $fields = $wpdb->get_results
 									$index = array_search("cb_tooltip_txt", $keys);
 									$tooltip_txt_ddl = $fields_dynamic_controls[$index]->dynamic_settings_value;
 
-									$index = array_search("cb_dropdown_options", $keys);
+									$index = array_search("cb_dropdown_option_val", $keys);
 									$options_str_ddl = $fields_dynamic_controls[$index]->dynamic_settings_value;
 									
 									$index = array_search("cb_button_set_outer_label", $keys);
@@ -417,10 +417,10 @@ $fields = $wpdb->get_results
 									$index = array_search("cb_tooltip_txt", $keys);
 									$tooltip_txt_chk = $fields_dynamic_controls[$index]->dynamic_settings_value;
 
-									$index = array_search("cb_checkbox_options_dynamicId", $keys);
+									$index = array_search("cb_checkbox_option_id", $keys);
 									$options_dynamicId_str_chk = $fields_dynamic_controls[$index]->dynamic_settings_value;
 
-									$index = array_search("cb_checkbox_options", $keys);
+									$index = array_search("cb_checkbox_option_val", $keys);
 									$options_str_chk = $fields_dynamic_controls[$index]->dynamic_settings_value;
 									
 									$index = array_search("cb_button_set_outer_label", $keys);
@@ -486,10 +486,10 @@ $fields = $wpdb->get_results
 									$index = array_search("cb_tooltip_txt", $keys);
 									$tooltip_txt_radio = $fields_dynamic_controls[$index]->dynamic_settings_value;
 
-									$index = array_search("cb_multiple_options_dyanmicId", $keys);
+									$index = array_search("cb_radio_option_id", $keys);
 									$options_dynamicId_str_radio = $fields_dynamic_controls[$index]->dynamic_settings_value;
 
-									$index = array_search("cb_multiple_options", $keys);
+									$index = array_search("cb_radio_option_val", $keys);
 									$options_str_radio = $fields_dynamic_controls[$index]->dynamic_settings_value;
 									
 									$index = array_search("cb_button_set_outer_label", $keys);
@@ -1239,7 +1239,6 @@ jQuery("#ux_contact_form_submit").validate
 	},
 	submitHandler: function(form)
 	{
-		
 		var form_id = <?php echo $form_id ;?>;
 		jQuery.post(ajaxurl, jQuery(form).serialize() +"&form_id="+form_id+"&file_uploaded_path="+file_uploaded_path+"&param=frontend_submit_controls&action=frontend_contact_form_library", function(data) 
 		{

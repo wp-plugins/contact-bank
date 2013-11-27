@@ -1,733 +1,706 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2013-11-16 11:40+0530\n"
-"PO-Revision-Date: 2013-11-16 15:05+0530\n"
+"POT-Creation-Date: 2013-11-27 12:59+0530\n"
+"PO-Revision-Date: 2013-11-27 18:43+0530\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.5.5\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
 "X-Poedit-Basepath: C:\\wamp\\www\\contact-bank3.7\\wp-content\\plugins"
 "\\contact-bank\\\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: contact-bank.php:62
+#: contact-bank.php:74
 msgid "Contact Bank"
 msgstr ""
 
-#: contact-bank.php:63 contact-bank.php:431
+#: contact-bank.php:75 contact-bank.php:447
 msgid "Dashboard"
 msgstr "המחוונים "
 
-#: contact-bank.php:64 contact-bank.php:437 views/contact_view.php:6
+#: contact-bank.php:76 contact-bank.php:453 views/contact_view.php:6
 #: views/dashboard.php:8
 msgid "Add New Form"
 msgstr "הוסף טופס חדש"
 
-#: contact-bank.php:65 contact-bank.php:443 views/contact_email.php:6
+#: contact-bank.php:77 contact-bank.php:459 views/contact_email.php:6
 msgid "Email Settings"
 msgstr "הגדרות הדוא\"ל"
 
-#: contact-bank.php:66 contact-bank.php:449 views/contact_frontend_data.php:5
+#: contact-bank.php:78 contact-bank.php:465 views/contact_frontend_data.php:5
 msgid "Form Entries"
 msgstr "  הכניסה בטופס "
 
-#: includes/cb_checkbox.php:8 includes/cb_checkbox.php:50
-#: includes/cb_checkbox.php:83 includes/cb_dropdown.php:8
-#: includes/cb_dropdown.php:50 includes/cb_dropdown.php:83
-#: includes/cb_multiple.php:8 includes/cb_multiple.php:49
-#: includes/cb_multiple.php:82 includes/cb_text.php:8 includes/cb_text.php:50
-#: includes/cb_text.php:85 includes/cb_textarea.php:9
-#: includes/cb_textarea.php:52 includes/cb_textarea.php:93
-#: views/edit_contact_view.php:992 views/edit_contact_view.php:1050
-#: views/edit_contact_view.php:1179 views/edit_contact_view.php:1235
-#: views/edit_contact_view.php:1305
-msgid "Untitled"
-msgstr "ללא כותרת"
+#: contact-bank.php:474
+msgid "Add Contact Bank Form"
+msgstr "הוספת טופס  לתקשר"
 
-#: includes/cb_checkbox.php:13 includes/cb_checkbox.php:42
-#: includes/cb_date.php:62 includes/cb_date.php:92 includes/cb_dropdown.php:14
-#: includes/cb_dropdown.php:42 includes/cb_email.php:13
-#: includes/cb_email.php:44 includes/cb_file_upload.php:12
-#: includes/cb_file_upload.php:60 includes/cb_hidden.php:12
-#: includes/cb_multiple.php:13 includes/cb_multiple.php:41
-#: includes/cb_password.php:12 includes/cb_password.php:43
-#: includes/cb_text.php:12 includes/cb_text.php:42 includes/cb_textarea.php:13
-#: includes/cb_textarea.php:44 includes/cb_time.php:75
-#: includes/cb_time.php:105
-msgid "Settings"
-msgstr "ההגדרות"
+#: contact-bank.php:484
+msgid "Insert Contact Bank Form"
+msgstr "הכנס טופס לתקשר "
 
-#: includes/cb_checkbox.php:29
+#: contact-bank.php:486
+msgid "Select a form below to add it to your post or page."
+msgstr "בחר טופס שלהלן כדי להוסיף אותו להודעה או הדף שלך."
+
+#: contact-bank.php:491
+msgid "Select a Form"
+msgstr "בחר טופס"
+
+#: contact-bank.php:509
+msgid "Can't find your form? Make sure it is active."
+msgstr "לא ניתן למצוא את הטופס שלך? לוודא שהוא פעיל."
+
+#: contact-bank.php:514
+msgid "Cancel"
+msgstr "לבטל"
+
+#: contact-bank.php:523
+msgid "Please select a form"
+msgstr "אנא מלא טופס"
+
+#: includes/cb_checkbox.php:4
 msgid "Checkbox Control"
 msgstr "תיבת הסימון הבקרה"
 
-#: includes/cb_checkbox.php:36 includes/cb_date.php:86
-#: includes/cb_dropdown.php:36 includes/cb_email.php:38
-#: includes/cb_file_upload.php:54 includes/cb_hidden.php:36
-#: includes/cb_multiple.php:35 includes/cb_password.php:37
-#: includes/cb_text.php:36 includes/cb_textarea.php:38 includes/cb_time.php:99
+#: includes/cb_checkbox.php:11 includes/cb_date.php:11
+#: includes/cb_dropdown.php:11 includes/cb_email.php:12
+#: includes/cb_file_upload.php:13 includes/cb_multiple.php:11
+#: includes/cb_password.php:12 includes/cb_text.php:11
+#: includes/cb_textarea.php:12 includes/cb_time.php:11
 msgid "Advanced"
 msgstr "המתקדמת"
 
-#: includes/cb_checkbox.php:39 includes/cb_checkbox.php:68
-#: includes/cb_date.php:89 includes/cb_dropdown.php:39
-#: includes/cb_dropdown.php:68 includes/cb_email.php:41
-#: includes/cb_file_upload.php:57 includes/cb_multiple.php:38
-#: includes/cb_multiple.php:67 includes/cb_password.php:40
-#: includes/cb_text.php:39 includes/cb_textarea.php:41
-#: includes/cb_time.php:102
+#: includes/cb_checkbox.php:14 includes/cb_checkbox.php:43
+#: includes/cb_date.php:14 includes/cb_dropdown.php:14
+#: includes/cb_dropdown.php:43 includes/cb_email.php:15
+#: includes/cb_file_upload.php:16 includes/cb_multiple.php:14
+#: includes/cb_multiple.php:43 includes/cb_password.php:15
+#: includes/cb_text.php:14 includes/cb_textarea.php:15 includes/cb_time.php:14
 msgid "Options"
 msgstr "אפשרויות"
 
-#: includes/cb_checkbox.php:48 includes/cb_checkbox.php:134
-#: includes/cb_date.php:98 includes/cb_date.php:238
-#: includes/cb_dropdown.php:48 includes/cb_dropdown.php:120
-#: includes/cb_email.php:50 includes/cb_email.php:121
-#: includes/cb_file_upload.php:66 includes/cb_file_upload.php:159
-#: includes/cb_hidden.php:42 includes/cb_multiple.php:47
-#: includes/cb_multiple.php:133 includes/cb_password.php:49
-#: includes/cb_password.php:119 includes/cb_text.php:48
-#: includes/cb_text.php:122 includes/cb_textarea.php:50
-#: includes/cb_textarea.php:130 includes/cb_time.php:111
-#: includes/cb_time.php:293
+#: includes/cb_checkbox.php:17 includes/cb_date.php:17
+#: includes/cb_dropdown.php:17 includes/cb_email.php:18
+#: includes/cb_file_upload.php:19 includes/cb_hidden.php:11
+#: includes/cb_multiple.php:17 includes/cb_password.php:18
+#: includes/cb_text.php:17 includes/cb_textarea.php:18 includes/cb_time.php:17
+#: views/contact_view.php:36 views/contact_view.php:49
+#: views/contact_view.php:62 views/contact_view.php:77
+#: views/contact_view.php:90 views/contact_view.php:104
+#: views/contact_view.php:114 views/contact_view.php:194
+#: views/contact_view.php:270 views/contact_view.php:283
+#: views/contact_view.php:296 views/edit_contact_view.php:57
+#: views/edit_contact_view.php:70 views/edit_contact_view.php:83
+#: views/edit_contact_view.php:98 views/edit_contact_view.php:111
+#: views/edit_contact_view.php:125 views/edit_contact_view.php:135
+#: views/edit_contact_view.php:215 views/edit_contact_view.php:291
+#: views/edit_contact_view.php:304 views/edit_contact_view.php:317
+msgid "Settings"
+msgstr "ההגדרות"
+
+#: includes/cb_checkbox.php:23 includes/cb_checkbox.php:109
+#: includes/cb_date.php:23 includes/cb_date.php:163
+#: includes/cb_dropdown.php:23 includes/cb_dropdown.php:95
+#: includes/cb_email.php:24 includes/cb_email.php:95
+#: includes/cb_file_upload.php:25 includes/cb_file_upload.php:118
+#: includes/cb_hidden.php:17 includes/cb_multiple.php:23
+#: includes/cb_multiple.php:109 includes/cb_password.php:24
+#: includes/cb_password.php:94 includes/cb_text.php:23 includes/cb_text.php:97
+#: includes/cb_textarea.php:24 includes/cb_textarea.php:104
+#: includes/cb_time.php:23 includes/cb_time.php:205
 msgid "Label"
 msgstr "תווית"
 
-#: includes/cb_checkbox.php:50 includes/cb_date.php:100
-#: includes/cb_dropdown.php:50 includes/cb_email.php:52
-#: includes/cb_file_upload.php:68 includes/cb_hidden.php:44
-#: includes/cb_multiple.php:49 includes/cb_password.php:51
-#: includes/cb_text.php:50 includes/cb_time.php:113
+#: includes/cb_checkbox.php:25 includes/cb_checkbox.php:58
+#: includes/cb_dropdown.php:25 includes/cb_dropdown.php:58
+#: includes/cb_multiple.php:25 includes/cb_multiple.php:58
+#: includes/cb_text.php:25 includes/cb_text.php:60 includes/cb_textarea.php:26
+#: includes/cb_textarea.php:67 views/contact_view.php:32
+#: views/contact_view.php:45 views/contact_view.php:71
+#: views/contact_view.php:84 views/contact_view.php:98
+#: views/contact_view.php:923 views/contact_view.php:928
+#: views/contact_view.php:946 views/contact_view.php:951
+#: views/contact_view.php:989 views/contact_view.php:994
+#: views/contact_view.php:1006 views/contact_view.php:1011
+#: views/contact_view.php:1026 views/contact_view.php:1031
+#: views/edit_contact_view.php:53 views/edit_contact_view.php:66
+#: views/edit_contact_view.php:92 views/edit_contact_view.php:105
+#: views/edit_contact_view.php:119 views/edit_contact_view.php:1294
+#: views/edit_contact_view.php:1352 views/edit_contact_view.php:1484
+#: views/edit_contact_view.php:1540 views/edit_contact_view.php:1609
+#: views/edit_contact_view.php:2127 views/edit_contact_view.php:2132
+#: views/edit_contact_view.php:2150 views/edit_contact_view.php:2155
+#: views/edit_contact_view.php:2193 views/edit_contact_view.php:2198
+#: views/edit_contact_view.php:2210 views/edit_contact_view.php:2215
+#: views/edit_contact_view.php:2230 views/edit_contact_view.php:2235
+msgid "Untitled"
+msgstr "ללא כותרת"
+
+#: includes/cb_checkbox.php:25 includes/cb_date.php:25
+#: includes/cb_dropdown.php:25 includes/cb_email.php:26
+#: includes/cb_file_upload.php:27 includes/cb_hidden.php:19
+#: includes/cb_multiple.php:25 includes/cb_password.php:26
+#: includes/cb_text.php:25 includes/cb_time.php:25
 msgid "Enter Label"
 msgstr "הזינו תווית"
 
-#: includes/cb_checkbox.php:54 includes/cb_checkbox.php:56
-#: includes/cb_date.php:110 includes/cb_date.php:112
-#: includes/cb_dropdown.php:54 includes/cb_dropdown.php:56
-#: includes/cb_email.php:62 includes/cb_email.php:64
-#: includes/cb_file_upload.php:78 includes/cb_file_upload.php:80
-#: includes/cb_multiple.php:53 includes/cb_multiple.php:55
-#: includes/cb_password.php:61 includes/cb_password.php:63
-#: includes/cb_text.php:60 includes/cb_text.php:62 includes/cb_textarea.php:62
-#: includes/cb_textarea.php:64 includes/cb_time.php:123
-#: includes/cb_time.php:125
+#: includes/cb_checkbox.php:29 includes/cb_checkbox.php:31
+#: includes/cb_date.php:35 includes/cb_date.php:37 includes/cb_dropdown.php:29
+#: includes/cb_dropdown.php:31 includes/cb_email.php:36
+#: includes/cb_email.php:38 includes/cb_file_upload.php:37
+#: includes/cb_file_upload.php:39 includes/cb_multiple.php:29
+#: includes/cb_multiple.php:31 includes/cb_password.php:36
+#: includes/cb_password.php:38 includes/cb_text.php:35 includes/cb_text.php:37
+#: includes/cb_textarea.php:36 includes/cb_textarea.php:38
+#: includes/cb_time.php:35 includes/cb_time.php:37
 msgid "Required"
 msgstr "דרוש"
 
-#: includes/cb_checkbox.php:57 includes/cb_date.php:113
-#: includes/cb_dropdown.php:57 includes/cb_email.php:65
-#: includes/cb_file_upload.php:81 includes/cb_multiple.php:56
-#: includes/cb_password.php:64 includes/cb_text.php:63
-#: includes/cb_textarea.php:65 includes/cb_time.php:126
+#: includes/cb_checkbox.php:32 includes/cb_date.php:38
+#: includes/cb_dropdown.php:32 includes/cb_email.php:39
+#: includes/cb_file_upload.php:40 includes/cb_multiple.php:32
+#: includes/cb_password.php:39 includes/cb_text.php:38
+#: includes/cb_textarea.php:39 includes/cb_time.php:38
 msgid "Not Required"
 msgstr "אינה דרושה"
 
-#: includes/cb_checkbox.php:61 includes/cb_date.php:117
-#: includes/cb_dropdown.php:61 includes/cb_email.php:69
-#: includes/cb_file_upload.php:85 includes/cb_multiple.php:60
-#: includes/cb_password.php:68 includes/cb_text.php:67
-#: includes/cb_time.php:130
+#: includes/cb_checkbox.php:36 includes/cb_date.php:42
+#: includes/cb_dropdown.php:36 includes/cb_email.php:43
+#: includes/cb_file_upload.php:44 includes/cb_multiple.php:36
+#: includes/cb_password.php:43 includes/cb_text.php:42 includes/cb_time.php:42
 msgid "Tooltip Text"
 msgstr " טקסט תיאורי כלים"
 
-#: includes/cb_checkbox.php:63 includes/cb_date.php:119
-#: includes/cb_dropdown.php:63 includes/cb_email.php:71
-#: includes/cb_file_upload.php:87 includes/cb_password.php:70
-#: includes/cb_textarea.php:71 includes/cb_time.php:132
+#: includes/cb_checkbox.php:38 includes/cb_date.php:44
+#: includes/cb_dropdown.php:38 includes/cb_email.php:45
+#: includes/cb_file_upload.php:46 includes/cb_password.php:45
+#: includes/cb_textarea.php:45 includes/cb_time.php:44
 msgid "Enter Tooltip"
 msgstr " הזן תיאורי כלים"
 
-#: includes/cb_checkbox.php:70 includes/cb_checkbox.php:127
+#: includes/cb_checkbox.php:45
 msgid "Enter Options"
 msgstr "הזן האפשרויות"
 
-#: includes/cb_checkbox.php:70 includes/cb_dropdown.php:70
-#: includes/cb_multiple.php:69
+#: includes/cb_checkbox.php:45 includes/cb_dropdown.php:45
+#: includes/cb_multiple.php:45
 msgid "Add option"
 msgstr "הוספת האופציה"
 
-#: includes/cb_checkbox.php:81 includes/cb_dropdown.php:81
-#: includes/cb_file_upload.php:100 includes/cb_password.php:79
-#: includes/cb_time.php:141
+#: includes/cb_checkbox.php:56 includes/cb_dropdown.php:56
+#: includes/cb_file_upload.php:59 includes/cb_password.php:54
+#: includes/cb_time.php:53
 msgid "Admin Label"
 msgstr " המינהל התווית "
 
-#: includes/cb_checkbox.php:83 includes/cb_date.php:130
-#: includes/cb_dropdown.php:83 includes/cb_email.php:83
-#: includes/cb_file_upload.php:102 includes/cb_multiple.php:82
-#: includes/cb_password.php:81 includes/cb_time.php:143
+#: includes/cb_checkbox.php:58 includes/cb_date.php:55
+#: includes/cb_dropdown.php:58 includes/cb_email.php:57
+#: includes/cb_file_upload.php:61 includes/cb_multiple.php:58
+#: includes/cb_password.php:56 includes/cb_time.php:55
 msgid "Enter Admin Label"
 msgstr " הזן   המינהל-לייבל"
 
-#: includes/cb_checkbox.php:87 includes/cb_date.php:134
-#: includes/cb_dropdown.php:87 includes/cb_email.php:87
-#: includes/cb_file_upload.php:106 includes/cb_hidden.php:60
-#: includes/cb_multiple.php:86 includes/cb_password.php:85
-#: includes/cb_text.php:89 includes/cb_textarea.php:97
-#: includes/cb_time.php:147
+#: includes/cb_checkbox.php:62 includes/cb_date.php:59
+#: includes/cb_dropdown.php:62 includes/cb_email.php:61
+#: includes/cb_file_upload.php:65 includes/cb_hidden.php:35
+#: includes/cb_multiple.php:62 includes/cb_password.php:60
+#: includes/cb_text.php:64 includes/cb_textarea.php:71 includes/cb_time.php:59
 msgid "Do not show in the email"
 msgstr "אל תציג  ב  הֵ-בדוא\"ל"
 
-#: includes/cb_checkbox.php:97 includes/cb_multiple.php:96
-msgid "Css Label :"
-msgstr "CSS לייבל :"
+#: includes/cb_checkbox.php:72 includes/cb_date.php:119
+#: includes/cb_dropdown.php:72 includes/cb_email.php:72
+#: includes/cb_file_upload.php:102 includes/cb_multiple.php:72
+#: includes/cb_password.php:70 includes/cb_text.php:74
+#: includes/cb_textarea.php:81 includes/cb_time.php:161
+msgid "Label Style"
+msgstr "תווית סגנון "
 
-#: includes/cb_checkbox.php:99 includes/cb_date.php:196
-#: includes/cb_dropdown.php:99 includes/cb_email.php:100
-#: includes/cb_file_upload.php:145 includes/cb_multiple.php:98
-#: includes/cb_password.php:97 includes/cb_text.php:101
-#: includes/cb_time.php:251
-msgid "Enter Css Label"
-msgstr "הזן  Css-תווית "
+#: includes/cb_checkbox.php:74 includes/cb_date.php:121
+#: includes/cb_dropdown.php:74 includes/cb_email.php:74
+#: includes/cb_file_upload.php:104 includes/cb_multiple.php:74
+#: includes/cb_password.php:72 includes/cb_text.php:76
+#: includes/cb_textarea.php:83 includes/cb_time.php:163
+msgid "Enter Label Style"
+msgstr "הזן את סגנון תווית"
 
-#: includes/cb_checkbox.php:104
-msgid "CSS Description :"
-msgstr " CSS תיאור :"
+#: includes/cb_checkbox.php:79 includes/cb_date.php:133
+#: includes/cb_email.php:86 includes/cb_file_upload.php:109
+#: includes/cb_multiple.php:79 includes/cb_password.php:85
+#: includes/cb_text.php:88 includes/cb_textarea.php:95
+#: includes/cb_time.php:175
+msgid "Description Style"
+msgstr "תיאור סגנון "
 
-#: includes/cb_checkbox.php:106 includes/cb_date.php:210
-#: includes/cb_dropdown.php:113 includes/cb_email.php:114
-#: includes/cb_file_upload.php:152 includes/cb_multiple.php:105
-#: includes/cb_password.php:112 includes/cb_text.php:115
-#: includes/cb_time.php:265
-msgid "Enter Css Description"
-msgstr "הזן   Cssתיאור"
+#: includes/cb_checkbox.php:81 includes/cb_date.php:135
+#: includes/cb_email.php:88 includes/cb_file_upload.php:111
+#: includes/cb_multiple.php:81 includes/cb_password.php:87
+#: includes/cb_text.php:90 includes/cb_textarea.php:97
+#: includes/cb_time.php:177
+msgid "Enter Description Style"
+msgstr "הזן את  תיאור סגנון"
 
-#: includes/cb_checkbox.php:111
-msgid "CSS Options outer wrapper :"
-msgstr "האופציה CSS החיצונית לעטוף"
+#: includes/cb_checkbox.php:86 includes/cb_multiple.php:86
+msgid "Options Outer Wrapper Style"
+msgstr "חיצוני סגנון מעטפת אפשרויות "
 
-#: includes/cb_checkbox.php:113
-msgid "Enter Css Outer Wrapper"
-msgstr "הזן  Css החיצונית לעטוף"
+#: includes/cb_checkbox.php:88 includes/cb_multiple.php:88
+msgid "Enter Options Outer Wrapper Style"
+msgstr " הזינו -  CSSהאופציה החיצונית לעטוף"
 
-#: includes/cb_checkbox.php:118
-msgid "CSS Option Wrapper :"
-msgstr "  Css אופציה- לעטוף"
+#: includes/cb_checkbox.php:93
+msgid "Option Wrapper Style"
+msgstr " אפשרות  מעטפת סגנון"
 
-#: includes/cb_checkbox.php:120
-msgid "Enter Css Option Wrapper"
-msgstr "הזן Css- אופציה- לעטוף"
+#: includes/cb_checkbox.php:95
+msgid "Enter Option Wrapper Style"
+msgstr "הזן את  אופציה מעטפת סגנון "
 
-#: includes/cb_checkbox.php:125
-msgid "CSS Options Label :"
-msgstr "Css האפשרויו -תווית"
+#: includes/cb_checkbox.php:100
+msgid "Options Label Style"
+msgstr "  סגנון תווית אפשרויות"
 
-#: includes/cb_checkbox.php:132 includes/cb_date.php:236
-#: includes/cb_dropdown.php:118 includes/cb_email.php:119
-#: includes/cb_file_upload.php:157 includes/cb_multiple.php:131
-#: includes/cb_password.php:117 includes/cb_text.php:120
-#: includes/cb_textarea.php:128 includes/cb_time.php:291
-msgid "Add a style to"
-msgstr " הוספת  לסגנון אל"
+#: includes/cb_checkbox.php:102
+msgid "Enter Options Label Style"
+msgstr "להיכנס האפשרות- תווית סגנון"
 
-#: includes/cb_checkbox.php:135 includes/cb_date.php:104
-#: includes/cb_date.php:240 includes/cb_dropdown.php:122
-#: includes/cb_email.php:56 includes/cb_email.php:123
-#: includes/cb_file_upload.php:72 includes/cb_file_upload.php:160
-#: includes/cb_multiple.php:134 includes/cb_password.php:55
-#: includes/cb_password.php:121 includes/cb_text.php:54
-#: includes/cb_text.php:124 includes/cb_textarea.php:56
-#: includes/cb_textarea.php:132 includes/cb_time.php:117
-#: includes/cb_time.php:295
+#: includes/cb_checkbox.php:107 includes/cb_date.php:161
+#: includes/cb_dropdown.php:93 includes/cb_email.php:93
+#: includes/cb_file_upload.php:116 includes/cb_multiple.php:107
+#: includes/cb_password.php:92 includes/cb_text.php:95
+#: includes/cb_textarea.php:102 includes/cb_time.php:203
+msgid "Add a Style to"
+msgstr "להוסיף סגנון ל"
+
+#: includes/cb_checkbox.php:110 includes/cb_date.php:29
+#: includes/cb_date.php:165 includes/cb_dropdown.php:97
+#: includes/cb_email.php:30 includes/cb_email.php:97
+#: includes/cb_file_upload.php:31 includes/cb_file_upload.php:119
+#: includes/cb_multiple.php:110 includes/cb_password.php:30
+#: includes/cb_password.php:96 includes/cb_text.php:29 includes/cb_text.php:99
+#: includes/cb_textarea.php:30 includes/cb_textarea.php:106
+#: includes/cb_time.php:29 includes/cb_time.php:207
 msgid "Description"
 msgstr "תיאור"
 
-#: includes/cb_checkbox.php:136 includes/cb_multiple.php:135
-msgid "Options outer wrapper"
-msgstr "האופציה - החיצונית לעטוף"
+#: includes/cb_checkbox.php:111 includes/cb_multiple.php:111
+msgid "Options Outer Wrapper"
+msgstr "אפשרויות החיצונית העטיפה"
 
-#: includes/cb_checkbox.php:137
-msgid "Options wrapper"
-msgstr "האפשרויות-לעטוף  "
+#: includes/cb_checkbox.php:112
+msgid "Options Wrapper"
+msgstr "אפשרויות העטיפה"
 
-#: includes/cb_checkbox.php:138 includes/cb_multiple.php:137
-msgid "Options label"
-msgstr "  אפשרויות-תווית"
+#: includes/cb_checkbox.php:113 includes/cb_multiple.php:113
+msgid "Options Label"
+msgstr "   אפשרויות תווית"
 
-#: includes/cb_checkbox.php:148 includes/cb_date.php:253
-#: includes/cb_dropdown.php:132 includes/cb_email.php:143
-#: includes/cb_file_upload.php:170 includes/cb_hidden.php:72
-#: includes/cb_multiple.php:147 includes/cb_password.php:141
-#: includes/cb_text.php:144 includes/cb_textarea.php:152
-#: includes/cb_time.php:308 views/contact_email.php:183
-#: views/contact_view.php:34 views/edit_contact_view.php:83
-msgid "Save"
-msgstr "להציל"
+#: includes/cb_checkbox.php:123 includes/cb_date.php:178
+#: includes/cb_dropdown.php:107 includes/cb_email.php:117
+#: includes/cb_file_upload.php:129 includes/cb_hidden.php:47
+#: includes/cb_multiple.php:123 includes/cb_password.php:116
+#: includes/cb_text.php:119 includes/cb_textarea.php:126
+#: includes/cb_time.php:220
+msgid "Save Settings"
+msgstr "לשמור את הגדרות"
 
-#: includes/cb_checkbox.php:202 includes/cb_checkbox.php:267
-#: includes/cb_dropdown.php:228 includes/cb_dropdown.php:278
-#: includes/cb_multiple.php:202 includes/cb_multiple.php:268
-msgid "Update"
-msgstr "לעדכן"
-
-#: includes/cb_checkbox.php:256 includes/cb_dropdown.php:270
-#: includes/cb_multiple.php:257
+#: includes/cb_checkbox.php:233 includes/cb_dropdown.php:248
+#: includes/cb_multiple.php:234
 msgid "Please Fill an Option."
 msgstr "בבקשה המילוי  הֵ- האופציה."
 
-#: includes/cb_checkbox.php:272 includes/cb_multiple.php:273
-msgid "This Option Already Exists."
-msgstr "אפשרות זו כבר קיימת."
-
-#: includes/cb_checkbox.php:294 includes/cb_dropdown.php:286
-#: includes/cb_dropdown.php:308 includes/cb_multiple.php:295
-msgid "This Option Already Exists. "
-msgstr "אפשרות זו כבר קיימת."
-
-#: includes/cb_checkbox.php:305 includes/cb_dropdown.php:319
-#: includes/cb_multiple.php:306
-msgid "Option updated"
-msgstr "האופצה- המעודכן"
-
-#: includes/cb_date.php:8 includes/cb_date.php:100 includes/cb_date.php:130
-#: views/contact_view.php:66 views/edit_contact_view.php:114
-#: views/edit_contact_view.php:1421
-msgid "Date"
-msgstr "תאריך"
-
-#: includes/cb_date.php:12 includes/cb_date.php:155 includes/cb_date.php:308
-#: includes/cb_date.php:380 views/contact_bank_frontend.php:679
-msgid "Day"
-msgstr "יום"
-
-#: includes/cb_date.php:32 includes/cb_date.php:159 includes/cb_date.php:323
-#: includes/cb_date.php:395 views/contact_bank_frontend.php:707
-msgid "Month"
-msgstr "חודש"
-
-#: includes/cb_date.php:47 includes/cb_date.php:162 includes/cb_date.php:357
-#: includes/cb_date.php:417 views/contact_bank_frontend.php:729
-msgid "Year"
-msgstr "שנה"
-
-#: includes/cb_date.php:79
+#: includes/cb_date.php:4
 msgid "Date Control"
 msgstr "התאריך-הבקרה "
 
-#: includes/cb_date.php:106 includes/cb_email.php:58
-#: includes/cb_file_upload.php:74 includes/cb_password.php:57
-#: includes/cb_text.php:56 includes/cb_time.php:119
+#: includes/cb_date.php:25 includes/cb_date.php:55 views/contact_view.php:140
+#: views/contact_view.php:340 views/contact_view.php:1064
+#: views/contact_view.php:1068 views/edit_contact_view.php:161
+#: views/edit_contact_view.php:389 views/edit_contact_view.php:1723
+#: views/edit_contact_view.php:2268 views/edit_contact_view.php:2272
+msgid "Date"
+msgstr "תאריך"
+
+#: includes/cb_date.php:31 includes/cb_email.php:32
+#: includes/cb_file_upload.php:33 includes/cb_password.php:32
+#: includes/cb_text.php:31 includes/cb_time.php:31
 msgid "Enter Description"
 msgstr "הזינו -התיאור"
 
-#: includes/cb_date.php:128 includes/cb_email.php:81 includes/cb_hidden.php:54
-#: includes/cb_multiple.php:80 includes/cb_text.php:83
-#: includes/cb_textarea.php:91
+#: includes/cb_date.php:53 includes/cb_email.php:55 includes/cb_hidden.php:29
+#: includes/cb_multiple.php:56 includes/cb_text.php:58
+#: includes/cb_textarea.php:65
 msgid "Admin label"
 msgstr "המינהל-תווית"
 
-#: includes/cb_date.php:140
+#: includes/cb_date.php:65
 msgid "Start year"
 msgstr " התחל שנה"
 
-#: includes/cb_date.php:142
+#: includes/cb_date.php:67
 msgid "Enter Start Year"
 msgstr "הזינו התחל שנה"
 
-#: includes/cb_date.php:146
+#: includes/cb_date.php:71
 msgid "End year"
 msgstr "הסוף שנה"
 
-#: includes/cb_date.php:148
+#: includes/cb_date.php:73
 msgid "Enter End Year "
 msgstr "הזינוה סוף שנה"
 
-#: includes/cb_date.php:152 includes/cb_text.php:77
-#: includes/cb_textarea.php:85 includes/cb_time.php:175
+#: includes/cb_date.php:77 includes/cb_text.php:52 includes/cb_textarea.php:59
+#: includes/cb_time.php:87
 msgid "Default value"
 msgstr "ערך ברירת מחדל"
 
-#: includes/cb_date.php:167
+#: includes/cb_date.php:80 includes/cb_date.php:166 includes/cb_date.php:237
+#: includes/cb_date.php:309 views/contact_bank_frontend.php:685
+#: views/contact_view.php:144 views/edit_contact_view.php:165
+msgid "Day"
+msgstr "יום"
+
+#: includes/cb_date.php:84 includes/cb_date.php:167 includes/cb_date.php:252
+#: includes/cb_date.php:324 views/contact_bank_frontend.php:713
+#: views/contact_view.php:164 views/edit_contact_view.php:185
+msgid "Month"
+msgstr "חודש"
+
+#: includes/cb_date.php:87 includes/cb_date.php:168 includes/cb_date.php:220
+#: includes/cb_date.php:286 includes/cb_date.php:346
+#: views/contact_bank_frontend.php:735 views/contact_view.php:179
+#: views/edit_contact_view.php:200 views/edit_contact_view.php:1747
+#: views/edit_contact_view.php:1761
+msgid "Year"
+msgstr "שנה"
+
+#: includes/cb_date.php:92
 msgid "Error message if invalid date"
 msgstr "הודעת שגיאה אם תאריך לא חוקי"
 
-#: includes/cb_date.php:169
+#: includes/cb_date.php:94
 msgid "Enter Error Message"
 msgstr "נא להזין את הודעת שגיאה"
 
-#: includes/cb_date.php:173
+#: includes/cb_date.php:98
 msgid "Date format"
 msgstr "הפורמט תאריך"
 
-#: includes/cb_date.php:194 includes/cb_dropdown.php:97
-#: includes/cb_email.php:98 includes/cb_file_upload.php:143
-#: includes/cb_password.php:95 includes/cb_text.php:99
-#: includes/cb_time.php:249
-msgid "Css Label"
-msgstr "תווית CSS"
+#: includes/cb_date.php:126 includes/cb_email.php:79 includes/cb_text.php:81
+#: includes/cb_textarea.php:88 includes/cb_time.php:168
+msgid "Text Input Style"
+msgstr "קלט טקסט סגנון "
 
-#: includes/cb_date.php:201 includes/cb_email.php:105 includes/cb_time.php:256
-msgid "Css Text Input"
-msgstr "קלט טקסט CSS"
+#: includes/cb_date.php:128 includes/cb_email.php:81 includes/cb_text.php:83
+#: includes/cb_textarea.php:90 includes/cb_time.php:170
+msgid "Enter Text Input Style"
+msgstr " הזן את סגנון קלט טקסט"
 
-#: includes/cb_date.php:203 includes/cb_text.php:108 includes/cb_time.php:258
-msgid "Enter Css Text Input"
-msgstr " Css- הזינו - קלט טקסט"
+#: includes/cb_date.php:140
+msgid "Day Style"
+msgstr "יום סגנון"
 
-#: includes/cb_date.php:208 includes/cb_dropdown.php:111
-#: includes/cb_email.php:112 includes/cb_file_upload.php:150
-#: includes/cb_password.php:110 includes/cb_time.php:263
-msgid "Css Description"
-msgstr "css-תיאור "
+#: includes/cb_date.php:142
+msgid "Enter Day Style"
+msgstr "הזן את יום סגנון"
 
-#: includes/cb_date.php:215
-msgid "Css Day"
-msgstr "Css יום"
+#: includes/cb_date.php:147
+msgid "Month Style"
+msgstr " חודש סגנון"
 
-#: includes/cb_date.php:217
-msgid "Enter Css Day"
-msgstr "הזן יום Css"
+#: includes/cb_date.php:149
+msgid "Enter Month Style"
+msgstr "הזן את החודש סגנון "
 
-#: includes/cb_date.php:222
-msgid "Css Month"
-msgstr "חודש CSS"
+#: includes/cb_date.php:154
+msgid "Year Style"
+msgstr "שנה סגנון "
 
-#: includes/cb_date.php:224
-msgid "Enter Css Month"
-msgstr "הזן Css חודש "
+#: includes/cb_date.php:156
+msgid "Enter Year Style"
+msgstr "הזן שנה סגנון"
 
-#: includes/cb_date.php:229
-msgid "Css Year"
-msgstr "CSS השנה"
-
-#: includes/cb_date.php:231
-msgid "Enter Css Year"
-msgstr "הזן Css השנה"
-
-#: includes/cb_date.php:239 includes/cb_email.php:122
-#: includes/cb_password.php:120 includes/cb_textarea.php:131
-#: includes/cb_time.php:294
-msgid "Text input"
-msgstr "קלט טקסט"
-
-#: includes/cb_date.php:241
-msgid "Date day dropdown"
-msgstr " התאריך- יום - הנפתחת"
-
-#: includes/cb_date.php:242
-msgid "Date month dropdown"
-msgstr " התאריך חודש הנפתחת"
-
-#: includes/cb_date.php:243
-msgid "Date year dropdown"
-msgstr " התאריך- שנה- הנפתחת"
-
-#: includes/cb_dropdown.php:12 includes/cb_dropdown.php:344
-#: views/contact_bank_frontend.php:385 views/contact_bank_frontend.php:398
-msgid "Select option"
-msgstr "בחרו -אפשרות"
-
-#: includes/cb_dropdown.php:29
-msgid "Dropdown Control"
-msgstr "הבקרה הנפתחת"
-
-#: includes/cb_dropdown.php:70 includes/cb_multiple.php:69
-msgid "Enter Option"
-msgstr "הזן אופצית"
-
-#: includes/cb_dropdown.php:104
-msgid "Css Dropdown Menu"
-msgstr "תפריט נפתח CSS"
-
-#: includes/cb_dropdown.php:106
-msgid "Enter Css Dropdown Menu"
-msgstr "הזן - Css תפריט הנפתח "
-
-#: includes/cb_dropdown.php:121
-msgid "Dropdown menu"
-msgstr "תפריט הנפתח"
-
-#: includes/cb_email.php:9 includes/cb_email.php:52 includes/cb_email.php:83
-#: views/contact_email.php:72 views/contact_email.php:138
-#: views/edit_contact_view.php:1113
-msgid "Email"
-msgstr "דואר אלקטרו"
-
-#: includes/cb_email.php:30
-msgid "Email Control"
-msgstr "הבקרה דוא\"ל"
-
-#: includes/cb_email.php:107 includes/cb_password.php:105
-msgid "Enter Css Input Text"
-msgstr "הזן - הטקסט קלט Css"
-
-#: includes/cb_email.php:127 includes/cb_password.php:125
-#: includes/cb_text.php:128 includes/cb_textarea.php:136
-msgid "Add a filter"
-msgstr "הוספת לסנן"
-
-#: includes/cb_email.php:129 includes/cb_password.php:127
-#: includes/cb_text.php:130 includes/cb_textarea.php:138
-msgid "Alpha"
-msgstr "אלפא"
-
-#: includes/cb_email.php:130 includes/cb_password.php:128
-#: includes/cb_text.php:131 includes/cb_textarea.php:139
-msgid "Alpha Numeric"
-msgstr "אלפא נומרי"
-
-#: includes/cb_email.php:131 includes/cb_password.php:129
-#: includes/cb_text.php:132 includes/cb_textarea.php:140
-msgid "Digits"
-msgstr "הספרה"
-
-#: includes/cb_email.php:132 includes/cb_password.php:130
-#: includes/cb_text.php:133 includes/cb_textarea.php:141
-msgid "Strip Tags"
-msgstr "רצועת תגיות "
-
-#: includes/cb_email.php:133 includes/cb_password.php:131
-#: includes/cb_text.php:134 includes/cb_textarea.php:142
-msgid "Trim"
-msgstr "לגזום"
-
-#: includes/cb_file_upload.php:9 includes/cb_file_upload.php:68
-#: includes/cb_file_upload.php:102 views/contact_view.php:63
-#: views/edit_contact_view.php:111 views/edit_contact_view.php:1374
-msgid "File Upload"
-msgstr "טעינת קובץ"
-
-#: includes/cb_file_upload.php:46
-msgid "Fileupload Control"
-msgstr "  טעינת קובץ הבקרה"
-
-#: includes/cb_file_upload.php:112
-msgid "Allow Multiple Uploads"
-msgstr "יאפשרו ההעלאות המרובות"
-
-#: includes/cb_file_upload.php:118
-msgid "Allowed File Extensions"
-msgstr "סיומות קבצים אפשריות"
-
-#: includes/cb_file_upload.php:120
-msgid "Enter File Extensions"
-msgstr "הזן סיומות קבצים"
-
-#: includes/cb_file_upload.php:122
-msgid "The file extensions must be seperated with semicolons(' ; ')"
-msgstr "את סיומות הקבצים חייבים להיות מופרדות עם פסיק (';')"
-
-#: includes/cb_file_upload.php:126
-msgid "Allowed File Size"
-msgstr "גודל קובץ מחמד"
-
-#: includes/cb_file_upload.php:130
-msgid "File Size must be in Kb"
-msgstr "גודל קובץ חייב להיות  ב Kb"
-
-#: includes/cb_hidden.php:8
-msgid "Untitled (hidden)"
-msgstr "ללא כותרת (מוסתר)"
-
-#: includes/cb_hidden.php:11 views/contact_bank_frontend.php:952
-#: views/contact_view.php:72 views/edit_contact_view.php:120
-msgid "Hidden"
-msgstr "נסתר"
-
-#: includes/cb_hidden.php:29
-msgid "Hidden Control"
-msgstr "הבקרה נסתרת"
-
-#: includes/cb_hidden.php:44 includes/cb_hidden.php:56
-#: views/edit_contact_view.php:1619
-msgid "Untitled(hidden)"
-msgstr "ללא כותרת (מוסתר)"
-
-#: includes/cb_hidden.php:48
-msgid "Default Value"
-msgstr "ערך ברירת מחדל"
-
-#: includes/cb_hidden.php:50 includes/cb_text.php:79
-msgid "Enter Default Value"
-msgstr "הזן -ערך ברירת מחדל"
-
-#: includes/cb_hidden.php:56 includes/cb_text.php:85
-#: includes/cb_textarea.php:93
-msgid "Enter Admin label"
-msgstr "הזן  המינהל-תווית "
-
-#: includes/cb_multiple.php:28
-msgid "Radio Buttons"
-msgstr "כפתורי רדיו"
-
-#: includes/cb_multiple.php:62 includes/cb_text.php:69
-msgid "Enter Tooltip Text"
-msgstr "הזן  טקסט תיאורי כלים"
-
-#: includes/cb_multiple.php:103
-msgid "Css Description :"
-msgstr "CSS תיאור:"
-
-#: includes/cb_multiple.php:110
-msgid "Css Options outer wrapper :"
-msgstr "האופציה CSS החיצונית לעטוף"
-
-#: includes/cb_multiple.php:112
-msgid "Enter Css Options outer wrapper"
-msgstr " הזינו -  CSSהאופציה החיצונית לעטוף"
-
-#: includes/cb_multiple.php:117
-msgid "CSS Options Wrapper :"
-msgstr " Css אופציה- לעטוף"
-
-#: includes/cb_multiple.php:119
-msgid "Enter Css Options Wrapper"
-msgstr "הזן - Css אופציה- לעטוף "
-
-#: includes/cb_multiple.php:124
-msgid "CSS Option Label :"
-msgstr " CSS אופצית -התווית  :"
-
-#: includes/cb_multiple.php:126
-msgid "Enter Css Option Label"
-msgstr "הזן CSS אופצית -התווית  "
-
-#: includes/cb_multiple.php:136
-msgid "Options  wrapper"
-msgstr "אופציה- לעטוף"
-
-#: includes/cb_password.php:8 includes/cb_password.php:51
-#: includes/cb_password.php:81 views/contact_view.php:75
-#: views/edit_contact_view.php:123 views/edit_contact_view.php:1629
-msgid "Password"
-msgstr "סיסמא"
-
-#: includes/cb_password.php:29
-msgid "Password Control"
-msgstr "הבקרה סיסמא"
-
-#: includes/cb_password.php:103
-msgid "Css Input Text"
-msgstr "קלט טקסט CSS"
-
-#: includes/cb_text.php:29
-msgid "Textbox Control"
-msgstr " תיבת הטקסט בקרה"
-
-#: includes/cb_text.php:106
-msgid " Css Text Input"
-msgstr "קלט טקסט CSS"
-
-#: includes/cb_text.php:113
-msgid " Css Description"
-msgstr "css-תיאור "
-
-#: includes/cb_text.php:123
+#: includes/cb_date.php:164 includes/cb_email.php:96
+#: includes/cb_password.php:95 includes/cb_text.php:98
+#: includes/cb_textarea.php:105 includes/cb_time.php:206
 msgid "Text Input"
 msgstr "קלט טקסט"
 
-#: includes/cb_textarea.php:30
+#: includes/cb_dropdown.php:4
+msgid "Dropdown Control"
+msgstr "הבקרה הנפתחת"
+
+#: includes/cb_dropdown.php:45 includes/cb_multiple.php:45
+msgid "Enter Option"
+msgstr "הזן אופצית"
+
+#: includes/cb_dropdown.php:79
+msgid "Dropdown Style"
+msgstr "הנפתח סגנון "
+
+#: includes/cb_dropdown.php:81
+msgid "Enter Dropdown Style"
+msgstr "הנפתח סגנון הזן"
+
+#: includes/cb_dropdown.php:86
+msgid "Css Description"
+msgstr "css-תיאור "
+
+#: includes/cb_dropdown.php:88
+msgid "Enter Css Description"
+msgstr "הזן   Cssתיאור"
+
+#: includes/cb_dropdown.php:96
+msgid "Dropdown"
+msgstr "ירידה למטה"
+
+#: includes/cb_dropdown.php:294 views/contact_bank_frontend.php:386
+#: views/contact_bank_frontend.php:400 views/contact_view.php:75
+#: views/edit_contact_view.php:96
+msgid "Select option"
+msgstr "בחרו -אפשרות"
+
+#: includes/cb_email.php:4
+msgid "Email Control"
+msgstr "הבקרה דוא\"ל"
+
+#: includes/cb_email.php:26 includes/cb_email.php:57
+#: views/contact_email.php:72 views/contact_email.php:138
+#: views/contact_view.php:58 views/contact_view.php:968
+#: views/contact_view.php:972 views/edit_contact_view.php:79
+#: views/edit_contact_view.php:1415 views/edit_contact_view.php:2172
+#: views/edit_contact_view.php:2176
+msgid "Email"
+msgstr "דואר אלקטרו"
+
+#: includes/cb_email.php:101 includes/cb_password.php:100
+#: includes/cb_text.php:103 includes/cb_textarea.php:110
+msgid "Add a filter"
+msgstr "הוספת לסנן"
+
+#: includes/cb_email.php:103 includes/cb_password.php:102
+#: includes/cb_text.php:105 includes/cb_textarea.php:112
+msgid "Alpha"
+msgstr "אלפא"
+
+#: includes/cb_email.php:104 includes/cb_password.php:103
+#: includes/cb_text.php:106 includes/cb_textarea.php:113
+msgid "Alpha Numeric"
+msgstr "אלפא נומרי"
+
+#: includes/cb_email.php:105 includes/cb_password.php:104
+#: includes/cb_text.php:107 includes/cb_textarea.php:114
+msgid "Digits"
+msgstr "הספרה"
+
+#: includes/cb_email.php:106 includes/cb_password.php:105
+#: includes/cb_text.php:108 includes/cb_textarea.php:115
+msgid "Strip Tags"
+msgstr "רצועת תגיות "
+
+#: includes/cb_email.php:107 includes/cb_password.php:106
+#: includes/cb_text.php:109 includes/cb_textarea.php:116
+msgid "Trim"
+msgstr "לגזום"
+
+#: includes/cb_file_upload.php:5
+msgid "Fileupload Control"
+msgstr "  טעינת קובץ הבקרה"
+
+#: includes/cb_file_upload.php:27 includes/cb_file_upload.php:61
+#: views/contact_view.php:111 views/contact_view.php:337
+#: views/contact_view.php:1045 views/contact_view.php:1049
+#: views/edit_contact_view.php:132 views/edit_contact_view.php:386
+#: views/edit_contact_view.php:1676 views/edit_contact_view.php:2249
+#: views/edit_contact_view.php:2253
+msgid "File Upload"
+msgstr "טעינת קובץ"
+
+#: includes/cb_file_upload.php:71
+msgid "Allow Multiple Uploads"
+msgstr "יאפשרו ההעלאות המרובות"
+
+#: includes/cb_file_upload.php:77
+msgid "Allowed File Extensions"
+msgstr "סיומות קבצים אפשריות"
+
+#: includes/cb_file_upload.php:79
+msgid "Enter File Extensions"
+msgstr "הזן סיומות קבצים"
+
+#: includes/cb_file_upload.php:81
+msgid "The file extensions must be seperated with semicolons(' ; ')"
+msgstr "את סיומות הקבצים חייבים להיות מופרדות עם פסיק (';')"
+
+#: includes/cb_file_upload.php:85
+msgid "Allowed File Size"
+msgstr "גודל קובץ מחמד"
+
+#: includes/cb_file_upload.php:89
+msgid "File Size must be in Kb"
+msgstr "גודל קובץ חייב להיות  ב Kb"
+
+#: includes/cb_hidden.php:4
+msgid "Hidden Control"
+msgstr "הבקרה נסתרת"
+
+#: includes/cb_hidden.php:19 includes/cb_hidden.php:31
+#: views/edit_contact_view.php:1920
+msgid "Untitled(hidden)"
+msgstr "ללא כותרת (מוסתר)"
+
+#: includes/cb_hidden.php:23
+msgid "Default Value"
+msgstr "ערך ברירת מחדל"
+
+#: includes/cb_hidden.php:25 includes/cb_text.php:54
+msgid "Enter Default Value"
+msgstr "הזן -ערך ברירת מחדל"
+
+#: includes/cb_hidden.php:31 includes/cb_text.php:60
+#: includes/cb_textarea.php:67
+msgid "Enter Admin label"
+msgstr "הזן  המינהל-תווית "
+
+#: includes/cb_multiple.php:4
+msgid "Radio Buttons"
+msgstr "כפתורי רדיו"
+
+#: includes/cb_multiple.php:38 includes/cb_text.php:44
+msgid "Enter Tooltip Text"
+msgstr "הזן  טקסט תיאורי כלים"
+
+#: includes/cb_multiple.php:93
+msgid "Options Wrapper Style"
+msgstr "אפשרויות העטיפה סגנון"
+
+#: includes/cb_multiple.php:95
+msgid "Enter Options Wrapper Style"
+msgstr " הז את אפשרויות העטיפה  סגנון "
+
+#: includes/cb_multiple.php:100
+msgid "Option Label Style"
+msgstr " האפשרות- תווית סגנון"
+
+#: includes/cb_multiple.php:102
+msgid "Enter Option Label Style"
+msgstr "הזן אופציה את סגנון תווית "
+
+#: includes/cb_multiple.php:112
+msgid "Options  Wrapper"
+msgstr "העטיפה אפשרויות "
+
+#: includes/cb_password.php:4
+msgid "Password Control"
+msgstr "הבקרה סיסמא"
+
+#: includes/cb_password.php:26 includes/cb_password.php:56
+#: views/contact_view.php:292 views/contact_view.php:349
+#: views/contact_view.php:1125 views/contact_view.php:1129
+#: views/edit_contact_view.php:313 views/edit_contact_view.php:398
+#: views/edit_contact_view.php:1930 views/edit_contact_view.php:2329
+#: views/edit_contact_view.php:2333
+msgid "Password"
+msgstr "סיסמא"
+
+#: includes/cb_password.php:78
+msgid "Input Text Style"
+msgstr "סגנון טקסט קלט"
+
+#: includes/cb_password.php:80
+msgid "Enter Input Text Style"
+msgstr "הזן את סגנון קלט  טקסט  "
+
+#: includes/cb_text.php:4
+msgid "Textbox Control"
+msgstr " תיבת הטקסט בקרה"
+
+#: includes/cb_textarea.php:4
 msgid "Textarea Control"
 msgstr "איזור טקסט הבקרה"
 
-#: includes/cb_textarea.php:52
+#: includes/cb_textarea.php:26
 msgid "Enter label"
 msgstr "הזן -תווית"
 
-#: includes/cb_textarea.php:58
+#: includes/cb_textarea.php:32
 msgid "Enter  Description"
 msgstr "הזן -תאור"
 
-#: includes/cb_textarea.php:69
+#: includes/cb_textarea.php:43
 msgid "Tooltip text"
 msgstr "טקסט של תיאורי כלים "
 
-#: includes/cb_textarea.php:87
+#: includes/cb_textarea.php:61
 msgid "Enter Default value"
 msgstr "הזן ערך ברירת מחדל"
 
-#: includes/cb_textarea.php:107
-msgid "CSS label"
-msgstr "תווית CSS"
-
-#: includes/cb_textarea.php:109
-msgid "Enter css Label"
-msgstr "הזינו -התווית CSS"
-
-#: includes/cb_textarea.php:114
-msgid "CSS textinput"
-msgstr "טקסט קלט CSS"
-
-#: includes/cb_textarea.php:116
-msgid "Enter css textinput"
-msgstr "הזן CSS textinput"
-
-#: includes/cb_textarea.php:121
-msgid "CSS description"
-msgstr "CSS תאור "
-
-#: includes/cb_textarea.php:123
-msgid "Enter css description"
-msgstr "הזן CSS  תיאור"
-
-#: includes/cb_time.php:8 includes/cb_time.php:113 includes/cb_time.php:143
-#: views/contact_view.php:69 views/edit_contact_view.php:117
-#: views/edit_contact_view.php:1514
-msgid "Time"
-msgstr "זמן"
-
-#: includes/cb_time.php:12 includes/cb_time.php:32 includes/cb_time.php:178
-#: includes/cb_time.php:198 views/contact_bank_frontend.php:821
-#: views/contact_bank_frontend.php:847 views/contact_bank_frontend.php:873
-msgid "Hour"
-msgstr "שעה"
-
-#: includes/cb_time.php:52 includes/cb_time.php:218
-#: views/contact_bank_frontend.php:897
-msgid "Minute"
-msgstr "דקה"
-
-#: includes/cb_time.php:92
+#: includes/cb_time.php:4
 msgid "Time Control"
 msgstr "שליטה בזמן"
 
-#: includes/cb_time.php:153
+#: includes/cb_time.php:25 includes/cb_time.php:55 views/contact_view.php:203
+#: views/contact_view.php:343 views/contact_view.php:1090
+#: views/contact_view.php:1094 views/edit_contact_view.php:224
+#: views/edit_contact_view.php:392 views/edit_contact_view.php:1816
+#: views/edit_contact_view.php:2294 views/edit_contact_view.php:2298
+msgid "Time"
+msgstr "זמן"
+
+#: includes/cb_time.php:65
 msgid "12/24 hour time"
 msgstr "השעות -הזמן -12/24"
 
-#: includes/cb_time.php:162
+#: includes/cb_time.php:74
 msgid "Time format"
 msgstr "תבנית שעת"
 
-#: includes/cb_time.php:270
-msgid "Css Hour"
-msgstr "השעות CSS"
+#: includes/cb_time.php:90 includes/cb_time.php:110 includes/cb_time.php:208
+#: views/contact_bank_frontend.php:843 views/contact_bank_frontend.php:869
+#: views/contact_bank_frontend.php:895 views/contact_view.php:207
+#: views/contact_view.php:227 views/edit_contact_view.php:228
+#: views/edit_contact_view.php:248
+msgid "Hour"
+msgstr "שעה"
 
-#: includes/cb_time.php:272
-msgid "Enter Css Hour"
-msgstr "הזינו -השעות Css"
+#: includes/cb_time.php:130 includes/cb_time.php:209 includes/cb_time.php:360
+#: views/contact_bank_frontend.php:919 views/contact_view.php:247
+#: views/edit_contact_view.php:268 views/edit_contact_view.php:1834
+msgid "Minute"
+msgstr "דקה"
 
-#: includes/cb_time.php:277
-msgid "Css Minute"
-msgstr " CSS דקה"
+#: includes/cb_time.php:182
+msgid "Hour Style"
+msgstr "שעה סגנון "
 
-#: includes/cb_time.php:279
-msgid "Enter Css Minute"
-msgstr "הזינו - Css דקה"
+#: includes/cb_time.php:184
+msgid "Enter Hour Style"
+msgstr "הזן את שעה סגנון "
 
-#: includes/cb_time.php:284
-msgid "Css am/pm"
-msgstr "CSS AM / PM"
+#: includes/cb_time.php:189
+msgid "Minute Style"
+msgstr " דקות סגנון"
 
-#: includes/cb_time.php:286
-msgid "Enter Css am/pm"
-msgstr "הזינו Css  -AM / PM"
+#: includes/cb_time.php:191
+msgid "Enter Minute Style"
+msgstr "הזן את דקה סגנון "
 
-#: includes/cb_time.php:296
-msgid "Time hour dropdown"
-msgstr "זמן -השעות הנפתחת"
+#: includes/cb_time.php:196
+msgid "AM/PM Style"
+msgstr "AM / PM סגנון"
 
-#: includes/cb_time.php:297
-msgid "Time minute dropdown"
-msgstr "זמן -דקות הנפתחת"
+#: includes/cb_time.php:198
+msgid "Enter AM/PM Style"
+msgstr "הזן AM / PM סגנון"
 
-#: includes/cb_time.php:298
-msgid "Time am/pm dropdown"
-msgstr "זמן -am/pm הנפתחת"
+#: includes/cb_time.php:210
+msgid "AM/PM"
+msgstr "AM/PM"
 
 #: views/contact_bank_frontend.php:153
 msgid "Enter Text"
@@ -738,20 +711,26 @@ msgstr "הזינו הטקסט"
 msgid "Enter Email Address"
 msgstr "הזן  כתובת הדוא\"ל"
 
-#: views/contact_bank_frontend.php:952
+#: views/contact_bank_frontend.php:974
 msgid "Enter Hidden Text"
 msgstr "הזן הטקסט מוסתר"
 
-#: views/contact_bank_frontend.php:1040
+#: views/contact_bank_frontend.php:974 views/contact_view.php:282
+#: views/contact_view.php:346 views/edit_contact_view.php:303
+#: views/edit_contact_view.php:395
+msgid "Hidden"
+msgstr "נסתר"
+
+#: views/contact_bank_frontend.php:1062
 msgid "Enter Password"
 msgstr "הזן -הסיסמה"
 
-#: views/contact_bank_frontend.php:1051
+#: views/contact_bank_frontend.php:1073
 msgid "Submit Form"
 msgstr "לשלוח את הטופס"
 
 #: views/contact_email.php:9 views/contact_frontend_data.php:8
-#: views/contact_view.php:9 views/edit_contact_view.php:31
+#: views/contact_view.php:9 views/edit_contact_view.php:30
 msgid "Back to Dashboard"
 msgstr "חזרה ללוח מחוונים"
 
@@ -800,6 +779,11 @@ msgstr "בקרת  קוד קצר עבור לאימייל"
 msgid "Client Email"
 msgstr "לקוח -דוא\"ל"
 
+#: views/contact_email.php:183 views/contact_view.php:308
+#: views/edit_contact_view.php:358
+msgid "Save"
+msgstr "להציל"
+
 #: views/contact_frontend_data.php:14 views/contact_view.php:20
 #: views/dashboard.php:15 views/dashboard.php:21
 msgid "Form"
@@ -809,41 +793,50 @@ msgstr "הטופס"
 msgid "Form Submited. Kindly wait for the redirect."
 msgstr "טופס שהוגש. חביב לחכות לנתב מחדש"
 
-#: views/contact_view.php:24 views/edit_contact_view.php:46
+#: views/contact_view.php:24 views/edit_contact_view.php:45
 msgid "Form Name :"
 msgstr "שם טופס:"
 
-#: views/contact_view.php:27 views/edit_contact_view.php:49
+#: views/contact_view.php:27 views/edit_contact_view.php:48
 msgid "Enter Form Name"
 msgstr "הזן- שם טופס:"
 
-#: views/contact_view.php:40 views/edit_contact_view.php:89
+#: views/contact_view.php:279 views/edit_contact_view.php:300
+msgid "Untitled (hidden)"
+msgstr "ללא כותרת (מוסתר)"
+
+#: views/contact_view.php:314 views/edit_contact_view.php:364
 msgid "Control Buttons"
 msgstr "לחצני בקרת"
 
-#: views/contact_view.php:45 views/edit_contact_view.php:93
+#: views/contact_view.php:319 views/edit_contact_view.php:368
 msgid "Text Box"
 msgstr "תיבת טקסט"
 
-#: views/contact_view.php:48 views/edit_contact_view.php:96
+#: views/contact_view.php:322 views/edit_contact_view.php:371
 msgid "Text Area"
 msgstr "אזור טקסט"
 
-#: views/contact_view.php:51 views/edit_contact_view.php:99
+#: views/contact_view.php:325 views/edit_contact_view.php:374
 msgid "Email Address"
 msgstr "כתובת דוא\"ל"
 
-#: views/contact_view.php:54 views/edit_contact_view.php:102
+#: views/contact_view.php:328 views/edit_contact_view.php:377
 msgid "Dropdown Menu"
 msgstr "תפריט הנפתח"
 
-#: views/contact_view.php:57 views/edit_contact_view.php:105
+#: views/contact_view.php:331 views/edit_contact_view.php:380
 msgid "Checkboxes"
 msgstr "תיבות הסימון"
 
-#: views/contact_view.php:60 views/edit_contact_view.php:108
+#: views/contact_view.php:334 views/edit_contact_view.php:383
 msgid "Multiple Choice"
 msgstr "בחירה מרובות"
+
+#: views/contact_view.php:1114 views/contact_view.php:1116
+#: views/edit_contact_view.php:2318 views/edit_contact_view.php:2320
+msgid "Untitled(Hidden)"
+msgstr "ללא כותרת (המוסתרת)"
 
 #: views/dashboard.php:5
 msgid "Dashboard - Contact Bank"
@@ -895,12 +888,12 @@ msgid " MByte"
 msgstr "מגהבייט"
 
 #: views/dashboard.php:99 views/dashboard.php:102 views/dashboard.php:105
-#: views/dashboard.php:155
+#: views/dashboard.php:156
 msgid "Yes"
 msgstr "כן"
 
 #: views/dashboard.php:100 views/dashboard.php:103 views/dashboard.php:106
-#: views/dashboard.php:157
+#: views/dashboard.php:158
 msgid "No"
 msgstr "אין"
 
@@ -972,63 +965,60 @@ msgstr " -PHP תמיכה ב-XML"
 msgid "Graphic Library Settings"
 msgstr "הגדרות ספרייה גרפיות"
 
-#: views/dashboard.php:150
+#: views/dashboard.php:151
 msgid "No GD support"
 msgstr "תמיכת GD אין"
 
-#: views/dashboard.php:186
+#: views/dashboard.php:187
 msgid "Are you sure to delete this form ?"
 msgstr "האם אתה בטוח בטופס זה כדי למחוק?"
 
-#: views/dashboard.php:197
+#: views/dashboard.php:198
 msgid "Are you sure to delete all forms ?"
 msgstr "האם אתה בטוח שכדי למחוק את כל צורות?"
 
-#: views/edit_contact_view.php:28
+#: views/edit_contact_view.php:27
 msgid "Edit Existing Form"
 msgstr "לערוך טופס קיים"
 
-#: views/edit_contact_view.php:35
+#: views/edit_contact_view.php:34
 msgid "Form Updated. Kindly wait for the redirect."
 msgstr "טופס עדכון. חביב לחכות לנתב מחדש"
 
-#: views/edit_contact_view.php:42
+#: views/edit_contact_view.php:41
 msgid "Edit Form"
 msgstr "ערוך טופס"
 
-#: views/edit_contact_view.php:289 views/edit_contact_view.php:324
-#: views/edit_contact_view.php:393 views/edit_contact_view.php:442
-#: views/edit_contact_view.php:490
+#: views/edit_contact_view.php:519 views/edit_contact_view.php:562
+#: views/edit_contact_view.php:647 views/edit_contact_view.php:702
+#: views/edit_contact_view.php:759
 msgid "Untitled :"
 msgstr "ללא כותרת:"
 
-#: views/edit_contact_view.php:359
+#: views/edit_contact_view.php:605
 msgid "Email :"
 msgstr "דואר אלקטרוני:"
 
-#: views/edit_contact_view.php:539
+#: views/edit_contact_view.php:818
 msgid "File Upload :"
 msgstr "הקובץ העלה:"
 
-#: views/edit_contact_view.php:586
+#: views/edit_contact_view.php:878
 msgid "Date :"
 msgstr "תאריך:"
 
-#: views/edit_contact_view.php:657
+#: views/edit_contact_view.php:961
 msgid "Time :"
 msgstr "זמן:"
 
-#: views/edit_contact_view.php:715
+#: views/edit_contact_view.php:1027
 msgid "Untitled(hidden) :"
 msgstr "ללא כותרת (מוסתר):"
 
-#: views/edit_contact_view.php:747
+#: views/edit_contact_view.php:1067
 msgid "Password : "
 msgstr "סיסמא:"
 
-#: views/edit_contact_view.php:1398
+#: views/edit_contact_view.php:1700
 msgid "1024"
 msgstr "1024"
-
-#~ msgid "Enter Defualt value"
-#~ msgstr "הזן -ערך ברירת מחדל"

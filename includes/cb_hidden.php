@@ -1,28 +1,3 @@
-<?php
-if($_REQUEST["param"] == "create_txt_hide_control")
-{
-	$dynamicId = intval($_REQUEST["dynamicId"]);
-	$field_id = intval($_REQUEST["field_id"]);
-	?>
-	<div class="layout-control-group div_border" id="div_<?php echo $dynamicId; ?>_14">
-		<label class="layout-control-label" id="control_label_<?php echo $dynamicId; ?>" ><?php _e("Untitled (hidden)", contact_bank); ?> :</label>
-		<span id="txt_required_<?php echo $dynamicId; ?>"  class="error">*</span>
-			<div class="layout-controls" id="show_tooltip<?php echo $dynamicId; ?>">	
-				<input class="hovertip layout-span7" data-original-title="<?php _e( "Hidden", contact_bank ); ?>" type="text" id="txt_hide_<?php echo $dynamicId; ?>" name="<?php echo $dynamicId; ?>" />
-				<a class="btn btn-info inline" id="add_setting_control_<?php echo $dynamicId; ?>"   href="#setting_controls_postback"  ><?php _e( "Settings", contact_bank ); ?></a>	
-				<a style="cursor:pointer;"  onclick="delete_textbox(div_<?php echo $dynamicId; ?>_14,<?php echo $dynamicId; ?>);" id=anchor_del_<?php echo $dynamicId; ?> >
-			 		<img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="margin-left: 1%;margin-bottom:-9px" onmouseover="img_show(<?php echo $dynamicId; ?>)" onmouseout="img_hide(<?php echo $dynamicId; ?>)"  />
-			 	</a>
-			 	<br />
-				<span class="span-description" id="txt_description_<?php echo $dynamicId; ?>"></span> 
-			</div>
-		</div>
-	<?php
-	die();
-}
-else 
-{
-?>
 <div class="layout-span7">
 	<div class="widget-layout widget-tabs">
 		<div class="widget-layout-title">
@@ -58,7 +33,7 @@ else
 							</div>
 							<div class="layout-control-group">
 								<label class="layout-control-label"><?php _e( "Do not show in the email", contact_bank ); ?> :</label>
-								<div class="layout-controls">
+								<div class="layout-controls" style="padding-top:5px;">
 									<input type="checkbox" id="ux_show_email_<?php echo $dynamicId; ?>" name="ux_show_email_<?php echo $dynamicId; ?>" value="1" >
 								</div>
 							</div>
@@ -69,7 +44,7 @@ else
 		</div>
 	</div>
 	<div class="layout-control-group">	
-		<input type="button" style="float:left;margin-left: 0px;" class="btn btn-info layout-span2" onclick="save_hidden_control(<?php echo $dynamicId; ?>)" value="<?php _e( "Save", contact_bank ); ?>" />
+		<input type="button" class="btn btn-info layout-span2" onclick="save_hidden_control(<?php echo $dynamicId; ?>)" value="<?php _e( "Save Settings", contact_bank ); ?>" />
 	</div>
 </div>
 <script type="text/javascript">
@@ -78,25 +53,27 @@ else
 	var count = <?php echo $count; ?>;
 	if(count != 0)
 	{
+		var dynamicCount = "<?php echo $dynamicCount;?>";
 		var dynamicId = <?php echo $dynamicId; ?>;
-		jQuery("#ux_label_text_"+dynamicId).val(array_hidden[dynamicId][2]);
-		jQuery("#ux_default_value_"+dynamicId).val(array_hidden[dynamicId][3]);
-		jQuery("#ux_admin_label_"+dynamicId).val(array_hidden[dynamicId][4]);
-		if(array_hidden[dynamicId][5] == true)
+		jQuery("#ux_label_text_"+dynamicId).val(array_controls[dynamicCount][2].cb_label_value);
+		jQuery("#ux_default_value_"+dynamicId).val(array_controls[dynamicCount][3].cb_default_txt_val);
+		jQuery("#ux_admin_label_"+dynamicId).val(array_controls[dynamicCount][4].cb_admin_label);
+		if(array_controls[dynamicCount][5].cb_show_email == true)
 		{
 			jQuery("#ux_show_email_"+dynamicId).attr("checked","checked");
 		}
 	}
 	function save_hidden_control(dynamicId)
 	{
-		array_hidden[dynamicId] = [];
-		array_hidden[dynamicId].push(14);
-		array_hidden[dynamicId].push(dynamicId);
-		array_hidden[dynamicId].push(jQuery("#ux_label_text_"+dynamicId).val());
-		array_hidden[dynamicId].push(jQuery("#ux_default_value_"+dynamicId).val());
-		array_hidden[dynamicId].push(jQuery("#ux_admin_label_"+dynamicId).val());
-		array_hidden[dynamicId].push(jQuery("#ux_show_email_"+dynamicId).prop("checked"));
-		jQuery("#txt_hide_"+dynamicId).val(jQuery("#ux_default_value_"+dynamicId).val());
+		var dynamicCount = "<?php echo $dynamicCount;?>";
+		array_controls[dynamicCount] = [];
+		array_controls[dynamicCount].push({"control_type" : 14});
+		array_controls[dynamicCount].push({"hidden_dynamicId" : dynamicId});
+		array_controls[dynamicCount].push({"cb_label_value" : jQuery("#ux_label_text_"+dynamicId).val()});
+		array_controls[dynamicCount].push({"cb_default_txt_val" : jQuery("#ux_default_value_"+dynamicId).val()});
+		array_controls[dynamicCount].push({"cb_admin_label" : jQuery("#ux_admin_label_"+dynamicId).val()});
+		jQuery("#ux_show_email_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_show_email": 1}) : array_controls[dynamicCount].push({"cb_show_email": 0});
+		jQuery("#hidden_"+dynamicId).val(jQuery("#ux_default_value_"+dynamicId).val());
 		jQuery("#control_label_"+dynamicId).html(jQuery("#ux_label_text_"+dynamicId).val());
 		CloseLightbox();
 	}
@@ -106,6 +83,3 @@ else
 		jQuery("#ux_admin_label_"+dynamicId).val(ux_label);
 	}
 </script>
-<?php
-}
-?>

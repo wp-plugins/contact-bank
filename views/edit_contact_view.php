@@ -1,6 +1,5 @@
 <?php 
 global $wpdb;
-
 $form_id = intval($_REQUEST["id"]);
 $form_name = $wpdb->get_var
 (
@@ -49,6 +48,281 @@ $fields = $wpdb->get_results
 											<input type="text" name="ux_form_name_txt" class="layout-span7"  value ="<?php echo $form_name;?>" id="ux_form_name_txt" placeholder="<?php _e( "Enter Form Name", contact_bank);?>" />
 										</div>
 									</div>
+									<div id="left_block">
+										<div class="layout-control-group div_border" id="div_1_1" style="display: none;">
+											<label class="layout-control-label" id="control_label_"><?php _e("Untitled", contact_bank); ?> : </label>
+											<span id="txt_required_" class="error">*</span>
+											<div class="layout-controls hovertip" id="show_tooltip">
+												<input class="layout-span7" type="text" id="txt_" name="txt_" />
+												<a class="btn btn-info inline" id="add_setting_control_" href="#setting_controls_postback"  ><?php _e( "Settings", contact_bank ); ?></a>
+												<a style="cursor:pointer;" id="anchor_del_" >
+													<img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="margin-left: 1%;margin-bottom:-9px" />
+												</a>
+												<br />
+												<span class="span-description" id="txt_description_"></span>
+											</div>
+										</div>
+										<div class="layout-control-group div_border" id="div_2_2" style="display: none;">
+											<label class="layout-control-label" id="control_label_"><?php _e("Untitled", contact_bank); ?> : </label>
+											<span id="txt_required_" class="error">*</span>
+											<div class="layout-controls hovertip" id="show_tooltip">
+												<textarea type="textarea" class="layout-span7"  id="txtarea_" name="txtarea_" ></textarea>
+												<a class="btn btn-info inline" id="add_setting_control_" href="#setting_controls_postback"  ><?php _e( "Settings", contact_bank ); ?></a>
+												<a style="cursor:pointer;"  id="anchor_del_" >
+													<img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="margin-left: 1%;margin-bottom:-9px"/>
+												</a>
+												<br />
+												<span class="span-description" id="txt_description_"></span>
+											</div>
+										</div>
+										<div class="layout-control-group div_border" id="div_3_3" style="display: none;">
+											<label class="layout-control-label" id="control_label_" ><?php _e("Email", contact_bank); ?> : </label>
+											<span style="display: block" id="txt_required_"  class="error">*</span>
+											<div class="layout-controls hovertip" id="show_tooltip">		
+												<input class=" layout-span7" type="text" id="email_" name="email_" />
+												<a class="btn btn-info inline"  id="add_setting_control_" href="#setting_controls_postback"  ><?php _e( "Settings", contact_bank ); ?></a>	
+												<a style="cursor:pointer;" id="anchor_del_" >
+													<img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="margin-left: 1%;margin-bottom:-9px" />
+												</a>
+												<br />
+												<span class="span-description"  id="txt_description_"></span> 
+											</div>
+										</div>
+										<div class="layout-control-group div_border" id="div_4_4" style="display: none;">
+											<label class="layout-control-label" id="control_label_" ><?php _e("Untitled", contact_bank); ?> :</label>
+											<span id="txt_required_"  class="error">*</span>
+											<div class="layout-controls hovertip" id="show_tooltip">
+												<select type="select" class="layout-span7" id="select_" name="select_">
+													<option value="0"><?php _e("Select option",contact_bank);?></option>
+												</select>
+												<a class="btn btn-info inline"  href="#setting_controls_postback" id="add_setting_control_" ><?php _e( "Settings", contact_bank); ?></a>	
+												<a style="cursor:pointer;" id="anchor_del_">
+													<img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="margin-left: 1%;margin-bottom:-9px" />
+												</a>
+											</div>
+										</div>
+										<div class="layout-control-group div_border" id="div_5_5" style="display: none;"> 
+											<label class="layout-control-label" id="control_label_" ><?php _e("Untitled", contact_bank); ?> : </label>
+											<span id="txt_required_"  class="error">*</span>
+											<div class="layout-controls hovertip" id="post_back_checkbox_">
+												<div id="show_tooltip">
+													<input type="checkbox"  id="chk_" name="chk_" />
+													<span id="add_chk_options_here_" ></span>
+													<a class="btn btn-info inline" href="#setting_controls_postback"  id="add_setting_control_" ><?php _e( "Settings", contact_bank); ?></a>	
+													<a style="cursor:pointer;" id="anchor_del_" >
+														<img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="margin-left: 1%;margin-bottom:-9px"/>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="layout-control-group div_border" id="div_6_6" style="display: none;">
+											<label class="layout-control-label" id="control_label_" ><?php _e('Untitled', contact_bank); ?> : </label>
+											<span id="txt_required_"  class="error">*</span>
+											<div class="layout-controls hovertip" id="post_back_radio_button_">
+												<div id="show_tooltip">
+													<input type="radio" id="radio_" name="radio_" />
+													<span  id="add_radio_options_here_" ></span>
+													<a class="btn btn-info inline"  id="add_setting_control_" href="#setting_controls_postback"  ><?php _e( "Settings", contact_bank); ?></a>	
+													<a style="cursor:pointer;"  id="anchor_del_" >
+													<img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="margin-left: 1%;margin-bottom:-9px"/></a> 
+												</div>
+											</div>
+										</div>
+										<div class="layout-control-group div_border file_upload" id="div_9_9" style="display: none;">
+											<label class="layout-control-label" id="control_label_" ><?php _e("File Upload", contact_bank); ?> : </label>
+											<span id="txt_required_"  class="error">*</span>
+											<div class="layout-controls"  id="show_tooltip">
+												<a class="btn btn-info inline"  id="add_setting_control_" href="#setting_controls_postback"  ><?php _e( "Settings", contact_bank ); ?></a>	
+													<a style="cursor:pointer;" class="delete_control" id="anchor_del_" >
+														<img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="margin-left: 1%;vertical-align: middle;"/>
+													</a>
+												<label class="layout-controls hovertip" id="tip" style="margin-left:-75%;">
+												<div id="file_upload_content" style="float:left;width:357px;">
+													<?php 
+													include_once CONTACT_BK_PLUGIN_DIR ."/phpfileuploader/phpuploader/include_phpuploader.php";
+													$uploader=new PhpUploader();
+													$uploader->MultipleFilesUpload=false;
+													$uploader->InsertText = "Please choose Files";
+													$uploader->MaxSizeKB = 1024;
+													$uploader->AllowedFileExtensions = "*.jpg,*.png,*.gif,*.bmp,*.txt,*.zip,*.rar";
+													$uploader->SaveDirectory= CONTACT_BK_PLUGIN_DIR ."/phpfileuploader/savefiles/";
+													$uploader->FlashUploadMode = "Partial";
+													$uploader->Render();
+													?>
+												</div>
+												<div id="file_upload_content_postback" style="display:none;float:left;width:357px;">
+												</div>
+												</label>
+												<br />
+												<span class="span-description" id="txt_description_"></span>
+											</div>
+										</div>
+										<div class="layout-control-group div_border" id="div_12_12" style="display: none;">
+											<label class="layout-control-label" id="control_label_" ><?php _e("Date", contact_bank); ?> : </label>
+											<span id="txt_required_"  class="error">*</span>
+												<div class="layout-controls hovertip" id="show_tooltip">	
+													<select class="layout-span2" type="day" id="select_day_" name="select_day_" >
+														<option value="0"><?php _e("Day", contact_bank); ?></option>
+														<?php
+														for($flag=1; $flag <= 31; $flag++)
+														{
+															if($flag < 10)
+															{
+																?>
+																<option value=<?php echo $flag; ?>>0<?php echo $flag; ?></option>
+																<?php
+															}
+															else
+															{
+																?>
+																<option value=<?php echo $flag; ?>><?php echo $flag; ?></option>
+																<?php
+															}
+														}
+														?>
+													</select>
+													<select class="layout-span3" type="month" id="select_month_" name="select_month_">
+														<option value="0"><?php _e("Month", contact_bank); ?></option>
+														<option value="1">January</option>
+														<option value="2">February</option>
+														<option value="3">March</option>
+														<option value="4">April</option>
+														<option value="5">May</option>
+														<option value="6">June</option>
+														<option value="7">July</option>
+														<option value="8">August</option>
+														<option value="9">September</option>
+														<option value="10">October</option>
+														<option value="11">November</option>
+														<option value="12">December</option>
+													</select>
+													<select class="layout-span2" type="year" id="select_year_" name="select_year_">
+														<option value="0"><?php _e("Year", contact_bank); ?></option>
+														<?php
+														for($flag=1900; $flag <= 2100; $flag++)
+														{
+															?>
+															<option value=<?php echo $flag; ?>><?php echo $flag; ?></option>
+															<?php
+														}
+														?>
+													</select>
+													<script type="text/javascript">
+														jQuery("#select_day_<?php echo $dynamicId; ?>").val(<?php echo date("d"); ?> );
+														jQuery("#select_month_<?php echo $dynamicId; ?>").val(<?php echo date("m"); ?> );
+														jQuery("#select_year_<?php echo $dynamicId; ?>").val(<?php echo date("Y"); ?> );
+													</script>
+														<a class="btn btn-info inline"   href="#setting_controls_postback" id="add_setting_control_"><?php _e( "Settings", contact_bank ); ?></a>
+														<a style="cursor:pointer;" id="anchor_del_" >
+															<img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="margin-left: 1%;margin-bottom:-9px"/>
+														</a>
+														<br />
+														<span class="span-description" id="txt_description_"></span>
+												</div>
+											</div>
+											<div class="layout-control-group div_border"  id="div_13_13" style="display: none;">
+												<label class="layout-control-label" id="control_label_" ><?php _e("Time", contact_bank); ?> : </label>
+												<span id="txt_required_"  class="error">*</span>
+													<div class="layout-controls hovertip" id="show_tooltip">
+														<select class="layout-span2" type="hour12" id="select_hr_12_" name="select_hr_12_">";
+															<option selected="selected" value=""><?php _e("Hour", contact_bank); ?></option>
+															<?php
+															for($flag=1; $flag <= 12; $flag++)
+															{
+																if($flag < 10)
+																{
+																?>
+																<option value="0<?php echo $flag ?>">0<?php echo $flag ?></option>
+																<?php
+																}
+																else
+																{
+																?>		
+																<option value="<?php echo $flag; ?>"><?php echo $flag ?></option>
+																<?php	
+																}
+															}
+															?>
+														</select>
+														<select style="display: none;" class="layout-span3" type="hour24" id="select_hr_24_" name="select_hr_24_">";
+															<option selected="selected" value=""><?php _e("Hour", contact_bank); ?></option>
+															<?php
+															for($flag=1; $flag <= 24; $flag++)
+															{
+																if($flag < 10)
+																{
+																?>
+																<option value="0<?php echo $flag ?>">0<?php echo $flag ?></option>
+																<?php
+																}
+																else
+																{
+																?>		
+																<option value="<?php echo $flag; ?>"><?php echo $flag ?></option>
+																<?php	
+																}
+															}
+															?>
+														</select>
+														<select class="hovertip layout-span3" type="minute" id="select_min_" name="select_min_">
+															<option selected="selected" value=""><?php _e("Minute", contact_bank); ?></option>
+															<?php
+															for($flag=0; $flag <= 59; $flag++)
+															{
+																if($flag < 10)
+																{
+																?>
+																<option value="0<?php echo $flag ?>">0<?php echo $flag ?></option>
+																<?php	
+																}
+																else
+																{
+																?>
+																<option value="<?php echo $flag ?>"><?php echo $flag ?></option>
+																<?php
+																}
+															}
+															?>
+														</select>
+														<select class="hovertip layout-span2" type="am" id="select_am_" name="select_am_">
+															<option value="0">AM</option>
+															<option value="1">PM</option>
+														</select>
+														<a class="btn btn-info inline"  id="add_setting_control_"  href="#setting_controls_postback" ><?php _e( "Settings", contact_bank ); ?></a>	
+														<a style="cursor:pointer;" id="anchor_del_" >
+															<img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="margin-left: 1%;margin-bottom:-9px"/>
+														</a> 
+														<br />
+														<span class="span-description" id="txt_description_"></span>
+													</div>
+											</div>
+											<div class="layout-control-group div_border" id="div_14_14" style="display: none;">
+												<label class="layout-control-label" id="control_label_" ><?php _e("Untitled (hidden)", contact_bank); ?> :</label>
+												<span id="txt_required_"  class="error">*</span>
+												<div class="layout-controls" id="show_tooltip">	
+													<input class="hovertip layout-span7" data-original-title="<?php _e( "Hidden", contact_bank ); ?>" type="text" id="txt_hide_" name="" />
+													<a class="btn btn-info inline" id="add_setting_control_"   href="#setting_controls_postback"  ><?php _e( "Settings", contact_bank ); ?></a>	
+													<a style="cursor:pointer;" id=anchor_del_ >
+												 		<img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="margin-left: 1%;margin-bottom:-9px"/>
+												 	</a>
+												 	<br />
+													<span class="span-description" id="txt_description_"></span> 
+												</div>
+											</div>
+											<div class="layout-control-group div_border" id="div_15_15" style="display: none;">
+												<label class="layout-control-label" id="control_label_" ><?php _e("Password", contact_bank); ?> : </label>
+												<span id="txt_required_"  class="error">*</span>
+												<div class="layout-controls hovertip" id="show_tooltip">
+													<input class=" layout-span7"  type="password" id="txt_password_" name="txt_password_" />
+													<a class="btn btn-info inline"  id="add_setting_control_" href="#setting_controls_postback"><?php _e( "Settings", contact_bank ); ?></a>
+													<a style="cursor:pointer;" id="anchor_del_" >
+														<img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="margin-left: 1%;margin-bottom:-9px" />
+													</a>
+													<br />
+													<span class="span-description" id="txt_description_"></span>
+												</div>
+											</div>
+										</div>
 									<?php 
 										for($flag=0;$flag<count($fields);$flag++)
 										{
@@ -58,18 +332,18 @@ $fields = $wpdb->get_results
 											(
 												$wpdb->prepare
 												(
-													"SELECT * FROM " .contact_bank_dynamic_settings_form().  " WHERE " .contact_bank_dynamic_settings_form().".dynamicId = %d ORDER BY dynamic_settings_id ASC",
-													$column_dynamicId
+													"SELECT * FROM " .contact_bank_dynamic_settings_form().  " JOIN " .create_control_Table()." ON " .create_control_Table().".column_dynamicId = " .contact_bank_dynamic_settings_form().  ".dynamicId  WHERE " .contact_bank_dynamic_settings_form().".dynamicId = %d AND " .create_control_Table().".form_id = %d ORDER BY dynamic_settings_id ASC",
+													$column_dynamicId,
+													$form_id
 												)
 											);
-											
 											?>
+											
 											<script type="text/javascript"> 
 												jQuery(function()
 												{
-													
 													edit_control_dynamic_ids.push(<?php echo $column_dynamicId ; ?>);
-													edit_created_control_type.push(<?php echo $field_type ;?>);
+													
 													create_control(<?php echo $field_type ;?>,<?php echo $column_dynamicId ; ?>,<?php echo json_encode($fields_dynamic_controls); ?>);
 												});
 											</script>
@@ -123,7 +397,7 @@ $fields = $wpdb->get_results
 									<div class="layout-control-group">
 										<input class="btn btn-info layout-span12" type="button" id="btn_Password" name="btn_Password" value="<?php _e("Password", contact_bank); ?>" onclick="create_control(15);" />
 									</div>
-									<input type="hidden" id="hdn_control_type" name="hdn_control_type" />
+									<input type="hidden" id="hidden_dynamic_id" name="hidden_dynamic_id" />
 									<input type="hidden" id="hidden_div_id" name="hidden_div_id" />
 								</div>
 							</div>
@@ -135,6 +409,8 @@ $fields = $wpdb->get_results
 	</div>
 </form>
 <script type="text/javascript">
+array_controls = [];
+var array_dynamicCount = [];
 var new_control_dynamic_ids = [];
 var created_control_type = [];
 var edit_control_dynamic_ids = [];//Array declare to store new ccreated control id on Edit Form 
@@ -145,20 +421,8 @@ array_option_id_radio = [];// Array to store advance-dynamic-Ids of dynamic opti
 array_options_radio = [];// Array to store values of dynamic options of multiple control.
 array_option_id_dropdown = [];// Array to store advance-dynamic-Ids of dynamic options of dropdown control.
 array_options_dropdown = [];// Array to store values of dynamic options of dropdown control.
-array_text = [];
-array_textarea = [];
-array_email = [];
-array_dropdown = [];
-array_checkbox = [];
-array_multiple = [];
-array_captcha = [];
-array_file_upload=[];
-array_recaptcha=[];
-array_date = [];
-array_time = [];
-array_hidden = [];
-array_password = [];
 delete_control_dynamicIds = [];// Array to store dynamicids of controls to be deleted.
+var dynamicCount = 0;	
 jQuery(document).ready(function()
 {
 	field_order = [];
@@ -170,6 +434,7 @@ jQuery(document).ready(function()
 		update: function()
 		{
 			var order = jQuery("#left_block").sortable('toArray');
+			
 			for(flag=0;flag<order.length;flag++)
 			{
 				var field_order_str = order[flag].split("div_");
@@ -178,10 +443,8 @@ jQuery(document).ready(function()
 			}
 		}
 	});
-	
 	var divWhiteContent = jQuery("<div class=\"white_content\" id=\"setting_controls_postback\"></div>");
 	jQuery('#wpwrap').append(divWhiteContent);
-			
 	var divblackOverlay = jQuery("<div class=\"black_overlay\" id=\"fade\"></div>");
 	jQuery('#wpwrap').append(divblackOverlay);
 	jQuery(window).resize(function() 
@@ -194,9 +457,10 @@ jQuery(document).ready(function()
 		var proposedLeft =  (jQuery(window).width() - lightboxWidth - 40) / 2 ;
 		jQuery("#setting_controls_postback").css('top',proposedTop + 'px');
 		jQuery("#setting_controls_postback").css('left',proposedLeft + 'px');
-		
 	});
 });
+
+//var dynamicId = edit_control_dynamic_ids.length + 1;
 /* Function Name : create_control
  * Paramters : control_type
  * Return : None
@@ -205,653 +469,610 @@ jQuery(document).ready(function()
  * Last Modified : 1.0
  * Reasons for change : None
  */ 
+
 var new_file_upload = "";
 function create_control(control_type,dynamicId,arrayControl)
 {
+	dynamicCount++;
 	
-	var control_request_type = control_type;
-	jQuery("#hdn_control_type").val(control_type);
+	array_controls[dynamicCount] = [];
 	if(dynamicId == undefined)
 	{
-		dynamicId = Math.floor((Math.random() * 1000)+1);
+		var dynamicId = Math.floor((Math.random()*10000)+1);
+		array_dynamicCount.push(dynamicCount);
 	}
-	
-	switch(parseInt(control_request_type))
+	else
+	{
+		edit_created_control_type.push(dynamicCount);
+	}
+	switch(parseInt(control_type))
 	{
 		case 1:
-		create_control_div(dynamicId,arrayControl);
+			jQuery("#div_1_1").clone(false).attr("id","div_"+dynamicId+"_1").appendTo("#left_block");
+			jQuery("#div_"+dynamicId+"_1").children("label").attr("id","control_label_"+dynamicId);
+			jQuery("#div_"+dynamicId+"_1").children("span").attr("id","txt_required_"+dynamicId);
+			jQuery("#div_"+dynamicId+"_1").children("div").attr("id","show_tooltip"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId ).children("input[type='text']").attr("id","txt_"+dynamicId); 
+			jQuery("#show_tooltip"+dynamicId ).children("input[type='text']").attr("name","txt_"+dynamicId); 
+			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+",1,"+JSON.stringify(arrayControl)+","+dynamicCount+")");
+			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_1,"+dynamicId+",1)");
+			jQuery("#show_tooltip"+dynamicId).children("span").attr("id","txt_description_"+dynamicId);
+			jQuery("#div_"+dynamicId+"_1").attr("style","display:block");
+			// jQuery.each(edit_control_dynamic_ids,function(index,value)
+			// {
+// 				
+				// jQuery('#left_block').append(jQuery("#div_"+value+"_"+edit_created_control_type[index]));
+			// });
+			var result = jQuery.inArray(dynamicId,edit_control_dynamic_ids);
+			if(result == -1)
+			{
+				new_control_dynamic_ids.push(dynamicId);
+				created_control_type.push(1);
+				jQuery.each(new_control_dynamic_ids,function(index,value)
+				{
+				   jQuery('#left_block').append(jQuery("#div_"+value+"_"+created_control_type[index]));
+				});
+			}
+			array_controls[dynamicId] = [];
+			jQuery("#control_label_"+dynamicId).html(arrayControl == undefined ? "<?php _e( "Untitled :", contact_bank ); ?>" : arrayControl[0].dynamic_settings_value + " :");
+			jQuery("#txt_description_"+dynamicId).html(arrayControl == undefined ? "" : arrayControl[1].dynamic_settings_value);
+			jQuery("#txt_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[4].dynamic_settings_value);
+			jQuery("#show_tooltip"+dynamicId).attr("data-original-title",arrayControl == undefined ? "" : arrayControl[3].dynamic_settings_value);
+			jQuery(".hovertip").tooltip();
+			if((arrayControl == undefined ? "" : arrayControl[2].dynamic_settings_value) == 1)
+			{
+				jQuery("#txt_required_"+dynamicId).css("display","block");
+			}
+			else
+			{
+				jQuery("#txt_required_"+dynamicId).css("display","none");
+			}
+			jQuery("#hdn_control_type").val("div_"+dynamicId+"_1");
 		break;
 		case 2:
-		create_control_div(dynamicId,arrayControl);
+			jQuery("#div_2_2").clone(false).attr("id","div_"+dynamicId+"_2").appendTo("#left_block");
+			jQuery("#div_"+dynamicId+"_2").children("label").attr("id","control_label_"+dynamicId);
+			jQuery("#div_"+dynamicId+"_2").children("span").attr("id","txt_required_"+dynamicId);
+			jQuery("#div_"+dynamicId+"_2").children("div").attr("id","show_tooltip"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId ).children("textarea[type='textarea']").attr("id","textarea_"+dynamicId); 
+			jQuery("#show_tooltip"+dynamicId ).children("textarea[type='textarea']").attr("name","textarea_"+dynamicId); 
+			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+",2,"+JSON.stringify(arrayControl)+","+dynamicCount+")");
+			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_2,"+dynamicId+",2)");
+			jQuery("#show_tooltip"+dynamicId).children("span").attr("id","txt_description_"+dynamicId);
+			jQuery("#div_"+dynamicId+"_2").attr("style","display:block");
+			// jQuery.each(edit_control_dynamic_ids,function(index,value)
+			// {
+				// jQuery('#left_block').append(jQuery("#div_"+value+"_"+edit_created_control_type[index]));
+			// });
+			var result = jQuery.inArray(dynamicId, edit_control_dynamic_ids);
+			if(result == -1)
+			{
+				new_control_dynamic_ids.push(dynamicId);
+				created_control_type.push(2);
+				jQuery.each(new_control_dynamic_ids,function(index,value)
+				{
+					jQuery('#left_block').append(jQuery("#div_"+value+"_"+created_control_type[index]));
+				});
+			}
+			array_controls[dynamicId] = [];
+			jQuery("#control_label_"+dynamicId).html(arrayControl == undefined ? "<?php _e( "Untitled :", contact_bank ); ?>" : arrayControl[0].dynamic_settings_value + " :");
+			jQuery("#txt_description_"+dynamicId).html(arrayControl == undefined ? "" : arrayControl[1].dynamic_settings_value);
+			jQuery("#textarea_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[4].dynamic_settings_value);
+			jQuery("#show_tooltip"+dynamicId).attr("data-original-title",arrayControl == undefined ? "" : arrayControl[3].dynamic_settings_value);
+			jQuery(".hovertip").tooltip();
+			if((arrayControl == undefined ? "" : arrayControl[2].dynamic_settings_value) == 1)
+			{
+				jQuery("#txt_required_"+dynamicId).css("display","block");
+			}
+			else
+			{
+				jQuery("#txt_required_"+dynamicId).css("display","none");
+			}
+			
+			jQuery("#hidden_dynamic_id").val("div_"+dynamicId+"_2");
 		break;
 		case 3:
-		create_control_div(dynamicId,arrayControl);
+			jQuery("#div_3_3").clone(false).attr("id","div_"+dynamicId+"_3").appendTo("#left_block");
+			jQuery("#div_"+dynamicId+"_3").children("label").attr("id","control_label_"+dynamicId);
+			jQuery("#div_"+dynamicId+"_3").children("span").attr("id","txt_required_"+dynamicId);
+			jQuery("#div_"+dynamicId+"_3").children("div").attr("id","show_tooltip"+dynamicId);
+			jQuery("#div_"+dynamicId+"_3" ).children("input[type='text']").attr("id","email_"+dynamicId); 
+			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+",3,"+JSON.stringify(arrayControl)+","+dynamicCount+")");
+			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_3,"+dynamicId+",3)");
+			jQuery("#show_tooltip"+dynamicId).children("span").attr("id","txt_description_"+dynamicId);
+			jQuery("#div_"+dynamicId+"_3").attr("style","display:block");
+			// jQuery.each(edit_control_dynamic_ids,function(index,value)
+			// {
+				// jQuery('#left_block').append(jQuery("#div_"+value+"_"+edit_created_control_type[index]));
+			// });
+			var result = jQuery.inArray(dynamicId, edit_control_dynamic_ids);
+			if(result == -1)
+			{
+				new_control_dynamic_ids.push(dynamicId);
+				created_control_type.push(3);
+				jQuery.each(new_control_dynamic_ids,function(index,value)
+				{
+					jQuery('#left_block').append(jQuery("#div_"+value+"_"+created_control_type[index]));
+				});
+			}
+			
+			jQuery("#control_label_"+dynamicId).html(arrayControl == undefined ? "<?php _e( "Email :", contact_bank ); ?>" : arrayControl[0].dynamic_settings_value +" :");
+			jQuery("#txt_description_"+dynamicId).html(arrayControl == undefined ? "" : arrayControl[1].dynamic_settings_value);
+			jQuery("#show_tooltip"+dynamicId).attr("data-original-title",arrayControl == undefined ? "" : arrayControl[3].dynamic_settings_value);
+			jQuery(".hovertip").tooltip();
+			if((arrayControl == undefined ? "1" : arrayControl[2].dynamic_settings_value) == 1)
+			{
+				jQuery("#txt_required_"+dynamicId).css("display","block");
+			}
+			else
+			{
+				jQuery("#txt_required_"+dynamicId).css("display","none");
+			}
 		break;
 		case 4:
-		create_control_div(dynamicId,arrayControl);
+			jQuery("#div_4_4").clone(false).attr("id","div_"+dynamicId+"_4").appendTo("#left_block");
+			jQuery("#div_"+dynamicId+"_4").children("label").attr("id","control_label_"+dynamicId);
+			jQuery("#div_"+dynamicId+"_4").children("span").attr("id","txt_required_"+dynamicId);
+			jQuery("#div_"+dynamicId+"_4").children("div").attr("id","show_tooltip"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId ).children("select[type='select']").attr("id","select_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId ).children("select[type='select']").attr("name","select_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+",4,"+JSON.stringify(arrayControl)+","+dynamicCount+")");
+			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_4,"+dynamicId+",4)");
+			
+			jQuery("#div_"+dynamicId+"_4").attr("style","display:block");
+			// jQuery.each(edit_control_dynamic_ids,function(index,value)
+			// {
+				// jQuery('#left_block').append(jQuery("#div_"+value+"_"+edit_created_control_type[index]));
+			// });
+			var result = jQuery.inArray(dynamicId, edit_control_dynamic_ids);
+			if(result == -1)
+			{
+				new_control_dynamic_ids.push(dynamicId);
+				created_control_type.push(4);
+				jQuery.each(new_control_dynamic_ids,function(index,value)
+				{
+					jQuery('#left_block').append(jQuery("#div_"+value+"_"+created_control_type[index]));
+				});
+			}
+			jQuery("#show_tooltip"+dynamicId).attr("data-original-title",arrayControl == undefined ? "" : arrayControl[2].dynamic_settings_value);
+			jQuery(".hovertip").tooltip();
+			jQuery("#control_label_"+dynamicId).html(arrayControl == undefined ? "<?php _e( "Untitled :", contact_bank ); ?>" : arrayControl[0].dynamic_settings_value +" :");
+			if((arrayControl == undefined ? "" :  arrayControl[3].dynamic_settings_value) != "")
+			{
+				var options_dynamicId_str = arrayControl == undefined ? "" : arrayControl[3].dynamic_settings_value;
+				var options_dynamicId = options_dynamicId_str.split(";"); 
+				var ddl_options_str = arrayControl == undefined ? "" : arrayControl[4].dynamic_settings_value;
+				var ddl_option_value = ddl_options_str.split(";");
+				for(var flag =0;flag <options_dynamicId.length;flag++)
+				{
+					var optionsId = options_dynamicId[flag];
+					var ddl_options = ddl_option_value[flag];
+					jQuery("#select_"+dynamicId).append('<option id="option_tr_'+optionsId+'" value='+ddl_options+'>'+ddl_options+'</option>');
+				}
+				jQuery("#option_tr_"+dynamicId).remove();
+			}
+			if((arrayControl == undefined ? "" : arrayControl[1].dynamic_settings_value) == 1)
+			{
+				jQuery("#txt_required_"+dynamicId).css("display","block");
+			}
+			else
+			{
+				jQuery("#txt_required_"+dynamicId).css("display","none");
+			}
 		break;
 		case 5:
-		create_control_div(dynamicId,arrayControl);
+			jQuery("#div_5_5").clone(false).attr("id","div_"+dynamicId+"_5").appendTo("#left_block");
+			jQuery("#div_"+dynamicId+"_5").children("label").attr("id","control_label_"+dynamicId);
+			jQuery("#div_"+dynamicId+"_5").children("span").attr("id","txt_required_"+dynamicId);
+			jQuery("#div_"+dynamicId+"_5").children("div").attr("id","post_back_checkbox_"+dynamicId);
+			jQuery("#post_back_checkbox_"+dynamicId).children("div").attr("id","show_tooltip"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId ).children("input[type='checkbox']").attr("id","chk_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId ).children("input[type='checkbox']").attr("name","chk_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId ).children("span").attr("id","add_chk_options_here_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+",5,"+JSON.stringify(arrayControl)+","+dynamicCount+")");
+			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_5,"+dynamicId+",5)");
+			
+			jQuery("#div_"+dynamicId+"_5").attr("style","display:block");
+			// jQuery.each(edit_control_dynamic_ids,function(index,value)
+			// {
+				// jQuery('#left_block').append(jQuery("#div_"+value+"_"+edit_created_control_type[index]));
+			// });
+			var result = jQuery.inArray(dynamicId, edit_control_dynamic_ids);
+			if(result == -1)
+			{
+				new_control_dynamic_ids.push(dynamicId);
+				created_control_type.push(5);
+				jQuery.each(new_control_dynamic_ids,function(index,value)
+				{
+					jQuery('#left_block').append(jQuery("#div_"+value+"_"+created_control_type[index]));
+				});
+			}
+			jQuery("#post_back_checkbox_"+dynamicId).attr("data-original-title",arrayControl == undefined ? "" : arrayControl[2].dynamic_settings_value);
+			jQuery(".hovertip").tooltip();
+			jQuery("#control_label_"+dynamicId).html(arrayControl == undefined ? "<?php _e( "Untitled :", contact_bank ); ?>" : arrayControl[0].dynamic_settings_value + " :");
+		
+			if((arrayControl == undefined ? "" :  arrayControl[3].dynamic_settings_value) != "")
+			{
+				var optionId_str = arrayControl == undefined ? "" : arrayControl[3].dynamic_settings_value;
+				var optionId = optionId_str.split(";");
+				var option_value_str = arrayControl == undefined ? "" : arrayControl[4].dynamic_settings_value;
+				var option_value = option_value_str.split(";");
+				for(var flag = 0;flag <optionId.length ;flag++)
+				{
+					var options_dynamicId = optionId[flag];
+					var add_chk_options = option_value[flag];
+					jQuery("#add_chk_options_here_"+dynamicId).append('<span id="input_id_'+options_dynamicId+'"><input id="chk_'+options_dynamicId+'" name="chk_'+options_dynamicId+'" type="checkbox"/><label style="margin:0px 5px;" id="chk_id_'+options_dynamicId+'" >'+add_chk_options+'</label></span>');
+				}
+				jQuery("#chk_"+dynamicId).hide();
+			}
+			if((arrayControl == undefined ? "" : arrayControl[1].dynamic_settings_value) == 1)
+			{
+				jQuery("#txt_required_"+dynamicId).css("display","block");
+			}
+			else
+			{
+				jQuery("#txt_required_"+dynamicId).css("display","none");
+			}
 		break;
 		case 6:
-		create_control_div(dynamicId,arrayControl);
+			jQuery("#div_6_6").clone(false).attr("id","div_"+dynamicId+"_6").appendTo("#left_block");
+			jQuery("#div_"+dynamicId+"_6").children("label").attr("id","control_label_"+dynamicId);
+			jQuery("#div_"+dynamicId+"_6").children("span").attr("id","txt_required_"+dynamicId);
+			jQuery("#div_"+dynamicId+"_6").children("div").attr("id","post_back_radio_button_"+dynamicId);
+			jQuery("#post_back_radio_button_"+dynamicId).children("div").attr("id","show_tooltip"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId ).children("input[type='radio']").attr("id","radio_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId ).children("input[type='radio']").attr("name","radio_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId ).children("span").attr("id","add_radio_options_here_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+",6,"+JSON.stringify(arrayControl)+","+dynamicCount+")");
+			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_6,"+dynamicId+",6)");
+			
+			jQuery("#div_"+dynamicId+"_6").attr("style","display:block");
+			
+			// jQuery.each(edit_control_dynamic_ids,function(index,value)
+			// {
+			   // jQuery('#left_block').append(jQuery("#div_"+value+"_"+edit_created_control_type[index]));
+			// });
+			var result = jQuery.inArray(dynamicId, edit_control_dynamic_ids);
+			if(result == -1)
+			{
+				new_control_dynamic_ids.push(dynamicId);
+				created_control_type.push(6);
+				jQuery.each(new_control_dynamic_ids,function(index,value)
+				{
+					jQuery('#left_block').append(jQuery("#div_"+value+"_"+created_control_type[index]));
+				});
+			}
+			jQuery("#post_back_radio_button_"+dynamicId).attr("data-original-title",arrayControl == undefined ? "" : arrayControl[2].dynamic_settings_value);
+			jQuery(".hovertip").tooltip();
+			jQuery("#control_label_"+dynamicId).html(arrayControl == undefined ? "<?php _e( "Untitled :", contact_bank ); ?>" : arrayControl[0].dynamic_settings_value + " :");
+			
+			if((arrayControl == undefined ? "" :  arrayControl[3].dynamic_settings_value) != "")
+			{
+				var options_dynamicId_str = arrayControl == undefined ? "" : arrayControl[3].dynamic_settings_value;
+				var options_dynamicIds = options_dynamicId_str.split(";"); 
+				var options_value_str = arrayControl == undefined ? "" : arrayControl[4].dynamic_settings_value;
+				var options_value = options_value_str.split(";");
+				for(var flag =0;flag <options_dynamicIds.length;flag++)
+				{
+					var options_dynamicId = options_dynamicIds[flag];
+					var add_radio_options = options_value[flag];
+					jQuery("#add_radio_options_here_"+dynamicId).append('<span class="hovertip" id="input_id_'+options_dynamicId+'"><input  name="radio" type="radio" id="add_radio_'+options_dynamicId+'" /><label style="margin:0px 5px;" id="add_radio_lab_'+options_dynamicId+'" >'+add_radio_options+'</label></span>');
+				}
+				jQuery("#radio_"+dynamicId).hide();
+			}
+			if((arrayControl == undefined ? "" : arrayControl[1].dynamic_settings_value) == 1)
+			{
+				jQuery("#txt_required_"+dynamicId).css("display","block");
+			}
+			else
+			{
+				jQuery("#txt_required_"+dynamicId).css("display","none");
+			}
 		break;
 		case 9:
-		if(new_file_upload == "")
-		{
-			 create_control_div(dynamicId,arrayControl);
-		}
+			if(new_file_upload == "")
+			{
+				new_file_upload = 1;
+				var oldId_file_upload = jQuery(".file_upload").attr("id");
+				jQuery("#"+oldId_file_upload).appendTo("#left_block");
+				jQuery("#"+oldId_file_upload).attr("style","display:block;");
+				jQuery("#"+oldId_file_upload).attr("id","div_"+dynamicId+"_9");
+				jQuery("#div_"+dynamicId+"_9").children("label.layout-control-label").attr("id","control_label_"+dynamicId);
+				jQuery("#div_"+dynamicId+"_9").children("span").attr("id","txt_required_"+dynamicId);
+				jQuery("#div_"+dynamicId+"_9").children("div").attr("id","show_tooltip"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+",9,"+JSON.stringify(arrayControl)+","+dynamicCount+")");
+				jQuery("#show_tooltip"+dynamicId).children(".delete_control").attr("id","anchor_del_"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_9,"+dynamicId+",9)");
+				jQuery("#show_tooltip"+dynamicId).children("label.hovertip").attr("id","tip"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId).children("span").attr("id","txt_description_"+dynamicId);
+				jQuery("#div_"+dynamicId+"_9").attr("style","display:block");
+				// jQuery.each(edit_control_dynamic_ids,function(index,value)
+				// {
+				   // jQuery('#left_block').append(jQuery("#div_"+value+"_"+edit_created_control_type[index]));
+				// });
+				jQuery("#file_upload_content_postback").css('display','block');
+				var result = jQuery.inArray(dynamicId, edit_control_dynamic_ids);
+				if(result == -1)
+				{
+					new_control_dynamic_ids.push(dynamicId);
+					created_control_type.push(9);
+					jQuery.each(new_control_dynamic_ids,function(index,value)
+					{
+						jQuery('#left_block').append(jQuery("#div_"+value+"_"+created_control_type[index]));
+					});
+				}
+				array_controls[dynamicCount] = [];
+				jQuery("#control_label_"+dynamicId).html(arrayControl == undefined ? "<?php _e( "File Upload :", contact_bank ); ?>" :  arrayControl[0].dynamic_settings_value + " :");
+				jQuery("#txt_description_"+dynamicId).html(arrayControl == undefined ? "" :  arrayControl[1].dynamic_settings_value);
+				jQuery("#tip"+dynamicId).attr("data-original-title",arrayControl == undefined ? "" : arrayControl[3].dynamic_settings_value);
+				jQuery(".hovertip").tooltip();
+				if((arrayControl == undefined ? "" : arrayControl[2].dynamic_settings_value) == 1)
+				{
+					jQuery("#txt_required_"+dynamicId).css("display","block");
+				}
+				else
+				{
+					jQuery("#txt_required_"+dynamicId).css("display","none");
+				}
+				jQuery( "#add_setting_control_"+dynamicId).live( "click", function() {
+					add_settings(dynamicId,9,arrayControl)
+				});
+				var ux_allow_multiple_file = arrayControl == undefined ? "false" : arrayControl[6].dynamic_settings_value;
+				var ux_allowed_file_extensions = arrayControl == undefined ? "*.jpg,*.png,*.gif,*.bmp,*.txt,*.zip,*.rar" : arrayControl[7].dynamic_settings_value;
+				var ux_maximum_file_allowed = arrayControl == undefined ? "1024" : arrayControl[8].dynamic_settings_value;
+				var ux_uploaded_file_email_db = arrayControl == undefined ? "" : arrayControl[9].dynamic_settings_value;
+				jQuery.post(ajaxurl, "dynamicId="+dynamicId+"&ux_allow_multiple_file="+ux_allow_multiple_file+"&ux_allowed_file_extensions="+ux_allowed_file_extensions+
+				"&ux_maximum_file_allowed="+ux_maximum_file_allowed+"&ux_uploaded_file_email_db="+ux_uploaded_file_email_db+"&param=ux_allow_multiple_file_upload&action=add_contact_form_library", function(data)
+				{
+					jQuery("#file_upload_content").remove();
+					var dat = data;
+					jQuery("#file_upload_content_postback").html(dat);
+				});
+			}
 		break;
 		case 12:
-		create_control_div(dynamicId,arrayControl);
+			jQuery("#div_12_12").clone(false).attr("id","div_"+dynamicId+"_12").appendTo("#left_block");
+			jQuery("#div_"+dynamicId+"_12").children("label.layout-control-label").attr("id","control_label_"+dynamicId);
+			jQuery("#div_"+dynamicId+"_12").children("span").attr("id","txt_required_"+dynamicId);
+			jQuery("#div_"+dynamicId+"_12").children("div").attr("id","show_tooltip"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("select[type='day']").attr("id","select_day_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("select[type='day']").attr("name","select_day_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("select[type='month']").attr("id","select_month_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("select[type='month']").attr("name","select_month_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("select[type='year']").attr("id","select_year_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("select[type='year']").attr("name","select_year_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+",12,"+JSON.stringify(arrayControl)+","+dynamicCount+")");
+			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_12,"+dynamicId+",12)");
+			jQuery("#show_tooltip"+dynamicId).children("span").attr("id","txt_description_"+dynamicId);
+			jQuery("#div_"+dynamicId+"_12").attr("style","display:block");
+			jQuery("#hidden_dynamic_id").val("div_"+dynamicId+"_12");
+			// jQuery.each(edit_control_dynamic_ids,function(index,value)
+			// {
+			   // jQuery('#left_block').append(jQuery("#div_"+value+"_"+edit_created_control_type[index]));
+			// });
+			var result = jQuery.inArray(dynamicId, edit_control_dynamic_ids);
+			if(result == -1)
+			{
+				new_control_dynamic_ids.push(dynamicId);
+				created_control_type.push(12);
+				jQuery.each(new_control_dynamic_ids,function(index,value)
+				{
+					jQuery('#left_block').append(jQuery("#div_"+value+"_"+created_control_type[index]));
+				});
+			}
+			jQuery("#control_label_"+dynamicId).html(arrayControl == undefined ? "<?php _e( "Date :", contact_bank ); ?>" : arrayControl[0].dynamic_settings_value + " :");
+			jQuery("#txt_description_"+dynamicId).html(arrayControl == undefined ? "" : arrayControl[1].dynamic_settings_value);
+			jQuery("#select_day_"+dynamicId).val(arrayControl == undefined ? (new Date).getDate() : arrayControl[8].dynamic_settings_value == "" ? "0" :  arrayControl[8].dynamic_settings_value);
+			jQuery("#select_month_"+dynamicId).val(arrayControl == undefined ? (new Date).getMonth()+1 : arrayControl[9].dynamic_settings_value == "" ? "0" : arrayControl[9].dynamic_settings_value);
+			jQuery("#show_tooltip"+dynamicId).attr("data-original-title",arrayControl == undefined ? "" : arrayControl[3].dynamic_settings_value);
+			jQuery(".hovertip").tooltip();
+			var start_year = arrayControl == undefined ? "0" :  arrayControl[6].dynamic_settings_value;
+			var end_year = arrayControl == undefined ? "0" :  arrayControl[7].dynamic_settings_value;
+			if((start_year == "0" && end_year == "0") || (start_year == "" && end_year == ""))
+			{
+				jQuery("#select_year_"+dynamicId).html('<option value=0>Year</option>');
+				for(flag12=1900; flag12 <= 2100; flag12++)
+				{
+					jQuery("#select_year_"+dynamicId).append('<option value='+flag12+'>'+flag12+'</option>');
+				}
+				jQuery("#select_year_"+dynamicId).val(arrayControl == undefined || (start_year == "" && end_year == "") ? (new Date).getFullYear() :  arrayControl[10].dynamic_settings_value);
+						
+			}
+			else
+			{
+				jQuery("#select_year_"+dynamicId).empty();
+				jQuery("#select_year_"+dynamicId).html('<option value=0>Year</option>');
+						
+				for(flag11=start_year; flag11 <= end_year; flag11++)
+				{
+					jQuery("#select_year_"+dynamicId).append('<option value='+flag11+'>'+flag11+'</option>');
+				}
+				jQuery("#select_year_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[10].dynamic_settings_value);
+						
+			}
+			if((arrayControl == undefined ? "" : arrayControl[2].dynamic_settings_value) == 1)
+			{
+				jQuery("#txt_required_"+dynamicId).css("display","block");
+			}
+			else
+			{
+				jQuery("#txt_required_"+dynamicId).css("display","none");
+			}
 		break;
 		case 13:
-		create_control_div(dynamicId,arrayControl);
+			jQuery("#div_13_13").clone(false).attr("id","div_"+dynamicId+"_13").appendTo("#left_block");
+			jQuery("#div_"+dynamicId+"_13").children("label.layout-control-label").attr("id","control_label_"+dynamicId);
+			jQuery("#div_"+dynamicId+"_13").children("span").attr("id","txt_required_"+dynamicId);
+			jQuery("#div_"+dynamicId+"_13").children("div").attr("id","show_tooltip"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("select[type='hour12']").attr("id","select_hr_12_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("select[type='hour12']").attr("name","select_hr_12_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("select[type='hour24']").attr("id","select_hr_24_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("select[type='hour24']").attr("name","select_hr_24_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("select[type='minute']").attr("id","select_min_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("select[type='minute']").attr("name","select_min_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("select[type='am']").attr("id","select_am_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("select[type='am']").attr("name","select_am_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+",13,"+JSON.stringify(arrayControl)+","+dynamicCount+")");
+			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_13,"+dynamicId+",13)");
+			jQuery("#show_tooltip"+dynamicId).children("span").attr("id","txt_description_"+dynamicId);
+			jQuery("#div_"+dynamicId+"_13").attr("style","display:block");
+			jQuery("#hidden_dynamic_id").val("div_"+dynamicId+"_13");
+			// jQuery.each(edit_control_dynamic_ids,function(index,value)
+			// {
+			   // jQuery('#left_block').append(jQuery("#div_"+value+"_"+edit_created_control_type[index]));
+			// });
+			jQuery("#ux_drop_hour_time_"+dynamicId).val("12");
+			jQuery("#select_hr_24_"+dynamicId).hide();
+			var result = jQuery.inArray(dynamicId, edit_control_dynamic_ids);
+			if(result == -1)
+			{
+				new_control_dynamic_ids.push(dynamicId);
+				created_control_type.push(13);
+				jQuery.each(new_control_dynamic_ids,function(index,value)
+				{
+					jQuery('#left_block').append(jQuery("#div_"+value+"_"+created_control_type[index]));
+				});
+			}
+			if((arrayControl == undefined ? "" : arrayControl[2].dynamic_settings_value) == 1)
+			{
+				jQuery("#txt_required_"+dynamicId).css("display","block");
+			}
+			else
+			{
+				jQuery("#txt_required_"+dynamicId).css("display","none");
+			}
+			jQuery("#control_label_"+dynamicId).html(arrayControl == undefined ? "<?php _e( "Time :", contact_bank ); ?>" : arrayControl[0].dynamic_settings_value + " :");
+			jQuery("#txt_description_"+dynamicId).html(arrayControl == undefined ? "" : arrayControl[1].dynamic_settings_value);
+			var minute_format = parseInt(arrayControl == undefined ? "1" :  arrayControl[10].dynamic_settings_value);
+
+			var dropdown_min = "<option selected='selected' value=''>Minute</option>";
+			for(flag=0; flag < 60;)
+			{
+				if(flag < 10)
+				{
+					dropdown_min += "<option  value=0"+flag+">0"+ flag + "</option>";
+				}
+				else
+				{
+					dropdown_min += "<option value="+flag+">"+ flag + "</option>";
+				}
+				flag = flag + minute_format;
+			}
+			if((arrayControl == undefined ? "12" :  arrayControl[6].dynamic_settings_value) == 12)
+			{
+				jQuery("#select_hr_24_"+dynamicId).hide();
+				jQuery("#select_hr_12_"+dynamicId).show();
+				jQuery("#select_am_"+dynamicId).show();
+				jQuery("#select_hr_12_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[7].dynamic_settings_value);	
+			}
+			else if((arrayControl == undefined ? "24" :  arrayControl[6].dynamic_settings_value) == 24)
+			{
+				jQuery("#select_hr_12_"+dynamicId).hide();
+				jQuery("#select_hr_24_"+dynamicId).show();
+				jQuery("#select_am_"+dynamicId).hide();
+				jQuery("#select_hr_24_"+dynamicId).val(arrayControl == undefined ? "" :   arrayControl[7].dynamic_settings_value);	
+			}
+					
+			jQuery("#select_min_"+dynamicId).val(arrayControl == undefined ? "" :   arrayControl[8].dynamic_settings_value);
+			jQuery("#select_am_"+dynamicId).val(arrayControl == undefined ? "0" : arrayControl[9].dynamic_settings_value == "" ? "0" :  arrayControl[9].dynamic_settings_value);
+			jQuery("#show_tooltip"+dynamicId).attr("data-original-title",arrayControl == undefined ? "" : arrayControl[3].dynamic_settings_value);
+			jQuery(".hovertip").tooltip();	
 		break;
 		case 14:
-		create_control_div(dynamicId,arrayControl);
+			jQuery("#div_14_14").clone(false).attr("id","div_"+dynamicId+"_14").appendTo("#left_block");
+			jQuery("#div_"+dynamicId+"_14").children("label").attr("id","control_label_"+dynamicId);
+			jQuery("#div_"+dynamicId+"_14").children("span").attr("id","txt_required_"+dynamicId);
+			jQuery("#div_"+dynamicId+"_14").children("div").attr("id","show_tooltip"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId ).children("input[type='text']").attr("id","hidden_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId ).children("input[type='text']").attr("name","hidden_"+dynamicId); 
+			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+",14,"+JSON.stringify(arrayControl)+","+dynamicCount+")");
+			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_14,"+dynamicId+",14)");
+			jQuery("#show_tooltip"+dynamicId).children("span").attr("id","txt_description_"+dynamicId);
+			jQuery("#div_"+dynamicId+"_14").attr("style","display:block");
+			jQuery("#hidden_dynamic_id").val("div_"+dynamicId+"_14");
+			// jQuery.each(edit_control_dynamic_ids,function(index,value)
+			// {
+				// jQuery('#left_block').append(jQuery("#div_"+value+"_"+edit_created_control_type[index]));
+				// });
+				var result = jQuery.inArray(dynamicId, edit_control_dynamic_ids);
+				if(result == -1)
+				{
+					new_control_dynamic_ids.push(dynamicId);
+					created_control_type.push(14);
+					jQuery.each(new_control_dynamic_ids,function(index,value)
+					{
+						jQuery('#left_block').append(jQuery("#div_"+value+"_"+created_control_type[index]));
+					});
+				}
+				
+				jQuery("#control_label_"+dynamicId).html(arrayControl == undefined ? "<?php _e( "Untitled(hidden) :", contact_bank ); ?>" : arrayControl[0].dynamic_settings_value + " :");
+				jQuery("#txt_hide_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[1].dynamic_settings_value);
+				jQuery(".hovertip").tooltip();
 		break;
 		case 15:
-		create_control_div(dynamicId,arrayControl);
+			jQuery("#div_15_15").clone(false).attr("id","div_"+dynamicId+"_15").appendTo("#left_block");
+			jQuery("#div_"+dynamicId+"_15").children("label").attr("id","control_label_"+dynamicId);
+			jQuery("#div_"+dynamicId+"_15").children("span").attr("id","txt_required_"+dynamicId);
+			jQuery("#div_"+dynamicId+"_15").children("div").attr("id","show_tooltip"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId ).children("input[type='password']").attr("id","txt_"+dynamicId); 
+			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+",15,"+JSON.stringify(arrayControl)+","+dynamicCount+")");
+			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_15,"+dynamicId+",15)");
+			jQuery("#show_tooltip"+dynamicId).children("span").attr("id","txt_description_"+dynamicId);
+			jQuery("#div_"+dynamicId+"_15").attr("style","display:block");
+			
+			// jQuery.each(edit_control_dynamic_ids,function(index,value)
+					// {
+					   // jQuery('#left_block').append(jQuery("#div_"+value+"_"+edit_created_control_type[index]));
+					// });
+			var result = jQuery.inArray(dynamicId, edit_control_dynamic_ids);
+			if(result == -1)
+			{
+				new_control_dynamic_ids.push(dynamicId);
+				created_control_type.push(15);
+				jQuery.each(new_control_dynamic_ids,function(index,value)
+				{
+					jQuery('#left_block').append(jQuery("#div_"+value+"_"+created_control_type[index]));
+				});
+			}
+			if((arrayControl == undefined ? "" : arrayControl[2].dynamic_settings_value) == 1)
+			{
+				jQuery("#txt_required_"+dynamicId).css("display","block");
+			}
+			else
+			{
+				jQuery("#txt_required_"+dynamicId).css("display","none");
+			}
+			
+			jQuery("#control_label_"+dynamicId).html(arrayControl == undefined ? "<?php _e( "Password : ", contact_bank ); ?>" : arrayControl[0].dynamic_settings_value + " :");
+			jQuery("#txt_description_"+dynamicId).html(arrayControl == undefined ? "" : arrayControl[1].dynamic_settings_value);
+			jQuery("#show_tooltip"+dynamicId).attr("data-original-title",arrayControl == undefined ? "" : arrayControl[3].dynamic_settings_value);
+			jQuery(".hovertip").tooltip();
+					
 		break;
 	}
 }
-/* Function Name : create_control_div
- * Paramters : dynamicId
- * Return : None
- * Description : This Function is used to create the dynamic controls according to type of control.
- * Created in Version 1.0 
- * Last Modified : 1.0
- * Reasons for change : None
- */ 
 
-function create_control_div(dynamicId,arrayControl)
-{
-	
-	switch(parseInt(jQuery("#hdn_control_type").val()))
-	{
-		case 1:
-			jQuery.ajax({
-				type: "POST",
-				url: ajaxurl + "?dynamicId="+dynamicId+"&field_id=1&param=create_textbox_control&action=create_textbox_library",
-				
-				success : function(data) 
-				{
-					
-					jQuery("#left_block").append(data);
-					jQuery.each(edit_control_dynamic_ids,function(index,value)
-					{
-					   jQuery('#left_block').append(jQuery("#div_"+value+"_"+edit_created_control_type[index]));
-					});
-					
-					var result = jQuery.inArray(dynamicId,edit_control_dynamic_ids);
-					if(result == -1)
-					{
-						
-						new_control_dynamic_ids.push(dynamicId);
-						created_control_type.push(1);
-						jQuery.each(new_control_dynamic_ids,function(index,value)
-						{
-						   jQuery('#left_block').append(jQuery("#div_"+value+"_"+created_control_type[index]));
-						});
-					}
-					array_text[dynamicId] = [];
-					jQuery("#control_label_"+dynamicId).html(arrayControl == undefined ? "<?php _e( "Untitled :", contact_bank ); ?>" : arrayControl[0].dynamic_settings_value + " :");
-					jQuery("#txt_description_"+dynamicId).html(arrayControl == undefined ? "" : arrayControl[1].dynamic_settings_value);
-					jQuery("#txt_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[4].dynamic_settings_value);
-					jQuery("#show_tooltip"+dynamicId).attr("data-original-title",arrayControl == undefined ? "" : arrayControl[3].dynamic_settings_value);
-					jQuery(".hovertip").tooltip();
-					if((arrayControl == undefined ? "" : arrayControl[2].dynamic_settings_value) == 1)
-					{
-						jQuery("#txt_required_"+dynamicId).css("display","block");
-					}
-					else
-					{
-						jQuery("#txt_required_"+dynamicId).css("display","none");
-					}
-					jQuery( "#add_setting_control_"+dynamicId).live( "click", function()
-					{
-						add_settings(dynamicId,1,arrayControl)
-					});
-				}
-			});
-		break;
-		case 2:
-			jQuery.ajax({
-				type: "POST",
-				url: ajaxurl + "?dynamicId="+dynamicId+"&field_id=2&param=create_textarea_control&action=create_textarea_library",
-				
-				success : function(data) 
-				{
-					jQuery("#left_block").append(data);
-					jQuery.each(edit_control_dynamic_ids,function(index,value)
-					{
-					   jQuery('#left_block').append(jQuery("#div_"+value+"_"+edit_created_control_type[index]));
-					});
-					var result = jQuery.inArray(dynamicId, edit_control_dynamic_ids);
-					if(result == -1)
-					{
-						new_control_dynamic_ids.push(dynamicId);
-						created_control_type.push(2);
-						jQuery.each(new_control_dynamic_ids,function(index,value)
-						{
-							jQuery('#left_block').append(jQuery("#div_"+value+"_"+created_control_type[index]));
-						});
-					}
-					array_textarea[dynamicId] = [];
-					jQuery("#control_label_"+dynamicId).html(arrayControl == undefined ? "<?php _e( "Untitled :", contact_bank ); ?>" : arrayControl[0].dynamic_settings_value + " :");
-					jQuery("#txt_description_"+dynamicId).html(arrayControl == undefined ? "" : arrayControl[1].dynamic_settings_value);
-					jQuery("#textarea_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[4].dynamic_settings_value);
-					jQuery("#show_tooltip"+dynamicId).attr("data-original-title",arrayControl == undefined ? "" : arrayControl[3].dynamic_settings_value);
-					jQuery(".hovertip").tooltip();
-					if((arrayControl == undefined ? "" : arrayControl[2].dynamic_settings_value) == 1)
-					{
-						jQuery("#txt_required_"+dynamicId).css("display","block");
-					}
-					else
-					{
-						jQuery("#txt_required_"+dynamicId).css("display","none");
-					}
-					jQuery( "#add_setting_control_"+dynamicId).live( "click", function() 
-					{
-						 add_settings(dynamicId,2,arrayControl)
-					});
-				}
-			});
-		break;
-		case 3:
-			jQuery.ajax({
-				type: "POST",
-				url: ajaxurl + "?dynamicId="+dynamicId+"&field_id=3&param=create_email_control&action=create_email_library",
-				
-				success : function(data) 
-				{
-					jQuery("#left_block").append(data);
-					jQuery.each(edit_control_dynamic_ids,function(index,value)
-					{
-					   jQuery('#left_block').append(jQuery("#div_"+value+"_"+edit_created_control_type[index]));
-					});
-					var result = jQuery.inArray(dynamicId, edit_control_dynamic_ids);
-					if(result == -1)
-					{
-						new_control_dynamic_ids.push(dynamicId);
-						created_control_type.push(3);
-						jQuery.each(new_control_dynamic_ids,function(index,value)
-						{
-							jQuery('#left_block').append(jQuery("#div_"+value+"_"+created_control_type[index]));
-						});
-					}
-					array_email[dynamicId] = [];
-					jQuery("#control_label_"+dynamicId).html(arrayControl == undefined ? "<?php _e( "Email :", contact_bank ); ?>" : arrayControl[0].dynamic_settings_value +" :");
-					jQuery("#txt_description_"+dynamicId).html(arrayControl == undefined ? "" : arrayControl[1].dynamic_settings_value);
-					jQuery("#email_"+dynamicId).attr("data-original-title",arrayControl == undefined ? "" : arrayControl[3].dynamic_settings_value);
-					jQuery(".hovertip").tooltip();
-					if((arrayControl == undefined ? "1" : arrayControl[2].dynamic_settings_value) == 1)
-					{
-						jQuery("#txt_required_"+dynamicId).css("display","block");
-					}
-					else
-					{
-						jQuery("#txt_required_"+dynamicId).css("display","none");
-					}
-					jQuery( "#add_setting_control_"+dynamicId).live( "click", function() {
-					 add_settings(dynamicId,3,arrayControl)
-					});
-				}
-			});
-		break;
-		case 4:
-			jQuery.ajax({
-				type: "POST",
-				url: ajaxurl + "?dynamicId="+dynamicId+"&field_id=4&param=create_select_control&action=create_dropdown_library",
-				
-				success : function(data) 
-				{
-					jQuery("#left_block").append(data);
-					jQuery.each(edit_control_dynamic_ids,function(index,value)
-					{
-					   jQuery('#left_block').append(jQuery("#div_"+value+"_"+edit_created_control_type[index]));
-					});
-					var result = jQuery.inArray(dynamicId, edit_control_dynamic_ids);
-					if(result == -1)
-					{
-						new_control_dynamic_ids.push(dynamicId);
-						created_control_type.push(4);
-						jQuery.each(new_control_dynamic_ids,function(index,value)
-						{
-							jQuery('#left_block').append(jQuery("#div_"+value+"_"+created_control_type[index]));
-						});
-					}
-					jQuery("#show_tooltip"+dynamicId).attr("data-original-title",arrayControl == undefined ? "" : arrayControl[2].dynamic_settings_value);
-					jQuery(".hovertip").tooltip();
-					jQuery("#control_label_"+dynamicId).html(arrayControl == undefined ? "<?php _e( "Untitled :", contact_bank ); ?>" : arrayControl[0].dynamic_settings_value +" :");
-					array_dropdown[dynamicId] = [];
-					array_option_id_dropdown[dynamicId] = [];//Dynamic Array to store advance-dynamic-Ids of dynamic options of dropdown control.
-					array_options_dropdown[dynamicId] = [];// Dynamic Array to store values of dynamic options of dropdown control.
-					if((arrayControl == undefined ? "" :  arrayControl[3].dynamic_settings_value) != "")
-					{
-						var options_dynamicId_str = arrayControl == undefined ? "" : arrayControl[3].dynamic_settings_value;
-						var options_dynamicId = options_dynamicId_str.split(";"); 
-						var ddl_options_str = arrayControl == undefined ? "" : arrayControl[4].dynamic_settings_value;
-						var ddl_option_value = ddl_options_str.split(";");
-						for(var flag =0;flag <options_dynamicId.length;flag++)
-						{
-							var optionsId = options_dynamicId[flag];
-							var ddl_options = ddl_option_value[flag];
-							jQuery("#select_"+dynamicId).append('<option id="option_tr_'+optionsId+'" value='+ddl_options+'>'+ddl_options+'</option>');
-						}
-						jQuery("#option_tr_"+dynamicId).remove();
-					}
-					if((arrayControl == undefined ? "" : arrayControl[1].dynamic_settings_value) == 1)
-					{
-						jQuery("#txt_required_"+dynamicId).css("display","block");
-					}
-					else
-					{
-						jQuery("#txt_required_"+dynamicId).css("display","none");
-					}
-					jQuery( "#add_setting_control_"+dynamicId).live( "click", function() 
-					{
-						add_settings(dynamicId,4,arrayControl)
-					});
-				}
-			});
-		break;
-		case 5:
-			jQuery.ajax({
-				type: "POST",
-				url: ajaxurl + "?dynamicId="+dynamicId+"&field_id=5&param=create_check_control&action=create_checkbox_library",
-				
-				success : function(data) 
-				{
-					jQuery("#left_block").append(data);
-					jQuery.each(edit_control_dynamic_ids,function(index,value)
-					{
-					   jQuery('#left_block').append(jQuery("#div_"+value+"_"+edit_created_control_type[index]));
-					});
-					var result = jQuery.inArray(dynamicId, edit_control_dynamic_ids);
-					if(result == -1)
-					{
-						new_control_dynamic_ids.push(dynamicId);
-						created_control_type.push(5);
-						jQuery.each(new_control_dynamic_ids,function(index,value)
-						{
-							jQuery('#left_block').append(jQuery("#div_"+value+"_"+created_control_type[index]));
-						});
-					}
-					jQuery("#post_back_checkbox_"+dynamicId).attr("data-original-title",arrayControl == undefined ? "" : arrayControl[2].dynamic_settings_value);
-					jQuery(".hovertip").tooltip();
-					jQuery("#control_label_"+dynamicId).html(arrayControl == undefined ? "<?php _e( "Untitled :", contact_bank ); ?>" : arrayControl[0].dynamic_settings_value + " :");
-					array_checkbox[dynamicId] = [];
-					array_option_id_chk[dynamicId] = [];// Dynamic Array to store advance-dynamic-Ids of dynamic options of checkbox control.
-					array_options_chk[dynamicId] = [];// Dynamic Array to store values of dynamic options of checkbox control.
-					if((arrayControl == undefined ? "" :  arrayControl[3].dynamic_settings_value) != "")
-					{
-						var optionId_str = arrayControl == undefined ? "" : arrayControl[3].dynamic_settings_value;
-						var optionId = optionId_str.split(";");
-						var option_value_str = arrayControl == undefined ? "" : arrayControl[4].dynamic_settings_value;
-						var option_value = option_value_str.split(";");
-						for(var flag = 0;flag <optionId.length ;flag++)
-						{
-							var options_dynamicId = optionId[flag];
-							var add_chk_options = option_value[flag];
-							jQuery("#add_chk_options_here_"+dynamicId).append('<span id="input_id_'+options_dynamicId+'"><input id="chk_'+options_dynamicId+'" name="chk_'+options_dynamicId+'" type="checkbox"/><label style="margin:0px 5px;" id="chk_id_'+options_dynamicId+'" >'+add_chk_options+'</label></span>');
-						}
-						jQuery("#chk_"+dynamicId).hide();
-					}
-					if((arrayControl == undefined ? "" : arrayControl[1].dynamic_settings_value) == 1)
-					{
-						jQuery("#txt_required_"+dynamicId).css("display","block");
-					}
-					else
-					{
-						jQuery("#txt_required_"+dynamicId).css("display","none");
-					}
-					jQuery( "#add_setting_control_"+dynamicId).live( "click", function() {
-					add_settings(dynamicId,5,arrayControl)
-					});
-				}
-			});
-		break;
-		case 6:
-			jQuery.ajax({
-				type: "POST",
-				url: ajaxurl + "?dynamicId="+dynamicId+"&field_id=6&param=create_multiple_control&action=create_multiple_library",
-				
-				success : function(data) 
-				{
-					jQuery("#left_block").append(data);
-					jQuery.each(edit_control_dynamic_ids,function(index,value)
-					{
-					   jQuery('#left_block').append(jQuery("#div_"+value+"_"+edit_created_control_type[index]));
-					});
-					var result = jQuery.inArray(dynamicId, edit_control_dynamic_ids);
-					if(result == -1)
-					{
-						new_control_dynamic_ids.push(dynamicId);
-						created_control_type.push(6);
-						jQuery.each(new_control_dynamic_ids,function(index,value)
-						{
-							jQuery('#left_block').append(jQuery("#div_"+value+"_"+created_control_type[index]));
-						});
-					}
-					jQuery("#post_back_radio_button_"+dynamicId).attr("data-original-title",arrayControl == undefined ? "" : arrayControl[2].dynamic_settings_value);
-					jQuery(".hovertip").tooltip();
-					jQuery("#control_label_"+dynamicId).html(arrayControl == undefined ? "<?php _e( "Untitled :", contact_bank ); ?>" : arrayControl[0].dynamic_settings_value + " :");
-					array_multiple[dynamicId] = [];
-					array_option_id_radio[dynamicId] = [];// Dynamic Array to store advance-dynamic-Ids of dynamic options of Multiple control.
-					array_options_radio[dynamicId] = [];// Dynamic Array to store values of dynamic options of Multiple control.
-					if((arrayControl == undefined ? "" :  arrayControl[3].dynamic_settings_value) != "")
-					{
-						var options_dynamicId_str = arrayControl == undefined ? "" : arrayControl[3].dynamic_settings_value;
-						var options_dynamicIds = options_dynamicId_str.split(";"); 
-						var options_value_str = arrayControl == undefined ? "" : arrayControl[4].dynamic_settings_value;
-						var options_value = options_value_str.split(";");
-						for(var flag =0;flag <options_dynamicIds.length;flag++)
-						{
-							var options_dynamicId = options_dynamicIds[flag];
-							var add_radio_options = options_value[flag];
-							jQuery("#add_radio_options_here_"+dynamicId).append('<span class="hovertip" id="input_id_'+options_dynamicId+'"><input  name="radio" type="radio" id="add_radio_'+options_dynamicId+'" /><label style="margin:0px 5px;" id="add_radio_lab_'+options_dynamicId+'" >'+add_radio_options+'</label></span>');
-						}
-						jQuery("#radio_"+dynamicId).hide();
-					}
-					if((arrayControl == undefined ? "" : arrayControl[1].dynamic_settings_value) == 1)
-					{
-						jQuery("#txt_required_"+dynamicId).css("display","block");
-					}
-					else
-					{
-						jQuery("#txt_required_"+dynamicId).css("display","none");
-					}
-					jQuery( "#add_setting_control_"+dynamicId).live( "click", function() {
-					add_settings(dynamicId,6,arrayControl)
-					});
-				}
-			});
-		break;
-		case 9:
-			jQuery.ajax({
-				type: "POST",
-				url: ajaxurl + "?dynamicId="+dynamicId+"&field_id=9&param=create_txt_file_control&action=create_txt_file_library",
-				
-				success : function(data) 
-				{
-					new_file_upload = 1;
-					jQuery("#left_block").append(data);
-					jQuery.each(edit_control_dynamic_ids,function(index,value)
-					{
-					   jQuery('#left_block').append(jQuery("#div_"+value+"_"+edit_created_control_type[index]));
-					});
-					jQuery("#file_upload_content_postback").css('display','block');
-					var result = jQuery.inArray(dynamicId, edit_control_dynamic_ids);
-					if(result == -1)
-					{
-						new_control_dynamic_ids.push(dynamicId);
-						created_control_type.push(9);
-						jQuery.each(new_control_dynamic_ids,function(index,value)
-						{
-							jQuery('#left_block').append(jQuery("#div_"+value+"_"+created_control_type[index]));
-						});
-					}
-					array_file_upload[dynamicId] = [];
-					jQuery("#control_label_"+dynamicId).html(arrayControl == undefined ? "<?php _e( "File Upload :", contact_bank ); ?>" :  arrayControl[0].dynamic_settings_value + " :");
-					jQuery("#txt_description_"+dynamicId).html(arrayControl == undefined ? "" :  arrayControl[1].dynamic_settings_value);
-					jQuery("#tip"+dynamicId).attr("data-original-title",arrayControl == undefined ? "" : arrayControl[3].dynamic_settings_value);
-					jQuery(".hovertip").tooltip();
-					if((arrayControl == undefined ? "" : arrayControl[2].dynamic_settings_value) == 1)
-					{
-						jQuery("#txt_required_"+dynamicId).css("display","block");
-					}
-					else
-					{
-						jQuery("#txt_required_"+dynamicId).css("display","none");
-					}
-					jQuery( "#add_setting_control_"+dynamicId).live( "click", function() {
-						add_settings(dynamicId,9,arrayControl)
-					});
-					var ux_allow_multiple_file = arrayControl == undefined ? "false" : arrayControl[6].dynamic_settings_value;
-					var ux_allowed_file_extensions = arrayControl == undefined ? "*.jpg,*.png,*.gif,*.bmp,*.txt,*.zip,*.rar" : arrayControl[7].dynamic_settings_value;
-					var ux_maximum_file_allowed = arrayControl == undefined ? "1024" : arrayControl[8].dynamic_settings_value;
-					var ux_uploaded_file_email_db = arrayControl == undefined ? "" : arrayControl[9].dynamic_settings_value;
-					jQuery.post(ajaxurl, "dynamicId="+dynamicId+"&ux_allow_multiple_file="+ux_allow_multiple_file+"&ux_allowed_file_extensions="+ux_allowed_file_extensions+
-					"&ux_maximum_file_allowed="+ux_maximum_file_allowed+"&ux_uploaded_file_email_db="+ux_uploaded_file_email_db+"&param=ux_allow_multiple_file_upload&action=add_contact_form_library", function(data)
-					{
-						jQuery("#file_upload_content").remove();
-						var dat = data;
-						jQuery("#file_upload_content_postback").html(dat);
-					});
-				}
-			});
-		break;
-		case 12:
-			jQuery.ajax({
-				type: "POST",
-				url: ajaxurl + "?dynamicId="+dynamicId+"&field_id=12&param=create_date_control&action=create_date_library",
-				
-				success : function(data) 
-				{
-					jQuery("#left_block").append(data);
-					jQuery.each(edit_control_dynamic_ids,function(index,value)
-					{
-					   jQuery('#left_block').append(jQuery("#div_"+value+"_"+edit_created_control_type[index]));
-					});
-					var result = jQuery.inArray(dynamicId, edit_control_dynamic_ids);
-					if(result == -1)
-					{
-						new_control_dynamic_ids.push(dynamicId);
-						created_control_type.push(12);
-						jQuery.each(new_control_dynamic_ids,function(index,value)
-						{
-							jQuery('#left_block').append(jQuery("#div_"+value+"_"+created_control_type[index]));
-						});
-					}
-					array_date[dynamicId] = [];
-					
-					jQuery("#control_label_"+dynamicId).html(arrayControl == undefined ? "<?php _e( "Date :", contact_bank ); ?>" : arrayControl[0].dynamic_settings_value + " :");
-					jQuery("#txt_description_"+dynamicId).html(arrayControl == undefined ? "" : arrayControl[1].dynamic_settings_value);
-					jQuery("#select_day_"+dynamicId).val(arrayControl == undefined ? (new Date).getDate() : arrayControl[8].dynamic_settings_value == "" ? "0" :  arrayControl[8].dynamic_settings_value);
-					jQuery("#select_month_"+dynamicId).val(arrayControl == undefined ? (new Date).getMonth()+1 : arrayControl[9].dynamic_settings_value == "" ? "0" : arrayControl[9].dynamic_settings_value);
-					jQuery("#show_tooltip"+dynamicId).attr("data-original-title",arrayControl == undefined ? "" : arrayControl[3].dynamic_settings_value);
-					jQuery(".hovertip").tooltip();
-					var start_year = arrayControl == undefined ? "0" :  arrayControl[6].dynamic_settings_value;
-					var end_year = arrayControl == undefined ? "0" :  arrayControl[7].dynamic_settings_value;
-					if((start_year == "0" && end_year == "0") || (start_year == "" && end_year == ""))
-					{
-						jQuery("#select_year_"+dynamicId).html('<option value=0>Year</option>');
-						for(flag12=1900; flag12 <= 2100; flag12++)
-						{
-							jQuery("#select_year_"+dynamicId).append('<option value='+flag12+'>'+flag12+'</option>');
-						}
-						jQuery("#select_year_"+dynamicId).val(arrayControl == undefined || (start_year == "" && end_year == "") ? (new Date).getFullYear() :  arrayControl[10].dynamic_settings_value);
-						
-					}
-					else
-					{
-						jQuery("#select_year_"+dynamicId).empty();
-						jQuery("#select_year_"+dynamicId).html('<option value=0>Year</option>');
-						
-						for(flag11=start_year; flag11 <= end_year; flag11++)
-						{
-							jQuery("#select_year_"+dynamicId).append('<option value='+flag11+'>'+flag11+'</option>');
-						}
-						jQuery("#select_year_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[10].dynamic_settings_value);
-						
-					}
-					if((arrayControl == undefined ? "" : arrayControl[2].dynamic_settings_value) == 1)
-					{
-						jQuery("#txt_required_"+dynamicId).css("display","block");
-					}
-					else
-					{
-						jQuery("#txt_required_"+dynamicId).css("display","none");
-					}
-					jQuery( "#add_setting_control_"+dynamicId).live( "click", function() {
-						 add_settings(dynamicId,12,arrayControl)
-					});
-				}
-			});
-		break;
-		case 13:
-			jQuery.ajax({
-				type: "POST",
-				url: ajaxurl + "?dynamicId="+dynamicId+"&field_id=13&param=create_select_time_control&action=create_time_library",
-				
-				success : function(data) 
-				{
-					jQuery("#left_block").append(data);
-					jQuery.each(edit_control_dynamic_ids,function(index,value)
-					{
-					   jQuery('#left_block').append(jQuery("#div_"+value+"_"+edit_created_control_type[index]));
-					});
-					jQuery("#ux_drop_hour_time_"+dynamicId).val("12");
-					jQuery("#select_hr_24_"+dynamicId).hide();
-					var result = jQuery.inArray(dynamicId, edit_control_dynamic_ids);
-					if(result == -1)
-					{
-						new_control_dynamic_ids.push(dynamicId);
-						created_control_type.push(13);
-						jQuery.each(new_control_dynamic_ids,function(index,value)
-						{
-							jQuery('#left_block').append(jQuery("#div_"+value+"_"+created_control_type[index]));
-						});
-					}
-					
-					if((arrayControl == undefined ? "" : arrayControl[2].dynamic_settings_value) == 1)
-					{
-						jQuery("#txt_required_"+dynamicId).css("display","block");
-					}
-					else
-					{
-						jQuery("#txt_required_"+dynamicId).css("display","none");
-					}
-					array_time[dynamicId] = [];
-					
-					jQuery("#control_label_"+dynamicId).html(arrayControl == undefined ? "<?php _e( "Time :", contact_bank ); ?>" : arrayControl[0].dynamic_settings_value + " :");
-					jQuery("#txt_description_"+dynamicId).html(arrayControl == undefined ? "" : arrayControl[1].dynamic_settings_value);
-					var minute_format = parseInt(arrayControl == undefined ? "1" :  arrayControl[10].dynamic_settings_value);
-
-					var dropdown_min = "<option selected='selected' value=''>Minute</option>";
-					for(flag=0; flag < 60;)
-					{
-						if(flag < 10)
-						{
-							dropdown_min += "<option  value=0"+flag+">0"+ flag + "</option>";
-						}
-						else
-						{
-							dropdown_min += "<option value="+flag+">"+ flag + "</option>";
-						}
-						flag = flag + minute_format;
-					}
-					if((arrayControl == undefined ? "12" :  arrayControl[6].dynamic_settings_value) == 12)
-					{
-						jQuery("#select_hr_24_"+dynamicId).hide();
-						jQuery("#select_hr_12_"+dynamicId).show();
-						jQuery("#select_am_"+dynamicId).show();
-						jQuery("#select_hr_12_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[7].dynamic_settings_value);	
-					}
-					else if((arrayControl == undefined ? "24" :  arrayControl[6].dynamic_settings_value) == 24)
-					{
-						jQuery("#select_hr_12_"+dynamicId).hide();
-						jQuery("#select_hr_24_"+dynamicId).show();
-						jQuery("#select_am_"+dynamicId).hide();
-						jQuery("#select_hr_24_"+dynamicId).val(arrayControl == undefined ? "" :   arrayControl[7].dynamic_settings_value);	
-					}
-					
-					jQuery("#select_min_"+dynamicId).val(arrayControl == undefined ? "" :   arrayControl[8].dynamic_settings_value);
-					jQuery("#select_am_"+dynamicId).val(arrayControl == undefined ? "0" : arrayControl[9].dynamic_settings_value == "" ? "0" :  arrayControl[9].dynamic_settings_value);
-					jQuery("#show_tooltip"+dynamicId).attr("data-original-title",arrayControl == undefined ? "" : arrayControl[3].dynamic_settings_value);
-					jQuery(".hovertip").tooltip();
-					jQuery( "#add_setting_control_"+dynamicId).live( "click", function() {
-						 add_settings(dynamicId,13,arrayControl)
-					});
-					
-				}
-			});
-		break;
-		case 14:
-			jQuery.ajax({
-				type: "POST",
-				url: ajaxurl + "?dynamicId="+dynamicId+"&field_id=14&param=create_txt_hide_control&action=create_hidden_library",
-				
-				success : function(data) 
-				{
-					jQuery("#left_block").append(data);
-					jQuery.each(edit_control_dynamic_ids,function(index,value)
-					{
-					   jQuery('#left_block').append(jQuery("#div_"+value+"_"+edit_created_control_type[index]));
-					});
-					var result = jQuery.inArray(dynamicId, edit_control_dynamic_ids);
-					if(result == -1)
-					{
-						new_control_dynamic_ids.push(dynamicId);
-						created_control_type.push(14);
-						jQuery.each(new_control_dynamic_ids,function(index,value)
-						{
-							jQuery('#left_block').append(jQuery("#div_"+value+"_"+created_control_type[index]));
-						});
-					}
-					array_hidden[dynamicId] = [];
-					jQuery("#control_label_"+dynamicId).html(arrayControl == undefined ? "<?php _e( "Untitled(hidden) :", contact_bank ); ?>" : arrayControl[0].dynamic_settings_value + " :");
-					jQuery("#txt_hide_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[1].dynamic_settings_value);
-					jQuery(".hovertip").tooltip();
-					jQuery( "#add_setting_control_"+dynamicId).live( "click", function() {
-						add_settings(dynamicId,14,arrayControl)
-					});
-				}
-			});
-		break;
-		case 15:
-			jQuery.ajax({
-				type: "POST",
-				url: ajaxurl + "?dynamicId="+dynamicId+"&field_id=15&param=create_txt_password_control&action=create_password_library",
-				
-				success : function(data) 
-				{
-					jQuery("#left_block").append(data);
-					jQuery.each(edit_control_dynamic_ids,function(index,value)
-					{
-					   jQuery('#left_block').append(jQuery("#div_"+value+"_"+edit_created_control_type[index]));
-					});
-					var result = jQuery.inArray(dynamicId, edit_control_dynamic_ids);
-					if(result == -1)
-					{
-						new_control_dynamic_ids.push(dynamicId);
-						created_control_type.push(15);
-						jQuery.each(new_control_dynamic_ids,function(index,value)
-						{
-							jQuery('#left_block').append(jQuery("#div_"+value+"_"+created_control_type[index]));
-						});
-					}
-					if((arrayControl == undefined ? "" : arrayControl[2].dynamic_settings_value) == 1)
-					{
-						jQuery("#txt_required_"+dynamicId).css("display","block");
-					}
-					else
-					{
-						jQuery("#txt_required_"+dynamicId).css("display","none");
-					}
-					array_password[dynamicId] = [];
-					jQuery("#control_label_"+dynamicId).html(arrayControl == undefined ? "<?php _e( "Password : ", contact_bank ); ?>" : arrayControl[0].dynamic_settings_value + " :");
-					jQuery("#txt_description_"+dynamicId).html(arrayControl == undefined ? "" : arrayControl[1].dynamic_settings_value);
-					jQuery("#show_tooltip"+dynamicId).attr("data-original-title",arrayControl == undefined ? "" : arrayControl[3].dynamic_settings_value);
-					jQuery(".hovertip").tooltip();
-					jQuery( "#add_setting_control_"+dynamicId).live( "click", function() {
-					add_settings(dynamicId,15,arrayControl)
-					});
-				}
-			});	
-		break;
-	}
-}
-/* Function Name : add_settings
- * Paramters : dynamicId
- * Return : None
- * Description : This Function is used for change or to add new setting to dynamic controls.
- * Created in Version 1.0
- * Last Modified : 1.0
- * Reasons for change : None
- */ 
 function img_show(dynamicId)
 {
  	jQuery("#anchor_del_"+dynamicId + "img").attr("src","<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg-hover.png");
@@ -860,132 +1081,125 @@ function img_hide(dynamicId)
 {
 	jQuery("#anchor_del_"+dynamicId + "img").attr("src","<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png");
 }
-function add_settings(dynamicId,field_type,arrayControl)
+function add_settings(dynamicId,field_type,arrayControl,dynamicCount)
 {
-	if(field_type == 1 && array_text[dynamicId].length != 0)
+	
+	if(field_type == 1 && array_controls[dynamicCount].length != 0)
 	{
-		if( array_text[dynamicId][1] == dynamicId)
+		if(array_controls[dynamicCount][1].text_dynamicId == dynamicId)
 		{
 			
-			var count = array_text[dynamicId].length;
-			jQuery.post(ajaxurl, "dynamicId="+dynamicId+"&field_type="+field_type+"&count="+count+"&array_text_dynamicId="+array_text[dynamicId]+"&count_id=1&param=add_settings_div&action=add_contact_form_library", function(data)
+			jQuery.post(ajaxurl, "dynamicId="+dynamicId+"&dynamicCount="+dynamicCount+"&field_type="+field_type+"&count_id=1&param=add_settings_div&action=add_contact_form_library", function(data)
 			{
 				jQuery("#setting_controls_postback").html(data);
-				if(array_text[dynamicId][7] == true)
-				{
-					jQuery("#tr_def_val_blur_"+dynamicId).css("display","block");
-				}
 				show_Popup();
 			});
 		}
 		
 	}
-	else if(field_type == 2 && array_textarea[dynamicId].length != 0)
+	else if(field_type == 2 && array_controls[dynamicCount].length != 0)
 	{
-		if( array_textarea[dynamicId][1] == dynamicId)
+		if( array_controls[dynamicCount][1].textarea_dynamicId == dynamicId)
 		{
-			var count = array_textarea[dynamicId].length;
-			jQuery.post(ajaxurl, "dynamicId="+dynamicId+"&field_type="+field_type+"&count="+count+"&array_textarea_dynamicId="+array_textarea[dynamicId]+"&count_id=1&param=add_settings_div&action=add_contact_form_library", function(data)
+		
+			jQuery.post(ajaxurl, "dynamicId="+dynamicId+"&dynamicCount="+dynamicCount+"&field_type="+field_type+"&count_id=1&param=add_settings_div&action=add_contact_form_library", function(data)
 			{
 				jQuery("#setting_controls_postback").html(data);
 				
-				if(array_textarea[dynamicId][7] == true)
-				{
-					jQuery("#tr_def_val_blur_"+dynamicId).css("display","block");
-				}
+				
 				show_Popup();
 			});
 		}
 	}
-	else if(field_type == 3 && array_email[dynamicId].length != 0)
+	else if(field_type == 3 && array_controls[dynamicCount].length != 0)
 	{
-		if( array_email[dynamicId][1] == dynamicId)
+		
+		if( array_controls[dynamicCount][1].email_dynamicId == dynamicId)
 		{
 			
-			var count = array_email[dynamicId].length;
-			jQuery.post(ajaxurl, "dynamicId="+dynamicId+"&field_type="+field_type+"&count="+count+"&array_email_dynamicId="+array_email[dynamicId]+"&count_id=1&param=add_settings_div&action=add_contact_form_library", function(data)
+			
+			jQuery.post(ajaxurl, "dynamicId="+dynamicId+"&dynamicCount="+dynamicCount+"&field_type="+field_type+"&count_id=1&param=add_settings_div&action=add_contact_form_library", function(data)
 			{
 				jQuery("#setting_controls_postback").html(data);
 				show_Popup();
 			});
 		}
 	}
-	else if(field_type == 4 && array_dropdown[dynamicId].length != 0)
+	else if(field_type == 4 && array_controls[dynamicCount].length != 0)
 	{
-		if( array_dropdown[dynamicId][1] == dynamicId)
+		if( array_controls[dynamicCount][1].dropdown_dynamicId == dynamicId)
 		{
-			var count = array_dropdown[dynamicId].length;
-			jQuery.post(ajaxurl, "dynamicId="+dynamicId+"&field_type="+field_type+"&count="+count+"&array_dropdown_dynamicId="+array_dropdown[dynamicId]+"&count_id=1&param=add_settings_div&action=add_contact_form_library", function(data)
+			
+			jQuery.post(ajaxurl, "dynamicId="+dynamicId+"&dynamicCount="+dynamicCount+"&field_type="+field_type+"&count_id=1&param=add_settings_div&action=add_contact_form_library", function(data)
 			{
 				jQuery("#setting_controls_postback").html(data);
 				show_Popup();
 			});
 		}
 	}
-	else if(field_type == 5 && array_checkbox[dynamicId].length != 0)
+	else if(field_type == 5 && array_controls[dynamicCount].length != 0)
 	{
-		if( array_checkbox[dynamicId][1] == dynamicId)
+		if( array_controls[dynamicCount][1].checkbox_dynamicId == dynamicId)
 		{
-			var count = array_checkbox[dynamicId].length;
-			jQuery.post(ajaxurl, "dynamicId="+dynamicId+"&field_type="+field_type+"&count="+count+"&array_checkbox_dynamicId="+array_checkbox[dynamicId]+"&count_id=1&param=add_settings_div&action=add_contact_form_library", function(data)
+		
+			jQuery.post(ajaxurl, "dynamicId="+dynamicId+"&dynamicCount="+dynamicCount+"&field_type="+field_type+"&count_id=1&param=add_settings_div&action=add_contact_form_library", function(data)
 			{
 				jQuery("#setting_controls_postback").html(data);
 				show_Popup();
 			});
 		}
 	}
-	else if(field_type == 6 && array_multiple[dynamicId].length != 0)
+	else if(field_type == 6 && array_controls[dynamicCount].length != 0)
 	{
-		if( array_multiple[dynamicId][1] == dynamicId)
+		if( array_controls[dynamicCount][1].radio_dynamicId == dynamicId)
 		{
-			var count = array_multiple[dynamicId].length;
-			jQuery.post(ajaxurl, "dynamicId="+dynamicId+"&field_type="+field_type+"&count="+count+"&array_multiple_dynamicId="+array_multiple[dynamicId]+"&count_id=1&param=add_settings_div&action=add_contact_form_library", function(data)
+			
+			jQuery.post(ajaxurl, "dynamicId="+dynamicId+"&dynamicCount="+dynamicCount+"&field_type="+field_type+"&count_id=1&param=add_settings_div&action=add_contact_form_library", function(data)
 			{
 				jQuery("#setting_controls_postback").html(data);
 				show_Popup();
 			});
 		}
 	}
-	else if(field_type == 9 && array_file_upload[dynamicId].length != 0)
+	else if(field_type == 9 && array_controls[dynamicCount].length != 0)
 	{
-		if( array_file_upload[dynamicId][1] == dynamicId)
+		if( array_controls[dynamicCount][1].file_upload_dynamicId == dynamicId)
 		{
-			var count = array_file_upload[dynamicId].length;
-			jQuery.post(ajaxurl, "dynamicId="+dynamicId+"&field_type="+field_type+"&count="+count+"&array_file_upload_dynamicId="+array_file_upload[dynamicId]+"&count_id=1&param=add_settings_div&action=add_contact_form_library", function(data)
+		
+			jQuery.post(ajaxurl, "dynamicId="+dynamicId+"&dynamicCount="+dynamicCount+"&field_type="+field_type+"&count_id=1&param=add_settings_div&action=add_contact_form_library", function(data)
 			{
 				jQuery("#setting_controls_postback").html(data);
 				show_Popup();
 			});
 		}
 	}
-	else if(field_type == 12 && array_date[dynamicId].length != 0)
+	else if(field_type == 12 && array_controls[dynamicCount].length != 0)
 	{
-		if( array_date[dynamicId][1] == dynamicId)
+		if( array_controls[dynamicCount][1].date_dynamicId == dynamicId)
 		{
-			var count = array_date[dynamicId].length;
-			jQuery.post(ajaxurl, "dynamicId="+dynamicId+"&field_type="+field_type+"&count="+count+"&array_date_dynamicId="+array_date[dynamicId]+"&count_id=1&param=add_settings_div&action=add_contact_form_library", function(data)
+			
+			jQuery.post(ajaxurl, "dynamicId="+dynamicId+"&dynamicCount="+dynamicCount+"&field_type="+field_type+"&count_id=1&param=add_settings_div&action=add_contact_form_library", function(data)
 			{
 				jQuery("#setting_controls_postback").html(data);
 				dropdown_heading(dynamicId);
-				jQuery("#ux_default_day_type_"+dynamicId).val(array_date[dynamicId][10]);
-				jQuery("#ux_default_month_type_"+dynamicId).val(array_date[dynamicId][11]);
-				jQuery("#ux_default_year_type_"+dynamicId).val(array_date[dynamicId][12]);
-				jQuery("#select_day_"+dynamicId).val(array_date[dynamicId][10]);
-				jQuery("#select_month_"+dynamicId).val(array_date[dynamicId][11]);
-				if(array_date[dynamicId][8] == "" && array_date[dynamicId][9] == "")
+				jQuery("#ux_default_day_type_"+dynamicId).val(array_controls[dynamicCount][10].cb_default_value_day);
+				jQuery("#ux_default_month_type_"+dynamicId).val(array_controls[dynamicCount][11].cb_default_value_month);
+				jQuery("#ux_default_year_type_"+dynamicId).val(array_controls[dynamicCount][12].cb_default_value_year);
+				jQuery("#select_day_"+dynamicId).val(array_controls[dynamicCount][10].cb_default_value_day);
+				jQuery("#select_month_"+dynamicId).val(array_controls[dynamicCount][11].cb_default_value_month);
+				if(array_controls[dynamicCount][8].cb_start_year == "" && array_controls[dynamicCount][9].cb_end_year == "")
 				{
-					
 					jQuery("#select_year_"+dynamicId).html('<option value=0>Year</option>');
 				}
 				else
 				{
 					jQuery("#select_year_"+dynamicId).empty();
 					jQuery("#select_year_"+dynamicId).html('<option value=0>Year</option>');
-					for(flag=array_date[dynamicId][8]; flag <= array_date[dynamicId][9]; flag++)
+					for(flag=array_controls[dynamicCount][8].cb_start_year; flag <= array_controls[dynamicCount][9].cb_end_year; flag++)
 					{
 						
 						jQuery("#select_year_"+dynamicId).append('<option value='+flag+'>'+flag+'</option');
-						jQuery("#select_year_"+dynamicId).val(array_date[dynamicId][12]);
+						jQuery("#select_year_"+dynamicId).val(array_controls[dynamicCount][12].cb_default_value_year);
 					}
 				
 				}
@@ -993,68 +1207,68 @@ function add_settings(dynamicId,field_type,arrayControl)
 			});
 		}
 	}
-	else if(field_type == 13 && array_time[dynamicId].length!=0)
+	else if(field_type == 13 && array_controls[dynamicCount].length != 0)
 	{
-		if( array_time[dynamicId][1] == dynamicId)
+		if( array_controls[dynamicCount][1].time_dynamicId == dynamicId)
 		{
-			var count = array_time[dynamicId].length;
-			jQuery.post(ajaxurl, "dynamicId="+dynamicId+"&field_type="+field_type+"&count="+count+"&array_time_dynamicId="+array_time[dynamicId]+"&count_id=1&param=add_settings_div&action=add_contact_form_library", function(data)
+			
+			jQuery.post(ajaxurl, "dynamicId="+dynamicId+"&dynamicCount="+dynamicCount+"&field_type="+field_type+"&count_id=1&param=add_settings_div&action=add_contact_form_library", function(data)
 			{
 				jQuery("#setting_controls_postback").html(data);
-				ux_minute_format(dynamicId,array_time[dynamicId][12]);
-				if(array_time[dynamicId][8] == 12)
+				ux_minute_format(dynamicId,array_controls[dynamicCount][12]);
+				if(array_controls[dynamicCount][8].cb_hour_format == 12)
 				{
 					jQuery("#ux_default_hours_24_"+dynamicId).hide();
 					jQuery("#ux_default_hours_12_"+dynamicId).show();
 					jQuery("#ux_default_am_"+dynamicId).show();
-					jQuery("#ux_default_hours_12_"+dynamicId).val(array_time[dynamicId][9]);
-					jQuery("#ux_default_minute_"+dynamicId).val(array_time[dynamicId][10]);
-					jQuery("#ux_default_am_"+dynamicId).val(array_time[dynamicId][11]);
+					jQuery("#ux_default_hours_12_"+dynamicId).val(array_controls[dynamicCount][9].cb_hours);
+					jQuery("#ux_default_minute_"+dynamicId).val(array_controls[dynamicCount][10].cb_minutes);
+					jQuery("#ux_default_am_"+dynamicId).val(array_controls[dynamicCount][11].cb_am_pm);
 					jQuery("#select_hr_24_"+dynamicId).hide();
 					jQuery("#select_hr_12_"+dynamicId).show();
 					jQuery("#select_am_"+dynamicId).show();
-					jQuery("#select_hr_12_"+dynamicId).val(array_time[dynamicId][9]);
-					jQuery("#select_min_"+dynamicId).val(array_time[dynamicId][10]);
-					jQuery("#select_am_"+dynamicId).val(array_time[dynamicId][11]);
+					jQuery("#select_hr_12_"+dynamicId).val(array_controls[dynamicCount][9].cb_hours);
+					jQuery("#select_min_"+dynamicId).val(array_controls[dynamicCount][10].cb_minutes);
+					jQuery("#select_am_"+dynamicId).val(array_controls[dynamicCount][11].cb_am_pm);
 				}
-				else if(array_time[dynamicId][8] == 24)
+				else if(array_controls[dynamicCount][8].cb_hour_format == 24)
 				{
 					jQuery("#ux_default_hours_12_"+dynamicId).hide();
 					jQuery("#ux_default_hours_24_"+dynamicId).show();
 					jQuery("#ux_default_am_"+dynamicId).hide();
-					jQuery("#ux_default_hours_24_"+dynamicId).val(array_time[dynamicId][9]);	
-					jQuery("#ux_drop_hour_time_"+dynamicId).val(array_time[dynamicId][8]);
-					jQuery("#ux_default_minute_"+dynamicId).val(array_time[dynamicId][10]);
-					jQuery("#ux_default_am_"+dynamicId).val(array_time[dynamicId][11]);
+					jQuery("#ux_default_hours_24_"+dynamicId).val(array_controls[dynamicCount][9].cb_hours);	
+					jQuery("#ux_drop_hour_time_"+dynamicId).val(array_controls[dynamicCount][8].cb_hour_format);
+					jQuery("#ux_default_minute_"+dynamicId).val(array_controls[dynamicCount][10].cb_minutes);
+					jQuery("#ux_default_am_"+dynamicId).val(array_controls[dynamicCount][11].cb_am_pm);
 					jQuery("#select_hr_12_"+dynamicId).hide();
 					jQuery("#select_hr_24_"+dynamicId).show();
 					jQuery("#select_am_"+dynamicId).hide();
-					jQuery("#select_hr_12_"+dynamicId).val(array_time[dynamicId][9]);
-					jQuery("#select_min_"+dynamicId).val(array_time[dynamicId][10]);
-					jQuery("#select_am_"+dynamicId).val(array_time[dynamicId][11]);	
+					jQuery("#select_hr_12_"+dynamicId).val(array_controls[dynamicCount][9].cb_hours);
+					jQuery("#select_min_"+dynamicId).val(array_controls[dynamicCount][10].cb_minutes);
+					jQuery("#select_am_"+dynamicId).val(array_controls[dynamicCount][11].cb_am_pm);	
 				}
 				show_Popup();
 			});
 		}
 	}
-	else if(field_type == 14 && array_hidden[dynamicId].length!=0)
+	else if(field_type == 14 && array_controls[dynamicCount].length != 0)
 	{
-		if( array_hidden[dynamicId][1] == dynamicId)
+		if( array_controls[dynamicCount][1].hidden_dynamicId == dynamicId)
 		{
-			var count = array_hidden[dynamicId].length;
-			jQuery.post(ajaxurl, "dynamicId="+dynamicId+"&field_type="+field_type+"&count="+count+"&array_hidden_dynamicId="+array_hidden[dynamicId]+"&count_id=1&param=add_settings_div&action=add_contact_form_library", function(data)
+			
+			jQuery.post(ajaxurl, "dynamicId="+dynamicId+"&dynamicCount="+dynamicCount+"&field_type="+field_type+"&count_id=1&param=add_settings_div&action=add_contact_form_library", function(data)
 			{
 				jQuery("#setting_controls_postback").html(data);
 				show_Popup();
 			});
 		}
 	}
-	else if(field_type == 15 && array_password[dynamicId].length != 0)
+	else if(field_type == 15 && array_controls[dynamicCount].length != 0)
 	{
-		if(array_password[dynamicId][1] == dynamicId)
+		if( array_controls[dynamicCount][1].password_dynamicId == dynamicId)
 		{
-			var count = array_password[dynamicId].length;
-			jQuery.post(ajaxurl, "dynamicId="+dynamicId+"&field_type="+field_type+"&count="+count+"&array_password_dynamicId="+array_password[dynamicId]+"&count_id=1&param=add_settings_div&action=add_contact_form_library", function(data)
+			
+			jQuery.post(ajaxurl, "dynamicId="+dynamicId+"&dynamicCount="+dynamicCount+"&field_type="+field_type+"&count_id=1&param=add_settings_div&action=add_contact_form_library", function(data)
 			{
 				jQuery("#setting_controls_postback").html(data);
 				show_Popup();
@@ -1064,7 +1278,7 @@ function add_settings(dynamicId,field_type,arrayControl)
 	
 	else
 	{
-		jQuery.post(ajaxurl, "dynamicId="+dynamicId+"&field_type="+field_type+"&count_id=0&param=add_settings_div&action=add_contact_form_library", function(data)
+		jQuery.post(ajaxurl, "dynamicId="+dynamicId+"&dynamicCount="+dynamicCount+"&field_type="+field_type+"&count_id=0&param=add_settings_div&action=add_contact_form_library", function(data)
 		{
 			jQuery("#setting_controls_postback").html(data);
 			show_Popup();
@@ -1087,7 +1301,7 @@ function add_settings(dynamicId,field_type,arrayControl)
 					jQuery("#ux_tooltip_control_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[3].dynamic_settings_value);
 					jQuery("#ux_default_value_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[4].dynamic_settings_value);
 					jQuery("#ux_admin_label_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[5].dynamic_settings_value);
-					if((arrayControl == undefined ? "" : arrayControl[6].dynamic_settings_value) == "true")
+					if((arrayControl == undefined ? "" : arrayControl[6].dynamic_settings_value) == "1")
 					{
 						jQuery("#ux_show_email_"+dynamicId).attr("checked","checked");
 					}
@@ -1112,23 +1326,23 @@ function add_settings(dynamicId,field_type,arrayControl)
 						
 						jQuery("#ux_description_textbox_"+dynamicId).attr("style", "position:inherit");
 					}
-					if((arrayControl == undefined ? "" : arrayControl[10].dynamic_settings_value) == "true")
+					if((arrayControl == undefined ? "" : arrayControl[10].dynamic_settings_value) == "1")
 					{
 						jQuery("#ux_checkbox_alpha_filter_"+dynamicId).attr("checked","checked");
 					}
-					if((arrayControl == undefined ? "" : arrayControl[11].dynamic_settings_value) == "true")
+					if((arrayControl == undefined ? "" : arrayControl[11].dynamic_settings_value) == "1")
 					{
 						jQuery("#ux_checkbox_alpha_num_filter_"+dynamicId).attr("checked","checked");
 					}
-					if((arrayControl == undefined ? "" : arrayControl[12].dynamic_settings_value) == "true")
+					if((arrayControl == undefined ? "" : arrayControl[12].dynamic_settings_value) == "1")
 					{
 						jQuery("#ux_checkbox_digit_filter_"+dynamicId).attr("checked","checked");
 					}
-					if((arrayControl == undefined ? "" : arrayControl[13].dynamic_settings_value) == "true")
+					if((arrayControl == undefined ? "" : arrayControl[13].dynamic_settings_value) == "1")
 					{
 						jQuery("#ux_checkbox_strip_tag_filter_"+dynamicId).attr("checked","checked");
 					}
-					if((arrayControl == undefined ? "" : arrayControl[14].dynamic_settings_value) == "true")
+					if((arrayControl == undefined ? "" : arrayControl[14].dynamic_settings_value) == "1")
 					{
 						jQuery("#ux_checkbox_trim_filter_"+dynamicId).attr("checked","checked");
 					}
@@ -1146,7 +1360,7 @@ function add_settings(dynamicId,field_type,arrayControl)
 					jQuery("#ux_default_value_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[4].dynamic_settings_value);
 					jQuery("#ux_admin_label_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[5].dynamic_settings_value);
 					jQuery("#ux_show_email_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[6].dynamic_settings_value);
-					if(jQuery("#ux_show_email_"+dynamicId).val() == "true")
+					if(jQuery("#ux_show_email_"+dynamicId).val() == "1")
 					{
 						jQuery("#ux_show_email_"+dynamicId).attr("checked","checked");
 					}
@@ -1213,7 +1427,7 @@ function add_settings(dynamicId,field_type,arrayControl)
 					jQuery("#ux_tooltip_control_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[3].dynamic_settings_value);
 					jQuery("#ux_admin_label_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[4].dynamic_settings_value);
 					jQuery("#ux_show_email_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[5].dynamic_settings_value);
-					if(jQuery("#ux_show_email_"+dynamicId).val() == "true")
+					if(jQuery("#ux_show_email_"+dynamicId).val() == "1")
 					{
 						jQuery("#ux_show_email_"+dynamicId).attr("checked","checked");
 					}
@@ -1239,31 +1453,34 @@ function add_settings(dynamicId,field_type,arrayControl)
 						jQuery("#advance_text_description_"+dynamicId).attr("style", "position:inherit");
 					}
 					jQuery("#ux_email_alpha_filter_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[9].dynamic_settings_value);
-					if((arrayControl == undefined ? "" : arrayControl[9].dynamic_settings_value) == "true")
+					if((arrayControl == undefined ? "" : arrayControl[9].dynamic_settings_value) == "1")
 					{
 						jQuery("#ux_email_alpha_filter_"+dynamicId).attr("checked","checked");
 					}
 					jQuery("#ux_email_alpha_num_filter_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[10].dynamic_settings_value);
-					if((arrayControl == undefined ? "" : arrayControl[10].dynamic_settings_value) == "true")
+					if((arrayControl == undefined ? "" : arrayControl[10].dynamic_settings_value) == "1")
 					{
 						jQuery("#ux_email_alpha_num_filter_"+dynamicId).attr("checked","checked");
 					}
 					jQuery("#ux_email_digit_filter_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[11].dynamic_settings_value);
-					if((arrayControl == undefined ? "" : arrayControl[11].dynamic_settings_value)  == "true")
+					if((arrayControl == undefined ? "" : arrayControl[11].dynamic_settings_value)  == "1")
 					{
 						jQuery("#ux_email_digit_filter_"+dynamicId).attr("checked","checked");
 					}
 					jQuery("#ux_email_strip_tag_filter_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[12].dynamic_settings_value);
-					if((arrayControl == undefined ? "" : arrayControl[12].dynamic_settings_value)  == "true")
+					if((arrayControl == undefined ? "" : arrayControl[12].dynamic_settings_value)  == "1")
 					{
 						jQuery("#ux_email_strip_tag_filter_"+dynamicId).attr("checked","checked");
 					}
-					if((arrayControl == undefined ? "" : arrayControl[13].dynamic_settings_value)  == "true")
+					if((arrayControl == undefined ? "" : arrayControl[13].dynamic_settings_value)  == "1")
 					{
 						jQuery("#ux_email_trim_filter_"+dynamicId).attr("checked","checked");
 					}
 				break;
 				case 4:
+					array_option_id_dropdown[dynamicCount] = [];
+					array_options_dropdown[dynamicCount] = [];
+					
 					jQuery("#ux_label_text_"+dynamicId).val(arrayControl == undefined ? "<?php _e( "Untitled", contact_bank ); ?>" :  arrayControl[0].dynamic_settings_value);
 					jQuery("#ux_required_control_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[1].dynamic_settings_value)
 					if(jQuery("#ux_required_control_"+dynamicId).val() != "" && jQuery("#ux_required_control_"+dynamicId).val() == 1)
@@ -1274,26 +1491,26 @@ function add_settings(dynamicId,field_type,arrayControl)
 					if((arrayControl == undefined ? "" :  arrayControl[3].dynamic_settings_value) != "")
 					{
 						var options_dynamicId_str = arrayControl[3].dynamic_settings_value;
-						var options_dynamicId = options_dynamicId_str.split(";"); 
+						var options_dynamicId = options_dynamicId_str.split(";");
+						 
 						var ddl_options_str = arrayControl[4].dynamic_settings_value;
 						var ddl_option_value = ddl_options_str.split(";");
+						
 						for(var flag = 0;flag <options_dynamicId.length;flag++)
 						{
 							var optionsId = options_dynamicId[flag];
 							var ddl_options = ddl_option_value[flag];
-							var place_of_option_in_array_id = jQuery.inArray(optionsId,array_option_id_dropdown[dynamicId]);
-							if(place_of_option_in_array_id == -1)
-							{
-								array_option_id_dropdown[dynamicId].push(optionsId);
-								array_options_dropdown[dynamicId].push(ddl_options);
-							}
-							jQuery("#dropdown_ddl_option_"+dynamicId).append('<div class="layout-control-group" id="input_option_tr_'+optionsId+'"><div class="layout-controls"><input type="text" class="layout-span8" id="input_option_'+optionsId+'" name="input_option_'+optionsId+'" value="'+ddl_options+'" /><input type="hidden" value="'+ddl_options+'" id="ddl_existing_options_'+optionsId+'" name="ddl_existing_options_'+optionsId+'" /><a style="padding-left:2px;" onclick="delete_ddl_option('+optionsId+','+dynamicId+')" ><img style="vertical-align: top;margin-top: 2px;" src="<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" /></a><input style="margin-left:5px;" class="btn btn-info layout-span3"  type="button" onclick="update_dropdown_option('+optionsId+','+dynamicId+')" value="Update"></div></div>');
+					
+							array_option_id_dropdown[dynamicCount].push(parseInt(optionsId));
+							array_options_dropdown[dynamicCount].push(ddl_options);
 							
+						
+							jQuery("#dropdown_ddl_option_"+dynamicId).append('<div class="layout-control-group" id="input_option_tr_'+optionsId+'"><div class="layout-controls"><input type="text" class="layout-span8" id="input_option_'+optionsId+'" name="input_option_'+optionsId+'" value="'+ddl_options+'" /><a style="padding-left:2px;" onclick="delete_ddl_option('+optionsId+','+dynamicId+')" ><img style="vertical-align: top;margin-top: 2px;" src="<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" /></a></div></div>');
 						}
 					}
 					jQuery("#ux_admin_label_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[5].dynamic_settings_value);
 					jQuery("#ux_email_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[6].dynamic_settings_value);
-					if(jQuery("#ux_email_"+dynamicId).val() == "true")
+					if(jQuery("#ux_email_"+dynamicId).val() == "1")
 					{
 						jQuery("#ux_email_"+dynamicId).attr("checked","checked");
 					}
@@ -1337,19 +1554,18 @@ function add_settings(dynamicId,field_type,arrayControl)
 						{
 							var options_dynamicId = optionId[flag];
 							var add_chk_option = option_value[flag];
-							var place_of_option_in_array_id = jQuery.inArray(options_dynamicId,array_option_id_chk[dynamicId]);
-							if(place_of_option_in_array_id == -1)
-							{
-								array_option_id_chk[dynamicId].push(options_dynamicId);
-								array_options_chk[dynamicId].push(add_chk_option);
-							}
-							jQuery("#append_chk_option_"+dynamicId).append('<div class="layout-control-group" id="selected_item_'+options_dynamicId+'"><div class="layout-controls"><input type= "text" class="layout-span8" value="'+add_chk_option+'" id="input_type_'+options_dynamicId+'"><input type="hidden" value="'+add_chk_option+'" id="chk_existing_options_'+options_dynamicId+'" name="ddl_existing_options_'+options_dynamicId+'" /><a style="padding-left:2px;" onclick="delete_chk('+options_dynamicId+','+dynamicId+')"><img style="vertical-align: top;margin-top: 2px;" src="<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" /></a><input  class="btn btn-info layout-span3" type="button" style="margin-left:5px;" onclick="update_chk_option('+options_dynamicId+','+dynamicId+')" value="Update"></div></div>');
+							
+						
+							array_option_id_chk[dynamicCount].push(parseInt(options_dynamicId));
+							array_options_chk[dynamicCount].push(add_chk_option);
+							
+							jQuery("#append_chk_option_"+dynamicId).append('<div class="layout-control-group" id="selected_item_'+options_dynamicId+'"><div class="layout-controls"><input type= "text" class="layout-span8" value="'+add_chk_option+'" id="input_type_'+options_dynamicId+'"><a style="padding-left:2px;" onclick="delete_chk('+options_dynamicId+','+dynamicId+')"><img style="vertical-align: top;margin-top: 2px;" src="<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" /></a></div></div>');
 							
 						}
 					}
 					jQuery("#ux_admin_label_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[5].dynamic_settings_value);
 					jQuery("#ux_show_email_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[6].dynamic_settings_value);
-					if(jQuery("#ux_show_email_"+dynamicId).val() == "true")
+					if(jQuery("#ux_show_email_"+dynamicId).val() == "1")
 					{
 						jQuery("#ux_show_email_"+dynamicId).attr("checked","checked");
 					}
@@ -1407,17 +1623,15 @@ function add_settings(dynamicId,field_type,arrayControl)
 						{
 							var options_dynamicId = optionId[flag];
 							var add_radio_option = option_value[flag];
-							var place_of_option_in_array_id = jQuery.inArray(options_dynamicId,array_option_id_radio[dynamicId]);
-							if(place_of_option_in_array_id == -1)
-							{
-								array_option_id_radio[dynamicId].push(options_dynamicId);
-								array_options_radio[dynamicId].push(add_radio_option);
-							}
-							jQuery("#append_multiple_option_"+dynamicId).append('<div class="layout-control-group" id="input_tr_'+options_dynamicId+'"><div class="layout-controls"><input type="text" class="layout-span8" id="input_option_'+options_dynamicId+'" name="input_option_'+options_dynamicId+'" value="'+add_radio_option+'" /><input type="hidden" value="'+add_radio_option+'" id="radio_existing_options_'+options_dynamicId+'" name="radio_existing_options_'+options_dynamicId+'"/><a style="padding-left:2px;" onclick="delete_radio('+options_dynamicId+','+dynamicId+')"><img style="vertical-align: top;margin-top: 2px;" src="<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" /></a><input class="btn btn-info layout-span3" style="margin-left:5px;" type="button" onclick="update_radio_option('+options_dynamicId+','+dynamicId+')" value="Update"></div></div>');
+							
+							array_option_id_radio[dynamicCount].push(parseInt(options_dynamicId));
+							array_options_radio[dynamicCount].push(add_radio_option);
+						
+							jQuery("#append_multiple_option_"+dynamicId).append('<div class="layout-control-group" id="input_tr_'+options_dynamicId+'"><div class="layout-controls"><input type="text" class="layout-span8" id="input_option_'+options_dynamicId+'" name="input_option_'+options_dynamicId+'" value="'+add_radio_option+'" /><a style="padding-left:2px;" onclick="delete_radio('+options_dynamicId+','+dynamicId+')"><img style="vertical-align: top;margin-top: 2px;" src="<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" /></a></div></div>');
 						}
 					}
 					jQuery("#ux_admin_label_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[5].dynamic_settings_value);
-					if((arrayControl == undefined ? "" :  arrayControl[6].dynamic_settings_value) == "true")
+					if((arrayControl == undefined ? "" :  arrayControl[6].dynamic_settings_value) == "1")
 					{
 						jQuery("#ux_show_email_"+dynamicId).attr("checked","checked");
 					}
@@ -1469,12 +1683,12 @@ function add_settings(dynamicId,field_type,arrayControl)
 					jQuery("#ux_tooltip_control_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[3].dynamic_settings_value);
 					jQuery("#ux_admin_label_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[4].dynamic_settings_value);
 					jQuery("#ux_show_email_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[5].dynamic_settings_value);
-					if(jQuery("#ux_show_email_"+dynamicId).val() == "true")
+					if(jQuery("#ux_show_email_"+dynamicId).val() == "1")
 					{
 						jQuery("#ux_show_email_"+dynamicId).attr("checked","checked");
 					}
 					jQuery("#ux_allow_multiple_file_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[6].dynamic_settings_value);
-					if(jQuery("#ux_allow_multiple_file_"+dynamicId).val() == "true")
+					if(jQuery("#ux_allow_multiple_file_"+dynamicId).val() == "1")
 					{
 						jQuery("#ux_allow_multiple_file_"+dynamicId).attr("checked","checked");
 					}
@@ -1485,7 +1699,7 @@ function add_settings(dynamicId,field_type,arrayControl)
 					jQuery("#ux_allowed_file_extensions_"+dynamicId).val(arrayControl == undefined ? "jpg;jpeg;png;gif;" :  arrayControl[7].dynamic_settings_value);
 					jQuery("#ux_maximum_file_allowed_"+dynamicId).val(arrayControl == undefined ? "<?php _e( "1024", contact_bank ); ?>" :  arrayControl[8].dynamic_settings_value);
 					jQuery("#ux_uploaded_file_email_db_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[9].dynamic_settings_value);
-					if(jQuery("#ux_uploaded_file_email_db_"+dynamicId).val() == "true")
+					if(jQuery("#ux_uploaded_file_email_db_"+dynamicId).val() == "1")
 					{
 						jQuery("#ux_uploaded_file_email_db_"+dynamicId).attr("checked","checked");
 					}
@@ -1516,7 +1730,7 @@ function add_settings(dynamicId,field_type,arrayControl)
 					jQuery("#ux_tooltip_control_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[3].dynamic_settings_value);
 					jQuery("#ux_admin_label_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[4].dynamic_settings_value);
 					jQuery("#ux_show_email_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[5].dynamic_settings_value);
-					if(jQuery("#ux_show_email_"+dynamicId).val() == "true")
+					if(jQuery("#ux_show_email_"+dynamicId).val() == "1")
 					{
 						jQuery("#ux_show_email_"+dynamicId).attr("checked","checked");
 					}
@@ -1609,11 +1823,10 @@ function add_settings(dynamicId,field_type,arrayControl)
 					jQuery("#ux_tooltip_control_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[3].dynamic_settings_value);
 					jQuery("#ux_admin_label_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[4].dynamic_settings_value);
 					jQuery("#ux_email_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[5].dynamic_settings_value);
-					if(jQuery("#ux_email_"+dynamicId).val() == "true")
+					if(arrayControl == undefined ? "" :  arrayControl[5].dynamic_settings_value == "1")
 					{
 						jQuery("#ux_email_"+dynamicId).attr("checked","checked");
 					}
-				
 					jQuery("#ux_drop_hour_time_"+dynamicId).val(arrayControl == undefined ? "12" :  arrayControl[6].dynamic_settings_value);
 					
 					var minute_format = parseInt(arrayControl == undefined ? "1" :arrayControl[10].dynamic_settings_value);
@@ -1700,7 +1913,6 @@ function add_settings(dynamicId,field_type,arrayControl)
 					{
 						jQuery("#ux_tr_set_time_am_"+dynamicId).css("display","block");
 						jQuery("#ux_tr_set_time_am_"+dynamicId).attr("style", 'position:inherit');
-						
 					}
 				break;
 				case 14:
@@ -1708,7 +1920,7 @@ function add_settings(dynamicId,field_type,arrayControl)
 					jQuery("#ux_default_value_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[1].dynamic_settings_value);
 					jQuery("#ux_admin_label_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[2].dynamic_settings_value);
 					jQuery("#ux_show_email_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[3].dynamic_settings_value);
-					if(jQuery("#ux_show_email_"+dynamicId).val() == "true")
+					if(jQuery("#ux_show_email_"+dynamicId).val() == "1")
 					{
 						jQuery("#ux_show_email_"+dynamicId).attr("checked","checked");
 					}
@@ -1724,7 +1936,7 @@ function add_settings(dynamicId,field_type,arrayControl)
 					jQuery("#ux_tooltip_control_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[3].dynamic_settings_value);
 					jQuery("#ux_admin_label_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[4].dynamic_settings_value);
 					jQuery("#ux_show_email_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[5].dynamic_settings_value);
-					if(jQuery("#ux_show_email_"+dynamicId).val() == "true")
+					if(jQuery("#ux_show_email_"+dynamicId).val() == "1")
 					{
 						jQuery("#ux_show_email_"+dynamicId).attr("checked","checked");
 					}
@@ -1750,26 +1962,26 @@ function add_settings(dynamicId,field_type,arrayControl)
 						jQuery("#password_description_"+dynamicId).attr("style", "position:inherit");
 					}
 					jQuery("#ux_checkbox_alpha_filter_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[9].dynamic_settings_value);
-					if(jQuery("#ux_checkbox_alpha_filter_"+dynamicId).val() == "true")
+					if(jQuery("#ux_checkbox_alpha_filter_"+dynamicId).val() == "1")
 					{
 						jQuery("#ux_checkbox_alpha_filter_"+dynamicId).attr("checked","checked");
 					}
 					jQuery("#ux_checkbox_alpha_num_filter_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[10].dynamic_settings_value);
-					if(jQuery("#ux_checkbox_alpha_num_filter_"+dynamicId).val() == "true")
+					if(jQuery("#ux_checkbox_alpha_num_filter_"+dynamicId).val() == "1")
 					{
 						jQuery("#ux_checkbox_alpha_num_filter_"+dynamicId).attr("checked","checked");
 					}
 					jQuery("#ux_checkbox_digit_filter_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[11].dynamic_settings_value);
-					if(jQuery("#ux_checkbox_digit_filter_"+dynamicId).val() == "true")
+					if(jQuery("#ux_checkbox_digit_filter_"+dynamicId).val() == "1")
 					{
 						jQuery("#ux_checkbox_digit_filter_"+dynamicId).attr("checked","checked");
 					}
 					jQuery("#ux_checkbox_strip_tag_filter_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[12].dynamic_settings_value);
-					if(jQuery("#ux_checkbox_strip_tag_filter_"+dynamicId).val() == "true")
+					if(jQuery("#ux_checkbox_strip_tag_filter_"+dynamicId).val() == "1")
 					{
 						jQuery("#ux_checkbox_strip_tag_filter_"+dynamicId).attr("checked","checked");
 					}
-					if((arrayControl == undefined ? "" : arrayControl[13].dynamic_settings_value) == "true")
+					if((arrayControl == undefined ? "" : arrayControl[13].dynamic_settings_value) == "1")
 					{
 						jQuery("#ux_checkbox_trim_filter_"+dynamicId).attr("checked","checked");
 					}
@@ -1794,16 +2006,21 @@ function div_show(dynamicId,field_id)
 
 function delete_textbox(div_id,dynamicId,control_no)
 {
-	if(control_no == 9)
-	{
-		new_file_upload = "";
-	}
+	
 	if(edit_created_control_type.length != 0)
 	{
 		var index = jQuery.inArray(dynamicId,edit_control_dynamic_ids);
 		if(index > -1)
 		{
-			jQuery("#" + div_id.id).remove();
+			if(control_no == 9)
+			{
+				new_file_upload = "";
+				jQuery(".file_upload").attr("style","display:none");
+			}
+			else
+			{
+				jQuery("#" + div_id.id).remove();
+			}
 			edit_control_dynamic_ids.splice(index, 1);
 			edit_created_control_type.splice(index, 1);
 		}
@@ -1811,13 +2028,20 @@ function delete_textbox(div_id,dynamicId,control_no)
 	var index = jQuery.inArray(dynamicId,new_control_dynamic_ids);
 	if(index > -1)
 	{
-		
-		jQuery("#" + div_id.id).remove();
+		if(control_no == 9)
+		{
+			new_file_upload = "";
+			jQuery(".file_upload").attr("style","display:none");
+		}
+		else
+		{
+			jQuery("#" + div_id.id).remove();
+		}
 		new_control_dynamic_ids.splice(index, 1);
 		created_control_type.splice(index, 1);
 	}
 	delete_control_dynamicIds.push(dynamicId);
-	jQuery("#div_"+dynamicId).remove();
+	
 }
 function field_reqired(dynamicId)
 {
@@ -1845,13 +2069,13 @@ function show_Popup()
 	var proposedLeft =  (jQuery(window).width() - lightboxWidth - 40) / 2 ;
 	jQuery("#setting_controls_postback").css('top',proposedTop + 'px');
 	jQuery("#setting_controls_postback").css('left',proposedLeft + 'px');
-	jQuery("#setting_controls_postback").fadeIn(500);
+	jQuery("#setting_controls_postback").fadeIn(200);
 
 }
 function CloseLightbox()
 {
 	jQuery("#setting_controls_postback").css('display','none');
-	jQuery("#fade").fadeOut(500);
+	jQuery("#fade").fadeOut(200);
 }
 jQuery("#ux_dynamic_form_submit").validate
 ({
@@ -1861,320 +2085,333 @@ jQuery("#ux_dynamic_form_submit").validate
 	},
 	submitHandler: function(form)
 	{
-		
-		jQuery("#submit_button").hide();
 		jQuery("#update_form_success_message").css("display","block");
-		jQuery.ajax({
+		jQuery('body,html').animate({
+		scrollTop: jQuery('body,html').position().top}, 'slow');
+		jQuery.ajax
+		({
 			type: "POST",
 			url: ajaxurl + "?delete_control_dynamicIds="+delete_control_dynamicIds+"&param=delete_controls&action=edit_contact_form_library",
-			
+			async: false,
 			success : function(data) 
 			{
 			}
-			});	
-			var field_no = created_control_type.length;
-			var form_name = jQuery("#ux_form_name_txt").val();
-			var form_id = <?php echo $form_id; ?>;
-			
-			if(field_order.length == 0)
-			{
-				field_order = 0;
-			}
-			
-		jQuery.ajax({
+		});	
+		var field_no = created_control_type.length;
+		var form_name = jQuery("#ux_form_name_txt").val();
+		var form_id = <?php echo $form_id; ?>;
+		if(field_order.length == 0)
+		{
+			field_order = 0;
+		}
+		var imaginaryCount = 0;
+		jQuery.ajax
+		({
 			type: "POST",
 			url: ajaxurl + "?form_name="+form_name+"&form_id="+form_id+"&edit_created_control_type="+edit_created_control_type+"&field_order="+field_order+"&edit_control_dynamic_ids="+edit_control_dynamic_ids+"&new_control_dynamic_ids="+new_control_dynamic_ids+"&created_control_type="+created_control_type+"&field_dynamic_id="+field_dynamic_id+"&form=1&param=submit_controls&action=edit_contact_form_library",
-			
 			success : function(data) 
 			{
 				if(created_control_type.length > 0)
 				{
 					for(flag = 0;flag<field_no; flag++)
 					{
+						var dynamicCount = array_dynamicCount[flag];
 						switch(parseInt(created_control_type[flag]))
 						{
 							case 1:
-								var dynamicId = new_control_dynamic_ids[flag];
-								jQuery.ajax({
-								type: "POST",
-								url: ajaxurl + "?"+ jQuery(form).serialize() + "&form_id="+form_id+"&dynamicId="+dynamicId+"&array_text="+encodeURIComponent(array_text[dynamicId])+"&form=0&control_type=1&param=submit_controls&action=add_contact_form_library",
-								
-								success : function(data) 
+								if(array_controls[dynamicCount].length == 0)
 								{
+									array_controls[dynamicCount].push({"control_type" : 1});
+									array_controls[dynamicCount].push({"text_dynamicId" : new_control_dynamic_ids[flag]});
+									array_controls[dynamicCount].push({"cb_label_value" : "<?php _e("Untitled", contact_bank); ?>"});
+									array_controls[dynamicCount].push({"cb_description" : ""});
+									array_controls[dynamicCount].push({"cb_control_required" : 0}) ;
+									array_controls[dynamicCount].push({"cb_tooltip_txt" : ""});
+									array_controls[dynamicCount].push({"cb_default_txt_val" : ""});
+									array_controls[dynamicCount].push({"cb_admin_label" : "<?php _e("Untitled", contact_bank); ?>"});
+									array_controls[dynamicCount].push({"cb_show_email" : 0}) ;
+									array_controls[dynamicCount].push({"cb_button_set_outer_label" : ""});
+									array_controls[dynamicCount].push({"cb_button_set_txt_input" : ""});
+									array_controls[dynamicCount].push({"cb_button_set_txt_description" : ""});
+									array_controls[dynamicCount].push({"cb_checkbox_alpha_filter": 0});
+									array_controls[dynamicCount].push({"cb_ux_checkbox_alpha_num_filter": 0});
+									array_controls[dynamicCount].push({"cb_checkbox_digit_filter": 0});
+									array_controls[dynamicCount].push({"cb_checkbox_strip_tag_filter": 0});
+									array_controls[dynamicCount].push({"cb_checkbox_trim_filter": 0});
 								}
-								});
 							break;
+							
 							case 2:
-								var dynamicId = new_control_dynamic_ids[flag];
-								jQuery.ajax({
-								type: "POST",
-								url: ajaxurl + "?"+ jQuery(form).serialize() + "&form_id="+form_id+"&dynamicId="+dynamicId+"&array_textarea="+encodeURIComponent(array_textarea[dynamicId])+"&form=0&control_type=2&param=submit_controls&action=add_contact_form_library",
-								
-								success : function(data) 
+								if(array_controls[dynamicCount].length == 0)
 								{
+									array_controls[dynamicCount].push({"control_type" : 2});
+									array_controls[dynamicCount].push({"textarea_dynamicId" : new_control_dynamic_ids[flag]});
+									array_controls[dynamicCount].push({"cb_label_value" :"<?php _e("Untitled", contact_bank); ?>"});
+									array_controls[dynamicCount].push({"cb_description" : ""});
+									array_controls[dynamicCount].push({"cb_control_required": 0});
+									array_controls[dynamicCount].push({"cb_tooltip_txt" : ""});
+									array_controls[dynamicCount].push({"cb_default_txt_val" : "" });
+									array_controls[dynamicCount].push({"cb_admin_label" : "<?php _e("Untitled", contact_bank); ?>"});
+									array_controls[dynamicCount].push({"cb_show_email" : 0});
+									array_controls[dynamicCount].push({"cb_button_set_outer_label" : ""});
+									array_controls[dynamicCount].push({"cb_button_set_txt_input" : ""});
+									array_controls[dynamicCount].push({"cb_button_set_txt_description" : ""});
+									array_controls[dynamicCount].push({"cb_checkbox_alpha_filter": 0});
+									array_controls[dynamicCount].push({"cb_ux_checkbox_alpha_num_filter": 0});
+									array_controls[dynamicCount].push({"cb_checkbox_digit_filter": 0});
+									array_controls[dynamicCount].push({"cb_checkbox_strip_tag_filter": 0});
+									array_controls[dynamicCount].push({"cb_checkbox_trim_filter": 0});
 								}
-								});
 							break;
 							case 3:
-								var dynamicId = new_control_dynamic_ids[flag];
-								jQuery.ajax({
-								type: "POST",
-								url: ajaxurl + "?"+ jQuery(form).serialize() + "&form_id="+form_id+"&dynamicId="+dynamicId+"&array_email="+encodeURIComponent(array_email[dynamicId])+"&form=0&control_type=3&param=submit_controls&action=add_contact_form_library",
-								
-								success : function(data) 
+								if(array_controls[dynamicCount].length == 0)
 								{
-									
+									array_controls[dynamicCount].push({"control_type" : 3});
+									array_controls[dynamicCount].push({"email_dynamicId" : new_control_dynamic_ids[flag]});
+									array_controls[dynamicCount].push({"cb_label_value" : "<?php _e("Email", contact_bank); ?>"});
+									array_controls[dynamicCount].push({"cb_description" : ""});
+									array_controls[dynamicCount].push({"cb_control_required": 0});
+									array_controls[dynamicCount].push({"cb_tooltip_txt" :""});
+									array_controls[dynamicCount].push({"cb_admin_label" : "<?php _e("Email", contact_bank); ?>"});
+									array_controls[dynamicCount].push({"cb_show_email" : 0});
+									array_controls[dynamicCount].push({"cb_button_set_outer_label" : ""});
+									array_controls[dynamicCount].push({"cb_button_set_txt_input" : ""});
+									array_controls[dynamicCount].push({"cb_button_set_txt_description" : ""});
+									array_controls[dynamicCount].push({"cb_checkbox_alpha_filter": 0});
+									array_controls[dynamicCount].push({"cb_ux_checkbox_alpha_num_filter": 0});
+									array_controls[dynamicCount].push({"cb_checkbox_digit_filter": 0});
+									array_controls[dynamicCount].push({"cb_checkbox_strip_tag_filter": 0});
+									array_controls[dynamicCount].push({"cb_checkbox_trim_filter": 0});
 								}
-								});
 							break;
 							case 4:
-								var dynamicId = new_control_dynamic_ids[flag];
-								jQuery.ajax({
-								type: "POST",
-								url: ajaxurl + "?"+ jQuery(form).serialize() + "&form_id="+form_id+"&dynamicId="+dynamicId+"&array_dropdown="+encodeURIComponent(array_dropdown[dynamicId])+"&form=0&control_type=4&param=submit_controls&action=add_contact_form_library",
-								
-								success : function(data) 
+								if(array_controls[dynamicCount].length == 0)
 								{
-									
+									array_controls[dynamicCount].push({"control_type" : 4});
+									array_controls[dynamicCount].push({"dropdown_dynamicId" : new_control_dynamic_ids[flag]});
+									array_controls[dynamicCount].push({"cb_label_value" : "<?php _e("Untitled", contact_bank); ?>"});
+									array_controls[dynamicCount].push({"cb_control_required": 0});
+									array_controls[dynamicCount].push({"cb_tooltip_txt" : ""});
+									array_controls[dynamicCount].push({"cb_dropdown_option_id" : ""});
+									array_controls[dynamicCount].push({"cb_dropdown_option_val" : ""});
+									array_controls[dynamicCount].push({"cb_admin_label" : "<?php _e("Untitled", contact_bank); ?>"});
+									array_controls[dynamicCount].push({"cb_show_email" : 0});
+									array_controls[dynamicCount].push({"cb_button_set_outer_label" :""});
+									array_controls[dynamicCount].push({"cb_button_set_dropdown_menu" : ""});
+									array_controls[dynamicCount].push({"cb_button_set_description" : ""});
 								}
-								});
 							break;
 							case 5:
-								var dynamicId = new_control_dynamic_ids[flag];
-								jQuery.ajax({
-								type: "POST",
-								url: ajaxurl + "?"+ jQuery(form).serialize() + "&form_id="+form_id+"&dynamicId="+dynamicId+"&array_checkbox="+encodeURIComponent(array_checkbox[dynamicId])+"&form=0&control_type=5&param=submit_controls&action=add_contact_form_library",
-								
-								success : function(data) 
+								if(array_controls[dynamicCount].length == 0)
 								{
-								
+									array_controls[dynamicCount].push({"control_type" : 5});
+									array_controls[dynamicCount].push({"checkbox_dynamicId" : new_control_dynamic_ids[flag]});
+									array_controls[dynamicCount].push({"cb_label_value" : "<?php _e("Untitled", contact_bank); ?>"});
+									array_controls[dynamicCount].push({"cb_control_required": 0});
+									array_controls[dynamicCount].push({"cb_tooltip_txt" : ""});
+									array_controls[dynamicCount].push({"cb_checkbox_option_id" : ""});
+									array_controls[dynamicCount].push({"cb_checkbox_option_val" : ""});
+									array_controls[dynamicCount].push({"cb_admin_label" : "<?php _e("Untitled", contact_bank); ?>"});
+									array_controls[dynamicCount].push({"cb_show_email" : 0});
+									array_controls[dynamicCount].push({"cb_button_set_outer_label" :""});
+									array_controls[dynamicCount].push({"cb_button_set_description" : ""});
+									array_controls[dynamicCount].push({"cb_button_set_options_outer_wrapper" : ""});
+									array_controls[dynamicCount].push({"cb_button_set_options_wrapper" : ""});
+									array_controls[dynamicCount].push({"cb_button_set_options_label" : ""});
 								}
-								});
 							break;
+							
 							case 6:
-								var dynamicId = new_control_dynamic_ids[flag];
-								jQuery.ajax({
-								type: "POST",
-								url: ajaxurl + "?"+ jQuery(form).serialize() + "&form_id="+form_id+"&dynamicId="+dynamicId+"&array_multiple="+encodeURIComponent(array_multiple[dynamicId])+"&form=0&control_type=6&param=submit_controls&action=add_contact_form_library",
-								
-								success : function(data) 
+								if(array_controls[dynamicCount].length == 0)
 								{
-									
+									array_controls[dynamicCount].push({"control_type" : 6});
+									array_controls[dynamicCount].push({"radio_dynamicId" : new_control_dynamic_ids[flag]});
+									array_controls[dynamicCount].push({"cb_label_value" : "<?php _e("Untitled", contact_bank); ?>"});
+									array_controls[dynamicCount].push({"cb_control_required": 0});
+									array_controls[dynamicCount].push({"cb_tooltip_txt" : ""});
+									array_controls[dynamicCount].push({"cb_radio_option_id" : ""});
+									array_controls[dynamicCount].push({"cb_radio_option_val" : ""});
+									array_controls[dynamicCount].push({"cb_admin_label" : "<?php _e("Untitled", contact_bank); ?>"});
+									array_controls[dynamicCount].push({"cb_show_email" : 0});
+									array_controls[dynamicCount].push({"cb_button_set_outer_label" : ""});
+									array_controls[dynamicCount].push({"cb_button_set_description" : ""});
+									array_controls[dynamicCount].push({"cb_button_set_options_outer_wrapper" : ""});
+									array_controls[dynamicCount].push({"cb_button_set_options_wrapper" : ""});
+									array_controls[dynamicCount].push({"cb_button_set_options_label" : ""});	
 								}
-								});
 							break;
-							
 							case 9:
-								var dynamicId = new_control_dynamic_ids[flag];
-								jQuery.ajax({
-								type: "POST",
-								url: ajaxurl + "?"+ jQuery(form).serialize() + "&form_id="+form_id+"&dynamicId="+dynamicId+"&array_file_upload="+encodeURIComponent(array_file_upload[dynamicId])+"&form=0&control_type=9&param=submit_controls&action=add_contact_form_library",
-								
-								success : function(data) 
+								if(array_controls[dynamicCount].length == 0)
 								{
-									
+									array_controls[dynamicCount].push({"control_type" : 9});
+									array_controls[dynamicCount].push({"file_upload_dynamicId" : new_control_dynamic_ids[flag]});
+									array_controls[dynamicCount].push({"cb_label_value" : "<?php _e("File Upload", contact_bank); ?>"});
+									array_controls[dynamicCount].push({"cb_description" : ""});
+									array_controls[dynamicCount].push({"cb_control_required": 0});
+									array_controls[dynamicCount].push({"cb_tooltip_txt" : ""});
+									array_controls[dynamicCount].push({"cb_admin_label" : "<?php _e("File Upload", contact_bank); ?>"});
+									array_controls[dynamicCount].push({"cb_show_email" : 0});
+									array_controls[dynamicCount].push({"cb_allow_multiple_file" : 0});
+									array_controls[dynamicCount].push({"cb_allow_file_ext_upload" : "*.jpg,*.png,*.gif,*.bmp,*.txt,*.zip,*.rar"});
+									array_controls[dynamicCount].push({"cb_maximum_file_allowed" : 1024});
+									array_controls[dynamicCount].push({"cb_uploaded_file_email_db" : 0});
+									array_controls[dynamicCount].push({"cb_button_set_outer_label_file" : ""});
+									array_controls[dynamicCount].push({"cb_button_set_outer_description_fileuplod" : ""});
 								}
-								});
 							break;
-							
 							case 12:
-								var dynamicId = new_control_dynamic_ids[flag];
-								jQuery.ajax({
-								type: "POST",
-								url: ajaxurl + "?"+ jQuery(form).serialize() + "&form_id="+form_id+"&dynamicId="+dynamicId+"&array_date="+encodeURIComponent(array_date[dynamicId])+"&form=0&control_type=12&param=submit_controls&action=add_contact_form_library",
-								
-								success : function(data) 
+								if(array_controls[dynamicCount].length == 0)
 								{
-									
+									array_controls[dynamicCount].push({"control_type" : 12});
+									array_controls[dynamicCount].push({"date_dynamicId" : new_control_dynamic_ids[flag]});
+									array_controls[dynamicCount].push({"cb_label_value" : "<?php _e("Date", contact_bank); ?>"});
+									array_controls[dynamicCount].push({"cb_description" : ""});
+									array_controls[dynamicCount].push({"cb_control_required": 0});
+									array_controls[dynamicCount].push({"cb_tooltip_txt" : ""});
+									array_controls[dynamicCount].push({"cb_admin_label" : "<?php _e("Date", contact_bank); ?>"});
+									array_controls[dynamicCount].push({"cb_show_email" : ""});
+									array_controls[dynamicCount].push({"cb_start_year" : 1900});
+									array_controls[dynamicCount].push({"cb_end_year" : 2100});
+									array_controls[dynamicCount].push({"cb_default_value_day" : (new Date).getDate()});
+									array_controls[dynamicCount].push({"cb_default_value_month" : (new Date).getMonth()+1});
+									array_controls[dynamicCount].push({"cb_default_value_year" : (new Date).getFullYear()});
+									array_controls[dynamicCount].push({"cb_error_invalid" : ""});
+									array_controls[dynamicCount].push({"cb_date_format" : 0});
+									array_controls[dynamicCount].push({"cb_button_set_outer_label" : 0});
+									array_controls[dynamicCount].push({"cb_button_set_txt_input" : 0});
+									array_controls[dynamicCount].push({"cb_button_set_description" : 0});
+									array_controls[dynamicCount].push({"cb_date_day_dropdown" : 0});
+									array_controls[dynamicCount].push({"cb_date_month_dropdown" : 0});
+									array_controls[dynamicCount].push({"cb_date_year_dropdown" : 0});
 								}
-								});
 							break;
 							case 13:
-								var dynamicId = new_control_dynamic_ids[flag];
-								jQuery.ajax({
-								type: "POST",
-								url: ajaxurl + "?"+ jQuery(form).serialize() + "&form_id="+form_id+"&dynamicId="+dynamicId+"&array_time="+encodeURIComponent(array_time[dynamicId])+"&form=0&control_type=13&param=submit_controls&action=add_contact_form_library",
-								
-								success : function(data) 
+								if(array_controls[dynamicCount].length == 0)
 								{
-									
+									array_controls[dynamicCount].push({"control_type" : 13});
+									array_controls[dynamicCount].push({"time_dynamicId" : new_control_dynamic_ids[flag]});
+									array_controls[dynamicCount].push({"cb_label_value" : "<?php _e("Time", contact_bank); ?>"});
+									array_controls[dynamicCount].push({"cb_description" : ""});
+									array_controls[dynamicCount].push({"cb_control_required": 0});
+									array_controls[dynamicCount].push({"cb_tooltip_txt" : ""});
+									array_controls[dynamicCount].push({"cb_admin_label" : "<?php _e("Time", contact_bank); ?>"});
+									array_controls[dynamicCount].push({"cb_show_email" : ""});
+									array_controls[dynamicCount].push({"cb_hour_format" : 12});
+									array_controls[dynamicCount].push({"cb_hours" : ""});
+									array_controls[dynamicCount].push({"cb_minutes" : ""});
+									array_controls[dynamicCount].push({"cb_am_pm" : 0});
+									array_controls[dynamicCount].push({"cb_time_format" : 1});
+									array_controls[dynamicCount].push({"cb_button_set_outer_label" : ""});
+									array_controls[dynamicCount].push({"cb_button_set_txt_input" : ""});
+									array_controls[dynamicCount].push({"cb_button_set_description" : ""});
+									array_controls[dynamicCount].push({"cb_button_set_time_hour_dropdown" : ""});
+									array_controls[dynamicCount].push({"cb_button_set_time_minute_dropdown" : ""});
+									array_controls[dynamicCount].push({"cb_button_set_time_am_pm_dropdown" : ""});
 								}
-								});
 							break;
 							case 14:
-								var dynamicId = new_control_dynamic_ids[flag];
-								jQuery.ajax({
-								type: "POST",
-								url: ajaxurl + "?"+ jQuery(form).serialize() + "&form_id="+form_id+"&dynamicId="+dynamicId+"&array_hidden="+encodeURIComponent(array_hidden[dynamicId])+"&form=0&control_type=14&param=submit_controls&action=add_contact_form_library",
-								
-								success : function(data) 
+								if(array_controls[dynamicCount].length == 0)
 								{
-									
+									array_controls[dynamicCount].push({"control_type" : 14});
+									array_controls[dynamicCount].push({"hidden_dynamicId" : new_control_dynamic_ids[flag]});
+									array_controls[dynamicCount].push({"cb_label_value" : "<?php _e("Untitled(Hidden)", contact_bank); ?>"});
+									array_controls[dynamicCount].push({"cb_default_txt_val" : ""});
+									array_controls[dynamicCount].push({"cb_admin_label" : "<?php _e("Untitled(Hidden)", contact_bank); ?>"});
+									array_controls[dynamicCount].push({"cb_show_email": 0});
 								}
-								});
 							break;
 							case 15:
-								var dynamicId = new_control_dynamic_ids[flag];
-								jQuery.ajax({
+								if(array_controls[dynamicCount].length == 0)
+								{
+									array_controls[dynamicCount].push({"control_type" : 15});
+									array_controls[dynamicCount].push({"password_dynamicId" : new_control_dynamic_ids[flag]});
+									array_controls[dynamicCount].push({"cb_label_value" : "<?php _e("Password", contact_bank); ?>"});
+									array_controls[dynamicCount].push({"cb_description" : ""});
+									array_controls[dynamicCount].push({"cb_control_required": 0});
+									array_controls[dynamicCount].push({"cb_tooltip_txt" : ""});
+									array_controls[dynamicCount].push({"cb_admin_label" : "<?php _e("Password", contact_bank); ?>"});
+									array_controls[dynamicCount].push({"cb_show_email" : 0});
+									array_controls[dynamicCount].push({"cb_button_set_outer_label" : ""});
+									array_controls[dynamicCount].push({"cb_button_set_txt_input" : ""});
+									array_controls[dynamicCount].push({"cb_button_set_txt_description" : ""});
+									array_controls[dynamicCount].push({"cb_checkbox_alpha_filter": 0});
+									array_controls[dynamicCount].push({"ux_checkbox_alpha_num_filter_": 0});
+									array_controls[dynamicCount].push({"cb_checkbox_digit_filter": 0});
+									array_controls[dynamicCount].push({"cb_checkbox_strip_tag_filter": 0});
+									array_controls[dynamicCount].push({"cb_checkbox_trim_filter": 0});
+								}
+								break;
+							}
+							jQuery.ajax
+							({
 								type: "POST",
-								url: ajaxurl + "?"+ jQuery(form).serialize() + "&form_id="+form_id+"&dynamicId="+dynamicId+"&array_password="+encodeURIComponent(array_password[dynamicId])+"&form=0&control_type=15&param=submit_controls&action=add_contact_form_library",
-								
+								url: ajaxurl + "?"+jQuery(form).serialize() + "&array_controls="+encodeURIComponent(JSON.stringify(array_controls[array_dynamicCount[flag]]))+"&form=0&control_type=1&param=submit_controls&action=add_contact_form_library",
 								success : function(data) 
 								{
-									
+									imaginaryCount++;
+									var totalLength = parseInt(created_control_type.length) + parseInt(edit_created_control_type.length);
+
+									if(imaginaryCount == totalLength)
+									{
+										setTimeout(function()
+										{
+											new_control_dynamic_ids.length = 0;
+											created_control_type.length = 0;
+											edit_control_dynamic_ids.length = 0;
+											edit_created_control_type.length = 0;
+											jQuery("#form_success_message").css("display","none");
+											window.location.href = "admin.php?page=dashboard";
+										}, 2000);
+									}
 								}
-								});
-							break;
-						}
-					}
-				}
-				var field_edit = edit_created_control_type.length;
-				for(flag = 0;flag<field_edit; flag++)
-				{
-					switch(parseInt(edit_created_control_type[flag]))
-					{
-						case 1:
-							var dynamicId = edit_control_dynamic_ids[flag];
-							jQuery.ajax({
-							type: "POST",
-							url: ajaxurl + "?"+ jQuery(form).serialize() + "&form_id="+form_id+"&dynamicId="+dynamicId+"&array_text="+encodeURIComponent(array_text[dynamicId])+"&form=0&control_type=1&param=submit_controls&action=edit_contact_form_library",
-							
-							success : function(data) 
-							{
-								
-							}
 							});
-						break;
-						case 2:
-							var dynamicId = edit_control_dynamic_ids[flag];
-							jQuery.ajax({
-							type: "POST",
-							url: ajaxurl + "?"+ jQuery(form).serialize() + "&form_id="+form_id+"&dynamicId="+dynamicId+"&array_textarea="+encodeURIComponent(array_textarea[dynamicId])+"&form=0&control_type=2&param=submit_controls&action=edit_contact_form_library",
-							
-							success : function(data) 
-							{
-								
-							}
-							});
-						break;
-						case 3:
-							var dynamicId = edit_control_dynamic_ids[flag];
-							jQuery.ajax({
-							type: "POST",
-							url: ajaxurl + "?"+ jQuery(form).serialize() + "&form_id="+form_id+"&dynamicId="+dynamicId+"&array_email="+encodeURIComponent(array_email[dynamicId])+"&form=0&control_type=3&param=submit_controls&action=edit_contact_form_library",
-							
-							success : function(data) 
-							{
-								
-							}
-							});
-						break;
-						case 4:
-							var dynamicId = edit_control_dynamic_ids[flag];
-							jQuery.ajax({
-							type: "POST",
-							url: ajaxurl + "?"+ jQuery(form).serialize() + "&form_id="+form_id+"&dynamicId="+dynamicId+"&array_dropdown="+encodeURIComponent(array_dropdown[dynamicId])+"&form=0&control_type=4&param=submit_controls&action=edit_contact_form_library",
-							
-							success : function(data) 
-							{
-								
-							}
-							});
-						break;
-						case 5:
-							var dynamicId = edit_control_dynamic_ids[flag];
-							jQuery.ajax({
-							type: "POST",
-							url: ajaxurl + "?"+ jQuery(form).serialize() + "&form_id="+form_id+"&dynamicId="+dynamicId+"&array_checkbox="+encodeURIComponent(array_checkbox[dynamicId])+"&form=0&control_type=5&param=submit_controls&action=edit_contact_form_library",
-							
-							success : function(data) 
-							{
-								
-							}
-							});
-						break;
-						case 6:
-							var dynamicId = edit_control_dynamic_ids[flag];
-							jQuery.ajax({
-							type: "POST",
-							url: ajaxurl + "?"+ jQuery(form).serialize() + "&form_id="+form_id+"&dynamicId="+dynamicId+"&array_multiple="+encodeURIComponent(array_multiple[dynamicId])+"&form=0&control_type=6&param=submit_controls&action=edit_contact_form_library",
-							
-							success : function(data) 
-							{
-								
-							}
-							});
-						break;
-						
-						case 9:
-							var dynamicId = edit_control_dynamic_ids[flag];
-							jQuery.ajax({
-							type: "POST",
-							url: ajaxurl + "?"+ jQuery(form).serialize() + "&form_id="+form_id+"&dynamicId="+dynamicId+"&array_file_upload="+encodeURIComponent(array_file_upload[dynamicId])+"&form=0&control_type=9&param=submit_controls&action=edit_contact_form_library",
-							
-							success : function(data) 
-							{
-								
-							}
-							});
-						break;
-						
-						case 12:
-							var dynamicId = edit_control_dynamic_ids[flag];
-							jQuery.ajax({
-							type: "POST",
-							url: ajaxurl + "?"+ jQuery(form).serialize() + "&form_id="+form_id+"&dynamicId="+dynamicId+"&array_date="+encodeURIComponent(array_date[dynamicId])+"&form=0&control_type=12&param=submit_controls&action=edit_contact_form_library",
-							
-							success : function(data) 
-							{
-								
-							}
-							});
-						break;
-						case 13:
-							var dynamicId = edit_control_dynamic_ids[flag];
-							jQuery.ajax({
-							type: "POST",
-							url: ajaxurl + "?"+ jQuery(form).serialize() + "&form_id="+form_id+"&dynamicId="+dynamicId+"&array_time="+encodeURIComponent(array_time[dynamicId])+"&form=0&control_type=13&param=submit_controls&action=edit_contact_form_library",
-							
-							success : function(data) 
-							{
-								
-							}
-							});
-						break;
-						case 14:
-							var dynamicId = edit_control_dynamic_ids[flag];
-							jQuery.ajax({
-							type: "POST",
-							url: ajaxurl + "?"+ jQuery(form).serialize() + "&form_id="+form_id+"&dynamicId="+dynamicId+"&array_hidden="+encodeURIComponent(array_hidden[dynamicId])+"&form=0&control_type=14&param=submit_controls&action=edit_contact_form_library",
-							
-							success : function(data) 
-							{
-								
-							}
-							});
-						break;
-						case 15:
-							var dynamicId = edit_control_dynamic_ids[flag];
-							jQuery.ajax({
-							type: "POST",
-							url: ajaxurl + "?"+ jQuery(form).serialize() + "&form_id="+form_id+"&dynamicId="+dynamicId+"&array_password="+encodeURIComponent(array_password[dynamicId])+"&form=0&control_type=15&param=submit_controls&action=edit_contact_form_library",
-							
-							success : function(data) 
-							{
-								
-							}
-							});
-						break;
 					}
 				}
 				
-				setTimeout(function()
+				var field_edit = edit_created_control_type.length;
+				for(flag = 0;flag<field_edit; flag++)
 				{
-					jQuery("#form_success_message").css("display","none");
-					window.location.href = "admin.php?page=dashboard";
-				}, 2000);
+					if(array_controls[edit_created_control_type[flag]].length > 0)
+					{
+						jQuery.ajax
+						({
+							type: "POST",
+							url: ajaxurl + "?"+ jQuery(form).serialize() +  "&field_order="+field_order+"&form_id="+form_id+"&array_controls="+encodeURIComponent(JSON.stringify(array_controls[edit_created_control_type[flag]]))+"&form=0&control_type=1&param=submit_controls&action=edit_contact_form_library",
+							success : function(data) 
+							{
+								imaginaryCount++;
+								var totalLength = parseInt(created_control_type.length) + parseInt(edit_created_control_type.length);
+
+								if(imaginaryCount == totalLength)
+								{
+									setTimeout(function()
+									{
+										new_control_dynamic_ids.length = 0;
+										created_control_type.length = 0;
+										jQuery("#form_success_message").css("display","none");
+										window.location.href = "admin.php?page=dashboard";
+									}, 2000);
+								}
+							}
+						});
+					}
+					else
+					{
+						imaginaryCount++;
+						var totalLength = parseInt(created_control_type.length) + parseInt(edit_created_control_type.length);
+						
+						if(imaginaryCount == totalLength)
+						{
+							setTimeout(function()
+							{
+								edit_control_dynamic_ids.length = 0;
+								edit_created_control_type.length = 0;
+								jQuery("#form_success_message").css("display","none");
+								window.location.href = "admin.php?page=dashboard";
+							}, 2000);
+						}
+					}
+				}
 			}
 		});
 	}

@@ -3058,3 +3058,12 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 .tooltip.left .tooltip-arrow {  top: 50%; right: 0; margin-top: -5px; border-width: 5px 0 5px 5px; border-left-color: #000000; }
 .tooltip.bottom .tooltip-arrow { top: 0; left: 50%; margin-left: -5px; border-width: 0 5px 5px; border-bottom-color: #000000; }
 
+.contact_icon {
+background: url(../images/contact-admin-icon.png) no-repeat top left;
+display: inline-block;
+height: 16px;
+margin: 0 2px 0 0;
+vertical-align: text-top;
+width: 16px;
+
+}

@@ -9,7 +9,7 @@
 				<a class="btn btn-info" href="#"  onclick="delete_forms();"><?php _e("Delete All Forms", contact_bank);?></a>
 				<div class="separator-doubled"></div>
 				<div class="fluid-layout">
-					<div class="layout-span8">
+					<div class="layout-span9">
 						<div class="widget-layout">
 							<div class="widget-layout-title">
 								<h4><?php _e( "Form", contact_bank ); ?></h4>
@@ -56,7 +56,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="layout-span4">
+					<div class="layout-span3">
 						<div class="widget-layout">
 							<div class="widget-layout-title">
 								<h4><?php _e('Server Settings', contact_bank); ?></h4>
@@ -125,7 +125,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="layout-span4" style="float: right;">
+					<div class="layout-span3" style="float: right;">
 						<div class="widget-layout">
 							<div class="widget-layout-title">
 								<h4><?php _e('Graphic Library Settings', contact_bank); ?></h4>

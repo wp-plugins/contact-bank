@@ -1,45 +1,4 @@
-<?php 
-include_once CONTACT_BK_PLUGIN_DIR ."/phpfileuploader/phpuploader/include_phpuploader.php";
-if($_REQUEST["param"] == "create_txt_file_control")
-{
-	$dynamicId = intval($_REQUEST["dynamicId"]);
-	$field_id = intval($_REQUEST["field_id"]);
-	?>
-		<div class="layout-control-group div_border" id="div_<?php echo $dynamicId; ?>_9">
-			<label class="layout-control-label" id="control_label_<?php echo $dynamicId; ?>" ><?php _e("File Upload", contact_bank); ?> : </label>
-			<span id="txt_required_<?php echo $dynamicId; ?>"  class="error">*</span>
-			<div class="layout-controls"  id="show_tooltip<?php echo $dynamicId; ?>">
-				<a class="btn btn-info inline"  id="add_setting_control_<?php echo $dynamicId; ?>" href="#setting_controls_postback"  ><?php _e( "Settings", contact_bank ); ?></a>	
-					<a style="cursor:pointer;" onclick="delete_textbox(div_<?php echo $dynamicId; ?>_9,<?php echo $dynamicId; ?>,9)" id="anchor_del_<?php echo $dynamicId; ?>" >
-						<img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="margin-left: 1%;vertical-align: middle;"/>
-					</a>
-				<label class="layout-controls hovertip" id="tip<?php echo $dynamicId; ?>" style="margin-left:-75%;">
-				<div id="file_upload_content" style="float:left;width:357px;">
-					
-					<?php 
-					$uploader=new PhpUploader();
-					$uploader->MultipleFilesUpload=false;
-					$uploader->InsertText = "Please choose Files";
-					$uploader->MaxSizeKB = 1024;
-					$uploader->AllowedFileExtensions = "*.jpg,*.png,*.gif,*.bmp,*.txt,*.zip,*.rar";
-					$uploader->SaveDirectory= CONTACT_BK_PLUGIN_DIR ."/phpfileuploader/savefiles/";
-					$uploader->FlashUploadMode = "Partial";
-					$uploader->Render();
-					?>
-				</div>
-				<div id="file_upload_content_postback" style="display:none;float:left;width:357px;">
-				</div>
-				</label>
-				<br />
-				<span class="span-description" id="txt_description_<?php echo $dynamicId; ?>"></span>
-			</div>
-		</div>
-	<?php
-	die();
-}
-else 
-{
-?>
+
 <div class="layout-span7">
 	<div class="widget-layout widget-tabs">
 		<div class="widget-layout-title">
@@ -140,24 +99,24 @@ else
 					<div id="tabs-nohdr-1"  style="display:none;">
 						<div id="div_advanced_<?php echo $dynamicId; ?>">
 							<div class="layout-control-group" style="display: none" id="ux_label_fileupload_<?php echo $dynamicId; ?>">
-								<label class="layout-control-label"><?php _e( "Css Label", contact_bank ); ?> :</label>
+								<label class="layout-control-label"><?php _e( "Label Style", contact_bank ); ?> :</label>
 								<div class="layout-controls">
-									<textarea class="layout-span11" id="button_set_outer_label_file<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter Css Label", contact_bank ); ?>" name="button_set_outer_label_file<?php echo $dynamicId; ?>"></textarea>
+									<textarea class="layout-span11" id="button_set_outer_label_file<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter Label Style", contact_bank ); ?>" name="button_set_outer_label_file<?php echo $dynamicId; ?>"></textarea>
 									<a style="cursor:pointer;" onclick="delete_css_style_label_fileupload(<?php echo $dynamicId; ?>);" id="anchor_del_" ><img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="vertical-align: middle;" /></a> 
 								</div>
 							</div>	
 							<div class="layout-control-group" style="display: none" id="ux_description_fileupload_<?php echo $dynamicId; ?>" >
-								<label class="layout-control-label"><?php _e( "Css Description", contact_bank ); ?> :</label>
+								<label class="layout-control-label"><?php _e( "Description Style", contact_bank ); ?> :</label>
 								<div class="layout-controls">
-									<textarea class="layout-span11" id="button_set_outer_description_fileuplod<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter Css Description", contact_bank ); ?>" name="button_set_outer_description_fileuplod<?php echo $dynamicId; ?>"></textarea>
+									<textarea class="layout-span11" id="button_set_outer_description_fileuplod<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter Description Style", contact_bank ); ?>" name="button_set_outer_description_fileuplod<?php echo $dynamicId; ?>"></textarea>
 									<a style="cursor:pointer;" onclick="delete_css_style_description_fileupload(<?php echo $dynamicId; ?>);" id="anchor_del_" ><img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="vertical-align: middle;" /></a> 
 								</div>
 							</div>
 							<div class="layout-control-group">
-								<label class="layout-control-label"><?php _e( "Add a style to", contact_bank ); ?> :</label>
+								<label class="layout-control-label"><?php _e( "Add a Style to", contact_bank ); ?> :</label>
 								<div class="layout-controls">
-									<input class="btn btn-inverse layout-span3" type="button"  id="ux_button_label_style_<?php echo $dynamicId; ?>" name="ux_button_label_style_<?php echo $dynamicId; ?>" onclick="button_set_outer_label(<?php echo $dynamicId; ?>,9);" value="<?php _e( "Label", contact_bank ); ?>" />
-									<input class="btn btn-inverse layout-span3"type="button"  id="ux_button_description_style_<?php echo $dynamicId; ?>" name="ux_button_description_style_<?php echo $dynamicId; ?>" onclick="button_set_description(<?php echo $dynamicId; ?>,9);" value="<?php _e( "Description", contact_bank ); ?>" />
+									<input class="btn btn-inverse layout-span2" type="button"  id="ux_button_label_style_<?php echo $dynamicId; ?>" name="ux_button_label_style_<?php echo $dynamicId; ?>" onclick="button_set_outer_label(<?php echo $dynamicId; ?>,9);" value="<?php _e( "Label", contact_bank ); ?>" />
+									<input class="btn btn-inverse layout-span2"type="button"  id="ux_button_description_style_<?php echo $dynamicId; ?>" name="ux_button_description_style_<?php echo $dynamicId; ?>" onclick="button_set_description(<?php echo $dynamicId; ?>,9);" value="<?php _e( "Description", contact_bank ); ?>" />
 								</div>
 							</div>
 						</div>
@@ -167,7 +126,7 @@ else
 		</div>
 	</div>
 	<div class="layout-control-group">	
-		<input type="button" style="float:left;margin-left: 0px;" class="btn btn-info layout-span2" onclick="save_file_uploader(<?php echo $dynamicId; ?>)" value="<?php _e( "Save", contact_bank ); ?>" />
+		<input type="button" class="btn btn-info layout-span2" onclick="save_file_uploader(<?php echo $dynamicId; ?>)" value="<?php _e( "Save Settings", contact_bank ); ?>" />
 	</div>
 </div>
 <script type="text/javascript">
@@ -205,10 +164,11 @@ else
 	var count = <?php echo $count; ?>;
 	if(count != 0)
 	{
+		var dynamicCount = "<?php echo $dynamicCount;?>";
 		var dynamicId = <?php echo $dynamicId; ?>;
-		jQuery("#ux_label_text_"+dynamicId).val(array_file_upload[dynamicId][2]);
-		jQuery("#ux_description_control_"+dynamicId).val(array_file_upload[dynamicId][3]);
-		if(array_file_upload[dynamicId][4] == 1)
+		jQuery("#ux_label_text_"+dynamicId).val(array_controls[dynamicCount][2].cb_label_value);
+		jQuery("#ux_description_control_"+dynamicId).val(array_controls[dynamicCount][3].cb_description);
+		if(array_controls[dynamicCount][4].cb_control_required == 1)
 		{
 			jQuery("#ux_required_control_"+dynamicId).attr("checked","checked");
 		}
@@ -216,13 +176,13 @@ else
 		{
 			jQuery("#ux_required_"+dynamicId).attr("checked","checked");
 		}
-		jQuery("#ux_tooltip_control_"+dynamicId).val(array_file_upload[dynamicId][5]);
-		jQuery("#ux_admin_label_"+dynamicId).val(array_file_upload[dynamicId][6]);
-		if(array_file_upload[dynamicId][7] == true)
+		jQuery("#ux_tooltip_control_"+dynamicId).val(array_controls[dynamicCount][5].cb_tooltip_txt);
+		jQuery("#ux_admin_label_"+dynamicId).val(array_controls[dynamicCount][6].cb_admin_label);
+		if(array_controls[dynamicCount][7].cb_show_email == true)
 		{
 			jQuery("#ux_show_email_"+dynamicId).attr("checked","checked");
 		}
-		if(array_file_upload[dynamicId][8] == true)
+		if(array_controls[dynamicCount][8].cb_allow_multiple_file == true)
 		{
 			jQuery("#ux_allow_multiple_file_"+dynamicId).attr("checked","checked");
 		}
@@ -230,21 +190,21 @@ else
 		{
 			jQuery("#ux_allow_multiple_file_"+dynamicId).removeAttr("checked");
 		}
-		jQuery("#ux_allowed_file_extensions_"+dynamicId).val(array_file_upload[dynamicId][9]);
-		jQuery("#ux_maximum_file_allowed_"+dynamicId).val(array_file_upload[dynamicId][10]);
-		if(array_file_upload[dynamicId][11] == true)
+		jQuery("#ux_allowed_file_extensions_"+dynamicId).val(array_controls[dynamicCount][9].cb_allow_file_ext_upload);
+		jQuery("#ux_maximum_file_allowed_"+dynamicId).val(array_controls[dynamicCount][10].cb_maximum_file_allowed);
+		if(array_controls[dynamicCount][11].cb_uploaded_file_email_db == true)
 		{
 			jQuery("#ux_uploaded_file_email_db_"+dynamicId).attr("checked","checked");
 		}
-		if(array_file_upload[dynamicId][12] != "")
+		if(array_controls[dynamicCount][12].cb_button_set_outer_label_file != "")
 		{
-			jQuery("#button_set_outer_label_file"+dynamicId).html(array_file_upload[dynamicId][12]);
+			jQuery("#button_set_outer_label_file"+dynamicId).html(array_controls[dynamicCount][12].cb_button_set_outer_label_file);
 			jQuery("#ux_label_fileupload_"+dynamicId).attr("style","display:block");
 			jQuery("#ux_label_fileupload_"+dynamicId).attr("style","position:inherit");
 		}
-		if(array_file_upload[dynamicId][13] != "")
+		if(array_controls[dynamicCount][13].cb_button_set_outer_description_fileuplod != "")
 		{
-			jQuery("#button_set_outer_description_fileuplod"+dynamicId).html(array_file_upload[dynamicId][13]);
+			jQuery("#button_set_outer_description_fileuplod"+dynamicId).html(array_controls[dynamicCount][13].cb_button_set_outer_description_fileuplod);
 			jQuery("#ux_description_fileupload_"+dynamicId).attr("style","display:block");
 			jQuery("#ux_description_fileupload_"+dynamicId).attr("style","position:inherit");
 		}	
@@ -263,32 +223,26 @@ else
 			jQuery("#file_upload_content_postback").css('display','block')
 			jQuery("#file_upload_content_postback").html(dat);
 		});
-		array_file_upload[dynamicId] = [];
-		array_file_upload[dynamicId].push(9);
-		array_file_upload[dynamicId].push(dynamicId);
-		array_file_upload[dynamicId].push(jQuery("#ux_label_text_"+dynamicId).val());
-		array_file_upload[dynamicId].push(jQuery("#ux_description_control_"+dynamicId).val());
-		if(jQuery("#ux_required_control_"+dynamicId).prop("checked") == true)
-		{
-			array_file_upload[dynamicId].push("1");
-		}
-		else
-		{
-			array_file_upload[dynamicId].push("0");
-		}
-		array_file_upload[dynamicId].push(jQuery("#ux_tooltip_control_"+dynamicId).val());
-		array_file_upload[dynamicId].push(jQuery("#ux_admin_label_"+dynamicId).val());
-		array_file_upload[dynamicId].push(jQuery("#ux_show_email_"+dynamicId).prop("checked"));
-		array_file_upload[dynamicId].push(jQuery("#ux_allow_multiple_file_"+dynamicId).prop("checked"));
-		array_file_upload[dynamicId].push(jQuery("#ux_allowed_file_extensions_"+dynamicId).val());
-		array_file_upload[dynamicId].push(jQuery("#ux_maximum_file_allowed_"+dynamicId).val());
-		array_file_upload[dynamicId].push(jQuery("#ux_uploaded_file_email_db_"+dynamicId).prop("checked"));
-		array_file_upload[dynamicId].push(jQuery("#button_set_outer_label_file"+dynamicId).val());
-		array_file_upload[dynamicId].push(jQuery("#button_set_outer_description_fileuplod"+dynamicId).val());
+		var dynamicCount = "<?php echo $dynamicCount;?>";
+		array_controls[dynamicCount] = [];
+		array_controls[dynamicCount].push({"control_type" : 9});
+		array_controls[dynamicCount].push({"file_upload_dynamicId" : dynamicId});
+		array_controls[dynamicCount].push({"cb_label_value" : jQuery("#ux_label_text_"+dynamicId).val()});
+		array_controls[dynamicCount].push({"cb_description" : jQuery("#ux_description_control_"+dynamicId).val()});
+		jQuery("#ux_required_control_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_control_required": 1}) : array_controls[dynamicCount].push({"cb_control_required": 0});
+		array_controls[dynamicCount].push({"cb_tooltip_txt" : jQuery("#ux_tooltip_control_"+dynamicId).val()});
+		array_controls[dynamicCount].push({"cb_admin_label" : jQuery("#ux_admin_label_"+dynamicId).val()});
+		jQuery("#ux_show_email_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_show_email": 1}) : array_controls[dynamicCount].push({"cb_show_email": 0});
+		jQuery("#ux_allow_multiple_file_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_allow_multiple_file": 1}) : array_controls[dynamicCount].push({"cb_allow_multiple_file": 0});
+		array_controls[dynamicCount].push({"cb_allow_file_ext_upload" : jQuery("#ux_allowed_file_extensions_"+dynamicId).val()});
+		array_controls[dynamicCount].push({"cb_maximum_file_allowed" : jQuery("#ux_maximum_file_allowed_"+dynamicId).val()});
+		array_controls[dynamicCount].push({"cb_uploaded_file_email_db" : jQuery("#ux_uploaded_file_email_db_"+dynamicId).prop("checked")});
+		array_controls[dynamicCount].push({"cb_button_set_outer_label_file" : jQuery("#button_set_outer_label_file"+dynamicId).val()});
+		array_controls[dynamicCount].push({"cb_button_set_outer_description_fileuplod" : jQuery("#button_set_outer_description_fileuplod"+dynamicId).val()});
+		
 		jQuery("#control_label_"+dynamicId).html(jQuery("#ux_label_text_"+dynamicId).val()+" :");
 		jQuery("#txt_description_"+dynamicId).html(jQuery("#ux_description_control_"+dynamicId).val());
-		var tooltip_text = jQuery("#ux_tooltip_control_"+dynamicId).val();
-		jQuery("#tip"+dynamicId).attr("data-original-title",tooltip_text);	
+		jQuery("#tip"+dynamicId).attr("data-original-title",jQuery("#ux_tooltip_control_"+dynamicId).val());	
 		if(jQuery("#ux_required_control_"+dynamicId).prop("checked") == true)
 		{
 			jQuery("#txt_required_"+dynamicId).css("display","block");
@@ -343,6 +297,3 @@ else
 	return false;
 	}
 </script>
-<?php
-}
-?>

@@ -4,7 +4,7 @@
  Plugin URI: http://wordpress.org/plugins/contact-bank/
  Description: Contact Bank allows you to add a feedback form easilly and simply to a post or a page.
  Author: contact-banker
- Version: 1.1
+ Version: 1.2
  Author URI: http://wordpress.org/plugins/contact-bank/
  */
  
@@ -32,6 +32,15 @@ if(file_exists(CONTACT_BK_PLUGIN_DIR .'/create-tables.php'))
 function plugin_uninstall_script_for_contact_bank()
 {
 	global $wpdb;
+	$wpdb->query
+	(
+		$wpdb->prepare
+		(
+			"UPDATE ".$wpdb->prefix ."usermeta SET meta_value = %s WHERE meta_key = %s",
+			"wp330_toolbar,wp330_saving_widgets,wp340_choose_image_from_library,wp340_customize_current_theme_link,wp350_media,wp360_revisions,wp360_locks",
+			"dismissed_wp_pointers"
+		)
+	);
 	include_once CONTACT_BK_PLUGIN_DIR .'/contact_bank_uninstall.php';
 }
 /* Function Name : plugin_install_script_for_contact_bank
@@ -456,7 +465,70 @@ function add_contact_bank_icon($meta = TRUE)
 		'title' => __( 'Form Entries'))         /* set the sub-menu name */  
 	);
 }
-
+add_action( 'media_buttons_context', 'add_emg_shortcode_button', 1);
+	function add_emg_shortcode_button($context) {
+		 add_thickbox(); 
+		$img = CONTACT_BK_PLUGIN_URL . '/assets/images/icon.png';
+		$container_id = 'modal';
+		$title = 'Contact Bank Form Shortcode';
+		$context .= '<a href="#TB_inline?width=300&height=400&inlineId=my-content-id"  class="button thickbox "  title="' . __("Add Contact Bank Form", contact_bank) . '"><span class="contact_icon"></span> Add Form</a>';
+		return $context;
+	}	
+	 add_action('admin_footer',  'add_mce_popup');
+	
+function add_mce_popup(){
+?>
+<?php add_thickbox(); ?>
+		<div id="my-content-id" style="display:none;">
+			<div style="padding:15px 15px 0 15px;">
+				<h3 style="color:#5A5A5A!important; font-family:Georgia,Times New Roman,Times,serif!important; font-size:1.8em!important; font-weight:normal!important;"><?php _e("Insert Contact Bank Form", contact_bank); ?></h3>
+				<span>
+					<?php _e("Select a form below to add it to your post or page.", contact_bank); ?>
+				</span>
+			</div>
+			<div style="padding:15px 15px 0 15px;">
+				<select id="add_form_id" class="layout-span3">
+					<option value="">  <?php _e("Select a Form", contact_bank); ?>  </option>
+						<?php
+						global $wpdb;
+						$forms = $wpdb->get_results
+						(
+							$wpdb->prepare
+							(
+								"SELECT * FROM " .contact_bank_contact_form(),""
+							)
+						);
+						for($flag = 0;$flag<count($forms);$flag++)
+						{
+							?>
+								<option value="<?php echo intval($forms[$flag]->form_id); ?>"><?php echo esc_html($forms[$flag]->form_name) ?></option>
+							<?php
+						}
+						?>
+				</select><br /><br />
+				<div style="font-size:11px; font-style:italic; color:#5A5A5A"><?php _e("Can't find your form? Make sure it is active.", contact_bank); ?></div>
+			</div>
+			
+			 <div style="padding:15px;">
+				<input type="button" class="button-primary" value="Insert Form" onclick="InsertForm();"/>&nbsp;&nbsp;&nbsp;
+				<a class="button" style="color:#bbb;" href="#" onclick="tb_remove(); return false;"><?php _e("Cancel", contact_bank); ?></a>
+			</div>
+		</div>
+		<script type="text/javascript">
+			function InsertForm()
+			{
+				var form_id = jQuery("#add_form_id").val();
+				if(form_id == "")
+				{
+					alert("<?php _e("Please select a form", contact_bank) ?>");
+					return;
+				}
+				var form_name = jQuery("#add_form_id option[value='" + form_id + "']").text().replace(/[\[\]]/g, '');
+				window.send_to_editor("[contact_bank form_id=" + form_id + "]");
+			}
+		</script>
+		<?php
+}
 function thsp_enqueue_pointer_script_style( $hook_suffix ) {
 		// Assume pointer shouldn't be shown
 

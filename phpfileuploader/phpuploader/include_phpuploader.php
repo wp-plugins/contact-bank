@@ -1,5 +1,5 @@
 <?php
-ob_start();
+
 $PhpUploader_FSEncoding="ISO-8859-1//TRANSLIT";
 
 $PhpUploader_InternalEncoding="utf-8";
@@ -837,6 +837,8 @@ class PhpUploader
 
 	function SaveSecuritySettings()
 	{
+		ob_start();
+		error_reporting(0);
 		if(!@$_SESSION)session_start();
 		
 		$scriptfile=@$_SERVER['SCRIPT_FILENAME'];
@@ -851,6 +853,8 @@ class PhpUploader
 	}
 	function LoadSecuritySettings()
 	{
+		ob_start();
+		error_reporting(0);
 		if(!@$_SESSION)session_start();
 		
 		$this->_LaveSecuritySetting("_SourceFileName");

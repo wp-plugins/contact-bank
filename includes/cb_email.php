@@ -1,29 +1,3 @@
-<?php
-
-if($_REQUEST["param"] == "create_email_control")
-{
-	$dynamicId = intval($_REQUEST["dynamicId"]);
-	$field_id = intval($_REQUEST["field_id"]);
-	?>
-	<div class="layout-control-group div_border" id="div_<?php echo $dynamicId; ?>_3">
-		<label class="layout-control-label" id="control_label_<?php echo $dynamicId; ?>" ><?php _e("Email", contact_bank); ?> : </label>
-		<span style="display: block" id="txt_required_<?php echo $dynamicId; ?>"  class="error">*</span>
-		<div class="layout-controls" id="show_tooltip<?php echo $dynamicId; ?>">		
-			<input class="hovertip layout-span7" type="text" id="email_<?php echo $dynamicId; ?>" name="email_<?php echo $dynamicId; ?>" />
-			<a class="btn btn-info inline"  id="add_setting_control_<?php echo $dynamicId; ?>" href="#setting_controls_postback"  ><?php _e( "Settings", contact_bank ); ?></a>	
-			<a style="cursor:pointer;" onclick="delete_textbox(div_<?php echo $dynamicId; ?>_3,<?php echo $dynamicId; ?>)" id="anchor_del_<?php echo $dynamicId; ?>" >
-				<img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="margin-left: 1%;margin-bottom:-9px" onmouseover="img_show(<?php echo $dynamicId; ?>)" onmouseout="img_hide(<?php echo $dynamicId; ?>)"  />
-			</a>
-			<br />
-			<span class="span-description"  id="txt_description_<?php echo $dynamicId; ?>"></span> 
-		</div>
-	</div>
-	<?php
-	die();
-}
-else 
-{
-?>
 <div class="layout-span7">
 	<div class="widget-layout widget-tabs">
 		<div class="widget-layout-title">
@@ -60,7 +34,7 @@ else
 							</div>
 							<div class="layout-control-group">
 								<label class="layout-control-label"><?php _e( "Required", contact_bank ); ?> :</label>
-								<div class="layout-controls">
+								<div class="layout-controls" style="padding-top:5px;">
 									<input type="radio" checked="checked" id="ux_required_control_<?php echo $dynamicId; ?>" name="ux_required_control_radio_<?php echo $dynamicId; ?>" value="1"/><label style="margin-left: 5px;"><?php _e( "Required", contact_bank ); ?></label>    
 									<input type="radio"  id="ux_required_<?php echo $dynamicId; ?>" name="ux_required_control_radio_<?php echo $dynamicId; ?>" value="0"/><label style="margin-left: 5px;"><?php _e( "Not Required", contact_bank ); ?></label>
 								</div>
@@ -95,32 +69,32 @@ else
 					<div id="tabs-nohdr-1"  style="display:none;">
 						<div id="div_advanced_<?php echo $dynamicId; ?>">
 							<div class="layout-control-group" id="ux_advance_label_<?php echo $dynamicId; ?>" style="display: none;" >
-								<label class="layout-control-label"><?php _e( "Css Label", contact_bank ); ?> :</label>
+								<label class="layout-control-label"><?php _e( "Label Style", contact_bank ); ?> :</label>
 								<div class="layout-controls">
-									<textarea class="layout-span11" id="ux_email_set_outer_label_<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter Css Label", contact_bank ); ?>" name="ux_email_set_outer_label_<?php echo $dynamicId; ?>"></textarea>
+									<textarea class="layout-span11" id="ux_email_set_outer_label_<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter Label Style", contact_bank ); ?>" name="ux_email_set_outer_label_<?php echo $dynamicId; ?>"></textarea>
 									<a style="cursor:pointer;" onclick="delete_email_css_style_label(<?php echo $dynamicId; ?>);" id="anchor_del_" ><img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="vertical-align: middle;" /></a>
 								</div>
 							</div>
 							<div class="layout-control-group" id="advance_text_input_<?php echo $dynamicId; ?>" style="display: none">
-								<label class="layout-control-label"><?php _e( "Css Text Input", contact_bank ); ?> :</label>
+								<label class="layout-control-label"><?php _e( "Text Input Style", contact_bank ); ?> :</label>
 								<div class="layout-controls">
-									<textarea class="layout-span11" id="ux_email_txt_input_<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter Css Input Text", contact_bank ); ?>" name="ux_email_txt_input_<?php echo $dynamicId; ?>"></textarea>
+									<textarea class="layout-span11" id="ux_email_txt_input_<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter Text Input Style", contact_bank ); ?>" name="ux_email_txt_input_<?php echo $dynamicId; ?>"></textarea>
 									<a style="cursor:pointer;"  onclick="delete_email_css_style_text_input(<?php echo $dynamicId; ?>);" id="anchor_del_" ><img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="vertical-align: middle;" /></a>
 								</div>
 							</div>
 							<div class="layout-control-group" id="advance_text_description_<?php echo $dynamicId; ?>" style="display:none;">
-								<label class="layout-control-label"><?php _e( "Css Description", contact_bank ); ?> :</label>
+								<label class="layout-control-label"><?php _e( "Description Style", contact_bank ); ?> :</label>
 								<div class="layout-controls">
-									<textarea class="layout-span11" id="ux_email_description_textarea_<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter Css Description", contact_bank ); ?>" name="ux_email_description_textarea_<?php echo $dynamicId; ?>"></textarea>
+									<textarea class="layout-span11" id="ux_email_description_textarea_<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter Description Style", contact_bank ); ?>" name="ux_email_description_textarea_<?php echo $dynamicId; ?>"></textarea>
 									<a style="cursor:pointer;"  onclick="delete_email_css_style_description(<?php echo $dynamicId; ?>);" id="anchor_del_" ><img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="vertical-align: middle;" /></a>
 								</div>
 							</div>
 							<div class="layout-control-group">
-								<label class="layout-control-label"><?php _e( "Add a style to", contact_bank ); ?> :</label>
+								<label class="layout-control-label"><?php _e( "Add a Style to", contact_bank ); ?> :</label>
 								<div class="layout-controls">
-									<input type="button" class="btn btn-inverse layout-span3" id="ux_button_label_style_<?php echo $dynamicId; ?>" name="ux_button_label_style_<?php echo $dynamicId; ?>" onclick="button_set_outer_label(<?php echo $dynamicId; ?>,3);" value="<?php _e( "Label", contact_bank ); ?>" />
-									<input type="button" class="btn btn-inverse layout-span3" id="ux_button_txt_input_save_<?php echo $dynamicId; ?>" name="ux_button_txt_input_save_<?php echo $dynamicId; ?>" onclick="button_set_txt_input(<?php echo $dynamicId; ?>,3);" value="<?php _e( "Text input", contact_bank ); ?>" />
-									<input type="button" class="btn btn-inverse layout-span3" id="ux_button_description_style_<?php echo $dynamicId; ?>" name="ux_button_description_style_<?php echo $dynamicId; ?>" onclick="button_set_description(<?php echo $dynamicId; ?>,3);" value="<?php _e( "Description", contact_bank ); ?>" />
+									<input type="button" class="btn btn-inverse layout-span2" id="ux_button_label_style_<?php echo $dynamicId; ?>" name="ux_button_label_style_<?php echo $dynamicId; ?>" onclick="button_set_outer_label(<?php echo $dynamicId; ?>,3);" value="<?php _e( "Label", contact_bank ); ?>" />
+									<input type="button" class="btn btn-inverse layout-span2" id="ux_button_txt_input_save_<?php echo $dynamicId; ?>" name="ux_button_txt_input_save_<?php echo $dynamicId; ?>" onclick="button_set_txt_input(<?php echo $dynamicId; ?>,3);" value="<?php _e( "Text Input", contact_bank ); ?>" />
+									<input type="button" class="btn btn-inverse layout-span2" id="ux_button_description_style_<?php echo $dynamicId; ?>" name="ux_button_description_style_<?php echo $dynamicId; ?>" onclick="button_set_description(<?php echo $dynamicId; ?>,3);" value="<?php _e( "Description", contact_bank ); ?>" />
 								</div>
 							</div>
 							<div class="layout-control-group">
@@ -140,7 +114,7 @@ else
 		</div>
 	</div>
 	<div class="layout-control-group">	
-		<input type="button" style="float:left;margin-left: 0px;" class="btn btn-info layout-span2" onclick="save_email_control(<?php echo $dynamicId; ?>)" value="<?php _e( "Save", contact_bank ); ?>" />
+		<input type="button" class="btn btn-info layout-span2" onclick="save_email_control(<?php echo $dynamicId; ?>)" value="<?php _e( "Save Settings", contact_bank ); ?>" />
 	</div>
 </div>
 <script type="text/javascript">
@@ -210,10 +184,11 @@ else
 	var count = <?php echo $count; ?>;
 	if(count != 0)
 	{
+		var dynamicCount = "<?php echo $dynamicCount;?>";
 		var dynamicId = <?php echo $dynamicId; ?>;
-		jQuery("#ux_label_text_"+dynamicId).val(array_email[dynamicId][2]);
-		jQuery("#ux_description_control_"+dynamicId).html(array_email[dynamicId][3]);
-		if(array_email[dynamicId][4] == 1)
+		jQuery("#ux_label_text_"+dynamicId).val(array_controls[dynamicCount][2].cb_label_value);
+		jQuery("#ux_description_control_"+dynamicId).html(array_controls[dynamicCount][3].cb_description);
+		if(array_controls[dynamicCount][4].cb_control_required == 1)
 		{
 			jQuery("#ux_required_control_"+dynamicId).attr("checked","checked");
 		}
@@ -221,81 +196,76 @@ else
 		{
 			jQuery("#ux_required_"+dynamicId).attr("checked","checked");
 		}
-		jQuery("#ux_tooltip_control_"+dynamicId).val(array_email[dynamicId][5]);
-		jQuery("#ux_admin_label_"+dynamicId).val(array_email[dynamicId][6]);
-		if(array_email[dynamicId][7] == true)
+		jQuery("#ux_tooltip_control_"+dynamicId).val(array_controls[dynamicCount][5].cb_tooltip_txt);
+		jQuery("#ux_admin_label_"+dynamicId).val(array_controls[dynamicCount][6].cb_admin_label);
+		if(array_controls[dynamicCount][7].cb_show_email == true)
 		{
 			jQuery("#ux_show_email_"+dynamicId).attr("checked","checked");
 		}
-		if(array_email[dynamicId][8] != "")
+		if(array_controls[dynamicCount][8].cb_button_set_outer_label != "")
 		{
-			jQuery("#ux_email_set_outer_label_"+dynamicId).html(array_email[dynamicId][8]);
+			jQuery("#ux_email_set_outer_label_"+dynamicId).html(array_controls[dynamicCount][8].cb_button_set_outer_label);
 			jQuery("#ux_advance_label_"+dynamicId).attr("style","display:block");
 			jQuery("#ux_advance_label_"+dynamicId).attr("style","position:inherit");
 		}
-		if(array_email[dynamicId][9] != "")
+		if(array_controls[dynamicCount][9].cb_button_set_txt_input != "")
 		{
-			jQuery("#ux_email_txt_input_"+dynamicId).html(array_email[dynamicId][9]);
+			jQuery("#ux_email_txt_input_"+dynamicId).html(array_controls[dynamicCount][9].cb_button_set_txt_input);
 			jQuery("#advance_text_input_"+dynamicId).attr("style","display:block");
 			jQuery("#advance_text_input_"+dynamicId).attr("style","position:inherit");
 		}
-		if(array_email[dynamicId][10] != "")
+		if(array_controls[dynamicCount][10].cb_button_set_txt_description != "")
 		{
-			jQuery("#ux_email_description_textarea_"+dynamicId).html(array_email[dynamicId][10]);
+			jQuery("#ux_email_description_textarea_"+dynamicId).html(array_controls[dynamicCount][10].cb_button_set_txt_description);
 			jQuery("#advance_text_description_"+dynamicId).attr("style","display:block");
 			jQuery("#advance_text_description_"+dynamicId).attr("style","position:inherit");
 		}
-		if(array_email[dynamicId][11] == true)
+		if(array_controls[dynamicCount][11].cb_checkbox_alpha_filter == true)
 		{
 			jQuery("#ux_email_alpha_filter_"+dynamicId).attr("checked","checked");
 		}
-		if(array_email[dynamicId][12] == true)
+		if(array_controls[dynamicCount][12].cb_ux_checkbox_alpha_num_filter == true)
 		{
 			jQuery("#ux_email_alpha_num_filter_"+dynamicId).attr("checked","checked");
 		}
-		if(array_email[dynamicId][13] == true)
+		if(array_controls[dynamicCount][13].cb_checkbox_digit_filter == true)
 		{
 			jQuery("#ux_email_digit_filter_"+dynamicId).attr("checked","checked");
 		}
-		if(array_email[dynamicId][14] == true)
+		if(array_controls[dynamicCount][14].cb_checkbox_strip_tag_filter == true)
 		{
 			jQuery("#ux_email_strip_tag_filter_"+dynamicId).attr("checked","checked");
 		}
-		if(array_email[dynamicId][15] == true)
+		if(array_controls[dynamicCount][15].cb_checkbox_trim_filter == true)
 		{
 			jQuery("#ux_email_trim_filter_"+dynamicId).attr("checked","checked");
 		}
 	}
 	function save_email_control(dynamicId)
 	{
-		array_email[dynamicId] = [];
-		array_email[dynamicId].push(3);
-		array_email[dynamicId].push(dynamicId);
-		array_email[dynamicId].push(jQuery("#ux_label_text_"+dynamicId).val());
-		array_email[dynamicId].push(jQuery("#ux_description_control_"+dynamicId).val());
-		if(jQuery("#ux_required_control_"+dynamicId).prop("checked") == true)
-		{
-			array_email[dynamicId].push("1");
-		}
-		else
-		{
-			array_email[dynamicId].push("0");
-		}
-		array_email[dynamicId].push(jQuery("#ux_tooltip_control_"+dynamicId).val());
-		array_email[dynamicId].push(jQuery("#ux_admin_label_"+dynamicId).val());
-		array_email[dynamicId].push(jQuery("#ux_show_email_"+dynamicId).prop("checked"));
-		array_email[dynamicId].push(jQuery("#ux_email_set_outer_label_"+dynamicId).val());
-		array_email[dynamicId].push(jQuery("#ux_email_txt_input_"+dynamicId).val());
-		array_email[dynamicId].push(jQuery("#ux_email_description_textarea_"+dynamicId).val());
-		array_email[dynamicId].push(jQuery("#ux_email_alpha_filter_"+dynamicId).prop("checked"));
-		array_email[dynamicId].push(jQuery("#ux_email_alpha_num_filter_"+dynamicId).prop("checked"));
-		array_email[dynamicId].push(jQuery("#ux_email_digit_filter_"+dynamicId).prop("checked"));
-		array_email[dynamicId].push(jQuery("#ux_email_strip_tag_filter_"+dynamicId).prop("checked")); 
-		array_email[dynamicId].push(jQuery("#ux_email_trim_filter_"+dynamicId).prop("checked"));		
+		var dynamicCount = "<?php echo $dynamicCount;?>";
+		array_controls[dynamicCount] = [];
+		array_controls[dynamicCount].push({"control_type" : 3});
+		array_controls[dynamicCount].push({"email_dynamicId" : dynamicId});
+		array_controls[dynamicCount].push({"cb_label_value" : jQuery("#ux_label_text_"+dynamicId).val()});
+		array_controls[dynamicCount].push({"cb_description" : jQuery("#ux_description_control_"+dynamicId).val()});
+		jQuery("#ux_required_control_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_control_required": 1}) : array_controls[dynamicCount].push({"cb_control_required": 0});
+		array_controls[dynamicCount].push({"cb_tooltip_txt" : jQuery("#ux_tooltip_control_"+dynamicId).val()});
+		array_controls[dynamicCount].push({"cb_admin_label" : jQuery("#ux_admin_label_"+dynamicId).val()});
+		jQuery("#ux_show_email_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_show_email": 1}) : array_controls[dynamicCount].push({"cb_show_email": 0});
+		array_controls[dynamicCount].push({"cb_button_set_outer_label" : jQuery("#ux_email_set_outer_label_"+dynamicId).val()});
+		array_controls[dynamicCount].push({"cb_button_set_txt_input" : jQuery("#ux_email_txt_input_"+dynamicId).val()});
+		array_controls[dynamicCount].push({"cb_button_set_txt_description" : jQuery("#ux_email_description_textarea_"+dynamicId).val()});
+		
+		jQuery("#ux_email_alpha_filter_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_checkbox_alpha_filter": 1}) : array_controls[dynamicCount].push({"cb_checkbox_alpha_filter": 0});
+		jQuery("#ux_email_alpha_num_filter_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_ux_checkbox_alpha_num_filter": 1}) : array_controls[dynamicCount].push({"cb_ux_checkbox_alpha_num_filter": 0});
+		jQuery("#ux_email_digit_filter_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_checkbox_digit_filter": 1}) : array_controls[dynamicCount].push({"cb_checkbox_digit_filter": 0});
+		jQuery("#ux_email_strip_tag_filter_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_checkbox_strip_tag_filter": 1}) : array_controls[dynamicCount].push({"cb_checkbox_strip_tag_filter": 0});
+		jQuery("#ux_email_trim_filter_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_checkbox_trim_filter": 1}) : array_controls[dynamicCount].push({"cb_checkbox_trim_filter": 0});
+		
 		jQuery("#control_label_"+dynamicId).html(jQuery("#ux_label_text_"+dynamicId).val()+" :");
 		jQuery("#txt_description_"+dynamicId).html(jQuery("#ux_description_control_"+dynamicId).val());
-		var tooltip_text = jQuery("#ux_tooltip_control_"+dynamicId).val();
-		jQuery("#email_"+dynamicId).attr("data-original-title",tooltip_text);
+		jQuery("#show_tooltip"+dynamicId).attr("data-original-title",jQuery("#ux_tooltip_control_"+dynamicId).val());
 		if(jQuery("#ux_required_control_"+dynamicId).prop("checked") == true)
 		{
 			jQuery("#txt_required_"+dynamicId).css("display","block");
@@ -345,6 +315,3 @@ else
 		jQuery("#ux_email_description_textarea_"+dynamicId).val("");
 	}
 </script>
-<?php
-}
-?>

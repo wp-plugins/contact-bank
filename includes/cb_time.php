@@ -1,91 +1,3 @@
-<?php
-if($_REQUEST["param"] == "create_select_time_control")
-{
-	$dynamicId = intval($_REQUEST["dynamicId"]);
-	$field_id = intval($_REQUEST["field_id"]);
-	?>
-	<div class="layout-control-group div_border"  id="div_<?php echo $dynamicId; ?>_13">
-	<label class="layout-control-label" id="control_label_<?php echo $dynamicId; ?>" ><?php _e("Time", contact_bank); ?> : </label>
-	<span id="txt_required_<?php echo $dynamicId; ?>"  class="error">*</span>
-		<div class="layout-controls hovertip" id="show_tooltip<?php echo $dynamicId; ?>">
-			<select class="layout-span2" id="select_hr_12_<?php echo $dynamicId; ?>" name="select_hr_12_<?php echo $dynamicId; ?>">";
-				<option selected="selected" value=""><?php _e("Hour", contact_bank); ?></option>
-				<?php
-				for($flag=1; $flag <= 12; $flag++)
-				{
-					if($flag < 10)
-					{
-					?>
-					<option value="0<?php echo $flag ?>">0<?php echo $flag ?></option>
-					<?php
-					}
-					else
-					{
-					?>		
-					<option value="<?php echo $flag; ?>"><?php echo $flag ?></option>
-					<?php	
-					}
-				}
-				?>
-			</select>
-			<select class="layout-span3" id="select_hr_24_<?php echo $dynamicId; ?>" name="select_hr_24_<?php echo $dynamicId; ?>">";
-				<option selected="selected" value=""><?php _e("Hour", contact_bank); ?></option>
-				<?php
-				for($flag=1; $flag <= 24; $flag++)
-				{
-					if($flag < 10)
-					{
-					?>
-					<option value="0<?php echo $flag ?>">0<?php echo $flag ?></option>
-					<?php
-					}
-					else
-					{
-					?>		
-					<option value="<?php echo $flag; ?>"><?php echo $flag ?></option>
-					<?php	
-					}
-				}
-				?>
-			</select>
-			<select class="hovertip layout-span3" id="select_min_<?php echo $dynamicId; ?>" name="select_min_<?php echo $dynamicId; ?>">
-				<option selected="selected" value=""><?php _e("Minute", contact_bank); ?></option>
-				<?php
-				for($flag=0; $flag <= 59; $flag++)
-				{
-					if($flag < 10)
-					{
-					?>
-					<option value="0<?php echo $flag ?>">0<?php echo $flag ?></option>
-					<?php	
-					}
-					else
-					{
-					?>
-					<option value="<?php echo $flag ?>"><?php echo $flag ?></option>
-					<?php
-					}
-				}
-				?>
-			</select>
-			<select class="hovertip layout-span2" id="select_am_<?php echo $dynamicId; ?>" name="select_am_<?php echo $dynamicId; ?>">
-				<option value="0">AM</option>
-				<option value="1">PM</option>
-			</select>
-			<a class="btn btn-info inline"  id="add_setting_control_<?php echo $dynamicId; ?>"  href="#setting_controls_postback" ><?php _e( "Settings", contact_bank ); ?></a>	
-			<a style="cursor:pointer;"  onclick="delete_textbox(div_<?php echo $dynamicId; ?>_13,<?php echo $dynamicId; ?>);" id="anchor_del_<?php echo $dynamicId; ?>" >
-				<img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="margin-left: 1%;margin-bottom:-9px" onmouseover="img_show(<?php echo $dynamicId; ?>)" onmouseout="img_hide(<?php echo $dynamicId; ?>)"  />
-			</a> 
-			<br />
-			<span class="span-description" id="txt_description_<?php echo $dynamicId; ?>"></span>
-		</div>
-	</div>
-	<?php
-	die();	
-}
-else 
-{
-?>
 <div class="layout-span7">
 	<div class="widget-layout widget-tabs">
 		<div class="widget-layout-title">
@@ -121,7 +33,7 @@ else
 							</div>
 							<div class="layout-control-group">
 								<label class="layout-control-label"><?php _e( "Required", contact_bank ); ?> :</label>
-								<div class="layout-controls">
+								<div class="layout-controls" style="padding-top:5px;">
 									<input type="radio" id="ux_required_control_<?php echo $dynamicId; ?>" name="ux_required_control_radio_<?php echo $dynamicId; ?>" value="1"/><label style="margin-left: 5px;"><?php _e( "Required", contact_bank ); ?></label>				
 									<input type="radio" checked="checked" id="ux_required_<?php echo $dynamicId; ?>" name="ux_required_control_radio_<?php echo $dynamicId; ?>" value="0"/><label style="margin-left: 5px;"><?php _e( "Not Required", contact_bank ); ?></label>
 								</div>
@@ -145,7 +57,7 @@ else
 							</div>
 							<div class="layout-control-group">
 								<label class="layout-control-label"><?php _e( "Do not show in the email", contact_bank ); ?> :</label>
-								<div class="layout-controls">
+								<div class="layout-controls" style="padding-top:5px;">
 									<input type="checkbox" id="ux_email_<?php echo $dynamicId; ?>"  name="ux_email_<?php echo $dynamicId; ?>" value="1" >
 								</div>
 							</div>
@@ -246,56 +158,56 @@ else
 					<div id="tabs-nohdr-1"  style="display:none;">
 						<div id="div_advanced_<?php echo $dynamicId; ?>">
 							<div class="layout-control-group" id="time_css_label_<?php echo $dynamicId; ?>" style="display: none">
-								<label class="layout-control-label"><?php _e( "Css Label", contact_bank ); ?> :</label>
+								<label class="layout-control-label"><?php _e( "Label Style", contact_bank ); ?> :</label>
 								<div class="layout-controls">
-									<textarea class="layout-span11" id="button_set_outer_label_<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter Css Label", contact_bank ); ?>" name="button_set_outer_label_<?php echo $dynamicId; ?>"></textarea>
+									<textarea class="layout-span11" id="button_set_outer_label_<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter Label Style", contact_bank ); ?>" name="button_set_outer_label_<?php echo $dynamicId; ?>"></textarea>
 									<a style="cursor:pointer;"  onclick="delete_css_style_label(<?php echo $dynamicId; ?>);" id="anchor_del_" ><img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="vertical-align: middle" /></a>
 								</div>
 							</div>
 							<div class="layout-control-group" id="time_text_input_<?php echo $dynamicId; ?>" style="display: none">
-								<label class="layout-control-label"><?php _e( "Css Text Input", contact_bank ); ?> :</label>
+								<label class="layout-control-label"><?php _e( "Text Input Style", contact_bank ); ?> :</label>
 								<div class="layout-controls">
-									<textarea class="layout-span11" id="button_set_textinput_<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter Css Text Input", contact_bank ); ?>" name="button_set_textinput_<?php echo $dynamicId; ?>"></textarea>
+									<textarea class="layout-span11" id="button_set_textinput_<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter Text Input Style", contact_bank ); ?>" name="button_set_textinput_<?php echo $dynamicId; ?>"></textarea>
 									<a style="cursor:pointer;"  onclick="delete_css_style_textinput(<?php echo $dynamicId; ?>);" id="anchor_del_" ><img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="vertical-align: middle" /></a>
 								</div>
 							</div>
 							<div class="layout-control-group" id="time_description_<?php echo $dynamicId; ?>" style="display: none">
-								<label class="layout-control-label"><?php _e( "Css Description", contact_bank ); ?> :</label>
+								<label class="layout-control-label"><?php _e( "Description Style", contact_bank ); ?> :</label>
 								<div class="layout-controls">
-									<textarea class="layout-span11" id="button_set_outer_description_<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter Css Description", contact_bank ); ?>" name="button_set_outer_description_<?php echo $dynamicId; ?>"></textarea>
+									<textarea class="layout-span11" id="button_set_outer_description_<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter Description Style", contact_bank ); ?>" name="button_set_outer_description_<?php echo $dynamicId; ?>"></textarea>
 									<a style="cursor:pointer;"  onclick="delete_css_style_description(<?php echo $dynamicId; ?>);" id="anchor_del_" ><img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="vertical-align: middle" /></a>
 								</div>
 							</div>
 							<div class="layout-control-group" id="time_set_time_hour_<?php echo $dynamicId; ?>" style="display: none">
-								<label class="layout-control-label"><?php _e( "Css Hour", contact_bank ); ?> :</label>
+								<label class="layout-control-label"><?php _e( "Hour Style", contact_bank ); ?> :</label>
 								<div class="layout-controls">
-									<textarea class="layout-span11" id="ux_time_hour_<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter Css Hour", contact_bank ); ?>" name="ux_time_hour_<?php echo $dynamicId; ?>"></textarea>
+									<textarea class="layout-span11" id="ux_time_hour_<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter Hour Style", contact_bank ); ?>" name="ux_time_hour_<?php echo $dynamicId; ?>"></textarea>
 									<a style="cursor:pointer;"  onclick="delete_css_style_hour(<?php echo $dynamicId; ?>);" id="anchor_del_" ><img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="vertical-align: middle" /></a>
 								</div>
 							</div>
 							<div class="layout-control-group" id="button_set_time_minute_<?php echo $dynamicId; ?>" style="display: none">
-								<label class="layout-control-label"><?php _e( "Css Minute", contact_bank ); ?> :</label>
+								<label class="layout-control-label"><?php _e( "Minute Style", contact_bank ); ?> :</label>
 								<div class="layout-controls">
-									<textarea class="layout-span11" id="ux_time_minute_<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter Css Minute", contact_bank ); ?>" name="ux_time_minute_<?php echo $dynamicId; ?>"></textarea>
+									<textarea class="layout-span11" id="ux_time_minute_<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter Minute Style", contact_bank ); ?>" name="ux_time_minute_<?php echo $dynamicId; ?>"></textarea>
 									<a style="cursor:pointer;"  onclick="delete_css_style_minute(<?php echo $dynamicId; ?>);" id="anchor_del_" ><img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="vertical-align: middle" /></a>
 								</div>
 							</div>
 							<div class="layout-control-group" id="ux_tr_set_time_am_<?php echo $dynamicId; ?>" style="display: none" >
-								<label class="layout-control-label"><?php _e( "Css am/pm", contact_bank ); ?> :</label>
+								<label class="layout-control-label"><?php _e( "AM/PM Style", contact_bank ); ?> :</label>
 								<div class="layout-controls">
-									<textarea class="layout-span11" id="button_set_time_am_<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter Css am/pm", contact_bank ); ?>" name="button_set_time_am_<?php echo $dynamicId; ?>"></textarea>
+									<textarea class="layout-span11" id="button_set_time_am_<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter AM/PM Style", contact_bank ); ?>" name="button_set_time_am_<?php echo $dynamicId; ?>"></textarea>
 									<a style="cursor:pointer;"  onclick="delete_css_style_am(<?php echo $dynamicId; ?>);" id="anchor_del_" ><img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="vertical-align: middle" /></a>
 								</div>
 							</div>
 							<div class="layout-control-group">
-								<label class="layout-control-label"><?php _e( "Add a style to", contact_bank ); ?> :</label>
+								<label class="layout-control-label"><?php _e( "Add a Style to", contact_bank ); ?> :</label>
 								<div class="layout-controls">
-									<input type="button" class="btn btn-inverse layout-span3" id="ux_button_label_style_<?php echo $dynamicId; ?>" name="ux_button_label_style_<?php echo $dynamicId; ?>" onclick="button_set_outer_label(<?php echo $dynamicId; ?>,13);" style="margin-bottom: 5px;" value="<?php _e( "Label", contact_bank ); ?>" />
-									<input type="button" class="btn btn-inverse layout-span3" id="ux_button_txt_input_save_<?php echo $dynamicId; ?>" name="ux_button_txt_input_save_<?php echo $dynamicId; ?>" onclick="button_set_txt_input(<?php echo $dynamicId; ?>,13);" style="margin-bottom: 5px;display: none;" value="<?php _e( "Text input", contact_bank ); ?>" />
-									<input type="button" class="btn btn-inverse layout-span3" id="ux_button_description_style_<?php echo $dynamicId; ?>" name="ux_button_description_style_<?php echo $dynamicId; ?>" onclick="button_set_description(<?php echo $dynamicId; ?>,13);" style="margin-bottom: 5px;" value="<?php _e( "Description", contact_bank ); ?>" />
-									<input type="button" class="btn btn-inverse layout-span5" id="ux_button_set_time_hour_<?php echo $dynamicId; ?>" name="ux_button_set_time_hour_<?php echo $dynamicId; ?>" onclick="button_set_time_hour(<?php echo $dynamicId; ?>,13);" style="margin-bottom: 5px;" value="<?php _e( "Time hour dropdown", contact_bank ); ?>" />
-									<input type="button" class="btn btn-inverse layout-span5" id="ux_button_set_time_minute_<?php echo $dynamicId; ?>" name="ux_button_set_time_minute_<?php echo $dynamicId; ?>" onclick="button_set_time_minute(<?php echo $dynamicId; ?>,13);" style="margin-bottom: 5px;" value="<?php _e( "Time minute dropdown", contact_bank ); ?>" />
-									<input type="button" class="btn btn-inverse layout-span5" id="ux_button_set_time_am_<?php echo $dynamicId; ?>" name="ux_button_set_time_am_<?php echo $dynamicId; ?>" onclick="button_set_time_am(<?php echo $dynamicId; ?>,13);" style="margin-bottom: 5px;" value="<?php _e( "Time am/pm dropdown", contact_bank ); ?>" />
+									<input type="button" class="btn btn-inverse layout-span2" id="ux_button_label_style_<?php echo $dynamicId; ?>" name="ux_button_label_style_<?php echo $dynamicId; ?>" onclick="button_set_outer_label(<?php echo $dynamicId; ?>,13);" style="margin-bottom: 5px;" value="<?php _e( "Label", contact_bank ); ?>" />
+									<input type="button" class="btn btn-inverse layout-span2" id="ux_button_txt_input_save_<?php echo $dynamicId; ?>" name="ux_button_txt_input_save_<?php echo $dynamicId; ?>" onclick="button_set_txt_input(<?php echo $dynamicId; ?>,13);" style="margin-bottom: 5px;display: none;" value="<?php _e( "Text Input", contact_bank ); ?>" />
+									<input type="button" class="btn btn-inverse layout-span2" id="ux_button_description_style_<?php echo $dynamicId; ?>" name="ux_button_description_style_<?php echo $dynamicId; ?>" onclick="button_set_description(<?php echo $dynamicId; ?>,13);" style="margin-bottom: 5px;" value="<?php _e( "Description", contact_bank ); ?>" />
+									<input type="button" class="btn btn-inverse layout-span2" id="ux_button_set_time_hour_<?php echo $dynamicId; ?>" name="ux_button_set_time_hour_<?php echo $dynamicId; ?>" onclick="button_set_time_hour(<?php echo $dynamicId; ?>,13);" style="margin-bottom: 5px;" value="<?php _e( "Hour", contact_bank ); ?>" />
+									<input type="button" class="btn btn-inverse layout-span2" id="ux_button_set_time_minute_<?php echo $dynamicId; ?>" name="ux_button_set_time_minute_<?php echo $dynamicId; ?>" onclick="button_set_time_minute(<?php echo $dynamicId; ?>,13);" style="margin-bottom: 5px;" value="<?php _e( "Minute", contact_bank ); ?>" />
+									<input type="button" class="btn btn-inverse layout-span2" id="ux_button_set_time_am_<?php echo $dynamicId; ?>" name="ux_button_set_time_am_<?php echo $dynamicId; ?>" onclick="button_set_time_am(<?php echo $dynamicId; ?>,13);" style="margin-bottom: 5px;" value="<?php _e( "AM/PM", contact_bank ); ?>" />
 								</div>
 							</div>
 						</div>
@@ -305,7 +217,7 @@ else
 		</div>
 	</div>
 	<div class="layout-control-group">	
-		<input type="button" style="float:left;margin-left: 0px;" class="btn btn-info layout-span2" onclick="save_time_control(<?php echo $dynamicId; ?>)" value="<?php _e( "Save", contact_bank ); ?>" />
+		<input type="button" class="btn btn-info layout-span2" onclick="save_time_control(<?php echo $dynamicId; ?>)" value="<?php _e( "Save Settings", contact_bank ); ?>" />
 	</div>
 </div>
 <script type="text/javascript">
@@ -345,10 +257,11 @@ else
 	var count = <?php echo $count; ?>;
 	if(count != 0)
 	{
+		var dynamicCount = "<?php echo $dynamicCount;?>";
 		var dynamicId = <?php echo $dynamicId; ?>;
-		jQuery("#ux_label_text_"+dynamicId).val(array_time[dynamicId][2]);
-		jQuery("#ux_description_control_"+dynamicId).val(array_time[dynamicId][3]);
-		if(array_time[dynamicId][4] == 1)
+		jQuery("#ux_label_text_"+dynamicId).val(array_controls[dynamicCount][2].cb_label_value);
+		jQuery("#ux_description_control_"+dynamicId).val(array_controls[dynamicCount][3].cb_description);
+		if(array_controls[dynamicCount][4].cb_control_required == 1)
 		{
 			jQuery("#ux_required_control_"+dynamicId).attr("checked","checked");
 		}
@@ -356,68 +269,68 @@ else
 		{
 			jQuery("#ux_required_"+dynamicId).attr("checked","checked");
 		}
-		jQuery("#ux_tooltip_control_"+dynamicId).val(array_time[dynamicId][5]);
-		jQuery("#ux_admin_label_"+dynamicId).val(array_time[dynamicId][6]);
-		if(array_time[dynamicId][7] == true)
+		jQuery("#ux_tooltip_control_"+dynamicId).val(array_controls[dynamicCount][5].cb_tooltip_txt);
+		jQuery("#ux_admin_label_"+dynamicId).val(array_controls[dynamicCount][6].cb_admin_label);
+		if(array_controls[dynamicCount][7].cb_show_email == true)
 		{
 			jQuery("#ux_email_"+dynamicId).attr("checked","checked");
 		}
 		
-		if(array_time[dynamicId][8] == 12)
+		if(array_controls[dynamicCount][8].cb_hour_format == 12)
 		{
 			jQuery("#ux_default_hours_24_"+dynamicId).hide();
 			jQuery("#ux_default_hours_12_"+dynamicId).show();
-			jQuery("#ux_default_hours_12_"+dynamicId).val(array_time[dynamicId][9]);	
-			jQuery("#ux_drop_hour_time_"+dynamicId).val(array_time[dynamicId][8]);	
-			jQuery("#ux_default_minute_"+dynamicId).val(array_time[dynamicId][10]);	
-			jQuery("#ux_default_am_"+dynamicId).val(array_time[dynamicId][11]);	
-			jQuery("#ux_minute_format_"+dynamicId).val(array_time[dynamicId][12]);
+			jQuery("#ux_default_hours_12_"+dynamicId).val(array_controls[dynamicCount][9].cb_hours);	
+			jQuery("#ux_drop_hour_time_"+dynamicId).val(array_controls[dynamicCount][8].cb_hour_format);	
+			jQuery("#ux_default_minute_"+dynamicId).val(array_controls[dynamicCount][10].cb_minutes);	
+			jQuery("#ux_default_am_"+dynamicId).val(array_controls[dynamicCount][11].cb_am_pm);	
+			jQuery("#ux_minute_format_"+dynamicId).val(array_controls[dynamicCount][12].cb_time_format);
 			jQuery("#ux_default_am_"+dynamicId).show();
 		}
-		else if(array_time[dynamicId][8] == 24)
+		else if(array_controls[dynamicCount][8].cb_hour_format == 24)
 		{
 			jQuery("#ux_default_hours_12_"+dynamicId).hide();
 			jQuery("#ux_default_hours_24_"+dynamicId).show();
-			jQuery("#ux_default_hours_24_"+dynamicId).val(array_time[dynamicId][9]);	
-			jQuery("#ux_drop_hour_time_"+dynamicId).val(array_time[dynamicId][8]);	
-			jQuery("#ux_default_minute_"+dynamicId).val(array_time[dynamicId][10]);	
-			jQuery("#ux_default_am_"+dynamicId).val(array_time[dynamicId][11]);	
-			jQuery("#ux_minute_format_"+dynamicId).val(array_time[dynamicId][12]);
+			jQuery("#ux_default_hours_24_"+dynamicId).val(array_controls[dynamicCount][9].cb_hours);	
+			jQuery("#ux_drop_hour_time_"+dynamicId).val(array_controls[dynamicCount][8].cb_hour_format);	
+			jQuery("#ux_default_minute_"+dynamicId).val(array_controls[dynamicCount][10].cb_minutes);	
+			jQuery("#ux_default_am_"+dynamicId).val(array_controls[dynamicCount][11].cb_am_pm);	
+			jQuery("#ux_minute_format_"+dynamicId).val(array_controls[dynamicCount][12].cb_time_format);
 			jQuery("#ux_default_am_"+dynamicId).hide();
 		}
-		if(array_time[dynamicId][13] != "")
+		if(array_controls[dynamicCount][13].cb_button_set_outer_label != "")
 		{
-			jQuery("#button_set_outer_label_"+dynamicId).html(array_time[dynamicId][13]);
+			jQuery("#button_set_outer_label_"+dynamicId).html(array_controls[dynamicCount][13].cb_button_set_outer_label);
 			jQuery("#time_css_label_"+dynamicId).attr("style","display:block");
 			jQuery("#time_css_label_"+dynamicId).attr("style","position:inherit");
 		}
-		if(array_time[dynamicId][14] != "")
+		if(array_controls[dynamicCount][14].cb_button_set_txt_input != "")
 		{
-			jQuery("#button_set_textinput_"+dynamicId).html(array_time[dynamicId][14]);
+			jQuery("#button_set_textinput_"+dynamicId).html(array_controls[dynamicCount][14].cb_button_set_txt_input);
 			jQuery("#time_text_input_"+dynamicId).attr("style","display:block");
 			jQuery("#time_text_input_"+dynamicId).attr("style","position:inherit");
 		}
-		if(array_time[dynamicId][15] != "")
+		if(array_controls[dynamicCount][15].cb_button_set_description != "")
 		{
-			jQuery("#button_set_outer_description_"+dynamicId).html(array_time[dynamicId][15]);
+			jQuery("#button_set_outer_description_"+dynamicId).html(array_controls[dynamicCount][15].cb_button_set_description);
 			jQuery("#time_description_"+dynamicId).attr("style","display:block");
 			jQuery("#time_description_"+dynamicId).attr("style","position:inherit");
 		}
-		if(array_time[dynamicId][16] != "")
+		if(array_controls[dynamicCount][16].cb_button_set_time_hour_dropdown != "")
 		{
-			jQuery("#ux_time_hour_"+dynamicId).html(array_time[dynamicId][16]);
+			jQuery("#ux_time_hour_"+dynamicId).html(array_controls[dynamicCount][16].cb_button_set_time_hour_dropdown);
 			jQuery("#time_set_time_hour_"+dynamicId).attr("style","display:block");
 			jQuery("#time_set_time_hour_"+dynamicId).attr("style","position:inherit");
 		}	
-		if(array_time[dynamicId][17] != "")
+		if(array_controls[dynamicCount][17].cb_button_set_time_minute_dropdown != "")
 		{
-			jQuery("#ux_time_minute_"+dynamicId).html(array_time[dynamicId][17]);
+			jQuery("#ux_time_minute_"+dynamicId).html(array_controls[dynamicCount][17].cb_button_set_time_minute_dropdown);
 			jQuery("#button_set_time_minute_"+dynamicId).attr("style","display:block");
 			jQuery("#button_set_time_minute_"+dynamicId).attr("style","position:inherit");
 		}
-		if(array_time[dynamicId][18] != "")
+		if(array_controls[dynamicCount][18].cb_button_set_time_am_pm_dropdown != "")
 		{
-			jQuery("#button_set_time_am_"+dynamicId).html(array_time[dynamicId][18]);
+			jQuery("#button_set_time_am_"+dynamicId).html(array_controls[dynamicCount][18].cb_button_set_time_am_pm_dropdown);
 			jQuery("#ux_tr_set_time_am_"+dynamicId).attr("style","display:block");
 			jQuery("#ux_tr_set_time_am_"+dynamicId).attr("style","position:inherit");
 		}
@@ -480,27 +393,20 @@ else
 	
 	function save_time_control(dynamicId)
 	{
-		array_time[dynamicId] = [];
-		array_time[dynamicId].push(13);
-		array_time[dynamicId].push(dynamicId);
-		array_time[dynamicId].push(jQuery("#ux_label_text_"+dynamicId).val());
-		array_time[dynamicId].push(jQuery("#ux_description_control_"+dynamicId).val());
-		if(jQuery("#ux_required_control_"+dynamicId).prop("checked") == true)
-		{
-			array_time[dynamicId].push("1");
-		}
-		else
-		{
-			array_time[dynamicId].push("0");
-		}
-		array_time[dynamicId].push(jQuery("#ux_tooltip_control_"+dynamicId).val());
-		array_time[dynamicId].push(jQuery("#ux_admin_label_"+dynamicId).val());
-		array_time[dynamicId].push(jQuery("#ux_email_"+dynamicId).prop("checked"));
-		array_time[dynamicId].push(jQuery("#ux_drop_hour_time_"+dynamicId).val());
+		var dynamicCount = "<?php echo $dynamicCount;?>";
+		array_controls[dynamicCount] = [];
+		array_controls[dynamicCount].push({"control_type" : 13});
+		array_controls[dynamicCount].push({"time_dynamicId" : dynamicId});
+		array_controls[dynamicCount].push({"cb_label_value" : jQuery("#ux_label_text_"+dynamicId).val()});
+		array_controls[dynamicCount].push({"cb_description" : jQuery("#ux_description_control_"+dynamicId).val()});
+		jQuery("#ux_required_control_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_control_required": 1}) : array_controls[dynamicCount].push({"cb_control_required": 0});
+		array_controls[dynamicCount].push({"cb_tooltip_txt" : jQuery("#ux_tooltip_control_"+dynamicId).val()});
+		array_controls[dynamicCount].push({"cb_admin_label" : jQuery("#ux_admin_label_"+dynamicId).val()});
+		jQuery("#ux_email_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_show_email": 1}) : array_controls[dynamicCount].push({"cb_show_email": 0});
+		array_controls[dynamicCount].push({"cb_hour_format" : jQuery("#ux_drop_hour_time_"+dynamicId).val()});
 		if(jQuery("#ux_drop_hour_time_"+dynamicId).val() == 12)
 		{
-			array_time[dynamicId].push(jQuery("#ux_default_hours_12_"+dynamicId).val());
-			
+			array_controls[dynamicCount].push({"cb_hours" : jQuery("#ux_default_hours_12_"+dynamicId).val()});
 			jQuery("#ux_default_hours_24_"+dynamicId).hide();
 			jQuery("#ux_default_hours_12_"+dynamicId).show();
 		}
@@ -508,24 +414,21 @@ else
 		{
 			jQuery("#ux_default_hours_12_"+dynamicId).hide();
 			jQuery("#ux_default_hours_24_"+dynamicId).show();
-			array_time[dynamicId].push(jQuery("#ux_default_hours_24_"+dynamicId).val());
+			array_controls[dynamicCount].push({"cb_hours" : jQuery("#ux_default_hours_24_"+dynamicId).val()});
 		}
-		array_time[dynamicId].push(jQuery("#ux_default_minute_"+dynamicId).val());
-		array_time[dynamicId].push(jQuery("#ux_default_am_"+dynamicId).val());
-		array_time[dynamicId].push(jQuery("#ux_minute_format_"+dynamicId).val());
-		array_time[dynamicId].push(jQuery("#button_set_outer_label_"+dynamicId).val());
-		array_time[dynamicId].push(jQuery("#button_set_textinput_"+dynamicId).val());
-		array_time[dynamicId].push(jQuery("#button_set_outer_description_"+dynamicId).val());
-		array_time[dynamicId].push(jQuery("#ux_time_hour_"+dynamicId).val());
-		array_time[dynamicId].push(jQuery("#ux_time_minute_"+dynamicId).val());
-		array_time[dynamicId].push(jQuery("#button_set_time_am_"+dynamicId).val());
-		
-		
+		array_controls[dynamicCount].push({"cb_minutes" : jQuery("#ux_default_minute_"+dynamicId).val()});
+		array_controls[dynamicCount].push({"cb_am_pm" : jQuery("#ux_default_am_"+dynamicId).val()});
+		array_controls[dynamicCount].push({"cb_time_format" : jQuery("#ux_minute_format_"+dynamicId).val()});
+		array_controls[dynamicCount].push({"cb_button_set_outer_label" : jQuery("#button_set_outer_label_"+dynamicId).val()});
+		array_controls[dynamicCount].push({"cb_button_set_txt_input" : jQuery("#button_set_textinput_"+dynamicId).val()});
+		array_controls[dynamicCount].push({"cb_button_set_description" : jQuery("#button_set_outer_description_"+dynamicId).val()});
+		array_controls[dynamicCount].push({"cb_button_set_time_hour_dropdown" : jQuery("#ux_time_hour_"+dynamicId).val()});
+		array_controls[dynamicCount].push({"cb_button_set_time_minute_dropdown" : jQuery("#ux_time_minute_"+dynamicId).val()});
+		array_controls[dynamicCount].push({"cb_button_set_time_am_pm_dropdown" : jQuery("#button_set_time_am_"+dynamicId).val()});
 		jQuery("#control_label_"+dynamicId).html(jQuery("#ux_label_text_"+dynamicId).val()+" :");
 		jQuery("#txt_description_"+dynamicId).html(jQuery("#ux_description_control_"+dynamicId).val());
-		var tooltip_text = jQuery("#ux_tooltip_control_"+dynamicId).val();
-		jQuery("#tooltip_txt_hidden_value_"+dynamicId).val(tooltip_text);
-		jQuery("#show_tooltip"+dynamicId).attr("data-original-title",tooltip_text);
+		jQuery("#tooltip_txt_hidden_value_"+dynamicId).val(jQuery("#ux_tooltip_control_"+dynamicId).val());
+		jQuery("#show_tooltip"+dynamicId).attr("data-original-title",jQuery("#ux_tooltip_control_"+dynamicId).val());
 		if(jQuery("#ux_drop_hour_time_"+dynamicId).val() == 12)
 		{
 			jQuery("#select_hr_24_"+dynamicId).hide();
@@ -550,7 +453,6 @@ else
 		{
 			jQuery("#txt_required_"+dynamicId).css("display","none");
 		}
-		
 		CloseLightbox();
 	}
 	function enter_admin_label(dynamicId)
@@ -619,6 +521,3 @@ else
 		jQuery("#button_set_time_am_"+dynamicId).val("");
 	}
 </script>
-<?php
-}
-?>

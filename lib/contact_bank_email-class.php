@@ -64,8 +64,9 @@ else
 				(
 					$wpdb->prepare
 					(
-						"SELECT * FROM " .contact_bank_dynamic_settings_form().  " WHERE " .contact_bank_dynamic_settings_form().".dynamicId = %d",
-						$column_dynamicId
+						"SELECT * FROM " .contact_bank_dynamic_settings_form().  " JOIN " .create_control_Table()." ON " .create_control_Table().".column_dynamicId = " .contact_bank_dynamic_settings_form().  ".dynamicId  WHERE " .contact_bank_dynamic_settings_form().".dynamicId = %d AND " .create_control_Table().".form_id = %d ORDER BY dynamic_settings_id ASC",
+						$column_dynamicId,
+						$form_id
 					)
 				);
 				$keys = array();
@@ -81,7 +82,7 @@ else
 						
 						$index = array_search("cb_show_email", $keys);
 						$show_mail = $fields_dynamic_controls[$index]->dynamic_settings_value;
-						if($show_mail == "false" || $show_mail == "")
+						if($show_mail == 0 || $show_mail == "")
 						{
 							?>
 							<div class="layout-control-group">
@@ -97,7 +98,7 @@ else
 						
 						$index = array_search("cb_show_email", $keys);
 						$show_mail = $fields_dynamic_controls[$index]->dynamic_settings_value;
-						if($show_mail == "false" || $show_mail == "")
+						if($show_mail == 0 || $show_mail == "")
 						{
 							?>
 							<div class="layout-control-group">
@@ -112,7 +113,7 @@ else
 						
 						$index = array_search("cb_show_email", $keys);
 						$show_mail = $fields_dynamic_controls[$index]->dynamic_settings_value;
-						if($show_mail == "false" || $show_mail == "")
+						if($show_mail == 0 || $show_mail == "")
 						{
 						?>
 						<div class="layout-control-group">
@@ -128,7 +129,7 @@ else
 						
 						$index = array_search("cb_show_email", $keys);
 						$show_mail = $fields_dynamic_controls[$index]->dynamic_settings_value;
-						if($show_mail == "false" || $show_mail == "")
+						if($show_mail == 0 || $show_mail == "")
 						{
 						?>
 						<div class="layout-control-group">
@@ -144,7 +145,7 @@ else
 						
 						$index = array_search("cb_show_email", $keys);
 						$show_mail = $fields_dynamic_controls[$index]->dynamic_settings_value;
-						if($show_mail == "false" || $show_mail == "")
+						if($show_mail == 0 || $show_mail == "")
 						{
 						?>
 						<div class="layout-control-group">
@@ -160,7 +161,7 @@ else
 						
 						$index = array_search("cb_show_email", $keys);
 						$show_mail = $fields_dynamic_controls[$index]->dynamic_settings_value;
-						if($show_mail == "false" || $show_mail == "")
+						if($show_mail == 0 || $show_mail == "")
 						{
 						?>
 						<div class="layout-control-group">
@@ -170,29 +171,29 @@ else
 						<?php
 						}
 					break;
-					case 9:
-						$index = array_search("cb_admin_label", $keys);
-						$label_text = $fields_dynamic_controls[$index]->dynamic_settings_value;
-						
-						$index = array_search("cb_show_email", $keys);
-						$show_mail = $fields_dynamic_controls[$index]->dynamic_settings_value;
-						if($show_mail == "false" || $show_mail == "")
-						{
-						?>
-						<div class="layout-control-group">
-							<input class="btn btn-info layout-span12" type="button" id="btn_file_upload_<?php echo $column_dynamicId;?>" name="btn_file_upload_<?php echo $column_dynamicId;?>" value="<?php  echo $label_text; ?>" onclick="create_control(9,<?php echo $column_dynamicId;?>);" />
-							
-						</div>
-						<?php
-						}
-					break;
+					// case 9:
+						// $index = array_search("cb_admin_label", $keys);
+						// $label_text = $fields_dynamic_controls[$index]->dynamic_settings_value;
+// 						
+						// $index = array_search("cb_show_email", $keys);
+						// $show_mail = $fields_dynamic_controls[$index]->dynamic_settings_value;
+						// if($show_mail == 0 || $show_mail == "")
+						// {
+						// ?>
+						// <div class="layout-control-group">
+							// <input class="btn btn-info layout-span12" type="button" id="btn_file_upload_<?php echo $column_dynamicId;?>" name="btn_file_upload_<?php echo $column_dynamicId;?>" value="<?php  echo $label_text; ?>" onclick="create_control(9,<?php echo $column_dynamicId;?>);" />
+// 							
+						// </div>
+						// <?php
+						// }
+					// break;
 					case 12:
 						$index = array_search("cb_admin_label", $keys);
 						$label_text = $fields_dynamic_controls[$index]->dynamic_settings_value;
 						
 						$index = array_search("cb_show_email", $keys);
 						$show_mail = $fields_dynamic_controls[$index]->dynamic_settings_value;
-						if($show_mail == "false" || $show_mail == "")
+						if($show_mail == 0 || $show_mail == "")
 						{
 						?>
 						<div class="layout-control-group">
@@ -207,7 +208,7 @@ else
 						
 						$index = array_search("cb_show_email", $keys);
 						$show_mail = $fields_dynamic_controls[$index]->dynamic_settings_value;
-						if($show_mail == "false" || $show_mail == "")
+						if($show_mail == 0 || $show_mail == "")
 						{
 						?>
 						<div class="layout-control-group">
@@ -222,7 +223,7 @@ else
 						
 						$index = array_search("cb_show_email", $keys);
 						$show_mail = $fields_dynamic_controls[$index]->dynamic_settings_value;
-						if($show_mail == "false" || $show_mail == "")
+						if($show_mail == 0 || $show_mail == "")
 						{
 						?>
 						<div class="layout-control-group">
@@ -237,7 +238,7 @@ else
 						
 						$index = array_search("cb_show_email", $keys);
 						$show_mail = $fields_dynamic_controls[$index]->dynamic_settings_value;
-						if($show_mail == "false" || $show_mail == "")
+						if($show_mail == 0 || $show_mail == "")
 						{
 						?>
 						<div class="layout-control-group">
@@ -287,7 +288,7 @@ else
 						
 						$index = array_search("cb_show_email", $keys);
 						$show_mail = $fields_dynamic_controls[$index]->dynamic_settings_value;
-						if($show_mail == "false" || $show_mail == "")
+						if($show_mail == 0 || $show_mail == "")
 						{
 						?>
 						<div class="layout-control-group">
@@ -302,7 +303,7 @@ else
 						
 						$index = array_search("cb_show_email", $keys);
 						$show_mail = $fields_dynamic_controls[$index]->dynamic_settings_value;
-						if($show_mail == "false" || $show_mail == "")
+						if($show_mail == 0 || $show_mail == "")
 						{
 						?>
 						<div class="layout-control-group">
@@ -317,7 +318,7 @@ else
 						
 						$index = array_search("cb_show_email", $keys);
 						$show_mail = $fields_dynamic_controls[$index]->dynamic_settings_value;
-						if($show_mail == "false" || $show_mail == "")
+						if($show_mail == 0 || $show_mail == "")
 						{
 						?>
 						<div class="layout-control-group">
@@ -332,7 +333,7 @@ else
 						
 						$index = array_search("cb_show_email", $keys);
 						$show_mail = $fields_dynamic_controls[$index]->dynamic_settings_value;
-						if($show_mail == "false" || $show_mail == "")
+						if($show_mail == 0 || $show_mail == "")
 						{
 						?>
 						<div class="layout-control-group">
@@ -347,7 +348,7 @@ else
 						
 						$index = array_search("cb_show_email", $keys);
 						$show_mail = $fields_dynamic_controls[$index]->dynamic_settings_value;
-						if($show_mail == "false" || $show_mail == "")
+						if($show_mail == 0 || $show_mail == "")
 						{
 						?>
 						<div class="layout-control-group">
@@ -362,7 +363,7 @@ else
 						
 						$index = array_search("cb_show_email", $keys);
 						$show_mail = $fields_dynamic_controls[$index]->dynamic_settings_value;
-						if($show_mail == "false" || $show_mail == "")
+						if($show_mail == 0 || $show_mail == "")
 						{
 						?>
 						<div class="layout-control-group">
@@ -371,28 +372,28 @@ else
 						<?php
 						}
 					break;
-					case 9:
-						$index = array_search("cb_admin_label", $keys);
-						$label_text = $fields_dynamic_controls[$index]->dynamic_settings_value;
-						
-						$index = array_search("cb_show_email", $keys);
-						$show_mail = $fields_dynamic_controls[$index]->dynamic_settings_value;
-						if($show_mail == "false" || $show_mail == "")
-						{
-						?>
-						<div class="layout-control-group">
-							<input class="btn btn-info layout-span12" type="button" id="btn_file_upload" name="btn_file_upload" value="<?php  echo $label_text; ?>" onclick="create_client_control(9,<?php echo $column_dynamicId;?>);" />
-						</div>
-						<?php
-						}
-					break;
+					// case 9:
+						// $index = array_search("cb_admin_label", $keys);
+						// $label_text = $fields_dynamic_controls[$index]->dynamic_settings_value;
+// 						
+						// $index = array_search("cb_show_email", $keys);
+						// $show_mail = $fields_dynamic_controls[$index]->dynamic_settings_value;
+						// if($show_mail == 0 || $show_mail == "")
+						// {
+						// ?>
+						// <div class="layout-control-group">
+							// <input class="btn btn-info layout-span12" type="button" id="btn_file_upload" name="btn_file_upload" value="<?php  echo $label_text; ?>" onclick="create_client_control(9,<?php echo $column_dynamicId;?>);" />
+						// </div>
+						// <?php
+						// }
+					// break;
 					case 12:
 						$index = array_search("cb_admin_label", $keys);
 						$label_text = $fields_dynamic_controls[$index]->dynamic_settings_value;
 						
 						$index = array_search("cb_show_email", $keys);
 						$show_mail = $fields_dynamic_controls[$index]->dynamic_settings_value;
-						if($show_mail == "false" || $show_mail == "")
+						if($show_mail == 0 || $show_mail == "")
 						{
 						?>
 						<div class="layout-control-group">
@@ -407,7 +408,7 @@ else
 						
 						$index = array_search("cb_show_email", $keys);
 						$show_mail = $fields_dynamic_controls[$index]->dynamic_settings_value;
-						if($show_mail == "false" || $show_mail == "")
+						if($show_mail == 0 || $show_mail == "")
 						{
 						?>
 						<div class="layout-control-group">
@@ -422,7 +423,7 @@ else
 						
 						$index = array_search("cb_show_email", $keys);
 						$show_mail = $fields_dynamic_controls[$index]->dynamic_settings_value;
-						if($show_mail == "false" || $show_mail == "")
+						if($show_mail == 0 || $show_mail == "")
 						{
 						?>
 						<div class="layout-control-group">
@@ -437,7 +438,7 @@ else
 						
 						$index = array_search("cb_show_email", $keys);
 						$show_mail = $fields_dynamic_controls[$index]->dynamic_settings_value;
-						if($show_mail == "false" || $show_mail == "")
+						if($show_mail == 0 || $show_mail == "")
 						{
 						?>
 						<div class="layout-control-group">

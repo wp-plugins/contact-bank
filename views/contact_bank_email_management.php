@@ -5,14 +5,7 @@ if(isset($_REQUEST['param']))
 	{
 		$form_id = intval($_REQUEST['form_id']);
 		$form_submit_id = intval($_REQUEST['submit_id']);
-		$form_fields = $wpdb->get_results
-		(
-			$wpdb->prepare
-			(
-				"SELECT * FROM " .create_control_Table()."  WHERE form_id = %d ORDER BY " .create_control_Table().".sorting_order",
-				$form_id
-			)
-		); 
+		
 		$email_content = $wpdb->get_row
 		(
 			$wpdb->prepare
@@ -38,7 +31,6 @@ if(isset($_REQUEST['param']))
 		$file_path ="";
 		$messageTxt_client = stripcslashes($email_content_client->body_content);
 		$client_email = "";
-		
 		$frontend_control_value = $wpdb->get_results
 		(
 			$wpdb->prepare
@@ -124,7 +116,6 @@ if(isset($_REQUEST['param']))
 					$time_final = $time_content[0].":".$time_content[1];
 					$messageTxt = str_replace("[control_".$dynamicId."]",$time_final, $messageTxt)."<br />" ;
 					$messageTxt_client = str_replace("[control_client_".$dynamicId."]",$time_final, $messageTxt_client)."<br />" ;
-					
 				}
 			}
 			else if($frontend_control_value[$flag]->field_Id == 9) 
@@ -138,7 +129,7 @@ if(isset($_REQUEST['param']))
 						"cb_show_email"
 					)
 				);
-				if($cb_show_email == "false")
+				if($cb_show_email == "0")
 				{
 					$file_path_data = $frontend_control_value[$flag]->dynamic_frontend_value;
 					$file_uploaded_path_admin = explode(",", $file_path_data);
@@ -158,7 +149,6 @@ if(isset($_REQUEST['param']))
 					$messageTxt_client = str_replace("[control_client_".$dynamicId."]",$frontend_control_value[$flag]->dynamic_frontend_value, $messageTxt_client)."<br />" ;
 				}
 			}
-			
 		}
 		$admin_label = get_option( 'admin_email');
 		$to = $email_content->email_to;
@@ -184,14 +174,9 @@ if(isset($_REQUEST['param']))
 			$headers_client =  "From: " .$email_content_client->email_from. " <". $admin_label . ">" ."\n" .
 						"Content-Type: text/html; charset=\"" .
 						get_option('blog_charset') . "\n";
-			if($file_uploaded_path_admin == "")
-			{
-				wp_mail($Client_to,$emailSubject_client, $messageTxt_client, $headers_client);
-			}
-			else
-			{
-				wp_mail($Client_to,$emailSubject_client, $messageTxt_client, $headers_client,$file_uploaded_path_admin);
-			}
+			
+			wp_mail($Client_to,$emailSubject_client, $messageTxt_client, $headers_client);
+			
 		}
 	}
 	die();

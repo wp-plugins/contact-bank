@@ -1,78 +1,3 @@
-<?php
-if($_REQUEST["param"] == "create_date_control")
-{
-	$dynamicId = intval($_REQUEST["dynamicId"]);
-	$field_id = intval($_REQUEST["field_id"]);
-	?>
-	<div class="layout-control-group div_border" id="div_<?php echo $dynamicId; ?>_12" >
-	<label class="layout-control-label" id="control_label_<?php echo $dynamicId; ?>" ><?php _e("Date", contact_bank); ?> : </label>
-	<span id="txt_required_<?php echo $dynamicId; ?>"  class="error">*</span>
-		<div class="layout-controls hovertip" id="show_tooltip<?php echo $dynamicId; ?>">	
-			<select class=" layout-span2" id="select_day_<?php echo $dynamicId; ?>" name="select_day_<?php echo $dynamicId; ?>" >
-				<option value="0"><?php _e("Day", contact_bank); ?></option>
-				<?php
-				for($flag=1; $flag <= 31; $flag++)
-				{
-					if($flag < 10)
-					{
-						?>
-						<option value=<?php echo $flag; ?>>0<?php echo $flag; ?></option>
-						<?php
-					}
-					else
-					{
-						?>
-						<option value=<?php echo $flag; ?>><?php echo $flag; ?></option>
-						<?php
-					}
-				}
-				?>
-			</select>
-			<select class="layout-span3" id="select_month_<?php echo $dynamicId; ?>" name="select_month_<?php echo $dynamicId; ?>">
-				<option value="0"><?php _e("Month", contact_bank); ?></option>
-				<option value="1">January</option>
-				<option value="2">February</option>
-				<option value="3">March</option>
-				<option value="4">April</option>
-				<option value="5">May</option>
-				<option value="6">June</option>
-				<option value="7">July</option>
-				<option value="8">August</option>
-				<option value="9">September</option>
-				<option value="10">October</option>
-				<option value="11">November</option>
-				<option value="12">December</option>
-			</select>
-			<select class="layout-span2" id="select_year_<?php echo $dynamicId; ?>" name="select_year_<?php echo $dynamicId; ?>">
-				<option value="0"><?php _e("Year", contact_bank); ?></option>
-				<?php
-				for($flag=1900; $flag <= 2100; $flag++)
-				{
-					?>
-					<option value=<?php echo $flag; ?>><?php echo $flag; ?></option>
-					<?php
-				}
-				?>
-			</select>
-			<script type="text/javascript">
-				jQuery("#select_day_<?php echo $dynamicId; ?>").val(<?php echo date("d"); ?> );
-				jQuery("#select_month_<?php echo $dynamicId; ?>").val(<?php echo date("m"); ?> );
-				jQuery("#select_year_<?php echo $dynamicId; ?>").val(<?php echo date("Y"); ?> );
-			</script>
-				<a class="btn btn-info inline"   href="#setting_controls_postback" id="add_setting_control_<?php echo $dynamicId; ?>"><?php _e( "Settings", contact_bank ); ?></a>
-				<a style="cursor:pointer;"  onclick="delete_textbox(div_<?php echo $dynamicId; ?>_12,<?php echo $dynamicId; ?>)" id="anchor_del_<?php echo $dynamicId; ?>" >
-					<img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="margin-left: 1%;margin-bottom:-9px" onmouseover="img_show(<?php echo $dynamicId; ?>)" onmouseout="img_hide(<?php echo $dynamicId; ?>)"  />
-				</a>
-				<br />
-				<span class="span-description" id="txt_description_<?php echo $dynamicId; ?>"></span>
-		</div>
-	</div>
-	<?php
-	die();
-}
-else 
-{
-?>
 <div class="layout-span7">
 	<div class="widget-layout widget-tabs">
 		<div class="widget-layout-title">
@@ -108,7 +33,7 @@ else
 							</div>
 							<div class="layout-control-group">
 								<label class="layout-control-label"><?php _e( "Required", contact_bank ); ?> :</label>
-								<div class="layout-controls">
+								<div class="layout-controls" style="padding-top:5px;">
 									<input type="radio" id="ux_required_control_<?php echo $dynamicId; ?>" name="ux_required_control_radio_<?php echo $dynamicId; ?>" value="1"/><label style="margin-left: 5px;"><?php _e( "Required", contact_bank ); ?></label>				
 									<input type="radio" checked="checked" id="ux_required_<?php echo $dynamicId; ?>" name="ux_required_control_radio_<?php echo $dynamicId; ?>" value="0"/><label style="margin-left: 5px;"><?php _e( "Not Required", contact_bank ); ?></label>
 								</div>
@@ -132,20 +57,20 @@ else
 							</div>
 							<div class="layout-control-group">
 								<label class="layout-control-label"><?php _e( "Do not show in the email", contact_bank ); ?> :</label>
-								<div class="layout-controls">
+								<div class="layout-controls" style="padding-top:5px;">
 									<input type="checkbox" id="ux_show_email_<?php echo $dynamicId; ?>"   name="ux_show_email_<?php echo $dynamicId; ?>" value="1" >
 								</div>
 							</div>
 							<div class="layout-control-group">
 								<label class="layout-control-label"><?php _e( "Start year", contact_bank ); ?> :</label>
 								<div class="layout-controls">
-									<input type="text" value="1900" onkeypress="return OnlyNumbers(event)" maxlength="4" class="layout-span12" onkeydown="return start_year(event)" placeholder="<?php _e( "Enter Start Year", contact_bank ); ?>"  onblur="test(<?php echo $dynamicId; ?>)" id="ux_start_year_label_<?php echo $dynamicId; ?>" name="ux_start_year_label_<?php echo $dynamicId; ?>"/>
+									<input type="text" value="1900" onkeypress="return OnlyNumbers(event)" maxlength="4" class="layout-span12"  placeholder="<?php _e( "Enter Start Year", contact_bank ); ?>"  onblur="test(<?php echo $dynamicId; ?>)" id="ux_start_year_label_<?php echo $dynamicId; ?>" name="ux_start_year_label_<?php echo $dynamicId; ?>"/>
 								</div>
 							</div>
 							<div class="layout-control-group">
 								<label class="layout-control-label"><?php _e( "End year", contact_bank ); ?> :</label>
 								<div class="layout-controls">
-									<input type="text" value="2100"  onkeypress="return OnlyNumbers(event)" maxlength="4" class="layout-span12" onkeydown="return end_year(event)" id="ux_last_year_label_<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter End Year ", contact_bank ); ?>" onblur="test(<?php echo $dynamicId; ?>)" name="ux_last_year_label_<?php echo $dynamicId; ?>"/>
+									<input type="text" value="2100"  onkeypress="return OnlyNumbers(event)" maxlength="4" class="layout-span12"  id="ux_last_year_label_<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter End Year ", contact_bank ); ?>" onblur="test(<?php echo $dynamicId; ?>)" name="ux_last_year_label_<?php echo $dynamicId; ?>"/>
 								</div>
 							</div>
 							<div class="layout-control-group">
@@ -191,56 +116,56 @@ else
 					<div id="tabs-nohdr-1"  style="display:none;">
 						<div class="layout-control-group" id="div_advanced_<?php echo $dynamicId; ?>">
 							<div class="layout-control-group" id="ux_advance_label_<?php echo $dynamicId; ?>" style="display: none;" >
-								<label class="layout-control-label"><?php _e( "Css Label", contact_bank ); ?> :</label>
+								<label class="layout-control-label"><?php _e( "Label Style", contact_bank ); ?> :</label>
 								<div class="layout-controls">
-									<textarea  class="layout-span11" id="ux_date_set_outer_label_<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter Css Label", contact_bank ); ?>"  name="ux_date_set_outer_label_<?php echo $dynamicId; ?>"></textarea>
+									<textarea  class="layout-span11" id="ux_date_set_outer_label_<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter Label Style", contact_bank ); ?>"  name="ux_date_set_outer_label_<?php echo $dynamicId; ?>"></textarea>
 									<a style="cursor:pointer;" onclick="delete_date_css_style_label(<?php echo $dynamicId; ?>);" id="anchor_del_" ><img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png"  style="vertical-align: middle" /></a>
 								</div>
 							</div>
 							<div class="layout-control-group" id="advance_text_input_<?php echo $dynamicId; ?>" style="display: none">
-								<label class="layout-control-label"><?php _e( "Css Text Input", contact_bank ); ?> :</label>
+								<label class="layout-control-label"><?php _e( "Text Input Style", contact_bank ); ?> :</label>
 								<div class="layout-controls">
-									<textarea class="layout-span11" id="ux_date_txt_input_<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter Css Text Input", contact_bank ); ?>" name="ux_date_txt_input_<?php echo $dynamicId; ?>"></textarea>
+									<textarea class="layout-span11" id="ux_date_txt_input_<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter Text Input Style", contact_bank ); ?>" name="ux_date_txt_input_<?php echo $dynamicId; ?>"></textarea>
 									<a style="cursor:pointer;"  onclick="delete_date_css_style_text_input(<?php echo $dynamicId; ?>);" id="anchor_del_" ><img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png"  style="vertical-align: middle" /></a>
 								</div>
 							</div>
 							<div class="layout-control-group" id="advance_text_description_<?php echo $dynamicId; ?>" style="display:none;">
-								<label class="layout-control-label"><?php _e( "Css Description", contact_bank ); ?> :</label>
+								<label class="layout-control-label"><?php _e( "Description Style", contact_bank ); ?> :</label>
 								<div class="layout-controls">
-									<textarea class="layout-span11" id="ux_date_description_textarea_<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter Css Description", contact_bank ); ?>" name="ux_date_description_textarea_<?php echo $dynamicId; ?>"></textarea>
+									<textarea class="layout-span11" id="ux_date_description_textarea_<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter Description Style", contact_bank ); ?>" name="ux_date_description_textarea_<?php echo $dynamicId; ?>"></textarea>
 									<a style="cursor:pointer;"  onclick="delete_date_css_style_description(<?php echo $dynamicId; ?>);" id="anchor_del_" ><img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png"  style="vertical-align: middle" /></a>
 								</div>
 							</div>
 							<div class="layout-control-group" id="ux_advance_day_<?php echo $dynamicId; ?>" style="display: none;" >
-								<label class="layout-control-label"><?php _e( "Css Day", contact_bank ); ?> :</label>
+								<label class="layout-control-label"><?php _e( "Day Style", contact_bank ); ?> :</label>
 								<div class="layout-controls">
-									<textarea class="layout-span11" id="ux_day_textarea_<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter Css Day", contact_bank ); ?>" name="ux_day_textarea_<?php echo $dynamicId; ?>"></textarea>
+									<textarea class="layout-span11" id="ux_day_textarea_<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter Day Style", contact_bank ); ?>" name="ux_day_textarea_<?php echo $dynamicId; ?>"></textarea>
 									<a style="cursor:pointer;" onclick="delete_css_style_day(<?php echo $dynamicId; ?>);" id="anchor_del_" ><img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png"  style="vertical-align: middle" /></a>
 								</div>
 							</div>
 							<div class="layout-control-group" id="advance_text_month_<?php echo $dynamicId; ?>" style="display: none">
-								<label class="layout-control-label"><?php _e( "Css Month", contact_bank ); ?> :</label>
+								<label class="layout-control-label"><?php _e( "Month Style", contact_bank ); ?> :</label>
 								<div class="layout-controls">
-									<textarea class="layout-span11" id="ux_month_textarea_<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter Css Month", contact_bank ); ?>" name="ux_month_textarea_<?php echo $dynamicId; ?>"></textarea>
+									<textarea class="layout-span11" id="ux_month_textarea_<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter Month Style", contact_bank ); ?>" name="ux_month_textarea_<?php echo $dynamicId; ?>"></textarea>
 									<a style="cursor:pointer;"  onclick="delete_date_css_style_month(<?php echo $dynamicId; ?>);" id="anchor_del_" ><img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png"  style="vertical-align: middle" /></a>
 								</div>
 							</div>
 							<div class="layout-control-group" id="advance_text_year_<?php echo $dynamicId; ?>" style="display:none;">
-								<label class="layout-control-label"><?php _e( "Css Year", contact_bank ); ?> :</label>
+								<label class="layout-control-label"><?php _e( "Year Style", contact_bank ); ?> :</label>
 								<div class="layout-controls">
-									<textarea class="layout-span11" id="ux_year_textarea_<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter Css Year", contact_bank ); ?>" name="ux_year_textarea_<?php echo $dynamicId; ?>"></textarea>
+									<textarea class="layout-span11" id="ux_year_textarea_<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter Year Style", contact_bank ); ?>" name="ux_year_textarea_<?php echo $dynamicId; ?>"></textarea>
 									<a style="cursor:pointer;"  onclick="delete_css_style_year(<?php echo $dynamicId; ?>);" id="anchor_del_" ><img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png"  style="vertical-align: middle" /></a>
 								</div>
 							</div>
 							<div class="layout-control-group">
-								<label class="layout-control-label"><?php _e( "Add a style to", contact_bank ); ?> :</label>
+								<label class="layout-control-label"><?php _e( "Add a Style to", contact_bank ); ?> :</label>
 								<div class="layout-controls">
-									<input type="button" class="btn btn-inverse layout-span3" id="ux_button_label_style_<?php echo $dynamicId; ?>" name="ux_button_label_style_<?php echo $dynamicId; ?>" onclick="button_set_outer_label(<?php echo $dynamicId; ?>,12);" style="margin-bottom: 5px;" value="<?php _e( "Label", contact_bank ); ?>" />
-									<input type="button" class="btn btn-inverse layout-span4" id="ux_button_txt_input_save_<?php echo $dynamicId; ?>" name="ux_button_txt_input_save_<?php echo $dynamicId; ?>" onclick="button_set_txt_input(<?php echo $dynamicId; ?>,12);" style="margin-bottom: 5px;display: none;" value="<?php _e( "Text input", contact_bank ); ?>" />
-									<input type="button" class="btn btn-inverse layout-span4" id="ux_button_description_style_<?php echo $dynamicId; ?>" name="ux_button_description_style_<?php echo $dynamicId; ?>" onclick="button_set_description(<?php echo $dynamicId; ?>,12);" style="margin-bottom: 5px;" value="<?php _e( "Description", contact_bank ); ?>" />
-									<input type="button" class="btn btn-inverse layout-span5" id="ux_day_<?php echo $dynamicId; ?>" name="ux_day_<?php echo $dynamicId; ?>" onclick="ux_date_day(<?php echo $dynamicId; ?>,12);" style="margin-bottom: 5px;" value="<?php _e( "Date day dropdown", contact_bank ); ?>" />
-									<input type="button" class="btn btn-inverse layout-span5" id="ux_month_<?php echo $dynamicId; ?>" name="ux_month_<?php echo $dynamicId; ?>" onclick="ux_date_month(<?php echo $dynamicId; ?>,12);" style="margin-bottom: 5px;" value="<?php _e( "Date month dropdown", contact_bank ); ?>" />
-									<input type="button" class="btn btn-inverse layout-span5" id="ux_year_<?php echo $dynamicId; ?>" name="ux_year_<?php echo $dynamicId; ?>" onclick="ux_date_year(<?php echo $dynamicId; ?>,12);" style="margin-bottom: 5px;" value="<?php _e( "Date year dropdown", contact_bank ); ?>" />
+									<input type="button" class="btn btn-inverse layout-span2" id="ux_button_label_style_<?php echo $dynamicId; ?>" name="ux_button_label_style_<?php echo $dynamicId; ?>" onclick="button_set_outer_label(<?php echo $dynamicId; ?>,12);" style="margin-bottom: 5px;" value="<?php _e( "Label", contact_bank ); ?>" />
+									<input type="button" class="btn btn-inverse layout-span2" id="ux_button_txt_input_save_<?php echo $dynamicId; ?>" name="ux_button_txt_input_save_<?php echo $dynamicId; ?>" onclick="button_set_txt_input(<?php echo $dynamicId; ?>,12);" style="margin-bottom: 5px;display: none;" value="<?php _e( "Text Input", contact_bank ); ?>" />
+									<input type="button" class="btn btn-inverse layout-span2" id="ux_button_description_style_<?php echo $dynamicId; ?>" name="ux_button_description_style_<?php echo $dynamicId; ?>" onclick="button_set_description(<?php echo $dynamicId; ?>,12);" style="margin-bottom: 5px;" value="<?php _e( "Description", contact_bank ); ?>" />
+									<input type="button" class="btn btn-inverse layout-span2" id="ux_day_<?php echo $dynamicId; ?>" name="ux_day_<?php echo $dynamicId; ?>" onclick="ux_date_day(<?php echo $dynamicId; ?>,12);" style="margin-bottom: 5px;" value="<?php _e( "Day", contact_bank ); ?>" />
+									<input type="button" class="btn btn-inverse layout-span2" id="ux_month_<?php echo $dynamicId; ?>" name="ux_month_<?php echo $dynamicId; ?>" onclick="ux_date_month(<?php echo $dynamicId; ?>,12);" style="margin-bottom: 5px;" value="<?php _e( "Month", contact_bank ); ?>" />
+									<input type="button" class="btn btn-inverse layout-span2" id="ux_year_<?php echo $dynamicId; ?>" name="ux_year_<?php echo $dynamicId; ?>" onclick="ux_date_year(<?php echo $dynamicId; ?>,12);" style="margin-bottom: 5px;" value="<?php _e( "Year", contact_bank ); ?>" />
 								</div>
 							</div>
 						</div>
@@ -250,7 +175,7 @@ else
 		</div>
 	</div>
 	<div class="layout-control-group">	
-		<input type="button" style="float:left;margin-left: 0px;" class="btn btn-info layout-span2" onclick="save_date_control(<?php echo $dynamicId; ?>)" value="<?php _e( "Save", contact_bank ); ?>" />
+		<input type="button" class="btn btn-info layout-span2" onclick="save_date_control(<?php echo $dynamicId; ?>)" value="<?php _e( "Save Settings", contact_bank ); ?>" />
 	</div>
 </div>
 <script type="text/javascript">
@@ -295,6 +220,10 @@ else
 		dropdown_year += "<option value=0><?php _e( "Year", contact_bank ); ?></option>";
 		for(flag=start_year; flag <= end_year; flag++)
 		{
+			if(start_year ==  flag)
+			{
+				dropdown_year += "<option selected='selected' value="+flag+">"+ flag + "</option>";
+			}
 			dropdown_year += "<option value="+flag+">"+ flag + "</option>";
 		}
 		dropdown_year += "</select>";
@@ -444,10 +373,11 @@ else
 	var count = <?php echo $count; ?>;
 	if(count != 0)
 	{
+		var dynamicCount = "<?php echo $dynamicCount;?>";
 		var dynamicId = <?php echo $dynamicId; ?>;
-		jQuery("#ux_label_text_"+dynamicId).val(array_date[dynamicId][2]);
-		jQuery("#ux_description_control_"+dynamicId).html(array_date[dynamicId][3]);
-		if(array_date[dynamicId][4] == 1)
+		jQuery("#ux_label_text_"+dynamicId).val(array_controls[dynamicCount][2].cb_label_value);
+		jQuery("#ux_description_control_"+dynamicId).html(array_controls[dynamicCount][3].cb_description);
+		if(array_controls[dynamicCount][4].cb_control_required == 1)
 		{
 			jQuery("#ux_required_control_"+dynamicId).attr("checked","checked");
 		}
@@ -455,101 +385,90 @@ else
 		{
 			jQuery("#ux_required_"+dynamicId).attr("checked","checked");
 		}
-		jQuery("#ux_tooltip_control_"+dynamicId).val(array_date[dynamicId][5]);
-		jQuery("#ux_admin_label_"+dynamicId).val(array_date[dynamicId][6]);
+		jQuery("#ux_tooltip_control_"+dynamicId).val(array_controls[dynamicCount][5].cb_tooltip_txt);
+		jQuery("#ux_admin_label_"+dynamicId).val(array_controls[dynamicCount][6].cb_admin_label);
 		
-		if(array_date[dynamicId][7] == true)
+		if(array_controls[dynamicCount][7].cb_show_email == true)
 		{
 			jQuery("#ux_show_email_"+dynamicId).attr("checked","checked");
 		}
 		 
-		jQuery("#ux_start_year_label_"+dynamicId).val(array_date[dynamicId][8]);
-		jQuery("#ux_last_year_label_"+dynamicId).val(array_date[dynamicId][9]);
-		jQuery("#ux_default_day_type_"+dynamicId).val(array_date[dynamicId][10]);
-		jQuery("#ux_default_month_type_"+dynamicId).val(array_date[dynamicId][11]);
-		jQuery("#ux_default_year_type_"+dynamicId).val(array_date[dynamicId][12]);
-		jQuery("#ux_last_"+dynamicId).val(array_date[dynamicId][13]);
-		jQuery("#uxDefaultDateFormat_"+dynamicId).val(array_date[dynamicId][14]);
+		jQuery("#ux_start_year_label_"+dynamicId).val(array_controls[dynamicCount][8].cb_start_year);
+		jQuery("#ux_last_year_label_"+dynamicId).val(array_controls[dynamicCount][9].cb_end_year);
+		jQuery("#ux_default_day_type_"+dynamicId).val(array_controls[dynamicCount][10].cb_default_value_day);
+		jQuery("#ux_default_month_type_"+dynamicId).val(array_controls[dynamicCount][11].cb_default_value_month);
+		jQuery("#ux_default_year_type_"+dynamicId).val(array_controls[dynamicCount][12].cb_default_value_year);
+		jQuery("#ux_last_"+dynamicId).val(array_controls[dynamicCount][13].cb_error_invalid);
+		jQuery("#uxDefaultDateFormat_"+dynamicId).val(array_controls[dynamicCount][14].cb_date_format);
 		
-		if(array_date[dynamicId][15] != "")
+		if(array_controls[dynamicCount][15].cb_button_set_outer_label != "")
 		{
-			jQuery("#ux_date_set_outer_label_"+dynamicId).html(array_date[dynamicId][15]);
+			jQuery("#ux_date_set_outer_label_"+dynamicId).html(array_controls[dynamicCount][15].cb_button_set_outer_label);
 			jQuery("#ux_advance_label_"+dynamicId).attr("style","display:block");
 			jQuery("#ux_advance_label_"+dynamicId).attr("style","position:inherit");
 		}
-		if(array_date[dynamicId][16] != "")
+		if(array_controls[dynamicCount][16].cb_button_set_txt_input != "")
 		{
-			jQuery("#ux_date_txt_input_"+dynamicId).html(array_date[dynamicId][16]);
+			jQuery("#ux_date_txt_input_"+dynamicId).html(array_controls[dynamicCount][16].cb_button_set_txt_input);
 			jQuery("#advance_text_input_"+dynamicId).attr("style","display:block");
 			jQuery("#advance_text_input_"+dynamicId).attr("style","position:inherit");
 		}
-		if(array_date[dynamicId][17] != "")
+		if(array_controls[dynamicCount][17].cb_button_set_description != "")
 		{
-			jQuery("#ux_date_description_textarea_"+dynamicId).html(array_date[dynamicId][17]);
+			jQuery("#ux_date_description_textarea_"+dynamicId).html(array_controls[dynamicCount][17].cb_button_set_description);
 			jQuery("#advance_text_description_"+dynamicId).attr("style","display:block");
 			jQuery("#advance_text_description_"+dynamicId).attr("style","position:inherit");
 		}
-		if(array_date[dynamicId][18] != "")
+		if(array_controls[dynamicCount][18].cb_date_day_dropdown != "")
 		{
-			jQuery("#ux_day_textarea_"+dynamicId).html(array_date[dynamicId][18]);
+			jQuery("#ux_day_textarea_"+dynamicId).html(array_controls[dynamicCount][18].cb_date_day_dropdown);
 			jQuery("#ux_advance_day_"+dynamicId).attr("style","display:block");
 			jQuery("#ux_advance_day_"+dynamicId).attr("style","position:inherit");
 		}
-		if(array_date[dynamicId][19] != "")
+		if(array_controls[dynamicCount][19].cb_date_month_dropdown != "")
 		{
-			jQuery("#ux_month_textarea_"+dynamicId).html(array_date[dynamicId][19]);
+			jQuery("#ux_month_textarea_"+dynamicId).html(array_controls[dynamicCount][19].cb_date_month_dropdown);
 			jQuery("#advance_text_month_"+dynamicId).attr("style","display:block");
 			jQuery("#advance_text_month_"+dynamicId).attr("style","position:inherit");
 		}
-		if(array_date[dynamicId][20] != "")
+		if(array_controls[dynamicCount][20].cb_date_year_dropdown != "")
 		{
-			jQuery("#ux_year_textarea_"+dynamicId).html(array_date[dynamicId][20]);
+			jQuery("#ux_year_textarea_"+dynamicId).html(array_controls[dynamicCount][20].cb_date_year_dropdown);
 			jQuery("#advance_text_year_"+dynamicId).attr("style","display:block");
 			jQuery("#advance_text_year_"+dynamicId).attr("style","position:inherit");
 		}
 	}
 	function save_date_control(dynamicId)
 	{
-		array_date[dynamicId] = [];
-		array_date[dynamicId].push(12);
-		array_date[dynamicId].push(dynamicId);
-		array_date[dynamicId].push(jQuery("#ux_label_text_"+dynamicId).val());
-		array_date[dynamicId].push(jQuery("#ux_description_control_"+dynamicId).val());
-		if(jQuery("#ux_required_control_"+dynamicId).prop("checked") == true)
-		{
-			array_date[dynamicId].push("1");
-		}
-		else
-		{
-			array_date[dynamicId].push("0");
-		}
-		array_date[dynamicId].push(jQuery("#ux_tooltip_control_"+dynamicId).val());
-		
-		array_date[dynamicId].push(jQuery("#ux_admin_label_"+dynamicId).val());
-		array_date[dynamicId].push(jQuery("#ux_show_email_"+dynamicId).prop("checked"));
-		array_date[dynamicId].push(jQuery("#ux_start_year_label_"+dynamicId).val());
-		array_date[dynamicId].push(jQuery("#ux_last_year_label_"+dynamicId).val());
-		array_date[dynamicId].push(jQuery("#ux_default_day_type_"+dynamicId).val());
-		array_date[dynamicId].push(jQuery("#ux_default_month_type_"+dynamicId).val());
-		array_date[dynamicId].push(jQuery("#ux_default_year_type_"+dynamicId).val());
-		array_date[dynamicId].push(jQuery("#ux_last_"+dynamicId).val());
-		array_date[dynamicId].push(jQuery("#uxDefaultDateFormat_"+dynamicId).val());
-		array_date[dynamicId].push(jQuery("#ux_date_set_outer_label_"+dynamicId).val());
-		array_date[dynamicId].push(jQuery("#ux_date_txt_input_"+dynamicId).val());
-		array_date[dynamicId].push(jQuery("#ux_date_description_textarea_"+dynamicId).val());
-		array_date[dynamicId].push(jQuery("#ux_day_textarea_"+dynamicId).val());
-		array_date[dynamicId].push(jQuery("#ux_month_textarea_"+dynamicId).val());
-		array_date[dynamicId].push(jQuery("#ux_year_textarea_"+dynamicId).val());
-		
+		var dynamicCount = "<?php echo $dynamicCount;?>";
+		array_controls[dynamicCount] = [];
+		array_controls[dynamicCount].push({"control_type" : 12});
+		array_controls[dynamicCount].push({"date_dynamicId" : dynamicId});
+		array_controls[dynamicCount].push({"cb_label_value" : jQuery("#ux_label_text_"+dynamicId).val()});
+		array_controls[dynamicCount].push({"cb_description" : jQuery("#ux_description_control_"+dynamicId).val()});
+		jQuery("#ux_required_control_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_control_required": 1}) : array_controls[dynamicCount].push({"cb_control_required": 0});
+		array_controls[dynamicCount].push({"cb_tooltip_txt" : jQuery("#ux_tooltip_control_"+dynamicId).val()});
+		array_controls[dynamicCount].push({"cb_admin_label" : jQuery("#ux_admin_label_"+dynamicId).val()});
+		jQuery("#ux_show_email_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_show_email": 1}) : array_controls[dynamicCount].push({"cb_show_email": 0});
+		array_controls[dynamicCount].push({"cb_start_year" : jQuery("#ux_start_year_label_"+dynamicId).val()});
+		array_controls[dynamicCount].push({"cb_end_year" : jQuery("#ux_last_year_label_"+dynamicId).val()});
+		array_controls[dynamicCount].push({"cb_default_value_day" : jQuery("#ux_default_day_type_"+dynamicId).val()});
+		array_controls[dynamicCount].push({"cb_default_value_month" : jQuery("#ux_default_month_type_"+dynamicId).val()});
+		array_controls[dynamicCount].push({"cb_default_value_year" : jQuery("#ux_default_year_type_"+dynamicId).val()});
+		array_controls[dynamicCount].push({"cb_error_invalid" : jQuery("#ux_last_"+dynamicId).val()});
+		array_controls[dynamicCount].push({"cb_date_format" : jQuery("#uxDefaultDateFormat_"+dynamicId).val()});
+		array_controls[dynamicCount].push({"cb_button_set_outer_label" : jQuery("#ux_date_set_outer_label_"+dynamicId).val()});
+		array_controls[dynamicCount].push({"cb_button_set_txt_input" : jQuery("#ux_date_txt_input_"+dynamicId).val()});
+		array_controls[dynamicCount].push({"cb_button_set_description" : jQuery("#ux_date_description_textarea_"+dynamicId).val()});
+		array_controls[dynamicCount].push({"cb_date_day_dropdown" : jQuery("#ux_day_textarea_"+dynamicId).val()});
+		array_controls[dynamicCount].push({"cb_date_month_dropdown" : jQuery("#ux_month_textarea_"+dynamicId).val()});
+		array_controls[dynamicCount].push({"cb_date_year_dropdown" : jQuery("#ux_year_textarea_"+dynamicId).val()});
 		jQuery("#select_day_"+dynamicId).val(jQuery("#ux_default_day_type_"+dynamicId).val());
 		jQuery("#select_month_"+dynamicId).val(jQuery("#ux_default_month_type_"+dynamicId).val());
-		
 		jQuery("#control_label_"+dynamicId).html(jQuery("#ux_label_text_"+dynamicId).val()+" :");
 		jQuery("#txt_description_"+dynamicId).html(jQuery("#ux_description_control_"+dynamicId).val());
 		
-		var tooltip_text = jQuery("#ux_tooltip_control_"+dynamicId).val();
-		
-		jQuery("#show_tooltip"+dynamicId).attr("data-original-title",tooltip_text);
+		jQuery("#show_tooltip"+dynamicId).attr("data-original-title",jQuery("#ux_tooltip_control_"+dynamicId).val());
 		
 		if(jQuery("#ux_required_control_"+dynamicId).prop("checked") == true)
 		{
@@ -646,6 +565,3 @@ else
 		}
 	}
 </script>
-<?php
-}
-?>
