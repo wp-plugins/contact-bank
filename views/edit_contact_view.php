@@ -1,15 +1,14 @@
 <?php 
 global $wpdb;
 $form_id = intval($_REQUEST["id"]);
-$form_name = $wpdb->get_var
+$form_content = $wpdb->get_row
 (
 	$wpdb->prepare
 	(
-		"SELECT form_name FROM " .contact_bank_contact_form()." WHERE form_id = %d",
+		"SELECT form_name,success_message,chk_url,redirect_url FROM " .contact_bank_contact_form()." WHERE form_id = %d",
 		$form_id
 	)
 );
-
 $fields = $wpdb->get_results
 (
 	$wpdb->prepare
@@ -45,7 +44,45 @@ $fields = $wpdb->get_results
 										<label class="layout-control-label"><?php _e('Form Name :', contact_bank);?> </label>
 										<span style="display: block" class="error">*</span>
 										<div class="layout-controls hovertip" id="show_tooltip100">
-											<input type="text" name="ux_form_name_txt" class="layout-span7"  value ="<?php echo $form_name;?>" id="ux_form_name_txt" placeholder="<?php _e( "Enter Form Name", contact_bank);?>" />
+											<input type="text" name="ux_form_name_txt" class="layout-span7"  value ="<?php echo $form_content->form_name;?>" id="ux_form_name_txt" placeholder="<?php _e( "Enter Form Name", contact_bank);?>" />
+										</div>
+									</div>
+									<div class="layout-control-group div_border" style="border: 1px dashed #B6B4B4;padding: 5px;cursor: default">
+										<label class="layout-control-label"><?php _e('Success Message :', contact_bank);?> </label>
+										<span style="display: block" class="error">*</span>
+										<div class="layout-controls hovertip" id="show_tooltip100">
+											<input type="text" name="ux_sucess_message" class="layout-span7" value ="<?php echo $form_content->success_message;?>" id="ux_sucess_message" placeholder="<?php _e( "Enter Success Message", contact_bank);?>" />
+										</div>
+									</div>
+									<?php
+									if($form_content->chk_url == 1)
+									{
+										?>
+										<div class="layout-control-group div_border" style="border: 1px dashed #B6B4B4;padding: 5px;cursor: default">
+											<label class="layout-control-label"><?php _e('Redirect URL :', contact_bank);?> </label>
+											<div class="layout-controls hovertip" id="show_tooltip100">
+												<input type="checkbox"  id="chk_redirect_url" name="chk_redirect_url" checked="checked" value="1" onclick="show_url_control();" style="margin-top: 8px;" />
+											</div>
+										</div>
+										<?php
+									}
+									else {
+										?>
+										<div class="layout-control-group div_border" style="border: 1px dashed #B6B4B4;padding: 5px;cursor: default">
+											<label class="layout-control-label"><?php _e('Redirect URL :', contact_bank);?> </label>
+											<div class="layout-controls hovertip" id="show_tooltip100">
+												<input type="checkbox"  id="chk_redirect_url" name="chk_redirect_url" value="0" onclick="show_url_control();" style="margin-top: 8px;" />
+											</div>
+										</div>
+										<?php
+									}
+									?>
+									
+									<div class="layout-control-group div_border" id="div_url" style="border: 1px dashed #B6B4B4;padding: 5px;cursor: default;display: none;" >
+										<label class="layout-control-label"><?php _e('URL :', contact_bank);?> </label>
+										<span style="display: block" class="error">*</span>
+										<div class="layout-controls hovertip" id="show_tooltip100">
+											<input type="text" name="ux_redirect_url" class="layout-span7" value ="<?php echo $form_content->redirect_url;?>" id="ux_redirect_url" placeholder="<?php _e( "Enter Redirect URL", contact_bank);?>" />
 										</div>
 									</div>
 									<div id="left_block">
@@ -458,6 +495,7 @@ jQuery(document).ready(function()
 		jQuery("#setting_controls_postback").css('top',proposedTop + 'px');
 		jQuery("#setting_controls_postback").css('left',proposedLeft + 'px');
 	});
+	show_url_control();
 });
 
 //var dynamicId = edit_control_dynamic_ids.length + 1;
@@ -1040,11 +1078,6 @@ function create_control(control_type,dynamicId,arrayControl)
 			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_15,"+dynamicId+",15)");
 			jQuery("#show_tooltip"+dynamicId).children("span").attr("id","txt_description_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_15").attr("style","display:block");
-			
-			// jQuery.each(edit_control_dynamic_ids,function(index,value)
-					// {
-					   // jQuery('#left_block').append(jQuery("#div_"+value+"_"+edit_created_control_type[index]));
-					// });
 			var result = jQuery.inArray(dynamicId, edit_control_dynamic_ids);
 			if(result == -1)
 			{
@@ -2081,7 +2114,15 @@ jQuery("#ux_dynamic_form_submit").validate
 ({
 	rules: 
 	{
-		ux_form_name_txt: "required"
+		ux_form_name_txt: "required",
+		ux_sucess_message: "required",
+		ux_redirect_url: 
+		{
+			required: function()
+			{
+				return jQuery("#chk_redirect_url").prop("checked");
+			}
+		}
 	},
 	submitHandler: function(form)
 	{
@@ -2105,12 +2146,14 @@ jQuery("#ux_dynamic_form_submit").validate
 			field_order = 0;
 		}
 		var imaginaryCount = 0;
+		
 		jQuery.ajax
 		({
 			type: "POST",
-			url: ajaxurl + "?form_name="+form_name+"&form_id="+form_id+"&edit_created_control_type="+edit_created_control_type+"&field_order="+field_order+"&edit_control_dynamic_ids="+edit_control_dynamic_ids+"&new_control_dynamic_ids="+new_control_dynamic_ids+"&created_control_type="+created_control_type+"&field_dynamic_id="+field_dynamic_id+"&form=1&param=submit_controls&action=edit_contact_form_library",
+			url: ajaxurl + "?form_name="+form_name+"&form_id="+form_id+"&edit_created_control_type="+edit_created_control_type+"&field_order="+field_order+"&edit_control_dynamic_ids="+edit_control_dynamic_ids+"&new_control_dynamic_ids="+new_control_dynamic_ids+"&created_control_type="+created_control_type+"&field_dynamic_id="+field_dynamic_id+"&ux_sucess_message="+jQuery("#ux_sucess_message").val()+"&chk_redirect_url="+jQuery("#chk_redirect_url").prop("checked")+"&ux_redirect_url="+jQuery("#ux_redirect_url").val()+"&form=1&param=submit_controls&action=edit_contact_form_library",
 			success : function(data) 
 			{
+				
 				if(created_control_type.length > 0)
 				{
 					for(flag = 0;flag<field_no; flag++)
@@ -2170,7 +2213,7 @@ jQuery("#ux_dynamic_form_submit").validate
 									array_controls[dynamicCount].push({"email_dynamicId" : new_control_dynamic_ids[flag]});
 									array_controls[dynamicCount].push({"cb_label_value" : "<?php _e("Email", contact_bank); ?>"});
 									array_controls[dynamicCount].push({"cb_description" : ""});
-									array_controls[dynamicCount].push({"cb_control_required": 0});
+									array_controls[dynamicCount].push({"cb_control_required": 1});
 									array_controls[dynamicCount].push({"cb_tooltip_txt" :""});
 									array_controls[dynamicCount].push({"cb_admin_label" : "<?php _e("Email", contact_bank); ?>"});
 									array_controls[dynamicCount].push({"cb_show_email" : 0});
@@ -2416,4 +2459,16 @@ jQuery("#ux_dynamic_form_submit").validate
 		});
 	}
 });
+function show_url_control()
+{
+	var chk_redirect_url =  jQuery("#chk_redirect_url").prop("checked");
+	if(chk_redirect_url == true)
+	{
+		jQuery("#div_url").css("display","block");
+	}
+	else
+	{
+		jQuery("#div_url").css("display","none");
+	}
+}
 </script>

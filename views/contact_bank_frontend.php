@@ -1,10 +1,10 @@
 <?php
 global $wpdb;
-$form_name = $wpdb->get_var
+$form_content = $wpdb->get_row
 (
 	$wpdb->prepare
 	(
-		"SELECT form_name FROM " .contact_bank_contact_form()." WHERE form_id = %d",
+		"SELECT form_name,success_message,chk_url,redirect_url FROM " .contact_bank_contact_form()." WHERE form_id = %d",
 		$form_id
 	)
 );
@@ -22,9 +22,21 @@ $fields = $wpdb->get_results
 		<div class="layout-span12">
 			<div class="widget-layout">
 				<div class="widget-layout-title">
-					<h4><?php echo $form_name; ?></h4>
+					<h4><?php echo $form_content->form_name; ?></h4>
 				</div>
 				<div class="widget-layout-body">
+					<?php
+					if($form_content->success_message != "")
+					{
+						?>
+						<div id="form_success_message_frontend" class="message green" style="display: none;">
+						<span>
+							<strong><?php echo $form_content->success_message; ?></strong>
+						</span>
+					</div>
+						<?php
+					}
+					?>
 					<div class="layout-control-group">
 					</div>
 					<?php
@@ -88,12 +100,12 @@ $fields = $wpdb->get_results
 									$index = array_search("cb_checkbox_trim_filter", $keys);
 									$checkbox_trim_filter_textbox = $fields_dynamic_controls[$index]->dynamic_settings_value;
 									$checkbox_trim_filter = "";
-									if($checkbox_trim_filter_textbox == "true")
+									if($checkbox_trim_filter_textbox == 1)
 									{
 										$checkbox_trim_filter = "onfocusout='trim($dynamicId,1)'";
 									}
 									$checkbox_strip_tag="";
-									if($checkbox_strip_tag_filter_textbox == "true")
+									if($checkbox_strip_tag_filter_textbox == 1)
 									{
 										$checkbox_strip_tag = "onblur='return strip_tags(event,1,$dynamicId)'";
 									}
@@ -101,31 +113,31 @@ $fields = $wpdb->get_results
 									$checkbox_alpha_num = $checkbox_alpha_num_filter_textbox;
 									$checkbox_digit_filter = $checkbox_digit_filter_textbox;
 									$checkbox_alpha = "";
-									if($checkbox_alpha_filter == "true" && $checkbox_alpha_num == "false" && $checkbox_digit_filter == "false")
+									if($checkbox_alpha_filter == 1 && $checkbox_alpha_num == 0 && $checkbox_digit_filter == 0)
 									{
 										$checkbox_alpha = "onkeypress='return alpha(event)'";
 									}
-									else if($checkbox_alpha_filter == "true" && $checkbox_alpha_num == "true" && $checkbox_digit_filter == "false")
+									else if($checkbox_alpha_filter == 1 && $checkbox_alpha_num == 1 && $checkbox_digit_filter == 0)
 									{
 										$checkbox_alpha = "onkeypress='return alphanumeric(event)'";
 									}
-										else if($checkbox_alpha_filter == "false" && $checkbox_alpha_num == "true" && $checkbox_digit_filter == "false")
+										else if($checkbox_alpha_filter == 0 && $checkbox_alpha_num == 1 && $checkbox_digit_filter == 0)
 									{
 										$checkbox_alpha = "onkeypress='return alphanumeric(event)'";
 									}
-									else if($checkbox_alpha_filter == "true" && $checkbox_alpha_num == "true" && $checkbox_digit_filter == "true")
+									else if($checkbox_alpha_filter == 1 && $checkbox_alpha_num == 1 && $checkbox_digit_filter == 1)
 									{
 										$checkbox_alpha = "onkeypress='return alpha_num_digits(event)'";
 									}
-									else if($checkbox_alpha_filter == "false" && $checkbox_alpha_num == "true" && $checkbox_digit_filter == "true")
+									else if($checkbox_alpha_filter == 0 && $checkbox_alpha_num == 1 && $checkbox_digit_filter == 1)
 									{
 										$checkbox_alpha = "onkeypress='return alphanumeric(event)'";
 									}
-									else if($checkbox_alpha_filter == "false" && $checkbox_alpha_num == "false" && $checkbox_digit_filter == "true")
+									else if($checkbox_alpha_filter == 0 && $checkbox_alpha_num == 0 && $checkbox_digit_filter == 1)
 									{
 										$checkbox_alpha = "onkeypress='return OnlyNumbers(event)'";
 									}
-									else if($checkbox_alpha_filter == "true" && $checkbox_alpha_num == "false" && $checkbox_digit_filter == "true")
+									else if($checkbox_alpha_filter == 1 && $checkbox_alpha_num == 0 && $checkbox_digit_filter == 1)
 									{
 										$checkbox_alpha = "onkeypress='return alphanumeric(event)'";
 									}
@@ -176,26 +188,26 @@ $fields = $wpdb->get_results
 									$index = array_search("cb_checkbox_alpha_filter", $keys);
 									$checkbox_alpha_filter_textarea = $fields_dynamic_controls[$index]->dynamic_settings_value;
 									
-									$index = array_search("cb_checkbox_alpha_num_filter", $keys);
+									$index = array_search("cb_ux_checkbox_alpha_num_filter", $keys);
 									$checkbox_alpha_num_filter_textarea = $fields_dynamic_controls[$index]->dynamic_settings_value;
 									
 									$index = array_search("cb_checkbox_digit_filter", $keys);
 									$checkbox_digit_filter_textarea = $fields_dynamic_controls[$index]->dynamic_settings_value;
 									
-									$index = array_search("checkbox_strip_tag_filter", $keys);
+									$index = array_search("cb_checkbox_strip_tag_filter", $keys);
 									$checkbox_strip_tag_filter_textarea = $fields_dynamic_controls[$index]->dynamic_settings_value;
 									
-									$index = array_search("checkbox_trim_filter", $keys);
+									$index = array_search("cb_checkbox_trim_filter", $keys);
 									$checkbox_trim_filter_textarea = $fields_dynamic_controls[$index]->dynamic_settings_value;
 									
 									$checkbox_trim_filter = "";
-									if($checkbox_trim_filter_textarea == "true")
+									if($checkbox_trim_filter_textarea == 1)
 									{
 										$checkbox_trim_filter = "onfocusout='trim($dynamicId,2)'";
 									}
 									$checkbox_strip_tag = "";
 									
-									if($checkbox_strip_tag_filter_textarea == "true")
+									if($checkbox_strip_tag_filter_textarea == 1)
 									{
 										$checkbox_strip_tag = "onblur='return strip_tags(event,2,$dynamicId)'";
 									}
@@ -203,41 +215,41 @@ $fields = $wpdb->get_results
 									$checkbox_alpha_num = $checkbox_alpha_num_filter_textarea;
 									$checkbox_digit_filter = $checkbox_digit_filter_textarea;
 									$checkbox_alpha = "";
-									if($checkbox_alpha_filter == "true" && $checkbox_alpha_num == "false" && $checkbox_digit_filter == "false")
+									if($checkbox_alpha_filter == 1 && $checkbox_alpha_num == 0 && $checkbox_digit_filter == 0)
 									{
 										$checkbox_alpha = "onkeypress='return alpha(event)'";
 									}
-									else if($checkbox_alpha_filter == "true" && $checkbox_alpha_num == "true" && $checkbox_digit_filter == "false")
+									else if($checkbox_alpha_filter == 1 && $checkbox_alpha_num == 1 && $checkbox_digit_filter == 0)
 									{
 										$checkbox_alpha = "onkeypress='return alphanumeric(event)'";
 									}
-										else if($checkbox_alpha_filter == "false" && $checkbox_alpha_num == "true" && $checkbox_digit_filter == "false")
+										else if($checkbox_alpha_filter == 0 && $checkbox_alpha_num == 1 && $checkbox_digit_filter == 0)
 									{
 										$checkbox_alpha = "onkeypress='return alphanumeric(event)'";
 									}
-									else if($checkbox_alpha_filter == "true" && $checkbox_alpha_num == "true" && $checkbox_digit_filter == "true")
+									else if($checkbox_alpha_filter == 1 && $checkbox_alpha_num == 1 && $checkbox_digit_filter == 1)
 									{
 										$checkbox_alpha = "onkeypress='return alpha_num_digits(event)'";
 									}
-									else if($checkbox_alpha_filter == "false" && $checkbox_alpha_num == "true" && $checkbox_digit_filter == "true")
+									else if($checkbox_alpha_filter == 0 && $checkbox_alpha_num == 1 && $checkbox_digit_filter == 1)
 									{
 										$checkbox_alpha = "onkeypress='return alphanumeric(event)'";
 									}
-									else if($checkbox_alpha_filter == "false" && $checkbox_alpha_num == "false" && $checkbox_digit_filter == "true")
+									else if($checkbox_alpha_filter == 0 && $checkbox_alpha_num == 0 && $checkbox_digit_filter == 1)
 									{
 										$checkbox_alpha = "onkeypress='return OnlyNumbers(event)'";
 									}
-									else if($checkbox_alpha_filter == "true" && $checkbox_alpha_num == "false" && $checkbox_digit_filter == "true")
+									else if($checkbox_alpha_filter == 1 && $checkbox_alpha_num == 0 && $checkbox_digit_filter == 1)
 									{
 										$checkbox_alpha = "onkeypress='return alphanumeric(event)'";
 									}
 									$index = array_search("cb_button_set_outer_label", $keys);
 									$cb_button_set_outer_label = $fields_dynamic_controls[$index]->dynamic_settings_value;
 									
-									$index = array_search("cb_button_set_textinput", $keys);
+									$index = array_search("cb_button_set_txt_input", $keys);
 									$cb_button_set_textinput = $fields_dynamic_controls[$index]->dynamic_settings_value;
 									
-									$index = array_search("cb_button_set_outer_description", $keys);
+									$index = array_search("cb_button_set_txt_description", $keys);
 									$cb_button_set_outer_description = $fields_dynamic_controls[$index]->dynamic_settings_value;
 									?>
 									<div class="layout-control-group"  id="div_<?php echo $dynamicId; ?>">
@@ -283,7 +295,7 @@ $fields = $wpdb->get_results
 									$index = array_search("cb_checkbox_strip_tag_filter", $keys);
 									$checkbox_strip_tag_filter_email = $fields_dynamic_controls[$index]->dynamic_settings_value;
 									$checkbox_strip_tag = "";
-									if($checkbox_strip_tag_filter_email == "true")
+									if($checkbox_strip_tag_filter_email == 1)
 									{
 										$checkbox_strip_tag = "onblur='return strip_tags(event,3,$dynamicId)'";
 									}
@@ -291,31 +303,31 @@ $fields = $wpdb->get_results
 									$checkbox_alpha_num_filter = $checkbox_alpha_num_filter_email;
 									$checkbox_digit_filter = $checkbox_digit_filter_email;
 									$filter_applied = "";
-									if($checkbox_alpha_filter == "true" && $checkbox_alpha_num_filter == "false" && $checkbox_digit_filter == "false")
+									if($checkbox_alpha_filter == 1 && $checkbox_alpha_num_filter == 0 && $checkbox_digit_filter == 0)
 									{
 										$filter_applied = "onkeypress='return alpha(event)'";
 									}
-									else if($checkbox_alpha_filter == "true" && $checkbox_alpha_num_filter == "true" && $checkbox_digit_filter == "false")
+									else if($checkbox_alpha_filter == 1 && $checkbox_alpha_num_filter == 1 && $checkbox_digit_filter == 0)
 									{
 										$filter_applied = "onkeypress='return alphanumeric(event)'";
 									}
-										else if($checkbox_alpha_filter == "false" && $checkbox_alpha_num_filter == "true" && $checkbox_digit_filter == "false")
+										else if($checkbox_alpha_filter == 0 && $checkbox_alpha_num_filter == 1 && $checkbox_digit_filter == 0)
 									{
 										$filter_applied = "onkeypress='return alphanumeric(event)'";
 									}
-									else if($checkbox_alpha_filter == "true" && $checkbox_alpha_num_filter == "true" && $checkbox_digit_filter == "true")
+									else if($checkbox_alpha_filter == 1 && $checkbox_alpha_num_filter == 1 && $checkbox_digit_filter == 1)
 									{
 										$filter_applied = "onkeypress='return alpha_num_digits(event)'";
 									}
-									else if($checkbox_alpha_filter == "false" && $checkbox_alpha_num_filter == "true" && $checkbox_digit_filter == "true")
+									else if($checkbox_alpha_filter == 0 && $checkbox_alpha_num_filter == 1 && $checkbox_digit_filter == 1)
 									{
 										$filter_applied = "onkeypress='return alphanumeric(event)'";
 									}
-									else if($checkbox_alpha_filter == "false" && $checkbox_alpha_num_filter == "false" && $checkbox_digit_filter == "true")
+									else if($checkbox_alpha_filter == 0 && $checkbox_alpha_num_filter == 0 && $checkbox_digit_filter == 1)
 									{
 										$filter_applied = "onkeypress='return OnlyNumbers(event)'";
 									}
-									else if($checkbox_alpha_filter == "true" && $checkbox_alpha_num_filter == "false" && $checkbox_digit_filter == "true")
+									else if($checkbox_alpha_filter == 1 && $checkbox_alpha_num_filter == 0 && $checkbox_digit_filter == 1)
 									{
 										$filter_applied = "onkeypress='return alphanumeric(event)'";
 									}
@@ -333,9 +345,9 @@ $fields = $wpdb->get_results
 										<?php
 											if($control_required_email == 1)
 											{
-										?>
-											<span id="txt_required_<?php echo $dynamicId; ?>" class="error" style="display:block;">*</span>
-										<?php
+											?>
+												<span id="txt_required_<?php echo $dynamicId; ?>" class="error" style="display:block;">*</span>
+											<?php
 											}
 											?>
 										<div class="layout-controls">		
@@ -561,7 +573,7 @@ $fields = $wpdb->get_results
 									
 									$index = array_search("cb_allow_multiple_file", $keys);
 									$allow_multiple_file = $fields_dynamic_controls[$index]->dynamic_settings_value;
-									if($allow_multiple_file == "true")
+									if($allow_multiple_file == 1)
 									{
 										$allow_multiple_file = 1;
 									}
@@ -992,7 +1004,7 @@ $fields = $wpdb->get_results
 									$index = array_search("cb_checkbox_alpha_filter", $keys);
 									$checkbox_alpha_filter_password = $fields_dynamic_controls[$index]->dynamic_settings_value;
 									
-									$index = array_search("cb_ux_checkbox_alpha_num_filter", $keys);
+									$index = array_search("ux_checkbox_alpha_num_filter", $keys);
 									$checkbox_alpha_num_filter_password = $fields_dynamic_controls[$index]->dynamic_settings_value;
 									
 									$index = array_search("cb_checkbox_digit_filter", $keys);
@@ -1003,7 +1015,7 @@ $fields = $wpdb->get_results
 									
 									$checkbox_strip_tag_filter="";
 									
-									if($checkbox_strip_tag_filter_password == "true")
+									if($checkbox_strip_tag_filter_password == 1)
 									{
 										$checkbox_strip_tag_filter = "onblur='return strip_tags(event,15,$dynamicId)'";
 									}
@@ -1011,31 +1023,31 @@ $fields = $wpdb->get_results
 									$checkbox_alpha_num_filter = $checkbox_alpha_num_filter_password;
 									$checkbox_digit_filter = $checkbox_digit_filter_password;
 									$filtter_aplied = "";
-									if($checkbox_alpha_filter == "true" && $checkbox_alpha_num_filter == "false" && $checkbox_digit_filter == "false")
+									if($checkbox_alpha_filter == 1 && $checkbox_alpha_num_filter == 0 && $checkbox_digit_filter == 0)
 									{
 										$filtter_aplied = "onkeypress='return alpha(event)'";
 									}
-									else if($checkbox_alpha_filter == "true" && $checkbox_alpha_num_filter == "true" && $checkbox_digit_filter == "false")
+									else if($checkbox_alpha_filter == 1 && $checkbox_alpha_num_filter == 1 && $checkbox_digit_filter == 0)
 									{
 										$filtter_aplied = "onkeypress='return alphanumeric(event)'";
 									}
-									else if($checkbox_alpha_filter == "false" && $checkbox_alpha_num_filter == "true" && $checkbox_digit_filter == "false")
+									else if($checkbox_alpha_filter == 0 && $checkbox_alpha_num_filter == 1 && $checkbox_digit_filter == 0)
 									{
 										$filtter_aplied = "onkeypress='return alphanumeric(event)'";
 									}
-									else if($checkbox_alpha_filter == "true" && $checkbox_alpha_num_filter == "true" && $checkbox_digit_filter == "true")
+									else if($checkbox_alpha_filter == 1 && $checkbox_alpha_num_filter == 1 && $checkbox_digit_filter == 1)
 									{
 										$filtter_aplied = "onkeypress='return alpha_num_digits(event)'";
 									}
-									else if($checkbox_alpha_filter == "false" && $checkbox_alpha_num_filter == "true" && $checkbox_digit_filter == "true")
+									else if($checkbox_alpha_filter == 0 && $checkbox_alpha_num_filter == 1 && $checkbox_digit_filter == 1)
 									{
 										$filtter_aplied = "onkeypress='return alphanumeric(event)'";
 									}
-									else if($checkbox_alpha_filter == "false" && $checkbox_alpha_num_filter == "false" && $checkbox_digit_filter == "true")
+									else if($checkbox_alpha_filter == 0 && $checkbox_alpha_num_filter == 0 && $checkbox_digit_filter == 1)
 									{
 										$filtter_aplied = "onkeypress='return OnlyNumbers(event)'";
 									}
-									else if($checkbox_alpha_filter == "true" && $checkbox_alpha_num_filter == "false" && $checkbox_digit_filter == "true")
+									else if($checkbox_alpha_filter == 1 && $checkbox_alpha_num_filter == 0 && $checkbox_digit_filter == 1)
 									{
 										$filtter_aplied = "onkeypress='return alphanumeric(event)'";
 									}
@@ -1239,13 +1251,41 @@ jQuery("#ux_contact_form_submit").validate
 	},
 	submitHandler: function(form)
 	{
+		jQuery("#form_success_message_frontend").css("display","block");
+		jQuery('body,html').animate({
+		scrollTop: jQuery('body,html').position().top}, 'slow');
 		var form_id = <?php echo $form_id ;?>;
 		jQuery.post(ajaxurl, jQuery(form).serialize() +"&form_id="+form_id+"&file_uploaded_path="+file_uploaded_path+"&param=frontend_submit_controls&action=frontend_contact_form_library", function(data) 
 		{
+			
 			var submit_id = data;
 			jQuery.post(ajaxurl, "form_id="+form_id+"&submit_id="+submit_id+"&param=email_management&action=email_management_contact_form_library", function(data) 
 			{
-				window.location.reload();
+				<?php
+				if($form_content->chk_url == 1)
+				{
+					?>
+						setTimeout(function()
+						{
+							jQuery("#form_success_message_frontend").css("display","none");
+							window.location.href = "<?php echo $form_content->redirect_url?>";
+						}, 2000);
+						
+						
+					<?php
+				}
+				else 
+				{
+					?>
+						setTimeout(function()
+						{
+							jQuery("#form_success_message_frontend").css("display","none");
+							window.location.reload();
+						}, 2000);
+						
+					<?php
+				}
+				?>
 			});
 		});
 	}

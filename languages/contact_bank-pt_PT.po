@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2013-11-27 13:02+0530\n"
-"PO-Revision-Date: 2013-11-27 18:46+0530\n"
+"POT-Creation-Date: 2013-11-28 12:51+0530\n"
+"PO-Revision-Date: 2013-11-28 12:51+0530\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -18,49 +18,53 @@ msgstr ""
 msgid "Contact Bank"
 msgstr ""
 
-#: contact-bank.php:75 contact-bank.php:447
+#: contact-bank.php:75 contact-bank.php:456
 msgid "Dashboard"
 msgstr "painel de instrumentos"
 
-#: contact-bank.php:76 contact-bank.php:453 views/contact_view.php:6
+#: contact-bank.php:76 contact-bank.php:462 views/contact_view.php:6
 #: views/dashboard.php:8
 msgid "Add New Form"
 msgstr "Adicionar nova Forma"
 
-#: contact-bank.php:77 contact-bank.php:459 views/contact_email.php:6
+#: contact-bank.php:77 contact-bank.php:468 views/contact_email.php:6
 msgid "Email Settings"
 msgstr "de e-mail Configurações "
 
-#: contact-bank.php:78 contact-bank.php:465 views/contact_frontend_data.php:5
+#: contact-bank.php:78 contact-bank.php:474 views/contact_frontend_data.php:5
 msgid "Form Entries"
 msgstr "Forma entradas "
 
-#: contact-bank.php:474
+#: contact-bank.php:79 contact-bank.php:480
+msgid "Documentation"
+msgstr "de Documentação"
+
+#: contact-bank.php:489
 msgid "Add Contact Bank Form"
 msgstr "acrescentar  contato bancária- Forma"
 
-#: contact-bank.php:484
+#: contact-bank.php:499
 msgid "Insert Contact Bank Form"
 msgstr "Insira- formulário de contato "
 
-#: contact-bank.php:486
+#: contact-bank.php:501
 msgid "Select a form below to add it to your post or page."
 msgstr ""
 "Selecione um formulário abaixo para adicionar ele ao seu post ou página."
 
-#: contact-bank.php:491
+#: contact-bank.php:506
 msgid "Select a Form"
 msgstr "Selecione um formulário"
 
-#: contact-bank.php:509
+#: contact-bank.php:524
 msgid "Can't find your form? Make sure it is active."
 msgstr "Não consegue encontrar o seu formulário? Verifique se ele está ativo."
 
-#: contact-bank.php:514
+#: contact-bank.php:529
 msgid "Cancel"
 msgstr "o Anular"
 
-#: contact-bank.php:523
+#: contact-bank.php:538
 msgid "Please select a form"
 msgstr "Por favor seleccione um formulário"
 
@@ -90,17 +94,17 @@ msgstr "opções"
 #: includes/cb_file_upload.php:19 includes/cb_hidden.php:11
 #: includes/cb_multiple.php:17 includes/cb_password.php:18
 #: includes/cb_text.php:17 includes/cb_textarea.php:18 includes/cb_time.php:17
-#: views/contact_view.php:36 views/contact_view.php:49
-#: views/contact_view.php:62 views/contact_view.php:77
-#: views/contact_view.php:90 views/contact_view.php:104
-#: views/contact_view.php:114 views/contact_view.php:194
-#: views/contact_view.php:270 views/contact_view.php:283
-#: views/contact_view.php:296 views/edit_contact_view.php:57
-#: views/edit_contact_view.php:70 views/edit_contact_view.php:83
-#: views/edit_contact_view.php:98 views/edit_contact_view.php:111
-#: views/edit_contact_view.php:125 views/edit_contact_view.php:135
-#: views/edit_contact_view.php:215 views/edit_contact_view.php:291
-#: views/edit_contact_view.php:304 views/edit_contact_view.php:317
+#: views/contact_view.php:56 views/contact_view.php:69
+#: views/contact_view.php:82 views/contact_view.php:97
+#: views/contact_view.php:110 views/contact_view.php:124
+#: views/contact_view.php:134 views/contact_view.php:214
+#: views/contact_view.php:290 views/contact_view.php:303
+#: views/contact_view.php:316 views/edit_contact_view.php:94
+#: views/edit_contact_view.php:107 views/edit_contact_view.php:120
+#: views/edit_contact_view.php:135 views/edit_contact_view.php:148
+#: views/edit_contact_view.php:162 views/edit_contact_view.php:172
+#: views/edit_contact_view.php:252 views/edit_contact_view.php:328
+#: views/edit_contact_view.php:341 views/edit_contact_view.php:354
 msgid "Settings"
 msgstr "Configurações"
 
@@ -121,24 +125,24 @@ msgstr "etiqueta"
 #: includes/cb_dropdown.php:25 includes/cb_dropdown.php:58
 #: includes/cb_multiple.php:25 includes/cb_multiple.php:58
 #: includes/cb_text.php:25 includes/cb_text.php:60 includes/cb_textarea.php:26
-#: includes/cb_textarea.php:67 views/contact_view.php:32
-#: views/contact_view.php:45 views/contact_view.php:71
-#: views/contact_view.php:84 views/contact_view.php:98
-#: views/contact_view.php:923 views/contact_view.php:928
-#: views/contact_view.php:946 views/contact_view.php:951
-#: views/contact_view.php:989 views/contact_view.php:994
-#: views/contact_view.php:1006 views/contact_view.php:1011
-#: views/contact_view.php:1026 views/contact_view.php:1031
-#: views/edit_contact_view.php:53 views/edit_contact_view.php:66
-#: views/edit_contact_view.php:92 views/edit_contact_view.php:105
-#: views/edit_contact_view.php:119 views/edit_contact_view.php:1294
-#: views/edit_contact_view.php:1352 views/edit_contact_view.php:1484
-#: views/edit_contact_view.php:1540 views/edit_contact_view.php:1609
-#: views/edit_contact_view.php:2127 views/edit_contact_view.php:2132
-#: views/edit_contact_view.php:2150 views/edit_contact_view.php:2155
+#: includes/cb_textarea.php:67 views/contact_view.php:52
+#: views/contact_view.php:65 views/contact_view.php:91
+#: views/contact_view.php:104 views/contact_view.php:118
+#: views/contact_view.php:951 views/contact_view.php:956
+#: views/contact_view.php:974 views/contact_view.php:979
+#: views/contact_view.php:1017 views/contact_view.php:1022
+#: views/contact_view.php:1034 views/contact_view.php:1039
+#: views/contact_view.php:1054 views/contact_view.php:1059
+#: views/edit_contact_view.php:90 views/edit_contact_view.php:103
+#: views/edit_contact_view.php:129 views/edit_contact_view.php:142
+#: views/edit_contact_view.php:156 views/edit_contact_view.php:1332
+#: views/edit_contact_view.php:1390 views/edit_contact_view.php:1522
+#: views/edit_contact_view.php:1578 views/edit_contact_view.php:1647
+#: views/edit_contact_view.php:2170 views/edit_contact_view.php:2175
 #: views/edit_contact_view.php:2193 views/edit_contact_view.php:2198
-#: views/edit_contact_view.php:2210 views/edit_contact_view.php:2215
-#: views/edit_contact_view.php:2230 views/edit_contact_view.php:2235
+#: views/edit_contact_view.php:2236 views/edit_contact_view.php:2241
+#: views/edit_contact_view.php:2253 views/edit_contact_view.php:2258
+#: views/edit_contact_view.php:2273 views/edit_contact_view.php:2278
 msgid "Untitled"
 msgstr "sem título"
 
@@ -319,11 +323,11 @@ msgstr "Encha por favor uma opção."
 msgid "Date Control"
 msgstr "data Controlo"
 
-#: includes/cb_date.php:25 includes/cb_date.php:55 views/contact_view.php:140
-#: views/contact_view.php:340 views/contact_view.php:1064
-#: views/contact_view.php:1068 views/edit_contact_view.php:161
-#: views/edit_contact_view.php:389 views/edit_contact_view.php:1723
-#: views/edit_contact_view.php:2268 views/edit_contact_view.php:2272
+#: includes/cb_date.php:25 includes/cb_date.php:55 views/contact_view.php:160
+#: views/contact_view.php:360 views/contact_view.php:1092
+#: views/contact_view.php:1096 views/edit_contact_view.php:198
+#: views/edit_contact_view.php:426 views/edit_contact_view.php:1761
+#: views/edit_contact_view.php:2311 views/edit_contact_view.php:2315
 msgid "Date"
 msgstr "data"
 
@@ -361,22 +365,22 @@ msgid "Default value"
 msgstr "valor padrão"
 
 #: includes/cb_date.php:80 includes/cb_date.php:166 includes/cb_date.php:237
-#: includes/cb_date.php:309 views/contact_bank_frontend.php:685
-#: views/contact_view.php:144 views/edit_contact_view.php:165
+#: includes/cb_date.php:309 views/contact_bank_frontend.php:697
+#: views/contact_view.php:164 views/edit_contact_view.php:202
 msgid "Day"
 msgstr "dia"
 
 #: includes/cb_date.php:84 includes/cb_date.php:167 includes/cb_date.php:252
-#: includes/cb_date.php:324 views/contact_bank_frontend.php:713
-#: views/contact_view.php:164 views/edit_contact_view.php:185
+#: includes/cb_date.php:324 views/contact_bank_frontend.php:725
+#: views/contact_view.php:184 views/edit_contact_view.php:222
 msgid "Month"
 msgstr "mês"
 
 #: includes/cb_date.php:87 includes/cb_date.php:168 includes/cb_date.php:220
 #: includes/cb_date.php:286 includes/cb_date.php:346
-#: views/contact_bank_frontend.php:735 views/contact_view.php:179
-#: views/edit_contact_view.php:200 views/edit_contact_view.php:1747
-#: views/edit_contact_view.php:1761
+#: views/contact_bank_frontend.php:747 views/contact_view.php:199
+#: views/edit_contact_view.php:237 views/edit_contact_view.php:1785
+#: views/edit_contact_view.php:1799
 msgid "Year"
 msgstr "ano"
 
@@ -460,9 +464,9 @@ msgstr "Digite  Css  Descrição"
 msgid "Dropdown"
 msgstr "Deixe cair- para baixo"
 
-#: includes/cb_dropdown.php:294 views/contact_bank_frontend.php:386
-#: views/contact_bank_frontend.php:400 views/contact_view.php:75
-#: views/edit_contact_view.php:96
+#: includes/cb_dropdown.php:294 views/contact_bank_frontend.php:398
+#: views/contact_bank_frontend.php:412 views/contact_view.php:95
+#: views/edit_contact_view.php:133
 msgid "Select option"
 msgstr "seleccionar opção"
 
@@ -472,10 +476,10 @@ msgstr "de e-mail Controlo "
 
 #: includes/cb_email.php:26 includes/cb_email.php:57
 #: views/contact_email.php:72 views/contact_email.php:138
-#: views/contact_view.php:58 views/contact_view.php:968
-#: views/contact_view.php:972 views/edit_contact_view.php:79
-#: views/edit_contact_view.php:1415 views/edit_contact_view.php:2172
-#: views/edit_contact_view.php:2176
+#: views/contact_view.php:78 views/contact_view.php:996
+#: views/contact_view.php:1000 views/edit_contact_view.php:116
+#: views/edit_contact_view.php:1453 views/edit_contact_view.php:2215
+#: views/edit_contact_view.php:2219
 msgid "Email"
 msgstr "de e-mail"
 
@@ -514,11 +518,11 @@ msgid "Fileupload Control"
 msgstr "arquivo-carregar controlo"
 
 #: includes/cb_file_upload.php:27 includes/cb_file_upload.php:61
-#: views/contact_view.php:111 views/contact_view.php:337
-#: views/contact_view.php:1045 views/contact_view.php:1049
-#: views/edit_contact_view.php:132 views/edit_contact_view.php:386
-#: views/edit_contact_view.php:1676 views/edit_contact_view.php:2249
-#: views/edit_contact_view.php:2253
+#: views/contact_view.php:131 views/contact_view.php:357
+#: views/contact_view.php:1073 views/contact_view.php:1077
+#: views/edit_contact_view.php:169 views/edit_contact_view.php:423
+#: views/edit_contact_view.php:1714 views/edit_contact_view.php:2292
+#: views/edit_contact_view.php:2296
 msgid "File Upload"
 msgstr "de File Upload"
 
@@ -551,7 +555,7 @@ msgid "Hidden Control"
 msgstr "Controlo escondido"
 
 #: includes/cb_hidden.php:19 includes/cb_hidden.php:31
-#: views/edit_contact_view.php:1920
+#: views/edit_contact_view.php:1957
 msgid "Untitled(hidden)"
 msgstr "Sem título (oculto)"
 
@@ -601,11 +605,11 @@ msgid "Password Control"
 msgstr "senha  controle"
 
 #: includes/cb_password.php:26 includes/cb_password.php:56
-#: views/contact_view.php:292 views/contact_view.php:349
-#: views/contact_view.php:1125 views/contact_view.php:1129
-#: views/edit_contact_view.php:313 views/edit_contact_view.php:398
-#: views/edit_contact_view.php:1930 views/edit_contact_view.php:2329
-#: views/edit_contact_view.php:2333
+#: views/contact_view.php:312 views/contact_view.php:369
+#: views/contact_view.php:1153 views/contact_view.php:1157
+#: views/edit_contact_view.php:350 views/edit_contact_view.php:435
+#: views/edit_contact_view.php:1967 views/edit_contact_view.php:2372
+#: views/edit_contact_view.php:2376
 msgid "Password"
 msgstr "senha"
 
@@ -645,11 +649,11 @@ msgstr "Digite o valor padrão"
 msgid "Time Control"
 msgstr "controle de tempo"
 
-#: includes/cb_time.php:25 includes/cb_time.php:55 views/contact_view.php:203
-#: views/contact_view.php:343 views/contact_view.php:1090
-#: views/contact_view.php:1094 views/edit_contact_view.php:224
-#: views/edit_contact_view.php:392 views/edit_contact_view.php:1816
-#: views/edit_contact_view.php:2294 views/edit_contact_view.php:2298
+#: includes/cb_time.php:25 includes/cb_time.php:55 views/contact_view.php:223
+#: views/contact_view.php:363 views/contact_view.php:1118
+#: views/contact_view.php:1122 views/edit_contact_view.php:261
+#: views/edit_contact_view.php:429 views/edit_contact_view.php:1854
+#: views/edit_contact_view.php:2337 views/edit_contact_view.php:2341
 msgid "Time"
 msgstr "tempo"
 
@@ -662,16 +666,16 @@ msgid "Time format"
 msgstr "formato da hora"
 
 #: includes/cb_time.php:90 includes/cb_time.php:110 includes/cb_time.php:208
-#: views/contact_bank_frontend.php:843 views/contact_bank_frontend.php:869
-#: views/contact_bank_frontend.php:895 views/contact_view.php:207
-#: views/contact_view.php:227 views/edit_contact_view.php:228
-#: views/edit_contact_view.php:248
+#: views/contact_bank_frontend.php:855 views/contact_bank_frontend.php:881
+#: views/contact_bank_frontend.php:907 views/contact_view.php:227
+#: views/contact_view.php:247 views/edit_contact_view.php:265
+#: views/edit_contact_view.php:285
 msgid "Hour"
 msgstr "horas"
 
 #: includes/cb_time.php:130 includes/cb_time.php:209 includes/cb_time.php:360
-#: views/contact_bank_frontend.php:919 views/contact_view.php:247
-#: views/edit_contact_view.php:268 views/edit_contact_view.php:1834
+#: views/contact_bank_frontend.php:931 views/contact_view.php:267
+#: views/edit_contact_view.php:305 views/edit_contact_view.php:1871
 msgid "Minute"
 msgstr "minuto"
 
@@ -703,35 +707,35 @@ msgstr "Introduza AM / PM Estilo de"
 msgid "AM/PM"
 msgstr "AM / PM"
 
-#: views/contact_bank_frontend.php:153
+#: views/contact_bank_frontend.php:165
 msgid "Enter Text"
 msgstr "Digite  texto"
 
-#: views/contact_bank_frontend.php:342 views/contact_email.php:84
+#: views/contact_bank_frontend.php:354 views/contact_email.php:84
 #: views/contact_email.php:144
 msgid "Enter Email Address"
 msgstr "Digite de e-mail Endereço de "
 
-#: views/contact_bank_frontend.php:974
+#: views/contact_bank_frontend.php:986
 msgid "Enter Hidden Text"
 msgstr "Digite texto oculto"
 
-#: views/contact_bank_frontend.php:974 views/contact_view.php:282
-#: views/contact_view.php:346 views/edit_contact_view.php:303
-#: views/edit_contact_view.php:395
+#: views/contact_bank_frontend.php:986 views/contact_view.php:302
+#: views/contact_view.php:366 views/edit_contact_view.php:340
+#: views/edit_contact_view.php:432
 msgid "Hidden"
 msgstr "escondido"
 
-#: views/contact_bank_frontend.php:1062
+#: views/contact_bank_frontend.php:1074
 msgid "Enter Password"
 msgstr "Insira  senha"
 
-#: views/contact_bank_frontend.php:1073
+#: views/contact_bank_frontend.php:1085
 msgid "Submit Form"
 msgstr "em Enviar Formulário"
 
 #: views/contact_email.php:9 views/contact_frontend_data.php:8
-#: views/contact_view.php:9 views/edit_contact_view.php:30
+#: views/contact_view.php:9 views/edit_contact_view.php:29
 msgid "Back to Dashboard"
 msgstr "voltar ao painel de instrumentos"
 
@@ -781,8 +785,8 @@ msgstr "código curto Controles  para e-mail"
 msgid "Client Email"
 msgstr "cliente de de e-mail"
 
-#: views/contact_email.php:183 views/contact_view.php:308
-#: views/edit_contact_view.php:358
+#: views/contact_email.php:183 views/contact_view.php:328
+#: views/edit_contact_view.php:395
 msgid "Save"
 msgstr "salvar"
 
@@ -795,48 +799,69 @@ msgstr "Forma"
 msgid "Form Submited. Kindly wait for the redirect."
 msgstr "Submetido formar. Por favor, aguarde o redirecionamento."
 
-#: views/contact_view.php:24 views/edit_contact_view.php:45
+#: views/contact_view.php:24 views/edit_contact_view.php:44
 msgid "Form Name :"
 msgstr "Nome do formulário:"
 
-#: views/contact_view.php:27 views/edit_contact_view.php:48
+#: views/contact_view.php:27 views/edit_contact_view.php:47
 msgid "Enter Form Name"
 msgstr "Digite Nome do Formulário"
 
-#: views/contact_view.php:279 views/edit_contact_view.php:300
+#: views/contact_view.php:31 views/edit_contact_view.php:51
+msgid "Success Message :"
+msgstr "Sucesso Mensagem:"
+
+#: views/contact_view.php:34 views/edit_contact_view.php:54
+msgid "Enter Success Message"
+msgstr "Introduza Sucesso Mensagem"
+
+#: views/contact_view.php:38 views/edit_contact_view.php:62
+#: views/edit_contact_view.php:72
+msgid "Redirect URL :"
+msgstr "Redirecionar URL:"
+
+#: views/contact_view.php:44 views/edit_contact_view.php:82
+msgid "URL :"
+msgstr "URL :"
+
+#: views/contact_view.php:47 views/edit_contact_view.php:85
+msgid "Enter Redirect URL"
+msgstr "Introduza de redireccionamento -URL "
+
+#: views/contact_view.php:299 views/edit_contact_view.php:337
 msgid "Untitled (hidden)"
 msgstr "Sem título (oculto)"
 
-#: views/contact_view.php:314 views/edit_contact_view.php:364
+#: views/contact_view.php:334 views/edit_contact_view.php:401
 msgid "Control Buttons"
 msgstr "Botões de controle"
 
-#: views/contact_view.php:319 views/edit_contact_view.php:368
+#: views/contact_view.php:339 views/edit_contact_view.php:405
 msgid "Text Box"
 msgstr "Caixa de Texto"
 
-#: views/contact_view.php:322 views/edit_contact_view.php:371
+#: views/contact_view.php:342 views/edit_contact_view.php:408
 msgid "Text Area"
 msgstr "Área de texto"
 
-#: views/contact_view.php:325 views/edit_contact_view.php:374
+#: views/contact_view.php:345 views/edit_contact_view.php:411
 msgid "Email Address"
 msgstr "de e-mail Endereço de "
 
-#: views/contact_view.php:328 views/edit_contact_view.php:377
+#: views/contact_view.php:348 views/edit_contact_view.php:414
 msgid "Dropdown Menu"
 msgstr "menu pendente"
 
-#: views/contact_view.php:331 views/edit_contact_view.php:380
+#: views/contact_view.php:351 views/edit_contact_view.php:417
 msgid "Checkboxes"
 msgstr "caixas de verificação"
 
-#: views/contact_view.php:334 views/edit_contact_view.php:383
+#: views/contact_view.php:354 views/edit_contact_view.php:420
 msgid "Multiple Choice"
 msgstr "múltipla escolha"
 
-#: views/contact_view.php:1114 views/contact_view.php:1116
-#: views/edit_contact_view.php:2318 views/edit_contact_view.php:2320
+#: views/contact_view.php:1142 views/contact_view.php:1144
+#: views/edit_contact_view.php:2361 views/edit_contact_view.php:2363
 msgid "Untitled(Hidden)"
 msgstr "Sem Título(Oculto)"
 
@@ -979,48 +1004,48 @@ msgstr "Tem certeza que deseja deletar este formulário?"
 msgid "Are you sure to delete all forms ?"
 msgstr "Tem certeza que deseja excluir todas as formas?"
 
-#: views/edit_contact_view.php:27
+#: views/edit_contact_view.php:26
 msgid "Edit Existing Form"
 msgstr "Editar formulário existente"
 
-#: views/edit_contact_view.php:34
+#: views/edit_contact_view.php:33
 msgid "Form Updated. Kindly wait for the redirect."
 msgstr "Forma atualizada. Por favor, aguarde o redirecionamento."
 
-#: views/edit_contact_view.php:41
+#: views/edit_contact_view.php:40
 msgid "Edit Form"
 msgstr "editar Forma"
 
-#: views/edit_contact_view.php:519 views/edit_contact_view.php:562
-#: views/edit_contact_view.php:647 views/edit_contact_view.php:702
-#: views/edit_contact_view.php:759
+#: views/edit_contact_view.php:557 views/edit_contact_view.php:600
+#: views/edit_contact_view.php:685 views/edit_contact_view.php:740
+#: views/edit_contact_view.php:797
 msgid "Untitled :"
 msgstr "Sem título:"
 
-#: views/edit_contact_view.php:605
+#: views/edit_contact_view.php:643
 msgid "Email :"
 msgstr "Email :"
 
-#: views/edit_contact_view.php:818
+#: views/edit_contact_view.php:856
 msgid "File Upload :"
 msgstr "arquivo-carregar"
 
-#: views/edit_contact_view.php:878
+#: views/edit_contact_view.php:916
 msgid "Date :"
 msgstr "data:"
 
-#: views/edit_contact_view.php:961
+#: views/edit_contact_view.php:999
 msgid "Time :"
 msgstr "tempo:"
 
-#: views/edit_contact_view.php:1027
+#: views/edit_contact_view.php:1065
 msgid "Untitled(hidden) :"
 msgstr "Sem título (oculto):"
 
-#: views/edit_contact_view.php:1067
+#: views/edit_contact_view.php:1105
 msgid "Password : "
 msgstr "senha:"
 
-#: views/edit_contact_view.php:1700
+#: views/edit_contact_view.php:1738
 msgid "1024"
 msgstr "1024"

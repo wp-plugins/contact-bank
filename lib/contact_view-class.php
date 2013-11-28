@@ -200,12 +200,24 @@ else
 				$field_exist_dynamic_id = $field_dynamic_id != "" ? explode(",",$field_dynamic_id) : Array();
 				
 				$ux_form_name_txt = esc_attr($_REQUEST["form_name"]);
+				if(esc_attr($_REQUEST["chk_redirect_url"]) == "true")
+				{
+					$redirect_chkbox_val = 1;
+				}
+				else
+				{
+					$redirect_chkbox_val = 0;
+				}
+				
 				$wpdb->query
 				(
 					$wpdb->prepare
 					(
-						"INSERT INTO ".contact_bank_contact_form()."(form_name) VALUES(%s)",
-						$ux_form_name_txt
+						"INSERT INTO ".contact_bank_contact_form()."(form_name,success_message,chk_url,redirect_url) VALUES(%s,%s,%d,%s)",
+						$ux_form_name_txt,
+						esc_attr($_REQUEST["ux_sucess_message"]),
+						$redirect_chkbox_val,
+						esc_attr($_REQUEST["ux_redirect_url"])
 					)
 				);
 				echo $form_id=$wpdb->insert_id;
@@ -231,19 +243,6 @@ else
 							"UPDATE " . create_control_Table() . " SET sorting_order = %d WHERE control_id = %d",
 							$sort_id,
 							$sort_id
-						)
-					);
-				}
-				
-				for($flag1=0;$flag1<count($field_order_id);$flag1++)
-				{
-					$wpdb->query
-					(
-						$wpdb->prepare
-						(
-							"UPDATE " . create_control_Table() . " SET sorting_order = %d WHERE column_dynamicId = %d",
-							$flag1,
-							$field_exist_dynamic_id[$flag1]
 						)
 					);
 				}

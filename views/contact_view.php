@@ -27,6 +27,26 @@
 											<input type="text" name="ux_form_name_txt" class="layout-span7" value="" id="ux_form_name_txt" placeholder="<?php _e( "Enter Form Name", contact_bank);?>" />
 										</div>
 									</div>
+									<div class="layout-control-group div_border" style="border: 1px dashed #B6B4B4;padding: 5px;cursor: default">
+										<label class="layout-control-label"><?php _e('Success Message :', contact_bank);?> </label>
+										<span style="display: block" class="error">*</span>
+										<div class="layout-controls hovertip" id="show_tooltip100">
+											<input type="text" name="ux_sucess_message" class="layout-span7" value="" id="ux_sucess_message" placeholder="<?php _e( "Enter Success Message", contact_bank);?>" />
+										</div>
+									</div>
+									<div class="layout-control-group div_border" style="border: 1px dashed #B6B4B4;padding: 5px;cursor: default">
+										<label class="layout-control-label"><?php _e('Redirect URL :', contact_bank);?> </label>
+										<div class="layout-controls hovertip" id="show_tooltip100">
+											<input type="checkbox"  id="chk_redirect_url" name="chk_redirect_url" value="1" onclick="show_url_control();" style="margin-top: 8px;" />
+										</div>
+									</div>
+									<div class="layout-control-group div_border" id="div_url" style="border: 1px dashed #B6B4B4;padding: 5px;cursor: default;display: none;" >
+										<label class="layout-control-label"><?php _e('URL :', contact_bank);?> </label>
+										<span style="display: block" class="error">*</span>
+										<div class="layout-controls hovertip" id="show_tooltip100">
+											<input type="text" name="ux_redirect_url" class="layout-span7" value="" id="ux_redirect_url" placeholder="<?php _e( "Enter Redirect URL", contact_bank);?>" />
+										</div>
+									</div>
 									<div id="left_block">
 										<div class="layout-control-group div_border" id="div_1_1" style="display: none;">
 											<label class="layout-control-label" id="control_label_"><?php _e("Untitled", contact_bank); ?> : </label>
@@ -893,7 +913,15 @@ jQuery("#ux_dynamic_form_submit").validate
 ({
 	rules: 
 	{
-		ux_form_name_txt: "required"
+		ux_form_name_txt: "required",
+		ux_sucess_message: "required",
+		ux_redirect_url: 
+		{
+			required: function()
+			{
+				return jQuery("#chk_redirect_url").prop("checked");
+			}
+		}
 	},
 	submitHandler: function(form)
 	{
@@ -906,7 +934,7 @@ jQuery("#ux_dynamic_form_submit").validate
 		jQuery.ajax
 		({
 			type: "POST",
-			url: ajaxurl + "?form_name="+form_name+"&field_order="+field_order+"&new_control_dynamic_ids="+new_control_dynamic_ids+"&created_control_type="+created_control_type+"&field_dynamic_id="+field_dynamic_id+"&form=1&param=submit_controls&action=add_contact_form_library",
+			url: ajaxurl + "?form_name="+form_name+"&field_order="+field_order+"&new_control_dynamic_ids="+new_control_dynamic_ids+"&created_control_type="+created_control_type+"&field_dynamic_id="+field_dynamic_id+"&ux_sucess_message="+jQuery("#ux_sucess_message").val()+"&chk_redirect_url="+jQuery("#chk_redirect_url").prop("checked")+"&ux_redirect_url="+jQuery("#ux_redirect_url").val()+"&form=1&param=submit_controls&action=add_contact_form_library",
 			success : function(data) 
 			{
 				var form_id = data;
@@ -967,7 +995,7 @@ jQuery("#ux_dynamic_form_submit").validate
 								array_controls[dynamicCount].push({"email_dynamicId" : new_control_dynamic_ids[flag]});
 								array_controls[dynamicCount].push({"cb_label_value" : "<?php _e("Email", contact_bank); ?>"});
 								array_controls[dynamicCount].push({"cb_description" : ""});
-								array_controls[dynamicCount].push({"cb_control_required": 0});
+								array_controls[dynamicCount].push({"cb_control_required": 1});
 								array_controls[dynamicCount].push({"cb_tooltip_txt" :""});
 								array_controls[dynamicCount].push({"cb_admin_label" : "<?php _e("Email", contact_bank); ?>"});
 								array_controls[dynamicCount].push({"cb_show_email" : 0});
@@ -1160,10 +1188,28 @@ jQuery("#ux_dynamic_form_submit").validate
 						}
 					});
 				}
-				
+				if(new_control_dynamic_ids.length == 0)
+				{
+					setTimeout(function()
+					{
+						jQuery("#form_success_message").css("display","none");
+						window.location.href = "admin.php?page=dashboard";
+					}, 2000);
+				}
 			}
-			
 		});
 	}
 });
+function show_url_control()
+{
+	var chk_redirect_url =  jQuery("#chk_redirect_url").prop("checked");
+	if(chk_redirect_url == true)
+	{
+		jQuery("#div_url").css("display","block");
+	}
+	else
+	{
+		jQuery("#div_url").css("display","none");
+	}
+}
 </script>

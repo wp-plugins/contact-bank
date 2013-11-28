@@ -3,7 +3,7 @@ global $current_user;
 $current_user = wp_get_current_user();
 if (!current_user_can("edit_posts") && ! current_user_can("edit_pages"))
 {
- return;
+	return;
 }
 else
 {
@@ -18,12 +18,24 @@ else
 			if($form == 1)
 			{
 				$ux_form_name_txt = esc_attr($_REQUEST["form_name"]);
+				if(esc_attr($_REQUEST["chk_redirect_url"]) == "true")
+				{
+					$redirect_chkbox_val = 1;
+				}
+				else
+				{
+					$redirect_chkbox_val = 0;
+				}
+				echo $redirect_chkbox_val;
 				$wpdb->query
 				(
 					$wpdb->prepare
 					(
-						"UPDATE ".contact_bank_contact_form()." SET form_name =%s Where form_id = %d",
+						"UPDATE ".contact_bank_contact_form()." SET form_name =%s, success_message = %s, chk_url = %d, redirect_url = %s  Where form_id = %d",
 						$ux_form_name_txt,
+						esc_attr($_REQUEST["ux_sucess_message"]),
+						$redirect_chkbox_val,
+						esc_attr($_REQUEST["ux_redirect_url"]),
 						$form_id
 					)
 				);
@@ -106,7 +118,6 @@ else
 					{
 						$dynamicId = current($keyInner);
 					}
-					
 				}
 			}
 			die();

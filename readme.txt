@@ -3,7 +3,7 @@ Contributors: contact-banker
 Tags: Contact Form, text, contact, form, contacts, request, contact me, feedback form, feedback, easy contact form, best contact form plugin, admin, Post, widget, contact bank, contact form 7, plugin, Posts, ajax
 Requires at least: 2.9
 Tested up to: 3.7.1
-Stable tag: 1.2
+Stable tag: 1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -21,6 +21,9 @@ Contact Bank  can manage multiple forms, plus you can customize the form and the
 
 **How  to setup and add Form to Contact Bank?**
 [youtube http://www.youtube.com/watch?v=EcqbsXmPbaI]
+
+**How  to setup Email Settings?**
+[youtube http://www.youtube.com/watch?v=n3hZ7_seMSM]
 
 
 = Full list of Features =
@@ -92,6 +95,13 @@ Contact Bank  can manage multiple forms, plus you can customize the form and the
 1. It means that such user is not exist or you have made a syntactical error.
 
 == Changelog ==
+
+= 1.3 =
+
+* Documentation Added
+* Improved CSS Issues
+* All Languages Updated
+* Confirmation Added with Link to Redirect on Front End.
 
 = 1.2 =
 

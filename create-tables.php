@@ -6,6 +6,9 @@ if (count($wpdb->get_var('SHOW TABLES LIKE "' . contact_bank_contact_form() . '"
 	$sql = 'CREATE TABLE ' . contact_bank_contact_form() . '(
 	form_id INTEGER(10) UNSIGNED NOT NULL AUTO_INCREMENT,
 	form_name VARCHAR(200) NOT NULL,
+	success_message VARCHAR(200) NOT NULL,
+	chk_url INTEGER(10) NOT NULL,
+	redirect_url VARCHAR(200) NOT NULL,
 	PRIMARY KEY (form_id)
 	) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE utf8_general_ci';
 	dbDelta($sql);
@@ -70,5 +73,59 @@ if (count($wpdb->get_var('SHOW TABLES LIKE "' . contact_bank_frontend_forms_Tabl
 	PRIMARY KEY (id)
 	) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE utf8_general_ci';
 	dbDelta($sql);
+}
+if (count($wpdb->get_var('SHOW TABLES LIKE "' . contact_bank_contact_form() . '"')) != 0)
+{
+	$sucess_url_check = $wpdb->get_var
+	(
+		$wpdb->prepare
+		(
+			"SHOW COLUMNS FROM " . contact_bank_contact_form() . " LIKE 'success_message'",""
+		)
+	);
+	if($sucess_url_check != "success_message")
+	{
+		$wpdb->query
+		(
+			$wpdb->prepare
+			(
+				"ALTER TABLE " . contact_bank_contact_form() . " ADD success_message VARCHAR(200) NOT NULL",""
+			)
+		);
+	}
+	$chk_url_column  = $wpdb->get_var
+	(
+		$wpdb->prepare
+		(
+			"SHOW COLUMNS FROM " . contact_bank_contact_form() . " LIKE 'chk_url'",""
+		)
+	);
+	if($chk_url_column != "chk_url")
+	{
+		$wpdb->query
+		(
+			$wpdb->prepare
+			(
+				"ALTER TABLE " . contact_bank_contact_form() . " ADD chk_url INTEGER(10) NOT NULL",""
+			)
+		);
+	}
+	$redirect_url_check  = $wpdb->get_var
+	(
+		$wpdb->prepare
+		(
+			"SHOW COLUMNS FROM " . contact_bank_contact_form() . " LIKE 'redirect_url'",""
+		)
+	);
+	if($redirect_url_check != "redirect_url")
+	{
+		$wpdb->query
+		(
+			$wpdb->prepare
+			(
+				"ALTER TABLE " . contact_bank_contact_form() . " ADD redirect_url VARCHAR(200) NOT NULL",""
+			)
+		);
+	}
 }
 ?>

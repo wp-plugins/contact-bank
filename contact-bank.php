@@ -4,7 +4,7 @@
  Plugin URI: http://wordpress.org/plugins/contact-bank/
  Description: Contact Bank allows you to add a feedback form easilly and simply to a post or a page.
  Author: contact-banker
- Version: 1.2
+ Version: 1.3
  Author URI: http://wordpress.org/plugins/contact-bank/
  */
  
@@ -76,6 +76,7 @@ function create_global_menus_for_contact_bank()
 	add_submenu_page('dashboard', 'Add New Form', __('Add New Form', contact_bank), 'administrator', 'contact_bank', 'contact_bank');
 	add_submenu_page('dashboard', 'Email Settings', __('Email Settings', contact_bank), 'administrator', 'contact_email', 'contact_email');
 	add_submenu_page('dashboard', 'Form Entries', __('Form Entries', contact_bank), 'administrator', 'frontend_data', 'frontend_data');
+	add_submenu_page('dashboard', 'Documentation', __('Documentation', contact_bank), 'administrator', 'documentation', 'documentation');
 	add_submenu_page('dashboard', '','', 'administrator', 'edit_contact_view', 'edit_contact_view');
 }
 /* Function Name : contact_bank
@@ -119,6 +120,13 @@ function frontend_data()
 	global $wpdb;
 	include_once CONTACT_BK_PLUGIN_DIR .'/views/header.php';
 	include_once CONTACT_BK_PLUGIN_DIR .'/views/contact_frontend_data.php';
+	include_once CONTACT_BK_PLUGIN_DIR .'/views/footer.php';
+}
+function documentation()
+{
+	global $wpdb;
+	include_once CONTACT_BK_PLUGIN_DIR .'/views/header.php';
+	include_once CONTACT_BK_PLUGIN_DIR .'/views/contact_documentation.php';
 	include_once CONTACT_BK_PLUGIN_DIR .'/views/footer.php';
 }
 /* Function Name : backend_plugin_js_scripts_contact_bank
@@ -179,6 +187,7 @@ function backend_plugin_css_styles_contact_bank()
 function frontend_plugin_css_styles_contact_bank()
 {
 	wp_enqueue_style('stylesheet', CONTACT_BK_PLUGIN_URL .'/assets/css/stylesheet.css');
+	wp_enqueue_style('system-message', CONTACT_BK_PLUGIN_URL .'/assets/css/system-message.css');
 }
 /* 
  * Description : REGISTER AJAX BASED FUNCTIONS TO BE CALLED ON ACTION TYPE AS PER WORDPRESS GUIDELINES
@@ -464,6 +473,12 @@ function add_contact_bank_icon($meta = TRUE)
 		'href'  => site_url() .'/wp-admin/admin.php?page=frontend_data',
 		'title' => __( 'Form Entries'))         /* set the sub-menu name */  
 	);
+	$wp_admin_bar->add_menu( array(  
+		'parent' => 'contact_bank_links',  
+		'id'     => 'documents_data_links',
+		'href'  => site_url() .'/wp-admin/admin.php?page=documentation',
+		'title' => __( 'Documentation'))         /* set the sub-menu name */  
+	);
 }
 add_action( 'media_buttons_context', 'add_emg_shortcode_button', 1);
 	function add_emg_shortcode_button($context) {
@@ -539,7 +554,7 @@ function thsp_enqueue_pointer_script_style( $hook_suffix ) {
 	$dismissed_pointers = explode( ',', get_user_meta( get_current_user_id(), 'dismissed_wp_pointers', true ) );
  
 		// Check if our pointer is not among dismissed ones
-	if( !in_array( 'thsp_gallery_bank_pointer', $dismissed_pointers ) ) {
+	if( !in_array( 'thsp_contact_bank_pointer', $dismissed_pointers ) ) {
 		$enqueue_pointer_script_style = true;
 
 		// Add footer scripts using callback function
@@ -547,7 +562,7 @@ function thsp_enqueue_pointer_script_style( $hook_suffix ) {
 	}
  
 		// Enqueue pointer CSS and JS files, if needed
-	if( $enqueue_pointer_script_style ) {
+	if( $enqueue_pointer_script_style ){
 		wp_enqueue_style( 'wp-pointer' );
 		wp_enqueue_script( 'wp-pointer' );
 	}
@@ -557,7 +572,7 @@ add_action( 'admin_enqueue_scripts', 'thsp_enqueue_pointer_script_style' );
 function thsp_pointer_print_scripts() {
  
 	$pointer_content  = "<h3>Contact Bank</h3>";
-	$pointer_content .= "<p>If you ever activated a plugin, then had no idea where its settings page is, raise your hand.</p>";
+	$pointer_content .= "<p>If you are using Contact Bank for the first time, you can view this <a href=http://www.youtube.com/embed/EcqbsXmPbaI target=_blank>video</a> to setup the Plugin.</p>";
 	?>
 
 	<script type="text/javascript">
@@ -572,7 +587,7 @@ function thsp_pointer_print_scripts() {
 			pointerWidth:   350,
 			close:function() {
 					$.post( ajaxurl, {
-					pointer: 'thsp_gallery_bank_pointer', // pointer ID
+					pointer: 'thsp_contact_bank_pointer', // pointer ID
 					action: 'dismiss-wp-pointer'
 				});
 			}
