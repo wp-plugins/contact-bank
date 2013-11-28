@@ -19,7 +19,7 @@ Contact Bank  can manage multiple forms, plus you can customize the form and the
 
 * [Captcha Bank](http://wordpress.org/extend/plugins/captcha-bank/) - An easy to use powerful wordpress Captcha Plugin to prevent spam on your site.
 
-** How  to setup and add Form to Contact Bank? **
+**How  to setup and add Form to Contact Bank?**
 [youtube http://www.youtube.com/watch?v=EcqbsXmPbaI]
 
 
