@@ -3,7 +3,6 @@
 	<div class="widget-layout widget-tabs">
 		<div class="widget-layout-title">
 			<h4><?php _e( "Fileupload Control", contact_bank ); ?></h4>
-			
 		</div>
 		<div class="fluid-layout">
 			<div class="layout-span12">
@@ -136,28 +135,28 @@
 		switch(control.id)
 		{
 			case "tab1":
-					jQuery("#tabs-nohdr-1").css("display","none");
-					jQuery("#tabs-nohdr-2").css("display","none");
-					jQuery("#tabs-nohdr-3").css("display","block");
-					jQuery("#li1").attr("class","active");
-					jQuery("#li2").removeAttr("class");
-					jQuery("#li3").removeAttr("class");
+				jQuery("#tabs-nohdr-1").css("display","none");
+				jQuery("#tabs-nohdr-2").css("display","none");
+				jQuery("#tabs-nohdr-3").css("display","block");
+				jQuery("#li1").attr("class","active");
+				jQuery("#li2").removeAttr("class");
+				jQuery("#li3").removeAttr("class");
 			break;
 			case "tab2":
-					jQuery("#tabs-nohdr-1").css("display","none");
-					jQuery("#tabs-nohdr-3").css("display","none");
-					jQuery("#tabs-nohdr-2").css("display","block");
-					jQuery("#li2").attr("class","active");
-					jQuery("#li1").removeAttr("class");
-					jQuery("#li3").removeAttr("class");
+				jQuery("#tabs-nohdr-1").css("display","none");
+				jQuery("#tabs-nohdr-3").css("display","none");
+				jQuery("#tabs-nohdr-2").css("display","block");
+				jQuery("#li2").attr("class","active");
+				jQuery("#li1").removeAttr("class");
+				jQuery("#li3").removeAttr("class");
 			break;
 			case "tab3":
-					jQuery("#tabs-nohdr-3").css("display","none");
-					jQuery("#tabs-nohdr-2").css("display","none");
-					jQuery("#tabs-nohdr-1").css("display","block");
-					jQuery("#li3").attr("class","active");
-					jQuery("#li1").removeAttr("class");
-					jQuery("#li2").removeAttr("class");
+				jQuery("#tabs-nohdr-3").css("display","none");
+				jQuery("#tabs-nohdr-2").css("display","none");
+				jQuery("#tabs-nohdr-1").css("display","block");
+				jQuery("#li3").attr("class","active");
+				jQuery("#li1").removeAttr("class");
+				jQuery("#li2").removeAttr("class");
 			break;
 		}
 	}
@@ -225,21 +224,20 @@
 		});
 		var dynamicCount = "<?php echo $dynamicCount;?>";
 		array_controls[dynamicCount] = [];
-		array_controls[dynamicCount].push({"control_type" : 9});
+		array_controls[dynamicCount].push({"control_type" : "9"});
 		array_controls[dynamicCount].push({"file_upload_dynamicId" : dynamicId});
 		array_controls[dynamicCount].push({"cb_label_value" : jQuery("#ux_label_text_"+dynamicId).val()});
 		array_controls[dynamicCount].push({"cb_description" : jQuery("#ux_description_control_"+dynamicId).val()});
-		jQuery("#ux_required_control_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_control_required": 1}) : array_controls[dynamicCount].push({"cb_control_required": 0});
+		jQuery("#ux_required_control_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_control_required": "1"}) : array_controls[dynamicCount].push({"cb_control_required": "0"});
 		array_controls[dynamicCount].push({"cb_tooltip_txt" : jQuery("#ux_tooltip_control_"+dynamicId).val()});
 		array_controls[dynamicCount].push({"cb_admin_label" : jQuery("#ux_admin_label_"+dynamicId).val()});
-		jQuery("#ux_show_email_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_show_email": 1}) : array_controls[dynamicCount].push({"cb_show_email": 0});
-		jQuery("#ux_allow_multiple_file_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_allow_multiple_file": 1}) : array_controls[dynamicCount].push({"cb_allow_multiple_file": 0});
+		jQuery("#ux_show_email_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_show_email": "1"}) : array_controls[dynamicCount].push({"cb_show_email": "0"});
+		jQuery("#ux_allow_multiple_file_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_allow_multiple_file": "1"}) : array_controls[dynamicCount].push({"cb_allow_multiple_file": "0"});
 		array_controls[dynamicCount].push({"cb_allow_file_ext_upload" : jQuery("#ux_allowed_file_extensions_"+dynamicId).val()});
 		array_controls[dynamicCount].push({"cb_maximum_file_allowed" : jQuery("#ux_maximum_file_allowed_"+dynamicId).val()});
 		array_controls[dynamicCount].push({"cb_uploaded_file_email_db" : jQuery("#ux_uploaded_file_email_db_"+dynamicId).prop("checked")});
 		array_controls[dynamicCount].push({"cb_button_set_outer_label_file" : jQuery("#button_set_outer_label_file"+dynamicId).val()});
 		array_controls[dynamicCount].push({"cb_button_set_outer_description_fileuplod" : jQuery("#button_set_outer_description_fileuplod"+dynamicId).val()});
-		
 		jQuery("#control_label_"+dynamicId).html(jQuery("#ux_label_text_"+dynamicId).val()+" :");
 		jQuery("#txt_description_"+dynamicId).html(jQuery("#ux_description_control_"+dynamicId).val());
 		jQuery("#tip"+dynamicId).attr("data-original-title",jQuery("#ux_tooltip_control_"+dynamicId).val());	
@@ -286,7 +284,7 @@
 		jQuery("#ux_description_fileupload_"+dynamicId).css("display","none");
 		jQuery("#button_set_outer_description_fileuplod"+dynamicId).val("");
 	}
-	function allow_file_ext_upload(e) ///////////////////allow spaces and  only alpha,alphanumeric,digits
+	function allow_file_ext_upload(e) 
 	{
 	var regex = new RegExp("^[a-zA-Z;]*$");
 	var str = String.fromCharCode(!e.charCode ? e.which : e.charCode);

@@ -114,35 +114,33 @@
 	jQuery(".hovertip").tooltip();
 	function tabsFunc(control)
 	{
-		
 		switch(control.id)
 		{
 			case "tab1":
-					jQuery("#tabs-nohdr-1").css("display","none");
-					jQuery("#tabs-nohdr-2").css("display","none");
-					jQuery("#tabs-nohdr-3").css("display","block");
-					jQuery("#li1").attr("class","active");
-					jQuery("#li2").removeAttr("class");
-					jQuery("#li3").removeAttr("class");
+				jQuery("#tabs-nohdr-1").css("display","none");
+				jQuery("#tabs-nohdr-2").css("display","none");
+				jQuery("#tabs-nohdr-3").css("display","block");
+				jQuery("#li1").attr("class","active");
+				jQuery("#li2").removeAttr("class");
+				jQuery("#li3").removeAttr("class");
 			break;
 			case "tab2":
-					jQuery("#tabs-nohdr-1").css("display","none");
-					jQuery("#tabs-nohdr-3").css("display","none");
-					jQuery("#tabs-nohdr-2").css("display","block");
-					jQuery("#li2").attr("class","active");
-					jQuery("#li1").removeAttr("class");
-					jQuery("#li3").removeAttr("class");
+				jQuery("#tabs-nohdr-1").css("display","none");
+				jQuery("#tabs-nohdr-3").css("display","none");
+				jQuery("#tabs-nohdr-2").css("display","block");
+				jQuery("#li2").attr("class","active");
+				jQuery("#li1").removeAttr("class");
+				jQuery("#li3").removeAttr("class");
 			break;
 			case "tab3":
-					jQuery("#tabs-nohdr-3").css("display","none");
-					jQuery("#tabs-nohdr-2").css("display","none");
-					jQuery("#tabs-nohdr-1").css("display","block");
-					jQuery("#li3").attr("class","active");
-					jQuery("#li1").removeAttr("class");
-					jQuery("#li2").removeAttr("class");
+				jQuery("#tabs-nohdr-3").css("display","none");
+				jQuery("#tabs-nohdr-2").css("display","none");
+				jQuery("#tabs-nohdr-1").css("display","block");
+				jQuery("#li3").attr("class","active");
+				jQuery("#li1").removeAttr("class");
+				jQuery("#li2").removeAttr("class");
 			break;
 		}
-		
 	}
 	function button_set_outer_label_ddl(dynamicId)
 	{
@@ -185,7 +183,6 @@
 		var default_value = jQuery("#ux_default_value_"+dynamicId).val();
 		jQuery("#select_"+dynamicId).val(default_value);
 	}
-	
 	var count = <?php echo $count; ?>;
 	if(count != 0)
 	{
@@ -249,15 +246,13 @@
 		}
 		else 
 		{
+			var optionsId = Math.floor((Math.random()*1000)+1);
 			
-				var optionsId = Math.floor((Math.random()*1000)+1);
-				
-				jQuery("#dropdown_ddl_option_"+dynamicId).append('<div class="layout-control-group" id="input_option_tr_'+optionsId+'"><div class="layout-controls"><input type="text" class="layout-span8"  id="input_option_'+optionsId+'" name="input_option_'+optionsId+'" value="'+ddl_options+'"/><a style="padding-left:2px;" onclick="delete_ddl_option('+optionsId+','+dynamicId+')" ><img style="vertical-align: top;margin-top: 2px;" src="<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" /></a></div></div>');
-				jQuery("#ddl_options_"+dynamicId).val("");
-				
-				array_option_id_dropdown[dynamicCount].push(optionsId);
-				array_options_dropdown[dynamicCount].push(ddl_options);
+			jQuery("#dropdown_ddl_option_"+dynamicId).append('<div class="layout-control-group" id="input_option_tr_'+optionsId+'"><div class="layout-controls"><input type="text" class="layout-span8"  id="input_option_'+optionsId+'" name="input_option_'+optionsId+'" value="'+ddl_options+'"/><a style="padding-left:2px;" onclick="delete_ddl_option('+optionsId+','+dynamicId+')" ><img style="vertical-align: top;margin-top: 2px;" src="<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" /></a></div></div>');
+			jQuery("#ddl_options_"+dynamicId).val("");
 			
+			array_option_id_dropdown[dynamicCount].push(optionsId);
+			array_options_dropdown[dynamicCount].push(ddl_options);
 		}
 	}
 	function delete_ddl_option(optionsId,dynamicId)
@@ -274,7 +269,6 @@
 			array_option_id_dropdown[dynamicCount].splice(place_of_option_in_array_id,1);
 		}
 	}
-	
 	function change_label_drop(optionsId)
 	{
 		var lable_value = jQuery("#input_option_"+optionsId).val();
@@ -284,10 +278,10 @@
 	{
 		var dynamicCount = "<?php echo $dynamicCount;?>";
 		array_controls[dynamicCount] = [];
-		array_controls[dynamicCount].push({"control_type" : 4});
+		array_controls[dynamicCount].push({"control_type" : "4"});
 		array_controls[dynamicCount].push({"dropdown_dynamicId" : dynamicId});
 		array_controls[dynamicCount].push({"cb_label_value" : jQuery("#ux_label_text_"+dynamicId).val()});
-		jQuery("#ux_required_control_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_control_required": 1}) : array_controls[dynamicCount].push({"cb_control_required": 0});
+		jQuery("#ux_required_control_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_control_required": "1"}) : array_controls[dynamicCount].push({"cb_control_required": "0"});
 		array_controls[dynamicCount].push({"cb_tooltip_txt" : jQuery("#ux_tooltip_control_"+dynamicId).val()});
 		var dropdown_optionId_str = "";
 		jQuery("#select_"+dynamicId).append().empty();
@@ -315,7 +309,7 @@
 		array_controls[dynamicCount].push({"cb_dropdown_option_id" : dropdown_optionId_str});
 		array_controls[dynamicCount].push({"cb_dropdown_option_val" : dropdown_option_str});
 		array_controls[dynamicCount].push({"cb_admin_label" : jQuery("#ux_admin_label_"+dynamicId).val()});
-		jQuery("#ux_email_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_show_email": 1}) : array_controls[dynamicCount].push({"cb_show_email": 0});
+		jQuery("#ux_email_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_show_email": "1"}) : array_controls[dynamicCount].push({"cb_show_email": "0"});
 		array_controls[dynamicCount].push({"cb_button_set_outer_label" : jQuery("#button_set_outer_label_ddl_"+dynamicId).val()});
 		array_controls[dynamicCount].push({"cb_button_set_dropdown_menu" : jQuery("#ux_dropdown_menu_textarea_ddl_"+dynamicId).val()});
 		array_controls[dynamicCount].push({"cb_button_set_description" : jQuery("#ux_description_textarea_ddl_"+dynamicId).val()});

@@ -2,7 +2,6 @@
 	<div class="widget-layout widget-tabs">
 		<div class="widget-layout-title">
 			<h4><?php _e( "Email Control", contact_bank ); ?></h4>
-			
 		</div>
 		<div class="fluid-layout">
 			<div class="layout-span12">
@@ -46,7 +45,6 @@
 								</div>
 								<input type="hidden"  id="tooltip_txt_hidden_value_<?php echo $dynamicId; ?>" name="tooltip_txt_hidden_value_<?php echo $dynamicId; ?>" />
 							</div>
-							
 						</div>
 					</div>
 					<div id="tabs-nohdr-2"  style="display:none;">
@@ -63,7 +61,6 @@
 									<input type="checkbox"  id="ux_show_email_<?php echo $dynamicId; ?>" name="ux_show_email_<?php echo $dynamicId; ?>"  style="margin-top: 10px;" value="1" >
 								</div>
 							</div>
-							
 						</div>
 					</div>
 					<div id="tabs-nohdr-1"  style="display:none;">
@@ -121,7 +118,6 @@
 	jQuery(".hovertip").tooltip();
 	function tabsFunc(control)
 	{
-		
 		switch(control.id)
 		{
 			case "tab1":
@@ -149,7 +145,6 @@
 					jQuery("#li2").removeAttr("class");
 			break;
 		}
-		
 	}
 	function set_default_value(dynamicId)
 	{
@@ -249,20 +244,18 @@
 		array_controls[dynamicCount].push({"email_dynamicId" : dynamicId});
 		array_controls[dynamicCount].push({"cb_label_value" : jQuery("#ux_label_text_"+dynamicId).val()});
 		array_controls[dynamicCount].push({"cb_description" : jQuery("#ux_description_control_"+dynamicId).val()});
-		jQuery("#ux_required_control_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_control_required": 1}) : array_controls[dynamicCount].push({"cb_control_required": 0});
+		jQuery("#ux_required_control_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_control_required": "1"}) : array_controls[dynamicCount].push({"cb_control_required": "0"});
 		array_controls[dynamicCount].push({"cb_tooltip_txt" : jQuery("#ux_tooltip_control_"+dynamicId).val()});
 		array_controls[dynamicCount].push({"cb_admin_label" : jQuery("#ux_admin_label_"+dynamicId).val()});
-		jQuery("#ux_show_email_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_show_email": 1}) : array_controls[dynamicCount].push({"cb_show_email": 0});
+		jQuery("#ux_show_email_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_show_email": "1"}) : array_controls[dynamicCount].push({"cb_show_email": "0"});
 		array_controls[dynamicCount].push({"cb_button_set_outer_label" : jQuery("#ux_email_set_outer_label_"+dynamicId).val()});
 		array_controls[dynamicCount].push({"cb_button_set_txt_input" : jQuery("#ux_email_txt_input_"+dynamicId).val()});
 		array_controls[dynamicCount].push({"cb_button_set_txt_description" : jQuery("#ux_email_description_textarea_"+dynamicId).val()});
-		
-		jQuery("#ux_email_alpha_filter_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_checkbox_alpha_filter": 1}) : array_controls[dynamicCount].push({"cb_checkbox_alpha_filter": 0});
-		jQuery("#ux_email_alpha_num_filter_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_ux_checkbox_alpha_num_filter": 1}) : array_controls[dynamicCount].push({"cb_ux_checkbox_alpha_num_filter": 0});
-		jQuery("#ux_email_digit_filter_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_checkbox_digit_filter": 1}) : array_controls[dynamicCount].push({"cb_checkbox_digit_filter": 0});
-		jQuery("#ux_email_strip_tag_filter_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_checkbox_strip_tag_filter": 1}) : array_controls[dynamicCount].push({"cb_checkbox_strip_tag_filter": 0});
-		jQuery("#ux_email_trim_filter_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_checkbox_trim_filter": 1}) : array_controls[dynamicCount].push({"cb_checkbox_trim_filter": 0});
-		
+		jQuery("#ux_email_alpha_filter_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_checkbox_alpha_filter": "1"}) : array_controls[dynamicCount].push({"cb_checkbox_alpha_filter": "0"});
+		jQuery("#ux_email_alpha_num_filter_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_ux_checkbox_alpha_num_filter": "1"}) : array_controls[dynamicCount].push({"cb_ux_checkbox_alpha_num_filter": "0"});
+		jQuery("#ux_email_digit_filter_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_checkbox_digit_filter": "1"}) : array_controls[dynamicCount].push({"cb_checkbox_digit_filter": "0"});
+		jQuery("#ux_email_strip_tag_filter_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_checkbox_strip_tag_filter": "1"}) : array_controls[dynamicCount].push({"cb_checkbox_strip_tag_filter": "0"});
+		jQuery("#ux_email_trim_filter_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_checkbox_trim_filter": "1"}) : array_controls[dynamicCount].push({"cb_checkbox_trim_filter": "0"});
 		jQuery("#control_label_"+dynamicId).html(jQuery("#ux_label_text_"+dynamicId).val()+" :");
 		jQuery("#txt_description_"+dynamicId).html(jQuery("#ux_description_control_"+dynamicId).val());
 		jQuery("#show_tooltip"+dynamicId).attr("data-original-title",jQuery("#ux_tooltip_control_"+dynamicId).val());
@@ -285,19 +278,16 @@
 	{
 		jQuery("#ux_advance_label_"+dynamicId).attr("display","block");
 		jQuery("#ux_advance_label_"+dynamicId).attr("style", "position:inherit");
-		
 	}
 	function button_set_txt_input(dynamicId)
 	{
 		jQuery("#advance_text_input_"+dynamicId).attr("display","block");
 		jQuery("#advance_text_input_"+dynamicId).attr("style", "position:inherit");
-		
 	}
 	function button_set_description(dynamicId)
 	{
 		jQuery("#advance_text_description_"+dynamicId).attr("display","block");
 		jQuery("#advance_text_description_"+dynamicId).attr("style", "position:inherit");
-		
 	}
 	function delete_email_css_style_label(dynamicId)
 	{

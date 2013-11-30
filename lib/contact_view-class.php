@@ -220,7 +220,7 @@ else
 						esc_attr($_REQUEST["ux_redirect_url"])
 					)
 				);
-				echo $form_id=$wpdb->insert_id;
+				$form_id=$wpdb->insert_id;
 				for($flag = 0; $flag < count($control_type_ids); $flag++)
 				{
 					$wpdb->query
@@ -243,6 +243,18 @@ else
 							"UPDATE " . create_control_Table() . " SET sorting_order = %d WHERE control_id = %d",
 							$sort_id,
 							$sort_id
+						)
+					);
+				}
+				for($flag1=0;$flag1<count($field_order_id);$flag1++)
+				{
+					$wpdb->query
+					(
+						$wpdb->prepare
+						(
+							"UPDATE " . create_control_Table() . " SET sorting_order = %d WHERE column_dynamicId = %d",
+							$flag1,
+							$field_exist_dynamic_id[$flag1]
 						)
 					);
 				}

@@ -47,7 +47,7 @@
 											<input type="text" name="ux_redirect_url" class="layout-span7" value="" id="ux_redirect_url" placeholder="<?php _e( "Enter Redirect URL", contact_bank);?>" />
 										</div>
 									</div>
-									<div id="left_block">
+									
 										<div class="layout-control-group div_border" id="div_1_1" style="display: none;">
 											<label class="layout-control-label" id="control_label_"><?php _e("Untitled", contact_bank); ?> : </label>
 											<span id="txt_required_" class="error">*</span>
@@ -84,7 +84,7 @@
 													<img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="margin-left: 1%;margin-bottom:-9px" />
 												</a>
 												<br />
-												<span class="span-description"  id="txt_description_"></span> 
+												<span class="span-description"  id="txt_description_"></span>
 											</div>
 										</div>
 										<div class="layout-control-group div_border" id="div_4_4" style="display: none;">
@@ -94,20 +94,20 @@
 												<select type="select" class="layout-span7" id="select_" name="select_">
 													<option value="0"><?php _e("Select option",contact_bank);?></option>
 												</select>
-												<a class="btn btn-info inline"  href="#setting_controls_postback" id="add_setting_control_" ><?php _e( "Settings", contact_bank); ?></a>	
+												<a class="btn btn-info inline"  href="#setting_controls_postback" id="add_setting_control_" ><?php _e( "Settings", contact_bank); ?></a>
 												<a style="cursor:pointer;" id="anchor_del_">
 													<img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="margin-left: 1%;margin-bottom:-9px" />
 												</a>
 											</div>
 										</div>
-										<div class="layout-control-group div_border" id="div_5_5" style="display: none;"> 
+										<div class="layout-control-group div_border" id="div_5_5" style="display: none;">
 											<label class="layout-control-label" id="control_label_" ><?php _e("Untitled", contact_bank); ?> : </label>
 											<span id="txt_required_"  class="error">*</span>
 											<div class="layout-controls hovertip" id="post_back_checkbox_">
 												<div id="show_tooltip">
 													<input type="checkbox"  id="chk_" name="chk_" />
 													<span id="add_chk_options_here_" ></span>
-													<a class="btn btn-info inline" href="#setting_controls_postback"  id="add_setting_control_" ><?php _e( "Settings", contact_bank); ?></a>	
+													<a class="btn btn-info inline" href="#setting_controls_postback"  id="add_setting_control_" ><?php _e( "Settings", contact_bank); ?></a>
 													<a style="cursor:pointer;" id="anchor_del_" >
 														<img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="margin-left: 1%;margin-bottom:-9px"/>
 													</a>
@@ -121,9 +121,9 @@
 												<div id="show_tooltip">
 													<input type="radio" id="radio_" name="radio_" />
 													<span  id="add_radio_options_here_" ></span>
-													<a class="btn btn-info inline"  id="add_setting_control_" href="#setting_controls_postback"  ><?php _e( "Settings", contact_bank); ?></a>	
+													<a class="btn btn-info inline"  id="add_setting_control_" href="#setting_controls_postback"  ><?php _e( "Settings", contact_bank); ?></a>
 													<a style="cursor:pointer;"  id="anchor_del_" >
-													<img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="margin-left: 1%;margin-bottom:-9px"/></a> 
+													<img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="margin-left: 1%;margin-bottom:-9px"/></a>
 												</div>
 											</div>
 										</div>
@@ -131,26 +131,26 @@
 											<label class="layout-control-label" id="control_label_" ><?php _e("File Upload", contact_bank); ?> : </label>
 											<span id="txt_required_"  class="error">*</span>
 											<div class="layout-controls"  id="show_tooltip">
-												<a class="btn btn-info inline"  id="add_setting_control_" href="#setting_controls_postback"  ><?php _e( "Settings", contact_bank ); ?></a>	
+												<a class="btn btn-info inline"  id="add_setting_control_" href="#setting_controls_postback"  ><?php _e( "Settings", contact_bank ); ?></a>
 													<a style="cursor:pointer;" class="delete_control" id="anchor_del_" >
 														<img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="margin-left: 1%;vertical-align: middle;"/>
 													</a>
 												<label class="layout-controls hovertip" id="tip" style="margin-left:-75%;">
-												<div id="file_upload_content" style="float:left;width:357px;">
-													<?php 
-													include_once CONTACT_BK_PLUGIN_DIR ."/phpfileuploader/phpuploader/include_phpuploader.php";
-													$uploader=new PhpUploader();
-													$uploader->MultipleFilesUpload=false;
-													$uploader->InsertText = "Please choose Files";
-													$uploader->MaxSizeKB = 1024;
-													$uploader->AllowedFileExtensions = "*.jpg,*.png,*.gif,*.bmp,*.txt,*.zip,*.rar";
-													$uploader->SaveDirectory= CONTACT_BK_PLUGIN_DIR ."/phpfileuploader/savefiles/";
-													$uploader->FlashUploadMode = "Partial";
-													$uploader->Render();
-													?>
-												</div>
-												<div id="file_upload_content_postback" style="display:none;float:left;width:357px;">
-												</div>
+													<div id="file_upload_content" style="float:left;width:357px;">
+														<?php 
+														include_once CONTACT_BK_PLUGIN_DIR ."/phpfileuploader/phpuploader/include_phpuploader.php";
+														$uploader=new PhpUploader();
+														$uploader->MultipleFilesUpload=false;
+														$uploader->InsertText = "Please choose Files";
+														$uploader->MaxSizeKB = 1024;
+														$uploader->AllowedFileExtensions = "*.jpg,*.png,*.gif,*.bmp,*.txt,*.zip,*.rar";
+														$uploader->SaveDirectory= CONTACT_BK_PLUGIN_DIR ."/phpfileuploader/savefiles/";
+														$uploader->FlashUploadMode = "Partial";
+														$uploader->Render();
+														?>
+													</div>
+													<div id="file_upload_content_postback" style="display:none;float:left;width:357px;">
+													</div>
 												</label>
 												<br />
 												<span class="span-description" id="txt_description_"></span>
@@ -159,169 +159,170 @@
 										<div class="layout-control-group div_border" id="div_12_12" style="display: none;">
 											<label class="layout-control-label" id="control_label_" ><?php _e("Date", contact_bank); ?> : </label>
 											<span id="txt_required_"  class="error">*</span>
-												<div class="layout-controls hovertip" id="show_tooltip">	
-													<select class="layout-span2" type="day" id="select_day_" name="select_day_" >
-														<option value="0"><?php _e("Day", contact_bank); ?></option>
-														<?php
-														for($flag=1; $flag <= 31; $flag++)
+											<div class="layout-controls hovertip" id="show_tooltip">
+												<select class="layout-span2" type="day" id="select_day_" name="select_day_" >
+													<option value="0"><?php _e("Day", contact_bank); ?></option>
+													<?php
+													for($flag=1; $flag <= 31; $flag++)
+													{
+														if($flag < 10)
 														{
-															if($flag < 10)
-															{
-																?>
-																<option value=<?php echo $flag; ?>>0<?php echo $flag; ?></option>
-																<?php
-															}
-															else
-															{
-																?>
-																<option value=<?php echo $flag; ?>><?php echo $flag; ?></option>
-																<?php
-															}
+															?>
+															<option value=<?php echo $flag; ?>>0<?php echo $flag; ?></option>
+															<?php
 														}
-														?>
-													</select>
-													<select class="layout-span3" type="month" id="select_month_" name="select_month_">
-														<option value="0"><?php _e("Month", contact_bank); ?></option>
-														<option value="1">January</option>
-														<option value="2">February</option>
-														<option value="3">March</option>
-														<option value="4">April</option>
-														<option value="5">May</option>
-														<option value="6">June</option>
-														<option value="7">July</option>
-														<option value="8">August</option>
-														<option value="9">September</option>
-														<option value="10">October</option>
-														<option value="11">November</option>
-														<option value="12">December</option>
-													</select>
-													<select class="layout-span2" type="year" id="select_year_" name="select_year_">
-														<option value="0"><?php _e("Year", contact_bank); ?></option>
-														<?php
-														for($flag=1900; $flag <= 2100; $flag++)
+														else
 														{
 															?>
 															<option value=<?php echo $flag; ?>><?php echo $flag; ?></option>
 															<?php
 														}
+													}
+													?>
+												</select>
+												<select class="layout-span3" type="month" id="select_month_" name="select_month_">
+													<option value="0"><?php _e("Month", contact_bank); ?></option>
+													<option value="1">January</option>
+													<option value="2">February</option>
+													<option value="3">March</option>
+													<option value="4">April</option>
+													<option value="5">May</option>
+													<option value="6">June</option>
+													<option value="7">July</option>
+													<option value="8">August</option>
+													<option value="9">September</option>
+													<option value="10">October</option>
+													<option value="11">November</option>
+													<option value="12">December</option>
+												</select>
+												<select class="layout-span2" type="year" id="select_year_" name="select_year_">
+													<option value="0"><?php _e("Year", contact_bank); ?></option>
+													<?php
+													for($flag=1900; $flag <= 2100; $flag++)
+													{
 														?>
-													</select>
-													<script type="text/javascript">
-														jQuery("#select_day_<?php echo $dynamicId; ?>").val(<?php echo date("d"); ?> );
-														jQuery("#select_month_<?php echo $dynamicId; ?>").val(<?php echo date("m"); ?> );
-														jQuery("#select_year_<?php echo $dynamicId; ?>").val(<?php echo date("Y"); ?> );
-													</script>
-														<a class="btn btn-info inline"   href="#setting_controls_postback" id="add_setting_control_"><?php _e( "Settings", contact_bank ); ?></a>
-														<a style="cursor:pointer;" id="anchor_del_" >
-															<img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="margin-left: 1%;margin-bottom:-9px"/>
-														</a>
-														<br />
-														<span class="span-description" id="txt_description_"></span>
-												</div>
-											</div>
-											<div class="layout-control-group div_border"  id="div_13_13" style="display: none;">
-												<label class="layout-control-label" id="control_label_" ><?php _e("Time", contact_bank); ?> : </label>
-												<span id="txt_required_"  class="error">*</span>
-													<div class="layout-controls hovertip" id="show_tooltip">
-														<select class="layout-span2" type="hour12" id="select_hr_12_" name="select_hr_12_">";
-															<option selected="selected" value=""><?php _e("Hour", contact_bank); ?></option>
-															<?php
-															for($flag=1; $flag <= 12; $flag++)
-															{
-																if($flag < 10)
-																{
-																?>
-																<option value="0<?php echo $flag ?>">0<?php echo $flag ?></option>
-																<?php
-																}
-																else
-																{
-																?>		
-																<option value="<?php echo $flag; ?>"><?php echo $flag ?></option>
-																<?php	
-																}
-															}
-															?>
-														</select>
-														<select style="display: none;" class="layout-span3" type="hour24" id="select_hr_24_" name="select_hr_24_">";
-															<option selected="selected" value=""><?php _e("Hour", contact_bank); ?></option>
-															<?php
-															for($flag=1; $flag <= 24; $flag++)
-															{
-																if($flag < 10)
-																{
-																?>
-																<option value="0<?php echo $flag ?>">0<?php echo $flag ?></option>
-																<?php
-																}
-																else
-																{
-																?>		
-																<option value="<?php echo $flag; ?>"><?php echo $flag ?></option>
-																<?php	
-																}
-															}
-															?>
-														</select>
-														<select class="hovertip layout-span3" type="minute" id="select_min_" name="select_min_">
-															<option selected="selected" value=""><?php _e("Minute", contact_bank); ?></option>
-															<?php
-															for($flag=0; $flag <= 59; $flag++)
-															{
-																if($flag < 10)
-																{
-																?>
-																<option value="0<?php echo $flag ?>">0<?php echo $flag ?></option>
-																<?php	
-																}
-																else
-																{
-																?>
-																<option value="<?php echo $flag ?>"><?php echo $flag ?></option>
-																<?php
-																}
-															}
-															?>
-														</select>
-														<select class="hovertip layout-span2" type="am" id="select_am_" name="select_am_">
-															<option value="0">AM</option>
-															<option value="1">PM</option>
-														</select>
-														<a class="btn btn-info inline"  id="add_setting_control_"  href="#setting_controls_postback" ><?php _e( "Settings", contact_bank ); ?></a>	
-														<a style="cursor:pointer;" id="anchor_del_" >
-															<img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="margin-left: 1%;margin-bottom:-9px"/>
-														</a> 
-														<br />
-														<span class="span-description" id="txt_description_"></span>
-													</div>
-											</div>
-											<div class="layout-control-group div_border" id="div_14_14" style="display: none;">
-												<label class="layout-control-label" id="control_label_" ><?php _e("Untitled (hidden)", contact_bank); ?> :</label>
-												<span id="txt_required_" class="error">*</span>
-												<div class="layout-controls" id="show_tooltip">	
-													<input class="hovertip layout-span7" data-original-title="<?php _e( "Hidden", contact_bank ); ?>" type="text" id="txt_hide_" name="" />
-													<a class="btn btn-info inline" id="add_setting_control_"   href="#setting_controls_postback"  ><?php _e( "Settings", contact_bank ); ?></a>	
-													<a style="cursor:pointer;" id=anchor_del_ >
-												 		<img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="margin-left: 1%;margin-bottom:-9px"/>
-												 	</a>
-												 	<br />
-													<span class="span-description" id="txt_description_"></span> 
-												</div>
-											</div>
-											<div class="layout-control-group div_border" id="div_15_15" style="display: none;">
-												<label class="layout-control-label" id="control_label_" ><?php _e("Password", contact_bank); ?> : </label>
-												<span id="txt_required_" class="error">*</span>
-												<div class="layout-controls hovertip" id="show_tooltip">
-													<input class=" layout-span7"  type="password" id="txt_password_" name="txt_password_" />
-													<a class="btn btn-info inline"  id="add_setting_control_" href="#setting_controls_postback"><?php _e( "Settings", contact_bank ); ?></a>
-													<a style="cursor:pointer;" id="anchor_del_" >
-														<img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="margin-left: 1%;margin-bottom:-9px" />
-													</a>
-													<br />
-													<span class="span-description" id="txt_description_"></span>
-												</div>
+														<option value=<?php echo $flag; ?>><?php echo $flag; ?></option>
+														<?php
+													}
+													?>
+												</select>
+												<script type="text/javascript">
+													jQuery("#select_day_<?php echo $dynamicId; ?>").val(<?php echo date("d"); ?> );
+													jQuery("#select_month_<?php echo $dynamicId; ?>").val(<?php echo date("m"); ?> );
+													jQuery("#select_year_<?php echo $dynamicId; ?>").val(<?php echo date("Y"); ?> );
+												</script>
+												<a class="btn btn-info inline"   href="#setting_controls_postback" id="add_setting_control_"><?php _e( "Settings", contact_bank ); ?></a>
+												<a style="cursor:pointer;" id="anchor_del_" >
+													<img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="margin-left: 1%;margin-bottom:-9px"/>
+												</a>
+												<br />
+												<span class="span-description" id="txt_description_"></span>
 											</div>
 										</div>
+										<div class="layout-control-group div_border"  id="div_13_13" style="display: none;">
+											<label class="layout-control-label" id="control_label_" ><?php _e("Time", contact_bank); ?> : </label>
+											<span id="txt_required_"  class="error">*</span>
+											<div class="layout-controls hovertip" id="show_tooltip">
+												<select class="layout-span2" type="hour12" id="select_hr_12_" name="select_hr_12_">";
+													<option selected="selected" value=""><?php _e("Hour", contact_bank); ?></option>
+													<?php
+													for($flag=1; $flag <= 12; $flag++)
+													{
+														if($flag < 10)
+														{
+														?>
+														<option value="0<?php echo $flag ?>">0<?php echo $flag ?></option>
+														<?php
+														}
+														else
+														{
+														?>
+														<option value="<?php echo $flag; ?>"><?php echo $flag ?></option>
+														<?php
+														}
+													}
+													?>
+												</select>
+												<select style="display: none;" class="layout-span3" type="hour24" id="select_hr_24_" name="select_hr_24_">";
+													<option selected="selected" value=""><?php _e("Hour", contact_bank); ?></option>
+													<?php
+													for($flag=1; $flag <= 24; $flag++)
+													{
+														if($flag < 10)
+														{
+														?>
+														<option value="0<?php echo $flag ?>">0<?php echo $flag ?></option>
+														<?php
+														}
+														else
+														{
+														?>
+														<option value="<?php echo $flag; ?>"><?php echo $flag ?></option>
+														<?php
+														}
+													}
+													?>
+												</select>
+												<select class="hovertip layout-span3" type="minute" id="select_min_" name="select_min_">
+													<option selected="selected" value=""><?php _e("Minute", contact_bank); ?></option>
+													<?php
+													for($flag=0; $flag <= 59; $flag++)
+													{
+														if($flag < 10)
+														{
+														?>
+														<option value="0<?php echo $flag ?>">0<?php echo $flag ?></option>
+														<?php	
+														}
+														else
+														{
+														?>
+														<option value="<?php echo $flag ?>"><?php echo $flag ?></option>
+														<?php
+														}
+													}
+													?>
+												</select>
+												<select class="hovertip layout-span2" type="am" id="select_am_" name="select_am_">
+													<option value="0">AM</option>
+													<option value="1">PM</option>
+												</select>
+												<a class="btn btn-info inline"  id="add_setting_control_"  href="#setting_controls_postback" ><?php _e( "Settings", contact_bank ); ?></a>	
+												<a style="cursor:pointer;" id="anchor_del_" >
+													<img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="margin-left: 1%;margin-bottom:-9px"/>
+												</a>
+												<br />
+												<span class="span-description" id="txt_description_"></span>
+											</div>
+										</div>
+										<div class="layout-control-group div_border" id="div_14_14" style="display: none;">
+											<label class="layout-control-label" id="control_label_" ><?php _e("Untitled (hidden)", contact_bank); ?> :</label>
+											<span id="txt_required_" class="error">*</span>
+											<div class="layout-controls" id="show_tooltip">	
+												<input class="hovertip layout-span7" data-original-title="<?php _e( "Hidden", contact_bank ); ?>" type="text" id="txt_hide_" name="" />
+												<a class="btn btn-info inline" id="add_setting_control_"   href="#setting_controls_postback"  ><?php _e( "Settings", contact_bank ); ?></a>	
+												<a style="cursor:pointer;" id=anchor_del_ >
+													<img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="margin-left: 1%;margin-bottom:-9px"/>
+												</a>
+												<br />
+												<span class="span-description" id="txt_description_"></span>
+											</div>
+										</div>
+										<div class="layout-control-group div_border" id="div_15_15" style="display: none;">
+											<label class="layout-control-label" id="control_label_" ><?php _e("Password", contact_bank); ?> : </label>
+											<span id="txt_required_" class="error">*</span>
+											<div class="layout-controls hovertip" id="show_tooltip">
+												<input class=" layout-span7"  type="password" id="txt_password_" name="txt_password_" />
+												<a class="btn btn-info inline"  id="add_setting_control_" href="#setting_controls_postback"><?php _e( "Settings", contact_bank ); ?></a>
+												<a style="cursor:pointer;" id="anchor_del_" >
+													<img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="margin-left: 1%;margin-bottom:-9px" />
+												</a>
+												<br />
+												<span class="span-description" id="txt_description_"></span>
+											</div>
+										</div>
+									<div id="left_block">
+									</div>
 								</div>
 							</div>
 							<div class="layout-control-group">
@@ -332,7 +333,6 @@
 							<div class="widget-layout">
 								<div class="widget-layout-title">
 									<h4><?php _e( "Control Buttons", contact_bank ); ?></h4>
-									
 								</div>
 								<div class="widget-layout-body">
 									<div class="layout-control-group">
@@ -380,7 +380,7 @@
 	</div>
 </form>
 <script type="text/javascript">
-jQuery(document).ready(function() 
+jQuery(document).ready(function()
 {
 	var divWhiteContent = jQuery("<div class=\"white_content\" id=\"setting_controls_postback\"></div>");
 	jQuery('#wpwrap').append(divWhiteContent);
@@ -399,7 +399,7 @@ jQuery(document).ready(function()
 		
 	});
 });
-var dynamicCount = 0;	
+var dynamicCount = 0;
 array_controls = [];
 var array_dynamicCount = [];
 new_control_dynamic_ids = [];
@@ -410,13 +410,10 @@ array_option_id_radio = [];// Array to store advance-dynamic-Ids of dynamic opti
 array_options_radio = [];// Array to store values of dynamic options of multiple control.
 array_option_id_dropdown = [];// Array to store advance-dynamic-Ids of dynamic options of dropdown control.
 array_options_dropdown = [];// Array to store values of dynamic options of dropdown control.
-
-
 jQuery(document).ready(function()
 {
 	field_order = [];
 	field_dynamic_id = [];
-	
 	jQuery("#left_block").sortable
 	({
 		opacity: 0.6,
@@ -426,14 +423,15 @@ jQuery(document).ready(function()
 			field_order = [];
 			field_dynamic_id = [];
 			var order = jQuery("#left_block").sortable('toArray');
-			console.log(order);
+			
 			for(flag=0;flag<order.length;flag++)
 			{
 				field_order_str = order[flag].split("div_");
-				console.log(order[flag]);
+				
 				field_order.push(field_order_str[1].split("_")[1]);
-				field_dynamic_id.push(field_order_str[1].split("_")[0]);				
+				field_dynamic_id.push(field_order_str[1].split("_")[0]);
 			}
+			
 		}
 	});
 });
@@ -447,10 +445,20 @@ jQuery(document).ready(function()
  */ 
 function create_control(control_type)
 {
+	if(control_type == 9)
+	{	
+		if(jQuery.inArray(9,created_control_type) != -1)
+		{
+			alert("<?php _e( "Only One File Uploader can be used on a Form. ", contact_bank ); ?>");
+			return;					
+		}
+	}
 	dynamicCount++;
 	array_dynamicCount.push(dynamicCount);
 	array_controls[dynamicCount] = [];
 	var dynamicId = Math.floor((Math.random()*10000)+1);
+	
+	
 	switch(parseInt(control_type))
 	{
 		case 1:
@@ -666,7 +674,6 @@ function create_control(control_type)
 	}
 	
 }
-
 function add_settings(dynamicId,dynamicCount,field_type)
 {
 	if(field_type == 1 && array_controls[dynamicCount].length != 0)
@@ -834,7 +841,7 @@ function add_settings(dynamicId,dynamicCount,field_type)
 				 default_day(dynamicId);
 				 dropdown_heading(dynamicId);
 			}
-		 });
+		});
 	}
 }
 /* Function Name : div_show
@@ -860,7 +867,7 @@ function div_hide(dynamicId)
 }
 function img_show(dynamicId)
 {
- 	jQuery('#anchor_del_'+dynamicId + 'img').attr("src","<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg-hover.png");
+	jQuery('#anchor_del_'+dynamicId + 'img').attr("src","<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg-hover.png");
 }
 function img_hide(dynamicId)
 {
@@ -937,7 +944,7 @@ jQuery("#ux_dynamic_form_submit").validate
 			url: ajaxurl + "?form_name="+form_name+"&field_order="+field_order+"&new_control_dynamic_ids="+new_control_dynamic_ids+"&created_control_type="+created_control_type+"&field_dynamic_id="+field_dynamic_id+"&ux_sucess_message="+jQuery("#ux_sucess_message").val()+"&chk_redirect_url="+jQuery("#chk_redirect_url").prop("checked")+"&ux_redirect_url="+jQuery("#ux_redirect_url").val()+"&form=1&param=submit_controls&action=add_contact_form_library",
 			success : function(data) 
 			{
-				var form_id = data;
+				
 				for(flag = 0;flag<field_no; flag++)
 				{
 					var dynamicCount = array_dynamicCount[flag];
@@ -950,22 +957,21 @@ jQuery("#ux_dynamic_form_submit").validate
 								array_controls[dynamicCount].push({"text_dynamicId" : new_control_dynamic_ids[flag]});
 								array_controls[dynamicCount].push({"cb_label_value" : "<?php _e("Untitled", contact_bank); ?>"});
 								array_controls[dynamicCount].push({"cb_description" : ""});
-								array_controls[dynamicCount].push({"cb_control_required" : 0}) ;
+								array_controls[dynamicCount].push({"cb_control_required" : "0"}) ;
 								array_controls[dynamicCount].push({"cb_tooltip_txt" : ""});
 								array_controls[dynamicCount].push({"cb_default_txt_val" : ""});
 								array_controls[dynamicCount].push({"cb_admin_label" : "<?php _e("Untitled", contact_bank); ?>"});
-								array_controls[dynamicCount].push({"cb_show_email" : 0}) ;
+								array_controls[dynamicCount].push({"cb_show_email" : "0"}) ;
 								array_controls[dynamicCount].push({"cb_button_set_outer_label" : ""});
 								array_controls[dynamicCount].push({"cb_button_set_txt_input" : ""});
 								array_controls[dynamicCount].push({"cb_button_set_txt_description" : ""});
-								array_controls[dynamicCount].push({"cb_checkbox_alpha_filter": 0});
-								array_controls[dynamicCount].push({"cb_ux_checkbox_alpha_num_filter": 0});
-								array_controls[dynamicCount].push({"cb_checkbox_digit_filter": 0});
-								array_controls[dynamicCount].push({"cb_checkbox_strip_tag_filter": 0});
-								array_controls[dynamicCount].push({"cb_checkbox_trim_filter": 0});
+								array_controls[dynamicCount].push({"cb_checkbox_alpha_filter": "0"});
+								array_controls[dynamicCount].push({"cb_ux_checkbox_alpha_num_filter": "0"});
+								array_controls[dynamicCount].push({"cb_checkbox_digit_filter": "0"});
+								array_controls[dynamicCount].push({"cb_checkbox_strip_tag_filter": "0"});
+								array_controls[dynamicCount].push({"cb_checkbox_trim_filter": "0"});
 							}
 						break;
-						
 						case 2:
 							if(array_controls[dynamicCount].length == 0)
 							{
@@ -973,19 +979,19 @@ jQuery("#ux_dynamic_form_submit").validate
 								array_controls[dynamicCount].push({"textarea_dynamicId" : new_control_dynamic_ids[flag]});
 								array_controls[dynamicCount].push({"cb_label_value" :"<?php _e("Untitled", contact_bank); ?>"});
 								array_controls[dynamicCount].push({"cb_description" : ""});
-								array_controls[dynamicCount].push({"cb_control_required": 0});
+								array_controls[dynamicCount].push({"cb_control_required": "0"});
 								array_controls[dynamicCount].push({"cb_tooltip_txt" : ""});
 								array_controls[dynamicCount].push({"cb_default_txt_val" : "" });
 								array_controls[dynamicCount].push({"cb_admin_label" : "<?php _e("Untitled", contact_bank); ?>"});
-								array_controls[dynamicCount].push({"cb_show_email" : 0});
+								array_controls[dynamicCount].push({"cb_show_email" : "0"});
 								array_controls[dynamicCount].push({"cb_button_set_outer_label" : ""});
 								array_controls[dynamicCount].push({"cb_button_set_txt_input" : ""});
 								array_controls[dynamicCount].push({"cb_button_set_txt_description" : ""});
-								array_controls[dynamicCount].push({"cb_checkbox_alpha_filter": 0});
-								array_controls[dynamicCount].push({"cb_ux_checkbox_alpha_num_filter": 0});
-								array_controls[dynamicCount].push({"cb_checkbox_digit_filter": 0});
-								array_controls[dynamicCount].push({"cb_checkbox_strip_tag_filter": 0});
-								array_controls[dynamicCount].push({"cb_checkbox_trim_filter": 0});
+								array_controls[dynamicCount].push({"cb_checkbox_alpha_filter": "0"});
+								array_controls[dynamicCount].push({"cb_ux_checkbox_alpha_num_filter": "0"});
+								array_controls[dynamicCount].push({"cb_checkbox_digit_filter": "0"});
+								array_controls[dynamicCount].push({"cb_checkbox_strip_tag_filter": "0"});
+								array_controls[dynamicCount].push({"cb_checkbox_trim_filter": "0"});
 							}
 						break;
 						case 3:
@@ -995,18 +1001,18 @@ jQuery("#ux_dynamic_form_submit").validate
 								array_controls[dynamicCount].push({"email_dynamicId" : new_control_dynamic_ids[flag]});
 								array_controls[dynamicCount].push({"cb_label_value" : "<?php _e("Email", contact_bank); ?>"});
 								array_controls[dynamicCount].push({"cb_description" : ""});
-								array_controls[dynamicCount].push({"cb_control_required": 1});
+								array_controls[dynamicCount].push({"cb_control_required": "1"});
 								array_controls[dynamicCount].push({"cb_tooltip_txt" :""});
 								array_controls[dynamicCount].push({"cb_admin_label" : "<?php _e("Email", contact_bank); ?>"});
-								array_controls[dynamicCount].push({"cb_show_email" : 0});
+								array_controls[dynamicCount].push({"cb_show_email" : "0"});
 								array_controls[dynamicCount].push({"cb_button_set_outer_label" : ""});
 								array_controls[dynamicCount].push({"cb_button_set_txt_input" : ""});
 								array_controls[dynamicCount].push({"cb_button_set_txt_description" : ""});
-								array_controls[dynamicCount].push({"cb_checkbox_alpha_filter": 0});
-								array_controls[dynamicCount].push({"cb_ux_checkbox_alpha_num_filter": 0});
-								array_controls[dynamicCount].push({"cb_checkbox_digit_filter": 0});
-								array_controls[dynamicCount].push({"cb_checkbox_strip_tag_filter": 0});
-								array_controls[dynamicCount].push({"cb_checkbox_trim_filter": 0});
+								array_controls[dynamicCount].push({"cb_checkbox_alpha_filter": "0"});
+								array_controls[dynamicCount].push({"cb_ux_checkbox_alpha_num_filter": "0"});
+								array_controls[dynamicCount].push({"cb_checkbox_digit_filter": "0"});
+								array_controls[dynamicCount].push({"cb_checkbox_strip_tag_filter": "0"});
+								array_controls[dynamicCount].push({"cb_checkbox_trim_filter": "0"});
 							}
 						break;
 						case 4:
@@ -1015,12 +1021,12 @@ jQuery("#ux_dynamic_form_submit").validate
 								array_controls[dynamicCount].push({"control_type" : 4});
 								array_controls[dynamicCount].push({"dropdown_dynamicId" : new_control_dynamic_ids[flag]});
 								array_controls[dynamicCount].push({"cb_label_value" : "<?php _e("Untitled", contact_bank); ?>"});
-								array_controls[dynamicCount].push({"cb_control_required": 0});
+								array_controls[dynamicCount].push({"cb_control_required": "0"});
 								array_controls[dynamicCount].push({"cb_tooltip_txt" : ""});
 								array_controls[dynamicCount].push({"cb_dropdown_option_id" : ""});
 								array_controls[dynamicCount].push({"cb_dropdown_option_val" : ""});
 								array_controls[dynamicCount].push({"cb_admin_label" : "<?php _e("Untitled", contact_bank); ?>"});
-								array_controls[dynamicCount].push({"cb_show_email" : 0});
+								array_controls[dynamicCount].push({"cb_show_email" : "0"});
 								array_controls[dynamicCount].push({"cb_button_set_outer_label" :""});
 								array_controls[dynamicCount].push({"cb_button_set_dropdown_menu" : ""});
 								array_controls[dynamicCount].push({"cb_button_set_description" : ""});
@@ -1032,12 +1038,12 @@ jQuery("#ux_dynamic_form_submit").validate
 								array_controls[dynamicCount].push({"control_type" : 5});
 								array_controls[dynamicCount].push({"checkbox_dynamicId" : new_control_dynamic_ids[flag]});
 								array_controls[dynamicCount].push({"cb_label_value" : "<?php _e("Untitled", contact_bank); ?>"});
-								array_controls[dynamicCount].push({"cb_control_required": 0});
+								array_controls[dynamicCount].push({"cb_control_required": "0"});
 								array_controls[dynamicCount].push({"cb_tooltip_txt" : ""});
 								array_controls[dynamicCount].push({"cb_checkbox_option_id" : ""});
 								array_controls[dynamicCount].push({"cb_checkbox_option_val" : ""});
 								array_controls[dynamicCount].push({"cb_admin_label" : "<?php _e("Untitled", contact_bank); ?>"});
-								array_controls[dynamicCount].push({"cb_show_email" : 0});
+								array_controls[dynamicCount].push({"cb_show_email" : "0"});
 								array_controls[dynamicCount].push({"cb_button_set_outer_label" :""});
 								array_controls[dynamicCount].push({"cb_button_set_description" : ""});
 								array_controls[dynamicCount].push({"cb_button_set_options_outer_wrapper" : ""});
@@ -1045,24 +1051,23 @@ jQuery("#ux_dynamic_form_submit").validate
 								array_controls[dynamicCount].push({"cb_button_set_options_label" : ""});
 							}
 						break;
-						
 						case 6:
 							if(array_controls[dynamicCount].length == 0)
 							{
 								array_controls[dynamicCount].push({"control_type" : 6});
 								array_controls[dynamicCount].push({"radio_dynamicId" : new_control_dynamic_ids[flag]});
 								array_controls[dynamicCount].push({"cb_label_value" : "<?php _e("Untitled", contact_bank); ?>"});
-								array_controls[dynamicCount].push({"cb_control_required": 0});
+								array_controls[dynamicCount].push({"cb_control_required": "0"});
 								array_controls[dynamicCount].push({"cb_tooltip_txt" : ""});
 								array_controls[dynamicCount].push({"cb_radio_option_id" : ""});
 								array_controls[dynamicCount].push({"cb_radio_option_val" : ""});
 								array_controls[dynamicCount].push({"cb_admin_label" : "<?php _e("Untitled", contact_bank); ?>"});
-								array_controls[dynamicCount].push({"cb_show_email" : 0});
+								array_controls[dynamicCount].push({"cb_show_email" : "0"});
 								array_controls[dynamicCount].push({"cb_button_set_outer_label" : ""});
 								array_controls[dynamicCount].push({"cb_button_set_description" : ""});
 								array_controls[dynamicCount].push({"cb_button_set_options_outer_wrapper" : ""});
 								array_controls[dynamicCount].push({"cb_button_set_options_wrapper" : ""});
-								array_controls[dynamicCount].push({"cb_button_set_options_label" : ""});	
+								array_controls[dynamicCount].push({"cb_button_set_options_label" : ""});
 							}
 						break;
 						case 9:
@@ -1072,14 +1077,14 @@ jQuery("#ux_dynamic_form_submit").validate
 								array_controls[dynamicCount].push({"file_upload_dynamicId" : new_control_dynamic_ids[flag]});
 								array_controls[dynamicCount].push({"cb_label_value" : "<?php _e("File Upload", contact_bank); ?>"});
 								array_controls[dynamicCount].push({"cb_description" : ""});
-								array_controls[dynamicCount].push({"cb_control_required": 0});
+								array_controls[dynamicCount].push({"cb_control_required": "0"});
 								array_controls[dynamicCount].push({"cb_tooltip_txt" : ""});
 								array_controls[dynamicCount].push({"cb_admin_label" : "<?php _e("File Upload", contact_bank); ?>"});
-								array_controls[dynamicCount].push({"cb_show_email" : 0});
-								array_controls[dynamicCount].push({"cb_allow_multiple_file" : 0});
+								array_controls[dynamicCount].push({"cb_show_email" : "0"});
+								array_controls[dynamicCount].push({"cb_allow_multiple_file" : "0"});
 								array_controls[dynamicCount].push({"cb_allow_file_ext_upload" : "*.jpg,*.png,*.gif,*.bmp,*.txt,*.zip,*.rar"});
-								array_controls[dynamicCount].push({"cb_maximum_file_allowed" : 1024});
-								array_controls[dynamicCount].push({"cb_uploaded_file_email_db" : 0});
+								array_controls[dynamicCount].push({"cb_maximum_file_allowed" : "1024"});
+								array_controls[dynamicCount].push({"cb_uploaded_file_email_db" : "0"});
 								array_controls[dynamicCount].push({"cb_button_set_outer_label_file" : ""});
 								array_controls[dynamicCount].push({"cb_button_set_outer_description_fileuplod" : ""});
 							}
@@ -1091,23 +1096,23 @@ jQuery("#ux_dynamic_form_submit").validate
 								array_controls[dynamicCount].push({"date_dynamicId" : new_control_dynamic_ids[flag]});
 								array_controls[dynamicCount].push({"cb_label_value" : "<?php _e("Date", contact_bank); ?>"});
 								array_controls[dynamicCount].push({"cb_description" : ""});
-								array_controls[dynamicCount].push({"cb_control_required": 0});
+								array_controls[dynamicCount].push({"cb_control_required": "0"});
 								array_controls[dynamicCount].push({"cb_tooltip_txt" : ""});
 								array_controls[dynamicCount].push({"cb_admin_label" : "<?php _e("Date", contact_bank); ?>"});
 								array_controls[dynamicCount].push({"cb_show_email" : ""});
-								array_controls[dynamicCount].push({"cb_start_year" : 1900});
-								array_controls[dynamicCount].push({"cb_end_year" : 2100});
+								array_controls[dynamicCount].push({"cb_start_year" : "1900"});
+								array_controls[dynamicCount].push({"cb_end_year" : "2100"});
 								array_controls[dynamicCount].push({"cb_default_value_day" : (new Date).getDate()});
 								array_controls[dynamicCount].push({"cb_default_value_month" : (new Date).getMonth()+1});
 								array_controls[dynamicCount].push({"cb_default_value_year" : (new Date).getFullYear()});
 								array_controls[dynamicCount].push({"cb_error_invalid" : ""});
-								array_controls[dynamicCount].push({"cb_date_format" : 0});
-								array_controls[dynamicCount].push({"cb_button_set_outer_label" : 0});
-								array_controls[dynamicCount].push({"cb_button_set_txt_input" : 0});
-								array_controls[dynamicCount].push({"cb_button_set_description" : 0});
-								array_controls[dynamicCount].push({"cb_date_day_dropdown" : 0});
-								array_controls[dynamicCount].push({"cb_date_month_dropdown" : 0});
-								array_controls[dynamicCount].push({"cb_date_year_dropdown" : 0});
+								array_controls[dynamicCount].push({"cb_date_format" : "0"});
+								array_controls[dynamicCount].push({"cb_button_set_outer_label" : "0"});
+								array_controls[dynamicCount].push({"cb_button_set_txt_input" : "0"});
+								array_controls[dynamicCount].push({"cb_button_set_description" : "0"});
+								array_controls[dynamicCount].push({"cb_date_day_dropdown" : "0"});
+								array_controls[dynamicCount].push({"cb_date_month_dropdown" : "0"});
+								array_controls[dynamicCount].push({"cb_date_year_dropdown" : "0"});
 							}
 						break;
 						case 13:
@@ -1117,15 +1122,15 @@ jQuery("#ux_dynamic_form_submit").validate
 								array_controls[dynamicCount].push({"time_dynamicId" : new_control_dynamic_ids[flag]});
 								array_controls[dynamicCount].push({"cb_label_value" : "<?php _e("Time", contact_bank); ?>"});
 								array_controls[dynamicCount].push({"cb_description" : ""});
-								array_controls[dynamicCount].push({"cb_control_required": 0});
+								array_controls[dynamicCount].push({"cb_control_required": "0"});
 								array_controls[dynamicCount].push({"cb_tooltip_txt" : ""});
 								array_controls[dynamicCount].push({"cb_admin_label" : "<?php _e("Time", contact_bank); ?>"});
 								array_controls[dynamicCount].push({"cb_show_email" : ""});
-								array_controls[dynamicCount].push({"cb_hour_format" : 12});
+								array_controls[dynamicCount].push({"cb_hour_format" : "12"});
 								array_controls[dynamicCount].push({"cb_hours" : ""});
 								array_controls[dynamicCount].push({"cb_minutes" : ""});
-								array_controls[dynamicCount].push({"cb_am_pm" : 0});
-								array_controls[dynamicCount].push({"cb_time_format" : 1});
+								array_controls[dynamicCount].push({"cb_am_pm" : "0"});
+								array_controls[dynamicCount].push({"cb_time_format" : "1"});
 								array_controls[dynamicCount].push({"cb_button_set_outer_label" : ""});
 								array_controls[dynamicCount].push({"cb_button_set_txt_input" : ""});
 								array_controls[dynamicCount].push({"cb_button_set_description" : ""});
@@ -1142,7 +1147,7 @@ jQuery("#ux_dynamic_form_submit").validate
 								array_controls[dynamicCount].push({"cb_label_value" : "<?php _e("Untitled(Hidden)", contact_bank); ?>"});
 								array_controls[dynamicCount].push({"cb_default_txt_val" : ""});
 								array_controls[dynamicCount].push({"cb_admin_label" : "<?php _e("Untitled(Hidden)", contact_bank); ?>"});
-								array_controls[dynamicCount].push({"cb_show_email": 0});
+								array_controls[dynamicCount].push({"cb_show_email": "0"});
 							}
 						break;
 						case 15:
@@ -1152,28 +1157,28 @@ jQuery("#ux_dynamic_form_submit").validate
 								array_controls[dynamicCount].push({"password_dynamicId" : new_control_dynamic_ids[flag]});
 								array_controls[dynamicCount].push({"cb_label_value" : "<?php _e("Password", contact_bank); ?>"});
 								array_controls[dynamicCount].push({"cb_description" : ""});
-								array_controls[dynamicCount].push({"cb_control_required": 0});
+								array_controls[dynamicCount].push({"cb_control_required": "0"});
 								array_controls[dynamicCount].push({"cb_tooltip_txt" : ""});
 								array_controls[dynamicCount].push({"cb_admin_label" : "<?php _e("Password", contact_bank); ?>"});
-								array_controls[dynamicCount].push({"cb_show_email" : 0});
+								array_controls[dynamicCount].push({"cb_show_email" : "0"});
 								array_controls[dynamicCount].push({"cb_button_set_outer_label" : ""});
 								array_controls[dynamicCount].push({"cb_button_set_txt_input" : ""});
 								array_controls[dynamicCount].push({"cb_button_set_txt_description" : ""});
-								array_controls[dynamicCount].push({"cb_checkbox_alpha_filter": 0});
-								array_controls[dynamicCount].push({"ux_checkbox_alpha_num_filter_": 0});
-								array_controls[dynamicCount].push({"cb_checkbox_digit_filter": 0});
-								array_controls[dynamicCount].push({"cb_checkbox_strip_tag_filter": 0});
-								array_controls[dynamicCount].push({"cb_checkbox_trim_filter": 0});
-								
+								array_controls[dynamicCount].push({"cb_checkbox_alpha_filter": "0"});
+								array_controls[dynamicCount].push({"ux_checkbox_alpha_num_filter_": "0"});
+								array_controls[dynamicCount].push({"cb_checkbox_digit_filter": "0"});
+								array_controls[dynamicCount].push({"cb_checkbox_strip_tag_filter": "0"});
+								array_controls[dynamicCount].push({"cb_checkbox_trim_filter": "0"});
 							}
 						break;
 					}
-					
+					console.log(dynamicCount);
+					console.log(JSON.stringify(array_controls[dynamicCount]));
 					jQuery.ajax
 					({
 						type: "POST",
 						url: ajaxurl + "?"+ jQuery(form).serialize() + "&array_controls="+encodeURIComponent(JSON.stringify(array_controls[array_dynamicCount[flag]]))+"&form=0&control_type=1&param=submit_controls&action=add_contact_form_library",
-						success : function(data) 
+						success : function(data)
 						{
 							if(field_no == flag)
 							{

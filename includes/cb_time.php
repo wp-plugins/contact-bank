@@ -93,15 +93,15 @@
 											{
 												if($flag < 10)
 												{
-												?>
-												<option value="0<?php echo $flag ?>">0<?php echo $flag ?></option>
-												<?php
+													?>
+													<option value="0<?php echo $flag ?>">0<?php echo $flag ?></option>
+													<?php
 												}
 												else
 												{
-												?>		
-												<option value="<?php echo $flag; ?>"><?php echo $flag ?></option>
-												<?php	
+													?>		
+													<option value="<?php echo $flag; ?>"><?php echo $flag ?></option>
+													<?php	
 												}
 											}
 											?>
@@ -113,15 +113,15 @@
 											{
 												if($flag < 10)
 												{
-												?>
-												<option value="0<?php echo $flag ?>">0<?php echo $flag ?></option>
-												<?php
+													?>
+													<option value="0<?php echo $flag ?>">0<?php echo $flag ?></option>
+													<?php
 												}
 												else
 												{
-												?>		
-												<option value="<?php echo $flag; ?>"><?php echo $flag ?></option>
-												<?php	
+													?>		
+													<option value="<?php echo $flag; ?>"><?php echo $flag ?></option>
+													<?php	
 												}
 											}
 											?>
@@ -133,15 +133,15 @@
 										{
 											if($flag < 10)
 											{
-											?>
-											<option value="0<?php echo $flag ?>">0<?php echo $flag ?></option>
-											<?php	
+												?>
+												<option value="0<?php echo $flag ?>">0<?php echo $flag ?></option>
+												<?php	
 											}
 											else
 											{
-											?>
-											<option value="<?php echo $flag ?>"><?php echo $flag ?></option>
-											<?php
+												?>
+												<option value="<?php echo $flag ?>"><?php echo $flag ?></option>
+												<?php
 											}
 										}
 										?>
@@ -224,35 +224,33 @@
 	jQuery(".hovertip").tooltip();
 	function tabsFunc(control)
 	{
-		
 		switch(control.id)
 		{
 			case "tab1":
-					jQuery("#tabs-nohdr-1").css("display","none");
-					jQuery("#tabs-nohdr-2").css("display","none");
-					jQuery("#tabs-nohdr-3").css("display","block");
-					jQuery("#li1").attr("class","active");
-					jQuery("#li2").removeAttr("class");
-					jQuery("#li3").removeAttr("class");
+				jQuery("#tabs-nohdr-1").css("display","none");
+				jQuery("#tabs-nohdr-2").css("display","none");
+				jQuery("#tabs-nohdr-3").css("display","block");
+				jQuery("#li1").attr("class","active");
+				jQuery("#li2").removeAttr("class");
+				jQuery("#li3").removeAttr("class");
 			break;
 			case "tab2":
-					jQuery("#tabs-nohdr-1").css("display","none");
-					jQuery("#tabs-nohdr-3").css("display","none");
-					jQuery("#tabs-nohdr-2").css("display","block");
-					jQuery("#li2").attr("class","active");
-					jQuery("#li1").removeAttr("class");
-					jQuery("#li3").removeAttr("class");
+				jQuery("#tabs-nohdr-1").css("display","none");
+				jQuery("#tabs-nohdr-3").css("display","none");
+				jQuery("#tabs-nohdr-2").css("display","block");
+				jQuery("#li2").attr("class","active");
+				jQuery("#li1").removeAttr("class");
+				jQuery("#li3").removeAttr("class");
 			break;
 			case "tab3":
-					jQuery("#tabs-nohdr-3").css("display","none");
-					jQuery("#tabs-nohdr-2").css("display","none");
-					jQuery("#tabs-nohdr-1").css("display","block");
-					jQuery("#li3").attr("class","active");
-					jQuery("#li1").removeAttr("class");
-					jQuery("#li2").removeAttr("class");
+				jQuery("#tabs-nohdr-3").css("display","none");
+				jQuery("#tabs-nohdr-2").css("display","none");
+				jQuery("#tabs-nohdr-1").css("display","block");
+				jQuery("#li3").attr("class","active");
+				jQuery("#li1").removeAttr("class");
+				jQuery("#li2").removeAttr("class");
 			break;
 		}
-		
 	}
 	var count = <?php echo $count; ?>;
 	if(count != 0)
@@ -275,7 +273,6 @@
 		{
 			jQuery("#ux_email_"+dynamicId).attr("checked","checked");
 		}
-		
 		if(array_controls[dynamicCount][8].cb_hour_format == 12)
 		{
 			jQuery("#ux_default_hours_24_"+dynamicId).hide();
@@ -337,7 +334,6 @@
 	}
 	function time_format(dynamicId)
 	{
-		
 		var ux_drop_hour_time= jQuery("#ux_drop_hour_time_"+dynamicId).val();
 		if(ux_drop_hour_time == 12)
 		{
@@ -351,9 +347,7 @@
 			jQuery("#ux_default_hours_24_"+dynamicId).show();
 			jQuery("#ux_default_am_"+dynamicId).hide();
 		}
-		
 	}
-		
 	function ux_minute_format(dynamicId)
 	{
 		var minute_format = parseInt(jQuery("#ux_minute_format_"+dynamicId).val());		
@@ -370,10 +364,8 @@
 			}
 			flag = flag + minute_format;
 		}
-		
 		jQuery("#select_min_"+dynamicId).html(dropdown_min);
 		jQuery("#ux_default_minute_"+dynamicId).html(dropdown_min);
-			
 	}
 	function select_hours(dynamicId)
 	{
@@ -395,14 +387,14 @@
 	{
 		var dynamicCount = "<?php echo $dynamicCount;?>";
 		array_controls[dynamicCount] = [];
-		array_controls[dynamicCount].push({"control_type" : 13});
+		array_controls[dynamicCount].push({"control_type" :" 13"});
 		array_controls[dynamicCount].push({"time_dynamicId" : dynamicId});
 		array_controls[dynamicCount].push({"cb_label_value" : jQuery("#ux_label_text_"+dynamicId).val()});
 		array_controls[dynamicCount].push({"cb_description" : jQuery("#ux_description_control_"+dynamicId).val()});
-		jQuery("#ux_required_control_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_control_required": 1}) : array_controls[dynamicCount].push({"cb_control_required": 0});
+		jQuery("#ux_required_control_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_control_required": "1"}) : array_controls[dynamicCount].push({"cb_control_required": "0"});
 		array_controls[dynamicCount].push({"cb_tooltip_txt" : jQuery("#ux_tooltip_control_"+dynamicId).val()});
 		array_controls[dynamicCount].push({"cb_admin_label" : jQuery("#ux_admin_label_"+dynamicId).val()});
-		jQuery("#ux_email_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_show_email": 1}) : array_controls[dynamicCount].push({"cb_show_email": 0});
+		jQuery("#ux_email_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_show_email": "1"}) : array_controls[dynamicCount].push({"cb_show_email": "0"});
 		array_controls[dynamicCount].push({"cb_hour_format" : jQuery("#ux_drop_hour_time_"+dynamicId).val()});
 		if(jQuery("#ux_drop_hour_time_"+dynamicId).val() == 12)
 		{

@@ -30,7 +30,7 @@ if (count($wpdb->get_var('SHOW TABLES LIKE "' . create_control_Table() . '"')) =
 	control_id INTEGER(10) UNSIGNED NOT NULL AUTO_INCREMENT,
 	field_id INTEGER(50) NOT NULL,
 	form_id INTEGER(10) NOT NULL,
-	column_dynamicId VARCHAR(10) NOT NULL,
+	column_dynamicId INTEGER(10) NOT NULL,
 	sorting_order INTEGER(10) NOT NULL,
 	PRIMARY KEY(control_id)
 	)ENGINE = MyISAM DEFAULT CHARSET=utf8 COLLATE utf8_general_ci';
@@ -127,5 +127,12 @@ if (count($wpdb->get_var('SHOW TABLES LIKE "' . contact_bank_contact_form() . '"
 			)
 		);
 	}
+	$column_dynamic   = $wpdb->get_var
+ 	(
+  		$wpdb->prepare
+  		(
+   			"ALTER TABLE " . create_control_Table() . " MODIFY COLUMN column_dynamicId INTEGER(10) NOT NULL",""
+  		)
+ 	);
 }
 ?>

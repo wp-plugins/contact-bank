@@ -133,31 +133,30 @@
 		switch(control.id)
 		{
 			case "tab1":
-					jQuery("#tabs-nohdr-1").css("display","none");
-					jQuery("#tabs-nohdr-2").css("display","none");
-					jQuery("#tabs-nohdr-3").css("display","block");
-					jQuery("#li1").attr("class","active");
-					jQuery("#li2").removeAttr("class");
-					jQuery("#li3").removeAttr("class");
+				jQuery("#tabs-nohdr-1").css("display","none");
+				jQuery("#tabs-nohdr-2").css("display","none");
+				jQuery("#tabs-nohdr-3").css("display","block");
+				jQuery("#li1").attr("class","active");
+				jQuery("#li2").removeAttr("class");
+				jQuery("#li3").removeAttr("class");
 			break;
 			case "tab2":
-					jQuery("#tabs-nohdr-1").css("display","none");
-					jQuery("#tabs-nohdr-3").css("display","none");
-					jQuery("#tabs-nohdr-2").css("display","block");
-					jQuery("#li2").attr("class","active");
-					jQuery("#li1").removeAttr("class");
-					jQuery("#li3").removeAttr("class");
+				jQuery("#tabs-nohdr-1").css("display","none");
+				jQuery("#tabs-nohdr-3").css("display","none");
+				jQuery("#tabs-nohdr-2").css("display","block");
+				jQuery("#li2").attr("class","active");
+				jQuery("#li1").removeAttr("class");
+				jQuery("#li3").removeAttr("class");
 			break;
 			case "tab3":
-					jQuery("#tabs-nohdr-3").css("display","none");
-					jQuery("#tabs-nohdr-2").css("display","none");
-					jQuery("#tabs-nohdr-1").css("display","block");
-					jQuery("#li3").attr("class","active");
-					jQuery("#li1").removeAttr("class");
-					jQuery("#li2").removeAttr("class");
+				jQuery("#tabs-nohdr-3").css("display","none");
+				jQuery("#tabs-nohdr-2").css("display","none");
+				jQuery("#tabs-nohdr-1").css("display","block");
+				jQuery("#li3").attr("class","active");
+				jQuery("#li1").removeAttr("class");
+				jQuery("#li2").removeAttr("class");
 			break;
 		}
-		
 	}
 	var count = <?php echo $count; ?>;
 	if(count != 0)
@@ -239,7 +238,6 @@
 			array_option_id_chk[dynamicCount].push(options_dynamicId);
 			jQuery("#append_chk_option_"+dynamicId).append('<div class="layout-control-group" id="selected_item_'+options_dynamicId+'"><div class="layout-controls"><input type= "text" class="layout-span8" value="'+add_chk_options+'" id="input_type_'+options_dynamicId+'"><a style="padding-left:2px;" onclick="delete_chk('+options_dynamicId+','+dynamicId+')"><img style="vertical-align: top;margin-top: 2px;" src="<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" /></a></div></div>');
 			jQuery("#chk_options_"+dynamicId).val("");
-		
 		}
 	}	
 	function delete_chk(options_dynamicId,dynamicId)
@@ -313,12 +311,11 @@
 	{
 		var dynamicCount = "<?php echo $dynamicCount;?>";
 		array_controls[dynamicCount] = [];
-		array_controls[dynamicCount].push({"control_type" : 5});
+		array_controls[dynamicCount].push({"control_type" : "5"});
 		array_controls[dynamicCount].push({"checkbox_dynamicId" : dynamicId});
 		array_controls[dynamicCount].push({"cb_label_value" : jQuery("#ux_label_text_"+dynamicId).val()});
-		jQuery("#ux_required_control_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_control_required": 1}) : array_controls[dynamicCount].push({"cb_control_required": 0});
+		jQuery("#ux_required_control_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_control_required": "1"}) : array_controls[dynamicCount].push({"cb_control_required": "0"});
 		array_controls[dynamicCount].push({"cb_tooltip_txt" : jQuery("#ux_tooltip_control_"+dynamicId).val()});
-		
 		var checkbox_option_str = "";
 		var checkbox_optionId_str = "";
 		jQuery("#chk_"+dynamicId).hide();
@@ -349,13 +346,12 @@
 		array_controls[dynamicCount].push({"cb_checkbox_option_id" : checkbox_optionId_str});
 		array_controls[dynamicCount].push({"cb_checkbox_option_val" : checkbox_option_str});
 		array_controls[dynamicCount].push({"cb_admin_label" : jQuery("#ux_admin_label_"+dynamicId).val()});
-		jQuery("#ux_show_email_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_show_email": 1}) : array_controls[dynamicCount].push({"cb_show_email": 0});
+		jQuery("#ux_show_email_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_show_email": "1"}) : array_controls[dynamicCount].push({"cb_show_email": "0"});
 		array_controls[dynamicCount].push({"cb_button_set_outer_label" : jQuery("#button_set_outer_label_chk_"+dynamicId).val()});
 		array_controls[dynamicCount].push({"cb_button_set_description" : jQuery("#ux_description_textarea_chk_"+dynamicId).val()});
 		array_controls[dynamicCount].push({"cb_button_set_options_outer_wrapper" : jQuery("#ux_button_options_outer_wrapper_chk_"+dynamicId).val()});
 		array_controls[dynamicCount].push({"cb_button_set_options_wrapper" : jQuery("#ux_button_option_wrapper_chk_"+dynamicId).val()});
 		array_controls[dynamicCount].push({"cb_button_set_options_label" : jQuery("#ux_button_option_label_chk_"+dynamicId).val()});
-		
 		jQuery("#control_label_"+dynamicId).html(jQuery("#ux_label_text_"+dynamicId).val()+" :");
 		jQuery("#post_back_checkbox_"+dynamicId).attr("data-original-title",jQuery("#ux_tooltip_control_"+dynamicId).val());	
 		if(jQuery("#ux_required_control_"+dynamicId).prop("checked") == true)

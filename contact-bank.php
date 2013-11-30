@@ -4,7 +4,7 @@
  Plugin URI: http://wordpress.org/plugins/contact-bank/
  Description: Contact Bank allows you to add a feedback form easilly and simply to a post or a page.
  Author: contact-banker
- Version: 1.3
+ Version: 1.4
  Author URI: http://wordpress.org/plugins/contact-bank/
  */
  
@@ -145,7 +145,7 @@ function backend_plugin_js_scripts_contact_bank()
 	wp_enqueue_script('jquery-ui-draggable');
 	wp_enqueue_script('jquery.dataTables.min', CONTACT_BK_PLUGIN_URL .'/assets/js/jquery.dataTables.min.js');
 	wp_enqueue_script('jquery.validate.min', CONTACT_BK_PLUGIN_URL .'/assets/js/jquery.validate.min.js');
-	wp_enqueue_script('jquery.Tooltip.js', CONTACT_BK_PLUGIN_URL .'/assets/js/jquery.Tooltip.js');
+	wp_enqueue_script('jquery.Tooltip.js', CONTACT_BK_PLUGIN_URL .'/assets/js/jquery.Tooltip.js');	
 }
 /* Function Name : frontend_plugin_js_scripts_contact_bank
  * Paramters : None

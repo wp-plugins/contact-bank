@@ -2,7 +2,6 @@
 	<div class="widget-layout widget-tabs">
 		<div class="widget-layout-title">
 			<h4><?php _e( "Password Control", contact_bank ); ?></h4>
-			
 		</div>
 		<div class="fluid-layout">
 			<div class="layout-span12">
@@ -73,7 +72,6 @@
 									<a style="cursor:pointer;"  onclick="delete_css_style_label(<?php echo $dynamicId; ?>);" id="anchor_del_" ><img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="vertical-align: middle;" /></a>
 								</div>
 							</div>
-							
 							<div class="layout-control-group" id="password_text_input_<?php echo $dynamicId; ?>" style="display:none">
 								<label  class="layout-control-label"><?php _e( "Input Text Style", contact_bank ); ?> :</label>
 								<div class="layout-controls">
@@ -120,32 +118,31 @@
 	jQuery(".hovertip").tooltip();
 	function tabsFunc(control)
 	{
-		
 		switch(control.id)
 		{
 			case "tab1":
-					jQuery("#tabs-nohdr-1").css("display","none");
-					jQuery("#tabs-nohdr-2").css("display","none");
-					jQuery("#tabs-nohdr-3").css("display","block");
-					jQuery("#li1").attr("class","active");
-					jQuery("#li2").removeAttr("class");
-					jQuery("#li3").removeAttr("class");
+				jQuery("#tabs-nohdr-1").css("display","none");
+				jQuery("#tabs-nohdr-2").css("display","none");
+				jQuery("#tabs-nohdr-3").css("display","block");
+				jQuery("#li1").attr("class","active");
+				jQuery("#li2").removeAttr("class");
+				jQuery("#li3").removeAttr("class");
 			break;
 			case "tab2":
-					jQuery("#tabs-nohdr-1").css("display","none");
-					jQuery("#tabs-nohdr-3").css("display","none");
-					jQuery("#tabs-nohdr-2").css("display","block");
-					jQuery("#li2").attr("class","active");
-					jQuery("#li1").removeAttr("class");
-					jQuery("#li3").removeAttr("class");
+				jQuery("#tabs-nohdr-1").css("display","none");
+				jQuery("#tabs-nohdr-3").css("display","none");
+				jQuery("#tabs-nohdr-2").css("display","block");
+				jQuery("#li2").attr("class","active");
+				jQuery("#li1").removeAttr("class");
+				jQuery("#li3").removeAttr("class");
 			break;
 			case "tab3":
-					jQuery("#tabs-nohdr-3").css("display","none");
-					jQuery("#tabs-nohdr-2").css("display","none");
-					jQuery("#tabs-nohdr-1").css("display","block");
-					jQuery("#li3").attr("class","active");
-					jQuery("#li1").removeAttr("class");
-					jQuery("#li2").removeAttr("class");
+				jQuery("#tabs-nohdr-3").css("display","none");
+				jQuery("#tabs-nohdr-2").css("display","none");
+				jQuery("#tabs-nohdr-1").css("display","block");
+				jQuery("#li3").attr("class","active");
+				jQuery("#li1").removeAttr("class");
+				jQuery("#li2").removeAttr("class");
 			break;
 		}
 		
@@ -242,22 +239,22 @@
 		var dynamicCount = "<?php echo $dynamicCount;?>";
 		
 		array_controls[dynamicCount] = [];
-		array_controls[dynamicCount].push({"control_type" : 15});
+		array_controls[dynamicCount].push({"control_type" : "15"});
 		array_controls[dynamicCount].push({"password_dynamicId" : dynamicId});
 		array_controls[dynamicCount].push({"cb_label_value" : jQuery("#ux_label_text_"+dynamicId).val()});
 		array_controls[dynamicCount].push({"cb_description" : jQuery("#ux_description_control_"+dynamicId).val()});
-		jQuery("#ux_required_control_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_control_required": 1}) : array_controls[dynamicCount].push({"cb_control_required": 0});
+		jQuery("#ux_required_control_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_control_required": "1"}) : array_controls[dynamicCount].push({"cb_control_required": "0"});
 		array_controls[dynamicCount].push({"cb_tooltip_txt" : jQuery("#ux_tooltip_control_"+dynamicId).val()});
 		array_controls[dynamicCount].push({"cb_admin_label" : jQuery("#ux_admin_label_"+dynamicId).val()});
-		jQuery("#ux_show_email_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_show_email": 1}) : array_controls[dynamicCount].push({"cb_show_email": 0});
+		jQuery("#ux_show_email_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_show_email": "1"}) : array_controls[dynamicCount].push({"cb_show_email": "0"});
 		array_controls[dynamicCount].push({"cb_button_set_outer_label" : jQuery("#ux_password_label_"+dynamicId).val()});
 		array_controls[dynamicCount].push({"cb_button_set_txt_input" : jQuery("#ux_password_text_input_"+dynamicId).val()});
 		array_controls[dynamicCount].push({"cb_button_set_txt_description" : jQuery("#ux_password_description_"+dynamicId).val()});
-		jQuery("#ux_checkbox_alpha_filter_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_checkbox_alpha_filter": 1}) : array_controls[dynamicCount].push({"cb_checkbox_alpha_filter": 0});
-		jQuery("#ux_checkbox_alpha_num_filter_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"ux_checkbox_alpha_num_filter": 1}) : array_controls[dynamicCount].push({"cb_ux_checkbox_alpha_num_filter": 0});
-		jQuery("#ux_checkbox_digit_filter_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_checkbox_digit_filter": 1}) : array_controls[dynamicCount].push({"cb_checkbox_digit_filter": 0});
-		jQuery("#ux_checkbox_strip_tag_filter_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_checkbox_strip_tag_filter": 1}) : array_controls[dynamicCount].push({"cb_checkbox_strip_tag_filter": 0});
-		jQuery("#ux_checkbox_trim_filter_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_checkbox_trim_filter": 1}) : array_controls[dynamicCount].push({"cb_checkbox_trim_filter": 0});
+		jQuery("#ux_checkbox_alpha_filter_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_checkbox_alpha_filter": "1"}) : array_controls[dynamicCount].push({"cb_checkbox_alpha_filter": "0"});
+		jQuery("#ux_checkbox_alpha_num_filter_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"ux_checkbox_alpha_num_filter": "1"}) : array_controls[dynamicCount].push({"cb_ux_checkbox_alpha_num_filter": "0"});
+		jQuery("#ux_checkbox_digit_filter_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_checkbox_digit_filter": "1"}) : array_controls[dynamicCount].push({"cb_checkbox_digit_filter": "0"});
+		jQuery("#ux_checkbox_strip_tag_filter_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_checkbox_strip_tag_filter": "1"}) : array_controls[dynamicCount].push({"cb_checkbox_strip_tag_filter": "0"});
+		jQuery("#ux_checkbox_trim_filter_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_checkbox_trim_filter": "1"}) : array_controls[dynamicCount].push({"cb_checkbox_trim_filter": "0"});
 		jQuery("#control_label_"+dynamicId).html(jQuery("#ux_label_text_"+dynamicId).val()+" :");
 		jQuery("#txt_description_"+dynamicId).html(jQuery("#ux_description_control_"+dynamicId).val());
 		jQuery("#show_tooltip"+dynamicId).attr("data-original-title",jQuery("#ux_tooltip_control_"+dynamicId).val());	

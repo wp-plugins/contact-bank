@@ -87,7 +87,6 @@ else
 							?>
 							<div class="layout-control-group">
 								<input class="btn btn-info layout-span12" type="button" id="btn_textbox_<?php echo $column_dynamicId;?>" name="btn_textbox_<?php echo $column_dynamicId;?>" value="<?php echo $label_text; ?>"  onclick="create_control(1,<?php echo $column_dynamicId;?>);" />
-								
 							</div>
 							<?php
 						}
@@ -95,7 +94,6 @@ else
 					case 2:
 						$index = array_search("cb_admin_label", $keys);
 						$label_text = $fields_dynamic_controls[$index]->dynamic_settings_value;
-						
 						$index = array_search("cb_show_email", $keys);
 						$show_mail = $fields_dynamic_controls[$index]->dynamic_settings_value;
 						if($show_mail == 0 || $show_mail == "")
@@ -118,7 +116,6 @@ else
 						?>
 						<div class="layout-control-group">
 							<input class="btn btn-info layout-span12" type="button" id="btn_email_<?php echo $column_dynamicId;?>" name="btn_email_<?php echo $column_dynamicId;?>" value="<?php echo $label_text; ?>"  onclick="create_control(3,<?php echo $column_dynamicId;?>);" />
-							
 						</div>	
 						<?php
 						}
@@ -134,7 +131,6 @@ else
 						?>
 						<div class="layout-control-group">
 							<input class="btn btn-info layout-span12" type="button" id="btn_dropdown_<?php echo $column_dynamicId;?>" name="btn_dropdown_<?php echo $column_dynamicId;?>" value="<?php echo $label_text; ?>"  onclick="create_control(4,<?php echo $column_dynamicId;?>);" />
-							
 						</div>
 						<?php
 						}
@@ -171,22 +167,6 @@ else
 						<?php
 						}
 					break;
-					// case 9:
-						// $index = array_search("cb_admin_label", $keys);
-						// $label_text = $fields_dynamic_controls[$index]->dynamic_settings_value;
-// 						
-						// $index = array_search("cb_show_email", $keys);
-						// $show_mail = $fields_dynamic_controls[$index]->dynamic_settings_value;
-						// if($show_mail == 0 || $show_mail == "")
-						// {
-						// ?>
-						// <div class="layout-control-group">
-							// <input class="btn btn-info layout-span12" type="button" id="btn_file_upload_<?php echo $column_dynamicId;?>" name="btn_file_upload_<?php echo $column_dynamicId;?>" value="<?php  echo $label_text; ?>" onclick="create_control(9,<?php echo $column_dynamicId;?>);" />
-// 							
-						// </div>
-						// <?php
-						// }
-					// break;
 					case 12:
 						$index = array_search("cb_admin_label", $keys);
 						$label_text = $fields_dynamic_controls[$index]->dynamic_settings_value;
@@ -249,7 +229,6 @@ else
 					break;
 				}
 			}
-			
 			die();
 		}
 		else if($_REQUEST["param"] == "client_control_buttons")
@@ -372,21 +351,6 @@ else
 						<?php
 						}
 					break;
-					// case 9:
-						// $index = array_search("cb_admin_label", $keys);
-						// $label_text = $fields_dynamic_controls[$index]->dynamic_settings_value;
-// 						
-						// $index = array_search("cb_show_email", $keys);
-						// $show_mail = $fields_dynamic_controls[$index]->dynamic_settings_value;
-						// if($show_mail == 0 || $show_mail == "")
-						// {
-						// ?>
-						// <div class="layout-control-group">
-							// <input class="btn btn-info layout-span12" type="button" id="btn_file_upload" name="btn_file_upload" value="<?php  echo $label_text; ?>" onclick="create_client_control(9,<?php echo $column_dynamicId;?>);" />
-						// </div>
-						// <?php
-						// }
-					// break;
 					case 12:
 						$index = array_search("cb_admin_label", $keys);
 						$label_text = $fields_dynamic_controls[$index]->dynamic_settings_value;
@@ -454,7 +418,6 @@ else
 			<?php
 			die();
 		}
-
 		else if($_REQUEST["param"] == "update_email_controls")
 		{
 			$form_id = intval($_REQUEST["form_id"]);
@@ -469,12 +432,10 @@ else
 			$email_to_client = esc_attr($_REQUEST["ux_email_to2"]);
 			$email_from_client = esc_attr($_REQUEST["ux_email_from2"]);
 			$subject_client = esc_attr($_REQUEST["ux_email_subject2"]);
-			
 			$uxDescription_client = html_entity_decode($_REQUEST["uxDescription_client"]);			
 			$email_to_admin = esc_attr($_REQUEST["ux_email_to"]);
 			$email_from_admin  = esc_attr($_REQUEST["ux_email_from"]);
 			$subject_admin  = esc_attr($_REQUEST["ux_email_subject"]);
-			
 			$uxDescription_admin = html_entity_decode($_REQUEST["uxDescription_admin"]);
 			if(count($check_form_exist)>0)
 			{

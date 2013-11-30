@@ -85,7 +85,7 @@ $fields = $wpdb->get_results
 											<input type="text" name="ux_redirect_url" class="layout-span7" value ="<?php echo $form_content->redirect_url;?>" id="ux_redirect_url" placeholder="<?php _e( "Enter Redirect URL", contact_bank);?>" />
 										</div>
 									</div>
-									<div id="left_block">
+									
 										<div class="layout-control-group div_border" id="div_1_1" style="display: none;">
 											<label class="layout-control-label" id="control_label_"><?php _e("Untitled", contact_bank); ?> : </label>
 											<span id="txt_required_" class="error">*</span>
@@ -359,6 +359,7 @@ $fields = $wpdb->get_results
 													<span class="span-description" id="txt_description_"></span>
 												</div>
 											</div>
+										<div id="left_block">
 										</div>
 									<?php 
 										for($flag=0;$flag<count($fields);$flag++)
@@ -380,7 +381,6 @@ $fields = $wpdb->get_results
 												jQuery(function()
 												{
 													edit_control_dynamic_ids.push(<?php echo $column_dynamicId ; ?>);
-													
 													create_control(<?php echo $field_type ;?>,<?php echo $column_dynamicId ; ?>,<?php echo json_encode($fields_dynamic_controls); ?>);
 												});
 											</script>
@@ -446,6 +446,7 @@ $fields = $wpdb->get_results
 	</div>
 </form>
 <script type="text/javascript">
+var existing_array_control_types = [];
 array_controls = [];
 var array_dynamicCount = [];
 var new_control_dynamic_ids = [];
@@ -511,8 +512,16 @@ jQuery(document).ready(function()
 var new_file_upload = "";
 function create_control(control_type,dynamicId,arrayControl)
 {
-	dynamicCount++;
+	if(control_type == 9)
+	{	
+		if(jQuery.inArray(9,created_control_type) != -1  || jQuery.inArray(9,existing_array_control_types) != -1)
+		{
+			alert("<?php _e( "Only One File Uploader can be used on a Form. ", contact_bank ); ?>");
+			return;					
+		}
+	}
 	
+	dynamicCount++;
 	array_controls[dynamicCount] = [];
 	if(dynamicId == undefined)
 	{
@@ -521,11 +530,14 @@ function create_control(control_type,dynamicId,arrayControl)
 	}
 	else
 	{
+		existing_array_control_types.push(control_type);
 		edit_created_control_type.push(dynamicCount);
 	}
+	
 	switch(parseInt(control_type))
 	{
 		case 1:
+		
 			jQuery("#div_1_1").clone(false).attr("id","div_"+dynamicId+"_1").appendTo("#left_block");
 			jQuery("#div_"+dynamicId+"_1").children("label").attr("id","control_label_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_1").children("span").attr("id","txt_required_"+dynamicId);
@@ -538,11 +550,8 @@ function create_control(control_type,dynamicId,arrayControl)
 			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_1,"+dynamicId+",1)");
 			jQuery("#show_tooltip"+dynamicId).children("span").attr("id","txt_description_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_1").attr("style","display:block");
-			// jQuery.each(edit_control_dynamic_ids,function(index,value)
-			// {
-// 				
-				// jQuery('#left_block').append(jQuery("#div_"+value+"_"+edit_created_control_type[index]));
-			// });
+			jQuery(".hovertip").tooltip();
+			
 			var result = jQuery.inArray(dynamicId,edit_control_dynamic_ids);
 			if(result == -1)
 			{
@@ -553,23 +562,19 @@ function create_control(control_type,dynamicId,arrayControl)
 				   jQuery('#left_block').append(jQuery("#div_"+value+"_"+created_control_type[index]));
 				});
 			}
-			array_controls[dynamicId] = [];
-			jQuery("#control_label_"+dynamicId).html(arrayControl == undefined ? "<?php _e( "Untitled :", contact_bank ); ?>" : arrayControl[0].dynamic_settings_value + " :");
-			jQuery("#txt_description_"+dynamicId).html(arrayControl == undefined ? "" : arrayControl[1].dynamic_settings_value);
-			jQuery("#txt_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[4].dynamic_settings_value);
-			jQuery("#show_tooltip"+dynamicId).attr("data-original-title",arrayControl == undefined ? "" : arrayControl[3].dynamic_settings_value);
-			jQuery(".hovertip").tooltip();
-			if((arrayControl == undefined ? "" : arrayControl[2].dynamic_settings_value) == 1)
+			
+			if(arrayControl != undefined)
 			{
-				jQuery("#txt_required_"+dynamicId).css("display","block");
+				jQuery("#control_label_"+dynamicId).html(arrayControl[0].dynamic_settings_value);
+				jQuery("#txt_description_"+dynamicId).html(arrayControl[1].dynamic_settings_value);
+				jQuery("#txt_"+dynamicId).val(arrayControl[4].dynamic_settings_value);
+				jQuery("#show_tooltip"+dynamicId).attr("data-original-title",arrayControl[3].dynamic_settings_value);				
+				arrayControl[2].dynamic_settings_value == "1" ? jQuery("#txt_required_"+dynamicId).css("display","block") : jQuery("#txt_required_"+dynamicId).css("display","none");
 			}
-			else
-			{
-				jQuery("#txt_required_"+dynamicId).css("display","none");
-			}
-			jQuery("#hdn_control_type").val("div_"+dynamicId+"_1");
+			
 		break;
 		case 2:
+		
 			jQuery("#div_2_2").clone(false).attr("id","div_"+dynamicId+"_2").appendTo("#left_block");
 			jQuery("#div_"+dynamicId+"_2").children("label").attr("id","control_label_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_2").children("span").attr("id","txt_required_"+dynamicId);
@@ -582,10 +587,8 @@ function create_control(control_type,dynamicId,arrayControl)
 			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_2,"+dynamicId+",2)");
 			jQuery("#show_tooltip"+dynamicId).children("span").attr("id","txt_description_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_2").attr("style","display:block");
-			// jQuery.each(edit_control_dynamic_ids,function(index,value)
-			// {
-				// jQuery('#left_block').append(jQuery("#div_"+value+"_"+edit_created_control_type[index]));
-			// });
+			jQuery(".hovertip").tooltip();
+			
 			var result = jQuery.inArray(dynamicId, edit_control_dynamic_ids);
 			if(result == -1)
 			{
@@ -596,24 +599,19 @@ function create_control(control_type,dynamicId,arrayControl)
 					jQuery('#left_block').append(jQuery("#div_"+value+"_"+created_control_type[index]));
 				});
 			}
-			array_controls[dynamicId] = [];
-			jQuery("#control_label_"+dynamicId).html(arrayControl == undefined ? "<?php _e( "Untitled :", contact_bank ); ?>" : arrayControl[0].dynamic_settings_value + " :");
-			jQuery("#txt_description_"+dynamicId).html(arrayControl == undefined ? "" : arrayControl[1].dynamic_settings_value);
-			jQuery("#textarea_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[4].dynamic_settings_value);
-			jQuery("#show_tooltip"+dynamicId).attr("data-original-title",arrayControl == undefined ? "" : arrayControl[3].dynamic_settings_value);
-			jQuery(".hovertip").tooltip();
-			if((arrayControl == undefined ? "" : arrayControl[2].dynamic_settings_value) == 1)
-			{
-				jQuery("#txt_required_"+dynamicId).css("display","block");
-			}
-			else
-			{
-				jQuery("#txt_required_"+dynamicId).css("display","none");
+			
+			if(arrayControl != undefined)
+			{		
+				jQuery("#control_label_"+dynamicId).html( arrayControl[0].dynamic_settings_value);
+				jQuery("#txt_description_"+dynamicId).html( arrayControl[1].dynamic_settings_value);
+				jQuery("#textarea_"+dynamicId).val( arrayControl[4].dynamic_settings_value);
+				jQuery("#show_tooltip"+dynamicId).attr("data-original-title", arrayControl[3].dynamic_settings_value);
+				arrayControl[2].dynamic_settings_value == "1" ? jQuery("#txt_required_"+dynamicId).css("display","block") :	jQuery("#txt_required_"+dynamicId).css("display","none");
 			}
 			
-			jQuery("#hidden_dynamic_id").val("div_"+dynamicId+"_2");
 		break;
 		case 3:
+		
 			jQuery("#div_3_3").clone(false).attr("id","div_"+dynamicId+"_3").appendTo("#left_block");
 			jQuery("#div_"+dynamicId+"_3").children("label").attr("id","control_label_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_3").children("span").attr("id","txt_required_"+dynamicId);
@@ -625,10 +623,8 @@ function create_control(control_type,dynamicId,arrayControl)
 			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_3,"+dynamicId+",3)");
 			jQuery("#show_tooltip"+dynamicId).children("span").attr("id","txt_description_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_3").attr("style","display:block");
-			// jQuery.each(edit_control_dynamic_ids,function(index,value)
-			// {
-				// jQuery('#left_block').append(jQuery("#div_"+value+"_"+edit_created_control_type[index]));
-			// });
+			jQuery(".hovertip").tooltip();
+			
 			var result = jQuery.inArray(dynamicId, edit_control_dynamic_ids);
 			if(result == -1)
 			{
@@ -639,21 +635,18 @@ function create_control(control_type,dynamicId,arrayControl)
 					jQuery('#left_block').append(jQuery("#div_"+value+"_"+created_control_type[index]));
 				});
 			}
+			if(arrayControl != undefined)
+			{			
+				jQuery("#control_label_"+dynamicId).html(arrayControl[0].dynamic_settings_value +" :");
+				jQuery("#txt_description_"+dynamicId).html(arrayControl[1].dynamic_settings_value);
+				jQuery("#show_tooltip"+dynamicId).attr("data-original-title", arrayControl[3].dynamic_settings_value);
+				
+				arrayControl[2].dynamic_settings_value == "1" ? jQuery("#txt_required_"+dynamicId).css("display","block") : jQuery("#txt_required_"+dynamicId).css("display","none"); 
+			}
 			
-			jQuery("#control_label_"+dynamicId).html(arrayControl == undefined ? "<?php _e( "Email :", contact_bank ); ?>" : arrayControl[0].dynamic_settings_value +" :");
-			jQuery("#txt_description_"+dynamicId).html(arrayControl == undefined ? "" : arrayControl[1].dynamic_settings_value);
-			jQuery("#show_tooltip"+dynamicId).attr("data-original-title",arrayControl == undefined ? "" : arrayControl[3].dynamic_settings_value);
-			jQuery(".hovertip").tooltip();
-			if((arrayControl == undefined ? "1" : arrayControl[2].dynamic_settings_value) == 1)
-			{
-				jQuery("#txt_required_"+dynamicId).css("display","block");
-			}
-			else
-			{
-				jQuery("#txt_required_"+dynamicId).css("display","none");
-			}
 		break;
 		case 4:
+		
 			jQuery("#div_4_4").clone(false).attr("id","div_"+dynamicId+"_4").appendTo("#left_block");
 			jQuery("#div_"+dynamicId+"_4").children("label").attr("id","control_label_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_4").children("span").attr("id","txt_required_"+dynamicId);
@@ -664,12 +657,9 @@ function create_control(control_type,dynamicId,arrayControl)
 			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+",4,"+JSON.stringify(arrayControl)+","+dynamicCount+")");
 			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
 			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_4,"+dynamicId+",4)");
-			
 			jQuery("#div_"+dynamicId+"_4").attr("style","display:block");
-			// jQuery.each(edit_control_dynamic_ids,function(index,value)
-			// {
-				// jQuery('#left_block').append(jQuery("#div_"+value+"_"+edit_created_control_type[index]));
-			// });
+			jQuery(".hovertip").tooltip();
+			
 			var result = jQuery.inArray(dynamicId, edit_control_dynamic_ids);
 			if(result == -1)
 			{
@@ -680,31 +670,31 @@ function create_control(control_type,dynamicId,arrayControl)
 					jQuery('#left_block').append(jQuery("#div_"+value+"_"+created_control_type[index]));
 				});
 			}
-			jQuery("#show_tooltip"+dynamicId).attr("data-original-title",arrayControl == undefined ? "" : arrayControl[2].dynamic_settings_value);
-			jQuery(".hovertip").tooltip();
-			jQuery("#control_label_"+dynamicId).html(arrayControl == undefined ? "<?php _e( "Untitled :", contact_bank ); ?>" : arrayControl[0].dynamic_settings_value +" :");
-			if((arrayControl == undefined ? "" :  arrayControl[3].dynamic_settings_value) != "")
+			
+			if(arrayControl != undefined)
 			{
-				var options_dynamicId_str = arrayControl == undefined ? "" : arrayControl[3].dynamic_settings_value;
-				var options_dynamicId = options_dynamicId_str.split(";"); 
-				var ddl_options_str = arrayControl == undefined ? "" : arrayControl[4].dynamic_settings_value;
-				var ddl_option_value = ddl_options_str.split(";");
-				for(var flag =0;flag <options_dynamicId.length;flag++)
+				jQuery("#show_tooltip"+dynamicId).attr("data-original-title",arrayControl[2].dynamic_settings_value);
+				jQuery("#control_label_"+dynamicId).html(arrayControl[0].dynamic_settings_value +" :");
+				if((arrayControl[3].dynamic_settings_value) != "")
 				{
-					var optionsId = options_dynamicId[flag];
-					var ddl_options = ddl_option_value[flag];
-					jQuery("#select_"+dynamicId).append('<option id="option_tr_'+optionsId+'" value='+ddl_options+'>'+ddl_options+'</option>');
+					var options_dynamicId_str = arrayControl[3].dynamic_settings_value;
+					var options_dynamicId = options_dynamicId_str.split(";");
+					
+					var ddl_options_str = arrayControl[4].dynamic_settings_value;
+					var ddl_option_value = ddl_options_str.split(";");
+					
+					for(var flag =0;flag <options_dynamicId.length;flag++)
+					{
+						var optionsId = options_dynamicId[flag];
+						var ddl_options = ddl_option_value[flag];
+						
+						jQuery("#select_"+dynamicId).append('<option id="option_tr_'+optionsId+'" value='+ddl_options+'>'+ddl_options+'</option>');
+					}
+					jQuery("#option_tr_"+dynamicId).remove();
 				}
-				jQuery("#option_tr_"+dynamicId).remove();
+				arrayControl[1].dynamic_settings_value == "1" ? jQuery("#txt_required_"+dynamicId).css("display","block") : jQuery("#txt_required_"+dynamicId).css("display","none");
 			}
-			if((arrayControl == undefined ? "" : arrayControl[1].dynamic_settings_value) == 1)
-			{
-				jQuery("#txt_required_"+dynamicId).css("display","block");
-			}
-			else
-			{
-				jQuery("#txt_required_"+dynamicId).css("display","none");
-			}
+			
 		break;
 		case 5:
 			jQuery("#div_5_5").clone(false).attr("id","div_"+dynamicId+"_5").appendTo("#left_block");
@@ -719,12 +709,9 @@ function create_control(control_type,dynamicId,arrayControl)
 			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+",5,"+JSON.stringify(arrayControl)+","+dynamicCount+")");
 			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
 			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_5,"+dynamicId+",5)");
-			
 			jQuery("#div_"+dynamicId+"_5").attr("style","display:block");
-			// jQuery.each(edit_control_dynamic_ids,function(index,value)
-			// {
-				// jQuery('#left_block').append(jQuery("#div_"+value+"_"+edit_created_control_type[index]));
-			// });
+			jQuery(".hovertip").tooltip();
+			
 			var result = jQuery.inArray(dynamicId, edit_control_dynamic_ids);
 			if(result == -1)
 			{
@@ -735,32 +722,32 @@ function create_control(control_type,dynamicId,arrayControl)
 					jQuery('#left_block').append(jQuery("#div_"+value+"_"+created_control_type[index]));
 				});
 			}
-			jQuery("#post_back_checkbox_"+dynamicId).attr("data-original-title",arrayControl == undefined ? "" : arrayControl[2].dynamic_settings_value);
-			jQuery(".hovertip").tooltip();
-			jQuery("#control_label_"+dynamicId).html(arrayControl == undefined ? "<?php _e( "Untitled :", contact_bank ); ?>" : arrayControl[0].dynamic_settings_value + " :");
-		
-			if((arrayControl == undefined ? "" :  arrayControl[3].dynamic_settings_value) != "")
+			
+			if(arrayControl !=undefined)
 			{
-				var optionId_str = arrayControl == undefined ? "" : arrayControl[3].dynamic_settings_value;
-				var optionId = optionId_str.split(";");
-				var option_value_str = arrayControl == undefined ? "" : arrayControl[4].dynamic_settings_value;
-				var option_value = option_value_str.split(";");
-				for(var flag = 0;flag <optionId.length ;flag++)
+				jQuery("#post_back_checkbox_"+dynamicId).attr("data-original-title", arrayControl[2].dynamic_settings_value);
+				jQuery("#control_label_"+dynamicId).html( arrayControl[0].dynamic_settings_value + " :");
+				if(( arrayControl[3].dynamic_settings_value) != "")
 				{
-					var options_dynamicId = optionId[flag];
-					var add_chk_options = option_value[flag];
-					jQuery("#add_chk_options_here_"+dynamicId).append('<span id="input_id_'+options_dynamicId+'"><input id="chk_'+options_dynamicId+'" name="chk_'+options_dynamicId+'" type="checkbox"/><label style="margin:0px 5px;" id="chk_id_'+options_dynamicId+'" >'+add_chk_options+'</label></span>');
+					var optionId_str =  arrayControl[3].dynamic_settings_value;
+					var optionId = optionId_str.split(";");
+					
+					var option_value_str = arrayControl[4].dynamic_settings_value;
+					var option_value = option_value_str.split(";");
+					
+					for(var flag = 0;flag <optionId.length ;flag++)
+					{
+						var options_dynamicId = optionId[flag];
+						var add_chk_options = option_value[flag];
+						
+						jQuery("#add_chk_options_here_"+dynamicId).append('<span id="input_id_'+options_dynamicId+'"><input id="chk_'+options_dynamicId+'" name="chk_'+options_dynamicId+'" type="checkbox"/><label style="margin:0px 5px;" id="chk_id_'+options_dynamicId+'" >'+add_chk_options+'</label></span>');
+					}
+					jQuery("#chk_"+dynamicId).hide();
 				}
-				jQuery("#chk_"+dynamicId).hide();
+				
+				arrayControl[1].dynamic_settings_value == "1" ? jQuery("#txt_required_"+dynamicId).css("display","block") : jQuery("#txt_required_"+dynamicId).css("display","none");
 			}
-			if((arrayControl == undefined ? "" : arrayControl[1].dynamic_settings_value) == 1)
-			{
-				jQuery("#txt_required_"+dynamicId).css("display","block");
-			}
-			else
-			{
-				jQuery("#txt_required_"+dynamicId).css("display","none");
-			}
+			
 		break;
 		case 6:
 			jQuery("#div_6_6").clone(false).attr("id","div_"+dynamicId+"_6").appendTo("#left_block");
@@ -775,13 +762,9 @@ function create_control(control_type,dynamicId,arrayControl)
 			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+",6,"+JSON.stringify(arrayControl)+","+dynamicCount+")");
 			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
 			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_6,"+dynamicId+",6)");
-			
 			jQuery("#div_"+dynamicId+"_6").attr("style","display:block");
+			jQuery(".hovertip").tooltip();
 			
-			// jQuery.each(edit_control_dynamic_ids,function(index,value)
-			// {
-			   // jQuery('#left_block').append(jQuery("#div_"+value+"_"+edit_created_control_type[index]));
-			// });
 			var result = jQuery.inArray(dynamicId, edit_control_dynamic_ids);
 			if(result == -1)
 			{
@@ -792,37 +775,34 @@ function create_control(control_type,dynamicId,arrayControl)
 					jQuery('#left_block').append(jQuery("#div_"+value+"_"+created_control_type[index]));
 				});
 			}
-			jQuery("#post_back_radio_button_"+dynamicId).attr("data-original-title",arrayControl == undefined ? "" : arrayControl[2].dynamic_settings_value);
-			jQuery(".hovertip").tooltip();
-			jQuery("#control_label_"+dynamicId).html(arrayControl == undefined ? "<?php _e( "Untitled :", contact_bank ); ?>" : arrayControl[0].dynamic_settings_value + " :");
 			
-			if((arrayControl == undefined ? "" :  arrayControl[3].dynamic_settings_value) != "")
+			if(arrayControl != undefined)
 			{
-				var options_dynamicId_str = arrayControl == undefined ? "" : arrayControl[3].dynamic_settings_value;
-				var options_dynamicIds = options_dynamicId_str.split(";"); 
-				var options_value_str = arrayControl == undefined ? "" : arrayControl[4].dynamic_settings_value;
-				var options_value = options_value_str.split(";");
-				for(var flag =0;flag <options_dynamicIds.length;flag++)
+				jQuery("#post_back_radio_button_"+dynamicId).attr("data-original-title",arrayControl[2].dynamic_settings_value);
+				jQuery("#control_label_"+dynamicId).html( arrayControl[0].dynamic_settings_value + " :");
+				if(( arrayControl[3].dynamic_settings_value) != "")
 				{
-					var options_dynamicId = options_dynamicIds[flag];
-					var add_radio_options = options_value[flag];
-					jQuery("#add_radio_options_here_"+dynamicId).append('<span class="hovertip" id="input_id_'+options_dynamicId+'"><input  name="radio" type="radio" id="add_radio_'+options_dynamicId+'" /><label style="margin:0px 5px;" id="add_radio_lab_'+options_dynamicId+'" >'+add_radio_options+'</label></span>');
+					var options_dynamicId_str = arrayControl[3].dynamic_settings_value;
+					var options_dynamicIds = options_dynamicId_str.split(";"); 
+					var options_value_str = arrayControl[4].dynamic_settings_value;
+					var options_value = options_value_str.split(";");
+					for(var flag =0;flag <options_dynamicIds.length;flag++)
+					{
+						var options_dynamicId = options_dynamicIds[flag];
+						var add_radio_options = options_value[flag];
+						jQuery("#add_radio_options_here_"+dynamicId).append('<span class="hovertip" id="input_id_'+options_dynamicId+'"><input  name="radio" type="radio" id="add_radio_'+options_dynamicId+'" /><label style="margin:0px 5px;" id="add_radio_lab_'+options_dynamicId+'" >'+add_radio_options+'</label></span>');
+					}
+					jQuery("#radio_"+dynamicId).hide();
 				}
-				jQuery("#radio_"+dynamicId).hide();
+				
+				arrayControl[1].dynamic_settings_value == "1" ? jQuery("#txt_required_"+dynamicId).css("display","block") : jQuery("#txt_required_"+dynamicId).css("display","none");
 			}
-			if((arrayControl == undefined ? "" : arrayControl[1].dynamic_settings_value) == 1)
-			{
-				jQuery("#txt_required_"+dynamicId).css("display","block");
-			}
-			else
-			{
-				jQuery("#txt_required_"+dynamicId).css("display","none");
-			}
+			
 		break;
 		case 9:
-			if(new_file_upload == "")
-			{
-				new_file_upload = 1;
+			
+		
+				
 				var oldId_file_upload = jQuery(".file_upload").attr("id");
 				jQuery("#"+oldId_file_upload).appendTo("#left_block");
 				jQuery("#"+oldId_file_upload).attr("style","display:block;");
@@ -837,11 +817,9 @@ function create_control(control_type,dynamicId,arrayControl)
 				jQuery("#show_tooltip"+dynamicId).children("label.hovertip").attr("id","tip"+dynamicId);
 				jQuery("#show_tooltip"+dynamicId).children("span").attr("id","txt_description_"+dynamicId);
 				jQuery("#div_"+dynamicId+"_9").attr("style","display:block");
-				// jQuery.each(edit_control_dynamic_ids,function(index,value)
-				// {
-				   // jQuery('#left_block').append(jQuery("#div_"+value+"_"+edit_created_control_type[index]));
-				// });
 				jQuery("#file_upload_content_postback").css('display','block');
+				jQuery(".hovertip").tooltip();
+				
 				var result = jQuery.inArray(dynamicId, edit_control_dynamic_ids);
 				if(result == -1)
 				{
@@ -852,36 +830,34 @@ function create_control(control_type,dynamicId,arrayControl)
 						jQuery('#left_block').append(jQuery("#div_"+value+"_"+created_control_type[index]));
 					});
 				}
-				array_controls[dynamicCount] = [];
-				jQuery("#control_label_"+dynamicId).html(arrayControl == undefined ? "<?php _e( "File Upload :", contact_bank ); ?>" :  arrayControl[0].dynamic_settings_value + " :");
-				jQuery("#txt_description_"+dynamicId).html(arrayControl == undefined ? "" :  arrayControl[1].dynamic_settings_value);
-				jQuery("#tip"+dynamicId).attr("data-original-title",arrayControl == undefined ? "" : arrayControl[3].dynamic_settings_value);
-				jQuery(".hovertip").tooltip();
-				if((arrayControl == undefined ? "" : arrayControl[2].dynamic_settings_value) == 1)
+				
+				if(arrayControl != undefined)
 				{
-					jQuery("#txt_required_"+dynamicId).css("display","block");
+					jQuery("#control_label_"+dynamicId).html( arrayControl[0].dynamic_settings_value + " :");
+					jQuery("#txt_description_"+dynamicId).html(arrayControl[1].dynamic_settings_value);
+					jQuery("#tip"+dynamicId).attr("data-original-title", arrayControl[3].dynamic_settings_value);
+				
+					arrayControl[2].dynamic_settings_value == "1" ? jQuery("#txt_required_"+dynamicId).css("display","block") : jQuery("#txt_required_"+dynamicId).css("display","none");
+					
+					var ux_allow_multiple_file = arrayControl[6].dynamic_settings_value;
+					var ux_allowed_file_extensions = arrayControl[7].dynamic_settings_value;
+					var ux_maximum_file_allowed =  arrayControl[8].dynamic_settings_value;
+					var ux_uploaded_file_email_db =  arrayControl[9].dynamic_settings_value;
+					
+					jQuery.post(ajaxurl, "dynamicId="+dynamicId+"&ux_allow_multiple_file="+ux_allow_multiple_file+"&ux_allowed_file_extensions="+ux_allowed_file_extensions+
+					"&ux_maximum_file_allowed="+ux_maximum_file_allowed+"&ux_uploaded_file_email_db="+ux_uploaded_file_email_db+"&param=ux_allow_multiple_file_upload&action=add_contact_form_library", function(data)
+					{
+						jQuery("#file_upload_content").remove();
+						var dat = data;
+						jQuery("#file_upload_content_postback").html(dat);
+					});
 				}
-				else
-				{
-					jQuery("#txt_required_"+dynamicId).css("display","none");
-				}
-				jQuery( "#add_setting_control_"+dynamicId).live( "click", function() {
-					add_settings(dynamicId,9,arrayControl)
-				});
-				var ux_allow_multiple_file = arrayControl == undefined ? "false" : arrayControl[6].dynamic_settings_value;
-				var ux_allowed_file_extensions = arrayControl == undefined ? "*.jpg,*.png,*.gif,*.bmp,*.txt,*.zip,*.rar" : arrayControl[7].dynamic_settings_value;
-				var ux_maximum_file_allowed = arrayControl == undefined ? "1024" : arrayControl[8].dynamic_settings_value;
-				var ux_uploaded_file_email_db = arrayControl == undefined ? "" : arrayControl[9].dynamic_settings_value;
-				jQuery.post(ajaxurl, "dynamicId="+dynamicId+"&ux_allow_multiple_file="+ux_allow_multiple_file+"&ux_allowed_file_extensions="+ux_allowed_file_extensions+
-				"&ux_maximum_file_allowed="+ux_maximum_file_allowed+"&ux_uploaded_file_email_db="+ux_uploaded_file_email_db+"&param=ux_allow_multiple_file_upload&action=add_contact_form_library", function(data)
-				{
-					jQuery("#file_upload_content").remove();
-					var dat = data;
-					jQuery("#file_upload_content_postback").html(dat);
-				});
-			}
+			
+			
+			
 		break;
 		case 12:
+		
 			jQuery("#div_12_12").clone(false).attr("id","div_"+dynamicId+"_12").appendTo("#left_block");
 			jQuery("#div_"+dynamicId+"_12").children("label.layout-control-label").attr("id","control_label_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_12").children("span").attr("id","txt_required_"+dynamicId);
@@ -899,10 +875,8 @@ function create_control(control_type,dynamicId,arrayControl)
 			jQuery("#show_tooltip"+dynamicId).children("span").attr("id","txt_description_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_12").attr("style","display:block");
 			jQuery("#hidden_dynamic_id").val("div_"+dynamicId+"_12");
-			// jQuery.each(edit_control_dynamic_ids,function(index,value)
-			// {
-			   // jQuery('#left_block').append(jQuery("#div_"+value+"_"+edit_created_control_type[index]));
-			// });
+			jQuery(".hovertip").tooltip();
+			
 			var result = jQuery.inArray(dynamicId, edit_control_dynamic_ids);
 			if(result == -1)
 			{
@@ -913,26 +887,17 @@ function create_control(control_type,dynamicId,arrayControl)
 					jQuery('#left_block').append(jQuery("#div_"+value+"_"+created_control_type[index]));
 				});
 			}
-			jQuery("#control_label_"+dynamicId).html(arrayControl == undefined ? "<?php _e( "Date :", contact_bank ); ?>" : arrayControl[0].dynamic_settings_value + " :");
-			jQuery("#txt_description_"+dynamicId).html(arrayControl == undefined ? "" : arrayControl[1].dynamic_settings_value);
-			jQuery("#select_day_"+dynamicId).val(arrayControl == undefined ? (new Date).getDate() : arrayControl[8].dynamic_settings_value == "" ? "0" :  arrayControl[8].dynamic_settings_value);
-			jQuery("#select_month_"+dynamicId).val(arrayControl == undefined ? (new Date).getMonth()+1 : arrayControl[9].dynamic_settings_value == "" ? "0" : arrayControl[9].dynamic_settings_value);
-			jQuery("#show_tooltip"+dynamicId).attr("data-original-title",arrayControl == undefined ? "" : arrayControl[3].dynamic_settings_value);
-			jQuery(".hovertip").tooltip();
-			var start_year = arrayControl == undefined ? "0" :  arrayControl[6].dynamic_settings_value;
-			var end_year = arrayControl == undefined ? "0" :  arrayControl[7].dynamic_settings_value;
-			if((start_year == "0" && end_year == "0") || (start_year == "" && end_year == ""))
+			if(arrayControl != undefined)
 			{
-				jQuery("#select_year_"+dynamicId).html('<option value=0>Year</option>');
-				for(flag12=1900; flag12 <= 2100; flag12++)
-				{
-					jQuery("#select_year_"+dynamicId).append('<option value='+flag12+'>'+flag12+'</option>');
-				}
-				jQuery("#select_year_"+dynamicId).val(arrayControl == undefined || (start_year == "" && end_year == "") ? (new Date).getFullYear() :  arrayControl[10].dynamic_settings_value);
-						
-			}
-			else
-			{
+				jQuery("#control_label_"+dynamicId).html( arrayControl[0].dynamic_settings_value + " :");
+				jQuery("#txt_description_"+dynamicId).html( arrayControl[1].dynamic_settings_value);
+				jQuery("#select_day_"+dynamicId).val( arrayControl[8].dynamic_settings_value == "" ? "0" :  arrayControl[8].dynamic_settings_value);
+				jQuery("#select_month_"+dynamicId).val(arrayControl[9].dynamic_settings_value == "" ? "0" : arrayControl[9].dynamic_settings_value);
+				jQuery("#show_tooltip"+dynamicId).attr("data-original-title", arrayControl[3].dynamic_settings_value);
+			
+				var start_year =  arrayControl[6].dynamic_settings_value;
+				var end_year =  arrayControl[7].dynamic_settings_value;
+				
 				jQuery("#select_year_"+dynamicId).empty();
 				jQuery("#select_year_"+dynamicId).html('<option value=0>Year</option>');
 						
@@ -940,17 +905,18 @@ function create_control(control_type,dynamicId,arrayControl)
 				{
 					jQuery("#select_year_"+dynamicId).append('<option value='+flag11+'>'+flag11+'</option>');
 				}
-				jQuery("#select_year_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[10].dynamic_settings_value);
-						
-			}
-			if((arrayControl == undefined ? "" : arrayControl[2].dynamic_settings_value) == 1)
-			{
-				jQuery("#txt_required_"+dynamicId).css("display","block");
+				jQuery("#select_year_"+dynamicId).val( arrayControl[10].dynamic_settings_value);
+				arrayControl[2].dynamic_settings_value == "1" ? jQuery("#txt_required_"+dynamicId).css("display","block") : jQuery("#txt_required_"+dynamicId).css("display","none");
 			}
 			else
 			{
-				jQuery("#txt_required_"+dynamicId).css("display","none");
+				jQuery("#select_year_"+dynamicId).html('<option value=0>Year</option>');
+				for(flag12=1900; flag12 <= 2100; flag12++)
+				{
+					jQuery("#select_year_"+dynamicId).append('<option value='+flag12+'>'+flag12+'</option>');
+				}
 			}
+			
 		break;
 		case 13:
 			jQuery("#div_13_13").clone(false).attr("id","div_"+dynamicId+"_13").appendTo("#left_block");
@@ -971,13 +937,11 @@ function create_control(control_type,dynamicId,arrayControl)
 			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_13,"+dynamicId+",13)");
 			jQuery("#show_tooltip"+dynamicId).children("span").attr("id","txt_description_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_13").attr("style","display:block");
-			jQuery("#hidden_dynamic_id").val("div_"+dynamicId+"_13");
-			// jQuery.each(edit_control_dynamic_ids,function(index,value)
-			// {
-			   // jQuery('#left_block').append(jQuery("#div_"+value+"_"+edit_created_control_type[index]));
-			// });
+			jQuery("#hidden_dynamic_id").val("div_"+dynamicId+"_13");	
 			jQuery("#ux_drop_hour_time_"+dynamicId).val("12");
 			jQuery("#select_hr_24_"+dynamicId).hide();
+			jQuery(".hovertip").tooltip();
+			
 			var result = jQuery.inArray(dynamicId, edit_control_dynamic_ids);
 			if(result == -1)
 			{
@@ -988,52 +952,49 @@ function create_control(control_type,dynamicId,arrayControl)
 					jQuery('#left_block').append(jQuery("#div_"+value+"_"+created_control_type[index]));
 				});
 			}
-			if((arrayControl == undefined ? "" : arrayControl[2].dynamic_settings_value) == 1)
+			
+			if(arrayControl != undefined)
 			{
-				jQuery("#txt_required_"+dynamicId).css("display","block");
+				arrayControl[2].dynamic_settings_value == "1" ? jQuery("#txt_required_"+dynamicId).css("display","block") : jQuery("#txt_required_"+dynamicId).css("display","none");
+				jQuery("#control_label_"+dynamicId).html( arrayControl[0].dynamic_settings_value + " :");
+				jQuery("#txt_description_"+dynamicId).html(arrayControl[1].dynamic_settings_value);
+				
+				var minute_format = parseInt(arrayControl[10].dynamic_settings_value);
+				var dropdown_min = "<option selected='selected' value=''>Minute</option>";
+				for(flag=0; flag < 60;)
+				{
+					if(flag < 10)
+					{
+						dropdown_min += "<option  value=0"+flag+">0"+ flag + "</option>";
+					}
+					else
+					{
+						dropdown_min += "<option value="+flag+">"+ flag + "</option>";
+					}
+					flag = flag + minute_format;
+				}
+				if(arrayControl[6].dynamic_settings_value == "12")
+				{
+					jQuery("#select_hr_24_"+dynamicId).hide();
+					jQuery("#select_hr_12_"+dynamicId).show();
+					jQuery("#select_am_"+dynamicId).show();
+					jQuery("#select_hr_12_"+dynamicId).val(arrayControl[7].dynamic_settings_value);	
+				}
+				else if(arrayControl[6].dynamic_settings_value == "24")
+				{
+					jQuery("#select_hr_12_"+dynamicId).hide();
+					jQuery("#select_hr_24_"+dynamicId).show();
+					jQuery("#select_am_"+dynamicId).hide();
+					jQuery("#select_hr_24_"+dynamicId).val( arrayControl[7].dynamic_settings_value);
+				}
+				jQuery("#select_min_"+dynamicId).val( arrayControl[8].dynamic_settings_value);
+				jQuery("#select_am_"+dynamicId).val( arrayControl[9].dynamic_settings_value == "" ? "0" :  arrayControl[9].dynamic_settings_value);
+				jQuery("#show_tooltip"+dynamicId).attr("data-original-title", arrayControl[3].dynamic_settings_value);
 			}
-			else
-			{
-				jQuery("#txt_required_"+dynamicId).css("display","none");
-			}
-			jQuery("#control_label_"+dynamicId).html(arrayControl == undefined ? "<?php _e( "Time :", contact_bank ); ?>" : arrayControl[0].dynamic_settings_value + " :");
-			jQuery("#txt_description_"+dynamicId).html(arrayControl == undefined ? "" : arrayControl[1].dynamic_settings_value);
-			var minute_format = parseInt(arrayControl == undefined ? "1" :  arrayControl[10].dynamic_settings_value);
 
-			var dropdown_min = "<option selected='selected' value=''>Minute</option>";
-			for(flag=0; flag < 60;)
-			{
-				if(flag < 10)
-				{
-					dropdown_min += "<option  value=0"+flag+">0"+ flag + "</option>";
-				}
-				else
-				{
-					dropdown_min += "<option value="+flag+">"+ flag + "</option>";
-				}
-				flag = flag + minute_format;
-			}
-			if((arrayControl == undefined ? "12" :  arrayControl[6].dynamic_settings_value) == 12)
-			{
-				jQuery("#select_hr_24_"+dynamicId).hide();
-				jQuery("#select_hr_12_"+dynamicId).show();
-				jQuery("#select_am_"+dynamicId).show();
-				jQuery("#select_hr_12_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[7].dynamic_settings_value);	
-			}
-			else if((arrayControl == undefined ? "24" :  arrayControl[6].dynamic_settings_value) == 24)
-			{
-				jQuery("#select_hr_12_"+dynamicId).hide();
-				jQuery("#select_hr_24_"+dynamicId).show();
-				jQuery("#select_am_"+dynamicId).hide();
-				jQuery("#select_hr_24_"+dynamicId).val(arrayControl == undefined ? "" :   arrayControl[7].dynamic_settings_value);	
-			}
-					
-			jQuery("#select_min_"+dynamicId).val(arrayControl == undefined ? "" :   arrayControl[8].dynamic_settings_value);
-			jQuery("#select_am_"+dynamicId).val(arrayControl == undefined ? "0" : arrayControl[9].dynamic_settings_value == "" ? "0" :  arrayControl[9].dynamic_settings_value);
-			jQuery("#show_tooltip"+dynamicId).attr("data-original-title",arrayControl == undefined ? "" : arrayControl[3].dynamic_settings_value);
-			jQuery(".hovertip").tooltip();	
 		break;
 		case 14:
+		
 			jQuery("#div_14_14").clone(false).attr("id","div_"+dynamicId+"_14").appendTo("#left_block");
 			jQuery("#div_"+dynamicId+"_14").children("label").attr("id","control_label_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_14").children("span").attr("id","txt_required_"+dynamicId);
@@ -1047,26 +1008,29 @@ function create_control(control_type,dynamicId,arrayControl)
 			jQuery("#show_tooltip"+dynamicId).children("span").attr("id","txt_description_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_14").attr("style","display:block");
 			jQuery("#hidden_dynamic_id").val("div_"+dynamicId+"_14");
-			// jQuery.each(edit_control_dynamic_ids,function(index,value)
-			// {
-				// jQuery('#left_block').append(jQuery("#div_"+value+"_"+edit_created_control_type[index]));
-				// });
-				var result = jQuery.inArray(dynamicId, edit_control_dynamic_ids);
-				if(result == -1)
+			jQuery(".hovertip").tooltip();
+			
+			var result = jQuery.inArray(dynamicId, edit_control_dynamic_ids);
+			if(result == -1)
+			{
+				new_control_dynamic_ids.push(dynamicId);
+				created_control_type.push(14);
+				jQuery.each(new_control_dynamic_ids,function(index,value)
 				{
-					new_control_dynamic_ids.push(dynamicId);
-					created_control_type.push(14);
-					jQuery.each(new_control_dynamic_ids,function(index,value)
-					{
-						jQuery('#left_block').append(jQuery("#div_"+value+"_"+created_control_type[index]));
-					});
-				}
+					jQuery('#left_block').append(jQuery("#div_"+value+"_"+created_control_type[index]));
+				});
+			}
+			
+			if(arrayControl == undefined)
+			{
 				
-				jQuery("#control_label_"+dynamicId).html(arrayControl == undefined ? "<?php _e( "Untitled(hidden) :", contact_bank ); ?>" : arrayControl[0].dynamic_settings_value + " :");
-				jQuery("#txt_hide_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[1].dynamic_settings_value);
-				jQuery(".hovertip").tooltip();
+				jQuery("#control_label_"+dynamicId).html(arrayControl[0].dynamic_settings_value + " :");
+				jQuery("#txt_hide_"+dynamicId).val(arrayControl[1].dynamic_settings_value);
+			}
+			
 		break;
 		case 15:
+		
 			jQuery("#div_15_15").clone(false).attr("id","div_"+dynamicId+"_15").appendTo("#left_block");
 			jQuery("#div_"+dynamicId+"_15").children("label").attr("id","control_label_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_15").children("span").attr("id","txt_required_"+dynamicId);
@@ -1078,6 +1042,8 @@ function create_control(control_type,dynamicId,arrayControl)
 			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_15,"+dynamicId+",15)");
 			jQuery("#show_tooltip"+dynamicId).children("span").attr("id","txt_description_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_15").attr("style","display:block");
+			jQuery(".hovertip").tooltip();
+			
 			var result = jQuery.inArray(dynamicId, edit_control_dynamic_ids);
 			if(result == -1)
 			{
@@ -1088,20 +1054,14 @@ function create_control(control_type,dynamicId,arrayControl)
 					jQuery('#left_block').append(jQuery("#div_"+value+"_"+created_control_type[index]));
 				});
 			}
-			if((arrayControl == undefined ? "" : arrayControl[2].dynamic_settings_value) == 1)
+			if(arrayControl != undefined)
 			{
-				jQuery("#txt_required_"+dynamicId).css("display","block");
+				arrayControl[2].dynamic_settings_value == "1" ?	jQuery("#txt_required_"+dynamicId).css("display","block") :	jQuery("#txt_required_"+dynamicId).css("display","none");
+				jQuery("#control_label_"+dynamicId).html( arrayControl[0].dynamic_settings_value + " :");
+				jQuery("#txt_description_"+dynamicId).html( arrayControl[1].dynamic_settings_value);
+				jQuery("#show_tooltip"+dynamicId).attr("data-original-title",arrayControl[3].dynamic_settings_value);
 			}
-			else
-			{
-				jQuery("#txt_required_"+dynamicId).css("display","none");
-			}
-			
-			jQuery("#control_label_"+dynamicId).html(arrayControl == undefined ? "<?php _e( "Password : ", contact_bank ); ?>" : arrayControl[0].dynamic_settings_value + " :");
-			jQuery("#txt_description_"+dynamicId).html(arrayControl == undefined ? "" : arrayControl[1].dynamic_settings_value);
-			jQuery("#show_tooltip"+dynamicId).attr("data-original-title",arrayControl == undefined ? "" : arrayControl[3].dynamic_settings_value);
-			jQuery(".hovertip").tooltip();
-					
+
 		break;
 	}
 }
@@ -1315,710 +1275,648 @@ function add_settings(dynamicId,field_type,arrayControl,dynamicCount)
 		{
 			jQuery("#setting_controls_postback").html(data);
 			show_Popup();
-			if(field_type == 12)
+			if(arrayControl != undefined)
 			{
-				 default_day(dynamicId,arrayControl == undefined ? "" :  arrayControl[6].dynamic_settings_value,arrayControl == undefined ? "" :  arrayControl[7].dynamic_settings_value);
-				 dropdown_heading(dynamicId);
-			}
-			switch(field_type)
-			{
-				case 1:
-			
-					jQuery("#ux_label_text_"+dynamicId).val(arrayControl == undefined ? "<?php _e( "Untitled", contact_bank ); ?>" : arrayControl[0].dynamic_settings_value);
-					jQuery("#ux_description_control_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[1].dynamic_settings_value);
-					jQuery("#ux_required_control_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[2].dynamic_settings_value)
-					if(jQuery("#ux_required_control_"+dynamicId).val() != "" && jQuery("#ux_required_control_"+dynamicId).val() == 1)
-					{
-						jQuery("#ux_required_control_"+dynamicId).attr("checked","checked");
-					}
-					jQuery("#ux_tooltip_control_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[3].dynamic_settings_value);
-					jQuery("#ux_default_value_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[4].dynamic_settings_value);
-					jQuery("#ux_admin_label_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[5].dynamic_settings_value);
-					if((arrayControl == undefined ? "" : arrayControl[6].dynamic_settings_value) == "1")
-					{
-						jQuery("#ux_show_email_"+dynamicId).attr("checked","checked");
-					}
-					jQuery("#button_set_outer_label_textbox_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[7].dynamic_settings_value);
-					if(jQuery("#button_set_outer_label_textbox_"+dynamicId).val() != "")
-					{
-						jQuery("#ux_label_textbox_"+dynamicId).css("display","block");
-						
-						jQuery("#ux_label_textbox_"+dynamicId).attr("style", "position:inherit");
-					}
-					jQuery("#button_set_txt_input_textbox_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[8].dynamic_settings_value);
-					if(jQuery("#button_set_txt_input_textbox_"+dynamicId).val() != "")
-					{
-						jQuery("#ux_textinput_textbox_"+dynamicId).css("display","block");
-						
-						jQuery("#ux_textinput_textbox_"+dynamicId).attr("style", "position:inherit");
-					}
-					jQuery("#button_set_txt_description_textbox_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[9].dynamic_settings_value);
-					if(jQuery("#button_set_txt_description_textbox_"+dynamicId).val() != "")
-					{
-						jQuery("#ux_description_textbox_"+dynamicId).css("display","block");
-						
-						jQuery("#ux_description_textbox_"+dynamicId).attr("style", "position:inherit");
-					}
-					if((arrayControl == undefined ? "" : arrayControl[10].dynamic_settings_value) == "1")
-					{
-						jQuery("#ux_checkbox_alpha_filter_"+dynamicId).attr("checked","checked");
-					}
-					if((arrayControl == undefined ? "" : arrayControl[11].dynamic_settings_value) == "1")
-					{
-						jQuery("#ux_checkbox_alpha_num_filter_"+dynamicId).attr("checked","checked");
-					}
-					if((arrayControl == undefined ? "" : arrayControl[12].dynamic_settings_value) == "1")
-					{
-						jQuery("#ux_checkbox_digit_filter_"+dynamicId).attr("checked","checked");
-					}
-					if((arrayControl == undefined ? "" : arrayControl[13].dynamic_settings_value) == "1")
-					{
-						jQuery("#ux_checkbox_strip_tag_filter_"+dynamicId).attr("checked","checked");
-					}
-					if((arrayControl == undefined ? "" : arrayControl[14].dynamic_settings_value) == "1")
-					{
-						jQuery("#ux_checkbox_trim_filter_"+dynamicId).attr("checked","checked");
-					}
-				break;
-				case 2:
+				switch(field_type)
+				{
+					case 1:
 				
-					jQuery("#ux_label_text_"+dynamicId).val(arrayControl == undefined ? "<?php _e("Untitled", contact_bank); ?>" : arrayControl[0].dynamic_settings_value);
-					jQuery("#ux_description_control_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[1].dynamic_settings_value);
-					jQuery("#ux_required_control_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[2].dynamic_settings_value)
-					if((arrayControl == undefined ? "" : arrayControl[2].dynamic_settings_value) == 1)
-					{
-						jQuery("#ux_required_control_"+dynamicId).attr("checked","checked");
-					}
-					jQuery("#ux_tooltip_control_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[3].dynamic_settings_value);
-					jQuery("#ux_default_value_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[4].dynamic_settings_value);
-					jQuery("#ux_admin_label_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[5].dynamic_settings_value);
-					jQuery("#ux_show_email_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[6].dynamic_settings_value);
-					if(jQuery("#ux_show_email_"+dynamicId).val() == "1")
-					{
-						jQuery("#ux_show_email_"+dynamicId).attr("checked","checked");
-					}
-					jQuery("#button_set_outer_label_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[7].dynamic_settings_value);
-					if(jQuery("#button_set_outer_label_"+dynamicId).val() != "")
-					{
-						jQuery("#ux_label_textbox_"+dynamicId).css("display","block");
-						jQuery("#text_area_label_"+dynamicId).attr("style", "position:inherit");
+						jQuery("#ux_label_text_"+dynamicId).val(arrayControl[0].dynamic_settings_value);
+						jQuery("#ux_description_control_"+dynamicId).val(arrayControl[1].dynamic_settings_value);
+						arrayControl[2].dynamic_settings_value == "1" ? jQuery("#ux_required_control_"+dynamicId).attr("checked","checked") : jQuery("#ux_required_control_"+dynamicId).removeAttr("checked");
+						jQuery("#ux_tooltip_control_"+dynamicId).val(arrayControl[3].dynamic_settings_value);
+						jQuery("#ux_default_value_"+dynamicId).val(arrayControl[4].dynamic_settings_value);
+						jQuery("#ux_admin_label_"+dynamicId).val(arrayControl[5].dynamic_settings_value);
+						arrayControl[6].dynamic_settings_value == "1" ? jQuery("#ux_show_email_"+dynamicId).attr("checked","checked") : jQuery("#ux_show_email_"+dynamicId).removeAttr("checked") ;
+						jQuery("#button_set_outer_label_textbox_"+dynamicId).val(arrayControl[7].dynamic_settings_value);
+						if(jQuery("#button_set_outer_label_textbox_"+dynamicId).val() != "")
+						{
+							jQuery("#ux_label_textbox_"+dynamicId).css("display","block");
+							jQuery("#ux_label_textbox_"+dynamicId).attr("style", "position:inherit");
+						}
 						
-					}
-					jQuery("#button_set_textinput_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[8].dynamic_settings_value);
-					if(jQuery("#button_set_textinput_"+dynamicId).val() != "")
-					{
-						jQuery("#text_area_text_input_"+dynamicId).css("display","block");
-						jQuery("#text_area_text_input_"+dynamicId).attr("style", "position:inherit");
+						jQuery("#button_set_txt_input_textbox_"+dynamicId).val(arrayControl[8].dynamic_settings_value);
 						
-					}
-					jQuery("#button_set_outer_description_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[9].dynamic_settings_value);
-					if(jQuery("#button_set_outer_description_"+dynamicId).val() != "")
-					{
-						jQuery("#text_area_description_"+dynamicId).css("display","block");
-						jQuery("#text_area_description_"+dynamicId).attr("style", "position:inherit");
+						if(jQuery("#button_set_txt_input_textbox_"+dynamicId).val() != "")
+						{
+							jQuery("#ux_textinput_textbox_"+dynamicId).css("display","block");
+							
+							jQuery("#ux_textinput_textbox_"+dynamicId).attr("style", "position:inherit");
+						}
 						
-					}
-					jQuery("#ux_checkbox_alpha_filter_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[10].dynamic_settings_value);
-					if(jQuery("#ux_checkbox_alpha_filter_"+dynamicId).val() == "true")
-					{
-						jQuery("#ux_checkbox_alpha_filter_"+dynamicId).attr("checked","checked");
-					}
-					jQuery("#ux_checkbox_alpha_num_filter_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[11].dynamic_settings_value);
-					if(jQuery("#ux_checkbox_alpha_num_filter_"+dynamicId).val() == "true")
-					{
-						jQuery("#ux_checkbox_alpha_num_filter_"+dynamicId).attr("checked","checked");
-					}
-					jQuery("#ux_checkbox_digit_filter_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[12].dynamic_settings_value);
-					if(jQuery("#ux_checkbox_digit_filter_"+dynamicId).val() == "true")
-					{
-						jQuery("#ux_checkbox_digit_filter_"+dynamicId).attr("checked","checked");
-					}
-					jQuery("#ux_checkbox_strip_tag_filter_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[13].dynamic_settings_value);
-					if(jQuery("#ux_checkbox_strip_tag_filter_"+dynamicId).val() == "true")
-					{
-						jQuery("#ux_checkbox_strip_tag_filter_"+dynamicId).attr("checked","checked");
-					}
-					jQuery("#ux_checkbox_trim_filter_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[14].dynamic_settings_value);
-					if(jQuery("#ux_checkbox_trim_filter_"+dynamicId).val() == "true")
-					{
-						jQuery("#ux_checkbox_trim_filter_"+dynamicId).attr("checked","checked");
-					}
-				break;
-				case 3:
-					jQuery("#ux_label_text_"+dynamicId).val(arrayControl == undefined ? "<?php _e("Email", contact_bank ); ?>" : arrayControl[0].dynamic_settings_value);
-					jQuery("#ux_description_control_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[1].dynamic_settings_value);
-					jQuery("#ux_required_control_"+dynamicId).val(arrayControl == undefined ? "1" : arrayControl[2].dynamic_settings_value);
-					if(jQuery("#ux_required_control_"+dynamicId).val() == 1)
-					{
-						jQuery("#ux_required_control_"+dynamicId).attr("checked","checked");
-					}
-					else
-					{
-						jQuery("#ux_required_control_"+dynamicId).removeAttr("checked");
-						jQuery("#ux_required_"+dynamicId).attr("checked","checked");
-					}
-					jQuery("#ux_tooltip_control_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[3].dynamic_settings_value);
-					jQuery("#ux_admin_label_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[4].dynamic_settings_value);
-					jQuery("#ux_show_email_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[5].dynamic_settings_value);
-					if(jQuery("#ux_show_email_"+dynamicId).val() == "1")
-					{
-						jQuery("#ux_show_email_"+dynamicId).attr("checked","checked");
-					}
-					jQuery("#ux_email_set_outer_label_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[6].dynamic_settings_value);
-					if((arrayControl == undefined ? "" : arrayControl[6].dynamic_settings_value) != "")
-					{
-						jQuery("#ux_advance_label_"+dynamicId).css("display","block");
+						jQuery("#button_set_txt_description_textbox_"+dynamicId).val(arrayControl[9].dynamic_settings_value);
 						
-						jQuery("#ux_advance_label_"+dynamicId).attr("style", "position:inherit");
-					}
-					jQuery("#ux_email_txt_input_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[7].dynamic_settings_value);
-					if((arrayControl == undefined ? "" : arrayControl[7].dynamic_settings_value) != "")
-					{
-						jQuery("#advance_text_input_"+dynamicId).css("display","block");
+						if(jQuery("#button_set_txt_description_textbox_"+dynamicId).val() != "")
+						{
+							jQuery("#ux_description_textbox_"+dynamicId).css("display","block");
+							
+							jQuery("#ux_description_textbox_"+dynamicId).attr("style", "position:inherit");
+						}
 						
-						jQuery("#advance_text_input_"+dynamicId).attr("style", "position:inherit");
-					}
-					jQuery("#ux_email_description_textarea_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[8].dynamic_settings_value);
-					if((arrayControl == undefined ? "" : arrayControl[8].dynamic_settings_value) != "")
-					{
-						jQuery("#advance_text_description_"+dynamicId).css("display","block");
+						arrayControl[10].dynamic_settings_value == "1" ? jQuery("#ux_checkbox_alpha_filter_"+dynamicId).attr("checked","checked") : jQuery("#ux_checkbox_alpha_filter_"+dynamicId).removeAttr("checked") ;
+						arrayControl[11].dynamic_settings_value == "1" ? jQuery("#ux_checkbox_alpha_num_filter_"+dynamicId).attr("checked","checked") : jQuery("#ux_checkbox_alpha_num_filter_"+dynamicId).removeAttr("checked") ;
+						arrayControl[12].dynamic_settings_value == "1" ? jQuery("#ux_checkbox_digit_filter_"+dynamicId).attr("checked","checked") : jQuery("#ux_checkbox_digit_filter_"+dynamicId).removeAttr("checked") ;
+						arrayControl[13].dynamic_settings_value == "1" ? jQuery("#ux_checkbox_strip_tag_filter_"+dynamicId).attr("checked","checked") : jQuery("#ux_checkbox_strip_tag_filter_"+dynamicId).removeAttr("checked") ;
+						arrayControl[14].dynamic_settings_value == "1" ? jQuery("#ux_checkbox_trim_filter_"+dynamicId).attr("checked","checked") : jQuery("#ux_checkbox_trim_filter_"+dynamicId).removeAttr("checked") ;
 						
-						jQuery("#advance_text_description_"+dynamicId).attr("style", "position:inherit");
-					}
-					jQuery("#ux_email_alpha_filter_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[9].dynamic_settings_value);
-					if((arrayControl == undefined ? "" : arrayControl[9].dynamic_settings_value) == "1")
-					{
-						jQuery("#ux_email_alpha_filter_"+dynamicId).attr("checked","checked");
-					}
-					jQuery("#ux_email_alpha_num_filter_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[10].dynamic_settings_value);
-					if((arrayControl == undefined ? "" : arrayControl[10].dynamic_settings_value) == "1")
-					{
-						jQuery("#ux_email_alpha_num_filter_"+dynamicId).attr("checked","checked");
-					}
-					jQuery("#ux_email_digit_filter_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[11].dynamic_settings_value);
-					if((arrayControl == undefined ? "" : arrayControl[11].dynamic_settings_value)  == "1")
-					{
-						jQuery("#ux_email_digit_filter_"+dynamicId).attr("checked","checked");
-					}
-					jQuery("#ux_email_strip_tag_filter_"+dynamicId).val(arrayControl == undefined ? "" : arrayControl[12].dynamic_settings_value);
-					if((arrayControl == undefined ? "" : arrayControl[12].dynamic_settings_value)  == "1")
-					{
-						jQuery("#ux_email_strip_tag_filter_"+dynamicId).attr("checked","checked");
-					}
-					if((arrayControl == undefined ? "" : arrayControl[13].dynamic_settings_value)  == "1")
-					{
-						jQuery("#ux_email_trim_filter_"+dynamicId).attr("checked","checked");
-					}
-				break;
-				case 4:
-					array_option_id_dropdown[dynamicCount] = [];
-					array_options_dropdown[dynamicCount] = [];
+					break;
+					case 2:
 					
-					jQuery("#ux_label_text_"+dynamicId).val(arrayControl == undefined ? "<?php _e( "Untitled", contact_bank ); ?>" :  arrayControl[0].dynamic_settings_value);
-					jQuery("#ux_required_control_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[1].dynamic_settings_value)
-					if(jQuery("#ux_required_control_"+dynamicId).val() != "" && jQuery("#ux_required_control_"+dynamicId).val() == 1)
-					{
-						jQuery("#ux_required_control_"+dynamicId).attr("checked","checked");
-					}
-					jQuery("#ux_tooltip_control_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[2].dynamic_settings_value);
-					if((arrayControl == undefined ? "" :  arrayControl[3].dynamic_settings_value) != "")
-					{
-						var options_dynamicId_str = arrayControl[3].dynamic_settings_value;
-						var options_dynamicId = options_dynamicId_str.split(";");
+						jQuery("#ux_label_text_"+dynamicId).val(arrayControl[0].dynamic_settings_value);
+						jQuery("#ux_description_control_"+dynamicId).val(arrayControl[1].dynamic_settings_value);
+						jQuery("#ux_required_control_"+dynamicId).val(arrayControl[2].dynamic_settings_value)
+						arrayControl[2].dynamic_settings_value == "1" ? jQuery("#ux_required_control_"+dynamicId).attr("checked","checked") :  jQuery("#ux_required_control_"+dynamicId).removeAttr("checked");
+						jQuery("#ux_tooltip_control_"+dynamicId).val(arrayControl[3].dynamic_settings_value);
+						jQuery("#ux_default_value_"+dynamicId).val(arrayControl[4].dynamic_settings_value);
+						jQuery("#ux_admin_label_"+dynamicId).val(arrayControl[5].dynamic_settings_value);
+						arrayControl[6].dynamic_settings_value == "1" ?  jQuery("#ux_show_email_"+dynamicId).attr("checked","checked") : jQuery("#ux_show_email_"+dynamicId).removeAttr("checked","checked"); 
+						jQuery("#button_set_outer_label_"+dynamicId).val(arrayControl[7].dynamic_settings_value);
+					
+						if(jQuery("#button_set_outer_label_"+dynamicId).val() != "")
+						{
+							jQuery("#ux_label_textbox_"+dynamicId).css("display","block");
+							jQuery("#text_area_label_"+dynamicId).attr("style", "position:inherit");
+						}
+						
+						jQuery("#button_set_textinput_"+dynamicId).val(arrayControl[8].dynamic_settings_value);
+						
+						if(jQuery("#button_set_textinput_"+dynamicId).val() != "")
+						{
+							jQuery("#text_area_text_input_"+dynamicId).css("display","block");
+							jQuery("#text_area_text_input_"+dynamicId).attr("style", "position:inherit");
+							
+						}
+						
+						jQuery("#button_set_outer_description_"+dynamicId).val(arrayControl[9].dynamic_settings_value);
+						
+						if(jQuery("#button_set_outer_description_"+dynamicId).val() != "")
+						{
+							jQuery("#text_area_description_"+dynamicId).css("display","block");
+							jQuery("#text_area_description_"+dynamicId).attr("style", "position:inherit");
+							
+						}
+						
+						arrayControl[10].dynamic_settings_value == "1" ? jQuery("#ux_checkbox_alpha_filter_"+dynamicId).attr("checked","checked") : jQuery("#ux_checkbox_alpha_filter_"+dynamicId).removeAttr("checked");
+						arrayControl[11].dynamic_settings_value == "1" ? jQuery("#ux_checkbox_alpha_num_filter_"+dynamicId).attr("checked","checked") : jQuery("#ux_checkbox_alpha_num_filter_"+dynamicId).removeAttr("checked");
+						arrayControl[12].dynamic_settings_value == "1" ? jQuery("#ux_checkbox_digit_filter_"+dynamicId).attr("checked","checked") : jQuery("#ux_checkbox_digit_filter_"+dynamicId).removeAttr("checked");
+						arrayControl[13].dynamic_settings_value == "1" ? jQuery("#ux_checkbox_strip_tag_filter_"+dynamicId).attr("checked","checked") : jQuery("#ux_checkbox_strip_tag_filter_"+dynamicId).removeAttr("checked");
+						arrayControl[14].dynamic_settings_value == "1" ? jQuery("#ux_checkbox_trim_filter_"+dynamicId).attr("checked","checked") : jQuery("#ux_checkbox_trim_filter_"+dynamicId).removeAttr("checked"); 
+						
+					break;
+					case 3:
+					
+						jQuery("#ux_label_text_"+dynamicId).val(arrayControl[0].dynamic_settings_value);
+						jQuery("#ux_description_control_"+dynamicId).val(arrayControl[1].dynamic_settings_value);
+						jQuery("#ux_required_control_"+dynamicId).val(arrayControl[2].dynamic_settings_value);
+						arrayControl[2].dynamic_settings_value == "1" ? jQuery("#ux_required_control_"+dynamicId).attr("checked","checked") : jQuery("#ux_required_control_"+dynamicId).removeAttr("checked");
+						jQuery("#ux_tooltip_control_"+dynamicId).val(arrayControl[3].dynamic_settings_value);
+						jQuery("#ux_admin_label_"+dynamicId).val(arrayControl[4].dynamic_settings_value);
+						arrayControl[5].dynamic_settings_value == "1" ? jQuery("#ux_show_email_"+dynamicId).attr("checked","checked") : jQuery("#ux_show_email_"+dynamicId).removeAttr("checked");
+						
+						jQuery("#ux_email_set_outer_label_"+dynamicId).val(arrayControl[6].dynamic_settings_value);
+						
+						if(arrayControl[6].dynamic_settings_value != "")
+						{
+							jQuery("#ux_advance_label_"+dynamicId).css("display","block");
+							jQuery("#ux_advance_label_"+dynamicId).attr("style", "position:inherit");
+						}
+						
+						jQuery("#ux_email_txt_input_"+dynamicId).val(arrayControl[7].dynamic_settings_value);
+						
+						if(arrayControl[7].dynamic_settings_value != "")
+						{
+							jQuery("#advance_text_input_"+dynamicId).css("display","block");
+							
+							jQuery("#advance_text_input_"+dynamicId).attr("style", "position:inherit");
+						}
+						
+						jQuery("#ux_email_description_textarea_"+dynamicId).val(arrayControl[8].dynamic_settings_value);
+						
+						if(arrayControl[8].dynamic_settings_value != "")
+						{
+							jQuery("#advance_text_description_"+dynamicId).css("display","block");
+							
+							jQuery("#advance_text_description_"+dynamicId).attr("style", "position:inherit");
+						}
+						
+						jQuery("#ux_email_alpha_filter_"+dynamicId).val(arrayControl[9].dynamic_settings_value);
+						
+						if(arrayControl[9].dynamic_settings_value == "1")
+						{
+							jQuery("#ux_email_alpha_filter_"+dynamicId).attr("checked","checked");
+						}
+						
+						arrayControl[10].dynamic_settings_value == "1" ? jQuery("#ux_email_alpha_num_filter_"+dynamicId).attr("checked","checked") : jQuery("#ux_email_alpha_num_filter_"+dynamicId).removeAttr("checked");
+						arrayControl[11].dynamic_settings_value == "1" ? jQuery("#ux_email_digit_filter_"+dynamicId).attr("checked","checked") : jQuery("#ux_email_digit_filter_"+dynamicId).removeAttr("checked");
+						arrayControl[12].dynamic_settings_value == "1" ? jQuery("#ux_email_strip_tag_filter_"+dynamicId).attr("checked","checked") : jQuery("#ux_email_strip_tag_filter_"+dynamicId).removeAttr("checked");
+						arrayControl[13].dynamic_settings_value == "1" ? jQuery("#ux_email_trim_filter_"+dynamicId).attr("checked","checked") : jQuery("#ux_email_trim_filter_"+dynamicId).removeAttr("checked");
+	
+					break;
+					case 4:
+						
+						array_option_id_dropdown[dynamicCount] = [];
+						array_options_dropdown[dynamicCount] = [];
+						
+						jQuery("#ux_label_text_"+dynamicId).val(arrayControl[0].dynamic_settings_value);
+						arrayControl[1].dynamic_settings_value == "1" ? jQuery("#ux_required_control_"+dynamicId).attr("checked","checked") : jQuery("#ux_required_control_"+dynamicId).removeAttr("checked");
+						
+						jQuery("#ux_tooltip_control_"+dynamicId).val(arrayControl[2].dynamic_settings_value);
+						
+						if(arrayControl[3].dynamic_settings_value!= "")
+						{
+							var options_dynamicId_str = arrayControl[3].dynamic_settings_value;
+							var options_dynamicId = options_dynamicId_str.split(";");
+							 
+							var ddl_options_str = arrayControl[4].dynamic_settings_value;
+							var ddl_option_value = ddl_options_str.split(";");
+							
+							for(var flag = 0;flag <options_dynamicId.length;flag++)
+							{
+								var optionsId = options_dynamicId[flag];
+								var ddl_options = ddl_option_value[flag];
+						
+								array_option_id_dropdown[dynamicCount].push(parseInt(optionsId));
+								array_options_dropdown[dynamicCount].push(ddl_options);
+								
+								jQuery("#dropdown_ddl_option_"+dynamicId).append('<div class="layout-control-group" id="input_option_tr_'+optionsId+'"><div class="layout-controls"><input type="text" class="layout-span8" id="input_option_'+optionsId+'" name="input_option_'+optionsId+'" value="'+ddl_options+'" /><a style="padding-left:2px;" onclick="delete_ddl_option('+optionsId+','+dynamicId+')" ><img style="vertical-align: top;margin-top: 2px;" src="<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" /></a></div></div>');
+							}
+						}
+						
+						jQuery("#ux_admin_label_"+dynamicId).val(arrayControl[5].dynamic_settings_value);
+						
+						arrayControl[6].dynamic_settings_value == "1" ? jQuery("#ux_email_"+dynamicId).attr("checked","checked") : jQuery("#ux_email_"+dynamicId).removeAttr("checked");
+	
+						jQuery("#button_set_outer_label_ddl_"+dynamicId).val(arrayControl[7].dynamic_settings_value);
+						
+						if(jQuery("#button_set_outer_label_ddl_"+dynamicId).val() != "")
+						{
+							jQuery("#show_data_label_tr_ddl_"+dynamicId).css("display","block");
+							
+							jQuery("#show_data_label_tr_ddl_"+dynamicId).attr("style", "position:inherit");
+						}
+						
+						jQuery("#ux_dropdown_menu_textarea_ddl_"+dynamicId).val(arrayControl[8].dynamic_settings_value);
+						
+						if(jQuery("#ux_dropdown_menu_textarea_ddl_"+dynamicId).val() != "")
+						{
+							jQuery("#show_data_dropdown_menu_tr_ddl_"+dynamicId).css("display","block");
+							
+							jQuery("#show_data_dropdown_menu_tr_ddl_"+dynamicId).attr("style", "position:inherit");
+						}
+						
+						jQuery("#ux_description_textarea_ddl_"+dynamicId).val(arrayControl[9].dynamic_settings_value);
+						
+						if(jQuery("#ux_description_textarea_ddl_"+dynamicId).val() != "")
+						{
+							jQuery("#show_data_description_tr_ddl_"+dynamicId).css("display","block");
+							
+							jQuery("#show_data_description_tr_ddl_"+dynamicId).attr("style", "position:inherit");
+						}
+						
+					break;
+					case 5:
+						
+						jQuery("#ux_label_text_"+dynamicId).val(arrayControl[0].dynamic_settings_value);
+						arrayControl[1].dynamic_settings_value == "1" ? jQuery("#ux_required_control_"+dynamicId).attr("checked","checked") : jQuery("#ux_required_control_"+dynamicId).removeAttr("checked");
+						jQuery("#ux_tooltip_control_"+dynamicId).val(arrayControl[2].dynamic_settings_value);
+						if(arrayControl[3].dynamic_settings_value != "")
+						{
+		 					var optionId_str = arrayControl[3].dynamic_settings_value;
+							var optionId = optionId_str.split(";");
+							
+							var option_value_str = arrayControl[4].dynamic_settings_value;
+							var option_value = option_value_str.split(";");
+							
+							for(var flag = 0;flag <optionId.length ;flag++)
+							{
+								var options_dynamicId = optionId[flag];
+								var add_chk_option = option_value[flag];
+								array_option_id_chk[dynamicCount].push(parseInt(options_dynamicId));
+								array_options_chk[dynamicCount].push(add_chk_option);
+								
+								jQuery("#append_chk_option_"+dynamicId).append('<div class="layout-control-group" id="selected_item_'+options_dynamicId+'"><div class="layout-controls"><input type= "text" class="layout-span8" value="'+add_chk_option+'" id="input_type_'+options_dynamicId+'"><a style="padding-left:2px;" onclick="delete_chk('+options_dynamicId+','+dynamicId+')"><img style="vertical-align: top;margin-top: 2px;" src="<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" /></a></div></div>');
+								
+							}
+						}
+						jQuery("#ux_admin_label_"+dynamicId).val(arrayControl[5].dynamic_settings_value);
+						arrayControl[6].dynamic_settings_value == "1" ? jQuery("#ux_show_email_"+dynamicId).attr("checked","checked") : jQuery("#ux_show_email_"+dynamicId).removeAttr("checked");
+						
+						jQuery("#button_set_outer_label_chk_"+dynamicId).val(arrayControl[7].dynamic_settings_value);
+						
+						if(jQuery("#button_set_outer_label_chk_"+dynamicId).val() != "")
+						{
+							jQuery("#show_data_label_tr_chk_"+dynamicId).css("display","block");
+							jQuery("#show_data_label_tr_chk_"+dynamicId).attr("style", "position:inherit");
+						}
+						
+						jQuery("#ux_description_textarea_chk_"+dynamicId).val(arrayControl[8].dynamic_settings_value);
+						
+						if(jQuery("#ux_description_textarea_chk_"+dynamicId).val() != "")
+						{
+							jQuery("#show_data_description_tr_chk_"+dynamicId).css("display","block");
+							jQuery("#show_data_description_tr_chk_"+dynamicId).attr("style", "position:inherit");
+						}
+						
+						jQuery("#ux_button_options_outer_wrapper_chk_"+dynamicId).val(arrayControl[9].dynamic_settings_value);
+						
+						if(jQuery("#ux_button_options_outer_wrapper_chk_"+dynamicId).val() != "")
+						{
+							jQuery("#show_data_option_outer_wrapper_tr_chk_"+dynamicId).css("display","block");
+							jQuery("#show_data_option_outer_wrapper_tr_chk_"+dynamicId).attr("style", "position:inherit");
+						}
+						
+						jQuery("#ux_button_option_wrapper_chk_"+dynamicId).val(arrayControl[10].dynamic_settings_value);
+						
+						if(jQuery("#ux_button_option_wrapper_chk_"+dynamicId).val() != "")
+						{
+							jQuery("#show_data_option_wrapper_tr_chk_"+dynamicId).css("display","block");
+							jQuery("#show_data_option_wrapper_tr_chk_"+dynamicId).attr("style", "position:inherit");
+						}
+						
+						jQuery("#ux_button_option_label_chk_"+dynamicId).val(arrayControl[11].dynamic_settings_value);
+						
+						if(jQuery("#ux_button_option_label_chk_"+dynamicId).val() != "")
+						{
+							jQuery("#show_data_option_label_tr_chk_"+dynamicId).css("display","block");
+							jQuery("#show_data_option_label_tr_chk_"+dynamicId).attr("style", "position:inherit");
+						}
+						
+					break;
+					case 6:
+					
+						jQuery("#ux_label_text_"+dynamicId).val(arrayControl[0].dynamic_settings_value);
+						arrayControl[1].dynamic_settings_value == "1" ? jQuery("#ux_required_control_"+dynamicId).attr("checked","checked") : jQuery("#ux_required_control_"+dynamicId).removeAttr("checked");
+						jQuery("#ux_tooltip_control_"+dynamicId).val(arrayControl[2].dynamic_settings_value);
+						
+						if(arrayControl[3].dynamic_settings_value != "")
+						{
+				 			var optionId_str = arrayControl[3].dynamic_settings_value;
+							var optionId = optionId_str.split(";");
+							
+							var option_value_str = arrayControl[4].dynamic_settings_value;
+							var option_value = option_value_str.split(";");
+							
+							for(var flag = 0;flag <optionId.length ;flag++)
+							{
+								var options_dynamicId = optionId[flag];
+								var add_radio_option = option_value[flag];
+								
+								array_option_id_radio[dynamicCount].push(parseInt(options_dynamicId));
+								array_options_radio[dynamicCount].push(add_radio_option);
+							
+								jQuery("#append_multiple_option_"+dynamicId).append('<div class="layout-control-group" id="input_tr_'+options_dynamicId+'"><div class="layout-controls"><input type="text" class="layout-span8" id="input_option_'+options_dynamicId+'" name="input_option_'+options_dynamicId+'" value="'+add_radio_option+'" /><a style="padding-left:2px;" onclick="delete_radio('+options_dynamicId+','+dynamicId+')"><img style="vertical-align: top;margin-top: 2px;" src="<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" /></a></div></div>');
+							}
+						}
+						
+						jQuery("#ux_admin_label_"+dynamicId).val(arrayControl[5].dynamic_settings_value);
+						
+						arrayControl[6].dynamic_settings_value == "1" ? jQuery("#ux_show_email_"+dynamicId).attr("checked","checked") : jQuery("#ux_show_email_"+dynamicId).removeAttr("checked");
 						 
-						var ddl_options_str = arrayControl[4].dynamic_settings_value;
-						var ddl_option_value = ddl_options_str.split(";");
+						jQuery("#button_set_outer_label_radio_"+dynamicId).val(arrayControl[7].dynamic_settings_value);
 						
-						for(var flag = 0;flag <options_dynamicId.length;flag++)
+						if(jQuery("#button_set_outer_label_radio_"+dynamicId).val() != "")
 						{
-							var optionsId = options_dynamicId[flag];
-							var ddl_options = ddl_option_value[flag];
+							jQuery("#show_data_label_tr_radio_"+dynamicId).css("display","block");
+							jQuery("#show_data_label_tr_radio_"+dynamicId).attr("style", "position:inherit");
+						}
+						
+						jQuery("#ux_description_textarea_radio_"+dynamicId).val(arrayControl[8].dynamic_settings_value);
+						
+						if(jQuery("#ux_description_textarea_radio_"+dynamicId).val() != "")
+						{
+							jQuery("#show_data_description_tr_radio_"+dynamicId).css("display","block");
+							jQuery("#show_data_description_tr_radio_"+dynamicId).attr("style", "position:inherit");
+						}
+						
+						jQuery("#ux_button_options_outer_wrapper_radio_"+dynamicId).val(arrayControl[9].dynamic_settings_value);
+						
+						if(arrayControl[9].dynamic_settings_value != "")
+						{
+							jQuery("#show_data_option_outer_wrapper_tr_radio_"+dynamicId).css("display","block");
+							jQuery("#show_data_option_outer_wrapper_tr_radio_"+dynamicId).attr("style", "position:inherit");
+						}
+						
+						jQuery("#ux_button_option_wrapper_radio_"+dynamicId).val(arrayControl[10].dynamic_settings_value);
+						
+						if(arrayControl[10].dynamic_settings_value != "")
+						{
+							jQuery("#show_data_option_wrapper_tr_radio_"+dynamicId).css("display","block");
+							jQuery("#show_data_option_wrapper_tr_radio_"+dynamicId).attr("style", "position:inherit");
+						}
+						
+						jQuery("#ux_button_option_label_radio_"+dynamicId).val(arrayControl[11].dynamic_settings_value);
+						if(arrayControl[11].dynamic_settings_value != "")
+						{
+							jQuery("#show_data_option_label_tr_radio_"+dynamicId).css("display","block");
+							jQuery("#show_data_option_label_tr_radio_"+dynamicId).attr("style", "position:inherit");
+						}
+						
+					break;
+					case 9:
 					
-							array_option_id_dropdown[dynamicCount].push(parseInt(optionsId));
-							array_options_dropdown[dynamicCount].push(ddl_options);
-							
+						jQuery("#ux_label_text_"+dynamicId).val(arrayControl[0].dynamic_settings_value);
+						jQuery("#ux_description_control_"+dynamicId).val(arrayControl[1].dynamic_settings_value);
 						
-							jQuery("#dropdown_ddl_option_"+dynamicId).append('<div class="layout-control-group" id="input_option_tr_'+optionsId+'"><div class="layout-controls"><input type="text" class="layout-span8" id="input_option_'+optionsId+'" name="input_option_'+optionsId+'" value="'+ddl_options+'" /><a style="padding-left:2px;" onclick="delete_ddl_option('+optionsId+','+dynamicId+')" ><img style="vertical-align: top;margin-top: 2px;" src="<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" /></a></div></div>');
-						}
-					}
-					jQuery("#ux_admin_label_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[5].dynamic_settings_value);
-					jQuery("#ux_email_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[6].dynamic_settings_value);
-					if(jQuery("#ux_email_"+dynamicId).val() == "1")
-					{
-						jQuery("#ux_email_"+dynamicId).attr("checked","checked");
-					}
-					jQuery("#button_set_outer_label_ddl_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[7].dynamic_settings_value);
-					if(jQuery("#button_set_outer_label_ddl_"+dynamicId).val() != "")
-					{
-						jQuery("#show_data_label_tr_ddl_"+dynamicId).css("display","block");
+						arrayControl[2].dynamic_settings_value == "1" ? jQuery("#ux_required_control_"+dynamicId).attr("checked","checked") : jQuery("#ux_required_control_"+dynamicId).removeAttr("checked"); 
+						jQuery("#ux_tooltip_control_"+dynamicId).val(arrayControl[3].dynamic_settings_value);
+						jQuery("#ux_admin_label_"+dynamicId).val(arrayControl[4].dynamic_settings_value);
+						arrayControl[5].dynamic_settings_value == "1" ? jQuery("#ux_show_email_"+dynamicId).attr("checked","checked") : jQuery("#ux_show_email_"+dynamicId).removeAttr("checked");
+						arrayControl[6].dynamic_settings_value == "1" ? jQuery("#ux_allow_multiple_file_"+dynamicId).attr("checked","checked") : jQuery("#ux_allow_multiple_file_"+dynamicId).removeAttr("checked");
+						jQuery("#ux_allowed_file_extensions_"+dynamicId).val(arrayControl[7].dynamic_settings_value);
+						jQuery("#ux_maximum_file_allowed_"+dynamicId).val(arrayControl[8].dynamic_settings_value);
+						arrayControl[9].dynamic_settings_value == "1" ? jQuery("#ux_uploaded_file_email_db_"+dynamicId).attr("checked","checked") : jQuery("#ux_uploaded_file_email_db_"+dynamicId).removeAttr("checked"); 
+	
+						jQuery("#button_set_outer_label_file"+dynamicId).val(arrayControl[10].dynamic_settings_value);
 						
-						jQuery("#show_data_label_tr_ddl_"+dynamicId).attr("style", "position:inherit");
-					}
-					jQuery("#ux_dropdown_menu_textarea_ddl_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[8].dynamic_settings_value);
-					if(jQuery("#ux_dropdown_menu_textarea_ddl_"+dynamicId).val() != "")
-					{
-						jQuery("#show_data_dropdown_menu_tr_ddl_"+dynamicId).css("display","block");
-						
-						jQuery("#show_data_dropdown_menu_tr_ddl_"+dynamicId).attr("style", "position:inherit");
-					}
-					jQuery("#ux_description_textarea_ddl_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[9].dynamic_settings_value);
-					if(jQuery("#ux_description_textarea_ddl_"+dynamicId).val() != "")
-					{
-						jQuery("#show_data_description_tr_ddl_"+dynamicId).css("display","block");
-						
-						jQuery("#show_data_description_tr_ddl_"+dynamicId).attr("style", "position:inherit");
-					}
-				break;
-				case 5:
-					jQuery("#ux_label_text_"+dynamicId).val(arrayControl == undefined ? "<?php _e( "Untitled", contact_bank ); ?>" :  arrayControl[0].dynamic_settings_value);
-					jQuery("#ux_required_control_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[1].dynamic_settings_value)
-					if(jQuery("#ux_required_control_"+dynamicId).val() != "" && jQuery("#ux_required_control_"+dynamicId).val() == 1)
-					{
-						jQuery("#ux_required_control_"+dynamicId).attr("checked","checked");
-					}
-					jQuery("#ux_tooltip_control_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[2].dynamic_settings_value);
-					if((arrayControl == undefined ? "" :  arrayControl[3].dynamic_settings_value) != "")
-					{
-	 					var optionId_str = arrayControl[3].dynamic_settings_value;
-						var optionId = optionId_str.split(";");
-						var option_value_str = arrayControl[4].dynamic_settings_value;
-						var option_value = option_value_str.split(";");
-						for(var flag = 0;flag <optionId.length ;flag++)
+						if(jQuery("#button_set_outer_label_file"+dynamicId).val() != "")
 						{
-							var options_dynamicId = optionId[flag];
-							var add_chk_option = option_value[flag];
-							
-						
-							array_option_id_chk[dynamicCount].push(parseInt(options_dynamicId));
-							array_options_chk[dynamicCount].push(add_chk_option);
-							
-							jQuery("#append_chk_option_"+dynamicId).append('<div class="layout-control-group" id="selected_item_'+options_dynamicId+'"><div class="layout-controls"><input type= "text" class="layout-span8" value="'+add_chk_option+'" id="input_type_'+options_dynamicId+'"><a style="padding-left:2px;" onclick="delete_chk('+options_dynamicId+','+dynamicId+')"><img style="vertical-align: top;margin-top: 2px;" src="<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" /></a></div></div>');
-							
+							jQuery("#ux_label_fileupload_"+dynamicId).css("display","block");
+							jQuery("#ux_label_fileupload_"+dynamicId).attr("style", "position:inherit");
 						}
-					}
-					jQuery("#ux_admin_label_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[5].dynamic_settings_value);
-					jQuery("#ux_show_email_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[6].dynamic_settings_value);
-					if(jQuery("#ux_show_email_"+dynamicId).val() == "1")
-					{
-						jQuery("#ux_show_email_"+dynamicId).attr("checked","checked");
-					}
-					jQuery("#button_set_outer_label_chk_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[7].dynamic_settings_value);
-					if(jQuery("#button_set_outer_label_chk_"+dynamicId).val() != "")
-					{
-						jQuery("#show_data_label_tr_chk_"+dynamicId).css("display","block");
 						
-						jQuery("#show_data_label_tr_chk_"+dynamicId).attr("style", "position:inherit");
-					}
-					jQuery("#ux_description_textarea_chk_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[8].dynamic_settings_value);
-					if(jQuery("#ux_description_textarea_chk_"+dynamicId).val() != "")
-					{
-						jQuery("#show_data_description_tr_chk_"+dynamicId).css("display","block");
+						jQuery("#button_set_outer_description_fileuplod"+dynamicId).val(arrayControl[11].dynamic_settings_value);
 						
-						jQuery("#show_data_description_tr_chk_"+dynamicId).attr("style", "position:inherit");
-					}
-					jQuery("#ux_button_options_outer_wrapper_chk_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[9].dynamic_settings_value);
-					if(jQuery("#ux_button_options_outer_wrapper_chk_"+dynamicId).val() != "")
-					{
-						jQuery("#show_data_option_outer_wrapper_tr_chk_"+dynamicId).css("display","block");
-						
-						jQuery("#show_data_option_outer_wrapper_tr_chk_"+dynamicId).attr("style", "position:inherit");
-					}
-					jQuery("#ux_button_option_wrapper_chk_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[10].dynamic_settings_value);
-					if(jQuery("#ux_button_option_wrapper_chk_"+dynamicId).val() != "")
-					{
-						jQuery("#show_data_option_wrapper_tr_chk_"+dynamicId).css("display","block");
-						
-						jQuery("#show_data_option_wrapper_tr_chk_"+dynamicId).attr("style", "position:inherit");
-					}
-					jQuery("#ux_button_option_label_chk_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[11].dynamic_settings_value);
-					if(jQuery("#ux_button_option_label_chk_"+dynamicId).val() != "")
-					{
-						jQuery("#show_data_option_label_tr_chk_"+dynamicId).css("display","block");
-						
-						jQuery("#show_data_option_label_tr_chk_"+dynamicId).attr("style", "position:inherit");
-					}
-				break;
-				case 6:
-					jQuery("#ux_label_text_"+dynamicId).val(arrayControl == undefined ? "<?php _e( "Untitled", contact_bank ); ?>" :  arrayControl[0].dynamic_settings_value);
-					jQuery("#ux_required_control_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[1].dynamic_settings_value)
-					if((arrayControl == undefined ? "" :  arrayControl[1].dynamic_settings_value) == 1)
-					{
-						jQuery("#ux_required_control_"+dynamicId).attr("checked","checked");
-					}
-					jQuery("#ux_tooltip_control_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[2].dynamic_settings_value);
-					if((arrayControl == undefined ? "" :  arrayControl[3].dynamic_settings_value) != "")
-					{
-			 			var optionId_str = arrayControl[3].dynamic_settings_value;
-						var optionId = optionId_str.split(";");
-						var option_value_str = arrayControl[4].dynamic_settings_value;
-						var option_value = option_value_str.split(";");
-						for(var flag = 0;flag <optionId.length ;flag++)
+						if(jQuery("#button_set_outer_description_fileuplod"+dynamicId).val() != "")
 						{
-							var options_dynamicId = optionId[flag];
-							var add_radio_option = option_value[flag];
-							
-							array_option_id_radio[dynamicCount].push(parseInt(options_dynamicId));
-							array_options_radio[dynamicCount].push(add_radio_option);
-						
-							jQuery("#append_multiple_option_"+dynamicId).append('<div class="layout-control-group" id="input_tr_'+options_dynamicId+'"><div class="layout-controls"><input type="text" class="layout-span8" id="input_option_'+options_dynamicId+'" name="input_option_'+options_dynamicId+'" value="'+add_radio_option+'" /><a style="padding-left:2px;" onclick="delete_radio('+options_dynamicId+','+dynamicId+')"><img style="vertical-align: top;margin-top: 2px;" src="<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" /></a></div></div>');
+							jQuery("#ux_description_fileupload_"+dynamicId).css("display","block");
+							jQuery("#ux_description_fileupload_"+dynamicId).attr("style", "position:inherit");
 						}
-					}
-					jQuery("#ux_admin_label_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[5].dynamic_settings_value);
-					if((arrayControl == undefined ? "" :  arrayControl[6].dynamic_settings_value) == "1")
-					{
-						jQuery("#ux_show_email_"+dynamicId).attr("checked","checked");
-					}
-					jQuery("#button_set_outer_label_radio_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[7].dynamic_settings_value);
-					if(jQuery("#button_set_outer_label_radio_"+dynamicId).val() != "")
-					{
-						jQuery("#show_data_label_tr_radio_"+dynamicId).css("display","block");
 						
-						jQuery("#show_data_label_tr_radio_"+dynamicId).attr("style", "position:inherit");
-					}
-					jQuery("#ux_description_textarea_radio_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[8].dynamic_settings_value);
-					if(jQuery("#ux_description_textarea_radio_"+dynamicId).val() != "")
-					{
-						jQuery("#show_data_description_tr_radio_"+dynamicId).css("display","block");
-						
-						jQuery("#show_data_description_tr_radio_"+dynamicId).attr("style", "position:inherit");
-					}
-					jQuery("#ux_button_options_outer_wrapper_radio_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[9].dynamic_settings_value);
-					if((arrayControl == undefined ? "" :  arrayControl[9].dynamic_settings_value) != "")
-					{
-						jQuery("#show_data_option_outer_wrapper_tr_radio_"+dynamicId).css("display","block");
-						
-						jQuery("#show_data_option_outer_wrapper_tr_radio_"+dynamicId).attr("style", "position:inherit");
-					}
-					jQuery("#ux_button_option_wrapper_radio_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[10].dynamic_settings_value);
-					if((arrayControl == undefined ? "" :  arrayControl[10].dynamic_settings_value) != "")
-					{
-						jQuery("#show_data_option_wrapper_tr_radio_"+dynamicId).css("display","block");
-						
-						jQuery("#show_data_option_wrapper_tr_radio_"+dynamicId).attr("style", "position:inherit");
-					}
-					jQuery("#ux_button_option_label_radio_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[11].dynamic_settings_value);
-					if((arrayControl == undefined ? "" :  arrayControl[11].dynamic_settings_value) != "")
-					{
-						jQuery("#show_data_option_label_tr_radio_"+dynamicId).css("display","block");
-						
-						jQuery("#show_data_option_label_tr_radio_"+dynamicId).attr("style", "position:inherit");
-					}
-				break;
-				
-				case 9:
-					jQuery("#ux_label_text_"+dynamicId).val(arrayControl == undefined ? "<?php _e( "File Upload", contact_bank ); ?>" :  arrayControl[0].dynamic_settings_value);
-					jQuery("#ux_description_control_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[1].dynamic_settings_value);
-					jQuery("#ux_required_control_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[2].dynamic_settings_value)
-					if(jQuery("#ux_required_control_"+dynamicId).val() == 1)
-					{
-						jQuery("#ux_required_control_"+dynamicId).attr("checked","checked");
-					}
-					jQuery("#ux_tooltip_control_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[3].dynamic_settings_value);
-					jQuery("#ux_admin_label_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[4].dynamic_settings_value);
-					jQuery("#ux_show_email_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[5].dynamic_settings_value);
-					if(jQuery("#ux_show_email_"+dynamicId).val() == "1")
-					{
-						jQuery("#ux_show_email_"+dynamicId).attr("checked","checked");
-					}
-					jQuery("#ux_allow_multiple_file_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[6].dynamic_settings_value);
-					if(jQuery("#ux_allow_multiple_file_"+dynamicId).val() == "1")
-					{
-						jQuery("#ux_allow_multiple_file_"+dynamicId).attr("checked","checked");
-					}
-					else
-					{
-						jQuery("#ux_allow_multiple_file_"+dynamicId).removeAttr("checked");
-					}
-					jQuery("#ux_allowed_file_extensions_"+dynamicId).val(arrayControl == undefined ? "jpg;jpeg;png;gif;" :  arrayControl[7].dynamic_settings_value);
-					jQuery("#ux_maximum_file_allowed_"+dynamicId).val(arrayControl == undefined ? "<?php _e( "1024", contact_bank ); ?>" :  arrayControl[8].dynamic_settings_value);
-					jQuery("#ux_uploaded_file_email_db_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[9].dynamic_settings_value);
-					if(jQuery("#ux_uploaded_file_email_db_"+dynamicId).val() == "1")
-					{
-						jQuery("#ux_uploaded_file_email_db_"+dynamicId).attr("checked","checked");
-					}
-					jQuery("#button_set_outer_label_file"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[10].dynamic_settings_value);
-					if(jQuery("#button_set_outer_label_file"+dynamicId).val() != "")
-					{
-						jQuery("#ux_label_fileupload_"+dynamicId).css("display","block");
-						jQuery("#ux_label_fileupload_"+dynamicId).attr("style", "position:inherit");
-						
-					}
-					jQuery("#button_set_outer_description_fileuplod"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[11].dynamic_settings_value);
-					if(jQuery("#button_set_outer_description_fileuplod"+dynamicId).val() != "")
-					{
-						jQuery("#ux_description_fileupload_"+dynamicId).css("display","block");
-						jQuery("#ux_description_fileupload_"+dynamicId).attr("style", "position:inherit");
-						
-					}
-				break;
-				
-				case 12:
-					jQuery("#ux_label_text_"+dynamicId).val(arrayControl == undefined ? "<?php _e( "Date", contact_bank ); ?>" :  arrayControl[0].dynamic_settings_value);
-					jQuery("#ux_description_control_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[1].dynamic_settings_value);
-					jQuery("#ux_required_control_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[2].dynamic_settings_value)
-					if(jQuery("#ux_required_control_"+dynamicId).val() == 1)
-					{
-						jQuery("#ux_required_control_"+dynamicId).attr("checked","checked");
-					}
-					jQuery("#ux_tooltip_control_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[3].dynamic_settings_value);
-					jQuery("#ux_admin_label_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[4].dynamic_settings_value);
-					jQuery("#ux_show_email_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[5].dynamic_settings_value);
-					if(jQuery("#ux_show_email_"+dynamicId).val() == "1")
-					{
-						jQuery("#ux_show_email_"+dynamicId).attr("checked","checked");
-					}
+					break;
+					case 12:
 					
-					jQuery("#ux_start_year_label_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[6].dynamic_settings_value);
-					jQuery("#ux_last_year_label_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[7].dynamic_settings_value);
-					jQuery("#ux_default_day_type_"+dynamicId).val(arrayControl == undefined ? "0" :  arrayControl[8].dynamic_settings_value);
-					jQuery("#ux_default_month_type_"+dynamicId).val(arrayControl == undefined ? "0" :  arrayControl[9].dynamic_settings_value);
-					var start_year = arrayControl == undefined ? "" :  arrayControl[6].dynamic_settings_value;
-					var end_year = arrayControl == undefined ? "" :  arrayControl[7].dynamic_settings_value;
-					if(start_year == "" && end_year == "")
-					{
+						default_day(dynamicId,arrayControl == undefined ? "" :  arrayControl[6].dynamic_settings_value,arrayControl == undefined ? "" :  arrayControl[7].dynamic_settings_value);
+						dropdown_heading(dynamicId);
+						jQuery("#ux_label_text_"+dynamicId).val(arrayControl[0].dynamic_settings_value);
+						jQuery("#ux_description_control_"+dynamicId).val(arrayControl[1].dynamic_settings_value);
+						arrayControl[2].dynamic_settings_value == "1" ? jQuery("#ux_required_control_"+dynamicId).attr("checked","checked") : jQuery("#ux_required_control_"+dynamicId).removeAttr("checked"); 
+						jQuery("#ux_tooltip_control_"+dynamicId).val(arrayControl[3].dynamic_settings_value);
+						jQuery("#ux_admin_label_"+dynamicId).val(arrayControl[4].dynamic_settings_value);
+
+						arrayControl[5].dynamic_settings_value == "1" ? jQuery("#ux_show_email_"+dynamicId).attr("checked","checked") : jQuery("#ux_show_email_"+dynamicId).removeAttr("checked");
 						
-						jQuery("#ux_default_year_type_"+dynamicId).html('<option value=0><?php _e( "Year", contact_bank ); ?></option>');
-						jQuery("#ux_start_year_label_"+dynamicId).val("1900");
-						jQuery("#ux_last_year_label_"+dynamicId).val("2100");
-						var start_year = 1900;
-						var end_year = 2100;
-						for(flag=start_year; flag <= end_year; flag++)
+						jQuery("#ux_start_year_label_"+dynamicId).val(arrayControl[6].dynamic_settings_value);
+						jQuery("#ux_last_year_label_"+dynamicId).val(arrayControl[7].dynamic_settings_value);
+						jQuery("#ux_default_day_type_"+dynamicId).val(arrayControl[8].dynamic_settings_value);
+						jQuery("#ux_default_month_type_"+dynamicId).val(arrayControl[9].dynamic_settings_value);
+						
+						var start_year = arrayControl[6].dynamic_settings_value;
+						var end_year = arrayControl[7].dynamic_settings_value;
+						
+						if(start_year == "" && end_year == "")
 						{
-							jQuery("#ux_default_year_type_"+dynamicId).append('<option value='+flag+'>'+flag+'</option');
-							jQuery("#ux_default_year_type_"+dynamicId).val(arrayControl == undefined ? "0" :  arrayControl[10].dynamic_settings_value);
-						}
-					}
-					else
-					{
-						jQuery("#ux_default_year_type_"+dynamicId).empty();
-						jQuery("#ux_default_year_type_"+dynamicId).html('<option value=0><?php _e( "Year", contact_bank ); ?></option>');
-						for(flag=start_year; flag <= end_year; flag++)
-						{
-							jQuery("#ux_default_year_type_"+dynamicId).append('<option value='+flag+'>'+flag+'</option');
-							jQuery("#ux_default_year_type_"+dynamicId).val(arrayControl == undefined ? "0" :  arrayControl[10].dynamic_settings_value);
-						}
-					}
-					jQuery("#ux_last_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[11].dynamic_settings_value);
-					jQuery("#uxDefaultDateFormat_"+dynamicId).val(arrayControl == undefined ? "0" :  arrayControl[12].dynamic_settings_value);
-					jQuery("#ux_date_set_outer_label_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[13].dynamic_settings_value);
-					if(jQuery("#ux_date_set_outer_label_"+dynamicId).val() != "")
-					{
-						jQuery("#ux_advance_label_"+dynamicId).attr("display","block");
-						jQuery("#ux_advance_label_"+dynamicId).attr("style", "position:inherit");
-						
-					}
-					jQuery("#ux_date_txt_input_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[14].dynamic_settings_value);
-					if(jQuery("#ux_date_txt_input_"+dynamicId).val() != "")
-					{
-						jQuery("#advance_text_input_"+dynamicId).attr("display","block");
-						jQuery("#advance_text_input_"+dynamicId).attr("style", "position:inherit");
-						
-					}
-					jQuery("#ux_date_description_textarea_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[15].dynamic_settings_value);
-					if(jQuery("#ux_date_description_textarea_"+dynamicId).val() != "")
-					{
-						jQuery("#advance_text_description_"+dynamicId).attr("display","block");
-						jQuery("#advance_text_description_"+dynamicId).attr("style", "position:inherit");
-						
-					}
-					jQuery("#ux_day_textarea_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[16].dynamic_settings_value);
-					if(jQuery("#ux_day_textarea_"+dynamicId).val() != "")
-					{
-						jQuery("#ux_advance_day_"+dynamicId).attr("display","block");
-						jQuery("#ux_advance_day_"+dynamicId).attr("style", "position:inherit");
-						
-					}
-					
-					jQuery("#ux_month_textarea_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[17].dynamic_settings_value);
-					if(jQuery("#ux_month_textarea_"+dynamicId).val() != "")
-					{
-						jQuery("#advance_text_month_"+dynamicId).attr("display","block");
-						jQuery("#advance_text_month_"+dynamicId).attr("style", "position:inherit");
-						
-					}
-					jQuery("#ux_year_textarea_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[18].dynamic_settings_value);
-					if(jQuery("#ux_year_textarea_"+dynamicId).val() != "")
-					{
-						jQuery("#advance_text_year_"+dynamicId).attr("display","block");
-						jQuery("#advance_text_year_"+dynamicId).attr("style", "position:inherit");
-						
-					}
-				break;
-				case 13:
-					jQuery("#ux_default_hours_24_"+dynamicId).hide();
-					jQuery("#ux_label_text_"+dynamicId).val(arrayControl == undefined ? "<?php _e( "Time", contact_bank ); ?>" :  arrayControl[0].dynamic_settings_value);
-					jQuery("#ux_description_control_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[1].dynamic_settings_value);
-					jQuery("#ux_required_control_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[2].dynamic_settings_value)
-					if(jQuery("#ux_required_control_"+dynamicId).val() == 1)
-					{
-						jQuery("#ux_required_control_"+dynamicId).attr("checked","checked");
-					}
-					jQuery("#ux_tooltip_control_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[3].dynamic_settings_value);
-					jQuery("#ux_admin_label_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[4].dynamic_settings_value);
-					jQuery("#ux_email_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[5].dynamic_settings_value);
-					if(arrayControl == undefined ? "" :  arrayControl[5].dynamic_settings_value == "1")
-					{
-						jQuery("#ux_email_"+dynamicId).attr("checked","checked");
-					}
-					jQuery("#ux_drop_hour_time_"+dynamicId).val(arrayControl == undefined ? "12" :  arrayControl[6].dynamic_settings_value);
-					
-					var minute_format = parseInt(arrayControl == undefined ? "1" :arrayControl[10].dynamic_settings_value);
-					var dropdown_min = "<option selected='selected' value=''><?php _e( "Minute", contact_bank ); ?></option>";
-					for(flag=0; flag < 60;)
-					{
-						if(flag < 10)
-						{
-							dropdown_min += "<option  value=0"+flag+">0"+ flag + "</option>";
+							jQuery("#ux_default_year_type_"+dynamicId).html('<option value=0><?php _e( "Year", contact_bank ); ?></option>');
+							jQuery("#ux_start_year_label_"+dynamicId).val("1900");
+							jQuery("#ux_last_year_label_"+dynamicId).val("2100");
+							var start_year = 1900;
+							var end_year = 2100;
+							for(flag=start_year; flag <= end_year; flag++)
+							{
+								jQuery("#ux_default_year_type_"+dynamicId).append('<option value='+flag+'>'+flag+'</option');
+								jQuery("#ux_default_year_type_"+dynamicId).val(arrayControl[10].dynamic_settings_value);
+							}
 						}
 						else
 						{
-							dropdown_min += "<option value="+flag+">"+ flag + "</option>";
+							jQuery("#ux_default_year_type_"+dynamicId).empty();
+							jQuery("#ux_default_year_type_"+dynamicId).html('<option value=0><?php _e( "Year", contact_bank ); ?></option>');
+							for(flag=start_year; flag <= end_year; flag++)
+							{
+								jQuery("#ux_default_year_type_"+dynamicId).append('<option value='+flag+'>'+flag+'</option');
+								jQuery("#ux_default_year_type_"+dynamicId).val(arrayControl[10].dynamic_settings_value);
+							}
 						}
-						flag = flag + minute_format;
-					}
-					if(arrayControl == undefined ? "12" :  arrayControl[6].dynamic_settings_value != "" )
-					{
-						jQuery("#select_min_"+dynamicId).html(dropdown_min);
-						jQuery("#ux_default_minute_"+dynamicId).html(dropdown_min);
-						jQuery("#ux_minute_format_"+dynamicId).val(1);
-					}
-					else
-					{
-						jQuery("#select_min_"+dynamicId).html(dropdown_min);
-						jQuery("#ux_default_minute_"+dynamicId).html(dropdown_min);
-					}
-					jQuery("#ux_drop_hour_time_"+dynamicId).val(arrayControl == undefined ? "12" :  arrayControl[6].dynamic_settings_value);
-					if((arrayControl == undefined ? "12" :  arrayControl[6].dynamic_settings_value) == 12)
-					{
+						
+						jQuery("#ux_last_"+dynamicId).val(arrayControl[11].dynamic_settings_value);
+						jQuery("#uxDefaultDateFormat_"+dynamicId).val(arrayControl[12].dynamic_settings_value);
+						
+						jQuery("#ux_date_set_outer_label_"+dynamicId).val(arrayControl[13].dynamic_settings_value);
+						
+						if(jQuery("#ux_date_set_outer_label_"+dynamicId).val() != "")
+						{
+							jQuery("#ux_advance_label_"+dynamicId).attr("display","block");
+							jQuery("#ux_advance_label_"+dynamicId).attr("style", "position:inherit");
+							
+						}
+						
+						jQuery("#ux_date_txt_input_"+dynamicId).val(arrayControl[14].dynamic_settings_value);
+						
+						if(jQuery("#ux_date_txt_input_"+dynamicId).val() != "")
+						{
+							jQuery("#advance_text_input_"+dynamicId).attr("display","block");
+							jQuery("#advance_text_input_"+dynamicId).attr("style", "position:inherit");
+							
+						}
+						
+						jQuery("#ux_date_description_textarea_"+dynamicId).val(arrayControl[15].dynamic_settings_value);
+						
+						if(jQuery("#ux_date_description_textarea_"+dynamicId).val() != "")
+						{
+							jQuery("#advance_text_description_"+dynamicId).attr("display","block");
+							jQuery("#advance_text_description_"+dynamicId).attr("style", "position:inherit");
+							
+						}
+						
+						jQuery("#ux_day_textarea_"+dynamicId).val(arrayControl[16].dynamic_settings_value);
+						
+						if(jQuery("#ux_day_textarea_"+dynamicId).val() != "")
+						{
+							jQuery("#ux_advance_day_"+dynamicId).attr("display","block");
+							jQuery("#ux_advance_day_"+dynamicId).attr("style", "position:inherit");
+							
+						}
+						
+						jQuery("#ux_month_textarea_"+dynamicId).val(arrayControl[17].dynamic_settings_value);
+						
+						if(jQuery("#ux_month_textarea_"+dynamicId).val() != "")
+						{
+							jQuery("#advance_text_month_"+dynamicId).attr("display","block");
+							jQuery("#advance_text_month_"+dynamicId).attr("style", "position:inherit");
+							
+						}
+						
+						jQuery("#ux_year_textarea_"+dynamicId).val(arrayControl[18].dynamic_settings_value);
+						
+						if(jQuery("#ux_year_textarea_"+dynamicId).val() != "")
+						{
+							jQuery("#advance_text_year_"+dynamicId).attr("display","block");
+							jQuery("#advance_text_year_"+dynamicId).attr("style", "position:inherit");
+						}
+						
+					break;
+					case 13:
+						
 						jQuery("#ux_default_hours_24_"+dynamicId).hide();
-						jQuery("#ux_default_hours_12_"+dynamicId).show();
-						jQuery("#ux_default_hours_12_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[7].dynamic_settings_value);
-						jQuery("#ux_default_am_"+dynamicId).show();
-					}
+						jQuery("#ux_label_text_"+dynamicId).val(arrayControl[0].dynamic_settings_value);
+						jQuery("#ux_description_control_"+dynamicId).val(arrayControl[1].dynamic_settings_value);
+						
+						arrayControl[2].dynamic_settings_value == "1" ? jQuery("#ux_required_control_"+dynamicId).attr("checked","checked") : jQuery("#ux_required_control_"+dynamicId).removeAttr("checked");
+						 
+						jQuery("#ux_tooltip_control_"+dynamicId).val(arrayControl[3].dynamic_settings_value);
+						jQuery("#ux_admin_label_"+dynamicId).val(arrayControl[4].dynamic_settings_value);
+						
+						arrayControl[5].dynamic_settings_value == "1" ? jQuery("#ux_email_"+dynamicId).attr("checked","checked") : jQuery("#ux_email_"+dynamicId).removeAttr("checked");
+						
+						jQuery("#ux_drop_hour_time_"+dynamicId).val(arrayControl[6].dynamic_settings_value);
+						
+						var minute_format = parseInt(arrayControl[10].dynamic_settings_value);
+						var dropdown_min = "<option selected='selected' value=''><?php _e( "Minute", contact_bank ); ?></option>";
+						
+						for(flag=0; flag < 60;)
+						{
+							if(flag < 10)
+							{
+								dropdown_min += "<option  value=0"+flag+">0"+ flag + "</option>";
+							}
+							else
+							{
+								dropdown_min += "<option value="+flag+">"+ flag + "</option>";
+							}
+							flag = flag + minute_format;
+						}
+						
+						if(arrayControl[6].dynamic_settings_value != "" )
+						{
+							jQuery("#select_min_"+dynamicId).html(dropdown_min);
+							jQuery("#ux_default_minute_"+dynamicId).html(dropdown_min);
+							jQuery("#ux_minute_format_"+dynamicId).val(1);
+						}
+						else
+						{
+							jQuery("#select_min_"+dynamicId).html(dropdown_min);
+							jQuery("#ux_default_minute_"+dynamicId).html(dropdown_min);
+						}
+						
+						jQuery("#ux_drop_hour_time_"+dynamicId).val(arrayControl[6].dynamic_settings_value);
+						
+						if(arrayControl[6].dynamic_settings_value == "12")
+						{
+							jQuery("#ux_default_hours_24_"+dynamicId).hide();
+							jQuery("#ux_default_hours_12_"+dynamicId).show();
+							jQuery("#ux_default_hours_12_"+dynamicId).val(arrayControl[7].dynamic_settings_value);
+							jQuery("#ux_default_am_"+dynamicId).show();
+						}					
+						else if(arrayControl[6].dynamic_settings_value == "24")
+						{
+							jQuery("#ux_default_hours_12_"+dynamicId).hide();
+							jQuery("#ux_default_hours_24_"+dynamicId).show();
+							jQuery("#ux_default_hours_24_"+dynamicId).val(arrayControl[7].dynamic_settings_value);
+							jQuery("#ux_default_am_"+dynamicId).hide();
+						}
+						
+						jQuery("#ux_default_minute_"+dynamicId).val(arrayControl[8].dynamic_settings_value);
+						jQuery("#ux_default_am_"+dynamicId).val(arrayControl[9].dynamic_settings_value);
+						jQuery("#ux_minute_format_"+dynamicId).val(arrayControl[10].dynamic_settings_value);
+						
+						jQuery("#button_set_outer_label_"+dynamicId).val(arrayControl[11].dynamic_settings_value);
+						
+						if(jQuery("#button_set_outer_label_"+dynamicId).val() != "")
+						{
+							jQuery("#time_css_label_"+dynamicId).css("display","block");
+							jQuery("#time_css_label_"+dynamicId).attr("style", 'position:inherit');
+							
+						}
+						
+						jQuery("#button_set_textinput_"+dynamicId).val(arrayControl[12].dynamic_settings_value);
+						
+						if(jQuery("#button_set_textinput_"+dynamicId).val() != "")
+						{
+							jQuery("#time_text_input_"+dynamicId).css("display","block");
+							jQuery("#time_text_input_"+dynamicId).attr("style", 'position:inherit');
+							
+						}
+						
+						jQuery("#button_set_outer_description_"+dynamicId).val(arrayControl[13].dynamic_settings_value);
+						
+						if(jQuery("#button_set_outer_description_"+dynamicId).val() != "")
+						{
+							jQuery("#time_description_"+dynamicId).css("display","block");
+							jQuery("#time_description_"+dynamicId).attr("style", 'position:inherit');
+							
+						}
+						
+						jQuery("#ux_time_hour_"+dynamicId).val(arrayControl[14].dynamic_settings_value);
+						
+						if(jQuery("#ux_time_hour_"+dynamicId).val() != "")
+						{
+							jQuery("#time_set_time_hour_"+dynamicId).css("display","block");
+							jQuery("#time_set_time_hour_"+dynamicId).attr("style", 'position:inherit');
+							
+						}
+						
+						jQuery("#ux_time_minute_"+dynamicId).val(arrayControl[15].dynamic_settings_value);
+						
+						if(jQuery("#ux_time_minute_"+dynamicId).val() != "")
+						{
+							jQuery("#button_set_time_minute_"+dynamicId).css("display","block");
+							jQuery("#button_set_time_minute_"+dynamicId).attr("style", 'position:inherit');
+							
+						}
+						
+						jQuery("#button_set_time_am_"+dynamicId).val(arrayControl[16].dynamic_settings_value);
+						
+						if(jQuery("#button_set_time_am_"+dynamicId).val() != "")
+						{
+							jQuery("#ux_tr_set_time_am_"+dynamicId).css("display","block");
+							jQuery("#ux_tr_set_time_am_"+dynamicId).attr("style", 'position:inherit');
+						}
+						
+					break;
+					case 14:
+						
+						jQuery("#ux_label_text_"+dynamicId).val(arrayControl[0].dynamic_settings_value);
+						jQuery("#ux_default_value_"+dynamicId).val(arrayControl[1].dynamic_settings_value);
+						jQuery("#ux_admin_label_"+dynamicId).val(arrayControl[2].dynamic_settings_value);
+						arrayControl[3].dynamic_settings_value == "1" ? jQuery("#ux_show_email_"+dynamicId).attr("checked","checked") : jQuery("#ux_show_email_"+dynamicId).removeAttr("checked");
+	
+					break;
+					case 15:
 					
-					else if((arrayControl == undefined ? "12" :  arrayControl[6].dynamic_settings_value) == 24)
-					{
-						jQuery("#ux_default_hours_12_"+dynamicId).hide();
-						jQuery("#ux_default_hours_24_"+dynamicId).show();
-						jQuery("#ux_default_hours_24_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[7].dynamic_settings_value);
-						jQuery("#ux_default_am_"+dynamicId).hide();
-					}
-					jQuery("#ux_default_minute_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[8].dynamic_settings_value);
-					jQuery("#ux_default_am_"+dynamicId).val(arrayControl == undefined ? "0" :  arrayControl[9].dynamic_settings_value);
-					jQuery("#ux_minute_format_"+dynamicId).val(arrayControl == undefined ? "1" :  arrayControl[10].dynamic_settings_value);
-					jQuery("#button_set_outer_label_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[11].dynamic_settings_value);
-					if(jQuery("#button_set_outer_label_"+dynamicId).val() != "")
-					{
-						jQuery("#time_css_label_"+dynamicId).css("display","block");
-						jQuery("#time_css_label_"+dynamicId).attr("style", 'position:inherit');
+						jQuery("#ux_label_text_"+dynamicId).val(arrayControl[0].dynamic_settings_value);
+						jQuery("#ux_description_control_"+dynamicId).val(arrayControl[1].dynamic_settings_value);
+						arrayControl[2].dynamic_settings_value == "1" ? jQuery("#ux_required_control_"+dynamicId).attr("checked","checked") : jQuery("#ux_required_control_"+dynamicId).removeAttr("checked");
+	
+						jQuery("#ux_tooltip_control_"+dynamicId).val(arrayControl[3].dynamic_settings_value);
+						jQuery("#ux_admin_label_"+dynamicId).val(arrayControl[4].dynamic_settings_value);
 						
-					}
-					jQuery("#button_set_textinput_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[12].dynamic_settings_value);
-					if(jQuery("#button_set_textinput_"+dynamicId).val() != "")
-					{
-						jQuery("#time_text_input_"+dynamicId).css("display","block");
-						jQuery("#time_text_input_"+dynamicId).attr("style", 'position:inherit');
+						arrayControl[5].dynamic_settings_value == "1" ? jQuery("#ux_show_email_"+dynamicId).attr("checked","checked") : jQuery("#ux_show_email_"+dynamicId).removeAttr("checked"); 
+	
+						jQuery("#ux_password_label_"+dynamicId).val(arrayControl[6].dynamic_settings_value);
 						
-					}
-					jQuery("#button_set_outer_description_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[13].dynamic_settings_value);
-					if(jQuery("#button_set_outer_description_"+dynamicId).val() != "")
-					{
-						jQuery("#time_description_"+dynamicId).css("display","block");
-						jQuery("#time_description_"+dynamicId).attr("style", 'position:inherit');
+						if(jQuery("#ux_password_label_"+dynamicId).val() != "")
+						{
+							jQuery("#password_label_"+dynamicId).css("display","block");
+							jQuery("#password_label_"+dynamicId).attr("style", "position:inherit");
+						}
+						jQuery("#ux_password_text_input_"+dynamicId).val(arrayControl[7].dynamic_settings_value);
 						
-					}
-					jQuery("#ux_time_hour_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[14].dynamic_settings_value);
-					if(jQuery("#ux_time_hour_"+dynamicId).val() != "")
-					{
-						jQuery("#time_set_time_hour_"+dynamicId).css("display","block");
-						jQuery("#time_set_time_hour_"+dynamicId).attr("style", 'position:inherit');
+						if(jQuery("#ux_password_text_input_"+dynamicId).val() != "")
+						{
+							jQuery("#password_text_input_"+dynamicId).css("display","block");
+							jQuery("#password_text_input_"+dynamicId).attr("style", "position:inherit");
+						}
 						
-					}
-					jQuery("#ux_time_minute_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[15].dynamic_settings_value);
-					if(jQuery("#ux_time_minute_"+dynamicId).val() != "")
-					{
-						jQuery("#button_set_time_minute_"+dynamicId).css("display","block");
-						jQuery("#button_set_time_minute_"+dynamicId).attr("style", 'position:inherit');
+						jQuery("#ux_password_description_"+dynamicId).val(arrayControl[8].dynamic_settings_value);
 						
-					}
-					jQuery("#button_set_time_am_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[16].dynamic_settings_value);
-					if(jQuery("#button_set_time_am_"+dynamicId).val() != "")
-					{
-						jQuery("#ux_tr_set_time_am_"+dynamicId).css("display","block");
-						jQuery("#ux_tr_set_time_am_"+dynamicId).attr("style", 'position:inherit');
-					}
-				break;
-				case 14:
-					jQuery("#ux_label_text_"+dynamicId).val(arrayControl == undefined ? "<?php _e( "Untitled(hidden)", contact_bank ); ?>" :  arrayControl[0].dynamic_settings_value);
-					jQuery("#ux_default_value_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[1].dynamic_settings_value);
-					jQuery("#ux_admin_label_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[2].dynamic_settings_value);
-					jQuery("#ux_show_email_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[3].dynamic_settings_value);
-					if(jQuery("#ux_show_email_"+dynamicId).val() == "1")
-					{
-						jQuery("#ux_show_email_"+dynamicId).attr("checked","checked");
-					}
-				break;
-				case 15:
-					jQuery("#ux_label_text_"+dynamicId).val(arrayControl == undefined ? "<?php _e( "Password", contact_bank ); ?>" :  arrayControl[0].dynamic_settings_value);
-					jQuery("#ux_description_control_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[1].dynamic_settings_value);
-					jQuery("#ux_required_control_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[2].dynamic_settings_value)
-					if(jQuery("#ux_required_control_"+dynamicId).val() == 1)
-					{
-						jQuery("#ux_required_control_"+dynamicId).attr("checked","checked");
-					}
-					jQuery("#ux_tooltip_control_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[3].dynamic_settings_value);
-					jQuery("#ux_admin_label_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[4].dynamic_settings_value);
-					jQuery("#ux_show_email_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[5].dynamic_settings_value);
-					if(jQuery("#ux_show_email_"+dynamicId).val() == "1")
-					{
-						jQuery("#ux_show_email_"+dynamicId).attr("checked","checked");
-					}
-					jQuery("#ux_password_label_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[6].dynamic_settings_value);
-					if(jQuery("#ux_password_label_"+dynamicId).val() != "")
-					{
-						jQuery("#password_label_"+dynamicId).css("display","block");
+						if(jQuery("#ux_password_description_"+dynamicId).val() != "")
+						{
+							jQuery("#password_description_"+dynamicId).css("display","block");
+							jQuery("#password_description_"+dynamicId).attr("style", "position:inherit");
+						}
 						
-						jQuery("#password_label_"+dynamicId).attr("style", "position:inherit");
-					}
-					jQuery("#ux_password_text_input_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[7].dynamic_settings_value);
-					if(jQuery("#ux_password_text_input_"+dynamicId).val() != "")
-					{
-						jQuery("#password_text_input_"+dynamicId).css("display","block");
+						arrayControl[9].dynamic_settings_value == "1" ? jQuery("#ux_checkbox_alpha_filter_"+dynamicId).attr("checked","checked") : jQuery("#ux_checkbox_alpha_filter_"+dynamicId).removeAttr("checked");
+						arrayControl[10].dynamic_settings_value == "1" ? jQuery("#ux_checkbox_alpha_num_filter_"+dynamicId).attr("checked","checked") : jQuery("#ux_checkbox_alpha_num_filter_"+dynamicId).removeAttr("checked");
+						arrayControl[11].dynamic_settings_value == "1" ? jQuery("#ux_checkbox_digit_filter_"+dynamicId).attr("checked","checked") : jQuery("#ux_checkbox_digit_filter_"+dynamicId).removeAttr("checked");
+						arrayControl[12].dynamic_settings_value == "1" ? jQuery("#ux_checkbox_strip_tag_filter_"+dynamicId).attr("checked","checked") : jQuery("#ux_checkbox_strip_tag_filter_"+dynamicId).removeAttr("checked");
+						arrayControl[13].dynamic_settings_value == "1" ? jQuery("#ux_checkbox_trim_filter_"+dynamicId).attr("checked","checked") : jQuery("#ux_checkbox_trim_filter_"+dynamicId).removeAttr("checked");
 						
-						jQuery("#password_text_input_"+dynamicId).attr("style", "position:inherit");
-					}
-					jQuery("#ux_password_description_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[8].dynamic_settings_value);
-					if(jQuery("#ux_password_description_"+dynamicId).val() != "")
-					{
-						jQuery("#password_description_"+dynamicId).css("display","block");
-						
-						jQuery("#password_description_"+dynamicId).attr("style", "position:inherit");
-					}
-					jQuery("#ux_checkbox_alpha_filter_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[9].dynamic_settings_value);
-					if(jQuery("#ux_checkbox_alpha_filter_"+dynamicId).val() == "1")
-					{
-						jQuery("#ux_checkbox_alpha_filter_"+dynamicId).attr("checked","checked");
-					}
-					jQuery("#ux_checkbox_alpha_num_filter_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[10].dynamic_settings_value);
-					if(jQuery("#ux_checkbox_alpha_num_filter_"+dynamicId).val() == "1")
-					{
-						jQuery("#ux_checkbox_alpha_num_filter_"+dynamicId).attr("checked","checked");
-					}
-					jQuery("#ux_checkbox_digit_filter_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[11].dynamic_settings_value);
-					if(jQuery("#ux_checkbox_digit_filter_"+dynamicId).val() == "1")
-					{
-						jQuery("#ux_checkbox_digit_filter_"+dynamicId).attr("checked","checked");
-					}
-					jQuery("#ux_checkbox_strip_tag_filter_"+dynamicId).val(arrayControl == undefined ? "" :  arrayControl[12].dynamic_settings_value);
-					if(jQuery("#ux_checkbox_strip_tag_filter_"+dynamicId).val() == "1")
-					{
-						jQuery("#ux_checkbox_strip_tag_filter_"+dynamicId).attr("checked","checked");
-					}
-					if((arrayControl == undefined ? "" : arrayControl[13].dynamic_settings_value) == "1")
-					{
-						jQuery("#ux_checkbox_trim_filter_"+dynamicId).attr("checked","checked");
-					}
-				break;
+					break;
+				}
+			}
+			else
+			{
+				default_day(dynamicId,"","");
+				 dropdown_heading(dynamicId);
 			}
 		});
 	}
@@ -2033,8 +1931,7 @@ function add_settings(dynamicId,field_type,arrayControl,dynamicCount)
  */ 
 function div_show(dynamicId,field_id)
 {
-	jQuery("#AjaxUploaderFilesButton").css('float','left');
-	
+	jQuery("#AjaxUploaderFilesButton").css('float','left');	
 }
 
 function delete_textbox(div_id,dynamicId,control_no)
@@ -2150,7 +2047,7 @@ jQuery("#ux_dynamic_form_submit").validate
 		jQuery.ajax
 		({
 			type: "POST",
-			url: ajaxurl + "?form_name="+form_name+"&form_id="+form_id+"&edit_created_control_type="+edit_created_control_type+"&field_order="+field_order+"&edit_control_dynamic_ids="+edit_control_dynamic_ids+"&new_control_dynamic_ids="+new_control_dynamic_ids+"&created_control_type="+created_control_type+"&field_dynamic_id="+field_dynamic_id+"&ux_sucess_message="+jQuery("#ux_sucess_message").val()+"&chk_redirect_url="+jQuery("#chk_redirect_url").prop("checked")+"&ux_redirect_url="+jQuery("#ux_redirect_url").val()+"&form=1&param=submit_controls&action=edit_contact_form_library",
+			url: ajaxurl + "?form_name="+form_name+"&form_id="+form_id+"&field_order="+field_order+"&edit_control_dynamic_ids="+edit_control_dynamic_ids+"&new_control_dynamic_ids="+new_control_dynamic_ids+"&created_control_type="+created_control_type+"&field_dynamic_id="+field_dynamic_id+"&ux_sucess_message="+jQuery("#ux_sucess_message").val()+"&chk_redirect_url="+jQuery("#chk_redirect_url").prop("checked")+"&ux_redirect_url="+jQuery("#ux_redirect_url").val()+"&form=1&param=submit_controls&action=edit_contact_form_library",
 			success : function(data) 
 			{
 				
@@ -2168,19 +2065,19 @@ jQuery("#ux_dynamic_form_submit").validate
 									array_controls[dynamicCount].push({"text_dynamicId" : new_control_dynamic_ids[flag]});
 									array_controls[dynamicCount].push({"cb_label_value" : "<?php _e("Untitled", contact_bank); ?>"});
 									array_controls[dynamicCount].push({"cb_description" : ""});
-									array_controls[dynamicCount].push({"cb_control_required" : 0}) ;
+									array_controls[dynamicCount].push({"cb_control_required" : "0"}) ;
 									array_controls[dynamicCount].push({"cb_tooltip_txt" : ""});
 									array_controls[dynamicCount].push({"cb_default_txt_val" : ""});
 									array_controls[dynamicCount].push({"cb_admin_label" : "<?php _e("Untitled", contact_bank); ?>"});
-									array_controls[dynamicCount].push({"cb_show_email" : 0}) ;
+									array_controls[dynamicCount].push({"cb_show_email" : "0"}) ;
 									array_controls[dynamicCount].push({"cb_button_set_outer_label" : ""});
 									array_controls[dynamicCount].push({"cb_button_set_txt_input" : ""});
 									array_controls[dynamicCount].push({"cb_button_set_txt_description" : ""});
-									array_controls[dynamicCount].push({"cb_checkbox_alpha_filter": 0});
-									array_controls[dynamicCount].push({"cb_ux_checkbox_alpha_num_filter": 0});
-									array_controls[dynamicCount].push({"cb_checkbox_digit_filter": 0});
-									array_controls[dynamicCount].push({"cb_checkbox_strip_tag_filter": 0});
-									array_controls[dynamicCount].push({"cb_checkbox_trim_filter": 0});
+									array_controls[dynamicCount].push({"cb_checkbox_alpha_filter": "0"});
+									array_controls[dynamicCount].push({"cb_ux_checkbox_alpha_num_filter": "0"});
+									array_controls[dynamicCount].push({"cb_checkbox_digit_filter": "0"});
+									array_controls[dynamicCount].push({"cb_checkbox_strip_tag_filter": "0"});
+									array_controls[dynamicCount].push({"cb_checkbox_trim_filter": "0"});
 								}
 							break;
 							
@@ -2191,19 +2088,19 @@ jQuery("#ux_dynamic_form_submit").validate
 									array_controls[dynamicCount].push({"textarea_dynamicId" : new_control_dynamic_ids[flag]});
 									array_controls[dynamicCount].push({"cb_label_value" :"<?php _e("Untitled", contact_bank); ?>"});
 									array_controls[dynamicCount].push({"cb_description" : ""});
-									array_controls[dynamicCount].push({"cb_control_required": 0});
+									array_controls[dynamicCount].push({"cb_control_required": "0"});
 									array_controls[dynamicCount].push({"cb_tooltip_txt" : ""});
 									array_controls[dynamicCount].push({"cb_default_txt_val" : "" });
 									array_controls[dynamicCount].push({"cb_admin_label" : "<?php _e("Untitled", contact_bank); ?>"});
-									array_controls[dynamicCount].push({"cb_show_email" : 0});
+									array_controls[dynamicCount].push({"cb_show_email" : "0"});
 									array_controls[dynamicCount].push({"cb_button_set_outer_label" : ""});
 									array_controls[dynamicCount].push({"cb_button_set_txt_input" : ""});
 									array_controls[dynamicCount].push({"cb_button_set_txt_description" : ""});
-									array_controls[dynamicCount].push({"cb_checkbox_alpha_filter": 0});
-									array_controls[dynamicCount].push({"cb_ux_checkbox_alpha_num_filter": 0});
-									array_controls[dynamicCount].push({"cb_checkbox_digit_filter": 0});
-									array_controls[dynamicCount].push({"cb_checkbox_strip_tag_filter": 0});
-									array_controls[dynamicCount].push({"cb_checkbox_trim_filter": 0});
+									array_controls[dynamicCount].push({"cb_checkbox_alpha_filter": "0"});
+									array_controls[dynamicCount].push({"cb_ux_checkbox_alpha_num_filter": "0"});
+									array_controls[dynamicCount].push({"cb_checkbox_digit_filter": "0"});
+									array_controls[dynamicCount].push({"cb_checkbox_strip_tag_filter": "0"});
+									array_controls[dynamicCount].push({"cb_checkbox_trim_filter": "0"});
 								}
 							break;
 							case 3:
@@ -2213,18 +2110,18 @@ jQuery("#ux_dynamic_form_submit").validate
 									array_controls[dynamicCount].push({"email_dynamicId" : new_control_dynamic_ids[flag]});
 									array_controls[dynamicCount].push({"cb_label_value" : "<?php _e("Email", contact_bank); ?>"});
 									array_controls[dynamicCount].push({"cb_description" : ""});
-									array_controls[dynamicCount].push({"cb_control_required": 1});
+									array_controls[dynamicCount].push({"cb_control_required": "1"});
 									array_controls[dynamicCount].push({"cb_tooltip_txt" :""});
 									array_controls[dynamicCount].push({"cb_admin_label" : "<?php _e("Email", contact_bank); ?>"});
-									array_controls[dynamicCount].push({"cb_show_email" : 0});
+									array_controls[dynamicCount].push({"cb_show_email" : "0"});
 									array_controls[dynamicCount].push({"cb_button_set_outer_label" : ""});
 									array_controls[dynamicCount].push({"cb_button_set_txt_input" : ""});
 									array_controls[dynamicCount].push({"cb_button_set_txt_description" : ""});
-									array_controls[dynamicCount].push({"cb_checkbox_alpha_filter": 0});
-									array_controls[dynamicCount].push({"cb_ux_checkbox_alpha_num_filter": 0});
-									array_controls[dynamicCount].push({"cb_checkbox_digit_filter": 0});
-									array_controls[dynamicCount].push({"cb_checkbox_strip_tag_filter": 0});
-									array_controls[dynamicCount].push({"cb_checkbox_trim_filter": 0});
+									array_controls[dynamicCount].push({"cb_checkbox_alpha_filter": "0"});
+									array_controls[dynamicCount].push({"cb_ux_checkbox_alpha_num_filter": "0"});
+									array_controls[dynamicCount].push({"cb_checkbox_digit_filter": "0"});
+									array_controls[dynamicCount].push({"cb_checkbox_strip_tag_filter": "0"});
+									array_controls[dynamicCount].push({"cb_checkbox_trim_filter": "0"});
 								}
 							break;
 							case 4:
@@ -2233,12 +2130,12 @@ jQuery("#ux_dynamic_form_submit").validate
 									array_controls[dynamicCount].push({"control_type" : 4});
 									array_controls[dynamicCount].push({"dropdown_dynamicId" : new_control_dynamic_ids[flag]});
 									array_controls[dynamicCount].push({"cb_label_value" : "<?php _e("Untitled", contact_bank); ?>"});
-									array_controls[dynamicCount].push({"cb_control_required": 0});
+									array_controls[dynamicCount].push({"cb_control_required": "0"});
 									array_controls[dynamicCount].push({"cb_tooltip_txt" : ""});
 									array_controls[dynamicCount].push({"cb_dropdown_option_id" : ""});
 									array_controls[dynamicCount].push({"cb_dropdown_option_val" : ""});
 									array_controls[dynamicCount].push({"cb_admin_label" : "<?php _e("Untitled", contact_bank); ?>"});
-									array_controls[dynamicCount].push({"cb_show_email" : 0});
+									array_controls[dynamicCount].push({"cb_show_email" : "0"});
 									array_controls[dynamicCount].push({"cb_button_set_outer_label" :""});
 									array_controls[dynamicCount].push({"cb_button_set_dropdown_menu" : ""});
 									array_controls[dynamicCount].push({"cb_button_set_description" : ""});
@@ -2250,12 +2147,12 @@ jQuery("#ux_dynamic_form_submit").validate
 									array_controls[dynamicCount].push({"control_type" : 5});
 									array_controls[dynamicCount].push({"checkbox_dynamicId" : new_control_dynamic_ids[flag]});
 									array_controls[dynamicCount].push({"cb_label_value" : "<?php _e("Untitled", contact_bank); ?>"});
-									array_controls[dynamicCount].push({"cb_control_required": 0});
+									array_controls[dynamicCount].push({"cb_control_required": "0"});
 									array_controls[dynamicCount].push({"cb_tooltip_txt" : ""});
 									array_controls[dynamicCount].push({"cb_checkbox_option_id" : ""});
 									array_controls[dynamicCount].push({"cb_checkbox_option_val" : ""});
 									array_controls[dynamicCount].push({"cb_admin_label" : "<?php _e("Untitled", contact_bank); ?>"});
-									array_controls[dynamicCount].push({"cb_show_email" : 0});
+									array_controls[dynamicCount].push({"cb_show_email" : "0"});
 									array_controls[dynamicCount].push({"cb_button_set_outer_label" :""});
 									array_controls[dynamicCount].push({"cb_button_set_description" : ""});
 									array_controls[dynamicCount].push({"cb_button_set_options_outer_wrapper" : ""});
@@ -2270,12 +2167,12 @@ jQuery("#ux_dynamic_form_submit").validate
 									array_controls[dynamicCount].push({"control_type" : 6});
 									array_controls[dynamicCount].push({"radio_dynamicId" : new_control_dynamic_ids[flag]});
 									array_controls[dynamicCount].push({"cb_label_value" : "<?php _e("Untitled", contact_bank); ?>"});
-									array_controls[dynamicCount].push({"cb_control_required": 0});
+									array_controls[dynamicCount].push({"cb_control_required": "0"});
 									array_controls[dynamicCount].push({"cb_tooltip_txt" : ""});
 									array_controls[dynamicCount].push({"cb_radio_option_id" : ""});
 									array_controls[dynamicCount].push({"cb_radio_option_val" : ""});
 									array_controls[dynamicCount].push({"cb_admin_label" : "<?php _e("Untitled", contact_bank); ?>"});
-									array_controls[dynamicCount].push({"cb_show_email" : 0});
+									array_controls[dynamicCount].push({"cb_show_email" : "0"});
 									array_controls[dynamicCount].push({"cb_button_set_outer_label" : ""});
 									array_controls[dynamicCount].push({"cb_button_set_description" : ""});
 									array_controls[dynamicCount].push({"cb_button_set_options_outer_wrapper" : ""});
@@ -2290,14 +2187,14 @@ jQuery("#ux_dynamic_form_submit").validate
 									array_controls[dynamicCount].push({"file_upload_dynamicId" : new_control_dynamic_ids[flag]});
 									array_controls[dynamicCount].push({"cb_label_value" : "<?php _e("File Upload", contact_bank); ?>"});
 									array_controls[dynamicCount].push({"cb_description" : ""});
-									array_controls[dynamicCount].push({"cb_control_required": 0});
+									array_controls[dynamicCount].push({"cb_control_required": "0"});
 									array_controls[dynamicCount].push({"cb_tooltip_txt" : ""});
 									array_controls[dynamicCount].push({"cb_admin_label" : "<?php _e("File Upload", contact_bank); ?>"});
-									array_controls[dynamicCount].push({"cb_show_email" : 0});
-									array_controls[dynamicCount].push({"cb_allow_multiple_file" : 0});
+									array_controls[dynamicCount].push({"cb_show_email" : "0"});
+									array_controls[dynamicCount].push({"cb_allow_multiple_file" : "0"});
 									array_controls[dynamicCount].push({"cb_allow_file_ext_upload" : "*.jpg,*.png,*.gif,*.bmp,*.txt,*.zip,*.rar"});
-									array_controls[dynamicCount].push({"cb_maximum_file_allowed" : 1024});
-									array_controls[dynamicCount].push({"cb_uploaded_file_email_db" : 0});
+									array_controls[dynamicCount].push({"cb_maximum_file_allowed" : "1024"});
+									array_controls[dynamicCount].push({"cb_uploaded_file_email_db" : "0"});
 									array_controls[dynamicCount].push({"cb_button_set_outer_label_file" : ""});
 									array_controls[dynamicCount].push({"cb_button_set_outer_description_fileuplod" : ""});
 								}
@@ -2309,23 +2206,23 @@ jQuery("#ux_dynamic_form_submit").validate
 									array_controls[dynamicCount].push({"date_dynamicId" : new_control_dynamic_ids[flag]});
 									array_controls[dynamicCount].push({"cb_label_value" : "<?php _e("Date", contact_bank); ?>"});
 									array_controls[dynamicCount].push({"cb_description" : ""});
-									array_controls[dynamicCount].push({"cb_control_required": 0});
+									array_controls[dynamicCount].push({"cb_control_required": "0"});
 									array_controls[dynamicCount].push({"cb_tooltip_txt" : ""});
 									array_controls[dynamicCount].push({"cb_admin_label" : "<?php _e("Date", contact_bank); ?>"});
 									array_controls[dynamicCount].push({"cb_show_email" : ""});
-									array_controls[dynamicCount].push({"cb_start_year" : 1900});
-									array_controls[dynamicCount].push({"cb_end_year" : 2100});
+									array_controls[dynamicCount].push({"cb_start_year" : "1900"});
+									array_controls[dynamicCount].push({"cb_end_year" : "2100"});
 									array_controls[dynamicCount].push({"cb_default_value_day" : (new Date).getDate()});
 									array_controls[dynamicCount].push({"cb_default_value_month" : (new Date).getMonth()+1});
 									array_controls[dynamicCount].push({"cb_default_value_year" : (new Date).getFullYear()});
 									array_controls[dynamicCount].push({"cb_error_invalid" : ""});
-									array_controls[dynamicCount].push({"cb_date_format" : 0});
-									array_controls[dynamicCount].push({"cb_button_set_outer_label" : 0});
-									array_controls[dynamicCount].push({"cb_button_set_txt_input" : 0});
-									array_controls[dynamicCount].push({"cb_button_set_description" : 0});
-									array_controls[dynamicCount].push({"cb_date_day_dropdown" : 0});
-									array_controls[dynamicCount].push({"cb_date_month_dropdown" : 0});
-									array_controls[dynamicCount].push({"cb_date_year_dropdown" : 0});
+									array_controls[dynamicCount].push({"cb_date_format" : "0"});
+									array_controls[dynamicCount].push({"cb_button_set_outer_label" : "0"});
+									array_controls[dynamicCount].push({"cb_button_set_txt_input" : "0"});
+									array_controls[dynamicCount].push({"cb_button_set_description" : "0"});
+									array_controls[dynamicCount].push({"cb_date_day_dropdown" : "0"});
+									array_controls[dynamicCount].push({"cb_date_month_dropdown" : "0"});
+									array_controls[dynamicCount].push({"cb_date_year_dropdown" : "0"});
 								}
 							break;
 							case 13:
@@ -2335,15 +2232,15 @@ jQuery("#ux_dynamic_form_submit").validate
 									array_controls[dynamicCount].push({"time_dynamicId" : new_control_dynamic_ids[flag]});
 									array_controls[dynamicCount].push({"cb_label_value" : "<?php _e("Time", contact_bank); ?>"});
 									array_controls[dynamicCount].push({"cb_description" : ""});
-									array_controls[dynamicCount].push({"cb_control_required": 0});
+									array_controls[dynamicCount].push({"cb_control_required": "0"});
 									array_controls[dynamicCount].push({"cb_tooltip_txt" : ""});
 									array_controls[dynamicCount].push({"cb_admin_label" : "<?php _e("Time", contact_bank); ?>"});
 									array_controls[dynamicCount].push({"cb_show_email" : ""});
-									array_controls[dynamicCount].push({"cb_hour_format" : 12});
+									array_controls[dynamicCount].push({"cb_hour_format" : "12"});
 									array_controls[dynamicCount].push({"cb_hours" : ""});
 									array_controls[dynamicCount].push({"cb_minutes" : ""});
-									array_controls[dynamicCount].push({"cb_am_pm" : 0});
-									array_controls[dynamicCount].push({"cb_time_format" : 1});
+									array_controls[dynamicCount].push({"cb_am_pm" : "0"});
+									array_controls[dynamicCount].push({"cb_time_format" : "1"});
 									array_controls[dynamicCount].push({"cb_button_set_outer_label" : ""});
 									array_controls[dynamicCount].push({"cb_button_set_txt_input" : ""});
 									array_controls[dynamicCount].push({"cb_button_set_description" : ""});
@@ -2360,7 +2257,7 @@ jQuery("#ux_dynamic_form_submit").validate
 									array_controls[dynamicCount].push({"cb_label_value" : "<?php _e("Untitled(Hidden)", contact_bank); ?>"});
 									array_controls[dynamicCount].push({"cb_default_txt_val" : ""});
 									array_controls[dynamicCount].push({"cb_admin_label" : "<?php _e("Untitled(Hidden)", contact_bank); ?>"});
-									array_controls[dynamicCount].push({"cb_show_email": 0});
+									array_controls[dynamicCount].push({"cb_show_email": "0"});
 								}
 							break;
 							case 15:
@@ -2370,21 +2267,22 @@ jQuery("#ux_dynamic_form_submit").validate
 									array_controls[dynamicCount].push({"password_dynamicId" : new_control_dynamic_ids[flag]});
 									array_controls[dynamicCount].push({"cb_label_value" : "<?php _e("Password", contact_bank); ?>"});
 									array_controls[dynamicCount].push({"cb_description" : ""});
-									array_controls[dynamicCount].push({"cb_control_required": 0});
+									array_controls[dynamicCount].push({"cb_control_required": "0"});
 									array_controls[dynamicCount].push({"cb_tooltip_txt" : ""});
 									array_controls[dynamicCount].push({"cb_admin_label" : "<?php _e("Password", contact_bank); ?>"});
-									array_controls[dynamicCount].push({"cb_show_email" : 0});
+									array_controls[dynamicCount].push({"cb_show_email" : "0"});
 									array_controls[dynamicCount].push({"cb_button_set_outer_label" : ""});
 									array_controls[dynamicCount].push({"cb_button_set_txt_input" : ""});
 									array_controls[dynamicCount].push({"cb_button_set_txt_description" : ""});
-									array_controls[dynamicCount].push({"cb_checkbox_alpha_filter": 0});
-									array_controls[dynamicCount].push({"ux_checkbox_alpha_num_filter_": 0});
-									array_controls[dynamicCount].push({"cb_checkbox_digit_filter": 0});
-									array_controls[dynamicCount].push({"cb_checkbox_strip_tag_filter": 0});
-									array_controls[dynamicCount].push({"cb_checkbox_trim_filter": 0});
+									array_controls[dynamicCount].push({"cb_checkbox_alpha_filter": "0"});
+									array_controls[dynamicCount].push({"ux_checkbox_alpha_num_filter_": "0"});
+									array_controls[dynamicCount].push({"cb_checkbox_digit_filter": "0"});
+									array_controls[dynamicCount].push({"cb_checkbox_strip_tag_filter": "0"});
+									array_controls[dynamicCount].push({"cb_checkbox_trim_filter": "0"});
 								}
 								break;
 							}
+							
 							jQuery.ajax
 							({
 								type: "POST",
@@ -2393,7 +2291,6 @@ jQuery("#ux_dynamic_form_submit").validate
 								{
 									imaginaryCount++;
 									var totalLength = parseInt(created_control_type.length) + parseInt(edit_created_control_type.length);
-
 									if(imaginaryCount == totalLength)
 									{
 										setTimeout(function()

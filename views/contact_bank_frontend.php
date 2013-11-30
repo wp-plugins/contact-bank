@@ -48,8 +48,9 @@ $fields = $wpdb->get_results
 							(
 								$wpdb->prepare
 								(
-									"SELECT * FROM " .contact_bank_dynamic_settings_form().  " WHERE " .contact_bank_dynamic_settings_form().".dynamicId = %d ORDER BY dynamic_settings_id ASC",
-									$dynamicId
+									"SELECT * FROM " .contact_bank_dynamic_settings_form().  " JOIN " .create_control_Table()." ON " .create_control_Table().".column_dynamicId = " .contact_bank_dynamic_settings_form().  ".dynamicId  WHERE " .contact_bank_dynamic_settings_form().".dynamicId = %d AND " .create_control_Table().".form_id = %d ORDER BY dynamic_settings_id ASC",
+									$column_dynamicId,
+									$form_id
 								)
 							);
 							$keys = array();
@@ -100,12 +101,12 @@ $fields = $wpdb->get_results
 									$index = array_search("cb_checkbox_trim_filter", $keys);
 									$checkbox_trim_filter_textbox = $fields_dynamic_controls[$index]->dynamic_settings_value;
 									$checkbox_trim_filter = "";
-									if($checkbox_trim_filter_textbox == 1)
+									if($checkbox_trim_filter_textbox == "1")
 									{
 										$checkbox_trim_filter = "onfocusout='trim($dynamicId,1)'";
 									}
 									$checkbox_strip_tag="";
-									if($checkbox_strip_tag_filter_textbox == 1)
+									if($checkbox_strip_tag_filter_textbox == "1")
 									{
 										$checkbox_strip_tag = "onblur='return strip_tags(event,1,$dynamicId)'";
 									}
@@ -113,31 +114,31 @@ $fields = $wpdb->get_results
 									$checkbox_alpha_num = $checkbox_alpha_num_filter_textbox;
 									$checkbox_digit_filter = $checkbox_digit_filter_textbox;
 									$checkbox_alpha = "";
-									if($checkbox_alpha_filter == 1 && $checkbox_alpha_num == 0 && $checkbox_digit_filter == 0)
+									if($checkbox_alpha_filter == "1" && $checkbox_alpha_num == "0" && $checkbox_digit_filter == "0")
 									{
 										$checkbox_alpha = "onkeypress='return alpha(event)'";
 									}
-									else if($checkbox_alpha_filter == 1 && $checkbox_alpha_num == 1 && $checkbox_digit_filter == 0)
+									else if($checkbox_alpha_filter == "1" && $checkbox_alpha_num == "1" && $checkbox_digit_filter == "0")
 									{
 										$checkbox_alpha = "onkeypress='return alphanumeric(event)'";
 									}
-										else if($checkbox_alpha_filter == 0 && $checkbox_alpha_num == 1 && $checkbox_digit_filter == 0)
+										else if($checkbox_alpha_filter == "0" && $checkbox_alpha_num == "1" && $checkbox_digit_filter == "0")
 									{
 										$checkbox_alpha = "onkeypress='return alphanumeric(event)'";
 									}
-									else if($checkbox_alpha_filter == 1 && $checkbox_alpha_num == 1 && $checkbox_digit_filter == 1)
+									else if($checkbox_alpha_filter == "1" && $checkbox_alpha_num == "1" && $checkbox_digit_filter == "1")
 									{
 										$checkbox_alpha = "onkeypress='return alpha_num_digits(event)'";
 									}
-									else if($checkbox_alpha_filter == 0 && $checkbox_alpha_num == 1 && $checkbox_digit_filter == 1)
+									else if($checkbox_alpha_filter == "0" && $checkbox_alpha_num == "1" && $checkbox_digit_filter == "1")
 									{
 										$checkbox_alpha = "onkeypress='return alphanumeric(event)'";
 									}
-									else if($checkbox_alpha_filter == 0 && $checkbox_alpha_num == 0 && $checkbox_digit_filter == 1)
+									else if($checkbox_alpha_filter == "0" && $checkbox_alpha_num == "0" && $checkbox_digit_filter == "1")
 									{
 										$checkbox_alpha = "onkeypress='return OnlyNumbers(event)'";
 									}
-									else if($checkbox_alpha_filter == 1 && $checkbox_alpha_num == 0 && $checkbox_digit_filter == 1)
+									else if($checkbox_alpha_filter == "1" && $checkbox_alpha_num == "0" && $checkbox_digit_filter == "1")
 									{
 										$checkbox_alpha = "onkeypress='return alphanumeric(event)'";
 									}
@@ -154,7 +155,7 @@ $fields = $wpdb->get_results
 									<div class="layout-control-group" id="div_<?php echo $dynamicId; ?>">
 										<label class="layout-control-label" style="<?php echo $cb_button_set_outer_label_textbox;?>" id="control_label_<?php echo $dynamicId; ?>"><?php echo $label_text; ?> : </label>
 										<?php
-										if($control_required_text == 1)
+										if($control_required_text == "1")
 										{
 											?>
 												<span id="txt_required_<?php echo $dynamicId; ?>" class="error" style="display:block;">*</span>
@@ -201,13 +202,13 @@ $fields = $wpdb->get_results
 									$checkbox_trim_filter_textarea = $fields_dynamic_controls[$index]->dynamic_settings_value;
 									
 									$checkbox_trim_filter = "";
-									if($checkbox_trim_filter_textarea == 1)
+									if($checkbox_trim_filter_textarea == "1")
 									{
 										$checkbox_trim_filter = "onfocusout='trim($dynamicId,2)'";
 									}
 									$checkbox_strip_tag = "";
 									
-									if($checkbox_strip_tag_filter_textarea == 1)
+									if($checkbox_strip_tag_filter_textarea == "1")
 									{
 										$checkbox_strip_tag = "onblur='return strip_tags(event,2,$dynamicId)'";
 									}
@@ -215,31 +216,31 @@ $fields = $wpdb->get_results
 									$checkbox_alpha_num = $checkbox_alpha_num_filter_textarea;
 									$checkbox_digit_filter = $checkbox_digit_filter_textarea;
 									$checkbox_alpha = "";
-									if($checkbox_alpha_filter == 1 && $checkbox_alpha_num == 0 && $checkbox_digit_filter == 0)
+									if($checkbox_alpha_filter == "1" && $checkbox_alpha_num == "0" && $checkbox_digit_filter == "0")
 									{
 										$checkbox_alpha = "onkeypress='return alpha(event)'";
 									}
-									else if($checkbox_alpha_filter == 1 && $checkbox_alpha_num == 1 && $checkbox_digit_filter == 0)
+									else if($checkbox_alpha_filter == "1" && $checkbox_alpha_num == "1" && $checkbox_digit_filter == "0")
 									{
 										$checkbox_alpha = "onkeypress='return alphanumeric(event)'";
 									}
-										else if($checkbox_alpha_filter == 0 && $checkbox_alpha_num == 1 && $checkbox_digit_filter == 0)
+										else if($checkbox_alpha_filter == "0" && $checkbox_alpha_num == "1" && $checkbox_digit_filter == "0")
 									{
 										$checkbox_alpha = "onkeypress='return alphanumeric(event)'";
 									}
-									else if($checkbox_alpha_filter == 1 && $checkbox_alpha_num == 1 && $checkbox_digit_filter == 1)
+									else if($checkbox_alpha_filter == "1" && $checkbox_alpha_num == "1" && $checkbox_digit_filter == "1")
 									{
 										$checkbox_alpha = "onkeypress='return alpha_num_digits(event)'";
 									}
-									else if($checkbox_alpha_filter == 0 && $checkbox_alpha_num == 1 && $checkbox_digit_filter == 1)
+									else if($checkbox_alpha_filter == "0" && $checkbox_alpha_num == "1" && $checkbox_digit_filter == "1")
 									{
 										$checkbox_alpha = "onkeypress='return alphanumeric(event)'";
 									}
-									else if($checkbox_alpha_filter == 0 && $checkbox_alpha_num == 0 && $checkbox_digit_filter == 1)
+									else if($checkbox_alpha_filter == "0" && $checkbox_alpha_num == "0" && $checkbox_digit_filter == "1")
 									{
 										$checkbox_alpha = "onkeypress='return OnlyNumbers(event)'";
 									}
-									else if($checkbox_alpha_filter == 1 && $checkbox_alpha_num == 0 && $checkbox_digit_filter == 1)
+									else if($checkbox_alpha_filter == "1" && $checkbox_alpha_num == "0" && $checkbox_digit_filter == "1")
 									{
 										$checkbox_alpha = "onkeypress='return alphanumeric(event)'";
 									}
@@ -255,7 +256,7 @@ $fields = $wpdb->get_results
 									<div class="layout-control-group"  id="div_<?php echo $dynamicId; ?>">
 										<label class="layout-control-label" style="<?php echo $cb_button_set_outer_label;?>" id="control_label_<?php echo $dynamicId; ?>" ><?php echo $label_value_textarea; ?> </label>
 										<?php
-											if($control_required_textarea == 1)
+											if($control_required_textarea == "1")
 											{
 											?>
 											<span id="txt_required_<?php echo $dynamicId; ?>" class="error" style="display:block;">*</span>
@@ -295,7 +296,7 @@ $fields = $wpdb->get_results
 									$index = array_search("cb_checkbox_strip_tag_filter", $keys);
 									$checkbox_strip_tag_filter_email = $fields_dynamic_controls[$index]->dynamic_settings_value;
 									$checkbox_strip_tag = "";
-									if($checkbox_strip_tag_filter_email == 1)
+									if($checkbox_strip_tag_filter_email == "1")
 									{
 										$checkbox_strip_tag = "onblur='return strip_tags(event,3,$dynamicId)'";
 									}
@@ -303,31 +304,31 @@ $fields = $wpdb->get_results
 									$checkbox_alpha_num_filter = $checkbox_alpha_num_filter_email;
 									$checkbox_digit_filter = $checkbox_digit_filter_email;
 									$filter_applied = "";
-									if($checkbox_alpha_filter == 1 && $checkbox_alpha_num_filter == 0 && $checkbox_digit_filter == 0)
+									if($checkbox_alpha_filter == "1" && $checkbox_alpha_num_filter == "0" && $checkbox_digit_filter == "0")
 									{
 										$filter_applied = "onkeypress='return alpha(event)'";
 									}
-									else if($checkbox_alpha_filter == 1 && $checkbox_alpha_num_filter == 1 && $checkbox_digit_filter == 0)
+									else if($checkbox_alpha_filter == "1" && $checkbox_alpha_num_filter == "1" && $checkbox_digit_filter == "0")
 									{
 										$filter_applied = "onkeypress='return alphanumeric(event)'";
 									}
-										else if($checkbox_alpha_filter == 0 && $checkbox_alpha_num_filter == 1 && $checkbox_digit_filter == 0)
+										else if($checkbox_alpha_filter == "0" && $checkbox_alpha_num_filter == "1" && $checkbox_digit_filter == "0")
 									{
 										$filter_applied = "onkeypress='return alphanumeric(event)'";
 									}
-									else if($checkbox_alpha_filter == 1 && $checkbox_alpha_num_filter == 1 && $checkbox_digit_filter == 1)
+									else if($checkbox_alpha_filter == "1" && $checkbox_alpha_num_filter == "1" && $checkbox_digit_filter == "1")
 									{
 										$filter_applied = "onkeypress='return alpha_num_digits(event)'";
 									}
-									else if($checkbox_alpha_filter == 0 && $checkbox_alpha_num_filter == 1 && $checkbox_digit_filter == 1)
+									else if($checkbox_alpha_filter == "0" && $checkbox_alpha_num_filter == "1" && $checkbox_digit_filter == "1")
 									{
 										$filter_applied = "onkeypress='return alphanumeric(event)'";
 									}
-									else if($checkbox_alpha_filter == 0 && $checkbox_alpha_num_filter == 0 && $checkbox_digit_filter == 1)
+									else if($checkbox_alpha_filter == "0" && $checkbox_alpha_num_filter == "0" && $checkbox_digit_filter == "1")
 									{
 										$filter_applied = "onkeypress='return OnlyNumbers(event)'";
 									}
-									else if($checkbox_alpha_filter == 1 && $checkbox_alpha_num_filter == 0 && $checkbox_digit_filter == 1)
+									else if($checkbox_alpha_filter == "1" && $checkbox_alpha_num_filter == "0" && $checkbox_digit_filter == "1")
 									{
 										$filter_applied = "onkeypress='return alphanumeric(event)'";
 									}
@@ -343,7 +344,7 @@ $fields = $wpdb->get_results
 									<div class="layout-control-group"  id="div_<?php echo $dynamicId; ?>">
 										<label class="layout-control-label" style="<?php echo $cb_button_set_outer_label;?>" id="control_label_<?php echo $dynamicId; ?>" ><?php echo $label_email;  ?> : </label>
 										<?php
-											if($control_required_email == 1)
+											if($control_required_email == "1")
 											{
 											?>
 												<span id="txt_required_<?php echo $dynamicId; ?>" class="error" style="display:block;">*</span>
@@ -381,7 +382,7 @@ $fields = $wpdb->get_results
 									<div class="layout-control-group"  id="div_<?php echo $dynamicId; ?>">
 										<label class="layout-control-label" style="<?php echo $cb_button_set_outer_label;?>" id="control_label_<?php echo $dynamicId; ?>" ><?php echo $label_ddl; ?> :</label>
 										<?php
-											if($control_required_ddl == 1)
+											if($control_required_ddl == "1")
 											{
 										?>
 												<span id="txt_required_<?php echo $dynamicId; ?>"  class="error" style="display:block;">*</span>
@@ -450,7 +451,7 @@ $fields = $wpdb->get_results
 									<div class="layout-control-group hovertip" style="<?php echo $cb_button_set_options_outer_wrapper;?>" id="div_<?php echo $dynamicId; ?>">
 										<label class="layout-control-label" style="<?php echo $cb_button_set_outer_label;?>" id="control_label_<?php echo $dynamicId; ?>" ><?php echo $label_chk; ?> : </label>
 										<?php
-											if($control_required_chk == 1)
+											if($control_required_chk == "1")
 											{
 										?>
 												<span id="txt_required_<?php echo $dynamicId; ?>"  class="error" style="display:block;">*</span>
@@ -519,7 +520,7 @@ $fields = $wpdb->get_results
 									<div class="layout-control-group hovertip" style="<?php echo $cb_button_set_options_outer_wrapper;?>" id="div_<?php echo $dynamicId; ?>">
 										<label class="layout-control-label" style="<?php echo $cb_button_set_outer_label;?>" id="control_label_<?php echo $dynamicId; ?>" ><?php echo $label_radio; ?> : </label>
 										<?php
-											if($control_required_radio == 1)
+											if($control_required_radio == "1")
 											{
 										?>
 												<span id="txt_required_<?php echo $dynamicId; ?>"  class="error" style="display:block;">*</span>
@@ -573,7 +574,7 @@ $fields = $wpdb->get_results
 									
 									$index = array_search("cb_allow_multiple_file", $keys);
 									$allow_multiple_file = $fields_dynamic_controls[$index]->dynamic_settings_value;
-									if($allow_multiple_file == 1)
+									if($allow_multiple_file == "1")
 									{
 										$allow_multiple_file = 1;
 									}
@@ -587,7 +588,7 @@ $fields = $wpdb->get_results
 									
 									$index = array_search("cb_maximum_file_allowed", $keys);
 									$maximum_file_allowed = $fields_dynamic_controls[$index]->dynamic_settings_value;
-									if($maximum_file_allowed == 0 || $maximum_file_allowed == "")
+									if($maximum_file_allowed == "0" || $maximum_file_allowed == "")
 									{
 										$maximum_file_allowed = 1;
 									}
@@ -606,7 +607,7 @@ $fields = $wpdb->get_results
 									<div class="layout-control-group "  id="div_<?php echo $dynamicId; ?>">
 										<label class="layout-control-label" style="<?php echo $cb_button_set_outer_label_file;?>" id="control_label_<?php echo $dynamicId; ?>" ><?php echo $label_file_upload ; ?> :</label>
 											<?php
-											if($control_required_file_upload == 1)
+											if($control_required_file_upload == "1")
 											{
 											?>
 											<span id="txt_required_<?php echo $dynamicId; ?>" class="error" style="display:block;">*</span>
@@ -685,7 +686,7 @@ $fields = $wpdb->get_results
 									<div class="layout-control-group" id="div_<?php echo $dynamicId; ?>">
 										<label class="layout-control-label" style="<?php echo $cb_button_set_outer_label;?>" id="control_label_<?php echo $dynamicId; ?>" ><?php echo $label_date ; ?> : </label>
 											<?php
-												if($control_required_date == 1)
+												if($control_required_date == "1")
 												{
 												?>
 												<span id="txt_required_<?php echo $dynamicId; ?>" class="error" style="display:block;">*</span>
@@ -839,7 +840,7 @@ $fields = $wpdb->get_results
 									<div class="layout-control-group"  id="div_<?php echo $dynamicId; ?>">
 										<label style="<?php echo $cb_button_set_outer_label; ?>" class="layout-control-label" id="control_label_<?php echo $dynamicId; ?>"><?php echo $label_time ; ?> : </label>
 											<?php
-												if($control_required_time == 1)
+												if($control_required_time == "1")
 												{
 											?>
 												<span id="txt_required_<?php echo $dynamicId; ?>" class="error" style="display:block;">*</span>
@@ -848,7 +849,7 @@ $fields = $wpdb->get_results
 											?>
 											<div class="layout-controls hovertip" id="show_tooltip<?php echo $dynamicId; ?>" data-original-title="<?php echo $tooltip_txt_time; ?>">
 												<?php
-												if($cb_hour_format_time == 12)
+												if($cb_hour_format_time == "12")
 												{
 													?>
 												<select style="<?php echo $cb_button_set_time_hour_dropdown; ?>" class="layout-span3" type="select_time" id="select_hr_<?php echo $dynamicId; ?>" name="select_hr_<?php echo $dynamicId; ?>">
@@ -874,7 +875,7 @@ $fields = $wpdb->get_results
 												<script>jQuery("#select_hr_<?php echo $dynamicId; ?>").val(<?php echo $hours_time; ?>)</script>
 												<?php
 												}
-												else if($cb_hour_format_time == 24)
+												else if($cb_hour_format_time == "24")
 												{
 													?>
 												<select style="<?php echo $cb_button_set_time_hour_dropdown; ?>" class="layout-span3" type="select_time" id="select_hr_<?php echo $dynamicId; ?>" name="select_hr_<?php echo $dynamicId; ?>">
@@ -947,13 +948,13 @@ $fields = $wpdb->get_results
 													<option value="1">PM</option>
 												</select>
 												<?php
-												if($cb_hour_format_time == 12)
+												if($cb_hour_format_time == "12")
 												{
 												?>
 												<script>jQuery("#select_am_<?php echo $dynamicId; ?>").val(<?php echo $am_pm_time; ?>)</script>
 												<?php
 												}
-												else if($cb_hour_format_time == 24)
+												else if($cb_hour_format_time == "24")
 												{
 												?>
 												<script>jQuery("#select_am_<?php echo $dynamicId; ?>").hide()</script>
@@ -1015,7 +1016,7 @@ $fields = $wpdb->get_results
 									
 									$checkbox_strip_tag_filter="";
 									
-									if($checkbox_strip_tag_filter_password == 1)
+									if($checkbox_strip_tag_filter_password == "1")
 									{
 										$checkbox_strip_tag_filter = "onblur='return strip_tags(event,15,$dynamicId)'";
 									}
@@ -1023,31 +1024,31 @@ $fields = $wpdb->get_results
 									$checkbox_alpha_num_filter = $checkbox_alpha_num_filter_password;
 									$checkbox_digit_filter = $checkbox_digit_filter_password;
 									$filtter_aplied = "";
-									if($checkbox_alpha_filter == 1 && $checkbox_alpha_num_filter == 0 && $checkbox_digit_filter == 0)
+									if($checkbox_alpha_filter == "1" && $checkbox_alpha_num_filter == "0" && $checkbox_digit_filter == "0")
 									{
 										$filtter_aplied = "onkeypress='return alpha(event)'";
 									}
-									else if($checkbox_alpha_filter == 1 && $checkbox_alpha_num_filter == 1 && $checkbox_digit_filter == 0)
+									else if($checkbox_alpha_filter == "1" && $checkbox_alpha_num_filter == "1" && $checkbox_digit_filter == "0")
 									{
 										$filtter_aplied = "onkeypress='return alphanumeric(event)'";
 									}
-									else if($checkbox_alpha_filter == 0 && $checkbox_alpha_num_filter == 1 && $checkbox_digit_filter == 0)
+									else if($checkbox_alpha_filter == "0" && $checkbox_alpha_num_filter == "1" && $checkbox_digit_filter == "0")
 									{
 										$filtter_aplied = "onkeypress='return alphanumeric(event)'";
 									}
-									else if($checkbox_alpha_filter == 1 && $checkbox_alpha_num_filter == 1 && $checkbox_digit_filter == 1)
+									else if($checkbox_alpha_filter == "1" && $checkbox_alpha_num_filter == "1" && $checkbox_digit_filter == "1")
 									{
 										$filtter_aplied = "onkeypress='return alpha_num_digits(event)'";
 									}
-									else if($checkbox_alpha_filter == 0 && $checkbox_alpha_num_filter == 1 && $checkbox_digit_filter == 1)
+									else if($checkbox_alpha_filter == "0" && $checkbox_alpha_num_filter == "1" && $checkbox_digit_filter == "1")
 									{
 										$filtter_aplied = "onkeypress='return alphanumeric(event)'";
 									}
-									else if($checkbox_alpha_filter == 0 && $checkbox_alpha_num_filter == 0 && $checkbox_digit_filter == 1)
+									else if($checkbox_alpha_filter == "0" && $checkbox_alpha_num_filter == "0" && $checkbox_digit_filter == "1")
 									{
 										$filtter_aplied = "onkeypress='return OnlyNumbers(event)'";
 									}
-									else if($checkbox_alpha_filter == 1 && $checkbox_alpha_num_filter == 0 && $checkbox_digit_filter == 1)
+									else if($checkbox_alpha_filter == "1" && $checkbox_alpha_num_filter == "0" && $checkbox_digit_filter == "1")
 									{
 										$filtter_aplied = "onkeypress='return alphanumeric(event)'";
 									}
@@ -1063,7 +1064,7 @@ $fields = $wpdb->get_results
 									<div class="layout-control-group" id="div_<?php echo $dynamicId; ?>">
 										<label class="layout-control-label" style="<?php echo $cb_button_set_outer_label;?>" id="control_label_<?php echo $dynamicId; ?>" ><?php echo $label_password ; ?> : </label>
 											<?php
-											if($control_required_password == 1)
+											if($control_required_password == "1")
 											{
 											?>
 												<span id="txt_required_<?php echo $dynamicId; ?>" class="error" style="display:block;">*</span>
@@ -1122,49 +1123,49 @@ jQuery("#ux_contact_form_submit").validate
 				switch($required_controls[$flag9]->field_id) 
 				{
 					case 1:
-						if($required_controls[$flag9]->dynamic_settings_value == 1)
+						if($required_controls[$flag9]->dynamic_settings_value == "1")
 						{
 							$dynamic .= "txt_".$dynamicId1. ':{ required :true }';
 						}
 						break;
 					case 2:
-						if($required_controls[$flag9]->dynamic_settings_value == 1)
+						if($required_controls[$flag9]->dynamic_settings_value == "1")
 						{
 							$dynamic .= "textarea_".$dynamicId1. ':{ required :true }';
 						}
 					break;
 					case 3:
-						if($required_controls[$flag9]->dynamic_settings_value == 1)
+						if($required_controls[$flag9]->dynamic_settings_value == "1")
 						{
 							$dynamic .= "email_".$dynamicId1. ':{ required :true,email :true }';
 						}
 					break;
 					case 4:
-						if($required_controls[$flag9]->dynamic_settings_value == 1)
+						if($required_controls[$flag9]->dynamic_settings_value == "1")
 						{
 							$dynamic .= "select_".$dynamicId1. ':{ required: true}';
 						}
 					break;
 					case 5:
-						if($required_controls[$flag9]->dynamic_settings_value == 1)
+						if($required_controls[$flag9]->dynamic_settings_value == "1")
 						{
 							$dynamic .= "'".$dynamicId1."_chk[]'". ':{ required :true }';
 						}
 					break;
 					case 6:
-						if($required_controls[$flag9]->dynamic_settings_value == 1)
+						if($required_controls[$flag9]->dynamic_settings_value == "1")
 						{
 							$dynamic .= "radio_".$dynamicId1. ':{ required :true }';
 						}
 					break;
 					case 9:
-						if($required_controls[$flag9]->dynamic_settings_value == 1)
+						if($required_controls[$flag9]->dynamic_settings_value == "1")
 						{
 							$dynamic .= "file_upload_".$dynamicId1. ':{ required :true }';
 						}
 					break;
 					case 12:
-						if($required_controls[$flag9]->dynamic_settings_value == 1)
+						if($required_controls[$flag9]->dynamic_settings_value == "1")
 						{
 							$dynamic .= "select_day_".$dynamicId1.':{ required : true},';
 							$dynamic .= "select_month_".$dynamicId1.':{ required : true},';
@@ -1172,26 +1173,26 @@ jQuery("#ux_contact_form_submit").validate
 						}
 					break;
 					case 13:
-						if($required_controls[$flag9]->dynamic_settings_value == 1)
+						if($required_controls[$flag9]->dynamic_settings_value == "1")
 						{
 							$dynamic .= "select_hr_".$dynamicId1.':{ required :true },';
 							$dynamic .= "select_min_".$dynamicId1.':{ required :true}';
 						}
 					break;
 					case 14:
-						if($required_controls[$flag9]->dynamic_settings_value == 1)
+						if($required_controls[$flag9]->dynamic_settings_value == "1")
 						{
 							$dynamic .= "hidden_".$dynamicId1. ':{ required :true }';
 						}
 					break;
 					case 15:
-						if($required_controls[$flag9]->dynamic_settings_value == 1)
+						if($required_controls[$flag9]->dynamic_settings_value == "1")
 						{
 							$dynamic .= "txt_password_".$dynamicId1. ':{ required :true }';
 						}
 					break;
 				}
-				if( count($required_controls)> 1 && $flag9 < count($required_controls) - 1 && $required_controls[$flag9]->dynamic_settings_value == 1 )
+				if( count($required_controls)> 1 && $flag9 < count($required_controls) - 1 && $required_controls[$flag9]->dynamic_settings_value == "1" )
 				{
 					$dynamic .= ",";
 				}
@@ -1262,7 +1263,7 @@ jQuery("#ux_contact_form_submit").validate
 			jQuery.post(ajaxurl, "form_id="+form_id+"&submit_id="+submit_id+"&param=email_management&action=email_management_contact_form_library", function(data) 
 			{
 				<?php
-				if($form_content->chk_url == 1)
+				if($form_content->chk_url == "1")
 				{
 					?>
 						setTimeout(function()

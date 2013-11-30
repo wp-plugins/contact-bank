@@ -49,8 +49,7 @@ else
 				$field_dynamic_id = esc_attr($_REQUEST["field_dynamic_id"]);
 				$field_exist_dynamic_id = $field_dynamic_id != "" ? explode(",",$field_dynamic_id) :  Array();
 				
-				$edit_created_control = esc_attr($_REQUEST["edit_created_control_type"]);
-				$exist_created_control_type =  (explode(",",$edit_created_control));
+			
 				
 				$edit_control_dynamic = esc_attr($_REQUEST["edit_control_dynamic_ids"]);
 				$exist_control_dynamic_ids =  (explode(",",$edit_control_dynamic));
