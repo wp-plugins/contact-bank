@@ -49,7 +49,7 @@ $fields = $wpdb->get_results
 								$wpdb->prepare
 								(
 									"SELECT * FROM " .contact_bank_dynamic_settings_form().  " JOIN " .create_control_Table()." ON " .create_control_Table().".column_dynamicId = " .contact_bank_dynamic_settings_form().  ".dynamicId  WHERE " .contact_bank_dynamic_settings_form().".dynamicId = %d AND " .create_control_Table().".form_id = %d ORDER BY dynamic_settings_id ASC",
-									$column_dynamicId,
+									$dynamicId,
 									$form_id
 								)
 							);
