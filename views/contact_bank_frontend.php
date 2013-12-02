@@ -143,13 +143,13 @@ $fields = $wpdb->get_results
 										$checkbox_alpha = "onkeypress='return alphanumeric(event)'";
 									}
 									
-									$index = array_search("cb_button_set_outer_label_textbox", $keys);
+									$index = array_search("cb_button_set_outer_label", $keys);
 									$cb_button_set_outer_label_textbox = $fields_dynamic_controls[$index]->dynamic_settings_value;
 									
-									$index = array_search("cb_button_set_txt_input_textbox", $keys);
+									$index = array_search("cb_button_set_txt_input", $keys);
 									$cb_button_set_txt_input_textbox = $fields_dynamic_controls[$index]->dynamic_settings_value;
 									
-									$index = array_search("cb_button_set_txt_description_textbox", $keys);
+									$index = array_search("cb_button_set_txt_description", $keys);
 									$cb_button_set_txt_description_textbox = $fields_dynamic_controls[$index]->dynamic_settings_value;	
 									?>
 									<div class="layout-control-group" id="div_<?php echo $dynamicId; ?>">
@@ -163,7 +163,7 @@ $fields = $wpdb->get_results
 										}
 										?>
 										<div class="layout-controls">
-											<input <?php echo $checkbox_trim_filter ; ?> <?php echo $checkbox_alpha ; ?> <?php echo $checkbox_strip_tag; ?>  class="hovertip layout-span8" placeholder="<?php _e("Enter Text", contact_bank); ?>" style="<?php echo $cb_button_set_txt_input_textbox;?>" type="text"  id="txt_<?php echo $dynamicId; ?>" name="txt_<?php echo $dynamicId; ?>" data-original-title="<?php echo $tooltip_txt_text; ?>" value="<?php echo $default_txt_val_text;?>"/>
+											<input <?php echo $checkbox_trim_filter ; ?> <?php echo $checkbox_alpha ; ?> <?php echo $checkbox_strip_tag; ?>  class="hovertip layout-span8" placeholder="<?php _e("Enter Text", contact_bank); ?>" style="<?php echo $cb_button_set_txt_input_textbox;?>" type="text"  id="ux_txt_textbox_control_<?php echo $dynamicId; ?>" name="ux_txt_textbox_control_<?php echo $dynamicId; ?>" data-original-title="<?php echo $tooltip_txt_text; ?>" value="<?php echo $default_txt_val_text;?>"/>
 											<br />
 											<span class="span-description" style="<?php echo $cb_button_set_txt_description_textbox;?>" id="txt_description_<?php echo $dynamicId; ?>"><?php echo $description_text; ?></span>
 										</div>
@@ -264,7 +264,7 @@ $fields = $wpdb->get_results
 											}
 										?>
 										<div class="layout-controls">
-											<textarea <?php echo $checkbox_trim_filter ; ?>  <?php echo $checkbox_alpha; ?> <?php echo $checkbox_strip_tag; ?> data-original-title="<?php echo $tooltip_txt_textarea; ?>" style="<?php echo $cb_button_set_textinput;?>" class="hovertip layout-span8" id="textarea_<?php echo $dynamicId; ?>" name="textarea_<?php echo $dynamicId; ?>" ><?php echo $default_value_textarea; ?></textarea>
+											<textarea <?php echo $checkbox_trim_filter ; ?>  <?php echo $checkbox_alpha; ?> <?php echo $checkbox_strip_tag; ?> data-original-title="<?php echo $tooltip_txt_textarea; ?>" style="<?php echo $cb_button_set_textinput;?>" class="hovertip layout-span8" id="ux_textarea_control_<?php echo $dynamicId; ?>" name="ux_textarea_control_<?php echo $dynamicId; ?>" ><?php echo $default_value_textarea; ?></textarea>
 											<br />
 											<span class="span-description" style="<?php echo $cb_button_set_outer_description;?>" id="txt_description_<?php echo $dynamicId; ?>"><?php echo $description_value_textarea; ?></span> 
 										</div>
@@ -352,7 +352,7 @@ $fields = $wpdb->get_results
 											}
 											?>
 										<div class="layout-controls">		
-											<input <?php echo $filter_applied; ?> <?php echo $checkbox_strip_tag; ?> data-original-title="<?php echo $tooltip_txt_email; ?>" style="<?php echo $cb_button_set_txt_input;?>" placeholder="<?php _e("Enter Email Address", contact_bank); ?>" class="hovertip layout-span8" type="text" id="email_<?php echo $dynamicId; ?>" name="email_<?php echo $dynamicId; ?>" />
+											<input <?php echo $filter_applied; ?> <?php echo $checkbox_strip_tag; ?> data-original-title="<?php echo $tooltip_txt_email; ?>" style="<?php echo $cb_button_set_txt_input;?>" placeholder="<?php _e("Enter Email Address", contact_bank); ?>" class="hovertip layout-span8" type="text" id="ux_txt_email_<?php echo $dynamicId; ?>" name="ux_txt_email_<?php echo $dynamicId; ?>" />
 											<br />
 											<span class="span-description" style="<?php echo $cb_button_set_txt_description;?>" id="txt_description_<?php echo $dynamicId; ?>"><?php echo $description_email; ?></span>
 										</div>
@@ -395,7 +395,7 @@ $fields = $wpdb->get_results
 												if($options_str_ddl != "")
 												{
 													?>
-													<select class="hovertip layout-span8" type="dropdown" style="<?php echo $cb_button_set_dropdown_menu;?>" id="select_<?php echo $dynamicId; ?>" data-original-title="<?php echo $tooltip_txt_ddl; ?>" name="select_<?php echo $dynamicId; ?>">
+													<select class="hovertip layout-span8" type="dropdown" style="<?php echo $cb_button_set_dropdown_menu;?>" id="ux_ddl_select_control<?php echo $dynamicId; ?>" data-original-title="<?php echo $tooltip_txt_ddl; ?>" name="ux_ddl_select_control<?php echo $dynamicId; ?>">
 													<option value=""><?php _e("Select option",contact_bank);?></option>
 													<?php
 													$options_ddl = explode(";",$options_str_ddl);
@@ -470,7 +470,7 @@ $fields = $wpdb->get_results
 														for($flag6 = 0;$flag6<count($options_dynamicId_chk);$flag6++)
 														{
 															?>
-															<input type="checkbox" id="chk_<?php echo $options_dynamicId_chk[$flag6]; ?>" name="<?php echo $dynamicId; ?>_chk[]" title="This field Is Required" value ="<?php echo $options_chk[$flag6]; ?>" />
+															<input type="checkbox" id="ux_chk_checkbox_control_<?php echo $options_dynamicId_chk[$flag6]; ?>" name="<?php echo $dynamicId; ?>_chk[]" title="This field Is Required" value ="<?php echo $options_chk[$flag6]; ?>" />
 															<label style="margin:0px;vertical-align: middle;<?php echo $cb_button_set_options_label;?>" id="chk_id_<?php echo $options_dynamicId_chk[$flag6]; ?>"><?php echo $options_chk[$flag6]; ?></label>
 															<?php
 														}
@@ -481,7 +481,7 @@ $fields = $wpdb->get_results
 												else
 												{
 													?>
-													<input type="checkbox" id="chk_<?php echo $dynamicId; ?>" name="chk[]" />
+													<input type="checkbox" id="ux_chk_checkbox_control_<?php echo $dynamicId; ?>" name="chk[]" />
 													<?php
 												}
 											?>
@@ -531,18 +531,18 @@ $fields = $wpdb->get_results
 											<?php
 												if($options_dynamicId_str_radio != "")
 												{
-												?>
+													?>
 													<span  id="add_radio_options_here_<?php echo $dynamicId; ?>" >
 													<?php
-														$options_dynamicId_radio = explode(";",$options_dynamicId_str_radio);
-														$options_radio = explode(";",$options_str_radio);
-														for($flag7 = 0;$flag7<count($options_dynamicId_radio);$flag7++)
-														{
-															?>
-															<input type="radio" id="radio_<?php echo $options_dynamicId_radio[$flag7]; ?>" title="This field is Required" name="radio_<?php echo $dynamicId; ?>" value="<?php echo $options_radio[$flag7]; ?>" />
-															<label  style="margin:0px;vertical-align: middle;<?php echo $cb_button_set_options_label;?>" id="radio_id_<?php echo $options_dynamicId_radio[$flag7]; ?>"><?php echo $options_radio[$flag7]; ?></label>
-															<?php
-														}
+													$options_dynamicId_radio = explode(";",$options_dynamicId_str_radio);
+													$options_radio = explode(";",$options_str_radio);
+													for($flag7 = 0;$flag7<count($options_dynamicId_radio);$flag7++)
+													{
+														?>
+														<input type="radio" id="ux_radio_button_control_<?php echo $options_dynamicId_radio[$flag7]; ?>" title="<?php _e("This field is Required",contact_bank);?>" name="ux_radio_button_control_<?php echo $dynamicId; ?>" value="<?php echo $options_radio[$flag7]; ?>" />
+														<label  style="margin:0px;vertical-align: middle;<?php echo $cb_button_set_options_label;?>" id="radio_id_<?php echo $options_dynamicId_radio[$flag7]; ?>"><?php echo $options_radio[$flag7]; ?></label>
+														<?php
+													}
 													?>
 													</span>
 													<?php
@@ -550,7 +550,7 @@ $fields = $wpdb->get_results
 												else
 												{
 													?>
-													<input type="radio" id="radio_<?php echo $dynamicId; ?>" name="radio" />
+													<input type="radio" id="ux_radio_button_control_<?php echo $dynamicId; ?>" name="ux_radio_button_control_<?php echo $dynamicId; ?>" />
 													<?php
 												}
 											?>
@@ -694,7 +694,7 @@ $fields = $wpdb->get_results
 												}
 											?>
 											<div class="layout-controls hovertip" id="show_tooltip<?php echo $dynamicId; ?>" data-original-title="<?php echo $tooltip_txt_date; ?>">
-												<select class="layout-span3" type="select" id="select_day_<?php echo $dynamicId; ?>" name="select_day_<?php echo $dynamicId; ?>" style="<?php echo $cb_date_day_dropdown;?>">
+												<select class="layout-span3" type="select" id="ux_ddl_select_day_<?php echo $dynamicId; ?>" name="ux_ddl_select_day_<?php echo $dynamicId; ?>" style="<?php echo $cb_date_day_dropdown;?>">
 													<option selected="selected" value=""><?php _e("Day",contact_bank);?></option>
 													<?php
 													for($flag1=1; $flag1 <= 31; $flag1++)
@@ -716,13 +716,13 @@ $fields = $wpdb->get_results
 												</select>
 												<input type="hidden" id="ux_date_error_msg_<?php echo $dynamicId; ?>" name="ux_date_error_msg_<?php echo $dynamicId; ?>" value="<?php echo $cb_error_invalid;?>" />
 												<script>
-												jQuery("#select_day_<?php echo $dynamicId; ?>").val(<?php echo $default_value_day_date; ?>);
+												jQuery("#ux_ddl_select_day_<?php echo $dynamicId; ?>").val(<?php echo $default_value_day_date; ?>);
 												if(<?php echo $default_value_day_date; ?> == "0")
 												{
-													jQuery("#select_day_<?php echo $dynamicId; ?>").val("");
+													jQuery("#ux_ddl_select_day_<?php echo $dynamicId; ?>").val("");
 												}
 												</script>
-												<select class="layout-span3" type="select" id="select_month_<?php echo $dynamicId; ?>" name="select_month_<?php echo $dynamicId; ?>" style="<?php echo $cb_date_month_dropdown;?>">
+												<select class="layout-span3" type="select" id="ux_ddl_select_month_<?php echo $dynamicId; ?>" name="ux_ddl_select_month_<?php echo $dynamicId; ?>" style="<?php echo $cb_date_month_dropdown;?>">
 													<option selected="selected" value=""><?php _e("Month",contact_bank);?></option>
 													<option value="1">January</option>
 													<option value="2">February</option>
@@ -738,13 +738,13 @@ $fields = $wpdb->get_results
 													<option value="12">December</option>
 												</select>
 												<script>
-												jQuery("#select_month_<?php echo $dynamicId; ?>").val(<?php echo $default_value_month; ?>)
+												jQuery("#ux_ddl_select_month_<?php echo $dynamicId; ?>").val(<?php echo $default_value_month; ?>)
 												if(<?php echo $default_value_month; ?> == "0")
 												{
-													jQuery("#select_month_<?php echo $dynamicId; ?>").val("");
+													jQuery("#ux_ddl_select_month_<?php echo $dynamicId; ?>").val("");
 												}
 												</script>
-												<select class="layout-span3" type="select" id="select_year_<?php echo $dynamicId; ?>" name="select_year_<?php echo $dynamicId; ?>" style="<?php echo $cb_date_year_dropdown;?>">
+												<select class="layout-span3" type="select" id="ux_ddl_select_year_<?php echo $dynamicId; ?>" name="ux_ddl_select_year_<?php echo $dynamicId; ?>" style="<?php echo $cb_date_year_dropdown;?>">
 														<option selected="selected" value="" ><?php _e("Year",contact_bank);?></option>
 														<?php
 														if($start_year_date != 0 && $end_year_date != 0)
@@ -783,7 +783,7 @@ $fields = $wpdb->get_results
 												<script>
 													if(<?php echo $default_value_year_date; ?> == "0")
 													{
-														jQuery("#select_year_<?php echo $dynamicId; ?>").val("");
+														jQuery("#ux_ddl_select_year_<?php echo $dynamicId; ?>").val("");
 													}
 												</script>
 												<span style="color: #CC0000;font-size: 12px;" id="error_message_date_<?php echo $dynamicId; ?>"></span>
@@ -912,13 +912,13 @@ $fields = $wpdb->get_results
 														if($flag15 < 10)
 														{
 														?>
-														<option value="<?php echo $flag15; ?>">0<?php echo $flag15; ?></option>
+															<option value="<?php echo $flag15; ?>">0<?php echo $flag15; ?></option>
 														<?php
 														}
 														else
 														{
 														?>		
-														<option value="<?php echo $flag15; ?>"><?php echo $flag15; ?></option>
+															<option value="<?php echo $flag15; ?>"><?php echo $flag15; ?></option>
 														<?php	
 														}
 													}
@@ -928,7 +928,7 @@ $fields = $wpdb->get_results
 												<?php
 												}
 												?>
-												<select style="<?php echo $cb_button_set_time_minute_dropdown; ?>" class="layout-span3" type="select_time" id="select_min_<?php echo $dynamicId; ?>" name="select_min_<?php echo $dynamicId; ?>">
+												<select style="<?php echo $cb_button_set_time_minute_dropdown; ?>" class="layout-span3" type="select_time" id="ux_ddl_select_minute_<?php echo $dynamicId; ?>" name="select_min_<?php echo $dynamicId; ?>">
 													<option value=""><?php _e("Minute",contact_bank);?></option>
 													<?php
 													for($flag4=0; $flag4 < 60;)
@@ -942,8 +942,8 @@ $fields = $wpdb->get_results
 													?>
 													
 													</select>
-												<script>jQuery("#select_min_<?php echo $dynamicId; ?>").val(<?php echo $minutes_time; ?>)</script>
-												<select style="<?php echo $cb_button_set_time_am_pm_dropdown; ?>" class="layout-span3" id="select_am_<?php echo $dynamicId; ?>" name="select_am_<?php echo $dynamicId; ?>">
+												<script>jQuery("#ux_ddl_select_minute_<?php echo $dynamicId; ?>").val(<?php echo $minutes_time; ?>)</script>
+												<select style="<?php echo $cb_button_set_time_am_pm_dropdown; ?>" class="layout-span3" id="ux_ddl_select_ampm_<?php echo $dynamicId; ?>" name="ux_ddl_select_ampm_<?php echo $dynamicId; ?>">
 													<option value="0">AM</option>
 													<option value="1">PM</option>
 												</select>
@@ -951,19 +951,19 @@ $fields = $wpdb->get_results
 												if($cb_hour_format_time == "12")
 												{
 												?>
-												<script>jQuery("#select_am_<?php echo $dynamicId; ?>").val(<?php echo $am_pm_time; ?>)</script>
+												<script>jQuery("#ux_ddl_select_ampm_<?php echo $dynamicId; ?>").val(<?php echo $am_pm_time; ?>)</script>
 												<?php
 												}
 												else if($cb_hour_format_time == "24")
 												{
 												?>
-												<script>jQuery("#select_am_<?php echo $dynamicId; ?>").hide()</script>
+												<script>jQuery("#ux_ddl_select_ampm_<?php echo $dynamicId; ?>").hide()</script>
 												<?php
 												}
 												else
 												{
 												?>
-												<script>jQuery("#select_am_<?php echo $dynamicId; ?>").show();</script>
+												<script>jQuery("#ux_ddl_select_ampm_<?php echo $dynamicId; ?>").show();</script>
 												<?php
 												}	
 												?>
@@ -984,7 +984,7 @@ $fields = $wpdb->get_results
 										<label class="layout-control-label" id="control_label_<?php echo $dynamicId; ?>" ><?php echo $label_hidden ; ?> : </label>
 										<span id="txt_required_<?php echo $dynamicId; ?>"  class="error">*</span>
 											<div class="layout-controls">	
-												<input class="hovertip layout-span8" placeholder="<?php _e("Enter Hidden Text", contact_bank); ?>" data-original-title="<?php _e( "Hidden", contact_bank ); ?>" type="text" id="txt_hide_<?php echo $dynamicId; ?>" name="txt_hide_<?php echo $dynamicId; ?>" value="<?php echo $default_value_hidden;?>" />
+												<input class="hovertip layout-span8" placeholder="<?php _e("Enter Hidden Text", contact_bank); ?>" data-original-title="<?php _e( "Hidden", contact_bank ); ?>" type="text" id="ux_txt_hidden_control_<?php echo $dynamicId; ?>" name="ux_txt_hidden_control_<?php echo $dynamicId; ?>" value="<?php echo $default_value_hidden;?>" />
 											</div>
 									</div>
 									<?php
@@ -1072,7 +1072,7 @@ $fields = $wpdb->get_results
 											}
 											?>
 										<div class="layout-controls hovertip" id="show_tooltip<?php echo $dynamicId; ?>" data-original-title="<?php echo $tooltip_txt_password; ?>">
-											<input <?php echo $filtter_aplied; ?> <?php echo $checkbox_strip_tag_filter; ?> style="<?php echo $cb_button_set_txt_input;?>" class="hovertip layout-span8" placeholder="<?php _e("Enter Password", contact_bank); ?>" type="password" id="txt_password_<?php echo $dynamicId; ?>" name="txt_password_<?php echo $dynamicId; ?>" />
+											<input <?php echo $filtter_aplied; ?> <?php echo $checkbox_strip_tag_filter; ?> style="<?php echo $cb_button_set_txt_input;?>" class="hovertip layout-span8" placeholder="<?php _e("Enter Password", contact_bank); ?>" type="password" id="ux_txt_password_control_<?php echo $dynamicId; ?>" name="ux_txt_password_control_<?php echo $dynamicId; ?>" />
 											<br />
 											<span class="span-description" style="<?php echo $cb_button_set_txt_description;?>" id="txt_description_<?php echo $dynamicId; ?>"><?php echo $description_password; ?></span>
 										</div>
@@ -1125,25 +1125,25 @@ jQuery("#ux_contact_form_submit").validate
 					case 1:
 						if($required_controls[$flag9]->dynamic_settings_value == "1")
 						{
-							$dynamic .= "txt_".$dynamicId1. ':{ required :true }';
+							$dynamic .= "ux_txt_textbox_control_".$dynamicId1. ':{ required :true }';
 						}
 						break;
 					case 2:
 						if($required_controls[$flag9]->dynamic_settings_value == "1")
 						{
-							$dynamic .= "textarea_".$dynamicId1. ':{ required :true }';
+							$dynamic .= "ux_textarea_control_".$dynamicId1. ':{ required :true }';
 						}
 					break;
 					case 3:
 						if($required_controls[$flag9]->dynamic_settings_value == "1")
 						{
-							$dynamic .= "email_".$dynamicId1. ':{ required :true,email :true }';
+							$dynamic .= "ux_txt_email_".$dynamicId1. ':{ required :true,email :true }';
 						}
 					break;
 					case 4:
 						if($required_controls[$flag9]->dynamic_settings_value == "1")
 						{
-							$dynamic .= "select_".$dynamicId1. ':{ required: true}';
+							$dynamic .= "ux_ddl_select_control".$dynamicId1. ':{ required: true}';
 						}
 					break;
 					case 5:
@@ -1155,7 +1155,7 @@ jQuery("#ux_contact_form_submit").validate
 					case 6:
 						if($required_controls[$flag9]->dynamic_settings_value == "1")
 						{
-							$dynamic .= "radio_".$dynamicId1. ':{ required :true }';
+							$dynamic .= "ux_radio_button_control_".$dynamicId1. ':{ required :true }';
 						}
 					break;
 					case 9:
@@ -1167,28 +1167,28 @@ jQuery("#ux_contact_form_submit").validate
 					case 12:
 						if($required_controls[$flag9]->dynamic_settings_value == "1")
 						{
-							$dynamic .= "select_day_".$dynamicId1.':{ required : true},';
-							$dynamic .= "select_month_".$dynamicId1.':{ required : true},';
-							$dynamic .= "select_year_".$dynamicId1.':{ required :true}';
+							$dynamic .= "ux_ddl_select_day_".$dynamicId1.':{ required : true},';
+							$dynamic .= "ux_ddl_select_month_".$dynamicId1.':{ required : true},';
+							$dynamic .= "ux_ddl_select_year_".$dynamicId1.':{ required :true}';
 						}
 					break;
 					case 13:
 						if($required_controls[$flag9]->dynamic_settings_value == "1")
 						{
 							$dynamic .= "select_hr_".$dynamicId1.':{ required :true },';
-							$dynamic .= "select_min_".$dynamicId1.':{ required :true}';
+							$dynamic .= "ux_ddl_select_minute_".$dynamicId1.':{ required :true}';
 						}
 					break;
 					case 14:
 						if($required_controls[$flag9]->dynamic_settings_value == "1")
 						{
-							$dynamic .= "hidden_".$dynamicId1. ':{ required :true }';
+							$dynamic .= "ux_txt_hidden_control_".$dynamicId1. ':{ required :true }';
 						}
 					break;
 					case 15:
 						if($required_controls[$flag9]->dynamic_settings_value == "1")
 						{
-							$dynamic .= "txt_password_".$dynamicId1. ':{ required :true }';
+							$dynamic .= "ux_txt_password_control_".$dynamicId1. ':{ required :true }';
 						}
 					break;
 				}
@@ -1258,7 +1258,7 @@ jQuery("#ux_contact_form_submit").validate
 		var form_id = <?php echo $form_id ;?>;
 		jQuery.post(ajaxurl, jQuery(form).serialize() +"&form_id="+form_id+"&file_uploaded_path="+file_uploaded_path+"&param=frontend_submit_controls&action=frontend_contact_form_library", function(data) 
 		{
-			
+			alert(data);
 			var submit_id = data;
 			jQuery.post(ajaxurl, "form_id="+form_id+"&submit_id="+submit_id+"&param=email_management&action=email_management_contact_form_library", function(data) 
 			{
@@ -1336,24 +1336,24 @@ function strip_tags(e,field_id,dynamicId)
 	switch(field_id)
 	{
 		case 1 :
-			var txtbox_id =	jQuery("#txt_"+dynamicId).val();
+			var txtbox_id =	jQuery("#ux_txt_textbox_control_"+dynamicId).val();
 			var  text_strip =  txtbox_id.replace(/<\/?[^>]+>/gi, '');
-			jQuery("#txt_"+dynamicId).val(text_strip);
+			jQuery("#ux_txt_textbox_control_"+dynamicId).val(text_strip);
 		break;
 		case 2 :
-			var txtbox_id =	jQuery("#textarea_"+dynamicId).val();
+			var txtbox_id =	jQuery("#ux_textarea_control_"+dynamicId).val();
 			var  text_strip =  txtbox_id.replace(/<\/?[^>]+>/gi, '');
-			jQuery("#textarea_"+dynamicId).val(text_strip);
+			jQuery("#ux_textarea_control_"+dynamicId).val(text_strip);
 		break;
 		case 3 :
-			var txtbox_id =	jQuery("#email_"+dynamicId).val();
+			var txtbox_id =	jQuery("#ux_txt_email_"+dynamicId).val();
 			var  text_strip =  txtbox_id.replace(/<\/?[^>]+>/gi, '');
-			jQuery("#email_"+dynamicId).val(text_strip);
+			jQuery("#ux_txt_email_"+dynamicId).val(text_strip);
 		break;
 		case 15 :
-			var txtbox_id =	jQuery("#txt_password_"+dynamicId).val();
+			var txtbox_id =	jQuery("#ux_txt_password_control_"+dynamicId).val();
 			var  text_strip =  txtbox_id.replace(/<\/?[^>]+>/gi, '');
-			jQuery("#txt_password_"+dynamicId).val(text_strip);
+			jQuery("#ux_txt_password_control_"+dynamicId).val(text_strip);
 		break;
 	}
 }
@@ -1362,14 +1362,14 @@ function trim(dynamicId,field_id)
 	switch(field_id)
 	{
 		case 1:
-		var textbox_value =jQuery("#txt_"+dynamicId).val();
+		var textbox_value =jQuery("#ux_txt_textbox_control_"+dynamicId).val();
 		textbox_value = textbox_value.replace(/ +(?= )/g,'');
-		jQuery("#txt_"+dynamicId).val(textbox_value);
+		jQuery("#ux_txt_textbox_control_"+dynamicId).val(textbox_value);
 		break;
 		case 2:
-		var textarea_value =jQuery("#textarea_"+dynamicId).val();
+		var textarea_value =jQuery("#ux_textarea_control_"+dynamicId).val();
 		textarea_value = textarea_value.replace(/ +(?= )/g,'');
-		jQuery("#textarea_"+dynamicId).val(textarea_value);
+		jQuery("#ux_textarea_control_"+dynamicId).val(textarea_value);
 		break;
 	}
 }

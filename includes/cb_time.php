@@ -259,7 +259,7 @@
 		var dynamicId = <?php echo $dynamicId; ?>;
 		jQuery("#ux_label_text_"+dynamicId).val(array_controls[dynamicCount][2].cb_label_value);
 		jQuery("#ux_description_control_"+dynamicId).val(array_controls[dynamicCount][3].cb_description);
-		if(array_controls[dynamicCount][4].cb_control_required == 1)
+		if(array_controls[dynamicCount][4].cb_control_required == "1")
 		{
 			jQuery("#ux_required_control_"+dynamicId).attr("checked","checked");
 		}
@@ -269,11 +269,11 @@
 		}
 		jQuery("#ux_tooltip_control_"+dynamicId).val(array_controls[dynamicCount][5].cb_tooltip_txt);
 		jQuery("#ux_admin_label_"+dynamicId).val(array_controls[dynamicCount][6].cb_admin_label);
-		if(array_controls[dynamicCount][7].cb_show_email == true)
+		if(array_controls[dynamicCount][7].cb_show_email == "1")
 		{
 			jQuery("#ux_email_"+dynamicId).attr("checked","checked");
 		}
-		if(array_controls[dynamicCount][8].cb_hour_format == 12)
+		if(array_controls[dynamicCount][8].cb_hour_format == "12")
 		{
 			jQuery("#ux_default_hours_24_"+dynamicId).hide();
 			jQuery("#ux_default_hours_12_"+dynamicId).show();
@@ -284,7 +284,7 @@
 			jQuery("#ux_minute_format_"+dynamicId).val(array_controls[dynamicCount][12].cb_time_format);
 			jQuery("#ux_default_am_"+dynamicId).show();
 		}
-		else if(array_controls[dynamicCount][8].cb_hour_format == 24)
+		else if(array_controls[dynamicCount][8].cb_hour_format == "24")
 		{
 			jQuery("#ux_default_hours_12_"+dynamicId).hide();
 			jQuery("#ux_default_hours_24_"+dynamicId).show();
@@ -364,7 +364,7 @@
 			}
 			flag = flag + minute_format;
 		}
-		jQuery("#select_min_"+dynamicId).html(dropdown_min);
+		jQuery("#ux_ddl_select_minute_"+dynamicId).html(dropdown_min);
 		jQuery("#ux_default_minute_"+dynamicId).html(dropdown_min);
 	}
 	function select_hours(dynamicId)
@@ -375,12 +375,12 @@
 	function select_minutes(dynamicId)
 	{
 		var ux_default_min = jQuery("#ux_default_minute_"+dynamicId).val();
-		jQuery("#select_min_"+dynamicId).val(ux_default_min);
+		jQuery("#ux_ddl_select_minute_"+dynamicId).val(ux_default_min);
 	}
 	function select_format(dynamicId)
 	{
 		var ux_default_format = jQuery("#ux_default_am_"+dynamicId).val();
-		jQuery("#select_am_"+dynamicId).val(ux_default_format);
+		jQuery("#ux_ddl_select_ampm_"+dynamicId).val(ux_default_format);
 	}
 	
 	function save_time_control(dynamicId)
@@ -401,11 +401,19 @@
 			array_controls[dynamicCount].push({"cb_hours" : jQuery("#ux_default_hours_12_"+dynamicId).val()});
 			jQuery("#ux_default_hours_24_"+dynamicId).hide();
 			jQuery("#ux_default_hours_12_"+dynamicId).show();
+			jQuery("#ux_ddl_select_hr_24_"+dynamicId).hide();
+			jQuery("#ux_ddl_select_hr_12_"+dynamicId).show();
+			jQuery("#ux_ddl_select_hr_12_"+dynamicId).val(jQuery("#ux_default_hours_12_"+dynamicId).val());
+			jQuery("#ux_ddl_select_ampm_"+dynamicId).show();
 		}
 		else if(jQuery("#ux_drop_hour_time_"+dynamicId).val() == 24)
 		{
 			jQuery("#ux_default_hours_12_"+dynamicId).hide();
 			jQuery("#ux_default_hours_24_"+dynamicId).show();
+			jQuery("#ux_ddl_select_hr_12_"+dynamicId).hide();
+			jQuery("#ux_ddl_select_hr_24_"+dynamicId).show();
+			jQuery("#ux_ddl_select_hr_24_"+dynamicId).val(jQuery("#ux_default_hours_24_"+dynamicId).val());
+			jQuery("#ux_ddl_select_ampm_"+dynamicId).hide();
 			array_controls[dynamicCount].push({"cb_hours" : jQuery("#ux_default_hours_24_"+dynamicId).val()});
 		}
 		array_controls[dynamicCount].push({"cb_minutes" : jQuery("#ux_default_minute_"+dynamicId).val()});
@@ -421,22 +429,9 @@
 		jQuery("#txt_description_"+dynamicId).html(jQuery("#ux_description_control_"+dynamicId).val());
 		jQuery("#tooltip_txt_hidden_value_"+dynamicId).val(jQuery("#ux_tooltip_control_"+dynamicId).val());
 		jQuery("#show_tooltip"+dynamicId).attr("data-original-title",jQuery("#ux_tooltip_control_"+dynamicId).val());
-		if(jQuery("#ux_drop_hour_time_"+dynamicId).val() == 12)
-		{
-			jQuery("#select_hr_24_"+dynamicId).hide();
-			jQuery("#select_hr_12_"+dynamicId).show();
-			jQuery("#select_hr_12_"+dynamicId).val(jQuery("#ux_default_hours_12_"+dynamicId).val());
-			jQuery("#select_am_"+dynamicId).show();
-		}
-		else if(jQuery("#ux_drop_hour_time_"+dynamicId).val() == 24)
-		{
-			jQuery("#select_hr_12_"+dynamicId).hide();
-			jQuery("#select_hr_24_"+dynamicId).show();
-			jQuery("#select_hr_24_"+dynamicId).val(jQuery("#ux_default_hours_24_"+dynamicId).val());
-			jQuery("#select_am_"+dynamicId).hide();
-		}
-		jQuery("#select_min_"+dynamicId).val(jQuery("#ux_default_minute_"+dynamicId).val());
-		jQuery("#select_am_"+dynamicId).val(jQuery("#ux_default_am_"+dynamicId).val());
+		
+		jQuery("#ux_ddl_select_minute_"+dynamicId).val(jQuery("#ux_default_minute_"+dynamicId).val());
+		jQuery("#ux_ddl_select_ampm_"+dynamicId).val(jQuery("#ux_default_am_"+dynamicId).val());
 		if(jQuery("#ux_required_control_"+dynamicId).prop("checked") == true)
 		{
 			jQuery("#txt_required_"+dynamicId).css("display","block");

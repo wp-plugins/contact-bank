@@ -108,9 +108,9 @@
 	</div>
 </div>
 <script type="text/javascript">
-	var dynamicCount = "<?php echo $dynamicCount;?>";
-	array_option_id_dropdown[dynamicCount] = [];
-	array_options_dropdown[dynamicCount] = [];
+	
+	array_option_id_dropdown["<?php echo $dynamicCount;?>"] = [];
+	array_options_dropdown["<?php echo $dynamicCount;?>"] = [];
 	jQuery(".hovertip").tooltip();
 	function tabsFunc(control)
 	{
@@ -181,7 +181,7 @@
 	function set_default_value(dynamicId)
 	{
 		var default_value = jQuery("#ux_default_value_"+dynamicId).val();
-		jQuery("#select_"+dynamicId).val(default_value);
+		jQuery("#ux_ddl_select_control"+dynamicId).val(default_value);
 	}
 	var count = <?php echo $count; ?>;
 	if(count != 0)
@@ -246,7 +246,7 @@
 		}
 		else 
 		{
-			var optionsId = Math.floor((Math.random()*1000)+1);
+			var optionsId = Math.floor((Math.random()*10000)+1);
 			
 			jQuery("#dropdown_ddl_option_"+dynamicId).append('<div class="layout-control-group" id="input_option_tr_'+optionsId+'"><div class="layout-controls"><input type="text" class="layout-span8"  id="input_option_'+optionsId+'" name="input_option_'+optionsId+'" value="'+ddl_options+'"/><a style="padding-left:2px;" onclick="delete_ddl_option('+optionsId+','+dynamicId+')" ><img style="vertical-align: top;margin-top: 2px;" src="<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" /></a></div></div>');
 			jQuery("#ddl_options_"+dynamicId).val("");
@@ -284,8 +284,8 @@
 		jQuery("#ux_required_control_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_control_required": "1"}) : array_controls[dynamicCount].push({"cb_control_required": "0"});
 		array_controls[dynamicCount].push({"cb_tooltip_txt" : jQuery("#ux_tooltip_control_"+dynamicId).val()});
 		var dropdown_optionId_str = "";
-		jQuery("#select_"+dynamicId).append().empty();
-		jQuery("#select_"+dynamicId).append('<option value="0"><?php _e("Select option",contact_bank);?></option>');
+		jQuery("#ux_ddl_select_control"+dynamicId).append().empty();
+		jQuery("#ux_ddl_select_control"+dynamicId).append('<option value="0"><?php _e("Select option",contact_bank);?></option>');
 		for(var flag=0;flag<array_option_id_dropdown[dynamicCount].length;flag++)
 		{
 			dropdown_optionId_str = dropdown_optionId_str+array_option_id_dropdown[dynamicCount][flag];
@@ -295,7 +295,7 @@
 			}
 			optionsId = array_option_id_dropdown[dynamicCount][flag];
 			ddl_options = array_options_dropdown[dynamicCount][flag];
-			jQuery("#select_"+dynamicId).append('<option id="option_tr_'+optionsId+'" value='+ddl_options+'>'+ddl_options+'</option>');
+			jQuery("#ux_ddl_select_control"+dynamicId).append('<option id="option_tr_'+optionsId+'" value='+ddl_options+'>'+ddl_options+'</option>');
 		}
 		var dropdown_option_str = "";
 		for(var flag=0;flag<array_option_id_dropdown[dynamicCount].length;flag++)

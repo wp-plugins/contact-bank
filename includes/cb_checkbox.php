@@ -124,9 +124,8 @@
 	</div>
 </div>
 <script type="text/javascript">
-	var dynamicCount = "<?php echo $dynamicCount;?>";
-	array_option_id_chk[dynamicCount] = [];
-	array_options_chk[dynamicCount] = [];
+	array_option_id_chk["<?php echo $dynamicCount;?>"] = [];
+	array_options_chk["<?php echo $dynamicCount;?>"] = [];
 	jQuery(".hovertip").tooltip();
 	function tabsFunc(control)
 	{
@@ -179,7 +178,7 @@
 			}
 		}
 		jQuery("#ux_label_text_"+dynamicId).val(array_controls[dynamicCount][2].cb_label_value);
-		if(array_controls[dynamicCount][3].cb_control_required == 1)
+		if(array_controls[dynamicCount][3].cb_control_required == "1")
 		{
 			jQuery("#ux_required_control_"+dynamicId).attr("checked","checked");
 		}
@@ -189,7 +188,7 @@
 		}
 		jQuery("#ux_tooltip_control_"+dynamicId).val(array_controls[dynamicCount][4].cb_tooltip_txt);
 		jQuery("#ux_admin_label_"+dynamicId).val(array_controls[dynamicCount][7].cb_admin_label);
-		if(array_controls[dynamicCount][8].cb_show_email == true)
+		if(array_controls[dynamicCount][8].cb_show_email == "1")
 		{
 			jQuery("#ux_show_email_"+dynamicId).attr("checked","checked");
 		}
@@ -233,7 +232,7 @@
 		}
 		else
 		{
-			var options_dynamicId = Math.floor((Math.random() * 1000)+1);
+			var options_dynamicId = Math.floor((Math.random() * 10000)+1);
 			array_options_chk[dynamicCount].push(add_chk_options);
 			array_option_id_chk[dynamicCount].push(options_dynamicId);
 			jQuery("#append_chk_option_"+dynamicId).append('<div class="layout-control-group" id="selected_item_'+options_dynamicId+'"><div class="layout-controls"><input type= "text" class="layout-span8" value="'+add_chk_options+'" id="input_type_'+options_dynamicId+'"><a style="padding-left:2px;" onclick="delete_chk('+options_dynamicId+','+dynamicId+')"><img style="vertical-align: top;margin-top: 2px;" src="<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" /></a></div></div>');
@@ -256,31 +255,26 @@
 	{
 		jQuery("#show_data_label_tr_chk_"+dynamicId).attr("style","display:block");
 		jQuery("#show_data_label_tr_chk_"+dynamicId).attr("style", "position:inherit");
-		
 	}
 	function button_set_description_chk(dynamicId)
 	{
 		jQuery("#show_data_description_tr_chk_"+dynamicId).attr("style","display:block");
 		jQuery("#show_data_description_tr_chk_"+dynamicId).attr("style", "position:inherit");
-		
 	}
 	function button_options_outer_wrapper_chk(dynamicId)
 	{
 		jQuery("#show_data_option_outer_wrapper_tr_chk_"+dynamicId).attr("style","display:block");
 		jQuery("#show_data_option_outer_wrapper_tr_chk_"+dynamicId).attr("style", "position:inherit");
-		
 	}
 	function button_option_wrapper_chk(dynamicId)
 	{
 		jQuery("#show_data_option_wrapper_tr_chk_"+dynamicId).attr("style","display:block");
 		jQuery("#show_data_option_wrapper_tr_chk_"+dynamicId).attr("style", "position:inherit");
-		
 	}
 	function button_option_label_chk(dynamicId)
 	{
 		jQuery("#show_data_option_label_tr_chk_"+dynamicId).attr("style","display:block");
 		jQuery("#show_data_option_label_tr_chk_"+dynamicId).attr("style", "position:inherit");
-		
 	}
 	function delete_button_outer_label_chk(dynamicId)
 	{
@@ -318,11 +312,11 @@
 		array_controls[dynamicCount].push({"cb_tooltip_txt" : jQuery("#ux_tooltip_control_"+dynamicId).val()});
 		var checkbox_option_str = "";
 		var checkbox_optionId_str = "";
-		jQuery("#chk_"+dynamicId).hide();
+		jQuery("#ux_chk_checkbox_control_"+dynamicId).hide();
 		jQuery("#add_chk_options_here_"+dynamicId).empty();
 		if(array_options_chk[dynamicCount].length == 0)
 		{
-			jQuery("#chk_"+dynamicId).show();
+			jQuery("#ux_chk_checkbox_control_"+dynamicId).show();
 		}
 		for(var flag=0;flag<array_option_id_chk[dynamicCount].length;flag++)
 		{
@@ -333,7 +327,7 @@
 			}
 			options_dynamicId = array_option_id_chk[dynamicCount][flag];
 			add_chk_options = array_options_chk[dynamicCount][flag];
-			jQuery("#add_chk_options_here_"+dynamicId).append('<span id="input_id_'+options_dynamicId+'"><input id="chk_'+options_dynamicId+'" name="chk_'+options_dynamicId+'" type="checkbox"/><label style="margin:0px 5px;" id="chk_id_'+options_dynamicId+'" >'+add_chk_options+'</label></span>');
+			jQuery("#add_chk_options_here_"+dynamicId).append('<span id="input_id_'+options_dynamicId+'"><input id="ux_chk_checkbox_control_'+options_dynamicId+'" name="ux_chk_checkbox_control_'+options_dynamicId+'" type="checkbox"/><label style="margin:0px 5px;" id="chk_id_'+options_dynamicId+'" >'+add_chk_options+'</label></span>');
 		}
 		for(var flag=0;flag<array_option_id_chk[dynamicCount].length;flag++)
 		{

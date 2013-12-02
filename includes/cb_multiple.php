@@ -124,10 +124,9 @@
 	</div>
 </div>
 <script type="text/javascript">
-	jQuery(".hovertip").tooltip();
-	var dynamicCount = "<?php echo $dynamicCount;?>";
-	array_options_radio[dynamicCount] = [];
-	array_option_id_radio[dynamicCount] = [];
+	array_options_radio["<?php echo $dynamicCount;?>"] = [];
+	array_option_id_radio["<?php echo $dynamicCount;?>"] = [];
+	jQuery(".hovertip").tooltip();	
 	function tabsFunc(control)
 	{
 		switch(control.id)
@@ -179,7 +178,7 @@
 			}
 		}
 		jQuery("#ux_label_text_"+dynamicId).val(array_controls[dynamicCount][2].cb_label_value);
-		if(array_controls[dynamicCount][3].cb_control_required == 1)
+		if(array_controls[dynamicCount][3].cb_control_required == "1")
 		{
 			jQuery("#ux_required_control_"+dynamicId).attr("checked","checked");
 		}
@@ -189,7 +188,7 @@
 		}
 		jQuery("#ux_tooltip_control_"+dynamicId).val(array_controls[dynamicCount][4].cb_tooltip_txt);
 		jQuery("#ux_admin_label_"+dynamicId).val(array_controls[dynamicCount][7].cb_admin_label);
-		if(array_controls[dynamicCount][8].cb_show_email == true)
+		if(array_controls[dynamicCount][8].cb_show_email == "1")
 		{
 			jQuery("#ux_show_email_"+dynamicId).attr("checked","checked");
 		}
@@ -233,7 +232,7 @@
 		}
 		else 
 		{
-			var options_dynamicId = Math.floor((Math.random()*1000)+1);
+			var options_dynamicId = Math.floor((Math.random()*10000)+1);
 			array_options_radio[dynamicCount].push(add_radio_options);
 			array_option_id_radio[dynamicCount].push(options_dynamicId);
 			jQuery("#append_multiple_option_"+dynamicId).append('<div class="layout-control-group" id="input_tr_'+options_dynamicId+'"><div class="layout-controls"><input type="text" class="layout-span8" id="input_option_'+options_dynamicId+'" name="input_option_'+options_dynamicId+'" value="'+add_radio_options+'" /><a style="padding-left:2px;" onclick="delete_radio('+options_dynamicId+','+dynamicId+')"><img style="vertical-align: top;margin-top: 2px;" src="<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" /></a></div></div>');
@@ -312,11 +311,12 @@
 		jQuery("#ux_required_control_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_control_required": "1"}) : array_controls[dynamicCount].push({"cb_control_required": "0"});
 		array_controls[dynamicCount].push({"cb_tooltip_txt" : jQuery("#ux_tooltip_control_"+dynamicId).val()});
 		var radio_optionId_str = "";
-		jQuery("#radio_"+dynamicId).hide();
+		var radio_option_str = "";
+		jQuery("#ux_radio_button_control_"+dynamicId).hide();
 		jQuery("#add_radio_options_here_"+dynamicId).empty();
 		if(array_options_radio[dynamicCount].length == 0)
 		{
-			jQuery("#radio_"+dynamicId).show();
+			jQuery("#ux_radio_button_control_"+dynamicId).show();
 		}
 		for(var flag=0;flag<array_option_id_radio[dynamicCount].length;flag++)
 		{
@@ -329,8 +329,6 @@
 			add_radio_options = array_options_radio[dynamicCount][flag];
 			jQuery("#add_radio_options_here_"+dynamicId).append('<span  id="input_id_'+options_dynamicId+'"><input  name="radio" type="radio" id="add_radio_'+options_dynamicId+'" /><label style="margin:0px 5px;" id="add_radio_lab_'+options_dynamicId+'" >'+add_radio_options+'</label></span>');
 		}
-		
-		var radio_option_str = "";
 		for(var flag=0;flag<array_option_id_radio[dynamicCount].length;flag++)
 		{
 			radio_option_str = radio_option_str+array_options_radio[dynamicCount][flag];

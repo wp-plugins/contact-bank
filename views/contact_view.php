@@ -24,27 +24,27 @@
 										<label class="layout-control-label"><?php _e('Form Name :', contact_bank);?> </label>
 										<span style="display: block" class="error">*</span>
 										<div class="layout-controls hovertip" id="show_tooltip100">
-											<input type="text" name="ux_form_name_txt" class="layout-span7" value="" id="ux_form_name_txt" placeholder="<?php _e( "Enter Form Name", contact_bank);?>" />
+											<input type="text" name="ux_txt_form_name" class="layout-span7" value="" id="ux_txt_form_name" placeholder="<?php _e( "Enter Form Name", contact_bank);?>" />
 										</div>
 									</div>
 									<div class="layout-control-group div_border" style="border: 1px dashed #B6B4B4;padding: 5px;cursor: default">
 										<label class="layout-control-label"><?php _e('Success Message :', contact_bank);?> </label>
 										<span style="display: block" class="error">*</span>
 										<div class="layout-controls hovertip" id="show_tooltip100">
-											<input type="text" name="ux_sucess_message" class="layout-span7" value="" id="ux_sucess_message" placeholder="<?php _e( "Enter Success Message", contact_bank);?>" />
+											<input type="text" name="ux_txt_sucess_message" class="layout-span7" value="" id="ux_txt_sucess_message" placeholder="<?php _e( "Enter Success Message", contact_bank);?>" />
 										</div>
 									</div>
 									<div class="layout-control-group div_border" style="border: 1px dashed #B6B4B4;padding: 5px;cursor: default">
 										<label class="layout-control-label"><?php _e('Redirect URL :', contact_bank);?> </label>
 										<div class="layout-controls hovertip" id="show_tooltip100">
-											<input type="checkbox"  id="chk_redirect_url" name="chk_redirect_url" value="1" onclick="show_url_control();" style="margin-top: 8px;" />
+											<input type="checkbox"  id="ux_chk_redirect_url" name="ux_chk_redirect_url" value="1" onclick="show_url_control();" style="margin-top: 8px;" />
 										</div>
 									</div>
 									<div class="layout-control-group div_border" id="div_url" style="border: 1px dashed #B6B4B4;padding: 5px;cursor: default;display: none;" >
 										<label class="layout-control-label"><?php _e('URL :', contact_bank);?> </label>
 										<span style="display: block" class="error">*</span>
 										<div class="layout-controls hovertip" id="show_tooltip100">
-											<input type="text" name="ux_redirect_url" class="layout-span7" value="" id="ux_redirect_url" placeholder="<?php _e( "Enter Redirect URL", contact_bank);?>" />
+											<input type="text" name="ux_txt_redirect_url" class="layout-span7" value="" id="ux_txt_redirect_url" placeholder="<?php _e( "Enter Redirect URL", contact_bank);?>" />
 										</div>
 									</div>
 									
@@ -52,7 +52,7 @@
 											<label class="layout-control-label" id="control_label_"><?php _e("Untitled", contact_bank); ?> : </label>
 											<span id="txt_required_" class="error">*</span>
 											<div class="layout-controls hovertip" id="show_tooltip">
-												<input class="layout-span7" type="text" id="txt_" name="txt_" />
+												<input class="layout-span7" type="text" id="ux_txt_textbox_control_" name="ux_txt_textbox_control_" />
 												<a class="btn btn-info inline" id="add_setting_control_" href="#setting_controls_postback"  ><?php _e( "Settings", contact_bank ); ?></a>
 												<a style="cursor:pointer;" id="anchor_del_" >
 													<img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="margin-left: 1%;margin-bottom:-9px" />
@@ -65,7 +65,7 @@
 											<label class="layout-control-label" id="control_label_"><?php _e("Untitled", contact_bank); ?> : </label>
 											<span id="txt_required_" class="error">*</span>
 											<div class="layout-controls hovertip" id="show_tooltip">
-												<textarea type="textarea" class="layout-span7"  id="txtarea_" name="txtarea_" ></textarea>
+												<textarea type="textarea" class="layout-span7"  id="ux_textarea_control_" name="ux_textarea_control_" ></textarea>
 												<a class="btn btn-info inline" id="add_setting_control_" href="#setting_controls_postback"  ><?php _e( "Settings", contact_bank ); ?></a>
 												<a style="cursor:pointer;"  id="anchor_del_" >
 													<img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="margin-left: 1%;margin-bottom:-9px"/>
@@ -78,7 +78,7 @@
 											<label class="layout-control-label" id="control_label_" ><?php _e("Email", contact_bank); ?> : </label>
 											<span style="display: block" id="txt_required_"  class="error">*</span>
 											<div class="layout-controls hovertip" id="show_tooltip">		
-												<input class=" layout-span7" type="text" id="email_" name="email_" />
+												<input class=" layout-span7" type="text" id="ux_txt_email_" name="ux_txt_email_" />
 												<a class="btn btn-info inline"  id="add_setting_control_" href="#setting_controls_postback"  ><?php _e( "Settings", contact_bank ); ?></a>	
 												<a style="cursor:pointer;" id="anchor_del_" >
 													<img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="margin-left: 1%;margin-bottom:-9px" />
@@ -91,7 +91,7 @@
 											<label class="layout-control-label" id="control_label_" ><?php _e("Untitled", contact_bank); ?> :</label>
 											<span id="txt_required_"  class="error">*</span>
 											<div class="layout-controls hovertip" id="show_tooltip">
-												<select type="select" class="layout-span7" id="select_" name="select_">
+												<select type="select" class="layout-span7" id="ux_ddl_select_control" name="ux_ddl_select_control">
 													<option value="0"><?php _e("Select option",contact_bank);?></option>
 												</select>
 												<a class="btn btn-info inline"  href="#setting_controls_postback" id="add_setting_control_" ><?php _e( "Settings", contact_bank); ?></a>
@@ -105,7 +105,7 @@
 											<span id="txt_required_"  class="error">*</span>
 											<div class="layout-controls hovertip" id="post_back_checkbox_">
 												<div id="show_tooltip">
-													<input type="checkbox"  id="chk_" name="chk_" />
+													<input type="checkbox"  id="ux_chk_checkbox_control_" name="ux_chk_checkbox_control_" />
 													<span id="add_chk_options_here_" ></span>
 													<a class="btn btn-info inline" href="#setting_controls_postback"  id="add_setting_control_" ><?php _e( "Settings", contact_bank); ?></a>
 													<a style="cursor:pointer;" id="anchor_del_" >
@@ -119,7 +119,7 @@
 											<span id="txt_required_"  class="error">*</span>
 											<div class="layout-controls hovertip" id="post_back_radio_button_">
 												<div id="show_tooltip">
-													<input type="radio" id="radio_" name="radio_" />
+													<input type="radio" id="ux_radio_button_control_" name="ux_radio_button_control_" />
 													<span  id="add_radio_options_here_" ></span>
 													<a class="btn btn-info inline"  id="add_setting_control_" href="#setting_controls_postback"  ><?php _e( "Settings", contact_bank); ?></a>
 													<a style="cursor:pointer;"  id="anchor_del_" >
@@ -130,7 +130,7 @@
 										<div class="layout-control-group div_border file_upload" id="div_9_9" style="display: none;">
 											<label class="layout-control-label" id="control_label_" ><?php _e("File Upload", contact_bank); ?> : </label>
 											<span id="txt_required_"  class="error">*</span>
-											<div class="layout-controls"  id="show_tooltip">
+											<div class="layout-controls" id="show_tooltip">
 												<a class="btn btn-info inline"  id="add_setting_control_" href="#setting_controls_postback"  ><?php _e( "Settings", contact_bank ); ?></a>
 													<a style="cursor:pointer;" class="delete_control" id="anchor_del_" >
 														<img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="margin-left: 1%;vertical-align: middle;"/>
@@ -160,7 +160,7 @@
 											<label class="layout-control-label" id="control_label_" ><?php _e("Date", contact_bank); ?> : </label>
 											<span id="txt_required_"  class="error">*</span>
 											<div class="layout-controls hovertip" id="show_tooltip">
-												<select class="layout-span2" type="day" id="select_day_" name="select_day_" >
+												<select class="layout-span2" type="day" id="ux_ddl_select_day_" name="ux_ddl_select_day_" >
 													<option value="0"><?php _e("Day", contact_bank); ?></option>
 													<?php
 													for($flag=1; $flag <= 31; $flag++)
@@ -180,7 +180,7 @@
 													}
 													?>
 												</select>
-												<select class="layout-span3" type="month" id="select_month_" name="select_month_">
+												<select class="layout-span3" type="month" id="ux_ddl_select_month_" name="ux_ddl_select_month_">
 													<option value="0"><?php _e("Month", contact_bank); ?></option>
 													<option value="1">January</option>
 													<option value="2">February</option>
@@ -195,7 +195,7 @@
 													<option value="11">November</option>
 													<option value="12">December</option>
 												</select>
-												<select class="layout-span2" type="year" id="select_year_" name="select_year_">
+												<select class="layout-span2" type="year" id="ux_ddl_select_year_" name="ux_ddl_select_year_">
 													<option value="0"><?php _e("Year", contact_bank); ?></option>
 													<?php
 													for($flag=1900; $flag <= 2100; $flag++)
@@ -207,9 +207,9 @@
 													?>
 												</select>
 												<script type="text/javascript">
-													jQuery("#select_day_<?php echo $dynamicId; ?>").val(<?php echo date("d"); ?> );
-													jQuery("#select_month_<?php echo $dynamicId; ?>").val(<?php echo date("m"); ?> );
-													jQuery("#select_year_<?php echo $dynamicId; ?>").val(<?php echo date("Y"); ?> );
+													jQuery("#ux_ddl_select_day_<?php echo $dynamicId; ?>").val(<?php echo date("d"); ?> );
+													jQuery("#ux_ddl_select_month_<?php echo $dynamicId; ?>").val(<?php echo date("m"); ?> );
+													jQuery("#ux_ddl_select_year_<?php echo $dynamicId; ?>").val(<?php echo date("Y"); ?> );
 												</script>
 												<a class="btn btn-info inline"   href="#setting_controls_postback" id="add_setting_control_"><?php _e( "Settings", contact_bank ); ?></a>
 												<a style="cursor:pointer;" id="anchor_del_" >
@@ -223,7 +223,7 @@
 											<label class="layout-control-label" id="control_label_" ><?php _e("Time", contact_bank); ?> : </label>
 											<span id="txt_required_"  class="error">*</span>
 											<div class="layout-controls hovertip" id="show_tooltip">
-												<select class="layout-span2" type="hour12" id="select_hr_12_" name="select_hr_12_">";
+												<select class="layout-span2" type="hour12" id="ux_ddl_select_hr_12_" name="ux_ddl_select_hr_12_">";
 													<option selected="selected" value=""><?php _e("Hour", contact_bank); ?></option>
 													<?php
 													for($flag=1; $flag <= 12; $flag++)
@@ -243,7 +243,7 @@
 													}
 													?>
 												</select>
-												<select style="display: none;" class="layout-span3" type="hour24" id="select_hr_24_" name="select_hr_24_">";
+												<select style="display: none;" class="layout-span3" type="hour24" id="ux_ddl_select_hr_24_" name="ux_ddl_select_hr_24_">";
 													<option selected="selected" value=""><?php _e("Hour", contact_bank); ?></option>
 													<?php
 													for($flag=1; $flag <= 24; $flag++)
@@ -263,7 +263,7 @@
 													}
 													?>
 												</select>
-												<select class="hovertip layout-span3" type="minute" id="select_min_" name="select_min_">
+												<select class="hovertip layout-span3" type="minute" id="ux_ddl_select_minute_" name="ux_ddl_select_minute_">
 													<option selected="selected" value=""><?php _e("Minute", contact_bank); ?></option>
 													<?php
 													for($flag=0; $flag <= 59; $flag++)
@@ -283,7 +283,7 @@
 													}
 													?>
 												</select>
-												<select class="hovertip layout-span2" type="am" id="select_am_" name="select_am_">
+												<select class="hovertip layout-span2" type="am" id="ux_ddl_select_ampm_" name="ux_ddl_select_ampm_">
 													<option value="0">AM</option>
 													<option value="1">PM</option>
 												</select>
@@ -299,8 +299,8 @@
 											<label class="layout-control-label" id="control_label_" ><?php _e("Untitled (hidden)", contact_bank); ?> :</label>
 											<span id="txt_required_" class="error">*</span>
 											<div class="layout-controls" id="show_tooltip">	
-												<input class="hovertip layout-span7" data-original-title="<?php _e( "Hidden", contact_bank ); ?>" type="text" id="txt_hide_" name="" />
-												<a class="btn btn-info inline" id="add_setting_control_"   href="#setting_controls_postback"  ><?php _e( "Settings", contact_bank ); ?></a>	
+												<input class="hovertip layout-span7" data-original-title="<?php _e( "Hidden", contact_bank ); ?>" type="text" id="ux_txt_hidden_control_" name="ux_txt_hidden_control_" />
+												<a class="btn btn-info inline" id="add_setting_control_" href="#setting_controls_postback"  ><?php _e( "Settings", contact_bank ); ?></a>	
 												<a style="cursor:pointer;" id=anchor_del_ >
 													<img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="margin-left: 1%;margin-bottom:-9px"/>
 												</a>
@@ -312,7 +312,7 @@
 											<label class="layout-control-label" id="control_label_" ><?php _e("Password", contact_bank); ?> : </label>
 											<span id="txt_required_" class="error">*</span>
 											<div class="layout-controls hovertip" id="show_tooltip">
-												<input class=" layout-span7"  type="password" id="txt_password_" name="txt_password_" />
+												<input class=" layout-span7"  type="password" id="ux_txt_password_control_" name="ux_txt_password_control_" />
 												<a class="btn btn-info inline"  id="add_setting_control_" href="#setting_controls_postback"><?php _e( "Settings", contact_bank ); ?></a>
 												<a style="cursor:pointer;" id="anchor_del_" >
 													<img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="margin-left: 1%;margin-bottom:-9px" />
@@ -400,6 +400,7 @@ jQuery(document).ready(function()
 	});
 });
 var dynamicCount = 0;
+
 array_controls = [];
 var array_dynamicCount = [];
 new_control_dynamic_ids = [];
@@ -450,15 +451,16 @@ function create_control(control_type)
 		if(jQuery.inArray(9,created_control_type) != -1)
 		{
 			alert("<?php _e( "Only One File Uploader can be used on a Form. ", contact_bank ); ?>");
-			return;					
+			return;
 		}
 	}
-	dynamicCount++;
+	dynamicCount = parseInt(dynamicCount) + 1;
+
 	array_dynamicCount.push(dynamicCount);
 	array_controls[dynamicCount] = [];
-	var dynamicId = Math.floor((Math.random()*10000)+1);
-	
-	
+	var dynamicId = Math.floor((Math.random()*100000)+1);
+	new_control_dynamic_ids.push(dynamicId);
+	created_control_type.push(control_type);
 	switch(parseInt(control_type))
 	{
 		case 1:
@@ -466,16 +468,16 @@ function create_control(control_type)
 			jQuery("#div_"+dynamicId+"_1").children("label").attr("id","control_label_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_1").children("span").attr("id","txt_required_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_1").children("div").attr("id","show_tooltip"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId ).children("input[type='text']").attr("id","txt_"+dynamicId); 
-			jQuery("#show_tooltip"+dynamicId ).children("input[type='text']").attr("name","txt_"+dynamicId); 
+			jQuery("#show_tooltip"+dynamicId ).children("input[type='text']").attr("id","ux_txt_textbox_control_"+dynamicId); 
+			jQuery("#show_tooltip"+dynamicId ).children("input[type='text']").attr("name","ux_txt_textbox_control_"+dynamicId); 
 			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
 			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+","+dynamicCount+",1)");
 			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_1,"+dynamicId+")");
+			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_1,"+dynamicId+",1)");
 			jQuery("#show_tooltip"+dynamicId).children("span").attr("id","txt_description_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_1").attr("style","display:block");
-			new_control_dynamic_ids.push(dynamicId);
-			created_control_type.push(1);
+			
+			
 			
 		break;
 		case 2:
@@ -483,16 +485,15 @@ function create_control(control_type)
 			jQuery("#div_"+dynamicId+"_2").children("label").attr("id","control_label_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_2").children("span").attr("id","txt_required_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_2").children("div").attr("id","show_tooltip"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId ).children("textarea[type='textarea']").attr("id","textarea_"+dynamicId); 
-			jQuery("#show_tooltip"+dynamicId ).children("textarea[type='textarea']").attr("name","textarea_"+dynamicId); 
+			jQuery("#show_tooltip"+dynamicId ).children("textarea[type='textarea']").attr("id","ux_textarea_control_"+dynamicId); 
+			jQuery("#show_tooltip"+dynamicId ).children("textarea[type='textarea']").attr("name","ux_textarea_control_"+dynamicId); 
 			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
 			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+","+dynamicCount+",2)");
 			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_2,"+dynamicId+")");
+			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_2,"+dynamicId+",2)");
 			jQuery("#show_tooltip"+dynamicId).children("span").attr("id","txt_description_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_2").attr("style","display:block");
-			new_control_dynamic_ids.push(dynamicId);
-			created_control_type.push(2);
+			
 			
 		break;
 		case 3:
@@ -500,15 +501,14 @@ function create_control(control_type)
 			jQuery("#div_"+dynamicId+"_3").children("label").attr("id","control_label_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_3").children("span").attr("id","txt_required_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_3").children("div").attr("id","show_tooltip"+dynamicId);
-			jQuery("#div_"+dynamicId+"_3" ).children("input[type='text']").attr("id","email_"+dynamicId); 
+			jQuery("#div_"+dynamicId+"_3" ).children("input[type='text']").attr("id","ux_txt_email_"+dynamicId); 
 			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
 			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+","+dynamicCount+",3)");
 			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_3,"+dynamicId+")");
+			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_3,"+dynamicId+",3)");
 			jQuery("#show_tooltip"+dynamicId).children("span").attr("id","txt_description_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_3").attr("style","display:block");
-			new_control_dynamic_ids.push(dynamicId);
-			created_control_type.push(3);
+
 			
 		break;
 		case 4:
@@ -516,16 +516,14 @@ function create_control(control_type)
 			jQuery("#div_"+dynamicId+"_4").children("label").attr("id","control_label_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_4").children("span").attr("id","txt_required_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_4").children("div").attr("id","show_tooltip"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId ).children("select[type='select']").attr("id","select_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId ).children("select[type='select']").attr("name","select_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId ).children("select[type='select']").attr("id","ux_ddl_select_control"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId ).children("select[type='select']").attr("name","ux_ddl_select_control"+dynamicId);
 			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
 			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+","+dynamicCount+",4)");
 			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_4,"+dynamicId+")");
+			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_4,"+dynamicId+",4)");
 			jQuery("#div_"+dynamicId+"_4").attr("style","display:block");
-			
-			new_control_dynamic_ids.push(dynamicId);
-			created_control_type.push(4);
+
 			
 		break;
 		case 5:
@@ -534,18 +532,15 @@ function create_control(control_type)
 			jQuery("#div_"+dynamicId+"_5").children("span").attr("id","txt_required_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_5").children("div").attr("id","post_back_checkbox_"+dynamicId);
 			jQuery("#post_back_checkbox_"+dynamicId).children("div").attr("id","show_tooltip"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId ).children("input[type='checkbox']").attr("id","chk_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId ).children("input[type='checkbox']").attr("name","chk_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId ).children("input[type='checkbox']").attr("id","ux_chk_checkbox_control_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId ).children("input[type='checkbox']").attr("name","ux_chk_checkbox_control_"+dynamicId);
 			jQuery("#show_tooltip"+dynamicId ).children("span").attr("id","add_chk_options_here_"+dynamicId);
 			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
 			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+","+dynamicCount+",5)");
 			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_5,"+dynamicId+")");
-			
+			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_5,"+dynamicId+",5)");
 			jQuery("#div_"+dynamicId+"_5").attr("style","display:block");
 			
-			new_control_dynamic_ids.push(dynamicId);
-			created_control_type.push(5);
 			
 		break;
 		case 6:
@@ -554,24 +549,19 @@ function create_control(control_type)
 			jQuery("#div_"+dynamicId+"_6").children("span").attr("id","txt_required_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_6").children("div").attr("id","post_back_radio_button_"+dynamicId);
 			jQuery("#post_back_radio_button_"+dynamicId).children("div").attr("id","show_tooltip"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId ).children("input[type='radio']").attr("id","radio_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId ).children("input[type='radio']").attr("name","radio_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId ).children("input[type='radio']").attr("id","ux_radio_button_control_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId ).children("input[type='radio']").attr("name","ux_radio_button_control_"+dynamicId);
 			jQuery("#show_tooltip"+dynamicId ).children("span").attr("id","add_radio_options_here_"+dynamicId);
 			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
 			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+","+dynamicCount+",6)");
 			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_6,"+dynamicId+")");
-			
+			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_6,"+dynamicId+",6)");
 			jQuery("#div_"+dynamicId+"_6").attr("style","display:block");
-			
-			new_control_dynamic_ids.push(dynamicId);
-			created_control_type.push(6);
+
 			
 		break;
 		case 9:
-			var file_upload_exist = jQuery.inArray(9,created_control_type);
-			if(file_upload_exist == -1)
-			{
+			
 				var oldId_file_upload = jQuery(".file_upload").attr("id");
 				jQuery("#"+oldId_file_upload).appendTo("#left_block");
 				jQuery("#"+oldId_file_upload).attr("style","display:block;");
@@ -586,33 +576,28 @@ function create_control(control_type)
 				jQuery("#show_tooltip"+dynamicId).children("label.hovertip").attr("id","tip"+dynamicId);
 				jQuery("#show_tooltip"+dynamicId).children("span").attr("id","txt_description_"+dynamicId);
 				jQuery("#div_"+dynamicId+"_9").attr("style","display:block");
-				new_control_dynamic_ids.push(dynamicId);
-				created_control_type.push(9);
-				jQuery("#hidden_dynamic_id").val("div_"+dynamicId+"_9");
-			}
+			
 		break;
 		case 12:
 			jQuery("#div_12_12").clone(false).attr("id","div_"+dynamicId+"_12").appendTo("#left_block");
 			jQuery("#div_"+dynamicId+"_12").children("label.layout-control-label").attr("id","control_label_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_12").children("span").attr("id","txt_required_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_12").children("div").attr("id","show_tooltip"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("select[type='day']").attr("id","select_day_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("select[type='day']").attr("name","select_day_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("select[type='month']").attr("id","select_month_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("select[type='month']").attr("name","select_month_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("select[type='year']").attr("id","select_year_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("select[type='year']").attr("name","select_year_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("select[type='day']").attr("id","ux_ddl_select_day_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("select[type='day']").attr("name","ux_ddl_select_day_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("select[type='month']").attr("id","ux_ddl_select_month_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("select[type='month']").attr("name","ux_ddl_select_month_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("select[type='year']").attr("id","ux_ddl_select_year_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("select[type='year']").attr("name","ux_ddl_select_year_"+dynamicId);
 			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
 			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+","+dynamicCount+",12)");
 			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_12,"+dynamicId+")");
+			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_12,"+dynamicId+",12)");
 			jQuery("#show_tooltip"+dynamicId).children("span").attr("id","txt_description_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_12").attr("style","display:block");
-			new_control_dynamic_ids.push(dynamicId);
-			created_control_type.push(12);
-			jQuery("#select_day_"+dynamicId).val((new Date).getDate());
-			jQuery("#select_month_"+dynamicId).val((new Date).getMonth()+1);
-			jQuery("#select_year_"+dynamicId).val((new Date).getFullYear());
+			jQuery("#ux_ddl_select_day_"+dynamicId).val((new Date).getDate());
+			jQuery("#ux_ddl_select_month_"+dynamicId).val((new Date).getMonth()+1);
+			jQuery("#ux_ddl_select_year_"+dynamicId).val((new Date).getFullYear());
 			
 		break;
 		case 13:
@@ -620,22 +605,20 @@ function create_control(control_type)
 			jQuery("#div_"+dynamicId+"_13").children("label.layout-control-label").attr("id","control_label_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_13").children("span").attr("id","txt_required_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_13").children("div").attr("id","show_tooltip"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("select[type='hour12']").attr("id","select_hr_12_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("select[type='hour12']").attr("name","select_hr_12_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("select[type='hour24']").attr("id","select_hr_24_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("select[type='hour24']").attr("name","select_hr_24_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("select[type='minute']").attr("id","select_min_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("select[type='minute']").attr("name","select_min_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("select[type='am']").attr("id","select_am_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("select[type='am']").attr("name","select_am_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("select[type='hour12']").attr("id","ux_ddl_select_hr_12_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("select[type='hour12']").attr("name","ux_ddl_select_hr_12_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("select[type='hour24']").attr("id","ux_ddl_select_hr_24_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("select[type='hour24']").attr("name","ux_ddl_select_hr_24_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("select[type='minute']").attr("id","ux_ddl_select_minute_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("select[type='minute']").attr("name","ux_ddl_select_minute_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("select[type='am']").attr("id","ux_ddl_select_ampm_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("select[type='am']").attr("name","ux_ddl_select_ampm_"+dynamicId);
 			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
 			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+","+dynamicCount+",13)");
 			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_13,"+dynamicId+")");
+			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_13,"+dynamicId+",13)");
 			jQuery("#show_tooltip"+dynamicId).children("span").attr("id","txt_description_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_13").attr("style","display:block");
-			new_control_dynamic_ids.push(dynamicId);
-			created_control_type.push(13);
 			
 		break;
 		case 14:
@@ -643,16 +626,14 @@ function create_control(control_type)
 			jQuery("#div_"+dynamicId+"_14").children("label").attr("id","control_label_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_14").children("span").attr("id","txt_required_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_14").children("div").attr("id","show_tooltip"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId ).children("input[type='text']").attr("id","hidden_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId ).children("input[type='text']").attr("name","hidden_"+dynamicId); 
+			jQuery("#show_tooltip"+dynamicId ).children("input[type='text']").attr("id","ux_txt_hidden_control_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId ).children("input[type='text']").attr("name","ux_txt_hidden_control_"+dynamicId); 
 			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
 			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+","+dynamicCount+",14)");
 			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_14,"+dynamicId+")");
+			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_14,"+dynamicId+",14)");
 			jQuery("#show_tooltip"+dynamicId).children("span").attr("id","txt_description_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_14").attr("style","display:block");
-			new_control_dynamic_ids.push(dynamicId);
-			created_control_type.push(14);
 			
 		break;
 		case 15:
@@ -660,19 +641,17 @@ function create_control(control_type)
 			jQuery("#div_"+dynamicId+"_15").children("label").attr("id","control_label_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_15").children("span").attr("id","txt_required_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_15").children("div").attr("id","show_tooltip"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId ).children("input[type='password']").attr("id","txt_"+dynamicId); 
+			jQuery("#show_tooltip"+dynamicId ).children("input[type='password']").attr("id","ux_txt_password_control_"+dynamicId); 
+			jQuery("#show_tooltip"+dynamicId ).children("input[type='password']").attr("name","ux_txt_password_control_"+dynamicId); 
 			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
 			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+","+dynamicCount+",15)");
 			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_15,"+dynamicId+")");
+			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_15,"+dynamicId+",15)");
 			jQuery("#show_tooltip"+dynamicId).children("span").attr("id","txt_description_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_15").attr("style","display:block");
-			new_control_dynamic_ids.push(dynamicId);
-			created_control_type.push(15);
 			
 		break;
 	}
-	
 }
 function add_settings(dynamicId,dynamicCount,field_type)
 {
@@ -764,9 +743,9 @@ function add_settings(dynamicId,dynamicCount,field_type)
 				jQuery("#ux_default_day_type_"+dynamicId).val(array_controls[dynamicCount][10].cb_default_value_day);
 				jQuery("#ux_default_month_type_"+dynamicId).val(array_controls[dynamicCount][11].cb_default_value_month);
 				jQuery("#ux_default_year_type_"+dynamicId).val(array_controls[dynamicCount][12].cb_default_value_year);
-				jQuery("#select_day_"+dynamicId).val(array_controls[dynamicCount][10].cb_default_value_day);
-				jQuery("#select_month_"+dynamicId).val(array_controls[dynamicCount][11].cb_default_value_month);
-				jQuery("#select_year_"+dynamicId).val(array_controls[dynamicCount][12].cb_default_value_year);
+				jQuery("#ux_ddl_select_day_"+dynamicId).val(array_controls[dynamicCount][10].cb_default_value_day);
+				jQuery("#ux_ddl_select_month_"+dynamicId).val(array_controls[dynamicCount][11].cb_default_value_month);
+				jQuery("#ux_ddl_select_year_"+dynamicId).val(array_controls[dynamicCount][12].cb_default_value_year);
 				show_Popup();
 			});
 		}
@@ -785,8 +764,8 @@ function add_settings(dynamicId,dynamicCount,field_type)
 				jQuery("#ux_default_am_"+dynamicId).val(array_controls[dynamicCount][11].cb_am_pm);
 				jQuery("#ux_minute_format_"+dynamicId).val(array_controls[dynamicCount][12].cb_time_format);
 				jQuery("#select_hr_"+dynamicId).val(array_controls[dynamicCount][9].cb_hours);
-				jQuery("#select_min_"+dynamicId).val(array_controls[dynamicCount][10].cb_minutes);
-				jQuery("#select_am_"+dynamicId).val(array_controls[dynamicCount][11].cb_am_pm);
+				jQuery("#ux_ddl_select_minute_"+dynamicId).val(array_controls[dynamicCount][10].cb_minutes);
+				jQuery("#ux_ddl_select_ampm_"+dynamicId).val(array_controls[dynamicCount][11].cb_am_pm);
 				show_Popup();
 			});
 		}
@@ -920,13 +899,13 @@ jQuery("#ux_dynamic_form_submit").validate
 ({
 	rules: 
 	{
-		ux_form_name_txt: "required",
-		ux_sucess_message: "required",
-		ux_redirect_url: 
+		ux_txt_form_name: "required",
+		ux_txt_sucess_message: "required",
+		ux_txt_redirect_url: 
 		{
 			required: function()
 			{
-				return jQuery("#chk_redirect_url").prop("checked");
+				return jQuery("#ux_chk_redirect_url").prop("checked");
 			}
 		}
 	},
@@ -935,17 +914,17 @@ jQuery("#ux_dynamic_form_submit").validate
 		jQuery("#form_success_message").css("display","block");
 		jQuery('body,html').animate({
 		scrollTop: jQuery('body,html').position().top}, 'slow');
-		var form_name = jQuery("#ux_form_name_txt").val();
+		var form_name = jQuery("#ux_txt_form_name").val();
 		var field_no = created_control_type.length;
 		var count =0; 
 		jQuery.ajax
 		({
 			type: "POST",
-			url: ajaxurl + "?form_name="+form_name+"&field_order="+field_order+"&new_control_dynamic_ids="+new_control_dynamic_ids+"&created_control_type="+created_control_type+"&field_dynamic_id="+field_dynamic_id+"&ux_sucess_message="+jQuery("#ux_sucess_message").val()+"&chk_redirect_url="+jQuery("#chk_redirect_url").prop("checked")+"&ux_redirect_url="+jQuery("#ux_redirect_url").val()+"&form=1&param=submit_controls&action=add_contact_form_library",
+			url: ajaxurl + "?form_name="+form_name+"&field_order="+field_order+"&new_control_dynamic_ids="+new_control_dynamic_ids+"&created_control_type="+created_control_type+"&field_dynamic_id="+field_dynamic_id+"&ux_sucess_message="+jQuery("#ux_txt_sucess_message").val()+"&chk_redirect_url="+jQuery("#ux_chk_redirect_url").prop("checked")+"&ux_redirect_url="+jQuery("#ux_txt_redirect_url").val()+"&form=1&param=submit_controls&action=add_contact_form_library",
 			success : function(data) 
 			{
 				
-				for(flag = 0;flag<field_no; flag++)
+				for(flag = 0;flag<array_dynamicCount.length; flag++)
 				{
 					var dynamicCount = array_dynamicCount[flag];
 					switch(parseInt(created_control_type[flag]))
@@ -970,6 +949,7 @@ jQuery("#ux_dynamic_form_submit").validate
 								array_controls[dynamicCount].push({"cb_checkbox_digit_filter": "0"});
 								array_controls[dynamicCount].push({"cb_checkbox_strip_tag_filter": "0"});
 								array_controls[dynamicCount].push({"cb_checkbox_trim_filter": "0"});
+
 							}
 						break;
 						case 2:
@@ -1107,12 +1087,12 @@ jQuery("#ux_dynamic_form_submit").validate
 								array_controls[dynamicCount].push({"cb_default_value_year" : (new Date).getFullYear()});
 								array_controls[dynamicCount].push({"cb_error_invalid" : ""});
 								array_controls[dynamicCount].push({"cb_date_format" : "0"});
-								array_controls[dynamicCount].push({"cb_button_set_outer_label" : "0"});
-								array_controls[dynamicCount].push({"cb_button_set_txt_input" : "0"});
-								array_controls[dynamicCount].push({"cb_button_set_description" : "0"});
-								array_controls[dynamicCount].push({"cb_date_day_dropdown" : "0"});
-								array_controls[dynamicCount].push({"cb_date_month_dropdown" : "0"});
-								array_controls[dynamicCount].push({"cb_date_year_dropdown" : "0"});
+								array_controls[dynamicCount].push({"cb_button_set_outer_label" : ""});
+								array_controls[dynamicCount].push({"cb_button_set_txt_input" : ""});
+								array_controls[dynamicCount].push({"cb_button_set_description" : ""});
+								array_controls[dynamicCount].push({"cb_date_day_dropdown" : ""});
+								array_controls[dynamicCount].push({"cb_date_month_dropdown" : ""});
+								array_controls[dynamicCount].push({"cb_date_year_dropdown" : ""});
 							}
 						break;
 						case 13:
@@ -1172,8 +1152,6 @@ jQuery("#ux_dynamic_form_submit").validate
 							}
 						break;
 					}
-					console.log(dynamicCount);
-					console.log(JSON.stringify(array_controls[dynamicCount]));
 					jQuery.ajax
 					({
 						type: "POST",
@@ -1207,7 +1185,7 @@ jQuery("#ux_dynamic_form_submit").validate
 });
 function show_url_control()
 {
-	var chk_redirect_url =  jQuery("#chk_redirect_url").prop("checked");
+	var chk_redirect_url =  jQuery("#ux_chk_redirect_url").prop("checked");
 	if(chk_redirect_url == true)
 	{
 		jQuery("#div_url").css("display","block");

@@ -167,7 +167,7 @@
 		var dynamicId = <?php echo $dynamicId; ?>;
 		jQuery("#ux_label_text_"+dynamicId).val(array_controls[dynamicCount][2].cb_label_value);
 		jQuery("#ux_description_control_"+dynamicId).val(array_controls[dynamicCount][3].cb_description);
-		if(array_controls[dynamicCount][4].cb_control_required == 1)
+		if(array_controls[dynamicCount][4].cb_control_required == "1")
 		{
 			jQuery("#ux_required_control_"+dynamicId).attr("checked","checked");
 		}
@@ -177,11 +177,11 @@
 		}
 		jQuery("#ux_tooltip_control_"+dynamicId).val(array_controls[dynamicCount][5].cb_tooltip_txt);
 		jQuery("#ux_admin_label_"+dynamicId).val(array_controls[dynamicCount][6].cb_admin_label);
-		if(array_controls[dynamicCount][7].cb_show_email == true)
+		if(array_controls[dynamicCount][7].cb_show_email == "1")
 		{
 			jQuery("#ux_show_email_"+dynamicId).attr("checked","checked");
 		}
-		if(array_controls[dynamicCount][8].cb_allow_multiple_file == true)
+		if(array_controls[dynamicCount][8].cb_allow_multiple_file == "1")
 		{
 			jQuery("#ux_allow_multiple_file_"+dynamicId).attr("checked","checked");
 		}
@@ -191,7 +191,7 @@
 		}
 		jQuery("#ux_allowed_file_extensions_"+dynamicId).val(array_controls[dynamicCount][9].cb_allow_file_ext_upload);
 		jQuery("#ux_maximum_file_allowed_"+dynamicId).val(array_controls[dynamicCount][10].cb_maximum_file_allowed);
-		if(array_controls[dynamicCount][11].cb_uploaded_file_email_db == true)
+		if(array_controls[dynamicCount][11].cb_uploaded_file_email_db == "1")
 		{
 			jQuery("#ux_uploaded_file_email_db_"+dynamicId).attr("checked","checked");
 		}

@@ -158,7 +158,7 @@
 		var dynamicId = <?php echo $dynamicId; ?>;
 		jQuery("#ux_label_text_"+dynamicId).val(array_controls[dynamicCount][2].cb_label_value);
 		jQuery("#ux_description_control_"+dynamicId).val(array_controls[dynamicCount][3].cb_description);
-		if(array_controls[dynamicCount][4].cb_control_required == 1)
+		if(array_controls[dynamicCount][4].cb_control_required == "1")
 		{
 			jQuery("#ux_required_control_"+dynamicId).attr("checked","checked");
 		}
@@ -169,7 +169,7 @@
 		jQuery("#ux_tooltip_control_"+dynamicId).val(array_controls[dynamicCount][5].cb_tooltip_txt);
 		jQuery("#ux_default_value_"+dynamicId).val(array_controls[dynamicCount][6].cb_default_txt_val);
 		jQuery("#ux_admin_label_"+dynamicId).val(array_controls[dynamicCount][7].cb_admin_label);
-		if(array_controls[dynamicCount][8].cb_show_email == true)
+		if(array_controls[dynamicCount][8].cb_show_email == "1")
 		{
 			jQuery("#ux_show_email_"+dynamicId).attr("checked","checked");
 		}
@@ -191,23 +191,23 @@
 			jQuery("#ux_description_textbox_"+dynamicId).attr("style","display:block");
 			jQuery("#ux_description_textbox_"+dynamicId).attr("style","position:inherit");
 		}	
-		if(array_controls[dynamicCount][12].cb_checkbox_alpha_filter == true)
+		if(array_controls[dynamicCount][12].cb_checkbox_alpha_filter == "1")
 		{
 			jQuery("#ux_checkbox_alpha_filter_"+dynamicId).attr("checked","checked");
 		}
-		if(array_controls[dynamicCount][13].cb_ux_checkbox_alpha_num_filter == true)
+		if(array_controls[dynamicCount][13].cb_ux_checkbox_alpha_num_filter == "1")
 		{
 			jQuery("#ux_checkbox_alpha_num_filter_"+dynamicId).attr("checked","checked");
 		}
-		if(array_controls[dynamicCount][14].cb_checkbox_digit_filter == true)
+		if(array_controls[dynamicCount][14].cb_checkbox_digit_filter == "1")
 		{
 			jQuery("#ux_checkbox_digit_filter_"+dynamicId).attr("checked","checked");
 		}
-		if(array_controls[dynamicCount][15].cb_checkbox_strip_tag_filter == true)
+		if(array_controls[dynamicCount][15].cb_checkbox_strip_tag_filter == "1")
 		{
 			jQuery("#ux_checkbox_strip_tag_filter_"+dynamicId).attr("checked","checked");
 		}
-		if(array_controls[dynamicCount][16].cb_checkbox_trim_filter == true)
+		if(array_controls[dynamicCount][16].cb_checkbox_trim_filter == "1")
 		{
 			jQuery("#ux_checkbox_trim_filter_"+dynamicId).attr("checked","checked");
 		}
@@ -236,7 +236,7 @@
 		jQuery("#control_label_"+dynamicId).html(jQuery("#ux_label_text_"+dynamicId).val()+" :");
 		jQuery("#txt_description_"+dynamicId).html(jQuery("#ux_description_control_"+dynamicId).val());
 		jQuery("#show_tooltip"+dynamicId).attr("data-original-title",jQuery("#ux_tooltip_control_"+dynamicId).val());
-		jQuery("#txt_"+dynamicId).val(jQuery("#ux_default_value_"+dynamicId).val());
+		jQuery("#ux_txt_textbox_control_"+dynamicId).val(jQuery("#ux_default_value_"+dynamicId).val());
 		if(jQuery("#ux_required_control_"+dynamicId).prop("checked") == true)
 		{
 			jQuery("#txt_required_"+dynamicId).css("display","block");

@@ -38,7 +38,7 @@ if(isset($_REQUEST["param"]))
 			switch($field_id)
 			{
 				case 1:
-					$ux_txt = esc_attr($_REQUEST['txt_'.$dynamicId]);
+					$ux_txt = esc_attr($_REQUEST['ux_txt_textbox_control_'.$dynamicId]);
 					$wpdb->query
 					(
 						$wpdb->prepare
@@ -53,7 +53,7 @@ if(isset($_REQUEST["param"]))
 					);
 				break;
 				case 2:
-					$ux_textarea = esc_attr($_REQUEST['textarea_'.$dynamicId]);
+					$ux_textarea = esc_attr($_REQUEST['ux_textarea_control_'.$dynamicId]);
 					$wpdb->query
 					(
 						$wpdb->prepare
@@ -68,7 +68,7 @@ if(isset($_REQUEST["param"]))
 					);
 				break;
 				case 3:
-					$ux_email = esc_attr($_REQUEST['email_'.$dynamicId]);
+					$ux_email = esc_attr($_REQUEST['ux_txt_email_'.$dynamicId]);
 					$wpdb->query
 					(
 						$wpdb->prepare
@@ -83,7 +83,7 @@ if(isset($_REQUEST["param"]))
 					);
 				break;
 				case 4:
-					$ux_dropdown = esc_attr($_REQUEST['select_'.$dynamicId]);
+					$ux_dropdown = esc_attr($_REQUEST['ux_ddl_select_control'.$dynamicId]);
 					$wpdb->query
 					(
 						$wpdb->prepare
@@ -122,7 +122,7 @@ if(isset($_REQUEST["param"]))
 					);
 				break;
 				case 6:
-					$ux_multiple = esc_attr($_REQUEST['radio_'.$dynamicId]);
+					$ux_multiple = esc_attr($_REQUEST['ux_radio_button_control_'.$dynamicId]);
 					$wpdb->query
 					(
 						$wpdb->prepare
@@ -163,9 +163,9 @@ if(isset($_REQUEST["param"]))
 						);
 				break;
 				case 12:
-					$ux_day = esc_attr($_REQUEST['select_day_'.$dynamicId]);
-					$ux_month = esc_attr($_REQUEST['select_month_'.$dynamicId]);
-					$ux_year = esc_attr($_REQUEST['select_year_'.$dynamicId]);
+					$ux_day = esc_attr($_REQUEST['ux_ddl_select_day_'.$dynamicId]);
+					$ux_month = esc_attr($_REQUEST['ux_ddl_select_month_'.$dynamicId]);
+					$ux_year = esc_attr($_REQUEST['ux_ddl_select_year_'.$dynamicId]);
 					$ux_date = $ux_year."-".$ux_month."-".$ux_day;
 					$wpdb->query
 					(
@@ -182,8 +182,8 @@ if(isset($_REQUEST["param"]))
 				break;
 				case 13:
 					$ux_hour = esc_attr($_REQUEST['select_hr_'.$dynamicId]);
-					$ux_minute = esc_attr($_REQUEST['select_min_'.$dynamicId]);
-					$ux_am_pm = esc_attr($_REQUEST['select_am_'.$dynamicId]);
+					$ux_minute = esc_attr($_REQUEST['ux_ddl_select_minute_'.$dynamicId]);
+					$ux_am_pm = esc_attr($_REQUEST['ux_ddl_select_ampm_'.$dynamicId]);
 					$ux_time = $ux_hour."-".$ux_minute."-".$ux_am_pm;
 					$wpdb->query
 					(
@@ -199,7 +199,7 @@ if(isset($_REQUEST["param"]))
 					);
 				break;
 				case 14:
-					$ux_hidden = esc_attr($_REQUEST['txt_hide_'.$dynamicId]);
+					$ux_hidden = esc_attr($_REQUEST['ux_txt_hidden_control_'.$dynamicId]);
 					$wpdb->query
 					(
 						$wpdb->prepare
@@ -214,7 +214,7 @@ if(isset($_REQUEST["param"]))
 					);
 				break;
 				case 15:
-					$ux_password = esc_attr($_REQUEST['txt_password_'.$dynamicId]);
+					$ux_password = esc_attr($_REQUEST['ux_txt_password_control_'.$dynamicId]);
 					$wpdb->query
 					(
 						$wpdb->prepare

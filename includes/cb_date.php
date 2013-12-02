@@ -215,7 +215,7 @@
 	{
 		var start_year = jQuery("#ux_start_year_label_"+dynamicId).val();
 		var end_year = jQuery("#ux_last_year_label_"+dynamicId).val();
-		var dropdown_year = "<select id=select_year_"+dynamicId+" name=select_year_"+dynamicId+">";
+		var dropdown_year = "<select id=ux_ddl_select_year_"+dynamicId+" name=ux_ddl_select_year_"+dynamicId+">";
 		var ddl_heading = jQuery("#ux_show_date_"+dynamicId).prop("checked");
 		dropdown_year += "<option value=0><?php _e( "Year", contact_bank ); ?></option>";
 		for(flag=start_year; flag <= end_year; flag++)
@@ -229,11 +229,11 @@
 		dropdown_year += "</select>";
 		jQuery("#bind_year_"+dynamicId).html(dropdown_year);
 		jQuery("#ux_default_year_type_"+dynamicId).html(dropdown_year);
-		jQuery("#select_year_"+dynamicId).html(dropdown_year);
+		jQuery("#ux_ddl_select_year_"+dynamicId).html(dropdown_year);
 	}
 	function dropdown_heading(dynamicId)
 	{
-		var dropdown_day = "<select id=select_day_"+dynamicId+" name=select_day_"+dynamicId+">";
+		var dropdown_day = "<select id=ux_ddl_select_day_"+dynamicId+" name=ux_ddl_select_day_"+dynamicId+">";
 		dropdown_day += "<option value=0><?php _e( "Day", contact_bank ); ?></option>";
 		for(flag=1; flag <= 31; flag++)
 		{
@@ -247,7 +247,7 @@
 			}
 		}
 		dropdown_day += "</select>";
-		var dropdown_month = "<select id=select_month_"+dynamicId+" name=select_month_"+dynamicId+">";
+		var dropdown_month = "<select id=ux_ddl_select_month_"+dynamicId+" name=ux_ddl_select_month_"+dynamicId+">";
 		dropdown_month += "<option value=0><?php _e( "Month", contact_bank ); ?></option>";
 		dropdown_month +="<option value=1>January</option>";
 		dropdown_month +="<option value=2>February</option>";
@@ -280,16 +280,16 @@
 		{
 			end_year1 = end_year;
 		}	
-		var dropdown_year = "<select id=select_year_"+dynamicId+" name=select_year_"+dynamicId+">";
+		var dropdown_year = "<select id=ux_ddl_select_year_"+dynamicId+" name=ux_ddl_select_year_"+dynamicId+">";
 		dropdown_year += "<option value=0><?php _e( "Year", contact_bank ); ?></option>";
 		for(flag=start_year1; flag <= end_year1; flag++)
 		{
 			dropdown_year += "<option value="+flag+">"+ flag + "</option>";
 		}
 		dropdown_year += "</select>";
-		jQuery("#select_day_"+dynamicId).html(dropdown_day);
-		jQuery("#select_month_"+dynamicId).html(dropdown_month);
-		jQuery("#select_year_"+dynamicId).html(dropdown_year);
+		jQuery("#ux_ddl_select_day_"+dynamicId).html(dropdown_day);
+		jQuery("#ux_ddl_select_month_"+dynamicId).html(dropdown_month);
+		jQuery("#ux_ddl_select_year_"+dynamicId).html(dropdown_year);
 		jQuery("#ux_default_month_type_"+dynamicId).html(dropdown_month);
 		jQuery("#ux_default_day_type_"+dynamicId).html(dropdown_day);
 		jQuery("#ux_default_year_type_"+dynamicId).html(dropdown_year);
@@ -303,7 +303,7 @@
 	}
 	function default_day(dynamicId,start_yr,end_yr)
 	{
-		var dropdown_day = "<select id=select_day_"+dynamicId+" name=select_day_"+dynamicId+">";
+		var dropdown_day = "<select id=ux_ddl_select_day_"+dynamicId+" name=ux_ddl_select_day_"+dynamicId+">";
 		dropdown_day += "<option value=0><?php _e( "Day", contact_bank ); ?></option>";
 		for(flag=1; flag <= 31; flag++)
 		{
@@ -317,7 +317,7 @@
 			}
 		}
 		dropdown_day += "</select>";
-		var dropdown_month = "<select id=select_month_"+dynamicId+" name=select_month_"+dynamicId+">";
+		var dropdown_month = "<select id=ux_ddl_select_month_"+dynamicId+" name=ux_ddl_select_month_"+dynamicId+">";
 		dropdown_month += "<option value=0><?php _e( "Month", contact_bank ); ?></option>";
 		dropdown_month +="<option value=1>January</option>";
 		dropdown_month +="<option value=2>February</option>";
@@ -336,7 +336,7 @@
 		start_year1 = (start_year == "" || start_yr == "") ? 1900 : start_year;
 		var end_year = jQuery("#ux_last_year_label_"+dynamicId).val();
 		end_year1 = (end_year == "" || end_yr == "") ? 2100 : end_year;
-		var dropdown_year = "<select id=select_year_"+dynamicId+" name=select_year_"+dynamicId+">";
+		var dropdown_year = "<select id=ux_ddl_select_year_"+dynamicId+" name=ux_ddl_select_year_"+dynamicId+">";
 		dropdown_year += "<option value=0><?php _e( "Year", contact_bank ); ?></option>";		
 		for(flag=start_year1; flag <= end_year1; flag++)
 		{
@@ -350,17 +350,17 @@
 	function set_default_day(dynamicId)
 	{
 		var ux_default_day_type = jQuery("#ux_default_day_type_"+dynamicId).val();
-		jQuery("#select_day_"+dynamicId).val(ux_default_day_type);
+		jQuery("#ux_ddl_select_day_"+dynamicId).val(ux_default_day_type);
 	}
 	function set_default_month(dynamicId)
 	{
 		var ux_default_day_type = jQuery("#ux_default_month_type_"+dynamicId).val();
-		jQuery("#select_month_"+dynamicId).val(ux_default_day_type);
+		jQuery("#ux_ddl_select_month_"+dynamicId).val(ux_default_day_type);
 	}
 	function set_default_year(dynamicId)
 	{
 		var ux_default_day_type = jQuery("#ux_default_year_type_"+dynamicId).val();
-		jQuery("#select_year_"+dynamicId).val(ux_default_day_type);	
+		jQuery("#ux_ddl_select_year_"+dynamicId).val(ux_default_day_type);	
 	}
 	var count = <?php echo $count; ?>;
 	if(count != 0)
@@ -369,7 +369,7 @@
 		var dynamicId = <?php echo $dynamicId; ?>;
 		jQuery("#ux_label_text_"+dynamicId).val(array_controls[dynamicCount][2].cb_label_value);
 		jQuery("#ux_description_control_"+dynamicId).html(array_controls[dynamicCount][3].cb_description);
-		if(array_controls[dynamicCount][4].cb_control_required == 1)
+		if(array_controls[dynamicCount][4].cb_control_required == "1")
 		{
 			jQuery("#ux_required_control_"+dynamicId).attr("checked","checked");
 		}
@@ -380,7 +380,7 @@
 		jQuery("#ux_tooltip_control_"+dynamicId).val(array_controls[dynamicCount][5].cb_tooltip_txt);
 		jQuery("#ux_admin_label_"+dynamicId).val(array_controls[dynamicCount][6].cb_admin_label);
 		
-		if(array_controls[dynamicCount][7].cb_show_email == true)
+		if(array_controls[dynamicCount][7].cb_show_email == "1")
 		{
 			jQuery("#ux_show_email_"+dynamicId).attr("checked","checked");
 		}
@@ -453,8 +453,8 @@
 		array_controls[dynamicCount].push({"cb_date_day_dropdown" : jQuery("#ux_day_textarea_"+dynamicId).val()});
 		array_controls[dynamicCount].push({"cb_date_month_dropdown" : jQuery("#ux_month_textarea_"+dynamicId).val()});
 		array_controls[dynamicCount].push({"cb_date_year_dropdown" : jQuery("#ux_year_textarea_"+dynamicId).val()});
-		jQuery("#select_day_"+dynamicId).val(jQuery("#ux_default_day_type_"+dynamicId).val());
-		jQuery("#select_month_"+dynamicId).val(jQuery("#ux_default_month_type_"+dynamicId).val());
+		jQuery("#ux_ddl_select_day_"+dynamicId).val(jQuery("#ux_default_day_type_"+dynamicId).val());
+		jQuery("#ux_ddl_select_month_"+dynamicId).val(jQuery("#ux_default_month_type_"+dynamicId).val());
 		jQuery("#control_label_"+dynamicId).html(jQuery("#ux_label_text_"+dynamicId).val()+" :");
 		jQuery("#txt_description_"+dynamicId).html(jQuery("#ux_description_control_"+dynamicId).val());
 		jQuery("#show_tooltip"+dynamicId).attr("data-original-title",jQuery("#ux_tooltip_control_"+dynamicId).val());
@@ -466,7 +466,7 @@
 		{
 			jQuery("#txt_required_"+dynamicId).css("display","none");
 		}
-		jQuery("#select_year_"+dynamicId).val(jQuery("#ux_default_year_type_"+dynamicId).val());
+		jQuery("#ux_ddl_select_year_"+dynamicId).val(jQuery("#ux_default_year_type_"+dynamicId).val());
 		CloseLightbox();
 	}
 	function enter_admin_label(dynamicId)

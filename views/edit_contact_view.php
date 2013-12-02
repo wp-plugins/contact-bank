@@ -44,14 +44,14 @@ $fields = $wpdb->get_results
 										<label class="layout-control-label"><?php _e('Form Name :', contact_bank);?> </label>
 										<span style="display: block" class="error">*</span>
 										<div class="layout-controls hovertip" id="show_tooltip100">
-											<input type="text" name="ux_form_name_txt" class="layout-span7"  value ="<?php echo $form_content->form_name;?>" id="ux_form_name_txt" placeholder="<?php _e( "Enter Form Name", contact_bank);?>" />
+											<input type="text" name="ux_txt_form_name" class="layout-span7"  value ="<?php echo $form_content->form_name;?>" id="ux_txt_form_name" placeholder="<?php _e( "Enter Form Name", contact_bank);?>" />
 										</div>
 									</div>
 									<div class="layout-control-group div_border" style="border: 1px dashed #B6B4B4;padding: 5px;cursor: default">
 										<label class="layout-control-label"><?php _e('Success Message :', contact_bank);?> </label>
 										<span style="display: block" class="error">*</span>
 										<div class="layout-controls hovertip" id="show_tooltip100">
-											<input type="text" name="ux_sucess_message" class="layout-span7" value ="<?php echo $form_content->success_message;?>" id="ux_sucess_message" placeholder="<?php _e( "Enter Success Message", contact_bank);?>" />
+											<input type="text" name="ux_txt_sucess_message" class="layout-span7" value ="<?php echo $form_content->success_message;?>" id="ux_txt_sucess_message" placeholder="<?php _e( "Enter Success Message", contact_bank);?>" />
 										</div>
 									</div>
 									<?php
@@ -61,7 +61,7 @@ $fields = $wpdb->get_results
 										<div class="layout-control-group div_border" style="border: 1px dashed #B6B4B4;padding: 5px;cursor: default">
 											<label class="layout-control-label"><?php _e('Redirect URL :', contact_bank);?> </label>
 											<div class="layout-controls hovertip" id="show_tooltip100">
-												<input type="checkbox"  id="chk_redirect_url" name="chk_redirect_url" checked="checked" value="1" onclick="show_url_control();" style="margin-top: 8px;" />
+												<input type="checkbox"  id="ux_chk_redirect_url" name="ux_chk_redirect_url" checked="checked" value="1" onclick="show_url_control();" style="margin-top: 8px;" />
 											</div>
 										</div>
 										<?php
@@ -71,7 +71,7 @@ $fields = $wpdb->get_results
 										<div class="layout-control-group div_border" style="border: 1px dashed #B6B4B4;padding: 5px;cursor: default">
 											<label class="layout-control-label"><?php _e('Redirect URL :', contact_bank);?> </label>
 											<div class="layout-controls hovertip" id="show_tooltip100">
-												<input type="checkbox"  id="chk_redirect_url" name="chk_redirect_url" value="0" onclick="show_url_control();" style="margin-top: 8px;" />
+												<input type="checkbox"  id="ux_chk_redirect_url" name="ux_chk_redirect_url" value="0" onclick="show_url_control();" style="margin-top: 8px;" />
 											</div>
 										</div>
 										<?php
@@ -82,7 +82,7 @@ $fields = $wpdb->get_results
 										<label class="layout-control-label"><?php _e('URL :', contact_bank);?> </label>
 										<span style="display: block" class="error">*</span>
 										<div class="layout-controls hovertip" id="show_tooltip100">
-											<input type="text" name="ux_redirect_url" class="layout-span7" value ="<?php echo $form_content->redirect_url;?>" id="ux_redirect_url" placeholder="<?php _e( "Enter Redirect URL", contact_bank);?>" />
+											<input type="text" name="ux_txt_redirect_url" class="layout-span7" value ="<?php echo $form_content->redirect_url;?>" id="ux_txt_redirect_url" placeholder="<?php _e( "Enter Redirect URL", contact_bank);?>" />
 										</div>
 									</div>
 									
@@ -90,7 +90,7 @@ $fields = $wpdb->get_results
 											<label class="layout-control-label" id="control_label_"><?php _e("Untitled", contact_bank); ?> : </label>
 											<span id="txt_required_" class="error">*</span>
 											<div class="layout-controls hovertip" id="show_tooltip">
-												<input class="layout-span7" type="text" id="txt_" name="txt_" />
+												<input class="layout-span7" type="text" id="ux_txt_textbox_control_" name="ux_txt_textbox_control_" />
 												<a class="btn btn-info inline" id="add_setting_control_" href="#setting_controls_postback"  ><?php _e( "Settings", contact_bank ); ?></a>
 												<a style="cursor:pointer;" id="anchor_del_" >
 													<img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="margin-left: 1%;margin-bottom:-9px" />
@@ -103,7 +103,7 @@ $fields = $wpdb->get_results
 											<label class="layout-control-label" id="control_label_"><?php _e("Untitled", contact_bank); ?> : </label>
 											<span id="txt_required_" class="error">*</span>
 											<div class="layout-controls hovertip" id="show_tooltip">
-												<textarea type="textarea" class="layout-span7"  id="txtarea_" name="txtarea_" ></textarea>
+												<textarea type="textarea" class="layout-span7"  id="ux_textarea_control_" name="ux_textarea_control_" ></textarea>
 												<a class="btn btn-info inline" id="add_setting_control_" href="#setting_controls_postback"  ><?php _e( "Settings", contact_bank ); ?></a>
 												<a style="cursor:pointer;"  id="anchor_del_" >
 													<img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="margin-left: 1%;margin-bottom:-9px"/>
@@ -116,7 +116,7 @@ $fields = $wpdb->get_results
 											<label class="layout-control-label" id="control_label_" ><?php _e("Email", contact_bank); ?> : </label>
 											<span style="display: block" id="txt_required_"  class="error">*</span>
 											<div class="layout-controls hovertip" id="show_tooltip">		
-												<input class=" layout-span7" type="text" id="email_" name="email_" />
+												<input class=" layout-span7" type="text" id="ux_txt_email_" name="ux_txt_email_" />
 												<a class="btn btn-info inline"  id="add_setting_control_" href="#setting_controls_postback"  ><?php _e( "Settings", contact_bank ); ?></a>	
 												<a style="cursor:pointer;" id="anchor_del_" >
 													<img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="margin-left: 1%;margin-bottom:-9px" />
@@ -129,7 +129,7 @@ $fields = $wpdb->get_results
 											<label class="layout-control-label" id="control_label_" ><?php _e("Untitled", contact_bank); ?> :</label>
 											<span id="txt_required_"  class="error">*</span>
 											<div class="layout-controls hovertip" id="show_tooltip">
-												<select type="select" class="layout-span7" id="select_" name="select_">
+												<select type="select" class="layout-span7" id="ux_ddl_select_control" name="ux_ddl_select_control">
 													<option value="0"><?php _e("Select option",contact_bank);?></option>
 												</select>
 												<a class="btn btn-info inline"  href="#setting_controls_postback" id="add_setting_control_" ><?php _e( "Settings", contact_bank); ?></a>	
@@ -143,7 +143,7 @@ $fields = $wpdb->get_results
 											<span id="txt_required_"  class="error">*</span>
 											<div class="layout-controls hovertip" id="post_back_checkbox_">
 												<div id="show_tooltip">
-													<input type="checkbox"  id="chk_" name="chk_" />
+													<input type="checkbox"  id="ux_chk_checkbox_control_" name="ux_chk_checkbox_control_" />
 													<span id="add_chk_options_here_" ></span>
 													<a class="btn btn-info inline" href="#setting_controls_postback"  id="add_setting_control_" ><?php _e( "Settings", contact_bank); ?></a>	
 													<a style="cursor:pointer;" id="anchor_del_" >
@@ -157,7 +157,7 @@ $fields = $wpdb->get_results
 											<span id="txt_required_"  class="error">*</span>
 											<div class="layout-controls hovertip" id="post_back_radio_button_">
 												<div id="show_tooltip">
-													<input type="radio" id="radio_" name="radio_" />
+													<input type="radio" id="ux_radio_button_control_" name="ux_radio_button_control_" />
 													<span  id="add_radio_options_here_" ></span>
 													<a class="btn btn-info inline"  id="add_setting_control_" href="#setting_controls_postback"  ><?php _e( "Settings", contact_bank); ?></a>	
 													<a style="cursor:pointer;"  id="anchor_del_" >
@@ -198,7 +198,7 @@ $fields = $wpdb->get_results
 											<label class="layout-control-label" id="control_label_" ><?php _e("Date", contact_bank); ?> : </label>
 											<span id="txt_required_"  class="error">*</span>
 												<div class="layout-controls hovertip" id="show_tooltip">	
-													<select class="layout-span2" type="day" id="select_day_" name="select_day_" >
+													<select class="layout-span2" type="day" id="ux_ddl_select_day_" name="ux_ddl_select_day_" >
 														<option value="0"><?php _e("Day", contact_bank); ?></option>
 														<?php
 														for($flag=1; $flag <= 31; $flag++)
@@ -218,7 +218,7 @@ $fields = $wpdb->get_results
 														}
 														?>
 													</select>
-													<select class="layout-span3" type="month" id="select_month_" name="select_month_">
+													<select class="layout-span3" type="month" id="ux_ddl_select_month_" name="ux_ddl_select_month_">
 														<option value="0"><?php _e("Month", contact_bank); ?></option>
 														<option value="1">January</option>
 														<option value="2">February</option>
@@ -233,7 +233,7 @@ $fields = $wpdb->get_results
 														<option value="11">November</option>
 														<option value="12">December</option>
 													</select>
-													<select class="layout-span2" type="year" id="select_year_" name="select_year_">
+													<select class="layout-span2" type="year" id="ux_ddl_select_year_" name="ux_ddl_select_year_">
 														<option value="0"><?php _e("Year", contact_bank); ?></option>
 														<?php
 														for($flag=1900; $flag <= 2100; $flag++)
@@ -245,9 +245,9 @@ $fields = $wpdb->get_results
 														?>
 													</select>
 													<script type="text/javascript">
-														jQuery("#select_day_<?php echo $dynamicId; ?>").val(<?php echo date("d"); ?> );
-														jQuery("#select_month_<?php echo $dynamicId; ?>").val(<?php echo date("m"); ?> );
-														jQuery("#select_year_<?php echo $dynamicId; ?>").val(<?php echo date("Y"); ?> );
+														jQuery("#ux_ddl_select_day_<?php echo $dynamicId; ?>").val(<?php echo date("d"); ?> );
+														jQuery("#ux_ddl_select_month_<?php echo $dynamicId; ?>").val(<?php echo date("m"); ?> );
+														jQuery("#ux_ddl_select_year_<?php echo $dynamicId; ?>").val(<?php echo date("Y"); ?> );
 													</script>
 														<a class="btn btn-info inline"   href="#setting_controls_postback" id="add_setting_control_"><?php _e( "Settings", contact_bank ); ?></a>
 														<a style="cursor:pointer;" id="anchor_del_" >
@@ -261,7 +261,7 @@ $fields = $wpdb->get_results
 												<label class="layout-control-label" id="control_label_" ><?php _e("Time", contact_bank); ?> : </label>
 												<span id="txt_required_"  class="error">*</span>
 													<div class="layout-controls hovertip" id="show_tooltip">
-														<select class="layout-span2" type="hour12" id="select_hr_12_" name="select_hr_12_">";
+														<select class="layout-span2" type="hour12" id="ux_ddl_select_hr_12_" name="ux_ddl_select_hr_12_">";
 															<option selected="selected" value=""><?php _e("Hour", contact_bank); ?></option>
 															<?php
 															for($flag=1; $flag <= 12; $flag++)
@@ -281,7 +281,7 @@ $fields = $wpdb->get_results
 															}
 															?>
 														</select>
-														<select style="display: none;" class="layout-span3" type="hour24" id="select_hr_24_" name="select_hr_24_">";
+														<select style="display: none;" class="layout-span3" type="hour24" id="ux_ddl_select_hr_24_" name="ux_ddl_select_hr_24_">";
 															<option selected="selected" value=""><?php _e("Hour", contact_bank); ?></option>
 															<?php
 															for($flag=1; $flag <= 24; $flag++)
@@ -301,7 +301,7 @@ $fields = $wpdb->get_results
 															}
 															?>
 														</select>
-														<select class="hovertip layout-span3" type="minute" id="select_min_" name="select_min_">
+														<select class="hovertip layout-span3" type="minute" id="ux_ddl_select_minute_" name="ux_ddl_select_minute_">
 															<option selected="selected" value=""><?php _e("Minute", contact_bank); ?></option>
 															<?php
 															for($flag=0; $flag <= 59; $flag++)
@@ -321,7 +321,7 @@ $fields = $wpdb->get_results
 															}
 															?>
 														</select>
-														<select class="hovertip layout-span2" type="am" id="select_am_" name="select_am_">
+														<select class="hovertip layout-span2" type="am" id="ux_ddl_select_ampm_" name="ux_ddl_select_ampm_">
 															<option value="0">AM</option>
 															<option value="1">PM</option>
 														</select>
@@ -337,7 +337,7 @@ $fields = $wpdb->get_results
 												<label class="layout-control-label" id="control_label_" ><?php _e("Untitled (hidden)", contact_bank); ?> :</label>
 												<span id="txt_required_"  class="error">*</span>
 												<div class="layout-controls" id="show_tooltip">	
-													<input class="hovertip layout-span7" data-original-title="<?php _e( "Hidden", contact_bank ); ?>" type="text" id="txt_hide_" name="" />
+													<input class="hovertip layout-span7" data-original-title="<?php _e( "Hidden", contact_bank ); ?>" type="text" id="ux_txt_hidden_control_" name="ux_txt_hidden_control_" />
 													<a class="btn btn-info inline" id="add_setting_control_"   href="#setting_controls_postback"  ><?php _e( "Settings", contact_bank ); ?></a>	
 													<a style="cursor:pointer;" id=anchor_del_ >
 												 		<img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="margin-left: 1%;margin-bottom:-9px"/>
@@ -350,7 +350,7 @@ $fields = $wpdb->get_results
 												<label class="layout-control-label" id="control_label_" ><?php _e("Password", contact_bank); ?> : </label>
 												<span id="txt_required_"  class="error">*</span>
 												<div class="layout-controls hovertip" id="show_tooltip">
-													<input class=" layout-span7"  type="password" id="txt_password_" name="txt_password_" />
+													<input class=" layout-span7"  type="password" id="ux_txt_password_control_" name="ux_txt_password_control_" />
 													<a class="btn btn-info inline"  id="add_setting_control_" href="#setting_controls_postback"><?php _e( "Settings", contact_bank ); ?></a>
 													<a style="cursor:pointer;" id="anchor_del_" >
 														<img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="margin-left: 1%;margin-bottom:-9px" />
@@ -525,7 +525,7 @@ function create_control(control_type,dynamicId,arrayControl)
 	array_controls[dynamicCount] = [];
 	if(dynamicId == undefined)
 	{
-		var dynamicId = Math.floor((Math.random()*10000)+1);
+		var dynamicId = Math.floor((Math.random()*100000)+1);
 		array_dynamicCount.push(dynamicCount);
 	}
 	else
@@ -542,8 +542,8 @@ function create_control(control_type,dynamicId,arrayControl)
 			jQuery("#div_"+dynamicId+"_1").children("label").attr("id","control_label_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_1").children("span").attr("id","txt_required_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_1").children("div").attr("id","show_tooltip"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId ).children("input[type='text']").attr("id","txt_"+dynamicId); 
-			jQuery("#show_tooltip"+dynamicId ).children("input[type='text']").attr("name","txt_"+dynamicId); 
+			jQuery("#show_tooltip"+dynamicId ).children("input[type='text']").attr("id","ux_txt_textbox_control_"+dynamicId); 
+			jQuery("#show_tooltip"+dynamicId ).children("input[type='text']").attr("name","ux_txt_textbox_control_"+dynamicId); 
 			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
 			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+",1,"+JSON.stringify(arrayControl)+","+dynamicCount+")");
 			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
@@ -567,7 +567,8 @@ function create_control(control_type,dynamicId,arrayControl)
 			{
 				jQuery("#control_label_"+dynamicId).html(arrayControl[0].dynamic_settings_value);
 				jQuery("#txt_description_"+dynamicId).html(arrayControl[1].dynamic_settings_value);
-				jQuery("#txt_"+dynamicId).val(arrayControl[4].dynamic_settings_value);
+				
+				jQuery("#ux_txt_textbox_control_"+dynamicId).val(arrayControl[4].dynamic_settings_value);
 				jQuery("#show_tooltip"+dynamicId).attr("data-original-title",arrayControl[3].dynamic_settings_value);				
 				arrayControl[2].dynamic_settings_value == "1" ? jQuery("#txt_required_"+dynamicId).css("display","block") : jQuery("#txt_required_"+dynamicId).css("display","none");
 			}
@@ -579,8 +580,8 @@ function create_control(control_type,dynamicId,arrayControl)
 			jQuery("#div_"+dynamicId+"_2").children("label").attr("id","control_label_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_2").children("span").attr("id","txt_required_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_2").children("div").attr("id","show_tooltip"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId ).children("textarea[type='textarea']").attr("id","textarea_"+dynamicId); 
-			jQuery("#show_tooltip"+dynamicId ).children("textarea[type='textarea']").attr("name","textarea_"+dynamicId); 
+			jQuery("#show_tooltip"+dynamicId ).children("textarea[type='textarea']").attr("id","ux_textarea_control_"+dynamicId); 
+			jQuery("#show_tooltip"+dynamicId ).children("textarea[type='textarea']").attr("name","ux_textarea_control_"+dynamicId); 
 			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
 			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+",2,"+JSON.stringify(arrayControl)+","+dynamicCount+")");
 			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
@@ -604,7 +605,7 @@ function create_control(control_type,dynamicId,arrayControl)
 			{		
 				jQuery("#control_label_"+dynamicId).html( arrayControl[0].dynamic_settings_value);
 				jQuery("#txt_description_"+dynamicId).html( arrayControl[1].dynamic_settings_value);
-				jQuery("#textarea_"+dynamicId).val( arrayControl[4].dynamic_settings_value);
+				jQuery("#ux_textarea_control_"+dynamicId).val( arrayControl[4].dynamic_settings_value);
 				jQuery("#show_tooltip"+dynamicId).attr("data-original-title", arrayControl[3].dynamic_settings_value);
 				arrayControl[2].dynamic_settings_value == "1" ? jQuery("#txt_required_"+dynamicId).css("display","block") :	jQuery("#txt_required_"+dynamicId).css("display","none");
 			}
@@ -616,7 +617,7 @@ function create_control(control_type,dynamicId,arrayControl)
 			jQuery("#div_"+dynamicId+"_3").children("label").attr("id","control_label_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_3").children("span").attr("id","txt_required_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_3").children("div").attr("id","show_tooltip"+dynamicId);
-			jQuery("#div_"+dynamicId+"_3" ).children("input[type='text']").attr("id","email_"+dynamicId); 
+			jQuery("#div_"+dynamicId+"_3" ).children("input[type='text']").attr("id","ux_txt_email_"+dynamicId); 
 			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
 			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+",3,"+JSON.stringify(arrayControl)+","+dynamicCount+")");
 			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
@@ -651,8 +652,8 @@ function create_control(control_type,dynamicId,arrayControl)
 			jQuery("#div_"+dynamicId+"_4").children("label").attr("id","control_label_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_4").children("span").attr("id","txt_required_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_4").children("div").attr("id","show_tooltip"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId ).children("select[type='select']").attr("id","select_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId ).children("select[type='select']").attr("name","select_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId ).children("select[type='select']").attr("id","ux_ddl_select_control"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId ).children("select[type='select']").attr("name","ux_ddl_select_control"+dynamicId);
 			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
 			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+",4,"+JSON.stringify(arrayControl)+","+dynamicCount+")");
 			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
@@ -688,7 +689,7 @@ function create_control(control_type,dynamicId,arrayControl)
 						var optionsId = options_dynamicId[flag];
 						var ddl_options = ddl_option_value[flag];
 						
-						jQuery("#select_"+dynamicId).append('<option id="option_tr_'+optionsId+'" value='+ddl_options+'>'+ddl_options+'</option>');
+						jQuery("#ux_ddl_select_control"+dynamicId).append('<option id="option_tr_'+optionsId+'" value='+ddl_options+'>'+ddl_options+'</option>');
 					}
 					jQuery("#option_tr_"+dynamicId).remove();
 				}
@@ -702,8 +703,8 @@ function create_control(control_type,dynamicId,arrayControl)
 			jQuery("#div_"+dynamicId+"_5").children("span").attr("id","txt_required_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_5").children("div").attr("id","post_back_checkbox_"+dynamicId);
 			jQuery("#post_back_checkbox_"+dynamicId).children("div").attr("id","show_tooltip"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId ).children("input[type='checkbox']").attr("id","chk_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId ).children("input[type='checkbox']").attr("name","chk_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId ).children("input[type='checkbox']").attr("id","ux_chk_checkbox_control_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId ).children("input[type='checkbox']").attr("name","ux_chk_checkbox_control_"+dynamicId);
 			jQuery("#show_tooltip"+dynamicId ).children("span").attr("id","add_chk_options_here_"+dynamicId);
 			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
 			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+",5,"+JSON.stringify(arrayControl)+","+dynamicCount+")");
@@ -740,9 +741,9 @@ function create_control(control_type,dynamicId,arrayControl)
 						var options_dynamicId = optionId[flag];
 						var add_chk_options = option_value[flag];
 						
-						jQuery("#add_chk_options_here_"+dynamicId).append('<span id="input_id_'+options_dynamicId+'"><input id="chk_'+options_dynamicId+'" name="chk_'+options_dynamicId+'" type="checkbox"/><label style="margin:0px 5px;" id="chk_id_'+options_dynamicId+'" >'+add_chk_options+'</label></span>');
+						jQuery("#add_chk_options_here_"+dynamicId).append('<span id="input_id_'+options_dynamicId+'"><input id="ux_chk_checkbox_control_'+options_dynamicId+'" name="ux_chk_checkbox_control_'+options_dynamicId+'" type="checkbox"/><label style="margin:0px 5px;" id="chk_id_'+options_dynamicId+'" >'+add_chk_options+'</label></span>');
 					}
-					jQuery("#chk_"+dynamicId).hide();
+					jQuery("#ux_chk_checkbox_control_"+dynamicId).hide();
 				}
 				
 				arrayControl[1].dynamic_settings_value == "1" ? jQuery("#txt_required_"+dynamicId).css("display","block") : jQuery("#txt_required_"+dynamicId).css("display","none");
@@ -755,8 +756,8 @@ function create_control(control_type,dynamicId,arrayControl)
 			jQuery("#div_"+dynamicId+"_6").children("span").attr("id","txt_required_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_6").children("div").attr("id","post_back_radio_button_"+dynamicId);
 			jQuery("#post_back_radio_button_"+dynamicId).children("div").attr("id","show_tooltip"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId ).children("input[type='radio']").attr("id","radio_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId ).children("input[type='radio']").attr("name","radio_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId ).children("input[type='radio']").attr("id","ux_radio_button_control_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId ).children("input[type='radio']").attr("name","ux_radio_button_control_"+dynamicId);
 			jQuery("#show_tooltip"+dynamicId ).children("span").attr("id","add_radio_options_here_"+dynamicId);
 			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
 			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+",6,"+JSON.stringify(arrayControl)+","+dynamicCount+")");
@@ -792,7 +793,7 @@ function create_control(control_type,dynamicId,arrayControl)
 						var add_radio_options = options_value[flag];
 						jQuery("#add_radio_options_here_"+dynamicId).append('<span class="hovertip" id="input_id_'+options_dynamicId+'"><input  name="radio" type="radio" id="add_radio_'+options_dynamicId+'" /><label style="margin:0px 5px;" id="add_radio_lab_'+options_dynamicId+'" >'+add_radio_options+'</label></span>');
 					}
-					jQuery("#radio_"+dynamicId).hide();
+					jQuery("#ux_radio_button_control_"+dynamicId).hide();
 				}
 				
 				arrayControl[1].dynamic_settings_value == "1" ? jQuery("#txt_required_"+dynamicId).css("display","block") : jQuery("#txt_required_"+dynamicId).css("display","none");
@@ -800,9 +801,6 @@ function create_control(control_type,dynamicId,arrayControl)
 			
 		break;
 		case 9:
-			
-		
-				
 				var oldId_file_upload = jQuery(".file_upload").attr("id");
 				jQuery("#"+oldId_file_upload).appendTo("#left_block");
 				jQuery("#"+oldId_file_upload).attr("style","display:block;");
@@ -862,12 +860,12 @@ function create_control(control_type,dynamicId,arrayControl)
 			jQuery("#div_"+dynamicId+"_12").children("label.layout-control-label").attr("id","control_label_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_12").children("span").attr("id","txt_required_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_12").children("div").attr("id","show_tooltip"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("select[type='day']").attr("id","select_day_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("select[type='day']").attr("name","select_day_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("select[type='month']").attr("id","select_month_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("select[type='month']").attr("name","select_month_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("select[type='year']").attr("id","select_year_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("select[type='year']").attr("name","select_year_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("select[type='day']").attr("id","ux_ddl_select_day_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("select[type='day']").attr("name","ux_ddl_select_day_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("select[type='month']").attr("id","ux_ddl_select_month_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("select[type='month']").attr("name","ux_ddl_select_month_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("select[type='year']").attr("id","ux_ddl_select_year_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("select[type='year']").attr("name","ux_ddl_select_year_"+dynamicId);
 			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
 			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+",12,"+JSON.stringify(arrayControl)+","+dynamicCount+")");
 			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
@@ -891,46 +889,47 @@ function create_control(control_type,dynamicId,arrayControl)
 			{
 				jQuery("#control_label_"+dynamicId).html( arrayControl[0].dynamic_settings_value + " :");
 				jQuery("#txt_description_"+dynamicId).html( arrayControl[1].dynamic_settings_value);
-				jQuery("#select_day_"+dynamicId).val( arrayControl[8].dynamic_settings_value == "" ? "0" :  arrayControl[8].dynamic_settings_value);
-				jQuery("#select_month_"+dynamicId).val(arrayControl[9].dynamic_settings_value == "" ? "0" : arrayControl[9].dynamic_settings_value);
+				jQuery("#ux_ddl_select_day_"+dynamicId).val( arrayControl[8].dynamic_settings_value == "" ? "0" :  arrayControl[8].dynamic_settings_value);
+				jQuery("#ux_ddl_select_month_"+dynamicId).val(arrayControl[9].dynamic_settings_value == "" ? "0" : arrayControl[9].dynamic_settings_value);
 				jQuery("#show_tooltip"+dynamicId).attr("data-original-title", arrayControl[3].dynamic_settings_value);
 			
 				var start_year =  arrayControl[6].dynamic_settings_value;
 				var end_year =  arrayControl[7].dynamic_settings_value;
 				
-				jQuery("#select_year_"+dynamicId).empty();
-				jQuery("#select_year_"+dynamicId).html('<option value=0>Year</option>');
+				jQuery("#ux_ddl_select_year_"+dynamicId).empty();
+				jQuery("#ux_ddl_select_year_"+dynamicId).html('<option value=0>Year</option>');
 						
 				for(flag11=start_year; flag11 <= end_year; flag11++)
 				{
-					jQuery("#select_year_"+dynamicId).append('<option value='+flag11+'>'+flag11+'</option>');
+					jQuery("#ux_ddl_select_year_"+dynamicId).append('<option value='+flag11+'>'+flag11+'</option>');
 				}
-				jQuery("#select_year_"+dynamicId).val( arrayControl[10].dynamic_settings_value);
+				jQuery("#ux_ddl_select_year_"+dynamicId).val( arrayControl[10].dynamic_settings_value);
 				arrayControl[2].dynamic_settings_value == "1" ? jQuery("#txt_required_"+dynamicId).css("display","block") : jQuery("#txt_required_"+dynamicId).css("display","none");
 			}
 			else
 			{
-				jQuery("#select_year_"+dynamicId).html('<option value=0>Year</option>');
+				jQuery("#ux_ddl_select_year_"+dynamicId).html('<option value=0>Year</option>');
 				for(flag12=1900; flag12 <= 2100; flag12++)
 				{
-					jQuery("#select_year_"+dynamicId).append('<option value='+flag12+'>'+flag12+'</option>');
+					jQuery("#ux_ddl_select_year_"+dynamicId).append('<option value='+flag12+'>'+flag12+'</option>');
 				}
 			}
 			
 		break;
 		case 13:
+			
 			jQuery("#div_13_13").clone(false).attr("id","div_"+dynamicId+"_13").appendTo("#left_block");
 			jQuery("#div_"+dynamicId+"_13").children("label.layout-control-label").attr("id","control_label_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_13").children("span").attr("id","txt_required_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_13").children("div").attr("id","show_tooltip"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("select[type='hour12']").attr("id","select_hr_12_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("select[type='hour12']").attr("name","select_hr_12_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("select[type='hour24']").attr("id","select_hr_24_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("select[type='hour24']").attr("name","select_hr_24_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("select[type='minute']").attr("id","select_min_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("select[type='minute']").attr("name","select_min_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("select[type='am']").attr("id","select_am_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("select[type='am']").attr("name","select_am_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("select[type='hour12']").attr("id","ux_ddl_select_hr_12_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("select[type='hour12']").attr("name","ux_ddl_select_hr_12_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("select[type='hour24']").attr("id","ux_ddl_select_hr_24_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("select[type='hour24']").attr("name","ux_ddl_select_hr_24_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("select[type='minute']").attr("id","ux_ddl_select_minute_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("select[type='minute']").attr("name","ux_ddl_select_minute_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("select[type='am']").attr("id","ux_ddl_select_ampm_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId).children("select[type='am']").attr("name","ux_ddl_select_ampm_"+dynamicId);
 			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
 			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+",13,"+JSON.stringify(arrayControl)+","+dynamicCount+")");
 			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
@@ -939,7 +938,8 @@ function create_control(control_type,dynamicId,arrayControl)
 			jQuery("#div_"+dynamicId+"_13").attr("style","display:block");
 			jQuery("#hidden_dynamic_id").val("div_"+dynamicId+"_13");	
 			jQuery("#ux_drop_hour_time_"+dynamicId).val("12");
-			jQuery("#select_hr_24_"+dynamicId).hide();
+			jQuery("#ux_ddl_select_hr_24_"+dynamicId).hide();
+			
 			jQuery(".hovertip").tooltip();
 			
 			var result = jQuery.inArray(dynamicId, edit_control_dynamic_ids);
@@ -975,20 +975,20 @@ function create_control(control_type,dynamicId,arrayControl)
 				}
 				if(arrayControl[6].dynamic_settings_value == "12")
 				{
-					jQuery("#select_hr_24_"+dynamicId).hide();
-					jQuery("#select_hr_12_"+dynamicId).show();
-					jQuery("#select_am_"+dynamicId).show();
-					jQuery("#select_hr_12_"+dynamicId).val(arrayControl[7].dynamic_settings_value);	
+					jQuery("#ux_ddl_select_hr_24_"+dynamicId).hide();
+					jQuery("#ux_ddl_select_hr_12_"+dynamicId).show();
+					jQuery("#ux_ddl_select_ampm_"+dynamicId).show();
+					jQuery("#ux_ddl_select_hr_12_"+dynamicId).val(arrayControl[7].dynamic_settings_value);	
 				}
 				else if(arrayControl[6].dynamic_settings_value == "24")
 				{
-					jQuery("#select_hr_12_"+dynamicId).hide();
-					jQuery("#select_hr_24_"+dynamicId).show();
-					jQuery("#select_am_"+dynamicId).hide();
-					jQuery("#select_hr_24_"+dynamicId).val( arrayControl[7].dynamic_settings_value);
+					jQuery("#ux_ddl_select_hr_12_"+dynamicId).hide();
+					jQuery("#ux_ddl_select_hr_24_"+dynamicId).show();
+					jQuery("#ux_ddl_select_ampm_"+dynamicId).hide();
+					jQuery("#ux_ddl_select_hr_24_"+dynamicId).val( arrayControl[7].dynamic_settings_value);
 				}
-				jQuery("#select_min_"+dynamicId).val( arrayControl[8].dynamic_settings_value);
-				jQuery("#select_am_"+dynamicId).val( arrayControl[9].dynamic_settings_value == "" ? "0" :  arrayControl[9].dynamic_settings_value);
+				jQuery("#ux_ddl_select_minute_"+dynamicId).val( arrayControl[8].dynamic_settings_value);
+				jQuery("#ux_ddl_select_ampm_"+dynamicId).val( arrayControl[9].dynamic_settings_value == "" ? "0" :  arrayControl[9].dynamic_settings_value);
 				jQuery("#show_tooltip"+dynamicId).attr("data-original-title", arrayControl[3].dynamic_settings_value);
 			}
 
@@ -999,8 +999,8 @@ function create_control(control_type,dynamicId,arrayControl)
 			jQuery("#div_"+dynamicId+"_14").children("label").attr("id","control_label_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_14").children("span").attr("id","txt_required_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_14").children("div").attr("id","show_tooltip"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId ).children("input[type='text']").attr("id","hidden_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId ).children("input[type='text']").attr("name","hidden_"+dynamicId); 
+			jQuery("#show_tooltip"+dynamicId ).children("input[type='text']").attr("id","ux_txt_hidden_control_"+dynamicId);
+			jQuery("#show_tooltip"+dynamicId ).children("input[type='text']").attr("name","ux_txt_hidden_control_"+dynamicId); 
 			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
 			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+",14,"+JSON.stringify(arrayControl)+","+dynamicCount+")");
 			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
@@ -1020,12 +1020,11 @@ function create_control(control_type,dynamicId,arrayControl)
 					jQuery('#left_block').append(jQuery("#div_"+value+"_"+created_control_type[index]));
 				});
 			}
-			
-			if(arrayControl == undefined)
+			if(arrayControl != undefined)
 			{
 				
 				jQuery("#control_label_"+dynamicId).html(arrayControl[0].dynamic_settings_value + " :");
-				jQuery("#txt_hide_"+dynamicId).val(arrayControl[1].dynamic_settings_value);
+				jQuery("#ux_txt_hidden_control_"+dynamicId).val(arrayControl[1].dynamic_settings_value);
 			}
 			
 		break;
@@ -1035,7 +1034,8 @@ function create_control(control_type,dynamicId,arrayControl)
 			jQuery("#div_"+dynamicId+"_15").children("label").attr("id","control_label_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_15").children("span").attr("id","txt_required_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_15").children("div").attr("id","show_tooltip"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId ).children("input[type='password']").attr("id","txt_"+dynamicId); 
+			jQuery("#show_tooltip"+dynamicId ).children("input[type='password']").attr("id","ux_txt_password_control_"+dynamicId); 
+			jQuery("#show_tooltip"+dynamicId ).children("input[type='password']").attr("name","ux_txt_password_control_"+dynamicId); 
 			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
 			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+",15,"+JSON.stringify(arrayControl)+","+dynamicCount+")");
 			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
@@ -1178,21 +1178,21 @@ function add_settings(dynamicId,field_type,arrayControl,dynamicCount)
 				jQuery("#ux_default_day_type_"+dynamicId).val(array_controls[dynamicCount][10].cb_default_value_day);
 				jQuery("#ux_default_month_type_"+dynamicId).val(array_controls[dynamicCount][11].cb_default_value_month);
 				jQuery("#ux_default_year_type_"+dynamicId).val(array_controls[dynamicCount][12].cb_default_value_year);
-				jQuery("#select_day_"+dynamicId).val(array_controls[dynamicCount][10].cb_default_value_day);
-				jQuery("#select_month_"+dynamicId).val(array_controls[dynamicCount][11].cb_default_value_month);
+				jQuery("#ux_ddl_select_day_"+dynamicId).val(array_controls[dynamicCount][10].cb_default_value_day);
+				jQuery("#ux_ddl_select_month_"+dynamicId).val(array_controls[dynamicCount][11].cb_default_value_month);
 				if(array_controls[dynamicCount][8].cb_start_year == "" && array_controls[dynamicCount][9].cb_end_year == "")
 				{
-					jQuery("#select_year_"+dynamicId).html('<option value=0>Year</option>');
+					jQuery("#ux_ddl_select_year_"+dynamicId).html('<option value=0>Year</option>');
 				}
 				else
 				{
-					jQuery("#select_year_"+dynamicId).empty();
-					jQuery("#select_year_"+dynamicId).html('<option value=0>Year</option>');
+					jQuery("#ux_ddl_select_year_"+dynamicId).empty();
+					jQuery("#ux_ddl_select_year_"+dynamicId).html('<option value=0>Year</option>');
 					for(flag=array_controls[dynamicCount][8].cb_start_year; flag <= array_controls[dynamicCount][9].cb_end_year; flag++)
 					{
 						
-						jQuery("#select_year_"+dynamicId).append('<option value='+flag+'>'+flag+'</option');
-						jQuery("#select_year_"+dynamicId).val(array_controls[dynamicCount][12].cb_default_value_year);
+						jQuery("#ux_ddl_select_year_"+dynamicId).append('<option value='+flag+'>'+flag+'</option');
+						jQuery("#ux_ddl_select_year_"+dynamicId).val(array_controls[dynamicCount][12].cb_default_value_year);
 					}
 				
 				}
@@ -1217,12 +1217,12 @@ function add_settings(dynamicId,field_type,arrayControl,dynamicCount)
 					jQuery("#ux_default_hours_12_"+dynamicId).val(array_controls[dynamicCount][9].cb_hours);
 					jQuery("#ux_default_minute_"+dynamicId).val(array_controls[dynamicCount][10].cb_minutes);
 					jQuery("#ux_default_am_"+dynamicId).val(array_controls[dynamicCount][11].cb_am_pm);
-					jQuery("#select_hr_24_"+dynamicId).hide();
-					jQuery("#select_hr_12_"+dynamicId).show();
-					jQuery("#select_am_"+dynamicId).show();
-					jQuery("#select_hr_12_"+dynamicId).val(array_controls[dynamicCount][9].cb_hours);
-					jQuery("#select_min_"+dynamicId).val(array_controls[dynamicCount][10].cb_minutes);
-					jQuery("#select_am_"+dynamicId).val(array_controls[dynamicCount][11].cb_am_pm);
+					jQuery("#ux_ddl_select_hr_24_"+dynamicId).hide();
+					jQuery("#ux_ddl_select_hr_12_"+dynamicId).show();
+					jQuery("#ux_ddl_select_ampm_"+dynamicId).show();
+					jQuery("#ux_ddl_select_hr_12_"+dynamicId).val(array_controls[dynamicCount][9].cb_hours);
+					jQuery("#ux_ddl_select_minute_"+dynamicId).val(array_controls[dynamicCount][10].cb_minutes);
+					jQuery("#ux_ddl_select_ampm_"+dynamicId).val(array_controls[dynamicCount][11].cb_am_pm);
 				}
 				else if(array_controls[dynamicCount][8].cb_hour_format == 24)
 				{
@@ -1233,12 +1233,12 @@ function add_settings(dynamicId,field_type,arrayControl,dynamicCount)
 					jQuery("#ux_drop_hour_time_"+dynamicId).val(array_controls[dynamicCount][8].cb_hour_format);
 					jQuery("#ux_default_minute_"+dynamicId).val(array_controls[dynamicCount][10].cb_minutes);
 					jQuery("#ux_default_am_"+dynamicId).val(array_controls[dynamicCount][11].cb_am_pm);
-					jQuery("#select_hr_12_"+dynamicId).hide();
-					jQuery("#select_hr_24_"+dynamicId).show();
-					jQuery("#select_am_"+dynamicId).hide();
-					jQuery("#select_hr_12_"+dynamicId).val(array_controls[dynamicCount][9].cb_hours);
-					jQuery("#select_min_"+dynamicId).val(array_controls[dynamicCount][10].cb_minutes);
-					jQuery("#select_am_"+dynamicId).val(array_controls[dynamicCount][11].cb_am_pm);	
+					jQuery("#ux_ddl_select_hr_12_"+dynamicId).hide();
+					jQuery("#ux_ddl_select_hr_24_"+dynamicId).show();
+					jQuery("#ux_ddl_select_ampm_"+dynamicId).hide();
+					jQuery("#ux_ddl_select_hr_12_"+dynamicId).val(array_controls[dynamicCount][9].cb_hours);
+					jQuery("#ux_ddl_select_minute_"+dynamicId).val(array_controls[dynamicCount][10].cb_minutes);
+					jQuery("#ux_ddl_select_ampm_"+dynamicId).val(array_controls[dynamicCount][11].cb_am_pm);	
 				}
 				show_Popup();
 			});
@@ -1746,7 +1746,7 @@ function add_settings(dynamicId,field_type,arrayControl,dynamicCount)
 					break;
 					case 13:
 						
-						jQuery("#ux_default_hours_24_"+dynamicId).hide();
+						
 						jQuery("#ux_label_text_"+dynamicId).val(arrayControl[0].dynamic_settings_value);
 						jQuery("#ux_description_control_"+dynamicId).val(arrayControl[1].dynamic_settings_value);
 						
@@ -1777,13 +1777,13 @@ function add_settings(dynamicId,field_type,arrayControl,dynamicCount)
 						
 						if(arrayControl[6].dynamic_settings_value != "" )
 						{
-							jQuery("#select_min_"+dynamicId).html(dropdown_min);
+							jQuery("#ux_ddl_select_minute_"+dynamicId).html(dropdown_min);
 							jQuery("#ux_default_minute_"+dynamicId).html(dropdown_min);
 							jQuery("#ux_minute_format_"+dynamicId).val(1);
 						}
 						else
 						{
-							jQuery("#select_min_"+dynamicId).html(dropdown_min);
+							jQuery("#ux_ddl_select_minute_"+dynamicId).html(dropdown_min);
 							jQuery("#ux_default_minute_"+dynamicId).html(dropdown_min);
 						}
 						
@@ -1903,7 +1903,6 @@ function add_settings(dynamicId,field_type,arrayControl,dynamicCount)
 							jQuery("#password_description_"+dynamicId).css("display","block");
 							jQuery("#password_description_"+dynamicId).attr("style", "position:inherit");
 						}
-						
 						arrayControl[9].dynamic_settings_value == "1" ? jQuery("#ux_checkbox_alpha_filter_"+dynamicId).attr("checked","checked") : jQuery("#ux_checkbox_alpha_filter_"+dynamicId).removeAttr("checked");
 						arrayControl[10].dynamic_settings_value == "1" ? jQuery("#ux_checkbox_alpha_num_filter_"+dynamicId).attr("checked","checked") : jQuery("#ux_checkbox_alpha_num_filter_"+dynamicId).removeAttr("checked");
 						arrayControl[11].dynamic_settings_value == "1" ? jQuery("#ux_checkbox_digit_filter_"+dynamicId).attr("checked","checked") : jQuery("#ux_checkbox_digit_filter_"+dynamicId).removeAttr("checked");
@@ -1915,8 +1914,15 @@ function add_settings(dynamicId,field_type,arrayControl,dynamicCount)
 			}
 			else
 			{
-				default_day(dynamicId,"","");
-				 dropdown_heading(dynamicId);
+				if(field_type == 12)
+				{
+					default_day(dynamicId,"","");
+					dropdown_heading(dynamicId);
+				}
+				else if(field_type == 13)
+				{
+					jQuery("#ux_default_hours_24_"+dynamicId).hide();
+				}
 			}
 		});
 	}
@@ -2011,13 +2017,13 @@ jQuery("#ux_dynamic_form_submit").validate
 ({
 	rules: 
 	{
-		ux_form_name_txt: "required",
-		ux_sucess_message: "required",
-		ux_redirect_url: 
+		ux_txt_form_name: "required",
+		ux_txt_sucess_message: "required",
+		ux_txt_redirect_url: 
 		{
 			required: function()
 			{
-				return jQuery("#chk_redirect_url").prop("checked");
+				return jQuery("#ux_chk_redirect_url").prop("checked");
 			}
 		}
 	},
@@ -2036,7 +2042,7 @@ jQuery("#ux_dynamic_form_submit").validate
 			}
 		});	
 		var field_no = created_control_type.length;
-		var form_name = jQuery("#ux_form_name_txt").val();
+		var form_name = jQuery("#ux_txt_form_name").val();
 		var form_id = <?php echo $form_id; ?>;
 		if(field_order.length == 0)
 		{
@@ -2047,10 +2053,9 @@ jQuery("#ux_dynamic_form_submit").validate
 		jQuery.ajax
 		({
 			type: "POST",
-			url: ajaxurl + "?form_name="+form_name+"&form_id="+form_id+"&field_order="+field_order+"&edit_control_dynamic_ids="+edit_control_dynamic_ids+"&new_control_dynamic_ids="+new_control_dynamic_ids+"&created_control_type="+created_control_type+"&field_dynamic_id="+field_dynamic_id+"&ux_sucess_message="+jQuery("#ux_sucess_message").val()+"&chk_redirect_url="+jQuery("#chk_redirect_url").prop("checked")+"&ux_redirect_url="+jQuery("#ux_redirect_url").val()+"&form=1&param=submit_controls&action=edit_contact_form_library",
+			url: ajaxurl + "?form_name="+form_name+"&form_id="+form_id+"&field_order="+field_order+"&edit_control_dynamic_ids="+edit_control_dynamic_ids+"&new_control_dynamic_ids="+new_control_dynamic_ids+"&created_control_type="+created_control_type+"&field_dynamic_id="+field_dynamic_id+"&ux_sucess_message="+jQuery("#ux_txt_sucess_message").val()+"&chk_redirect_url="+jQuery("#ux_chk_redirect_url").prop("checked")+"&ux_redirect_url="+jQuery("#ux_txt_redirect_url").val()+"&form=1&param=submit_controls&action=edit_contact_form_library",
 			success : function(data) 
 			{
-				
 				if(created_control_type.length > 0)
 				{
 					for(flag = 0;flag<field_no; flag++)
@@ -2059,8 +2064,8 @@ jQuery("#ux_dynamic_form_submit").validate
 						switch(parseInt(created_control_type[flag]))
 						{
 							case 1:
-								if(array_controls[dynamicCount].length == 0)
-								{
+							if(array_controls[dynamicCount].length == 0)
+							{
 									array_controls[dynamicCount].push({"control_type" : 1});
 									array_controls[dynamicCount].push({"text_dynamicId" : new_control_dynamic_ids[flag]});
 									array_controls[dynamicCount].push({"cb_label_value" : "<?php _e("Untitled", contact_bank); ?>"});
@@ -2217,12 +2222,12 @@ jQuery("#ux_dynamic_form_submit").validate
 									array_controls[dynamicCount].push({"cb_default_value_year" : (new Date).getFullYear()});
 									array_controls[dynamicCount].push({"cb_error_invalid" : ""});
 									array_controls[dynamicCount].push({"cb_date_format" : "0"});
-									array_controls[dynamicCount].push({"cb_button_set_outer_label" : "0"});
-									array_controls[dynamicCount].push({"cb_button_set_txt_input" : "0"});
-									array_controls[dynamicCount].push({"cb_button_set_description" : "0"});
-									array_controls[dynamicCount].push({"cb_date_day_dropdown" : "0"});
-									array_controls[dynamicCount].push({"cb_date_month_dropdown" : "0"});
-									array_controls[dynamicCount].push({"cb_date_year_dropdown" : "0"});
+									array_controls[dynamicCount].push({"cb_button_set_outer_label" : ""});
+									array_controls[dynamicCount].push({"cb_button_set_txt_input" : ""});
+									array_controls[dynamicCount].push({"cb_button_set_description" : ""});
+									array_controls[dynamicCount].push({"cb_date_day_dropdown" : ""});
+									array_controls[dynamicCount].push({"cb_date_month_dropdown" : ""});
+									array_controls[dynamicCount].push({"cb_date_year_dropdown" : ""});
 								}
 							break;
 							case 13:
@@ -2282,29 +2287,28 @@ jQuery("#ux_dynamic_form_submit").validate
 								}
 								break;
 							}
-							
-							jQuery.ajax
-							({
-								type: "POST",
-								url: ajaxurl + "?"+jQuery(form).serialize() + "&array_controls="+encodeURIComponent(JSON.stringify(array_controls[array_dynamicCount[flag]]))+"&form=0&control_type=1&param=submit_controls&action=add_contact_form_library",
-								success : function(data) 
+						jQuery.ajax
+						({
+							type: "POST",
+							url: ajaxurl + "?"+jQuery(form).serialize() + "&array_controls="+encodeURIComponent(JSON.stringify(array_controls[array_dynamicCount[flag]]))+"&form=0&control_type=1&param=submit_controls&action=add_contact_form_library",
+							success : function(data) 
+							{
+								imaginaryCount++;
+								var totalLength = parseInt(created_control_type.length) + parseInt(edit_created_control_type.length);
+								if(imaginaryCount == totalLength)
 								{
-									imaginaryCount++;
-									var totalLength = parseInt(created_control_type.length) + parseInt(edit_created_control_type.length);
-									if(imaginaryCount == totalLength)
+									setTimeout(function()
 									{
-										setTimeout(function()
-										{
-											new_control_dynamic_ids.length = 0;
-											created_control_type.length = 0;
-											edit_control_dynamic_ids.length = 0;
-											edit_created_control_type.length = 0;
-											jQuery("#form_success_message").css("display","none");
-											window.location.href = "admin.php?page=dashboard";
-										}, 2000);
-									}
+										new_control_dynamic_ids.length = 0;
+										created_control_type.length = 0;
+										edit_control_dynamic_ids.length = 0;
+										edit_created_control_type.length = 0;
+										jQuery("#form_success_message").css("display","none");
+										//window.location.href = "admin.php?page=dashboard";
+									}, 2000);
 								}
-							});
+							}
+						});
 					}
 				}
 				
@@ -2321,7 +2325,6 @@ jQuery("#ux_dynamic_form_submit").validate
 							{
 								imaginaryCount++;
 								var totalLength = parseInt(created_control_type.length) + parseInt(edit_created_control_type.length);
-
 								if(imaginaryCount == totalLength)
 								{
 									setTimeout(function()
@@ -2329,7 +2332,7 @@ jQuery("#ux_dynamic_form_submit").validate
 										new_control_dynamic_ids.length = 0;
 										created_control_type.length = 0;
 										jQuery("#form_success_message").css("display","none");
-										window.location.href = "admin.php?page=dashboard";
+										//window.location.href = "admin.php?page=dashboard";
 									}, 2000);
 								}
 							}
@@ -2339,7 +2342,6 @@ jQuery("#ux_dynamic_form_submit").validate
 					{
 						imaginaryCount++;
 						var totalLength = parseInt(created_control_type.length) + parseInt(edit_created_control_type.length);
-						
 						if(imaginaryCount == totalLength)
 						{
 							setTimeout(function()
@@ -2347,7 +2349,7 @@ jQuery("#ux_dynamic_form_submit").validate
 								edit_control_dynamic_ids.length = 0;
 								edit_created_control_type.length = 0;
 								jQuery("#form_success_message").css("display","none");
-								window.location.href = "admin.php?page=dashboard";
+								//window.location.href = "admin.php?page=dashboard";
 							}, 2000);
 						}
 					}
@@ -2358,7 +2360,7 @@ jQuery("#ux_dynamic_form_submit").validate
 });
 function show_url_control()
 {
-	var chk_redirect_url =  jQuery("#chk_redirect_url").prop("checked");
+	var chk_redirect_url =  jQuery("#ux_chk_redirect_url").prop("checked");
 	if(chk_redirect_url == true)
 	{
 		jQuery("#div_url").css("display","block");
