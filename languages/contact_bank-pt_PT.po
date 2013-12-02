@@ -1,0 +1,1051 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2013-11-28 12:51+0530\n"
+"PO-Revision-Date: 2013-11-28 12:51+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: C:\\wamp\\www\\contact-bank3.7\\wp-content\\plugins"
+"\\contact-bank\\\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: contact-bank.php:74
+msgid "Contact Bank"
+msgstr ""
+
+#: contact-bank.php:75 contact-bank.php:456
+msgid "Dashboard"
+msgstr "painel de instrumentos"
+
+#: contact-bank.php:76 contact-bank.php:462 views/contact_view.php:6
+#: views/dashboard.php:8
+msgid "Add New Form"
+msgstr "Adicionar nova Forma"
+
+#: contact-bank.php:77 contact-bank.php:468 views/contact_email.php:6
+msgid "Email Settings"
+msgstr "de e-mail Configurações "
+
+#: contact-bank.php:78 contact-bank.php:474 views/contact_frontend_data.php:5
+msgid "Form Entries"
+msgstr "Forma entradas "
+
+#: contact-bank.php:79 contact-bank.php:480
+msgid "Documentation"
+msgstr "de Documentação"
+
+#: contact-bank.php:489
+msgid "Add Contact Bank Form"
+msgstr "acrescentar  contato bancária- Forma"
+
+#: contact-bank.php:499
+msgid "Insert Contact Bank Form"
+msgstr "Insira- formulário de contato "
+
+#: contact-bank.php:501
+msgid "Select a form below to add it to your post or page."
+msgstr ""
+"Selecione um formulário abaixo para adicionar ele ao seu post ou página."
+
+#: contact-bank.php:506
+msgid "Select a Form"
+msgstr "Selecione um formulário"
+
+#: contact-bank.php:524
+msgid "Can't find your form? Make sure it is active."
+msgstr "Não consegue encontrar o seu formulário? Verifique se ele está ativo."
+
+#: contact-bank.php:529
+msgid "Cancel"
+msgstr "o Anular"
+
+#: contact-bank.php:538
+msgid "Please select a form"
+msgstr "Por favor seleccione um formulário"
+
+#: includes/cb_checkbox.php:4
+msgid "Checkbox Control"
+msgstr "caixa de verificação Controle de "
+
+#: includes/cb_checkbox.php:11 includes/cb_date.php:11
+#: includes/cb_dropdown.php:11 includes/cb_email.php:12
+#: includes/cb_file_upload.php:13 includes/cb_multiple.php:11
+#: includes/cb_password.php:12 includes/cb_text.php:11
+#: includes/cb_textarea.php:12 includes/cb_time.php:11
+msgid "Advanced"
+msgstr "avançado"
+
+#: includes/cb_checkbox.php:14 includes/cb_checkbox.php:43
+#: includes/cb_date.php:14 includes/cb_dropdown.php:14
+#: includes/cb_dropdown.php:43 includes/cb_email.php:15
+#: includes/cb_file_upload.php:16 includes/cb_multiple.php:14
+#: includes/cb_multiple.php:43 includes/cb_password.php:15
+#: includes/cb_text.php:14 includes/cb_textarea.php:15 includes/cb_time.php:14
+msgid "Options"
+msgstr "opções"
+
+#: includes/cb_checkbox.php:17 includes/cb_date.php:17
+#: includes/cb_dropdown.php:17 includes/cb_email.php:18
+#: includes/cb_file_upload.php:19 includes/cb_hidden.php:11
+#: includes/cb_multiple.php:17 includes/cb_password.php:18
+#: includes/cb_text.php:17 includes/cb_textarea.php:18 includes/cb_time.php:17
+#: views/contact_view.php:56 views/contact_view.php:69
+#: views/contact_view.php:82 views/contact_view.php:97
+#: views/contact_view.php:110 views/contact_view.php:124
+#: views/contact_view.php:134 views/contact_view.php:214
+#: views/contact_view.php:290 views/contact_view.php:303
+#: views/contact_view.php:316 views/edit_contact_view.php:94
+#: views/edit_contact_view.php:107 views/edit_contact_view.php:120
+#: views/edit_contact_view.php:135 views/edit_contact_view.php:148
+#: views/edit_contact_view.php:162 views/edit_contact_view.php:172
+#: views/edit_contact_view.php:252 views/edit_contact_view.php:328
+#: views/edit_contact_view.php:341 views/edit_contact_view.php:354
+msgid "Settings"
+msgstr "Configurações"
+
+#: includes/cb_checkbox.php:23 includes/cb_checkbox.php:109
+#: includes/cb_date.php:23 includes/cb_date.php:163
+#: includes/cb_dropdown.php:23 includes/cb_dropdown.php:95
+#: includes/cb_email.php:24 includes/cb_email.php:95
+#: includes/cb_file_upload.php:25 includes/cb_file_upload.php:118
+#: includes/cb_hidden.php:17 includes/cb_multiple.php:23
+#: includes/cb_multiple.php:109 includes/cb_password.php:24
+#: includes/cb_password.php:94 includes/cb_text.php:23 includes/cb_text.php:97
+#: includes/cb_textarea.php:24 includes/cb_textarea.php:104
+#: includes/cb_time.php:23 includes/cb_time.php:205
+msgid "Label"
+msgstr "etiqueta"
+
+#: includes/cb_checkbox.php:25 includes/cb_checkbox.php:58
+#: includes/cb_dropdown.php:25 includes/cb_dropdown.php:58
+#: includes/cb_multiple.php:25 includes/cb_multiple.php:58
+#: includes/cb_text.php:25 includes/cb_text.php:60 includes/cb_textarea.php:26
+#: includes/cb_textarea.php:67 views/contact_view.php:52
+#: views/contact_view.php:65 views/contact_view.php:91
+#: views/contact_view.php:104 views/contact_view.php:118
+#: views/contact_view.php:951 views/contact_view.php:956
+#: views/contact_view.php:974 views/contact_view.php:979
+#: views/contact_view.php:1017 views/contact_view.php:1022
+#: views/contact_view.php:1034 views/contact_view.php:1039
+#: views/contact_view.php:1054 views/contact_view.php:1059
+#: views/edit_contact_view.php:90 views/edit_contact_view.php:103
+#: views/edit_contact_view.php:129 views/edit_contact_view.php:142
+#: views/edit_contact_view.php:156 views/edit_contact_view.php:1332
+#: views/edit_contact_view.php:1390 views/edit_contact_view.php:1522
+#: views/edit_contact_view.php:1578 views/edit_contact_view.php:1647
+#: views/edit_contact_view.php:2170 views/edit_contact_view.php:2175
+#: views/edit_contact_view.php:2193 views/edit_contact_view.php:2198
+#: views/edit_contact_view.php:2236 views/edit_contact_view.php:2241
+#: views/edit_contact_view.php:2253 views/edit_contact_view.php:2258
+#: views/edit_contact_view.php:2273 views/edit_contact_view.php:2278
+msgid "Untitled"
+msgstr "sem título"
+
+#: includes/cb_checkbox.php:25 includes/cb_date.php:25
+#: includes/cb_dropdown.php:25 includes/cb_email.php:26
+#: includes/cb_file_upload.php:27 includes/cb_hidden.php:19
+#: includes/cb_multiple.php:25 includes/cb_password.php:26
+#: includes/cb_text.php:25 includes/cb_time.php:25
+msgid "Enter Label"
+msgstr "Digite  Rótulo"
+
+#: includes/cb_checkbox.php:29 includes/cb_checkbox.php:31
+#: includes/cb_date.php:35 includes/cb_date.php:37 includes/cb_dropdown.php:29
+#: includes/cb_dropdown.php:31 includes/cb_email.php:36
+#: includes/cb_email.php:38 includes/cb_file_upload.php:37
+#: includes/cb_file_upload.php:39 includes/cb_multiple.php:29
+#: includes/cb_multiple.php:31 includes/cb_password.php:36
+#: includes/cb_password.php:38 includes/cb_text.php:35 includes/cb_text.php:37
+#: includes/cb_textarea.php:36 includes/cb_textarea.php:38
+#: includes/cb_time.php:35 includes/cb_time.php:37
+msgid "Required"
+msgstr "exigido"
+
+#: includes/cb_checkbox.php:32 includes/cb_date.php:38
+#: includes/cb_dropdown.php:32 includes/cb_email.php:39
+#: includes/cb_file_upload.php:40 includes/cb_multiple.php:32
+#: includes/cb_password.php:39 includes/cb_text.php:38
+#: includes/cb_textarea.php:39 includes/cb_time.php:38
+msgid "Not Required"
+msgstr "não obrigatório"
+
+#: includes/cb_checkbox.php:36 includes/cb_date.php:42
+#: includes/cb_dropdown.php:36 includes/cb_email.php:43
+#: includes/cb_file_upload.php:44 includes/cb_multiple.php:36
+#: includes/cb_password.php:43 includes/cb_text.php:42 includes/cb_time.php:42
+msgid "Tooltip Text"
+msgstr "dica de ferramenta Texto"
+
+#: includes/cb_checkbox.php:38 includes/cb_date.php:44
+#: includes/cb_dropdown.php:38 includes/cb_email.php:45
+#: includes/cb_file_upload.php:46 includes/cb_password.php:45
+#: includes/cb_textarea.php:45 includes/cb_time.php:44
+msgid "Enter Tooltip"
+msgstr "Digite dica de ferramenta"
+
+#: includes/cb_checkbox.php:45
+msgid "Enter Options"
+msgstr "Digite Opções"
+
+#: includes/cb_checkbox.php:45 includes/cb_dropdown.php:45
+#: includes/cb_multiple.php:45
+msgid "Add option"
+msgstr "Adicionar opção"
+
+#: includes/cb_checkbox.php:56 includes/cb_dropdown.php:56
+#: includes/cb_file_upload.php:59 includes/cb_password.php:54
+#: includes/cb_time.php:53
+msgid "Admin Label"
+msgstr "de administrador Etiqueta "
+
+#: includes/cb_checkbox.php:58 includes/cb_date.php:55
+#: includes/cb_dropdown.php:58 includes/cb_email.php:57
+#: includes/cb_file_upload.php:61 includes/cb_multiple.php:58
+#: includes/cb_password.php:56 includes/cb_time.php:55
+msgid "Enter Admin Label"
+msgstr "Digite de administrador da etiqueta"
+
+#: includes/cb_checkbox.php:62 includes/cb_date.php:59
+#: includes/cb_dropdown.php:62 includes/cb_email.php:61
+#: includes/cb_file_upload.php:65 includes/cb_hidden.php:35
+#: includes/cb_multiple.php:62 includes/cb_password.php:60
+#: includes/cb_text.php:64 includes/cb_textarea.php:71 includes/cb_time.php:59
+msgid "Do not show in the email"
+msgstr "Não mostrar no email de"
+
+#: includes/cb_checkbox.php:72 includes/cb_date.php:119
+#: includes/cb_dropdown.php:72 includes/cb_email.php:72
+#: includes/cb_file_upload.php:102 includes/cb_multiple.php:72
+#: includes/cb_password.php:70 includes/cb_text.php:74
+#: includes/cb_textarea.php:81 includes/cb_time.php:161
+msgid "Label Style"
+msgstr "Estilo de etiqueta"
+
+#: includes/cb_checkbox.php:74 includes/cb_date.php:121
+#: includes/cb_dropdown.php:74 includes/cb_email.php:74
+#: includes/cb_file_upload.php:104 includes/cb_multiple.php:74
+#: includes/cb_password.php:72 includes/cb_text.php:76
+#: includes/cb_textarea.php:83 includes/cb_time.php:163
+msgid "Enter Label Style"
+msgstr "Introduza Estilo de Etiqueta"
+
+#: includes/cb_checkbox.php:79 includes/cb_date.php:133
+#: includes/cb_email.php:86 includes/cb_file_upload.php:109
+#: includes/cb_multiple.php:79 includes/cb_password.php:85
+#: includes/cb_text.php:88 includes/cb_textarea.php:95
+#: includes/cb_time.php:175
+msgid "Description Style"
+msgstr "Descrição Estilo"
+
+#: includes/cb_checkbox.php:81 includes/cb_date.php:135
+#: includes/cb_email.php:88 includes/cb_file_upload.php:111
+#: includes/cb_multiple.php:81 includes/cb_password.php:87
+#: includes/cb_text.php:90 includes/cb_textarea.php:97
+#: includes/cb_time.php:177
+msgid "Enter Description Style"
+msgstr "Introduza Descrição Estilo"
+
+#: includes/cb_checkbox.php:86 includes/cb_multiple.php:86
+msgid "Options Outer Wrapper Style"
+msgstr "Opções -exteriores Atadeira Estilo de"
+
+#: includes/cb_checkbox.php:88 includes/cb_multiple.php:88
+msgid "Enter Options Outer Wrapper Style"
+msgstr "Insira as opções de exteriores Atadeira Estilo de"
+
+#: includes/cb_checkbox.php:93
+msgid "Option Wrapper Style"
+msgstr "Opção Atadeira Estilo  "
+
+#: includes/cb_checkbox.php:95
+msgid "Enter Option Wrapper Style"
+msgstr "introduza Opção  Atadeira Estilo de"
+
+#: includes/cb_checkbox.php:100
+msgid "Options Label Style"
+msgstr "Opções da Etiqueta estilo de"
+
+#: includes/cb_checkbox.php:102
+msgid "Enter Options Label Style"
+msgstr "Introduza Opções da etiqueta estilo de"
+
+#: includes/cb_checkbox.php:107 includes/cb_date.php:161
+#: includes/cb_dropdown.php:93 includes/cb_email.php:93
+#: includes/cb_file_upload.php:116 includes/cb_multiple.php:107
+#: includes/cb_password.php:92 includes/cb_text.php:95
+#: includes/cb_textarea.php:102 includes/cb_time.php:203
+msgid "Add a Style to"
+msgstr "ao"
+
+#: includes/cb_checkbox.php:110 includes/cb_date.php:29
+#: includes/cb_date.php:165 includes/cb_dropdown.php:97
+#: includes/cb_email.php:30 includes/cb_email.php:97
+#: includes/cb_file_upload.php:31 includes/cb_file_upload.php:119
+#: includes/cb_multiple.php:110 includes/cb_password.php:30
+#: includes/cb_password.php:96 includes/cb_text.php:29 includes/cb_text.php:99
+#: includes/cb_textarea.php:30 includes/cb_textarea.php:106
+#: includes/cb_time.php:29 includes/cb_time.php:207
+msgid "Description"
+msgstr "descrição"
+
+#: includes/cb_checkbox.php:111 includes/cb_multiple.php:111
+msgid "Options Outer Wrapper"
+msgstr "Opções- Atadeira -estilo"
+
+#: includes/cb_checkbox.php:112
+msgid "Options Wrapper"
+msgstr "Opções -do Wrapper"
+
+#: includes/cb_checkbox.php:113 includes/cb_multiple.php:113
+msgid "Options Label"
+msgstr "Opções de da etiqueta"
+
+#: includes/cb_checkbox.php:123 includes/cb_date.php:178
+#: includes/cb_dropdown.php:107 includes/cb_email.php:117
+#: includes/cb_file_upload.php:129 includes/cb_hidden.php:47
+#: includes/cb_multiple.php:123 includes/cb_password.php:116
+#: includes/cb_text.php:119 includes/cb_textarea.php:126
+#: includes/cb_time.php:220
+msgid "Save Settings"
+msgstr "Salvar configurações"
+
+#: includes/cb_checkbox.php:233 includes/cb_dropdown.php:248
+#: includes/cb_multiple.php:234
+msgid "Please Fill an Option."
+msgstr "Encha por favor uma opção."
+
+#: includes/cb_date.php:4
+msgid "Date Control"
+msgstr "data Controlo"
+
+#: includes/cb_date.php:25 includes/cb_date.php:55 views/contact_view.php:160
+#: views/contact_view.php:360 views/contact_view.php:1092
+#: views/contact_view.php:1096 views/edit_contact_view.php:198
+#: views/edit_contact_view.php:426 views/edit_contact_view.php:1761
+#: views/edit_contact_view.php:2311 views/edit_contact_view.php:2315
+msgid "Date"
+msgstr "data"
+
+#: includes/cb_date.php:31 includes/cb_email.php:32
+#: includes/cb_file_upload.php:33 includes/cb_password.php:32
+#: includes/cb_text.php:31 includes/cb_time.php:31
+msgid "Enter Description"
+msgstr "Digite Descrição"
+
+#: includes/cb_date.php:53 includes/cb_email.php:55 includes/cb_hidden.php:29
+#: includes/cb_multiple.php:56 includes/cb_text.php:58
+#: includes/cb_textarea.php:65
+msgid "Admin label"
+msgstr " administrador rótulo de"
+
+#: includes/cb_date.php:65
+msgid "Start year"
+msgstr "ano de início"
+
+#: includes/cb_date.php:67
+msgid "Enter Start Year"
+msgstr "Digite Comece Ano"
+
+#: includes/cb_date.php:71
+msgid "End year"
+msgstr "final ano"
+
+#: includes/cb_date.php:73
+msgid "Enter End Year "
+msgstr "Digite de Ano Final "
+
+#: includes/cb_date.php:77 includes/cb_text.php:52 includes/cb_textarea.php:59
+#: includes/cb_time.php:87
+msgid "Default value"
+msgstr "valor padrão"
+
+#: includes/cb_date.php:80 includes/cb_date.php:166 includes/cb_date.php:237
+#: includes/cb_date.php:309 views/contact_bank_frontend.php:697
+#: views/contact_view.php:164 views/edit_contact_view.php:202
+msgid "Day"
+msgstr "dia"
+
+#: includes/cb_date.php:84 includes/cb_date.php:167 includes/cb_date.php:252
+#: includes/cb_date.php:324 views/contact_bank_frontend.php:725
+#: views/contact_view.php:184 views/edit_contact_view.php:222
+msgid "Month"
+msgstr "mês"
+
+#: includes/cb_date.php:87 includes/cb_date.php:168 includes/cb_date.php:220
+#: includes/cb_date.php:286 includes/cb_date.php:346
+#: views/contact_bank_frontend.php:747 views/contact_view.php:199
+#: views/edit_contact_view.php:237 views/edit_contact_view.php:1785
+#: views/edit_contact_view.php:1799
+msgid "Year"
+msgstr "ano"
+
+#: includes/cb_date.php:92
+msgid "Error message if invalid date"
+msgstr "Mensagem de erro se a data inválido"
+
+#: includes/cb_date.php:94
+msgid "Enter Error Message"
+msgstr "Digite Mensagem de erro de"
+
+#: includes/cb_date.php:98
+msgid "Date format"
+msgstr "formato de data"
+
+#: includes/cb_date.php:126 includes/cb_email.php:79 includes/cb_text.php:81
+#: includes/cb_textarea.php:88 includes/cb_time.php:168
+msgid "Text Input Style"
+msgstr " de entrada de texto Estilo"
+
+#: includes/cb_date.php:128 includes/cb_email.php:81 includes/cb_text.php:83
+#: includes/cb_textarea.php:90 includes/cb_time.php:170
+msgid "Enter Text Input Style"
+msgstr "Introduza texto Estilo de entrada do"
+
+#: includes/cb_date.php:140
+msgid "Day Style"
+msgstr "Dia -Estilo"
+
+#: includes/cb_date.php:142
+msgid "Enter Day Style"
+msgstr "Introduza Dia estilo de"
+
+#: includes/cb_date.php:147
+msgid "Month Style"
+msgstr "Mês estilo de"
+
+#: includes/cb_date.php:149
+msgid "Enter Month Style"
+msgstr "Introduza Mês estilo de"
+
+#: includes/cb_date.php:154
+msgid "Year Style"
+msgstr " Ano -Estilo"
+
+#: includes/cb_date.php:156
+msgid "Enter Year Style"
+msgstr "Introduza Ano estilo de"
+
+#: includes/cb_date.php:164 includes/cb_email.php:96
+#: includes/cb_password.php:95 includes/cb_text.php:98
+#: includes/cb_textarea.php:105 includes/cb_time.php:206
+msgid "Text Input"
+msgstr "de Entrada de Texto"
+
+#: includes/cb_dropdown.php:4
+msgid "Dropdown Control"
+msgstr "Controlo Lista Suspensa"
+
+#: includes/cb_dropdown.php:45 includes/cb_multiple.php:45
+msgid "Enter Option"
+msgstr "Digite Opção"
+
+#: includes/cb_dropdown.php:79
+msgid "Dropdown Style"
+msgstr "Deixe cair para baixoestilo de"
+
+#: includes/cb_dropdown.php:81
+msgid "Enter Dropdown Style"
+msgstr "Introduza Deixe cair para baixo Estilo"
+
+#: includes/cb_dropdown.php:86
+msgid "Css Description"
+msgstr "Css Descrição"
+
+#: includes/cb_dropdown.php:88
+msgid "Enter Css Description"
+msgstr "Digite  Css  Descrição"
+
+#: includes/cb_dropdown.php:96
+msgid "Dropdown"
+msgstr "Deixe cair- para baixo"
+
+#: includes/cb_dropdown.php:294 views/contact_bank_frontend.php:398
+#: views/contact_bank_frontend.php:412 views/contact_view.php:95
+#: views/edit_contact_view.php:133
+msgid "Select option"
+msgstr "seleccionar opção"
+
+#: includes/cb_email.php:4
+msgid "Email Control"
+msgstr "de e-mail Controlo "
+
+#: includes/cb_email.php:26 includes/cb_email.php:57
+#: views/contact_email.php:72 views/contact_email.php:138
+#: views/contact_view.php:78 views/contact_view.php:996
+#: views/contact_view.php:1000 views/edit_contact_view.php:116
+#: views/edit_contact_view.php:1453 views/edit_contact_view.php:2215
+#: views/edit_contact_view.php:2219
+msgid "Email"
+msgstr "de e-mail"
+
+#: includes/cb_email.php:101 includes/cb_password.php:100
+#: includes/cb_text.php:103 includes/cb_textarea.php:110
+msgid "Add a filter"
+msgstr "Adicionar um filtro"
+
+#: includes/cb_email.php:103 includes/cb_password.php:102
+#: includes/cb_text.php:105 includes/cb_textarea.php:112
+msgid "Alpha"
+msgstr "alfa"
+
+#: includes/cb_email.php:104 includes/cb_password.php:103
+#: includes/cb_text.php:106 includes/cb_textarea.php:113
+msgid "Alpha Numeric"
+msgstr "alfa Numérico"
+
+#: includes/cb_email.php:105 includes/cb_password.php:104
+#: includes/cb_text.php:107 includes/cb_textarea.php:114
+msgid "Digits"
+msgstr "algarismos"
+
+#: includes/cb_email.php:106 includes/cb_password.php:105
+#: includes/cb_text.php:108 includes/cb_textarea.php:115
+msgid "Strip Tags"
+msgstr "tags de tira"
+
+#: includes/cb_email.php:107 includes/cb_password.php:106
+#: includes/cb_text.php:109 includes/cb_textarea.php:116
+msgid "Trim"
+msgstr "aparar"
+
+#: includes/cb_file_upload.php:5
+msgid "Fileupload Control"
+msgstr "arquivo-carregar controlo"
+
+#: includes/cb_file_upload.php:27 includes/cb_file_upload.php:61
+#: views/contact_view.php:131 views/contact_view.php:357
+#: views/contact_view.php:1073 views/contact_view.php:1077
+#: views/edit_contact_view.php:169 views/edit_contact_view.php:423
+#: views/edit_contact_view.php:1714 views/edit_contact_view.php:2292
+#: views/edit_contact_view.php:2296
+msgid "File Upload"
+msgstr "de File Upload"
+
+#: includes/cb_file_upload.php:71
+msgid "Allow Multiple Uploads"
+msgstr "Permitir Várias Uploads"
+
+#: includes/cb_file_upload.php:77
+msgid "Allowed File Extensions"
+msgstr "Extensões de arquivos permitidas"
+
+#: includes/cb_file_upload.php:79
+msgid "Enter File Extensions"
+msgstr "Digite extensões de arquivos"
+
+#: includes/cb_file_upload.php:81
+msgid "The file extensions must be seperated with semicolons(' ; ')"
+msgstr "As extensões de arquivos devem ser separados por ponto e vírgula (';')"
+
+#: includes/cb_file_upload.php:85
+msgid "Allowed File Size"
+msgstr "Permitiu Tamanho da pasta"
+
+#: includes/cb_file_upload.php:89
+msgid "File Size must be in Kb"
+msgstr "Tamanho do arquivo deve estar no Kb"
+
+#: includes/cb_hidden.php:4
+msgid "Hidden Control"
+msgstr "Controlo escondido"
+
+#: includes/cb_hidden.php:19 includes/cb_hidden.php:31
+#: views/edit_contact_view.php:1957
+msgid "Untitled(hidden)"
+msgstr "Sem título (oculto)"
+
+#: includes/cb_hidden.php:23
+msgid "Default Value"
+msgstr "Valor padrão"
+
+#: includes/cb_hidden.php:25 includes/cb_text.php:54
+msgid "Enter Default Value"
+msgstr "Digite valor padrão"
+
+#: includes/cb_hidden.php:31 includes/cb_text.php:60
+#: includes/cb_textarea.php:67
+msgid "Enter Admin label"
+msgstr "Digite rótulo de administrador"
+
+#: includes/cb_multiple.php:4
+msgid "Radio Buttons"
+msgstr "Botões de Rádio"
+
+#: includes/cb_multiple.php:38 includes/cb_text.php:44
+msgid "Enter Tooltip Text"
+msgstr "Digite texto dica de ferramenta"
+
+#: includes/cb_multiple.php:93
+msgid "Options Wrapper Style"
+msgstr "Opções- Atadeira -estilo"
+
+#: includes/cb_multiple.php:95
+msgid "Enter Options Wrapper Style"
+msgstr "Introduza Opções Atadeira estilo"
+
+#: includes/cb_multiple.php:100
+msgid "Option Label Style"
+msgstr " Opção estilo Etiqueta"
+
+#: includes/cb_multiple.php:102
+msgid "Enter Option Label Style"
+msgstr "Introduza Opção estilo Etiqueta"
+
+#: includes/cb_multiple.php:112
+msgid "Options  Wrapper"
+msgstr "Opções -Atadeira"
+
+#: includes/cb_password.php:4
+msgid "Password Control"
+msgstr "senha  controle"
+
+#: includes/cb_password.php:26 includes/cb_password.php:56
+#: views/contact_view.php:312 views/contact_view.php:369
+#: views/contact_view.php:1153 views/contact_view.php:1157
+#: views/edit_contact_view.php:350 views/edit_contact_view.php:435
+#: views/edit_contact_view.php:1967 views/edit_contact_view.php:2372
+#: views/edit_contact_view.php:2376
+msgid "Password"
+msgstr "senha"
+
+#: includes/cb_password.php:78
+msgid "Input Text Style"
+msgstr "de entrada Texto estilo"
+
+#: includes/cb_password.php:80
+msgid "Enter Input Text Style"
+msgstr "Introduza de Entrada -de Texto-Estilo"
+
+#: includes/cb_text.php:4
+msgid "Textbox Control"
+msgstr "de caixa de texto Controlo"
+
+#: includes/cb_textarea.php:4
+msgid "Textarea Control"
+msgstr "área de texto Controlo"
+
+#: includes/cb_textarea.php:26
+msgid "Enter label"
+msgstr "Digite rótulo"
+
+#: includes/cb_textarea.php:32
+msgid "Enter  Description"
+msgstr "Digite Descrição"
+
+#: includes/cb_textarea.php:43
+msgid "Tooltip text"
+msgstr "dica de ferramenta texto"
+
+#: includes/cb_textarea.php:61
+msgid "Enter Default value"
+msgstr "Digite o valor padrão"
+
+#: includes/cb_time.php:4
+msgid "Time Control"
+msgstr "controle de tempo"
+
+#: includes/cb_time.php:25 includes/cb_time.php:55 views/contact_view.php:223
+#: views/contact_view.php:363 views/contact_view.php:1118
+#: views/contact_view.php:1122 views/edit_contact_view.php:261
+#: views/edit_contact_view.php:429 views/edit_contact_view.php:1854
+#: views/edit_contact_view.php:2337 views/edit_contact_view.php:2341
+msgid "Time"
+msgstr "tempo"
+
+#: includes/cb_time.php:65
+msgid "12/24 hour time"
+msgstr "12/24 horas Tempo de"
+
+#: includes/cb_time.php:74
+msgid "Time format"
+msgstr "formato da hora"
+
+#: includes/cb_time.php:90 includes/cb_time.php:110 includes/cb_time.php:208
+#: views/contact_bank_frontend.php:855 views/contact_bank_frontend.php:881
+#: views/contact_bank_frontend.php:907 views/contact_view.php:227
+#: views/contact_view.php:247 views/edit_contact_view.php:265
+#: views/edit_contact_view.php:285
+msgid "Hour"
+msgstr "horas"
+
+#: includes/cb_time.php:130 includes/cb_time.php:209 includes/cb_time.php:360
+#: views/contact_bank_frontend.php:931 views/contact_view.php:267
+#: views/edit_contact_view.php:305 views/edit_contact_view.php:1871
+msgid "Minute"
+msgstr "minuto"
+
+#: includes/cb_time.php:182
+msgid "Hour Style"
+msgstr "Horas -Estilo "
+
+#: includes/cb_time.php:184
+msgid "Enter Hour Style"
+msgstr "Introduza Estilo hora"
+
+#: includes/cb_time.php:189
+msgid "Minute Style"
+msgstr "Estilo- Minuto"
+
+#: includes/cb_time.php:191
+msgid "Enter Minute Style"
+msgstr "Introduza estilo Minuto"
+
+#: includes/cb_time.php:196
+msgid "AM/PM Style"
+msgstr "AM / PM Estilo de"
+
+#: includes/cb_time.php:198
+msgid "Enter AM/PM Style"
+msgstr "Introduza AM / PM Estilo de"
+
+#: includes/cb_time.php:210
+msgid "AM/PM"
+msgstr "AM / PM"
+
+#: views/contact_bank_frontend.php:165
+msgid "Enter Text"
+msgstr "Digite  texto"
+
+#: views/contact_bank_frontend.php:354 views/contact_email.php:84
+#: views/contact_email.php:144
+msgid "Enter Email Address"
+msgstr "Digite de e-mail Endereço de "
+
+#: views/contact_bank_frontend.php:986
+msgid "Enter Hidden Text"
+msgstr "Digite texto oculto"
+
+#: views/contact_bank_frontend.php:986 views/contact_view.php:302
+#: views/contact_view.php:366 views/edit_contact_view.php:340
+#: views/edit_contact_view.php:432
+msgid "Hidden"
+msgstr "escondido"
+
+#: views/contact_bank_frontend.php:1074
+msgid "Enter Password"
+msgstr "Insira  senha"
+
+#: views/contact_bank_frontend.php:1085
+msgid "Submit Form"
+msgstr "em Enviar Formulário"
+
+#: views/contact_email.php:9 views/contact_frontend_data.php:8
+#: views/contact_view.php:9 views/edit_contact_view.php:29
+msgid "Back to Dashboard"
+msgstr "voltar ao painel de instrumentos"
+
+#: views/contact_email.php:13
+msgid "Email Settings Saved. Kindly wait for the redirect."
+msgstr ""
+" E-mail Configurações de Salvar. Por favor, aguarde o redirecionamento."
+
+#: views/contact_email.php:18 views/contact_email.php:49
+#: views/contact_frontend_data.php:19 views/contact_frontend_data.php:32
+msgid "Select Form"
+msgstr "Selecione Formulário"
+
+#: views/contact_email.php:65
+msgid "Admin Email"
+msgstr "administrador de e-mail"
+
+#: views/contact_email.php:76
+msgid "To"
+msgstr "para"
+
+#: views/contact_email.php:78
+msgid "Enter Admin Email"
+msgstr "Digite admin de e-mail"
+
+#: views/contact_email.php:82 views/contact_email.php:142
+msgid "From"
+msgstr "a partir de"
+
+#: views/contact_email.php:89 views/contact_email.php:148
+msgid "Subject"
+msgstr "assunto"
+
+#: views/contact_email.php:91 views/contact_email.php:150
+msgid "Enter Subject"
+msgstr "Digite Assunto"
+
+#: views/contact_email.php:100 views/contact_email.php:160
+msgid "Email Content"
+msgstr "de e-mail conteúdo da"
+
+#: views/contact_email.php:115 views/contact_email.php:175
+msgid "Short Code Controls for Email"
+msgstr "código curto Controles  para e-mail"
+
+#: views/contact_email.php:129
+msgid "Client Email"
+msgstr "cliente de de e-mail"
+
+#: views/contact_email.php:183 views/contact_view.php:328
+#: views/edit_contact_view.php:395
+msgid "Save"
+msgstr "salvar"
+
+#: views/contact_frontend_data.php:14 views/contact_view.php:20
+#: views/dashboard.php:15 views/dashboard.php:21
+msgid "Form"
+msgstr "Forma"
+
+#: views/contact_view.php:13
+msgid "Form Submited. Kindly wait for the redirect."
+msgstr "Submetido formar. Por favor, aguarde o redirecionamento."
+
+#: views/contact_view.php:24 views/edit_contact_view.php:44
+msgid "Form Name :"
+msgstr "Nome do formulário:"
+
+#: views/contact_view.php:27 views/edit_contact_view.php:47
+msgid "Enter Form Name"
+msgstr "Digite Nome do Formulário"
+
+#: views/contact_view.php:31 views/edit_contact_view.php:51
+msgid "Success Message :"
+msgstr "Sucesso Mensagem:"
+
+#: views/contact_view.php:34 views/edit_contact_view.php:54
+msgid "Enter Success Message"
+msgstr "Introduza Sucesso Mensagem"
+
+#: views/contact_view.php:38 views/edit_contact_view.php:62
+#: views/edit_contact_view.php:72
+msgid "Redirect URL :"
+msgstr "Redirecionar URL:"
+
+#: views/contact_view.php:44 views/edit_contact_view.php:82
+msgid "URL :"
+msgstr "URL :"
+
+#: views/contact_view.php:47 views/edit_contact_view.php:85
+msgid "Enter Redirect URL"
+msgstr "Introduza de redireccionamento -URL "
+
+#: views/contact_view.php:299 views/edit_contact_view.php:337
+msgid "Untitled (hidden)"
+msgstr "Sem título (oculto)"
+
+#: views/contact_view.php:334 views/edit_contact_view.php:401
+msgid "Control Buttons"
+msgstr "Botões de controle"
+
+#: views/contact_view.php:339 views/edit_contact_view.php:405
+msgid "Text Box"
+msgstr "Caixa de Texto"
+
+#: views/contact_view.php:342 views/edit_contact_view.php:408
+msgid "Text Area"
+msgstr "Área de texto"
+
+#: views/contact_view.php:345 views/edit_contact_view.php:411
+msgid "Email Address"
+msgstr "de e-mail Endereço de "
+
+#: views/contact_view.php:348 views/edit_contact_view.php:414
+msgid "Dropdown Menu"
+msgstr "menu pendente"
+
+#: views/contact_view.php:351 views/edit_contact_view.php:417
+msgid "Checkboxes"
+msgstr "caixas de verificação"
+
+#: views/contact_view.php:354 views/edit_contact_view.php:420
+msgid "Multiple Choice"
+msgstr "múltipla escolha"
+
+#: views/contact_view.php:1142 views/contact_view.php:1144
+#: views/edit_contact_view.php:2361 views/edit_contact_view.php:2363
+msgid "Untitled(Hidden)"
+msgstr "Sem Título(Oculto)"
+
+#: views/dashboard.php:5
+msgid "Dashboard - Contact Bank"
+msgstr "tablier - Contato Banco"
+
+#: views/dashboard.php:9
+msgid "Delete All Forms"
+msgstr "Excluir Toda Forma"
+
+#: views/dashboard.php:22
+msgid "Shortcode"
+msgstr "Código curto"
+
+#: views/dashboard.php:23
+msgid "Action"
+msgstr "ação"
+
+#: views/dashboard.php:43
+msgid "Edit"
+msgstr "editar"
+
+#: views/dashboard.php:46
+msgid "Delete"
+msgstr "Excluir"
+
+#: views/dashboard.php:62
+msgid "Server Settings"
+msgstr "Configurações do Servidor"
+
+#: views/dashboard.php:73
+msgid "Not set"
+msgstr "não defina"
+
+#: views/dashboard.php:75 views/dashboard.php:78
+msgid "On"
+msgstr "no"
+
+#: views/dashboard.php:76 views/dashboard.php:79
+msgid "Off"
+msgstr "desligado"
+
+#: views/dashboard.php:82 views/dashboard.php:85 views/dashboard.php:88
+#: views/dashboard.php:91 views/dashboard.php:94 views/dashboard.php:97
+msgid "N/A"
+msgstr "N / D"
+
+#: views/dashboard.php:96
+msgid " MByte"
+msgstr "de mbyte"
+
+#: views/dashboard.php:99 views/dashboard.php:102 views/dashboard.php:105
+#: views/dashboard.php:156
+msgid "Yes"
+msgstr "sim"
+
+#: views/dashboard.php:100 views/dashboard.php:103 views/dashboard.php:106
+#: views/dashboard.php:158
+msgid "No"
+msgstr "nenhum"
+
+#: views/dashboard.php:108
+msgid "Operating System"
+msgstr "Sistema Operacional"
+
+#: views/dashboard.php:109
+msgid "Server"
+msgstr "servidor"
+
+#: views/dashboard.php:110
+msgid "Memory usage"
+msgstr "uso de memória"
+
+#: views/dashboard.php:111
+msgid "MYSQL Version"
+msgstr "MYSQL Versão"
+
+#: views/dashboard.php:112
+msgid "SQL Mode"
+msgstr "modo SQL"
+
+#: views/dashboard.php:113
+msgid "PHP Version"
+msgstr "PHP versão"
+
+#: views/dashboard.php:114
+msgid "PHP Safe Mode"
+msgstr "PHP Modo de Segurança"
+
+#: views/dashboard.php:115
+msgid "PHP Allow URL fopen"
+msgstr "PHP Permitir URL o fopen"
+
+#: views/dashboard.php:116
+msgid "PHP Memory Limit"
+msgstr "Limite de memória do PHP"
+
+#: views/dashboard.php:117
+msgid "PHP Max Upload Size"
+msgstr "PHP Max tamanho de carregamento"
+
+#: views/dashboard.php:118
+msgid "PHP Max Post Size"
+msgstr "PHP Max Pós Tamanho"
+
+#: views/dashboard.php:119
+msgid "PCRE Backtracking Limit"
+msgstr "PCRE trás rastreamento limitar"
+
+#: views/dashboard.php:120
+msgid "PHP Max Script Execute Time"
+msgstr "PHP Max de script Executar Tempo"
+
+#: views/dashboard.php:121
+msgid "PHP Exif support"
+msgstr "PHP suporte Exif"
+
+#: views/dashboard.php:122
+msgid "PHP IPTC support"
+msgstr "PHP suporte IPTC"
+
+#: views/dashboard.php:123
+msgid "PHP XML support"
+msgstr "Suporte XML PHP"
+
+#: views/dashboard.php:131
+msgid "Graphic Library Settings"
+msgstr "Gráfica Definições da Biblioteca "
+
+#: views/dashboard.php:151
+msgid "No GD support"
+msgstr "Não há suporte GD"
+
+#: views/dashboard.php:187
+msgid "Are you sure to delete this form ?"
+msgstr "Tem certeza que deseja deletar este formulário?"
+
+#: views/dashboard.php:198
+msgid "Are you sure to delete all forms ?"
+msgstr "Tem certeza que deseja excluir todas as formas?"
+
+#: views/edit_contact_view.php:26
+msgid "Edit Existing Form"
+msgstr "Editar formulário existente"
+
+#: views/edit_contact_view.php:33
+msgid "Form Updated. Kindly wait for the redirect."
+msgstr "Forma atualizada. Por favor, aguarde o redirecionamento."
+
+#: views/edit_contact_view.php:40
+msgid "Edit Form"
+msgstr "editar Forma"
+
+#: views/edit_contact_view.php:557 views/edit_contact_view.php:600
+#: views/edit_contact_view.php:685 views/edit_contact_view.php:740
+#: views/edit_contact_view.php:797
+msgid "Untitled :"
+msgstr "Sem título:"
+
+#: views/edit_contact_view.php:643
+msgid "Email :"
+msgstr "Email :"
+
+#: views/edit_contact_view.php:856
+msgid "File Upload :"
+msgstr "arquivo-carregar"
+
+#: views/edit_contact_view.php:916
+msgid "Date :"
+msgstr "data:"
+
+#: views/edit_contact_view.php:999
+msgid "Time :"
+msgstr "tempo:"
+
+#: views/edit_contact_view.php:1065
+msgid "Untitled(hidden) :"
+msgstr "Sem título (oculto):"
+
+#: views/edit_contact_view.php:1105
+msgid "Password : "
+msgstr "senha:"
+
+#: views/edit_contact_view.php:1738
+msgid "1024"
+msgstr "1024"
