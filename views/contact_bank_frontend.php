@@ -1258,7 +1258,7 @@ jQuery("#ux_contact_form_submit").validate
 		var form_id = <?php echo $form_id ;?>;
 		jQuery.post(ajaxurl, jQuery(form).serialize() +"&form_id="+form_id+"&file_uploaded_path="+file_uploaded_path+"&param=frontend_submit_controls&action=frontend_contact_form_library", function(data) 
 		{
-			alert(data);
+			
 			var submit_id = data;
 			jQuery.post(ajaxurl, "form_id="+form_id+"&submit_id="+submit_id+"&param=email_management&action=email_management_contact_form_library", function(data) 
 			{
