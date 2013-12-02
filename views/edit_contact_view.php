@@ -2304,7 +2304,7 @@ jQuery("#ux_dynamic_form_submit").validate
 										edit_control_dynamic_ids.length = 0;
 										edit_created_control_type.length = 0;
 										jQuery("#form_success_message").css("display","none");
-										//window.location.href = "admin.php?page=dashboard";
+										window.location.href = "admin.php?page=dashboard";
 									}, 2000);
 								}
 							}
@@ -2332,7 +2332,7 @@ jQuery("#ux_dynamic_form_submit").validate
 										new_control_dynamic_ids.length = 0;
 										created_control_type.length = 0;
 										jQuery("#form_success_message").css("display","none");
-										//window.location.href = "admin.php?page=dashboard";
+										window.location.href = "admin.php?page=dashboard";
 									}, 2000);
 								}
 							}
@@ -2349,7 +2349,7 @@ jQuery("#ux_dynamic_form_submit").validate
 								edit_control_dynamic_ids.length = 0;
 								edit_created_control_type.length = 0;
 								jQuery("#form_success_message").css("display","none");
-								//window.location.href = "admin.php?page=dashboard";
+								window.location.href = "admin.php?page=dashboard";
 							}, 2000);
 						}
 					}
