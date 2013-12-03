@@ -20,7 +20,6 @@ Contact Bank  can manage multiple forms, plus you can customize the form and the
 * [Gallery Bank](http://wordpress.org/extend/plugins/gallery-bank/) - Gallery Bank is an easy to use Responsive WordPress Premium Gallery Plugin for galleries, videos and albums.
 * [Captcha Bank](http://wordpress.org/extend/plugins/captcha-bank/) - An easy to use powerful wordpress Captcha Plugin to prevent spam on your site.lbums.
 
-
 **How  to setup and add Form to Contact Bank?**
 [youtube http://www.youtube.com/watch?v=EcqbsXmPbaI]
 
