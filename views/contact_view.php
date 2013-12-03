@@ -464,100 +464,93 @@ function create_control(control_type)
 	switch(parseInt(control_type))
 	{
 		case 1:
-			jQuery("#div_1_1").clone(false).attr("id","div_"+dynamicId+"_1").appendTo("#left_block");
-			jQuery("#div_"+dynamicId+"_1").children("label").attr("id","control_label_"+dynamicId);
-			jQuery("#div_"+dynamicId+"_1").children("span").attr("id","txt_required_"+dynamicId);
-			jQuery("#div_"+dynamicId+"_1").children("div").attr("id","show_tooltip"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId ).children("input[type='text']").attr("id","ux_txt_textbox_control_"+dynamicId); 
-			jQuery("#show_tooltip"+dynamicId ).children("input[type='text']").attr("name","ux_txt_textbox_control_"+dynamicId); 
-			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+","+dynamicCount+",1)");
-			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_1,"+dynamicId+",1)");
-			jQuery("#show_tooltip"+dynamicId).children("span").attr("id","txt_description_"+dynamicId);
-			jQuery("#div_"+dynamicId+"_1").attr("style","display:block");
-			
-			
-			
+				jQuery("#div_1_1").clone(false).attr("id","div_"+dynamicId+"_1").appendTo("#left_block");
+				jQuery("#div_"+dynamicId+"_1").children("label").attr("id","control_label_"+dynamicId);
+				jQuery("#div_"+dynamicId+"_1").children("span").attr("id","txt_required_"+dynamicId);
+				jQuery("#div_"+dynamicId+"_1").children("div").attr("id","show_tooltip"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId ).children("input[type='text']").attr("id","ux_txt_textbox_control_"+dynamicId); 
+				jQuery("#show_tooltip"+dynamicId ).children("input[type='text']").attr("name","ux_txt_textbox_control_"+dynamicId); 
+				jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+","+dynamicCount+",1)");
+				jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_1,"+dynamicId+",1)");
+				jQuery("#show_tooltip"+dynamicId).children("span").attr("id","txt_description_"+dynamicId);
+				jQuery("#div_"+dynamicId+"_1").attr("style","display:block");
+
 		break;
 		case 2:
-			jQuery("#div_2_2").clone(false).attr("id","div_"+dynamicId+"_2").appendTo("#left_block");
-			jQuery("#div_"+dynamicId+"_2").children("label").attr("id","control_label_"+dynamicId);
-			jQuery("#div_"+dynamicId+"_2").children("span").attr("id","txt_required_"+dynamicId);
-			jQuery("#div_"+dynamicId+"_2").children("div").attr("id","show_tooltip"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId ).children("textarea[type='textarea']").attr("id","ux_textarea_control_"+dynamicId); 
-			jQuery("#show_tooltip"+dynamicId ).children("textarea[type='textarea']").attr("name","ux_textarea_control_"+dynamicId); 
-			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+","+dynamicCount+",2)");
-			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_2,"+dynamicId+",2)");
-			jQuery("#show_tooltip"+dynamicId).children("span").attr("id","txt_description_"+dynamicId);
-			jQuery("#div_"+dynamicId+"_2").attr("style","display:block");
-			
+				jQuery("#div_2_2").clone(false).attr("id","div_"+dynamicId+"_2").appendTo("#left_block");
+				jQuery("#div_"+dynamicId+"_2").children("label").attr("id","control_label_"+dynamicId);
+				jQuery("#div_"+dynamicId+"_2").children("span").attr("id","txt_required_"+dynamicId);
+				jQuery("#div_"+dynamicId+"_2").children("div").attr("id","show_tooltip"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId ).children("textarea[type='textarea']").attr("id","ux_textarea_control_"+dynamicId); 
+				jQuery("#show_tooltip"+dynamicId ).children("textarea[type='textarea']").attr("name","ux_textarea_control_"+dynamicId); 
+				jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+","+dynamicCount+",2)");
+				jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_2,"+dynamicId+",2)");
+				jQuery("#show_tooltip"+dynamicId).children("span").attr("id","txt_description_"+dynamicId);
+				jQuery("#div_"+dynamicId+"_2").attr("style","display:block");
 			
 		break;
 		case 3:
-			jQuery("#div_3_3").clone(false).attr("id","div_"+dynamicId+"_3").appendTo("#left_block");
-			jQuery("#div_"+dynamicId+"_3").children("label").attr("id","control_label_"+dynamicId);
-			jQuery("#div_"+dynamicId+"_3").children("span").attr("id","txt_required_"+dynamicId);
-			jQuery("#div_"+dynamicId+"_3").children("div").attr("id","show_tooltip"+dynamicId);
-			jQuery("#div_"+dynamicId+"_3" ).children("input[type='text']").attr("id","ux_txt_email_"+dynamicId); 
-			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+","+dynamicCount+",3)");
-			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_3,"+dynamicId+",3)");
-			jQuery("#show_tooltip"+dynamicId).children("span").attr("id","txt_description_"+dynamicId);
-			jQuery("#div_"+dynamicId+"_3").attr("style","display:block");
-
-			
+				jQuery("#div_3_3").clone(false).attr("id","div_"+dynamicId+"_3").appendTo("#left_block");
+				jQuery("#div_"+dynamicId+"_3").children("label").attr("id","control_label_"+dynamicId);
+				jQuery("#div_"+dynamicId+"_3").children("span").attr("id","txt_required_"+dynamicId);
+				jQuery("#div_"+dynamicId+"_3").children("div").attr("id","show_tooltip"+dynamicId);
+				jQuery("#div_"+dynamicId+"_3" ).children("input[type='text']").attr("id","ux_txt_email_"+dynamicId); 
+				jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+","+dynamicCount+",3)");
+				jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_3,"+dynamicId+",3)");
+				jQuery("#show_tooltip"+dynamicId).children("span").attr("id","txt_description_"+dynamicId);
+				jQuery("#div_"+dynamicId+"_3").attr("style","display:block");
+				
 		break;
 		case 4:
-			jQuery("#div_4_4").clone(false).attr("id","div_"+dynamicId+"_4").appendTo("#left_block");
-			jQuery("#div_"+dynamicId+"_4").children("label").attr("id","control_label_"+dynamicId);
-			jQuery("#div_"+dynamicId+"_4").children("span").attr("id","txt_required_"+dynamicId);
-			jQuery("#div_"+dynamicId+"_4").children("div").attr("id","show_tooltip"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId ).children("select[type='select']").attr("id","ux_ddl_select_control"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId ).children("select[type='select']").attr("name","ux_ddl_select_control"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+","+dynamicCount+",4)");
-			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_4,"+dynamicId+",4)");
-			jQuery("#div_"+dynamicId+"_4").attr("style","display:block");
-
-			
+				jQuery("#div_4_4").clone(false).attr("id","div_"+dynamicId+"_4").appendTo("#left_block");
+				jQuery("#div_"+dynamicId+"_4").children("label").attr("id","control_label_"+dynamicId);
+				jQuery("#div_"+dynamicId+"_4").children("span").attr("id","txt_required_"+dynamicId);
+				jQuery("#div_"+dynamicId+"_4").children("div").attr("id","show_tooltip"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId ).children("select[type='select']").attr("id","ux_ddl_select_control"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId ).children("select[type='select']").attr("name","ux_ddl_select_control"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+","+dynamicCount+",4)");
+				jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_4,"+dynamicId+",4)");
+				jQuery("#div_"+dynamicId+"_4").attr("style","display:block");
+				
 		break;
 		case 5:
-			jQuery("#div_5_5").clone(false).attr("id","div_"+dynamicId+"_5").appendTo("#left_block");
-			jQuery("#div_"+dynamicId+"_5").children("label").attr("id","control_label_"+dynamicId);
-			jQuery("#div_"+dynamicId+"_5").children("span").attr("id","txt_required_"+dynamicId);
-			jQuery("#div_"+dynamicId+"_5").children("div").attr("id","post_back_checkbox_"+dynamicId);
-			jQuery("#post_back_checkbox_"+dynamicId).children("div").attr("id","show_tooltip"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId ).children("input[type='checkbox']").attr("id","ux_chk_checkbox_control_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId ).children("input[type='checkbox']").attr("name","ux_chk_checkbox_control_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId ).children("span").attr("id","add_chk_options_here_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+","+dynamicCount+",5)");
-			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_5,"+dynamicId+",5)");
-			jQuery("#div_"+dynamicId+"_5").attr("style","display:block");
-			
-			
+				jQuery("#div_5_5").clone(false).attr("id","div_"+dynamicId+"_5").appendTo("#left_block");
+				jQuery("#div_"+dynamicId+"_5").children("label").attr("id","control_label_"+dynamicId);
+				jQuery("#div_"+dynamicId+"_5").children("span").attr("id","txt_required_"+dynamicId);
+				jQuery("#div_"+dynamicId+"_5").children("div").attr("id","post_back_checkbox_"+dynamicId);
+				jQuery("#post_back_checkbox_"+dynamicId).children("div").attr("id","show_tooltip"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId ).children("input[type='checkbox']").attr("id","ux_chk_checkbox_control_"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId ).children("input[type='checkbox']").attr("name","ux_chk_checkbox_control_"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId ).children("span").attr("id","add_chk_options_here_"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+","+dynamicCount+",5)");
+				jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_5,"+dynamicId+",5)");
+				jQuery("#div_"+dynamicId+"_5").attr("style","display:block");
+				
 		break;
 		case 6:
-			jQuery("#div_6_6").clone(false).attr("id","div_"+dynamicId+"_6").appendTo("#left_block");
-			jQuery("#div_"+dynamicId+"_6").children("label").attr("id","control_label_"+dynamicId);
-			jQuery("#div_"+dynamicId+"_6").children("span").attr("id","txt_required_"+dynamicId);
-			jQuery("#div_"+dynamicId+"_6").children("div").attr("id","post_back_radio_button_"+dynamicId);
-			jQuery("#post_back_radio_button_"+dynamicId).children("div").attr("id","show_tooltip"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId ).children("input[type='radio']").attr("id","ux_radio_button_control_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId ).children("input[type='radio']").attr("name","ux_radio_button_control_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId ).children("span").attr("id","add_radio_options_here_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+","+dynamicCount+",6)");
-			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_6,"+dynamicId+",6)");
-			jQuery("#div_"+dynamicId+"_6").attr("style","display:block");
-
+				jQuery("#div_6_6").clone(false).attr("id","div_"+dynamicId+"_6").appendTo("#left_block");
+				jQuery("#div_"+dynamicId+"_6").children("label").attr("id","control_label_"+dynamicId);
+				jQuery("#div_"+dynamicId+"_6").children("span").attr("id","txt_required_"+dynamicId);
+				jQuery("#div_"+dynamicId+"_6").children("div").attr("id","post_back_radio_button_"+dynamicId);
+				jQuery("#post_back_radio_button_"+dynamicId).children("div").attr("id","show_tooltip"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId ).children("input[type='radio']").attr("id","ux_radio_button_control_"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId ).children("input[type='radio']").attr("name","ux_radio_button_control_"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId ).children("span").attr("id","add_radio_options_here_"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+","+dynamicCount+",6)");
+				jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_6,"+dynamicId+",6)");
+				jQuery("#div_"+dynamicId+"_6").attr("style","display:block");
 			
 		break;
 		case 9:
@@ -579,77 +572,77 @@ function create_control(control_type)
 			
 		break;
 		case 12:
-			jQuery("#div_12_12").clone(false).attr("id","div_"+dynamicId+"_12").appendTo("#left_block");
-			jQuery("#div_"+dynamicId+"_12").children("label.layout-control-label").attr("id","control_label_"+dynamicId);
-			jQuery("#div_"+dynamicId+"_12").children("span").attr("id","txt_required_"+dynamicId);
-			jQuery("#div_"+dynamicId+"_12").children("div").attr("id","show_tooltip"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("select[type='day']").attr("id","ux_ddl_select_day_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("select[type='day']").attr("name","ux_ddl_select_day_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("select[type='month']").attr("id","ux_ddl_select_month_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("select[type='month']").attr("name","ux_ddl_select_month_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("select[type='year']").attr("id","ux_ddl_select_year_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("select[type='year']").attr("name","ux_ddl_select_year_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+","+dynamicCount+",12)");
-			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_12,"+dynamicId+",12)");
-			jQuery("#show_tooltip"+dynamicId).children("span").attr("id","txt_description_"+dynamicId);
-			jQuery("#div_"+dynamicId+"_12").attr("style","display:block");
-			jQuery("#ux_ddl_select_day_"+dynamicId).val((new Date).getDate());
-			jQuery("#ux_ddl_select_month_"+dynamicId).val((new Date).getMonth()+1);
-			jQuery("#ux_ddl_select_year_"+dynamicId).val((new Date).getFullYear());
+				jQuery("#div_12_12").clone(false).attr("id","div_"+dynamicId+"_12").appendTo("#left_block");
+				jQuery("#div_"+dynamicId+"_12").children("label.layout-control-label").attr("id","control_label_"+dynamicId);
+				jQuery("#div_"+dynamicId+"_12").children("span").attr("id","txt_required_"+dynamicId);
+				jQuery("#div_"+dynamicId+"_12").children("div").attr("id","show_tooltip"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId).children("select[type='day']").attr("id","ux_ddl_select_day_"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId).children("select[type='day']").attr("name","ux_ddl_select_day_"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId).children("select[type='month']").attr("id","ux_ddl_select_month_"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId).children("select[type='month']").attr("name","ux_ddl_select_month_"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId).children("select[type='year']").attr("id","ux_ddl_select_year_"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId).children("select[type='year']").attr("name","ux_ddl_select_year_"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+","+dynamicCount+",12)");
+				jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_12,"+dynamicId+",12)");
+				jQuery("#show_tooltip"+dynamicId).children("span").attr("id","txt_description_"+dynamicId);
+				jQuery("#div_"+dynamicId+"_12").attr("style","display:block");
+				jQuery("#ux_ddl_select_day_"+dynamicId).val((new Date).getDate());
+				jQuery("#ux_ddl_select_month_"+dynamicId).val((new Date).getMonth()+1);
+				jQuery("#ux_ddl_select_year_"+dynamicId).val((new Date).getFullYear());
 			
 		break;
 		case 13:
-			jQuery("#div_13_13").clone(false).attr("id","div_"+dynamicId+"_13").appendTo("#left_block");
-			jQuery("#div_"+dynamicId+"_13").children("label.layout-control-label").attr("id","control_label_"+dynamicId);
-			jQuery("#div_"+dynamicId+"_13").children("span").attr("id","txt_required_"+dynamicId);
-			jQuery("#div_"+dynamicId+"_13").children("div").attr("id","show_tooltip"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("select[type='hour12']").attr("id","ux_ddl_select_hr_12_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("select[type='hour12']").attr("name","ux_ddl_select_hr_12_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("select[type='hour24']").attr("id","ux_ddl_select_hr_24_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("select[type='hour24']").attr("name","ux_ddl_select_hr_24_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("select[type='minute']").attr("id","ux_ddl_select_minute_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("select[type='minute']").attr("name","ux_ddl_select_minute_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("select[type='am']").attr("id","ux_ddl_select_ampm_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("select[type='am']").attr("name","ux_ddl_select_ampm_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+","+dynamicCount+",13)");
-			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_13,"+dynamicId+",13)");
-			jQuery("#show_tooltip"+dynamicId).children("span").attr("id","txt_description_"+dynamicId);
-			jQuery("#div_"+dynamicId+"_13").attr("style","display:block");
-			
+				jQuery("#div_13_13").clone(false).attr("id","div_"+dynamicId+"_13").appendTo("#left_block");
+				jQuery("#div_"+dynamicId+"_13").children("label.layout-control-label").attr("id","control_label_"+dynamicId);
+				jQuery("#div_"+dynamicId+"_13").children("span").attr("id","txt_required_"+dynamicId);
+				jQuery("#div_"+dynamicId+"_13").children("div").attr("id","show_tooltip"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId).children("select[type='hour12']").attr("id","ux_ddl_select_hr_12_"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId).children("select[type='hour12']").attr("name","ux_ddl_select_hr_12_"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId).children("select[type='hour24']").attr("id","ux_ddl_select_hr_24_"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId).children("select[type='hour24']").attr("name","ux_ddl_select_hr_24_"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId).children("select[type='minute']").attr("id","ux_ddl_select_minute_"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId).children("select[type='minute']").attr("name","ux_ddl_select_minute_"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId).children("select[type='am']").attr("id","ux_ddl_select_ampm_"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId).children("select[type='am']").attr("name","ux_ddl_select_ampm_"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+","+dynamicCount+",13)");
+				jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_13,"+dynamicId+",13)");
+				jQuery("#show_tooltip"+dynamicId).children("span").attr("id","txt_description_"+dynamicId);
+				jQuery("#div_"+dynamicId+"_13").attr("style","display:block");
+				
 		break;
 		case 14:
-			jQuery("#div_14_14").clone(false).attr("id","div_"+dynamicId+"_14").appendTo("#left_block");
-			jQuery("#div_"+dynamicId+"_14").children("label").attr("id","control_label_"+dynamicId);
-			jQuery("#div_"+dynamicId+"_14").children("span").attr("id","txt_required_"+dynamicId);
-			jQuery("#div_"+dynamicId+"_14").children("div").attr("id","show_tooltip"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId ).children("input[type='text']").attr("id","ux_txt_hidden_control_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId ).children("input[type='text']").attr("name","ux_txt_hidden_control_"+dynamicId); 
-			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+","+dynamicCount+",14)");
-			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_14,"+dynamicId+",14)");
-			jQuery("#show_tooltip"+dynamicId).children("span").attr("id","txt_description_"+dynamicId);
-			jQuery("#div_"+dynamicId+"_14").attr("style","display:block");
+				jQuery("#div_14_14").clone(false).attr("id","div_"+dynamicId+"_14").appendTo("#left_block");
+				jQuery("#div_"+dynamicId+"_14").children("label").attr("id","control_label_"+dynamicId);
+				jQuery("#div_"+dynamicId+"_14").children("span").attr("id","txt_required_"+dynamicId);
+				jQuery("#div_"+dynamicId+"_14").children("div").attr("id","show_tooltip"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId ).children("input[type='text']").attr("id","ux_txt_hidden_control_"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId ).children("input[type='text']").attr("name","ux_txt_hidden_control_"+dynamicId); 
+				jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+","+dynamicCount+",14)");
+				jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_14,"+dynamicId+",14)");
+				jQuery("#show_tooltip"+dynamicId).children("span").attr("id","txt_description_"+dynamicId);
+				jQuery("#div_"+dynamicId+"_14").attr("style","display:block");
 			
 		break;
 		case 15:
-			jQuery("#div_15_15").clone(false).attr("id","div_"+dynamicId+"_15").appendTo("#left_block");
-			jQuery("#div_"+dynamicId+"_15").children("label").attr("id","control_label_"+dynamicId);
-			jQuery("#div_"+dynamicId+"_15").children("span").attr("id","txt_required_"+dynamicId);
-			jQuery("#div_"+dynamicId+"_15").children("div").attr("id","show_tooltip"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId ).children("input[type='password']").attr("id","ux_txt_password_control_"+dynamicId); 
-			jQuery("#show_tooltip"+dynamicId ).children("input[type='password']").attr("name","ux_txt_password_control_"+dynamicId); 
-			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+","+dynamicCount+",15)");
-			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
-			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_15,"+dynamicId+",15)");
-			jQuery("#show_tooltip"+dynamicId).children("span").attr("id","txt_description_"+dynamicId);
-			jQuery("#div_"+dynamicId+"_15").attr("style","display:block");
-			
+				jQuery("#div_15_15").clone(false).attr("id","div_"+dynamicId+"_15").appendTo("#left_block");
+				jQuery("#div_"+dynamicId+"_15").children("label").attr("id","control_label_"+dynamicId);
+				jQuery("#div_"+dynamicId+"_15").children("span").attr("id","txt_required_"+dynamicId);
+				jQuery("#div_"+dynamicId+"_15").children("div").attr("id","show_tooltip"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId ).children("input[type='password']").attr("id","ux_txt_password_control_"+dynamicId); 
+				jQuery("#show_tooltip"+dynamicId ).children("input[type='password']").attr("name","ux_txt_password_control_"+dynamicId); 
+				jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("id","add_setting_control_"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+","+dynamicCount+",15)");
+				jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
+				jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox(div_"+dynamicId+"_15,"+dynamicId+",15)");
+				jQuery("#show_tooltip"+dynamicId).children("span").attr("id","txt_description_"+dynamicId);
+				jQuery("#div_"+dynamicId+"_15").attr("style","display:block");
+				
 		break;
 	}
 }
@@ -860,6 +853,7 @@ function delete_textbox(div_id,dynamicId,control_type)
 		jQuery("#" + dynamicId).remove();
 		new_control_dynamic_ids.splice(index, 1);
 		created_control_type.splice(index, 1);
+		array_dynamicCount.splice(index, 1);
 		if(control_type == 9)
 		{
 			jQuery(".file_upload").attr("style","display:none");
@@ -1152,10 +1146,13 @@ jQuery("#ux_dynamic_form_submit").validate
 							}
 						break;
 					}
+					//console.log("Dynamic Count - " +  array_dynamicCount[flag]);
+					//console.log("Control Type - " + created_control_type[flag]);
+					//console.log(JSON.stringify(array_controls[array_dynamicCount[flag]]));
 					jQuery.ajax
 					({
 						type: "POST",
-						url: ajaxurl + "?"+ jQuery(form).serialize() + "&array_controls="+encodeURIComponent(JSON.stringify(array_controls[array_dynamicCount[flag]]))+"&form=0&control_type=1&param=submit_controls&action=add_contact_form_library",
+						url: ajaxurl + "?array_controls="+encodeURIComponent(JSON.stringify(array_controls[array_dynamicCount[flag]]))+"&form=0&param=submit_controls&action=add_contact_form_library",
 						success : function(data)
 						{
 							if(field_no == flag)
@@ -1171,6 +1168,8 @@ jQuery("#ux_dynamic_form_submit").validate
 						}
 					});
 				}
+				//console.log(array_controls.length);
+				//console.log(array_dynamicCount.length);
 				if(new_control_dynamic_ids.length == 0)
 				{
 					setTimeout(function()

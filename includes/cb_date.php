@@ -175,7 +175,7 @@
 		</div>
 	</div>
 	<div class="layout-control-group">	
-		<input type="button" class="btn btn-info layout-span2" onclick="save_date_control(<?php echo $dynamicId; ?>)" value="<?php _e( "Save Settings", contact_bank ); ?>" />
+		<input type="button" class="btn btn-info layout-span2" onclick="save_date_control(<?php echo $dynamicId; ?>,<?php echo $dynamicCount; ?>)" value="<?php _e( "Save Settings", contact_bank ); ?>" />
 	</div>
 </div>
 <script type="text/javascript">
@@ -365,11 +365,11 @@
 	var count = <?php echo $count; ?>;
 	if(count != 0)
 	{
-		var dynamicCount = "<?php echo $dynamicCount;?>";
+	
 		var dynamicId = <?php echo $dynamicId; ?>;
-		jQuery("#ux_label_text_"+dynamicId).val(array_controls[dynamicCount][2].cb_label_value);
-		jQuery("#ux_description_control_"+dynamicId).html(array_controls[dynamicCount][3].cb_description);
-		if(array_controls[dynamicCount][4].cb_control_required == "1")
+		jQuery("#ux_label_text_"+dynamicId).val(array_controls[<?php echo $dynamicCount;?>][2].cb_label_value);
+		jQuery("#ux_description_control_"+dynamicId).html(array_controls[<?php echo $dynamicCount;?>][3].cb_description);
+		if(array_controls[<?php echo $dynamicCount;?>][4].cb_control_required == "1")
 		{
 			jQuery("#ux_required_control_"+dynamicId).attr("checked","checked");
 		}
@@ -377,60 +377,60 @@
 		{
 			jQuery("#ux_required_"+dynamicId).attr("checked","checked");
 		}
-		jQuery("#ux_tooltip_control_"+dynamicId).val(array_controls[dynamicCount][5].cb_tooltip_txt);
-		jQuery("#ux_admin_label_"+dynamicId).val(array_controls[dynamicCount][6].cb_admin_label);
+		jQuery("#ux_tooltip_control_"+dynamicId).val(array_controls[<?php echo $dynamicCount;?>][5].cb_tooltip_txt);
+		jQuery("#ux_admin_label_"+dynamicId).val(array_controls[<?php echo $dynamicCount;?>][6].cb_admin_label);
 		
-		if(array_controls[dynamicCount][7].cb_show_email == "1")
+		if(array_controls[<?php echo $dynamicCount;?>][7].cb_show_email == "1")
 		{
 			jQuery("#ux_show_email_"+dynamicId).attr("checked","checked");
 		}
-		jQuery("#ux_start_year_label_"+dynamicId).val(array_controls[dynamicCount][8].cb_start_year);
-		jQuery("#ux_last_year_label_"+dynamicId).val(array_controls[dynamicCount][9].cb_end_year);
-		jQuery("#ux_default_day_type_"+dynamicId).val(array_controls[dynamicCount][10].cb_default_value_day);
-		jQuery("#ux_default_month_type_"+dynamicId).val(array_controls[dynamicCount][11].cb_default_value_month);
-		jQuery("#ux_default_year_type_"+dynamicId).val(array_controls[dynamicCount][12].cb_default_value_year);
-		jQuery("#ux_last_"+dynamicId).val(array_controls[dynamicCount][13].cb_error_invalid);
-		jQuery("#uxDefaultDateFormat_"+dynamicId).val(array_controls[dynamicCount][14].cb_date_format);
-		if(array_controls[dynamicCount][15].cb_button_set_outer_label != "")
+		jQuery("#ux_start_year_label_"+dynamicId).val(array_controls[<?php echo $dynamicCount;?>][8].cb_start_year);
+		jQuery("#ux_last_year_label_"+dynamicId).val(array_controls[<?php echo $dynamicCount;?>][9].cb_end_year);
+		jQuery("#ux_default_day_type_"+dynamicId).val(array_controls[<?php echo $dynamicCount;?>][10].cb_default_value_day);
+		jQuery("#ux_default_month_type_"+dynamicId).val(array_controls[<?php echo $dynamicCount;?>][11].cb_default_value_month);
+		jQuery("#ux_default_year_type_"+dynamicId).val(array_controls[<?php echo $dynamicCount;?>][12].cb_default_value_year);
+		jQuery("#ux_last_"+dynamicId).val(array_controls[<?php echo $dynamicCount;?>][13].cb_error_invalid);
+		jQuery("#uxDefaultDateFormat_"+dynamicId).val(array_controls[<?php echo $dynamicCount;?>][14].cb_date_format);
+		if(array_controls[<?php echo $dynamicCount;?>][15].cb_button_set_outer_label != "")
 		{
-			jQuery("#ux_date_set_outer_label_"+dynamicId).html(array_controls[dynamicCount][15].cb_button_set_outer_label);
+			jQuery("#ux_date_set_outer_label_"+dynamicId).html(array_controls[<?php echo $dynamicCount;?>][15].cb_button_set_outer_label);
 			jQuery("#ux_advance_label_"+dynamicId).attr("style","display:block");
 			jQuery("#ux_advance_label_"+dynamicId).attr("style","position:inherit");
 		}
-		if(array_controls[dynamicCount][16].cb_button_set_txt_input != "")
+		if(array_controls[<?php echo $dynamicCount;?>][16].cb_button_set_txt_input != "")
 		{
-			jQuery("#ux_date_txt_input_"+dynamicId).html(array_controls[dynamicCount][16].cb_button_set_txt_input);
+			jQuery("#ux_date_txt_input_"+dynamicId).html(array_controls[<?php echo $dynamicCount;?>][16].cb_button_set_txt_input);
 			jQuery("#advance_text_input_"+dynamicId).attr("style","display:block");
 			jQuery("#advance_text_input_"+dynamicId).attr("style","position:inherit");
 		}
-		if(array_controls[dynamicCount][17].cb_button_set_description != "")
+		if(array_controls[<?php echo $dynamicCount;?>][17].cb_button_set_description != "")
 		{
-			jQuery("#ux_date_description_textarea_"+dynamicId).html(array_controls[dynamicCount][17].cb_button_set_description);
+			jQuery("#ux_date_description_textarea_"+dynamicId).html(array_controls[<?php echo $dynamicCount;?>][17].cb_button_set_description);
 			jQuery("#advance_text_description_"+dynamicId).attr("style","display:block");
 			jQuery("#advance_text_description_"+dynamicId).attr("style","position:inherit");
 		}
-		if(array_controls[dynamicCount][18].cb_date_day_dropdown != "")
+		if(array_controls[<?php echo $dynamicCount;?>][18].cb_date_day_dropdown != "")
 		{
-			jQuery("#ux_day_textarea_"+dynamicId).html(array_controls[dynamicCount][18].cb_date_day_dropdown);
+			jQuery("#ux_day_textarea_"+dynamicId).html(array_controls[<?php echo $dynamicCount;?>][18].cb_date_day_dropdown);
 			jQuery("#ux_advance_day_"+dynamicId).attr("style","display:block");
 			jQuery("#ux_advance_day_"+dynamicId).attr("style","position:inherit");
 		}
-		if(array_controls[dynamicCount][19].cb_date_month_dropdown != "")
+		if(array_controls[<?php echo $dynamicCount;?>][19].cb_date_month_dropdown != "")
 		{
-			jQuery("#ux_month_textarea_"+dynamicId).html(array_controls[dynamicCount][19].cb_date_month_dropdown);
+			jQuery("#ux_month_textarea_"+dynamicId).html(array_controls[<?php echo $dynamicCount;?>][19].cb_date_month_dropdown);
 			jQuery("#advance_text_month_"+dynamicId).attr("style","display:block");
 			jQuery("#advance_text_month_"+dynamicId).attr("style","position:inherit");
 		}
-		if(array_controls[dynamicCount][20].cb_date_year_dropdown != "")
+		if(array_controls[<?php echo $dynamicCount;?>][20].cb_date_year_dropdown != "")
 		{
-			jQuery("#ux_year_textarea_"+dynamicId).html(array_controls[dynamicCount][20].cb_date_year_dropdown);
+			jQuery("#ux_year_textarea_"+dynamicId).html(array_controls[<?php echo $dynamicCount;?>][20].cb_date_year_dropdown);
 			jQuery("#advance_text_year_"+dynamicId).attr("style","display:block");
 			jQuery("#advance_text_year_"+dynamicId).attr("style","position:inherit");
 		}
 	}
-	function save_date_control(dynamicId)
+	function save_date_control(dynamicId,dynamicCount)
 	{
-		var dynamicCount = "<?php echo $dynamicCount;?>";
+		
 		array_controls[dynamicCount] = [];
 		array_controls[dynamicCount].push({"control_type" : "12"});
 		array_controls[dynamicCount].push({"date_dynamicId" : dynamicId});
@@ -467,6 +467,8 @@
 			jQuery("#txt_required_"+dynamicId).css("display","none");
 		}
 		jQuery("#ux_ddl_select_year_"+dynamicId).val(jQuery("#ux_default_year_type_"+dynamicId).val());
+		//console.log("pushed control : 12, Dynamic Count : " + dynamicCount + ", Array Count = " + array_controls[dynamicCount].length);
+		//console.log(JSON.stringify(array_controls[dynamicCount]));
 		CloseLightbox();
 	}
 	function enter_admin_label(dynamicId)

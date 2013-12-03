@@ -261,8 +261,6 @@ else
 			}
 			else 
 			{
-				
-				$control_type = intval($_REQUEST["control_type"]);
 				$array_controls = json_decode(stripcslashes(html_entity_decode($_REQUEST["array_controls"])));
 				$count = 0;
 				$dynamicId = 0;				

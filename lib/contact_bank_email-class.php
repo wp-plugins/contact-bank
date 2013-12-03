@@ -432,7 +432,7 @@ else
 			$email_to_client = esc_attr($_REQUEST["ux_email_to2"]);
 			$email_from_client = esc_attr($_REQUEST["ux_email_from2"]);
 			$subject_client = esc_attr($_REQUEST["ux_email_subject2"]);
-			$uxDescription_client = html_entity_decode($_REQUEST["uxDescription_client"]);			
+			$uxDescription_client = html_entity_decode($_REQUEST["uxDescription_client"]);
 			$email_to_admin = esc_attr($_REQUEST["ux_email_to"]);
 			$email_from_admin  = esc_attr($_REQUEST["ux_email_from"]);
 			$subject_admin  = esc_attr($_REQUEST["ux_email_subject"]);

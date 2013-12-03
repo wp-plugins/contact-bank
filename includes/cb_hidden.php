@@ -44,7 +44,7 @@
 		</div>
 	</div>
 	<div class="layout-control-group">	
-		<input type="button" class="btn btn-info layout-span2" onclick="save_hidden_control(<?php echo $dynamicId; ?>)" value="<?php _e( "Save Settings", contact_bank ); ?>" />
+		<input type="button" class="btn btn-info layout-span2" onclick="save_hidden_control(<?php echo $dynamicId; ?>,<?php echo $dynamicCount;?>)" value="<?php _e( "Save Settings", contact_bank ); ?>" />
 	</div>
 </div>
 <script type="text/javascript">
@@ -53,19 +53,19 @@
 	var count = <?php echo $count; ?>;
 	if(count != 0)
 	{
-		var dynamicCount = "<?php echo $dynamicCount;?>";
+		
 		var dynamicId = <?php echo $dynamicId; ?>;
-		jQuery("#ux_label_text_"+dynamicId).val(array_controls[dynamicCount][2].cb_label_value);
-		jQuery("#ux_default_value_"+dynamicId).val(array_controls[dynamicCount][3].cb_default_txt_val);
-		jQuery("#ux_admin_label_"+dynamicId).val(array_controls[dynamicCount][4].cb_admin_label);
-		if(array_controls[dynamicCount][5].cb_show_email == true)
+		jQuery("#ux_label_text_"+dynamicId).val(array_controls[<?php echo $dynamicCount;?>][2].cb_label_value);
+		jQuery("#ux_default_value_"+dynamicId).val(array_controls[<?php echo $dynamicCount;?>][3].cb_default_txt_val);
+		jQuery("#ux_admin_label_"+dynamicId).val(array_controls[<?php echo $dynamicCount;?>][4].cb_admin_label);
+		if(array_controls[<?php echo $dynamicCount;?>][5].cb_show_email == "1")
 		{
 			jQuery("#ux_show_email_"+dynamicId).attr("checked","checked");
 		}
 	}
-	function save_hidden_control(dynamicId)
+	function save_hidden_control(dynamicId,dynamicCount)
 	{
-		var dynamicCount = "<?php echo $dynamicCount;?>";
+		
 		array_controls[dynamicCount] = [];
 		array_controls[dynamicCount].push({"control_type" : "14"});
 		array_controls[dynamicCount].push({"hidden_dynamicId" : dynamicId});
@@ -75,6 +75,8 @@
 		jQuery("#ux_show_email_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_show_email": "1"}) : array_controls[dynamicCount].push({"cb_show_email": 0});
 		jQuery("#ux_txt_hidden_control_"+dynamicId).val(jQuery("#ux_default_value_"+dynamicId).val());
 		jQuery("#control_label_"+dynamicId).html(jQuery("#ux_label_text_"+dynamicId).val());
+		//console.log("pushed control : 14, Dynamic Count : " + dynamicCount + ", Array Count = " + array_controls[dynamicCount].length);
+		//console.log(JSON.stringify(array_controls[dynamicCount]));
 		CloseLightbox();
 	}
 	function enter_admin_label(dynamicId)

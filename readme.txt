@@ -1,9 +1,9 @@
 ﻿=== Contact Bank ===
-Contributors: contact-banker
+Contributors: contact-banker, Gallery-Bank
 Tags: Contact Form, text, contact, form, contacts, request, contact me, feedback form, feedback, easy contact form, best contact form plugin, admin, Post, widget, contact bank, contact form 7, plugin, Posts, ajax, contact form 7
 Requires at least: 2.9
 Tested up to: 3.7.1
-Stable tag: 1.5
+Stable tag: 1.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -17,7 +17,9 @@ Contact Bank  can manage multiple forms, plus you can customize the form and the
 
 **The following are other recommended plugins by the author of Contact Bank.**
 
-* [Captcha Bank](http://wordpress.org/extend/plugins/captcha-bank/) - An easy to use powerful wordpress Captcha Plugin to prevent spam on your site.
+* [Gallery Bank](http://wordpress.org/extend/plugins/gallery-bank/) - Gallery Bank is an easy to use Responsive WordPress Premium Gallery Plugin for galleries, videos and albums.
+* [Captcha Bank](http://wordpress.org/extend/plugins/captcha-bank/) - An easy to use powerful wordpress Captcha Plugin to prevent spam on your site.lbums.
+
 
 **How  to setup and add Form to Contact Bank?**
 [youtube http://www.youtube.com/watch?v=EcqbsXmPbaI]
@@ -95,6 +97,12 @@ Contact Bank  can manage multiple forms, plus you can customize the form and the
 1. It means that such user is not exist or you have made a syntactical error.
 
 == Changelog ==
+= 1.6 =
+
+* Widget Added
+* Database Bugs Fixed
+* Code Opimized
+* Css Issues Fixed
 
 = 1.5 =
 

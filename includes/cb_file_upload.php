@@ -125,7 +125,7 @@
 		</div>
 	</div>
 	<div class="layout-control-group">	
-		<input type="button" class="btn btn-info layout-span2" onclick="save_file_uploader(<?php echo $dynamicId; ?>)" value="<?php _e( "Save Settings", contact_bank ); ?>" />
+		<input type="button" class="btn btn-info layout-span2" onclick="save_file_uploader(<?php echo $dynamicId; ?>,<?php echo $dynamicCount; ?>)" value="<?php _e( "Save Settings", contact_bank ); ?>" />
 	</div>
 </div>
 <script type="text/javascript">
@@ -163,11 +163,11 @@
 	var count = <?php echo $count; ?>;
 	if(count != 0)
 	{
-		var dynamicCount = "<?php echo $dynamicCount;?>";
+		
 		var dynamicId = <?php echo $dynamicId; ?>;
-		jQuery("#ux_label_text_"+dynamicId).val(array_controls[dynamicCount][2].cb_label_value);
-		jQuery("#ux_description_control_"+dynamicId).val(array_controls[dynamicCount][3].cb_description);
-		if(array_controls[dynamicCount][4].cb_control_required == "1")
+		jQuery("#ux_label_text_"+dynamicId).val(array_controls[<?php echo $dynamicCount;?>][2].cb_label_value);
+		jQuery("#ux_description_control_"+dynamicId).val(array_controls[<?php echo $dynamicCount;?>][3].cb_description);
+		if(array_controls[<?php echo $dynamicCount;?>][4].cb_control_required == "1")
 		{
 			jQuery("#ux_required_control_"+dynamicId).attr("checked","checked");
 		}
@@ -175,13 +175,13 @@
 		{
 			jQuery("#ux_required_"+dynamicId).attr("checked","checked");
 		}
-		jQuery("#ux_tooltip_control_"+dynamicId).val(array_controls[dynamicCount][5].cb_tooltip_txt);
-		jQuery("#ux_admin_label_"+dynamicId).val(array_controls[dynamicCount][6].cb_admin_label);
-		if(array_controls[dynamicCount][7].cb_show_email == "1")
+		jQuery("#ux_tooltip_control_"+dynamicId).val(array_controls[<?php echo $dynamicCount;?>][5].cb_tooltip_txt);
+		jQuery("#ux_admin_label_"+dynamicId).val(array_controls[<?php echo $dynamicCount;?>][6].cb_admin_label);
+		if(array_controls[<?php echo $dynamicCount;?>][7].cb_show_email == "1")
 		{
 			jQuery("#ux_show_email_"+dynamicId).attr("checked","checked");
 		}
-		if(array_controls[dynamicCount][8].cb_allow_multiple_file == "1")
+		if(array_controls[<?php echo $dynamicCount;?>][8].cb_allow_multiple_file == "1")
 		{
 			jQuery("#ux_allow_multiple_file_"+dynamicId).attr("checked","checked");
 		}
@@ -189,26 +189,26 @@
 		{
 			jQuery("#ux_allow_multiple_file_"+dynamicId).removeAttr("checked");
 		}
-		jQuery("#ux_allowed_file_extensions_"+dynamicId).val(array_controls[dynamicCount][9].cb_allow_file_ext_upload);
-		jQuery("#ux_maximum_file_allowed_"+dynamicId).val(array_controls[dynamicCount][10].cb_maximum_file_allowed);
-		if(array_controls[dynamicCount][11].cb_uploaded_file_email_db == "1")
+		jQuery("#ux_allowed_file_extensions_"+dynamicId).val(array_controls[<?php echo $dynamicCount;?>][9].cb_allow_file_ext_upload);
+		jQuery("#ux_maximum_file_allowed_"+dynamicId).val(array_controls[<?php echo $dynamicCount;?>][10].cb_maximum_file_allowed);
+		if(array_controls[<?php echo $dynamicCount;?>][11].cb_uploaded_file_email_db == "1")
 		{
 			jQuery("#ux_uploaded_file_email_db_"+dynamicId).attr("checked","checked");
 		}
-		if(array_controls[dynamicCount][12].cb_button_set_outer_label_file != "")
+		if(array_controls[<?php echo $dynamicCount;?>][12].cb_button_set_outer_label_file != "")
 		{
-			jQuery("#button_set_outer_label_file"+dynamicId).html(array_controls[dynamicCount][12].cb_button_set_outer_label_file);
+			jQuery("#button_set_outer_label_file"+dynamicId).html(array_controls[<?php echo $dynamicCount;?>][12].cb_button_set_outer_label_file);
 			jQuery("#ux_label_fileupload_"+dynamicId).attr("style","display:block");
 			jQuery("#ux_label_fileupload_"+dynamicId).attr("style","position:inherit");
 		}
-		if(array_controls[dynamicCount][13].cb_button_set_outer_description_fileuplod != "")
+		if(array_controls[<?php echo $dynamicCount;?>][13].cb_button_set_outer_description_fileuplod != "")
 		{
-			jQuery("#button_set_outer_description_fileuplod"+dynamicId).html(array_controls[dynamicCount][13].cb_button_set_outer_description_fileuplod);
+			jQuery("#button_set_outer_description_fileuplod"+dynamicId).html(array_controls[<?php echo $dynamicCount;?>][13].cb_button_set_outer_description_fileuplod);
 			jQuery("#ux_description_fileupload_"+dynamicId).attr("style","display:block");
 			jQuery("#ux_description_fileupload_"+dynamicId).attr("style","position:inherit");
 		}	
 	}	
-	function save_file_uploader(dynamicId)
+	function save_file_uploader(dynamicId,dynamicCount)
 	{
 		jQuery("#file_upload_content").remove();
 		var ux_allow_multiple_file = jQuery("#ux_allow_multiple_file_"+dynamicId).prop("checked");
@@ -222,7 +222,7 @@
 			jQuery("#file_upload_content_postback").css('display','block')
 			jQuery("#file_upload_content_postback").html(dat);
 		});
-		var dynamicCount = "<?php echo $dynamicCount;?>";
+	
 		array_controls[dynamicCount] = [];
 		array_controls[dynamicCount].push({"control_type" : "9"});
 		array_controls[dynamicCount].push({"file_upload_dynamicId" : dynamicId});
@@ -251,6 +251,8 @@
 		}
 		jQuery("#AjaxUploaderFilesButton").css('float','left');
 		jQuery("#AjaxUploaderFilesButton").css('visibility','visible');
+		//console.log("pushed control : 9, Dynamic Count : " + dynamicCount + ", Array Count = " + array_controls[dynamicCount].length);
+		//console.log(JSON.stringify(array_controls[dynamicCount]));
 		CloseLightbox();
 	}
 	function enter_admin_label(dynamicId)

@@ -471,6 +471,8 @@ jQuery(document).ready(function()
 		cursor: 'move',
 		update: function()
 		{
+			field_order = [];
+			field_dynamic_id = [];
 			var order = jQuery("#left_block").sortable('toArray');
 			
 			for(flag=0;flag<order.length;flag++)
@@ -517,7 +519,7 @@ function create_control(control_type,dynamicId,arrayControl)
 		if(jQuery.inArray(9,created_control_type) != -1  || jQuery.inArray(9,existing_array_control_types) != -1)
 		{
 			alert("<?php _e( "Only One File Uploader can be used on a Form. ", contact_bank ); ?>");
-			return;					
+			return;
 		}
 	}
 	
@@ -527,11 +529,14 @@ function create_control(control_type,dynamicId,arrayControl)
 	{
 		var dynamicId = Math.floor((Math.random()*100000)+1);
 		array_dynamicCount.push(dynamicCount);
+		new_control_dynamic_ids.push(dynamicId);
+		created_control_type.push(control_type);
 	}
 	else
 	{
 		existing_array_control_types.push(control_type);
 		edit_created_control_type.push(dynamicCount);
+		
 	}
 	
 	switch(parseInt(control_type))
@@ -555,8 +560,6 @@ function create_control(control_type,dynamicId,arrayControl)
 			var result = jQuery.inArray(dynamicId,edit_control_dynamic_ids);
 			if(result == -1)
 			{
-				new_control_dynamic_ids.push(dynamicId);
-				created_control_type.push(1);
 				jQuery.each(new_control_dynamic_ids,function(index,value)
 				{
 				   jQuery('#left_block').append(jQuery("#div_"+value+"_"+created_control_type[index]));
@@ -567,9 +570,8 @@ function create_control(control_type,dynamicId,arrayControl)
 			{
 				jQuery("#control_label_"+dynamicId).html(arrayControl[0].dynamic_settings_value);
 				jQuery("#txt_description_"+dynamicId).html(arrayControl[1].dynamic_settings_value);
-				
 				jQuery("#ux_txt_textbox_control_"+dynamicId).val(arrayControl[4].dynamic_settings_value);
-				jQuery("#show_tooltip"+dynamicId).attr("data-original-title",arrayControl[3].dynamic_settings_value);				
+				jQuery("#show_tooltip"+dynamicId).attr("data-original-title",arrayControl[3].dynamic_settings_value);
 				arrayControl[2].dynamic_settings_value == "1" ? jQuery("#txt_required_"+dynamicId).css("display","block") : jQuery("#txt_required_"+dynamicId).css("display","none");
 			}
 			
@@ -593,8 +595,6 @@ function create_control(control_type,dynamicId,arrayControl)
 			var result = jQuery.inArray(dynamicId, edit_control_dynamic_ids);
 			if(result == -1)
 			{
-				new_control_dynamic_ids.push(dynamicId);
-				created_control_type.push(2);
 				jQuery.each(new_control_dynamic_ids,function(index,value)
 				{
 					jQuery('#left_block').append(jQuery("#div_"+value+"_"+created_control_type[index]));
@@ -629,8 +629,6 @@ function create_control(control_type,dynamicId,arrayControl)
 			var result = jQuery.inArray(dynamicId, edit_control_dynamic_ids);
 			if(result == -1)
 			{
-				new_control_dynamic_ids.push(dynamicId);
-				created_control_type.push(3);
 				jQuery.each(new_control_dynamic_ids,function(index,value)
 				{
 					jQuery('#left_block').append(jQuery("#div_"+value+"_"+created_control_type[index]));
@@ -641,7 +639,6 @@ function create_control(control_type,dynamicId,arrayControl)
 				jQuery("#control_label_"+dynamicId).html(arrayControl[0].dynamic_settings_value +" :");
 				jQuery("#txt_description_"+dynamicId).html(arrayControl[1].dynamic_settings_value);
 				jQuery("#show_tooltip"+dynamicId).attr("data-original-title", arrayControl[3].dynamic_settings_value);
-				
 				arrayControl[2].dynamic_settings_value == "1" ? jQuery("#txt_required_"+dynamicId).css("display","block") : jQuery("#txt_required_"+dynamicId).css("display","none"); 
 			}
 			
@@ -664,8 +661,6 @@ function create_control(control_type,dynamicId,arrayControl)
 			var result = jQuery.inArray(dynamicId, edit_control_dynamic_ids);
 			if(result == -1)
 			{
-				new_control_dynamic_ids.push(dynamicId);
-				created_control_type.push(4);
 				jQuery.each(new_control_dynamic_ids,function(index,value)
 				{
 					jQuery('#left_block').append(jQuery("#div_"+value+"_"+created_control_type[index]));
@@ -716,8 +711,6 @@ function create_control(control_type,dynamicId,arrayControl)
 			var result = jQuery.inArray(dynamicId, edit_control_dynamic_ids);
 			if(result == -1)
 			{
-				new_control_dynamic_ids.push(dynamicId);
-				created_control_type.push(5);
 				jQuery.each(new_control_dynamic_ids,function(index,value)
 				{
 					jQuery('#left_block').append(jQuery("#div_"+value+"_"+created_control_type[index]));
@@ -769,8 +762,6 @@ function create_control(control_type,dynamicId,arrayControl)
 			var result = jQuery.inArray(dynamicId, edit_control_dynamic_ids);
 			if(result == -1)
 			{
-				new_control_dynamic_ids.push(dynamicId);
-				created_control_type.push(6);
 				jQuery.each(new_control_dynamic_ids,function(index,value)
 				{
 					jQuery('#left_block').append(jQuery("#div_"+value+"_"+created_control_type[index]));
@@ -821,8 +812,6 @@ function create_control(control_type,dynamicId,arrayControl)
 				var result = jQuery.inArray(dynamicId, edit_control_dynamic_ids);
 				if(result == -1)
 				{
-					new_control_dynamic_ids.push(dynamicId);
-					created_control_type.push(9);
 					jQuery.each(new_control_dynamic_ids,function(index,value)
 					{
 						jQuery('#left_block').append(jQuery("#div_"+value+"_"+created_control_type[index]));
@@ -878,8 +867,6 @@ function create_control(control_type,dynamicId,arrayControl)
 			var result = jQuery.inArray(dynamicId, edit_control_dynamic_ids);
 			if(result == -1)
 			{
-				new_control_dynamic_ids.push(dynamicId);
-				created_control_type.push(12);
 				jQuery.each(new_control_dynamic_ids,function(index,value)
 				{
 					jQuery('#left_block').append(jQuery("#div_"+value+"_"+created_control_type[index]));
@@ -945,8 +932,6 @@ function create_control(control_type,dynamicId,arrayControl)
 			var result = jQuery.inArray(dynamicId, edit_control_dynamic_ids);
 			if(result == -1)
 			{
-				new_control_dynamic_ids.push(dynamicId);
-				created_control_type.push(13);
 				jQuery.each(new_control_dynamic_ids,function(index,value)
 				{
 					jQuery('#left_block').append(jQuery("#div_"+value+"_"+created_control_type[index]));
@@ -1013,8 +998,6 @@ function create_control(control_type,dynamicId,arrayControl)
 			var result = jQuery.inArray(dynamicId, edit_control_dynamic_ids);
 			if(result == -1)
 			{
-				new_control_dynamic_ids.push(dynamicId);
-				created_control_type.push(14);
 				jQuery.each(new_control_dynamic_ids,function(index,value)
 				{
 					jQuery('#left_block').append(jQuery("#div_"+value+"_"+created_control_type[index]));
@@ -1047,8 +1030,6 @@ function create_control(control_type,dynamicId,arrayControl)
 			var result = jQuery.inArray(dynamicId, edit_control_dynamic_ids);
 			if(result == -1)
 			{
-				new_control_dynamic_ids.push(dynamicId);
-				created_control_type.push(15);
 				jQuery.each(new_control_dynamic_ids,function(index,value)
 				{
 					jQuery('#left_block').append(jQuery("#div_"+value+"_"+created_control_type[index]));
@@ -1946,11 +1927,11 @@ function delete_textbox(div_id,dynamicId,control_no)
 	if(edit_created_control_type.length != 0)
 	{
 		var index = jQuery.inArray(dynamicId,edit_control_dynamic_ids);
-		if(index > -1)
+		if(index != -1)
 		{
 			if(control_no == 9)
 			{
-				new_file_upload = "";
+				
 				jQuery(".file_upload").attr("style","display:none");
 			}
 			else
@@ -1959,10 +1940,12 @@ function delete_textbox(div_id,dynamicId,control_no)
 			}
 			edit_control_dynamic_ids.splice(index, 1);
 			edit_created_control_type.splice(index, 1);
+			existing_array_control_types.splice(index, 1);
+			delete_control_dynamicIds.push(dynamicId);
 		}
 	}
 	var index = jQuery.inArray(dynamicId,new_control_dynamic_ids);
-	if(index > -1)
+	if(index != -1)
 	{
 		if(control_no == 9)
 		{
@@ -1975,8 +1958,9 @@ function delete_textbox(div_id,dynamicId,control_no)
 		}
 		new_control_dynamic_ids.splice(index, 1);
 		created_control_type.splice(index, 1);
+		array_dynamicCount.splice(index, 1);
 	}
-	delete_control_dynamicIds.push(dynamicId);
+	
 	
 }
 function field_reqired(dynamicId)
@@ -2280,7 +2264,7 @@ jQuery("#ux_dynamic_form_submit").validate
 									array_controls[dynamicCount].push({"cb_button_set_txt_input" : ""});
 									array_controls[dynamicCount].push({"cb_button_set_txt_description" : ""});
 									array_controls[dynamicCount].push({"cb_checkbox_alpha_filter": "0"});
-									array_controls[dynamicCount].push({"ux_checkbox_alpha_num_filter_": "0"});
+									array_controls[dynamicCount].push({"cb_checkbox_alpha_num_filter": "0"});
 									array_controls[dynamicCount].push({"cb_checkbox_digit_filter": "0"});
 									array_controls[dynamicCount].push({"cb_checkbox_strip_tag_filter": "0"});
 									array_controls[dynamicCount].push({"cb_checkbox_trim_filter": "0"});
@@ -2320,7 +2304,7 @@ jQuery("#ux_dynamic_form_submit").validate
 						jQuery.ajax
 						({
 							type: "POST",
-							url: ajaxurl + "?"+ jQuery(form).serialize() +  "&field_order="+field_order+"&form_id="+form_id+"&array_controls="+encodeURIComponent(JSON.stringify(array_controls[edit_created_control_type[flag]]))+"&form=0&control_type=1&param=submit_controls&action=edit_contact_form_library",
+							url: ajaxurl + "?"+ jQuery(form).serialize() +  "&field_order="+field_order+"&form_id="+form_id+"&array_controls="+encodeURIComponent(JSON.stringify(array_controls[edit_created_control_type[flag]]))+"&form=0&param=submit_controls&action=edit_contact_form_library",
 							success : function(data) 
 							{
 								imaginaryCount++;

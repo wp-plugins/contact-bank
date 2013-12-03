@@ -122,7 +122,7 @@
 		</div>
 	</div>
 	<div class="layout-control-group">	
-		<input type="button" class="btn btn-info layout-span2" onclick="save_textarea_control(<?php echo $dynamicId; ?>)" value="<?php _e( "Save Settings", contact_bank ); ?>" />
+		<input type="button" class="btn btn-info layout-span2" onclick="save_textarea_control(<?php echo $dynamicId; ?>,<?php echo $dynamicCount;?>)" value="<?php _e( "Save Settings", contact_bank ); ?>" />
 	</div>
 </div>
 <script type="text/javascript">
@@ -157,9 +157,9 @@
 			break;
 		}
 	}
-	function save_textarea_control(dynamicId)
+	function save_textarea_control(dynamicId,dynamicCount)
 	{
-		var dynamicCount = "<?php echo $dynamicCount;?>";
+		
 		array_controls[dynamicCount] = [];
 		array_controls[dynamicCount].push({"control_type" : "2"});
 		array_controls[dynamicCount].push({"textarea_dynamicId" : dynamicId});
@@ -190,6 +190,8 @@
 		{
 			jQuery("#txt_required_"+dynamicId).css("display","none");
 		}
+		//console.log("pushed control : 2, Dynamic Count : " + dynamicCount + ", Array Count = " + array_controls[dynamicCount].length);
+		//console.log(JSON.stringify(array_controls[dynamicCount]));
 		CloseLightbox();
 	}
 	function enter_admin_label(dynamicId)
@@ -200,11 +202,11 @@
 	var count = <?php echo $count; ?>;
 	if(count != 0)
 	{
-		var dynamicCount = "<?php echo $dynamicCount;?>";
+		
 		var dynamicId = <?php echo $dynamicId; ?>;
-		jQuery("#ux_label_text_"+dynamicId).val(array_controls[dynamicCount][2].cb_label_value);
-		jQuery("#ux_description_control_"+dynamicId).val(array_controls[dynamicCount][3].cb_description);
-		if(array_controls[dynamicCount][4].cb_control_required == "1")
+		jQuery("#ux_label_text_"+dynamicId).val(array_controls[<?php echo $dynamicCount;?>][2].cb_label_value);
+		jQuery("#ux_description_control_"+dynamicId).val(array_controls[<?php echo $dynamicCount;?>][3].cb_description);
+		if(array_controls[<?php echo $dynamicCount;?>][4].cb_control_required == "1")
 		{
 			jQuery("#ux_required_control_"+dynamicId).attr("checked","checked");
 		}
@@ -212,48 +214,48 @@
 		{
 			jQuery("#ux_required_"+dynamicId).attr("checked","checked");
 		}
-		jQuery("#ux_tooltip_control_"+dynamicId).val(array_controls[dynamicCount][5].cb_tooltip_txt);
-		jQuery("#ux_default_value_"+dynamicId).val(array_controls[dynamicCount][6].cb_default_txt_val);
-		jQuery("#ux_admin_label_"+dynamicId).val(array_controls[dynamicCount][7].cb_admin_label);
-		if(array_controls[dynamicCount][8].cb_show_email == "1")
+		jQuery("#ux_tooltip_control_"+dynamicId).val(array_controls[<?php echo $dynamicCount;?>][5].cb_tooltip_txt);
+		jQuery("#ux_default_value_"+dynamicId).val(array_controls[<?php echo $dynamicCount;?>][6].cb_default_txt_val);
+		jQuery("#ux_admin_label_"+dynamicId).val(array_controls[<?php echo $dynamicCount;?>][7].cb_admin_label);
+		if(array_controls[<?php echo $dynamicCount;?>][8].cb_show_email == "1")
 		{
 			jQuery("#ux_show_email_"+dynamicId).attr("checked","checked");
 		}
-		if(array_controls[dynamicCount][9].cb_button_set_outer_label != "")
+		if(array_controls[<?php echo $dynamicCount;?>][9].cb_button_set_outer_label != "")
 		{
-			jQuery("#button_set_outer_label_"+dynamicId).html(array_controls[dynamicCount][9].cb_button_set_outer_label);
+			jQuery("#button_set_outer_label_"+dynamicId).html(array_controls[<?php echo $dynamicCount;?>][9].cb_button_set_outer_label);
 			jQuery("#text_area_label_"+dynamicId).attr("style","display:block");
 			jQuery("#text_area_label_"+dynamicId).attr("style","position:inherit");
 		}
-		if(array_controls[dynamicCount][10].cb_button_set_txt_input != "")
+		if(array_controls[<?php echo $dynamicCount;?>][10].cb_button_set_txt_input != "")
 		{
-			jQuery("#button_set_textinput_"+dynamicId).html(array_controls[dynamicCount][10].cb_button_set_txt_input);
+			jQuery("#button_set_textinput_"+dynamicId).html(array_controls[<?php echo $dynamicCount;?>][10].cb_button_set_txt_input);
 			jQuery("#text_area_text_input_"+dynamicId).attr("style","display:block");
 			jQuery("#text_area_text_input_"+dynamicId).attr("style","position:inherit");
 		}
-		if(array_controls[dynamicCount][11].cb_button_set_txt_description != "")
+		if(array_controls[<?php echo $dynamicCount;?>][11].cb_button_set_txt_description != "")
 		{
-			jQuery("#button_set_outer_description_"+dynamicId).html(array_controls[dynamicCount][11].cb_button_set_txt_description);
+			jQuery("#button_set_outer_description_"+dynamicId).html(array_controls[<?php echo $dynamicCount;?>][11].cb_button_set_txt_description);
 			jQuery("#text_area_description_"+dynamicId).attr("style","display:block");
 			jQuery("#text_area_description_"+dynamicId).attr("style","position:inherit");
 		}
-		if(array_controls[dynamicCount][12].cb_checkbox_alpha_filter == "1")
+		if(array_controls[<?php echo $dynamicCount;?>][12].cb_checkbox_alpha_filter == "1")
 		{
 			jQuery("#ux_checkbox_alpha_filter_"+dynamicId).attr("checked","checked");
 		}
-		if(array_controls[dynamicCount][13].cb_ux_checkbox_alpha_num_filter == "1")
+		if(array_controls[<?php echo $dynamicCount;?>][13].cb_ux_checkbox_alpha_num_filter == "1")
 		{
 			jQuery("#ux_checkbox_alpha_num_filter_"+dynamicId).attr("checked","checked");
 		}
-		if(array_controls[dynamicCount][14].cb_checkbox_digit_filter == "1")
+		if(array_controls[<?php echo $dynamicCount;?>][14].cb_checkbox_digit_filter == "1")
 		{
 			jQuery("#ux_checkbox_digit_filter_"+dynamicId).attr("checked","checked");
 		}
-		if(array_controls[dynamicCount][15].cb_checkbox_strip_tag_filter == "1")
+		if(array_controls[<?php echo $dynamicCount;?>][15].cb_checkbox_strip_tag_filter == "1")
 		{
 			jQuery("#ux_checkbox_strip_tag_filter_"+dynamicId).attr("checked","checked");
 		}
-		if(array_controls[dynamicCount][16].cb_checkbox_trim_filter == "1")
+		if(array_controls[<?php echo $dynamicCount;?>][16].cb_checkbox_trim_filter == "1")
 		{
 			jQuery("#ux_checkbox_trim_filter_"+dynamicId).attr("checked","checked");
 		}

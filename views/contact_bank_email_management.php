@@ -45,7 +45,14 @@ if(isset($_REQUEST['param']))
 			$dynamicId = $frontend_control_value[$flag]->dynamic_control_id;
 			if($frontend_control_value[$flag]->field_Id == 3)
 			{
-				$client_email .= $frontend_control_value[$flag]->dynamic_frontend_value;
+				if($client_email != "")
+				{
+					$client_email .= ";" . $frontend_control_value[$flag]->dynamic_frontend_value;	
+				}
+				else {
+					$client_email = $frontend_control_value[$flag]->dynamic_frontend_value;	
+				}
+				
 			}
 			if($frontend_control_value[$flag]->field_Id == 12)
 			{
@@ -58,19 +65,19 @@ if(isset($_REQUEST['param']))
 						"cb_date_format"
 					)
 				);
-				if($date_format == 0)
+				if($date_format == "0")
 				{
 					$frontend_control =  date("F d, Y", strtotime($frontend_control_value[$flag]->dynamic_frontend_value));
 				}
-				else if($date_format == 1)
+				else if($date_format == "1")
 				{
 					$frontend_control =  date("Y/m/d", strtotime($frontend_control_value[$flag]->dynamic_frontend_value));
 				} 
-				else if($date_format == 2)
+				else if($date_format == "2")
 				{
 					$frontend_control = date("m/d/Y", strtotime($frontend_control_value[$flag]->dynamic_frontend_value));
 				} 
-				else if($date_format == 3)
+				else if($date_format == "3")
 				{
 					$frontend_control =  date("d/m/Y", strtotime($frontend_control_value[$flag]->dynamic_frontend_value));
 				}
@@ -91,7 +98,7 @@ if(isset($_REQUEST['param']))
 				if($hour_format == "12")
 				{
 					$time_content = explode("-", $frontend_control_value[$flag]->dynamic_frontend_value);
-					if($time_content[2] == 0)
+					if(intval($time_content[2])== 0)
 					{
 						$AM = "AM";
 					}
@@ -99,7 +106,7 @@ if(isset($_REQUEST['param']))
 					{
 						$AM = "PM";
 					}
-					if($time_content[1] < 10)
+					if(intval($time_content[1]) < 10)
 					{
 						$time_final = $time_content[0].":"."0".$time_content[1]." ".$AM;
 					}
@@ -143,11 +150,9 @@ if(isset($_REQUEST['param']))
 			}
 			else 
 			{
-				if($frontend_control_value[$flag]->field_Id != 9)
-				{
-					$messageTxt = str_replace("[control_".$dynamicId."]",$frontend_control_value[$flag]->dynamic_frontend_value, $messageTxt)."<br />" ;
-					$messageTxt_client = str_replace("[control_client_".$dynamicId."]",$frontend_control_value[$flag]->dynamic_frontend_value, $messageTxt_client)."<br />" ;
-				}
+				
+				$messageTxt = str_replace("[control_".$dynamicId."]",$frontend_control_value[$flag]->dynamic_frontend_value, $messageTxt)."<br />" ;
+				$messageTxt_client = str_replace("[control_client_".$dynamicId."]",$frontend_control_value[$flag]->dynamic_frontend_value, $messageTxt_client)."<br />" ;
 			}
 		}
 		$admin_label = get_option( 'admin_email');

@@ -4,7 +4,7 @@
  Plugin URI: http://wordpress.org/plugins/contact-bank/
  Description: Contact Bank allows you to add a feedback form easilly and simply to a post or a page.
  Author: contact-banker
- Version: 1.5
+ Version: 1.6
  Author URI: http://wordpress.org/plugins/contact-bank/
  */
  
@@ -623,4 +623,78 @@ register_activation_hook(__FILE__,'plugin_install_script_for_contact_bank');
 add_shortcode('contact_bank', 'contact_bank_short_code' );
 // Uninstall Hook called for function plugin_install_script_for_contact_bank
 register_uninstall_hook(__FILE__,'plugin_uninstall_script_for_contact_bank');
+add_filter('widget_text', 'do_shortcode');
+class Contact_Bank_Widget extends WP_Widget
+{
+	function Contact_Bank_Widget()
+	{
+		$widget_ops = array('classname' => 'Contact_Bank_Widget', 'description' => 'Uses Contact Form' );
+		$this->WP_Widget('Contact_Bank_Widget', 'Contact Bank', $widget_ops);
+	}
+	function form($instance)
+	{
+		$instance = wp_parse_args( (array) $instance, array( 'title' => '', 'form_id' => '0' ) );
+		$title = $instance['title'];
+		global $wpdb;
+		$form_data = $wpdb->get_results
+		(
+			$wpdb->prepare
+			(
+				"SELECT * FROM " .contact_bank_contact_form(),""
+			)
+		);
+		?>
+		<p><label for="<?php echo $this->get_field_id('title'); ?>">Title: <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>" /></label></p>
+		<p><label for="<?php echo $this->get_field_id('form_id'); ?>"><?php _e('Select Form :', contact_bank); ?></label>
+			<select size="1" name="<?php echo $this->get_field_name('form_id'); ?>" id="<?php echo $this->get_field_id('form_id'); ?>" class="widefat">
+				<option value="0"  ><?php _e('Select Form', contact_bank); ?></option>
+			<?php
+			if($form_data) {
+				foreach($form_data as $form) {
+				echo '<option value="'.$form->form_id.'" ';
+				if ($form->form_id == $instance['form_id']) echo "selected='selected' ";
+				echo '>'.stripslashes(html_entity_decode($form->form_name)).'</option>'."\n\t"; 
+				}
+			}
+			?>
+			</select>
+		</p>
+		<?php
+	}
+	function update($new_instance, $old_instance)
+	{
+		$instance = $old_instance;
+		$instance['title'] = $new_instance['title'];
+		$instance['form_id'] = (int) $new_instance['form_id'];
+		return $instance;
+	}
+	function widget($args, $instance)
+	{
+		global $wpdb;
+		$form_data = $wpdb->get_var
+		(
+			$wpdb->prepare
+			(
+				"SELECT count(*) FROM " .contact_bank_contact_form() . " WHERE form_id = %d",
+				$instance['form_id']
+			)
+		);
+		
+		extract($args, EXTR_SKIP);
+		echo $before_widget;
+		$title = empty($instance['title']) ? ' ' : apply_filters('widget_title', $instance['title']);
+		if($form_data > 0)
+		{
+			if($instance['form_id'] != 0)
+			{
+				echo $before_title . $title . $after_title;
+				$shortcode_for_contact_bank_form = "[contact_bank form_id=" . $instance['form_id'] . "]";
+				echo do_shortcode( $shortcode_for_contact_bank_form );
+				echo $after_widget;
+			}
+		}
+	}
+}
+add_action( 'widgets_init', create_function('', 'return register_widget("Contact_Bank_Widget");') );
+
 ?>

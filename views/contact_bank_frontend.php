@@ -928,7 +928,7 @@ $fields = $wpdb->get_results
 												<?php
 												}
 												?>
-												<select style="<?php echo $cb_button_set_time_minute_dropdown; ?>" class="layout-span3" type="select_time" id="ux_ddl_select_minute_<?php echo $dynamicId; ?>" name="select_min_<?php echo $dynamicId; ?>">
+												<select style="<?php echo $cb_button_set_time_minute_dropdown; ?>" class="layout-span3" type="select_time" id="ux_ddl_select_minute_<?php echo $dynamicId; ?>" name="ux_ddl_select_minute_<?php echo $dynamicId; ?>">
 													<option value=""><?php _e("Minute",contact_bank);?></option>
 													<?php
 													for($flag4=0; $flag4 < 60;)
@@ -1005,7 +1005,7 @@ $fields = $wpdb->get_results
 									$index = array_search("cb_checkbox_alpha_filter", $keys);
 									$checkbox_alpha_filter_password = $fields_dynamic_controls[$index]->dynamic_settings_value;
 									
-									$index = array_search("ux_checkbox_alpha_num_filter", $keys);
+									$index = array_search("cb_checkbox_alpha_num_filter", $keys);
 									$checkbox_alpha_num_filter_password = $fields_dynamic_controls[$index]->dynamic_settings_value;
 									
 									$index = array_search("cb_checkbox_digit_filter", $keys);
@@ -1083,7 +1083,10 @@ $fields = $wpdb->get_results
 						}
 					?>
 					<div class="layout-control-group">
-						<input  class="btn btn-info layout-span2" type="submit" id="submit_button" name="submit_button"  value="<?php _e("Submit Form", contact_bank); ?>" /></td>
+						<label class="layout-control-label"></label>
+						<div class="layout-controls>
+							<input class="btn btn-info layout-span2" type="submit" id="submit_button" name="submit_button"  value="<?php _e("Submit Form", contact_bank); ?>" />
+						</div>
 					</div>
 				</div>
 			</div>
@@ -1258,7 +1261,6 @@ jQuery("#ux_contact_form_submit").validate
 		var form_id = <?php echo $form_id ;?>;
 		jQuery.post(ajaxurl, jQuery(form).serialize() +"&form_id="+form_id+"&file_uploaded_path="+file_uploaded_path+"&param=frontend_submit_controls&action=frontend_contact_form_library", function(data) 
 		{
-			
 			var submit_id = data;
 			jQuery.post(ajaxurl, "form_id="+form_id+"&submit_id="+submit_id+"&param=email_management&action=email_management_contact_form_library", function(data) 
 			{

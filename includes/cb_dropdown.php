@@ -104,13 +104,13 @@
 		</div>
 	</div>
 	<div class="layout-control-group">	
-		<input type="button" class="btn btn-info layout-span2" onclick="save_dropdownlist_control(<?php echo $dynamicId; ?>)" value="<?php _e( "Save Settings", contact_bank ); ?>" />
+		<input type="button" class="btn btn-info layout-span2" onclick="save_dropdownlist_control(<?php echo $dynamicId; ?>,<?php echo $dynamicCount;?>)" value="<?php _e( "Save Settings", contact_bank ); ?>" />
 	</div>
 </div>
 <script type="text/javascript">
 	
-	array_option_id_dropdown["<?php echo $dynamicCount;?>"] = [];
-	array_options_dropdown["<?php echo $dynamicCount;?>"] = [];
+	array_option_id_dropdown[<?php echo $dynamicCount;?>] = [];
+	array_options_dropdown[<?php echo $dynamicCount;?>] = [];
 	jQuery(".hovertip").tooltip();
 	function tabsFunc(control)
 	{
@@ -186,25 +186,25 @@
 	var count = <?php echo $count; ?>;
 	if(count != 0)
 	{
-		var dynamicCount = "<?php echo $dynamicCount;?>";
+		
 		var dynamicId = <?php echo $dynamicId; ?>;
-		if(array_controls[dynamicCount][5].cb_dropdown_option_id != "")
+		if(array_controls[<?php echo $dynamicCount;?>][5].cb_dropdown_option_id != "")
 		{
-			var optionId_str = array_controls[dynamicCount][5].cb_dropdown_option_id;
+			var optionId_str = array_controls[<?php echo $dynamicCount;?>][5].cb_dropdown_option_id;
 			var optionId = optionId_str.split(";");
-			var option_value_str = array_controls[dynamicCount][6].cb_dropdown_option_val;
+			var option_value_str = array_controls[<?php echo $dynamicCount;?>][6].cb_dropdown_option_val;
 			var option_value = option_value_str.split(";");
 			for(var flag = 0;flag <optionId.length ;flag++)
 			{
 				var optionsId = optionId[flag];
 				var ddl_options = option_value[flag];
-				array_options_dropdown[dynamicCount].push(ddl_options);
-				array_option_id_dropdown[dynamicCount].push(parseInt(optionsId));
+				array_options_dropdown[<?php echo $dynamicCount;?>].push(ddl_options);
+				array_option_id_dropdown[<?php echo $dynamicCount;?>].push(parseInt(optionsId));
 				jQuery("#dropdown_ddl_option_"+dynamicId).append('<div class="layout-control-group" id="input_option_tr_'+optionsId+'"><div class="layout-controls"><input type="text" class="layout-span8" id="input_option_'+optionsId+'" name="input_option_'+optionsId+'" value="'+ddl_options+'" /><a style="padding-left:2px;" onclick="delete_ddl_option('+optionsId+','+dynamicId+')" ><img style="vertical-align: top;margin-top: 2px;" src="<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" /></a></div></div>');
 			}
 		}
-		jQuery("#ux_label_text_"+dynamicId).val(array_controls[dynamicCount][2].cb_label_value);
-		if(array_controls[dynamicCount][3].cb_control_required == 1)
+		jQuery("#ux_label_text_"+dynamicId).val(array_controls[<?php echo $dynamicCount;?>][2].cb_label_value);
+		if(array_controls[<?php echo $dynamicCount;?>][3].cb_control_required == 1)
 		{
 			jQuery("#ux_required_control_"+dynamicId).attr("checked","checked");
 		}
@@ -212,33 +212,34 @@
 		{
 			jQuery("#ux_required_"+dynamicId).attr("checked","checked");
 		}
-		jQuery("#ux_tooltip_control_"+dynamicId).val(array_controls[dynamicCount][4].cb_tooltip_txt);
-		jQuery("#ux_admin_label_"+dynamicId).val(array_controls[dynamicCount][7].cb_admin_label);
-		if(array_controls[dynamicCount][8].cb_show_email == true)
+		jQuery("#ux_tooltip_control_"+dynamicId).val(array_controls[<?php echo $dynamicCount;?>][4].cb_tooltip_txt);
+		jQuery("#ux_admin_label_"+dynamicId).val(array_controls[<?php echo $dynamicCount;?>][7].cb_admin_label);
+		if(array_controls[<?php echo $dynamicCount;?>][8].cb_show_email == "1")
 		{
 			jQuery("#ux_email_"+dynamicId).attr("checked","checked");
 		}
-		if(array_controls[dynamicCount][9].cb_button_set_outer_label != "")
+		if(array_controls[<?php echo $dynamicCount;?>][9].cb_button_set_outer_label != "")
 		{
-			jQuery("#button_set_outer_label_ddl_"+dynamicId).html(array_controls[dynamicCount][9].cb_button_set_outer_label);
+			jQuery("#button_set_outer_label_ddl_"+dynamicId).html(array_controls[<?php echo $dynamicCount;?>][9].cb_button_set_outer_label);
 			jQuery("#show_data_label_tr_ddl_"+dynamicId).attr("style","display:block");
 			jQuery("#show_data_label_tr_ddl_"+dynamicId).attr("style","position:inherit");
 		}
-		if(array_controls[dynamicCount][10].cb_button_set_dropdown_menu != "")
+		if(array_controls[<?php echo $dynamicCount;?>][10].cb_button_set_dropdown_menu != "")
 		{
-			jQuery("#ux_dropdown_menu_textarea_ddl_"+dynamicId).html(array_controls[dynamicCount][10].cb_button_set_dropdown_menu);
+			jQuery("#ux_dropdown_menu_textarea_ddl_"+dynamicId).html(array_controls[<?php echo $dynamicCount;?>][10].cb_button_set_dropdown_menu);
 			jQuery("#show_data_dropdown_menu_tr_ddl_"+dynamicId).attr("style","display:block");
 			jQuery("#show_data_dropdown_menu_tr_ddl_"+dynamicId).attr("style","position:inherit");
 		}
-		if(array_controls[dynamicCount][11].cb_button_set_description != "")
+		if(array_controls[<?php echo $dynamicCount;?>][11].cb_button_set_description != "")
 		{
-			jQuery("#ux_description_textarea_ddl_"+dynamicId).html(array_controls[dynamicCount][11].cb_button_set_description);
+			jQuery("#ux_description_textarea_ddl_"+dynamicId).html(array_controls[<?php echo $dynamicCount;?>][11].cb_button_set_description);
 			jQuery("#show_data_description_tr_ddl_"+dynamicId).attr("style","display:block");
 			jQuery("#show_data_description_tr_ddl_"+dynamicId).attr("style","position:inherit");
 		}
 	}
 	function add_ddl_options(dynamicId)
 	{
+		
 		var ddl_options = jQuery("#ddl_options_"+dynamicId).val();
 		if(ddl_options=="")
 		{
@@ -251,8 +252,8 @@
 			jQuery("#dropdown_ddl_option_"+dynamicId).append('<div class="layout-control-group" id="input_option_tr_'+optionsId+'"><div class="layout-controls"><input type="text" class="layout-span8"  id="input_option_'+optionsId+'" name="input_option_'+optionsId+'" value="'+ddl_options+'"/><a style="padding-left:2px;" onclick="delete_ddl_option('+optionsId+','+dynamicId+')" ><img style="vertical-align: top;margin-top: 2px;" src="<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" /></a></div></div>');
 			jQuery("#ddl_options_"+dynamicId).val("");
 			
-			array_option_id_dropdown[dynamicCount].push(optionsId);
-			array_options_dropdown[dynamicCount].push(ddl_options);
+			array_option_id_dropdown[<?php echo $dynamicCount;?>].push(optionsId);
+			array_options_dropdown[<?php echo $dynamicCount;?>].push(ddl_options);
 		}
 	}
 	function delete_ddl_option(optionsId,dynamicId)
@@ -261,12 +262,12 @@
 		
 		jQuery("#input_option_tr_"+optionsId).remove("");
 		
-		var place_of_option_in_array_id = jQuery.inArray(parseInt(optionsId),array_option_id_dropdown[dynamicCount]);
+		var place_of_option_in_array_id = jQuery.inArray(parseInt(optionsId),array_option_id_dropdown[<?php echo $dynamicCount;?>]);
 
 		if(place_of_option_in_array_id != -1)
 		{
-			array_options_dropdown[dynamicCount].splice(place_of_option_in_array_id,1);
-			array_option_id_dropdown[dynamicCount].splice(place_of_option_in_array_id,1);
+			array_options_dropdown[<?php echo $dynamicCount;?>].splice(place_of_option_in_array_id,1);
+			array_option_id_dropdown[<?php echo $dynamicCount;?>].splice(place_of_option_in_array_id,1);
 		}
 	}
 	function change_label_drop(optionsId)
@@ -274,9 +275,9 @@
 		var lable_value = jQuery("#input_option_"+optionsId).val();
 		jQuery("#option_tr_"+optionsId).html(lable_value);
 	}
-	function save_dropdownlist_control(dynamicId)
+	function save_dropdownlist_control(dynamicId,dynamicCount)
 	{
-		var dynamicCount = "<?php echo $dynamicCount;?>";
+		
 		array_controls[dynamicCount] = [];
 		array_controls[dynamicCount].push({"control_type" : "4"});
 		array_controls[dynamicCount].push({"dropdown_dynamicId" : dynamicId});
@@ -323,6 +324,8 @@
 		{
 			jQuery("#txt_required_"+dynamicId).css("display","none");
 		}
+		//console.log("pushed control : 4, Dynamic Count : " + dynamicCount + ", Array Count = " + array_controls[dynamicCount].length);
+		//console.log(JSON.stringify(array_controls[dynamicCount]));
 		CloseLightbox();
 	}
 	function enter_admin_label(dynamicId)

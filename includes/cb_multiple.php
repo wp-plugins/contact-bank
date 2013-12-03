@@ -120,12 +120,12 @@
 		</div>
 	</div>
 	<div class="layout-control-group">	
-		<input type="button"  class="btn btn-info layout-span2" onclick="save_multiple_control(<?php echo $dynamicId; ?>)" value="<?php _e( "Save Settings", contact_bank ); ?>" />
+		<input type="button"  class="btn btn-info layout-span2" onclick="save_multiple_control(<?php echo $dynamicId; ?>,<?php echo $dynamicCount;?>)" value="<?php _e( "Save Settings", contact_bank ); ?>" />
 	</div>
 </div>
 <script type="text/javascript">
-	array_options_radio["<?php echo $dynamicCount;?>"] = [];
-	array_option_id_radio["<?php echo $dynamicCount;?>"] = [];
+	array_options_radio[<?php echo $dynamicCount;?>] = [];
+	array_option_id_radio[<?php echo $dynamicCount;?>] = [];
 	jQuery(".hovertip").tooltip();	
 	function tabsFunc(control)
 	{
@@ -160,25 +160,24 @@
 	var count = <?php echo $count; ?>;
 	if(count != 0)
 	{
-		var dynamicCount = "<?php echo $dynamicCount;?>";
 		var dynamicId = <?php echo $dynamicId; ?>;
-		if(array_controls[dynamicCount][5].cb_radio_option_id != "")
+		if(array_controls[<?php echo $dynamicCount;?>][5].cb_radio_option_id != "")
 		{
-			var optionId_str = array_controls[dynamicCount][5].cb_radio_option_id;
+			var optionId_str = array_controls[<?php echo $dynamicCount;?>][5].cb_radio_option_id;
 			var optionId = optionId_str.split(";");
-			var option_value_str = array_controls[dynamicCount][6].cb_radio_option_val;
+			var option_value_str = array_controls[<?php echo $dynamicCount;?>][6].cb_radio_option_val;
 			var option_value = option_value_str.split(";");
 			for(var flag = 0;flag <optionId.length ;flag++)
 			{
 				var options_dynamicId = optionId[flag];
 				var add_radio_option = option_value[flag];
-				array_option_id_radio[dynamicCount].push(parseInt(options_dynamicId));
-				array_options_radio[dynamicCount].push(add_radio_option);
+				array_option_id_radio[<?php echo $dynamicCount;?>].push(parseInt(options_dynamicId));
+				array_options_radio[<?php echo $dynamicCount;?>].push(add_radio_option);
 				jQuery("#append_multiple_option_"+dynamicId).append('<div class="layout-control-group" id="input_tr_'+options_dynamicId+'"><div class="layout-controls"><input type="text" class="layout-span8" id="input_option_'+options_dynamicId+'" name="input_option_'+options_dynamicId+'" value="'+add_radio_option+'" /><a style="padding-left:2px;" onclick="delete_radio('+options_dynamicId+','+dynamicId+')"><img style="vertical-align: top;margin-top: 2px;" src="<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" /></a></div></div>');
 			}
 		}
-		jQuery("#ux_label_text_"+dynamicId).val(array_controls[dynamicCount][2].cb_label_value);
-		if(array_controls[dynamicCount][3].cb_control_required == "1")
+		jQuery("#ux_label_text_"+dynamicId).val(array_controls[<?php echo $dynamicCount;?>][2].cb_label_value);
+		if(array_controls[<?php echo $dynamicCount;?>][3].cb_control_required == "1")
 		{
 			jQuery("#ux_required_control_"+dynamicId).attr("checked","checked");
 		}
@@ -186,45 +185,46 @@
 		{
 			jQuery("#ux_required_"+dynamicId).attr("checked","checked");
 		}
-		jQuery("#ux_tooltip_control_"+dynamicId).val(array_controls[dynamicCount][4].cb_tooltip_txt);
-		jQuery("#ux_admin_label_"+dynamicId).val(array_controls[dynamicCount][7].cb_admin_label);
-		if(array_controls[dynamicCount][8].cb_show_email == "1")
+		jQuery("#ux_tooltip_control_"+dynamicId).val(array_controls[<?php echo $dynamicCount;?>][4].cb_tooltip_txt);
+		jQuery("#ux_admin_label_"+dynamicId).val(array_controls[<?php echo $dynamicCount;?>][7].cb_admin_label);
+		if(array_controls[<?php echo $dynamicCount;?>][8].cb_show_email == "1")
 		{
 			jQuery("#ux_show_email_"+dynamicId).attr("checked","checked");
 		}
-		if(array_controls[dynamicCount][9].cb_button_set_outer_label != "")
+		if(array_controls[<?php echo $dynamicCount;?>][9].cb_button_set_outer_label != "")
 		{
-			jQuery("#button_set_outer_label_radio_"+dynamicId).html(array_controls[dynamicCount][9].cb_button_set_outer_label);
+			jQuery("#button_set_outer_label_radio_"+dynamicId).html(array_controls[<?php echo $dynamicCount;?>][9].cb_button_set_outer_label);
 			jQuery("#show_data_label_tr_radio_"+dynamicId).attr("style","display:block");
 			jQuery("#show_data_label_tr_radio_"+dynamicId).attr("style","position:inherit");
 		}
-		if(array_controls[dynamicCount][10].cb_button_set_description != "")
+		if(array_controls[<?php echo $dynamicCount;?>][10].cb_button_set_description != "")
 		{
-			jQuery("#ux_description_textarea_radio_"+dynamicId).html(array_controls[dynamicCount][10].cb_button_set_description);
+			jQuery("#ux_description_textarea_radio_"+dynamicId).html(array_controls[<?php echo $dynamicCount;?>][10].cb_button_set_description);
 			jQuery("#show_data_description_tr_radio_"+dynamicId).attr("style","display:block");
 			jQuery("#show_data_description_tr_radio_"+dynamicId).attr("style","position:inherit");
 		}
-		if(array_controls[dynamicCount][11].cb_button_set_options_outer_wrapper != "")
+		if(array_controls[<?php echo $dynamicCount;?>][11].cb_button_set_options_outer_wrapper != "")
 		{
-			jQuery("#ux_button_options_outer_wrapper_radio_"+dynamicId).html(array_controls[dynamicCount][11].cb_button_set_options_outer_wrapper);
+			jQuery("#ux_button_options_outer_wrapper_radio_"+dynamicId).html(array_controls[<?php echo $dynamicCount;?>][11].cb_button_set_options_outer_wrapper);
 			jQuery("#show_data_option_outer_wrapper_tr_radio_"+dynamicId).attr("style","display:block");
 			jQuery("#show_data_option_outer_wrapper_tr_radio_"+dynamicId).attr("style","position:inherit");
 		}
-		if(array_controls[dynamicCount][12].cb_button_set_options_wrapper != "")
+		if(array_controls[<?php echo $dynamicCount;?>][12].cb_button_set_options_wrapper != "")
 		{
-			jQuery("#ux_button_option_wrapper_radio_"+dynamicId).html(array_controls[dynamicCount][12].cb_button_set_options_wrapper);
+			jQuery("#ux_button_option_wrapper_radio_"+dynamicId).html(array_controls[<?php echo $dynamicCount;?>][12].cb_button_set_options_wrapper);
 			jQuery("#show_data_option_wrapper_tr_radio_"+dynamicId).attr("style","display:block");
 			jQuery("#show_data_option_wrapper_tr_radio_"+dynamicId).attr("style","position:inherit");
 		}
-		if(array_controls[dynamicCount][13].cb_button_set_options_label != "")
+		if(array_controls[<?php echo $dynamicCount;?>][13].cb_button_set_options_label != "")
 		{
-			jQuery("#ux_button_option_label_radio_"+dynamicId).html(array_controls[dynamicCount][13].cb_button_set_options_label);
+			jQuery("#ux_button_option_label_radio_"+dynamicId).html(array_controls[<?php echo $dynamicCount;?>][13].cb_button_set_options_label);
 			jQuery("#show_data_option_label_tr_radio_"+dynamicId).attr("style","display:block");
 			jQuery("#show_data_option_label_tr_radio_"+dynamicId).attr("style","position:inherit");
 		}
 	}
 	function add_radio_options(dynamicId)
 	{
+		
 		var add_radio_options = jQuery("#radio_options_"+dynamicId).val();
 		if(add_radio_options=="")
 		{
@@ -233,8 +233,8 @@
 		else 
 		{
 			var options_dynamicId = Math.floor((Math.random()*10000)+1);
-			array_options_radio[dynamicCount].push(add_radio_options);
-			array_option_id_radio[dynamicCount].push(options_dynamicId);
+			array_options_radio[<?php echo $dynamicCount;?>].push(add_radio_options);
+			array_option_id_radio[<?php echo $dynamicCount;?>].push(options_dynamicId);
 			jQuery("#append_multiple_option_"+dynamicId).append('<div class="layout-control-group" id="input_tr_'+options_dynamicId+'"><div class="layout-controls"><input type="text" class="layout-span8" id="input_option_'+options_dynamicId+'" name="input_option_'+options_dynamicId+'" value="'+add_radio_options+'" /><a style="padding-left:2px;" onclick="delete_radio('+options_dynamicId+','+dynamicId+')"><img style="vertical-align: top;margin-top: 2px;" src="<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" /></a></div></div>');
 			jQuery("#radio_options_"+dynamicId).val("");
 		}
@@ -243,11 +243,11 @@
 	{
 		var input_type_value = jQuery("#input_option_"+options_dynamicId).val();
 		jQuery("#input_tr_"+options_dynamicId).remove();
-		var place_of_option_in_array_id = jQuery.inArray(parseInt(options_dynamicId),array_option_id_radio[dynamicCount]);
+		var place_of_option_in_array_id = jQuery.inArray(parseInt(options_dynamicId),array_option_id_radio[<?php echo $dynamicCount;?>]);
 		if(place_of_option_in_array_id != -1)
 		{
-			array_options_radio[dynamicCount].splice(place_of_option_in_array_id,1);
-			array_option_id_radio[dynamicCount].splice(place_of_option_in_array_id,1);
+			array_options_radio[<?php echo $dynamicCount;?>].splice(place_of_option_in_array_id,1);
+			array_option_id_radio[<?php echo $dynamicCount;?>].splice(place_of_option_in_array_id,1);
 		}
 	}
 	
@@ -301,9 +301,9 @@
 		jQuery("#show_data_option_label_tr_radio_"+dynamicId).attr("style","display:none");
 		jQuery("#ux_button_option_label_radio_"+dynamicId).val("");
 	}
-	function save_multiple_control(dynamicId)
+	function save_multiple_control(dynamicId,dynamicCount)
 	{
-		var dynamicCount = "<?php echo $dynamicCount;?>";
+		
 		array_controls[dynamicCount] = [];
 		array_controls[dynamicCount].push({"control_type" : "6"});
 		array_controls[dynamicCount].push({"radio_dynamicId" : dynamicId});
@@ -356,6 +356,8 @@
 		{
 			jQuery("#txt_required_"+dynamicId).css("display","none");
 		}
+		//console.log("pushed control : 6, Dynamic Count : " + dynamicCount + ", Array Count = " + array_controls[dynamicCount].length);
+		//console.log(JSON.stringify(array_controls[dynamicCount]));
 		CloseLightbox();
  	}
  	function enter_admin_label(dynamicId)
