@@ -1084,7 +1084,7 @@ $fields = $wpdb->get_results
 					?>
 					<div class="layout-control-group">
 						<label class="layout-control-label"></label>
-						<div class="layout-controls>
+						<div class="layout-controls">
 							<input class="btn btn-info layout-span2" type="submit" id="submit_button" name="submit_button"  value="<?php _e("Submit Form", contact_bank); ?>" />
 						</div>
 					</div>
