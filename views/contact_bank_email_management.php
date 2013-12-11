@@ -24,6 +24,8 @@ if(isset($_REQUEST['param']))
 				2
 			)
 		);
+		
+		
 		$file_uploaded_path_admin = "";
 		$file_path ="";
 		$messageTxt = stripcslashes($email_content->body_content);
@@ -40,9 +42,13 @@ if(isset($_REQUEST['param']))
 				$form_submit_id
 			)
 		);
+		$emailSubject = $email_content->subject;
+		$emailSubject_client = $email_content_client->subject;
 		for($flag=0;$flag<count($frontend_control_value);$flag++)
 		{
 			$dynamicId = $frontend_control_value[$flag]->dynamic_control_id;
+			$emailSubject = str_replace("[control_".$dynamicId."]",$frontend_control_value[$flag]->dynamic_frontend_value,$emailSubject);
+			$emailSubject_client = str_replace("[control_".$dynamicId."]",$frontend_control_value[$flag]->dynamic_frontend_value,$emailSubject_client);
 			if($frontend_control_value[$flag]->field_Id == 3)
 			{
 				if($client_email != "")
@@ -54,7 +60,7 @@ if(isset($_REQUEST['param']))
 				}
 				
 			}
-			if($frontend_control_value[$flag]->field_Id == 12)
+			else if($frontend_control_value[$flag]->field_Id == 12)
 			{
 				$date_format = $wpdb->get_var
 				(
@@ -158,7 +164,6 @@ if(isset($_REQUEST['param']))
 		$admin_label = get_option( 'admin_email');
 		$to = $email_content->email_to;
 		$title = get_bloginfo('name');
-		$emailSubject = $email_content->subject;
 		$headers =  "From: " .$email_content->email_from. " <". $admin_label . ">" ."\n" .
 					"Content-Type: text/html; charset=\"" .
 					get_option('blog_charset') . "\n";
@@ -175,7 +180,6 @@ if(isset($_REQUEST['param']))
 			$admin_label = get_option( 'admin_email');
 			$Client_to = $client_email;
 			$title_client = get_bloginfo('name');
-			$emailSubject_client = $email_content_client->subject;
 			$headers_client =  "From: " .$email_content_client->email_from. " <". $admin_label . ">" ."\n" .
 						"Content-Type: text/html; charset=\"" .
 						get_option('blog_charset') . "\n";

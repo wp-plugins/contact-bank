@@ -4,7 +4,7 @@
  Plugin URI: http://wordpress.org/plugins/contact-bank/
  Description: Contact Bank allows you to add a feedback form easilly and simply to a post or a page.
  Author: contact-banker
- Version: 1.6
+ Version: 1.7
  Author URI: http://wordpress.org/plugins/contact-bank/
  */
  
@@ -620,7 +620,7 @@ add_action('admin_menu','create_global_menus_for_contact_bank');
 // Activation Hook called for function plugin_install_script_for_contact_bank
 register_activation_hook(__FILE__,'plugin_install_script_for_contact_bank');
 // add_Shortcode Hook called for function contact_bank_short_code for FrontEnd
-add_shortcode('contact_bank', 'contact_bank_short_code' );
+add_shortcode('contact_bank', 'contact_bank_short_code');
 // Uninstall Hook called for function plugin_install_script_for_contact_bank
 register_uninstall_hook(__FILE__,'plugin_uninstall_script_for_contact_bank');
 add_filter('widget_text', 'do_shortcode');
