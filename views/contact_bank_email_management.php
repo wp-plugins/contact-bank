@@ -48,7 +48,7 @@ if(isset($_REQUEST['param']))
 		{
 			$dynamicId = $frontend_control_value[$flag]->dynamic_control_id;
 			$emailSubject = str_replace("[control_".$dynamicId."]",$frontend_control_value[$flag]->dynamic_frontend_value,$emailSubject);
-			$emailSubject_client = str_replace("[control_".$dynamicId."]",$frontend_control_value[$flag]->dynamic_frontend_value,$emailSubject_client);
+			$emailSubject_client = str_replace("[control_client_".$dynamicId."]",$frontend_control_value[$flag]->dynamic_frontend_value,$emailSubject_client);
 			if($frontend_control_value[$flag]->field_Id == 3)
 			{
 				if($client_email != "")
@@ -60,7 +60,7 @@ if(isset($_REQUEST['param']))
 				}
 				
 			}
-			else if($frontend_control_value[$flag]->field_Id == 12)
+			if($frontend_control_value[$flag]->field_Id == 12)
 			{
 				$date_format = $wpdb->get_var
 				(
@@ -175,6 +175,7 @@ if(isset($_REQUEST['param']))
 		{
 			wp_mail($to, $emailSubject, $messageTxt, $headers, $file_uploaded_path_admin);
 		}
+		
 		if($client_email != "")
 		{
 			$admin_label = get_option( 'admin_email');
