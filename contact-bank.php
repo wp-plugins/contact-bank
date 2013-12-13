@@ -4,7 +4,7 @@
  Plugin URI: http://wordpress.org/plugins/contact-bank/
  Description: Contact Bank allows you to add a feedback form easilly and simply to a post or a page.
  Author: contact-banker
- Version: 1.7.1
+ Version: 1.7.2
  Author URI: http://wordpress.org/plugins/contact-bank/
  */
  
