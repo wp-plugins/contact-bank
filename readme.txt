@@ -11,7 +11,7 @@ Ultimate Wordpress Plugin that lets you build contact form easily in seconds.
 
 == Description ==
 
-***Wishing you all, a very Happy New Year! Welcome 2014! from Contact Bank***
+***Wishing you all, a very Happy New Year! Welcome 2014! from Contact Bank.***
 
 **Contact Bank allows you to add a contact form easily and simply to a post or a page.**
 
