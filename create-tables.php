@@ -19,7 +19,7 @@ if (count($wpdb->get_var('SHOW TABLES LIKE "' . contact_bank_dynamic_settings_fo
 	dynamic_settings_id INTEGER(10) UNSIGNED NOT NULL AUTO_INCREMENT,
 	dynamicId INTEGER(10) NOT NULL,
 	dynamic_settings_key VARCHAR(100) NOT NULL,
-	dynamic_settings_value VARCHAR(100) NOT NULL,
+	dynamic_settings_value TEXT NOT NULL,
 	PRIMARY KEY (dynamic_settings_id)
 	) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE utf8_general_ci';
 	dbDelta($sql);
