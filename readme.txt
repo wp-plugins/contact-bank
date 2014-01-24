@@ -2,7 +2,7 @@
 Contributors: contact-banker, Gallery-Bank
 Tags: Contact Form, text, contact, form, contacts, request, contact me, feedback form, feedback, easy contact form, best contact form plugin, admin, Post, widget, contact bank, contact form 7, plugin, Posts, ajax, easy contact plugin, advanced form
 Requires at least: 2.9
-Tested up to: 3.8
+Tested up to: 3.8.1
 Stable tag: 1.7.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
