@@ -250,7 +250,7 @@
 		array_controls[dynamicCount].push({"cb_button_set_txt_input" : jQuery("#ux_password_text_input_"+dynamicId).val()});
 		array_controls[dynamicCount].push({"cb_button_set_txt_description" : jQuery("#ux_password_description_"+dynamicId).val()});
 		jQuery("#ux_checkbox_alpha_filter_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_checkbox_alpha_filter": "1"}) : array_controls[dynamicCount].push({"cb_checkbox_alpha_filter": "0"});
-		jQuery("#ux_checkbox_alpha_num_filter_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_checkbox_alpha_num_filter": "1"}) : array_controls[dynamicCount].push({"cb_checkbox_alpha_num_filter": "0"});
+		jQuery("#ux_checkbox_alpha_num_filter_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_ux_checkbox_alpha_num_filter": "1"}) : array_controls[dynamicCount].push({"cb_ux_checkbox_alpha_num_filter": "0"});
 		jQuery("#ux_checkbox_digit_filter_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_checkbox_digit_filter": "1"}) : array_controls[dynamicCount].push({"cb_checkbox_digit_filter": "0"});
 		jQuery("#ux_checkbox_strip_tag_filter_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_checkbox_strip_tag_filter": "1"}) : array_controls[dynamicCount].push({"cb_checkbox_strip_tag_filter": "0"});
 		jQuery("#ux_checkbox_trim_filter_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_checkbox_trim_filter": "1"}) : array_controls[dynamicCount].push({"cb_checkbox_trim_filter": "0"});

@@ -2264,7 +2264,7 @@ jQuery("#ux_dynamic_form_submit").validate
 									array_controls[dynamicCount].push({"cb_button_set_txt_input" : ""});
 									array_controls[dynamicCount].push({"cb_button_set_txt_description" : ""});
 									array_controls[dynamicCount].push({"cb_checkbox_alpha_filter": "0"});
-									array_controls[dynamicCount].push({"cb_checkbox_alpha_num_filter": "0"});
+									array_controls[dynamicCount].push({"cb_ux_checkbox_alpha_num_filter": "0"});
 									array_controls[dynamicCount].push({"cb_checkbox_digit_filter": "0"});
 									array_controls[dynamicCount].push({"cb_checkbox_strip_tag_filter": "0"});
 									array_controls[dynamicCount].push({"cb_checkbox_trim_filter": "0"});
