@@ -24,6 +24,18 @@ if (count($wpdb->get_var('SHOW TABLES LIKE "' . contact_bank_dynamic_settings_fo
 	) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE utf8_general_ci';
 	dbDelta($sql);
 }
+else
+{
+	$wpdb->query
+	(
+		$wpdb->prepare
+		(
+		  "UPDATE " . contact_bank_dynamic_settings_form() . " SET `dynamic_settings_key` = %s where `dynamic_settings_key` = %s",
+		   "cb_checkbox_alpha_num_filter",
+		   "cb_ux_checkbox_alpha_num_filter"
+		)
+	);
+}
 if (count($wpdb->get_var('SHOW TABLES LIKE "' . create_control_Table() . '"')) == 0)
 {
 	$sql= 'CREATE TABLE '.create_control_Table(). '(
