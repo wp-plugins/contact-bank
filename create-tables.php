@@ -31,8 +31,8 @@ else
 		$wpdb->prepare
 		(
 		  "UPDATE " . contact_bank_dynamic_settings_form() . " SET `dynamic_settings_key` = %s where `dynamic_settings_key` = %s",
-		   "cb_checkbox_alpha_num_filter",
-		   "cb_ux_checkbox_alpha_num_filter"
+		   "cb_ux_checkbox_alpha_num_filter",
+		   "cb_checkbox_alpha_num_filter"
 		)
 	);
 }
