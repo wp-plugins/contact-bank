@@ -481,6 +481,11 @@ function plugin_load_textdomain()
     }
 }
 add_action("plugins_loaded", "plugin_load_textdomain");
+$version = get_option("contact-bank-version-number");
+if($version != "2.0")
+{
+	add_action('admin_init', 'plugin_install_script_for_contact_bank');
+}
 /*************************************************************************************/
 add_action("admin_bar_menu", "add_contact_bank_icon",100);
 // add_action Hook called for function frontend_plugin_css_scripts_contact_bank
