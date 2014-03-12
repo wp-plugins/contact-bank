@@ -1,6 +1,6 @@
 ﻿=== Contact Bank ===
 Contributors: contact-banker, Gallery-Bank
-Tags: Contact Form, text, contact, form, contacts, request, contact me, feedback form, feedback, easy contact form, best contact form plugin, admin, Post, widget, contact bank, contact form 7, plugin, Posts, ajax, easy contact plugin, advanced form,comments,widget,forms,contact form, contact form builder, contact form plugin, contact forms, contact us, feedback form, form, form builder, web form
+Tags: admin, advanced form, AJAX, best contact form plugin, comments, contact, contact bank, contact form, contact form 7, contact form builder, contact form plugin, contact forms, contact me, contact us, contacts, easy contact form, easy contact plugin, feedback, feedback form, form, form builder, forms, plugin, Post, posts, request, text, web form, widget
 Requires at least: 2.9
 Tested up to: 3.8.1
 Stable tag: 2.0.0
@@ -60,7 +60,7 @@ It provides a powerful engine for uploading and managing dynamic forms with more
 * Front End Layout Settings(**Premium Versions**)
 
 > #### **Upgrade to Contact Bank Premium Versions**
-> Take your media to the next level with [Gallery Bank Premium Versions](http://tech-banker.com/gallery-bank/), which gives you 200+ features such as:
+> Take your media to the next level with Contact Bank Premium Versions](http://tech-banker.com/contact-bank/), which gives you 200+ features such as:
 
 > * Unlimited Forms Creation
 > * Display Form Entries
