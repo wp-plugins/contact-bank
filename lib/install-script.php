@@ -105,7 +105,7 @@ if($version != "2.0")
             (
                 $wpdb->prepare
                 (
-                    "SELECT * FROM ".create_control_Table()." where (field_id != 14 or field_id != 9 or field_id != 12 or field_id != 13 or field_id != 15)",""
+                    "SELECT * FROM ".create_control_Table()." where field_id not in (9,12,13,14,15)",""
                 )
             );
 
