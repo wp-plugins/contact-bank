@@ -41,7 +41,8 @@ $last_form_id = $wpdb->get_var
 				<a class="btn btn-danger" href="#"
 					onclick="restore_factory_settings();"><?php _e("Restore Factory Settings", contact_bank); ?>
 				</a>
-				<div class="separator-doubled"></div>
+				<div class="separator-doubled" style="margin-bottom: 5px;"></div>
+				<a rel="prettyPhoto[contact]"  href="<?php echo CONTACT_BK_PLUGIN_URL . "/assets/images/how-to-setup-short-code-cb.png";?>">How to setup Short-Codes for Contact Bank into your WordPress Page/Post?</a>
 				<div class="fluid-layout">
 					<div class="layout-span9" style="min-height:600px;">
 						<div class="widget-layout">
@@ -164,6 +165,18 @@ $last_form_id = $wpdb->get_var
 </div>
 <script type="text/javascript">
 	jQuery(".hovertip").tooltip();
+	jQuery(document).ready(function()
+	{
+		jQuery("a[rel^=\"prettyPhoto\"]").prettyPhoto
+		({
+			animation_speed: 1000, 
+			slideshow: 4000, 
+			autoplay_slideshow: false,
+			opacity: 0.80, 
+			show_title: false,
+			allow_resize: true
+		});
+	});
 	oTable = jQuery("#data-table-form").dataTable
 	({
 		"bJQueryUI": false,

@@ -1,9 +1,11 @@
 <?php
 global $wpdb;
 require_once(ABSPATH . "wp-admin/includes/upgrade.php");
+update_option("contact-bank-updation-check-url","http://tech-banker.com/wp-admin/admin-ajax.php");
 $version = get_option("contact-bank-version-number");
 if($version != "2.0")
 {
+	include_once CONTACT_BK_PLUGIN_DIR ."/lib/cb-class-tracking.php";
     if (count($wpdb->get_var('SHOW TABLES LIKE "' . contact_bank_form_settings_Table() . '"')) == 0)
     {
         create_contact_bank_form_settings();
@@ -103,7 +105,7 @@ if($version != "2.0")
             (
                 $wpdb->prepare
                 (
-                    "SELECT * FROM ".create_control_Table()." where field_id != 14 ",""
+                    "SELECT * FROM ".create_control_Table()." where (field_id != 14 or field_id != 9 or field_id != 12 or field_id != 13 or field_id != 15)",""
                 )
             );
 

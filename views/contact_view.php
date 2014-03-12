@@ -204,7 +204,8 @@
 					<input class="btn btn-info layout-span2" style="float: right;" type="submit" id="submit_button"
 						name="submit_button"
 						value="<?php _e("Save Form", contact_bank); ?>"/>
-					<div class="separator-doubled"></div>
+					<div class="separator-doubled" style="margin-bottom: 5px;"></div>
+					<a rel="prettyPhoto[contact]"  href="<?php echo CONTACT_BK_PLUGIN_URL . "/assets/images/how-to-setup-short-code-cb.png";?>">How to setup Short-Codes for Contact Bank into your WordPress Page/Post?</a>
 					<div id="form_success_message" class="message green" style="display: none;">
 						<span>
 							<strong><?php _e("Form Submitted. Kindly wait for the redirect.", contact_bank); ?></strong>
@@ -465,6 +466,18 @@
 	</div>
 </form>
 <script type="text/javascript">
+jQuery(document).ready(function()
+{
+	jQuery("a[rel^=\"prettyPhoto\"]").prettyPhoto
+	({
+		animation_speed: 1000, 
+		slideshow: 4000, 
+		autoplay_slideshow: false,
+		opacity: 0.80, 
+		show_title: false,
+		allow_resize: true
+	});
+});
 jQuery("#ux_dynamic_form_submit").validate
 ({
 	rules:

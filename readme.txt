@@ -3,7 +3,7 @@ Contributors: contact-banker, Gallery-Bank
 Tags: admin, advanced form, AJAX, best contact form plugin, buddypress, category, comment, comments, contact, contact bank, contact form, contact form 7, contact form builder, contact form plugin, contact forms, contact me, contact us, contacts, content, easy contact form, easy contact plugin, email, Facebook, feed, feedback, feedback form, form, form builder, forms, gallery, google, image, images, javascript, jquery, link, links, login, media, page, pages, plugin, Post, posts, request, rss, seo, shortcode, sidebar, stats, text, web form, widget, wordpress
 Requires at least: 2.9
 Tested up to: 3.8.1
-Stable tag: 2.0.0
+Stable tag: 2.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -129,6 +129,13 @@ Visit [here](http://tech-banker.com/contact-bank) to upgrade to Pro Version now.
 4. Create a page or a post and insert shortcode [contact_form] to the text.
 
 == Changelog ==
+
+= 2.0.1 =
+
+* Few Bugs Fixed
+* Add how to add Shortcode to your Page/Post.
+* Updated Languages
+
 
 = 2.0.0 =
 

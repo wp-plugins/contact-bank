@@ -1,10 +1,10 @@
 <?php
 /**
-Plugin Name: Contact Bank Standard Version
+Plugin Name: Contact Bank Standard Edition
 Plugin URI: http://tech-banker.com
 Description: Build Complex, Powerful Contact Forms in Just Seconds. No Programming Knowledge Required! Yeah, It"s Really That Easy.
 Author: Tech Banker
-Version: 2.0.0
+Version: 2.0.1
 Author URI: http://tech-banker.com
  */
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -54,6 +54,7 @@ function create_global_menus_for_contact_bank()
 	add_menu_page("Contact Bank", __("Contact Bank", contact_bank), "read", "dashboard","",CONTACT_BK_PLUGIN_URL . "/assets/images/icon.png");
     add_submenu_page("dashboard", "Dashboard", __("Dashboard", contact_bank), "read", "dashboard","dashboard");
     add_submenu_page("","","", "read", "contact_bank","contact_bank");
+	add_submenu_page("dashboard", "Short-Codes", __("Short-Codes", contact_bank), "read", "short_code", "short_code" );
     add_submenu_page("dashboard", "Form Entries", __("Form Entries", contact_bank), "read", "frontend_data","frontend_data");
     add_submenu_page("dashboard", "Email Settings", __("Email Settings", contact_bank), "read", "contact_email", "contact_email");
     add_submenu_page("dashboard", "Global Settings", __("Global Settings", contact_bank), "read", "layout_settings", "layout_settings");
@@ -140,6 +141,12 @@ function pro_version()
     include_once CONTACT_BK_PLUGIN_DIR ."/views/contact_bank_pro_version.php";
     include_once CONTACT_BK_PLUGIN_DIR ."/views/footer.php";
 }
+function short_code()
+{
+    include_once CONTACT_BK_PLUGIN_DIR ."/views/header.php";
+    include_once CONTACT_BK_PLUGIN_DIR ."/views/shortcode.php";
+    include_once CONTACT_BK_PLUGIN_DIR ."/views/footer.php";
+}
 
 function backend_plugin_js_scripts_contact_bank()
 {
@@ -152,14 +159,13 @@ function backend_plugin_js_scripts_contact_bank()
     wp_enqueue_script("jquery.dataTables.min", CONTACT_BK_PLUGIN_URL ."/assets/js/jquery.dataTables.min.js");
     wp_enqueue_script("jquery.validate.min", CONTACT_BK_PLUGIN_URL ."/assets/js/jquery.validate.min.js");
     wp_enqueue_script("bootstrap.js", CONTACT_BK_PLUGIN_URL ."/assets/js/bootstrap.js");
+    wp_enqueue_script("jquery.prettyPhoto.js", CONTACT_BK_PLUGIN_URL ."/assets/js/jquery.prettyPhoto.js");
 }
 function frontend_plugin_js_scripts_contact_bank()
 {
     wp_enqueue_script("jquery");
     wp_enqueue_script("jquery.Tooltip.js", CONTACT_BK_PLUGIN_URL ."/assets/js/jquery.Tooltip.js");
     wp_enqueue_script("jquery.validate.min", CONTACT_BK_PLUGIN_URL ."/assets/js/jquery.validate.min.js");
-
-
 }
 function backend_plugin_css_styles_contact_bank()
 {
@@ -168,6 +174,7 @@ function backend_plugin_css_styles_contact_bank()
     wp_enqueue_style("font-awesome", CONTACT_BK_PLUGIN_URL ."/assets/css/font-awesome/css/font-awesome.css");
     wp_enqueue_style("system-message", CONTACT_BK_PLUGIN_URL ."/assets/css/system-message.css");
 	 wp_enqueue_style("css3_grid_style", CONTACT_BK_PLUGIN_URL ."/assets/css/css3_grid_style.css");
+	 wp_enqueue_style("prettyPhoto", CONTACT_BK_PLUGIN_URL ."/assets/css/prettyPhoto.css");
 }
 function frontend_plugin_css_styles_contact_bank()
 {
@@ -444,10 +451,9 @@ add_action( "admin_enqueue_scripts", "contact_bank_enqueue_pointer_script_style"
 function thsp_pointer_print_scripts() {
 
     $pointer_content  = "<h3>Contact Bank</h3>";
-    $pointer_content .= "<p>If you are using Contact Bank for the first time, you can view this <a href=http://www.youtube.com/embed/EcqbsXmPbaI target=_blank>video</a> to setup the Plugin.</p>";
+    $pointer_content .= "<p>If you are using Contact Bank for the first time, you can view this <a href='http://tech-banker.com/contact-bank/' target='_blank'>link</a> to know about the features.</p>";
     ?>
     <script type="text/javascript">
-        //<![CDATA[
         jQuery(document).ready( function($) {
             $("#toplevel_page_dashboard").pointer({
                 content:"<?php echo $pointer_content; ?>",
@@ -464,7 +470,6 @@ function thsp_pointer_print_scripts() {
                 }
             }).pointer("open");
         });
-        //]]>
     </script>
 <?php
 }
