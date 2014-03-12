@@ -1,288 +1,233 @@
-<div class="layout-span7">
-	<div class="widget-layout widget-tabs">
-		<div class="widget-layout-title">
-			<h4><?php _e( "Textbox Control", contact_bank ); ?></h4>
-		</div>
-		<div class="fluid-layout">
-			<div class="layout-span12">
-				<div class="widget-layout-body layout-form" >
-					<ul style="margin-bottom:30px;" class="nav nav-tabs" id="tabs-nohdr_<?php echo $dynamicId; ?>">
-						<li id="li3">
-							<a id="tab3" onclick="tabsFunc(this);"><?php _e( "Advanced", contact_bank ); ?></a>
-						</li>
-						<li id="li2">
-							<a id="tab2" onclick="tabsFunc(this);"><?php _e( "Options", contact_bank ); ?></a>
-						</li>
-						<li id="li1" class="active">
-							<a id="tab1" onclick="tabsFunc(this);"><?php _e( "Settings", contact_bank ); ?></a>
-						</li>
-					</ul>
-					<div id="tabs-nohdr-3">
-						<div  id="div_optional_<?php echo $dynamicId; ?>">
-							<div class="layout-control-group">
-								<label class="layout-control-label"><?php _e( "Label", contact_bank ); ?> :</label>
-								<div class="layout-controls">
-									<input type="text" class="layout-span12" onkeyup="enter_admin_label(<?php echo $dynamicId; ?>);" value="<?php _e( "Untitled", contact_bank ); ?>" id="ux_label_text_<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter Label", contact_bank ); ?>" name="ux_label_text_<?php echo $dynamicId; ?>" />
-								</div>
-							</div>
-							<div class="layout-control-group">
-								<label class="layout-control-label"><?php _e( "Description", contact_bank ); ?> :</label>
-								<div class="layout-controls">
-									<textarea id="ux_description_control_<?php echo $dynamicId; ?>" class="layout-span12" placeholder="<?php _e( "Enter Description", contact_bank ); ?>" name="ux_description_control_<?php echo $dynamicId; ?>" ></textarea>
-								</div>
-							</div>
-							<div class="layout-control-group">
-								<label class="layout-control-label"><?php _e( "Required", contact_bank ); ?> :</label>
-								<div class="layout-controls" style="padding-top:5px;">
-									<input type="radio" id="ux_required_control_<?php echo $dynamicId; ?>" name="ux_required_control_radio_<?php echo $dynamicId; ?>" value="1"/><label style="margin-left: 5px;"><?php _e( "Required", contact_bank ); ?></label>				
-									<input type="radio" checked="checked" id="ux_required_<?php echo $dynamicId; ?>" name="ux_required_control_radio_<?php echo $dynamicId; ?>" value="0"/><label style="margin-left: 5px;"><?php _e( "Not Required", contact_bank ); ?></label>
-								</div>
-							</div>	
-							<div class="layout-control-group">
-								<label class="layout-control-label"><?php _e( "Tooltip Text", contact_bank ); ?> :</label>
-								<div class="layout-controls">
-									<input type="text" class="layout-span12" id="ux_tooltip_control_<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter Tooltip Text", contact_bank ); ?>" name="ux_tooltip_control_<?php echo $dynamicId; ?>"/>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div id="tabs-nohdr-2" style="display:none;">
-						<div  id="div_optional_<?php echo $dynamicId; ?>">
-							<div class="layout-control-group">
-								<label class="layout-control-label"><?php _e( "Default value", contact_bank ); ?> :</label>
-								<div class="layout-controls">
-									<input type="text" class="layout-span12" id="ux_default_value_<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter Default Value", contact_bank ); ?>"  name="ux_default_value_<?php echo $dynamicId; ?>"/>
-								</div>
-							</div>
-							<div class="layout-control-group">
-								<label class="layout-control-label"><?php _e( "Admin label", contact_bank ); ?> :</label>
-								<div class="layout-controls">
-									<input type="text" placeholder="<?php _e( "Enter Admin label", contact_bank ); ?>" value="<?php _e( "Untitled", contact_bank ); ?>" class="layout-span12" id="ux_admin_label_<?php echo $dynamicId; ?>" name="ux_admin_label_<?php echo $dynamicId; ?>"/>
-								</div>
-							</div>
-							<div class="layout-control-group">
-								<label class="layout-control-label"><?php _e( "Do not show in the email", contact_bank ); ?> :</label>
-								<div class="layout-controls">
-									<input type="checkbox" id="ux_show_email_<?php echo $dynamicId; ?>" name="ux_show_email_<?php echo $dynamicId; ?>" style="margin-top: 10px;" value="1" >	
-								</div>
-							</div>
-						</div>
-					</div>	
-					<div id="tabs-nohdr-1"  style="display:none;">
-						<div  id="div_advanced_<?php echo $dynamicId; ?>">
-							<div class="layout-control-group" style="display: none" id="ux_label_textbox_<?php echo $dynamicId; ?>">
-								<label class="layout-control-label"><?php _e( "Label Style", contact_bank ); ?> :</label>
-								<div class="layout-controls">
-									<textarea class="layout-span11" id="button_set_outer_label_textbox_<?php echo $dynamicId; ?>" name="button_set_outer_label_textbox<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter Label Style", contact_bank ); ?>"></textarea></td>
-									<a style="cursor:pointer;" onclick="delete_css_style(<?php echo $dynamicId; ?>);" id="anchor_del_" ><img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="vertical-align: middle;" /></a> 
-								</div>
-							</div>
-							<div class="layout-control-group" style="display: none" id="ux_textinput_textbox_<?php echo $dynamicId; ?>">
-								<label class="layout-control-label"><?php _e( "Text Input Style", contact_bank ); ?> :</label>
-								<div class="layout-controls">
-									<textarea class="layout-span11" id="button_set_txt_input_textbox_<?php echo $dynamicId; ?>" name="button_set_txt_input_textbox_<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter Text Input Style", contact_bank ); ?>"></textarea></td>			
-									<a style="cursor:pointer;" onclick="delete_css_style_txtinput(<?php echo $dynamicId; ?>);" id="anchor_del_" ><img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="vertical-align: middle;" /></a>
-								</div>
-							</div>
-							<div class="layout-control-group" style="display: none" id="ux_description_textbox_<?php echo $dynamicId; ?>">
-								<label class="layout-control-label"><?php _e( "Description Style", contact_bank ); ?> :</label>
-								<div class="layout-controls">
-									<textarea class="layout-span11" id="button_set_txt_description_textbox_<?php echo $dynamicId; ?>" name="button_set_txt_description_textbox_<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter Description Style", contact_bank ); ?>"></textarea></td></td>
-									<a style="cursor:pointer;" onclick="delete_css_style_description(<?php echo $dynamicId; ?>);" id="anchor_del_" ><img src= "<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png" style="vertical-align: middle;" /></a>
-								</div>
-							</div>
-							<div class="layout-control-group">
-								<label class="layout-control-label"><?php _e( "Add a Style to", contact_bank ); ?> :</label>
-								<div class="layout-controls">
-									<input type="button" class="btn btn-inverse layout-span2" id="ux_button_label_style_<?php echo $dynamicId; ?>" name="ux_button_label_style_<?php echo $dynamicId; ?>" onclick="button_set_outer_label(<?php echo $dynamicId; ?>,1);" value="<?php _e( "Label", contact_bank ); ?>" />
-									<input type="button" class="btn btn-inverse layout-span2" id="ux_button_txt_input_save_<?php echo $dynamicId; ?>" name="ux_button_txt_input_save_<?php echo $dynamicId; ?>" onclick="button_set_txt_input(<?php echo $dynamicId; ?>,1);" value="<?php _e( "Text Input", contact_bank ); ?>" />
-									<input type="button" class="btn btn-inverse layout-span2" id="ux_button_description_style_<?php echo $dynamicId; ?>" name="ux_button_description_style_<?php echo $dynamicId; ?>" onclick="button_set_description(<?php echo $dynamicId; ?>);" value="<?php _e( "Description", contact_bank ); ?>" />
-								</div>
-							</div>		
-							<div class="layout-control-group">
-								<label class="layout-control-label"><?php _e( "Add a filter", contact_bank ); ?> :</label>
-								<div class="layout-controls">
-									<input type="checkbox" value="1" id="ux_checkbox_alpha_filter_<?php echo $dynamicId; ?>" name="ux_checkbox_alpha_filter_<?php echo $dynamicId; ?>"  /><span style="margin-left: 5px;margin-top: 10px;"><?php _e( "Alpha", contact_bank ); ?></span><br />
-									<input type="checkbox"  value="1"  id="ux_checkbox_alpha_num_filter_<?php echo $dynamicId; ?>" name="ux_checkbox_alpha_num_filter_<?php echo $dynamicId; ?>"  value="Alpha Numeric" /><span style="margin-left: 5px"><?php _e( "Alpha Numeric", contact_bank ); ?></span><br />
-									<input type="checkbox"  value="1"  id="ux_checkbox_digit_filter_<?php echo $dynamicId; ?>" name="ux_checkbox_digit_filter_<?php echo $dynamicId; ?>"  value="Digits" /><span style="margin-left: 5px"><?php _e( "Digits", contact_bank ); ?></span><br />
-									<input type="checkbox"  value="1"  id="ux_checkbox_strip_tag_filter_<?php echo $dynamicId; ?>" name="ux_checkbox_strip_tag_filter_<?php echo $dynamicId; ?>"  value="Strip Tags" /><span style="margin-left: 5px"><?php _e( "Strip Tags", contact_bank ); ?></span><br />
-									<input type="checkbox" value="1" id="ux_checkbox_trim_filter_<?php echo $dynamicId; ?>" name="ux_checkbox_trim_filter_<?php echo $dynamicId; ?>"  value="Trim" /><span style="margin-left: 5px"><?php _e( "Trim", contact_bank ); ?></span><br />
-								</div>
-							</div>		
-						</div>
-					</div>
+<?php
+	$form_settings = array();
+	$control_id = $wpdb->get_var
+	(
+		$wpdb->prepare
+		(
+			"SELECT control_id FROM " .create_control_Table(). " where form_id= %d and field_id = %d and column_dynamicId = %d",
+			$form_id,
+			$field_type,
+			$dynamicId
+		)
+	);
+	if(count($control_id) != 0)
+	{
+		$form_data = $wpdb->get_results
+		(
+			$wpdb->prepare
+			(
+				"SELECT * FROM " .contact_bank_dynamic_settings_form(). " where dynamicId= %d",
+				$control_id
+			)
+		);
+		$form_settings[$dynamicId]["dynamic_id"] = $dynamicId;
+		$form_settings[$dynamicId]["control_type"] = "1";
+		for($flag = 0; $flag<count($form_data);$flag++)
+		{
+			$form_settings[$dynamicId][$form_data[$flag]->dynamic_settings_key] = $form_data[$flag]->dynamic_settings_value;
+		}
+	}
+?>
+<form id="ux_frm_text_box_control" action="#" method="post" class="layout-form">
+	<div class="fluid-layout">
+		<div class="layout-span12">
+			<div class="widget-layout">
+				<div class="widget-layout-title">
+					<h4><?php _e( "Single Line Text", contact_bank ); ?></h4>
 				</div>
+				<div class="widget-layout-body">
+					<div class="layout-control-group">
+						<label class="layout-control-label"><?php _e( "Label", contact_bank ); ?> :</label>
+						<div class="layout-controls">
+							<input type="text" class="layout-span12" onkeyup="enter_admin_label(<?php echo $dynamicId; ?>);" 
+							value="<?php echo isset($form_settings[$dynamicId]["cb_label_value"])  ? $form_settings[$dynamicId]["cb_label_value"] :  _e( "Untitled", contact_bank ); ?>" 
+							id="ux_label_text_<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter Label", contact_bank ); ?>" name="ux_label_text_<?php echo $dynamicId; ?>" />
+						</div>
+					</div>
+					<div class="layout-control-group">
+						<label class="layout-control-label"><?php _e( "Description", contact_bank ); ?> :</label>
+						<div class="layout-controls">
+							<textarea id="ux_description_control_<?php echo $dynamicId; ?>" class="layout-span12" 
+								placeholder="<?php _e( "Enter Description", contact_bank ); ?>" 
+								name="ux_description_control_<?php echo $dynamicId; ?>"><?php echo isset($form_settings[$dynamicId]["cb_description"]) ? $form_settings[$dynamicId]["cb_description"] : ""; ?></textarea>
+						</div>
+					</div>
+					<div class="layout-control-group">
+						<label class="layout-control-label"><?php _e( "Required", contact_bank ); ?> :</label>
+							<div class="layout-controls" style="margin-top:7px;">
+							<?php
+								if(isset($form_settings[$dynamicId]["cb_control_required"]))
+								{
+									if($form_settings[$dynamicId]["cb_control_required"] == "1")
+									{
+									?>
+										<input type="radio" id="ux_required_control_<?php echo $dynamicId; ?>" 
+											name="ux_required_control_radio_<?php echo $dynamicId; ?>" value="1" checked="checked" />
+										<label style="vertical-align: text-bottom;">
+											<?php _e( "Required", contact_bank ); ?>
+										</label>
+										<input type="radio" id="ux_required_<?php echo $dynamicId; ?>" 
+											name="ux_required_control_radio_<?php echo $dynamicId; ?>" value="0"/>
+										<label style="vertical-align: text-bottom;">
+											<?php _e( "Not Required", contact_bank ); ?>
+										</label>
+									<?php
+									}
+									else if($form_settings[$dynamicId]["cb_control_required"] == "0")
+									{
+										?>
+										<input type="radio" id="ux_required_control_<?php echo $dynamicId; ?>" 
+											name="ux_required_control_radio_<?php echo $dynamicId; ?>" value="1" />
+										<label style="vertical-align: text-bottom;">
+											<?php _e( "Required", contact_bank ); ?>
+										</label>
+										<input type="radio" id="ux_required_<?php echo $dynamicId; ?>" 
+											name="ux_required_control_radio_<?php echo $dynamicId; ?>" value="0" checked="checked" />
+										<label style="vertical-align: text-bottom;">
+											<?php _e( "Not Required", contact_bank ); ?>
+										</label>
+									<?php
+									}
+								}
+								else
+								{
+									?>
+									<input type="radio" id="ux_required_control_<?php echo $dynamicId; ?>" 
+										name="ux_required_control_radio_<?php echo $dynamicId; ?>" value="1" />
+									<label style="vertical-align: text-bottom;">
+										<?php _e( "Required", contact_bank ); ?>
+									</label>
+									<input type="radio" id="ux_required_<?php echo $dynamicId; ?>" 
+										name="ux_required_control_radio_<?php echo $dynamicId; ?>" value="0" checked="checked" />
+									<label style="vertical-align: text-bottom;">
+										<?php _e( "Not Required", contact_bank ); ?>
+									</label>
+									<?php
+								}
+							?>
+						</div>
+					</div>
+					<div class="layout-control-group">
+						<label class="layout-control-label"><?php _e( "Tooltip Text", contact_bank ); ?> :</label>
+						<div class="layout-controls">
+							<input type="text" class="layout-span12" id="ux_tooltip_control_<?php echo $dynamicId; ?>" 
+								placeholder="<?php _e( "This Feature is only available in Paid Premium Version!", contact_bank ); ?>" 
+								name="ux_tooltip_control_<?php echo $dynamicId; ?>"  readonly="readonly"
+								/>
+						</div>
+					</div>
+					<div class="layout-control-group">
+						<label class="layout-control-label"><?php _e("Place Holder", contact_bank ); ?> :</label>
+						<div class="layout-controls">
+							<input type="text" class="layout-span12" id="ux_default_value_<?php echo $dynamicId; ?>" 
+							placeholder="<?php _e("Enter Place Holder", contact_bank ); ?>"  
+							name="ux_default_value_<?php echo $dynamicId; ?>" 
+							value="<?php echo isset($form_settings[$dynamicId]["cb_default_txt_val"]) ? $form_settings[$dynamicId]["cb_default_txt_val"] : ""; ?>"/>
+						</div>
+					</div>
+					<div class="layout-control-group">
+						<label class="layout-control-label"><?php _e( "Admin Label", contact_bank ); ?> :</label>
+						<div class="layout-controls">
+							<input type="text" placeholder="<?php _e( "Enter Admin Label", contact_bank ); ?>" 
+								value="<?php echo isset($form_settings[$dynamicId]["cb_admin_label"])  ? $form_settings[$dynamicId]["cb_admin_label"] :  _e( "Untitled", contact_bank ); ?>" 
+								class="layout-span12" id="ux_admin_label_<?php echo $dynamicId; ?>" name="ux_admin_label_<?php echo $dynamicId; ?>"/>
+						</div>
+					</div>
+					<div class="layout-control-group">
+						<label class="layout-control-label"><?php _e( "Do not show in the email", contact_bank ); ?> :</label>
+						<div class="layout-controls">
+							<?php
+							if(isset($form_settings[$dynamicId]["cb_show_email"]))
+							{
+								if($form_settings[$dynamicId]["cb_show_email"] == "1")
+								{
+								?>
+									<input type="checkbox" checked="checked"  id="ux_show_email_<?php echo $dynamicId; ?>" 
+										name="ux_show_email_<?php echo $dynamicId; ?>" style="margin-top: 10px;" value="1">
+								<?php
+								}
+								else
+								{
+								?>
+									<input type="checkbox" id="ux_show_email_<?php echo $dynamicId; ?>" 
+										name="ux_show_email_<?php echo $dynamicId; ?>" style="margin-top: 10px;" value="1">
+								<?php
+								}
+							}
+							else
+							{
+								?>
+								<input type="checkbox" id="ux_show_email_<?php echo $dynamicId; ?>" 
+									name="ux_show_email_<?php echo $dynamicId; ?>" style="margin-top: 10px;" value="1">
+							<?php
+							}
+							?>
+						</div>
+					</div>
+					<div class="layout-control-group">
+						<label class="layout-control-label" style="padding-top: 5px"><?php _e( "Add a filter", contact_bank ); ?> :</label>
+						<div class="layout-controls" style="padding-top:5px;">
+							
+									<input type="checkbox" value="0" id="ux_checkbox_alpha_filter" 
+										name="ux_checkbox_alpha_filter"/>
+								<span class="rdl"><?php _e( "Alpha", contact_bank ); ?></span>
+						
+								<input type="checkbox"  id="ux_checkbox_alpha_num_filter" 
+									name="ux_checkbox_alpha_num_filter"  value="0" />
+								<span class="rdl"><?php _e( "Alpha Numeric", contact_bank ); ?></span>
+							
+								<input type="checkbox"  value="0"  id="ux_checkbox_digit_filter" 
+									name="ux_checkbox_digit_filter"  value="Digits" />
+								<span class="rdl"><?php _e( "Digits", contact_bank ); ?></span>
+							
+								<input type="checkbox" id="ux_checkbox_strip_tag_filter" 
+									name="ux_checkbox_strip_tag_filter"  value="0"  />
+								<span class="rdl"><?php _e( "Strip Tags", contact_bank ); ?></span>
+							
+								<input type="checkbox" id="ux_checkbox_trim_filter" 
+									name="ux_checkbox_trim_filter"  value="0" />
+								<span class="rdl"><?php _e( "Trim", contact_bank ); ?></span>
+						<br>
+						<i class="widget_premium_feature_contact"><?php _e(" (Avialable in Premium Versions)", contact_bank); ?></i>
+						</div>
+						
+						
+					</div>
+					<input type="hidden" id="ux_hd_textbox_dynamic_id" name="ux_hd_textbox_dynamic_id" value="<?php echo $dynamicId; ?>"/>
+				</div>
+			</div>
+			<div class="layout-control-group">
+				<input type="submit" class="btn btn-info layout-span3" value="<?php _e( "Save Settings", contact_bank ); ?>" />
 			</div>
 		</div>
 	</div>
-	<div class="layout-control-group">	
-		<input type="button" class="btn btn-info layout-span2" onclick="save_text_control(<?php echo $dynamicId; ?>,<?php echo $dynamicCount;?>)" value="<?php _e( "Save Settings", contact_bank ); ?>" />
-	</div>
-</div>
+</form>
+<a class="closeButtonLightbox" onclick="CloseLightbox();"></a>
 <script type="text/javascript">
-	jQuery(".hovertip").tooltip();
-	function tabsFunc(control)
-	{
-		switch(control.id)
+	var dynamicId = "<?php echo $dynamicId; ?>";
+	var controlId = "<?php echo $control_id; ?>";
+	var form_id = "<?php echo $form_id;?>";
+	jQuery("#ux_frm_text_box_control").validate
+	({
+		submitHandler: function(form)
 		{
-			case "tab1":
-				jQuery("#tabs-nohdr-1").css("display","none");
-				jQuery("#tabs-nohdr-2").css("display","none");
-				jQuery("#tabs-nohdr-3").css("display","block");
-				jQuery("#li1").attr("class","active");
-				jQuery("#li2").removeAttr("class");
-				jQuery("#li3").removeAttr("class");
-			break;
-			case "tab2":
-				jQuery("#tabs-nohdr-1").css("display","none");
-				jQuery("#tabs-nohdr-3").css("display","none");
-				jQuery("#tabs-nohdr-2").css("display","block");
-				jQuery("#li2").attr("class","active");
-				jQuery("#li1").removeAttr("class");
-				jQuery("#li3").removeAttr("class");
-			break;
-			case "tab3":
-				jQuery("#tabs-nohdr-3").css("display","none");
-				jQuery("#tabs-nohdr-2").css("display","none");
-				jQuery("#tabs-nohdr-1").css("display","block");
-				jQuery("#li3").attr("class","active");
-				jQuery("#li1").removeAttr("class");
-				jQuery("#li2").removeAttr("class");
-			break;
+			jQuery.post(ajaxurl, jQuery(form).serialize() + "&controlId="+controlId+"&form_id="+form_id+"&form_settings="+JSON.stringify(<?php echo json_encode($form_settings,true) ?>)+"&event=update&param=save_text_control&action=add_contact_form_library", function(data)
+			{
+				jQuery("#control_label_"+dynamicId).html(jQuery("#ux_label_text_"+dynamicId).val()+" :");
+				jQuery("#txt_description_"+dynamicId).html(jQuery("#ux_description_control_"+dynamicId).val());
+				jQuery("#show_tooltip"+dynamicId).attr("data-original-title",jQuery("#ux_tooltip_control_"+dynamicId).val());
+				jQuery("#ux_txt_textbox_control_"+dynamicId).val(jQuery("#ux_default_value_"+dynamicId).val());
+				if(jQuery("#ux_required_control_"+dynamicId).prop("checked") == true)
+				{
+					jQuery("#control_label_"+dynamicId).append("<span class=\"error\">*</span>");
+				}
+				CloseLightbox();
+			});
 		}
-	}
-	var count = <?php echo $count; ?>;
-	if(count != 0)
-	{
-		
-		var dynamicId = <?php echo $dynamicId; ?>;
-		jQuery("#ux_label_text_"+dynamicId).val(array_controls[<?php echo $dynamicCount;?>][2].cb_label_value);
-		jQuery("#ux_description_control_"+dynamicId).val(array_controls[<?php echo $dynamicCount;?>][3].cb_description);
-		if(array_controls[<?php echo $dynamicCount;?>][4].cb_control_required == "1")
-		{
-			jQuery("#ux_required_control_"+dynamicId).attr("checked","checked");
-		}
-		else
-		{
-			jQuery("#ux_required_"+dynamicId).attr("checked","checked");
-		}
-		jQuery("#ux_tooltip_control_"+dynamicId).val(array_controls[<?php echo $dynamicCount;?>][5].cb_tooltip_txt);
-		jQuery("#ux_default_value_"+dynamicId).val(array_controls[<?php echo $dynamicCount;?>][6].cb_default_txt_val);
-		jQuery("#ux_admin_label_"+dynamicId).val(array_controls[<?php echo $dynamicCount;?>][7].cb_admin_label);
-		if(array_controls[<?php echo $dynamicCount;?>][8].cb_show_email == "1")
-		{
-			jQuery("#ux_show_email_"+dynamicId).attr("checked","checked");
-		}
-		if(array_controls[<?php echo $dynamicCount;?>][9].cb_button_set_outer_label != "")
-		{
-			jQuery("#button_set_outer_label_textbox_"+dynamicId).html(array_controls[<?php echo $dynamicCount;?>][9].cb_button_set_outer_label);
-			jQuery("#ux_label_textbox_"+dynamicId).attr("style","display:block");
-			jQuery("#ux_label_textbox_"+dynamicId).attr("style","position:inherit");
-		}
-		if(array_controls[<?php echo $dynamicCount;?>][10].cb_button_set_txt_input != "")
-		{
-			jQuery("#button_set_txt_input_textbox_"+dynamicId).html(array_controls[<?php echo $dynamicCount;?>][10].cb_button_set_txt_input);
-			jQuery("#ux_textinput_textbox_"+dynamicId).attr("style","display:block");
-			jQuery("#ux_textinput_textbox_"+dynamicId).attr("style","position:inherit");
-		}
-		if(array_controls[<?php echo $dynamicCount;?>][11].cb_button_set_txt_description != "")
-		{
-			jQuery("#button_set_txt_description_textbox_"+dynamicId).html(array_controls[<?php echo $dynamicCount;?>][11].cb_button_set_txt_description);
-			jQuery("#ux_description_textbox_"+dynamicId).attr("style","display:block");
-			jQuery("#ux_description_textbox_"+dynamicId).attr("style","position:inherit");
-		}	
-		if(array_controls[<?php echo $dynamicCount;?>][12].cb_checkbox_alpha_filter == "1")
-		{
-			jQuery("#ux_checkbox_alpha_filter_"+dynamicId).attr("checked","checked");
-		}
-		if(array_controls[<?php echo $dynamicCount;?>][13].cb_ux_checkbox_alpha_num_filter == "1")
-		{
-			jQuery("#ux_checkbox_alpha_num_filter_"+dynamicId).attr("checked","checked");
-		}
-		if(array_controls[<?php echo $dynamicCount;?>][14].cb_checkbox_digit_filter == "1")
-		{
-			jQuery("#ux_checkbox_digit_filter_"+dynamicId).attr("checked","checked");
-		}
-		if(array_controls[<?php echo $dynamicCount;?>][15].cb_checkbox_strip_tag_filter == "1")
-		{
-			jQuery("#ux_checkbox_strip_tag_filter_"+dynamicId).attr("checked","checked");
-		}
-		if(array_controls[<?php echo $dynamicCount;?>][16].cb_checkbox_trim_filter == "1")
-		{
-			jQuery("#ux_checkbox_trim_filter_"+dynamicId).attr("checked","checked");
-		}
-	}
-	function save_text_control(dynamicId,dynamicCount)
-	{
-		
-		array_controls[dynamicCount] = [];
-		array_controls[dynamicCount].push({"control_type" : "1"});
-		array_controls[dynamicCount].push({"text_dynamicId" : dynamicId});
-		array_controls[dynamicCount].push({"cb_label_value" : jQuery("#ux_label_text_"+dynamicId).val()});
-		array_controls[dynamicCount].push({"cb_description" : jQuery("#ux_description_control_"+dynamicId).val()});
-		jQuery("#ux_required_control_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_control_required": "1"}) : array_controls[dynamicCount].push({"cb_control_required": "0"});
-		array_controls[dynamicCount].push({"cb_tooltip_txt" : jQuery("#ux_tooltip_control_"+dynamicId).val()});
-		array_controls[dynamicCount].push({"cb_default_txt_val" : jQuery("#ux_default_value_"+dynamicId).val()});
-		array_controls[dynamicCount].push({"cb_admin_label" : jQuery("#ux_admin_label_"+dynamicId).val()});
-		jQuery("#ux_show_email_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_show_email": "1"}) : array_controls[dynamicCount].push({"cb_show_email": "0"});
-		array_controls[dynamicCount].push({"cb_button_set_outer_label" : jQuery("#button_set_outer_label_textbox_"+dynamicId).val()});
-		array_controls[dynamicCount].push({"cb_button_set_txt_input" : jQuery("#button_set_txt_input_textbox_"+dynamicId).val()});
-		array_controls[dynamicCount].push({"cb_button_set_txt_description" : jQuery("#button_set_txt_description_textbox_"+dynamicId).val()});
-		jQuery("#ux_checkbox_alpha_filter_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_checkbox_alpha_filter": "1"}) : array_controls[dynamicCount].push({"cb_checkbox_alpha_filter": "0"});
-		jQuery("#ux_checkbox_alpha_num_filter_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_ux_checkbox_alpha_num_filter": "1"}) : array_controls[dynamicCount].push({"cb_ux_checkbox_alpha_num_filter": "0"});
-		jQuery("#ux_checkbox_digit_filter_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_checkbox_digit_filter": "1"}) : array_controls[dynamicCount].push({"cb_checkbox_digit_filter": "0"});
-		jQuery("#ux_checkbox_strip_tag_filter_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_checkbox_strip_tag_filter": "1"}) : array_controls[dynamicCount].push({"cb_checkbox_strip_tag_filter": "0"});
-		jQuery("#ux_checkbox_trim_filter_"+dynamicId).prop("checked") == true ? array_controls[dynamicCount].push({"cb_checkbox_trim_filter": "1"}) : array_controls[dynamicCount].push({"cb_checkbox_trim_filter": "0"});
-		jQuery("#control_label_"+dynamicId).html(jQuery("#ux_label_text_"+dynamicId).val()+" :");
-		jQuery("#txt_description_"+dynamicId).html(jQuery("#ux_description_control_"+dynamicId).val());
-		jQuery("#show_tooltip"+dynamicId).attr("data-original-title",jQuery("#ux_tooltip_control_"+dynamicId).val());
-		jQuery("#ux_txt_textbox_control_"+dynamicId).val(jQuery("#ux_default_value_"+dynamicId).val());
-		if(jQuery("#ux_required_control_"+dynamicId).prop("checked") == true)
-		{
-			jQuery("#txt_required_"+dynamicId).css("display","block");
-		}
-		else
-		{
-			jQuery("#txt_required_"+dynamicId).css("display","none");
-		}
-		//console.log("pushed control : 1, Dynamic Count : " + dynamicCount + ", Array Count = " + array_controls[dynamicCount].length);
-		//console.log(JSON.stringify(array_controls[dynamicCount]));
-		CloseLightbox();
-	}
-	function enter_admin_label(dynamicId)
-	{
-		var ux_label = jQuery("#ux_label_text_"+dynamicId).val();
-		jQuery("#ux_admin_label_"+dynamicId).val(ux_label);
-	}
-	function button_set_outer_label(dynamicId)
-	{
-		
-		jQuery("#ux_label_textbox_"+dynamicId).css("display","block");
-		jQuery("#ux_label_textbox_"+dynamicId).attr("style", "position:inherit");
-	}
-	function button_set_txt_input(dynamicId)
-	{
-		jQuery("#ux_textinput_textbox_"+dynamicId).css("display","block");
-		jQuery("#ux_textinput_textbox_"+dynamicId).attr("style", "position:inherit");
-	}
-	function button_set_description(dynamicId)
-	{
-		jQuery("#ux_description_textbox_"+dynamicId).css("display","block");
-		jQuery("#ux_description_textbox_"+dynamicId).attr("style", "position:inherit");
-	}
-	function delete_css_style(dynamicId)
-	{
-		jQuery("#ux_label_textbox_"+dynamicId).css("display","none");
-		jQuery("#button_set_outer_label_textbox_"+dynamicId).val("");
-	}
-	function delete_css_style_txtinput(dynamicId)
-	{
-		jQuery("#ux_textinput_textbox_"+dynamicId).css("display","none");
-		jQuery("#button_set_txt_input_textbox_"+dynamicId).val("");
-	}
-	function delete_css_style_description(dynamicId)
-	{
-		jQuery("#ux_description_textbox_"+dynamicId).css("display","none");
-		jQuery("#button_set_txt_description_textbox_"+dynamicId).val("");
-	}
-	</script>
+	});
+	jQuery("#ux_checkbox_alpha_filter").attr("disabled","disabled");
+	jQuery("#ux_checkbox_alpha_num_filter").attr("disabled","disabled");
+	jQuery("#ux_checkbox_digit_filter").attr("disabled","disabled");
+	jQuery("#ux_checkbox_strip_tag_filter").attr("disabled","disabled");
+	jQuery("#ux_checkbox_trim_filter").attr("disabled","disabled");
+</script>

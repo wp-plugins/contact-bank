@@ -1,7 +1,27 @@
 <?php
-global $current_user;
-$current_user = wp_get_current_user();
-if (!current_user_can("edit_posts") && ! current_user_can("edit_pages"))
+	global $wpdb,$current_user,$cb_user_role_permission;
+	$cb_role = $wpdb->prefix . "capabilities";
+	$current_user->role = array_keys($current_user->$cb_role);
+	$cb_role = $current_user->role[0];
+	switch($cb_role)
+	{
+		case "administrator":
+			$cb_user_role_permission = "manage_options";
+		break;
+		case "editor":
+			$cb_user_role_permission = "publish_pages";
+		break;
+		case "author":
+			$cb_user_role_permission = "publish_posts";
+		break;
+		case "contributor":
+			$cb_user_role_permission = "edit_posts";
+		break;
+		case "subscriber":
+			$cb_user_role_permission = "read";
+		break;
+	}
+if (!current_user_can($cb_user_role_permission))
 {
 	return;
 }
@@ -13,17 +33,7 @@ else
 		{
 			$dynamicId = intval($_REQUEST["dynamicId"]);
 			$field_type = intval($_REQUEST["field_type"]);
-			$count_id = intval($_REQUEST["count_id"]);
-			$dynamicCount= intval($_REQUEST["dynamicCount"]);
-			//$array_text = ($_REQUEST["array_text"]);
-			if($count_id == 1)
-			{
-				$count = 1;
-			}
-			else 
-			{
-				$count = 0;
-			}
+			$form_id = intval($_REQUEST["form_id"]);
 			switch($field_type)
 			{
 				case 1:
@@ -44,8 +54,20 @@ else
 				case 6:
 					include_once CONTACT_BK_PLUGIN_DIR ."/includes/cb_multiple.php";
 				break;
+				case 7:
+					include_once CONTACT_BK_PLUGIN_DIR ."/includes/cb_number.php";
+				break;
+				case 8:
+					include_once CONTACT_BK_PLUGIN_DIR ."/includes/cb_name.php";
+				break;
 				case 9:
 					include_once CONTACT_BK_PLUGIN_DIR ."/includes/cb_file_upload.php";
+				break;
+				case 10:
+					include_once CONTACT_BK_PLUGIN_DIR ."/includes/cb_phone.php";
+				break;
+				case 11:
+					include_once CONTACT_BK_PLUGIN_DIR ."/includes/cb_address.php";
 				break;
 				case 12:
 					include_once CONTACT_BK_PLUGIN_DIR ."/includes/cb_date.php";
@@ -59,265 +81,829 @@ else
 				case 15:
 					include_once CONTACT_BK_PLUGIN_DIR ."/includes/cb_password.php";
 				break;
+				case 16:
+					include_once CONTACT_BK_PLUGIN_DIR ."/includes/cb_url.php";
+				break;
 			}
 			die();
 		}
 		else if($_REQUEST["param"]== "delete_form")
 		{
 			$form_id =  intval($_REQUEST["id"]);
-			global $wpdb;
-			$dynamicIds = $wpdb->get_results
-			(
-				$wpdb->prepare
-				(
-					"SELECT * FROM " .create_control_Table()." WHERE form_id = %d ",
-					$form_id
-				)
-			);
-			for($flag =0;$flag<count($dynamicIds);$flag++)
+			$control_id = $wpdb->get_results
+			    (
+			        $wpdb->prepare
+			            (
+			                "SELECT control_id FROM " .create_control_Table()." WHERE form_id = %d ",
+			                $form_id
+			            )
+			    );
+			$sql = "";
+			if(count($control_id) != 0)
 			{
-				echo $dynamic_Id = $dynamicIds[$flag]->column_dynamicId;
-				$wpdb->query
-				(
-					$wpdb->prepare
-					(
-						"DELETE FROM " .contact_bank_dynamic_settings_form()." WHERE dynamicId = %d ",
-						$dynamic_Id
-					)
-				);
+			    for($flag =0;$flag<count($control_id);$flag++)
+			    {
+			        $dynamic_Id = $control_id[$flag]->control_id;
+			        $sql[] = $dynamic_Id;
+			    }
+			    $wpdb->query
+			        (
+			            $wpdb->prepare
+			                (
+			                    "DELETE FROM " .contact_bank_dynamic_settings_form()." WHERE dynamicId IN (".implode(',', $sql).")",""
+			                )
+			        );
 			}
 			$wpdb->query
-			(
-				$wpdb->prepare
-				(
-					"DELETE FROM " .contact_bank_contact_form()." WHERE form_id = %d ",
-					$form_id
-				)
-			);
+			    (
+			        $wpdb->prepare
+			            (
+			                "DELETE FROM " .contact_bank_email_template_admin()." WHERE form_id = %d ",
+			                $form_id
+			            )
+			    );
 			$wpdb->query
-			(
-				$wpdb->prepare
-				(
-					"DELETE FROM " .create_control_Table()." WHERE form_id = %d ",
-					$form_id
-				)
-			);
+			    (
+			        $wpdb->prepare
+			            (
+			                "DELETE FROM " .contact_bank_form_settings_Table()." WHERE form_id = %d ",
+			                $form_id
+			            )
+			    );
 			$wpdb->query
-			(
-				$wpdb->prepare
-				(
-					"DELETE FROM " .contact_bank_email_template_admin()." WHERE form_id = %d ",
-					$form_id
-				)
-			);
+			    (
+			        $wpdb->prepare
+			            (
+			                "DELETE FROM " .frontend_controls_data_Table()." WHERE form_id = %d ",
+			                $form_id
+			            )
+			    );
 			$wpdb->query
-			(
-				$wpdb->prepare
-				(
-					"DELETE FROM " .frontend_controls_data_Table()." WHERE form_id = %d ",
-					$form_id
-				)
-			);
+			    (
+			        $wpdb->prepare
+			            (
+			                "DELETE FROM " .contact_bank_frontend_forms_Table()." WHERE form_id = %d ",
+			                $form_id
+			            )
+			    );
 			$wpdb->query
-			(
-				$wpdb->prepare
-				(
-					"DELETE FROM " .contact_bank_frontend_forms_Table()." WHERE form_id = %d ",
-					$form_id
-				)
-			);
+			    (
+			        $wpdb->prepare
+			            (
+			                "DELETE FROM " .contact_bank_layout_settings_Table()." WHERE form_id = %d ",
+			                $form_id
+			            )
+			    );
+			$wpdb->query
+			    (
+			        $wpdb->prepare
+			            (
+			                "DELETE FROM " .create_control_Table()." WHERE form_id = %d ",
+			                $form_id
+			            )
+			    );
+			$wpdb->query
+			    (
+			        $wpdb->prepare
+			            (
+			                "DELETE FROM " .contact_bank_contact_form()." WHERE form_id = %d ",
+			                $form_id
+			            )
+			    );
 			die();
-		}
-		else if($_REQUEST["param"]== "delete_forms")
-		{
+        }
+        else if($_REQUEST["param"]== "delete_forms")
+        {
 			global $wpdb;
-				$wpdb->query
-				(
-					$wpdb->prepare
-					(
-						"TRUNCATE Table ".create_control_Table(),""
-					)
-				);
-				$wpdb->query
-				(
-					$wpdb->prepare
-					(
-						"TRUNCATE Table ".contact_bank_dynamic_settings_form(),""
-					)
-				);
-				$wpdb->query
-				(
-					$wpdb->prepare
-					(
-						"TRUNCATE Table ".contact_bank_contact_form(),""
-					)
-				);
-				$wpdb->query
-				(
-					$wpdb->prepare
-					(
-						"TRUNCATE Table ".contact_bank_email_template_admin(),""
-					)
-				);
-				$wpdb->query
-				(
-					$wpdb->prepare
-					(
-						"TRUNCATE Table ".frontend_controls_data_Table(),""
-					)
-				);
-				$wpdb->query
-				(
-					$wpdb->prepare
-					(
-						"TRUNCATE Table ".contact_bank_frontend_forms_Table(),""
-					)
-				);
+			$wpdb->query
+			    (
+			        $wpdb->prepare
+			            (
+			                "TRUNCATE Table ".contact_bank_dynamic_settings_form(),""
+			            )
+			    );
+			$wpdb->query
+			    (
+			        $wpdb->prepare
+			            (
+			                "TRUNCATE Table ".contact_bank_email_template_admin(),""
+			            )
+			    );
+			$wpdb->query
+			    (
+			        $wpdb->prepare
+			            (
+			                "TRUNCATE Table ".contact_bank_form_settings_Table(),""
+			            )
+			    );
+			$wpdb->query
+			    (
+			        $wpdb->prepare
+			            (
+			                "TRUNCATE Table ".frontend_controls_data_Table(),""
+			            )
+			    );
+			$wpdb->query
+			    (
+			        $wpdb->prepare
+			            (
+			                "TRUNCATE Table ".contact_bank_frontend_forms_Table(),""
+			            )
+			    );
+			$wpdb->query
+			    (
+			        $wpdb->prepare
+			            (
+			                "TRUNCATE Table ".contact_bank_layout_settings_Table(),""
+			            )
+			    );
+			
+			$wpdb->query
+			    (
+			        $wpdb->prepare
+			            (
+			                "TRUNCATE Table ".create_control_Table(),""
+			            )
+			    );
+			$wpdb->query
+			    (
+			        $wpdb->prepare
+			            (
+			                "TRUNCATE Table ".contact_bank_contact_form(),""
+			            )
+			    );
 			die();
 		}
-		else if($_REQUEST["param"] == "submit_controls")
+		else if($_REQUEST["param"] == "submit_form_messages_settings")
 		{
-			
-			$form = intval($_REQUEST["form"]);
-			if($form == 1)
+			$sql= "";
+			$sql1=array();
+			$form_id = intval($_REQUEST["form_id"]);
+			$form_settings = json_decode(stripcslashes($_REQUEST["form_settings"]),true);
+			$array_delete_form_controls = json_decode(stripcslashes($_REQUEST["array_delete_form_controls"]),true);
+			foreach($array_delete_form_controls as $element)
 			{
-				$field_order = esc_attr($_REQUEST["field_order"]);
-				if(isset($_REQUEST["field_order"]))
+			    $sql1[] = $element;
+			}
+			if(count($sql1) > 0)
+			{
+			    $wpdb->query
+			        (
+			            $wpdb->prepare
+			                (
+			                    "Delete FROM " . contact_bank_dynamic_settings_form() . " where dynamicId in (".implode(',', $sql1).")",
+			                    ""
+			                )
+			        );
+			    $wpdb->query
+			        (
+			            $wpdb->prepare
+			                (
+			                    "Delete FROM " . create_control_Table() . " where control_id in (".implode(',', $sql1).")",""
+			
+			                )
+			        );
+			}
+			foreach($form_settings as $element)
+			{
+			    foreach ($element as $val => $keyInner)
+			    {
+			        if($val == "form_name")
+			        {
+			            $wpdb->query
+			                (
+			                    $wpdb->prepare
+			                        (
+			                            "UPDATE " . contact_bank_contact_form() . " SET `form_name` = '".$keyInner. "' where form_id = %d ",
+			                            $form_id
+			                        )
+			                );
+			        }
+			        else
+			        {
+			            if($val == "redirect_url")
+			            {
+			                $sql .= ' WHEN `form_message_key` = "'.mysql_real_escape_string($val).'" THEN "'.mysql_real_escape_string(html_entity_decode($keyInner)).'"';
+			            }
+			            else
+			            {
+			                $sql .= ' WHEN `form_message_key` = "'.mysql_real_escape_string($val).'" THEN "'.mysql_real_escape_string($keyInner).'"';
+			            }
+			        }
+			    }
+				$wpdb->query
+				(
+				    $wpdb->prepare
+				        (
+				            "UPDATE " . contact_bank_form_settings_Table() . " SET `form_message_value` = CASE ".$sql . " END where form_id = %d ",
+				            $form_id
+				        )
+				);
+            }
+            die();
+        }
+		else if ($_REQUEST["param"] == "update_licensing_settings")
+		{
+			$api_key = esc_attr($_REQUEST["ux_api_key"]);
+			$order_id = esc_attr($_REQUEST["ux_order_id"]);
+			$wpdb->query
+			(
+				$wpdb->prepare
+				(
+					"UPDATE " . contact_bank_licensing() . " SET api_key = %s, order_id = %s ",
+					$api_key,
+					$order_id
+				)
+			);
+			update_option("contact-bank-activation", $api_key);
+			die();
+		}
+		else if ($_REQUEST["param"] == "restore_factory_settings")
+		{
+			include_once CONTACT_BK_PLUGIN_DIR ."/lib/restore_factory_settings.php";
+			die();
+		}
+		else if($_REQUEST["param"] == "save_text_control")
+		{
+			$dynamic_Id = intval($_REQUEST["ux_hd_textbox_dynamic_id"]);
+			$form_id = intval($_REQUEST["form_id"]);
+			$event = esc_attr($_REQUEST["event"]);
+			$controlId = isset($_REQUEST["controlId"]) ? intval($_REQUEST["controlId"]) : 0;
+			$form_settings = isset($_REQUEST["form_settings"]) ? json_decode(stripcslashes($_REQUEST["form_settings"]),true) : array();
+			$form_settings[$dynamic_Id]["dynamic_id"] = $dynamic_Id;
+			$form_settings[$dynamic_Id]["control_type"] = "1";
+			$form_settings[$dynamic_Id]["cb_label_value"] = isset($_REQUEST["ux_label_text_".$dynamic_Id]) ? esc_attr($_REQUEST["ux_label_text_".$dynamic_Id]) : "Untitled";
+			$form_settings[$dynamic_Id]["cb_description"] = isset($_REQUEST["ux_description_control_".$dynamic_Id]) ? esc_attr($_REQUEST["ux_description_control_".$dynamic_Id]) : "";
+			$form_settings[$dynamic_Id]["cb_control_required"] = isset($_REQUEST["ux_required_control_radio_".$dynamic_Id]) ? esc_attr($_REQUEST["ux_required_control_radio_".$dynamic_Id]) : "0";
+			$form_settings[$dynamic_Id]["cb_tooltip_txt"] = isset($_REQUEST["ux_tooltip_control_".$dynamic_Id]) ? esc_attr($_REQUEST["ux_tooltip_control_".$dynamic_Id]) : "";
+			$form_settings[$dynamic_Id]["cb_default_txt_val"] = isset($_REQUEST["ux_default_value_".$dynamic_Id]) ? esc_attr($_REQUEST["ux_default_value_".$dynamic_Id]) : "";
+			$form_settings[$dynamic_Id]["cb_admin_label"] = isset($_REQUEST["ux_admin_label_".$dynamic_Id]) ? esc_attr($_REQUEST["ux_admin_label_".$dynamic_Id]) : "Untitled";
+			$form_settings[$dynamic_Id]["cb_show_email"] = isset($_REQUEST["ux_show_email_".$dynamic_Id]) ? "1" : "0";
+			$form_settings[$dynamic_Id]["cb_checkbox_alpha_filter"] = isset($_REQUEST["ux_checkbox_alpha_filter_".$dynamic_Id]) ? "1" : "0";
+			$form_settings[$dynamic_Id]["cb_ux_checkbox_alpha_num_filter"] = isset($_REQUEST["ux_checkbox_alpha_num_filter_".$dynamic_Id]) ? "1" : "0";
+			$form_settings[$dynamic_Id]["cb_checkbox_digit_filter"] = isset($_REQUEST["ux_checkbox_digit_filter_".$dynamic_Id]) ? "1" : "0";
+			$form_settings[$dynamic_Id]["cb_checkbox_strip_tag_filter"] = isset($_REQUEST["ux_checkbox_strip_tag_filter_".$dynamic_Id]) ? "1" : "0";
+			$form_settings[$dynamic_Id]["cb_checkbox_trim_filter"] = isset($_REQUEST["ux_checkbox_trim_filter_".$dynamic_Id]) ? "1" : "0";
+			
+			foreach($form_settings as $element)
+			{
+				$id = $element["dynamic_id"];
+				$control_type = $element["control_type"];
+				if($event == "add")
 				{
-					$field_order = esc_attr($_REQUEST["field_order"]);
-					if($field_order != "")
+					$wpdb->query
+					(
+						$wpdb->prepare
+						(
+							"INSERT INTO " . create_control_Table() . "(form_id,field_id,column_dynamicId) VALUES(%d,%d,%d)",
+							$form_id,
+							$control_type,
+							$id
+						)
+					);
+                    echo $dynamic_control_id=$wpdb->insert_id;
+					$wpdb->query
+					(
+						$wpdb->prepare
+						(
+							"UPDATE " . create_control_Table() . " SET `sorting_order` = %d where form_id = %d and field_id = %d and column_dynamicId = %d",
+							$dynamic_control_id,
+							$form_id,
+							$control_type,
+							$id
+						)
+					);
+				}
+				else 
+				{
+					$sql= "";
+				}
+				foreach($element as $key => $value)
+				{
+					if($key == "dynamic_id" || $key == "control_type")
 					{
-						$field_order_id =  (explode(",",$field_order));
+						continue;
+					}
+					else
+					{
+						if($event == "add")
+						{
+							$sql[] = '('.$dynamic_control_id.',"'.mysql_real_escape_string($key).'", "'.mysql_real_escape_string($value).'")';
+						}
+						else {
+							 $sql .= 'WHEN `dynamic_settings_key` = "'.mysql_real_escape_string($key).'" THEN "'.mysql_real_escape_string($value).'"';
+						}
 					}
 				}
-				$control_dynamic_id = esc_attr($_REQUEST["new_control_dynamic_ids"]);
-				$new_control_dynamic_ids =  (explode(",",$control_dynamic_id));
-				
-				$control_type = esc_attr($_REQUEST["created_control_type"]);
-				$control_type_ids = $control_type != "" ? explode(",",$control_type) : Array();
-				
-				$field_dynamic_id = esc_attr($_REQUEST["field_dynamic_id"]);
-				$field_exist_dynamic_id = $field_dynamic_id != "" ? explode(",",$field_dynamic_id) : Array();
-				
-				$ux_form_name_txt = esc_attr($_REQUEST["form_name"]);
-				if(esc_attr($_REQUEST["chk_redirect_url"]) == "true")
+				if($event == "add")
 				{
-					$redirect_chkbox_val = 1;
+					$wpdb->query
+						(
+							$wpdb->prepare
+								(
+									"INSERT INTO " . contact_bank_dynamic_settings_form() . "(dynamicId,dynamic_settings_key,dynamic_settings_value) VALUES ".implode(',', $sql),""
+								)
+						);
 				}
 				else
 				{
-					$redirect_chkbox_val = 0;
-				}
-				
-				$wpdb->query
-				(
-					$wpdb->prepare
-					(
-						"INSERT INTO ".contact_bank_contact_form()."(form_name,success_message,chk_url,redirect_url) VALUES(%s,%s,%d,%s)",
-						$ux_form_name_txt,
-						esc_attr($_REQUEST["ux_sucess_message"]),
-						$redirect_chkbox_val,
-						esc_attr($_REQUEST["ux_redirect_url"])
-					)
-				);
-				$form_id=$wpdb->insert_id;
-				for($flag = 0; $flag < count($control_type_ids); $flag++)
-				{
 					$wpdb->query
 					(
 						$wpdb->prepare
-						(
-							"INSERT INTO " . create_control_Table() . "(form_id,field_id,column_dynamicId) VALUES(%s,%s,%s)",
-							$form_id,
-							$control_type_ids[$flag],
-							$new_control_dynamic_ids[$flag]
-						)
-					);
-					
-					$sort_id=$wpdb->insert_id;
-					
-					$wpdb->query
-					(
-						$wpdb->prepare
-						(
-							"UPDATE " . create_control_Table() . " SET sorting_order = %d WHERE control_id = %d",
-							$sort_id,
-							$sort_id
-						)
-					);
-				}
-				for($flag1=0;$flag1<count($field_order_id);$flag1++)
-				{
-					$wpdb->query
-					(
-						$wpdb->prepare
-						(
-							"UPDATE " . create_control_Table() . " SET sorting_order = %d WHERE column_dynamicId = %d",
-							$flag1,
-							$field_exist_dynamic_id[$flag1]
-						)
-					);
-				}
-			}
-			else 
-			{
-				$array_controls = json_decode(stripcslashes(html_entity_decode($_REQUEST["array_controls"])));
-				$count = 0;
-				$dynamicId = 0;				
-				foreach ($array_controls as $val => $keyInner) 
-				{
-					$count++;
-					if($count > 2)
-					{
-						$wpdb->query
-						(
-							$wpdb->prepare
 							(
-								"INSERT INTO ".contact_bank_dynamic_settings_form()."(dynamicId,dynamic_settings_key,dynamic_settings_value) VALUES(%d,%s,%s)",
-								$dynamicId,
-								key($keyInner),
-								(string)current($keyInner)
+								"UPDATE " . contact_bank_dynamic_settings_form() . " SET `dynamic_settings_value` = CASE ".$sql . " END where dynamicId = %d ",
+								$controlId
 							)
-						);
-						
-					}
-					else if($count == 2)
-					{
-						$dynamicId = current($keyInner);
-					}
+					);
 				}
 			}
-			die();			
-		}
-		else if($_REQUEST["param"] == "ux_allow_multiple_file_upload")
-		{
-			ob_start();
-			$dynamicId = esc_attr($_REQUEST["dynamicId"]);
-			?>
-			<script>jQuery("#AjaxUploaderFilesButton").css("float","left")</script>
-			<?php
-			include CONTACT_BK_PLUGIN_DIR ."/phpfileuploader/phpuploader/include_phpuploader.php";
-			$ux_allowed_file_extensions = esc_attr($_REQUEST["ux_allowed_file_extensions"]);
-			$ux_allow_multiple_file = esc_attr($_REQUEST["ux_allow_multiple_file"]);
-			$file_extensions = str_replace (";",",*.",$ux_allowed_file_extensions);
-			$allowed_file_extension = "*.".$file_extensions;
-			$ux_maximum_file_allowed_in_mb = esc_attr($_REQUEST["ux_maximum_file_allowed"]);
-			if($ux_maximum_file_allowed_in_mb == "" || $ux_maximum_file_allowed_in_mb == 0)
-			{
-				$ux_maximum_file_allowed_in_mb = 1;
-			}
-			$ux_maximum_file_allowed_in_kb = $ux_maximum_file_allowed_in_mb * 1;
-			$uploader=new PhpUploader();
-			$uploader->MultipleFilesUpload = $ux_allow_multiple_file == "true" ? true : false;
-			$uploader->InsertText="Please choose Files";
-			$uploader->MaxSizeKB=$ux_maximum_file_allowed_in_kb;
-			$uploader->AllowedFileExtensions=$allowed_file_extension;
-			$uploader->SaveDirectory= CONTACT_BK_PLUGIN_DIR ."/phpfileuploader/savefiles/";
-			$uploader->FlashUploadMode="Partial";
-			$uploader->Render();
-			$allow_multiple = "";
 			die();
 		}
+		else if($_REQUEST["param"] == "save_textarea_control")
+		{
+			$dynamic_Id = intval($_REQUEST["ux_hd_textbox_dynamic_id"]);
+			$form_id = intval($_REQUEST["form_id"]);
+			$event = esc_attr($_REQUEST["event"]);
+			$controlId = isset($_REQUEST["controlId"]) ? intval($_REQUEST["controlId"]) : 0;
+			$form_settings = isset($_REQUEST["form_settings"]) ? json_decode(stripcslashes($_REQUEST["form_settings"]),true) : array();
+			$form_settings[$dynamic_Id]["dynamic_id"] = $dynamic_Id;
+			$form_settings[$dynamic_Id]["control_type"] = "2";
+			$form_settings[$dynamic_Id]["cb_label_value"] = isset($_REQUEST["ux_label_text_".$dynamic_Id]) ? esc_attr($_REQUEST["ux_label_text_".$dynamic_Id]) : "Untitled";
+			$form_settings[$dynamic_Id]["cb_description"] = isset($_REQUEST["ux_description_control_".$dynamic_Id]) ? esc_attr($_REQUEST["ux_description_control_".$dynamic_Id]) : "";
+			$form_settings[$dynamic_Id]["cb_control_required"] = isset($_REQUEST["ux_required_control_radio_".$dynamic_Id]) ? esc_attr($_REQUEST["ux_required_control_radio_".$dynamic_Id]) : "0";
+			$form_settings[$dynamic_Id]["cb_tooltip_txt"] = isset($_REQUEST["ux_tooltip_control_".$dynamic_Id]) ? esc_attr($_REQUEST["ux_tooltip_control_".$dynamic_Id]) : "";
+			$form_settings[$dynamic_Id]["cb_default_txt_val"] = isset($_REQUEST["ux_default_value_".$dynamic_Id]) ? esc_attr($_REQUEST["ux_default_value_".$dynamic_Id]) : "";
+			$form_settings[$dynamic_Id]["cb_admin_label"] = isset($_REQUEST["ux_admin_label_".$dynamic_Id]) ? esc_attr($_REQUEST["ux_admin_label_".$dynamic_Id]) : "Untitled";
+			$form_settings[$dynamic_Id]["cb_show_email"] = isset($_REQUEST["ux_show_email_".$dynamic_Id]) ? "1" : "0";
+			$form_settings[$dynamic_Id]["cb_checkbox_alpha_filter"] = isset($_REQUEST["ux_checkbox_alpha_filter_".$dynamic_Id]) ? "1" : "0";
+			$form_settings[$dynamic_Id]["cb_ux_checkbox_alpha_num_filter"] = isset($_REQUEST["ux_checkbox_alpha_num_filter_".$dynamic_Id]) ? "1" : "0";
+			$form_settings[$dynamic_Id]["cb_checkbox_digit_filter"] = isset($_REQUEST["ux_checkbox_digit_filter_".$dynamic_Id]) ? "1" : "0";
+			$form_settings[$dynamic_Id]["cb_checkbox_strip_tag_filter"] = isset($_REQUEST["ux_checkbox_strip_tag_filter_".$dynamic_Id]) ? "1" : "0";
+			$form_settings[$dynamic_Id]["cb_checkbox_trim_filter"] = isset($_REQUEST["ux_checkbox_trim_filter_".$dynamic_Id]) ? "1" : "0";
+
+			foreach($form_settings as $element)
+			{
+				$id = $element["dynamic_id"];
+				$control_type = $element["control_type"];
+				if($event == "add")
+				{
+					$wpdb->query
+					(
+						$wpdb->prepare
+						(
+							"INSERT INTO " . create_control_Table() . "(form_id,field_id,column_dynamicId) VALUES(%d,%d,%d)",
+							$form_id,
+							$control_type,
+							$id
+						)
+					);
+                    echo $dynamic_control_id=$wpdb->insert_id;
+					$wpdb->query
+					(
+						$wpdb->prepare
+						(
+							"UPDATE " . create_control_Table() . " SET `sorting_order` = %d where form_id = %d and field_id = %d and column_dynamicId = %d",
+							$dynamic_control_id,
+							$form_id,
+							$control_type,
+							$id
+						)
+					);
+				}
+				else 
+				{
+					$sql= "";
+				}
+				foreach($element as $key => $value)
+				{
+					if($key == "dynamic_id" || $key == "control_type")
+					{
+						continue;
+					}
+					else
+					{
+						if($event == "add")
+						{
+							$sql[] = '('.$dynamic_control_id.',"'.mysql_real_escape_string($key).'", "'.mysql_real_escape_string($value).'")';
+						}
+						else {
+							 $sql .= 'WHEN `dynamic_settings_key` = "'.mysql_real_escape_string($key).'" THEN "'.mysql_real_escape_string($value).'"';
+						}
+					}
+				}
+				if($event == "add")
+				{
+					$wpdb->query
+						(
+							$wpdb->prepare
+								(
+									"INSERT INTO " . contact_bank_dynamic_settings_form() . "(dynamicId,dynamic_settings_key,dynamic_settings_value) VALUES ".implode(',', $sql),""
+								)
+						);
+				}
+				else
+				{
+					$wpdb->query
+						(
+							$wpdb->prepare
+								(
+									"UPDATE " . contact_bank_dynamic_settings_form() . " SET `dynamic_settings_value` = CASE ".$sql . " END where dynamicId = %d ",
+									$controlId
+								)
+						);
+				}
+			}
+			die();
+		}
+		else if($_REQUEST["param"] == "save_email_control")
+		{
+			$dynamic_Id = intval($_REQUEST["ux_hd_textbox_dynamic_id"]);
+			$form_id = intval($_REQUEST["form_id"]);
+			$event = esc_attr($_REQUEST["event"]);
+			$controlId = isset($_REQUEST["controlId"]) ? intval($_REQUEST["controlId"]) : 0;
+			$form_settings = isset($_REQUEST["form_settings"]) ? json_decode(stripcslashes($_REQUEST["form_settings"]),true) : array();
+			$form_settings[$dynamic_Id]["dynamic_id"] = $dynamic_Id;
+			$form_settings[$dynamic_Id]["control_type"] = "3";
+			$form_settings[$dynamic_Id]["cb_label_value"] = isset($_REQUEST["ux_label_text_".$dynamic_Id]) ? esc_attr($_REQUEST["ux_label_text_".$dynamic_Id]) : "Email";
+			$form_settings[$dynamic_Id]["cb_description"] = isset($_REQUEST["ux_description_control_".$dynamic_Id]) ? esc_attr($_REQUEST["ux_description_control_".$dynamic_Id]) : "";
+			$form_settings[$dynamic_Id]["cb_control_required"] = isset($_REQUEST["ux_required_control_radio_".$dynamic_Id]) ? esc_attr($_REQUEST["ux_required_control_radio_".$dynamic_Id]) : "1";
+			$form_settings[$dynamic_Id]["cb_tooltip_txt"] = isset($_REQUEST["ux_tooltip_control_".$dynamic_Id]) ? esc_attr($_REQUEST["ux_tooltip_control_".$dynamic_Id]) : "";
+			$form_settings[$dynamic_Id]["cb_default_txt_val"] = isset($_REQUEST["ux_default_value_".$dynamic_Id]) ? esc_attr($_REQUEST["ux_default_value_".$dynamic_Id]) : "";
+			$form_settings[$dynamic_Id]["cb_admin_label"] = isset($_REQUEST["ux_default_value_".$dynamic_Id]) ? esc_attr($_REQUEST["ux_admin_label_".$dynamic_Id]) : "Email";
+			$form_settings[$dynamic_Id]["cb_show_email"] = isset($_REQUEST["ux_show_email_".$dynamic_Id]) ? "1" : "0";
+			
+			foreach($form_settings as $element)
+			{
+				$id = $element["dynamic_id"];
+				$control_type = $element["control_type"];
+				if($event == "add")
+				{
+				    $wpdb->query
+					(
+						$wpdb->prepare
+						(
+							"INSERT INTO " . create_control_Table() . "(form_id,field_id,column_dynamicId) VALUES(%d,%d,%d)",
+							$form_id,
+							$control_type,
+							$id
+						)
+					);
+                    echo $dynamic_control_id=$wpdb->insert_id;
+					$wpdb->query
+					(
+						$wpdb->prepare
+						(
+							"UPDATE " . create_control_Table() . " SET `sorting_order` = %d where form_id = %d and field_id = %d and column_dynamicId = %d",
+							$dynamic_control_id,
+							$form_id,
+							$control_type,
+							$id
+						)
+					);
+				}
+				else 
+				{
+				    $sql= "";
+				}
+				foreach($element as $key => $value)
+				{
+				    if($key == "dynamic_id" || $key == "control_type")
+				    {
+				        continue;
+				    }
+				    else
+				    {
+				        if($event == "add")
+				        {
+				            $sql[] = '('.$dynamic_control_id.',"'.mysql_real_escape_string($key).'", "'.mysql_real_escape_string($value).'")';
+				        }
+				        else 
+				        {
+				            $sql .= 'WHEN `dynamic_settings_key` = "'.mysql_real_escape_string($key).'" THEN "'.mysql_real_escape_string($value).'"';
+				        }
+				    }
+				}
+				if($event == "add")
+				{
+				    $wpdb->query
+				        (
+				            $wpdb->prepare
+				                (
+				                    "INSERT INTO " . contact_bank_dynamic_settings_form() . "(dynamicId,dynamic_settings_key,dynamic_settings_value) VALUES ".implode(',', $sql),""
+				                )
+				        );
+				}
+				else
+				{
+				    $wpdb->query
+				        (
+				            $wpdb->prepare
+				                (
+				                    "UPDATE " . contact_bank_dynamic_settings_form() . " SET `dynamic_settings_value` = CASE ".$sql . " END where dynamicId = %d ",
+				                    $controlId
+				                )
+				        );
+				}
+			}
+			die();
+		}
+		else if($_REQUEST["param"] == "save_drop_down_control")
+		{
+			$dynamic_Id = intval($_REQUEST["ux_hd_textbox_dynamic_id"]);
+			$form_id = intval($_REQUEST["form_id"]);
+			$event = esc_attr($_REQUEST["event"]);
+			$controlId = isset($_REQUEST["controlId"]) ? intval($_REQUEST["controlId"]) : 0;
+			$form_settings = isset($_REQUEST["form_settings"]) ? json_decode(stripcslashes($_REQUEST["form_settings"]),true) : array();
+			$ddl_options_id = isset($_REQUEST["ddl_options_id"]) ? json_decode(stripcslashes($_REQUEST["ddl_options_id"]),true) : array();
+			$options_value = isset($_REQUEST["options_value"]) ? json_decode(stripcslashes($_REQUEST["options_value"]),true) : array();
+			$form_settings[$dynamic_Id]["dynamic_id"] = $dynamic_Id;
+			$form_settings[$dynamic_Id]["control_type"] = "4";
+			$form_settings[$dynamic_Id]["cb_label_value"] = isset($_REQUEST["ux_label_text_".$dynamic_Id]) ? esc_attr($_REQUEST["ux_label_text_".$dynamic_Id]) :"Untitled";
+			$form_settings[$dynamic_Id]["cb_control_required"] = isset($_REQUEST["ux_required_control_radio_".$dynamic_Id]) ? esc_attr($_REQUEST["ux_required_control_radio_".$dynamic_Id]) : "0";
+			$form_settings[$dynamic_Id]["cb_tooltip_txt"] = isset($_REQUEST["ux_tooltip_control_".$dynamic_Id]) ? esc_attr($_REQUEST["ux_tooltip_control_".$dynamic_Id]) : "";
+			$form_settings[$dynamic_Id]["cb_admin_label"] = isset($_REQUEST["ux_admin_label_".$dynamic_Id]) ? esc_attr($_REQUEST["ux_admin_label_".$dynamic_Id]) : "Untitled";
+			$form_settings[$dynamic_Id]["cb_show_email"] = isset($_REQUEST["ux_show_email_".$dynamic_Id]) ? "1" : "0";
+			$form_settings[$dynamic_Id]["cb_dropdown_option_id"] = serialize($ddl_options_id);
+			$form_settings[$dynamic_Id]["cb_dropdown_option_val"] = serialize($options_value);
+			foreach($form_settings as $element)
+			{
+				$id = $element["dynamic_id"];
+				$control_type = $element["control_type"];
+				if($event == "add")
+				{
+				    $wpdb->query
+					(
+						$wpdb->prepare
+						(
+							"INSERT INTO " . create_control_Table() . "(form_id,field_id,column_dynamicId) VALUES(%d,%d,%d)",
+							$form_id,
+							$control_type,
+							$id
+						)
+					);
+                    echo $dynamic_control_id=$wpdb->insert_id;
+					$wpdb->query
+					(
+						$wpdb->prepare
+						(
+							"UPDATE " . create_control_Table() . " SET `sorting_order` = %d where form_id = %d and field_id = %d and column_dynamicId = %d",
+							$dynamic_control_id,
+							$form_id,
+							$control_type,
+							$id
+						)
+					);
+				}
+				else 
+				{
+				    $sql= "";
+				}
+				foreach($element as $key => $value)
+				{
+				    if($key == "dynamic_id" || $key == "control_type")
+				    {
+				        continue;
+				    }
+				    else
+				    {
+				        if($event == "add")
+				        {
+				            $sql[] = '('.$dynamic_control_id.',"'.mysql_real_escape_string($key).'", "'.mysql_real_escape_string($value).'")';
+				        }
+				        else {
+				            $sql .= 'WHEN `dynamic_settings_key` = "'.mysql_real_escape_string($key).'" THEN "'.mysql_real_escape_string($value).'"';
+				        }
+				    }
+				}
+				if($event == "add")
+				{
+				    $wpdb->query
+				        (
+				            $wpdb->prepare
+				                (
+				                    "INSERT INTO " . contact_bank_dynamic_settings_form() . "(dynamicId,dynamic_settings_key,dynamic_settings_value) VALUES ".implode(',', $sql),""
+				                )
+				        );
+				}
+				else
+				{
+				    $wpdb->query
+				        (
+				            $wpdb->prepare
+				                (
+				                    "UPDATE " . contact_bank_dynamic_settings_form() . " SET `dynamic_settings_value` = CASE ".$sql . " END where dynamicId = %d ",
+				                    $controlId
+				                )
+				        );
+				}
+			}
+			die();
+		}
+		else if($_REQUEST["param"] == "save_check_box_control")
+		{
+			$dynamic_Id = intval($_REQUEST["ux_hd_textbox_dynamic_id"]);
+			$form_id = intval($_REQUEST["form_id"]);
+			$event = esc_attr($_REQUEST["event"]);
+			$controlId = isset($_REQUEST["controlId"]) ? intval($_REQUEST["controlId"]) : 0;
+			$form_settings = isset($_REQUEST["form_settings"]) ? json_decode(stripcslashes($_REQUEST["form_settings"]),true) : array();
+			$ddl_options_id = isset($_REQUEST["ddl_options_id"]) ? json_decode(stripcslashes($_REQUEST["ddl_options_id"]),true) : array();
+			$options_value = isset($_REQUEST["options_value"]) ? json_decode(stripcslashes($_REQUEST["options_value"]),true) : array();
+			$form_settings[$dynamic_Id]["dynamic_id"] = $dynamic_Id;
+			$form_settings[$dynamic_Id]["control_type"] = "5";
+			$form_settings[$dynamic_Id]["cb_label_value"] = isset($_REQUEST["ux_label_text_".$dynamic_Id]) ? esc_attr($_REQUEST["ux_label_text_".$dynamic_Id]) : "Untitled";
+			$form_settings[$dynamic_Id]["cb_control_required"] = isset($_REQUEST["ux_required_control_radio_".$dynamic_Id]) ? esc_attr($_REQUEST["ux_required_control_radio_".$dynamic_Id]) : "0";
+			$form_settings[$dynamic_Id]["cb_tooltip_txt"] = isset($_REQUEST["ux_tooltip_control_".$dynamic_Id]) ? esc_attr($_REQUEST["ux_tooltip_control_".$dynamic_Id]) : "";
+			$form_settings[$dynamic_Id]["cb_admin_label"] = isset($_REQUEST["ux_admin_label_".$dynamic_Id]) ? esc_attr($_REQUEST["ux_admin_label_".$dynamic_Id]) : "Untitled";
+			$form_settings[$dynamic_Id]["cb_show_email"] = isset($_REQUEST["ux_show_email_".$dynamic_Id]) ? "1" : "0";
+			$form_settings[$dynamic_Id]["cb_checkbox_option_id"] = serialize($ddl_options_id);
+			$form_settings[$dynamic_Id]["cb_checkbox_option_val"] = serialize($options_value);
+			
+			foreach($form_settings as $element)
+			{
+				$id = $element["dynamic_id"];
+				$control_type = $element["control_type"];
+				if($event == "add")
+				{
+					$wpdb->query
+					(
+						$wpdb->prepare
+						(
+							"INSERT INTO " . create_control_Table() . "(form_id,field_id,column_dynamicId) VALUES(%d,%d,%d)",
+							$form_id,
+							$control_type,
+							$id
+						)
+					);
+                    echo $dynamic_control_id=$wpdb->insert_id;
+					$wpdb->query
+					(
+						$wpdb->prepare
+						(
+							"UPDATE " . create_control_Table() . " SET `sorting_order` = %d where form_id = %d and field_id = %d and column_dynamicId = %d",
+							$dynamic_control_id,
+							$form_id,
+							$control_type,
+							$id
+						)
+					);
+				}
+				else {
+					$sql= "";
+				}
+				foreach($element as $key => $value)
+				{
+					if($key == "dynamic_id" || $key == "control_type")
+					{
+						continue;
+					}
+					else
+					{
+						if($event == "add")
+						{
+							$sql[] = '('.$dynamic_control_id.',"'.mysql_real_escape_string($key).'", "'.mysql_real_escape_string($value).'")';
+						}
+						else 
+						{
+							$sql .= 'WHEN `dynamic_settings_key` = "'.mysql_real_escape_string($key).'" THEN "'.mysql_real_escape_string($value).'"';
+						}
+					}
+				}
+				if($event == "add")
+				{
+					$wpdb->query
+						(
+							$wpdb->prepare
+								(
+									"INSERT INTO " . contact_bank_dynamic_settings_form() . "(dynamicId,dynamic_settings_key,dynamic_settings_value) VALUES ".implode(',', $sql),""
+								)
+						);
+				}
+				else
+			 	{
+					$wpdb->query
+						(
+							$wpdb->prepare
+								(
+									"UPDATE " . contact_bank_dynamic_settings_form() . " SET `dynamic_settings_value` = CASE ".$sql . " END where dynamicId = %d ",
+									$controlId
+								)
+						);
+				}
+			}
+			die();
+		}
+		else if($_REQUEST["param"] == "save_multiple_control")
+		{
+			$dynamic_Id = intval($_REQUEST["ux_hd_textbox_dynamic_id"]);
+			$form_id = intval($_REQUEST["form_id"]);
+			$event = esc_attr($_REQUEST["event"]);
+			$controlId = isset($_REQUEST["controlId"]) ? intval($_REQUEST["controlId"]) : 0;
+			$form_settings = isset($_REQUEST["form_settings"]) ? json_decode(stripcslashes($_REQUEST["form_settings"]),true) : array();
+			$ddl_options_id = isset($_REQUEST["ddl_options_id"]) ? json_decode(stripcslashes($_REQUEST["ddl_options_id"]),true) : array();
+			$options_value = isset($_REQUEST["options_value"]) ? json_decode(stripcslashes($_REQUEST["options_value"]),true) : array();
+			$form_settings[$dynamic_Id]["dynamic_id"] = $dynamic_Id;
+			$form_settings[$dynamic_Id]["control_type"] = "6";
+			$form_settings[$dynamic_Id]["cb_label_value"] = isset($_REQUEST["ux_label_text_".$dynamic_Id]) ? esc_attr($_REQUEST["ux_label_text_".$dynamic_Id]) : "Untitled";
+			$form_settings[$dynamic_Id]["cb_control_required"] = isset($_REQUEST["ux_required_control_radio_".$dynamic_Id]) ? esc_attr($_REQUEST["ux_required_control_radio_".$dynamic_Id]) : "0";
+			$form_settings[$dynamic_Id]["cb_tooltip_txt"] = isset($_REQUEST["ux_tooltip_control_".$dynamic_Id]) ? esc_attr($_REQUEST["ux_tooltip_control_".$dynamic_Id]) : "";
+			$form_settings[$dynamic_Id]["cb_admin_label"] = isset($_REQUEST["ux_admin_label_".$dynamic_Id]) ? esc_attr($_REQUEST["ux_admin_label_".$dynamic_Id]) : "Untitled";
+			$form_settings[$dynamic_Id]["cb_show_email"] = isset($_REQUEST["ux_show_email_".$dynamic_Id]) ? "1" : "0";
+			$form_settings[$dynamic_Id]["cb_radio_option_id"] = serialize($ddl_options_id);
+			$form_settings[$dynamic_Id]["cb_radio_option_val"] = serialize($options_value);
+			foreach($form_settings as $element)
+			{
+				$id = $element["dynamic_id"];
+				$control_type = $element["control_type"];
+				if($event == "add")
+				{
+					$wpdb->query
+					(
+						$wpdb->prepare
+						(
+							"INSERT INTO " . create_control_Table() . "(form_id,field_id,column_dynamicId) VALUES(%d,%d,%d)",
+							$form_id,
+							$control_type,
+							$id
+						)
+					);
+                    echo $dynamic_control_id=$wpdb->insert_id;
+					$wpdb->query
+					(
+						$wpdb->prepare
+						(
+							"UPDATE " . create_control_Table() . " SET `sorting_order` = %d where form_id = %d and field_id = %d and column_dynamicId = %d",
+							$dynamic_control_id,
+							$form_id,
+							$control_type,
+							$id
+						)
+					);
+				}
+				else {
+					$sql= "";
+				}
+				foreach($element as $key => $value)
+				{
+					if($key == "dynamic_id" || $key == "control_type")
+					{
+						continue;
+				 	}
+					else
+					{
+						if($event == "add")
+						{
+							$sql[] = '('.$dynamic_control_id.',"'.mysql_real_escape_string($key).'", "'.mysql_real_escape_string($value).'")';
+						}
+						else 
+						{
+							$sql .= 'WHEN `dynamic_settings_key` = "'.mysql_real_escape_string($key).'" THEN "'.mysql_real_escape_string($value).'"';
+						}
+					}
+				}
+				if($event == "add")
+				{
+				    $wpdb->query
+				        (
+				            $wpdb->prepare
+				                (
+				                    "INSERT INTO " . contact_bank_dynamic_settings_form() . "(dynamicId,dynamic_settings_key,dynamic_settings_value) VALUES ".implode(',', $sql),""
+				                )
+				        );
+				}
+				else
+				{
+					$wpdb->query
+						(
+							$wpdb->prepare
+								(
+									"UPDATE " . contact_bank_dynamic_settings_form() . " SET `dynamic_settings_value` = CASE ".$sql . " END where dynamicId = %d ",
+									$controlId
+								)
+						);
+				}
+			}
+			die();
+		}
+		else if($_REQUEST["param"] == "form_fields_sorting_order")
+		{
+			$form_id = intval($_REQUEST["form_id"]);
+			$field_dynamic_id = isset($_REQUEST["field_dynamic_id"]) ? json_decode(stripcslashes($_REQUEST["field_dynamic_id"]),true) : array();
+			$sql= "";
+			foreach($field_dynamic_id as $key => $val)
+			{
+				$sql .= ' WHEN `column_dynamicId` = "'.$val.'" THEN "'.$key.'"';
+			}
+			$wpdb->query
+			(
+			    $wpdb->prepare
+		        (
+		            "UPDATE " . create_control_Table() . " SET `sorting_order` = CASE " . $sql . " END where form_id = %d ",
+		            $form_id
+		        )
+			);
+			die();
+		}
+		
 	}
 }
 ?>

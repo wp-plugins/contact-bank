@@ -1,1050 +1,1167 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2013-11-28 12:15+0530\n"
-"PO-Revision-Date: 2013-11-28 12:37+0530\n"
+"POT-Creation-Date: 2014-03-08 16:57+0530\n"
+"PO-Revision-Date: 2014-03-10 14:16+0530\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.5\n"
+"X-Generator: Poedit 1.6.4\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
-"X-Poedit-Basepath: C:\\wamp\\www\\contact-bank3.7\\wp-content\\plugins"
-"\\contact-bank\n"
+"X-Poedit-Basepath: C:\\wamp\\www\\contact_bank\\wp-content\\plugins\\contact-"
+"bank-pro-version-2.1.0\\\n"
+"Language: sk_SK\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: contact-bank.php:74
+#: contact-bank.php:61 contact-bank.php:69 contact-bank.php:81
+#: contact-bank.php:98 contact-bank.php:106 contact-bank.php:118
+#: contact-bank.php:135 contact-bank.php:143 contact-bank.php:155
+#: contact-bank.php:172 contact-bank.php:180 contact-bank.php:192
+#: contact-bank.php:209 contact-bank.php:217 contact-bank.php:229
+#: views/contact-bank-system-report.php:10
 msgid "Contact Bank"
-msgstr ""
+msgstr "Contact Bank"
 
-#: contact-bank.php:75 contact-bank.php:456
+#: contact-bank.php:62 contact-bank.php:70 contact-bank.php:82
+#: contact-bank.php:99 contact-bank.php:107 contact-bank.php:119
+#: contact-bank.php:136 contact-bank.php:144 contact-bank.php:156
+#: contact-bank.php:173 contact-bank.php:181 contact-bank.php:193
+#: contact-bank.php:210 contact-bank.php:218 contact-bank.php:230
+#: contact-bank.php:503
 msgid "Dashboard"
 msgstr "Prístrojová doska"
 
-#: contact-bank.php:76 contact-bank.php:462 views/contact_view.php:6
-#: views/dashboard.php:8
-msgid "Add New Form"
-msgstr "Pridať Nový formulár"
-
-#: contact-bank.php:77 contact-bank.php:468 views/contact_email.php:6
-msgid "Email Settings"
-msgstr "E-mailu nastavenie"
-
-#: contact-bank.php:78 contact-bank.php:474 views/contact_frontend_data.php:5
+#: contact-bank.php:63 contact-bank.php:72 contact-bank.php:84
+#: contact-bank.php:100 contact-bank.php:109 contact-bank.php:121
+#: contact-bank.php:137 contact-bank.php:146 contact-bank.php:158
+#: contact-bank.php:174 contact-bank.php:183 contact-bank.php:195
+#: contact-bank.php:211 contact-bank.php:220 contact-bank.php:232
+#: contact-bank.php:509 views/contact_frontend_data.php:5
+#: views/dashboard.php:236 views/dashboard.php:261 views/dashboard.php:297
+#: views/dashboard.php:320 views/dashboard.php:345 views/dashboard.php:381
+#: views/dashboard.php:404 views/dashboard.php:429 views/dashboard.php:465
+#: views/dashboard.php:488 views/dashboard.php:513 views/dashboard.php:549
+#: views/dashboard.php:572 views/dashboard.php:597 views/dashboard.php:633
 msgid "Form Entries"
 msgstr "Formulár Záznamami"
 
-#: contact-bank.php:79 contact-bank.php:480
+#: contact-bank.php:65 contact-bank.php:75 contact-bank.php:89
+#: contact-bank.php:102 contact-bank.php:112 contact-bank.php:126
+#: contact-bank.php:139 contact-bank.php:149 contact-bank.php:163
+#: contact-bank.php:176 contact-bank.php:186 contact-bank.php:200
+#: contact-bank.php:213 contact-bank.php:223 contact-bank.php:237
+#: contact-bank.php:541
 msgid "Documentation"
 msgstr "Dokumentáciu"
 
-#: contact-bank.php:489
+#: contact-bank.php:73 contact-bank.php:85 contact-bank.php:110
+#: contact-bank.php:122 contact-bank.php:147 contact-bank.php:159
+#: contact-bank.php:184 contact-bank.php:196 contact-bank.php:221
+#: contact-bank.php:233 contact-bank.php:515
+#: views/contact_email_settings.php:8 views/dashboard.php:256
+#: views/dashboard.php:292 views/dashboard.php:340 views/dashboard.php:376
+#: views/dashboard.php:424 views/dashboard.php:460 views/dashboard.php:508
+#: views/dashboard.php:544 views/dashboard.php:592 views/dashboard.php:628
+msgid "Email Settings"
+msgstr "E-mailu nastavenie"
+
+#: contact-bank.php:74 contact-bank.php:88 contact-bank.php:111
+#: contact-bank.php:125 contact-bank.php:148 contact-bank.php:162
+#: contact-bank.php:185 contact-bank.php:199 contact-bank.php:222
+#: contact-bank.php:236 contact-bank.php:534
+#: views/contact-bank-system-report.php:12
+#: views/contact-bank-system-report.php:17
+msgid "System Status"
+msgstr "stavu Systému"
+
+#: contact-bank.php:86 contact-bank.php:123 contact-bank.php:160
+#: contact-bank.php:197 contact-bank.php:234 contact-bank.php:521
+#: views/contact_bank_layout_settings.php:6 views/dashboard.php:287
+#: views/dashboard.php:371 views/dashboard.php:455 views/dashboard.php:539
+#: views/dashboard.php:623
+msgid "Global Settings"
+msgstr "Globálne-Nastavenie"
+
+#: contact-bank.php:87 contact-bank.php:124 contact-bank.php:161
+#: contact-bank.php:198 contact-bank.php:235
+msgid "Roles & Capabilites"
+msgstr "Roly a schopnosti"
+
+#: contact-bank.php:90 contact-bank.php:127 contact-bank.php:164
+#: contact-bank.php:201 contact-bank.php:238 contact-bank.php:547
+msgid "Licensing"
+msgstr "Licencovanie"
+
+#: contact-bank.php:527 views/contact-bank-roles_capability.php:9
+#: views/contact-bank-roles_capability.php:24
+msgid "Roles & Capabilities"
+msgstr "Roly a schopnosti"
+
+#: contact-bank.php:554
 msgid "Add Contact Bank Form"
 msgstr "Pridať kontakt  formulár"
 
-#: contact-bank.php:499
+#: contact-bank.php:566
 msgid "Insert Contact Bank Form"
 msgstr "vložit- Kontakt-  formulár"
 
-#: contact-bank.php:501
+#: contact-bank.php:568
 msgid "Select a form below to add it to your post or page."
 msgstr ""
 "Zvoľte formulár nižšie na pridajte ho do svojho príspevku alebo stránky."
 
-#: contact-bank.php:506
+#: contact-bank.php:573
+msgid "Form Name"
+msgstr "Formu-Meno"
+
+#: contact-bank.php:575
 msgid "Select a Form"
 msgstr "Vyberte formulár"
 
-#: contact-bank.php:524
-msgid "Can't find your form? Make sure it is active."
-msgstr "Nemožno nájsť tvoj formulár? Uistite sa, že je aktívny."
+#: contact-bank.php:595
+msgid "Show Form Title"
+msgstr "Ukáž formulár Názov"
 
-#: contact-bank.php:529
+#: contact-bank.php:600
+msgid "Insert Form"
+msgstr "Vložit Formu"
+
+#: contact-bank.php:603
 msgid "Cancel"
 msgstr "zrušiť"
 
-#: contact-bank.php:538
-msgid "Please select a form"
-msgstr "Prosím vyberte  formulár"
-
-#: includes/cb_checkbox.php:4
-msgid "Checkbox Control"
-msgstr " checkboxov ovládacieho prvku"
-
-#: includes/cb_checkbox.php:11 includes/cb_date.php:11
-#: includes/cb_dropdown.php:11 includes/cb_email.php:12
-#: includes/cb_file_upload.php:13 includes/cb_multiple.php:11
-#: includes/cb_password.php:12 includes/cb_text.php:11
-#: includes/cb_textarea.php:12 includes/cb_time.php:11
-msgid "Advanced"
-msgstr "pokročilý"
-
-#: includes/cb_checkbox.php:14 includes/cb_checkbox.php:43
-#: includes/cb_date.php:14 includes/cb_dropdown.php:14
-#: includes/cb_dropdown.php:43 includes/cb_email.php:15
-#: includes/cb_file_upload.php:16 includes/cb_multiple.php:14
-#: includes/cb_multiple.php:43 includes/cb_password.php:15
-#: includes/cb_text.php:14 includes/cb_textarea.php:15 includes/cb_time.php:14
-msgid "Options"
-msgstr "Voåby"
-
-#: includes/cb_checkbox.php:17 includes/cb_date.php:17
-#: includes/cb_dropdown.php:17 includes/cb_email.php:18
-#: includes/cb_file_upload.php:19 includes/cb_hidden.php:11
-#: includes/cb_multiple.php:17 includes/cb_password.php:18
-#: includes/cb_text.php:17 includes/cb_textarea.php:18 includes/cb_time.php:17
-#: views/contact_view.php:54 views/contact_view.php:67
-#: views/contact_view.php:80 views/contact_view.php:95
-#: views/contact_view.php:108 views/contact_view.php:122
-#: views/contact_view.php:132 views/contact_view.php:212
-#: views/contact_view.php:288 views/contact_view.php:301
-#: views/contact_view.php:314 views/edit_contact_view.php:92
-#: views/edit_contact_view.php:105 views/edit_contact_view.php:118
-#: views/edit_contact_view.php:133 views/edit_contact_view.php:146
-#: views/edit_contact_view.php:160 views/edit_contact_view.php:170
-#: views/edit_contact_view.php:250 views/edit_contact_view.php:326
-#: views/edit_contact_view.php:339 views/edit_contact_view.php:352
-msgid "Settings"
-msgstr "nastavenia"
-
-#: includes/cb_checkbox.php:23 includes/cb_checkbox.php:109
-#: includes/cb_date.php:23 includes/cb_date.php:163
-#: includes/cb_dropdown.php:23 includes/cb_dropdown.php:95
-#: includes/cb_email.php:24 includes/cb_email.php:95
-#: includes/cb_file_upload.php:25 includes/cb_file_upload.php:118
-#: includes/cb_hidden.php:17 includes/cb_multiple.php:23
-#: includes/cb_multiple.php:109 includes/cb_password.php:24
-#: includes/cb_password.php:94 includes/cb_text.php:23 includes/cb_text.php:97
-#: includes/cb_textarea.php:24 includes/cb_textarea.php:104
-#: includes/cb_time.php:23 includes/cb_time.php:205
-msgid "Label"
-msgstr "štítok"
-
-#: includes/cb_checkbox.php:25 includes/cb_checkbox.php:58
-#: includes/cb_dropdown.php:25 includes/cb_dropdown.php:58
-#: includes/cb_multiple.php:25 includes/cb_multiple.php:58
-#: includes/cb_text.php:25 includes/cb_text.php:60 includes/cb_textarea.php:26
-#: includes/cb_textarea.php:67 views/contact_view.php:50
-#: views/contact_view.php:63 views/contact_view.php:89
-#: views/contact_view.php:102 views/contact_view.php:116
-#: views/contact_view.php:942 views/contact_view.php:947
-#: views/contact_view.php:965 views/contact_view.php:970
-#: views/contact_view.php:1008 views/contact_view.php:1013
-#: views/contact_view.php:1025 views/contact_view.php:1030
-#: views/contact_view.php:1045 views/contact_view.php:1050
-#: views/edit_contact_view.php:88 views/edit_contact_view.php:101
-#: views/edit_contact_view.php:127 views/edit_contact_view.php:140
-#: views/edit_contact_view.php:154 views/edit_contact_view.php:1330
-#: views/edit_contact_view.php:1388 views/edit_contact_view.php:1520
-#: views/edit_contact_view.php:1576 views/edit_contact_view.php:1645
-#: views/edit_contact_view.php:2162 views/edit_contact_view.php:2167
-#: views/edit_contact_view.php:2185 views/edit_contact_view.php:2190
-#: views/edit_contact_view.php:2228 views/edit_contact_view.php:2233
-#: views/edit_contact_view.php:2245 views/edit_contact_view.php:2250
-#: views/edit_contact_view.php:2265 views/edit_contact_view.php:2270
-msgid "Untitled"
-msgstr "bez názvu"
-
-#: includes/cb_checkbox.php:25 includes/cb_date.php:25
-#: includes/cb_dropdown.php:25 includes/cb_email.php:26
-#: includes/cb_file_upload.php:27 includes/cb_hidden.php:19
-#: includes/cb_multiple.php:25 includes/cb_password.php:26
-#: includes/cb_text.php:25 includes/cb_time.php:25
-msgid "Enter Label"
-msgstr "zadajte štítok"
-
-#: includes/cb_checkbox.php:29 includes/cb_checkbox.php:31
-#: includes/cb_date.php:35 includes/cb_date.php:37 includes/cb_dropdown.php:29
-#: includes/cb_dropdown.php:31 includes/cb_email.php:36
-#: includes/cb_email.php:38 includes/cb_file_upload.php:37
-#: includes/cb_file_upload.php:39 includes/cb_multiple.php:29
-#: includes/cb_multiple.php:31 includes/cb_password.php:36
-#: includes/cb_password.php:38 includes/cb_text.php:35 includes/cb_text.php:37
-#: includes/cb_textarea.php:36 includes/cb_textarea.php:38
-#: includes/cb_time.php:35 includes/cb_time.php:37
-msgid "Required"
-msgstr "požadovaný"
-
-#: includes/cb_checkbox.php:32 includes/cb_date.php:38
-#: includes/cb_dropdown.php:32 includes/cb_email.php:39
-#: includes/cb_file_upload.php:40 includes/cb_multiple.php:32
-#: includes/cb_password.php:39 includes/cb_text.php:38
-#: includes/cb_textarea.php:39 includes/cb_time.php:38
-msgid "Not Required"
-msgstr "Nepožaduje"
-
-#: includes/cb_checkbox.php:36 includes/cb_date.php:42
-#: includes/cb_dropdown.php:36 includes/cb_email.php:43
-#: includes/cb_file_upload.php:44 includes/cb_multiple.php:36
-#: includes/cb_password.php:43 includes/cb_text.php:42 includes/cb_time.php:42
-msgid "Tooltip Text"
-msgstr "Špička nástroj textu"
-
-#: includes/cb_checkbox.php:38 includes/cb_date.php:44
-#: includes/cb_dropdown.php:38 includes/cb_email.php:45
-#: includes/cb_file_upload.php:46 includes/cb_password.php:45
-#: includes/cb_textarea.php:45 includes/cb_time.php:44
-msgid "Enter Tooltip"
-msgstr "vstúpiť Špička nástroj "
-
-#: includes/cb_checkbox.php:45
-msgid "Enter Options"
-msgstr "Zadajte Voåby"
-
-#: includes/cb_checkbox.php:45 includes/cb_dropdown.php:45
-#: includes/cb_multiple.php:45
-msgid "Add option"
-msgstr "Pridať možnosť"
-
-#: includes/cb_checkbox.php:56 includes/cb_dropdown.php:56
-#: includes/cb_file_upload.php:59 includes/cb_password.php:54
-#: includes/cb_time.php:53
-msgid "Admin Label"
-msgstr "Admin-štítok"
-
-#: includes/cb_checkbox.php:58 includes/cb_date.php:55
-#: includes/cb_dropdown.php:58 includes/cb_email.php:57
-#: includes/cb_file_upload.php:61 includes/cb_multiple.php:58
-#: includes/cb_password.php:56 includes/cb_time.php:55
-msgid "Enter Admin Label"
-msgstr "Zadajte Admin-štítok"
-
-#: includes/cb_checkbox.php:62 includes/cb_date.php:59
-#: includes/cb_dropdown.php:62 includes/cb_email.php:61
-#: includes/cb_file_upload.php:65 includes/cb_hidden.php:35
-#: includes/cb_multiple.php:62 includes/cb_password.php:60
-#: includes/cb_text.php:64 includes/cb_textarea.php:71 includes/cb_time.php:59
-msgid "Do not show in the email"
-msgstr "robiť nie zobraziť v e-maile"
-
-#: includes/cb_checkbox.php:72 includes/cb_date.php:119
-#: includes/cb_dropdown.php:72 includes/cb_email.php:72
-#: includes/cb_file_upload.php:102 includes/cb_multiple.php:72
-#: includes/cb_password.php:70 includes/cb_text.php:74
-#: includes/cb_textarea.php:81 includes/cb_time.php:161
-msgid "Label Style"
-msgstr "štítok Styl"
-
-#: includes/cb_checkbox.php:74 includes/cb_date.php:121
-#: includes/cb_dropdown.php:74 includes/cb_email.php:74
-#: includes/cb_file_upload.php:104 includes/cb_multiple.php:74
-#: includes/cb_password.php:72 includes/cb_text.php:76
-#: includes/cb_textarea.php:83 includes/cb_time.php:163
-msgid "Enter Label Style"
-msgstr "Vstúpiť Stítok Styl"
-
-#: includes/cb_checkbox.php:79 includes/cb_date.php:133
-#: includes/cb_email.php:86 includes/cb_file_upload.php:109
-#: includes/cb_multiple.php:79 includes/cb_password.php:85
-#: includes/cb_text.php:88 includes/cb_textarea.php:95
-#: includes/cb_time.php:175
-msgid "Description Style"
-msgstr "Popis Styl"
-
-#: includes/cb_checkbox.php:81 includes/cb_date.php:135
-#: includes/cb_email.php:88 includes/cb_file_upload.php:111
-#: includes/cb_multiple.php:81 includes/cb_password.php:87
-#: includes/cb_text.php:90 includes/cb_textarea.php:97
-#: includes/cb_time.php:177
-msgid "Enter Description Style"
-msgstr "Vstúpiť Popis Styl"
-
-#: includes/cb_checkbox.php:86 includes/cb_multiple.php:86
-msgid "Options Outer Wrapper Style"
-msgstr "Možnosti vonkajšie krycím listom Styl"
-
-#: includes/cb_checkbox.php:88 includes/cb_multiple.php:88
-msgid "Enter Options Outer Wrapper Style"
-msgstr "Zadajte -Voĺby vonkajšie  krycím listom Styl"
-
-#: includes/cb_checkbox.php:93
-msgid "Option Wrapper Style"
-msgstr "Možnosti obal Styl"
-
-#: includes/cb_checkbox.php:95
-msgid "Enter Option Wrapper Style"
-msgstr "Zadajte Možnosti obal Styl"
-
-#: includes/cb_checkbox.php:100
-msgid "Options Label Style"
-msgstr "Možnosti štítok Styl"
-
-#: includes/cb_checkbox.php:102
-msgid "Enter Options Label Style"
-msgstr "Zadajte Možnosti -štítok Styl"
-
-#: includes/cb_checkbox.php:107 includes/cb_date.php:161
-#: includes/cb_dropdown.php:93 includes/cb_email.php:93
-#: includes/cb_file_upload.php:116 includes/cb_multiple.php:107
-#: includes/cb_password.php:92 includes/cb_text.php:95
-#: includes/cb_textarea.php:102 includes/cb_time.php:203
-msgid "Add a Style to"
-msgstr "Přidat Styl do"
-
-#: includes/cb_checkbox.php:110 includes/cb_date.php:29
-#: includes/cb_date.php:165 includes/cb_dropdown.php:97
-#: includes/cb_email.php:30 includes/cb_email.php:97
-#: includes/cb_file_upload.php:31 includes/cb_file_upload.php:119
-#: includes/cb_multiple.php:110 includes/cb_password.php:30
-#: includes/cb_password.php:96 includes/cb_text.php:29 includes/cb_text.php:99
-#: includes/cb_textarea.php:30 includes/cb_textarea.php:106
-#: includes/cb_time.php:29 includes/cb_time.php:207
-msgid "Description"
-msgstr "popis"
-
-#: includes/cb_checkbox.php:111 includes/cb_multiple.php:111
-msgid "Options Outer Wrapper"
-msgstr "Možnosti -vonkajšie krycím listom"
-
-#: includes/cb_checkbox.php:112
-msgid "Options Wrapper"
-msgstr "Voĺby zabaliť"
-
-#: includes/cb_checkbox.php:113 includes/cb_multiple.php:113
-msgid "Options Label"
-msgstr "Voĺby- štítok"
-
-#: includes/cb_checkbox.php:123 includes/cb_date.php:178
-#: includes/cb_dropdown.php:107 includes/cb_email.php:117
-#: includes/cb_file_upload.php:129 includes/cb_hidden.php:47
-#: includes/cb_multiple.php:123 includes/cb_password.php:116
-#: includes/cb_text.php:119 includes/cb_textarea.php:126
-#: includes/cb_time.php:220
-msgid "Save Settings"
-msgstr "Uložiť Nastavenie"
-
-#: includes/cb_checkbox.php:233 includes/cb_dropdown.php:248
-#: includes/cb_multiple.php:234
-msgid "Please Fill an Option."
-msgstr "Prosím, vyplňte možnosť."
-
-#: includes/cb_date.php:4
-msgid "Date Control"
-msgstr "dátum ovládanie"
-
-#: includes/cb_date.php:25 includes/cb_date.php:55 views/contact_view.php:158
-#: views/contact_view.php:358 views/contact_view.php:1083
-#: views/contact_view.php:1087 views/edit_contact_view.php:196
-#: views/edit_contact_view.php:424 views/edit_contact_view.php:1759
-#: views/edit_contact_view.php:2303 views/edit_contact_view.php:2307
-msgid "Date"
-msgstr "Dátum"
-
-#: includes/cb_date.php:31 includes/cb_email.php:32
-#: includes/cb_file_upload.php:33 includes/cb_password.php:32
-#: includes/cb_text.php:31 includes/cb_time.php:31
-msgid "Enter Description"
-msgstr "Zadajte Popis"
-
-#: includes/cb_date.php:53 includes/cb_email.php:55 includes/cb_hidden.php:29
-#: includes/cb_multiple.php:56 includes/cb_text.php:58
-#: includes/cb_textarea.php:65
-msgid "Admin label"
-msgstr "admin-štítok"
-
-#: includes/cb_date.php:65
-msgid "Start year"
-msgstr "Začiatok roku"
-
-#: includes/cb_date.php:67
-msgid "Enter Start Year"
-msgstr "Zadajte štartovať Rok "
-
-#: includes/cb_date.php:71
-msgid "End year"
-msgstr "konci-rok "
-
-#: includes/cb_date.php:73
-msgid "Enter End Year "
-msgstr "Zadajte konci-rok"
-
-#: includes/cb_date.php:77 includes/cb_text.php:52 includes/cb_textarea.php:59
-#: includes/cb_time.php:87
-msgid "Default value"
-msgstr "predvolené hodnota"
-
-#: includes/cb_date.php:80 includes/cb_date.php:166 includes/cb_date.php:237
-#: includes/cb_date.php:309 views/contact_bank_frontend.php:697
-#: views/contact_view.php:162 views/edit_contact_view.php:200
-msgid "Day"
-msgstr "deň"
-
-#: includes/cb_date.php:84 includes/cb_date.php:167 includes/cb_date.php:252
-#: includes/cb_date.php:324 views/contact_bank_frontend.php:725
-#: views/contact_view.php:182 views/edit_contact_view.php:220
-msgid "Month"
-msgstr "mesiac"
-
-#: includes/cb_date.php:87 includes/cb_date.php:168 includes/cb_date.php:220
-#: includes/cb_date.php:286 includes/cb_date.php:346
-#: views/contact_bank_frontend.php:747 views/contact_view.php:197
-#: views/edit_contact_view.php:235 views/edit_contact_view.php:1783
-#: views/edit_contact_view.php:1797
-msgid "Year"
-msgstr "rok"
-
-#: includes/cb_date.php:92
-msgid "Error message if invalid date"
-msgstr "Chybové hlásenie keby neplatnej dátum"
-
-#: includes/cb_date.php:94
-msgid "Enter Error Message"
-msgstr "Zadajte chybové hlásenie"
-
-#: includes/cb_date.php:98
-msgid "Date format"
-msgstr "formát dátumu"
-
-#: includes/cb_date.php:126 includes/cb_email.php:79 includes/cb_text.php:81
-#: includes/cb_textarea.php:88 includes/cb_time.php:168
-msgid "Text Input Style"
-msgstr "Textu Vstupné Styl"
-
-#: includes/cb_date.php:128 includes/cb_email.php:81 includes/cb_text.php:83
-#: includes/cb_textarea.php:90 includes/cb_time.php:170
-msgid "Enter Text Input Style"
-msgstr "Zadajte -Textu Vstupné Styl"
-
-#: includes/cb_date.php:140
-msgid "Day Style"
-msgstr "deň Styl"
-
-#: includes/cb_date.php:142
-msgid "Enter Day Style"
-msgstr "Zadajte deň Styl"
-
-#: includes/cb_date.php:147
-msgid "Month Style"
-msgstr "Mesiac- Styl"
-
-#: includes/cb_date.php:149
-msgid "Enter Month Style"
-msgstr "Zadajte -Mesiac- Styl"
-
-#: includes/cb_date.php:154
-msgid "Year Style"
-msgstr "Rok- Styl"
-
-#: includes/cb_date.php:156
-msgid "Enter Year Style"
-msgstr "Zadajte -Rok Styl"
-
-#: includes/cb_date.php:164 includes/cb_email.php:96
-#: includes/cb_password.php:95 includes/cb_text.php:98
-#: includes/cb_textarea.php:105 includes/cb_time.php:206
-msgid "Text Input"
-msgstr "textu vstup"
-
-#: includes/cb_dropdown.php:4
-msgid "Dropdown Control"
-msgstr "rozbaľovacom ovládanie"
-
-#: includes/cb_dropdown.php:45 includes/cb_multiple.php:45
-msgid "Enter Option"
-msgstr "Zadajte Možnosť"
-
-#: includes/cb_dropdown.php:79
-msgid "Dropdown Style"
-msgstr "Rozbaľovací Styl"
-
-#: includes/cb_dropdown.php:81
-msgid "Enter Dropdown Style"
-msgstr "Zadajte- Rozbaľovací-Styl"
-
-#: includes/cb_dropdown.php:86
-msgid "Css Description"
-msgstr "CSS Popis"
-
-#: includes/cb_dropdown.php:88
-msgid "Enter Css Description"
-msgstr "vstúpiť CSS Popis:"
-
-#: includes/cb_dropdown.php:96
-msgid "Dropdown"
-msgstr "Rozbaľovací"
-
-#: includes/cb_dropdown.php:294 views/contact_bank_frontend.php:398
-#: views/contact_bank_frontend.php:412 views/contact_view.php:93
-#: views/edit_contact_view.php:131
-msgid "Select option"
-msgstr "Vyberte Možnosť"
-
-#: includes/cb_email.php:4
-msgid "Email Control"
-msgstr "Email ovládanie"
-
-#: includes/cb_email.php:26 includes/cb_email.php:57
-#: views/contact_email.php:72 views/contact_email.php:138
-#: views/contact_view.php:76 views/contact_view.php:987
-#: views/contact_view.php:991 views/edit_contact_view.php:114
-#: views/edit_contact_view.php:1451 views/edit_contact_view.php:2207
-#: views/edit_contact_view.php:2211
-msgid "Email"
-msgstr "Email"
-
-#: includes/cb_email.php:101 includes/cb_password.php:100
-#: includes/cb_text.php:103 includes/cb_textarea.php:110
-msgid "Add a filter"
-msgstr "Pridať filtr"
-
-#: includes/cb_email.php:103 includes/cb_password.php:102
-#: includes/cb_text.php:105 includes/cb_textarea.php:112
-msgid "Alpha"
-msgstr "abecedný"
-
-#: includes/cb_email.php:104 includes/cb_password.php:103
-#: includes/cb_text.php:106 includes/cb_textarea.php:113
-msgid "Alpha Numeric"
-msgstr "abecedný numerická"
-
-#: includes/cb_email.php:105 includes/cb_password.php:104
-#: includes/cb_text.php:107 includes/cb_textarea.php:114
-msgid "Digits"
-msgstr "číslice"
-
-#: includes/cb_email.php:106 includes/cb_password.php:105
-#: includes/cb_text.php:108 includes/cb_textarea.php:115
-msgid "Strip Tags"
-msgstr "odstrániť tagy"
-
-#: includes/cb_email.php:107 includes/cb_password.php:106
-#: includes/cb_text.php:109 includes/cb_textarea.php:116
-msgid "Trim"
-msgstr "pristrihnúť"
-
-#: includes/cb_file_upload.php:5
-msgid "Fileupload Control"
-msgstr "súbor-načítať ovládanie"
-
-#: includes/cb_file_upload.php:27 includes/cb_file_upload.php:61
-#: views/contact_view.php:129 views/contact_view.php:355
-#: views/contact_view.php:1064 views/contact_view.php:1068
-#: views/edit_contact_view.php:167 views/edit_contact_view.php:421
-#: views/edit_contact_view.php:1712 views/edit_contact_view.php:2284
-#: views/edit_contact_view.php:2288
-msgid "File Upload"
-msgstr "súbor-načítať"
-
-#: includes/cb_file_upload.php:71
-msgid "Allow Multiple Uploads"
-msgstr "Povoliť násobok, nahor-načítať"
-
-#: includes/cb_file_upload.php:77
-msgid "Allowed File Extensions"
-msgstr "Povolené prípony súborov"
-
-#: includes/cb_file_upload.php:79
-msgid "Enter File Extensions"
-msgstr "Zadajte prípony súborov"
-
-#: includes/cb_file_upload.php:81
-msgid "The file extensions must be seperated with semicolons(' ; ')"
-msgstr "Prípony súborov musia byť oddelené bodkočiarkou (\";\")"
-
-#: includes/cb_file_upload.php:85
-msgid "Allowed File Size"
-msgstr "povolená veľkosť súboru"
-
-#: includes/cb_file_upload.php:89
-msgid "File Size must be in Kb"
-msgstr "súbor Veľkosť musí, byť v Kb"
-
-#: includes/cb_hidden.php:4
-msgid "Hidden Control"
-msgstr "hidden kontrolu"
-
-#: includes/cb_hidden.php:19 includes/cb_hidden.php:31
-#: views/edit_contact_view.php:1955
-msgid "Untitled(hidden)"
-msgstr "Untitled(hidden)"
-
-#: includes/cb_hidden.php:23
-msgid "Default Value"
-msgstr "predvolené hodnota"
-
-#: includes/cb_hidden.php:25 includes/cb_text.php:54
-msgid "Enter Default Value"
-msgstr "Zadajte predvolené hodnota"
-
-#: includes/cb_hidden.php:31 includes/cb_text.php:60
-#: includes/cb_textarea.php:67
-msgid "Enter Admin label"
-msgstr "Zadajte admin štítok"
-
-#: includes/cb_multiple.php:4
-msgid "Radio Buttons"
-msgstr "rádio tlačidlá"
-
-#: includes/cb_multiple.php:38 includes/cb_text.php:44
-msgid "Enter Tooltip Text"
-msgstr "zadajte Špička-nástroj  texte"
-
-#: includes/cb_multiple.php:93
-msgid "Options Wrapper Style"
-msgstr "Možnosti obal Styl"
-
-#: includes/cb_multiple.php:95
-msgid "Enter Options Wrapper Style"
-msgstr "Zadajte- Voĺby obal Styl"
-
-#: includes/cb_multiple.php:100
-msgid "Option Label Style"
-msgstr "Možnosť -Etiketa Styl"
-
-#: includes/cb_multiple.php:102
-msgid "Enter Option Label Style"
-msgstr "Zadajte Možnosť -Etiketa Styl"
-
-#: includes/cb_multiple.php:112
-msgid "Options  Wrapper"
-msgstr "Voĺby obal"
-
-#: includes/cb_password.php:4
-msgid "Password Control"
-msgstr "heslo kontrolu"
-
-#: includes/cb_password.php:26 includes/cb_password.php:56
-#: views/contact_view.php:310 views/contact_view.php:367
-#: views/contact_view.php:1144 views/contact_view.php:1148
-#: views/edit_contact_view.php:348 views/edit_contact_view.php:433
-#: views/edit_contact_view.php:1965 views/edit_contact_view.php:2364
-#: views/edit_contact_view.php:2368
-msgid "Password"
-msgstr "heslo"
-
-#: includes/cb_password.php:78
-msgid "Input Text Style"
-msgstr "Vstupné- Textu Styl"
-
-#: includes/cb_password.php:80
-msgid "Enter Input Text Style"
-msgstr "Zadajte Vstupné- Textu Styl"
-
-#: includes/cb_text.php:4
-msgid "Textbox Control"
-msgstr "textové pole kontrolu"
-
-#: includes/cb_textarea.php:4
-msgid "Textarea Control"
-msgstr "texte oblasť kontrolu"
-
-#: includes/cb_textarea.php:26
-msgid "Enter label"
-msgstr "Zadajte,štítok"
-
-#: includes/cb_textarea.php:32
-msgid "Enter  Description"
-msgstr "Zadajte Popis"
-
-#: includes/cb_textarea.php:43
-msgid "Tooltip text"
-msgstr "Špička nástroj  texte"
-
-#: includes/cb_textarea.php:61
-msgid "Enter Default value"
-msgstr "Zadajte predvolené hodnotu"
-
-#: includes/cb_time.php:4
-msgid "Time Control"
-msgstr "čas kontrolu"
-
-#: includes/cb_time.php:25 includes/cb_time.php:55 views/contact_view.php:221
-#: views/contact_view.php:361 views/contact_view.php:1109
-#: views/contact_view.php:1113 views/edit_contact_view.php:259
-#: views/edit_contact_view.php:427 views/edit_contact_view.php:1852
-#: views/edit_contact_view.php:2329 views/edit_contact_view.php:2333
-msgid "Time"
-msgstr "čas"
-
-#: includes/cb_time.php:65
-msgid "12/24 hour time"
-msgstr "12/24 hodinový čas"
-
-#: includes/cb_time.php:74
-msgid "Time format"
-msgstr "formát času"
-
-#: includes/cb_time.php:90 includes/cb_time.php:110 includes/cb_time.php:208
-#: views/contact_bank_frontend.php:855 views/contact_bank_frontend.php:881
-#: views/contact_bank_frontend.php:907 views/contact_view.php:225
-#: views/contact_view.php:245 views/edit_contact_view.php:263
-#: views/edit_contact_view.php:283
-msgid "Hour"
-msgstr "hodina"
-
-#: includes/cb_time.php:130 includes/cb_time.php:209 includes/cb_time.php:360
-#: views/contact_bank_frontend.php:931 views/contact_view.php:265
-#: views/edit_contact_view.php:303 views/edit_contact_view.php:1869
-msgid "Minute"
-msgstr "minúta"
-
-#: includes/cb_time.php:182
-msgid "Hour Style"
-msgstr "hodina -Styl"
-
-#: includes/cb_time.php:184
-msgid "Enter Hour Style"
-msgstr "Zadajte hodin -Styl"
-
-#: includes/cb_time.php:189
-msgid "Minute Style"
-msgstr "Minúta- Styl"
-
-#: includes/cb_time.php:191
-msgid "Enter Minute Style"
-msgstr "Zadajte Minúta- Styl"
-
-#: includes/cb_time.php:196
-msgid "AM/PM Style"
-msgstr " AM / PM Styl"
-
-#: includes/cb_time.php:198
-msgid "Enter AM/PM Style"
-msgstr "Zadajte- AM / PM Styl"
-
-#: includes/cb_time.php:210
-msgid "AM/PM"
-msgstr "AM/PM"
-
-#: views/contact_bank_frontend.php:165
-msgid "Enter Text"
-msgstr "vstúpiť textu"
-
-#: views/contact_bank_frontend.php:354 views/contact_email.php:84
-#: views/contact_email.php:144
-msgid "Enter Email Address"
-msgstr "Zadajte emailovú adresu"
-
-#: views/contact_bank_frontend.php:986
-msgid "Enter Hidden Text"
-msgstr "Zadajte skrytý textu"
-
-#: views/contact_bank_frontend.php:986 views/contact_view.php:300
-#: views/contact_view.php:364 views/edit_contact_view.php:338
-#: views/edit_contact_view.php:430
-msgid "Hidden"
-msgstr "skrytý"
-
-#: views/contact_bank_frontend.php:1074
-msgid "Enter Password"
-msgstr "Zadajte heslo"
-
-#: views/contact_bank_frontend.php:1085
-msgid "Submit Form"
-msgstr "Odoslať formulár"
-
-#: views/contact_email.php:9 views/contact_frontend_data.php:8
-#: views/contact_view.php:9 views/edit_contact_view.php:29
-msgid "Back to Dashboard"
-msgstr "Späť na prístrojovej doske"
-
-#: views/contact_email.php:13
-msgid "Email Settings Saved. Kindly wait for the redirect."
-msgstr "nastavenia e-mailu Uložiť. Láskavo počkajte na presmerovanie."
-
-#: views/contact_email.php:18 views/contact_email.php:49
+#: contact-bank.php:615
+msgid "Please choose a Form to insert into Shortcode"
+msgstr "Vyberte si prosím formulár pre Vloženia do krátky Kód"
+
+#: contact-bank.php:719
+msgid "Select Form :"
+msgstr "Vyberte formuñár:"
+
+#: contact-bank.php:721 views/contact_bank_layout_settings.php:20
+#: views/contact_bank_layout_settings.php:33
+#: views/contact_email_settings.php:15 views/contact_email_settings.php:28
 #: views/contact_frontend_data.php:19 views/contact_frontend_data.php:32
 msgid "Select Form"
 msgstr "vybrať formulár"
 
-#: views/contact_email.php:65
-msgid "Admin Email"
-msgstr "správca Email"
+#: frontend_views/contact_bank_forms.php:364
+#: views/contact_bank_form_preview.php:373 views/contact_controls_files.php:56
+msgid "Select Option"
+msgstr "Vyberte - Možnosť"
 
-#: views/contact_email.php:76
-msgid "To"
-msgstr "na"
+#: frontend_views/contact_bank_forms.php:535 includes/cb_date.php:156
+#: views/contact_bank_form_preview.php:544
+#: views/contact_controls_files.php:187
+msgid "Day"
+msgstr "deň"
 
-#: views/contact_email.php:78
-msgid "Enter Admin Email"
-msgstr "Zadajte správca Email"
+#: frontend_views/contact_bank_forms.php:572
+#: views/contact_bank_form_preview.php:580
+msgid "Select Month"
+msgstr "Vyberte -Mesiac"
 
-#: views/contact_email.php:82 views/contact_email.php:142
-msgid "From"
-msgstr "od"
+#: frontend_views/contact_bank_forms.php:589 includes/cb_date.php:212
+#: views/contact_bank_form_preview.php:596
+#: views/contact_controls_files.php:222
+msgid "Year"
+msgstr "rok"
 
-#: views/contact_email.php:89 views/contact_email.php:148
-msgid "Subject"
-msgstr "Predmet"
+#: frontend_views/contact_bank_forms.php:603 includes/cb_time.php:185
+#: views/contact_bank_form_preview.php:609
+#: views/contact_controls_files.php:249
+msgid "Hour"
+msgstr "hodina"
 
-#: views/contact_email.php:91 views/contact_email.php:150
-msgid "Enter Subject"
-msgstr "vstúpiť predmet"
+#: frontend_views/contact_bank_forms.php:607 includes/cb_time.php:188
+#: views/contact_bank_form_preview.php:613
+#: views/contact_controls_files.php:252
+msgid "Minute"
+msgstr "minúta"
 
-#: views/contact_email.php:100 views/contact_email.php:160
-msgid "Email Content"
-msgstr "Email Obsah"
+#: includes/cb_address.php:36 views/contact_controls_files.php:167
+#: views/contact_view.php:430
+msgid "Address"
+msgstr "adresy"
 
-#: views/contact_email.php:115 views/contact_email.php:175
-msgid "Short Code Controls for Email"
-msgstr "krátky Kód Ovládacie prvky pre E-mail"
+#: includes/cb_address.php:40 includes/cb_checkbox.php:40
+#: includes/cb_date.php:40 includes/cb_dropdown.php:40
+#: includes/cb_email.php:40 includes/cb_file_upload.php:41
+#: includes/cb_multiple.php:40 includes/cb_name.php:40
+#: includes/cb_number.php:40 includes/cb_password.php:40
+#: includes/cb_phone.php:40 includes/cb_text.php:40
+#: includes/cb_textarea.php:40 includes/cb_time.php:41 includes/cb_url.php:40
+msgid "Label"
+msgstr "štítok"
 
-#: views/contact_email.php:129
-msgid "Client Email"
-msgstr "Klient-emailový "
+#: includes/cb_address.php:42 includes/cb_address.php:115
+#: includes/cb_checkbox.php:42 includes/cb_checkbox.php:144
+#: includes/cb_dropdown.php:42 includes/cb_dropdown.php:144
+#: includes/cb_email.php:43 includes/cb_email.php:133
+#: includes/cb_multiple.php:44 includes/cb_multiple.php:164
+#: includes/cb_name.php:42 includes/cb_name.php:115 includes/cb_number.php:43
+#: includes/cb_number.php:131 includes/cb_password.php:124
+#: includes/cb_phone.php:43 includes/cb_phone.php:131 includes/cb_text.php:43
+#: includes/cb_text.php:132 includes/cb_textarea.php:42
+#: includes/cb_textarea.php:130 includes/cb_time.php:124
+#: includes/cb_url.php:43 includes/cb_url.php:132
+#: views/contact_controls_files.php:3 views/contact_controls_files.php:19
+#: views/contact_controls_files.php:52 views/contact_controls_files.php:68
+#: views/contact_controls_files.php:85
+msgid "Untitled"
+msgstr "bez názvu"
 
-#: views/contact_email.php:183 views/contact_view.php:326
-#: views/edit_contact_view.php:393
-msgid "Save"
-msgstr "uložiť"
+#: includes/cb_address.php:42 includes/cb_date.php:42
+#: includes/cb_dropdown.php:42 includes/cb_email.php:44
+#: includes/cb_file_upload.php:44 includes/cb_multiple.php:45
+#: includes/cb_name.php:42 includes/cb_number.php:44
+#: includes/cb_password.php:44 includes/cb_phone.php:44
+#: includes/cb_text.php:44 includes/cb_time.php:45 includes/cb_url.php:44
+msgid "Enter Label"
+msgstr "zadajte štítok"
 
-#: views/contact_frontend_data.php:14 views/contact_view.php:20
-#: views/dashboard.php:15 views/dashboard.php:21
-msgid "Form"
-msgstr "forma"
+#: includes/cb_address.php:46 includes/cb_date.php:46 includes/cb_email.php:49
+#: includes/cb_file_upload.php:50 includes/cb_name.php:46
+#: includes/cb_number.php:48 includes/cb_password.php:48
+#: includes/cb_phone.php:48 includes/cb_text.php:48
+#: includes/cb_textarea.php:48 includes/cb_time.php:49 includes/cb_url.php:48
+msgid "Description"
+msgstr "popis"
 
-#: views/contact_view.php:13
-msgid "Form Submited. Kindly wait for the redirect."
-msgstr "Forma Uložiť. Láskavo počkajte na presmerovanie."
+#: includes/cb_address.php:48 includes/cb_date.php:48 includes/cb_email.php:52
+#: includes/cb_file_upload.php:53 includes/cb_name.php:48
+#: includes/cb_number.php:51 includes/cb_password.php:50
+#: includes/cb_phone.php:51 includes/cb_text.php:51 includes/cb_time.php:52
+#: includes/cb_url.php:51
+msgid "Enter Description"
+msgstr "Zadajte Popis"
 
-#: views/contact_view.php:24 views/edit_contact_view.php:44
-msgid "Form Name :"
-msgstr "Názov formulára:"
+#: includes/cb_address.php:52 includes/cb_address.php:62
+#: includes/cb_address.php:75 includes/cb_address.php:89
+#: includes/cb_checkbox.php:46 includes/cb_checkbox.php:56
+#: includes/cb_checkbox.php:69 includes/cb_checkbox.php:83
+#: includes/cb_date.php:52 includes/cb_date.php:62 includes/cb_date.php:75
+#: includes/cb_date.php:89 includes/cb_dropdown.php:46
+#: includes/cb_dropdown.php:56 includes/cb_dropdown.php:69
+#: includes/cb_dropdown.php:83 includes/cb_email.php:57
+#: includes/cb_email.php:68 includes/cb_email.php:83 includes/cb_email.php:99
+#: includes/cb_multiple.php:49 includes/cb_multiple.php:60
+#: includes/cb_multiple.php:75 includes/cb_multiple.php:91
+#: includes/cb_name.php:52 includes/cb_name.php:62 includes/cb_name.php:75
+#: includes/cb_name.php:89 includes/cb_number.php:56 includes/cb_number.php:67
+#: includes/cb_number.php:82 includes/cb_number.php:98
+#: includes/cb_password.php:55 includes/cb_password.php:66
+#: includes/cb_password.php:81 includes/cb_password.php:97
+#: includes/cb_phone.php:56 includes/cb_phone.php:67 includes/cb_phone.php:82
+#: includes/cb_phone.php:98 includes/cb_text.php:56 includes/cb_text.php:67
+#: includes/cb_text.php:82 includes/cb_text.php:98 includes/cb_textarea.php:56
+#: includes/cb_textarea.php:67 includes/cb_textarea.php:82
+#: includes/cb_textarea.php:98 includes/cb_time.php:57 includes/cb_time.php:68
+#: includes/cb_time.php:83 includes/cb_time.php:99 includes/cb_url.php:56
+#: includes/cb_url.php:67 includes/cb_url.php:82 includes/cb_url.php:98
+msgid "Required"
+msgstr "požadovaný"
 
-#: views/contact_view.php:27 views/edit_contact_view.php:47
-msgid "Enter Form Name"
-msgstr "Zadajte formulár Meno"
+#: includes/cb_address.php:66 includes/cb_address.php:79
+#: includes/cb_address.php:93 includes/cb_checkbox.php:60
+#: includes/cb_checkbox.php:73 includes/cb_checkbox.php:87
+#: includes/cb_date.php:66 includes/cb_date.php:79 includes/cb_date.php:93
+#: includes/cb_dropdown.php:60 includes/cb_dropdown.php:73
+#: includes/cb_dropdown.php:87 includes/cb_email.php:73
+#: includes/cb_email.php:88 includes/cb_email.php:104
+#: includes/cb_multiple.php:65 includes/cb_multiple.php:80
+#: includes/cb_multiple.php:96 includes/cb_name.php:66 includes/cb_name.php:79
+#: includes/cb_name.php:93 includes/cb_number.php:72 includes/cb_number.php:87
+#: includes/cb_number.php:103 includes/cb_password.php:71
+#: includes/cb_password.php:86 includes/cb_password.php:102
+#: includes/cb_phone.php:72 includes/cb_phone.php:87 includes/cb_phone.php:103
+#: includes/cb_text.php:72 includes/cb_text.php:87 includes/cb_text.php:103
+#: includes/cb_textarea.php:72 includes/cb_textarea.php:87
+#: includes/cb_textarea.php:103 includes/cb_time.php:73
+#: includes/cb_time.php:88 includes/cb_time.php:104 includes/cb_url.php:72
+#: includes/cb_url.php:87 includes/cb_url.php:103
+msgid "Not Required"
+msgstr "Nepožaduje"
 
-#: views/contact_view.php:31 views/edit_contact_view.php:51
-msgid "Success Message :"
-msgstr "Úspech Správa:"
+#: includes/cb_address.php:101 includes/cb_checkbox.php:95
+#: includes/cb_date.php:101 includes/cb_dropdown.php:95
+#: includes/cb_email.php:112 includes/cb_file_upload.php:58
+#: includes/cb_multiple.php:104 includes/cb_name.php:101
+#: includes/cb_number.php:111 includes/cb_password.php:110
+#: includes/cb_phone.php:111 includes/cb_text.php:111 includes/cb_time.php:112
+#: includes/cb_url.php:111
+msgid "Tooltip Text"
+msgstr "Špička nástroj textu"
 
-#: views/contact_view.php:33 views/edit_contact_view.php:53
-msgid "Enter Success Message"
-msgstr "Zadajte- Správu o úspechu"
+#: includes/cb_address.php:103 includes/cb_multiple.php:108
+#: includes/cb_name.php:103 includes/cb_number.php:115
+#: includes/cb_phone.php:115 includes/cb_text.php:114 includes/cb_url.php:114
+msgid "Enter Tooltip Text"
+msgstr "zadajte Špička-nástroj  texte"
 
-#: views/contact_view.php:37 views/edit_contact_view.php:61
-#: views/edit_contact_view.php:71
-msgid "Redirect URL :"
-msgstr "Presmerovanie URL:"
+#: includes/cb_address.php:107 includes/cb_email.php:121
+#: includes/cb_name.php:107 includes/cb_number.php:119
+#: includes/cb_phone.php:119 includes/cb_text.php:120
+#: includes/cb_textarea.php:120 includes/cb_url.php:120
+#: includes/cb_url.php:123
+msgid "Place Holder"
+msgstr "Miesto -Držák"
 
-#: views/contact_view.php:43 views/edit_contact_view.php:81
-msgid "URL :"
-msgstr "URL :"
+#: includes/cb_address.php:109 includes/cb_email.php:124
+#: includes/cb_name.php:109 includes/cb_number.php:124
+#: includes/cb_phone.php:123 includes/cb_text.php:123
+#: includes/cb_textarea.php:122
+msgid "Enter Place Holder"
+msgstr "Zadajte -Miesto Držák"
 
-#: views/contact_view.php:45 views/edit_contact_view.php:83
-msgid "Enter Redirect URL"
-msgstr "vstúpiť Presmerovanie URL"
+#: includes/cb_address.php:113 includes/cb_checkbox.php:142
+#: includes/cb_date.php:107 includes/cb_dropdown.php:142
+#: includes/cb_email.php:130 includes/cb_file_upload.php:67
+#: includes/cb_multiple.php:160 includes/cb_name.php:113
+#: includes/cb_number.php:128 includes/cb_password.php:120
+#: includes/cb_phone.php:128 includes/cb_text.php:129
+#: includes/cb_textarea.php:128 includes/cb_time.php:121
+#: includes/cb_url.php:129
+msgid "Admin Label"
+msgstr "admin-štítok"
 
-#: views/contact_view.php:297 views/edit_contact_view.php:335
-msgid "Untitled (hidden)"
-msgstr "bez názvu(skrytý)"
+#: includes/cb_address.php:115 includes/cb_checkbox.php:144
+#: includes/cb_date.php:109 includes/cb_dropdown.php:144
+#: includes/cb_email.php:134 includes/cb_file_upload.php:71
+#: includes/cb_multiple.php:163 includes/cb_name.php:115
+#: includes/cb_number.php:130 includes/cb_password.php:123
+#: includes/cb_phone.php:130 includes/cb_text.php:131
+#: includes/cb_textarea.php:131 includes/cb_time.php:125
+#: includes/cb_url.php:131
+msgid "Enter Admin Label"
+msgstr "Zadajte admin štítok"
 
-#: views/contact_view.php:332 views/edit_contact_view.php:399
-msgid "Control Buttons"
-msgstr "ovládacie tlačidlá"
+#: includes/cb_address.php:119 includes/cb_checkbox.php:148
+#: includes/cb_date.php:113 includes/cb_dropdown.php:148
+#: includes/cb_email.php:139 includes/cb_file_upload.php:75
+#: includes/cb_multiple.php:168 includes/cb_name.php:119
+#: includes/cb_number.php:136 includes/cb_password.php:128
+#: includes/cb_phone.php:136 includes/cb_text.php:137
+#: includes/cb_textarea.php:135 includes/cb_time.php:129
+#: includes/cb_url.php:138
+msgid "Do not show in the email"
+msgstr "robiť nie zobraziť v e-maile"
 
-#: views/contact_view.php:337 views/edit_contact_view.php:403
-msgid "Text Box"
-msgstr "textu pole"
+#: includes/cb_address.php:150 includes/cb_checkbox.php:179
+#: includes/cb_date.php:237 includes/cb_dropdown.php:179
+#: includes/cb_email.php:173 includes/cb_file_upload.php:161
+#: includes/cb_multiple.php:202 includes/cb_name.php:150
+#: includes/cb_number.php:170 includes/cb_password.php:305
+#: includes/cb_phone.php:170 includes/cb_text.php:315
+#: includes/cb_textarea.php:312 includes/cb_time.php:200
+#: includes/cb_url.php:172
+msgid "Save Settings"
+msgstr "Uložiť Nastavenie"
 
-#: views/contact_view.php:340 views/edit_contact_view.php:406
-msgid "Text Area"
-msgstr "textu plocha"
+#: includes/cb_checkbox.php:36
+msgid "Check Boxes"
+msgstr "Zistite-Boxmi"
 
-#: views/contact_view.php:343 views/edit_contact_view.php:409
+#: includes/cb_checkbox.php:97 includes/cb_date.php:103
+#: includes/cb_dropdown.php:97 includes/cb_email.php:115
+#: includes/cb_file_upload.php:62 includes/cb_password.php:113
+#: includes/cb_textarea.php:113 includes/cb_time.php:115
+msgid "Enter Tooltip"
+msgstr "vstúpiť Špička nástroj "
+
+#: includes/cb_checkbox.php:101 includes/cb_dropdown.php:101
+#: includes/cb_multiple.php:113
+msgid "Options"
+msgstr "Voåby"
+
+#: includes/cb_checkbox.php:103
+msgid "Enter Options"
+msgstr "Zadajte Voåby"
+
+#: includes/cb_checkbox.php:104 includes/cb_dropdown.php:104
+#: includes/cb_multiple.php:119
+msgid "Add"
+msgstr "Pridať"
+
+#: includes/cb_checkbox.php:135 includes/cb_dropdown.php:135
+#: includes/cb_multiple.php:153
+msgid "Delete"
+msgstr "zmazať"
+
+#: includes/cb_checkbox.php:228 includes/cb_dropdown.php:220
+#: includes/cb_multiple.php:252
+msgid "Please Fill an Option."
+msgstr "Prosím, vyplňte možnosť."
+
+#: includes/cb_date.php:36 includes/cb_date.php:42 includes/cb_date.php:109
+#: views/contact_controls_files.php:183 views/contact_view.php:443
+msgid "Date"
+msgstr "Dátum"
+
+#: includes/cb_date.php:141
+msgid "Start Year"
+msgstr "štart-roka"
+
+#: includes/cb_date.php:143
+msgid "Enter Start Year"
+msgstr "Zadajte štartovať Rok "
+
+#: includes/cb_date.php:147
+msgid "End Year"
+msgstr "Konec -rok"
+
+#: includes/cb_date.php:149
+msgid "Enter End Year "
+msgstr "Zadajte konci-rok"
+
+#: includes/cb_date.php:153 includes/cb_time.php:182
+msgid "Default Value"
+msgstr "predvolené hodnota"
+
+#: includes/cb_date.php:197 views/contact_controls_files.php:207
+msgid "Month"
+msgstr "mesiac"
+
+#: includes/cb_date.php:217
+msgid "Date Format"
+msgstr "Formát Dátumu"
+
+#: includes/cb_dropdown.php:36 views/contact_view.php:396
+msgid "Select Box"
+msgstr "zvoľte rámček"
+
+#: includes/cb_dropdown.php:103 includes/cb_multiple.php:116
+msgid "Enter Option"
+msgstr "Zadajte Možnosť"
+
+#: includes/cb_email.php:36 views/contact_view.php:393
 msgid "Email Address"
 msgstr "Emailová adresa"
 
-#: views/contact_view.php:346 views/edit_contact_view.php:412
-msgid "Dropdown Menu"
-msgstr "rozbaľovacie jedálny lístok"
+#: includes/cb_file_upload.php:37 includes/cb_file_upload.php:45
+#: includes/cb_file_upload.php:70 views/contact_controls_files.php:134
+#: views/contact_view.php:438
+msgid "File Upload"
+msgstr "súbor-načítať"
 
-#: views/contact_view.php:349 views/edit_contact_view.php:415
+#: includes/cb_file_upload.php:106
+msgid "Allow Multiple Uploads"
+msgstr "Povoliť násobok, nahor-načítať"
+
+#: includes/cb_file_upload.php:137
+msgid "Allowed File Extensions"
+msgstr "Povolené prípony súborov"
+
+#: includes/cb_file_upload.php:140
+msgid "Enter File Extensions"
+msgstr "Zadajte prípony súborov"
+
+#: includes/cb_file_upload.php:144
+msgid "The file extensions must be separated with semicolons(',')"
+msgstr "Prípony súborov musí byť oddelená čiarkou (\",\"),"
+
+#: includes/cb_file_upload.php:148
+msgid "Allowed File Size"
+msgstr "povolená veľkosť súboru"
+
+#: includes/cb_file_upload.php:154
+msgid "File Size must be in Mb"
+msgstr "Veľkosť súboru musí byť v v Mb"
+
+#: includes/cb_multiple.php:36 views/contact_view.php:404
+msgid "Radio Buttons"
+msgstr "rádio tlačidlá"
+
+#: includes/cb_name.php:36 views/add_contact_email.php:94
+#: views/contact_controls_files.php:118 views/contact_view.php:419
+msgid "Name"
+msgstr "Názov"
+
+#: includes/cb_number.php:36 views/contact_controls_files.php:102
+#: views/contact_view.php:435
+msgid "Number"
+msgstr "číslo"
+
+#: includes/cb_password.php:36 includes/cb_password.php:43
+#: views/contact_controls_files.php:270 views/contact_view.php:451
+msgid "Password"
+msgstr "heslo"
+
+#: includes/cb_password.php:159 includes/cb_text.php:168
+#: includes/cb_textarea.php:166
+msgid "Add a filter"
+msgstr "Pridať filtr"
+
+#: includes/cb_password.php:169 includes/cb_password.php:177
+#: includes/cb_password.php:186 includes/cb_text.php:179
+#: includes/cb_text.php:187 includes/cb_text.php:196
+#: includes/cb_textarea.php:176 includes/cb_textarea.php:184
+#: includes/cb_textarea.php:193
+msgid "Alpha"
+msgstr "abecedný"
+
+#: includes/cb_password.php:196 includes/cb_password.php:204
+#: includes/cb_password.php:213 includes/cb_text.php:207
+#: includes/cb_text.php:215 includes/cb_text.php:224
+#: includes/cb_textarea.php:203 includes/cb_textarea.php:211
+#: includes/cb_textarea.php:220
+msgid "Alpha Numeric"
+msgstr "abecedný numerická"
+
+#: includes/cb_password.php:224 includes/cb_password.php:232
+#: includes/cb_password.php:241 includes/cb_text.php:234
+#: includes/cb_text.php:242 includes/cb_text.php:251
+#: includes/cb_textarea.php:230 includes/cb_textarea.php:238
+#: includes/cb_textarea.php:247
+msgid "Digits"
+msgstr "číslice"
+
+#: includes/cb_password.php:251 includes/cb_password.php:259
+#: includes/cb_password.php:268 includes/cb_text.php:261
+#: includes/cb_text.php:269 includes/cb_text.php:278
+#: includes/cb_textarea.php:258 includes/cb_textarea.php:266
+#: includes/cb_textarea.php:275
+msgid "Strip Tags"
+msgstr "odstrániť tagy"
+
+#: includes/cb_password.php:278 includes/cb_password.php:286
+#: includes/cb_password.php:295 includes/cb_text.php:288
+#: includes/cb_text.php:296 includes/cb_text.php:305
+#: includes/cb_textarea.php:285 includes/cb_textarea.php:293
+#: includes/cb_textarea.php:302
+msgid "Trim"
+msgstr "pristrihnúť"
+
+#: includes/cb_phone.php:36 views/contact_controls_files.php:151
+#: views/contact_view.php:427
+msgid "Phone"
+msgstr "Telefon"
+
+#: includes/cb_text.php:36 views/contact_view.php:385
+msgid "Single Line Text"
+msgstr "jednolôžkovú linka- Textu"
+
+#: includes/cb_textarea.php:36 views/contact_view.php:388
+msgid "Paragraph Text"
+msgstr "Odsek Text"
+
+#: includes/cb_textarea.php:43
+msgid "Enter label"
+msgstr "Zadajte,štítok"
+
+#: includes/cb_textarea.php:50
+msgid "Enter  Description"
+msgstr "Zadajte Popis"
+
+#: includes/cb_textarea.php:111
+msgid "Tooltip text"
+msgstr "Špička nástroj  texte"
+
+#: includes/cb_time.php:37 includes/cb_time.php:44
+#: views/contact_controls_files.php:245 views/contact_view.php:446
+msgid "Time"
+msgstr "čas"
+
+#: includes/cb_time.php:160
+msgid "Hour Format"
+msgstr "Hodinovom - Formáte"
+
+#: includes/cb_time.php:169
+msgid "Minute Format"
+msgstr "Minúta-Formát"
+
+#: includes/cb_url.php:36 views/contact_controls_files.php:286
+#: views/contact_view.php:422
+msgid "Website / URL"
+msgstr "Webové stránky / URL"
+
+#: lib/contact_bank_email-class.php:55 lib/contact_bank_email-class.php:63
+#: lib/contact_bank_email-class.php:77 lib/contact_bank_email-class.php:85
+#: lib/contact_bank_email-class.php:99 lib/contact_bank_email-class.php:107
+#: lib/contact_bank_email-class.php:121 lib/contact_bank_email-class.php:129
+#: lib/contact_bank_email-class.php:143 lib/contact_bank_email-class.php:151
+msgid "Edit Email Settings"
+msgstr "Upraviť e-mailu nastavenia "
+
+#: lib/contact_bank_email-class.php:66 lib/contact_bank_email-class.php:88
+#: lib/contact_bank_email-class.php:110 lib/contact_bank_email-class.php:132
+#: lib/contact_bank_email-class.php:154
+msgid "Delete Email Settings"
+msgstr "Zmazať E-mailu nastavenia"
+
+#: lib/contact_frontend_data_class.php:210
+#: lib/contact_frontend_data_class.php:218
+#: lib/contact_frontend_data_class.php:228
+#: lib/contact_frontend_data_class.php:236
+#: lib/contact_frontend_data_class.php:246
+#: lib/contact_frontend_data_class.php:254
+#: lib/contact_frontend_data_class.php:264
+#: lib/contact_frontend_data_class.php:272
+#: lib/contact_frontend_data_class.php:282
+#: lib/contact_frontend_data_class.php:290
+msgid "Delete Form Entry"
+msgstr "zmazať formulár,vstupu"
+
+#: views/add_contact_email.php:30 views/contact_email_settings.php:100
+msgid "Email Confirmation"
+msgstr "E-mail Potvrdenie"
+
+#: views/add_contact_email.php:33
+msgid "Back to Email Settings"
+msgstr "Späť na e-mailu  nastavenia"
+
+#: views/add_contact_email.php:41 views/add_contact_email.php:49
+#: views/add_contact_email.php:57 views/add_contact_email.php:65
+#: views/add_contact_email.php:73 views/add_contact_email.php:266
+#: views/add_contact_email.php:274 views/add_contact_email.php:282
+#: views/add_contact_email.php:290 views/add_contact_email.php:298
+#: views/contact-bank-roles_capability.php:13
+#: views/contact_bank_layout_settings.php:12
+#: views/contact_bank_layout_settings.php:494
+#: views/contact_bank_layout_settings.php:906
+msgid "Save"
+msgstr "uložiť"
+
+#: views/add_contact_email.php:83
+msgid "Email Settings Saved. Kindly wait for the redirect."
+msgstr "nastavenia e-mailu Uložiť. Láskavo počkajte na presmerovanie."
+
+#: views/add_contact_email.php:90 views/add_contact_email.php:147
+#: views/contact_controls_files.php:35
+msgid "Email"
+msgstr "Email"
+
+#: views/add_contact_email.php:98
+msgid "Enter Name"
+msgstr "Zadajte názov"
+
+#: views/add_contact_email.php:104
+msgid "Send To"
+msgstr "odoslať na"
+
+#: views/add_contact_email.php:113 views/add_contact_email.php:124
+#: views/add_contact_email.php:136 views/add_contact_email.php:196
+msgid "Enter Email"
+msgstr "Zadajte E-mail"
+
+#: views/add_contact_email.php:115 views/add_contact_email.php:126
+#: views/add_contact_email.php:138
+msgid "Select a Field"
+msgstr "Vyberte Pole"
+
+#: views/add_contact_email.php:151
+msgid "Enter Email "
+msgstr "Zadajte E-mail"
+
+#: views/add_contact_email.php:155
+msgid "Send To Field"
+msgstr "Poslať do poľa"
+
+#: views/add_contact_email.php:159
+msgid "Enter Field "
+msgstr "Zadajte poľa"
+
+#: views/add_contact_email.php:161 views/add_contact_email.php:174
+#: views/add_contact_email.php:187 views/add_contact_email.php:198
+#: views/add_contact_email.php:209 views/add_contact_email.php:220
+#: views/add_contact_email.php:233 views/add_contact_email.php:250
+msgid "Select a field"
+msgstr "Vyberte pole"
+
+#: views/add_contact_email.php:168
+msgid "From Name"
+msgstr " z -meno"
+
+#: views/add_contact_email.php:172
+msgid "Enter from name "
+msgstr "Zadajte z - Názvu"
+
+#: views/add_contact_email.php:181
+msgid "From Email"
+msgstr "Od - email"
+
+#: views/add_contact_email.php:185
+msgid "Enter from email"
+msgstr "Zadajte - z e-mail"
+
+#: views/add_contact_email.php:194
+msgid "Reply To"
+msgstr "Odpovedať na "
+
+#: views/add_contact_email.php:205
+msgid "CC"
+msgstr "CC"
+
+#: views/add_contact_email.php:207
+msgid "Enter CC Email "
+msgstr "Zadajte CC Poslať e-mailom"
+
+#: views/add_contact_email.php:216
+msgid "BCC"
+msgstr "BCC"
+
+#: views/add_contact_email.php:218
+msgid "Enter Bcc Email"
+msgstr "Zadajte BCC Poslať e-mailom"
+
+#: views/add_contact_email.php:227
+msgid "Subject"
+msgstr "Predmet"
+
+#: views/add_contact_email.php:231
+msgid "Enter Subject"
+msgstr "vstúpiť predmet"
+
+#: views/add_contact_email.php:240
+msgid "Message"
+msgstr "Hlásenie"
+
+#: views/contact-bank-roles_capability.php:12
+#: views/contact_bank_form_preview.php:277
+#: views/contact_bank_layout_settings.php:9
+#: views/contact_email_settings.php:11 views/contact_frontend_data.php:8
+#: views/contact_view.php:203
+msgid "Back to Dashboard"
+msgstr "Späť na prístrojovej doske"
+
+#: views/contact-bank-roles_capability.php:17
+msgid "Roles and Capabilities Saved. Kindly wait for the redirect."
+msgstr "Roly a Capabilities uložené. Láskavo počkajte na presmerovanie."
+
+#: views/contact-bank-roles_capability.php:34
+msgid "Privileges for Admin"
+msgstr "Oprávnenia Admin pre"
+
+#: views/contact-bank-roles_capability.php:38
+#: views/contact-bank-roles_capability.php:54
+#: views/contact-bank-roles_capability.php:70
+#: views/contact-bank-roles_capability.php:87
+#: views/contact-bank-roles_capability.php:105
+msgid "Full Control"
+msgstr "Úplné riadenie"
+
+#: views/contact-bank-roles_capability.php:41
+#: views/contact-bank-roles_capability.php:57
+#: views/contact-bank-roles_capability.php:73
+#: views/contact-bank-roles_capability.php:90
+#: views/contact-bank-roles_capability.php:108
+msgid "Read"
+msgstr "Prečítať"
+
+#: views/contact-bank-roles_capability.php:44
+#: views/contact-bank-roles_capability.php:60
+#: views/contact-bank-roles_capability.php:76
+#: views/contact-bank-roles_capability.php:93
+#: views/contact-bank-roles_capability.php:111
+msgid "Write"
+msgstr "napísať"
+
+#: views/contact-bank-roles_capability.php:50
+msgid "Privileges for Editor"
+msgstr "Oprávnenia -pre Editora"
+
+#: views/contact-bank-roles_capability.php:66
+msgid "Privileges for Author"
+msgstr "Oprávnenia  pre Autor"
+
+#: views/contact-bank-roles_capability.php:82
+msgid "Privileges for Contributor"
+msgstr "Oprávnenia  pre prispievateľ"
+
+#: views/contact-bank-roles_capability.php:99
+msgid "Privileges for Subscriber"
+msgstr "Oprávnenia pre -Odberatelia"
+
+#: views/contact-bank-system-report.php:20
+msgid "Get System Report"
+msgstr "Získajte Systémové- Správe"
+
+#: views/contact-bank-system-report.php:24
+msgid "Close System Report"
+msgstr "Zavrieť Systémové- Správe"
+
+#: views/contact-bank-system-report.php:106
+msgid "Default"
+msgstr "Neplnenie"
+
+#: views/contact_bank_form_preview.php:274 views/dashboard.php:241
+#: views/dashboard.php:266 views/dashboard.php:302 views/dashboard.php:325
+#: views/dashboard.php:350 views/dashboard.php:386 views/dashboard.php:409
+#: views/dashboard.php:434 views/dashboard.php:470 views/dashboard.php:493
+#: views/dashboard.php:518 views/dashboard.php:554 views/dashboard.php:577
+#: views/dashboard.php:602 views/dashboard.php:638
+msgid "Form Preview"
+msgstr "Tlačivo -ukážky"
+
+#: views/contact_bank_layout_settings.php:10
+msgid "Restore Global Settings"
+msgstr "Obnoviť Globálne Nastavenia"
+
+#: views/contact_bank_layout_settings.php:16
+msgid "Form Settings Saved. Kindly wait for the redirect."
+msgstr " formuñár -Nastavenia Uložené. Láskavo počkajte na presmerovanie."
+
+#: views/contact_bank_layout_settings.php:58
+msgid "Label Settings"
+msgstr " Štítok nastavenia"
+
+#: views/contact_bank_layout_settings.php:68
+#: views/contact_bank_layout_settings.php:255
+#: views/contact_bank_layout_settings.php:465
+#: views/contact_bank_layout_settings.php:658
+#: views/contact_bank_layout_settings.php:786
+msgid "Font Family :"
+msgstr "Rodina písma:"
+
+#: views/contact_bank_layout_settings.php:93
+msgid "Font Color :"
+msgstr "Farba Písma:"
+
+#: views/contact_bank_layout_settings.php:104
+#: views/contact_bank_layout_settings.php:291
+msgid "Font Style :"
+msgstr "Štýl písma:"
+
+#: views/contact_bank_layout_settings.php:118
+#: views/contact_bank_layout_settings.php:305
+#: views/contact_bank_layout_settings.php:514
+#: views/contact_bank_layout_settings.php:683
+#: views/contact_bank_layout_settings.php:811
+msgid "Font Size (px) :"
+msgstr "Veľkosť písma (px):"
+
+#: views/contact_bank_layout_settings.php:149
+#: views/contact_bank_layout_settings.php:406
+#: views/contact_bank_layout_settings.php:619
+#: views/contact_bank_layout_settings.php:747
+#: views/contact_bank_layout_settings.php:875
+msgid "Text Align :"
+msgstr "Textu Zarovnanie:"
+
+#: views/contact_bank_layout_settings.php:162
+msgid "Label Position :"
+msgstr "Štítok pozície:"
+
+#: views/contact_bank_layout_settings.php:176
+msgid "Field Desc Font Size :"
+msgstr "Pole Popis Veľkosť písma:"
+
+#: views/contact_bank_layout_settings.php:207
+msgid "Field Description Align :"
+msgstr " poľa popis align :"
+
+#: views/contact_bank_layout_settings.php:221
+msgid "Hide Labels :"
+msgstr "Skryť etikety:"
+
+#: views/contact_bank_layout_settings.php:229
+#: views/contact_bank_layout_settings.php:419
+#: views/contact_bank_layout_settings.php:632
+#: views/contact_bank_layout_settings.php:760
+#: views/contact_bank_layout_settings.php:888
+msgid "Text Direction :"
+msgstr "Smer textu:"
+
+#: views/contact_bank_layout_settings.php:245
+msgid "Input Field Settings"
+msgstr "Vstupnej  Nastavenie Poľa"
+
+#: views/contact_bank_layout_settings.php:280
+#: views/contact_bank_layout_settings.php:577
+#: views/contact_bank_layout_settings.php:736
+#: views/contact_bank_layout_settings.php:864
+msgid "Text Color :"
+msgstr "Farba textu:"
+
+#: views/contact_bank_layout_settings.php:336
+#: views/contact_bank_layout_settings.php:609
+msgid "Border Radius (px) :"
+msgstr "Hraničný Polomer (px):"
+
+#: views/contact_bank_layout_settings.php:346
+#: views/contact_bank_layout_settings.php:588
+#: views/contact_bank_layout_settings.php:725
+#: views/contact_bank_layout_settings.php:853
+msgid "Border Color :"
+msgstr "Farba rámčeku:"
+
+#: views/contact_bank_layout_settings.php:357
+#: views/contact_bank_layout_settings.php:599
+msgid "Border Size (px) :"
+msgstr "hraníc Velikost (px):"
+
+#: views/contact_bank_layout_settings.php:367
+msgid "Border Style :"
+msgstr "hraníc Style:"
+
+#: views/contact_bank_layout_settings.php:382
+#: views/contact_bank_layout_settings.php:555
+#: views/contact_bank_layout_settings.php:714
+#: views/contact_bank_layout_settings.php:842
+msgid "Background Color :"
+msgstr "Farba pozadia:"
+
+#: views/contact_bank_layout_settings.php:393
+msgid "Radio Buttons :"
+msgstr "Rádio tlačidlá:"
+
+#: views/contact_bank_layout_settings.php:398
+msgid "Multiple Rows"
+msgstr "Riadkami viacerými "
+
+#: views/contact_bank_layout_settings.php:400
+msgid "Single Row"
+msgstr "Jednoradová"
+
+#: views/contact_bank_layout_settings.php:433
+msgid "Input Size :"
+msgstr "Vstup - Velikost:"
+
+#: views/contact_bank_layout_settings.php:455
+msgid "Submit Button Settings"
+msgstr "Vložte Tlačidlo Nastavenia "
+
+#: views/contact_bank_layout_settings.php:490
+msgid "Text:"
+msgstr "Textu:"
+
+#: views/contact_bank_layout_settings.php:500
+msgid "Style :"
+msgstr "štýl:"
+
+#: views/contact_bank_layout_settings.php:545
+msgid "Button Width (px) :"
+msgstr "Tlačidlo šírka (px):"
+
+#: views/contact_bank_layout_settings.php:566
+msgid "Hover Background Color:"
+msgstr "Hover Farba pozadia:"
+
+#: views/contact_bank_layout_settings.php:648
+msgid "Success Message Settings"
+msgstr "nastavenia Úspech hlásenie"
+
+#: views/contact_bank_layout_settings.php:776
+msgid "Error Message Settings"
+msgstr " zobrazuje chybové hlásenie Nastavenia"
+
+#: views/contact_bank_layout_settings.php:1298
+msgid "Are you sure, you want to Restore Global Settings?"
+msgstr "Ste si istí, že chcete obnoviť Globálne nastavenia?"
+
+#: views/contact_bank_update.php:5
+msgid "Check Plugin - Contact Bank"
+msgstr "zistite-Doplnkový modul - Contact Bank"
+
+#: views/contact_controls_files.php:8 views/contact_controls_files.php:24
+#: views/contact_controls_files.php:41 views/contact_controls_files.php:59
+#: views/contact_controls_files.php:75 views/contact_controls_files.php:92
+#: views/contact_controls_files.php:107 views/contact_controls_files.php:123
+#: views/contact_controls_files.php:139 views/contact_controls_files.php:156
+#: views/contact_controls_files.php:172 views/contact_controls_files.php:234
+#: views/contact_controls_files.php:259 views/contact_controls_files.php:275
+#: views/contact_controls_files.php:291
+msgid "Settings"
+msgstr "nastavenia"
+
+#: views/contact_documentation.php:5
+msgid "Documentation - Contact Bank"
+msgstr "Dokumentácia - Contact Bank"
+
+#: views/contact_email_settings.php:55 views/contact_email_settings.php:63
+#: views/contact_email_settings.php:71 views/contact_email_settings.php:79
+#: views/contact_email_settings.php:87
+msgid "Add New"
+msgstr "Pridať nový"
+
+#: views/contact_email_settings.php:166
+msgid "Are you sure, you want to delete this Email Setting?"
+msgstr "Ste si istí, že chcete zmazať tento e-mail nastavenia?"
+
+#: views/contact_email_settings.php:184
+msgid "Please select the Form first."
+msgstr "Vyberte prosím formulár ako prvý."
+
+#: views/contact_frontend_data.php:14 views/dashboard.php:181
+#: views/dashboard.php:188
+msgid "Form"
+msgstr "forma"
+
+#: views/contact_frontend_data.php:95
+msgid "Are you sure, you want to delete this From Entry?"
+msgstr "Ste si istí, že chcete zmazať túto položku Od -vstupu?"
+
+#: views/contact_view.php:200 views/dashboard.php:29 views/dashboard.php:43
+#: views/dashboard.php:59 views/dashboard.php:73 views/dashboard.php:89
+#: views/dashboard.php:103 views/dashboard.php:119 views/dashboard.php:133
+#: views/dashboard.php:149 views/dashboard.php:163
+msgid "Add New Form"
+msgstr "Pridať Nový formulár"
+
+#: views/contact_view.php:206 views/contact_view.php:461
+msgid "Save Form"
+msgstr "Uložiť Forma"
+
+#: views/contact_view.php:210
+msgid "Form Submitted. Kindly wait for the redirect."
+msgstr "Forma predkladať. Láskavo počkajte na presmerovanie."
+
+#: views/contact_view.php:217
+msgid "Form Settings"
+msgstr "formuñár - Nastavenia"
+
+#: views/contact_view.php:221
+msgid "Form Name :"
+msgstr "Názov formulára:"
+
+#: views/contact_view.php:227
+msgid "Enter Form Name"
+msgstr "Zadajte formulár Meno"
+
+#: views/contact_view.php:231
+msgid "Blank Field Message:"
+msgstr "Sa prázdne pole - hlásenie:"
+
+#: views/contact_view.php:237
+msgid "Required field must not be blank"
+msgstr "Povinné pole nesmie byť prázdne"
+
+#: views/contact_view.php:239
+msgid "Enter Blank Field Message"
+msgstr "Zadajte prázdneho poľa Hlásenie"
+
+#: views/contact_view.php:243
+msgid "Incorrect Email Message:"
+msgstr "Nesprávne E-mail hlásenie:"
+
+#: views/contact_view.php:249
+msgid "Please enter a valid email address"
+msgstr "Zadajte prosím platnú e-mailovú adresu"
+
+#: views/contact_view.php:251
+msgid "Enter Incorrect Email Message"
+msgstr "Zadajte Nesprávna e-mail hlásenie"
+
+#: views/contact_view.php:255
+msgid "Success Message :"
+msgstr "Úspech Správa:"
+
+#: views/contact_view.php:259
+msgid "Enter Success Message"
+msgstr "Zadajte- Správu o úspechu"
+
+#: views/contact_view.php:263
+msgid "Redirect :"
+msgstr "presmerovanie:"
+
+#: views/contact_view.php:275 views/contact_view.php:286
+#: views/contact_view.php:298
+msgid "Page"
+msgstr "strana"
+
+#: views/contact_view.php:278 views/contact_view.php:289
+#: views/contact_view.php:301
+msgid "URL"
+msgstr "URL"
+
+#: views/contact_view.php:308
+msgid "Page :"
+msgstr "strana:"
+
+#: views/contact_view.php:354
+msgid "URL :"
+msgstr "URL :"
+
+#: views/contact_view.php:361
+msgid "Enter Redirect URL"
+msgstr "vstúpiť Presmerovanie URL"
+
+#: views/contact_view.php:368
+msgid "Form Layout Preview"
+msgstr "Forme dispozície náhľad"
+
+#: views/contact_view.php:379
+msgid "Standard Fields"
+msgstr "štandardné Pole"
+
+#: views/contact_view.php:382 views/contact_view.php:416
+msgid "Click on a field to use into your form."
+msgstr "Kliknete na - poľa k použitiu vo formulári."
+
+#: views/contact_view.php:401
 msgid "Checkboxes"
 msgstr "zaškrtávacie políčka"
 
-#: views/contact_view.php:352 views/edit_contact_view.php:418
-msgid "Multiple Choice"
-msgstr "viacnásobný voľba"
+#: views/contact_view.php:413
+msgid "Advanced Fields"
+msgstr "Pokročilé pole"
 
-#: views/contact_view.php:1133 views/contact_view.php:1135
-#: views/edit_contact_view.php:2353 views/edit_contact_view.php:2355
-msgid "Untitled(Hidden)"
-msgstr "Untitled(Skrytý)"
-
-#: views/dashboard.php:5
+#: views/dashboard.php:17
 msgid "Dashboard - Contact Bank"
 msgstr "[4:04:58 PM] kirandeep singh: Prístrojová doska - Kontakt banky"
 
-#: views/dashboard.php:9
+#: views/dashboard.php:32 views/dashboard.php:46 views/dashboard.php:62
+#: views/dashboard.php:76 views/dashboard.php:92 views/dashboard.php:106
+#: views/dashboard.php:122 views/dashboard.php:136 views/dashboard.php:152
+#: views/dashboard.php:166
 msgid "Delete All Forms"
 msgstr "vymaza všetkých foriem"
 
-#: views/dashboard.php:22
+#: views/dashboard.php:35 views/dashboard.php:49 views/dashboard.php:65
+#: views/dashboard.php:79 views/dashboard.php:95 views/dashboard.php:109
+#: views/dashboard.php:125 views/dashboard.php:139 views/dashboard.php:155
+#: views/dashboard.php:169
+msgid "Restore Factory Settings"
+msgstr "Obnovenie Továreň  Nastavenia"
+
+#: views/dashboard.php:189
 msgid "Shortcode"
 msgstr "krátky kód"
 
-#: views/dashboard.php:23
-msgid "Action"
-msgstr "Akcia"
+#: views/dashboard.php:190
+msgid "Total Controls"
+msgstr "Celkový Ovládania"
 
-#: views/dashboard.php:43
-msgid "Edit"
-msgstr "upraviť"
-
-#: views/dashboard.php:46
-msgid "Delete"
-msgstr "vymaza"
-
-#: views/dashboard.php:62
-msgid "Server Settings"
-msgstr "servera nastavenie "
-
-#: views/dashboard.php:73
-msgid "Not set"
-msgstr "nie sada"
-
-#: views/dashboard.php:75 views/dashboard.php:78
-msgid "On"
-msgstr "On"
-
-#: views/dashboard.php:76 views/dashboard.php:79
-msgid "Off"
-msgstr "Off"
-
-#: views/dashboard.php:82 views/dashboard.php:85 views/dashboard.php:88
-#: views/dashboard.php:91 views/dashboard.php:94 views/dashboard.php:97
-msgid "N/A"
-msgstr "N/A"
-
-#: views/dashboard.php:96
-msgid " MByte"
-msgstr " MByte"
-
-#: views/dashboard.php:99 views/dashboard.php:102 views/dashboard.php:105
-#: views/dashboard.php:156
-msgid "Yes"
-msgstr "áno"
-
-#: views/dashboard.php:100 views/dashboard.php:103 views/dashboard.php:106
-#: views/dashboard.php:158
-msgid "No"
-msgstr "ne"
-
-#: views/dashboard.php:108
-msgid "Operating System"
-msgstr "operačný systému"
-
-#: views/dashboard.php:109
-msgid "Server"
-msgstr "servera"
-
-#: views/dashboard.php:110
-msgid "Memory usage"
-msgstr "využitie pamäte"
-
-#: views/dashboard.php:111
-msgid "MYSQL Version"
-msgstr "MySQL verzia"
-
-#: views/dashboard.php:112
-msgid "SQL Mode"
-msgstr "SQL režim"
-
-#: views/dashboard.php:113
-msgid "PHP Version"
-msgstr "PHP verzia"
-
-#: views/dashboard.php:114
-msgid "PHP Safe Mode"
-msgstr "PHP núdzový režim"
-
-#: views/dashboard.php:115
-msgid "PHP Allow URL fopen"
-msgstr "PHP Povoliť URL fopen"
-
-#: views/dashboard.php:116
-msgid "PHP Memory Limit"
-msgstr "PHP pamäte Hranica"
-
-#: views/dashboard.php:117
-msgid "PHP Max Upload Size"
-msgstr "PHP max veľkosť nahrávaných súborov"
-
-#: views/dashboard.php:118
-msgid "PHP Max Post Size"
-msgstr "PHP Max Príspevok veľkosť"
-
-#: views/dashboard.php:119
-msgid "PCRE Backtracking Limit"
-msgstr "PHP späť sledovanie, limitovať"
-
-#: views/dashboard.php:120
-msgid "PHP Max Script Execute Time"
-msgstr "PHP, maximálny skript,popraviť časovo"
-
-#: views/dashboard.php:121
-msgid "PHP Exif support"
-msgstr "PHP Exif podpora"
-
-#: views/dashboard.php:122
-msgid "PHP IPTC support"
-msgstr "PHP IPTC podpora"
-
-#: views/dashboard.php:123
-msgid "PHP XML support"
-msgstr "PHP XML podpora"
-
-#: views/dashboard.php:131
-msgid "Graphic Library Settings"
-msgstr "Grafické knižnice Nastavenie "
-
-#: views/dashboard.php:151
-msgid "No GD support"
-msgstr "Žiadna GD podpora "
-
-#: views/dashboard.php:187
-msgid "Are you sure to delete this form ?"
-msgstr "Ste si istí zmazať tento formulár?"
-
-#: views/dashboard.php:198
-msgid "Are you sure to delete all forms ?"
-msgstr "Ste si istí odstrániť všetky foriem?"
-
-#: views/edit_contact_view.php:26
-msgid "Edit Existing Form"
-msgstr "upravovať existujúce formuláre"
-
-#: views/edit_contact_view.php:33
-msgid "Form Updated. Kindly wait for the redirect."
-msgstr "forma Aktualizované. Láskavo počkajte na presmerovanie."
-
-#: views/edit_contact_view.php:40
+#: views/dashboard.php:251 views/dashboard.php:282 views/dashboard.php:335
+#: views/dashboard.php:366 views/dashboard.php:419 views/dashboard.php:450
+#: views/dashboard.php:503 views/dashboard.php:534 views/dashboard.php:587
+#: views/dashboard.php:618
 msgid "Edit Form"
 msgstr "upraviť formulár"
 
-#: views/edit_contact_view.php:555 views/edit_contact_view.php:598
-#: views/edit_contact_view.php:683 views/edit_contact_view.php:738
-#: views/edit_contact_view.php:795
-msgid "Untitled :"
-msgstr "bez názvu :"
+#: views/dashboard.php:272 views/dashboard.php:308 views/dashboard.php:356
+#: views/dashboard.php:392 views/dashboard.php:440 views/dashboard.php:476
+#: views/dashboard.php:524 views/dashboard.php:560 views/dashboard.php:608
+#: views/dashboard.php:644
+msgid "Delete Form"
+msgstr "zmazať formuñár"
 
-#: views/edit_contact_view.php:641
-msgid "Email :"
-msgstr "Email :"
+#: views/dashboard.php:686
+msgid "Are you sure, you want to delete this Form?"
+msgstr "Ste si istí, že chcete zmazať tento formulár?"
 
-#: views/edit_contact_view.php:854
-msgid "File Upload :"
-msgstr "súbor-načítať:"
+#: views/dashboard.php:696
+msgid "Are you sure, you want to delete all Forms?"
+msgstr "Ste si istí, že chcete odstrániť všetky formuláre?"
 
-#: views/edit_contact_view.php:914
-msgid "Date :"
-msgstr "Dátum :"
+#: views/dashboard.php:705
+msgid "Are you sure you want to Restore Factory Settings?"
+msgstr "Ste si istí, že chcete Obnoviť Továrenské Nastavenia?"
 
-#: views/edit_contact_view.php:997
-msgid "Time :"
-msgstr "Time :"
+#: views/includes_common_after.php:468
+msgid "Only One File Uploader can be used on a Form."
+msgstr "Iba jeden uploader súboru môže byť použitý na forma."
 
-#: views/edit_contact_view.php:1063
-msgid "Untitled(hidden) :"
-msgstr "Bez názvu (skryté) :"
+#: views/licensing.php:19
+msgid "Success! Settings have been updated."
+msgstr "Úspech! Nastavenie mať  bolo aktualizované."
 
-#: views/edit_contact_view.php:1103
-msgid "Password : "
-msgstr "heslo :"
+#: views/licensing.php:24
+msgid "Contact-Bank Licensing"
+msgstr "Contact-Bank Licencovanie"
 
-#: views/edit_contact_view.php:1736
-msgid "1024"
-msgstr "1024"
+#: views/licensing.php:84
+msgid "Update"
+msgstr "aktualizovať"

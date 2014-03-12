@@ -33,16 +33,25 @@
 												<?php
 												for($flag=0;$flag<count($form_data);$flag++)
 												{
-													?>
-													<option value="<?php echo $form_data[$flag]->form_id ;?>"><?php echo $form_data[$flag]->form_name ;?></option>
-													<?php
+													if(isset($_REQUEST["form_id"]) && $_REQUEST["form_id"] == $form_data[$flag]->form_id)
+													{
+														?>
+														<option value="<?php echo $form_data[$flag]->form_id ;?>" selected="selected"><?php echo $form_data[$flag]->form_name ;?></option>
+														<?php
+													}
+													else
+													{
+														?>
+														<option value="<?php echo $form_data[$flag]->form_id ;?>"><?php echo $form_data[$flag]->form_name ;?></option>
+														<?php
+													}
 												}
 												?>
 											</select>
 										</div>
 									</div>
 								</div>
-								<div id="ux_frontend_data_postback"></div>
+								<div id="ux_frontend_data_postback" style="overflow-x: auto;overflow-y: hidden;padding-bottom: 1%;margin-top:10px;"></div>
 							</div>
 						</div>
 					</div>
@@ -52,6 +61,10 @@
 	</div>
 </div>
 <script>
+jQuery(document).ready(function()
+{
+	select_form_id();
+});
 function select_form_id()
 {
 	var form_id = jQuery("#select_form").val();
@@ -59,13 +72,26 @@ function select_form_id()
 	{
 		jQuery.post(ajaxurl, "form_id="+form_id+"&param=frontend_form_data&action=frontend_data_contact_library", function(data)
 		{
-			jQuery("#ux_frontend_data_postback").empty();
-			jQuery("#ux_frontend_data_postback").append(data);
+			if(jQuery('#data-table-frontend').length > 0)
+			{
+				oTable = jQuery('#data-table-frontend').dataTable();
+				oTable.fnDestroy();
+				jQuery("#ux_frontend_data_postback").empty();
+				
+				jQuery("#ux_frontend_data_postback").append(data);
+				jQuery(".fluid-layout .table thead th").css('vertical-align','top');
+				oTable.fnDraw();
+			}
+			else
+			{
+				jQuery("#ux_frontend_data_postback").append(data);
+				jQuery(".fluid-layout .table thead th").css('vertical-align','top');
+			}
 		});
 	}
-	else
-	{
-		jQuery("#ux_frontend_data_postback").empty();
-	}
+}
+function delete_form_entry()
+{
+	alert("<?php _e( "This Feature is only available in Paid Premium Version!", contact_bank ); ?>");
 }
 </script>
