@@ -23,7 +23,7 @@ It provides a powerful engine for uploading and managing dynamic forms with more
 
 <a href="http://tech-banker.com/forum/contact-bank-support/" target="_blank">Support Desk - feel free to ask your Queries</a>
 
-<a href="http://tech-banker.com/contct-bank/" target="_blank">Upgrade to Pro Version</a>
+<a href="http://tech-banker.com/contact-bank/" target="_blank">Upgrade to Pro Version</a>
 
 <a href="https://www.facebook.com/TechBanker/" target="_blank">Like & Support us on Facebook</a>
 
