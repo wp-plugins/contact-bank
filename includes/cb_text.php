@@ -188,7 +188,7 @@
 									name="ux_checkbox_trim_filter"  value="0" />
 								<span class="rdl"><?php _e( "Trim", contact_bank ); ?></span>
 						<br>
-						<i class="widget_premium_feature_contact"><?php _e(" (Avialable in Premium Versions)", contact_bank); ?></i>
+						<i class="widget_premium_feature_contact"><?php _e(" (Available in Premium Versions)", contact_bank); ?></i>
 						</div>
 						
 						

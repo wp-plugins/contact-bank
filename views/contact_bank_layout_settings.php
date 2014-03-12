@@ -4,7 +4,7 @@
 			<div class="widget-layout">
 				<div class="widget-layout-title">
 					<h4><?php _e( "Global Settings", contact_bank ); ?>
-						<i class="widget_premium_feature_contact"><?php _e(" (Premium Feature avialable in Paid Version)", contact_bank); ?></i></h4>   
+						<i class="widget_premium_feature_contact"><?php _e(" (Premium Feature available in Paid Version)", contact_bank); ?></i></h4>   
 					
 				</div>
 				<div class="widget-layout-body">
@@ -58,7 +58,7 @@
 							<div class="widget-layout">
 								<div class="widget-layout-title">
 									<h4><?php _e( "Label Settings", contact_bank ); ?>
-										<i class="widget_premium_feature_contact"><?php _e(" (Avialable in Premium Versions)", contact_bank); ?></i>
+										<i class="widget_premium_feature_contact"><?php _e(" (Available in Premium Versions)", contact_bank); ?></i>
 									</h4>
 									<span class="tools">
 										<a data-target="#label_settings" data-toggle="collapse">
@@ -246,7 +246,7 @@
 							</div>
 							<div class="widget-layout">
 								<div class="widget-layout-title">
-									<h4><?php _e( "Input Field Settings", contact_bank ); ?><i class="widget_premium_feature_contact"><?php _e(" (Avialable in Premium Versions)", contact_bank); ?></i></h4>
+									<h4><?php _e( "Input Field Settings", contact_bank ); ?><i class="widget_premium_feature_contact"><?php _e(" (Available in Premium Versions)", contact_bank); ?></i></h4>
 									<span class="tools">
 										<a data-target="#input_settings" data-toggle="collapse">
 											<i class="icon-chevron-down"></i>
@@ -456,7 +456,7 @@
 						<div class="layout-span6">
 							<div class="widget-layout">
 								<div class="widget-layout-title">
-								 	<h4><?php _e( "Submit Button Settings", contact_bank ); ?><i class="widget_premium_feature_contact"><?php _e(" (Avialable in Premium Versions)", contact_bank); ?></i></h4>
+								 	<h4><?php _e( "Submit Button Settings", contact_bank ); ?><i class="widget_premium_feature_contact"><?php _e(" (Available in Premium Versions)", contact_bank); ?></i></h4>
 								 	<span class="tools">
 										<a data-target="#submit_settings" data-toggle="collapse">
 											<i class="icon-chevron-down"></i>
@@ -649,7 +649,7 @@
 							</div>
 							<div class="widget-layout">
 								<div class="widget-layout-title">
-									<h4><?php _e( "Success Message Settings", contact_bank ); ?><i class="widget_premium_feature_contact"><?php _e(" (Avialable in Premium Versions)", contact_bank); ?></i></h4>
+									<h4><?php _e( "Success Message Settings", contact_bank ); ?><i class="widget_premium_feature_contact"><?php _e(" (Available in Premium Versions)", contact_bank); ?></i></h4>
 									<span class="tools">
 										<a data-target="#success_settings" data-toggle="collapse">
 											<i class="icon-chevron-down"></i>
@@ -777,7 +777,7 @@
 							</div>
 							<div class="widget-layout">
 								<div class="widget-layout-title">
-									<h4><?php _e( "Error Message Settings", contact_bank ); ?><i class="widget_premium_feature_contact"><?php _e(" (Avialable in Premium Versions)", contact_bank); ?></i></h4>
+									<h4><?php _e( "Error Message Settings", contact_bank ); ?><i class="widget_premium_feature_contact"><?php _e(" (Available in Premium Versions)", contact_bank); ?></i></h4>
 									<span class="tools">
 										<a data-target="#error_settings" data-toggle="collapse">
 											<i class="icon-chevron-down"></i>
