@@ -92,6 +92,6 @@ function select_form_id()
 }
 function delete_form_entry()
 {
-	alert("<?php _e( "This Feature is only available in Paid Premium Version!", contact_bank ); ?>");
+	alert("<?php _e( "This Feature is only available in Paid Premium Edition!", contact_bank ); ?>");
 }
 </script>

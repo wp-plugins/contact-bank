@@ -112,7 +112,7 @@
 						<label class="layout-control-label"><?php _e("Tooltip Text", contact_bank); ?> : </label>
 						<div class="layout-controls">
 							<input type="text" class="layout-span12" id="ux_tooltip_control_<?php echo $dynamicId; ?>" 
-								placeholder="<?php _e( "This Feature is only available in Paid Premium Version!", contact_bank ); ?>" 
+								placeholder="<?php _e( "This Feature is only available in Paid Premium Edition!", contact_bank ); ?>" 
 								name="ux_tooltip_control_<?php echo $dynamicId; ?>" readonly="readonly"
 								value="<?php echo isset($form_settings[$dynamicId]["cb_tooltip_txt"]) ? $form_settings[$dynamicId]["cb_tooltip_txt"] : ""; ?>" />
 						</div>

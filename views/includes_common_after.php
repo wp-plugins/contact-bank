@@ -345,31 +345,31 @@ function create_control(control_type,dynamicId,type)
             }
             break;
 		case 7:
-			alert("<?php _e( "This Feature is only available in Paid Premium Version!", contact_bank ); ?>");
+			alert("<?php _e( "This Feature is only available in Paid Premium Edition!", contact_bank ); ?>");
 			break;
 		case 8:
-			alert("<?php _e( "This Feature is only available in Paid Premium Version!", contact_bank ); ?>");
+			alert("<?php _e( "This Feature is only available in Paid Premium Edition!", contact_bank ); ?>");
 			break;
 		case 9:
-				alert("<?php _e( "This Feature is only available in Paid Premium Version!", contact_bank ); ?>");
+				alert("<?php _e( "This Feature is only available in Paid Premium Edition!", contact_bank ); ?>");
 		break;
 		case 10:
-			alert("<?php _e( "This Feature is only available in Paid Premium Version!", contact_bank ); ?>");
+			alert("<?php _e( "This Feature is only available in Paid Premium Edition!", contact_bank ); ?>");
 			break;
 		case 11:
-			alert("<?php _e( "This Feature is only available in Paid Premium Version!", contact_bank ); ?>");
+			alert("<?php _e( "This Feature is only available in Paid Premium Edition!", contact_bank ); ?>");
 			break;
         case 12:
-            alert("<?php _e( "This Feature is only available in Paid Premium Version!", contact_bank ); ?>");
+            alert("<?php _e( "This Feature is only available in Paid Premium Edition!", contact_bank ); ?>");
             break;
         case 13:
-           alert("<?php _e( "This Feature is only available in Paid Premium Version!", contact_bank ); ?>");
+           alert("<?php _e( "This Feature is only available in Paid Premium Edition!", contact_bank ); ?>");
 			break;
 		case 15:
-			alert("<?php _e( "This Feature is only available in Paid Premium Version!", contact_bank ); ?>");
+			alert("<?php _e( "This Feature is only available in Paid Premium Edition!", contact_bank ); ?>");
 			break;
 		case 16:
-			alert("<?php _e( "This Feature is only available in Paid Premium Version!", contact_bank ); ?>");
+			alert("<?php _e( "This Feature is only available in Paid Premium Edition!", contact_bank ); ?>");
 			break;
 	}
 }

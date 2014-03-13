@@ -3,7 +3,7 @@
 		<div class="widget-layout">
 			<div class="widget-layout-title">
 				<h4>
-					<?php _e("Purchase PRO Version - Contact Bank", contact_bank); ?>
+					<?php _e("Purchase PRO Edition - Contact Bank", contact_bank); ?>
 				</h4>
 			</div>
 			<div class="widget-layout-body" style="margin-top: 15px;">

@@ -4,7 +4,7 @@ Plugin Name: Contact Bank Standard Edition
 Plugin URI: http://tech-banker.com
 Description: Build Complex, Powerful Contact Forms in Just Seconds. No Programming Knowledge Required! Yeah, It"s Really That Easy.
 Author: Tech Banker
-Version: 2.0.1
+Version: 2.0.2
 Author URI: http://tech-banker.com
  */
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -58,9 +58,9 @@ function create_global_menus_for_contact_bank()
     add_submenu_page("dashboard", "Form Entries", __("Form Entries", contact_bank), "read", "frontend_data","frontend_data");
     add_submenu_page("dashboard", "Email Settings", __("Email Settings", contact_bank), "read", "contact_email", "contact_email");
     add_submenu_page("dashboard", "Global Settings", __("Global Settings", contact_bank), "read", "layout_settings", "layout_settings");
-	 add_submenu_page("dashboard", "System Status", __("System Status", contact_bank), "read", "system_status", "system_status" );
+	add_submenu_page("dashboard", "System Status", __("System Status", contact_bank), "read", "system_status", "system_status" );
     //add_submenu_page("dashboard", "Documentation", __("Documentation", contact_bank), "read", "documentation", "documentation" );
-    add_submenu_page("dashboard", "Purchase PRO Version", __("Purchase PRO Version", contact_bank), "read", "pro_version", "pro_version" );
+    add_submenu_page("dashboard", "Purchase PRO Edition", __("Purchase PRO Edition", contact_bank), "read", "pro_version", "pro_version" );
     add_submenu_page("","","", "read", "add_contact_email_settings", "add_contact_email_settings" );
 	add_submenu_page("","","", "read", "form_preview", "form_preview" );
 }
@@ -283,6 +283,16 @@ function contact_bank_layout_settings_Table()
     global $wpdb;
     return $wpdb->prefix . "cb_layout_settings_table";
 }
+function contact_bank_licensing()
+{
+    global $wpdb;
+    return $wpdb->prefix . "cb_licensing";
+}
+function contact_bank_roles_capability()
+{
+    global $wpdb;
+    return $wpdb->prefix . "cb_roles_capability";
+}
 function contact_bank_short_code($atts)
 {
     extract(shortcode_atts(array(
@@ -315,6 +325,12 @@ function add_contact_bank_icon($meta = TRUE)
 	    "href"  => site_url() ."/wp-admin/admin.php?page=dashboard",
 	    "title" => __( "Dashboard", contact_bank) )         /* set the sub-menu name */
     );
+	$wp_admin_bar->add_menu( array(
+        "parent" => "contact_bank_links",
+	    "id"     => "short_code_links",
+	    "href"  => site_url() ."/wp-admin/admin.php?page=short_code",
+	    "title" => __( "Short-Codes", contact_bank))         /* set the sub-menu name */
+	);
    $wp_admin_bar->add_menu( array(
         "parent" => "contact_bank_links",
 	    "id"     => "frontend_data_links",
@@ -349,9 +365,9 @@ function add_contact_bank_icon($meta = TRUE)
 	// );
 	$wp_admin_bar->add_menu( array(
         "parent" => "contact_bank_links",
-	    "id"     => "system_status_data_links",
+	    "id"     => "pro_version_data_links",
 	    "href"  => site_url() ."/wp-admin/admin.php?page=pro_version",
-	    "title" => __( "Purchase PRO Version", contact_bank))         /* set the sub-menu name */
+	    "title" => __( "Purchase PRO Edition", contact_bank))         /* set the sub-menu name */
 	);
 	
 }

@@ -213,6 +213,6 @@ $last_form_id = $wpdb->get_var
 		}
 	}
 	function restore_factory_settings() {
-		alert("<?php _e( "This Feature is only available in Paid Premium Version!", contact_bank ); ?>");
+		alert("<?php _e( "This Feature is only available in Paid Premium Edition!", contact_bank ); ?>");
 	}
 </script>

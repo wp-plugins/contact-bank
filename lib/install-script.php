@@ -445,6 +445,41 @@ if($version != "2.0")
 		        );
 		 }
     }
+	if (count($wpdb->get_var("SHOW TABLES LIKE '" . contact_bank_licensing() . "'")) == 0)
+    {
+        create_table_licensing();
+    }
+	if (count($wpdb->get_var("SHOW TABLES LIKE '" . contact_bank_roles_capability() . "'")) == 0)
+    {
+        create_table_roles_capability();
+		$settings_roles = array();
+		$settings_roles["admin_full_control"] =  "1";
+		$settings_roles["admin_read_control"] =  "0";
+		$settings_roles["admin_write_control"] = "0";
+		$settings_roles["editor_full_control"] = "0";
+		$settings_roles["editor_read_control"] = "1";
+		$settings_roles["editor_write_control"] = "0";
+		$settings_roles["author_full_control"] = "0";
+		$settings_roles["author_read_control"] = "1";
+		$settings_roles["author_write_control"] = "0";
+		$settings_roles["contributor_full_control"] = "0";
+		$settings_roles["contributor_read_control"] = "1";
+		$settings_roles["contributor_write_control"] = "0";
+		$settings_roles["subscriber_full_control"] = "0";
+		$settings_roles["subscriber_read_control"] = "1";
+		$settings_roles["subscriber_write_control"] = "0";
+		foreach($settings_roles as $key => $value)
+        {
+                $sql1[] = '("'.mysql_real_escape_string($key).'", "'.mysql_real_escape_string($value).'")';
+        }
+        $wpdb->query
+        (
+            $wpdb->prepare
+            (
+                "INSERT INTO " . contact_bank_roles_capability() . "(roles_capability_key,roles_capability_value) VALUES ".implode(',', $sql1),""
+            )
+        );
+    }
 	update_option("contact-bank-version-number","2.0");
 }
 function create_table_contact_bank_forms()
@@ -545,5 +580,39 @@ function create_contact_bank_form_settings()
 	) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE utf8_general_ci';
     dbDelta($sql);
 }
+function create_table_licensing()
+{
+    global $wpdb;
+    $sql = "CREATE TABLE " . contact_bank_licensing() . "(
+        licensing_id INTEGER(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+        version VARCHAR(10) NOT NULL,
+        type VARCHAR(100) NOT NULL,
+        url TEXT NOT NULL,
+        api_key TEXT NOT NULL,
+        order_id VARCHAR(100) NOT NULL,
+        PRIMARY KEY (licensing_id)
+        ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE utf8_general_ci";
+    dbDelta($sql);
 
+    $wpdb->query
+    (
+        $wpdb->prepare
+            (
+                "INSERT INTO " . contact_bank_licensing() . "(version, type, url) VALUES(%s, %s, %s)",
+                "2.1.0",
+                "Contact Bank Eco Edition",
+                "" . site_url() . ""
+            )
+    );
+}
+function create_table_roles_capability()
+{
+    $sql = 'CREATE TABLE ' . contact_bank_roles_capability() . '(
+	id INTEGER(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+	roles_capability_key VARCHAR(200) NOT NULL,
+	roles_capability_value VARCHAR(200) NOT NULL,
+	PRIMARY KEY (id)
+	) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE utf8_general_ci';
+    dbDelta($sql);
+}
 ?>

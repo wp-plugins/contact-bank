@@ -111,7 +111,7 @@
 						<label class="layout-control-label"><?php _e( "Tooltip Text", contact_bank ); ?> :</label>
 						<div class="layout-controls">
 							<input type="text" class="layout-span12" id="ux_tooltip_control_<?php echo $dynamicId; ?>" 
-								placeholder="<?php _e( "This Feature is only available in Paid Premium Version!", contact_bank ); ?>" 
+								placeholder="<?php _e( "This Feature is only available in Paid Premium Edition!", contact_bank ); ?>" 
 								name="ux_tooltip_control_<?php echo $dynamicId; ?>"  readonly="readonly"
 								/>
 						</div>
@@ -188,7 +188,7 @@
 									name="ux_checkbox_trim_filter"  value="0" />
 								<span class="rdl"><?php _e( "Trim", contact_bank ); ?></span>
 						<br>
-						<i class="widget_premium_feature_contact"><?php _e(" (Available in Premium Versions)", contact_bank); ?></i>
+						<i class="widget_premium_feature_contact"><?php _e(" (Available in Premium Edition)", contact_bank); ?></i>
 						</div>
 						
 						

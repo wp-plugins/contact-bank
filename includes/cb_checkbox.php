@@ -94,7 +94,7 @@ if(count($control_id) != 0)
 					<div class="layout-control-group">
 						<label class="layout-control-label"><?php _e("Tooltip Text", contact_bank); ?> :</label>
 						<div class="layout-controls">
-							<input type="text" class="layout-span12" readonly="readonly" id="ux_tooltip_control_<?php echo $dynamicId; ?>" placeholder="<?php _e( "This Feature is only available in Paid Premium Version!", contact_bank ); ?>" name="ux_tooltip_control_<?php echo $dynamicId; ?>" value="<?php echo isset($form_settings[$dynamicId]["cb_tooltip_txt"]) ? $form_settings[$dynamicId]["cb_tooltip_txt"] : ""; ?>"/>
+							<input type="text" class="layout-span12" readonly="readonly" id="ux_tooltip_control_<?php echo $dynamicId; ?>" placeholder="<?php _e( "This Feature is only available in Paid Premium Edition!", contact_bank ); ?>" name="ux_tooltip_control_<?php echo $dynamicId; ?>" value="<?php echo isset($form_settings[$dynamicId]["cb_tooltip_txt"]) ? $form_settings[$dynamicId]["cb_tooltip_txt"] : ""; ?>"/>
 						</div>
 					</div>
 					<div class="layout-control-group">

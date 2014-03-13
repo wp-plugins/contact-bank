@@ -4,14 +4,6 @@ global $wp_version;
 <form id="system_settings" class="layout-form" method="post">
 	<div class="fluid-layout">
 		<div class="layout-span12">
-			<ul class="breadcrumb">
-				<li>
-					<i class="icon-home"></i>
-					<a href="admin.php?page=contact_bank"><?php _e("Contact Bank", contact_bank); ?></a>
-					<span class="divider">/</span>
-					<a href="#"><?php _e("System Status", contact_bank); ?></a>
-				</li>
-			</ul>
 			<div class="widget-layout">
 				<div class="widget-layout-title">
 				    <h4><?php _e("System Status", contact_bank); ?></h4>
