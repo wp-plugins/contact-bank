@@ -5,7 +5,6 @@ update_option("contact-bank-updation-check-url","http://tech-banker.com/wp-admin
 $version = get_option("contact-bank-version-number");
 if($version != "2.0")
 {
-	include_once CONTACT_BK_PLUGIN_DIR ."/lib/cb-class-tracking.php";
     if (count($wpdb->get_var('SHOW TABLES LIKE "' . contact_bank_form_settings_Table() . '"')) == 0)
     {
         create_contact_bank_form_settings();
@@ -89,6 +88,16 @@ if($version != "2.0")
                          $contact_forms[$flag]->form_id,
                         "incorrect_email_message",
                         "Please enter a valid email address"
+                    )
+                );
+				$wpdb->query
+                (
+                    $wpdb->prepare
+                    (
+                        "INSERT INTO ". contact_bank_form_settings_Table() ."(form_id,form_message_key,form_message_value)VALUES(%d, %s, %s)",
+                         $contact_forms[$flag]->form_id,
+                        "form_description",
+                        ""
                     )
                 );
             }
@@ -575,7 +584,7 @@ function create_contact_bank_form_settings()
 	id INTEGER(10) UNSIGNED NOT NULL AUTO_INCREMENT,
 	form_id INTEGER(10) NOT NULL,
 	form_message_key VARCHAR(200) NOT NULL,
-	form_message_value VARCHAR(200) NOT NULL,
+	form_message_value TEXT NOT NULL,
 	PRIMARY KEY (id)
 	) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE utf8_general_ci';
     dbDelta($sql);

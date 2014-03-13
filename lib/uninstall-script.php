@@ -23,6 +23,12 @@
 	
 	$sql = "DROP TABLE " .contact_bank_layout_settings_Table();
 	$wpdb->query($sql);
+	
+	$sql = "DROP TABLE " .contact_bank_licensing();
+	$wpdb->query($sql);
+	
+	$sql = "DROP TABLE " .contact_bank_roles_capability();
+	$wpdb->query($sql);
 
     delete_option("contact-bank-version-number");
 ?>

@@ -72,6 +72,16 @@
 				"Please enter a valid e-mail address"
 			)
 		);
+		$wpdb->query
+		(
+			$wpdb->prepare
+			(
+				"INSERT INTO ". contact_bank_form_settings_Table() ."(form_id,form_message_key,form_message_value)VALUES(%d, %s, %s)",
+				$form_id,
+				"form_description",
+				""
+			)
+		);
         $settings = array();
         $settings["label_setting_font_family"] = "inherit";
         $settings["label_setting_font_color"] = "#000000";
@@ -226,6 +236,12 @@
 											<input type="text" name="ux_txt_form_name" class="layout-span7" id="ux_txt_form_name"
 												value="<?php echo isset($form_name) ? $form_name : ""; ?>"
 												placeholder="<?php _e("Enter Form Name", contact_bank); ?>"/>
+										</div>
+									</div>
+									<div class="layout-control-group div_border">
+										<label class="layout-control-label"><?php _e("Form Description :", contact_bank); ?></label>
+										<div class="layout-controls">
+											<textarea type="textarea" rows="5" name="ux_txt_form_description" class="layout-span7" id="ux_txt_form_description" placeholder="<?php _e("Enter Form Description", contact_bank); ?>"><?php echo isset($form_settings[$form_id]["form_description"])  ? $form_settings[$form_id]["form_description"] : "" ;?></textarea>
 										</div>
 									</div>
 									<div class="layout-control-group div_border">
@@ -506,6 +522,7 @@ jQuery("#ux_dynamic_form_submit").validate
 		array_new_form_settings.push({"blank_field_message" : jQuery("#ux_txt_blank_message").val()});
 		array_new_form_settings.push({"incorrect_email_message" : jQuery("#ux_txt_incorrect_email_message").val()});
 		array_new_form_settings.push({"success_message" : jQuery("#ux_txt_success_message").val()});
+		array_new_form_settings.push({"form_description" : jQuery("#ux_txt_form_description").val()});
 		jQuery("#ux_rdl_page").prop("checked")== true ? array_new_form_settings.push({"redirect" : "0"}) :array_new_form_settings.push({"redirect" : "1"});
 		
 		if(jQuery("#ux_rdl_page").prop("checked")== true)
@@ -517,7 +534,6 @@ jQuery("#ux_dynamic_form_submit").validate
 			array_new_form_settings.push({"redirect_url" : encodeURIComponent(jQuery("#ux_txt_redirect_url").val())});
 		}
 		array_new_form_settings.push({"form_name" : form_name});
-		
 		jQuery.ajax
 		({
 			type: "POST",

@@ -273,16 +273,21 @@ $forms_email_settings = $wpdb->get_row
 						<strong><?php echo $form_settings_array[$form_id]["success_message"]; ?></strong>
 					</span>
 				</div>
+				
 				<div class="widget-layout">
 					<div class="widget-layout-title">
 						<h4><?php echo $show_title == "true" ? $form_name : "" ?></h4>
 					</div>
-			  		
+					<div style="margin-left: 15px;" class="layout-control-group">
+			  			<span><?php echo $form_settings_array[$form_id]["form_description"]; ?></span>
+			  		</div>
 					<?php
 		                for($flag=0;$flag<count($form_fields);$flag++)
 		                {
 		                	?>
+		                	
 		                	<div class="widget-layout-body">
+		                		
 			                	<div class="layout-control-group">
 	                        		<label class="label_control layout-control-label">
 	                        			<?php
