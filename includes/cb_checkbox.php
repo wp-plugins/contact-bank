@@ -100,7 +100,7 @@ if(count($control_id) != 0)
 					<div class="layout-control-group">
 						<label class="layout-control-label"><?php _e("Options", contact_bank); ?> :</label>
 						<div class="layout-controls">
-							<input type="text" onKeyPress="white_space(event)" class="layout-span9" id="chk_options_<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter Options", contact_bank ); ?>" name="chk_options_<?php echo $dynamicId; ?>" />
+							<input type="text" class="layout-span9" id="chk_options_<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter Options", contact_bank ); ?>" name="chk_options_<?php echo $dynamicId; ?>" />
 							<input  value="<?php _e( "Add", contact_bank ); ?>" type="button" style="margin-left:10px;" class="btn btn-info layout-span2" id="chk_options_button_<?php echo $dynamicId; ?>" onclick="add_chk_options(<?php echo $dynamicId; ?>);"  name="chk_options_button_<?php echo $dynamicId; ?>" />
 						</div>
 					</div>

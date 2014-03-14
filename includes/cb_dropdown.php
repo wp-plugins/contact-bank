@@ -100,7 +100,7 @@
 					<div class="layout-control-group">
 						<label class="layout-control-label"><?php _e("Options", contact_bank); ?> : </label>
 						<div class="layout-controls">
-							<input type="text" onKeyPress="white_space(event)" class="layout-span9" id="ddl_options_<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter Option", contact_bank ); ?>" name="ddl_options_<?php echo $dynamicId; ?>" />
+							<input type="text"  class="layout-span9" id="ddl_options_<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter Option", contact_bank ); ?>" name="ddl_options_<?php echo $dynamicId; ?>" />
 							<input class="btn btn-info layout-span2" style="margin-left:10px;"  value="<?php _e( "Add", contact_bank ); ?>" type="button" id="ddl_options_button_<?php echo $dynamicId; ?>" onclick="add_ddl_options(<?php echo $dynamicId; ?>);"  name="ddl_options_button_<?php echo $dynamicId; ?>" />
 						</div>
 					</div>
