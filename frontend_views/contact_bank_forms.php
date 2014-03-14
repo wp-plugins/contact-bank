@@ -299,13 +299,12 @@ $forms_email_settings = $wpdb->get_row
 			                            <?php
 			                            }
 			                            ?>
-			                             </label>
-		                             <?php
-				                   switch($form_fields[$flag]->field_id)
-				                    {
-				                        
-											case 1:
-				                            ?>
+			                        </label>
+	                            	<?php
+			                   		switch($form_fields[$flag]->field_id)
+			                    	{
+				                        case 1:
+				                        ?>
 				                             <div class="layout-controls layout_according_label_position">
 					                            <input class="hovertip input_control <?php echo $layout_settings_array[$form_id]["input_field_input_size"]; ?>"
 					                                   type="text"  id="ux_txt_control_<?php echo $form_fields[$flag]->column_dynamicId; ?>"
@@ -322,7 +321,6 @@ $forms_email_settings = $wpdb->get_row
 					                                   <br/>
 					                                   <span class="field_description" id="txt_description_"><?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_description"]; ?></span>
 					                         </div>
-						                    
 				                            <?php
 				                        break;
 				                        case 2:
@@ -355,27 +353,26 @@ $forms_email_settings = $wpdb->get_row
 						                                 <br/>
 					                                   <span class="field_description" id="txt_description_"><?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_description"]; ?></span>
 					                           </div>
-												<?php				
+												<?php
 										break;
 										case 4:
 											$ddl_values = unserialize($control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_dropdown_option_val"]);
                             				$ddl_ids = unserialize($control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_dropdown_option_id"]);
 											?>
-											
-				                          	 <div class="layout-controls layout_according_label_position">
-				                             <select class="hovertip input_control <?php echo $layout_settings_array[$form_id]["input_field_input_size"]; ?>" type="select" id="ux_select_default_<?php echo $form_fields[$flag]->column_dynamicId; ?>"
-				                                    data-original-title="<?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_tooltip_txt"]; ?>"
-				                                    name="ux_select_default_<?php echo $form_fields[$flag]->column_dynamicId; ?>">
-				                                <option value=""><?php _e("Select Option", contact_bank); ?></option>
-				                                <?php
-				                                foreach($ddl_ids as $key => $value )
-				                                {
-				                                    ?>
-				                                    <option value="<?php echo $ddl_values[$key]; ?>"><?php echo $ddl_values[$key]; ?></option>
-				                                <?php
-				                                }
-												?>
-				                            </select>
+											<div class="layout-controls layout_according_label_position">
+					                             <select class="hovertip input_control <?php echo $layout_settings_array[$form_id]["input_field_input_size"]; ?>" type="select" id="ux_select_default_<?php echo $form_fields[$flag]->column_dynamicId; ?>"
+					                                    data-original-title="<?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_tooltip_txt"]; ?>"
+					                                    name="ux_select_default_<?php echo $form_fields[$flag]->column_dynamicId; ?>">
+					                                <option value="<?php echo count($ddl_values) == 0 ? " " : ""; ?>"><?php _e("Select Option", contact_bank); ?></option>
+					                                <?php
+					                                foreach($ddl_ids as $key => $value )
+					                                {
+					                                    ?>
+					                                    <option value="<?php echo $ddl_values[$key]; ?>"><?php echo $ddl_values[$key]; ?></option>
+					                                <?php
+					                                }
+													?>
+					                            </select>
 				                            </div>
 											<?php
 										break;

@@ -4,7 +4,7 @@
 			<div class="widget-layout">
 				<div class="widget-layout-title">
 					<h4><?php _e( "Global Settings", contact_bank ); ?>
-						<i class="widget_premium_feature_contact"><?php _e(" (Premium Feature available in Paid Edition)", contact_bank); ?></i></h4>   
+						<i class="widget_premium_feature_contact"><?php _e(" (Premium Features available in Paid Edition)", contact_bank); ?></i></h4>   
 					
 				</div>
 				<div class="widget-layout-body">

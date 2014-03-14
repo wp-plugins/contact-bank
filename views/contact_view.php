@@ -427,7 +427,9 @@
 							</div>
 							<div class="widget-layout">
 								<div class="widget-layout-title">
-									<h4><?php _e("Advanced Fields", contact_bank); ?></h4>
+									<h4><?php _e("Advanced Fields", contact_bank); ?>
+										<i class="widget_premium_feature_contact"><?php _e(" (Available in Premium Edition)", contact_bank); ?></i>
+									</h4>
 								</div>
 								<div class="widget-layout-body">
 									<p class="howto"><?php _e("Click on a field to use into your form.", contact_bank); ?></p>

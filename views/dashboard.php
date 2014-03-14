@@ -8,6 +8,7 @@ $last_form_id = $wpdb->get_var
 		""
 	)
 );
+
 ?>
 <div class="fluid-layout">
 	<div class="layout-span12">

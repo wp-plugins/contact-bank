@@ -2,9 +2,9 @@
 /**
 Plugin Name: Contact Bank Standard Edition
 Plugin URI: http://tech-banker.com
-Description: Build Complex, Powerful Contact Forms in Just Seconds. No Programming Knowledge Required! Yeah, It"s Really That Easy.
+Description: Build Complex, Powerful Contact Forms in Just Seconds. No Programming Knowledge Required! Yeah, It's Really That Easy.
 Author: Tech Banker
-Version: 2.0.3
+Version: 2.0.4
 Author URI: http://tech-banker.com
  */
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -24,7 +24,7 @@ if (!defined("contact_bank")) define("contact_bank", "contact_bank");
 
 function plugin_uninstall_script_for_contact_bank()
 {
-    include_once CONTACT_BK_PLUGIN_DIR ."/lib/uninstall-script.php";
+   // include_once CONTACT_BK_PLUGIN_DIR ."/lib/uninstall-script.php";
 }
 /* Function Name : plugin_install_script_for_contact_bank
  * Paramters : None
@@ -498,10 +498,11 @@ function plugin_load_textdomain()
 }
 add_action("plugins_loaded", "plugin_load_textdomain");
 $version = get_option("contact-bank-version-number");
-if($version != "2.0")
+if($version == "1.0" || $version == "2.0")
 {
 	add_action('admin_init', 'plugin_install_script_for_contact_bank');
 }
+
 /*************************************************************************************/
 add_action("admin_bar_menu", "add_contact_bank_icon",100);
 // add_action Hook called for function frontend_plugin_css_scripts_contact_bank

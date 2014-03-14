@@ -3,7 +3,7 @@ global $wpdb;
 require_once(ABSPATH . "wp-admin/includes/upgrade.php");
 update_option("contact-bank-updation-check-url","http://tech-banker.com/wp-admin/admin-ajax.php");
 $version = get_option("contact-bank-version-number");
-if($version != "2.0")
+if($version == "1.0")
 {
     if (count($wpdb->get_var('SHOW TABLES LIKE "' . contact_bank_form_settings_Table() . '"')) == 0)
     {
@@ -489,7 +489,72 @@ if($version != "2.0")
             )
         );
     }
-	update_option("contact-bank-version-number","2.0");
+	update_option("contact-bank-version-number","2.1");
+	 
+}
+else if($version == "2.0")
+{
+	if (count($wpdb->get_var('SHOW TABLES LIKE "' . contact_bank_form_settings_Table() . '"')) == 0)
+    {
+        create_contact_bank_form_settings();
+    }
+	else 
+	{
+		$contact_forms_settings_table = $wpdb->get_results
+        (
+            $wpdb->prepare
+            (
+                "SELECT * FROM ".contact_bank_form_settings_Table(),""
+            )
+        );
+		
+		$sql = "DROP TABLE " . contact_bank_form_settings_Table();
+        $wpdb->query($sql);
+		
+		
+		$contact_forms_count = $wpdb->get_results
+        (
+            $wpdb->prepare
+            (
+                "SELECT * FROM ".contact_bank_contact_form(),""
+            )
+        );
+        
+
+        create_contact_bank_form_settings();
+		
+		if(count($contact_forms_settings_table) > 0)
+        {
+            for($flag = 0; $flag < count($contact_forms_settings_table); $flag++)
+            {
+            	
+			   $wpdb->query
+	           (
+	                $wpdb->prepare
+	                (
+	                    "INSERT INTO ". contact_bank_form_settings_Table() ."(form_id,form_message_key,form_message_value)VALUES(%d, %s, %s)",
+	                    $contact_forms_settings_table[$flag]->form_id,
+	                    $contact_forms_settings_table[$flag]->form_message_key,
+	                    $contact_forms_settings_table[$flag]->form_message_value
+	                )
+           		);
+			}
+			for($flag = 0; $flag < count($contact_forms_count); $flag++)
+			{
+				$wpdb->query
+	            (
+	                $wpdb->prepare
+	                (
+	                    "INSERT INTO ". contact_bank_form_settings_Table() ."(form_id,form_message_key,form_message_value)VALUES(%d, %s, %s)",
+	                    $contact_forms_count[$flag]->form_id,
+	                    "form_description",
+	                    ""
+	                )
+	       		);
+			}
+		}
+	}
+    update_option("contact-bank-version-number","2.1");
 }
 function create_table_contact_bank_forms()
 {

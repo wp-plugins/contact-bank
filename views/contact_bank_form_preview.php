@@ -288,7 +288,7 @@ $forms_email_settings = $wpdb->get_row
 										<h4><?php echo $form_name ;?></h4>
 									</div>
 							  		<div style="margin-left: 15px;" class="layout-control-group">
-							  			<span><?php echo $form_settings_array[$form_id]["form_description"]; ?></span>
+							  			<span class="<?php echo $layout_settings_array[$form_id]["input_field_input_size"]; ?>"><?php echo $form_settings_array[$form_id]["form_description"]; ?></span>
 							  		</div>
 									<?php
 						                for($flag=0;$flag<count($form_fields);$flag++)

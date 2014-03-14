@@ -232,7 +232,7 @@ $fields_controls = $wpdb->get_results
 (
 	$wpdb->prepare
 	(
-		"SELECT dynamicId, dynamic_settings_value FROM ". contact_bank_dynamic_settings_form(). " JOIN " . create_control_Table(). " ON " . contact_bank_dynamic_settings_form().". dynamicId  = ". create_control_Table(). ".control_id WHERE `dynamic_settings_key` = 'cb_admin_label' and form_id = %d",
+		"SELECT dynamicId, dynamic_settings_value FROM ". contact_bank_dynamic_settings_form(). " JOIN " . create_control_Table(). " ON " . contact_bank_dynamic_settings_form().". dynamicId  = ". create_control_Table(). ".control_id WHERE `dynamic_settings_key` = 'cb_admin_label' and form_id = %d Order By ".create_control_Table().".sorting_order",
 		$form_id
 	)
 );
