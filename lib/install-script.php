@@ -3,7 +3,7 @@ global $wpdb;
 require_once(ABSPATH . "wp-admin/includes/upgrade.php");
 update_option("contact-bank-updation-check-url","http://tech-banker.com/wp-admin/admin-ajax.php");
 $version = get_option("contact-bank-version-number");
-if($version == "1.0")
+if($version == "")
 {
     if (count($wpdb->get_var('SHOW TABLES LIKE "' . contact_bank_form_settings_Table() . '"')) == 0)
     {
