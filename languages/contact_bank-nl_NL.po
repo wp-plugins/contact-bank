@@ -1,0 +1,1166 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2014-03-08 16:48+0530\n"
+"PO-Revision-Date: 2014-03-10 12:05+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: C:\\wamp\\www\\contact_bank\\wp-content\\plugins\\contact-"
+"bank-pro-version-2.1.0\\\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: contact-bank.php:61 contact-bank.php:69 contact-bank.php:81
+#: contact-bank.php:98 contact-bank.php:106 contact-bank.php:118
+#: contact-bank.php:135 contact-bank.php:143 contact-bank.php:155
+#: contact-bank.php:172 contact-bank.php:180 contact-bank.php:192
+#: contact-bank.php:209 contact-bank.php:217 contact-bank.php:229
+#: views/contact-bank-system-report.php:10
+msgid "Contact Bank"
+msgstr "Contact Bank"
+
+#: contact-bank.php:62 contact-bank.php:70 contact-bank.php:82
+#: contact-bank.php:99 contact-bank.php:107 contact-bank.php:119
+#: contact-bank.php:136 contact-bank.php:144 contact-bank.php:156
+#: contact-bank.php:173 contact-bank.php:181 contact-bank.php:193
+#: contact-bank.php:210 contact-bank.php:218 contact-bank.php:230
+#: contact-bank.php:503
+msgid "Dashboard"
+msgstr "Dashboard van"
+
+#: contact-bank.php:63 contact-bank.php:72 contact-bank.php:84
+#: contact-bank.php:100 contact-bank.php:109 contact-bank.php:121
+#: contact-bank.php:137 contact-bank.php:146 contact-bank.php:158
+#: contact-bank.php:174 contact-bank.php:183 contact-bank.php:195
+#: contact-bank.php:211 contact-bank.php:220 contact-bank.php:232
+#: contact-bank.php:509 views/contact_frontend_data.php:5
+#: views/dashboard.php:236 views/dashboard.php:261 views/dashboard.php:297
+#: views/dashboard.php:320 views/dashboard.php:345 views/dashboard.php:381
+#: views/dashboard.php:404 views/dashboard.php:429 views/dashboard.php:465
+#: views/dashboard.php:488 views/dashboard.php:513 views/dashboard.php:549
+#: views/dashboard.php:572 views/dashboard.php:597 views/dashboard.php:633
+msgid "Form Entries"
+msgstr "Vorm vermeldingen"
+
+#: contact-bank.php:65 contact-bank.php:75 contact-bank.php:89
+#: contact-bank.php:102 contact-bank.php:112 contact-bank.php:126
+#: contact-bank.php:139 contact-bank.php:149 contact-bank.php:163
+#: contact-bank.php:176 contact-bank.php:186 contact-bank.php:200
+#: contact-bank.php:213 contact-bank.php:223 contact-bank.php:237
+#: contact-bank.php:541
+msgid "Documentation"
+msgstr "Documentatiecentrum"
+
+#: contact-bank.php:73 contact-bank.php:85 contact-bank.php:110
+#: contact-bank.php:122 contact-bank.php:147 contact-bank.php:159
+#: contact-bank.php:184 contact-bank.php:196 contact-bank.php:221
+#: contact-bank.php:233 contact-bank.php:515
+#: views/contact_email_settings.php:8 views/dashboard.php:256
+#: views/dashboard.php:292 views/dashboard.php:340 views/dashboard.php:376
+#: views/dashboard.php:424 views/dashboard.php:460 views/dashboard.php:508
+#: views/dashboard.php:544 views/dashboard.php:592 views/dashboard.php:628
+msgid "Email Settings"
+msgstr "E-mailinstellingen"
+
+#: contact-bank.php:74 contact-bank.php:88 contact-bank.php:111
+#: contact-bank.php:125 contact-bank.php:148 contact-bank.php:162
+#: contact-bank.php:185 contact-bank.php:199 contact-bank.php:222
+#: contact-bank.php:236 contact-bank.php:534
+#: views/contact-bank-system-report.php:12
+#: views/contact-bank-system-report.php:17
+msgid "System Status"
+msgstr "stelsel Status"
+
+#: contact-bank.php:86 contact-bank.php:123 contact-bank.php:160
+#: contact-bank.php:197 contact-bank.php:234 contact-bank.php:521
+#: views/contact_bank_layout_settings.php:6 views/dashboard.php:287
+#: views/dashboard.php:371 views/dashboard.php:455 views/dashboard.php:539
+#: views/dashboard.php:623
+msgid "Global Settings"
+msgstr "Globale Instellingen"
+
+#: contact-bank.php:87 contact-bank.php:124 contact-bank.php:161
+#: contact-bank.php:198 contact-bank.php:235
+msgid "Roles & Capabilites"
+msgstr "Rollen & Capability"
+
+#: contact-bank.php:90 contact-bank.php:127 contact-bank.php:164
+#: contact-bank.php:201 contact-bank.php:238 contact-bank.php:547
+msgid "Licensing"
+msgstr "Licentiëring"
+
+#: contact-bank.php:527 views/contact-bank-roles_capability.php:9
+#: views/contact-bank-roles_capability.php:24
+msgid "Roles & Capabilities"
+msgstr "Rollen & Capability"
+
+#: contact-bank.php:554
+msgid "Add Contact Bank Form"
+msgstr "Contactpersoon toevoegen Jordaanoever -vorm"
+
+#: contact-bank.php:566
+msgid "Insert Contact Bank Form"
+msgstr "Invoegen ContacteerJordaanoever vorm"
+
+#: contact-bank.php:568
+msgid "Select a form below to add it to your post or page."
+msgstr "Selecteer hieronder een formulier toe te voegen het uw post of pagina."
+
+#: contact-bank.php:573
+msgid "Form Name"
+msgstr "Formuliernaam"
+
+#: contact-bank.php:575
+msgid "Select a Form"
+msgstr "Selecteer een formulier"
+
+#: contact-bank.php:595
+msgid "Show Form Title"
+msgstr "Toon Formuliertitel"
+
+#: contact-bank.php:600
+msgid "Insert Form"
+msgstr "Plaats Formulier"
+
+#: contact-bank.php:603
+msgid "Cancel"
+msgstr "Annuleer"
+
+#: contact-bank.php:615
+msgid "Please choose a Form to insert into Shortcode"
+msgstr "Kies een formulier te voegen in Shortcode"
+
+#: contact-bank.php:719
+msgid "Select Form :"
+msgstr "Selecteren formulier :"
+
+#: contact-bank.php:721 views/contact_bank_layout_settings.php:20
+#: views/contact_bank_layout_settings.php:33
+#: views/contact_email_settings.php:15 views/contact_email_settings.php:28
+#: views/contact_frontend_data.php:19 views/contact_frontend_data.php:32
+msgid "Select Form"
+msgstr "Selecteer Formulier"
+
+#: frontend_views/contact_bank_forms.php:364
+#: views/contact_bank_form_preview.php:373 views/contact_controls_files.php:56
+msgid "Select Option"
+msgstr "selecteert u Optie"
+
+#: frontend_views/contact_bank_forms.php:535 includes/cb_date.php:156
+#: views/contact_bank_form_preview.php:544
+#: views/contact_controls_files.php:187
+msgid "Day"
+msgstr "de Dag"
+
+#: frontend_views/contact_bank_forms.php:572
+#: views/contact_bank_form_preview.php:580
+msgid "Select Month"
+msgstr "Selecteer Maand"
+
+#: frontend_views/contact_bank_forms.php:589 includes/cb_date.php:212
+#: views/contact_bank_form_preview.php:596
+#: views/contact_controls_files.php:222
+msgid "Year"
+msgstr "Bouwjaar"
+
+#: frontend_views/contact_bank_forms.php:603 includes/cb_time.php:185
+#: views/contact_bank_form_preview.php:609
+#: views/contact_controls_files.php:249
+msgid "Hour"
+msgstr "uurs"
+
+#: frontend_views/contact_bank_forms.php:607 includes/cb_time.php:188
+#: views/contact_bank_form_preview.php:613
+#: views/contact_controls_files.php:252
+msgid "Minute"
+msgstr "minuut"
+
+#: includes/cb_address.php:36 views/contact_controls_files.php:167
+#: views/contact_view.php:430
+msgid "Address"
+msgstr "adres"
+
+#: includes/cb_address.php:40 includes/cb_checkbox.php:40
+#: includes/cb_date.php:40 includes/cb_dropdown.php:40
+#: includes/cb_email.php:40 includes/cb_file_upload.php:41
+#: includes/cb_multiple.php:40 includes/cb_name.php:40
+#: includes/cb_number.php:40 includes/cb_password.php:40
+#: includes/cb_phone.php:40 includes/cb_text.php:40
+#: includes/cb_textarea.php:40 includes/cb_time.php:41 includes/cb_url.php:40
+msgid "Label"
+msgstr "het Etiket"
+
+#: includes/cb_address.php:42 includes/cb_address.php:115
+#: includes/cb_checkbox.php:42 includes/cb_checkbox.php:144
+#: includes/cb_dropdown.php:42 includes/cb_dropdown.php:144
+#: includes/cb_email.php:43 includes/cb_email.php:133
+#: includes/cb_multiple.php:44 includes/cb_multiple.php:164
+#: includes/cb_name.php:42 includes/cb_name.php:115 includes/cb_number.php:43
+#: includes/cb_number.php:131 includes/cb_password.php:124
+#: includes/cb_phone.php:43 includes/cb_phone.php:131 includes/cb_text.php:43
+#: includes/cb_text.php:132 includes/cb_textarea.php:42
+#: includes/cb_textarea.php:130 includes/cb_time.php:124
+#: includes/cb_url.php:43 includes/cb_url.php:132
+#: views/contact_controls_files.php:3 views/contact_controls_files.php:19
+#: views/contact_controls_files.php:52 views/contact_controls_files.php:68
+#: views/contact_controls_files.php:85
+msgid "Untitled"
+msgstr "Untitled"
+
+#: includes/cb_address.php:42 includes/cb_date.php:42
+#: includes/cb_dropdown.php:42 includes/cb_email.php:44
+#: includes/cb_file_upload.php:44 includes/cb_multiple.php:45
+#: includes/cb_name.php:42 includes/cb_number.php:44
+#: includes/cb_password.php:44 includes/cb_phone.php:44
+#: includes/cb_text.php:44 includes/cb_time.php:45 includes/cb_url.php:44
+msgid "Enter Label"
+msgstr " Invoeren  het Etiket"
+
+#: includes/cb_address.php:46 includes/cb_date.php:46 includes/cb_email.php:49
+#: includes/cb_file_upload.php:50 includes/cb_name.php:46
+#: includes/cb_number.php:48 includes/cb_password.php:48
+#: includes/cb_phone.php:48 includes/cb_text.php:48
+#: includes/cb_textarea.php:48 includes/cb_time.php:49 includes/cb_url.php:48
+msgid "Description"
+msgstr "Beschrijving van"
+
+#: includes/cb_address.php:48 includes/cb_date.php:48 includes/cb_email.php:52
+#: includes/cb_file_upload.php:53 includes/cb_name.php:48
+#: includes/cb_number.php:51 includes/cb_password.php:50
+#: includes/cb_phone.php:51 includes/cb_text.php:51 includes/cb_time.php:52
+#: includes/cb_url.php:51
+msgid "Enter Description"
+msgstr "Invoeren Beschrijving van"
+
+#: includes/cb_address.php:52 includes/cb_address.php:62
+#: includes/cb_address.php:75 includes/cb_address.php:89
+#: includes/cb_checkbox.php:46 includes/cb_checkbox.php:56
+#: includes/cb_checkbox.php:69 includes/cb_checkbox.php:83
+#: includes/cb_date.php:52 includes/cb_date.php:62 includes/cb_date.php:75
+#: includes/cb_date.php:89 includes/cb_dropdown.php:46
+#: includes/cb_dropdown.php:56 includes/cb_dropdown.php:69
+#: includes/cb_dropdown.php:83 includes/cb_email.php:57
+#: includes/cb_email.php:68 includes/cb_email.php:83 includes/cb_email.php:99
+#: includes/cb_multiple.php:49 includes/cb_multiple.php:60
+#: includes/cb_multiple.php:75 includes/cb_multiple.php:91
+#: includes/cb_name.php:52 includes/cb_name.php:62 includes/cb_name.php:75
+#: includes/cb_name.php:89 includes/cb_number.php:56 includes/cb_number.php:67
+#: includes/cb_number.php:82 includes/cb_number.php:98
+#: includes/cb_password.php:55 includes/cb_password.php:66
+#: includes/cb_password.php:81 includes/cb_password.php:97
+#: includes/cb_phone.php:56 includes/cb_phone.php:67 includes/cb_phone.php:82
+#: includes/cb_phone.php:98 includes/cb_text.php:56 includes/cb_text.php:67
+#: includes/cb_text.php:82 includes/cb_text.php:98 includes/cb_textarea.php:56
+#: includes/cb_textarea.php:67 includes/cb_textarea.php:82
+#: includes/cb_textarea.php:98 includes/cb_time.php:57 includes/cb_time.php:68
+#: includes/cb_time.php:83 includes/cb_time.php:99 includes/cb_url.php:56
+#: includes/cb_url.php:67 includes/cb_url.php:82 includes/cb_url.php:98
+msgid "Required"
+msgstr "Verplicht"
+
+#: includes/cb_address.php:66 includes/cb_address.php:79
+#: includes/cb_address.php:93 includes/cb_checkbox.php:60
+#: includes/cb_checkbox.php:73 includes/cb_checkbox.php:87
+#: includes/cb_date.php:66 includes/cb_date.php:79 includes/cb_date.php:93
+#: includes/cb_dropdown.php:60 includes/cb_dropdown.php:73
+#: includes/cb_dropdown.php:87 includes/cb_email.php:73
+#: includes/cb_email.php:88 includes/cb_email.php:104
+#: includes/cb_multiple.php:65 includes/cb_multiple.php:80
+#: includes/cb_multiple.php:96 includes/cb_name.php:66 includes/cb_name.php:79
+#: includes/cb_name.php:93 includes/cb_number.php:72 includes/cb_number.php:87
+#: includes/cb_number.php:103 includes/cb_password.php:71
+#: includes/cb_password.php:86 includes/cb_password.php:102
+#: includes/cb_phone.php:72 includes/cb_phone.php:87 includes/cb_phone.php:103
+#: includes/cb_text.php:72 includes/cb_text.php:87 includes/cb_text.php:103
+#: includes/cb_textarea.php:72 includes/cb_textarea.php:87
+#: includes/cb_textarea.php:103 includes/cb_time.php:73
+#: includes/cb_time.php:88 includes/cb_time.php:104 includes/cb_url.php:72
+#: includes/cb_url.php:87 includes/cb_url.php:103
+msgid "Not Required"
+msgstr "niet die Verplicht"
+
+#: includes/cb_address.php:101 includes/cb_checkbox.php:95
+#: includes/cb_date.php:101 includes/cb_dropdown.php:95
+#: includes/cb_email.php:112 includes/cb_file_upload.php:58
+#: includes/cb_multiple.php:104 includes/cb_name.php:101
+#: includes/cb_number.php:111 includes/cb_password.php:110
+#: includes/cb_phone.php:111 includes/cb_text.php:111 includes/cb_time.php:112
+#: includes/cb_url.php:111
+msgid "Tooltip Text"
+msgstr "Knopinfo Tekst"
+
+#: includes/cb_address.php:103 includes/cb_multiple.php:108
+#: includes/cb_name.php:103 includes/cb_number.php:115
+#: includes/cb_phone.php:115 includes/cb_text.php:114 includes/cb_url.php:114
+msgid "Enter Tooltip Text"
+msgstr "invoeren knopinfo tekst"
+
+#: includes/cb_address.php:107 includes/cb_email.php:121
+#: includes/cb_name.php:107 includes/cb_number.php:119
+#: includes/cb_phone.php:119 includes/cb_text.php:120
+#: includes/cb_textarea.php:120 includes/cb_url.php:120
+#: includes/cb_url.php:123
+msgid "Place Holder"
+msgstr "plek Houder van"
+
+#: includes/cb_address.php:109 includes/cb_email.php:124
+#: includes/cb_name.php:109 includes/cb_number.php:124
+#: includes/cb_phone.php:123 includes/cb_text.php:123
+#: includes/cb_textarea.php:122
+msgid "Enter Place Holder"
+msgstr "Voer plek Houder van"
+
+#: includes/cb_address.php:113 includes/cb_checkbox.php:142
+#: includes/cb_date.php:107 includes/cb_dropdown.php:142
+#: includes/cb_email.php:130 includes/cb_file_upload.php:67
+#: includes/cb_multiple.php:160 includes/cb_name.php:113
+#: includes/cb_number.php:128 includes/cb_password.php:120
+#: includes/cb_phone.php:128 includes/cb_text.php:129
+#: includes/cb_textarea.php:128 includes/cb_time.php:121
+#: includes/cb_url.php:129
+msgid "Admin Label"
+msgstr "Admin Etiket"
+
+#: includes/cb_address.php:115 includes/cb_checkbox.php:144
+#: includes/cb_date.php:109 includes/cb_dropdown.php:144
+#: includes/cb_email.php:134 includes/cb_file_upload.php:71
+#: includes/cb_multiple.php:163 includes/cb_name.php:115
+#: includes/cb_number.php:130 includes/cb_password.php:123
+#: includes/cb_phone.php:130 includes/cb_text.php:131
+#: includes/cb_textarea.php:131 includes/cb_time.php:125
+#: includes/cb_url.php:131
+msgid "Enter Admin Label"
+msgstr "binnenkomen admin  etiket "
+
+#: includes/cb_address.php:119 includes/cb_checkbox.php:148
+#: includes/cb_date.php:113 includes/cb_dropdown.php:148
+#: includes/cb_email.php:139 includes/cb_file_upload.php:75
+#: includes/cb_multiple.php:168 includes/cb_name.php:119
+#: includes/cb_number.php:136 includes/cb_password.php:128
+#: includes/cb_phone.php:136 includes/cb_text.php:137
+#: includes/cb_textarea.php:135 includes/cb_time.php:129
+#: includes/cb_url.php:138
+msgid "Do not show in the email"
+msgstr "Doen Niet laten zien bij de e-mail"
+
+#: includes/cb_address.php:150 includes/cb_checkbox.php:179
+#: includes/cb_date.php:237 includes/cb_dropdown.php:179
+#: includes/cb_email.php:173 includes/cb_file_upload.php:161
+#: includes/cb_multiple.php:202 includes/cb_name.php:150
+#: includes/cb_number.php:170 includes/cb_password.php:305
+#: includes/cb_phone.php:170 includes/cb_text.php:315
+#: includes/cb_textarea.php:312 includes/cb_time.php:200
+#: includes/cb_url.php:172
+msgid "Save Settings"
+msgstr "Instellingen Opslaan"
+
+#: includes/cb_checkbox.php:36
+msgid "Check Boxes"
+msgstr "controleer Dozen"
+
+#: includes/cb_checkbox.php:97 includes/cb_date.php:103
+#: includes/cb_dropdown.php:97 includes/cb_email.php:115
+#: includes/cb_file_upload.php:62 includes/cb_password.php:113
+#: includes/cb_textarea.php:113 includes/cb_time.php:115
+msgid "Enter Tooltip"
+msgstr "invoeren knopinfo"
+
+#: includes/cb_checkbox.php:101 includes/cb_dropdown.php:101
+#: includes/cb_multiple.php:113
+msgid "Options"
+msgstr "Opties"
+
+#: includes/cb_checkbox.php:103
+msgid "Enter Options"
+msgstr "Invoeren u Opties"
+
+#: includes/cb_checkbox.php:104 includes/cb_dropdown.php:104
+#: includes/cb_multiple.php:119
+msgid "Add"
+msgstr "toevoegen"
+
+#: includes/cb_checkbox.php:135 includes/cb_dropdown.php:135
+#: includes/cb_multiple.php:153
+msgid "Delete"
+msgstr "Verwijder"
+
+#: includes/cb_checkbox.php:228 includes/cb_dropdown.php:220
+#: includes/cb_multiple.php:252
+msgid "Please Fill an Option."
+msgstr "Gelieve  Invullen  een Optie."
+
+#: includes/cb_date.php:36 includes/cb_date.php:42 includes/cb_date.php:109
+#: views/contact_controls_files.php:183 views/contact_view.php:443
+msgid "Date"
+msgstr "Datum"
+
+#: includes/cb_date.php:141
+msgid "Start Year"
+msgstr "te starten Jaar"
+
+#: includes/cb_date.php:143
+msgid "Enter Start Year"
+msgstr "In te voeren op Start Bouwjaar"
+
+#: includes/cb_date.php:147
+msgid "End Year"
+msgstr "einde Jaar"
+
+#: includes/cb_date.php:149
+msgid "Enter End Year "
+msgstr " Invoeren einde  Bouwjaar"
+
+#: includes/cb_date.php:153 includes/cb_time.php:182
+msgid "Default Value"
+msgstr "Stand.waarde"
+
+#: includes/cb_date.php:197 views/contact_controls_files.php:207
+msgid "Month"
+msgstr "maand"
+
+#: includes/cb_date.php:217
+msgid "Date Format"
+msgstr "Datum formaat"
+
+#: includes/cb_dropdown.php:36 views/contact_view.php:396
+msgid "Select Box"
+msgstr "Selecteren doos"
+
+#: includes/cb_dropdown.php:103 includes/cb_multiple.php:116
+msgid "Enter Option"
+msgstr "optie  Invoeren "
+
+#: includes/cb_email.php:36 views/contact_view.php:393
+msgid "Email Address"
+msgstr "E-mail Adres"
+
+#: includes/cb_file_upload.php:37 includes/cb_file_upload.php:45
+#: includes/cb_file_upload.php:70 views/contact_controls_files.php:134
+#: views/contact_view.php:438
+msgid "File Upload"
+msgstr "Bestandsgrootte uploaden "
+
+#: includes/cb_file_upload.php:106
+msgid "Allow Multiple Uploads"
+msgstr "Laat Meerdere Neergelegde"
+
+#: includes/cb_file_upload.php:137
+msgid "Allowed File Extensions"
+msgstr "toegestaan Bestand  Verlengingen"
+
+#: includes/cb_file_upload.php:140
+msgid "Enter File Extensions"
+msgstr "invoeren Bestand  Verlengingen"
+
+#: includes/cb_file_upload.php:144
+msgid "The file extensions must be separated with semicolons(',')"
+msgstr "De bestandsextensies moeten met komma's worden gescheiden (',')"
+
+#: includes/cb_file_upload.php:148
+msgid "Allowed File Size"
+msgstr "toegestaan ​​Bestand Grootte"
+
+#: includes/cb_file_upload.php:154
+msgid "File Size must be in Mb"
+msgstr "Bestand Grootte moet in Mb"
+
+#: includes/cb_multiple.php:36 views/contact_view.php:404
+msgid "Radio Buttons"
+msgstr "Radio In Knoppen"
+
+#: includes/cb_name.php:36 views/add_contact_email.php:94
+#: views/contact_controls_files.php:118 views/contact_view.php:419
+msgid "Name"
+msgstr "naam"
+
+#: includes/cb_number.php:36 views/contact_controls_files.php:102
+#: views/contact_view.php:435
+msgid "Number"
+msgstr "aantal"
+
+#: includes/cb_password.php:36 includes/cb_password.php:43
+#: views/contact_controls_files.php:270 views/contact_view.php:451
+msgid "Password"
+msgstr "mailadres Wachtwoord"
+
+#: includes/cb_password.php:159 includes/cb_text.php:168
+#: includes/cb_textarea.php:166
+msgid "Add a filter"
+msgstr "toevoegen een filter"
+
+#: includes/cb_password.php:169 includes/cb_password.php:177
+#: includes/cb_password.php:186 includes/cb_text.php:179
+#: includes/cb_text.php:187 includes/cb_text.php:196
+#: includes/cb_textarea.php:176 includes/cb_textarea.php:184
+#: includes/cb_textarea.php:193
+msgid "Alpha"
+msgstr "alfa"
+
+#: includes/cb_password.php:196 includes/cb_password.php:204
+#: includes/cb_password.php:213 includes/cb_text.php:207
+#: includes/cb_text.php:215 includes/cb_text.php:224
+#: includes/cb_textarea.php:203 includes/cb_textarea.php:211
+#: includes/cb_textarea.php:220
+msgid "Alpha Numeric"
+msgstr "alfa Numeric"
+
+#: includes/cb_password.php:224 includes/cb_password.php:232
+#: includes/cb_password.php:241 includes/cb_text.php:234
+#: includes/cb_text.php:242 includes/cb_text.php:251
+#: includes/cb_textarea.php:230 includes/cb_textarea.php:238
+#: includes/cb_textarea.php:247
+msgid "Digits"
+msgstr "Getallen"
+
+#: includes/cb_password.php:251 includes/cb_password.php:259
+#: includes/cb_password.php:268 includes/cb_text.php:261
+#: includes/cb_text.php:269 includes/cb_text.php:278
+#: includes/cb_textarea.php:258 includes/cb_textarea.php:266
+#: includes/cb_textarea.php:275
+msgid "Strip Tags"
+msgstr " Strook tags  te"
+
+#: includes/cb_password.php:278 includes/cb_password.php:286
+#: includes/cb_password.php:295 includes/cb_text.php:288
+#: includes/cb_text.php:296 includes/cb_text.php:305
+#: includes/cb_textarea.php:285 includes/cb_textarea.php:293
+#: includes/cb_textarea.php:302
+msgid "Trim"
+msgstr "Bijknippen"
+
+#: includes/cb_phone.php:36 views/contact_controls_files.php:151
+#: views/contact_view.php:427
+msgid "Phone"
+msgstr "telefoon"
+
+#: includes/cb_text.php:36 views/contact_view.php:385
+msgid "Single Line Text"
+msgstr "Enkel Lijn tekst"
+
+#: includes/cb_textarea.php:36 views/contact_view.php:388
+msgid "Paragraph Text"
+msgstr "paragraaf tekst"
+
+#: includes/cb_textarea.php:43
+msgid "Enter label"
+msgstr " Etiket Invoeren"
+
+#: includes/cb_textarea.php:50
+msgid "Enter  Description"
+msgstr "Invoeren  Beschrijving van  "
+
+#: includes/cb_textarea.php:111
+msgid "Tooltip text"
+msgstr "Knopinfo Tekst"
+
+#: includes/cb_time.php:37 includes/cb_time.php:44
+#: views/contact_controls_files.php:245 views/contact_view.php:446
+msgid "Time"
+msgstr "Keer"
+
+#: includes/cb_time.php:160
+msgid "Hour Format"
+msgstr "uurformaat"
+
+#: includes/cb_time.php:169
+msgid "Minute Format"
+msgstr "minuut formaat"
+
+#: includes/cb_url.php:36 views/contact_controls_files.php:286
+#: views/contact_view.php:422
+msgid "Website / URL"
+msgstr "website van het/URL"
+
+#: lib/contact_bank_email-class.php:55 lib/contact_bank_email-class.php:63
+#: lib/contact_bank_email-class.php:77 lib/contact_bank_email-class.php:85
+#: lib/contact_bank_email-class.php:99 lib/contact_bank_email-class.php:107
+#: lib/contact_bank_email-class.php:121 lib/contact_bank_email-class.php:129
+#: lib/contact_bank_email-class.php:143 lib/contact_bank_email-class.php:151
+msgid "Edit Email Settings"
+msgstr "Bewerken E-mailinstellingen"
+
+#: lib/contact_bank_email-class.php:66 lib/contact_bank_email-class.php:88
+#: lib/contact_bank_email-class.php:110 lib/contact_bank_email-class.php:132
+#: lib/contact_bank_email-class.php:154
+msgid "Delete Email Settings"
+msgstr "verwijderen E-mailinstellingen"
+
+#: lib/contact_frontend_data_class.php:210
+#: lib/contact_frontend_data_class.php:218
+#: lib/contact_frontend_data_class.php:228
+#: lib/contact_frontend_data_class.php:236
+#: lib/contact_frontend_data_class.php:246
+#: lib/contact_frontend_data_class.php:254
+#: lib/contact_frontend_data_class.php:264
+#: lib/contact_frontend_data_class.php:272
+#: lib/contact_frontend_data_class.php:282
+#: lib/contact_frontend_data_class.php:290
+msgid "Delete Form Entry"
+msgstr "Verwijder formulier binnenkomst"
+
+#: views/add_contact_email.php:30 views/contact_email_settings.php:100
+msgid "Email Confirmation"
+msgstr "Email bevestiging"
+
+#: views/add_contact_email.php:33
+msgid "Back to Email Settings"
+msgstr "Terug naar E-mailinstellingen"
+
+#: views/add_contact_email.php:41 views/add_contact_email.php:49
+#: views/add_contact_email.php:57 views/add_contact_email.php:65
+#: views/add_contact_email.php:73 views/add_contact_email.php:266
+#: views/add_contact_email.php:274 views/add_contact_email.php:282
+#: views/add_contact_email.php:290 views/add_contact_email.php:298
+#: views/contact-bank-roles_capability.php:13
+#: views/contact_bank_layout_settings.php:12
+#: views/contact_bank_layout_settings.php:494
+#: views/contact_bank_layout_settings.php:906
+msgid "Save"
+msgstr "Sparen"
+
+#: views/add_contact_email.php:83
+msgid "Email Settings Saved. Kindly wait for the redirect."
+msgstr "E-mailinstellingen Opgeslagen. Vriendelijk wacht op de redirect."
+
+#: views/add_contact_email.php:90 views/add_contact_email.php:147
+#: views/contact_controls_files.php:35
+msgid "Email"
+msgstr "E-mail"
+
+#: views/add_contact_email.php:98
+msgid "Enter Name"
+msgstr "Voer naam"
+
+#: views/add_contact_email.php:104
+msgid "Send To"
+msgstr "verzenden naar"
+
+#: views/add_contact_email.php:113 views/add_contact_email.php:124
+#: views/add_contact_email.php:136 views/add_contact_email.php:196
+msgid "Enter Email"
+msgstr "Geef e-mail"
+
+#: views/add_contact_email.php:115 views/add_contact_email.php:126
+#: views/add_contact_email.php:138
+msgid "Select a Field"
+msgstr "Selecteer een veld"
+
+#: views/add_contact_email.php:151
+msgid "Enter Email "
+msgstr "Geef e-mail"
+
+#: views/add_contact_email.php:155
+msgid "Send To Field"
+msgstr "Verzenden naar Veld"
+
+#: views/add_contact_email.php:159
+msgid "Enter Field "
+msgstr "betreden Veld"
+
+#: views/add_contact_email.php:161 views/add_contact_email.php:174
+#: views/add_contact_email.php:187 views/add_contact_email.php:198
+#: views/add_contact_email.php:209 views/add_contact_email.php:220
+#: views/add_contact_email.php:233 views/add_contact_email.php:250
+msgid "Select a field"
+msgstr "Selecteer een veld"
+
+#: views/add_contact_email.php:168
+msgid "From Name"
+msgstr "vanaf Naam"
+
+#: views/add_contact_email.php:172
+msgid "Enter from name "
+msgstr "Invoeren Vanaf Naam"
+
+#: views/add_contact_email.php:181
+msgid "From Email"
+msgstr "Vanaf email"
+
+#: views/add_contact_email.php:185
+msgid "Enter from email"
+msgstr "binnengaan Vanaf email"
+
+#: views/add_contact_email.php:194
+msgid "Reply To"
+msgstr "Antwoord aan"
+
+#: views/add_contact_email.php:205
+msgid "CC"
+msgstr "CC"
+
+#: views/add_contact_email.php:207
+msgid "Enter CC Email "
+msgstr "binnengaan CC email"
+
+#: views/add_contact_email.php:216
+msgid "BCC"
+msgstr "BCC"
+
+#: views/add_contact_email.php:218
+msgid "Enter Bcc Email"
+msgstr "binnengaan Bcc email"
+
+#: views/add_contact_email.php:227
+msgid "Subject"
+msgstr "Betreft"
+
+#: views/add_contact_email.php:231
+msgid "Enter Subject"
+msgstr " Betreft Invoeren"
+
+#: views/add_contact_email.php:240
+msgid "Message"
+msgstr "bericht"
+
+#: views/contact-bank-roles_capability.php:12
+#: views/contact_bank_form_preview.php:277
+#: views/contact_bank_layout_settings.php:9
+#: views/contact_email_settings.php:11 views/contact_frontend_data.php:8
+#: views/contact_view.php:203
+msgid "Back to Dashboard"
+msgstr "Terug naar Dashboard"
+
+#: views/contact-bank-roles_capability.php:17
+msgid "Roles and Capabilities Saved. Kindly wait for the redirect."
+msgstr ""
+"Rollen en Mogelijkheden Opgeslagen. Vriendelijk wachten op de omleiding."
+
+#: views/contact-bank-roles_capability.php:34
+msgid "Privileges for Admin"
+msgstr "Privileges voor Beheerder"
+
+#: views/contact-bank-roles_capability.php:38
+#: views/contact-bank-roles_capability.php:54
+#: views/contact-bank-roles_capability.php:70
+#: views/contact-bank-roles_capability.php:87
+#: views/contact-bank-roles_capability.php:105
+msgid "Full Control"
+msgstr "Volledig beheer"
+
+#: views/contact-bank-roles_capability.php:41
+#: views/contact-bank-roles_capability.php:57
+#: views/contact-bank-roles_capability.php:73
+#: views/contact-bank-roles_capability.php:90
+#: views/contact-bank-roles_capability.php:108
+msgid "Read"
+msgstr "lezen"
+
+#: views/contact-bank-roles_capability.php:44
+#: views/contact-bank-roles_capability.php:60
+#: views/contact-bank-roles_capability.php:76
+#: views/contact-bank-roles_capability.php:93
+#: views/contact-bank-roles_capability.php:111
+msgid "Write"
+msgstr "schrijven"
+
+#: views/contact-bank-roles_capability.php:50
+msgid "Privileges for Editor"
+msgstr "Privileges voor Redacteur"
+
+#: views/contact-bank-roles_capability.php:66
+msgid "Privileges for Author"
+msgstr "Privileges voor Auteur"
+
+#: views/contact-bank-roles_capability.php:82
+msgid "Privileges for Contributor"
+msgstr "Privileges voor Inzender"
+
+#: views/contact-bank-roles_capability.php:99
+msgid "Privileges for Subscriber"
+msgstr "Privileges voor de Abonnee"
+
+#: views/contact-bank-system-report.php:20
+msgid "Get System Report"
+msgstr "Krijgen Systeemrapport"
+
+#: views/contact-bank-system-report.php:24
+msgid "Close System Report"
+msgstr "Sluiten Systeemrapport"
+
+#: views/contact-bank-system-report.php:106
+msgid "Default"
+msgstr "verzuim"
+
+#: views/contact_bank_form_preview.php:274 views/dashboard.php:241
+#: views/dashboard.php:266 views/dashboard.php:302 views/dashboard.php:325
+#: views/dashboard.php:350 views/dashboard.php:386 views/dashboard.php:409
+#: views/dashboard.php:434 views/dashboard.php:470 views/dashboard.php:493
+#: views/dashboard.php:518 views/dashboard.php:554 views/dashboard.php:577
+#: views/dashboard.php:602 views/dashboard.php:638
+msgid "Form Preview"
+msgstr "Formulier Voorbeeldweergave"
+
+#: views/contact_bank_layout_settings.php:10
+msgid "Restore Global Settings"
+msgstr "Herstel Globale Instellingen"
+
+#: views/contact_bank_layout_settings.php:16
+msgid "Form Settings Saved. Kindly wait for the redirect."
+msgstr "Formulier instellingen gered. Vriendelijk wachten op de omleiding"
+
+#: views/contact_bank_layout_settings.php:58
+msgid "Label Settings"
+msgstr "Etiket Instellingen"
+
+#: views/contact_bank_layout_settings.php:68
+#: views/contact_bank_layout_settings.php:255
+#: views/contact_bank_layout_settings.php:465
+#: views/contact_bank_layout_settings.php:658
+#: views/contact_bank_layout_settings.php:786
+msgid "Font Family :"
+msgstr "Doopvont Familie:"
+
+#: views/contact_bank_layout_settings.php:93
+msgid "Font Color :"
+msgstr "Kleur lettertype:"
+
+#: views/contact_bank_layout_settings.php:104
+#: views/contact_bank_layout_settings.php:291
+msgid "Font Style :"
+msgstr "Doopvont Stijl:"
+
+#: views/contact_bank_layout_settings.php:118
+#: views/contact_bank_layout_settings.php:305
+#: views/contact_bank_layout_settings.php:514
+#: views/contact_bank_layout_settings.php:683
+#: views/contact_bank_layout_settings.php:811
+msgid "Font Size (px) :"
+msgstr "Tekengrootte (px):"
+
+#: views/contact_bank_layout_settings.php:149
+#: views/contact_bank_layout_settings.php:406
+#: views/contact_bank_layout_settings.php:619
+#: views/contact_bank_layout_settings.php:747
+#: views/contact_bank_layout_settings.php:875
+msgid "Text Align :"
+msgstr "Tekst-uitlijnen:"
+
+#: views/contact_bank_layout_settings.php:162
+msgid "Label Position :"
+msgstr "Etiket Positie:"
+
+#: views/contact_bank_layout_settings.php:176
+msgid "Field Desc Font Size :"
+msgstr "Veld Desc Fontgrootte:"
+
+#: views/contact_bank_layout_settings.php:207
+msgid "Field Description Align :"
+msgstr "Veld Beschrijving-uitlijnen:"
+
+#: views/contact_bank_layout_settings.php:221
+msgid "Hide Labels :"
+msgstr "Verbergen Etiketten:"
+
+#: views/contact_bank_layout_settings.php:229
+#: views/contact_bank_layout_settings.php:419
+#: views/contact_bank_layout_settings.php:632
+#: views/contact_bank_layout_settings.php:760
+#: views/contact_bank_layout_settings.php:888
+msgid "Text Direction :"
+msgstr "Tekst Richting:"
+
+#: views/contact_bank_layout_settings.php:245
+msgid "Input Field Settings"
+msgstr "Invoer Veldinstellingen"
+
+#: views/contact_bank_layout_settings.php:280
+#: views/contact_bank_layout_settings.php:577
+#: views/contact_bank_layout_settings.php:736
+#: views/contact_bank_layout_settings.php:864
+msgid "Text Color :"
+msgstr "tekst Kleur:"
+
+#: views/contact_bank_layout_settings.php:336
+#: views/contact_bank_layout_settings.php:609
+msgid "Border Radius (px) :"
+msgstr "Grens een straal (px):"
+
+#: views/contact_bank_layout_settings.php:346
+#: views/contact_bank_layout_settings.php:588
+#: views/contact_bank_layout_settings.php:725
+#: views/contact_bank_layout_settings.php:853
+msgid "Border Color :"
+msgstr "Grens Kleur:"
+
+#: views/contact_bank_layout_settings.php:357
+#: views/contact_bank_layout_settings.php:599
+msgid "Border Size (px) :"
+msgstr "Randgrootte (px):"
+
+#: views/contact_bank_layout_settings.php:367
+msgid "Border Style :"
+msgstr "Randstijl:"
+
+#: views/contact_bank_layout_settings.php:382
+#: views/contact_bank_layout_settings.php:555
+#: views/contact_bank_layout_settings.php:714
+#: views/contact_bank_layout_settings.php:842
+msgid "Background Color :"
+msgstr "Achtergrond Kleur:"
+
+#: views/contact_bank_layout_settings.php:393
+msgid "Radio Buttons :"
+msgstr "Radio knop:"
+
+#: views/contact_bank_layout_settings.php:398
+msgid "Multiple Rows"
+msgstr "Meervoudig rijen"
+
+#: views/contact_bank_layout_settings.php:400
+msgid "Single Row"
+msgstr "enkele rij"
+
+#: views/contact_bank_layout_settings.php:433
+msgid "Input Size :"
+msgstr "Invoer Grootte:"
+
+#: views/contact_bank_layout_settings.php:455
+msgid "Submit Button Settings"
+msgstr "voorleggen knopinstellingen"
+
+#: views/contact_bank_layout_settings.php:490
+msgid "Text:"
+msgstr "tekst :"
+
+#: views/contact_bank_layout_settings.php:500
+msgid "Style :"
+msgstr "Stijl :"
+
+#: views/contact_bank_layout_settings.php:545
+msgid "Button Width (px) :"
+msgstr "Knop Breedte (px):"
+
+#: views/contact_bank_layout_settings.php:566
+msgid "Hover Background Color:"
+msgstr "Beweeg muis Achtergrond Kleur:"
+
+#: views/contact_bank_layout_settings.php:648
+msgid "Success Message Settings"
+msgstr "Welslagen Berichtinstellingen"
+
+#: views/contact_bank_layout_settings.php:776
+msgid "Error Message Settings"
+msgstr "Foutmelding Berichtinstellingen"
+
+#: views/contact_bank_layout_settings.php:1298
+msgid "Are you sure, you want to Restore Global Settings?"
+msgstr "Weet je zeker, dat u wilt herstellen Globale Instellingen?"
+
+#: views/contact_bank_update.php:5
+msgid "Check Plugin - Contact Bank"
+msgstr "Documentatie - Contact Bank"
+
+#: views/contact_controls_files.php:8 views/contact_controls_files.php:24
+#: views/contact_controls_files.php:41 views/contact_controls_files.php:59
+#: views/contact_controls_files.php:75 views/contact_controls_files.php:92
+#: views/contact_controls_files.php:107 views/contact_controls_files.php:123
+#: views/contact_controls_files.php:139 views/contact_controls_files.php:156
+#: views/contact_controls_files.php:172 views/contact_controls_files.php:234
+#: views/contact_controls_files.php:259 views/contact_controls_files.php:275
+#: views/contact_controls_files.php:291
+msgid "Settings"
+msgstr "Berichten Instellingen"
+
+#: views/contact_documentation.php:5
+msgid "Documentation - Contact Bank"
+msgstr "Documentatie - Contact Bank"
+
+#: views/contact_email_settings.php:55 views/contact_email_settings.php:63
+#: views/contact_email_settings.php:71 views/contact_email_settings.php:79
+#: views/contact_email_settings.php:87
+msgid "Add New"
+msgstr "Nieuw toevoegen"
+
+#: views/contact_email_settings.php:166
+msgid "Are you sure, you want to delete this Email Setting?"
+msgstr "Weet je zeker, dat u deze e-mail instelling wilt verwijderen?"
+
+#: views/contact_email_settings.php:184
+msgid "Please select the Form first."
+msgstr "selecteer aub eerst het formulier."
+
+#: views/contact_frontend_data.php:14 views/dashboard.php:181
+#: views/dashboard.php:188
+msgid "Form"
+msgstr "Formulier"
+
+#: views/contact_frontend_data.php:95
+msgid "Are you sure, you want to delete this From Entry?"
+msgstr "Weet u zeker dat u dit wilt verwijderen Vanaf Entry?"
+
+#: views/contact_view.php:200 views/dashboard.php:29 views/dashboard.php:43
+#: views/dashboard.php:59 views/dashboard.php:73 views/dashboard.php:89
+#: views/dashboard.php:103 views/dashboard.php:119 views/dashboard.php:133
+#: views/dashboard.php:149 views/dashboard.php:163
+msgid "Add New Form"
+msgstr "Voeg nieuwe vorm"
+
+#: views/contact_view.php:206 views/contact_view.php:461
+msgid "Save Form"
+msgstr "sparen Formulier"
+
+#: views/contact_view.php:210
+msgid "Form Submitted. Kindly wait for the redirect."
+msgstr "Formulier Ingediend. Vriendelijk wachten op de omleiding."
+
+#: views/contact_view.php:217
+msgid "Form Settings"
+msgstr "formulierinstellingen"
+
+#: views/contact_view.php:221
+msgid "Form Name :"
+msgstr "Formulier Naam:"
+
+#: views/contact_view.php:227
+msgid "Enter Form Name"
+msgstr "invoeren Formulier Naam"
+
+#: views/contact_view.php:231
+msgid "Blank Field Message:"
+msgstr "Blanco veld Bericht:"
+
+#: views/contact_view.php:237
+msgid "Required field must not be blank"
+msgstr "Verplicht veld moet niet leeg zijn"
+
+#: views/contact_view.php:239
+msgid "Enter Blank Field Message"
+msgstr "Invoeren lege veld Bericht"
+
+#: views/contact_view.php:243
+msgid "Incorrect Email Message:"
+msgstr "Onjuist e-mailbericht bericht:"
+
+#: views/contact_view.php:249
+msgid "Please enter a valid email address"
+msgstr "Vul een geldig e-mailadres"
+
+#: views/contact_view.php:251
+msgid "Enter Incorrect Email Message"
+msgstr "betreden Onjuiste e-mail bericht"
+
+#: views/contact_view.php:255
+msgid "Success Message :"
+msgstr "Succes van Bericht:"
+
+#: views/contact_view.php:259
+msgid "Enter Success Message"
+msgstr "Voer Succes Bericht"
+
+#: views/contact_view.php:263
+msgid "Redirect :"
+msgstr "omleiden:"
+
+#: views/contact_view.php:275 views/contact_view.php:286
+#: views/contact_view.php:298
+msgid "Page"
+msgstr "pagina"
+
+#: views/contact_view.php:278 views/contact_view.php:289
+#: views/contact_view.php:301
+msgid "URL"
+msgstr "URL"
+
+#: views/contact_view.php:308
+msgid "Page :"
+msgstr "pagina :"
+
+#: views/contact_view.php:354
+msgid "URL :"
+msgstr "URL :"
+
+#: views/contact_view.php:361
+msgid "Enter Redirect URL"
+msgstr "Voer Doorverwijs URL"
+
+#: views/contact_view.php:368
+msgid "Form Layout Preview"
+msgstr "Vorm Opmaak Voorbeeldweergave"
+
+#: views/contact_view.php:379
+msgid "Standard Fields"
+msgstr "standaard velden"
+
+#: views/contact_view.php:382 views/contact_view.php:416
+msgid "Click on a field to use into your form."
+msgstr "Klik op de een veld om te gebruiken in tot uw formulier."
+
+#: views/contact_view.php:401
+msgid "Checkboxes"
+msgstr "Selectievakjes"
+
+#: views/contact_view.php:413
+msgid "Advanced Fields"
+msgstr "geavanceerde Velden"
+
+#: views/dashboard.php:17
+msgid "Dashboard - Contact Bank"
+msgstr "instrumentenbord - BERICHTJE STUREN Jordaanoever"
+
+#: views/dashboard.php:32 views/dashboard.php:46 views/dashboard.php:62
+#: views/dashboard.php:76 views/dashboard.php:92 views/dashboard.php:106
+#: views/dashboard.php:122 views/dashboard.php:136 views/dashboard.php:152
+#: views/dashboard.php:166
+msgid "Delete All Forms"
+msgstr "Verwijderen Alle Vormen"
+
+#: views/dashboard.php:35 views/dashboard.php:49 views/dashboard.php:65
+#: views/dashboard.php:79 views/dashboard.php:95 views/dashboard.php:109
+#: views/dashboard.php:125 views/dashboard.php:139 views/dashboard.php:155
+#: views/dashboard.php:169
+msgid "Restore Factory Settings"
+msgstr "Fabrieksinstellingen terugzetten"
+
+#: views/dashboard.php:189
+msgid "Shortcode"
+msgstr "Korte-het repertorium"
+
+#: views/dashboard.php:190
+msgid "Total Controls"
+msgstr "Totaal Controls"
+
+#: views/dashboard.php:251 views/dashboard.php:282 views/dashboard.php:335
+#: views/dashboard.php:366 views/dashboard.php:419 views/dashboard.php:450
+#: views/dashboard.php:503 views/dashboard.php:534 views/dashboard.php:587
+#: views/dashboard.php:618
+msgid "Edit Form"
+msgstr " Bewerk Formulier"
+
+#: views/dashboard.php:272 views/dashboard.php:308 views/dashboard.php:356
+#: views/dashboard.php:392 views/dashboard.php:440 views/dashboard.php:476
+#: views/dashboard.php:524 views/dashboard.php:560 views/dashboard.php:608
+#: views/dashboard.php:644
+msgid "Delete Form"
+msgstr "Verwijder formulier"
+
+#: views/dashboard.php:686
+msgid "Are you sure, you want to delete this Form?"
+msgstr "Weet u zeker dat u dit formulier wilt verwijderen?"
+
+#: views/dashboard.php:696
+msgid "Are you sure, you want to delete all Forms?"
+msgstr "Weet je zeker, je wilt alle vormen verwijderen?"
+
+#: views/dashboard.php:705
+msgid "Are you sure you want to Restore Factory Settings?"
+msgstr "Weet u zeker dat u wilt terugzetten fabrieksinstellingen?"
+
+#: views/includes_common_after.php:468
+msgid "Only One File Uploader can be used on a Form."
+msgstr "Slechts een bestand Uploader kan worden gebruikt op een formulier."
+
+#: views/licensing.php:19
+msgid "Success! Settings have been updated."
+msgstr "Succes van! Instellingen zijn bijgewerkt."
+
+#: views/licensing.php:24
+msgid "Contact-Bank Licensing"
+msgstr "Contact Bank Licentiëring"
+
+#: views/licensing.php:84
+msgid "Update"
+msgstr "bijwerken"
