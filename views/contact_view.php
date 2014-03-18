@@ -148,7 +148,6 @@
                 "INSERT INTO " . contact_bank_layout_settings_Table() . "(form_id,form_settings_key,form_settings_value) VALUES ".implode(',', $sql),""
             )
         );
-		$controls = "";
 		$email_name = "Admin Notification";
 		$send_to = get_option('admin_email');
 		$email_address = get_option('admin_email');
@@ -158,10 +157,8 @@
 		$uxDescription_email = "Hello Admin,<br><br>
 		A new user has visited your website.<br><br>
 		Here are the details :<br><br>
-		".$controls."
 		<br>Thanks,<br><br>
-		<strong>Technical Support Team</strong>
-		";
+		<strong>Technical Support Team</strong>";
 		$wpdb->query
 		(
 			$wpdb->prepare
@@ -175,6 +172,30 @@
 				$email_from_name,
 				$email_name,
 				$send_to
+			)
+		);
+		$email_name_client = "Client Notification";
+		$email_subject_client  = "Thanks for visiting our website";
+		$email_from_name = "Site Administration";
+		$email_from_email = get_option('admin_email');
+		$uxDescription_email_client = "Hi,<br><br>
+		Thanks for visiting our website. We will be Contacting you soon next 24 hours.<br><br>
+		<br>Thanks,<br><br>
+		<strong>Support Team</strong>
+		";
+		$wpdb->query
+		(
+			$wpdb->prepare
+			(
+			"INSERT INTO " . contact_bank_email_template_admin(). " (email_to,email_from,body_content,subject,form_id,from_name,name,send_to) VALUES(%s,%s,%s,%s,%d,%s,%s,%d)",
+			"",
+			$email_from_email,
+			$uxDescription_email_client,
+			$email_subject_client,
+			$form_id,
+			$email_from_name,
+			$email_name_client,
+			""
 			)
 		);
     }
@@ -542,6 +563,7 @@ jQuery("#ux_dynamic_form_submit").validate
 			url: ajaxurl + "?form_settings="+JSON.stringify(array_new_form_settings)+"&form_id="+form_id+"&array_delete_form_controls="+JSON.stringify(array_delete_form_controls)+"&param=submit_form_messages_settings&action=add_contact_form_library",
 			success : function(data)
 			{
+				
 				setTimeout(function()
 				{
 					jQuery("#form_success_message").css("display","none");

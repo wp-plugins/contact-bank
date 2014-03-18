@@ -1,6 +1,6 @@
 <?php
 $cb_lang = array();
-array_push($cb_lang, "ar", "bg_BG", "da_DK", "de_DE", "es_ES", "fi_FI", "fr_FR", "he_IL", "hu_HU", "id_ID",
+array_push($cb_lang, "ar", "bg_BG", "da_DK", "de_DE", "es_ES", "fi_FI", "he_IL", "hu_HU", "id_ID",
  "it_IT", "ja", "ko_KR", "ms_MY", "nl_NL", "pl_PL", "pt_BR", "pt_PT", "ro_RO", "ru_RU", "sk_SK", "sl_SI", "sq_AL",
  "sr_RS", "sv_SE", "th", "tr", "zh_CN");
 $cb_language = get_locale();

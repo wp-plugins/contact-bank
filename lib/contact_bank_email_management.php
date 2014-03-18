@@ -25,6 +25,7 @@ if(isset($_REQUEST["param"]))
 		);
 		for($flag=0;$flag<count($email_content); $flag++)
 		{
+			$email_exits = "";
 			$email_to = $email_content[$flag]->email_to;
 			$email_from = $email_content[$flag]->email_from;
 			$messageTxt = stripcslashes($email_content[$flag]->body_content);
@@ -60,6 +61,7 @@ if(isset($_REQUEST["param"]))
 						"Bcc: " .$email_bcc."\r\n".
 						get_option("blog_charset") . "\r\n";
 				wp_mail($email_to, $email_subject, $messageTxt, $headers);
+			
 		}
 	die();
 	}

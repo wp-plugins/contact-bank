@@ -237,6 +237,7 @@ else
 		else if($_REQUEST["param"] == "submit_form_messages_settings")
 		{
 			$sql= "";
+			$labels_for_email = "";
 			$sql1=array();
 			$form_id = intval($_REQUEST["form_id"]);
 			$form_settings = json_decode(stripcslashes($_REQUEST["form_settings"]),true);
@@ -281,6 +282,7 @@ else
 			        }
 			        else
 			        {
+			        	$labels_for_email = $val;
 			            if($val == "redirect_url")
 			            {
 			                $sql .= ' WHEN `form_message_key` = "'.mysql_real_escape_string($val).'" THEN "'.mysql_real_escape_string(html_entity_decode($keyInner)).'"';
@@ -291,6 +293,7 @@ else
 			            }
 			        }
 			    }
+				
 				$wpdb->query
 				(
 				    $wpdb->prepare
@@ -299,8 +302,65 @@ else
 				            $form_id
 				        )
 				);
+				
             }
-            die();
+			$fields_created = $wpdb->get_results
+			(
+				$wpdb->prepare
+				(
+					"SELECT dynamicId, dynamic_settings_value,field_id	FROM ". contact_bank_dynamic_settings_form(). " JOIN " . create_control_Table(). " ON " . contact_bank_dynamic_settings_form().". dynamicId  = ". create_control_Table(). ".control_id WHERE `dynamic_settings_key` = 'cb_admin_label' and form_id = %d Order By ".create_control_Table().".sorting_order",
+					$form_id
+				)
+			);
+			$controls = "";
+			$email_dynamicId = "";
+			for($flag=0;$flag<count($fields_created);$flag++)
+			{
+				$show_in_email = $wpdb->get_var
+				(
+					$wpdb->prepare
+					(
+						"SELECT dynamic_settings_value FROM ". contact_bank_dynamic_settings_form(). " WHERE `dynamic_settings_key` = 'cb_show_email' and dynamicId = %d",
+						$fields_created[$flag]->dynamicId
+					)
+				);
+				if($show_in_email == "0")
+				{
+					$controls .= "<strong>".$fields_created[$flag]->dynamic_settings_value ."</strong>: ". "[control_".$fields_created[$flag]->dynamicId."] <br>";
+				}
+				if($fields_created[$flag]->field_id == 3)
+				{
+					$email_dynamicId = $fields_created[$flag]->dynamicId;
+				}
+			}
+			$body_message = "Hello Admin,<br><br>
+			A new user visited your website.<br><br>
+			Here are the details :<br><br>
+			".$controls."
+			<br>Thanks,<br><br>
+			<strong>Technical Support Team</strong>";
+			$wpdb->query
+			(
+				$wpdb->prepare
+				(
+					"UPDATE " . contact_bank_email_template_admin() . " SET `body_content` = %s where form_id = %d and name = %s",
+					$body_message,
+					$form_id,
+					"Admin Notification"
+				)
+			);
+			$wpdb->query
+			(
+				$wpdb->prepare
+				(
+					"UPDATE " . contact_bank_email_template_admin() . " SET `email_to` = %s where form_id = %d and name = %s",
+					"[control_".$email_dynamicId."]",
+					$form_id,
+					"Client Notification"
+					
+				)
+			);
+			die();
         }
 		else if ($_REQUEST["param"] == "update_licensing_settings")
 		{
