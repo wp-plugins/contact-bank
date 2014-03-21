@@ -1,7 +1,7 @@
 ﻿=== Contact Bank ===
 Contributors: contact-banker, Gallery-Bank
 Tags: admin, advanced form, AJAX, best contact form plugin, buddypress, category, comment, comments, contact, contact bank, contact form, contact form 7, contact form builder, contact form plugin, contact forms, contact me, contact us, contacts, content, easy contact form, easy contact plugin, email, Facebook, feed, feedback, feedback form, form, form builder, forms, gallery, google, image, images, javascript, jquery, link, links, login, media, page, pages, plugin, Post, posts, request, rss, seo, shortcode, sidebar, stats, text, web form, widget, wordpress
-Requires at least: 2.9
+Requires at least: 3.3
 Tested up to: 3.8.1
 Stable tag: 2.0.9
 License: GPLv2 or later
@@ -103,7 +103,6 @@ Visit [here](http://tech-banker.com/contact-bank) to upgrade to Pro Version now.
 * Indonesian (id_ID)
 * Italian (it_IT)
 * Japanese (ja)
-* Korean (hu_HU)
 * Polish (pl_PL)
 * Portuguese (pt_PT)
 * Romanian (ro_RO)
