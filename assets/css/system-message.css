@@ -36,7 +36,7 @@ Version: 1.0
 
 .message.red {
     display: block;
-    background : 10px 8px #F8E9E9;
+    background : url(../images/icons/icon-error.png) no-repeat 10px 8px #F8E9E9;
     border: 1px solid #E4BBBC;
     color: #b80000;
 }

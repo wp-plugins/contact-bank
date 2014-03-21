@@ -357,6 +357,16 @@ else
 					"[control_".$email_dynamicId."]",
 					$form_id,
 					"Client Notification"
+				)
+			);
+			$wpdb->query
+			(
+				$wpdb->prepare
+				(
+					"UPDATE " . contact_bank_email_template_admin() . " SET `send_to` = %d where form_id = %d and name = %s",
+					1,
+					$form_id,
+					"Client Notification"
 					
 				)
 			);

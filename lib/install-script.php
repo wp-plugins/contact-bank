@@ -456,7 +456,7 @@ if($version == "")
     }
 	if (count($wpdb->get_var("SHOW TABLES LIKE '" . contact_bank_licensing() . "'")) == 0)
     {
-        create_table_licensing();
+        create_cb_table_licensing();
     }
 	if (count($wpdb->get_var("SHOW TABLES LIKE '" . contact_bank_roles_capability() . "'")) == 0)
     {
@@ -654,7 +654,7 @@ function create_contact_bank_form_settings()
 	) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE utf8_general_ci';
     dbDelta($sql);
 }
-function create_table_licensing()
+function create_cb_table_licensing()
 {
     global $wpdb;
     $sql = "CREATE TABLE " . contact_bank_licensing() . "(

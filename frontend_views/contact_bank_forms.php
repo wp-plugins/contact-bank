@@ -359,9 +359,9 @@ $forms_email_settings = $wpdb->get_row
 											$ddl_values = unserialize($control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_dropdown_option_val"]);
                             				$ddl_ids = unserialize($control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_dropdown_option_id"]);
 											?>
-											<div class="layout-controls layout_according_label_position">
-					                             <select class="hovertip input_control <?php echo $layout_settings_array[$form_id]["input_field_input_size"]; ?>" type="select" id="ux_select_default_<?php echo $form_fields[$flag]->column_dynamicId; ?>"
-					                                    data-original-title="<?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_tooltip_txt"]; ?>"
+											<div class="layout-controls layout_according_label_position hovertip" data-original-title="<?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_tooltip_txt"]; ?>">
+					                             <select class=" input_control <?php echo $layout_settings_array[$form_id]["input_field_input_size"]; ?>" type="select" id="ux_select_default_<?php echo $form_fields[$flag]->column_dynamicId; ?>"
+					                                    
 					                                    name="ux_select_default_<?php echo $form_fields[$flag]->column_dynamicId; ?>">
 					                                <option value="<?php echo count($ddl_values) == 0 ? " " : ""; ?>"><?php _e("Select Option", contact_bank); ?></option>
 					                                <?php
@@ -382,14 +382,14 @@ $forms_email_settings = $wpdb->get_row
 				                            if(count($chk_ids) > 0)
 											{
 												?>
-												<div class="layout-controls layout_according_label_position">
+												<div class="layout-controls layout_according_label_position hovertip" data-original-title="<?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_tooltip_txt"]; ?>">
 												<?php
 												foreach($chk_ids as $key => $value )
 					                            {
 													?>
 														
-							                                <input type="checkbox" class="hovertip" id="ux_chk_control_<?php echo $value; ?>"
-							                                data-original-title="<?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_tooltip_txt"]; ?>"
+							                                <input type="checkbox" id="ux_chk_control_<?php echo $value; ?>"
+							                                
 							                                       name="<?php echo $form_fields[$flag]->column_dynamicId; ?>_chk[]"
 							                                       value ="<?php echo $chk_values[$key]; ?>" />
 							                                <label style="margin:0px;vertical-align: middle;" id="chk_id_<?php echo $value; ?>">
@@ -405,7 +405,7 @@ $forms_email_settings = $wpdb->get_row
 											else 
 											{
 												?>
-												<div class="layout-controls layout_according_label_position">
+												<div class="layout-controls layout_according_label_position hovertip" data-original-title="<?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_tooltip_txt"]; ?>">
 													<input type="checkbox" id="ux_chk_control_" />
 												</div>
 												<?php
@@ -417,16 +417,16 @@ $forms_email_settings = $wpdb->get_row
 											if(count($rdl_ids) > 0)
 											{
 												?>
-												<div class="layout-controls layout_according_label_position">
+												<div class="layout-controls layout_according_label_position hovertip" data-original-title="<?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_tooltip_txt"]; ?>">
 												<?php
 												foreach($rdl_ids as $key => $value )
 					                            {
 					                            	if($layout_settings_array[$form_id]["input_field_rdl_multiple_row"] == "0")
 													{
 														?>
-							                                <input type="radio" class="hovertip" id="ux_rdl_control_<?php echo $value; ?>"
+							                                <input type="radio" id="ux_rdl_control_<?php echo $value; ?>"
 							                                       name="<?php echo $form_fields[$flag]->column_dynamicId; ?>_rdl"
-							                                       data-original-title="<?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_tooltip_txt"]; ?>"
+							                                       
 							                                       value ="<?php echo $rdl_values[$key]; ?>" />
 							                                <label style="margin:0px;vertical-align: middle;" id="rdl_id_<?php echo $value; ?>">
 							                                    <?php echo $rdl_values[$key]; ?>
@@ -437,7 +437,7 @@ $forms_email_settings = $wpdb->get_row
 													{
 														?>
 														 
-							                                <input  type="radio" class="hovertip" id="ux_rdl_control_<?php echo $value; ?>"
+							                                <input  type="radio" id="ux_rdl_control_<?php echo $value; ?>"
 							                                       name="<?php echo $form_fields[$flag]->column_dynamicId; ?>_rdl"
 							                                       data-original-title="<?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_tooltip_txt"]; ?>"
 							                                       value ="<?php echo $rdl_values[$key]; ?>" />
@@ -456,7 +456,7 @@ $forms_email_settings = $wpdb->get_row
 											else 
 											{
 												?>
-												<div class="layout-controls layout_according_label_position">
+												<div class="layout-controls layout_according_label_position hovertip" data-original-title="<?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_tooltip_txt"]; ?>">
 													<input type="radio" id="ux_rdl_control_" />
 												</div>
 												<?php
