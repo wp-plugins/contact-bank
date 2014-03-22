@@ -1,11 +1,11 @@
 <?php
 $cb_lang = array();
 $cb_lang_translated_languages = array();
-array_push($cb_lang_translated_languages,"fr_FR","ru_RU","en_US");
+array_push($cb_lang_translated_languages,"fr_FR","ru_RU","en_US","sv_SE","es_ES");
 
-array_push($cb_lang, "ar", "bg_BG", "da_DK", "de_DE", "es_ES", "fi_FI", "he_IL", "hu_HU", "id_ID",
+array_push($cb_lang, "ar", "bg_BG", "da_DK", "de_DE", "fi_FI", "he_IL", "hu_HU", "id_ID",
  "it_IT", "ja", "ko_KR", "ms_MY", "nl_NL", "pl_PL", "pt_BR", "pt_PT", "ro_RO", "sk_SK", "sl_SI", "sq_AL",
- "sr_RS", "sv_SE", "th", "tr", "zh_CN");
+ "sr_RS", "th", "tr", "zh_CN");
 $cb_language = get_locale();
 
 

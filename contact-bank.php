@@ -4,7 +4,7 @@ Plugin Name: Contact Bank Standard Edition
 Plugin URI: http://tech-banker.com
 Description: Build Complex, Powerful Contact Forms in Just Seconds. No Programming Knowledge Required! Yeah, It's Really That Easy.
 Author: Tech Banker
-Version: 2.0.9
+Version: 2.0.10
 Author URI: http://tech-banker.com
  */
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -173,8 +173,8 @@ function backend_plugin_css_styles_contact_bank()
     wp_enqueue_style("stylesheet", CONTACT_BK_PLUGIN_URL ."/assets/css/stylesheet.css");
     wp_enqueue_style("font-awesome", CONTACT_BK_PLUGIN_URL ."/assets/css/font-awesome/css/font-awesome.css");
     wp_enqueue_style("system-message", CONTACT_BK_PLUGIN_URL ."/assets/css/system-message.css");
-	 wp_enqueue_style("css3_grid_style", CONTACT_BK_PLUGIN_URL ."/assets/css/css3_grid_style.css");
-	 wp_enqueue_style("prettyPhoto", CONTACT_BK_PLUGIN_URL ."/assets/css/prettyPhoto.css");
+	wp_enqueue_style("css3_grid_style", CONTACT_BK_PLUGIN_URL ."/assets/css/css3_grid_style.css");
+	wp_enqueue_style("prettyPhoto", CONTACT_BK_PLUGIN_URL ."/assets/css/prettyPhoto.css");
 }
 function frontend_plugin_css_styles_contact_bank()
 {

@@ -206,6 +206,7 @@ $forms_email_settings = $wpdb->get_row
 		<?php
 			}
 		?>
+		height:30px !important;
 		font-family: <?php echo $layout_settings_array[$form_id]["submit_button_font_family"]; ?> !important;
 		font-size: <?php echo $layout_settings_array[$form_id]["submit_button_font_size"] . "px"; ?> !important;
 		width: <?php echo $layout_settings_array[$form_id]["submit_button_button_width"] . "px"; ?> !important;

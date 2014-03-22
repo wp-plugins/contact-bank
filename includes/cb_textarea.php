@@ -210,7 +210,7 @@ if(count($control_id) != 0)
             {
                 jQuery("#control_label_"+dynamicId).html(jQuery("#ux_label_text_"+dynamicId).val()+" :");
                	jQuery("#txt_description_"+dynamicId).html(jQuery("#ux_description_control_"+dynamicId).val());
-                jQuery("#ux_textarea_control_"+dynamicId).val(jQuery("#ux_default_value_"+dynamicId).val());
+                jQuery("#ux_textarea_control_"+dynamicId).attr("placeholder",jQuery("#ux_default_value_"+dynamicId).val());
                 jQuery("#show_tooltip"+dynamicId).attr("data-original-title",jQuery("#ux_tooltip_control_"+dynamicId).val());
                 if(jQuery("#ux_required_control_"+dynamicId).prop("checked") == true)
                 {
