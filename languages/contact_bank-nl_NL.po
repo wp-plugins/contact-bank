@@ -1,26 +1,27 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
-"POT-Creation-Date: 2014-03-18 15:49+0530\n"
-"PO-Revision-Date: 2014-03-18 17:12+0530\n"
+"Project-Id-Version: Contact Bank\n"
+"POT-Creation-Date: 2014-03-24 18:50+0530\n"
+"PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.5\n"
-"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: C:\\wamp\\www\\contact-bank_Standard\\wp-content\\plugins"
 "\\contact-bank\\\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: contact-bank.php:54
 msgid "Contact Bank"
-msgstr "Contact Bank"
+msgstr "Contact bank"
 
 #: contact-bank.php:55 contact-bank.php:326
 msgid "Dashboard"
-msgstr "Dashboard van"
+msgstr "Dashboard"
 
 #: contact-bank.php:57 contact-bank.php:332
 msgid "Short-Codes"
@@ -29,77 +30,78 @@ msgstr "Korte-codes"
 #: contact-bank.php:58 contact-bank.php:338 views/contact_frontend_data.php:5
 #: views/dashboard.php:115
 msgid "Form Entries"
-msgstr "Vorm vermeldingen"
+msgstr "Invulvelden"
 
 #: contact-bank.php:59 contact-bank.php:344 views/contact_email_settings.php:5
 #: views/dashboard.php:110
 msgid "Email Settings"
-msgstr "E-mailinstellingen"
+msgstr "E-mail Instellingen"
 
 #: contact-bank.php:60 contact-bank.php:350
 #: views/contact_bank_layout_settings.php:6 views/dashboard.php:105
 msgid "Global Settings"
-msgstr "Globale Instellingen"
+msgstr "Algemene Instellingen"
 
 #: contact-bank.php:61 contact-bank.php:358
 #: views/contact-bank-system-report.php:9
 msgid "System Status"
-msgstr "stelsel Status"
+msgstr "Systeem Status"
 
 #: contact-bank.php:63 contact-bank.php:370
 msgid "Purchase PRO Edition"
-msgstr "Aankoop PRO Editie"
+msgstr "Aankoop PRO editie"
 
 #: contact-bank.php:377
 msgid "Add Contact Bank Form"
-msgstr "Contactpersoon toevoegen Jordaanoever -vorm"
+msgstr "Toevoegen Contact Bank Formulier"
 
 #: contact-bank.php:389
 msgid "Insert Contact Bank Form"
-msgstr "Invoegen ContacteerJordaanoever vorm"
+msgstr "Invoegen Contact Bank Formulier"
 
 #: contact-bank.php:391
 msgid "Select a form below to add it to your post or page."
-msgstr "Selecteer hieronder een formulier toe te voegen het uw post of pagina."
+msgstr ""
+"Selecteer hieronder een formulier om toe te voegen aan een bericht of pagina."
 
 #: contact-bank.php:396
 msgid "Form Name"
-msgstr "Formuliernaam"
+msgstr "Formulier Naam"
 
 #: contact-bank.php:398
 msgid "Select a Form"
-msgstr "Selecteer een formulier"
+msgstr "Selecteer een Formulier"
 
 #: contact-bank.php:418
 msgid "Show Form Title"
-msgstr "Toon Formuliertitel"
+msgstr "Laat formulier titel zien"
 
 #: contact-bank.php:423
 msgid "Insert Form"
-msgstr "Plaats Formulier"
+msgstr "Invoegen formulier"
 
 #: contact-bank.php:426
 msgid "Cancel"
-msgstr "Annuleer"
+msgstr "Afbreken"
 
 #: contact-bank.php:438
 msgid "Please choose a Form to insert into Shortcode"
-msgstr "Kies een formulier te voegen in Shortcode"
+msgstr "Selecteer aub een formulier om in te voegen in de shortcode"
 
-#: frontend_views/contact_bank_forms.php:366
+#: frontend_views/contact_bank_forms.php:367
 #: views/contact_bank_form_preview.php:375 views/contact_controls_files.php:56
 msgid "Select Option"
-msgstr "selecteert u Optie"
+msgstr "Selecteer optie"
 
 #: includes/cb_checkbox.php:36
 msgid "Check Boxes"
-msgstr "controleer Dozen"
+msgstr "Selectievakjes"
 
 #: includes/cb_checkbox.php:40 includes/cb_dropdown.php:40
 #: includes/cb_email.php:40 includes/cb_multiple.php:40
 #: includes/cb_text.php:40 includes/cb_textarea.php:40
 msgid "Label"
-msgstr "het Etiket"
+msgstr "Label"
 
 #: includes/cb_checkbox.php:42 includes/cb_checkbox.php:144
 #: includes/cb_dropdown.php:42 includes/cb_dropdown.php:144
@@ -111,7 +113,7 @@ msgstr "het Etiket"
 #: views/contact_controls_files.php:52 views/contact_controls_files.php:68
 #: views/contact_controls_files.php:85
 msgid "Untitled"
-msgstr "Untitled"
+msgstr "Ongetiteld"
 
 #: includes/cb_checkbox.php:46 includes/cb_checkbox.php:56
 #: includes/cb_checkbox.php:69 includes/cb_checkbox.php:83
@@ -125,7 +127,7 @@ msgstr "Untitled"
 #: includes/cb_textarea.php:67 includes/cb_textarea.php:82
 #: includes/cb_textarea.php:98
 msgid "Required"
-msgstr "Verplicht"
+msgstr "Vereist"
 
 #: includes/cb_checkbox.php:60 includes/cb_checkbox.php:73
 #: includes/cb_checkbox.php:87 includes/cb_dropdown.php:60
@@ -136,13 +138,13 @@ msgstr "Verplicht"
 #: includes/cb_text.php:103 includes/cb_textarea.php:72
 #: includes/cb_textarea.php:87 includes/cb_textarea.php:103
 msgid "Not Required"
-msgstr "niet die Verplicht"
+msgstr "Niet vereist"
 
 #: includes/cb_checkbox.php:95 includes/cb_dropdown.php:95
 #: includes/cb_email.php:112 includes/cb_multiple.php:104
 #: includes/cb_text.php:111
 msgid "Tooltip Text"
-msgstr "Knopinfo Tekst"
+msgstr "Volgende tip"
 
 #: includes/cb_checkbox.php:97 includes/cb_dropdown.php:97
 #: includes/cb_email.php:115 includes/cb_multiple.php:108
@@ -155,8 +157,7 @@ msgstr "Knopinfo Tekst"
 #: views/includes_common_after.php:366 views/includes_common_after.php:369
 #: views/includes_common_after.php:372
 msgid "This Feature is only available in Paid Premium Edition!"
-msgstr ""
-"Deze functie is alleen beschikbaar in de betaalde- Uitgave van de Premie!"
+msgstr "Deze functie is alleen beschikbaar in de betaalde Premium Edition!"
 
 #: includes/cb_checkbox.php:101 includes/cb_dropdown.php:101
 #: includes/cb_multiple.php:113
@@ -165,114 +166,114 @@ msgstr "Opties"
 
 #: includes/cb_checkbox.php:103
 msgid "Enter Options"
-msgstr "Invoeren u Opties"
+msgstr "Opties invoeren"
 
 #: includes/cb_checkbox.php:104 includes/cb_dropdown.php:104
 #: includes/cb_multiple.php:119
 msgid "Add"
-msgstr "toevoegen"
+msgstr "Toevoegen"
 
 #: includes/cb_checkbox.php:135 includes/cb_dropdown.php:135
 #: includes/cb_multiple.php:153
 msgid "Delete"
-msgstr "Verwijder"
+msgstr "Verwijderen"
 
 #: includes/cb_checkbox.php:142 includes/cb_dropdown.php:142
 #: includes/cb_email.php:130 includes/cb_multiple.php:160
 #: includes/cb_text.php:129 includes/cb_textarea.php:128
 msgid "Admin Label"
-msgstr "Admin Etiket"
+msgstr "Admin label"
 
 #: includes/cb_checkbox.php:144 includes/cb_dropdown.php:144
 #: includes/cb_email.php:134 includes/cb_multiple.php:163
 #: includes/cb_text.php:131 includes/cb_textarea.php:131
 msgid "Enter Admin Label"
-msgstr "binnenkomen admin  etiket "
+msgstr "Voer admin label in"
 
 #: includes/cb_checkbox.php:148 includes/cb_dropdown.php:148
 #: includes/cb_email.php:139 includes/cb_multiple.php:168
 #: includes/cb_text.php:137 includes/cb_textarea.php:135
 msgid "Do not show in the email"
-msgstr "Doen Niet laten zien bij de e-mail"
+msgstr "Niet laten zien in e-mail"
 
 #: includes/cb_checkbox.php:179 includes/cb_dropdown.php:179
 #: includes/cb_email.php:173 includes/cb_multiple.php:202
 #: includes/cb_text.php:200 includes/cb_textarea.php:196
 msgid "Save Settings"
-msgstr "Instellingen Opslaan"
+msgstr "Instellingen opslaan"
 
 #: includes/cb_checkbox.php:228 includes/cb_dropdown.php:219
 #: includes/cb_multiple.php:252
 msgid "Please Fill an Option."
-msgstr "Gelieve  Invullen  een Optie."
+msgstr "Aub een optie invullen"
 
 #: includes/cb_dropdown.php:36 views/contact_view.php:434
 msgid "Select Box"
-msgstr "Selecteren doos"
+msgstr "Selecteer vak"
 
 #: includes/cb_dropdown.php:42 includes/cb_email.php:44
 #: includes/cb_multiple.php:45 includes/cb_text.php:44
 msgid "Enter Label"
-msgstr " Invoeren  het Etiket"
+msgstr "Voer label in"
 
 #: includes/cb_dropdown.php:103 includes/cb_multiple.php:116
 msgid "Enter Option"
-msgstr "optie  Invoeren "
+msgstr "Vul optie in"
 
 #: includes/cb_email.php:36 views/contact_view.php:431
 msgid "Email Address"
-msgstr "E-mail Adres"
+msgstr "E-mail adres"
 
 #: includes/cb_email.php:49 includes/cb_text.php:48
 #: includes/cb_textarea.php:48
 msgid "Description"
-msgstr "Beschrijving van"
+msgstr "Beschrijving"
 
 #: includes/cb_email.php:52 includes/cb_text.php:51
 msgid "Enter Description"
-msgstr "Invoeren Beschrijving van"
+msgstr "Voer beschrijving in"
 
 #: includes/cb_email.php:121 includes/cb_text.php:120
 #: includes/cb_textarea.php:120
 msgid "Place Holder"
-msgstr "plek Houder van"
+msgstr "Vervangende tekst"
 
 #: includes/cb_email.php:124 includes/cb_text.php:123
 #: includes/cb_textarea.php:122
 msgid "Enter Place Holder"
-msgstr "Voer plek Houder van"
+msgstr "Voer vervangende tekst in"
 
 #: includes/cb_multiple.php:36 views/contact_view.php:442
 msgid "Radio Buttons"
-msgstr "Radio In Knoppen"
+msgstr "Selectierondjes"
 
 #: includes/cb_text.php:36 views/contact_view.php:423
 msgid "Single Line Text"
-msgstr "Enkel Lijn tekst"
+msgstr "Enkele regel tekst"
 
 #: includes/cb_text.php:168 includes/cb_textarea.php:166
 msgid "Add a filter"
-msgstr "toevoegen een filter"
+msgstr "Filter toevoegen"
 
 #: includes/cb_text.php:173 includes/cb_textarea.php:170
 msgid "Alpha"
-msgstr "alfa"
+msgstr "Alpha"
 
 #: includes/cb_text.php:177 includes/cb_textarea.php:174
 msgid "Alpha Numeric"
-msgstr "alfa Numeric"
+msgstr "Aphanumerieke"
 
 #: includes/cb_text.php:181 includes/cb_textarea.php:178
 msgid "Digits"
-msgstr "Getallen"
+msgstr "Cijfers"
 
 #: includes/cb_text.php:185 includes/cb_textarea.php:182
 msgid "Strip Tags"
-msgstr " Strook tags  te"
+msgstr "Strip Tags"
 
 #: includes/cb_text.php:189 includes/cb_textarea.php:186
 msgid "Trim"
-msgstr "Bijknippen"
+msgstr "Inkorten"
 
 #: includes/cb_text.php:191 includes/cb_textarea.php:188
 #: views/contact_bank_layout_settings.php:61
@@ -281,54 +282,54 @@ msgstr "Bijknippen"
 #: views/contact_bank_layout_settings.php:652
 #: views/contact_bank_layout_settings.php:780 views/contact_view.php:452
 msgid " (Available in Premium Edition)"
-msgstr "(Verkrijgbaar in Uitgave van de Premie)"
+msgstr "(Verkrijgbaar in premium edition)"
 
 #: includes/cb_textarea.php:36 views/contact_view.php:426
 msgid "Paragraph Text"
-msgstr "paragraaf tekst"
+msgstr "Paragraaf tekst"
 
 #: includes/cb_textarea.php:43
 msgid "Enter label"
-msgstr " Etiket Invoeren"
+msgstr "Label invoeren"
 
 #: includes/cb_textarea.php:50
 msgid "Enter  Description"
-msgstr "Invoeren  Beschrijving van  "
+msgstr "Beschrijving invoeren"
 
 #: includes/cb_textarea.php:111
 msgid "Tooltip text"
-msgstr "Knopinfo Tekst"
+msgstr "Volgende tip"
 
 #: lib/contact_bank_email-class.php:52
 msgid "Edit Email Settings"
-msgstr "Bewerken E-mailinstellingen"
+msgstr "Bewerk e-mail instellingen"
 
 #: lib/contact_bank_email-class.php:55
 msgid "Delete Email Settings"
-msgstr "verwijderen E-mailinstellingen"
+msgstr "Verwijder e-mail instellingen"
 
 #: lib/contact_frontend_data_class.php:91
 msgid "Delete Form Entry"
-msgstr "Verwijder formulier binnenkomst"
+msgstr "Verwijder formulier beschrijving"
 
 #: views/add_contact_email.php:29 views/contact_email_settings.php:68
 msgid "Email Confirmation"
-msgstr "Email bevestiging"
+msgstr "E-mail bevestiging"
 
 #: views/add_contact_email.php:32
 msgid "Back to Email Settings"
-msgstr "Terug naar E-mailinstellingen"
+msgstr "Terug naar e-mail instellingen"
 
 #: views/add_contact_email.php:33 views/add_contact_email.php:213
 #: views/contact_bank_layout_settings.php:14
 #: views/contact_bank_layout_settings.php:498
 #: views/contact_bank_layout_settings.php:910
 msgid "Save"
-msgstr "Sparen"
+msgstr "Opslaan"
 
 #: views/add_contact_email.php:37
 msgid "Email Settings Saved. Kindly wait for the redirect."
-msgstr "E-mailinstellingen Opgeslagen. Vriendelijk wacht op de redirect."
+msgstr "E-mail instellinge opgeslagen. Wacht aub op verwijzing."
 
 #: views/add_contact_email.php:44 views/add_contact_email.php:101
 #: views/contact_controls_files.php:35
@@ -337,60 +338,60 @@ msgstr "E-mail"
 
 #: views/add_contact_email.php:48 views/contact_view.php:459
 msgid "Name"
-msgstr "naam"
+msgstr "Naam"
 
 #: views/add_contact_email.php:52
 msgid "Enter Name"
-msgstr "Voer naam"
+msgstr "Naam invoeren"
 
 #: views/add_contact_email.php:58
 msgid "Send To"
-msgstr "verzenden naar"
+msgstr "Stuur naar"
 
 #: views/add_contact_email.php:67 views/add_contact_email.php:78
 #: views/add_contact_email.php:90 views/add_contact_email.php:150
 msgid "Enter Email"
-msgstr "Geef e-mail"
+msgstr "E-mail invoeren"
 
 #: views/add_contact_email.php:69 views/add_contact_email.php:80
 #: views/add_contact_email.php:92
 msgid "Select a Field"
-msgstr "Selecteer een veld"
+msgstr "Selecteer veld"
 
 #: views/add_contact_email.php:105
 msgid "Enter Email "
-msgstr "Geef e-mail"
+msgstr "E-mail invoeren "
 
 #: views/add_contact_email.php:109
 msgid "Send To Field"
-msgstr "Verzenden naar Veld"
+msgstr "Stuur naar veld"
 
 #: views/add_contact_email.php:113
 msgid "Enter Field "
-msgstr "betreden Veld"
+msgstr "Veld invoeren "
 
 #: views/add_contact_email.php:115 views/add_contact_email.php:128
 #: views/add_contact_email.php:141 views/add_contact_email.php:152
 #: views/add_contact_email.php:163 views/add_contact_email.php:174
 #: views/add_contact_email.php:187
 msgid "Select a field"
-msgstr "Selecteer een veld"
+msgstr "Selecteer veld"
 
 #: views/add_contact_email.php:122
 msgid "From Name"
-msgstr "vanaf Naam"
+msgstr "Naam verzender"
 
 #: views/add_contact_email.php:126
 msgid "Enter from name "
-msgstr "Invoeren Vanaf Naam"
+msgstr "Vul naam verzender in "
 
 #: views/add_contact_email.php:135
 msgid "From Email"
-msgstr "Vanaf email"
+msgstr "E-mail verzender"
 
 #: views/add_contact_email.php:139
 msgid "Enter from email"
-msgstr "binnengaan Vanaf email"
+msgstr "Vul verzender e-mail in"
 
 #: views/add_contact_email.php:148
 msgid "Reply To"
@@ -402,7 +403,7 @@ msgstr "CC"
 
 #: views/add_contact_email.php:161
 msgid "Enter CC Email "
-msgstr "binnengaan CC email"
+msgstr "Voer CC e-mail in "
 
 #: views/add_contact_email.php:170
 msgid "BCC"
@@ -410,69 +411,70 @@ msgstr "BCC"
 
 #: views/add_contact_email.php:172
 msgid "Enter Bcc Email"
-msgstr "binnengaan Bcc email"
+msgstr "Voer Bcc e-mail in"
 
 #: views/add_contact_email.php:181
 msgid "Subject"
-msgstr "Betreft"
+msgstr "Onderwerp"
 
 #: views/add_contact_email.php:185
 msgid "Enter Subject"
-msgstr " Betreft Invoeren"
+msgstr "Voer onderwerp in"
 
 #: views/add_contact_email.php:194
 msgid "Message"
-msgstr "bericht"
+msgstr "Bericht"
 
 #: views/add_contact_email.php:204
 msgid "Insert a Field into Your Form Message"
-msgstr "Plaats een veld in een uw formulier Bericht"
+msgstr "Voeg veld aan uw bericht formulier toe"
 
 #: views/contact-bank-system-report.php:12
 msgid "Get System Report"
-msgstr "Krijgen Systeemrapport"
+msgstr "Haal systeem rapport"
 
 #: views/contact-bank-system-report.php:16
 msgid "Close System Report"
-msgstr "Sluiten Systeemrapport"
+msgstr "Sluit systeem rapport"
 
 #: views/contact-bank-system-report.php:98
 msgid "Default"
-msgstr "verzuim"
+msgstr "Standaard"
 
 #: views/contact_bank_form_preview.php:274 views/dashboard.php:120
 msgid "Form Preview"
-msgstr "Formulier Voorbeeldweergave"
+msgstr "Voorbeeld formulier"
 
 #: views/contact_bank_form_preview.php:277
 #: views/contact_bank_layout_settings.php:11
 #: views/contact_email_settings.php:8 views/contact_frontend_data.php:8
 #: views/contact_view.php:234 views/shortcode.php:12
 msgid "Back to Dashboard"
-msgstr "Terug naar Dashboard"
+msgstr "Terug naar dashboard"
 
 #: views/contact_bank_layout_settings.php:7
 msgid " (Premium Features available in Paid Edition)"
-msgstr "(premie functies beschikbaar in Paid Editie)"
+msgstr "(van premium features beschikbaar in Paid Edition)"
 
 #: views/contact_bank_layout_settings.php:12
 msgid "Restore Global Settings"
-msgstr "Herstel Globale Instellingen"
+msgstr "Herstel standaard instellingen"
 
 #: views/contact_bank_layout_settings.php:18
 msgid "Form Settings Saved. Kindly wait for the redirect."
-msgstr "Formulier instellingen gered. Vriendelijk wachten op de omleiding"
+msgstr ""
+"Formulier instellingen opgeslagen. Vriendelijk wachten op de omleiding."
 
 #: views/contact_bank_layout_settings.php:22
 #: views/contact_bank_layout_settings.php:35
 #: views/contact_email_settings.php:12 views/contact_email_settings.php:33
 #: views/contact_frontend_data.php:19 views/contact_frontend_data.php:32
 msgid "Select Form"
-msgstr "Selecteer Formulier"
+msgstr "Selecteer formulier"
 
 #: views/contact_bank_layout_settings.php:60
 msgid "Label Settings"
-msgstr "Etiket Instellingen"
+msgstr "Label instellingen"
 
 #: views/contact_bank_layout_settings.php:72
 #: views/contact_bank_layout_settings.php:259
@@ -480,16 +482,16 @@ msgstr "Etiket Instellingen"
 #: views/contact_bank_layout_settings.php:662
 #: views/contact_bank_layout_settings.php:790
 msgid "Font Family :"
-msgstr "Doopvont Familie:"
+msgstr "Font family :"
 
 #: views/contact_bank_layout_settings.php:97
 msgid "Font Color :"
-msgstr "Kleur lettertype:"
+msgstr "Font kleur :"
 
 #: views/contact_bank_layout_settings.php:108
 #: views/contact_bank_layout_settings.php:295
 msgid "Font Style :"
-msgstr "Doopvont Stijl:"
+msgstr "Font stijl :"
 
 #: views/contact_bank_layout_settings.php:122
 #: views/contact_bank_layout_settings.php:309
@@ -497,7 +499,7 @@ msgstr "Doopvont Stijl:"
 #: views/contact_bank_layout_settings.php:687
 #: views/contact_bank_layout_settings.php:815
 msgid "Font Size (px) :"
-msgstr "Tekengrootte (px):"
+msgstr "Font grootte (px) :"
 
 #: views/contact_bank_layout_settings.php:153
 #: views/contact_bank_layout_settings.php:410
@@ -505,23 +507,23 @@ msgstr "Tekengrootte (px):"
 #: views/contact_bank_layout_settings.php:751
 #: views/contact_bank_layout_settings.php:879
 msgid "Text Align :"
-msgstr "Tekst-uitlijnen:"
+msgstr "Tekst uitlijning :"
 
 #: views/contact_bank_layout_settings.php:166
 msgid "Label Position :"
-msgstr "Etiket Positie:"
+msgstr "Label positie :"
 
 #: views/contact_bank_layout_settings.php:180
 msgid "Field Desc Font Size :"
-msgstr "Veld Desc Fontgrootte:"
+msgstr "Veld beschr. font grootte :"
 
 #: views/contact_bank_layout_settings.php:211
 msgid "Field Description Align :"
-msgstr "Veld Beschrijving-uitlijnen:"
+msgstr "Veld beschrijving uitlijning :"
 
 #: views/contact_bank_layout_settings.php:225
 msgid "Hide Labels :"
-msgstr "Verbergen Etiketten:"
+msgstr "Verberg labels :"
 
 #: views/contact_bank_layout_settings.php:233
 #: views/contact_bank_layout_settings.php:423
@@ -529,70 +531,70 @@ msgstr "Verbergen Etiketten:"
 #: views/contact_bank_layout_settings.php:764
 #: views/contact_bank_layout_settings.php:892
 msgid "Text Direction :"
-msgstr "Tekst Richting:"
+msgstr "Tekst richting :"
 
 #: views/contact_bank_layout_settings.php:249
 msgid "Input Field Settings"
-msgstr "Invoer Veldinstellingen"
+msgstr "Invoer veld instellingen"
 
 #: views/contact_bank_layout_settings.php:284
 #: views/contact_bank_layout_settings.php:581
 #: views/contact_bank_layout_settings.php:740
 #: views/contact_bank_layout_settings.php:868
 msgid "Text Color :"
-msgstr "tekst Kleur:"
+msgstr "Tekst kleur :"
 
 #: views/contact_bank_layout_settings.php:340
 #: views/contact_bank_layout_settings.php:613
 msgid "Border Radius (px) :"
-msgstr "Grens een straal (px):"
+msgstr "Rand afstand (px) :"
 
 #: views/contact_bank_layout_settings.php:350
 #: views/contact_bank_layout_settings.php:592
 #: views/contact_bank_layout_settings.php:729
 #: views/contact_bank_layout_settings.php:857
 msgid "Border Color :"
-msgstr "Grens Kleur:"
+msgstr "Rand kleur :"
 
 #: views/contact_bank_layout_settings.php:361
 #: views/contact_bank_layout_settings.php:603
 msgid "Border Size (px) :"
-msgstr "Randgrootte (px):"
+msgstr "Rand dikte (px) :"
 
 #: views/contact_bank_layout_settings.php:371
 msgid "Border Style :"
-msgstr "Randstijl:"
+msgstr "Rand stijl :"
 
 #: views/contact_bank_layout_settings.php:386
 #: views/contact_bank_layout_settings.php:559
 #: views/contact_bank_layout_settings.php:718
 #: views/contact_bank_layout_settings.php:846
 msgid "Background Color :"
-msgstr "Achtergrond Kleur:"
+msgstr "Achtergrond kleur :"
 
 #: views/contact_bank_layout_settings.php:397
 msgid "Radio Buttons :"
-msgstr "Radio knop:"
+msgstr "Keuzerondjes :"
 
 #: views/contact_bank_layout_settings.php:402
 msgid "Multiple Rows"
-msgstr "Meervoudig rijen"
+msgstr "Meerdere rijen"
 
 #: views/contact_bank_layout_settings.php:404
 msgid "Single Row"
-msgstr "enkele rij"
+msgstr "Eén rij"
 
 #: views/contact_bank_layout_settings.php:437
 msgid "Input Size :"
-msgstr "Invoer Grootte:"
+msgstr "Invoer grootte :"
 
 #: views/contact_bank_layout_settings.php:459
 msgid "Submit Button Settings"
-msgstr "voorleggen knopinstellingen"
+msgstr "Verstuur knop instellingen"
 
 #: views/contact_bank_layout_settings.php:494
 msgid "Text:"
-msgstr "tekst :"
+msgstr "Tekst:"
 
 #: views/contact_bank_layout_settings.php:504
 msgid "Style :"
@@ -600,29 +602,29 @@ msgstr "Stijl :"
 
 #: views/contact_bank_layout_settings.php:549
 msgid "Button Width (px) :"
-msgstr "Knop Breedte (px):"
+msgstr "Knop breedte (px) :"
 
 #: views/contact_bank_layout_settings.php:570
 msgid "Hover Background Color:"
-msgstr "Beweeg muis Achtergrond Kleur:"
+msgstr "Zweven achtergrond kleur:"
 
 #: views/contact_bank_layout_settings.php:652
 msgid "Success Message Settings"
-msgstr "Welslagen Berichtinstellingen"
+msgstr "Gelukt bericht instellingen"
 
 #: views/contact_bank_layout_settings.php:780
 msgid "Error Message Settings"
-msgstr "Foutmelding Berichtinstellingen"
+msgstr "Fout bericht instellingen"
 
 #: views/contact_bank_pro_version.php:6
 msgid "Purchase PRO Edition - Contact Bank"
-msgstr "Aankoop PRO Editie - Contact Bank"
+msgstr "Aankoop PRO editie - Contact Bank"
 
 #: views/contact_controls_files.php:8 views/contact_controls_files.php:24
 #: views/contact_controls_files.php:41 views/contact_controls_files.php:59
 #: views/contact_controls_files.php:75 views/contact_controls_files.php:92
 msgid "Settings"
-msgstr "Berichten Instellingen"
+msgstr "Instellingen"
 
 #: views/contact_documentation.php:5
 msgid "Documentation - Contact Bank"
@@ -630,15 +632,15 @@ msgstr "Documentatie - Contact Bank"
 
 #: views/contact_email_settings.php:58
 msgid "Add New"
-msgstr "Nieuw toevoegen"
+msgstr "Nieuwe toevoegen"
 
 #: views/contact_email_settings.php:134
 msgid "Are you sure, you want to delete this Email Setting?"
-msgstr "Weet je zeker, dat u deze e-mail instelling wilt verwijderen?"
+msgstr "Weet je zeker dat je deze e-mail instellingen wil verwijderen?"
 
 #: views/contact_email_settings.php:152
 msgid "Please select the Form first."
-msgstr "selecteer aub eerst het formulier."
+msgstr "Aub eerst het formulier selecteren"
 
 #: views/contact_frontend_data.php:14 views/dashboard.php:52
 #: views/dashboard.php:59
@@ -647,76 +649,76 @@ msgstr "Formulier"
 
 #: views/contact_view.php:231 views/dashboard.php:34
 msgid "Add New Form"
-msgstr "Voeg nieuwe vorm"
+msgstr "Nieuw formulier toevoegen"
 
 #: views/contact_view.php:237 views/contact_view.php:501
 msgid "Save Form"
-msgstr "sparen Formulier"
+msgstr "Formulier opslaan"
 
 #: views/contact_view.php:242
 msgid "Form Submitted. Kindly wait for the redirect."
-msgstr "Formulier Ingediend. Vriendelijk wachten op de omleiding."
+msgstr "Formulier verzonden. Wacht op verwijzing."
 
 #: views/contact_view.php:249
 msgid "Form Settings"
-msgstr "formulierinstellingen"
+msgstr "Formulier instellingen"
 
 #: views/contact_view.php:253
 msgid "Form Name :"
-msgstr "Formulier Naam:"
+msgstr "Formulier naam :"
 
 #: views/contact_view.php:259
 msgid "Enter Form Name"
-msgstr "invoeren Formulier Naam"
+msgstr "Formulier naam invoeren"
 
 #: views/contact_view.php:263
 msgid "Form Description :"
-msgstr "Vorm Omschrijving:"
+msgstr "Formulier beschrijving :"
 
 #: views/contact_view.php:265
 msgid "Enter Form Description"
-msgstr "invoeren Vorm Omschrijving"
+msgstr "Vul formulier beschrijving in"
 
 #: views/contact_view.php:269
 msgid "Blank Field Message:"
-msgstr "Blanco veld Bericht:"
+msgstr "Leeg veld bericht:"
 
 #: views/contact_view.php:275
 msgid "Required field must not be blank"
-msgstr "Verplicht veld moet niet leeg zijn"
+msgstr "Vereist veld mag niet leeg zijn"
 
 #: views/contact_view.php:277
 msgid "Enter Blank Field Message"
-msgstr "Invoeren lege veld Bericht"
+msgstr "Vul bricht in voor leeg veld"
 
 #: views/contact_view.php:281
 msgid "Incorrect Email Message:"
-msgstr "Onjuist e-mailbericht bericht:"
+msgstr "Foutief e-mail adres"
 
 #: views/contact_view.php:287
 msgid "Please enter a valid email address"
-msgstr "Vul een geldig e-mailadres"
+msgstr "Vul aub een correct e-mail adres in"
 
 #: views/contact_view.php:289
 msgid "Enter Incorrect Email Message"
-msgstr "betreden Onjuiste e-mail bericht"
+msgstr "Vul bericht in voor foutieve e-mail"
 
 #: views/contact_view.php:293
 msgid "Success Message :"
-msgstr "Succes van Bericht:"
+msgstr "Gelukt bericht :"
 
 #: views/contact_view.php:297
 msgid "Enter Success Message"
-msgstr "Voer Succes Bericht"
+msgstr "Vul bericht in voor gelukt"
 
 #: views/contact_view.php:301
 msgid "Redirect :"
-msgstr "omleiden:"
+msgstr "Verwijzing:"
 
 #: views/contact_view.php:313 views/contact_view.php:324
 #: views/contact_view.php:336
 msgid "Page"
-msgstr "pagina"
+msgstr "Pagina"
 
 #: views/contact_view.php:316 views/contact_view.php:327
 #: views/contact_view.php:339
@@ -725,7 +727,7 @@ msgstr "URL"
 
 #: views/contact_view.php:346
 msgid "Page :"
-msgstr "pagina :"
+msgstr "Pagina :"
 
 #: views/contact_view.php:392
 msgid "URL :"
@@ -733,19 +735,19 @@ msgstr "URL :"
 
 #: views/contact_view.php:399
 msgid "Enter Redirect URL"
-msgstr "Voer Doorverwijs URL"
+msgstr "Vul doorverwijzing Url in"
 
 #: views/contact_view.php:406
 msgid "Form Layout Preview"
-msgstr "Vorm Opmaak Voorbeeldweergave"
+msgstr "Formulier layout voorbeeld"
 
 #: views/contact_view.php:417
 msgid "Standard Fields"
-msgstr "standaard velden"
+msgstr "Standaard velden"
 
 #: views/contact_view.php:420 views/contact_view.php:456
 msgid "Click on a field to use into your form."
-msgstr "Klik op de een veld om te gebruiken in tot uw formulier."
+msgstr "Click op een veld om deze in het formulier te gebruiken."
 
 #: views/contact_view.php:439
 msgid "Checkboxes"
@@ -753,27 +755,27 @@ msgstr "Selectievakjes"
 
 #: views/contact_view.php:451
 msgid "Advanced Fields"
-msgstr "geavanceerde Velden"
+msgstr "Geavanceerde velden"
 
 #: views/contact_view.php:462
 msgid "Website / URL"
-msgstr "website van het/URL"
+msgstr "Wesite / Url"
 
 #: views/contact_view.php:467
 msgid "Phone"
-msgstr "telefoon"
+msgstr "Telefoon"
 
 #: views/contact_view.php:470
 msgid "Address"
-msgstr "adres"
+msgstr "Adres"
 
 #: views/contact_view.php:475
 msgid "Number"
-msgstr "aantal"
+msgstr "Nummer"
 
 #: views/contact_view.php:478
 msgid "File Upload"
-msgstr "Bestandsgrootte uploaden "
+msgstr "Bestand toevoegen"
 
 #: views/contact_view.php:483
 msgid "Date"
@@ -781,35 +783,35 @@ msgstr "Datum"
 
 #: views/contact_view.php:486
 msgid "Time"
-msgstr "Keer"
+msgstr "Tijd"
 
 #: views/contact_view.php:491
 msgid "Password"
-msgstr "mailadres Wachtwoord"
+msgstr "Wachtwoord"
 
 #: views/dashboard.php:18
 msgid "Dashboard - Contact Bank"
-msgstr "instrumentenbord - BERICHTJE STUREN Jordaanoever"
+msgstr "Dashboard - Contact Bank"
 
 #: views/dashboard.php:40
 msgid "Delete All Forms"
-msgstr "Verwijderen Alle Vormen"
+msgstr "Verwijder alle formulier"
 
 #: views/dashboard.php:43
 msgid "Restore Factory Settings"
-msgstr "Fabrieksinstellingen terugzetten"
+msgstr "Terugzetten naar fabrieksinstellingen"
 
 #: views/dashboard.php:60
 msgid "Shortcode"
-msgstr "Korte-het repertorium"
+msgstr "Verkorte code"
 
 #: views/dashboard.php:61
 msgid "Total Controls"
-msgstr "Totaal Controls"
+msgstr "Totale controle"
 
 #: views/dashboard.php:100
 msgid "Edit Form"
-msgstr " Bewerk Formulier"
+msgstr "Bewerk formulier"
 
 #: views/dashboard.php:126
 msgid "Delete Form"
@@ -817,145 +819,155 @@ msgstr "Verwijder formulier"
 
 #: views/dashboard.php:198
 msgid "Are you sure, you want to delete this Form?"
-msgstr "Weet u zeker dat u dit formulier wilt verwijderen?"
+msgstr "Weet je zeker dat je dit formulier wil verwijderen?"
 
 #: views/dashboard.php:208
 msgid "Are you sure, you want to delete all Forms?"
-msgstr "Weet je zeker, je wilt alle vormen verwijderen?"
+msgstr "Weet je zeker dat je alle formulieren wil verwijderen?"
 
 #: views/shortcode.php:8
 msgid ""
 "How to setup Short-Codes for Contact Bank into your WordPress Page/Post?"
 msgstr ""
-"Hoe te opstelling Korte-Codes voor Contact Bank in uw WordPress Pagina / "
+"Het instellen van korte codes voor Contact Bank in uw WordPress Pagina / "
 "Post?"
 
-#~ msgid "Documentation"
-#~ msgstr "Documentatiecentrum"
-
-#~ msgid "Roles & Capabilites"
-#~ msgstr "Rollen & Capability"
+#~ msgid "Roles & Capabilities"
+#~ msgstr "Rollen & Capaciteiten"
 
 #~ msgid "Licensing"
 #~ msgstr "Licentiëring"
 
-#~ msgid "Roles & Capabilities"
-#~ msgstr "Rollen & Capability"
-
 #~ msgid "Select Form :"
-#~ msgstr "Selecteren formulier :"
+#~ msgstr "Selecteer formulier:"
 
 #~ msgid "Day"
-#~ msgstr "de Dag"
+#~ msgstr "Dag"
 
 #~ msgid "Select Month"
-#~ msgstr "Selecteer Maand"
+#~ msgstr "Selecteer maand"
 
 #~ msgid "Year"
-#~ msgstr "Bouwjaar"
+#~ msgstr "Jaar"
 
 #~ msgid "Hour"
-#~ msgstr "uurs"
+#~ msgstr "Uur"
 
 #~ msgid "Minute"
-#~ msgstr "minuut"
+#~ msgstr "Minuut"
 
 #~ msgid "Enter Tooltip Text"
-#~ msgstr "invoeren knopinfo tekst"
+#~ msgstr "Vul tip tekst in"
 
 #~ msgid "Enter Tooltip"
-#~ msgstr "invoeren knopinfo"
+#~ msgstr "Tip invoeren"
 
 #~ msgid "Start Year"
-#~ msgstr "te starten Jaar"
+#~ msgstr "Begin jaar"
 
 #~ msgid "Enter Start Year"
-#~ msgstr "In te voeren op Start Bouwjaar"
+#~ msgstr "Jaar aanvang invullen"
 
 #~ msgid "End Year"
-#~ msgstr "einde Jaar"
+#~ msgstr "Eind jaar"
 
 #~ msgid "Enter End Year "
-#~ msgstr " Invoeren einde  Bouwjaar"
+#~ msgstr "Vul eind jaar in"
 
 #~ msgid "Default Value"
-#~ msgstr "Stand.waarde"
+#~ msgstr "Standaard waarde"
 
 #~ msgid "Month"
-#~ msgstr "maand"
+#~ msgstr "Maand"
 
 #~ msgid "Date Format"
-#~ msgstr "Datum formaat"
+#~ msgstr "Formaat datum"
 
 #~ msgid "Allow Multiple Uploads"
-#~ msgstr "Laat Meerdere Neergelegde"
+#~ msgstr "Tostaan toevoegen meerdere bestanden"
 
 #~ msgid "Allowed File Extensions"
-#~ msgstr "toegestaan Bestand  Verlengingen"
+#~ msgstr "Toegestane bestand extenties"
 
 #~ msgid "Enter File Extensions"
-#~ msgstr "invoeren Bestand  Verlengingen"
+#~ msgstr "Toevoegen bestand extentie"
 
-#~ msgid "The file extensions must be separated with semicolons(',')"
-#~ msgstr "De bestandsextensies moeten met komma's worden gescheiden (',')"
+#~ msgid "The file extensions must be separated with comma(',')"
+#~ msgstr "Deze bestand scheiden met comma (',')"
 
 #~ msgid "Allowed File Size"
-#~ msgstr "toegestaan ​​Bestand Grootte"
+#~ msgstr "Toegestane bestand grootte"
 
 #~ msgid "File Size must be in Mb"
-#~ msgstr "Bestand Grootte moet in Mb"
+#~ msgstr "Bestand groott moet zijn in Mb"
 
 #~ msgid "Hour Format"
-#~ msgstr "uurformaat"
+#~ msgstr "Uur formaat"
 
 #~ msgid "Minute Format"
-#~ msgstr "minuut formaat"
+#~ msgstr "Minuut formaat"
 
 #~ msgid "Roles and Capabilities Saved. Kindly wait for the redirect."
-#~ msgstr ""
-#~ "Rollen en Mogelijkheden Opgeslagen. Vriendelijk wachten op de omleiding."
+#~ msgstr "Rollen en capaciteiten opgeslagen. Wacht aub voor verwijzing."
 
 #~ msgid "Privileges for Admin"
-#~ msgstr "Privileges voor Beheerder"
+#~ msgstr "Privileges voor admin"
 
 #~ msgid "Full Control"
-#~ msgstr "Volledig beheer"
+#~ msgstr "Volledige controle"
 
 #~ msgid "Read"
-#~ msgstr "lezen"
+#~ msgstr "Lees"
 
 #~ msgid "Write"
-#~ msgstr "schrijven"
+#~ msgstr "Schrijf"
 
 #~ msgid "Privileges for Editor"
-#~ msgstr "Privileges voor Redacteur"
+#~ msgstr "Privileges voor bewerker"
 
 #~ msgid "Privileges for Author"
-#~ msgstr "Privileges voor Auteur"
+#~ msgstr "Privileges voor auteur"
 
 #~ msgid "Privileges for Contributor"
-#~ msgstr "Privileges voor Inzender"
+#~ msgstr "Privileges voor inzender"
 
 #~ msgid "Privileges for Subscriber"
-#~ msgstr "Privileges voor de Abonnee"
+#~ msgstr "Privileges voor abonnee"
+
+#~ msgid "Global Settings Saved. Kindly wait for the redirect."
+#~ msgstr "Standaard instellingen opgeslagen. Wacht aub op verwijzing."
 
 #~ msgid "Are you sure, you want to Restore Global Settings?"
-#~ msgstr "Weet je zeker, dat u wilt herstellen Globale Instellingen?"
+#~ msgstr "Weet je zeker dat je de standaard instellingen wil herstellen?"
 
-#~ msgid "Are you sure, you want to delete this From Entry?"
-#~ msgstr "Weet u zeker dat u dit wilt verwijderen Vanaf Entry?"
+#~ msgid "Are you sure, you want to delete this Form Entry ?"
+#~ msgstr "Weet je zeker dat je deze invoer wilt wissen?"
+
+#~ msgid "Attention! A new vesion of Contact Bank is available for download."
+#~ msgstr ""
+#~ "Attentie! Een nieuwe versie van Contact Bank is beschikbaar voor "
+#~ "downloaden."
+
+#~ msgid "Click"
+#~ msgstr "Klik"
+
+#~ msgid "here"
+#~ msgstr "hier"
+
+#~ msgid "to upgrade your version of Contact Bank."
+#~ msgstr "om je versie van Contact Bank te upgraden."
 
 #~ msgid "Are you sure you want to Restore Factory Settings?"
-#~ msgstr "Weet u zeker dat u wilt terugzetten fabrieksinstellingen?"
+#~ msgstr "Weet je zeker dat je terug wil zetten naar fabrieksinstellingen?"
 
 #~ msgid "Only One File Uploader can be used on a Form."
-#~ msgstr "Slechts een bestand Uploader kan worden gebruikt op een formulier."
-
-#~ msgid "Success! Settings have been updated."
-#~ msgstr "Succes van! Instellingen zijn bijgewerkt."
+#~ msgstr "Maar één bestand uploader kan gebruikt worden op een formulier."
 
 #~ msgid "Contact-Bank Licensing"
-#~ msgstr "Contact Bank Licentiëring"
+#~ msgstr "Contact Bank licentiëring"
 
 #~ msgid "Update"
-#~ msgstr "bijwerken"
+#~ msgstr "Update"
+
+#~ msgid "Success! Settings have been updated."
+#~ msgstr "Gelukt! Instellingen zijn ge-update."
