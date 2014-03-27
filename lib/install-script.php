@@ -3,7 +3,7 @@ global $wpdb;
 require_once(ABSPATH . "wp-admin/includes/upgrade.php");
 update_option("contact-bank-updation-check-url","http://tech-banker.com/wp-admin/admin-ajax.php");
 $version = get_option("contact-bank-version-number");
-if($version == "")
+if($version == "" || $version == "1.0")
 {
     if (count($wpdb->get_var('SHOW TABLES LIKE "' . contact_bank_form_settings_Table() . '"')) == 0)
     {
@@ -102,8 +102,7 @@ if($version == "")
                 );
             }
         }
-
-    }
+	}
     if (count($wpdb->get_var('SHOW TABLES LIKE "' . create_control_Table() . '"')) == 0)
     {
         create_table_contact_bank_controls();
@@ -111,12 +110,12 @@ if($version == "")
     else
     {
         $contact_forms_controls = $wpdb->get_results
+        (
+            $wpdb->prepare
             (
-                $wpdb->prepare
-                (
-                    "SELECT * FROM ".create_control_Table()." where field_id not in (9,12,13,14,15)",""
-                )
-            );
+                "SELECT * FROM ".create_control_Table()." where field_id not in (9,12,13,14,15)",""
+            )
+        );
 
         $sql = "DROP TABLE " . create_control_Table();
         $wpdb->query($sql);
@@ -494,6 +493,41 @@ if($version == "")
 }
 else if($version == "2.0")
 {
+	if (count($wpdb->get_var("SHOW TABLES LIKE '" . contact_bank_licensing() . "'")) == 0)
+    {
+        create_cb_table_licensing();
+    }
+	if (count($wpdb->get_var("SHOW TABLES LIKE '" . contact_bank_roles_capability() . "'")) == 0)
+    {
+        create_table_roles_capability();
+		$settings_roles = array();
+		$settings_roles["admin_full_control"] =  "1";
+		$settings_roles["admin_read_control"] =  "0";
+		$settings_roles["admin_write_control"] = "0";
+		$settings_roles["editor_full_control"] = "0";
+		$settings_roles["editor_read_control"] = "1";
+		$settings_roles["editor_write_control"] = "0";
+		$settings_roles["author_full_control"] = "0";
+		$settings_roles["author_read_control"] = "1";
+		$settings_roles["author_write_control"] = "0";
+		$settings_roles["contributor_full_control"] = "0";
+		$settings_roles["contributor_read_control"] = "1";
+		$settings_roles["contributor_write_control"] = "0";
+		$settings_roles["subscriber_full_control"] = "0";
+		$settings_roles["subscriber_read_control"] = "1";
+		$settings_roles["subscriber_write_control"] = "0";
+		foreach($settings_roles as $key => $value)
+        {
+                $sql1[] = '("'.mysql_real_escape_string($key).'", "'.mysql_real_escape_string($value).'")';
+        }
+        $wpdb->query
+        (
+            $wpdb->prepare
+            (
+                "INSERT INTO " . contact_bank_roles_capability() . "(roles_capability_key,roles_capability_value) VALUES ".implode(',', $sql1),""
+            )
+        );
+    }
 	if (count($wpdb->get_var('SHOW TABLES LIKE "' . contact_bank_form_settings_Table() . '"')) == 0)
     {
         create_contact_bank_form_settings();
@@ -555,6 +589,45 @@ else if($version == "2.0")
 		}
 	}
     update_option("contact-bank-version-number","2.1");
+}
+else if($version == "2.1")
+{
+	if (count($wpdb->get_var("SHOW TABLES LIKE '" . contact_bank_licensing() . "'")) == 0)
+    {
+        create_cb_table_licensing();
+    }
+	if (count($wpdb->get_var("SHOW TABLES LIKE '" . contact_bank_roles_capability() . "'")) == 0)
+    {
+        create_table_roles_capability();
+		$settings_roles = array();
+		$settings_roles["admin_full_control"] =  "1";
+		$settings_roles["admin_read_control"] =  "0";
+		$settings_roles["admin_write_control"] = "0";
+		$settings_roles["editor_full_control"] = "0";
+		$settings_roles["editor_read_control"] = "1";
+		$settings_roles["editor_write_control"] = "0";
+		$settings_roles["author_full_control"] = "0";
+		$settings_roles["author_read_control"] = "1";
+		$settings_roles["author_write_control"] = "0";
+		$settings_roles["contributor_full_control"] = "0";
+		$settings_roles["contributor_read_control"] = "1";
+		$settings_roles["contributor_write_control"] = "0";
+		$settings_roles["subscriber_full_control"] = "0";
+		$settings_roles["subscriber_read_control"] = "1";
+		$settings_roles["subscriber_write_control"] = "0";
+		foreach($settings_roles as $key => $value)
+        {
+                $sql1[] = '("'.mysql_real_escape_string($key).'", "'.mysql_real_escape_string($value).'")';
+        }
+        $wpdb->query
+        (
+            $wpdb->prepare
+            (
+                "INSERT INTO " . contact_bank_roles_capability() . "(roles_capability_key,roles_capability_value) VALUES ".implode(',', $sql1),""
+            )
+        );
+    }
+	 update_option("contact-bank-version-number","2.1");
 }
 function create_table_contact_bank_forms()
 {
