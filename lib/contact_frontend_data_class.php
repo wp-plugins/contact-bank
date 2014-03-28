@@ -14,8 +14,10 @@ if(isset($_REQUEST["param"]))
 			)
 		);
 		?>
+		<div id="dvData">
 		<table class="table table-striped" id="data-table-frontend" style="width:100%;">
 			<thead>
+				<tr>
 				<?php
 				for($flag=0;$flag<count($form_data);$flag++)
 				{
@@ -29,11 +31,12 @@ if(isset($_REQUEST["param"]))
 						)
 					);
 				?>
-				<th><?php echo $form_control_labels ?></th>
+				<td><?php echo $form_control_labels ?></td>
 				<?php
 				}
 				?>
-				<th></th>
+				<td></td>
+				</tr>
 			</thead>
 			<tbody>
 				<?php
@@ -98,6 +101,7 @@ if(isset($_REQUEST["param"]))
 				?>
 			</tbody>
 		</table>
+		</div>
 		<script type="text/javascript">
 			oTable = jQuery('#data-table-frontend').dataTable
 			({

@@ -6,6 +6,7 @@
 			</div>
 			<div class="widget-layout-body layout-form">
 				<a class="btn btn-info" href="admin.php?page=dashboard"><?php _e("Back to Dashboard", contact_bank);?></a>
+				<a class="btn btn-info" id="export" ><?php _e("Export to Excel", contact_bank);?></a>
 				<div class="separator-doubled"></div>
 				<div class="fluid-layout">
 					<div class="layout-span12">
@@ -64,6 +65,54 @@
 jQuery(document).ready(function()
 {
 	select_form_id();
+	
+			function exportTableToCSV(table, filename) 
+			{
+	
+			var rows = table.find('tr:has(td)'),
+				csv = "";
+	            tmpColDelim = String.fromCharCode(11),
+	            tmpRowDelim = String.fromCharCode(0), 
+				colDelim = '","',
+	            rowDelim = '"\r\n"',
+					csv = '"' + rows.map(function (i, row) {
+	            	var row = jQuery(row),
+	                    cols = row.find('td'); 
+					return cols.map(function (j, col) {
+	                    var col = jQuery(col),
+	                        text = col.text();
+	
+	                    return text.replace('"', '""');
+	
+	                }).get().join(tmpColDelim);
+	
+	            }).get().join(tmpRowDelim)
+	            	
+	                .split(tmpRowDelim).join(rowDelim)
+	                .split(tmpColDelim).join(colDelim) + '"',
+					csvData = 'data:application/csv;charset=utf-8,' + encodeURIComponent(csv);
+			
+	        jQuery(this)
+	            .attr({
+	            'download': filename,
+	                'href': csvData,
+	                'target': '_blank'
+	        });
+	    }
+		jQuery("#export").on('click', function (event) 
+	    {
+	    	var form_id = jQuery("#select_form").val();
+	    	if(form_id != 0)
+			{
+				exportTableToCSV.apply(this, [jQuery('#data-table-frontend'), 'Form Entries.csv']);
+			}
+			else
+			{
+				alert("<?php _e( "Please select the Form first.", contact_bank ); ?>");
+			}
+	    });
+	
+	
 });
 function select_form_id()
 {
@@ -94,4 +143,10 @@ function delete_form_entry()
 {
 	alert("<?php _e( "This Feature is only available in Paid Premium Edition!", contact_bank ); ?>");
 }
+
+
+
+
+
+
 </script>

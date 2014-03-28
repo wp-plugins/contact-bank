@@ -1,3 +1,20 @@
+<?php
+if(isset($_REQUEST["msg"]))
+{
+	if(esc_attr($_REQUEST["msg"]) == "no") 
+	{
+	 update_option("contact-bank-banner", "no");
+	 ?>
+	 <style type="text/css" >
+	  #ux_buy_pro
+	  {
+	   display:none;
+	  }
+	 </style>
+	 <?php
+	}
+}
+?>
 <div class="fluid-layout">
 	<div class="layout-span12">
 		<div class="widget-layout">

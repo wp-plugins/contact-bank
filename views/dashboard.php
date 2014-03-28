@@ -45,7 +45,7 @@ $last_form_id = $wpdb->get_var
 				<div class="separator-doubled" style="margin-bottom: 5px;"></div>
 				<a rel="prettyPhoto[contact]"  href="<?php echo CONTACT_BK_PLUGIN_URL . "/assets/images/how-to-setup-short-code-cb.png";?>">How to setup Short-Codes for Contact Bank into your WordPress Page/Post?</a>
 				<div class="fluid-layout">
-					<div class="layout-span9" style="min-height:600px;">
+					<div class="layout-span12" style="min-height:600px;">
 						<div class="widget-layout">
 							<div class="widget-layout-title">
 								<h4>
@@ -136,29 +136,7 @@ $last_form_id = $wpdb->get_var
 							</div>
 						</div>
 					</div>
-					<div class="layout-span3">
-						<div class="widget-layout">
-							<div class="widget-layout-body" style="text-align: center">
-								<a target="_blank"  href="http://tech-banker.com/contact-bank/">
-									<img width="200px" src="<?php echo CONTACT_BK_PLUGIN_URL . "/assets/images/contact-bank-eco-edition-270x270.png";?>"/>
-								</a>
-							</div>
-						</div>
-						<div class="widget-layout">
-							<div class="widget-layout-body" style="text-align: center">
-								<a target="_blank" href="http://tech-banker.com/contact-bank/">
-									<img width="200px" src="<?php echo CONTACT_BK_PLUGIN_URL . "/assets/images/contact-bank-pro-edition-270x270.png";?>"/>
-								</a>
-							</div>
-						</div>	
-						<div class="widget-layout">
-							<div class="widget-layout-body" style="text-align: center">
-								<a  target="_blank" href="http://tech-banker.com/contact-bank/">
-									<img width="200px" src="<?php echo CONTACT_BK_PLUGIN_URL . "/assets/images/contact-bank-developer-edition-270x270.png";?>"/>
-								</a>
-							</div>
-						</div>		
-					</div>
+					
 				</div>
 			</div>
 		</div>
