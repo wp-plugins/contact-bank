@@ -19,7 +19,7 @@ It provides a powerful engine for uploading and managing dynamic forms with more
 
 ***The Contact Bank WordPress Plugin is now proudly maintained by <a href="http://www.tech-banker.com">Tech Banker Pte Ltd.</a> since March 2014.***
 
-***March 28, 2014: We're happy to announce that Contact Bank reached 18,600+ plugin downloads in only 5 months. We frequently receive positive feedback from people using our Contact Bank Plugin for WordPress. Thanks so much for your support!***
+***April 1, 2014: We're happy to announce that Contact Bank reached 19,700+ plugin downloads in only 6 months. We frequently receive positive feedback from people using our Contact Bank Plugin for WordPress. Thanks so much for your support!***
 
 <a href="http://tech-banker.com/forum/contact-bank-support/" target="_blank">Support Desk - feel free to ask your Queries</a>
 
@@ -129,14 +129,18 @@ Visit [here](http://tech-banker.com/contact-bank) to upgrade to Pro Version now.
 
 == Changelog ==
 
-= 2.0.12 =
+= 2.0.14 =
 
-* Fex Bugs Fixed
+* Language Updated - Hungarian
+
+= 2.0.13 =
+
+* Few Bugs Fixed
 * Unwanted Banner Removed
 
 = 2.0.12 =
 
-* Fex Bugs Fixed
+* Few Bugs Fixed
 
 = 2.0.11 =
 
