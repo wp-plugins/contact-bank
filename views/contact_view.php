@@ -109,16 +109,16 @@
 		$settings["input_field_input_size"] = "layout-span6";
 
 		$settings["submit_button_font_family"] = "inherit";
-        $settings["submit_button_text"] = "Save ";
+        $settings["submit_button_text"] = "Submit ";
         $settings["submit_button_font_style"] = "normal";
         $settings["submit_button_font_size"] = "12";
-        $settings["submit_button_button_width"] = "100";
-        $settings["submit_button_bg_color"] =  "#24890d";
-        $settings["submit_button_hover_bg_color"] = "#3dd41a";
-        $settings["submit_button_text_color"] =  "#ffffff";
-        $settings["submit_button_border_color"] = "#000000";
-        $settings["submit_button_border_size"] = "0";
-        $settings["submit_button_border_radius"] = "0";
+        $settings["submit_button_button_width"] = "110";
+        $settings["submit_button_bg_color"] =  "#B8B8B8";
+        $settings["submit_button_hover_bg_color"] = "#e5e5e5";
+        $settings["submit_button_text_color"] =  "#000000";
+        $settings["submit_button_border_color"] = "#B8B8B8";
+        $settings["submit_button_border_size"] = "1";
+        $settings["submit_button_border_radius"] = "2";
 		$settings["submit_button_rdl_text_align"] = "0";
 		$settings["submit_button_text_direction"] = "inherit";
 
