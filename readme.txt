@@ -17,9 +17,16 @@ Contact Bank has become the **Best Plugin** in the world for WordPress sites to 
 
 It provides a powerful engine for uploading and managing dynamic forms with more than 100+ layout settings. It also provides different front-end display styles (top,right,left layouts), all of them comes with a wide array of options for controlling size, style, controls, and even much more.
 
+> #### **Live Demos & Documentation**
+
+> * [Tech Banker](http://tech-banker.com/)
+> * [Contact Bank](http://tech-banker.com/contact-bank/)
+> * [Contact Bank Demos](http://tech-banker.com/contact-bank/demo/)
+> * [Contact Bank Documentation](tech-banker.com/contact-bank/documentation/)
+
 ***The Contact Bank WordPress Plugin is now proudly maintained by <a href="http://www.tech-banker.com">Tech Banker Pte Ltd.</a> since March 2014.***
 
-***April 11, 2014: We're happy to announce that Contact Bank reached 23,000+ plugin downloads in only 6 months. We frequently receive positive feedback from people using our Contact Bank Plugin for WordPress. Thanks so much for your support!***
+***April 14, 2014: We're happy to announce that Contact Bank reached 23,600+ plugin downloads in only 6 months. We frequently receive positive feedback from people using our Contact Bank Plugin for WordPress. Thanks so much for your support!***
 
 <a href="http://tech-banker.com/forum/contact-bank-support/" target="_blank">Support Desk - feel free to ask your Queries</a>
 
