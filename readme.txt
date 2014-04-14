@@ -22,7 +22,7 @@ It provides a powerful engine for uploading and managing dynamic forms with more
 > * [Tech Banker](http://tech-banker.com/)
 > * [Contact Bank](http://tech-banker.com/contact-bank/)
 > * [Contact Bank Demos](http://tech-banker.com/contact-bank/demo/)
-> * [Contact Bank Documentation](tech-banker.com/contact-bank/documentation/)
+> * [Contact Bank Documentation](http://tech-banker.com/contact-bank/documentation/)
 
 ***The Contact Bank WordPress Plugin is now proudly maintained by <a href="http://www.tech-banker.com">Tech Banker Pte Ltd.</a> since March 2014.***
 
