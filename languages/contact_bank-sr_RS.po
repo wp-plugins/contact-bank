@@ -1,0 +1,959 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2014-03-18 15:51+0530\n"
+"PO-Revision-Date: 2014-03-18 16:41+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: C:\\wamp\\www\\contact-bank_Standard\\wp-content\\plugins"
+"\\contact-bank\\\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: contact-bank.php:54
+msgid "Contact Bank"
+msgstr "Contact Bank"
+
+#: contact-bank.php:55 contact-bank.php:326
+msgid "Dashboard"
+msgstr "командна табла"
+
+#: contact-bank.php:57 contact-bank.php:332
+msgid "Short-Codes"
+msgstr "Кратки кодови-"
+
+#: contact-bank.php:58 contact-bank.php:338 views/contact_frontend_data.php:5
+#: views/dashboard.php:115
+msgid "Form Entries"
+msgstr "Образац уноси"
+
+#: contact-bank.php:59 contact-bank.php:344 views/contact_email_settings.php:5
+#: views/dashboard.php:110
+msgid "Email Settings"
+msgstr "Емаил подешавања"
+
+#: contact-bank.php:60 contact-bank.php:350
+#: views/contact_bank_layout_settings.php:6 views/dashboard.php:105
+msgid "Global Settings"
+msgstr "Глобална Подешавања"
+
+#: contact-bank.php:61 contact-bank.php:358
+#: views/contact-bank-system-report.php:9
+msgid "System Status"
+msgstr "Статус система"
+
+#: contact-bank.php:63 contact-bank.php:370
+msgid "Purchase PRO Edition"
+msgstr "Куповина Про Едитион"
+
+#: contact-bank.php:377
+msgid "Add Contact Bank Form"
+msgstr "додати контакт облик"
+
+#: contact-bank.php:389
+msgid "Insert Contact Bank Form"
+msgstr "Убаците- контакт форма"
+
+#: contact-bank.php:391
+msgid "Select a form below to add it to your post or page."
+msgstr "Изаберите формулар испод да га додате на свој пост или страници."
+
+#: contact-bank.php:396
+msgid "Form Name"
+msgstr "Образац Име"
+
+#: contact-bank.php:398
+msgid "Select a Form"
+msgstr "Изаберите -Формулар"
+
+#: contact-bank.php:418
+msgid "Show Form Title"
+msgstr "Схов Форм Наслов"
+
+#: contact-bank.php:423
+msgid "Insert Form"
+msgstr "Инсерт формулар"
+
+#: contact-bank.php:426
+msgid "Cancel"
+msgstr "Одустани"
+
+#: contact-bank.php:438
+msgid "Please choose a Form to insert into Shortcode"
+msgstr "Молимо изаберите формулар да бисте уметнули у схортцоде"
+
+#: frontend_views/contact_bank_forms.php:366
+#: views/contact_bank_form_preview.php:375 views/contact_controls_files.php:56
+msgid "Select Option"
+msgstr "Изаберите Опција"
+
+#: includes/cb_checkbox.php:36
+msgid "Check Boxes"
+msgstr "Цхецк Бокес"
+
+#: includes/cb_checkbox.php:40 includes/cb_dropdown.php:40
+#: includes/cb_email.php:40 includes/cb_multiple.php:40
+#: includes/cb_text.php:40 includes/cb_textarea.php:40
+msgid "Label"
+msgstr "Лабел"
+
+#: includes/cb_checkbox.php:42 includes/cb_checkbox.php:144
+#: includes/cb_dropdown.php:42 includes/cb_dropdown.php:144
+#: includes/cb_email.php:43 includes/cb_email.php:133
+#: includes/cb_multiple.php:44 includes/cb_multiple.php:164
+#: includes/cb_text.php:43 includes/cb_text.php:132
+#: includes/cb_textarea.php:42 includes/cb_textarea.php:130
+#: views/contact_controls_files.php:3 views/contact_controls_files.php:19
+#: views/contact_controls_files.php:52 views/contact_controls_files.php:68
+#: views/contact_controls_files.php:85
+msgid "Untitled"
+msgstr "Унтитлед"
+
+#: includes/cb_checkbox.php:46 includes/cb_checkbox.php:56
+#: includes/cb_checkbox.php:69 includes/cb_checkbox.php:83
+#: includes/cb_dropdown.php:46 includes/cb_dropdown.php:56
+#: includes/cb_dropdown.php:69 includes/cb_dropdown.php:83
+#: includes/cb_email.php:57 includes/cb_email.php:68 includes/cb_email.php:83
+#: includes/cb_email.php:99 includes/cb_multiple.php:49
+#: includes/cb_multiple.php:60 includes/cb_multiple.php:75
+#: includes/cb_multiple.php:91 includes/cb_text.php:56 includes/cb_text.php:67
+#: includes/cb_text.php:82 includes/cb_text.php:98 includes/cb_textarea.php:56
+#: includes/cb_textarea.php:67 includes/cb_textarea.php:82
+#: includes/cb_textarea.php:98
+msgid "Required"
+msgstr "потребан"
+
+#: includes/cb_checkbox.php:60 includes/cb_checkbox.php:73
+#: includes/cb_checkbox.php:87 includes/cb_dropdown.php:60
+#: includes/cb_dropdown.php:73 includes/cb_dropdown.php:87
+#: includes/cb_email.php:73 includes/cb_email.php:88 includes/cb_email.php:104
+#: includes/cb_multiple.php:65 includes/cb_multiple.php:80
+#: includes/cb_multiple.php:96 includes/cb_text.php:72 includes/cb_text.php:87
+#: includes/cb_text.php:103 includes/cb_textarea.php:72
+#: includes/cb_textarea.php:87 includes/cb_textarea.php:103
+msgid "Not Required"
+msgstr "Није потребна"
+
+#: includes/cb_checkbox.php:95 includes/cb_dropdown.php:95
+#: includes/cb_email.php:112 includes/cb_multiple.php:104
+#: includes/cb_text.php:111
+msgid "Tooltip Text"
+msgstr "Тоолтип текст"
+
+#: includes/cb_checkbox.php:97 includes/cb_dropdown.php:97
+#: includes/cb_email.php:115 includes/cb_multiple.php:108
+#: includes/cb_text.php:114 includes/cb_textarea.php:113
+#: views/contact_bank_layout_settings.php:921
+#: views/contact_frontend_data.php:95 views/dashboard.php:217
+#: views/includes_common_after.php:348 views/includes_common_after.php:351
+#: views/includes_common_after.php:354 views/includes_common_after.php:357
+#: views/includes_common_after.php:360 views/includes_common_after.php:363
+#: views/includes_common_after.php:366 views/includes_common_after.php:369
+#: views/includes_common_after.php:372
+msgid "This Feature is only available in Paid Premium Edition!"
+msgstr "Ова функција је доступна само у Плаћени Премиум Едитион!"
+
+#: includes/cb_checkbox.php:101 includes/cb_dropdown.php:101
+#: includes/cb_multiple.php:113
+msgid "Options"
+msgstr "Опције"
+
+#: includes/cb_checkbox.php:103
+msgid "Enter Options"
+msgstr "Ентер Опције"
+
+#: includes/cb_checkbox.php:104 includes/cb_dropdown.php:104
+#: includes/cb_multiple.php:119
+msgid "Add"
+msgstr "додати"
+
+#: includes/cb_checkbox.php:135 includes/cb_dropdown.php:135
+#: includes/cb_multiple.php:153
+msgid "Delete"
+msgstr "избрисати"
+
+#: includes/cb_checkbox.php:142 includes/cb_dropdown.php:142
+#: includes/cb_email.php:130 includes/cb_multiple.php:160
+#: includes/cb_text.php:129 includes/cb_textarea.php:128
+msgid "Admin Label"
+msgstr "Админ Лабел"
+
+#: includes/cb_checkbox.php:144 includes/cb_dropdown.php:144
+#: includes/cb_email.php:134 includes/cb_multiple.php:163
+#: includes/cb_text.php:131 includes/cb_textarea.php:131
+msgid "Enter Admin Label"
+msgstr "Унесете Лабел Админ"
+
+#: includes/cb_checkbox.php:148 includes/cb_dropdown.php:148
+#: includes/cb_email.php:139 includes/cb_multiple.php:168
+#: includes/cb_text.php:137 includes/cb_textarea.php:135
+msgid "Do not show in the email"
+msgstr "Не показуј у е-маил"
+
+#: includes/cb_checkbox.php:179 includes/cb_dropdown.php:179
+#: includes/cb_email.php:173 includes/cb_multiple.php:202
+#: includes/cb_text.php:200 includes/cb_textarea.php:196
+msgid "Save Settings"
+msgstr "Саве Сеттингс"
+
+#: includes/cb_checkbox.php:228 includes/cb_dropdown.php:219
+#: includes/cb_multiple.php:252
+msgid "Please Fill an Option."
+msgstr "Молимо Вас да попунуте  опцију."
+
+#: includes/cb_dropdown.php:36 views/contact_view.php:434
+msgid "Select Box"
+msgstr "Изаберите Боx"
+
+#: includes/cb_dropdown.php:42 includes/cb_email.php:44
+#: includes/cb_multiple.php:45 includes/cb_text.php:44
+msgid "Enter Label"
+msgstr "Ентер Лејбл"
+
+#: includes/cb_dropdown.php:103 includes/cb_multiple.php:116
+msgid "Enter Option"
+msgstr "Унесете Оптион"
+
+#: includes/cb_email.php:36 views/contact_view.php:431
+msgid "Email Address"
+msgstr "Е-маил адреса"
+
+#: includes/cb_email.php:49 includes/cb_text.php:48
+#: includes/cb_textarea.php:48
+msgid "Description"
+msgstr "опис"
+
+#: includes/cb_email.php:52 includes/cb_text.php:51
+msgid "Enter Description"
+msgstr "Ентер Опис"
+
+#: includes/cb_email.php:121 includes/cb_text.php:120
+#: includes/cb_textarea.php:120
+msgid "Place Holder"
+msgstr "Место држач"
+
+#: includes/cb_email.php:124 includes/cb_text.php:123
+#: includes/cb_textarea.php:122
+msgid "Enter Place Holder"
+msgstr "Унесите Плаце Холдер"
+
+#: includes/cb_multiple.php:36 views/contact_view.php:442
+msgid "Radio Buttons"
+msgstr "радио дугмићима"
+
+#: includes/cb_text.php:36 views/contact_view.php:423
+msgid "Single Line Text"
+msgstr "Једнолинијски Текст"
+
+#: includes/cb_text.php:168 includes/cb_textarea.php:166
+msgid "Add a filter"
+msgstr "Додај филтер"
+
+#: includes/cb_text.php:173 includes/cb_textarea.php:170
+msgid "Alpha"
+msgstr "Alpha"
+
+#: includes/cb_text.php:177 includes/cb_textarea.php:174
+msgid "Alpha Numeric"
+msgstr "Алфа нумеричка"
+
+#: includes/cb_text.php:181 includes/cb_textarea.php:178
+msgid "Digits"
+msgstr "цифара"
+
+#: includes/cb_text.php:185 includes/cb_textarea.php:182
+msgid "Strip Tags"
+msgstr "Стрип Ознаке"
+
+#: includes/cb_text.php:189 includes/cb_textarea.php:186
+msgid "Trim"
+msgstr "подрезати"
+
+#: includes/cb_text.php:191 includes/cb_textarea.php:188
+#: views/contact_bank_layout_settings.php:61
+#: views/contact_bank_layout_settings.php:249
+#: views/contact_bank_layout_settings.php:459
+#: views/contact_bank_layout_settings.php:652
+#: views/contact_bank_layout_settings.php:780 views/contact_view.php:452
+msgid " (Available in Premium Edition)"
+msgstr "(Доступно у Премиум Едитион)"
+
+#: includes/cb_textarea.php:36 views/contact_view.php:426
+msgid "Paragraph Text"
+msgstr "Став Текст"
+
+#: includes/cb_textarea.php:43
+msgid "Enter label"
+msgstr "Унесете Лабел"
+
+#: includes/cb_textarea.php:50
+msgid "Enter  Description"
+msgstr "унесете oпис"
+
+#: includes/cb_textarea.php:111
+msgid "Tooltip text"
+msgstr "Тоолтип текст"
+
+#: lib/contact_bank_email-class.php:52
+msgid "Edit Email Settings"
+msgstr "Уреди Емаил Сеттингс"
+
+#: lib/contact_bank_email-class.php:55
+msgid "Delete Email Settings"
+msgstr "Обриши Емаил Сеттингс"
+
+#: lib/contact_frontend_data_class.php:91
+msgid "Delete Form Entry"
+msgstr "Унесите образац- улазак "
+
+#: views/add_contact_email.php:29 views/contact_email_settings.php:68
+msgid "Email Confirmation"
+msgstr "Е-маил Потврда"
+
+#: views/add_contact_email.php:32
+msgid "Back to Email Settings"
+msgstr "Назад на Емаил Сеттингс"
+
+#: views/add_contact_email.php:33 views/add_contact_email.php:213
+#: views/contact_bank_layout_settings.php:14
+#: views/contact_bank_layout_settings.php:498
+#: views/contact_bank_layout_settings.php:910
+msgid "Save"
+msgstr "сачувати"
+
+#: views/add_contact_email.php:37
+msgid "Email Settings Saved. Kindly wait for the redirect."
+msgstr "Емаил подешавања су сачувана. Молимо сачекајте преусмеравање."
+
+#: views/add_contact_email.php:44 views/add_contact_email.php:101
+#: views/contact_controls_files.php:35
+msgid "Email"
+msgstr "Е-маил"
+
+#: views/add_contact_email.php:48 views/contact_view.php:459
+msgid "Name"
+msgstr "име"
+
+#: views/add_contact_email.php:52
+msgid "Enter Name"
+msgstr "Унесите име"
+
+#: views/add_contact_email.php:58
+msgid "Send To"
+msgstr "Пошаљи на"
+
+#: views/add_contact_email.php:67 views/add_contact_email.php:78
+#: views/add_contact_email.php:90 views/add_contact_email.php:150
+msgid "Enter Email"
+msgstr "Унесите Е-маил"
+
+#: views/add_contact_email.php:69 views/add_contact_email.php:80
+#: views/add_contact_email.php:92
+msgid "Select a Field"
+msgstr "Селецт а Фиелд"
+
+#: views/add_contact_email.php:105
+msgid "Enter Email "
+msgstr "Унесите Е-маил"
+
+#: views/add_contact_email.php:109
+msgid "Send To Field"
+msgstr "Пошаљи на ратарство"
+
+#: views/add_contact_email.php:113
+msgid "Enter Field "
+msgstr "Унесите поље"
+
+#: views/add_contact_email.php:115 views/add_contact_email.php:128
+#: views/add_contact_email.php:141 views/add_contact_email.php:152
+#: views/add_contact_email.php:163 views/add_contact_email.php:174
+#: views/add_contact_email.php:187
+msgid "Select a field"
+msgstr "Селецт а поља"
+
+#: views/add_contact_email.php:122
+msgid "From Name"
+msgstr "Фром Наме"
+
+#: views/add_contact_email.php:126
+msgid "Enter from name "
+msgstr "Унесите Од Имена"
+
+#: views/add_contact_email.php:135
+msgid "From Email"
+msgstr "Од Емаил"
+
+#: views/add_contact_email.php:139
+msgid "Enter from email"
+msgstr "Унесите од емаил"
+
+#: views/add_contact_email.php:148
+msgid "Reply To"
+msgstr "Одговор Да"
+
+#: views/add_contact_email.php:159
+msgid "CC"
+msgstr "ЦЦ"
+
+#: views/add_contact_email.php:161
+msgid "Enter CC Email "
+msgstr "Унесите ЦЦ Емаил"
+
+#: views/add_contact_email.php:170
+msgid "BCC"
+msgstr "БЦЦ"
+
+#: views/add_contact_email.php:172
+msgid "Enter Bcc Email"
+msgstr "Унесите БЦЦ Емаил"
+
+#: views/add_contact_email.php:181
+msgid "Subject"
+msgstr "предмет"
+
+#: views/add_contact_email.php:185
+msgid "Enter Subject"
+msgstr "Унесите предмет"
+
+#: views/add_contact_email.php:194
+msgid "Message"
+msgstr "Мессаге"
+
+#: views/add_contact_email.php:204
+msgid "Insert a Field into Your Form Message"
+msgstr "Уметнете поље у ваш образац Мессаге"
+
+#: views/contact-bank-system-report.php:12
+msgid "Get System Report"
+msgstr "Гет Систем- Пријави"
+
+#: views/contact-bank-system-report.php:16
+msgid "Close System Report"
+msgstr "Затвори Систем Пријави"
+
+#: views/contact-bank-system-report.php:98
+msgid "Default"
+msgstr "Дефаулт"
+
+#: views/contact_bank_form_preview.php:274 views/dashboard.php:120
+msgid "Form Preview"
+msgstr "формулар Преглед"
+
+#: views/contact_bank_form_preview.php:277
+#: views/contact_bank_layout_settings.php:11
+#: views/contact_email_settings.php:8 views/contact_frontend_data.php:8
+#: views/contact_view.php:234 views/shortcode.php:12
+msgid "Back to Dashboard"
+msgstr "Назад на контролну таблу"
+
+#: views/contact_bank_layout_settings.php:7
+msgid " (Premium Features available in Paid Edition)"
+msgstr "(Премиум функције доступне у Плаћени Едитион)"
+
+#: views/contact_bank_layout_settings.php:12
+msgid "Restore Global Settings"
+msgstr "Ресторе глобалне поставке"
+
+#: views/contact_bank_layout_settings.php:18
+msgid "Form Settings Saved. Kindly wait for the redirect."
+msgstr "формулар Подешавања Сачувани. Молимо сачекајте преусмери."
+
+#: views/contact_bank_layout_settings.php:22
+#: views/contact_bank_layout_settings.php:35
+#: views/contact_email_settings.php:12 views/contact_email_settings.php:33
+#: views/contact_frontend_data.php:19 views/contact_frontend_data.php:32
+msgid "Select Form"
+msgstr "Одаберите Образац"
+
+#: views/contact_bank_layout_settings.php:60
+msgid "Label Settings"
+msgstr "Лабел-Подешавања "
+
+#: views/contact_bank_layout_settings.php:72
+#: views/contact_bank_layout_settings.php:259
+#: views/contact_bank_layout_settings.php:469
+#: views/contact_bank_layout_settings.php:662
+#: views/contact_bank_layout_settings.php:790
+msgid "Font Family :"
+msgstr "Породица фонтова:"
+
+#: views/contact_bank_layout_settings.php:97
+msgid "Font Color :"
+msgstr "Боја фонта:"
+
+#: views/contact_bank_layout_settings.php:108
+#: views/contact_bank_layout_settings.php:295
+msgid "Font Style :"
+msgstr "Стил фонта:"
+
+#: views/contact_bank_layout_settings.php:122
+#: views/contact_bank_layout_settings.php:309
+#: views/contact_bank_layout_settings.php:518
+#: views/contact_bank_layout_settings.php:687
+#: views/contact_bank_layout_settings.php:815
+msgid "Font Size (px) :"
+msgstr "Величина слова (пк):"
+
+#: views/contact_bank_layout_settings.php:153
+#: views/contact_bank_layout_settings.php:410
+#: views/contact_bank_layout_settings.php:623
+#: views/contact_bank_layout_settings.php:751
+#: views/contact_bank_layout_settings.php:879
+msgid "Text Align :"
+msgstr "текст- Поравнати :"
+
+#: views/contact_bank_layout_settings.php:166
+msgid "Label Position :"
+msgstr "Лабел Позиција:"
+
+#: views/contact_bank_layout_settings.php:180
+msgid "Field Desc Font Size :"
+msgstr "Фиелд Десц Величина слова:"
+
+#: views/contact_bank_layout_settings.php:211
+msgid "Field Description Align :"
+msgstr "Поље Опис алигн:"
+
+#: views/contact_bank_layout_settings.php:225
+msgid "Hide Labels :"
+msgstr "Сакриј етикете:"
+
+#: views/contact_bank_layout_settings.php:233
+#: views/contact_bank_layout_settings.php:423
+#: views/contact_bank_layout_settings.php:636
+#: views/contact_bank_layout_settings.php:764
+#: views/contact_bank_layout_settings.php:892
+msgid "Text Direction :"
+msgstr "Tekst vetra"
+
+#: views/contact_bank_layout_settings.php:249
+msgid "Input Field Settings"
+msgstr "Инпут Фиелд Подешавања"
+
+#: views/contact_bank_layout_settings.php:284
+#: views/contact_bank_layout_settings.php:581
+#: views/contact_bank_layout_settings.php:740
+#: views/contact_bank_layout_settings.php:868
+msgid "Text Color :"
+msgstr "Боја текста:"
+
+#: views/contact_bank_layout_settings.php:340
+#: views/contact_bank_layout_settings.php:613
+msgid "Border Radius (px) :"
+msgstr "Гранична Радијус (пк):"
+
+#: views/contact_bank_layout_settings.php:350
+#: views/contact_bank_layout_settings.php:592
+#: views/contact_bank_layout_settings.php:729
+#: views/contact_bank_layout_settings.php:857
+msgid "Border Color :"
+msgstr "Боја оквира:"
+
+#: views/contact_bank_layout_settings.php:361
+#: views/contact_bank_layout_settings.php:603
+msgid "Border Size (px) :"
+msgstr "Бордер Големина (пк):"
+
+#: views/contact_bank_layout_settings.php:371
+msgid "Border Style :"
+msgstr "Стил ивице:"
+
+#: views/contact_bank_layout_settings.php:386
+#: views/contact_bank_layout_settings.php:559
+#: views/contact_bank_layout_settings.php:718
+#: views/contact_bank_layout_settings.php:846
+msgid "Background Color :"
+msgstr "Боја позадине:"
+
+#: views/contact_bank_layout_settings.php:397
+msgid "Radio Buttons :"
+msgstr "Радио Тастери:"
+
+#: views/contact_bank_layout_settings.php:402
+msgid "Multiple Rows"
+msgstr "Вишепородична редове"
+
+#: views/contact_bank_layout_settings.php:404
+msgid "Single Row"
+msgstr "Сингле Ров"
+
+#: views/contact_bank_layout_settings.php:437
+msgid "Input Size :"
+msgstr "Улаз Сизе:"
+
+#: views/contact_bank_layout_settings.php:459
+msgid "Submit Button Settings"
+msgstr "Субмит дугме Сеттингс"
+
+#: views/contact_bank_layout_settings.php:494
+msgid "Text:"
+msgstr "Текст:"
+
+#: views/contact_bank_layout_settings.php:504
+msgid "Style :"
+msgstr "Стил:"
+
+#: views/contact_bank_layout_settings.php:549
+msgid "Button Width (px) :"
+msgstr "Дугме Ширина (пк):"
+
+#: views/contact_bank_layout_settings.php:570
+msgid "Hover Background Color:"
+msgstr "Ховер Бацкгроунд Цолор:"
+
+#: views/contact_bank_layout_settings.php:652
+msgid "Success Message Settings"
+msgstr "Суццесс Мессаге Настројки"
+
+#: views/contact_bank_layout_settings.php:780
+msgid "Error Message Settings"
+msgstr "Грешка Мессаге Настројки"
+
+#: views/contact_bank_pro_version.php:6
+msgid "Purchase PRO Edition - Contact Bank"
+msgstr "Куповина Про Едитион- Contact Bank"
+
+#: views/contact_controls_files.php:8 views/contact_controls_files.php:24
+#: views/contact_controls_files.php:41 views/contact_controls_files.php:59
+#: views/contact_controls_files.php:75 views/contact_controls_files.php:92
+msgid "Settings"
+msgstr "Подешавања"
+
+#: views/contact_documentation.php:5
+msgid "Documentation - Contact Bank"
+msgstr "Документација - Чонтачт Bank"
+
+#: views/contact_email_settings.php:58
+msgid "Add New"
+msgstr "Додај Нови"
+
+#: views/contact_email_settings.php:134
+msgid "Are you sure, you want to delete this Email Setting?"
+msgstr "Да ли сте сигурни, да желите да избришете овај е-маил Сеттинг?"
+
+#: views/contact_email_settings.php:152
+msgid "Please select the Form first."
+msgstr "Пожалујста изаберите формулар-први."
+
+#: views/contact_frontend_data.php:14 views/dashboard.php:52
+#: views/dashboard.php:59
+msgid "Form"
+msgstr "образац"
+
+#: views/contact_view.php:231 views/dashboard.php:34
+msgid "Add New Form"
+msgstr "Додају нове образац"
+
+#: views/contact_view.php:237 views/contact_view.php:501
+msgid "Save Form"
+msgstr "Сачувај Облик"
+
+#: views/contact_view.php:242
+msgid "Form Submitted. Kindly wait for the redirect."
+msgstr "Облик Субмиттед. Молимо сачекајте да се преусмеравање."
+
+#: views/contact_view.php:249
+msgid "Form Settings"
+msgstr "формулар Настројки"
+
+#: views/contact_view.php:253
+msgid "Form Name :"
+msgstr "Име обрасца:"
+
+#: views/contact_view.php:259
+msgid "Enter Form Name"
+msgstr "Унесите назив образаца"
+
+#: views/contact_view.php:263
+msgid "Form Description :"
+msgstr "Форма Опис:"
+
+#: views/contact_view.php:265
+msgid "Enter Form Description"
+msgstr "Унесите форма Опис"
+
+#: views/contact_view.php:269
+msgid "Blank Field Message:"
+msgstr "Празно поље Мессаге:"
+
+#: views/contact_view.php:275
+msgid "Required field must not be blank"
+msgstr "Обавезно поље не сме да буде празно"
+
+#: views/contact_view.php:277
+msgid "Enter Blank Field Message"
+msgstr "Унесите Празно поље Мессаге"
+
+#: views/contact_view.php:281
+msgid "Incorrect Email Message:"
+msgstr "Погрешан маил Порука:"
+
+#: views/contact_view.php:287
+msgid "Please enter a valid email address"
+msgstr "Унесите исправну емаил адресу"
+
+#: views/contact_view.php:289
+msgid "Enter Incorrect Email Message"
+msgstr "Унесите Погрешан емаил Мессаге"
+
+#: views/contact_view.php:293
+msgid "Success Message :"
+msgstr "Успех Порука:"
+
+#: views/contact_view.php:297
+msgid "Enter Success Message"
+msgstr "Унесите- успех поруку"
+
+#: views/contact_view.php:301
+msgid "Redirect :"
+msgstr "Преусмери:"
+
+#: views/contact_view.php:313 views/contact_view.php:324
+#: views/contact_view.php:336
+msgid "Page"
+msgstr "страна"
+
+#: views/contact_view.php:316 views/contact_view.php:327
+#: views/contact_view.php:339
+msgid "URL"
+msgstr "УРЛ адреса"
+
+#: views/contact_view.php:346
+msgid "Page :"
+msgstr "Страница:"
+
+#: views/contact_view.php:392
+msgid "URL :"
+msgstr "URL :"
+
+#: views/contact_view.php:399
+msgid "Enter Redirect URL"
+msgstr "Унесите УРЛ адресу за преусмеравање"
+
+#: views/contact_view.php:406
+msgid "Form Layout Preview"
+msgstr "Образац Распоред Превиев"
+
+#: views/contact_view.php:417
+msgid "Standard Fields"
+msgstr "Стандардни Поља"
+
+#: views/contact_view.php:420 views/contact_view.php:456
+msgid "Click on a field to use into your form."
+msgstr "Цлицк о пољу- да употребите у ваш образац."
+
+#: views/contact_view.php:439
+msgid "Checkboxes"
+msgstr "Поља за потврду"
+
+#: views/contact_view.php:451
+msgid "Advanced Fields"
+msgstr "Напредна Поља"
+
+#: views/contact_view.php:462
+msgid "Website / URL"
+msgstr "Сајт / УРЛ"
+
+#: views/contact_view.php:467
+msgid "Phone"
+msgstr "телефон"
+
+#: views/contact_view.php:470
+msgid "Address"
+msgstr "адреса"
+
+#: views/contact_view.php:475
+msgid "Number"
+msgstr "број"
+
+#: views/contact_view.php:478
+msgid "File Upload"
+msgstr "Филе Уплоад"
+
+#: views/contact_view.php:483
+msgid "Date"
+msgstr "датум"
+
+#: views/contact_view.php:486
+msgid "Time"
+msgstr "време"
+
+#: views/contact_view.php:491
+msgid "Password"
+msgstr "лозинка"
+
+#: views/dashboard.php:18
+msgid "Dashboard - Contact Bank"
+msgstr "Инструмент табла - Контакт банка"
+
+#: views/dashboard.php:40
+msgid "Delete All Forms"
+msgstr "Брисање свих облике"
+
+#: views/dashboard.php:43
+msgid "Restore Factory Settings"
+msgstr "Врати на фабрички подешено"
+
+#: views/dashboard.php:60
+msgid "Shortcode"
+msgstr "схортцоде"
+
+#: views/dashboard.php:61
+msgid "Total Controls"
+msgstr "Укупно Контроле"
+
+#: views/dashboard.php:100
+msgid "Edit Form"
+msgstr "Едит Форм"
+
+#: views/dashboard.php:126
+msgid "Delete Form"
+msgstr "Делете формулар"
+
+#: views/dashboard.php:198
+msgid "Are you sure, you want to delete this Form?"
+msgstr "Да ли сте сигурни, да желите да избришете овај формулар?"
+
+#: views/dashboard.php:208
+msgid "Are you sure, you want to delete all Forms?"
+msgstr "Да ли сте сигурни, да желите да избришете све Обрасци?"
+
+#: views/shortcode.php:8
+msgid ""
+"How to setup Short-Codes for Contact Bank into your WordPress Page/Post?"
+msgstr ""
+"Како поставити кратког кодови за Чонтаћт Bank у ваш ВордПресс странице / "
+"поста?"
+
+#~ msgid "Documentation"
+#~ msgstr "Доцументатион"
+
+#~ msgid "Roles & Capabilites"
+#~ msgstr "Улоге и Цапабилитес"
+
+#~ msgid "Licensing"
+#~ msgstr "давање дозволе"
+
+#~ msgid "Roles & Capabilities"
+#~ msgstr "Улоге и Цапабилитес"
+
+#~ msgid "Select Form :"
+#~ msgstr "Изаберите формулар:"
+
+#~ msgid "Day"
+#~ msgstr "дан"
+
+#~ msgid "Select Month"
+#~ msgstr "Изаберите месец"
+
+#~ msgid "Year"
+#~ msgstr "година"
+
+#~ msgid "Hour"
+#~ msgstr "час"
+
+#~ msgid "Minute"
+#~ msgstr "минут"
+
+#~ msgid "Enter Tooltip Text"
+#~ msgstr "Тоолтип Унесете текста "
+
+#~ msgid "Enter Tooltip"
+#~ msgstr "Ентер Тоолтип"
+
+#~ msgid "Start Year"
+#~ msgstr "Поцетна година"
+
+#~ msgid "Enter Start Year"
+#~ msgstr "Ентер полазне године"
+
+#~ msgid "End Year"
+#~ msgstr "Крај -Година"
+
+#~ msgid "Enter End Year "
+#~ msgstr "Унесете кра године"
+
+#~ msgid "Default Value"
+#~ msgstr "Фабрицки наместене вредности"
+
+#~ msgid "Month"
+#~ msgstr "месец"
+
+#~ msgid "Date Format"
+#~ msgstr "Формат датума"
+
+#~ msgid "Allow Multiple Uploads"
+#~ msgstr "Дозволи вишеструку Уплоадс"
+
+#~ msgid "Allowed File Extensions"
+#~ msgstr "Дозвољени Филе Ектенсионс"
+
+#~ msgid "Enter File Extensions"
+#~ msgstr "Унесете екстензије датотека"
+
+#~ msgid "The file extensions must be separated with semicolons(',')"
+#~ msgstr "У екстензије морају бити одвојене са зарезом (',')"
+
+#~ msgid "Allowed File Size"
+#~ msgstr "Дозвољен Величина Фајла"
+
+#~ msgid "File Size must be in Mb"
+#~ msgstr "Величина мора бити у Мб"
+
+#~ msgid "Hour Format"
+#~ msgstr "часовни формат"
+
+#~ msgid "Minute Format"
+#~ msgstr "Минут Формат"
+
+#~ msgid "Roles and Capabilities Saved. Kindly wait for the redirect."
+#~ msgstr "Улоге и могућности Сачуване. Молимо сачекајте да се преусмеравање."
+
+#~ msgid "Privileges for Admin"
+#~ msgstr "Привилегије за Админ"
+
+#~ msgid "Full Control"
+#~ msgstr "Пуна контрола"
+
+#~ msgid "Read"
+#~ msgstr "читати"
+
+#~ msgid "Write"
+#~ msgstr "писати"
+
+#~ msgid "Privileges for Editor"
+#~ msgstr "Привилегије фор Едитор"
+
+#~ msgid "Privileges for Author"
+#~ msgstr "Привилегије фор Аутор"
+
+#~ msgid "Privileges for Contributor"
+#~ msgstr "Привилегије фор Цонтрибутор"
+
+#~ msgid "Privileges for Subscriber"
+#~ msgstr "Привилегије за претплатничке"
+
+#~ msgid "Are you sure, you want to Restore Global Settings?"
+#~ msgstr "Да ли сте сигурни, да желите да Ресторе глобалне поставке?"
+
+#~ msgid "Are you sure, you want to delete this From Entry?"
+#~ msgstr "Да ли сте сигурни, да желите да избришете овај образац- за унос?"
+
+#~ msgid "Are you sure you want to Restore Factory Settings?"
+#~ msgstr "Да ли сте сигурни да желите да Врати на фабрички подешено?"
+
+#~ msgid "Only One File Uploader can be used on a Form."
+#~ msgstr "Само Једна датотека Уплоадер може да се користи на формулар."
+
+#~ msgid "Success! Settings have been updated."
+#~ msgstr "Успех! Подешавања су ажурирани."
+
+#~ msgid "Contact-Bank Licensing"
+#~ msgstr "Contact Bank давање дозволе"
+
+#~ msgid "Update"
+#~ msgstr "ажурирање"
