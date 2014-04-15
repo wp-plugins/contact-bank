@@ -973,7 +973,11 @@ else
 			);
 			die();
 		}
-		
+		else if ($_REQUEST["param"] == "update_option")
+		{
+			update_option("contact-bank-info-popup", "no");
+			die();
+		}
 	}
 }
 ?>

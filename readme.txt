@@ -2,8 +2,8 @@
 Contributors: contact-banker, Gallery-Bank
 Tags: admin, advanced form, AJAX, best contact form plugin, buddypress, category, comment, comments, contact, contact bank, contact form, contact form 7, contact form builder, contact form plugin, contact forms, contact me, contact us, contacts, content, easy contact form, easy contact plugin, email, Facebook, feed, feedback, feedback form, form, form builder, forms, gallery, google, image, images, javascript, jquery, link, links, login, media, page, pages, plugin, Post, posts, request, rss, seo, shortcode, sidebar, stats, text, web form, widget, wordpress
 Requires at least: 3.3
-Tested up to: 3.8.1
-Stable tag: 2.0.16
+Tested up to: 3.8.3
+Stable tag: 2.0.17
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -26,7 +26,7 @@ It provides a powerful engine for uploading and managing dynamic forms with more
 
 ***The Contact Bank WordPress Plugin is now proudly maintained by <a href="http://www.tech-banker.com">Tech Banker Pte Ltd.</a> since March 2014.***
 
-***April 14, 2014: We're happy to announce that Contact Bank reached 23,550+ plugin downloads in only 6 months. We frequently receive positive feedback from people using our Contact Bank Plugin for WordPress. Thanks so much for your support!***
+***April 15, 2014: We're happy to announce that Contact Bank reached 23,900+ plugin downloads in only 6 months. We frequently receive positive feedback from people using our Contact Bank Plugin for WordPress. Thanks so much for your support!***
 
 <a href="http://tech-banker.com/forum/contact-bank-support/" target="_blank">Support Desk - feel free to ask your Queries</a>
 
@@ -136,6 +136,11 @@ Visit [here](http://tech-banker.com/contact-bank) to upgrade to Pro Version now.
 4. Create a page or a post and insert shortcode [contact_form] to the text.
 
 == Changelog ==
+
+= 2.0.17 =
+
+* Compatibility to 3.8.3
+* New Help PopUp Introduced
 
 = 2.0.16 =
 

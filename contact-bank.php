@@ -4,7 +4,7 @@ Plugin Name: Contact Bank Standard Edition
 Plugin URI: http://tech-banker.com
 Description: Build Complex, Powerful Contact Forms in Just Seconds. No Programming Knowledge Required! Yeah, It's Really That Easy.
 Author: Tech Banker
-Version: 2.0.16
+Version: 2.0.17
 Author URI: http://tech-banker.com
  */
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -155,6 +155,7 @@ function backend_plugin_js_scripts_contact_bank()
     wp_enqueue_script("jquery-ui-droppable");
     wp_enqueue_script("jquery-ui-draggable");
     wp_enqueue_script("farbtastic");
+	wp_enqueue_script("jquery-ui-dialog");
     wp_enqueue_script("jquery.Tooltip.js", CONTACT_BK_PLUGIN_URL ."/assets/js/jquery.Tooltip.js");
     wp_enqueue_script("jquery.dataTables.min", CONTACT_BK_PLUGIN_URL ."/assets/js/jquery.dataTables.min.js");
     wp_enqueue_script("jquery.validate.min", CONTACT_BK_PLUGIN_URL ."/assets/js/jquery.validate.min.js");
@@ -170,6 +171,7 @@ function frontend_plugin_js_scripts_contact_bank()
 function backend_plugin_css_styles_contact_bank()
 {
     wp_enqueue_style("farbtastic");
+    wp_enqueue_style("wp-jquery-ui-dialog");
     wp_enqueue_style("stylesheet", CONTACT_BK_PLUGIN_URL ."/assets/css/stylesheet.css");
     wp_enqueue_style("font-awesome", CONTACT_BK_PLUGIN_URL ."/assets/css/font-awesome/css/font-awesome.css");
     wp_enqueue_style("system-message", CONTACT_BK_PLUGIN_URL ."/assets/css/system-message.css");

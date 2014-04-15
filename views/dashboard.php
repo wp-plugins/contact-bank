@@ -8,7 +8,46 @@ $last_form_id = $wpdb->get_var
 		""
 	)
 );
-
+$popup = get_option("contact-bank-info-popup");
+if($popup == "")
+{
+	?>
+	<ol id="contact_bank_popup" title="Important First Steps" style="display:none;">
+		<li class="add_new_album" id="add_new_album">
+			<h4>Add New Form</h4>
+			<p>
+				Contact Bank is designed to create Powerful Contact Forms with multiple controls within few seconds. 
+				<br>Just click on <strong>Add New Form</strong> button located at the top of the <strong> Contact Bank - Dashboard </strong> page to Add New Form.
+			</p>
+			<a href="http://tech-banker.com/contact-bank/documentation/" target="_blank" class="button gb_buttons">Read More</a>
+		</li>
+		<li class="shortcode" id="shortcode">
+			<h4>Implement Shortcode</h4>
+			<p>
+				Easy and simple way to implement Shortcode on your Wordpress Page / Post.<br>Use the button below and just try it out!
+				
+			</p>
+			<a href="http://tech-banker.com/contact-bank/documentation/frequently-asked-questions-others-contact-bank/" target="_blank" class="button gb_buttons">Read More</a>
+		</li>
+		<li class="Upgrade" id="Upgrade">
+			<h4>Upgrade to Pro Version</h4>
+			<p>
+				Contact Bank is an one time Investment.<br> To enjoy full features of Contact Bank,
+				upgrade to Premium Version Now! Starting at 10£/- only.
+			</p>
+			<a href="http://tech-banker.com/contact-bank" target="_blank" class="button gb_buttons">Upgrade Now</a>
+		</li>
+		<li class="help" id="help">
+			<h4>Help to Improve</h4>
+			<p>
+				Contact Bank would like to collect anonymous data about features you use to help improve this plugin.
+			</p>
+			<a href="http://tech-banker.com/forum/contact-bank-support/" target="_blank" class="button gb_buttons">Read More</a>
+		</li>
+		<a href="javascript:void(o);" onclick="close_popup()" class="gb_close_popup">Dismiss</a>
+	</ol>
+	<?php
+}
 ?>
 <div class="fluid-layout">
 	<div class="layout-span12">
@@ -142,6 +181,7 @@ $last_form_id = $wpdb->get_var
 		</div>
 	</div>
 </div>
+
 <script type="text/javascript">
 	jQuery(".hovertip").tooltip();
 	jQuery(document).ready(function()
@@ -155,6 +195,34 @@ $last_form_id = $wpdb->get_var
 			show_title: false,
 			allow_resize: true
 		});
+		<?php
+ if($popup == "")
+ {
+ ?>
+  jQuery("#contact_bank_popup").dialog(
+  {
+   dialogClass: "wp-dialog contact_bank_popup_box",
+   modal: true,
+   closeOnEscape: true,
+   title: contact_bank_popup.title,
+   width: "auto",
+   resizable: true,
+   draggable: false,
+   create: function ( event, ui ) {
+    jQuery( this ).css( "maxWidth", "600px" );
+   },
+   close: function(event)
+   {
+    jQuery( "#contact_bank_popup" ).dialog( "close" );
+    jQuery.post(ajaxurl, "param=update_option&action=add_contact_form_library", function(data)
+    {
+    });
+   }
+   
+  });
+ <?php
+ }
+ ?>
 	});
 	oTable = jQuery("#data-table-form").dataTable
 	({
@@ -193,5 +261,12 @@ $last_form_id = $wpdb->get_var
 	}
 	function restore_factory_settings() {
 		alert("<?php _e( "This Feature is only available in Paid Premium Edition!", contact_bank ); ?>");
+	}
+	function close_popup()
+	{
+		jQuery( "#contact_bank_popup" ).dialog( "close" );
+		jQuery.post(ajaxurl, "param=update_option&action=add_new_album_library", function()
+		{
+		}); 
 	}
 </script>

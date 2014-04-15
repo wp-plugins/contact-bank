@@ -29,6 +29,7 @@
 	
 	$sql = "DROP TABLE " .contact_bank_roles_capability();
 	$wpdb->query($sql);
-
+	
+	delete_option("contact-bank-info-popup");
     delete_option("contact-bank-version-number");
 ?>
