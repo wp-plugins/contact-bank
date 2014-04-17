@@ -4,7 +4,7 @@ Plugin Name: Contact Bank Standard Edition
 Plugin URI: http://tech-banker.com
 Description: Build Complex, Powerful Contact Forms in Just Seconds. No Programming Knowledge Required! Yeah, It's Really That Easy.
 Author: Tech Banker
-Version: 2.0.17
+Version: 2.0.18
 Author URI: http://tech-banker.com
  */
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -402,10 +402,7 @@ function add_contact_mce_popup(){
 						global $wpdb;
 						$forms = $wpdb->get_results
 						(
-							$wpdb->prepare
-							(
-								"SELECT * FROM " .contact_bank_contact_form(),""
-							)
+							"SELECT * FROM " .contact_bank_contact_form()
 						);
 						for($flag = 0;$flag<count($forms);$flag++)
 						{

@@ -17,9 +17,9 @@
 		(
 			$wpdb->prepare
 			(
-					"INSERT INTO ".contact_bank_contact_form()."(form_id,form_name) VALUES(%d,%s)",
-                    $form_id,
-					"Untitled Form (Draft)"
+				"INSERT INTO ".contact_bank_contact_form()."(form_id,form_name) VALUES(%d,%s)",
+                $form_id,
+				"Untitled Form (Draft)"
 			)
 		);
 		$wpdb->query
@@ -143,10 +143,7 @@
         }
         $wpdb->query
         (
-            $wpdb->prepare
-            (
-                "INSERT INTO " . contact_bank_layout_settings_Table() . "(form_id,form_settings_key,form_settings_value) VALUES ".implode(',', $sql),""
-            )
+           "INSERT INTO " . contact_bank_layout_settings_Table() . "(form_id,form_settings_key,form_settings_value) VALUES ".implode(',', $sql)
         );
 		$email_name = "Admin Notification";
 		$send_to = get_option('admin_email');
@@ -350,10 +347,7 @@
 										<?php 
 											$publish_pages = $wpdb->get_results
 											(
-												$wpdb->prepare
-												(
-													"SELECT ID,post_name FROM " . $wpdb->posts . " WHERE (post_type = \"page\" OR post_type=\"post\") AND post_status = \"publish\"",""
-												)
+												"SELECT ID,post_name FROM " . $wpdb->posts . " WHERE (post_type = \"page\" OR post_type=\"post\") AND post_status = \"publish\""
 											);
 											?>
 											<select class="layout-span7" id="ux_ddl_page_url" name="ux_ddl_page_url">

@@ -2,11 +2,7 @@
 global $wpdb;
 $last_form_id = $wpdb->get_var
 (
-	$wpdb->prepare
-	(
-		"SELECT form_id FROM " .contact_bank_contact_form(). " order by form_id desc limit 1",
-		""
-	)
+	"SELECT form_id FROM " .contact_bank_contact_form(). " order by form_id desc limit 1"
 );
 $popup = get_option("contact-bank-info-popup");
 if($popup == "")
@@ -61,10 +57,7 @@ if($popup == "")
 				<?php
 				$form_count = $wpdb->get_var
 				(
-					$wpdb->prepare
-					(
-						"SELECT count(form_id) FROM ".contact_bank_contact_form(),""
-					)
+					"SELECT count(form_id) FROM ".contact_bank_contact_form()
 				);
 				if($form_count < 1)
 				{
@@ -106,10 +99,7 @@ if($popup == "")
 									global $wpdb;
 									$form_data = $wpdb->get_results
 									(
-										$wpdb->prepare
-										(
-											"SELECT * FROM " . contact_bank_contact_form(), ""
-										)
+										"SELECT * FROM " . contact_bank_contact_form()
 									);
 									for ($flag = 0; $flag < count($form_data); $flag++) 
 									{

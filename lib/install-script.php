@@ -17,10 +17,7 @@ if($version == "" || $version == "1.0")
     {
         $contact_forms = $wpdb->get_results
         (
-            $wpdb->prepare
-            (
-                "SELECT * FROM ".contact_bank_contact_form(),""
-            )
+           "SELECT * FROM ".contact_bank_contact_form()
         );
         $sql = "DROP TABLE " . contact_bank_contact_form();
         $wpdb->query($sql);
@@ -111,10 +108,9 @@ if($version == "" || $version == "1.0")
     {
         $contact_forms_controls = $wpdb->get_results
         (
-            $wpdb->prepare
-            (
-                "SELECT * FROM ".create_control_Table()." where field_id not in (9,12,13,14,15)",""
-            )
+           
+                "SELECT * FROM ".create_control_Table()." where field_id not in (9,12,13,14,15)"
+           
         );
 
         $sql = "DROP TABLE " . create_control_Table();
@@ -150,11 +146,7 @@ if($version == "" || $version == "1.0")
     {
         $contact_forms_dynamic_settings = $wpdb->get_results
         (
-            $wpdb->prepare
-            (
-                "SELECT * FROM ". contact_bank_dynamic_settings_form(). " JOIN " . create_control_Table(). " ON " . contact_bank_dynamic_settings_form().".dynamicId  = ". create_control_Table(). ".column_dynamicId",
-                ""
-            )
+           "SELECT * FROM ". contact_bank_dynamic_settings_form(). " JOIN " . create_control_Table(). " ON " . contact_bank_dynamic_settings_form().".dynamicId  = ". create_control_Table(). ".column_dynamicId"
         );
         $contact_forms_email_dynamic_settings = $wpdb->get_results
         (
@@ -261,10 +253,7 @@ if($version == "" || $version == "1.0")
     {
         $contact_forms_emails = $wpdb->get_results
         (
-            $wpdb->prepare
-                (
-                    "SELECT * FROM ".contact_bank_email_template_admin(),""
-                )
+          "SELECT * FROM ".contact_bank_email_template_admin()
         );
 
         $sql = "DROP TABLE " . contact_bank_email_template_admin();
@@ -281,8 +270,8 @@ if($version == "" || $version == "1.0")
                         $wpdb->prepare
                             (
                                 "INSERT INTO " . contact_bank_email_template_admin() . "(email_id, email_to, email_from,
-                        body_content, subject, send_to, form_id, from_name, reply_to, cc, bcc, name) VALUES(%d, %s,
-                        %s, %s, %s, %d, %d, %s, %s, %s, %s, %s)",
+		                        body_content, subject, send_to, form_id, from_name, reply_to, cc, bcc, name) VALUES(%d, %s,
+		                        %s, %s, %s, %d, %d, %s, %s, %s, %s, %s)",
                                 $contact_forms_emails[$flag]->email_id,
                                 $contact_forms_emails[$flag]->email_to,
                                 $contact_forms_emails[$flag]->email_from,
@@ -309,10 +298,7 @@ if($version == "" || $version == "1.0")
     {
         $contact_front_end_forms = $wpdb->get_results
         (
-            $wpdb->prepare
-                (
-                    "SELECT * FROM ".contact_bank_frontend_forms_Table(),""
-                )
+           "SELECT * FROM ".contact_bank_frontend_forms_Table()
         );
 
         $sql = "DROP TABLE " . contact_bank_frontend_forms_Table();
@@ -342,11 +328,7 @@ if($version == "" || $version == "1.0")
     {
         $contact_front_end_forms_data = $wpdb->get_results
         (
-            $wpdb->prepare
-                (
-                    "SELECT * FROM ".frontend_controls_data_Table() . " JOIN " . create_control_Table(). " ON " . frontend_controls_data_Table().".dynamic_control_id  = ". create_control_Table(). ".column_dynamicId",
-                    ""
-                )
+           "SELECT * FROM ".frontend_controls_data_Table() . " JOIN " . create_control_Table(). " ON " . frontend_controls_data_Table().".dynamic_control_id  = ". create_control_Table(). ".column_dynamicId"
         );
 
         $sql = "DROP TABLE " . frontend_controls_data_Table();
@@ -432,10 +414,7 @@ if($version == "" || $version == "1.0")
 
         $contact_forms_for_settings = $wpdb->get_results
         (
-            $wpdb->prepare
-            (
-                "SELECT * FROM ".contact_bank_contact_form(),""
-            )
+          "SELECT * FROM ".contact_bank_contact_form()
         );
 		 for($flag = 0; $flag < count($contact_forms_for_settings); $flag++)
 		 {
@@ -536,10 +515,7 @@ else if($version == "2.0")
 	{
 		$contact_forms_settings_table = $wpdb->get_results
         (
-            $wpdb->prepare
-            (
-                "SELECT * FROM ".contact_bank_form_settings_Table(),""
-            )
+           "SELECT * FROM ".contact_bank_form_settings_Table()
         );
 		
 		$sql = "DROP TABLE " . contact_bank_form_settings_Table();
@@ -548,10 +524,7 @@ else if($version == "2.0")
 		
 		$contact_forms_count = $wpdb->get_results
         (
-            $wpdb->prepare
-            (
-                "SELECT * FROM ".contact_bank_contact_form(),""
-            )
+             "SELECT * FROM ".contact_bank_contact_form()
         );
         
 

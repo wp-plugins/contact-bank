@@ -25,10 +25,7 @@
 							global $wpdb;
 							$forms = $wpdb->get_results
 							(
-								$wpdb->prepare
-								(
-					 				"SELECT form_id,form_name FROM " .contact_bank_contact_form(),""
-								)
+								"SELECT form_id,form_name FROM " .contact_bank_contact_form()
 							);
 							?>
 							<select class=" layout-span12" id="ux_ddl_select_form" name="ux_ddl_select_form" onchange="select_form_layout();" style="margin-top: 5px;">

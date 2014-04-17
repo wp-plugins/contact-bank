@@ -14,18 +14,13 @@
 							<?php
 							global $wpdb;
 							$forms = $wpdb->get_results
-								(
-									$wpdb->prepare
-									(
-										"SELECT form_id,form_name FROM " .contact_bank_contact_form(),""
-									)
-								);
+							(
+								"SELECT form_id,form_name FROM " .contact_bank_contact_form()
+								
+							);
 							$email_count = $wpdb->get_var
 							(
-								$wpdb->prepare
-								(
-									"SELECT count(email_id) FROM ".contact_bank_email_template_admin(),""
-								)
+								"SELECT count(email_id) FROM ".contact_bank_email_template_admin()
 							);
 							
 							?>

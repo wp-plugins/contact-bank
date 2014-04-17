@@ -177,61 +177,40 @@ else
 			global $wpdb;
 			$wpdb->query
 			    (
-			        $wpdb->prepare
-			            (
-			                "TRUNCATE Table ".contact_bank_dynamic_settings_form(),""
-			            )
+			       "TRUNCATE Table ".contact_bank_dynamic_settings_form()
+			     );
+			$wpdb->query
+			    (
+			       "TRUNCATE Table ".contact_bank_email_template_admin()
 			    );
 			$wpdb->query
 			    (
-			        $wpdb->prepare
-			            (
-			                "TRUNCATE Table ".contact_bank_email_template_admin(),""
-			            )
+			       "TRUNCATE Table ".contact_bank_form_settings_Table()
 			    );
 			$wpdb->query
 			    (
-			        $wpdb->prepare
-			            (
-			                "TRUNCATE Table ".contact_bank_form_settings_Table(),""
-			            )
+			        "TRUNCATE Table ".frontend_controls_data_Table()
+			      
 			    );
 			$wpdb->query
 			    (
-			        $wpdb->prepare
-			            (
-			                "TRUNCATE Table ".frontend_controls_data_Table(),""
-			            )
+			        "TRUNCATE Table ".contact_bank_frontend_forms_Table()
+			      
 			    );
 			$wpdb->query
 			    (
-			        $wpdb->prepare
-			            (
-			                "TRUNCATE Table ".contact_bank_frontend_forms_Table(),""
-			            )
-			    );
-			$wpdb->query
-			    (
-			        $wpdb->prepare
-			            (
-			                "TRUNCATE Table ".contact_bank_layout_settings_Table(),""
-			            )
+			        "TRUNCATE Table ".contact_bank_layout_settings_Table()
+			      
 			    );
 			
 			$wpdb->query
 			    (
-			        $wpdb->prepare
-			            (
-			                "TRUNCATE Table ".create_control_Table(),""
-			            )
+			        "TRUNCATE Table ".create_control_Table()
 			    );
 			$wpdb->query
 			    (
-			        $wpdb->prepare
-			            (
-			                "TRUNCATE Table ".contact_bank_contact_form(),""
-			            )
-			    );
+			       "TRUNCATE Table ".contact_bank_contact_form()
+			     );
 			die();
 		}
 		else if($_REQUEST["param"] == "submit_form_messages_settings")
