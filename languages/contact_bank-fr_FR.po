@@ -1,0 +1,980 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Contact Bank\n"
+"POT-Creation-Date: 2014-04-05 10:21+0530\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: C:\\wamp\\www\\contact_bank_testing\\wp-content\\plugins"
+"\\contact-bank\\\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: contact-bank.php:54
+msgid "Contact Bank"
+msgstr "Contact Bank"
+
+#: contact-bank.php:55 contact-bank.php:326
+msgid "Dashboard"
+msgstr "Tableau de bord"
+
+#: contact-bank.php:57 contact-bank.php:332
+msgid "Short-Codes"
+msgstr "court codes"
+
+#: contact-bank.php:58 contact-bank.php:338 views/contact_frontend_data.php:5
+#: views/dashboard.php:115
+msgid "Form Entries"
+msgstr "entrées de formulaire"
+
+#: contact-bank.php:59 contact-bank.php:344 views/contact_email_settings.php:5
+#: views/dashboard.php:110
+msgid "Email Settings"
+msgstr "Paramètres des mails"
+
+#: contact-bank.php:60 contact-bank.php:350
+#: views/contact_bank_layout_settings.php:6 views/dashboard.php:105
+msgid "Global Settings"
+msgstr "Paramètres généraux"
+
+#: contact-bank.php:61 contact-bank.php:358
+#: views/contact-bank-system-report.php:9
+msgid "System Status"
+msgstr "État du système"
+
+#: contact-bank.php:63 contact-bank.php:370
+msgid "Purchase PRO Edition"
+msgstr "l'achat PRO Édition"
+
+#: contact-bank.php:377
+msgid "Add Contact Bank Form"
+msgstr "Ajouter un formulaire"
+
+#: contact-bank.php:389
+msgid "Insert Contact Bank Form"
+msgstr "Insérer un formulaire"
+
+#: contact-bank.php:391
+msgid "Select a form below to add it to your post or page."
+msgstr "Sélectionnez le formulaire à ajouter à votre article/page"
+
+#: contact-bank.php:396
+msgid "Form Name"
+msgstr "Nom du formulaire"
+
+#: contact-bank.php:398
+msgid "Select a Form"
+msgstr "Sélectionnez un formulaire"
+
+#: contact-bank.php:418
+msgid "Show Form Title"
+msgstr "Afficher le titre du formulaire"
+
+#: contact-bank.php:423
+msgid "Insert Form"
+msgstr "Insérez un formulaire"
+
+#: contact-bank.php:426
+msgid "Cancel"
+msgstr "Annulation"
+
+#: contact-bank.php:438
+msgid "Please choose a Form to insert into Shortcode"
+msgstr "Choisissez un formulaire à ajouter dans le shortcode"
+
+#: frontend_views/contact_bank_forms.php:367
+#: views/contact_bank_form_preview.php:375 views/contact_controls_files.php:56
+msgid "Select Option"
+msgstr "Choisissez une option"
+
+#: includes/cb_checkbox.php:36
+msgid "Check Boxes"
+msgstr "case à cocher"
+
+#: includes/cb_checkbox.php:40 includes/cb_dropdown.php:40
+#: includes/cb_email.php:40 includes/cb_multiple.php:40
+#: includes/cb_text.php:40 includes/cb_textarea.php:40
+msgid "Label"
+msgstr "Étiquette"
+
+#: includes/cb_checkbox.php:42 includes/cb_checkbox.php:144
+#: includes/cb_dropdown.php:42 includes/cb_dropdown.php:144
+#: includes/cb_email.php:43 includes/cb_email.php:133
+#: includes/cb_multiple.php:44 includes/cb_multiple.php:164
+#: includes/cb_text.php:43 includes/cb_text.php:132
+#: includes/cb_textarea.php:42 includes/cb_textarea.php:130
+#: views/contact_controls_files.php:3 views/contact_controls_files.php:19
+#: views/contact_controls_files.php:52 views/contact_controls_files.php:68
+#: views/contact_controls_files.php:85
+msgid "Untitled"
+msgstr "Sans titre"
+
+#: includes/cb_checkbox.php:46 includes/cb_checkbox.php:56
+#: includes/cb_checkbox.php:69 includes/cb_checkbox.php:83
+#: includes/cb_dropdown.php:46 includes/cb_dropdown.php:56
+#: includes/cb_dropdown.php:69 includes/cb_dropdown.php:83
+#: includes/cb_email.php:57 includes/cb_email.php:68 includes/cb_email.php:83
+#: includes/cb_email.php:99 includes/cb_multiple.php:49
+#: includes/cb_multiple.php:60 includes/cb_multiple.php:75
+#: includes/cb_multiple.php:91 includes/cb_text.php:56 includes/cb_text.php:67
+#: includes/cb_text.php:82 includes/cb_text.php:98 includes/cb_textarea.php:56
+#: includes/cb_textarea.php:67 includes/cb_textarea.php:82
+#: includes/cb_textarea.php:98
+msgid "Required"
+msgstr "Requis"
+
+#: includes/cb_checkbox.php:60 includes/cb_checkbox.php:73
+#: includes/cb_checkbox.php:87 includes/cb_dropdown.php:60
+#: includes/cb_dropdown.php:73 includes/cb_dropdown.php:87
+#: includes/cb_email.php:73 includes/cb_email.php:88 includes/cb_email.php:104
+#: includes/cb_multiple.php:65 includes/cb_multiple.php:80
+#: includes/cb_multiple.php:96 includes/cb_text.php:72 includes/cb_text.php:87
+#: includes/cb_text.php:103 includes/cb_textarea.php:72
+#: includes/cb_textarea.php:87 includes/cb_textarea.php:103
+msgid "Not Required"
+msgstr "Non requis"
+
+#: includes/cb_checkbox.php:95 includes/cb_dropdown.php:95
+#: includes/cb_email.php:112 includes/cb_multiple.php:104
+#: includes/cb_text.php:111
+msgid "Tooltip Text"
+msgstr "Info-bulle"
+
+#: includes/cb_checkbox.php:97 includes/cb_dropdown.php:97
+#: includes/cb_email.php:115 includes/cb_multiple.php:108
+#: includes/cb_text.php:114 includes/cb_textarea.php:113
+#: views/contact_bank_layout_settings.php:921
+#: views/contact_frontend_data.php:144 views/dashboard.php:195
+#: views/includes_common_after.php:348 views/includes_common_after.php:351
+#: views/includes_common_after.php:354 views/includes_common_after.php:357
+#: views/includes_common_after.php:360 views/includes_common_after.php:363
+#: views/includes_common_after.php:366 views/includes_common_after.php:369
+#: views/includes_common_after.php:372
+msgid "This Feature is only available in Paid Premium Edition!"
+msgstr "Cette fonctionnalité est uniquement disponible en payé prime édition!"
+
+#: includes/cb_checkbox.php:101 includes/cb_dropdown.php:101
+#: includes/cb_multiple.php:113
+msgid "Options"
+msgstr "Options"
+
+#: includes/cb_checkbox.php:103
+msgid "Enter Options"
+msgstr "Entrez les options"
+
+#: includes/cb_checkbox.php:104 includes/cb_dropdown.php:104
+#: includes/cb_multiple.php:119
+msgid "Add"
+msgstr "Ajouter"
+
+#: includes/cb_checkbox.php:135 includes/cb_dropdown.php:135
+#: includes/cb_multiple.php:153
+msgid "Delete"
+msgstr "Supprimer"
+
+#: includes/cb_checkbox.php:142 includes/cb_dropdown.php:142
+#: includes/cb_email.php:130 includes/cb_multiple.php:160
+#: includes/cb_text.php:129 includes/cb_textarea.php:128
+msgid "Admin Label"
+msgstr "Label administrateur"
+
+#: includes/cb_checkbox.php:144 includes/cb_dropdown.php:144
+#: includes/cb_email.php:134 includes/cb_multiple.php:163
+#: includes/cb_text.php:131 includes/cb_textarea.php:131
+msgid "Enter Admin Label"
+msgstr "Entrez le label administrateur"
+
+#: includes/cb_checkbox.php:148 includes/cb_dropdown.php:148
+#: includes/cb_email.php:139 includes/cb_multiple.php:168
+#: includes/cb_text.php:137 includes/cb_textarea.php:135
+msgid "Do not show in the email"
+msgstr "Ne pas afficher dans le mail"
+
+#: includes/cb_checkbox.php:179 includes/cb_dropdown.php:179
+#: includes/cb_email.php:173 includes/cb_multiple.php:202
+#: includes/cb_text.php:200 includes/cb_textarea.php:196
+msgid "Save Settings"
+msgstr "Sauvegarder les paramètres"
+
+#: includes/cb_checkbox.php:228 includes/cb_dropdown.php:219
+#: includes/cb_multiple.php:252
+msgid "Please Fill an Option."
+msgstr "Ajoutez une option"
+
+#: includes/cb_dropdown.php:36 views/contact_view.php:434
+msgid "Select Box"
+msgstr "Choisir une case"
+
+#: includes/cb_dropdown.php:42 includes/cb_email.php:44
+#: includes/cb_multiple.php:45 includes/cb_text.php:44
+msgid "Enter Label"
+msgstr "Entrez l'étiquette"
+
+#: includes/cb_dropdown.php:103 includes/cb_multiple.php:116
+msgid "Enter Option"
+msgstr "Entrer une option"
+
+#: includes/cb_email.php:36 views/contact_view.php:431
+msgid "Email Address"
+msgstr "Adresse E-mail"
+
+#: includes/cb_email.php:49 includes/cb_text.php:48
+#: includes/cb_textarea.php:48
+msgid "Description"
+msgstr "Description"
+
+#: includes/cb_email.php:52 includes/cb_text.php:51
+msgid "Enter Description"
+msgstr "Entrez la description"
+
+#: includes/cb_email.php:121 includes/cb_text.php:120
+#: includes/cb_textarea.php:120
+msgid "Place Holder"
+msgstr "garde-place"
+
+#: includes/cb_email.php:124 includes/cb_text.php:123
+#: includes/cb_textarea.php:122
+msgid "Enter Place Holder"
+msgstr "Entrez le garde-place"
+
+#: includes/cb_multiple.php:36 views/contact_view.php:442
+msgid "Radio Buttons"
+msgstr "Boutons radio"
+
+#: includes/cb_text.php:36 views/contact_view.php:423
+msgid "Single Line Text"
+msgstr "Ligne de texte unique"
+
+#: includes/cb_text.php:168 includes/cb_textarea.php:166
+msgid "Add a filter"
+msgstr "Ajouter un filtre"
+
+#: includes/cb_text.php:173 includes/cb_textarea.php:170
+msgid "Alpha"
+msgstr "Alpha"
+
+#: includes/cb_text.php:177 includes/cb_textarea.php:174
+msgid "Alpha Numeric"
+msgstr "Alphanumérique"
+
+#: includes/cb_text.php:181 includes/cb_textarea.php:178
+msgid "Digits"
+msgstr "Nombres"
+
+#: includes/cb_text.php:185 includes/cb_textarea.php:182
+msgid "Strip Tags"
+msgstr "Bande de tags"
+
+#: includes/cb_text.php:189 includes/cb_textarea.php:186
+msgid "Trim"
+msgstr "Tailler"
+
+#: includes/cb_text.php:191 includes/cb_textarea.php:188
+#: views/contact_bank_layout_settings.php:61
+#: views/contact_bank_layout_settings.php:249
+#: views/contact_bank_layout_settings.php:459
+#: views/contact_bank_layout_settings.php:652
+#: views/contact_bank_layout_settings.php:780 views/contact_view.php:452
+msgid " (Available in Premium Edition)"
+msgstr "(Disponible dans l'édition prime)"
+
+#: includes/cb_textarea.php:36 views/contact_view.php:426
+msgid "Paragraph Text"
+msgstr "Text paragraphé"
+
+#: includes/cb_textarea.php:43
+msgid "Enter label"
+msgstr "Entrez étiquette"
+
+#: includes/cb_textarea.php:50
+msgid "Enter  Description"
+msgstr "Entrez une description"
+
+#: includes/cb_textarea.php:111
+msgid "Tooltip text"
+msgstr "Text Infobulle"
+
+#: lib/contact_bank_email-class.php:52
+msgid "Edit Email Settings"
+msgstr "Editer les paramètres de mail"
+
+#: lib/contact_bank_email-class.php:55
+msgid "Delete Email Settings"
+msgstr "Effacer les paramètres de mail"
+
+#: lib/contact_frontend_data_class.php:94
+msgid "Delete Form Entry"
+msgstr "Effacer les entrées du formulaire"
+
+#: views/add_contact_email.php:29 views/contact_email_settings.php:68
+msgid "Email Confirmation"
+msgstr "Confirmation par E-mail"
+
+#: views/add_contact_email.php:32
+msgid "Back to Email Settings"
+msgstr "Retour aux paramètres E-mail"
+
+#: views/add_contact_email.php:33 views/add_contact_email.php:213
+#: views/contact_bank_layout_settings.php:14
+#: views/contact_bank_layout_settings.php:498
+#: views/contact_bank_layout_settings.php:910
+msgid "Save"
+msgstr "Enregistrer"
+
+#: views/add_contact_email.php:37
+msgid "Email Settings Saved. Kindly wait for the redirect."
+msgstr ""
+"Paramètres d'e-mail enregistrés. Veuillez patienter pour la redirection."
+
+#: views/add_contact_email.php:44 views/add_contact_email.php:101
+#: views/contact_controls_files.php:35
+msgid "Email"
+msgstr "E-mail"
+
+#: views/add_contact_email.php:48 views/contact_view.php:459
+msgid "Name"
+msgstr "Nom"
+
+#: views/add_contact_email.php:52
+msgid "Enter Name"
+msgstr "Entrez le Nom"
+
+#: views/add_contact_email.php:58
+msgid "Send To"
+msgstr "Envoyer à"
+
+#: views/add_contact_email.php:67 views/add_contact_email.php:78
+#: views/add_contact_email.php:90 views/add_contact_email.php:150
+msgid "Enter Email"
+msgstr "Entrez l'E-mail"
+
+#: views/add_contact_email.php:69 views/add_contact_email.php:80
+#: views/add_contact_email.php:92
+msgid "Select a Field"
+msgstr "Choisissez un champ"
+
+#: views/add_contact_email.php:105
+msgid "Enter Email "
+msgstr "Entrez une adresse E-mail"
+
+#: views/add_contact_email.php:109
+msgid "Send To Field"
+msgstr "Envoyer au champ"
+
+#: views/add_contact_email.php:113
+msgid "Enter Field "
+msgstr "Entrer un champ"
+
+#: views/add_contact_email.php:115 views/add_contact_email.php:128
+#: views/add_contact_email.php:141 views/add_contact_email.php:152
+#: views/add_contact_email.php:163 views/add_contact_email.php:174
+#: views/add_contact_email.php:187
+msgid "Select a field"
+msgstr "Choisissez un champ"
+
+#: views/add_contact_email.php:122
+msgid "From Name"
+msgstr "De Nom"
+
+#: views/add_contact_email.php:126
+msgid "Enter from name "
+msgstr "Entrez de nom"
+
+#: views/add_contact_email.php:135
+msgid "From Email"
+msgstr "de l'E-mail"
+
+#: views/add_contact_email.php:139
+msgid "Enter from email"
+msgstr "Entrez de l'E-mail"
+
+#: views/add_contact_email.php:148
+msgid "Reply To"
+msgstr "Répondre à"
+
+#: views/add_contact_email.php:159
+msgid "CC"
+msgstr "CC"
+
+#: views/add_contact_email.php:161
+msgid "Enter CC Email "
+msgstr "Entrez E-mail CC"
+
+#: views/add_contact_email.php:170
+msgid "BCC"
+msgstr "BCC"
+
+#: views/add_contact_email.php:172
+msgid "Enter Bcc Email"
+msgstr "Entrez E-mail BCC"
+
+#: views/add_contact_email.php:181
+msgid "Subject"
+msgstr "Sujet"
+
+#: views/add_contact_email.php:185
+msgid "Enter Subject"
+msgstr "Entrez sujet"
+
+#: views/add_contact_email.php:194
+msgid "Message"
+msgstr "Message"
+
+#: views/add_contact_email.php:204
+msgid "Insert a Field into Your Form Message"
+msgstr "Insérez un champ dans votre formulaire de message "
+
+#: views/contact-bank-system-report.php:12
+msgid "Get System Report"
+msgstr "Recevoir un compte-rendu du système"
+
+#: views/contact-bank-system-report.php:16
+msgid "Close System Report"
+msgstr "Fermer un compte-rendu du système"
+
+#: views/contact-bank-system-report.php:98
+msgid "Default"
+msgstr "par défaut"
+
+#: views/contact_bank_form_preview.php:274 views/dashboard.php:120
+msgid "Form Preview"
+msgstr "avant-première formulaire"
+
+#: views/contact_bank_form_preview.php:277
+#: views/contact_bank_layout_settings.php:11
+#: views/contact_email_settings.php:8 views/contact_frontend_data.php:8
+#: views/contact_view.php:234 views/shortcode.php:12
+msgid "Back to Dashboard"
+msgstr "Retour au tableau de bord"
+
+#: views/contact_bank_layout_settings.php:7
+msgid " (Premium Features available in Paid Edition)"
+msgstr "(prime Caractéristiques disponibles en édition payé)"
+
+#: views/contact_bank_layout_settings.php:12
+msgid "Restore Global Settings"
+msgstr "rétablir les paramètres globaux"
+
+#: views/contact_bank_layout_settings.php:18
+msgid "Form Settings Saved. Kindly wait for the redirect."
+msgstr " formulaire réglages sauvé. Veuillez attendre que la réorienter. "
+
+#: views/contact_bank_layout_settings.php:22
+#: views/contact_bank_layout_settings.php:35
+#: views/contact_email_settings.php:12 views/contact_email_settings.php:33
+#: views/contact_frontend_data.php:20 views/contact_frontend_data.php:33
+msgid "Select Form"
+msgstr "Choisissez un formulaire"
+
+#: views/contact_bank_layout_settings.php:60
+msgid "Label Settings"
+msgstr "paramètres d'étiquette"
+
+#: views/contact_bank_layout_settings.php:72
+#: views/contact_bank_layout_settings.php:259
+#: views/contact_bank_layout_settings.php:469
+#: views/contact_bank_layout_settings.php:662
+#: views/contact_bank_layout_settings.php:790
+msgid "Font Family :"
+msgstr "famille de la police de caractère"
+
+#: views/contact_bank_layout_settings.php:97
+msgid "Font Color :"
+msgstr "Couleur de la police de caractère"
+
+#: views/contact_bank_layout_settings.php:108
+#: views/contact_bank_layout_settings.php:295
+msgid "Font Style :"
+msgstr "style de la police de caractère"
+
+#: views/contact_bank_layout_settings.php:122
+#: views/contact_bank_layout_settings.php:309
+#: views/contact_bank_layout_settings.php:518
+#: views/contact_bank_layout_settings.php:687
+#: views/contact_bank_layout_settings.php:815
+msgid "Font Size (px) :"
+msgstr "Taille de la police de caractère (px)"
+
+#: views/contact_bank_layout_settings.php:153
+#: views/contact_bank_layout_settings.php:410
+#: views/contact_bank_layout_settings.php:623
+#: views/contact_bank_layout_settings.php:751
+#: views/contact_bank_layout_settings.php:879
+msgid "Text Align :"
+msgstr "alignement du texte"
+
+#: views/contact_bank_layout_settings.php:166
+msgid "Label Position :"
+msgstr "position de l'étiquette"
+
+#: views/contact_bank_layout_settings.php:180
+msgid "Field Desc Font Size :"
+msgstr "descr. champ taille police de caractère"
+
+#: views/contact_bank_layout_settings.php:211
+msgid "Field Description Align :"
+msgstr "descr. champ alignement"
+
+#: views/contact_bank_layout_settings.php:225
+msgid "Hide Labels :"
+msgstr "masquer les étiquettes"
+
+#: views/contact_bank_layout_settings.php:233
+#: views/contact_bank_layout_settings.php:423
+#: views/contact_bank_layout_settings.php:636
+#: views/contact_bank_layout_settings.php:764
+#: views/contact_bank_layout_settings.php:892
+msgid "Text Direction :"
+msgstr "Direction du texte"
+
+#: views/contact_bank_layout_settings.php:249
+msgid "Input Field Settings"
+msgstr "Entrée des paramètres de champ"
+
+#: views/contact_bank_layout_settings.php:284
+#: views/contact_bank_layout_settings.php:581
+#: views/contact_bank_layout_settings.php:740
+#: views/contact_bank_layout_settings.php:868
+msgid "Text Color :"
+msgstr "Couleur ticket"
+
+#: views/contact_bank_layout_settings.php:340
+#: views/contact_bank_layout_settings.php:613
+msgid "Border Radius (px) :"
+msgstr "rayon de l'encadrement (px)"
+
+#: views/contact_bank_layout_settings.php:350
+#: views/contact_bank_layout_settings.php:592
+#: views/contact_bank_layout_settings.php:729
+#: views/contact_bank_layout_settings.php:857
+msgid "Border Color :"
+msgstr "couleur de l'encadrement"
+
+#: views/contact_bank_layout_settings.php:361
+#: views/contact_bank_layout_settings.php:603
+msgid "Border Size (px) :"
+msgstr "taille de l'encadrement (px)"
+
+#: views/contact_bank_layout_settings.php:371
+msgid "Border Style :"
+msgstr "Style de l'encadrement"
+
+#: views/contact_bank_layout_settings.php:386
+#: views/contact_bank_layout_settings.php:559
+#: views/contact_bank_layout_settings.php:718
+#: views/contact_bank_layout_settings.php:846
+msgid "Background Color :"
+msgstr "Couleur du fond"
+
+#: views/contact_bank_layout_settings.php:397
+msgid "Radio Buttons :"
+msgstr "boutons radio"
+
+#: views/contact_bank_layout_settings.php:402
+msgid "Multiple Rows"
+msgstr "colonnes multiples"
+
+#: views/contact_bank_layout_settings.php:404
+msgid "Single Row"
+msgstr "colonne unique"
+
+#: views/contact_bank_layout_settings.php:437
+msgid "Input Size :"
+msgstr "Entrée de la taille"
+
+#: views/contact_bank_layout_settings.php:459
+msgid "Submit Button Settings"
+msgstr "Soumettre les paramètres de bouton"
+
+#: views/contact_bank_layout_settings.php:494
+msgid "Text:"
+msgstr "Texte"
+
+#: views/contact_bank_layout_settings.php:504
+msgid "Style :"
+msgstr "Style"
+
+#: views/contact_bank_layout_settings.php:549
+msgid "Button Width (px) :"
+msgstr "largeur du bouton (px)"
+
+#: views/contact_bank_layout_settings.php:570
+msgid "Hover Background Color:"
+msgstr "couleur de fond \"Hover\""
+
+#: views/contact_bank_layout_settings.php:652
+msgid "Success Message Settings"
+msgstr "paramètres de messages réussis"
+
+#: views/contact_bank_layout_settings.php:780
+msgid "Error Message Settings"
+msgstr "paramètres de messages d'erreurs"
+
+#: views/contact_bank_pro_version.php:23
+msgid "Purchase PRO Edition - Contact Bank"
+msgstr "l'achat PRO Édition - Contact Bank"
+
+#: views/contact_controls_files.php:8 views/contact_controls_files.php:24
+#: views/contact_controls_files.php:41 views/contact_controls_files.php:59
+#: views/contact_controls_files.php:75 views/contact_controls_files.php:92
+msgid "Settings"
+msgstr "Paramètres"
+
+#: views/contact_documentation.php:5
+msgid "Documentation - Contact Bank"
+msgstr "Documentation - Contact Bank"
+
+#: views/contact_email_settings.php:58
+msgid "Add New"
+msgstr "Ajout nouveau"
+
+#: views/contact_email_settings.php:134
+msgid "Are you sure, you want to delete this Email Setting?"
+msgstr "Êtes-vous sûr de vouloir effacer ces paramètres d'e-mail?"
+
+#: views/contact_email_settings.php:152 views/contact_frontend_data.php:111
+msgid "Please select the Form first."
+msgstr "Veuillez tout d'abord choisir le formulaire"
+
+#: views/contact_frontend_data.php:9
+msgid "Export to Excel"
+msgstr "Exporter sur Excel"
+
+#: views/contact_frontend_data.php:15 views/dashboard.php:52
+#: views/dashboard.php:59
+msgid "Form"
+msgstr "Formulaire"
+
+#: views/contact_view.php:231 views/dashboard.php:34
+msgid "Add New Form"
+msgstr "Ajouter un formulaire"
+
+#: views/contact_view.php:237 views/contact_view.php:501
+msgid "Save Form"
+msgstr "Enregistrer formulaire"
+
+#: views/contact_view.php:242
+msgid "Form Submitted. Kindly wait for the redirect."
+msgstr "Formulaire transmis. Veuillez patienter pour la redirection"
+
+#: views/contact_view.php:249
+msgid "Form Settings"
+msgstr "paramètres formulaire"
+
+#: views/contact_view.php:253
+msgid "Form Name :"
+msgstr "Nom formulaire"
+
+#: views/contact_view.php:259
+msgid "Enter Form Name"
+msgstr "Entrer le nom du formulaire"
+
+#: views/contact_view.php:263
+msgid "Form Description :"
+msgstr "Description du formulaire"
+
+#: views/contact_view.php:265
+msgid "Enter Form Description"
+msgstr "Entrer la description du formulaire"
+
+#: views/contact_view.php:269
+msgid "Blank Field Message:"
+msgstr "message champ vide "
+
+#: views/contact_view.php:275
+msgid "Required field must not be blank"
+msgstr "champ requis ne peut être vide"
+
+#: views/contact_view.php:277
+msgid "Enter Blank Field Message"
+msgstr "Entrer message champ vide"
+
+#: views/contact_view.php:281
+msgid "Incorrect Email Message:"
+msgstr "Message e-mail incorrect"
+
+#: views/contact_view.php:287
+msgid "Please enter a valid email address"
+msgstr "Veuillez entrer une adresse e-mail valide"
+
+#: views/contact_view.php:289
+msgid "Enter Incorrect Email Message"
+msgstr "Entrer un message e-mail incorrect"
+
+#: views/contact_view.php:293
+msgid "Success Message :"
+msgstr "Message de réussite "
+
+#: views/contact_view.php:297
+msgid "Enter Success Message"
+msgstr "Entrer message de réussite"
+
+#: views/contact_view.php:301
+msgid "Redirect :"
+msgstr "Redirection"
+
+#: views/contact_view.php:313 views/contact_view.php:324
+#: views/contact_view.php:336
+msgid "Page"
+msgstr "Page"
+
+#: views/contact_view.php:316 views/contact_view.php:327
+#: views/contact_view.php:339
+msgid "URL"
+msgstr "URL"
+
+#: views/contact_view.php:346
+msgid "Page :"
+msgstr "Page"
+
+#: views/contact_view.php:392
+msgid "URL :"
+msgstr "URL"
+
+#: views/contact_view.php:399
+msgid "Enter Redirect URL"
+msgstr "Entrer URL de redirection"
+
+#: views/contact_view.php:406
+msgid "Form Layout Preview"
+msgstr "avant-première schéma formulaire"
+
+#: views/contact_view.php:417
+msgid "Standard Fields"
+msgstr "champs standard"
+
+#: views/contact_view.php:420 views/contact_view.php:456
+msgid "Click on a field to use into your form."
+msgstr "Cliquer sur un champ pour l'uiliser dans le formulaire"
+
+#: views/contact_view.php:439
+msgid "Checkboxes"
+msgstr "case choix"
+
+#: views/contact_view.php:451
+msgid "Advanced Fields"
+msgstr "champs spécifiques"
+
+#: views/contact_view.php:462
+msgid "Website / URL"
+msgstr "Adresse du Site / URL"
+
+#: views/contact_view.php:467
+msgid "Phone"
+msgstr "Téléphone"
+
+#: views/contact_view.php:470
+msgid "Address"
+msgstr "Adresse"
+
+#: views/contact_view.php:475
+msgid "Number"
+msgstr "Chiffre"
+
+#: views/contact_view.php:478
+msgid "File Upload"
+msgstr "Télécharger fichier"
+
+#: views/contact_view.php:483
+msgid "Date"
+msgstr "Date"
+
+#: views/contact_view.php:486
+msgid "Time"
+msgstr "Heure"
+
+#: views/contact_view.php:491
+msgid "Password"
+msgstr "Mot de passe"
+
+#: views/dashboard.php:18
+msgid "Dashboard - Contact Bank"
+msgstr "Tableau de bord - Contact Bank"
+
+#: views/dashboard.php:40
+msgid "Delete All Forms"
+msgstr "Effacer tous les formulaires"
+
+#: views/dashboard.php:43
+msgid "Restore Factory Settings"
+msgstr "Restaurer les paramètres standards"
+
+#: views/dashboard.php:60
+msgid "Shortcode"
+msgstr "Shortcode"
+
+#: views/dashboard.php:61
+msgid "Total Controls"
+msgstr "Contrôles totaux"
+
+#: views/dashboard.php:100
+msgid "Edit Form"
+msgstr "Editer formulaire"
+
+#: views/dashboard.php:126
+msgid "Delete Form"
+msgstr "Efffacer formulaire"
+
+#: views/dashboard.php:176
+msgid "Are you sure, you want to delete this Form?"
+msgstr "Êtes-vous sûr de vouloir effacer ce formulaire?"
+
+#: views/dashboard.php:186
+msgid "Are you sure, you want to delete all Forms?"
+msgstr "Êtes-vous sûr de vouloir effacer TOUS les formulaires?"
+
+#: views/shortcode.php:8
+msgid ""
+"How to setup Short-Codes for Contact Bank into your WordPress Page/Post?"
+msgstr ""
+"Comment installer court codes pour Contact Bank dans votre WordPress page / "
+"poste?"
+
+#~ msgid "Roles & Capabilities"
+#~ msgstr "Roles et permissions"
+
+#~ msgid "Licensing"
+#~ msgstr "Licence"
+
+#~ msgid "Select Form :"
+#~ msgstr "Choisissez un formulaire :"
+
+#~ msgid "Day"
+#~ msgstr "Jour"
+
+#~ msgid "Select Month"
+#~ msgstr "Sélectionnez le mois"
+
+#~ msgid "Year"
+#~ msgstr "Année"
+
+#~ msgid "Hour"
+#~ msgstr "Heure"
+
+#~ msgid "Minute"
+#~ msgstr "Minute"
+
+#~ msgid "Enter Tooltip Text"
+#~ msgstr "Entrez le texte de l'info-bulle"
+
+#~ msgid "Enter Tooltip"
+#~ msgstr "Entrez l'info-bulle"
+
+#~ msgid "Start Year"
+#~ msgstr "Année de départ"
+
+#~ msgid "Enter Start Year"
+#~ msgstr "Entrer une année de départ"
+
+#~ msgid "End Year"
+#~ msgstr "Année de fin"
+
+#~ msgid "Enter End Year "
+#~ msgstr "Entrer une année de fin"
+
+#~ msgid "Default Value"
+#~ msgstr "valeur par défaut"
+
+#~ msgid "Month"
+#~ msgstr "Mois"
+
+#~ msgid "Date Format"
+#~ msgstr "Format de date"
+
+#~ msgid "Allow Multiple Uploads"
+#~ msgstr "Autoriser téléchargements multiples"
+
+#~ msgid "Allowed File Extensions"
+#~ msgstr "Extensions de fichiers autorisées"
+
+#~ msgid "Enter File Extensions"
+#~ msgstr "Entrez les extensions de fichiers"
+
+#~ msgid "The file extensions must be separated with comma(',')"
+#~ msgstr ""
+#~ "Les extensions de fichier doivent être séparées par une virgule (',')"
+
+#~ msgid "Allowed File Size"
+#~ msgstr "Taille de fichier autorisée"
+
+#~ msgid "File Size must be in Mb"
+#~ msgstr "La taille du fichier doit être spéficiée en Mo"
+
+#~ msgid "Hour Format"
+#~ msgstr "Format heure"
+
+#~ msgid "Minute Format"
+#~ msgstr "Format minute"
+
+#~ msgid "Roles and Capabilities Saved. Kindly wait for the redirect."
+#~ msgstr ""
+#~ "Rôles et Fonctions enregistrées. Veuillez patienter pour la redirection"
+
+#~ msgid "Privileges for Admin"
+#~ msgstr "Privilèges pour Administrateurs"
+
+#~ msgid "Full Control"
+#~ msgstr "Contrôle total"
+
+#~ msgid "Read"
+#~ msgstr "Lecture"
+
+#~ msgid "Write"
+#~ msgstr "Écriture"
+
+#~ msgid "Privileges for Editor"
+#~ msgstr "Privilèges pour éditeurs"
+
+#~ msgid "Privileges for Author"
+#~ msgstr "Privilèges pour auteurs"
+
+#~ msgid "Privileges for Contributor"
+#~ msgstr "Privilèges pour contributeurs"
+
+#~ msgid "Privileges for Subscriber"
+#~ msgstr "Privilèges pour abonnés "
+
+#~ msgid "Global Settings Saved. Kindly wait for the redirect."
+#~ msgstr ""
+#~ "Paramètres globaux sauvegardés. Veuillez patienter pour la redirection."
+
+#~ msgid "Are you sure, you want to Restore Global Settings?"
+#~ msgstr "Êtes-vous sûr de vouloir restaurer les paramètres globaux?"
+
+#~ msgid "Are you sure, you want to delete this Form Entry ?"
+#~ msgstr "Êtes-vous sûr de vouloir effacer cette entrée du formulaire ?"
+
+#~ msgid "Attention! A new vesion of Contact Bank is available for download."
+#~ msgstr ""
+#~ "Attention! une nouvelle version de Contact Bank est disponible au "
+#~ "téléchargement"
+
+#~ msgid "Click"
+#~ msgstr "cliquer"
+
+#~ msgid "here"
+#~ msgstr "ici"
+
+#~ msgid "to upgrade your version of Contact Bank."
+#~ msgstr "pour mettre à jour votre version de Contact Bank"
+
+#~ msgid "Are you sure you want to Restore Factory Settings?"
+#~ msgstr "Êtes-vous sûr de vouloir restaurer les paramètres standards?"
+
+#~ msgid "Only One File Uploader can be used on a Form."
+#~ msgstr ""
+#~ "Un seul téléchargement de fichier ne peut être utilisé par formulaire!"
+
+#~ msgid "Contact-Bank Licensing"
+#~ msgstr "module licence Contact Bank"
+
+#~ msgid "Update"
+#~ msgstr "Mise à jour"
+
+#~ msgid "Success! Settings have been updated."
+#~ msgstr "Succès! Paramètres ont été mis à jour!"
