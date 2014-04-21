@@ -221,283 +221,293 @@
 	}
 ?>
 <form id="ux_dynamic_form_submit" class="layout-form">
-	<div class="fluid-layout">
-		<div class="layout-span12">
-			<div class="widget-layout">
-				<div class="widget-layout-title">
-					<h4><?php _e("Add New Form", contact_bank); ?></h4>
-				</div>
-				<div class="widget-layout-body">
-					<a class="btn btn-info" href="admin.php?page=dashboard"><?php _e("Back to Dashboard", contact_bank); ?></a>
-					<input class="btn btn-info layout-span2" style="float: right;" type="submit" id="submit_button"
-						name="submit_button"
-						value="<?php _e("Save Form", contact_bank); ?>"/>
-					<div class="separator-doubled" style="margin-bottom: 5px;"></div>
-					<a rel="prettyPhoto[contact]"  href="<?php echo CONTACT_BK_PLUGIN_URL . "/assets/images/how-to-setup-short-code-cb.png";?>">How to setup Short-Codes for Contact Bank into your WordPress Page/Post?</a>
-					<div id="form_success_message" class="message green" style="display: none;">
-						<span>
-							<strong><?php _e("Form Submitted. Kindly wait for the redirect.", contact_bank); ?></strong>
-						</span>
-					</div>
-					<div class="fluid-layout">
-						<div class="layout-span8">
-							<div class="widget-layout">
-								<div class="widget-layout-title">
-									<h4><?php _e("Form Settings", contact_bank); ?></h4>
+	<div id="poststuff" style="width: 99% !important;">
+		<div id="post-body" class="metabox-holder">
+			<div id="postbox-container" class="postbox-container">
+				<div id="advanced" class="meta-box-sortables">
+					<div id="contact_bank_get_started" class="postbox" >
+						<div class="handlediv" data-target="#ux_form_entries_div" title="Click to toggle" data-toggle="collapse"><br></div>
+						<h3 class="hndle"><span><?php _e("Add New Form", contact_bank); ?></span></h3>
+						<div class="inside">
+							<div id="ux_form_entries_div" class="contact_bank_layout">
+								<a class="btn btn-info" href="admin.php?page=dashboard"><?php _e("Back to Dashboard", contact_bank); ?></a>
+								<input class="btn btn-info layout-span2" style="float: right;" type="submit" id="submit_button"
+									name="submit_button"
+									value="<?php _e("Save Form", contact_bank); ?>"/>
+								<div class="separator-doubled" style="margin-bottom: 5px;"></div>
+								<a rel="prettyPhoto[contact]"  href="<?php echo CONTACT_BK_PLUGIN_URL . "/assets/images/how-to-setup-short-code-cb.png";?>">How to setup Short-Codes for Contact Bank into your WordPress Page/Post?</a>
+								<div id="form_success_message" class="message green" style="display: none;">
+									<span>
+										<strong><?php _e("Form Submitted. Kindly wait for the redirect.", contact_bank); ?></strong>
+									</span>
 								</div>
-								<div class="widget-layout-body">
-									<div class="layout-control-group div_border" id="div_100">
-										<label class="layout-control-label"><?php _e("Form Name :", contact_bank); ?>
-											<span class="error">*</span>
-										</label>
-										<div class="layout-controls">
-											<input type="text" name="ux_txt_form_name" class="layout-span7" id="ux_txt_form_name"
-												value="<?php echo isset($form_name) ? $form_name : ""; ?>"
-												placeholder="<?php _e("Enter Form Name", contact_bank); ?>"/>
-										</div>
-									</div>
-									<div class="layout-control-group div_border">
-										<label class="layout-control-label"><?php _e("Form Description :", contact_bank); ?></label>
-										<div class="layout-controls">
-											<textarea type="textarea" rows="5" name="ux_txt_form_description" class="layout-span7" id="ux_txt_form_description" placeholder="<?php _e("Enter Form Description", contact_bank); ?>"><?php echo isset($form_settings[$form_id]["form_description"])  ? $form_settings[$form_id]["form_description"] : "" ;?></textarea>
-										</div>
-									</div>
-									<div class="layout-control-group div_border">
-										<label class="layout-control-label"><?php _e("Blank Field Message:", contact_bank); ?>
-											<span class="error">*</span>
-										</label>
-										<div class="layout-controls">
-											<input type="text" name="ux_txt_blank_message" class="layout-span7"
-												value="<?php echo isset($form_settings[$form_id]["blank_field_message"])  ? $form_settings[$form_id]["blank_field_message"] 
-												: _e("Required field must not be blank", contact_bank); ?>"
-												id="ux_txt_blank_message"
-												placeholder="<?php _e("Enter Blank Field Message", contact_bank); ?>"/>
-										</div>
-									</div>
-									<div class="layout-control-group div_border">
-										<label class="layout-control-label"><?php _e("Incorrect Email Message:", contact_bank); ?>
-											<span class="error">*</span>
-										</label>
-										<div class="layout-controls ">
-										<input type="text" name="ux_txt_incorrect_email_message" class="layout-span7"
-											value="<?php echo isset($form_settings[$form_id]["incorrect_email_message"])  ? $form_settings[$form_id]["incorrect_email_message"] 
-												: _e("Please enter a valid email address", contact_bank); ?>"
-											id="ux_txt_incorrect_email_message"
-											placeholder="<?php _e("Enter Incorrect Email Message", contact_bank); ?>"/>
-										</div>
-									</div>
-									<div class="layout-control-group div_border">
-										<label class="layout-control-label"><?php _e("Success Message :", contact_bank); ?>
-											<span class="error">*</span>
-										</label>
-										<div class="layout-controls">
-											<textarea type="textarea" name="ux_txt_success_message" class="layout-span7" id="ux_txt_success_message" placeholder="<?php _e("Enter Success Message", contact_bank); ?>"><?php echo isset($form_settings[$form_id]["success_message"])  ? $form_settings[$form_id]["success_message"] : "" ;?></textarea>
-										</div>
-									</div>
-									<div class="layout-control-group div_border">
-										<label class="layout-control-label"><?php _e("Redirect :", contact_bank); ?>
-											<span class="error">*</span>
-										</label>
-										<div class="layout-controls" style=" padding-top: 7px; ">
-										<?php
-											if(isset($form_settings[$form_id]["redirect"]))
-											{
-												if($form_settings[$form_id]["redirect"] == "0")
-												{
-												?>
-												<input type="radio" id="ux_rdl_page" checked="checked" name="ux_rdl_redirect" 
-													onclick="show_url_control();"
-													value="0"/><label style="vertical-align: text-bottom;"><?php _e("Page", contact_bank); ?></label>
-												<input type="radio" id="ux_rdl_redirect_url" name="ux_rdl_redirect"
-													onclick="show_url_control();"
-													value="1"/><label style="vertical-align: text-bottom;"><?php _e("URL", contact_bank); ?></label>
-												<?php
-												}
-												else
-												{
-													?>
-													 <input type="radio" id="ux_rdl_page" name="ux_rdl_redirect" 
-														onclick="show_url_control();"
-														value="0"/><label style="vertical-align: text-bottom;"><?php _e("Page", contact_bank); ?></label>
-													<input type="radio" id="ux_rdl_redirect_url" checked="checked"  name="ux_rdl_redirect"
-														onclick="show_url_control();"
-														value="1"/><label style="vertical-align: text-bottom;"><?php _e("URL", contact_bank); ?></label>
+								<div class="fluid-layout">
+									<div class="layout-span12">
+								<div class="fluid-layout">
+									<div class="layout-span8">
+										<div class="widget-layout">
+											<div class="widget-layout-title">
+												<h4><?php _e("Form Settings", contact_bank); ?></h4>
+											</div>
+											<div class="widget-layout-body">
+												<div class="layout-control-group div_border" id="div_100">
+													<label class="layout-control-label"><?php _e("Form Name :", contact_bank); ?>
+														<span class="error">*</span>
+													</label>
+													<div class="layout-controls">
+														<input type="text" name="ux_txt_form_name" class="layout-span7" id="ux_txt_form_name"
+															value="<?php echo isset($form_name) ? $form_name : ""; ?>"
+															placeholder="<?php _e("Enter Form Name", contact_bank); ?>"/>
+													</div>
+												</div>
+												<div class="layout-control-group div_border">
+													<label class="layout-control-label"><?php _e("Form Description :", contact_bank); ?></label>
+													<div class="layout-controls">
+														<textarea type="textarea" rows="5" name="ux_txt_form_description" class="layout-span7" id="ux_txt_form_description" placeholder="<?php _e("Enter Form Description", contact_bank); ?>"><?php echo isset($form_settings[$form_id]["form_description"])  ? $form_settings[$form_id]["form_description"] : "" ;?></textarea>
+													</div>
+												</div>
+												<div class="layout-control-group div_border">
+													<label class="layout-control-label"><?php _e("Blank Field Message:", contact_bank); ?>
+														<span class="error">*</span>
+													</label>
+													<div class="layout-controls">
+														<input type="text" name="ux_txt_blank_message" class="layout-span7"
+															value="<?php echo isset($form_settings[$form_id]["blank_field_message"])  ? $form_settings[$form_id]["blank_field_message"] 
+															: _e("Required field must not be blank", contact_bank); ?>"
+															id="ux_txt_blank_message"
+															placeholder="<?php _e("Enter Blank Field Message", contact_bank); ?>"/>
+													</div>
+												</div>
+												<div class="layout-control-group div_border">
+													<label class="layout-control-label"><?php _e("Incorrect Email Message:", contact_bank); ?>
+														<span class="error">*</span>
+													</label>
+													<div class="layout-controls ">
+													<input type="text" name="ux_txt_incorrect_email_message" class="layout-span7"
+														value="<?php echo isset($form_settings[$form_id]["incorrect_email_message"])  ? $form_settings[$form_id]["incorrect_email_message"] 
+															: _e("Please enter a valid email address", contact_bank); ?>"
+														id="ux_txt_incorrect_email_message"
+														placeholder="<?php _e("Enter Incorrect Email Message", contact_bank); ?>"/>
+													</div>
+												</div>
+												<div class="layout-control-group div_border">
+													<label class="layout-control-label"><?php _e("Success Message :", contact_bank); ?>
+														<span class="error">*</span>
+													</label>
+													<div class="layout-controls">
+														<textarea type="textarea" name="ux_txt_success_message" class="layout-span7" id="ux_txt_success_message" placeholder="<?php _e("Enter Success Message", contact_bank); ?>"><?php echo isset($form_settings[$form_id]["success_message"])  ? $form_settings[$form_id]["success_message"] : "" ;?></textarea>
+													</div>
+												</div>
+												<div class="layout-control-group div_border">
+													<label class="layout-control-label"><?php _e("Redirect :", contact_bank); ?>
+														<span class="error">*</span>
+													</label>
+													<div class="layout-controls" style=" padding-top: 7px; ">
 													<?php
-												}
-											}
-											else
-											{
-												?>
-												<input type="radio" id="ux_rdl_page" name="ux_rdl_redirect" checked="checked"
-													onclick="show_url_control();"
-													value="0"/><label style="vertical-align: text-bottom;"><?php _e("Page", contact_bank); ?></label>
-												<input type="radio" id="ux_rdl_redirect_url" name="ux_rdl_redirect"
-														onclick="show_url_control();"
-														value="1"/><label style="vertical-align: text-bottom;"><?php _e("URL", contact_bank); ?></label>
-												<?php
-											}
-											?>
+														if(isset($form_settings[$form_id]["redirect"]))
+														{
+															if($form_settings[$form_id]["redirect"] == "0")
+															{
+															?>
+															<input type="radio" id="ux_rdl_page" checked="checked" name="ux_rdl_redirect" 
+																onclick="show_url_control();"
+																value="0"/><label style="vertical-align: text-bottom;"><?php _e("Page", contact_bank); ?></label>
+															<input type="radio" id="ux_rdl_redirect_url" name="ux_rdl_redirect"
+																onclick="show_url_control();"
+																value="1"/><label style="vertical-align: text-bottom;"><?php _e("URL", contact_bank); ?></label>
+															<?php
+															}
+															else
+															{
+																?>
+																 <input type="radio" id="ux_rdl_page" name="ux_rdl_redirect" 
+																	onclick="show_url_control();"
+																	value="0"/><label style="vertical-align: text-bottom;"><?php _e("Page", contact_bank); ?></label>
+																<input type="radio" id="ux_rdl_redirect_url" checked="checked"  name="ux_rdl_redirect"
+																	onclick="show_url_control();"
+																	value="1"/><label style="vertical-align: text-bottom;"><?php _e("URL", contact_bank); ?></label>
+																<?php
+															}
+														}
+														else
+														{
+															?>
+															<input type="radio" id="ux_rdl_page" name="ux_rdl_redirect" checked="checked"
+																onclick="show_url_control();"
+																value="0"/><label style="vertical-align: text-bottom;"><?php _e("Page", contact_bank); ?></label>
+															<input type="radio" id="ux_rdl_redirect_url" name="ux_rdl_redirect"
+																	onclick="show_url_control();"
+																	value="1"/><label style="vertical-align: text-bottom;"><?php _e("URL", contact_bank); ?></label>
+															<?php
+														}
+														?>
+													</div>
+												</div>
+												<div class="layout-control-group div_border" id="div_page">
+													<label class="layout-control-label"><?php _e("Page :", contact_bank); ?>
+														<span class="error">*</span>
+													</label>
+													<div class="layout-controls">
+													<?php 
+														$publish_pages = $wpdb->get_results
+														(
+															"SELECT ID,post_name FROM " . $wpdb->posts . " WHERE (post_type = \"page\" OR post_type=\"post\") AND post_status = \"publish\""
+														);
+														?>
+														<select class="layout-span7" id="ux_ddl_page_url" name="ux_ddl_page_url">
+														<?php
+														for($flag=0;$flag<count($publish_pages);$flag++)
+														{
+															if(isset($form_settings[$form_id]["redirect_url"]))
+															{
+																$permalink = get_permalink( $publish_pages[$flag]->ID);
+																if($permalink == $form_settings[$form_id]["redirect_url"])
+																{
+																	?>
+																	<option selected="selected" value="<?php echo $permalink ; ?>"><?php echo $publish_pages[$flag]->post_name; ?></option>
+																	<?php
+																}
+																else
+																{
+																	?>
+																	<option value="<?php echo $permalink ; ?>"><?php echo $publish_pages[$flag]->post_name; ?></option>
+																	<?php
+																}
+															}
+															else
+															{
+																$permalink = get_permalink( $publish_pages[$flag]->ID);
+																?>
+																<option value="<?php echo $permalink ; ?>"><?php echo $publish_pages[$flag]->post_name; ?></option>
+																<?php
+															}
+														}
+														?>
+														</select>
+													</div>
+												</div>
+												<div class="layout-control-group div_border" id="div_url">
+													<label class="layout-control-label"><?php _e("URL :", contact_bank); ?>
+														<span class="error">*</span>
+													</label>
+													<div class="layout-controls">
+														<input type="text" name="ux_txt_redirect_url" class="layout-span7" id="ux_txt_redirect_url"
+														value="<?php echo isset($form_settings[$form_id]["redirect_url"])  ? $form_settings[$form_id]["redirect_url"] 
+														: ""; ?>"
+														placeholder="<?php _e("Enter Redirect URL", contact_bank); ?>"/>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="widget-layout">
+											<div class="widget-layout-title">
+												<h4><?php _e("Form Layout Preview", contact_bank); ?></h4>
+											</div>
+											<div class="widget-layout-body">
+												<?php include_once CONTACT_BK_PLUGIN_DIR . "/views/contact_controls_files.php"; ?>
+												<div id="left_block"></div>
+											</div>
 										</div>
 									</div>
-									<div class="layout-control-group div_border" id="div_page">
-										<label class="layout-control-label"><?php _e("Page :", contact_bank); ?>
-											<span class="error">*</span>
-										</label>
-										<div class="layout-controls">
-										<?php 
-											$publish_pages = $wpdb->get_results
-											(
-												"SELECT ID,post_name FROM " . $wpdb->posts . " WHERE (post_type = \"page\" OR post_type=\"post\") AND post_status = \"publish\""
-											);
-											?>
-											<select class="layout-span7" id="ux_ddl_page_url" name="ux_ddl_page_url">
-											<?php
-											for($flag=0;$flag<count($publish_pages);$flag++)
-											{
-												if(isset($form_settings[$form_id]["redirect_url"]))
-												{
-													$permalink = get_permalink( $publish_pages[$flag]->ID);
-													if($permalink == $form_settings[$form_id]["redirect_url"])
-													{
-														?>
-														<option selected="selected" value="<?php echo $permalink ; ?>"><?php echo $publish_pages[$flag]->post_name; ?></option>
-														<?php
-													}
-													else
-													{
-														?>
-														<option value="<?php echo $permalink ; ?>"><?php echo $publish_pages[$flag]->post_name; ?></option>
-														<?php
-													}
-												}
-												else
-												{
-													$permalink = get_permalink( $publish_pages[$flag]->ID);
-													?>
-													<option value="<?php echo $permalink ; ?>"><?php echo $publish_pages[$flag]->post_name; ?></option>
-													<?php
-												}
-											}
-											?>
-											</select>
+									<div class="layout-span4">
+										<div class="widget-layout" style="margin-top: 4px;">
+											<div class="widget-layout-title">
+												<h4><?php _e("Standard Fields", contact_bank); ?></h4>
+											</div>
+											<div class="widget-layout-body">
+												<p class="howto"><?php _e("Click on a field to use into your form.", contact_bank); ?></p>
+												<div class="layout-control-group">
+													<button type="button" class="btn btn-info button_space" onclick="create_control(1);">
+														<i class="icon-align-justify"></i> <?php _e("Single Line Text", contact_bank); ?>
+													</button>
+													<button type="button" class="btn btn-info button_space" onclick="create_control(2);">
+														<i class="icon-align-left"></i> <?php _e("Paragraph Text", contact_bank); ?>
+													</button>
+												</div>
+												<div class="layout-control-group">
+													<button type="button" class="btn btn-info button_space" onclick="create_control(3);">
+														<i class="icon-envelope"></i> <?php _e("Email Address", contact_bank); ?>
+													</button>
+													<button type="button" class="btn btn-info button_space" onclick="create_control(4);">
+														<i class="icon-circle-arrow-down"></i> <?php _e("Select Box", contact_bank); ?>
+													</button>
+												</div>
+												<div class="layout-control-group">
+													<button type="button" class="btn btn-info button_space" onclick="create_control(5);">
+										 				<i class="icon-check"></i> <?php _e("Checkboxes", contact_bank); ?>
+													</button>
+													<button type="button" class="btn btn-info button_space" onclick="create_control(6);">
+														<i class="icon-play-circle"></i> <?php _e("Radio Buttons", contact_bank); ?>
+													</button>
+												</div>
+												<input type="hidden" id="hidden_dynamic_id" name="hidden_dynamic_id"/>
+												<input type="hidden" id="hidden_div_id" name="hidden_div_id"/>
+											</div>
 										</div>
-									</div>
-									<div class="layout-control-group div_border" id="div_url">
-										<label class="layout-control-label"><?php _e("URL :", contact_bank); ?>
-											<span class="error">*</span>
-										</label>
-										<div class="layout-controls">
-											<input type="text" name="ux_txt_redirect_url" class="layout-span7" id="ux_txt_redirect_url"
-											value="<?php echo isset($form_settings[$form_id]["redirect_url"])  ? $form_settings[$form_id]["redirect_url"] 
-											: ""; ?>"
-											placeholder="<?php _e("Enter Redirect URL", contact_bank); ?>"/>
+										<div class="widget-layout">
+											<div class="widget-layout-title">
+												<h4><?php _e("Advanced Fields", contact_bank); ?>
+													<i class="widget_premium_feature_contact"><?php _e(" (Available in Premium Edition)", contact_bank); ?></i>
+												</h4>
+											</div>
+											<div class="widget-layout-body">
+												<p class="howto"><?php _e("Click on a field to use into your form.", contact_bank); ?></p>
+												<div class="layout-control-group">
+													<button type="button" class="btn btn-info button_space" onclick="create_control(8);">
+														<i class="icon-user"></i> <?php _e("Name", contact_bank); ?>
+													</button>
+													<button type="button" class="btn btn-info button_space" onclick="create_control(16);">
+														<i class="icon-globe"></i> <?php _e("Website / URL", contact_bank); ?>
+													</button>
+												</div>
+												<div class="layout-control-group">
+													<button type="button" class="btn btn-info button_space" onclick="create_control(10);">
+														<i class="icon-th"></i> <?php _e("Phone", contact_bank); ?>
+													</button>
+													<button type="button" class="btn btn-info button_space" onclick="create_control(11);">
+														<i class="icon-map-marker"></i> <?php _e("Address", contact_bank); ?>
+													</button>
+												</div>
+										 		<div class="layout-control-group">
+													<button type="button" class="btn btn-info button_space" onclick="create_control(7);">
+														<i class=" icon-list"></i> <?php _e("Number", contact_bank); ?>
+													</button>
+													<button type="button" class="btn btn-info button_space" onclick="create_control(9);">
+														<i class="icon-upload"></i> <?php _e("File Upload", contact_bank); ?>
+													</button>
+												</div>
+												<div class="layout-control-group">
+													<button type="button" class="btn btn-info button_space" onclick="create_control(12);">
+														<i class="icon-calendar"></i> <?php _e("Date", contact_bank); ?>
+													</button>
+													<button type="button" class="btn btn-info button_space" onclick="create_control(13);">
+														<i class="icon-time"></i> <?php _e("Time", contact_bank); ?>
+													</button>
+												</div>
+												<div class="layout-control-group">
+													<button type="button" class="btn btn-info button_space" onclick="create_control(15);">
+										 				<i class=" icon-lock"></i> <?php _e("Password", contact_bank); ?>
+													</button>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="widget-layout">
-								<div class="widget-layout-title">
-									<h4><?php _e("Form Layout Preview", contact_bank); ?></h4>
+								
+									<input type="hidden" id="hidden_file_upload_count" name="hidden_file_upload_count" value="0" />
+									<div class="separator-doubled"></div>
+									<input class="btn btn-info layout-span2" type="submit" id="submit_button" name="submit_button"
+									style="margin-bottom: 10px;margin-top: 10px;" value="<?php _e("Save Form", contact_bank); ?>"/>
 								</div>
-								<div class="widget-layout-body">
-									<?php include_once CONTACT_BK_PLUGIN_DIR . "/views/contact_controls_files.php"; ?>
-									<div id="left_block"></div>
 								</div>
 							</div>
 						</div>
-						<div class="layout-span4">
-							<div class="widget-layout" style="margin-top: 4px;">
-								<div class="widget-layout-title">
-									<h4><?php _e("Standard Fields", contact_bank); ?></h4>
-								</div>
-								<div class="widget-layout-body">
-									<p class="howto"><?php _e("Click on a field to use into your form.", contact_bank); ?></p>
-									<div class="layout-control-group">
-										<button type="button" class="btn btn-info button_space" onclick="create_control(1);">
-											<i class="icon-align-justify"></i> <?php _e("Single Line Text", contact_bank); ?>
-										</button>
-										<button type="button" class="btn btn-info button_space" onclick="create_control(2);">
-											<i class="icon-align-left"></i> <?php _e("Paragraph Text", contact_bank); ?>
-										</button>
-									</div>
-									<div class="layout-control-group">
-										<button type="button" class="btn btn-info button_space" onclick="create_control(3);">
-											<i class="icon-envelope"></i> <?php _e("Email Address", contact_bank); ?>
-										</button>
-										<button type="button" class="btn btn-info button_space" onclick="create_control(4);">
-											<i class="icon-circle-arrow-down"></i> <?php _e("Select Box", contact_bank); ?>
-										</button>
-									</div>
-									<div class="layout-control-group">
-										<button type="button" class="btn btn-info button_space" onclick="create_control(5);">
-							 				<i class="icon-check"></i> <?php _e("Checkboxes", contact_bank); ?>
-										</button>
-										<button type="button" class="btn btn-info button_space" onclick="create_control(6);">
-											<i class="icon-play-circle"></i> <?php _e("Radio Buttons", contact_bank); ?>
-										</button>
-									</div>
-									<input type="hidden" id="hidden_dynamic_id" name="hidden_dynamic_id"/>
-									<input type="hidden" id="hidden_div_id" name="hidden_div_id"/>
-								</div>
-							</div>
-							<div class="widget-layout">
-								<div class="widget-layout-title">
-									<h4><?php _e("Advanced Fields", contact_bank); ?>
-										<i class="widget_premium_feature_contact"><?php _e(" (Available in Premium Edition)", contact_bank); ?></i>
-									</h4>
-								</div>
-								<div class="widget-layout-body">
-									<p class="howto"><?php _e("Click on a field to use into your form.", contact_bank); ?></p>
-									<div class="layout-control-group">
-										<button type="button" class="btn btn-info button_space" onclick="create_control(8);">
-											<i class="icon-user"></i> <?php _e("Name", contact_bank); ?>
-										</button>
-										<button type="button" class="btn btn-info button_space" onclick="create_control(16);">
-											<i class="icon-globe"></i> <?php _e("Website / URL", contact_bank); ?>
-										</button>
-									</div>
-									<div class="layout-control-group">
-										<button type="button" class="btn btn-info button_space" onclick="create_control(10);">
-											<i class="icon-th"></i> <?php _e("Phone", contact_bank); ?>
-										</button>
-										<button type="button" class="btn btn-info button_space" onclick="create_control(11);">
-											<i class="icon-map-marker"></i> <?php _e("Address", contact_bank); ?>
-										</button>
-									</div>
-							 		<div class="layout-control-group">
-										<button type="button" class="btn btn-info button_space" onclick="create_control(7);">
-											<i class=" icon-list"></i> <?php _e("Number", contact_bank); ?>
-										</button>
-										<button type="button" class="btn btn-info button_space" onclick="create_control(9);">
-											<i class="icon-upload"></i> <?php _e("File Upload", contact_bank); ?>
-										</button>
-									</div>
-									<div class="layout-control-group">
-										<button type="button" class="btn btn-info button_space" onclick="create_control(12);">
-											<i class="icon-calendar"></i> <?php _e("Date", contact_bank); ?>
-										</button>
-										<button type="button" class="btn btn-info button_space" onclick="create_control(13);">
-											<i class="icon-time"></i> <?php _e("Time", contact_bank); ?>
-										</button>
-									</div>
-									<div class="layout-control-group">
-										<button type="button" class="btn btn-info button_space" onclick="create_control(15);">
-							 				<i class=" icon-lock"></i> <?php _e("Password", contact_bank); ?>
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
 					</div>
-					<input type="hidden" id="hidden_file_upload_count" name="hidden_file_upload_count" value="0" />
-					<div class="separator-doubled"></div>
-					<input class="btn btn-info layout-span2" type="submit" id="submit_button" name="submit_button"
-					style="margin-top: 10px;" value="<?php _e("Save Form", contact_bank); ?>"/>
 				</div>
 			</div>
 		</div>
 	</div>
-</form>
+</form>	
 <script type="text/javascript">
 jQuery(document).ready(function()
 {

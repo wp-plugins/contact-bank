@@ -1,78 +1,85 @@
-<div class="fluid-layout" >
-	<div class="layout-span12">
-		<div class="widget-layout">
-			<div class="widget-layout-title">
-				<h4><?php _e( "Email Settings", contact_bank ); ?></h4>
-			</div>
-			<div class="widget-layout-body layout-form">
-				<a class="btn btn-info" href="admin.php?page=dashboard"><?php _e("Back to Dashboard", contact_bank);?></a>
-				<div class="separator-doubled"></div>
-				<div class="fluid-layout">
-					<div class="layout-control-group span">
-						<label class="layout-control-label"><?php _e( "Select Form", contact_bank ); ?> :</label>
-						<div class="layout-controls">
-							<?php
-							global $wpdb;
-							$forms = $wpdb->get_results
-							(
-								"SELECT form_id,form_name FROM " .contact_bank_contact_form()
-								
-							);
-							$email_count = $wpdb->get_var
-							(
-								"SELECT count(email_id) FROM ".contact_bank_email_template_admin()
-							);
-							
-							?>
-							<select class=" layout-span10" id="ux_ddl_select_form" name="ux_ddl_select_form" onchange="select_form();">
-								<option value="0"><?php _e("Select Form",contact_bank); ?></option>
-							<?php
-							for($flag=0;$flag<count($forms);$flag++)
-							{
-								if(isset($_REQUEST["form_id"]) && $_REQUEST["form_id"] == $forms[$flag]->form_id )
-								{
-									?>
-									<option value="<?php echo $forms[$flag]->form_id ;?>" selected="selected"><?php echo $forms[$flag]->form_name ;?></option>
-									<?php
-								}
-								else
-								{
-									?>
-									<option value="<?php echo $forms[$flag]->form_id ;?>"><?php echo $forms[$flag]->form_name ;?></option>
-									<?php
-								}
-								
-							}
-							?>
-							
-							</select>
-							<?php
-							if($email_count < 1)
-							{
-								?>
-								<a class="btn btn-info" onclick="add_new_settings();"><?php _e("Add New", contact_bank);?></a>
-								<?php
-							}
-							?>
-						</div>
-					</div>
-					<div class="fluid-layout">
-						<div class="layout-span12">
-							<div class="widget-layout">
-								<div class="widget-layout-title">
-									<h4><?php _e( "Email Confirmation", contact_bank ); ?></h4>
-								</div>
-								<div class="widget-layout-body">
-									<table class="table table-striped" id="data-table-email-settings" style="width:100%;">
-										<thead>
-											<th style="width:40%;">Name</th>
-											<th style="width:40%;">Subject</th>
-											<th style="width:20%;"></th>
-										</thead>
-										<tbody id="ux_email_settings_postback">
+<form id="contact_bank_pricing" class="layout-form">
+	<div id="poststuff" style="width: 99% !important;">
+		<div id="post-body" class="metabox-holder">
+			<div id="postbox-container" class="postbox-container">
+				<div id="advanced" class="meta-box-sortables">
+					<div id="contact_bank_get_started" class="postbox" >
+						<div class="handlediv" data-target="#ux_contact_email_settings" title="Click to toggle" data-toggle="collapse"><br></div>
+						<h3 class="hndle"><span><?php _e( "Email Settings", contact_bank ); ?></span></h3>
+						<div class="inside">
+							<div id="ux_contact_email_settings" class="contact_bank_layout">
+								<a class="btn btn-info" href="admin.php?page=dashboard"><?php _e("Back to Dashboard", contact_bank);?></a>
+								<div class="separator-doubled"></div>
+								<div class="fluid-layout">
+									<div class="layout-control-group span">
+										<label class="layout-control-label"><?php _e( "Select Form", contact_bank ); ?> :</label>
+										<div class="layout-controls">
+											<?php
+											global $wpdb;
+											$forms = $wpdb->get_results
+											(
+												"SELECT form_id,form_name FROM " .contact_bank_contact_form()
+												
+											);
+											$email_count = $wpdb->get_var
+											(
+												"SELECT count(email_id) FROM ".contact_bank_email_template_admin()
+											);
 											
-										</tbody>
-									</table>
+											?>
+											<select class=" layout-span10" id="ux_ddl_select_form" name="ux_ddl_select_form" onchange="select_form();">
+												<option value="0"><?php _e("Select Form",contact_bank); ?></option>
+											<?php
+											for($flag=0;$flag<count($forms);$flag++)
+											{
+												if(isset($_REQUEST["form_id"]) && $_REQUEST["form_id"] == $forms[$flag]->form_id )
+												{
+													?>
+													<option value="<?php echo $forms[$flag]->form_id ;?>" selected="selected"><?php echo $forms[$flag]->form_name ;?></option>
+													<?php
+												}
+												else
+												{
+													?>
+													<option value="<?php echo $forms[$flag]->form_id ;?>"><?php echo $forms[$flag]->form_name ;?></option>
+													<?php
+												}
+												
+											}
+											?>
+											
+											</select>
+											<?php
+											if($email_count < 1)
+											{
+												?>
+												<a class="btn btn-info" onclick="add_new_settings();"><?php _e("Add New", contact_bank);?></a>
+												<?php
+											}
+											?>
+										</div>
+									</div>
+									<div class="fluid-layout">
+										<div class="layout-span12">
+											<div class="widget-layout">
+												<div class="widget-layout-title">
+													<h4><?php _e( "Email Confirmation", contact_bank ); ?></h4>
+												</div>
+												<div class="widget-layout-body">
+													<table class="table table-striped" id="data-table-email-settings" style="width:100%;">
+														<thead>
+															<th style="width:40%;">Name</th>
+															<th style="width:40%;">Subject</th>
+															<th style="width:20%;"></th>
+														</thead>
+														<tbody id="ux_email_settings_postback">
+															
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -81,7 +88,8 @@
 			</div>
 		</div>
 	</div>
-</div>
+</form>
+
 <script type="text/javascript">
 jQuery(".hovertip").tooltip();
 jQuery(document).ready(function()

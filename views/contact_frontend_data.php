@@ -1,55 +1,62 @@
-<div class="fluid-layout">
-	<div class="layout-span12">
-		<div class="widget-layout">
-			<div class="widget-layout-title">
-				<h4><?php _e( "Form Entries", contact_bank ); ?></h4>
-			</div>
-			<div class="widget-layout-body layout-form">
-				<a class="btn btn-info" href="admin.php?page=dashboard"><?php _e("Back to Dashboard", contact_bank);?></a>
-				<a class="btn btn-info" id="export" ><?php _e("Export to Excel", contact_bank);?></a>
-				<div class="separator-doubled"></div>
-				<div class="fluid-layout">
-					<div class="layout-span12">
-						<div class="widget-layout">
-							<div class="widget-layout-title">
-								<h4><?php _e( "Form", contact_bank ); ?></h4>
-							</div>
-							<div class="widget-layout-body" >
+<form id="" class="layout-form">
+	<div id="poststuff" style="width: 99% !important;">
+		<div id="post-body" class="metabox-holder">
+			<div id="postbox-container" class="postbox-container">
+				<div id="advanced" class="meta-box-sortables">
+					<div id="contact_bank_get_started" class="postbox" >
+						<div class="handlediv" data-target="#ux_form_entries_div" title="Click to toggle" data-toggle="collapse"><br></div>
+						<h3 class="hndle"><span><?php _e( "Form Entries", contact_bank ); ?></span></h3>
+						<div class="inside">
+							<div id="ux_form_entries_div" class="contact_bank_layout">
+								<a class="btn btn-info" href="admin.php?page=dashboard"><?php _e("Back to Dashboard", contact_bank);?></a>
+								<a class="btn btn-info" id="export" ><?php _e("Export to Excel", contact_bank);?></a>
+								<div class="separator-doubled"></div>
 								<div class="fluid-layout">
-									<div class="layout-control-group">
-										<label class="layout-control-label"><?php _e( "Select Form", contact_bank ); ?> :</label>
-										<div class="layout-controls">	
-											<?php
-											global $wpdb;
-											$form_data = $wpdb->get_results
-											(
-												"SELECT * FROM " .contact_bank_contact_form()
-											);
-											?>
-											<select class=" layout-span12" id="select_form" name="select_form" onchange="select_form_id();">
-												<option value="0"><?php _e("Select Form",contact_bank); ?></option>
-												<?php
-												for($flag=0;$flag<count($form_data);$flag++)
-												{
-													if(isset($_REQUEST["form_id"]) && $_REQUEST["form_id"] == $form_data[$flag]->form_id)
-													{
-														?>
-														<option value="<?php echo $form_data[$flag]->form_id ;?>" selected="selected"><?php echo $form_data[$flag]->form_name ;?></option>
-														<?php
-													}
-													else
-													{
-														?>
-														<option value="<?php echo $form_data[$flag]->form_id ;?>"><?php echo $form_data[$flag]->form_name ;?></option>
-														<?php
-													}
-												}
-												?>
-											</select>
+									<div class="layout-span12">
+										<div class="widget-layout">
+											<div class="widget-layout-title">
+												<h4><?php _e( "Form", contact_bank ); ?></h4>
+											</div>
+											<div class="widget-layout-body" >
+												<div class="fluid-layout">
+													<div class="layout-control-group">
+														<label class="layout-control-label"><?php _e( "Select Form", contact_bank ); ?> :</label>
+														<div class="layout-controls">	
+															<?php
+															global $wpdb;
+															$form_data = $wpdb->get_results
+															(
+																"SELECT * FROM " .contact_bank_contact_form()
+															);
+															?>
+															<select class=" layout-span12" id="select_form" name="select_form" onchange="select_form_id();">
+																<option value="0"><?php _e("Select Form",contact_bank); ?></option>
+																<?php
+																for($flag=0;$flag<count($form_data);$flag++)
+																{
+																	if(isset($_REQUEST["form_id"]) && $_REQUEST["form_id"] == $form_data[$flag]->form_id)
+																	{
+																		?>
+																		<option value="<?php echo $form_data[$flag]->form_id ;?>" selected="selected"><?php echo $form_data[$flag]->form_name ;?></option>
+																		<?php
+																	}
+																	else
+																	{
+																		?>
+																		<option value="<?php echo $form_data[$flag]->form_id ;?>"><?php echo $form_data[$flag]->form_name ;?></option>
+																		<?php
+																	}
+																}
+																?>
+															</select>
+														</div>
+													</div>
+												</div>
+												<div id="ux_frontend_data_postback" style="overflow-x: auto;overflow-y: hidden;padding-bottom: 1%;margin-top:10px;"></div>
+											</div>
 										</div>
 									</div>
 								</div>
-								<div id="ux_frontend_data_postback" style="overflow-x: auto;overflow-y: hidden;padding-bottom: 1%;margin-top:10px;"></div>
 							</div>
 						</div>
 					</div>
@@ -57,8 +64,8 @@
 			</div>
 		</div>
 	</div>
-</div>
-<script>
+</form>
+<script type="text/javascript">
 jQuery(document).ready(function()
 {
 	select_form_id();

@@ -10,9 +10,22 @@ $cb_language = get_locale();
 
 
 ?>
+<script>
+jQuery(document).ready(function()
+{
+	jQuery(".nav-tab-wrapper > a#<?php echo $_REQUEST["page"];?>").addClass("nav-tab-active");
+});
+</script>
 <img style="margin: 10px;" src="<?php echo CONTACT_BK_PLUGIN_URL .'/assets/images/cb-logo.png';?>"/>
-<a target="_blank" href="http://tech-banker.com/contact-bank/">
-<img style="float: right;margin: 7px 11px;" src="<?php echo CONTACT_BK_PLUGIN_URL .'/assets/images/banner.png';?>"/></a>
+<h2 class="nav-tab-wrapper">
+	<a class="nav-tab " id="dashboard" href="admin.php?page=dashboard">Dashboard</a>
+	<a class="nav-tab " id="short_code" href="admin.php?page=short_code">Short-Codes</a>
+	<a class="nav-tab " id="frontend_data" href="admin.php?page=frontend_data">Form Entries</a>
+	<a class="nav-tab " id="contact_email" href="admin.php?page=contact_email">Email Settings</a>
+	<a class="nav-tab " id="layout_settings" href="admin.php?page=layout_settings">Global Settings</a>
+	<a class="nav-tab " id="system_status" href="admin.php?page=system_status">System Status</a>
+	<a class="nav-tab " id="pro_version" href="admin.php?page=pro_version">Purchase Pro Version</a>
+</h2>
 <?php
 if(in_array($cb_language, $cb_lang))
 {
@@ -40,6 +53,7 @@ elseif(!(in_array($cb_language, $cb_lang_translated_languages)) && !(in_array($c
 	<?php	
 }
 ?>
+
 <div class="message red" style="display: block;margin-top:10px">
  <span>
   <strong>You will be only allowed to add 1 Form. Kindly purchase Premium Edition for full access.</strong>

@@ -3,7 +3,7 @@ Contributors: contact-banker, Gallery-Bank
 Tags: admin, advanced form, AJAX, best contact form plugin, buddypress, category, comment, comments, contact, contact bank, contact form, contact form 7, contact form builder, contact form plugin, contact forms, contact me, contact us, contacts, content, easy contact form, easy contact plugin, email, Facebook, feed, feedback, feedback form, form, form builder, forms, gallery, google, image, images, javascript, jquery, link, links, login, media, page, pages, plugin, Post, posts, request, rss, seo, shortcode, sidebar, stats, text, web form, widget, wordpress
 Requires at least: 3.3
 Tested up to: 3.9
-Stable tag: 2.0.18
+Stable tag: 2.0.19
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -24,9 +24,12 @@ It provides a powerful engine for uploading and managing dynamic forms with more
 > * [Contact Bank Demos](http://tech-banker.com/contact-bank/demo/)
 > * [Contact Bank Documentation](http://tech-banker.com/contact-bank/documentation/)
 
+[vimeo https://vimeo.com/92488992]
+
+
 ***The Contact Bank WordPress Plugin is now proudly maintained by <a href="http://www.tech-banker.com">Tech Banker Pte Ltd.</a> since March 2014.***
 
-***April 17, 2014: We're happy to announce that Contact Bank reached 24,800+ plugin downloads in only 6 months. We frequently receive positive feedback from people using our Contact Bank Plugin for WordPress. Thanks so much for your support!***
+***April 21, 2014: We're happy to announce that Contact Bank reached 25,700+ plugin downloads in only 6 months. We frequently receive positive feedback from people using our Contact Bank Plugin for WordPress. Thanks so much for your support!***
 
 <a href="http://tech-banker.com/forum/contact-bank-support/" target="_blank">Support Desk - feel free to ask your Queries</a>
 
@@ -136,6 +139,12 @@ Visit [here](http://tech-banker.com/contact-bank) to upgrade to Pro Version now.
 4. Create a page or a post and insert shortcode [contact_form] to the text.
 
 == Changelog ==
+
+= 2.0.18 =
+
+* New Layout Introduced
+* Bugs Fixed
+* Help Video Added
 
 = 2.0.18 =
 

@@ -22,195 +22,200 @@ $email_data = $wpdb->get_row
 );
 ?>
 <form id="ux_frm_add_email" class="layout-form">
-	<div class="fluid-layout">
-		<div class="layout-span12">
-			<div class="widget-layout">
-				<div class="widget-layout-title">
-					<h4><?php _e( "Email Confirmation", contact_bank ); ?></h4>
-				</div>
-				<div class="widget-layout-body">
-					<a class="btn btn-info" href="admin.php?page=contact_email"><?php _e("Back to Email Settings", contact_bank);?></a>
-					<input  class="btn btn-info layout-span1" type="submit" id="submit_button" name="submit_button" style="float: right;"  value="<?php _e("Save", contact_bank); ?>" />
-					<div class="separator-doubled"></div>
-					<div id="email_success_message" class="message green" style="display: none;">
-						<span>
-							<strong><?php _e("Email Settings Saved. Kindly wait for the redirect.", contact_bank); ?></strong>
-						</span>
-					</div>
-					<div class="fluid-layout">
-						<div class="layout-span12">
-							<div class="widget-layout">
-								<div class="widget-layout-title">
-									<h4><?php _e( "Email", contact_bank); ?></h4>
+	<div id="poststuff" style="width: 99% !important;">
+		<div id="post-body" class="metabox-holder">
+			<div id="postbox-container" class="postbox-container">
+				<div id="advanced" class="meta-box-sortables">
+					<div id="contact_bank_get_started" class="postbox" >
+						<div class="handlediv" data-target="#ux_form_email_div" title="Click to toggle" data-toggle="collapse"><br></div>
+						<h3 class="hndle"><span><?php _e( "Email Confirmation", contact_bank ); ?></span></h3>
+						<div class="inside">
+							<div id="ux_form_email_div" class="contact_bank_layout">
+								<a class="btn btn-info" href="admin.php?page=contact_email"><?php _e("Back to Email Settings", contact_bank);?></a>
+								<input  class="btn btn-info layout-span1" type="submit" id="submit_button" name="submit_button" style="float: right;"  value="<?php _e("Save", contact_bank); ?>" />
+								<div class="separator-doubled"></div>
+								<div id="email_success_message" class="message green" style="display: none;">
+									<span>
+										<strong><?php _e("Email Settings Saved. Kindly wait for the redirect.", contact_bank); ?></strong>
+									</span>
 								</div>
-								<div class="widget-layout-body">
-									<div class="layout-control-group">
-										<label class="layout-control-label"><?php _e( "Name", contact_bank ); ?> :
-											<span class="error">*</span> 
-										</label>
-										<div class="layout-controls">	
-											<input type="text" class="layout-span12" id="ux_txt_name" name="ux_txt_name" value="<?php echo isset($email_data->name)  ? $email_data->name : ""; ?>" placeholder="<?php _e( "Enter Name", contact_bank ); ?>"/>
-										</div>
-									</div>
-								</div>
-								<div class="widget-layout-body">
-									<div class="layout-control-group">
-										<label class="layout-control-label"><?php _e( "Send To", contact_bank ); ?> :</label>
-										<?php
-										if(isset($email_data->send_to))
-										{
-											if($email_data->send_to == "0")
-											{
-												?>
-												<div class="layout-controls" style="padding-top:5px;">	
-													<input type="radio" name="ux_rdl_send_to" id="ux_rdl_email" value="0" checked="checked" onclick="show_send_to_div();">
-													<label class="rdl"><?php _e( "Enter Email", contact_bank ); ?></label>
-													<input type="radio" name="ux_rdl_send_to" id="ux_rdl_field" value="1" onclick="show_send_to_div(); ">
-													<label class="rdl"><?php _e( "Select a Field", contact_bank ); ?></label>
+								<div class="fluid-layout">
+									<div class="layout-span12">
+										<div class="widget-layout">
+											<div class="widget-layout-title">
+												<h4><?php _e( "Email", contact_bank); ?></h4>
+											</div>
+											<div class="widget-layout-body">
+												<div class="layout-control-group">
+													<label class="layout-control-label"><?php _e( "Name", contact_bank ); ?> :
+														<span class="error">*</span> 
+													</label>
+													<div class="layout-controls">	
+														<input type="text" class="layout-span12" id="ux_txt_name" name="ux_txt_name" value="<?php echo isset($email_data->name)  ? $email_data->name : ""; ?>" placeholder="<?php _e( "Enter Name", contact_bank ); ?>"/>
+													</div>
 												</div>
-												<?php
-											}
-											else 
-											{
-												?>
-												<div class="layout-controls" style="padding-top:5px;">	
-													<input type="radio" name="ux_rdl_send_to" id="ux_rdl_email" value="0"  onclick="show_send_to_div();">
-													<label class="rdl"><?php _e( "Enter Email", contact_bank ); ?></label>
-													<input type="radio" name="ux_rdl_send_to" id="ux_rdl_field" value="1" checked="checked" onclick="show_send_to_div(); ">
-													<label class="rdl"><?php _e( "Select a Field", contact_bank ); ?></label>
+											</div>
+											<div class="widget-layout-body">
+												<div class="layout-control-group">
+													<label class="layout-control-label"><?php _e( "Send To", contact_bank ); ?> :</label>
+													<?php
+													if(isset($email_data->send_to))
+													{
+														if($email_data->send_to == "0")
+														{
+															?>
+															<div class="layout-controls" style="padding-top:5px;">	
+																<input type="radio" name="ux_rdl_send_to" id="ux_rdl_email" value="0" checked="checked" onclick="show_send_to_div();">
+																<label class="rdl"><?php _e( "Enter Email", contact_bank ); ?></label>
+																<input type="radio" name="ux_rdl_send_to" id="ux_rdl_field" value="1" onclick="show_send_to_div(); ">
+																<label class="rdl"><?php _e( "Select a Field", contact_bank ); ?></label>
+															</div>
+															<?php
+														}
+														else 
+														{
+															?>
+															<div class="layout-controls" style="padding-top:5px;">	
+																<input type="radio" name="ux_rdl_send_to" id="ux_rdl_email" value="0"  onclick="show_send_to_div();">
+																<label class="rdl"><?php _e( "Enter Email", contact_bank ); ?></label>
+																<input type="radio" name="ux_rdl_send_to" id="ux_rdl_field" value="1" checked="checked" onclick="show_send_to_div(); ">
+																<label class="rdl"><?php _e( "Select a Field", contact_bank ); ?></label>
+															</div>
+															<?php
+														}
+													}
+													else 
+													{
+														?>
+														<div class="layout-controls" style="padding-top:5px;">	
+															<input type="radio" name="ux_rdl_send_to" id="ux_rdl_email" value="0" checked="checked" onclick="show_send_to_div();">
+															<label class="rdl"><?php _e( "Enter Email", contact_bank ); ?></label>
+															<input type="radio" name="ux_rdl_send_to" id="ux_rdl_field" value="1" onclick="show_send_to_div(); ">
+															<label class="rdl"><?php _e( "Select a Field", contact_bank ); ?></label>
+														</div>
+														<?php
+													}
+													?>
 												</div>
-												<?php
-											}
-										}
-										else 
-										{
-											?>
-											<div class="layout-controls" style="padding-top:5px;">	
-												<input type="radio" name="ux_rdl_send_to" id="ux_rdl_email" value="0" checked="checked" onclick="show_send_to_div();">
-												<label class="rdl"><?php _e( "Enter Email", contact_bank ); ?></label>
-												<input type="radio" name="ux_rdl_send_to" id="ux_rdl_field" value="1" onclick="show_send_to_div(); ">
-												<label class="rdl"><?php _e( "Select a Field", contact_bank ); ?></label>
 											</div>
-											<?php
-										}
-										?>
-									</div>
-								</div>
-								<div class="widget-layout-body">
-									<div class="layout-control-group" id="div_email" style="display: none;">
-										<label class="layout-control-label"><?php _e( "Email", contact_bank ); ?> :
-											<span class="error">*</span>
-										</label>
-										<div class="layout-controls">	
-											<input type="text" class="layout-span12" id="ux_txt_email" name="ux_txt_email" value="<?php echo isset($email_data->email_to) ? $email_data->email_to : ""; ?>" placeholder="<?php _e( "Enter Email ", contact_bank ); ?>"/>
-										</div>
-									</div>
-									<div class="layout-control-group" id="div_field" style="display: none;">	
-										<label class="layout-control-label"><?php _e( "Send To Field", contact_bank ); ?> :
-											<span class="error">*</span>
-										</label>
-										<div class="layout-controls">	
-											<input type="text" class="layout-span8" id="ux_txt_send_to_field" name="ux_txt_send_to_field" value="<?php echo isset($email_data->email_to) ? $email_data->email_to : ""; ?>" placeholder="<?php _e( "Enter Field ", contact_bank ); ?>"/>
-											<select class="layout-span4" id="ux_ddl_send_to_field" name="ux_ddl_send_to_field" style="float: right;" onchange="append_control_shortcode(this.id,'ux_txt_send_to_field');">
-												<option value=""><?php _e("Select a field", contact_bank);?></option>
-											</select>
-										</div>
-									</div>
-								</div>
-								<div class="widget-layout-body">
-									<div class="layout-control-group">
-										<label class="layout-control-label"><?php _e( "From Name", contact_bank ); ?> :
-											<span class="error">*</span>
-										</label>
-										<div class="layout-controls">	
-											<input type="text" class="layout-span8" id="ux_txt_from_name" name="ux_txt_from_name" value="<?php echo isset($email_data->from_name) ? $email_data->from_name : ""; ?>" placeholder="<?php _e( "Enter from name ", contact_bank ); ?>"/>
-											<select class="layout-span4" id="ux_ddl_from_name" name="ux_ddl_from_name" style=" float: right; " onchange="append_control_shortcode(this.id,'ux_txt_from_name');">
-												<option value=""><?php _e("Select a field", contact_bank);?></option>
-											</select>
-										</div>
-									</div>
-								</div>
-								<div class="widget-layout-body">
-									<div class="layout-control-group">
-										<label class="layout-control-label"><?php _e( "From Email", contact_bank ); ?> :
-											<span class="error" >*</span>
-										</label>
-										<div class="layout-controls">	
-											<input type="text" class="layout-span8" id="ux_txt_from_email" name="ux_txt_from_email" value="<?php echo isset($email_data->email_from) ? $email_data->email_from : ""; ?>" placeholder="<?php _e( "Enter from email", contact_bank ); ?>"/>
-											<select class="layout-span4" id="ux_ddl_from_email" name="ux_ddl_from_email" style=" float: right;" onchange="append_control_shortcode(this.id,'ux_txt_from_email');">
-												<option value=""><?php _e("Select a field", contact_bank);?></option>
-											</select>
-										</div>
-									</div>
-								</div>
-								<div class="widget-layout-body">
-									<div class="layout-control-group">
-										<label class="layout-control-label"><?php _e( "Reply To", contact_bank ); ?> :</label>
-										<div class="layout-controls">	
-											<input type="text" class="layout-span8" id="ux_txt_reply_to" name="ux_txt_reply_to" value="<?php echo isset($email_data->reply_to) ? $email_data->reply_to : ""; ?>" placeholder="<?php _e( "Enter Email", contact_bank ); ?>"/>
-											<select class="layout-span4" id="ux_ddl_reply_to" name="ux_ddl_replt_to" style=" float: right;" onchange="append_control_shortcode(this.id,'ux_txt_reply_to');">
-												<option value=""><?php _e("Select a field", contact_bank);?></option>
-											</select>
-										</div>
-									</div>
-								</div>
-								<div class="widget-layout-body">
-									<div class="layout-control-group">
-										<label class="layout-control-label"><?php _e( "CC", contact_bank ); ?> :</label>
-										<div class="layout-controls">	
-											<input type="text" class="layout-span8" id="ux_txt_cc" name="ux_txt_cc" value="<?php echo isset($email_data->cc) ? $email_data->cc : ""; ?>" placeholder="<?php _e( "Enter CC Email ", contact_bank ); ?>"/>
-											<select class="layout-span4" id="ux_ddl_cc" name="ux_ddl_cc" style=" float: right;" onchange="append_control_shortcode(this.id,'ux_txt_cc');">
-												<option value=""><?php _e("Select a field", contact_bank);?></option>
-											</select>
-										</div>
-									</div>
-								</div>
-								<div class="widget-layout-body">
-									<div class="layout-control-group">
-										<label class="layout-control-label"><?php _e( "BCC", contact_bank ); ?> :</label>
-										<div class="layout-controls">	
-											<input type="text" class="layout-span8" id="ux_txt_bcc" name="ux_txt_bcc" value="<?php echo isset($email_data->bcc) ? $email_data->bcc : ""; ?>" placeholder="<?php _e( "Enter Bcc Email", contact_bank ); ?>"/>
-											<select class="layout-span4" id="ux_ddl_bcc" name="ux_ddl_bcc" style=" float: right;" onchange="append_control_shortcode(this.id,'ux_txt_bcc');">
-												<option value=""><?php _e("Select a field", contact_bank);?></option>
-											</select>
-										</div>
-									</div>
-								</div>
-								<div class="widget-layout-body">
-									<div class="layout-control-group">
-										<label class="layout-control-label"><?php _e( "Subject", contact_bank ); ?> :
-											<span class="error">*</span>
-										</label>
-										<div class="layout-controls">	
-											<input type="text" class="layout-span8" id="ux_txt_subject" name="ux_txt_subject" value="<?php echo isset($email_data->subject) ? $email_data->subject : ""; ?>" placeholder="<?php _e( "Enter Subject", contact_bank ); ?>"/>
-											<select class="layout-span4" id="ux_ddl_subject" name="ux_ddl_subject" style=" float: right;" onchange="append_control_shortcode(this.id,'ux_txt_subject');">
-												<option value=""><?php _e("Select a field", contact_bank);?></option>
-											</select>
-										</div>
-									</div>
-								</div>
-								<div class="widget-layout-body">
-									<div class="layout-control-group">
-										<label class="layout-control-label"><?php _e( "Message", contact_bank ); ?> :</label>
-										<div class="layout-controls">
-											<div class="layout-span8">
-											<?php
-												$distribution = isset($email_data->body_content) ? $email_data->body_content : ""; 
-												wp_editor( $distribution, $id ="uxEmailTemplate", array("media_buttons" => true, "textarea_rows" => 8, "tabindex" => 4 ) ); 
-												?>
+											<div class="widget-layout-body">
+												<div class="layout-control-group" id="div_email" style="display: none;">
+													<label class="layout-control-label"><?php _e( "Email", contact_bank ); ?> :
+														<span class="error">*</span>
+													</label>
+													<div class="layout-controls">	
+														<input type="text" class="layout-span12" id="ux_txt_email" name="ux_txt_email" value="<?php echo isset($email_data->email_to) ? $email_data->email_to : ""; ?>" placeholder="<?php _e( "Enter Email ", contact_bank ); ?>"/>
+													</div>
+												</div>
+												<div class="layout-control-group" id="div_field" style="display: none;">	
+													<label class="layout-control-label"><?php _e( "Send To Field", contact_bank ); ?> :
+														<span class="error">*</span>
+													</label>
+													<div class="layout-controls">	
+														<input type="text" class="layout-span8" id="ux_txt_send_to_field" name="ux_txt_send_to_field" value="<?php echo isset($email_data->email_to) ? $email_data->email_to : ""; ?>" placeholder="<?php _e( "Enter Field ", contact_bank ); ?>"/>
+														<select class="layout-span4" id="ux_ddl_send_to_field" name="ux_ddl_send_to_field" style="float: right;" onchange="append_control_shortcode(this.id,'ux_txt_send_to_field');">
+															<option value=""><?php _e("Select a field", contact_bank);?></option>
+														</select>
+													</div>
+												</div>
 											</div>
-											<div class="layout-span4">
-												<select class="layout-span12" id="ux_ddl_message" name="ux_ddl_message" style=" float: right;" onchange="append_add_control_shortcode(this.id);">
-													<option value=""><?php _e("Insert a Field into Your Form Message", contact_bank);?></option>
-												</select>
+											<div class="widget-layout-body">
+												<div class="layout-control-group">
+													<label class="layout-control-label"><?php _e( "From Name", contact_bank ); ?> :
+														<span class="error">*</span>
+													</label>
+													<div class="layout-controls">	
+														<input type="text" class="layout-span8" id="ux_txt_from_name" name="ux_txt_from_name" value="<?php echo isset($email_data->from_name) ? $email_data->from_name : ""; ?>" placeholder="<?php _e( "Enter from name ", contact_bank ); ?>"/>
+														<select class="layout-span4" id="ux_ddl_from_name" name="ux_ddl_from_name" style=" float: right; " onchange="append_control_shortcode(this.id,'ux_txt_from_name');">
+															<option value=""><?php _e("Select a field", contact_bank);?></option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="widget-layout-body">
+												<div class="layout-control-group">
+													<label class="layout-control-label"><?php _e( "From Email", contact_bank ); ?> :
+														<span class="error" >*</span>
+													</label>
+													<div class="layout-controls">	
+														<input type="text" class="layout-span8" id="ux_txt_from_email" name="ux_txt_from_email" value="<?php echo isset($email_data->email_from) ? $email_data->email_from : ""; ?>" placeholder="<?php _e( "Enter from email", contact_bank ); ?>"/>
+														<select class="layout-span4" id="ux_ddl_from_email" name="ux_ddl_from_email" style=" float: right;" onchange="append_control_shortcode(this.id,'ux_txt_from_email');">
+															<option value=""><?php _e("Select a field", contact_bank);?></option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="widget-layout-body">
+												<div class="layout-control-group">
+													<label class="layout-control-label"><?php _e( "Reply To", contact_bank ); ?> :</label>
+													<div class="layout-controls">	
+														<input type="text" class="layout-span8" id="ux_txt_reply_to" name="ux_txt_reply_to" value="<?php echo isset($email_data->reply_to) ? $email_data->reply_to : ""; ?>" placeholder="<?php _e( "Enter Email", contact_bank ); ?>"/>
+														<select class="layout-span4" id="ux_ddl_reply_to" name="ux_ddl_replt_to" style=" float: right;" onchange="append_control_shortcode(this.id,'ux_txt_reply_to');">
+															<option value=""><?php _e("Select a field", contact_bank);?></option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="widget-layout-body">
+												<div class="layout-control-group">
+													<label class="layout-control-label"><?php _e( "CC", contact_bank ); ?> :</label>
+													<div class="layout-controls">	
+														<input type="text" class="layout-span8" id="ux_txt_cc" name="ux_txt_cc" value="<?php echo isset($email_data->cc) ? $email_data->cc : ""; ?>" placeholder="<?php _e( "Enter CC Email ", contact_bank ); ?>"/>
+														<select class="layout-span4" id="ux_ddl_cc" name="ux_ddl_cc" style=" float: right;" onchange="append_control_shortcode(this.id,'ux_txt_cc');">
+															<option value=""><?php _e("Select a field", contact_bank);?></option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="widget-layout-body">
+												<div class="layout-control-group">
+													<label class="layout-control-label"><?php _e( "BCC", contact_bank ); ?> :</label>
+													<div class="layout-controls">	
+														<input type="text" class="layout-span8" id="ux_txt_bcc" name="ux_txt_bcc" value="<?php echo isset($email_data->bcc) ? $email_data->bcc : ""; ?>" placeholder="<?php _e( "Enter Bcc Email", contact_bank ); ?>"/>
+														<select class="layout-span4" id="ux_ddl_bcc" name="ux_ddl_bcc" style=" float: right;" onchange="append_control_shortcode(this.id,'ux_txt_bcc');">
+															<option value=""><?php _e("Select a field", contact_bank);?></option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="widget-layout-body">
+												<div class="layout-control-group">
+													<label class="layout-control-label"><?php _e( "Subject", contact_bank ); ?> :
+														<span class="error">*</span>
+													</label>
+													<div class="layout-controls">	
+														<input type="text" class="layout-span8" id="ux_txt_subject" name="ux_txt_subject" value="<?php echo isset($email_data->subject) ? $email_data->subject : ""; ?>" placeholder="<?php _e( "Enter Subject", contact_bank ); ?>"/>
+														<select class="layout-span4" id="ux_ddl_subject" name="ux_ddl_subject" style=" float: right;" onchange="append_control_shortcode(this.id,'ux_txt_subject');">
+															<option value=""><?php _e("Select a field", contact_bank);?></option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="widget-layout-body">
+												<div class="layout-control-group">
+													<label class="layout-control-label"><?php _e( "Message", contact_bank ); ?> :</label>
+													<div class="layout-controls">
+														<div class="layout-span8">
+														<?php
+															$distribution = isset($email_data->body_content) ? $email_data->body_content : ""; 
+															wp_editor( $distribution, $id ="uxEmailTemplate", array("media_buttons" => true, "textarea_rows" => 8, "tabindex" => 4 ) ); 
+															?>
+														</div>
+														<div class="layout-span4">
+															<select class="layout-span12" id="ux_ddl_message" name="ux_ddl_message" style=" float: right;" onchange="append_add_control_shortcode(this.id);">
+																<option value=""><?php _e("Insert a Field into Your Form Message", contact_bank);?></option>
+															</select>
+														</div>
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>
+									<div class="separator-doubled"></div>
+									<input style="margin-bottom: 10px;" class="btn btn-info layout-span1" type="submit" id="submit_button" name="submit_button" value="<?php _e("Save", contact_bank); ?>" />
 								</div>
 							</div>
 						</div>
-						<div class="separator-doubled"></div>
-						<input  class="btn btn-info layout-span1" type="submit" id="submit_button" name="submit_button" value="<?php _e("Save", contact_bank); ?>" />
 					</div>
 				</div>
 			</div>

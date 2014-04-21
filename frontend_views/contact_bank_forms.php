@@ -1,5 +1,6 @@
 <?php
 global $wpdb;
+
 $control_settings_array = array();
 $form_settings_array = array();
 $layout_settings_array = array();
@@ -71,6 +72,7 @@ $forms_email_settings = $wpdb->get_row
 	)
 );
 ?>
+
 <style type="text/css">
 
     .main_container_form
