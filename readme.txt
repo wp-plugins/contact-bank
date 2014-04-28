@@ -135,8 +135,6 @@ Visit [here](http://tech-banker.com/contact-bank) to upgrade to Pro Version now.
 
 1. Upload `Contact Bank` folder to the `/wp-content/plugins/` directory.
 2. Activate the plugin through the 'Plugins' menu in your WordPress admin panel.
-3. You can adjust necessary settings through your WordPress admin panel in "Settings" > "Contact Form".
-4. Create a page or a post and insert shortcode [contact_form] to the text.
 
 == Frequently Asked Questions ==
 
