@@ -461,10 +461,7 @@ if($version == "" || $version == "1.0")
         }
         $wpdb->query
         (
-            $wpdb->prepare
-            (
-                "INSERT INTO " . contact_bank_roles_capability() . "(roles_capability_key,roles_capability_value) VALUES ".implode(',', $sql1),""
-            )
+            "INSERT INTO " . contact_bank_roles_capability() . "(roles_capability_key,roles_capability_value) VALUES ".implode(',', $sql1),""
         );
     }
 	update_option("contact-bank-version-number","2.1");
@@ -501,10 +498,7 @@ else if($version == "2.0")
         }
         $wpdb->query
         (
-            $wpdb->prepare
-            (
-                "INSERT INTO " . contact_bank_roles_capability() . "(roles_capability_key,roles_capability_value) VALUES ".implode(',', $sql1),""
-            )
+            "INSERT INTO " . contact_bank_roles_capability() . "(roles_capability_key,roles_capability_value) VALUES ".implode(',', $sql1),""
         );
     }
 	if (count($wpdb->get_var('SHOW TABLES LIKE "' . contact_bank_form_settings_Table() . '"')) == 0)
@@ -594,10 +588,7 @@ else if($version == "2.1")
         }
         $wpdb->query
         (
-            $wpdb->prepare
-            (
-                "INSERT INTO " . contact_bank_roles_capability() . "(roles_capability_key,roles_capability_value) VALUES ".implode(',', $sql1),""
-            )
+            "INSERT INTO " . contact_bank_roles_capability() . "(roles_capability_key,roles_capability_value) VALUES ".implode(',', $sql1),""
         );
     }
 	 update_option("contact-bank-version-number","2.1");

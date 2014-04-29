@@ -21,7 +21,7 @@
 			$cb_user_role_permission = "read";
 		break;
 	}
-if (!current_user_can($cb_user_role_permission))
+if(!current_user_can($cb_user_role_permission))
 {
 	return;
 }
@@ -200,7 +200,6 @@ else
 			$wpdb->query
 			    (
 			        "TRUNCATE Table ".contact_bank_layout_settings_Table()
-			      
 			    );
 			
 			$wpdb->query
@@ -215,140 +214,139 @@ else
 		}
 		else if($_REQUEST["param"] == "submit_form_messages_settings")
 		{
-			$sql= "";
-			$labels_for_email = "";
-			$sql1=array();
-			$form_id = intval($_REQUEST["form_id"]);
-			$form_settings = json_decode(stripcslashes($_REQUEST["form_settings"]),true);
-			$array_delete_form_controls = json_decode(stripcslashes($_REQUEST["array_delete_form_controls"]),true);
-			foreach($array_delete_form_controls as $element)
-			{
-			    $sql1[] = $element;
-			}
-			if(count($sql1) > 0)
-			{
-			    $wpdb->query
-			        (
-			            $wpdb->prepare
-			                (
-			                    "Delete FROM " . contact_bank_dynamic_settings_form() . " where dynamicId in (".implode(',', $sql1).")",
-			                    ""
-			                )
-			        );
-			    $wpdb->query
-			        (
-			            $wpdb->prepare
-			                (
-			                    "Delete FROM " . create_control_Table() . " where control_id in (".implode(',', $sql1).")",""
 			
-			                )
-			        );
-			}
-			foreach($form_settings as $element)
-			{
-			    foreach ($element as $val => $keyInner)
-			    {
-			        if($val == "form_name")
-			        {
-			            $wpdb->query
-			                (
-			                    $wpdb->prepare
-			                        (
-			                            "UPDATE " . contact_bank_contact_form() . " SET `form_name` = '".$keyInner. "' where form_id = %d ",
-			                            $form_id
-			                        )
-			                );
-			        }
-			        else
-			        {
-			        	$labels_for_email = $val;
-			            if($val == "redirect_url")
-			            {
-			                $sql .= ' WHEN `form_message_key` = "'.mysql_real_escape_string($val).'" THEN "'.mysql_real_escape_string(html_entity_decode($keyInner)).'"';
-			            }
-			            else
-			            {
-			                $sql .= ' WHEN `form_message_key` = "'.mysql_real_escape_string($val).'" THEN "'.mysql_real_escape_string($keyInner).'"';
-			            }
-			        }
-			    }
-				
-				$wpdb->query
-				(
-				    $wpdb->prepare
+				$sql= "";
+				$labels_for_email = "";
+				$sql1=array();
+				$form_id = intval($_REQUEST["form_id"]);
+				$form_settings = json_decode(stripcslashes($_REQUEST["form_settings"]),true);
+				$array_delete_form_controls = json_decode(stripcslashes($_REQUEST["array_delete_form_controls"]),true);
+				foreach($array_delete_form_controls as $element)
+				{
+				    $sql1[] = $element;
+				}
+				if(count($sql1) > 0)
+				{
+				    $wpdb->query
 				        (
-				            "UPDATE " . contact_bank_form_settings_Table() . " SET `form_message_value` = CASE ".$sql . " END where form_id = %d ",
+				            $wpdb->prepare
+			                (
+			                	"Delete FROM " . contact_bank_dynamic_settings_form() . " where dynamicId in (".implode(',', $sql1).")",""
+			                )
+				        );
+				    $wpdb->query
+				        (
+				            $wpdb->prepare
+			                (
+			                	"Delete FROM " . create_control_Table() . " where control_id in (".implode(',', $sql1).")",""
+			                )
+				        );
+				}
+				foreach($form_settings as $element)
+				{
+				    foreach ($element as $val => $keyInner)
+				    {
+				        if($val == "form_name")
+				        {
+				            $wpdb->query
+				                (
+				                    $wpdb->prepare
+				                        (
+				                            "UPDATE " . contact_bank_contact_form() . " SET `form_name` = '".strip_tags($keyInner). "' where form_id = %d ",
+				                            $form_id
+				                        )
+				                );
+				        }
+				        else
+				        {
+				        	$labels_for_email = $val;
+				            if($val == "redirect_url")
+				            {
+				                $sql .= ' WHEN `form_message_key` = "'.mysql_real_escape_string($val).'" THEN "'.mysql_real_escape_string(html_entity_decode($keyInner)).'"';
+				            }
+				            else
+				            {
+				                $sql .= ' WHEN `form_message_key` = "'.mysql_real_escape_string($val).'" THEN "'.mysql_real_escape_string($keyInner).'"';
+				            }
+				        }
+				    }
+					$wpdb->query
+					(
+					    $wpdb->prepare
+				        (
+				            "UPDATE " . contact_bank_form_settings_Table() . " SET `form_message_value` = CASE ".strip_tags($sql) . " END where form_id = %d ",
 				            $form_id
 				        )
-				);
-				
-            }
-			$fields_created = $wpdb->get_results
-			(
-				$wpdb->prepare
-				(
-					"SELECT dynamicId, dynamic_settings_value,field_id	FROM ". contact_bank_dynamic_settings_form(). " JOIN " . create_control_Table(). " ON " . contact_bank_dynamic_settings_form().". dynamicId  = ". create_control_Table(). ".control_id WHERE `dynamic_settings_key` = 'cb_admin_label' and form_id = %d Order By ".create_control_Table().".sorting_order",
-					$form_id
-				)
-			);
-			$controls = "";
-			$email_dynamicId = "";
-			for($flag=0;$flag<count($fields_created);$flag++)
-			{
-				$show_in_email = $wpdb->get_var
+					);
+					
+	            }
+				$fields_created = $wpdb->get_results
 				(
 					$wpdb->prepare
 					(
-						"SELECT dynamic_settings_value FROM ". contact_bank_dynamic_settings_form(). " WHERE `dynamic_settings_key` = 'cb_show_email' and dynamicId = %d",
-						$fields_created[$flag]->dynamicId
+						"SELECT dynamicId, dynamic_settings_value,field_id	FROM ". contact_bank_dynamic_settings_form(). " JOIN " . create_control_Table(). " ON " . contact_bank_dynamic_settings_form().". dynamicId  = ". create_control_Table(). ".control_id WHERE `dynamic_settings_key` = 'cb_admin_label' and form_id = %d Order By ".create_control_Table().".sorting_order",
+						$form_id
 					)
 				);
-				if($show_in_email == "0")
+				$controls = "";
+				$email_dynamicId = "";
+				for($flag=0;$flag<count($fields_created);$flag++)
 				{
-					$controls .= "<strong>".$fields_created[$flag]->dynamic_settings_value ."</strong>: ". "[control_".$fields_created[$flag]->dynamicId."] <br>";
+					$show_in_email = $wpdb->get_var
+					(
+						$wpdb->prepare
+						(
+							"SELECT dynamic_settings_value FROM ". contact_bank_dynamic_settings_form(). " WHERE `dynamic_settings_key` = 'cb_show_email' and dynamicId = %d",
+							$fields_created[$flag]->dynamicId
+						)
+					);
+					if($show_in_email == "0")
+					{
+						$controls .= "<strong>".$fields_created[$flag]->dynamic_settings_value ."</strong>: ". "[control_".$fields_created[$flag]->dynamicId."] <br>";
+					}
+					if($fields_created[$flag]->field_id == 3)
+					{
+						$email_dynamicId = $fields_created[$flag]->dynamicId;
+					}
 				}
-				if($fields_created[$flag]->field_id == 3)
-				{
-					$email_dynamicId = $fields_created[$flag]->dynamicId;
-				}
-			}
-			$body_message = "Hello Admin,<br><br>
-			A new user visited your website.<br><br>
-			Here are the details :<br><br>
-			".$controls."
-			<br>Thanks,<br><br>
-			<strong>Technical Support Team</strong>";
-			$wpdb->query
-			(
-				$wpdb->prepare
+				$body_message = "Hello Admin,<br><br>
+				A new user visited your website.<br><br>
+				Here are the details :<br><br>
+				".$controls."
+				<br>Thanks,<br><br>
+				<strong>Technical Support Team</strong>";
+				$wpdb->query
 				(
-					"UPDATE " . contact_bank_email_template_admin() . " SET `body_content` = %s where form_id = %d and name = %s",
-					$body_message,
-					$form_id,
-					"Admin Notification"
-				)
-			);
-			$wpdb->query
-			(
-				$wpdb->prepare
+					$wpdb->prepare
+					(
+						"UPDATE " . contact_bank_email_template_admin() . " SET `body_content` = %s where form_id = %d and name = %s",
+						$body_message,
+						$form_id,
+						"Admin Notification"
+					)
+				);
+				$wpdb->query
 				(
-					"UPDATE " . contact_bank_email_template_admin() . " SET `email_to` = %s where form_id = %d and name = %s",
-					"[control_".$email_dynamicId."]",
-					$form_id,
-					"Client Notification"
-				)
-			);
-			$wpdb->query
-			(
-				$wpdb->prepare
+					$wpdb->prepare
+					(
+						"UPDATE " . contact_bank_email_template_admin() . " SET `email_to` = %s where form_id = %d and name = %s",
+						"[control_".$email_dynamicId."]",
+						$form_id,
+						"Client Notification"
+					)
+				);
+				$wpdb->query
 				(
-					"UPDATE " . contact_bank_email_template_admin() . " SET `send_to` = %d where form_id = %d and name = %s",
-					1,
-					$form_id,
-					"Client Notification"
-					
-				)
-			);
+					$wpdb->prepare
+					(
+						"UPDATE " . contact_bank_email_template_admin() . " SET `send_to` = %d where form_id = %d and name = %s",
+						1,
+						$form_id,
+						"Client Notification"
+						
+					)
+				);
+			
 			die();
         }
 		else if ($_REQUEST["param"] == "update_licensing_settings")
@@ -459,10 +457,10 @@ else
 					$wpdb->query
 					(
 						$wpdb->prepare
-							(
-								"UPDATE " . contact_bank_dynamic_settings_form() . " SET `dynamic_settings_value` = CASE ".$sql . " END where dynamicId = %d ",
+						(
+								"UPDATE " . contact_bank_dynamic_settings_form() . " SET `dynamic_settings_value` = CASE ".strip_tags($sql). " END where dynamicId = %d ",
 								$controlId
-							)
+						)
 					);
 				}
 			}

@@ -1,14 +1,10 @@
 <?php
 $cb_lang = array();
 $cb_lang_translated_languages = array();
-array_push($cb_lang_translated_languages,"fr_FR","ru_RU","en_US","sv_SE","es_ES", "nl_NL","hu_HU","de_DE", "pt_BR", "pt_PT","et");
+array_push($cb_lang_translated_languages,"fr_FR","ru_RU","en_US","es_ES", "nl_NL","hu_HU","de_DE", "pt_BR", "pt_PT","et","he_IL");
 
-array_push($cb_lang, "ar", "bg_BG", "da_DK", "fi_FI", "he_IL", "id_ID",
- "it_IT", "ja", "ko_KR", "ms_MY", "pl_PL", "ro_RO", "sk_SK", "sl_SI", "sq_AL",
- "sr_RS", "th", "tr", "zh_CN");
+array_push($cb_lang, "ar", "bg_BG", "da_DK", "fi_FI", "id_ID","it_IT", "ja", "ko_KR", "ms_MY", "pl_PL", "ro_RO", "sk_SK", "sl_SI", "sq_AL", "sr_RS", "sv_SE", "th", "tr", "zh_CN");
 $cb_language = get_locale();
-
-
 ?>
 <script>
 jQuery(document).ready(function()

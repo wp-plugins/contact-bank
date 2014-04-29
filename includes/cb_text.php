@@ -40,7 +40,7 @@
 						<label class="layout-control-label"><?php _e( "Label", contact_bank ); ?> :</label>
 						<div class="layout-controls">
 							<input type="text" class="layout-span12" onkeyup="enter_admin_label(<?php echo $dynamicId; ?>);" 
-							value="<?php echo isset($form_settings[$dynamicId]["cb_label_value"])  ? $form_settings[$dynamicId]["cb_label_value"] :  _e( "Untitled", contact_bank ); ?>" 
+							value="<?php echo isset($form_settings[$dynamicId]["cb_label_value"])  ? strip_tags($form_settings[$dynamicId]["cb_label_value"]) :  _e( "Untitled", contact_bank ); ?>" 
 							id="ux_label_text_<?php echo $dynamicId; ?>" placeholder="<?php _e( "Enter Label", contact_bank ); ?>" name="ux_label_text_<?php echo $dynamicId; ?>" />
 						</div>
 					</div>

@@ -2,223 +2,232 @@
 	$form_settings = array();
 	global $wpdb;
 	$form_id = intval($_REQUEST["form_id"]);
-	$last_form_id = $wpdb->get_var
+	$count_forms = $wpdb->get_var
 	(
-		$wpdb->prepare
-		(
-			"SELECT form_id FROM " .contact_bank_contact_form(). " where form_id= %d",
-			$form_id
-		)
+		"SELECT count(form_id) FROM ". contact_bank_contact_form()
 	);
-	if(count($last_form_id) == 0)
+	if($count_forms < 1)
 	{
 		
-		$wpdb->query
-		(
-			$wpdb->prepare
+			$last_form_id = $wpdb->get_var
 			(
-				"INSERT INTO ".contact_bank_contact_form()."(form_id,form_name) VALUES(%d,%s)",
-                $form_id,
-				"Untitled Form (Draft)"
-			)
-		);
-		$wpdb->query
-		(
-			$wpdb->prepare
-			(
-				"INSERT INTO ". contact_bank_form_settings_Table() ."(form_id,form_message_key,form_message_value)VALUES(%d, %s, %s)",
-				$form_id,
-				"redirect",
-				"0"
-			)
-		);
-		$wpdb->query
-		(
-			$wpdb->prepare
-			(
-				"INSERT INTO ". contact_bank_form_settings_Table() ."(form_id,form_message_key,form_message_value)VALUES(%d, %s, %s)",
-				$form_id,
-				"redirect_url",
-				""
-			)
-		);
-		$wpdb->query
-		(
-			$wpdb->prepare
-			(
-				"INSERT INTO ". contact_bank_form_settings_Table() ."(form_id,form_message_key,form_message_value)VALUES(%d, %s, %s)",
-				$form_id,
-				"success_message",
-				""
-			)
-		);
-		$wpdb->query
-		(
-			$wpdb->prepare
-			(
-				"INSERT INTO ". contact_bank_form_settings_Table() ."(form_id,form_message_key,form_message_value)VALUES(%d, %s, %s)",
-				$form_id,
-				"blank_field_message",
-				"Required field must not be blank"
-			)
-		);
-		$wpdb->query
-		(
-			$wpdb->prepare
-			(
-				"INSERT INTO ". contact_bank_form_settings_Table() ."(form_id,form_message_key,form_message_value)VALUES(%d, %s, %s)",
-				$form_id,
-				"incorrect_email_message",
-				"Please enter a valid e-mail address"
-			)
-		);
-		$wpdb->query
-		(
-			$wpdb->prepare
-			(
-				"INSERT INTO ". contact_bank_form_settings_Table() ."(form_id,form_message_key,form_message_value)VALUES(%d, %s, %s)",
-				$form_id,
-				"form_description",
-				""
-			)
-		);
-        $settings = array();
-        $settings["label_setting_font_family"] = "inherit";
-        $settings["label_setting_font_color"] = "#000000";
-        $settings["label_setting_font_style"] =  "normal";
-        $settings["label_setting_font_size"] = "16";
-        $settings["label_setting_font_align_left"] = "0";
-        $settings["label_setting_label_position"] = "top";
-        $settings["label_setting_field_size"] = "11";
-        $settings["label_setting_field_align"] = "left";
-        $settings["label_setting_hide_label"] = "0";
-		$settings["label_setting_text_direction"] = "inherit";
-
-        $settings["input_field_font_family"] = "inherit";
-        $settings["input_field_font_color"] = "#000000";
-        $settings["input_field_font_style"] = "normal";
-        $settings["input_field_font_size"] = "14";
-        $settings["input_field_border_radius"] = "0";
-        $settings["input_field_border_color"] = "#e5e5e5";
-        $settings["input_field_border_size"] = "1";
-        $settings["input_field_border_style"] = "solid";
-        $settings["input_field_clr_bg_color"] = "#ffffff";
-        $settings["input_field_rdl_multiple_row"] = "1";
-		$settings["input_field_rdl_text_align"] = "0";
-		$settings["input_field_text_direction"] = "inherit";
-		$settings["input_field_input_size"] = "layout-span6";
-
-		$settings["submit_button_font_family"] = "inherit";
-        $settings["submit_button_text"] = "Submit ";
-        $settings["submit_button_font_style"] = "normal";
-        $settings["submit_button_font_size"] = "12";
-        $settings["submit_button_button_width"] = "110";
-        $settings["submit_button_bg_color"] =  "#B8B8B8";
-        $settings["submit_button_hover_bg_color"] = "#e5e5e5";
-        $settings["submit_button_text_color"] =  "#000000";
-        $settings["submit_button_border_color"] = "#B8B8B8";
-        $settings["submit_button_border_size"] = "1";
-        $settings["submit_button_border_radius"] = "2";
-		$settings["submit_button_rdl_text_align"] = "0";
-		$settings["submit_button_text_direction"] = "inherit";
-
-        $settings["success_msg_font_family"] = "inherit";
-        $settings["success_msg_font_size"] = "12";
-        $settings["success_msg_bg_color"] = "#e5ffd5";
-        $settings["success_msg_border_color"] =  "#e5ffd5";
-        $settings["success_msg_text_color"] =  "#6aa500";
-		$settings["success_msg_rdl_text_align"] = "0";
-		$settings["success_msg_text_direction"] = "inherit";
-
-        $settings["error_msg_font_family"] =  "inherit";
-        $settings["error_msg_font_size"] = "12";
-        $settings["error_msg_bg_color"] = "#ffcaca";
-        $settings["error_msg_border_color"] = "#ffcaca";
-        $settings["error_msg_text_color"] = "#ff2c38";
-		$settings["error_msg_rdl_text_align"] = "0";
-		$settings["error_msg_text_direction"] = "inherit";
-		foreach($settings as $key => $value)
-        {
-                $sql[] = '('.$form_id.',"'.mysql_real_escape_string($key).'", "'.mysql_real_escape_string($value).'")';
-        }
-        $wpdb->query
-        (
-           "INSERT INTO " . contact_bank_layout_settings_Table() . "(form_id,form_settings_key,form_settings_value) VALUES ".implode(',', $sql)
-        );
-		$email_name = "Admin Notification";
-		$send_to = get_option('admin_email');
-		$email_address = get_option('admin_email');
-		$email_from_name = "Site Administration";
-		$email_from_email = get_option('admin_email');
-		$email_subject  = "New Contact recieved from Website";
-		$uxDescription_email = "Hello Admin,<br><br>
-		A new user has visited your website.<br><br>
-		Here are the details :<br><br>
-		<br>Thanks,<br><br>
-		<strong>Technical Support Team</strong>";
-		$wpdb->query
-		(
-			$wpdb->prepare
-			(
-				"INSERT INTO " . contact_bank_email_template_admin(). " (email_to,email_from,body_content,subject,form_id,from_name,name,send_to) VALUES(%s,%s,%s,%s,%d,%s,%s,%d)",
-				$email_address,
-				$email_from_email,
-				$uxDescription_email,
-				$email_subject,
-				$form_id,
-				$email_from_name,
-				$email_name,
-				$send_to
-			)
-		);
-		$email_name_client = "Client Notification";
-		$email_subject_client  = "Thanks for visiting our website";
-		$email_from_name = "Site Administration";
-		$email_from_email = get_option('admin_email');
-		$uxDescription_email_client = "Hi,<br><br>
-		Thanks for visiting our website. We will be Contacting you soon next 24 hours.<br><br>
-		<br>Thanks,<br><br>
-		<strong>Support Team</strong>
-		";
-		$wpdb->query
-		(
-			$wpdb->prepare
-			(
-			"INSERT INTO " . contact_bank_email_template_admin(). " (email_to,email_from,body_content,subject,form_id,from_name,name,send_to) VALUES(%s,%s,%s,%s,%d,%s,%s,%d)",
-			"",
-			$email_from_email,
-			$uxDescription_email_client,
-			$email_subject_client,
-			$form_id,
-			$email_from_name,
-			$email_name_client,
-			""
-			)
-		);
-    }
-	else
-	{
-		$form_data = $wpdb->get_results
-		(
-			$wpdb->prepare
-			(
-				"SELECT * FROM " .contact_bank_form_settings_Table(). " where form_id = %d",
-				$form_id
-			)
-		);
-		for($flag = 0; $flag<count($form_data);$flag++)
+				$wpdb->prepare
+				(
+					"SELECT form_id FROM " .contact_bank_contact_form(). " where form_id= %d",
+					$form_id
+				)
+			);
+			if(count($last_form_id) == 0)
+			{
+				
+				$wpdb->query
+				(
+					$wpdb->prepare
+					(
+						"INSERT INTO ".contact_bank_contact_form()."(form_id,form_name) VALUES(%d,%s)",
+		                $form_id,
+						"Untitled Form (Draft)"
+					)
+				);
+				$wpdb->query
+				(
+					$wpdb->prepare
+					(
+						"INSERT INTO ". contact_bank_form_settings_Table() ."(form_id,form_message_key,form_message_value)VALUES(%d, %s, %s)",
+						$form_id,
+						"redirect",
+						"0"
+					)
+				);
+				$wpdb->query
+				(
+					$wpdb->prepare
+					(
+						"INSERT INTO ". contact_bank_form_settings_Table() ."(form_id,form_message_key,form_message_value)VALUES(%d, %s, %s)",
+						$form_id,
+						"redirect_url",
+						""
+					)
+				);
+				$wpdb->query
+				(
+					$wpdb->prepare
+					(
+						"INSERT INTO ". contact_bank_form_settings_Table() ."(form_id,form_message_key,form_message_value)VALUES(%d, %s, %s)",
+						$form_id,
+						"success_message",
+						""
+					)
+				);
+				$wpdb->query
+				(
+					$wpdb->prepare
+					(
+						"INSERT INTO ". contact_bank_form_settings_Table() ."(form_id,form_message_key,form_message_value)VALUES(%d, %s, %s)",
+						$form_id,
+						"blank_field_message",
+						"Required field must not be blank"
+					)
+				);
+				$wpdb->query
+				(
+					$wpdb->prepare
+					(
+						"INSERT INTO ". contact_bank_form_settings_Table() ."(form_id,form_message_key,form_message_value)VALUES(%d, %s, %s)",
+						$form_id,
+						"incorrect_email_message",
+						"Please enter a valid e-mail address"
+					)
+				);
+				$wpdb->query
+				(
+					$wpdb->prepare
+					(
+						"INSERT INTO ". contact_bank_form_settings_Table() ."(form_id,form_message_key,form_message_value)VALUES(%d, %s, %s)",
+						$form_id,
+						"form_description",
+						""
+					)
+				);
+		        $settings = array();
+		        $settings["label_setting_font_family"] = "inherit";
+		        $settings["label_setting_font_color"] = "#000000";
+		        $settings["label_setting_font_style"] =  "normal";
+		        $settings["label_setting_font_size"] = "16";
+		        $settings["label_setting_font_align_left"] = "0";
+		        $settings["label_setting_label_position"] = "top";
+		        $settings["label_setting_field_size"] = "11";
+		        $settings["label_setting_field_align"] = "left";
+		        $settings["label_setting_hide_label"] = "0";
+				$settings["label_setting_text_direction"] = "inherit";
+		
+		        $settings["input_field_font_family"] = "inherit";
+		        $settings["input_field_font_color"] = "#000000";
+		        $settings["input_field_font_style"] = "normal";
+		        $settings["input_field_font_size"] = "14";
+		        $settings["input_field_border_radius"] = "0";
+		        $settings["input_field_border_color"] = "#e5e5e5";
+		        $settings["input_field_border_size"] = "1";
+		        $settings["input_field_border_style"] = "solid";
+		        $settings["input_field_clr_bg_color"] = "#ffffff";
+		        $settings["input_field_rdl_multiple_row"] = "1";
+				$settings["input_field_rdl_text_align"] = "0";
+				$settings["input_field_text_direction"] = "inherit";
+				$settings["input_field_input_size"] = "layout-span6";
+		
+				$settings["submit_button_font_family"] = "inherit";
+		        $settings["submit_button_text"] = "Submit ";
+		        $settings["submit_button_font_style"] = "normal";
+		        $settings["submit_button_font_size"] = "12";
+		        $settings["submit_button_button_width"] = "110";
+		        $settings["submit_button_bg_color"] =  "#B8B8B8";
+		        $settings["submit_button_hover_bg_color"] = "#e5e5e5";
+		        $settings["submit_button_text_color"] =  "#000000";
+		        $settings["submit_button_border_color"] = "#B8B8B8";
+		        $settings["submit_button_border_size"] = "1";
+		        $settings["submit_button_border_radius"] = "2";
+				$settings["submit_button_rdl_text_align"] = "0";
+				$settings["submit_button_text_direction"] = "inherit";
+		
+		        $settings["success_msg_font_family"] = "inherit";
+		        $settings["success_msg_font_size"] = "12";
+		        $settings["success_msg_bg_color"] = "#e5ffd5";
+		        $settings["success_msg_border_color"] =  "#e5ffd5";
+		        $settings["success_msg_text_color"] =  "#6aa500";
+				$settings["success_msg_rdl_text_align"] = "0";
+				$settings["success_msg_text_direction"] = "inherit";
+		
+		        $settings["error_msg_font_family"] =  "inherit";
+		        $settings["error_msg_font_size"] = "12";
+		        $settings["error_msg_bg_color"] = "#ffcaca";
+		        $settings["error_msg_border_color"] = "#ffcaca";
+		        $settings["error_msg_text_color"] = "#ff2c38";
+				$settings["error_msg_rdl_text_align"] = "0";
+				$settings["error_msg_text_direction"] = "inherit";
+				foreach($settings as $key => $value)
+		        {
+		                $sql[] = '('.$form_id.',"'.mysql_real_escape_string($key).'", "'.mysql_real_escape_string($value).'")';
+		        }
+		        $wpdb->query
+		        (
+		           "INSERT INTO " . contact_bank_layout_settings_Table() . "(form_id,form_settings_key,form_settings_value) VALUES ".implode(',', $sql)
+		        );
+				$email_name = "Admin Notification";
+				$send_to = get_option('admin_email');
+				$email_address = get_option('admin_email');
+				$email_from_name = "Site Administration";
+				$email_from_email = get_option('admin_email');
+				$email_subject  = "New Contact recieved from Website";
+				$uxDescription_email = "Hello Admin,<br><br>
+				A new user has visited your website.<br><br>
+				Here are the details :<br><br>
+				<br>Thanks,<br><br>
+				<strong>Technical Support Team</strong>";
+				$wpdb->query
+				(
+					$wpdb->prepare
+					(
+						"INSERT INTO " . contact_bank_email_template_admin(). " (email_to,email_from,body_content,subject,form_id,from_name,name,send_to) VALUES(%s,%s,%s,%s,%d,%s,%s,%d)",
+						$email_address,
+						$email_from_email,
+						$uxDescription_email,
+						$email_subject,
+						$form_id,
+						$email_from_name,
+						$email_name,
+						$send_to
+					)
+				);
+				$email_name_client = "Client Notification";
+				$email_subject_client  = "Thanks for visiting our website";
+				$email_from_name = "Site Administration";
+				$email_from_email = get_option('admin_email');
+				$uxDescription_email_client = "Hi,<br><br>
+				Thanks for visiting our website. We will be Contacting you soon next 24 hours.<br><br>
+				<br>Thanks,<br><br>
+				<strong>Support Team</strong>
+				";
+				$wpdb->query
+				(
+					$wpdb->prepare
+					(
+					"INSERT INTO " . contact_bank_email_template_admin(). " (email_to,email_from,body_content,subject,form_id,from_name,name,send_to) VALUES(%s,%s,%s,%s,%d,%s,%s,%d)",
+					"",
+					$email_from_email,
+					$uxDescription_email_client,
+					$email_subject_client,
+					$form_id,
+					$email_from_name,
+					$email_name_client,
+					""
+					)
+				);
+		    }
+	    }
+		else
 		{
-			$form_settings[$form_id][$form_data[$flag]->form_message_key] = $form_data[$flag]->form_message_value;
-		}
-		$form_name = $wpdb->get_var
-		(
-			$wpdb->prepare
+			$form_data = $wpdb->get_results
 			(
-				"SELECT form_name FROM " .contact_bank_contact_form(). " where form_id = %d",
-				$form_id
-			)
-		);
-	}
+				$wpdb->prepare
+				(
+					"SELECT * FROM " .contact_bank_form_settings_Table(). " where form_id = %d",
+					$form_id
+				)
+			);
+			for($flag = 0; $flag<count($form_data);$flag++)
+			{
+				$form_settings[$form_id][$form_data[$flag]->form_message_key] = $form_data[$flag]->form_message_value;
+			}
+			$form_name = $wpdb->get_var
+			(
+				$wpdb->prepare
+				(
+					"SELECT form_name FROM " .contact_bank_contact_form(). " where form_id = %d",
+					$form_id
+				)
+			);
+		}
+	//}
 ?>
 <form id="ux_dynamic_form_submit" class="layout-form">
 	<div id="poststuff" style="width: 99% !important;">

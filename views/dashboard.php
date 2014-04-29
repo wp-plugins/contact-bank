@@ -217,7 +217,7 @@ if($popup == "")
 							</p>
 							<p>We commit to responses within 24 hours on weekdays – generally within hours during week day work hours.</p>
 							<p>
-								<a class="btn btn-danger" href="http://tech-banker.com/get-in-touch/" target="_blank" style="text-decoration: none;"><?php _e("Let’s get in touch!", contact_bank); ?></a>
+								<a class="btn btn-danger" href="http://tech-banker.com/get-in-touch/" target="_blank" style="text-decoration: none;"><?php _e("Let's get in touch!", contact_bank); ?></a>
 							</p>
 							<img src="<?php echo CONTACT_BK_PLUGIN_URL . "/assets/images/img.png";?>" style="max-width:100%;cursor: pointer;" />
 							<p>
@@ -230,8 +230,6 @@ if($popup == "")
 		</div>
 	</div>
 </div>
-
-
 <script type="text/javascript">
 	jQuery(".hovertip").tooltip();
 	jQuery(document).ready(function()
