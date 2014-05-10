@@ -54,13 +54,26 @@ if(isset($_REQUEST["param"]))
 					$messageTxt = str_replace("[control_".$dynamicId."]",$frontend_control_value[$flag1]->dynamic_frontend_value, $messageTxt);
 				}
 			}
-			$headers = "Content-Type: text/html; charset= utf-8". "\r\n".
-						"From: " .$email_from_name. " <". $email_from . ">" ."\r\n" .
-						"Reply-To: ".$email_reply_to."\r\n" .
-						"Cc: " .$email_cc. "\r\n" .
-						"Bcc: " .$email_bcc."\r\n".
-						get_option("blog_charset") . "\r\n";
-				wp_mail($email_to, $email_subject, $messageTxt, $headers);
+			$headers = "";
+			$headers .= "Content-Type: text/html; charset= utf-8". "\r\n";
+			if($email_from_name != "" && $email_from != "")
+			{
+				$headers .= "From: " .$email_from_name. " <". $email_from . ">" ."\r\n";
+			}
+			if($email_reply_to != "")
+			{
+				$headers .= "Reply-To: ".$email_reply_to."\r\n";
+			}
+			if($email_cc != "")
+			{
+				$headers .= "Cc: " .$email_cc. "\r\n";
+			}			
+			if($email_bcc != "")
+			{
+				$headers .= "Bcc: " .$email_bcc."\r\n";
+			}				 
+			get_option("blog_charset") . "\r\n";
+			wp_mail($email_to, $email_subject, $messageTxt, $headers);
 		}
 	die();
 	}
