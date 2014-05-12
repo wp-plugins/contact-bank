@@ -711,7 +711,7 @@ function create_cb_table_licensing()
             (
                 "INSERT INTO " . contact_bank_licensing() . "(version, type, url) VALUES(%s, %s, %s)",
                 "2.1.0",
-                "Contact Bank Eco Edition",
+                "Contact Bank",
                 "" . site_url() . ""
             )
     );
