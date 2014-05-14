@@ -206,7 +206,7 @@ if(count($control_id) != 0)
     ({
         submitHandler: function(form)
         {
-            jQuery.post(ajaxurl, jQuery(form).serialize() + "&controlId="+controlId+"&form_id="+form_id+"&form_settings="+JSON.stringify(<?php echo json_encode($form_settings,true) ?>)+"&event=update&param=save_textarea_control&action=add_contact_form_library", function()
+            jQuery.post(ajaxurl, jQuery(form).serialize() + "&controlId="+controlId+"&form_id="+form_id+"&form_settings="+JSON.stringify(<?php echo json_encode($form_settings) ?>)+"&event=update&param=save_textarea_control&action=add_contact_form_library", function()
             {
                 jQuery("#control_label_"+dynamicId).html(jQuery("#ux_label_text_"+dynamicId).val()+" :");
                	jQuery("#txt_description_"+dynamicId).html(jQuery("#ux_description_control_"+dynamicId).val());

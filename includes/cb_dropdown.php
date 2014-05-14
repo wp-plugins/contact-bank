@@ -199,7 +199,7 @@
 				options_ddl.push(this.value);
 				options_value.push(this.text);
 			});
-			jQuery.post(ajaxurl, jQuery(form).serialize() + "&controlId="+controlId+"&form_id="+form_id+"&form_settings="+JSON.stringify(<?php echo json_encode($form_settings,true); ?>)+"&ddl_options_id="+JSON.stringify(options_ddl)+"&options_value="+JSON.stringify(options_value)+"&event=update&param=save_drop_down_control&action=add_contact_form_library", function(data)
+			jQuery.post(ajaxurl, jQuery(form).serialize() + "&controlId="+controlId+"&form_id="+form_id+"&form_settings="+JSON.stringify(<?php echo json_encode($form_settings); ?>)+"&ddl_options_id="+JSON.stringify(options_ddl)+"&options_value="+JSON.stringify(options_value)+"&event=update&param=save_drop_down_control&action=add_contact_form_library", function(data)
 			{
 				jQuery("#control_label_"+dynamicId).html(jQuery("#ux_label_text_"+dynamicId).val()+" :");
 				jQuery("#show_tooltip"+dynamicId).attr("data-original-title",jQuery("#ux_tooltip_control_"+dynamicId).val());

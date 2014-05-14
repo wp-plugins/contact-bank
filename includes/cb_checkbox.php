@@ -208,7 +208,7 @@ jQuery("#ux_frm_check_box_control").validate
 			options_ddl.push(this.value);
 			options_value.push(this.text);
 		});
-		jQuery.post(ajaxurl, jQuery(form).serialize() + "&controlId="+controlId+"&form_id="+form_id+"&ddl_options_id="+JSON.stringify(options_ddl)+"&options_value="+JSON.stringify(options_value)+"&form_settings="+JSON.stringify(<?php echo json_encode($form_settings,true) ?>)+"&event=update&param=save_check_box_control&action=add_contact_form_library", function(data)
+		jQuery.post(ajaxurl, jQuery(form).serialize() + "&controlId="+controlId+"&form_id="+form_id+"&ddl_options_id="+JSON.stringify(options_ddl)+"&options_value="+JSON.stringify(options_value)+"&form_settings="+JSON.stringify(<?php echo json_encode($form_settings) ?>)+"&event=update&param=save_check_box_control&action=add_contact_form_library", function(data)
 		{
 			jQuery("#control_label_"+dynamicId).html(jQuery("#ux_label_text_"+dynamicId).val()+" :");
 			jQuery("#post_back_checkbox_"+dynamicId).attr("data-original-title",jQuery("#ux_tooltip_control_"+dynamicId).val());
