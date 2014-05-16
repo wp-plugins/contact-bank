@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 $cb_lang = array();
 $cb_lang_translated_languages = array();
 array_push($cb_lang_translated_languages,"fr_FR","ru_RU","en_US","es_ES", "nl_NL","hu_HU","de_DE", "pt_BR", "pt_PT","et","he_IL");
