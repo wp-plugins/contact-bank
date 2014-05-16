@@ -1,10 +1,10 @@
-<?php
+﻿<?php
 /**
 Plugin Name: Contact Bank Standard Edition
 Plugin URI: http://tech-banker.com
 Description: Build Complex, Powerful Contact Forms in Just Seconds. No Programming Knowledge Required! Yeah, It's Really That Easy.
 Author: Tech Banker
-Version: 2.0.26
+Version: 2.0.27
 Author URI: http://tech-banker.com
  */
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -449,7 +449,7 @@ function contact_bank_banner()
      <div class="gb_buy_pro">
       <div class="gb_text_control">
        It\'s time to upgrade your <strong>Contact Bank Standard Edition</strong> to <strong>Premium</strong> Edition!<br />
-       <span>Extend standard plugin functionality with 200+ awesome features! <br/>Go for Premium Version Now! Starting at <strong>10£/- only</strong></span>
+       <span>Extend standard plugin functionality with 200+ awesome features! <br/>Go for Premium Version Now! Starting at <strong>11£/- only</strong></span>
       </div>
       <a class="button gb_message_buttons" href="admin.php?page=pro_version&msg=no">CLOSE</a>
       <a class="button gb_message_buttons" target="_blank" href="http://wordpress.org/support/view/plugin-reviews/contact-bank?filter=5">RATE US 5 ★</a>
