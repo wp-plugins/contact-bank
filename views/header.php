@@ -1,4 +1,20 @@
 <?php
+$show_banner = get_option("contact-bank-banner");
+if($show_banner == "")
+{
+ 	echo'<div id="ux_buy_pro" class="updated">
+     <div class="gb_buy_pro">
+      <div class="gb_text_control">
+       It\'s time to upgrade your <strong>Contact Bank Standard Edition</strong> to <strong>Premium</strong> Edition!<br />
+       <span>Extend standard plugin functionality with 200+ awesome features! <br/>Go for Premium Version Now! Starting at <strong>11£/- only</strong></span>
+      </div>
+      <a class="button gb_message_buttons" href="admin.php?page=pro_version&msg=no">CLOSE</a>
+      <a class="button gb_message_buttons" target="_blank" href="http://wordpress.org/support/view/plugin-reviews/contact-bank?filter=5">RATE US 5 ★</a>
+      <a class="button gb_message_buttons" target="_blank" href="http://tech-banker.com/contact-bank/demo/">LIVE DEMO</a>
+      <a class="button gb_message_buttons" target="_blank" href="http://tech-banker.com/contact-bank/">UPGRADE NOW</a>
+     </div>
+    </div>';
+}
 $cb_lang = array();
 $cb_lang_translated_languages = array();
 array_push($cb_lang_translated_languages,"fr_FR","ru_RU","en_US","es_ES", "nl_NL","hu_HU","de_DE", "pt_BR", "pt_PT","et","he_IL", "tr");
