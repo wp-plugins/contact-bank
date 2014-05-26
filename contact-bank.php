@@ -4,7 +4,7 @@ Plugin Name: Contact Bank Standard Edition
 Plugin URI: http://tech-banker.com
 Description: Build Complex, Powerful Contact Forms in Just Seconds. No Programming Knowledge Required! Yeah, It's Really That Easy.
 Author: Tech Banker
-Version: 2.0.31
+Version: 2.0.32
 Author URI: http://tech-banker.com
  */
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -314,7 +314,7 @@ function extract_short_code($form_id,$show_title)
 function add_contact_bank_icon($meta = TRUE)
 {
     global $wp_admin_bar;
-    if ( !is_user_logged_in() ) { return; }
+    if (!is_user_logged_in() ) { return; }
 	$wp_admin_bar->add_menu( array(
 	    "id" => "contact_bank_links",
 	    "title" =>  "<img src=\"".CONTACT_BK_PLUGIN_URL."/assets/images/icon.png\" width=\"25\" height=\"25\" style=\"vertical-align:text-top; margin-right:5px;\" />Contact Bank" ,

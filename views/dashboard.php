@@ -4,6 +4,7 @@ $last_form_id = $wpdb->get_var
 (
 	"SELECT form_id FROM " .contact_bank_contact_form(). " order by form_id desc limit 1"
 );
+$contact_id = count($last_form_id) == 0 ? 1 : $last_form_id + 1;
 $popup = get_option("contact-bank-info-popup");
 if($popup == "")
 {
@@ -93,7 +94,7 @@ if($popup == "")
 							{
 								?>
 									<a class="btn btn-info"
-										href="admin.php?page=contact_bank&form_id=<?php echo count($last_form_id) == 0 ? 1 : $last_form_id + 1; ?>"><?php _e("Add New Form", contact_bank); ?>
+										href="admin.php?page=contact_bank&form_id=<?php echo $contact_id; ?>"><?php _e("Add New Form", contact_bank); ?>
 									</a>
 								<?php
 							}
@@ -335,7 +336,7 @@ if($popup == "")
 		}
 	}
 	function restore_factory_settings() {
-		alert("<?php _e( "This Feature is only available in Paid Premium Edition!", contact_bank ); ?>");
+		alert("<?php _e("This Feature is only available in Paid Premium Edition!", contact_bank ); ?>");
 	}
 	function close_popup()
 	{
