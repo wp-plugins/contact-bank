@@ -44,17 +44,37 @@ else
 			{
 				?>
 				<tr>
-				<?php
-					?>
+				
 					<td ><?php echo $email_settings[$flag]->name;?></td>
 					<td ><?php echo $email_settings[$flag]->subject;?></td>
 					<td>
-						<a href="admin.php?page=add_contact_email_settings&email_id=<?php echo $email_settings[$flag]->email_id;?>&form_id=<?php echo $form_id ?>" class="btn hovertip" data-original-title="<?php _e("Edit Email Settings",contact_bank)?>">
-							<i class="icon-pencil"></i>
-						</a>
-						<a herf="#" onclick="delete_email_settings(<?php echo $email_settings[$flag]->email_id;?>)" class="btn hovertip" data-original-title="<?php _e("Delete Email Settings",contact_bank)?>">
-							<i class="icon-trash"></i>
-						</a>
+						<?php
+						switch($cb_role)
+						{
+							case "administrator":
+								?>
+								<a href="admin.php?page=add_contact_email_settings&email_id=<?php echo $email_settings[$flag]->email_id;?>&form_id=<?php echo $form_id ?>" class="btn hovertip" data-original-title="<?php _e("Edit Email Settings",contact_bank)?>">
+									<i class="icon-pencil"></i>
+								</a>
+								<a herf="#" onclick="delete_email_settings(<?php echo $email_settings[$flag]->email_id;?>)" class="btn hovertip" data-original-title="<?php _e("Delete Email Settings",contact_bank)?>">
+									<i class="icon-trash"></i>
+								</a>
+							<?php
+							break;
+							case "editor":
+								?>
+								<a href="admin.php?page=add_contact_email_settings&email_id=<?php echo $email_settings[$flag]->email_id;?>&form_id=<?php echo $form_id ?>" class="btn hovertip" data-original-title="<?php _e("Edit Email Settings",contact_bank)?>">
+									<i class="icon-pencil"></i>
+								</a>
+								<a herf="#" onclick="delete_email_settings(<?php echo $email_settings[$flag]->email_id;?>)" class="btn hovertip" data-original-title="<?php _e("Delete Email Settings",contact_bank)?>">
+									<i class="icon-trash"></i>
+								</a>
+							<?php
+							break;
+							
+						}
+						?>
+						
 					</td>
 				</tr>
 				<?php

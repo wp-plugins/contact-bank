@@ -1,5 +1,8 @@
 <?php
-global $wpdb;
+global $wpdb,$current_user;
+$role = $wpdb->prefix . "capabilities";
+$current_user->role = array_keys($current_user->$role);
+$role = $current_user->role[0];
 $last_form_id = $wpdb->get_var
 (
 	"SELECT form_id FROM " .contact_bank_contact_form(). " order by form_id desc limit 1"
@@ -90,18 +93,50 @@ if($popup == "")
 							(
 								"SELECT count(form_id) FROM ".contact_bank_contact_form()
 							);
-							if($form_count < 1)
+							switch ($role) 
 							{
-								?>
-									<a class="btn btn-info"
-										href="admin.php?page=contact_bank&form_id=<?php echo $contact_id; ?>"><?php _e("Add New Form", contact_bank); ?>
-									</a>
-								<?php
+								case "administrator":
+								if($form_count < 1)
+								{
+									?>
+										<a class="btn btn-info"
+											href="admin.php?page=contact_bank&form_id=<?php echo $contact_id; ?>"><?php _e("Add New Form", contact_bank); ?>
+										</a>
+									<?php
+								}
+								break;
+								case "editor":
+									if($form_count < 1)
+									{
+										?>
+											<a class="btn btn-info"
+												href="admin.php?page=contact_bank&form_id=<?php echo $contact_id; ?>"><?php _e("Add New Form", contact_bank); ?>
+											</a>
+										<?php
+									}
+								break;
 							}
 							?>
-							<a class="btn btn-info" href="#"
-								onclick="delete_forms();"><?php _e("Delete All Forms", contact_bank); ?>
-							</a>
+							<?php
+							switch ($role) 
+							{
+								case "administrator":
+									?>
+										<a class="btn btn-info" href="#"
+											onclick="delete_forms();"><?php _e("Delete All Forms", contact_bank); ?>
+										</a>
+									<?php
+								break;
+								case "editor":
+									?>
+										<a class="btn btn-info" href="#"
+											onclick="delete_forms();"><?php _e("Delete All Forms", contact_bank); ?>
+										</a>
+									<?php
+								break;
+							}
+							?>
+							
 							<a class="btn btn-danger" href="#"
 								onclick="restore_factory_settings();"><?php _e("Restore Factory Settings", contact_bank); ?>
 							</a>
@@ -155,11 +190,30 @@ if($popup == "")
 															<?php echo $total_control;?>
 														</td>
 														<td>
-															<a href="admin.php?page=contact_bank&form_id=<?php echo $form_data[$flag]->form_id; ?>"
-																class="btn hovertip"
-																data-original-title="<?php _e("Edit Form", contact_bank) ?>">
-																<i class="icon-pencil"></i>
-															</a>
+															<?php
+															switch ($role) 
+															{
+																case "administrator":
+																	?>
+																		<a href="admin.php?page=contact_bank&form_id=<?php echo $form_data[$flag]->form_id; ?>"
+																			class="btn hovertip"
+																			data-original-title="<?php _e("Edit Form", contact_bank) ?>">
+																			<i class="icon-pencil"></i>
+																		</a>
+																	<?php
+																break;
+																case "editor":
+																	?>
+																		<a href="admin.php?page=contact_bank&form_id=<?php echo $form_data[$flag]->form_id; ?>"
+																			class="btn hovertip"
+																			data-original-title="<?php _e("Edit Form", contact_bank) ?>">
+																			<i class="icon-pencil"></i>
+																		</a>
+																	<?php
+																break;
+															}
+															?>
+															
 															<a href="admin.php?page=layout_settings&form_id=<?php echo $form_data[$flag]->form_id; ?>"
 																class="btn hovertip"
 																data-original-title="<?php _e("Global Settings", contact_bank) ?>">
@@ -180,12 +234,32 @@ if($popup == "")
 																data-original-title="<?php _e("Form Preview", contact_bank) ?>">
 																<i class="icon-eye-open"></i>
 															</a>
-															<a herf="#"
-																onclick="delete_form(<?php echo $form_data[$flag]->form_id; ?>);"
-																class="btn hovertip"
-																data-original-title="<?php _e("Delete Form", contact_bank) ?>">
-																<i class="icon-trash"></i>
-															</a>	
+															<?php
+															switch ($role) 
+															{
+																case "administrator":
+																	?>
+																		<a herf="#"
+																			onclick="delete_form(<?php echo $form_data[$flag]->form_id; ?>);"
+																			class="btn hovertip"
+																			data-original-title="<?php _e("Delete Form", contact_bank) ?>">
+																			<i class="icon-trash"></i>
+																		</a>
+																	<?php
+																break;
+																case "editor":
+																	?>
+																		<a herf="#"
+																			onclick="delete_form(<?php echo $form_data[$flag]->form_id; ?>);"
+																			class="btn hovertip"
+																			data-original-title="<?php _e("Delete Form", contact_bank) ?>">
+																			<i class="icon-trash"></i>
+																		</a>	
+																	<?php
+																break;
+															}
+															?>
+															
 														</td>
 													</tr>
 												<?php

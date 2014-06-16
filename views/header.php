@@ -14,7 +14,12 @@ if($show_banner == "")
       <a class="button gb_message_buttons" target="_blank" href="http://tech-banker.com/contact-bank/">UPGRADE NOW</a>
      </div>
     </div>';
+	
 }
+global $wpdb,$current_user;
+$role = $wpdb->prefix . "capabilities";
+$current_user->role = array_keys($current_user->$role);
+$role = $current_user->role[0];
 $cb_lang = array();
 $cb_lang_translated_languages = array();
 array_push($cb_lang_translated_languages,"fr_FR","ru_RU","en_US","es_ES", "nl_NL","hu_HU","de_DE", "pt_BR", "pt_PT","et","he_IL", "tr","it_IT", "da_DK");
@@ -29,16 +34,59 @@ jQuery(document).ready(function()
 });
 </script>
 <img style="margin: 10px;" src="<?php echo CONTACT_BK_PLUGIN_URL .'/assets/images/cb-logo.png';?>"/>
-<h2 class="nav-tab-wrapper">
-	<a class="nav-tab " id="dashboard" href="admin.php?page=dashboard">Dashboard</a>
-	<a class="nav-tab " id="short_code" href="admin.php?page=short_code">Short-Codes</a>
-	<a class="nav-tab " id="frontend_data" href="admin.php?page=frontend_data">Form Entries</a>
-	<a class="nav-tab " id="contact_email" href="admin.php?page=contact_email">Email Settings</a>
-	<a class="nav-tab " id="layout_settings" href="admin.php?page=layout_settings">Global Settings</a>
-	<a class="nav-tab " id="system_status" href="admin.php?page=system_status">System Status</a>
-	<a class="nav-tab " id="pro_version" href="admin.php?page=pro_version">Purchase Pro Version</a>
-</h2>
 <?php
+switch ($role) {
+	case "administrator":
+		?>
+		<h2 class="nav-tab-wrapper">
+			<a class="nav-tab " id="dashboard" href="admin.php?page=dashboard">Dashboard</a>
+			<a class="nav-tab " id="short_code" href="admin.php?page=short_code">Short-Codes</a>
+			<a class="nav-tab " id="frontend_data" href="admin.php?page=frontend_data">Form Entries</a>
+			<a class="nav-tab " id="contact_email" href="admin.php?page=contact_email">Email Settings</a>
+			<a class="nav-tab " id="layout_settings" href="admin.php?page=layout_settings">Global Settings</a>
+			<a class="nav-tab " id="system_status" href="admin.php?page=system_status">System Status</a>
+			<a class="nav-tab " id="pro_version" href="admin.php?page=pro_version">Purchase Pro Version</a>
+		</h2>
+		<?php
+	break;
+	case "editor":
+		?>
+		<h2 class="nav-tab-wrapper">
+			<a class="nav-tab " id="dashboard" href="admin.php?page=dashboard">Dashboard</a>
+			<a class="nav-tab " id="short_code" href="admin.php?page=short_code">Short-Codes</a>
+			<a class="nav-tab " id="frontend_data" href="admin.php?page=frontend_data">Form Entries</a>
+			<a class="nav-tab " id="contact_email" href="admin.php?page=contact_email">Email Settings</a>
+			<a class="nav-tab " id="layout_settings" href="admin.php?page=layout_settings">Global Settings</a>
+			<a class="nav-tab " id="system_status" href="admin.php?page=system_status">System Status</a>
+			<a class="nav-tab " id="pro_version" href="admin.php?page=pro_version">Purchase Pro Version</a>
+		</h2>
+		<?php
+	break;
+	case "author":
+		?>
+		<h2 class="nav-tab-wrapper">
+			<a class="nav-tab " id="dashboard" href="admin.php?page=dashboard">Dashboard</a>
+			<a class="nav-tab " id="short_code" href="admin.php?page=short_code">Short-Codes</a>
+			<a class="nav-tab " id="frontend_data" href="admin.php?page=frontend_data">Form Entries</a>
+			<a class="nav-tab " id="contact_email" href="admin.php?page=contact_email">Email Settings</a>
+			<a class="nav-tab " id="layout_settings" href="admin.php?page=layout_settings">Global Settings</a>
+			<a class="nav-tab " id="pro_version" href="admin.php?page=pro_version">Purchase Pro Version</a>
+		</h2>
+		<?php
+	break;
+	case "contributor":
+		?>
+		<h2 class="nav-tab-wrapper">
+			<a class="nav-tab " id="dashboard" href="admin.php?page=dashboard">Dashboard</a>
+			<a class="nav-tab " id="short_code" href="admin.php?page=short_code">Short-Codes</a>
+			<a class="nav-tab " id="frontend_data" href="admin.php?page=frontend_data">Form Entries</a>
+			<a class="nav-tab " id="contact_email" href="admin.php?page=contact_email">Email Settings</a>
+			<a class="nav-tab " id="layout_settings" href="admin.php?page=layout_settings">Global Settings</a>
+			<a class="nav-tab " id="pro_version" href="admin.php?page=pro_version">Purchase Pro Version</a>
+		</h2>
+		<?php
+	break;
+}
 if(in_array($cb_language, $cb_lang))
 {
 	?>
