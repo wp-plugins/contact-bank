@@ -125,7 +125,7 @@ $email_data = $wpdb->get_row
 														<span class="error">*</span>
 													</label>
 													<div class="layout-controls">	
-														<input type="text" class="layout-span8" id="ux_txt_from_name" name="ux_txt_from_name" value="<?php echo isset($email_data->from_name) ? $email_data->from_name : ""; ?>" placeholder="<?php _e( "Enter from name ", contact_bank ); ?>"/>
+														<input type="text" class="layout-span8" id="ux_txt_from_name" name="ux_txt_from_name" value="<?php echo isset($email_data->from_name) ? stripslashes($email_data->from_name) : ""; ?>" placeholder="<?php _e( "Enter from name ", contact_bank ); ?>"/>
 														<select class="layout-span4" id="ux_ddl_from_name" name="ux_ddl_from_name" style=" float: right; " onchange="append_control_shortcode(this.id,'ux_txt_from_name');">
 															<option value=""><?php _e("Select a field", contact_bank);?></option>
 														</select>
@@ -184,7 +184,7 @@ $email_data = $wpdb->get_row
 														<span class="error">*</span>
 													</label>
 													<div class="layout-controls">	
-														<input type="text" class="layout-span8" id="ux_txt_subject" name="ux_txt_subject" value="<?php echo isset($email_data->subject) ? $email_data->subject : ""; ?>" placeholder="<?php _e( "Enter Subject", contact_bank ); ?>"/>
+														<input type="text" class="layout-span8" id="ux_txt_subject" name="ux_txt_subject" value="<?php echo isset($email_data->subject) ? stripslashes($email_data->subject) : ""; ?>" placeholder="<?php _e( "Enter Subject", contact_bank ); ?>"/>
 														<select class="layout-span4" id="ux_ddl_subject" name="ux_ddl_subject" style=" float: right;" onchange="append_control_shortcode(this.id,'ux_txt_subject');">
 															<option value=""><?php _e("Select a field", contact_bank);?></option>
 														</select>
@@ -197,7 +197,7 @@ $email_data = $wpdb->get_row
 													<div class="layout-controls">
 														<div class="layout-span8">
 														<?php
-															$distribution = isset($email_data->body_content) ? $email_data->body_content : ""; 
+															$distribution = isset($email_data->body_content) ? stripslashes($email_data->body_content) : ""; 
 															wp_editor( $distribution, $id ="uxEmailTemplate", array("media_buttons" => true, "textarea_rows" => 8, "tabindex" => 4 ) ); 
 															?>
 														</div>

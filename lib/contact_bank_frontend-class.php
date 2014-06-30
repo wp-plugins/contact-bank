@@ -39,7 +39,7 @@ if(isset($_REQUEST["param"]))
 			switch($field_id)
 			{
 				case 1:
-					$ux_txt = esc_attr($_REQUEST["ux_txt_control_".$dynamicId]);
+					$ux_txt = esc_attr(stripslashes($_REQUEST["ux_txt_control_".$dynamicId]));
 					$wpdb->query
 					(
 						$wpdb->prepare
@@ -54,7 +54,7 @@ if(isset($_REQUEST["param"]))
 					);
 				break;
 				case 2:
-					$ux_textarea = esc_attr($_REQUEST["ux_textarea_control_".$dynamicId]);
+					$ux_textarea = esc_attr(stripslashes($_REQUEST["ux_textarea_control_".$dynamicId]));
 					$wpdb->query
 					(
 						$wpdb->prepare
@@ -69,7 +69,7 @@ if(isset($_REQUEST["param"]))
 					);
 				break;
 				case 3:
-					$ux_email = esc_attr($_REQUEST["ux_txt_email_".$dynamicId]);
+					$ux_email = esc_attr(stripslashes($_REQUEST["ux_txt_email_".$dynamicId]));
 					$wpdb->query
 					(
 						$wpdb->prepare
