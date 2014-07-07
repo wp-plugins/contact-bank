@@ -421,7 +421,7 @@ if($version == "" || $version == "1.0")
              $sql = "";
 		        foreach($settings as $key => $value)
 		        {
-		            $sql[] = '('.$contact_forms_for_settings[$flag]->form_id.',"'.mysql_real_escape_string($key).'", "'.mysql_real_escape_string($value).'")';
+		            $sql[] = '('.$contact_forms_for_settings[$flag]->form_id.',"'.$key.'", "'.$value.'")';
 		        }
 		        $wpdb->query
 		        (
@@ -457,7 +457,7 @@ if($version == "" || $version == "1.0")
 		$settings_roles["subscriber_write_control"] = "0";
 		foreach($settings_roles as $key => $value)
         {
-                $sql1[] = '("'.mysql_real_escape_string($key).'", "'.mysql_real_escape_string($value).'")';
+                $sql1[] = '("'.$key.'", "'.$value.'")';
         }
         $wpdb->query
         (
@@ -494,7 +494,7 @@ else if($version == "2.0")
 		$settings_roles["subscriber_write_control"] = "0";
 		foreach($settings_roles as $key => $value)
         {
-                $sql1[] = '("'.mysql_real_escape_string($key).'", "'.mysql_real_escape_string($value).'")';
+                $sql1[] = '("'.$key.'", "'.$value.'")';
         }
         $wpdb->query
         (
@@ -584,7 +584,7 @@ else if($version == "2.1")
 		$settings_roles["subscriber_write_control"] = "0";
 		foreach($settings_roles as $key => $value)
         {
-                $sql1[] = '("'.mysql_real_escape_string($key).'", "'.mysql_real_escape_string($value).'")';
+                $sql1[] = '("'.$key.'", "'.$value.'")';
         }
         $wpdb->query
         (

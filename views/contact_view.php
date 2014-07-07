@@ -146,7 +146,7 @@
 				$settings["error_msg_text_direction"] = "inherit";
 				foreach($settings as $key => $value)
 		        {
-		                $sql[] = '('.$form_id.',"'.mysql_real_escape_string($key).'", "'.mysql_real_escape_string($value).'")';
+		                $sql[] = '('.$form_id.',"'.$key.'", "'.$value.'")';
 		        }
 		        $wpdb->query
 		        (

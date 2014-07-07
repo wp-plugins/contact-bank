@@ -262,11 +262,11 @@ else
 				        	$labels_for_email = $val;
 				            if($val == "redirect_url")
 				            {
-				                $sql .= ' WHEN `form_message_key` = "'.mysql_real_escape_string($val).'" THEN "'.mysql_real_escape_string(html_entity_decode($keyInner)).'"';
+				                $sql .= ' WHEN `form_message_key` = "'.($val).'" THEN "'.(html_entity_decode($keyInner)).'"';
 				            }
 				            else
 				            {
-				                $sql .= ' WHEN `form_message_key` = "'.mysql_real_escape_string($val).'" THEN "'.mysql_real_escape_string($keyInner).'"';
+				                $sql .= ' WHEN `form_message_key` = "'.($val).'" THEN "'.($keyInner).'"';
 				            }
 				        }
 				    }
@@ -435,10 +435,10 @@ else
 					{
 						if($event == "add")
 						{
-							$sql[] = '('.$dynamic_control_id.',"'.mysql_real_escape_string($key).'", "'.mysql_real_escape_string($value).'")';
+							$sql[] = '('.$dynamic_control_id.',"'.$key.'", "'.$value.'")';
 						}
 						else {
-							 $sql .= 'WHEN `dynamic_settings_key` = "'.mysql_real_escape_string($key).'" THEN "'.mysql_real_escape_string($value).'"';
+							 $sql .= 'WHEN `dynamic_settings_key` = "'.$key.'" THEN "'.$value.'"';
 						}
 					}
 				}
@@ -531,10 +531,10 @@ else
 					{
 						if($event == "add")
 						{
-							$sql[] = '('.$dynamic_control_id.',"'.mysql_real_escape_string($key).'", "'.mysql_real_escape_string($value).'")';
+							$sql[] = '('.$dynamic_control_id.',"'.$key.'", "'.$value.'")';
 						}
 						else {
-							 $sql .= 'WHEN `dynamic_settings_key` = "'.mysql_real_escape_string($key).'" THEN "'.mysql_real_escape_string($value).'"';
+							 $sql .= 'WHEN `dynamic_settings_key` = "'.$key.'" THEN "'.$value.'"';
 						}
 					}
 				}
@@ -622,11 +622,11 @@ else
 				    {
 				        if($event == "add")
 				        {
-				            $sql[] = '('.$dynamic_control_id.',"'.mysql_real_escape_string($key).'", "'.mysql_real_escape_string($value).'")';
+				            $sql[] = '('.$dynamic_control_id.',"'.$key.'", "'.$value.'")';
 				        }
 				        else 
 				        {
-				            $sql .= 'WHEN `dynamic_settings_key` = "'.mysql_real_escape_string($key).'" THEN "'.mysql_real_escape_string($value).'"';
+				            $sql .= 'WHEN `dynamic_settings_key` = "'.$key.'" THEN "'.$value.'"';
 				        }
 				    }
 				}
@@ -670,8 +670,11 @@ else
 			$form_settings[$dynamic_Id]["cb_tooltip_txt"] = isset($_REQUEST["ux_tooltip_control_".$dynamic_Id]) ? esc_attr($_REQUEST["ux_tooltip_control_".$dynamic_Id]) : "";
 			$form_settings[$dynamic_Id]["cb_admin_label"] = isset($_REQUEST["ux_admin_label_".$dynamic_Id]) ? esc_attr($_REQUEST["ux_admin_label_".$dynamic_Id]) : "Untitled";
 			$form_settings[$dynamic_Id]["cb_show_email"] = isset($_REQUEST["ux_show_email_".$dynamic_Id]) ? "1" : "0";
-			$form_settings[$dynamic_Id]["cb_dropdown_option_id"] = serialize($ddl_options_id);
-			$form_settings[$dynamic_Id]["cb_dropdown_option_val"] = serialize($options_value);
+			
+			$options = serialize($ddl_options_id);
+			$options_val = serialize($options_value);
+			$form_settings[$dynamic_Id]["cb_dropdown_option_id"] = str_replace('"','\"',"$options");
+			$form_settings[$dynamic_Id]["cb_dropdown_option_val"] = str_replace('"','\"',"$options_val");
 			foreach($form_settings as $element)
 			{
 				$id = $element["dynamic_id"];
@@ -715,10 +718,10 @@ else
 				    {
 				        if($event == "add")
 				        {
-				            $sql[] = '('.$dynamic_control_id.',"'.mysql_real_escape_string($key).'", "'.mysql_real_escape_string($value).'")';
+				            $sql[] = '('.$dynamic_control_id.',"'.$key.'", "'.$value.'")';
 				        }
 				        else {
-				            $sql .= 'WHEN `dynamic_settings_key` = "'.mysql_real_escape_string($key).'" THEN "'.mysql_real_escape_string($value).'"';
+				            $sql .= 'WHEN `dynamic_settings_key` = "'.$key.'" THEN "'.$value.'"';
 				        }
 				    }
 				}
@@ -762,9 +765,10 @@ else
 			$form_settings[$dynamic_Id]["cb_tooltip_txt"] = isset($_REQUEST["ux_tooltip_control_".$dynamic_Id]) ? esc_attr($_REQUEST["ux_tooltip_control_".$dynamic_Id]) : "";
 			$form_settings[$dynamic_Id]["cb_admin_label"] = isset($_REQUEST["ux_admin_label_".$dynamic_Id]) ? esc_attr($_REQUEST["ux_admin_label_".$dynamic_Id]) : "Untitled";
 			$form_settings[$dynamic_Id]["cb_show_email"] = isset($_REQUEST["ux_show_email_".$dynamic_Id]) ? "1" : "0";
-			$form_settings[$dynamic_Id]["cb_checkbox_option_id"] = serialize($ddl_options_id);
-			$form_settings[$dynamic_Id]["cb_checkbox_option_val"] = serialize($options_value);
-			
+			$options = serialize($ddl_options_id);
+			$options_val = serialize($options_value);
+			$form_settings[$dynamic_Id]["cb_checkbox_option_id"] = str_replace('"','\"',"$options");
+			$form_settings[$dynamic_Id]["cb_checkbox_option_val"] = str_replace('"','\"',"$options_val");
 			foreach($form_settings as $element)
 			{
 				$id = $element["dynamic_id"];
@@ -807,11 +811,11 @@ else
 					{
 						if($event == "add")
 						{
-							$sql[] = '('.$dynamic_control_id.',"'.mysql_real_escape_string($key).'", "'.mysql_real_escape_string($value).'")';
+							$sql[] = '('.$dynamic_control_id.',"'.$key.'", "'.$value.'")';
 						}
 						else 
 						{
-							$sql .= 'WHEN `dynamic_settings_key` = "'.mysql_real_escape_string($key).'" THEN "'.mysql_real_escape_string($value).'"';
+							$sql .= 'WHEN `dynamic_settings_key` = "'.$key.'" THEN "'.$value.'"';
 						}
 					}
 				}
@@ -855,8 +859,11 @@ else
 			$form_settings[$dynamic_Id]["cb_tooltip_txt"] = isset($_REQUEST["ux_tooltip_control_".$dynamic_Id]) ? esc_attr($_REQUEST["ux_tooltip_control_".$dynamic_Id]) : "";
 			$form_settings[$dynamic_Id]["cb_admin_label"] = isset($_REQUEST["ux_admin_label_".$dynamic_Id]) ? esc_attr($_REQUEST["ux_admin_label_".$dynamic_Id]) : "Untitled";
 			$form_settings[$dynamic_Id]["cb_show_email"] = isset($_REQUEST["ux_show_email_".$dynamic_Id]) ? "1" : "0";
-			$form_settings[$dynamic_Id]["cb_radio_option_id"] = serialize($ddl_options_id);
-			$form_settings[$dynamic_Id]["cb_radio_option_val"] = serialize($options_value);
+			$options = serialize($ddl_options_id);
+			$options_val = serialize($options_value);
+			$form_settings[$dynamic_Id]["cb_radio_option_id"] = str_replace('"','\"',"$options");
+			$form_settings[$dynamic_Id]["cb_radio_option_val"] = str_replace('"','\"',"$options_val");
+			
 			foreach($form_settings as $element)
 			{
 				$id = $element["dynamic_id"];
@@ -899,11 +906,11 @@ else
 					{
 						if($event == "add")
 						{
-							$sql[] = '('.$dynamic_control_id.',"'.mysql_real_escape_string($key).'", "'.mysql_real_escape_string($value).'")';
+							$sql[] = '('.$dynamic_control_id.',"'.$key.'", "'.$value.'")';
 						}
 						else 
 						{
-							$sql .= 'WHEN `dynamic_settings_key` = "'.mysql_real_escape_string($key).'" THEN "'.mysql_real_escape_string($value).'"';
+							$sql .= 'WHEN `dynamic_settings_key` = "'.$key.'" THEN "'.$value.'"';
 						}
 					}
 				}
