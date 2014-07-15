@@ -359,8 +359,8 @@ $forms_email_settings = $wpdb->get_row
 												<?php
 										break;
 										case 4:
-											$ddl_values = unserialize($control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_dropdown_option_val"]);
-                            				$ddl_ids = unserialize($control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_dropdown_option_id"]);
+											$ddl_values = count( unserialize($control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_dropdown_option_val"])) > 0 ? explode(",",unserialize($control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_dropdown_option_val"])) : "";
+											$ddl_ids  = count(unserialize($control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_dropdown_option_id"])) > 0 ?  explode(",",unserialize($control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_dropdown_option_id"])) : "";
 											?>
 											<div class="layout-controls layout_according_label_position hovertip" data-original-title="<?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_tooltip_txt"]; ?>">
 					                             <select class=" input_control <?php echo $layout_settings_array[$form_id]["input_field_input_size"]; ?>" type="select" id="ux_select_default_<?php echo $form_fields[$flag]->column_dynamicId; ?>"
@@ -380,8 +380,8 @@ $forms_email_settings = $wpdb->get_row
 											<?php
 										break;
 										case 5:
-											$chk_values = unserialize($control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_checkbox_option_val"]);
-				                            $chk_ids = unserialize($control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_checkbox_option_id"]);
+											$chk_values = count( unserialize($control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_checkbox_option_val"])) > 0 ? explode(",",unserialize($control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_checkbox_option_val"])) : "";
+											$chk_ids  = count(unserialize($control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_checkbox_option_id"])) > 0 ?  explode(",",unserialize($control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_checkbox_option_id"])) : "";
 				                            if(count($chk_ids) > 0)
 											{
 												?>
@@ -415,8 +415,8 @@ $forms_email_settings = $wpdb->get_row
 											}
 										break;
 										case 6:
-											$rdl_values = unserialize($control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_radio_option_val"]);
-		                        			$rdl_ids = unserialize($control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_radio_option_id"]);
+											$rdl_values = count( unserialize($control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_radio_option_val"])) > 0 ? explode(",",unserialize($control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_radio_option_val"])) : "";
+											$rdl_ids  = count(unserialize($control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_radio_option_id"])) > 0 ?  explode(",",unserialize($control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_radio_option_id"])) : "";
 											if(count($rdl_ids) > 0)
 											{
 												?>
