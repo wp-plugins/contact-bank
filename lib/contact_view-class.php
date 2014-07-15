@@ -661,8 +661,8 @@ else
 			$event = esc_attr($_REQUEST["event"]);
 			$controlId = isset($_REQUEST["controlId"]) ? intval($_REQUEST["controlId"]) : 0;
 			$form_settings = isset($_REQUEST["form_settings"]) ? json_decode(stripcslashes($_REQUEST["form_settings"]),true) : array();
-			$ddl_options_id = isset($_REQUEST["ddl_options_id"]) ? json_decode(stripcslashes($_REQUEST["ddl_options_id"]),true) : array();
-			$options_value = isset($_REQUEST["options_value"]) ? json_decode(stripcslashes($_REQUEST["options_value"]),true) : array();
+			$ddl_options_id = isset($_REQUEST["ddl_options_id"]) ? json_decode(stripcslashes(html_entity_decode($_REQUEST["ddl_options_id"])),true) : array();
+			$options_value = isset($_REQUEST["options_value"]) ? json_decode(stripcslashes(html_entity_decode($_REQUEST["options_value"])),true) : array();
 			$form_settings[$dynamic_Id]["dynamic_id"] = $dynamic_Id;
 			$form_settings[$dynamic_Id]["control_type"] = "4";
 			$form_settings[$dynamic_Id]["cb_label_value"] = isset($_REQUEST["ux_label_text_".$dynamic_Id]) ? esc_attr($_REQUEST["ux_label_text_".$dynamic_Id]) :"Untitled";
@@ -756,8 +756,8 @@ else
 			$event = esc_attr($_REQUEST["event"]);
 			$controlId = isset($_REQUEST["controlId"]) ? intval($_REQUEST["controlId"]) : 0;
 			$form_settings = isset($_REQUEST["form_settings"]) ? json_decode(stripcslashes($_REQUEST["form_settings"]),true) : array();
-			$ddl_options_id = isset($_REQUEST["ddl_options_id"]) ? json_decode(stripcslashes($_REQUEST["ddl_options_id"]),true) : array();
-			$options_value = isset($_REQUEST["options_value"]) ? json_decode(stripcslashes($_REQUEST["options_value"]),true) : array();
+			$ddl_options_id = isset($_REQUEST["ddl_options_id"]) ? json_decode(stripcslashes(html_entity_decode($_REQUEST["ddl_options_id"])),true) : array();
+			$options_value = isset($_REQUEST["options_value"]) ? json_decode(stripcslashes(html_entity_decode($_REQUEST["options_value"])),true) : array();
 			$form_settings[$dynamic_Id]["dynamic_id"] = $dynamic_Id;
 			$form_settings[$dynamic_Id]["control_type"] = "5";
 			$form_settings[$dynamic_Id]["cb_label_value"] = isset($_REQUEST["ux_label_text_".$dynamic_Id]) ? esc_attr($_REQUEST["ux_label_text_".$dynamic_Id]) : "Untitled";
@@ -850,8 +850,8 @@ else
 			$event = esc_attr($_REQUEST["event"]);
 			$controlId = isset($_REQUEST["controlId"]) ? intval($_REQUEST["controlId"]) : 0;
 			$form_settings = isset($_REQUEST["form_settings"]) ? json_decode(stripcslashes($_REQUEST["form_settings"]),true) : array();
-			$ddl_options_id = isset($_REQUEST["ddl_options_id"]) ? json_decode(stripcslashes($_REQUEST["ddl_options_id"]),true) : array();
-			$options_value = isset($_REQUEST["options_value"]) ? json_decode(stripcslashes($_REQUEST["options_value"]),true) : array();
+			$ddl_options_id = isset($_REQUEST["ddl_options_id"]) ? json_decode(stripcslashes(html_entity_decode($_REQUEST["ddl_options_id"])),true) : array();
+			$options_value = isset($_REQUEST["options_value"]) ? json_decode(stripcslashes(html_entity_decode($_REQUEST["options_value"])),true) : array();
 			$form_settings[$dynamic_Id]["dynamic_id"] = $dynamic_Id;
 			$form_settings[$dynamic_Id]["control_type"] = "6";
 			$form_settings[$dynamic_Id]["cb_label_value"] = isset($_REQUEST["ux_label_text_".$dynamic_Id]) ? esc_attr($_REQUEST["ux_label_text_".$dynamic_Id]) : "Untitled";
