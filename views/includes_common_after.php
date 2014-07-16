@@ -244,12 +244,10 @@ function create_control(control_type,dynamicId,type)
 	                {
 	                    jQuery("#control_label_"+dynamicId).append("<span class=\"error\">*</span>");
 	                }
-	                var option_val = bind_data[dynamicId].cb_dropdown_option_val.length > 0 ? bind_data[dynamicId].cb_dropdown_option_val.split(",") : "";
-	                var bind_data_list = bind_data[dynamicId].cb_dropdown_option_id.length > 0 ?  bind_data[dynamicId].cb_dropdown_option_id.split(",") : "";
+	                var bind_data_list =  bind_data[dynamicId].cb_dropdown_option_id;
 	                for(var flag = 0; flag<bind_data_list.length;flag++)
 				    {
-					   
-					    jQuery("#ux_ddl_select_control"+dynamicId).append("<option value=\""+bind_data_list[flag]+"\">"+option_val[flag]+"</option>");
+				        jQuery("#ux_ddl_select_control"+dynamicId).append("<option value=\""+bind_data_list[flag]+"\">"+bind_data[dynamicId].cb_dropdown_option_val[flag]+"</option>");
 				    }
 					var control_id = bind_data[dynamicId].control_id;
 					jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox("+dynamicId+","+control_type+","+control_id+");");
@@ -288,12 +286,11 @@ function create_control(control_type,dynamicId,type)
 	                {
 	                    jQuery("#control_label_"+dynamicId).append("<span class=\"error\">*</span>");
 	                }
-	               	var option_val =  bind_data[dynamicId].cb_checkbox_option_val.length > 0 ? bind_data[dynamicId].cb_checkbox_option_val.split(",") : 0;
-	                var bind_chk_list =  bind_data[dynamicId].cb_checkbox_option_id.length > 0 ? bind_data[dynamicId].cb_checkbox_option_id.split(",") : 0;
+	                var bind_chk_list =  bind_data[dynamicId].cb_checkbox_option_id;
 	                for(var flag = 0; flag<bind_chk_list.length;flag++)
 				    {
 				    	jQuery("#ux_chk_checkbox_control_"+dynamicId).hide();
-                		jQuery("#add_chk_options_here_"+dynamicId).append("<span id=\"input_id_"+bind_chk_list[flag]+"\"><input id=\"ux_chk_checkbox_control_"+bind_chk_list[flag]+"\" name=\"ux_chk_checkbox_control_"+bind_chk_list[flag]+"\" type=\"checkbox\"/><label class=\"rdl\">"+option_val[flag]+"</label></span>");
+                		jQuery("#add_chk_options_here_"+dynamicId).append("<span id=\"input_id_"+bind_chk_list[flag]+"\"><input id=\"ux_chk_checkbox_control_"+bind_chk_list[flag]+"\" name=\"ux_chk_checkbox_control_"+bind_chk_list[flag]+"\" type=\"checkbox\"/><label class=\"rdl\">"+bind_data[dynamicId].cb_checkbox_option_val[flag]+"</label></span>");
 				    }
 					var control_id = bind_data[dynamicId].control_id;
 					jQuery("#show_tooltip"+dynamicId).children("#anchor_del_"+dynamicId).attr("onclick","delete_textbox("+dynamicId+","+control_type+","+control_id+");");
@@ -332,12 +329,11 @@ function create_control(control_type,dynamicId,type)
 	                {
 	                    jQuery("#control_label_"+dynamicId).append("<span class=\"error\">*</span>");
 	                }
-	                var option_val = bind_data[dynamicId].cb_radio_option_val.length > 0 ? bind_data[dynamicId].cb_radio_option_val.split(",") : "";
-	                var bind_rdl_list = bind_data[dynamicId].cb_radio_option_id.length > 0 ? bind_data[dynamicId].cb_radio_option_id.split(",") : "";
+	                var bind_rdl_list =  bind_data[dynamicId].cb_radio_option_id;
 	                for(var flag = 0; flag<bind_rdl_list.length;flag++)
 				    {
 				    	jQuery("#ux_radio_button_control_"+dynamicId).hide();
-                		jQuery("#add_radio_options_here_"+dynamicId).append("<span id=\"input_id_"+bind_rdl_list[flag]+"\"><input id=\"ux_radio_button_control_"+bind_rdl_list[flag]+"\" name=\"ux_radio"+dynamicId+"\" type=\"radio\"/><label class=\"rdl\">"+option_val[flag]+"</label></span>");
+                		jQuery("#add_radio_options_here_"+dynamicId).append("<span id=\"input_id_"+bind_rdl_list[flag]+"\"><input id=\"ux_radio_button_control_"+bind_rdl_list[flag]+"\" name=\"ux_radio"+dynamicId+"\" type=\"radio\"/><label class=\"rdl\">"+bind_data[dynamicId].cb_radio_option_val[flag]+"</label></span>");
                 		if(flag == 0)
 				    	{
 				    		jQuery("#ux_radio_button_control_"+bind_rdl_list[flag]).attr("checked","checked");

@@ -107,8 +107,7 @@
 						<?php
 						if(isset($form_settings[$dynamicId]["cb_dropdown_option_id"]) && isset($form_settings[$dynamicId]["cb_dropdown_option_val"]))
 						{
-							$options_values = count(unserialize($form_settings[$dynamicId]["cb_dropdown_option_val"])) > 0 ? explode(",",unserialize($form_settings[$dynamicId]["cb_dropdown_option_val"])) : "";
-							$options_ids  = count(unserialize($form_settings[$dynamicId]["cb_dropdown_option_id"])) > 0 ? explode(",",unserialize($form_settings[$dynamicId]["cb_dropdown_option_id"])) : "";
+							$options_values = unserialize($form_settings[$dynamicId]["cb_dropdown_option_val"]);
 							if(count($options_values) > 0)
 							{
 							?>
@@ -125,23 +124,16 @@
 							<div class="layout-controls">
 								<select id="dropdown_ddl_option_<?php echo $dynamicId; ?>" class="layout-span9">
 									<?php
-									if($options_ids != "")
+									foreach(unserialize($form_settings[$dynamicId]["cb_dropdown_option_id"]) as $key => $value )
 									{
-										if($options_values != "")
-										{
-											for($flag1 = 0;$flag1<count($options_ids);$flag1++)
-											{
-											?>
-												<option value="<?php echo $options_ids[$flag1]; ?>"><?php echo $options_values[$flag1]; ?></option>
-											<?php
-											}
-										}
+									?>
+										<option value="<?php echo $value; ?>"><?php echo $options_values[$key]; ?></option>
+									<?php
 									}
 									?>
 								</select>
 								<input class="btn btn-info layout-span2" style="margin-left:10px;"  value="<?php _e( "Delete", contact_bank ); ?>" type="button" id="ddl_options_btn_del_<?php echo $dynamicId; ?>" onclick="delete_ddl_options(<?php echo $dynamicId; ?>);"  name="ddl_options_btn_del_<?php echo $dynamicId; ?>" />
 							</div>
-								
 						</div>
 					<?php
 					}
@@ -207,7 +199,7 @@
 				options_ddl.push(this.value);
 				options_value.push(this.text);
 			});
-			jQuery.post(ajaxurl, jQuery(form).serialize() + "&controlId="+controlId+"&form_id="+form_id+"&form_settings="+JSON.stringify(<?php echo json_encode($form_settings); ?>)+"&ddl_options_id="+JSON.stringify(encodeURIComponent(options_ddl))+"&options_value="+JSON.stringify(encodeURIComponent(options_value))+"&event=update&param=save_drop_down_control&action=add_contact_form_library", function(data)
+			jQuery.post(ajaxurl, jQuery(form).serialize() + "&controlId="+controlId+"&form_id="+form_id+"&form_settings="+JSON.stringify(<?php echo json_encode($form_settings); ?>)+"&ddl_options_id="+JSON.stringify(options_ddl)+"&options_value="+encodeURIComponent(JSON.stringify(options_value))+"&event=update&param=save_drop_down_control&action=add_contact_form_library", function(data)
 			{
 				jQuery("#control_label_"+dynamicId).html(jQuery("#ux_label_text_"+dynamicId).val()+" :");
 				jQuery("#show_tooltip"+dynamicId).attr("data-original-title",jQuery("#ux_tooltip_control_"+dynamicId).val());

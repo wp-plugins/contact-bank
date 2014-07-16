@@ -125,8 +125,7 @@
 					<?php
 						if(isset($form_settings[$dynamicId]["cb_radio_option_id"]) && isset($form_settings[$dynamicId]["cb_radio_option_val"]))
 						{
-							$options_value = count(unserialize($form_settings[$dynamicId]["cb_radio_option_val"])) > 0 ? explode(",",unserialize($form_settings[$dynamicId]["cb_radio_option_val"])) : "";
-							$options_ids  = count(unserialize($form_settings[$dynamicId]["cb_radio_option_id"])) > 0 ?  explode(",",unserialize($form_settings[$dynamicId]["cb_radio_option_id"])) : "";
+							$options_value = unserialize($form_settings[$dynamicId]["cb_radio_option_val"]);
 							if(count($options_value) > 0)
 							{
 							?>
@@ -143,15 +142,12 @@
 							<div class="layout-controls">
 								<select id="dropdown_ddl_option_<?php echo $dynamicId; ?>" class="layout-span9">
 									<?php
-									if($options_ids != "")
-									{
-										for($flag1 = 0;$flag1<count($options_ids);$flag1++)
+										foreach(unserialize($form_settings[$dynamicId]["cb_radio_option_id"]) as $key => $value )
 										{
 											?>
-											<option value="<?php echo $options_ids[$flag1]; ?>"><?php echo $options_value[$flag1]; ?></option>
+											<option value="<?php echo $value; ?>"><?php echo $options_value[$key]; ?></option>
 											<?php
 										}
-									}
 									?>
 								</select>
 								<input class="btn btn-info layout-span2" style="margin-left:10px;"  value="<?php _e( "Delete", contact_bank ); ?>" type="button" id="ddl_options_btn_del_<?php echo $dynamicId; ?>" onclick="delete_rdl_options(<?php echo $dynamicId; ?>);"  name="ddl_options_btn_del_<?php echo $dynamicId; ?>" />
@@ -236,7 +232,7 @@
 				options_value.push(this.text);
 				jQuery("input[name=ux_radio"+dynamicId+"]:first").attr("checked","checked");
 			});
-			jQuery.post(ajaxurl, jQuery(form).serialize() + "&controlId="+controlId+"&form_id="+form_id+"&form_settings="+JSON.stringify(<?php echo json_encode($form_settings) ?>)+"&ddl_options_id="+JSON.stringify(encodeURIComponent(options_ddl))+"&options_value="+JSON.stringify(encodeURIComponent(options_value))+"&event=update&param=save_multiple_control&action=add_contact_form_library", function(data)
+			jQuery.post(ajaxurl, jQuery(form).serialize() + "&controlId="+controlId+"&form_id="+form_id+"&form_settings="+JSON.stringify(<?php echo json_encode($form_settings) ?>)+"&ddl_options_id="+JSON.stringify(options_ddl)+"&options_value="+encodeURIComponent(JSON.stringify(options_value))+"&event=update&param=save_multiple_control&action=add_contact_form_library", function(data)
 			{
 				jQuery("#control_label_"+dynamicId).html(jQuery("#ux_label_text_"+dynamicId).val()+" :");
 				jQuery("#post_back_radio_button_"+dynamicId).attr("data-original-title",jQuery("#ux_tooltip_control_"+dynamicId).val());
