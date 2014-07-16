@@ -1,0 +1,1018 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Contact Bank\n"
+"POT-Creation-Date: 2014-07-09 14:17+0530\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: C:\\wamp\\www\\contact-bank-standard\\wp-content\\plugins"
+"\\contact-bank\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: contact-bank.php:61 contact-bank.php:74 contact-bank.php:87
+#: contact-bank.php:98
+msgid "Contact Bank"
+msgstr "Contact Bank"
+
+#: contact-bank.php:62 contact-bank.php:75 contact-bank.php:88
+#: contact-bank.php:99 contact-bank.php:371 contact-bank.php:421
+#: contact-bank.php:473 contact-bank.php:517 views/dashboard.php:88
+msgid "Dashboard"
+msgstr "Kontrollpanel"
+
+#: contact-bank.php:64 contact-bank.php:77 contact-bank.php:89
+#: contact-bank.php:100 contact-bank.php:377 contact-bank.php:427
+#: contact-bank.php:479 contact-bank.php:523
+msgid "Short-Codes"
+msgstr "Kort-koder"
+
+#: contact-bank.php:65 contact-bank.php:78 contact-bank.php:90
+#: contact-bank.php:101 contact-bank.php:383 contact-bank.php:433
+#: contact-bank.php:485 contact-bank.php:529 views/contact_frontend_data.php:8
+#: views/dashboard.php:229
+msgid "Form Entries"
+msgstr "Formulär"
+
+#: contact-bank.php:66 contact-bank.php:79 contact-bank.php:91
+#: contact-bank.php:102 contact-bank.php:389 contact-bank.php:439
+#: contact-bank.php:491 contact-bank.php:535
+#: views/contact_email_settings.php:8 views/dashboard.php:224
+msgid "Email Settings"
+msgstr "E-postinställningar"
+
+#: contact-bank.php:67 contact-bank.php:80 contact-bank.php:92
+#: contact-bank.php:103 contact-bank.php:395 contact-bank.php:445
+#: contact-bank.php:497 contact-bank.php:541
+#: views/contact_bank_layout_settings.php:8 views/dashboard.php:219
+msgid "Global Settings"
+msgstr "Globala inställningar"
+
+#: contact-bank.php:68 contact-bank.php:81 contact-bank.php:401
+#: contact-bank.php:453 views/contact-bank-system-report.php:11
+msgid "System Status"
+msgstr "Systemets status"
+
+#: contact-bank.php:69 contact-bank.php:82 contact-bank.php:93
+#: contact-bank.php:104 contact-bank.php:407 contact-bank.php:459
+#: contact-bank.php:503 contact-bank.php:547
+msgid "Purchase PRO Edition"
+msgstr "Köp PRO Edition"
+
+#: contact-bank.php:555
+msgid "Add Contact Bank Form"
+msgstr "Lägg till Contact Bank-formulär"
+
+#: contact-bank.php:567
+msgid "Insert Contact Bank Form"
+msgstr "Infoga Contact Bank-formulär"
+
+#: contact-bank.php:569
+msgid "Select a form below to add it to your post or page."
+msgstr ""
+"Välj ett formulär nedan för att lägga till det på din sida eller ditt inlägg"
+
+#: contact-bank.php:574
+msgid "Form Name"
+msgstr "Formulärnamn"
+
+#: contact-bank.php:576
+msgid "Select a Form"
+msgstr "Välj ett formulär"
+
+#: contact-bank.php:593
+msgid "Show Form Title"
+msgstr "Visa formulärets titel"
+
+#: contact-bank.php:598
+msgid "Insert Form"
+msgstr "Infoga formulär"
+
+#: contact-bank.php:601
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: contact-bank.php:613
+msgid "Please choose a Form to insert into Shortcode"
+msgstr "Var god välj ett formulär att infoga till snabbkod"
+
+#: frontend_views/contact_bank_forms.php:369
+#: views/contact_bank_form_preview.php:377 views/contact_controls_files.php:56
+msgid "Select Option"
+msgstr "Välj alternativ"
+
+#: includes/cb_checkbox.php:36
+msgid "Check Boxes"
+msgstr "Check-rutor"
+
+#: includes/cb_checkbox.php:40 includes/cb_dropdown.php:40
+#: includes/cb_email.php:40 includes/cb_multiple.php:40
+#: includes/cb_text.php:40 includes/cb_textarea.php:40
+msgid "Label"
+msgstr "Etikett"
+
+#: includes/cb_checkbox.php:42 includes/cb_checkbox.php:144
+#: includes/cb_dropdown.php:42 includes/cb_dropdown.php:144
+#: includes/cb_email.php:43 includes/cb_email.php:133
+#: includes/cb_multiple.php:44 includes/cb_multiple.php:164
+#: includes/cb_text.php:43 includes/cb_text.php:132
+#: includes/cb_textarea.php:42 includes/cb_textarea.php:130
+#: views/contact_controls_files.php:3 views/contact_controls_files.php:19
+#: views/contact_controls_files.php:52 views/contact_controls_files.php:68
+#: views/contact_controls_files.php:85
+msgid "Untitled"
+msgstr "Namnlös"
+
+#: includes/cb_checkbox.php:46 includes/cb_checkbox.php:56
+#: includes/cb_checkbox.php:69 includes/cb_checkbox.php:83
+#: includes/cb_dropdown.php:46 includes/cb_dropdown.php:56
+#: includes/cb_dropdown.php:69 includes/cb_dropdown.php:83
+#: includes/cb_email.php:57 includes/cb_email.php:68 includes/cb_email.php:83
+#: includes/cb_email.php:99 includes/cb_multiple.php:49
+#: includes/cb_multiple.php:60 includes/cb_multiple.php:75
+#: includes/cb_multiple.php:91 includes/cb_text.php:56 includes/cb_text.php:67
+#: includes/cb_text.php:82 includes/cb_text.php:98 includes/cb_textarea.php:56
+#: includes/cb_textarea.php:67 includes/cb_textarea.php:82
+#: includes/cb_textarea.php:98
+msgid "Required"
+msgstr "Obligatorisk"
+
+#: includes/cb_checkbox.php:60 includes/cb_checkbox.php:73
+#: includes/cb_checkbox.php:87 includes/cb_dropdown.php:60
+#: includes/cb_dropdown.php:73 includes/cb_dropdown.php:87
+#: includes/cb_email.php:73 includes/cb_email.php:88 includes/cb_email.php:104
+#: includes/cb_multiple.php:65 includes/cb_multiple.php:80
+#: includes/cb_multiple.php:96 includes/cb_text.php:72 includes/cb_text.php:87
+#: includes/cb_text.php:103 includes/cb_textarea.php:72
+#: includes/cb_textarea.php:87 includes/cb_textarea.php:103
+msgid "Not Required"
+msgstr "Ej obligatorisk"
+
+#: includes/cb_checkbox.php:95 includes/cb_dropdown.php:95
+#: includes/cb_email.php:112 includes/cb_multiple.php:104
+#: includes/cb_text.php:111
+msgid "Tooltip Text"
+msgstr "Verktygstips"
+
+#: includes/cb_checkbox.php:97 includes/cb_dropdown.php:97
+#: includes/cb_email.php:115 includes/cb_multiple.php:108
+#: includes/cb_text.php:114 includes/cb_textarea.php:113
+#: views/contact_bank_layout_settings.php:925
+#: views/contact_frontend_data.php:148 views/dashboard.php:413
+#: views/includes_common_after.php:348 views/includes_common_after.php:351
+#: views/includes_common_after.php:354 views/includes_common_after.php:357
+#: views/includes_common_after.php:360 views/includes_common_after.php:363
+#: views/includes_common_after.php:366 views/includes_common_after.php:369
+#: views/includes_common_after.php:372
+msgid "This Feature is only available in Paid Premium Edition!"
+msgstr "Den här funktionen är endast tillgänglig i betald Premium Edition!"
+
+#: includes/cb_checkbox.php:101 includes/cb_dropdown.php:101
+#: includes/cb_multiple.php:113
+msgid "Options"
+msgstr "Alternativ"
+
+#: includes/cb_checkbox.php:103
+msgid "Enter Options"
+msgstr "Ange alternativ"
+
+#: includes/cb_checkbox.php:104 includes/cb_dropdown.php:104
+#: includes/cb_multiple.php:119
+msgid "Add"
+msgstr "Lägg till"
+
+#: includes/cb_checkbox.php:135 includes/cb_dropdown.php:135
+#: includes/cb_multiple.php:153
+msgid "Delete"
+msgstr "Ta bort"
+
+#: includes/cb_checkbox.php:142 includes/cb_dropdown.php:142
+#: includes/cb_email.php:130 includes/cb_multiple.php:160
+#: includes/cb_text.php:129 includes/cb_textarea.php:128
+msgid "Admin Label"
+msgstr "Admin-etikett"
+
+#: includes/cb_checkbox.php:144 includes/cb_dropdown.php:144
+#: includes/cb_email.php:134 includes/cb_multiple.php:163
+#: includes/cb_text.php:131 includes/cb_textarea.php:131
+msgid "Enter Admin Label"
+msgstr "Ange admin-etikett"
+
+#: includes/cb_checkbox.php:148 includes/cb_dropdown.php:148
+#: includes/cb_email.php:139 includes/cb_multiple.php:168
+#: includes/cb_text.php:137 includes/cb_textarea.php:135
+msgid "Do not show in the email"
+msgstr "Visa inte i e-posten"
+
+#: includes/cb_checkbox.php:179 includes/cb_dropdown.php:179
+#: includes/cb_email.php:173 includes/cb_multiple.php:202
+#: includes/cb_text.php:200 includes/cb_textarea.php:196
+msgid "Save Settings"
+msgstr "Spara inställningar"
+
+#: includes/cb_checkbox.php:228 includes/cb_dropdown.php:219
+#: includes/cb_multiple.php:252
+msgid "Please Fill an Option."
+msgstr "Var god välj ett alternativ"
+
+#: includes/cb_dropdown.php:36 views/contact_view.php:441
+msgid "Select Box"
+msgstr "Välj box"
+
+#: includes/cb_dropdown.php:42 includes/cb_email.php:44
+#: includes/cb_multiple.php:45 includes/cb_text.php:44
+msgid "Enter Label"
+msgstr "Ange etikett"
+
+#: includes/cb_dropdown.php:103 includes/cb_multiple.php:116
+msgid "Enter Option"
+msgstr "Ange alternativ"
+
+#: includes/cb_email.php:36 views/contact_view.php:438
+msgid "Email Address"
+msgstr "E-postadress"
+
+#: includes/cb_email.php:49 includes/cb_text.php:48
+#: includes/cb_textarea.php:48
+msgid "Description"
+msgstr "Beskrivning"
+
+#: includes/cb_email.php:52 includes/cb_text.php:51
+msgid "Enter Description"
+msgstr "Ange beskrivning"
+
+#: includes/cb_email.php:121 includes/cb_text.php:120
+#: includes/cb_textarea.php:120
+msgid "Place Holder"
+msgstr "Exempeltext"
+
+#: includes/cb_email.php:124 includes/cb_text.php:123
+#: includes/cb_textarea.php:122
+msgid "Enter Place Holder"
+msgstr "Ange exempeltext"
+
+#: includes/cb_multiple.php:36 views/contact_view.php:449
+msgid "Radio Buttons"
+msgstr "Runda knappar"
+
+#: includes/cb_text.php:36 views/contact_view.php:430
+msgid "Single Line Text"
+msgstr "Enradstext"
+
+#: includes/cb_text.php:168 includes/cb_textarea.php:166
+msgid "Add a filter"
+msgstr "Lägg till ett filter"
+
+#: includes/cb_text.php:173 includes/cb_textarea.php:170
+msgid "Alpha"
+msgstr "Alpha"
+
+#: includes/cb_text.php:177 includes/cb_textarea.php:174
+msgid "Alpha Numeric"
+msgstr "Alphanummerisk"
+
+#: includes/cb_text.php:181 includes/cb_textarea.php:178
+msgid "Digits"
+msgstr "Siffror"
+
+#: includes/cb_text.php:185 includes/cb_textarea.php:182
+msgid "Strip Tags"
+msgstr "Textstrip"
+
+#: includes/cb_text.php:189 includes/cb_textarea.php:186
+msgid "Trim"
+msgstr "Trimma"
+
+#: includes/cb_text.php:191 includes/cb_textarea.php:188
+#: views/contact_bank_layout_settings.php:62
+#: views/contact_bank_layout_settings.php:250
+#: views/contact_bank_layout_settings.php:460
+#: views/contact_bank_layout_settings.php:653
+#: views/contact_bank_layout_settings.php:781 views/contact_view.php:459
+msgid " (Available in Premium Edition)"
+msgstr "(Finns i Premium Edition)"
+
+#: includes/cb_textarea.php:36 views/contact_view.php:433
+msgid "Paragraph Text"
+msgstr "Paragraf"
+
+#: includes/cb_textarea.php:43
+msgid "Enter label"
+msgstr "Ange etikett"
+
+#: includes/cb_textarea.php:50
+msgid "Enter  Description"
+msgstr "Ange beskrivning"
+
+#: includes/cb_textarea.php:111
+msgid "Tooltip text"
+msgstr "Verktygstips"
+
+#: lib/contact_bank_email-class.php:56 lib/contact_bank_email-class.php:66
+msgid "Edit Email Settings"
+msgstr "Redigera e-postinställningar"
+
+#: lib/contact_bank_email-class.php:59 lib/contact_bank_email-class.php:69
+msgid "Delete Email Settings"
+msgstr "Ta bort e-postinställningar"
+
+#: lib/contact_frontend_data_class.php:94
+msgid "Delete Form Entry"
+msgstr "Ta bort formulär"
+
+#: views/add_contact_email.php:31 views/contact_email_settings.php:66
+msgid "Email Confirmation"
+msgstr "E-postbekräftelse"
+
+#: views/add_contact_email.php:34
+msgid "Back to Email Settings"
+msgstr "Tillbaka till e-postinställningar"
+
+#: views/add_contact_email.php:35 views/add_contact_email.php:215
+#: views/contact_bank_layout_settings.php:14
+#: views/contact_bank_layout_settings.php:499
+#: views/contact_bank_layout_settings.php:911
+msgid "Save"
+msgstr "Spara"
+
+#: views/add_contact_email.php:39
+msgid "Email Settings Saved. Kindly wait for the redirect."
+msgstr "E-postinställningar sparade. Var god vänta.."
+
+#: views/add_contact_email.php:46 views/add_contact_email.php:103
+#: views/contact_controls_files.php:35
+msgid "Email"
+msgstr "E-post"
+
+#: views/add_contact_email.php:50 views/contact_view.php:466
+msgid "Name"
+msgstr "Namn"
+
+#: views/add_contact_email.php:54
+msgid "Enter Name"
+msgstr "Ange namn"
+
+#: views/add_contact_email.php:60
+msgid "Send To"
+msgstr "Skicka till"
+
+#: views/add_contact_email.php:69 views/add_contact_email.php:80
+#: views/add_contact_email.php:92 views/add_contact_email.php:152
+msgid "Enter Email"
+msgstr "Ange e-postadress"
+
+#: views/add_contact_email.php:71 views/add_contact_email.php:82
+#: views/add_contact_email.php:94
+msgid "Select a Field"
+msgstr "Välj ett fält"
+
+#: views/add_contact_email.php:107
+msgid "Enter Email "
+msgstr "Ange e-post"
+
+#: views/add_contact_email.php:111
+msgid "Send To Field"
+msgstr "\"Skicka till\"-fält"
+
+#: views/add_contact_email.php:115
+msgid "Enter Field "
+msgstr "Fyll i fältet"
+
+#: views/add_contact_email.php:117 views/add_contact_email.php:130
+#: views/add_contact_email.php:143 views/add_contact_email.php:154
+#: views/add_contact_email.php:165 views/add_contact_email.php:176
+#: views/add_contact_email.php:189
+msgid "Select a field"
+msgstr "Välj ett fält"
+
+#: views/add_contact_email.php:124
+msgid "From Name"
+msgstr "Avsändare"
+
+#: views/add_contact_email.php:128
+msgid "Enter from name "
+msgstr "Ange avsändare"
+
+#: views/add_contact_email.php:137
+msgid "From Email"
+msgstr "Från e-post"
+
+#: views/add_contact_email.php:141
+msgid "Enter from email"
+msgstr "Ange \"från e-post\""
+
+#: views/add_contact_email.php:150
+msgid "Reply To"
+msgstr "Svara till"
+
+#: views/add_contact_email.php:161
+msgid "CC"
+msgstr "Kopia"
+
+#: views/add_contact_email.php:163
+msgid "Enter CC Email "
+msgstr "Ange e-post för kopia"
+
+#: views/add_contact_email.php:172
+msgid "BCC"
+msgstr "Hemlig kopia"
+
+#: views/add_contact_email.php:174
+msgid "Enter Bcc Email"
+msgstr "Ange e-post för hemlig kopia"
+
+#: views/add_contact_email.php:183
+msgid "Subject"
+msgstr "Ämne"
+
+#: views/add_contact_email.php:187
+msgid "Enter Subject"
+msgstr "Ange ämne"
+
+#: views/add_contact_email.php:196
+msgid "Message"
+msgstr "Meddelande"
+
+#: views/add_contact_email.php:206
+msgid "Insert a Field into Your Form Message"
+msgstr "Infoga ett fält till ditt formulärmeddelande"
+
+#: views/contact-bank-system-report.php:14
+msgid "Get System Report"
+msgstr "Hämta systemrapport"
+
+#: views/contact-bank-system-report.php:18
+msgid "Close System Report"
+msgstr "Stäng systemrapport"
+
+#: views/contact-bank-system-report.php:100
+msgid "Default"
+msgstr "Standard"
+
+#: views/contact_bank_form_preview.php:276 views/dashboard.php:234
+msgid "Form Preview"
+msgstr "Förhandsgranska"
+
+#: views/contact_bank_form_preview.php:279
+#: views/contact_bank_layout_settings.php:11
+#: views/contact_email_settings.php:11 views/contact_frontend_data.php:11
+#: views/contact_view.php:242
+msgid "Back to Dashboard"
+msgstr "Tillbaka till kontrollpanelen"
+
+#: views/contact_bank_layout_settings.php:8
+msgid " (Premium Features available in Paid Edition)"
+msgstr "(Premium funktioner som finns i Paid Edition)"
+
+#: views/contact_bank_layout_settings.php:12
+msgid "Restore Global Settings"
+msgstr "Återställ globala inställningar"
+
+#: views/contact_bank_layout_settings.php:18
+msgid "Form Settings Saved. Kindly wait for the redirect."
+msgstr "Formulärinställningar sparade. Vänligen vänta omdirigeringen."
+
+#: views/contact_bank_layout_settings.php:24
+#: views/contact_bank_layout_settings.php:34
+#: views/contact_email_settings.php:15 views/contact_email_settings.php:31
+#: views/contact_frontend_data.php:23 views/contact_frontend_data.php:33
+msgid "Select Form"
+msgstr "Välj formulär"
+
+#: views/contact_bank_layout_settings.php:61
+msgid "Label Settings"
+msgstr "Etikettinställningar"
+
+#: views/contact_bank_layout_settings.php:73
+#: views/contact_bank_layout_settings.php:260
+#: views/contact_bank_layout_settings.php:470
+#: views/contact_bank_layout_settings.php:663
+#: views/contact_bank_layout_settings.php:791
+msgid "Font Family :"
+msgstr "Typsnittsfamilj"
+
+#: views/contact_bank_layout_settings.php:98
+msgid "Font Color :"
+msgstr "Textfärg"
+
+#: views/contact_bank_layout_settings.php:109
+#: views/contact_bank_layout_settings.php:296
+msgid "Font Style :"
+msgstr "Textstil"
+
+#: views/contact_bank_layout_settings.php:123
+#: views/contact_bank_layout_settings.php:310
+#: views/contact_bank_layout_settings.php:519
+#: views/contact_bank_layout_settings.php:688
+#: views/contact_bank_layout_settings.php:816
+msgid "Font Size (px) :"
+msgstr "Textstorlek"
+
+#: views/contact_bank_layout_settings.php:154
+#: views/contact_bank_layout_settings.php:411
+#: views/contact_bank_layout_settings.php:624
+#: views/contact_bank_layout_settings.php:752
+#: views/contact_bank_layout_settings.php:880
+msgid "Text Align :"
+msgstr "Textjustering"
+
+#: views/contact_bank_layout_settings.php:167
+msgid "Label Position :"
+msgstr "Etikettposition"
+
+#: views/contact_bank_layout_settings.php:181
+msgid "Field Desc Font Size :"
+msgstr "Fält för textstorlek"
+
+#: views/contact_bank_layout_settings.php:212
+msgid "Field Description Align :"
+msgstr "Justering beskrivningsfält"
+
+#: views/contact_bank_layout_settings.php:226
+msgid "Hide Labels :"
+msgstr "Göm etiketter"
+
+#: views/contact_bank_layout_settings.php:234
+#: views/contact_bank_layout_settings.php:424
+#: views/contact_bank_layout_settings.php:637
+#: views/contact_bank_layout_settings.php:765
+#: views/contact_bank_layout_settings.php:893
+msgid "Text Direction :"
+msgstr "Textdirektion"
+
+#: views/contact_bank_layout_settings.php:250
+msgid "Input Field Settings"
+msgstr "Infoga fält-inställningar"
+
+#: views/contact_bank_layout_settings.php:285
+#: views/contact_bank_layout_settings.php:582
+#: views/contact_bank_layout_settings.php:741
+#: views/contact_bank_layout_settings.php:869
+msgid "Text Color :"
+msgstr "Textfärg"
+
+#: views/contact_bank_layout_settings.php:341
+#: views/contact_bank_layout_settings.php:614
+msgid "Border Radius (px) :"
+msgstr "Radie på ram(px)"
+
+#: views/contact_bank_layout_settings.php:351
+#: views/contact_bank_layout_settings.php:593
+#: views/contact_bank_layout_settings.php:730
+#: views/contact_bank_layout_settings.php:858
+msgid "Border Color :"
+msgstr "Ramfärg"
+
+#: views/contact_bank_layout_settings.php:362
+#: views/contact_bank_layout_settings.php:604
+msgid "Border Size (px) :"
+msgstr "Ramstorlek"
+
+#: views/contact_bank_layout_settings.php:372
+msgid "Border Style :"
+msgstr "Ramstil"
+
+#: views/contact_bank_layout_settings.php:387
+#: views/contact_bank_layout_settings.php:560
+#: views/contact_bank_layout_settings.php:719
+#: views/contact_bank_layout_settings.php:847
+msgid "Background Color :"
+msgstr "Bakgrundsfärg"
+
+#: views/contact_bank_layout_settings.php:398
+msgid "Radio Buttons :"
+msgstr "Runda knappar"
+
+#: views/contact_bank_layout_settings.php:403
+msgid "Multiple Rows"
+msgstr "Flerradig"
+
+#: views/contact_bank_layout_settings.php:405
+msgid "Single Row"
+msgstr "Enkelradig"
+
+#: views/contact_bank_layout_settings.php:438
+msgid "Input Size :"
+msgstr "Storlek"
+
+#: views/contact_bank_layout_settings.php:460
+msgid "Submit Button Settings"
+msgstr "Skicka-knappsinställning"
+
+#: views/contact_bank_layout_settings.php:495
+msgid "Text:"
+msgstr "Text"
+
+#: views/contact_bank_layout_settings.php:505
+msgid "Style :"
+msgstr "Stil"
+
+#: views/contact_bank_layout_settings.php:550
+msgid "Button Width (px) :"
+msgstr "Knappbredd (px)"
+
+#: views/contact_bank_layout_settings.php:571
+msgid "Hover Background Color:"
+msgstr "Bakgrundsfärg vid hover"
+
+#: views/contact_bank_layout_settings.php:653
+msgid "Success Message Settings"
+msgstr "Meddelande skickat-inställningar"
+
+#: views/contact_bank_layout_settings.php:781
+msgid "Error Message Settings"
+msgstr "Felmeddelandeinställningar"
+
+#: views/contact_bank_pro_version.php:25
+msgid "Contact Bank Pricing"
+msgstr "Contact-Bank-Prissättning"
+
+#: views/contact_bank_pro_version.php:356 views/dashboard.php:283
+msgid "Need Support Help?"
+msgstr "Behöver Support Hjälp?"
+
+#: views/contact_bank_pro_version.php:368
+msgid "Lets get in touch!"
+msgstr "Lets ta kontakt!"
+
+#: views/contact_bank_pro_version.php:372 views/dashboard.php:299
+msgid "Order Now!"
+msgstr "Beställ nu!"
+
+#: views/contact_controls_files.php:8 views/contact_controls_files.php:24
+#: views/contact_controls_files.php:41 views/contact_controls_files.php:59
+#: views/contact_controls_files.php:75 views/contact_controls_files.php:92
+msgid "Settings"
+msgstr "Inställningar"
+
+#: views/contact_documentation.php:5
+msgid "Documentation - Contact Bank"
+msgstr "Dokumentation - Contact Bank"
+
+#: views/contact_email_settings.php:56
+msgid "Add New"
+msgstr "Lägg till ny"
+
+#: views/contact_email_settings.php:137
+msgid "Are you sure, you want to delete this Email Setting?"
+msgstr "Är du säker på att du vill radera denna e-postinställning?"
+
+#: views/contact_email_settings.php:155 views/contact_frontend_data.php:115
+msgid "Please select the Form first."
+msgstr "Var god välj formulär först."
+
+#: views/contact_frontend_data.php:12
+msgid "Export to Excel"
+msgstr "Exportera till Excel"
+
+#: views/contact_frontend_data.php:18 views/dashboard.php:150
+#: views/dashboard.php:157
+msgid "Form"
+msgstr "Formulär"
+
+#: views/contact_view.php:239 views/dashboard.php:103 views/dashboard.php:113
+msgid "Add New Form"
+msgstr "Lägg till nytt formulär"
+
+#: views/contact_view.php:245 views/contact_view.php:509
+msgid "Save Form"
+msgstr "Spara formulär"
+
+#: views/contact_view.php:250
+msgid "Form Submitted. Kindly wait for the redirect."
+msgstr "Formulär skickat. Var god vänta.."
+
+#: views/contact_view.php:259
+msgid "Form Settings"
+msgstr "Formulärinställningar"
+
+#: views/contact_view.php:263
+msgid "Form Name :"
+msgstr "Formulärnamn"
+
+#: views/contact_view.php:269
+msgid "Enter Form Name"
+msgstr "Ange formulärnamn"
+
+#: views/contact_view.php:273
+msgid "Form Description :"
+msgstr "Formulärbeskrivning"
+
+#: views/contact_view.php:275
+msgid "Enter Form Description"
+msgstr "Ange formulärbeskrivning"
+
+#: views/contact_view.php:279
+msgid "Blank Field Message:"
+msgstr "Tomt fält-meddelande"
+
+#: views/contact_view.php:285
+msgid "Required field must not be blank"
+msgstr "Obligatoriska fält får inte vara tomma."
+
+#: views/contact_view.php:287
+msgid "Enter Blank Field Message"
+msgstr "Ange tomt fält-meddelande"
+
+#: views/contact_view.php:291
+msgid "Incorrect Email Message:"
+msgstr "\"Ogiltig e-post\"-meddelande:"
+
+#: views/contact_view.php:297
+msgid "Please enter a valid email address"
+msgstr "Var god ange giltig e-postadress"
+
+#: views/contact_view.php:299
+msgid "Enter Incorrect Email Message"
+msgstr "Ange \"ogiltigt e-post\"-meddelande"
+
+#: views/contact_view.php:303
+msgid "Success Message :"
+msgstr "Skickat-meddelande"
+
+#: views/contact_view.php:307
+msgid "Enter Success Message"
+msgstr "Ange Skickat-meddelande"
+
+#: views/contact_view.php:311
+msgid "Redirect :"
+msgstr "Omdirigera"
+
+#: views/contact_view.php:323 views/contact_view.php:334
+#: views/contact_view.php:346
+msgid "Page"
+msgstr "Sida"
+
+#: views/contact_view.php:326 views/contact_view.php:337
+#: views/contact_view.php:349
+msgid "URL"
+msgstr "URL"
+
+#: views/contact_view.php:356
+msgid "Page :"
+msgstr "Sida:"
+
+#: views/contact_view.php:399
+msgid "URL :"
+msgstr "URL:"
+
+#: views/contact_view.php:406
+msgid "Enter Redirect URL"
+msgstr "Ange omdirigeringsadress"
+
+#: views/contact_view.php:413
+msgid "Form Layout Preview"
+msgstr "Förhandsgranska formulärlayout"
+
+#: views/contact_view.php:424
+msgid "Standard Fields"
+msgstr "Standardfält"
+
+#: views/contact_view.php:427 views/contact_view.php:463
+msgid "Click on a field to use into your form."
+msgstr "Klicka på ett fält för att använda det i formuläret."
+
+#: views/contact_view.php:446
+msgid "Checkboxes"
+msgstr "Checkrutor"
+
+#: views/contact_view.php:458
+msgid "Advanced Fields"
+msgstr "Avancerade fält"
+
+#: views/contact_view.php:469
+msgid "Website / URL"
+msgstr "Hemsida / URL"
+
+#: views/contact_view.php:474
+msgid "Phone"
+msgstr "Telefon"
+
+#: views/contact_view.php:477
+msgid "Address"
+msgstr "Adress"
+
+#: views/contact_view.php:482
+msgid "Number"
+msgstr "Nummer"
+
+#: views/contact_view.php:485
+msgid "File Upload"
+msgstr "Filuppladdning"
+
+#: views/contact_view.php:490
+msgid "Date"
+msgstr "Datum"
+
+#: views/contact_view.php:493
+msgid "Time"
+msgstr "Tid"
+
+#: views/contact_view.php:498
+msgid "Password"
+msgstr "Lösenord"
+
+#: views/dashboard.php:58
+msgid "Getting Started"
+msgstr "Komma igång"
+
+#: views/dashboard.php:62
+msgid "Watch the Walk-Through Video"
+msgstr "Titta på Walk-Through Video"
+
+#: views/dashboard.php:71
+msgid "Contact Bank, a Superlative High quality WordPress Plugin!"
+msgstr "Kontakta banken, en Superlative hög kvalitet Wordpress Plugin!"
+
+#: views/dashboard.php:78
+msgid "Get Contact Bank Pro Features"
+msgstr "Få Kontakta Bank Pro-funktioner"
+
+#: views/dashboard.php:126 views/dashboard.php:133
+msgid "Delete All Forms"
+msgstr "Radera alla formulär"
+
+#: views/dashboard.php:141
+msgid "Restore Factory Settings"
+msgstr "Återställ fabriksinställningar"
+
+#: views/dashboard.php:158
+msgid "Shortcode"
+msgstr "Shortcode"
+
+#: views/dashboard.php:159
+msgid "Total Controls"
+msgstr "Totala kontroller"
+
+#: views/dashboard.php:200 views/dashboard.php:209
+msgid "Edit Form"
+msgstr "Redigera formulär"
+
+#: views/dashboard.php:245 views/dashboard.php:255
+msgid "Delete Form"
+msgstr "Radera formulär"
+
+#: views/dashboard.php:295
+msgid "Let's get in touch!"
+msgstr "Lets ta kontakt!"
+
+#: views/dashboard.php:394
+msgid "Are you sure, you want to delete this Form?"
+msgstr "Är du säker på att du vill radera detta formulär?"
+
+#: views/dashboard.php:404
+msgid "Are you sure, you want to delete all Forms?"
+msgstr "Är du säker på att du vill radera alla formulär?"
+
+#: views/shortcode.php:8
+msgid ""
+"How to setup Short-Codes for Contact Bank into your WordPress Page/Post?"
+msgstr ""
+"Hur man ställer in Short-koder för Kontakt Bank i din Wordpress sida / "
+"inlägg?"
+
+#~ msgid "Roles & Capabilities"
+#~ msgstr "Roller & tillstånd"
+
+#~ msgid "Licensing"
+#~ msgstr "Licensiering"
+
+#~ msgid "Select Form :"
+#~ msgstr "Välj formulär:"
+
+#~ msgid "Day"
+#~ msgstr "Dag"
+
+#~ msgid "Select Month"
+#~ msgstr "Välj månad"
+
+#~ msgid "Year"
+#~ msgstr "År"
+
+#~ msgid "Hour"
+#~ msgstr "Timme"
+
+#~ msgid "Minute"
+#~ msgstr "Minut"
+
+#~ msgid "Enter Tooltip Text"
+#~ msgstr "Ange verktygstips"
+
+#~ msgid "Enter Tooltip"
+#~ msgstr "Ange verktygstips"
+
+#~ msgid "Start Year"
+#~ msgstr "Startår"
+
+#~ msgid "Enter Start Year"
+#~ msgstr "Ange startår"
+
+#~ msgid "End Year"
+#~ msgstr "Slutår"
+
+#~ msgid "Enter End Year "
+#~ msgstr "Ange slutår"
+
+#~ msgid "Default Value"
+#~ msgstr "Standardvärde"
+
+#~ msgid "Month"
+#~ msgstr "Månad"
+
+#~ msgid "Date Format"
+#~ msgstr "Datumformat"
+
+#~ msgid "Allow Multiple Uploads"
+#~ msgstr "Tillåt flera uppladdningar"
+
+#~ msgid "Allowed File Extensions"
+#~ msgstr "Tillåtna filformat"
+
+#~ msgid "Enter File Extensions"
+#~ msgstr "Ange filformat"
+
+#~ msgid "The file extensions must be separated with comma(',')"
+#~ msgstr "Filformaten måste separeras med kommatecken (',')"
+
+#~ msgid "Allowed File Size"
+#~ msgstr "Tillåten filstorlek"
+
+#~ msgid "File Size must be in Mb"
+#~ msgstr "Filstorleken måste anges i Mb"
+
+#~ msgid "Hour Format"
+#~ msgstr "Timformat"
+
+#~ msgid "Minute Format"
+#~ msgstr "Minutformat"
+
+#~ msgid "Roles and Capabilities Saved. Kindly wait for the redirect."
+#~ msgstr "Roller & tillstånd sparade. Var god vänta.."
+
+#~ msgid "Privileges for Admin"
+#~ msgstr "Privilegier för admin"
+
+#~ msgid "Full Control"
+#~ msgstr "Full kontroll"
+
+#~ msgid "Read"
+#~ msgstr "Läsa"
+
+#~ msgid "Write"
+#~ msgstr "Skriva"
+
+#~ msgid "Privileges for Editor"
+#~ msgstr "Privilegier för Editor"
+
+#~ msgid "Privileges for Author"
+#~ msgstr "Privilegier för Author"
+
+#~ msgid "Privileges for Contributor"
+#~ msgstr "Privilegier för Contributor"
+
+#~ msgid "Privileges for Subscriber"
+#~ msgstr "Privilegier för Subscriber"
+
+#~ msgid "Global Settings Saved. Kindly wait for the redirect."
+#~ msgstr "Globala inställningar sparade. Var god vänta.."
+
+#~ msgid "Are you sure, you want to Restore Global Settings?"
+#~ msgstr "Är du säker på att du vill återställa globala inställningar?"
+
+#~ msgid "Check Plugin - Contact Bank"
+#~ msgstr "Kolla plugin - Contact Bank"
+
+#~ msgid "Are you sure, you want to delete this Form Entry ?"
+#~ msgstr "Är du säker på att du vill radera detta formulärinnehåll?"
+
+#~ msgid "Attention! A new vesion of Contact Bank is available for download."
+#~ msgstr "OBS! En ny version av Contact Bank är tillgänglig för nedladdning."
+
+#~ msgid "Click"
+#~ msgstr "Klicka"
+
+#~ msgid "here"
+#~ msgstr "här"
+
+#~ msgid "to upgrade your version of Contact Bank."
+#~ msgstr "för att uppgradera din version av Contact Bank."
+
+#~ msgid "Dashboard - Contact Bank"
+#~ msgstr "Kontrollpanel - Contact Bank"
+
+#~ msgid "Are you sure you want to Restore Factory Settings?"
+#~ msgstr "Är du säker på att du vill återställa till fabriksinställningar?"
+
+#~ msgid "Only One File Uploader can be used on a Form."
+#~ msgstr "Endast EN filuppladdare kan användas per formulär."
+
+#~ msgid "Update"
+#~ msgstr "Uppdatera"
+
+#~ msgid "Success! Settings have been updated."
+#~ msgstr "Lyckat! Inställningarna har uppdaterats."
