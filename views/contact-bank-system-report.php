@@ -1,5 +1,32 @@
 <?php
-global $wp_version;
+global $wpdb,$current_user,$cb_user_role_permission,$wp_version;
+$cb_role = $wpdb->prefix . "capabilities";
+$current_user->role = array_keys($current_user->$cb_role);
+$cb_role = $current_user->role[0];
+switch($cb_role)
+{
+	case "administrator":
+		$cb_user_role_permission = "manage_options";
+		break;
+	case "editor":
+		$cb_user_role_permission = "publish_pages";
+		break;
+	case "author":
+		$cb_user_role_permission = "publish_posts";
+		break;
+	case "contributor":
+		$cb_user_role_permission = "edit_posts";
+		break;
+	case "subscriber":
+		$cb_user_role_permission = "read";
+		break;
+}
+if (!current_user_can($cb_user_role_permission))
+{
+	return;
+}
+else
+{
 ?>
 <form id="system_settings" class="layout-form" method="post">
 	<div id="poststuff" style="width: 99% !important;">
@@ -532,3 +559,6 @@ global $wp_version;
     })
 </script>
 
+<?php 
+}
+?>

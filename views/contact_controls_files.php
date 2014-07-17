@@ -1,3 +1,34 @@
+<?php
+global $wpdb,$current_user,$cb_user_role_permission;
+$cb_role = $wpdb->prefix . "capabilities";
+$current_user->role = array_keys($current_user->$cb_role);
+$cb_role = $current_user->role[0];
+switch($cb_role)
+{
+	case "administrator":
+		$cb_user_role_permission = "manage_options";
+		break;
+	case "editor":
+		$cb_user_role_permission = "publish_pages";
+		break;
+	case "author":
+		$cb_user_role_permission = "publish_posts";
+		break;
+	case "contributor":
+		$cb_user_role_permission = "edit_posts";
+		break;
+	case "subscriber":
+		$cb_user_role_permission = "read";
+		break;
+}
+if (!current_user_can($cb_user_role_permission))
+{
+	return;
+}
+else
+{
+	?>
+
 <div class="layout-control-group div_border" id="div_1_1" style="display: none;">
 	<label class="layout-control-label" id="control_label_">
 		<?php _e("Untitled", contact_bank); ?> :
@@ -97,3 +128,6 @@
 		</div>
 	</div>
 </div>
+<?php 
+}
+?>
