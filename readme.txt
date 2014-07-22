@@ -1,7 +1,8 @@
 ﻿=== WP Contact Bank - Best WP Contact Forms ===
 Contributors: contact-banker, Gallery-Bank
 Donate link : http://tech-banker.com/contact-bank/
-Tags: admin, advanced form, AJAX, best contact form plugin, buddypress, category, comment, comments, contact, contact bank, contact form, contact form 7, contact form builder, contact form plugin, contact forms, contact me, contact us, contacts, content, easy contact form, easy contact plugin, email, Facebook, feed, feedback, feedback form, form, form builder, forms, gallery, google, image, images, javascript, jquery, link, links, login, media, page, pages, plugin, Post, posts, request, rss, seo, shortcode, sidebar, stats, text, web form, widget, wordpress
+Tags: admin, advanced form, AJAX, best contact form plugin, buddypress, category, comment, comments, contact, contact bank, contact form, contact form 7, contact form builder, contact form plugin, contact forms, contact me, contact us, contacts, content, easy contact form, easy contact plugin, email, Facebook, feed, feedback, feedback form, form, form builder, forms, gallery, google, image, images, javascript, jquery, link, links, login, media, page, pages, plugin, Post, posts, request, rss, seo, shortcode, sidebar, stats, text, web form, widget, wordpress,
+contact form, contact form builder, contact form manager, contact form plugin, contact forms, contact forms plugin, contact manager, contact me, contact us, contact us form, custom form, email, email form, feedback, feedback form, feedback forms, form, forms, forms plugin, multiple contact forms, web form, wordpress contact form
 Requires at least: 3.3
 Tested up to: 3.9.1
 Stable tag: 2.0.50
@@ -31,7 +32,8 @@ It provides a powerful engine for uploading and managing dynamic forms with more
 
 ###IMPORTANT: If you think you found a bug in the Contact Bank or have any problem or question concerning Contact Bank, do not hesitate to contact us at [support@tech-banker.com](mailto:support@tech-banker.com).  
 
-***The Contact Bank WordPress Plugin is now proudly maintained by <a href="http://www.tech-banker.com">Tech Banker Pte Ltd.</a> since March 2014.***
+
+***The Contact Bank WordPress Plugin is now proudly maintained by <a href="http://www.tech-banker.com">Tech Banker</a> since March 2014.***
 
 ***July 22, 2014: We're happy to announce that Contact Bank reached 69,900+ plugin downloads in only 10 months. We frequently receive positive feedback from people using our Contact Bank Plugin for WordPress. Thanks so much for your support!***
 
@@ -49,6 +51,7 @@ It provides a powerful engine for uploading and managing dynamic forms with more
 
 
 ### Key Features of Contact Bank - WordPress Form Designer
+
 
 * Multi-Lingual. Available now in 30 Languages.
 * Responsive Forms
