@@ -1,15 +1,18 @@
 ﻿=== WP Contact Bank - Best WP Contact Forms ===
 Contributors: contact-banker, Gallery-Bank
+Donate link : http://tech-banker.com/contact-bank/
 Tags: admin, advanced form, AJAX, best contact form plugin, buddypress, category, comment, comments, contact, contact bank, contact form, contact form 7, contact form builder, contact form plugin, contact forms, contact me, contact us, contacts, content, easy contact form, easy contact plugin, email, Facebook, feed, feedback, feedback form, form, form builder, forms, gallery, google, image, images, javascript, jquery, link, links, login, media, page, pages, plugin, Post, posts, request, rss, seo, shortcode, sidebar, stats, text, web form, widget, wordpress
 Requires at least: 3.3
 Tested up to: 3.9.1
-Stable tag: 2.0.49
+Stable tag: 2.0.50
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Contact Bank is an Ultimate Wordpress Plugin that lets you build contact form easily in seconds.
+Contact Bank is an ultimate wordpress plugin that lets you create contact forms in seconds.
 
 == Description ==
+
+### [WordPress Contact Bank - Best WP Contact Forms](http://tech-banker.com/contact-bank/)    
 
 Contact Bank is a WordPress Plugin designed to create elegant and beautiful contact forms easily and hassle free within few seconds.
 
@@ -26,6 +29,7 @@ It provides a powerful engine for uploading and managing dynamic forms with more
 
 [vimeo https://vimeo.com/92488992]
 
+###IMPORTANT: If you think you found a bug in the Contact Bank or have any problem or question concerning Contact Bank, do not hesitate to contact us at [support@tech-banker.com](mailto:support@tech-banker.com).  
 
 ***The Contact Bank WordPress Plugin is now proudly maintained by <a href="http://www.tech-banker.com">Tech Banker Pte Ltd.</a> since March 2014.***
 
@@ -44,7 +48,7 @@ It provides a powerful engine for uploading and managing dynamic forms with more
 * [Captcha Bank](http://wordpress.org/extend/plugins/captcha-bank/) - An easy to use powerful wordpress Captcha Plugin to prevent spam on your site.lbums.
 
 
-= Key Features =
+### Key Features of Contact Bank - WordPress Form Designer
 
 * Multi-Lingual. Available now in 30 Languages.
 * Responsive Forms
@@ -92,7 +96,7 @@ It provides a powerful engine for uploading and managing dynamic forms with more
 
 Visit [here](http://tech-banker.com/contact-bank) to upgrade to Pro Version now.
 
-= Contact Bank is now available in the following Languages = 
+### Contact Bank is now available in the following Languages
 
 * Albanian (sq_AL)
 * Arabic (ar)
@@ -128,13 +132,31 @@ Visit [here](http://tech-banker.com/contact-bank) to upgrade to Pro Version now.
 
 = Technical support =
 
-* Please email all your queries/issues at support@tech-banker.com or use
+* Please email all your queries/issues at [support@tech-banker.com](mailto:support@tech-banker.com) or use
 * [Forum for Conntact Bank](http://tech-banker.com/forum/contact-bank-support/), feel free to ask  your queries.
 
 == Installation ==
 
-1. Upload `Contact Bank` folder to the `/wp-content/plugins/` directory.
-2. Activate the plugin through the 'Plugins' menu in your WordPress admin panel.
+### Minimum requirements.  
+*   Wordpress 3.3+  
+*   PHP 5.x  
+*   MySQL 5.x  
+
+### Performing a new installation  
+
+After downloading the ZIP file,  
+
+1. Log in to the administrator panel.  
+2. Go to Plugins Add > New > Upload.  
+3. Click “Choose file” (“Browse”) and select the downloaded zip file.  
+
+*For Mac Users*  
+*Go to your Downloads folder and locate the folder with the plugin. Right-click on the folder and select Compress. Now you have a newly created .zip file which can be installed as described here.*  
+
+1. Click “Install Now” button.  
+2. Click “Activate Plugin” button for activating the plugin.  
+
+If any problem occurs, please contact us at [support@tech-banker.com](mailto:support@tech-banker.com).
 
 == Frequently Asked Questions ==
 
@@ -258,7 +280,6 @@ To save your Inline Form you can follow these steps :
 Once you fill the Inline Form, click on Save Settings button. A Preview of control will appear in the Form Layout Preview.
 
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2013/11/Email4.png)
-
 
 = How to add Select Box Control in a Form? =
 
@@ -521,6 +542,10 @@ In order to set Shortcode for a Form, you need to follow these steps :
 
 
 == Changelog ==
+
+= 2.0.50 =
+
+* Slovak Language Updated
 
 = 2.0.49 =
 
