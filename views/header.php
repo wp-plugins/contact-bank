@@ -16,10 +16,6 @@ if($show_banner == "")
     </div>';
 	
 }
-global $wpdb,$current_user;
-$role = $wpdb->prefix . "capabilities";
-$current_user->role = array_keys($current_user->$role);
-$role = $current_user->role[0];
 $cb_lang = array();
 $cb_lang_translated_languages = array();
 array_push($cb_lang_translated_languages,"fr_FR","ru_RU","en_US","es_ES", "nl_NL","hu_HU","de_DE", "pt_BR","pt_PT","he_IL", "tr","it_IT", "da_DK", "pl_PL", "sv_SE", "zh_CN","cs_CZ","en_GB", "sk_SK");

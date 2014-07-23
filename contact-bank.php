@@ -4,7 +4,7 @@ Plugin Name: Contact Bank Standard Edition
 Plugin URI: http://tech-banker.com
 Description: Build Complex, Powerful Contact Forms in Just Seconds. No Programming Knowledge Required! Yeah, It's Really That Easy.
 Author: Tech Banker
-Version: 2.0.50
+Version: 2.0.51
 Author URI: http://tech-banker.com
  */
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -114,6 +114,10 @@ function create_global_menus_for_contact_bank()
  */
 function contact_bank()
 {
+	global $wpdb,$current_user,$cb_user_role_permission;
+	$cb_role = $wpdb->prefix . "capabilities";
+	$current_user->role = array_keys($current_user->$cb_role);
+	$cb_role = $current_user->role[0];
     include_once CONTACT_BK_PLUGIN_DIR ."/views/header.php";
     include_once CONTACT_BK_PLUGIN_DIR ."/views/contact_view.php";
     include_once CONTACT_BK_PLUGIN_DIR . "/views/includes_common_after.php";
@@ -121,36 +125,60 @@ function contact_bank()
 }
 function dashboard()
 {
+	global $wpdb,$current_user,$cb_user_role_permission;
+	$cb_role = $wpdb->prefix . "capabilities";
+	$current_user->role = array_keys($current_user->$cb_role);
+	$cb_role = $current_user->role[0];
     include_once CONTACT_BK_PLUGIN_DIR ."/views/header.php";
     include_once CONTACT_BK_PLUGIN_DIR ."/views/dashboard.php";
     include_once CONTACT_BK_PLUGIN_DIR ."/views/footer.php";
 }
 function edit_contact_view()
 {
+	global $wpdb,$current_user,$cb_user_role_permission;
+	$cb_role = $wpdb->prefix . "capabilities";
+	$current_user->role = array_keys($current_user->$cb_role);
+	$cb_role = $current_user->role[0];
     include_once CONTACT_BK_PLUGIN_DIR ."/views/header.php";
     include_once CONTACT_BK_PLUGIN_DIR ."/views/contact_view.php";
     include_once CONTACT_BK_PLUGIN_DIR ."/views/footer.php";
 }
 function contact_email()
 {
+	global $wpdb,$current_user,$cb_user_role_permission;
+	$cb_role = $wpdb->prefix . "capabilities";
+	$current_user->role = array_keys($current_user->$cb_role);
+	$cb_role = $current_user->role[0];
     include_once CONTACT_BK_PLUGIN_DIR ."/views/header.php";
     include_once CONTACT_BK_PLUGIN_DIR ."/views/contact_email_settings.php";
     include_once CONTACT_BK_PLUGIN_DIR ."/views/footer.php";
 }
 function frontend_data()
 {
+	global $wpdb,$current_user,$cb_user_role_permission;
+	$cb_role = $wpdb->prefix . "capabilities";
+	$current_user->role = array_keys($current_user->$cb_role);
+	$cb_role = $current_user->role[0];
     include_once CONTACT_BK_PLUGIN_DIR ."/views/header.php";
     include_once CONTACT_BK_PLUGIN_DIR ."/views/contact_frontend_data.php";
     include_once CONTACT_BK_PLUGIN_DIR ."/views/footer.php";
 }
 function add_contact_email_settings()
 {
+	global $wpdb,$current_user,$cb_user_role_permission;
+	$cb_role = $wpdb->prefix . "capabilities";
+	$current_user->role = array_keys($current_user->$cb_role);
+	$cb_role = $current_user->role[0];
     include_once CONTACT_BK_PLUGIN_DIR ."/views/header.php";
     include_once CONTACT_BK_PLUGIN_DIR ."/views/add_contact_email.php";
     include_once CONTACT_BK_PLUGIN_DIR ."/views/footer.php";
 }
 function layout_settings()
 {
+	global $wpdb,$current_user,$cb_user_role_permission;
+	$cb_role = $wpdb->prefix . "capabilities";
+	$current_user->role = array_keys($current_user->$cb_role);
+	$cb_role = $current_user->role[0];
     include_once CONTACT_BK_PLUGIN_DIR ."/views/header.php";
     include_once CONTACT_BK_PLUGIN_DIR ."/views/contact_bank_layout_settings.php";
     include_once CONTACT_BK_PLUGIN_DIR ."/views/footer.php";
@@ -158,6 +186,10 @@ function layout_settings()
 
 function system_status()
 {
+	global $wpdb,$current_user,$cb_user_role_permission,$wp_version;
+	$cb_role = $wpdb->prefix . "capabilities";
+	$current_user->role = array_keys($current_user->$cb_role);
+	$cb_role = $current_user->role[0];
     include_once CONTACT_BK_PLUGIN_DIR ."/views/header.php";
     include_once CONTACT_BK_PLUGIN_DIR ."/views/contact-bank-system-report.php";
     include_once CONTACT_BK_PLUGIN_DIR ."/views/footer.php";
@@ -165,18 +197,30 @@ function system_status()
 
 function form_preview()
 {
+	global $wpdb,$current_user,$cb_user_role_permission;
+	$cb_role = $wpdb->prefix . "capabilities";
+	$current_user->role = array_keys($current_user->$cb_role);
+	$cb_role = $current_user->role[0];
     include_once CONTACT_BK_PLUGIN_DIR ."/views/header.php";
     include_once CONTACT_BK_PLUGIN_DIR ."/views/contact_bank_form_preview.php";
     include_once CONTACT_BK_PLUGIN_DIR ."/views/footer.php";
 }
 function pro_version()
 {
+	global $wpdb,$current_user,$cb_user_role_permission;
+	$cb_role = $wpdb->prefix . "capabilities";
+	$current_user->role = array_keys($current_user->$cb_role);
+	$cb_role = $current_user->role[0];
     include_once CONTACT_BK_PLUGIN_DIR ."/views/header.php";
     include_once CONTACT_BK_PLUGIN_DIR ."/views/contact_bank_pro_version.php";
     include_once CONTACT_BK_PLUGIN_DIR ."/views/footer.php";
 }
 function short_code()
 {
+	global $wpdb,$current_user,$cb_user_role_permission;
+	$cb_role = $wpdb->prefix . "capabilities";
+	$current_user->role = array_keys($current_user->$cb_role);
+	$cb_role = $current_user->role[0];
     include_once CONTACT_BK_PLUGIN_DIR ."/views/header.php";
     include_once CONTACT_BK_PLUGIN_DIR ."/views/shortcode.php";
     include_once CONTACT_BK_PLUGIN_DIR ."/views/footer.php";
@@ -225,6 +269,10 @@ if(isset($_REQUEST["action"]))
             add_action( "admin_init", "add_contact_form_library");
             function add_contact_form_library()
             {
+            	global $wpdb,$current_user,$cb_user_role_permission;
+            	$cb_role = $wpdb->prefix . "capabilities";
+            	$current_user->role = array_keys($current_user->$cb_role);
+            	$cb_role = $current_user->role[0];
                 include_once CONTACT_BK_PLUGIN_DIR . "/lib/contact_view-class.php";
             }
             break;
@@ -239,6 +287,10 @@ if(isset($_REQUEST["action"]))
             add_action( "admin_init", "email_contact_form_library");
             function email_contact_form_library()
             {
+            	global $wpdb,$current_user,$cb_user_role_permission;
+            	$cb_role = $wpdb->prefix . "capabilities";
+            	$current_user->role = array_keys($current_user->$cb_role);
+            	$cb_role = $current_user->role[0];
                 include_once CONTACT_BK_PLUGIN_DIR . "/lib/contact_bank_email-class.php";
             }
             break;
@@ -253,6 +305,10 @@ if(isset($_REQUEST["action"]))
             add_action( "admin_init", "frontend_data_contact_library");
             function frontend_data_contact_library()
             {
+            	global $wpdb,$current_user,$cb_user_role_permission;
+            	$cb_role = $wpdb->prefix . "capabilities";
+            	$current_user->role = array_keys($current_user->$cb_role);
+            	$cb_role = $current_user->role[0];
                 include_once CONTACT_BK_PLUGIN_DIR . "/lib/contact_frontend_data_class.php";
             }
             break;
@@ -261,6 +317,10 @@ if(isset($_REQUEST["action"]))
             add_action( "admin_init", "show_form_control_data_contact_library");
             function show_form_control_data_contact_library()
             {
+            	global $wpdb,$current_user,$cb_user_role_permission;
+            	$cb_role = $wpdb->prefix . "capabilities";
+            	$current_user->role = array_keys($current_user->$cb_role);
+            	$cb_role = $current_user->role[0];
                 include_once CONTACT_BK_PLUGIN_DIR . "/lib/contact_bank_show_form_control_data-class.php";
             }
             break;
@@ -268,6 +328,10 @@ if(isset($_REQUEST["action"]))
             add_action( "admin_init", "layout_settings_contact_library");
             function layout_settings_contact_library()
             {
+            	global $wpdb,$current_user,$cb_user_role_permission;
+            	$cb_role = $wpdb->prefix . "capabilities";
+            	$current_user->role = array_keys($current_user->$cb_role);
+            	$cb_role = $current_user->role[0];
                 include_once CONTACT_BK_PLUGIN_DIR . "/lib/contact_bank_layout_settings-class.php";
             }
             break;

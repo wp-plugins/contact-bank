@@ -1,8 +1,5 @@
 <?php 
-global $wpdb,$current_user,$cb_user_role_permission;
-$cb_role = $wpdb->prefix . "capabilities";
-$current_user->role = array_keys($current_user->$cb_role);
-$cb_role = $current_user->role[0];
+
 switch($cb_role)
 {
 	case "administrator":
