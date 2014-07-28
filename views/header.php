@@ -14,7 +14,6 @@ if($show_banner == "")
       <a class="button gb_message_buttons" target="_blank" href="http://tech-banker.com/contact-bank/">UPGRADE NOW</a>
      </div>
     </div>';
-	
 }
 $cb_lang = array();
 $cb_lang_translated_languages = array();
@@ -31,6 +30,10 @@ jQuery(document).ready(function()
 </script>
 <img style="margin: 10px;" src="<?php echo CONTACT_BK_PLUGIN_URL .'/assets/images/cb-logo.png';?>"/>
 <?php
+global $wpdb,$current_user;
+$role = $wpdb->prefix . "capabilities";
+$current_user->role = array_keys($current_user->$role);
+$role = $current_user->role[0];
 switch ($role) {
 	case "administrator":
 		?>
@@ -109,7 +112,6 @@ elseif(!(in_array($cb_language, $cb_lang_translated_languages)) && !(in_array($c
 	<?php	
 }
 ?>
-
 <div class="message red" style="display: block;margin-top:10px">
  <span>
   <strong>You will be only allowed to add 1 Form. Kindly purchase Premium Edition for full access.</strong>
