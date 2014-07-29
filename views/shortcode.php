@@ -29,7 +29,7 @@ else
 						<h3 class="hndle"><span><?php _e("How to setup Short-Codes for Contact Bank into your WordPress Page/Post?", contact_bank); ?></span></h3>
 						<div class="inside">
 							<div id="ux_shortcode" class="contact_bank_layout">
-								<img src="<?php echo CONTACT_BK_PLUGIN_URL . "/assets/images/how-to-setup-short-code-cb.png";?>" />
+								<img src="<?php echo plugins_url("/assets/images/how-to-setup-short-code-cb.png" , dirname(__FILE__));?>" />
 							</div>
 						</div>
 					</div>

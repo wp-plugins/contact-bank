@@ -126,7 +126,7 @@ else
 															<span class="error">*</span>
 														</label>
 													 	<div class="layout-controls">
-															<input type="text" class="layout-span11" id="ux_clr_font_color" name="ux_clr_font_color" onclick="ux_clr_font_color_label_setting();" value="#000000" style="background-color:#000000;color:#fff;" /><img onclick="ux_clr_font_color_label_setting();" style="vertical-align: middle;margin-left: 5px;" src="<?php echo CONTACT_BK_PLUGIN_URL ."/assets/images/color.png" ?>" />
+															<input type="text" class="layout-span11" id="ux_clr_font_color" name="ux_clr_font_color" onclick="ux_clr_font_color_label_setting();" value="#000000" style="background-color:#000000;color:#fff;" /><img onclick="ux_clr_font_color_label_setting();" style="vertical-align: middle;margin-left: 5px;" src="<?php echo plugins_url("/assets/images/color.png" , dirname(__FILE__)); ?>" />
 															<div id="clr_font_color"></div>
 														</div>
 													</div>
@@ -313,7 +313,7 @@ else
 															<span class="error">*</span>
 														</label>
 														<div class="layout-controls">
-															<input type="text" class="layout-span11" id="ux_clr_text_color_input_field" name="ux_clr_text_color_input_field" onclick="ux_clr_font_color_input_settings();" value="#000000"  style="background-color:#000000;color:#fff;"/><img onclick="ux_clr_font_color_input_settings();" style="vertical-align: middle;margin-left: 5px;" src="<?php echo CONTACT_BK_PLUGIN_URL ."/assets/images/color.png" ?>" />
+															<input type="text" class="layout-span11" id="ux_clr_text_color_input_field" name="ux_clr_text_color_input_field" onclick="ux_clr_font_color_input_settings();" value="#000000"  style="background-color:#000000;color:#fff;"/><img onclick="ux_clr_font_color_input_settings();" style="vertical-align: middle;margin-left: 5px;" src="<?php echo plugins_url("/assets/images/color.png" , dirname(__FILE__));?>" />
 															<div id="clr_text_color"></div>
 														</div>
 													</div>
@@ -379,7 +379,7 @@ else
 															<span class="error">*</span>
 														</label>
 														<div class="layout-controls">
-															<input type="text" class="layout-span11" id="ux_clr_border_color_input_field" name="ux_clr_border_color_input_field" onclick="ux_clr_border_color_input_settings()" value="#e5e5e5" style="background-color:#e5e5e5;color:#fff;"/><img onclick="ux_clr_border_color_input_settings()" style="vertical-align: middle;margin-left: 5px;" src="<?php echo CONTACT_BK_PLUGIN_URL ."/assets/images/color.png" ?>" />
+															<input type="text" class="layout-span11" id="ux_clr_border_color_input_field" name="ux_clr_border_color_input_field" onclick="ux_clr_border_color_input_settings()" value="#e5e5e5" style="background-color:#e5e5e5;color:#fff;"/><img onclick="ux_clr_border_color_input_settings()" style="vertical-align: middle;margin-left: 5px;" src="<?php echo plugins_url("/assets/images/color.png" , dirname(__FILE__));?>" />
 															<div id="clr_border_color"></div>
 														</div>
 													</div>
@@ -415,7 +415,7 @@ else
 															<span class="error">*</span>
 														</label>
 														<div class="layout-controls">
-															<input type="text" class="layout-span11" id="ux_clr_bg_color_input_field" name="ux_clr_bg_color_input_field" onclick="ux_clr_BG_color_input_settings();" value="#ffffff" /><img onclick="ux_clr_BG_color_input_settings();" style="vertical-align: middle;margin-left: 5px;" src="<?php echo CONTACT_BK_PLUGIN_URL ."/assets/images/color.png" ?>" />
+															<input type="text" class="layout-span11" id="ux_clr_bg_color_input_field" name="ux_clr_bg_color_input_field" onclick="ux_clr_BG_color_input_settings();" value="#ffffff" /><img onclick="ux_clr_BG_color_input_settings();" style="vertical-align: middle;margin-left: 5px;" src="<?php echo plugins_url("/assets/images/color.png" , dirname(__FILE__)); ?>" />
 															<div id="clr_bg_color"></div>
 														</div>
 													</div>
@@ -588,7 +588,7 @@ else
 															<span class="error">*</span>
 														</label>
 														<div class="layout-controls">
-															<input type="text" class="layout-span11" id="ux_clr_bg_color_submit_button" name="ux_clr_bg_color_submit_button" onclick="ux_clr_BG_color_submit_btn_settings();" value="#24890d"  style="background-color:#24890d;color:#fff;"/><img onclick="ux_clr_BG_color_submit_btn_settings();" style="vertical-align: middle;margin-left: 5px;" src="<?php echo CONTACT_BK_PLUGIN_URL ."/assets/images/color.png" ?>" />
+															<input type="text" class="layout-span11" id="ux_clr_bg_color_submit_button" name="ux_clr_bg_color_submit_button" onclick="ux_clr_BG_color_submit_btn_settings();" value="#24890d"  style="background-color:#24890d;color:#fff;"/><img onclick="ux_clr_BG_color_submit_btn_settings();" style="vertical-align: middle;margin-left: 5px;" src="<?php echo plugins_url("/assets/images/color.png" , dirname(__FILE__));?>" />
 														<div id="clr_bg_color_submit_button"></div>
 														</div>
 													</div>
@@ -599,7 +599,7 @@ else
 															<span  class="error">*</span>
 														</label>
 														<div class="layout-controls">
-															<input type="text" class="layout-span11" id="ux_clr_hover_bg_color_submit_button" name="ux_clr_hover_bg_color_submit_button" onclick="ux_clr_hover_BG_color_submit_btn_settings();" value="#3dd41a" style="background-color:#000000;color:#fff;"  /><img onclick="ux_clr_hover_BG_color_submit_btn_settings();" style="vertical-align: middle;margin-left: 5px;" src="<?php echo CONTACT_BK_PLUGIN_URL ."/assets/images/color.png" ?>" />
+															<input type="text" class="layout-span11" id="ux_clr_hover_bg_color_submit_button" name="ux_clr_hover_bg_color_submit_button" onclick="ux_clr_hover_BG_color_submit_btn_settings();" value="#3dd41a" style="background-color:#000000;color:#fff;"  /><img onclick="ux_clr_hover_BG_color_submit_btn_settings();" style="vertical-align: middle;margin-left: 5px;" src="<?php echo plugins_url("/assets/images/color.png" , dirname(__FILE__));?>" />
 														<div id="clr_hover_bg_color_submit_button"></div>
 														</div>
 													</div>
@@ -610,7 +610,7 @@ else
 															<span class="error">*</span>
 														</label>
 														<div class="layout-controls">
-												 			<input type="text" class="layout-span11" id="ux_clr_text_color_submit_button" name="ux_clr_text_color_submit_button" onclick="ux_clr_text_color_submit_btn_settings();" value="#ffffff" /><img onclick="ux_clr_text_color_submit_btn_settings();" style="vertical-align: middle;margin-left: 5px;" src="<?php echo CONTACT_BK_PLUGIN_URL ."/assets/images/color.png" ?>" />
+												 			<input type="text" class="layout-span11" id="ux_clr_text_color_submit_button" name="ux_clr_text_color_submit_button" onclick="ux_clr_text_color_submit_btn_settings();" value="#ffffff" /><img onclick="ux_clr_text_color_submit_btn_settings();" style="vertical-align: middle;margin-left: 5px;" src="<?php echo plugins_url("/assets/images/color.png" , dirname(__FILE__));?>" />
 															<div id="clr_text_color_submit_button"></div>
 														</div>
 													</div>
@@ -621,7 +621,7 @@ else
 															<span class="error">*</span>
 														</label>
 														<div class="layout-controls">
-															<input type="text" class="layout-span11" id="ux_clr_border_color_submit_button" name="ux_clr_border_color_submit_button" onclick="ux_clr_hover_border_color_submit_btn_settings();" value="#000000" style="background-color:#000000;color:#fff;" /><img onclick="ux_clr_hover_border_color_submit_btn_settings();" style="vertical-align: middle;margin-left: 5px;" src="<?php echo CONTACT_BK_PLUGIN_URL ."/assets/images/color.png" ?>" />
+															<input type="text" class="layout-span11" id="ux_clr_border_color_submit_button" name="ux_clr_border_color_submit_button" onclick="ux_clr_hover_border_color_submit_btn_settings();" value="#000000" style="background-color:#000000;color:#fff;" /><img onclick="ux_clr_hover_border_color_submit_btn_settings();" style="vertical-align: middle;margin-left: 5px;" src="<?php echo plugins_url("/assets/images/color.png" , dirname(__FILE__));?>" />
 														<div id="clr_border_color_submit_button"></div>
 														</div>
 													</div>
@@ -747,7 +747,7 @@ else
 															<span class="error">*</span>
 														</label>
 														 <div class="layout-controls">
-															<input type="text" class="layout-span11" id="ux_clr_bg_color_success_msg" name="ux_clr_bg_color_success_msg" onclick="ux_clr_bg_color_sucess_msg_settings();" value="#e5ffd5" style="background-color:#e5ffd5;color:#fff;"/><img onclick="ux_clr_bg_color_sucess_msg_settings();" style="vertical-align: middle;margin-left: 5px;" src="<?php echo CONTACT_BK_PLUGIN_URL ."/assets/images/color.png" ?>" />
+															<input type="text" class="layout-span11" id="ux_clr_bg_color_success_msg" name="ux_clr_bg_color_success_msg" onclick="ux_clr_bg_color_sucess_msg_settings();" value="#e5ffd5" style="background-color:#e5ffd5;color:#fff;"/><img onclick="ux_clr_bg_color_sucess_msg_settings();" style="vertical-align: middle;margin-left: 5px;" src="<?php echo plugins_url("/assets/images/color.png" , dirname(__FILE__));?>" />
 											 			<div id="clr_bg_color_success_msg"></div>
 														</div>
 													</div>
@@ -758,7 +758,7 @@ else
 															<span class="error">*</span>
 														</label>
 														<div class="layout-controls">
-															<input type="text" class="layout-span11" id="ux_clr_border_color_success_msg" name="ux_clr_border_color_success_msg" onclick="ux_clr_border_color_sucess_msg_settings();" value="#e5ffd5" style="background-color:#e5ffd5;color:#fff;"/><img onclick="ux_clr_border_color_sucess_msg_settings();" style="vertical-align: middle;margin-left: 5px;" src="<?php echo CONTACT_BK_PLUGIN_URL ."/assets/images/color.png" ?>" />
+															<input type="text" class="layout-span11" id="ux_clr_border_color_success_msg" name="ux_clr_border_color_success_msg" onclick="ux_clr_border_color_sucess_msg_settings();" value="#e5ffd5" style="background-color:#e5ffd5;color:#fff;"/><img onclick="ux_clr_border_color_sucess_msg_settings();" style="vertical-align: middle;margin-left: 5px;" src="<?php echo plugins_url("/assets/images/color.png" , dirname(__FILE__));?>" />
 														<div id="clr_border_color_success_msg"></div>
 														</div>
 													</div>
@@ -769,7 +769,7 @@ else
 															<span class="error">*</span>
 														</label>
 														<div class="layout-controls">
-															<input type="text" class="layout-span11" id="ux_clr_text_color_success_msg" name="ux_clr_text_color_success_msg" onclick="ux_clr_text_color_sucess_msg_settings();" value="#6aa500" style="background-color:#6aa500;color:#fff;"/><img onclick="ux_clr_text_color_sucess_msg_settings();" style="vertical-align: middle;margin-left: 5px;" src="<?php echo CONTACT_BK_PLUGIN_URL ."/assets/images/color.png" ?>" />
+															<input type="text" class="layout-span11" id="ux_clr_text_color_success_msg" name="ux_clr_text_color_success_msg" onclick="ux_clr_text_color_sucess_msg_settings();" value="#6aa500" style="background-color:#6aa500;color:#fff;"/><img onclick="ux_clr_text_color_sucess_msg_settings();" style="vertical-align: middle;margin-left: 5px;" src="<?php echo plugins_url("/assets/images/color.png" , dirname(__FILE__));?>" />
 														<div id="clr_text_color_success_msg"></div>
 														</div>
 													</div>
@@ -875,7 +875,7 @@ else
 															<span class="error">*</span>
 														</label>
 														<div class="layout-controls">
-															<input type="text" class="layout-span11" id="ux_clr_bg_color_error_msg" name="ux_clr_bg_color_error_msg" onclick="ux_clr_BG_color_error_msg_settings();" value="#ffcaca" style="background-color:#ffcaca;color:#fff;"/><img onclick="ux_clr_BG_color_error_msg_settings();" style="vertical-align: middle;margin-left: 5px;" src="<?php echo CONTACT_BK_PLUGIN_URL ."/assets/images/color.png" ?>" />
+															<input type="text" class="layout-span11" id="ux_clr_bg_color_error_msg" name="ux_clr_bg_color_error_msg" onclick="ux_clr_BG_color_error_msg_settings();" value="#ffcaca" style="background-color:#ffcaca;color:#fff;"/><img onclick="ux_clr_BG_color_error_msg_settings();" style="vertical-align: middle;margin-left: 5px;" src="<?php echo plugins_url("/assets/images/color.png" , dirname(__FILE__));?>" />
 															<div id="clr_bg_color_error_msg"></div>
 														</div>
 													</div>
@@ -886,7 +886,7 @@ else
 															<span class="error">*</span>
 														</label>
 														<div class="layout-controls">
-															<input type="text" class="layout-span11" id="ux_clr_border_color_error_msg" onclick="ux_clr_border_color_error_msg_settings();" name="ux_clr_border_color_error_msg" value="#ffcaca" style="background-color:#ffcaca;color:#fff;"/><img onclick="ux_clr_border_color_error_msg_settings();" style="vertical-align: middle;margin-left: 5px;" src="<?php echo CONTACT_BK_PLUGIN_URL ."/assets/images/color.png" ?>" />
+															<input type="text" class="layout-span11" id="ux_clr_border_color_error_msg" onclick="ux_clr_border_color_error_msg_settings();" name="ux_clr_border_color_error_msg" value="#ffcaca" style="background-color:#ffcaca;color:#fff;"/><img onclick="ux_clr_border_color_error_msg_settings();" style="vertical-align: middle;margin-left: 5px;" src="<?php echo plugins_url("/assets/images/color.png" , dirname(__FILE__));?>" />
 															<div id="clr_border_color_error_msg"></div>
 														</div>
 													</div>
@@ -897,7 +897,7 @@ else
 															<span class="error">*</span>
 														</label>
 														<div class="layout-controls">
-															<input type="text" class="layout-span11" id="ux_clr_text_color_error_msg" value="#ff2c38" onclick="ux_clr_text_color_error_msg_settings();" name="ux_clr_text_color_error_msg" style="background-color:#ff2c38;color:#fff;"/><img onclick="ux_clr_text_color_error_msg_settings();" style="vertical-align: middle;margin-left: 5px;" src="<?php echo CONTACT_BK_PLUGIN_URL ."/assets/images/color.png" ?>" />
+															<input type="text" class="layout-span11" id="ux_clr_text_color_error_msg" value="#ff2c38" onclick="ux_clr_text_color_error_msg_settings();" name="ux_clr_text_color_error_msg" style="background-color:#ff2c38;color:#fff;"/><img onclick="ux_clr_text_color_error_msg_settings();" style="vertical-align: middle;margin-left: 5px;" src="<?php echo plugins_url("/assets/images/color.png" , dirname(__FILE__));?>" />
 															<div id="clr_text_color_error_msg"></div>
 														</div>
 													</div>

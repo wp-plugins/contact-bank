@@ -4,22 +4,14 @@ Plugin Name: Contact Bank Standard Edition
 Plugin URI: http://tech-banker.com
 Description: Build Complex, Powerful Contact Forms in Just Seconds. No Programming Knowledge Required! Yeah, It's Really That Easy.
 Author: Tech Banker
-Version: 2.0.52
+Version: 2.0.53
 Author URI: http://tech-banker.com
  */
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //   D e f i n e     CONSTANTS //////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-if (!defined("CONTACT_DEBUG_MODE"))    define("CONTACT_DEBUG_MODE",  false );
-if (!defined("CONTACT_BK_FILE"))       define("CONTACT_BK_FILE",  __FILE__ );
-if (!defined("CONTACT_CONTENT_DIR"))      define("CONTACT_CONTENT_DIR", ABSPATH . "wp-content");
-if (!defined("CONTACT_CONTENT_URL"))      define("CONTACT_CONTENT_URL", site_url() . "/wp-content");
-if (!defined("CONTACT_PLUGIN_DIR"))       define("CONTACT_PLUGIN_DIR", CONTACT_CONTENT_DIR . "/plugins");
-if (!defined("CONTACT_PLUGIN_URL"))       define("CONTACT_PLUGIN_URL", CONTACT_CONTENT_URL . "/plugins");
-if (!defined("CONTACT_BK_PLUGIN_FILENAME"))  define("CONTACT_BK_PLUGIN_FILENAME",  basename( __FILE__ ) );
-if (!defined("CONTACT_BK_PLUGIN_DIRNAME"))   define("CONTACT_BK_PLUGIN_DIRNAME",  plugin_basename(dirname(__FILE__)) );
-if (!defined("CONTACT_BK_PLUGIN_DIR")) define("CONTACT_BK_PLUGIN_DIR", CONTACT_PLUGIN_DIR."/".CONTACT_BK_PLUGIN_DIRNAME );
-if (!defined("CONTACT_BK_PLUGIN_URL")) define("CONTACT_BK_PLUGIN_URL", site_url()."/wp-content/plugins/".CONTACT_BK_PLUGIN_DIRNAME );
+if (!defined("CONTACT_BK_PLUGIN_DIR")) define("CONTACT_BK_PLUGIN_DIR",  plugin_dir_path( __FILE__ ));
+if (!defined("CONTACT_BK_PLUGIN_DIRNAME")) define("CONTACT_BK_PLUGIN_DIRNAME", plugin_basename(dirname(__FILE__)));
 if (!defined("contact_bank")) define("contact_bank", "contact_bank");
 
 function plugin_uninstall_script_for_contact_bank()
@@ -58,7 +50,7 @@ function create_global_menus_for_contact_bank()
 	
 	switch ($role) {
 		case "administrator":
-			add_menu_page("Contact Bank", __("Contact Bank", contact_bank), "read", "dashboard","",CONTACT_BK_PLUGIN_URL . "/assets/images/icon.png");
+			add_menu_page("Contact Bank", __("Contact Bank", contact_bank), "read", "dashboard","",plugins_url("/assets/images/icon.png" , __FILE__));
 		    add_submenu_page("dashboard", "Dashboard", __("Dashboard", contact_bank), "read", "dashboard","dashboard");
 		    add_submenu_page("","","", "read", "contact_bank","contact_bank");
 			add_submenu_page("dashboard", "Short-Codes", __("Short-Codes", contact_bank), "read", "short_code", "short_code" );
@@ -71,7 +63,7 @@ function create_global_menus_for_contact_bank()
 			add_submenu_page("","","", "read", "form_preview", "form_preview" );
 		break;
 		case "editor":
-			add_menu_page("Contact Bank", __("Contact Bank", contact_bank), "read", "dashboard","",CONTACT_BK_PLUGIN_URL . "/assets/images/icon.png");
+			add_menu_page("Contact Bank", __("Contact Bank", contact_bank), "read", "dashboard","",plugins_url("/assets/images/icon.png" , __FILE__));
 		    add_submenu_page("dashboard", "Dashboard", __("Dashboard", contact_bank), "read", "dashboard","dashboard");
 		    add_submenu_page("","","", "read", "contact_bank","contact_bank");
 			add_submenu_page("dashboard", "Short-Codes", __("Short-Codes", contact_bank), "read", "short_code", "short_code" );
@@ -84,7 +76,7 @@ function create_global_menus_for_contact_bank()
 			add_submenu_page("","","", "read", "form_preview", "form_preview" );
 		break;
 		case "author":
-			add_menu_page("Contact Bank", __("Contact Bank", contact_bank), "read", "dashboard","",CONTACT_BK_PLUGIN_URL . "/assets/images/icon.png");
+			add_menu_page("Contact Bank", __("Contact Bank", contact_bank), "read", "dashboard","",plugins_url("/assets/images/icon.png" , __FILE__));
 			add_submenu_page("dashboard", "Dashboard", __("Dashboard", contact_bank), "read", "dashboard","dashboard");
 			add_submenu_page("","","", "read", "contact_bank","contact_bank");
 			add_submenu_page("dashboard", "Short-Codes", __("Short-Codes", contact_bank), "read", "short_code", "short_code" );
@@ -234,32 +226,32 @@ function backend_plugin_js_scripts_contact_bank()
     wp_enqueue_script("jquery-ui-draggable");
     wp_enqueue_script("farbtastic");
 	wp_enqueue_script("jquery-ui-dialog");
-    wp_enqueue_script("jquery.Tooltip.js", CONTACT_BK_PLUGIN_URL ."/assets/js/jquery.Tooltip.js");
-    wp_enqueue_script("jquery.dataTables.min", CONTACT_BK_PLUGIN_URL ."/assets/js/jquery.dataTables.min.js");
-    wp_enqueue_script("jquery.validate.min", CONTACT_BK_PLUGIN_URL ."/assets/js/jquery.validate.min.js");
-    wp_enqueue_script("bootstrap.js", CONTACT_BK_PLUGIN_URL ."/assets/js/bootstrap.js");
-    wp_enqueue_script("jquery.prettyPhoto.js", CONTACT_BK_PLUGIN_URL ."/assets/js/jquery.prettyPhoto.js");
+    wp_enqueue_script("jquery.Tooltip.js", plugins_url("/assets/js/jquery.Tooltip.js",__FILE__));
+    wp_enqueue_script("jquery.dataTables.min", plugins_url("/assets/js/jquery.dataTables.min.js",__FILE__));
+    wp_enqueue_script("jquery.validate.min", plugins_url("/assets/js/jquery.validate.min.js",__FILE__));
+    wp_enqueue_script("bootstrap.js", plugins_url("/assets/js/bootstrap.js",__FILE__));
+    wp_enqueue_script("jquery.prettyPhoto.js", plugins_url("/assets/js/jquery.prettyPhoto.js",__FILE__));
 }
 function frontend_plugin_js_scripts_contact_bank()
 {
     wp_enqueue_script("jquery");
-    wp_enqueue_script("jquery.Tooltip.js", CONTACT_BK_PLUGIN_URL ."/assets/js/jquery.Tooltip.js");
-    wp_enqueue_script("jquery.validate.min", CONTACT_BK_PLUGIN_URL ."/assets/js/jquery.validate.min.js");
+    wp_enqueue_script("jquery.Tooltip.js", plugins_url("/assets/js/jquery.Tooltip.js",__FILE__));
+    wp_enqueue_script("jquery.validate.min", plugins_url("/assets/js/jquery.validate.min.js",__FILE__));
 }
 function backend_plugin_css_styles_contact_bank()
 {
     wp_enqueue_style("farbtastic");
     wp_enqueue_style("wp-jquery-ui-dialog");
-    wp_enqueue_style("stylesheet", CONTACT_BK_PLUGIN_URL ."/assets/css/stylesheet.css");
-    wp_enqueue_style("font-awesome", CONTACT_BK_PLUGIN_URL ."/assets/css/font-awesome/css/font-awesome.css");
-    wp_enqueue_style("system-message", CONTACT_BK_PLUGIN_URL ."/assets/css/system-message.css");
-	wp_enqueue_style("css3_grid_style", CONTACT_BK_PLUGIN_URL ."/assets/css/css3_grid_style.css");
-	wp_enqueue_style("prettyPhoto", CONTACT_BK_PLUGIN_URL ."/assets/css/prettyPhoto.css");
+    wp_enqueue_style("stylesheet", plugins_url("/assets/css/stylesheet.css",__FILE__));
+    wp_enqueue_style("font-awesome", plugins_url("/assets/css/font-awesome/css/font-awesome.css",__FILE__));
+    wp_enqueue_style("system-message", plugins_url("/assets/css/system-message.css",__FILE__));
+	wp_enqueue_style("css3_grid_style", plugins_url("/assets/css/css3_grid_style.css",__FILE__));
+	wp_enqueue_style("prettyPhoto", plugins_url("/assets/css/prettyPhoto.css",__FILE__));
 }
 function frontend_plugin_css_styles_contact_bank()
 {
-    wp_enqueue_style("stylesheet", CONTACT_BK_PLUGIN_URL ."/assets/css/stylesheet.css");
-    wp_enqueue_style("system-message", CONTACT_BK_PLUGIN_URL ."/assets/css/system-message.css");
+    wp_enqueue_style("stylesheet", plugins_url("/assets/css/stylesheet.css",__FILE__));
+    wp_enqueue_style("system-message", plugins_url("/assets/css/system-message.css",__FILE__));
 }
 if(isset($_REQUEST["action"]))
 {
@@ -420,9 +412,10 @@ function add_contact_bank_icon($meta = TRUE)
 	switch ($role)
 	{
 		case "administrator":
+			
 			$wp_admin_bar->add_menu( array(
 	    "id" => "contact_bank_links",
-	    "title" =>  "<img src=\"".CONTACT_BK_PLUGIN_URL."/assets/images/icon.png\" width=\"25\" height=\"25\" style=\"vertical-align:text-top; margin-right:5px;\" />Contact Bank" ,
+	    "title" =>  "<img src=\"".plugins_url("/assets/images/icon.png",__FILE__)."\" width=\"25\" height=\"25\" style=\"vertical-align:text-top; margin-right:5px;\" />Contact Bank" ,
 	    "href" => site_url() ."/wp-admin/admin.php?page=dashboard",
 		));
 		$wp_admin_bar->add_menu( array(
@@ -471,7 +464,8 @@ function add_contact_bank_icon($meta = TRUE)
 		case "editor":
 			$wp_admin_bar->add_menu( array(
 	    "id" => "contact_bank_links",
-	    "title" =>  "<img src=\"".CONTACT_BK_PLUGIN_URL."/assets/images/icon.png\" width=\"25\" height=\"25\" style=\"vertical-align:text-top; margin-right:5px;\" />Contact Bank" ,
+	    "title" =>  "<img src=\"".plugins_url("/assets/images/icon.png",__FILE__)."\" width=\"25\" height=\"25\" style=\"vertical-align:text-top; margin-right:5px;\" />Contact Bank" ,
+	    
 	    "href" => site_url() ."/wp-admin/admin.php?page=dashboard",
 		));
 	
@@ -523,7 +517,7 @@ function add_contact_bank_icon($meta = TRUE)
 		case "author":
 			$wp_admin_bar->add_menu( array(
 		    "id" => "contact_bank_links",
-		    "title" =>  "<img src=\"".CONTACT_BK_PLUGIN_URL."/assets/images/icon.png\" width=\"25\" height=\"25\" style=\"vertical-align:text-top; margin-right:5px;\" />Contact Bank" ,
+		    "title" =>  "<img src=\"".plugins_url("/assets/images/icon.png",__FILE__)."\" width=\"25\" height=\"25\" style=\"vertical-align:text-top; margin-right:5px;\" />Contact Bank" ,
 		    "href" => site_url() ."/wp-admin/admin.php?page=dashboard",
 			));
 		

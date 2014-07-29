@@ -39,7 +39,7 @@ else
 			<?php _e("Settings", contact_bank); ?>
 		</a>
 		<a style="cursor:pointer;" id="anchor_del_">
-			<img class="delete_control" src="<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png"/>
+			<img class="delete_control" src="<?php echo plugins_url("/assets/images/delete-bg.png" , dirname(__FILE__));?>"/>
 		</a>
 		<br/>
 		<span class="span-description" id="txt_description_"></span>
@@ -55,7 +55,7 @@ else
 			<?php _e("Settings", contact_bank); ?>
 		</a>
 		<a style="cursor:pointer;" id="anchor_del_">
-			<img class="delete_control" src="<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png"/>
+			<img class="delete_control" src="<?php echo plugins_url("/assets/images/delete-bg.png" , dirname(__FILE__));?>"/>
 		</a>
 		<br/>
 		<span class="span-description" id="txt_description_"></span>
@@ -72,7 +72,7 @@ else
 			<?php _e("Settings", contact_bank); ?>
 		</a>
 		<a style="cursor:pointer;" id="anchor_del_">
-			<img class="delete_control" src="<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png"/>
+			<img class="delete_control" src="<?php echo plugins_url("/assets/images/delete-bg.png" , dirname(__FILE__));?>"/>
 		</a>
 		<br/>
 		<span class="span-description" id="txt_description_"></span>
@@ -90,7 +90,7 @@ else
 			<?php _e("Settings", contact_bank); ?>
 		</a>
 		<a style="cursor:pointer;" id="anchor_del_">
-			<img class="delete_control" src="<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png"/>
+			<img class="delete_control" src="<?php echo plugins_url("/assets/images/delete-bg.png" , dirname(__FILE__));?>"/>
 		</a>
 	</div>
 </div>
@@ -106,7 +106,7 @@ else
 				<?php _e("Settings", contact_bank); ?>
 			</a>
 			<a style="cursor:pointer;" id="anchor_del_">
-				<img class="delete_control" src="<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png"/>
+				<img class="delete_control" src="<?php echo plugins_url("/assets/images/delete-bg.png" , dirname(__FILE__));?>"/>
 			</a>
 		</div>
 	</div>
@@ -123,7 +123,7 @@ else
 				<?php _e("Settings", contact_bank); ?>
 			</a>
 			<a style="cursor:pointer;" id="anchor_del_">
-				<img class="delete_control" src="<?php echo CONTACT_BK_PLUGIN_URL; ?>/assets/images/delete-bg.png"/>
+				<img class="delete_control" src="<?php echo plugins_url("/assets/images/delete-bg.png" , dirname(__FILE__));?>"/>
 			</a>
 		</div>
 	</div>

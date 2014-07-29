@@ -125,7 +125,7 @@ else
 									onclick="restore_factory_settings();"><?php _e("Restore Factory Settings", contact_bank); ?>
 								</a>
 								<div class="separator-doubled" style="margin-bottom: 5px;"></div>
-								<a rel="prettyPhoto[contact]"  href="<?php echo CONTACT_BK_PLUGIN_URL . "/assets/images/how-to-setup-short-code-cb.png";?>">How to setup Short-Codes for Contact Bank into your WordPress Page/Post?</a>
+								<a rel="prettyPhoto[contact]"  href="<?php echo plugins_url("/assets/images/how-to-setup-short-code-cb.png" , dirname(__FILE__));?>">How to setup Short-Codes for Contact Bank into your WordPress Page/Post?</a>
 								<div class="fluid-layout">
 									<div class="layout-span12" >
 										<div class="widget-layout">
@@ -239,7 +239,7 @@ else
 								<p>
 									<a class="btn btn-danger" href="http://tech-banker.com/get-in-touch/" target="_blank" style="text-decoration: none;"><?php _e("Let's get in touch!", contact_bank); ?></a>
 								</p>
-								<img src="<?php echo CONTACT_BK_PLUGIN_URL . "/assets/images/img.png";?>" style="max-width:100%;cursor: pointer;" />
+								<img src="<?php echo plugins_url("/assets/images/img.png" , dirname(__FILE__));?>" style="max-width:100%;cursor: pointer;" />
 								<p>
 									<a class="btn btn-danger" href="http://tech-banker.com/contact-bank/" target="_blank" style="text-decoration: none;"><?php _e("Order Now!", contact_bank); ?></a>
 								</p>

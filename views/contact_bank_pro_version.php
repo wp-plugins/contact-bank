@@ -392,7 +392,7 @@ else
 									<p>
 										<a class="btn btn-danger" href="http://tech-banker.com/get-in-touch/" target="_blank" style="text-decoration: none;"><?php _e("Lets get in touch!", contact_bank); ?></a>
 									</p>
-									<img src="<?php echo CONTACT_BK_PLUGIN_URL . "/assets/images/img.png";?>" style="max-width:100%;cursor: pointer;" />
+									<img src="<?php echo plugins_url("/assets/images/img.png" , dirname(__FILE__));?>" style="max-width:100%;cursor: pointer;" />
 									<p>
 										<a class="btn btn-danger" href="http://tech-banker.com/contact-bank/" target="_blank" style="text-decoration: none;"><?php _e("Order Now!", contact_bank); ?></a>
 									</p>

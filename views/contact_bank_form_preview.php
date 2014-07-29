@@ -257,7 +257,7 @@ else
 				color: <?php echo $layout_settings_array[$form_id]["success_msg_text_color"]; ?> !important;
 				text-align: <?php echo $layout_settings_array[$form_id]["success_msg_rdl_text_align"] == "0" ? "left" : "right"; ?> !important;
 				direction: <?php echo $layout_settings_array[$form_id]["success_msg_text_direction"]; ?> !important;
-				background: url(<?php echo CONTACT_BK_PLUGIN_URL."/assets/images/icons/icon-succes.png"?>) no-repeat 1px 8px #EBF9E2;
+				background: url(<?php echo plugins_url("/assets/images/icons/icon-succes.png" , dirname(__FILE__)); ?>) no-repeat 1px 8px #EBF9E2;
 			}
 			.sucess_message_text
 			{

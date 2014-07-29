@@ -27,7 +27,7 @@ if(isset($_REQUEST["param"]))
 		{
 			$email_exits = "";
 			$email_to = $email_content[$flag]->email_to;
-			$email_from = stripslashes($email_content[$flag]->email_from);
+			echo $email_from = stripslashes($email_content[$flag]->email_from);
 			$messageTxt = stripcslashes($email_content[$flag]->body_content);
 			$email_subject = stripslashes($email_content[$flag]->subject);
 			$email_from_name = stripslashes(htmlspecialchars_decode($email_content[$flag]->from_name, ENT_QUOTES));

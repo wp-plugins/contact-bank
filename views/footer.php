@@ -1,1 +1,1 @@
-<div style="margin: 10px;text-align: center;"><img  src="<?php echo CONTACT_BK_PLUGIN_URL .'/assets/images/footer.png';?>"/></div>
+<div style="margin: 10px;text-align: center;"><img  src="<?php echo plugins_url("/assets/images/footer.png" , dirname(__FILE__));?>"/></div>

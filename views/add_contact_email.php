@@ -294,9 +294,9 @@ else
 		if($show_in_email == "0")
 		{
 			?>
-			jQuery("#ux_ddl_from_name").append(jQuery("<option></option>").attr("value", "<?php echo $fields_controls[$flag]->dynamicId; ?>").text("<?php echo $fields_controls[$flag]->dynamic_settings_value; ?>"));
-			jQuery("#ux_ddl_subject").append(jQuery("<option></option>").attr("value", "<?php echo $fields_controls[$flag]->dynamicId; ?>").text("<?php echo $fields_controls[$flag]->dynamic_settings_value; ?>"));
-			jQuery("#ux_ddl_message").append(jQuery("<option></option>").attr("value", "<?php echo $fields_controls[$flag]->dynamicId; ?>").text("<?php echo $fields_controls[$flag]->dynamic_settings_value; ?>"));
+			jQuery("#ux_ddl_from_name").append(jQuery("<option></option>").attr("value", "<?php echo $fields_controls[$flag]->dynamicId; ?>").text("<?php echo stripslashes(htmlspecialchars_decode($fields_controls[$flag]->dynamic_settings_value, ENT_QUOTES)); ?>"));
+			jQuery("#ux_ddl_subject").append(jQuery("<option></option>").attr("value", "<?php echo $fields_controls[$flag]->dynamicId; ?>").text("<?php echo stripslashes(htmlspecialchars_decode($fields_controls[$flag]->dynamic_settings_value, ENT_QUOTES)); ?>"));
+			jQuery("#ux_ddl_message").append(jQuery("<option></option>").attr("value", "<?php echo $fields_controls[$flag]->dynamicId; ?>").text("<?php echo stripslashes(htmlspecialchars_decode($fields_controls[$flag]->dynamic_settings_value, ENT_QUOTES)); ?>"));
 			<?php
 		}
 	}

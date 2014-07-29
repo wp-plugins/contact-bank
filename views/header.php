@@ -28,7 +28,7 @@ jQuery(document).ready(function()
 	jQuery(".nav-tab-wrapper > a#<?php echo $_REQUEST["page"];?>").addClass("nav-tab-active");
 });
 </script>
-<img style="margin: 10px;" src="<?php echo CONTACT_BK_PLUGIN_URL .'/assets/images/cb-logo.png';?>"/>
+<img style="margin: 10px;" src="<?php echo plugins_url("/assets/images/cb-logo.png" , dirname(__FILE__));?>"/>
 <?php
 global $wpdb,$current_user;
 $role = $wpdb->prefix . "capabilities";

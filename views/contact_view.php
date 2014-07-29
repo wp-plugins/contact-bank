@@ -263,7 +263,7 @@ else
 									name="submit_button"
 									value="<?php _e("Save Form", contact_bank); ?>"/>
 								<div class="separator-doubled" style="margin-bottom: 5px;"></div>
-								<a rel="prettyPhoto[contact]"  href="<?php echo CONTACT_BK_PLUGIN_URL . "/assets/images/how-to-setup-short-code-cb.png";?>">How to setup Short-Codes for Contact Bank into your WordPress Page/Post?</a>
+								<a rel="prettyPhoto[contact]"  href="<?php echo plugins_url("/assets/images/how-to-setup-short-code-cb.png" , dirname(__FILE__));?>">How to setup Short-Codes for Contact Bank into your WordPress Page/Post?</a>
 								<div id="form_success_message" class="message green" style="display: none;">
 									<span>
 										<strong><?php _e("Form Submitted. Kindly wait for the redirect.", contact_bank); ?></strong>
