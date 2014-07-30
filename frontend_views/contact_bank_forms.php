@@ -589,7 +589,6 @@ jQuery("#ux_frm_front_end_form").validate
 			var submit_id = data;
 			jQuery.post(ajaxurl, "form_id="+form_id+"&submit_id="+submit_id+"&param=email_management&action=email_management_contact_form_library", function(data) 
 			{
-				alert(data);
 				setTimeout(function()
 				{
 					jQuery("#form_success_message_frontend").css("display","none");
