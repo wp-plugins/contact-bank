@@ -4,7 +4,7 @@ Donate link : http://tech-banker.com/contact-bank/
 Tags: admin, advanced form, AJAX, best contact form plugin, buddypress, category, comment, comments, contact, contact form, contact form 7, contact form builder, contact form plugin, contact forms, contact me, contact us, contacts, content, easy contact form, easy contact plugin, email, Facebook, feed, feedback, feedback form, form, form builder, forms, gallery, google, image, images, javascript, jquery, link, links, login, media, page, pages, plugin, Post, posts, request, rss, seo, shortcode, sidebar, stats, text, web form, widget, wordpress
 Requires at least: 3.3
 Tested up to: 3.9.2
-Stable tag: 2.0.59
+Stable tag: 2.0.60
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -34,7 +34,7 @@ It provides a powerful engine for uploading and managing dynamic forms with more
 
 ***The Contact Bank WordPress Plugin is now proudly maintained by <a href="http://www.tech-banker.com">Tech Banker</a> since March 2014.***
 
-***August 23, 2014: We're happy to announce that Contact Bank reached 89,100+ plugin downloads in only 10 months. We frequently receive positive feedback from people using our Contact Bank Plugin for WordPress. Thanks so much for your support!***
+***August 24, 2014: We're happy to announce that Contact Bank reached 90,200+ plugin downloads in only 10 months. We frequently receive positive feedback from people using our Contact Bank Plugin for WordPress. Thanks so much for your support!***
 
 <a href="http://tech-banker.com/forum/contact-bank-support/" target="_blank">Support Desk - feel free to ask your Queries</a>
 
