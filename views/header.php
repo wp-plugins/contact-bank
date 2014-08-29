@@ -17,7 +17,7 @@ if($show_banner == "")
 }
 $cb_lang = array();
 $cb_lang_translated_languages = array();
-array_push($cb_lang_translated_languages,"fr_FR","ru_RU","en_US","es_ES", "nl_NL","hu_HU","de_DE", "pt_BR","pt_PT","he_IL", "tr","it_IT", "da_DK", "pl_PL", "sv_SE", "zh_CN","cs_CZ","en_GB", "sk_SK","el");
+array_push($cb_lang_translated_languages,"fr_FR","ru_RU","en_US","es_ES", "nl_NL","hu_HU","de_DE", "pt_BR","pt_PT","he_IL", "tr","it_IT", "da_DK", "pl_PL", "sv_SE", "zh_CN","cs_CZ","en_GB", "sk_SK","el","hr");
 
 array_push($cb_lang, "ar", "et", "bg_BG", "fi_FI", "id_ID", "ja", "ko_KR", "ms_MY", "ro_RO", "sl_SI", "sq_AL", "sr_RS", "th");
 $cb_language = get_locale();
