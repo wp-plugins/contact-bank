@@ -1,10 +1,10 @@
-Ôªø=== WP Contact Bank - Contact Forms Builder ===
+=== WP Contact Bank - Contact Forms Builder ===
 Contributors: contact-banker, Gallery-Bank
 Donate link : http://tech-banker.com/contact-bank/
 Tags: admin, advanced form, AJAX, best contact form plugin, buddypress, category, comment, comments, contact, contact form, contact form 7, contact form builder, contact form plugin, contact forms, contact me, contact us, contacts, content, easy contact form, easy contact plugin, email, Facebook, feed, feedback, feedback form, form, form builder, forms, gallery, google, image, images, javascript, jquery, link, links, login, media, page, pages, plugin, Post, posts, request, rss, seo, shortcode, sidebar, stats, text, web form, widget, wordpress
 Requires at least: 3.3
-Tested up to: 3.9.2
-Stable tag: 2.0.62
+Tested up to: 4.0
+Stable tag: 2.0.63
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -34,7 +34,7 @@ It provides a powerful engine for uploading and managing dynamic forms with more
 
 ***The Contact Bank WordPress Plugin is now proudly maintained by <a href="http://www.tech-banker.com">Tech Banker</a> since March 2014.***
 
-***August 28, 2014: We're happy to announce that Contact Bank reached 92,000+ plugin downloads in only 10 months. We frequently receive positive feedback from people using our Contact Bank Plugin for WordPress. Thanks so much for your support!***
+***September 8, 2014: We're happy to announce that Contact Bank reached 98,000+ plugin downloads in only 10 months. We frequently receive positive feedback from people using our Contact Bank Plugin for WordPress. Thanks so much for your support!***
 
 <a href="http://tech-banker.com/forum/contact-bank-support/" target="_blank">Support Desk - feel free to ask your Queries</a>
 
@@ -150,13 +150,13 @@ After downloading the ZIP file,
 
 1. Log in to the administrator panel.  
 2. Go to Plugins Add > New > Upload.  
-3. Click ‚ÄúChoose file‚Äù (‚ÄúBrowse‚Äù) and select the downloaded zip file.  
+3. Click ìChoose fileî (ìBrowseî) and select the downloaded zip file.  
 
 *For Mac Users*  
 *Go to your Downloads folder and locate the folder with the plugin. Right-click on the folder and select Compress. Now you have a newly created .zip file which can be installed as described here.*  
 
-1. Click ‚ÄúInstall Now‚Äù button.  
-2. Click ‚ÄúActivate Plugin‚Äù button for activating the plugin.  
+1. Click ìInstall Nowî button.  
+2. Click ìActivate Pluginî button for activating the plugin.  
 
 If any problem occurs, please contact us at [support@tech-banker.com](mailto:support@tech-banker.com).
 
@@ -275,7 +275,7 @@ To save your Inline Form you can follow these steps :
 
 1) Label : Enter Label name for your control.
 2) Description : Enter Description for your control, which would appear below the input field.
-3) Required : This field to be mandatory, you can‚Äôt choose Not Required.
+3) Required : This field to be mandatory, you canít choose Not Required.
 4) Tooltip Text : Enter Tooltip Text for your control, which would appear when you hover on input field.
 5) Place Holder : Enter the text you want to show in your input field by Default.
 6) Do not show in the email : If you do not want to show this control appear in your Email then tick this checkbox.
@@ -471,10 +471,10 @@ Here you can enter the Email Address by whom the mail is sent (Sender Email Addr
 
 = What is the use of "Cc" and "Bcc" in Email Settings? =
 
-Cc stands for ‚ÄúCarbon Copy‚Äù. Anyone listed in the Cc field, will receive a copy of the message that you send. All other recipients of that message will be able to see that
+Cc stands for ìCarbon Copyî. Anyone listed in the Cc field, will receive a copy of the message that you send. All other recipients of that message will be able to see that
 the person you designated as a Cc recipient has received a copy of the message.
 
-Bcc stands for ‚ÄúBlind Carbon Copy‚Äù. This is similar to the Cc feature, except that Bcc recipients are invisible to all of the other recipients of the message (including other Bcc recipients).
+Bcc stands for ìBlind Carbon Copyî. This is similar to the Cc feature, except that Bcc recipients are invisible to all of the other recipients of the message (including other Bcc recipients).
 
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2013/11/Email_cc-1024x847.png)
 
@@ -544,6 +544,11 @@ In order to set Shortcode for a Form, you need to follow these steps :
 
 
 == Changelog ==
+
+= 2.0.63 =
+
+* Few Bugs Fixed
+* Banner Updated
 
 = 2.0.62 =
 

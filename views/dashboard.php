@@ -141,7 +141,7 @@ else
 														<th style="width: 15%"><?php _e("Form", contact_bank); ?></th>
 														<th style="width: 30%"><?php _e("Shortcode", contact_bank); ?></th>
 														<th style="width: 15%"><?php _e("Total Controls", contact_bank); ?></th>
-														<th style="width: 40%" style="padding-left: 5%;"></th>
+														<th style="width: 45%" style="padding-left: 5%;"></th>
 													</tr>
 													</thead>
 													<tbody>
