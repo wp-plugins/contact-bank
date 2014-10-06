@@ -211,7 +211,7 @@ else
 				$labels_for_email = "";
 				$sql1=array();
 				$form_id = intval($_REQUEST["form_id"]);
-				$form_settings = json_decode(stripcslashes($_REQUEST["form_settings"]),true);
+				$form_settings = json_decode(urldecode(stripcslashes($_REQUEST["form_settings"])),true);
 				$array_delete_form_controls = json_decode(stripcslashes($_REQUEST["array_delete_form_controls"]),true);
 				foreach($array_delete_form_controls as $element)
 				{
@@ -240,11 +240,13 @@ else
 				    {
 				        if($val == "form_name")
 				        {
+				        	$form_name=htmlspecialchars(htmlspecialchars_decode($keyInner));
 				            $wpdb->query
 				                (
 				                    $wpdb->prepare
 				                        (
-				                            "UPDATE " . contact_bank_contact_form() . " SET `form_name` = '".strip_tags($keyInner). "' where form_id = %d ",
+				                            "UPDATE " . contact_bank_contact_form() . " SET `form_name` =%s where form_id = %d ",
+				                        	$form_name,
 				                            $form_id
 				                        )
 				                );
@@ -254,11 +256,11 @@ else
 				        	$labels_for_email = $val;
 				            if($val == "redirect_url")
 				            {
-				                $sql .= ' WHEN `form_message_key` = "'.($val).'" THEN "'.(html_entity_decode($keyInner)).'"';
+				                $sql .= ' WHEN `form_message_key` = "'.($val).'" THEN "'.html_entity_decode($keyInner).'"';
 				            }
 				            else
 				            {
-				                $sql .= ' WHEN `form_message_key` = "'.($val).'" THEN "'.($keyInner).'"';
+				                $sql .= ' WHEN `form_message_key` = "'.($val).'" THEN "'.htmlspecialchars(htmlspecialchars_decode($keyInner)).'"';
 				            }
 				        }
 				    }
@@ -266,7 +268,7 @@ else
 					(
 					    $wpdb->prepare
 				        (
-				            "UPDATE " . contact_bank_form_settings_Table() . " SET `form_message_value` = CASE ".strip_tags($sql) . " END where form_id = %d ",
+				            "UPDATE " . contact_bank_form_settings_Table() . " SET `form_message_value` = CASE ". strip_tags($sql) . " END where form_id = %d ",
 				            $form_id
 				        )
 					);

@@ -216,7 +216,7 @@ else
 														<div class="layout-controls">
 															<div class="layout-span8">
 															<?php
-																$distribution = isset($email_data->body_content) ? stripslashes($email_data->body_content) : ""; 
+																$distribution = isset($email_data->body_content) ? stripslashes(html_entity_decode($email_data->body_content)) : ""; 
 																wp_editor( $distribution, $id ="uxEmailTemplate", array("media_buttons" => true, "textarea_rows" => 8, "tabindex" => 4 ) ); 
 																?>
 															</div>

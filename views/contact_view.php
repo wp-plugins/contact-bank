@@ -592,10 +592,9 @@ jQuery("#ux_dynamic_form_submit").validate
 		jQuery.ajax
 		({
 			type: "POST",
-			url: ajaxurl + "?form_settings="+JSON.stringify(array_new_form_settings)+"&form_id="+form_id+"&array_delete_form_controls="+JSON.stringify(array_delete_form_controls)+"&param=submit_form_messages_settings&action=add_contact_form_library",
+			url: ajaxurl + "?form_settings="+encodeURIComponent(JSON.stringify(array_new_form_settings))+"&form_id="+form_id+"&array_delete_form_controls="+JSON.stringify(array_delete_form_controls)+"&param=submit_form_messages_settings&action=add_contact_form_library",
 			success : function(data)
 			{
-				
 				setTimeout(function()
 				{
 					jQuery("#form_success_message").css("display","none");
