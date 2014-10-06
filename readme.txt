@@ -528,19 +528,19 @@ In order to set Shortcode for a Form, you need to follow these steps :
 
 == Screenshots ==
 
-### 1. Contact Bank Dashboard Page
-### 2. Add New Form
-### 3. How to add Single Line Text Control in Contact Bank Form?
-### 4. How to add Paragraph Text Control in Contact Bank Form?
-### 5. How to add Email Address Control in Contact Bank Form?
-### 6. How to add Select Box Control in Contact Bank Form?
-### 7. How to add Check Box Control in Contact Bank Form?
-### 8. How to add Radio Buttons Control in Contact Bank Form?
-### 9. How to Edit Form?
-### 10. How to Preview a Form?
-### 11. How to use Email Settings in Contact Bank?
-### 12. How to view System Status?
-### 13. How to set Shortcode for a Form in Contact Bank Plugin?
+1. Contact Bank Dashboard Page
+2. Add New Form
+3. How to add Single Line Text Control in Contact Bank Form?
+4. How to add Paragraph Text Control in Contact Bank Form?
+5. How to add Email Address Control in Contact Bank Form?
+6. How to add Select Box Control in Contact Bank Form?
+7. How to add Check Box Control in Contact Bank Form?
+8. How to add Radio Buttons Control in Contact Bank Form?
+9. How to Edit Form?
+10. How to Preview a Form?
+11. How to use Email Settings in Contact Bank?
+12. How to view System Status?
+13. How to set Shortcode for a Form in Contact Bank Plugin?
 
 
 == Changelog ==
