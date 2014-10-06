@@ -34,7 +34,7 @@ It provides a powerful engine for uploading and managing dynamic forms with more
 
 ***The Contact Bank WordPress Plugin is now proudly maintained by <a href="http://www.tech-banker.com">Tech Banker</a> since March 2014.***
 
-***September 29, 2014: We're happy to announce that Contact Bank reached 106,800+ plugin downloads in only 10 months. We frequently receive positive feedback from people using our Contact Bank Plugin for WordPress. Thanks so much for your support!***
+***October 6, 2014: We're happy to announce that Contact Bank reached 110,200+ plugin downloads in only 1 year. We frequently receive positive feedback from people using our Contact Bank Plugin for WordPress. Thanks so much for your support!***
 
 <a href="http://tech-banker.com/forum/contact-bank-support/" target="_blank">Support Desk - feel free to ask your Queries</a>
 
@@ -528,19 +528,19 @@ In order to set Shortcode for a Form, you need to follow these steps :
 
 == Screenshots ==
 
-1. Contact Bank Dashboard Page
-2. Add New Form
-3. How to add Single Line Text Control in Contact Bank Form?
-4. How to add Paragraph Text Control in Contact Bank Form?
-5. How to add Email Address Control in Contact Bank Form?
-6. How to add Select Box Control in Contact Bank Form?
-7. How to add Check Box Control in Contact Bank Form?
-8. How to add Radio Buttons Control in Contact Bank Form?
-9. How to Edit Form?
-10. How to Preview a Form?
-11. How to use Email Settings in Contact Bank?
-12. How to view System Status?
-13. How to set Shortcode for a Form in Contact Bank Plugin?
+### 1. Contact Bank Dashboard Page
+### 2. Add New Form
+### 3. How to add Single Line Text Control in Contact Bank Form?
+### 4. How to add Paragraph Text Control in Contact Bank Form?
+### 5. How to add Email Address Control in Contact Bank Form?
+### 6. How to add Select Box Control in Contact Bank Form?
+### 7. How to add Check Box Control in Contact Bank Form?
+### 8. How to add Radio Buttons Control in Contact Bank Form?
+### 9. How to Edit Form?
+### 10. How to Preview a Form?
+### 11. How to use Email Settings in Contact Bank?
+### 12. How to view System Status?
+### 13. How to set Shortcode for a Form in Contact Bank Plugin?
 
 
 == Changelog ==
