@@ -84,7 +84,15 @@ if(isset($_REQUEST["param"]))
 					);
 				break;
 				case 4:
-					$ux_dropdown = esc_attr($_REQUEST["ux_select_default_".$dynamicId]);
+					$ux_dropdown = "Untitled";
+					if(esc_attr($_REQUEST["ux_select_default_".$dynamicId]) == " ")
+					{
+						$ux_dropdown =  "Untitled";
+					}
+					else 
+					{
+						$ux_dropdown = esc_attr($_REQUEST["ux_select_default_".$dynamicId]);
+					}
 					$wpdb->query
 					(
 						$wpdb->prepare
@@ -99,31 +107,50 @@ if(isset($_REQUEST["param"]))
 					);
 				break;
 				case 5:
-					$ux_checkbox = $_REQUEST[$dynamicId."_chk"];
-					$checkbox_options = "";
-					for($flag1 =0;$flag1<count($ux_checkbox);$flag1++)
+					if(isset($_REQUEST[$dynamicId."_chk"]))
 					{
-						$checkbox_options .= $ux_checkbox[$flag1];
-						if($flag1 < count($ux_checkbox)-1)
+						$ux_checkbox = esc_sql($_REQUEST[$dynamicId."_chk"]);
+						$checkbox_options = "";
+						for($flag1 =0;$flag1<count($ux_checkbox);$flag1++)
 						{
+							$checkbox_options .= $ux_checkbox[$flag1];
+							if($flag1 < count($ux_checkbox)-1)
+							{
 							$checkbox_options .= "-";
+							}
 						}
-					}
-					$wpdb->query
-					(
-						$wpdb->prepare
+						$wpdb->query
 						(
-							"INSERT INTO " . frontend_controls_data_Table(). " (form_id,field_id,dynamic_control_id,dynamic_frontend_value,form_submit_id) VALUES(%d,%d,%d,%s,%d)",
-							$form_id,
-							$field_id,
-							$control_dynamicId,
-							$checkbox_options,
-							$form_submit_id
-						)
-					);
+							$wpdb->prepare
+							(
+								"INSERT INTO " . frontend_controls_data_Table(). " (form_id,field_id,dynamic_control_id,dynamic_frontend_value,form_submit_id) VALUES(%d,%d,%d,%s,%d)",
+								$form_id,
+								$field_id,
+								$control_dynamicId,
+								$checkbox_options,
+								$form_submit_id
+							)
+						);
+					}
+					else
+					{
+						$checkbox_options = "Untitled";
+						$wpdb->query
+						(
+							$wpdb->prepare
+							(
+								"INSERT INTO " . frontend_controls_data_Table(). " (form_id,field_id,dynamic_control_id,dynamic_frontend_value,form_submit_id) VALUES(%d,%d,%d,%s,%d)",
+								$form_id,
+								$field_id,
+								$control_dynamicId,
+								$checkbox_options,
+								$form_submit_id
+							)
+						);
+					}
 				break;
 				case 6:
-					$ux_multiple = esc_attr($_REQUEST[$dynamicId."_rdl"]);
+					$ux_multiple = isset($_REQUEST[$dynamicId."_rdl"]) ? esc_attr($_REQUEST[$dynamicId."_rdl"]) : "Untitled";
 					$wpdb->query
 					(
 						$wpdb->prepare
