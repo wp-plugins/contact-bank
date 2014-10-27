@@ -1,10 +1,9 @@
 === WP Contact Bank - Contact Forms Builder ===
 Contributors: contact-banker, Gallery-Bank
-Donate link : http://tech-banker.com/contact-bank/
 Tags: admin, advanced form, AJAX, best contact form plugin, buddypress, category, comment, comments, contact, contact form, contact form builder, contact form plugin, contact forms, contact me, contact us, contacts, content, easy contact form, easy contact plugin, email, Facebook, feed, feedback, feedback form, form, form builder, forms, gallery, google, image, images, javascript, jquery, link, links, login, media, page, pages, plugin, Post, posts, request, rss, seo, shortcode, sidebar, stats, text, web form, widget, wordpress
 Requires at least: 3.3
 Tested up to: 4.0
-Stable tag: 2.0.71
+Stable tag: 2.0.72
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -34,7 +33,7 @@ It provides a powerful engine for uploading and managing dynamic forms with more
 
 ***The Contact Bank WordPress Plugin is now proudly maintained by <a href="http://www.tech-banker.com">Tech Banker</a> since March 2014.***
 
-***October 20, 2014: We're happy to announce that Contact Bank reached 117,700+ plugin downloads in only 1 year. We frequently receive positive feedback from people using our Contact Bank Plugin for WordPress. Thanks so much for your support!***
+***October 27, 2014: We're happy to announce that Contact Bank reached 120,000+ plugin downloads in only 1 year. We frequently receive positive feedback from people using our Contact Bank Plugin for WordPress. Thanks so much for your support!***
 
 <a href="http://tech-banker.com/forum/contact-bank-support/" target="_blank">Support Desk - feel free to ask your Queries</a>
 
@@ -544,6 +543,10 @@ In order to set Shortcode for a Form, you need to follow these steps :
 
 
 == Changelog ==
+
+= 2.0.72 =
+
+* Banner Updated
 
 = 2.0.71 =
 
