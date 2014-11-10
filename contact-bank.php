@@ -4,7 +4,7 @@ Plugin Name: Contact Bank Standard Edition
 Plugin URI: http://tech-banker.com
 Description: Build Complex, Powerful Contact Forms in Just Seconds. No Programming Knowledge Required! Yeah, It's Really That Easy.
 Author: Tech Banker
-Version: 2.0.73
+Version: 2.0.74
 Author URI: http://tech-banker.com
  */
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -58,7 +58,9 @@ function create_global_menus_for_contact_bank()
 		    add_submenu_page("dashboard", "Email Settings", __("Email Settings", contact_bank), "read", "contact_email", "contact_email");
 		    add_submenu_page("dashboard", "Global Settings", __("Global Settings", contact_bank), "read", "layout_settings", "layout_settings");
 			add_submenu_page("dashboard", "System Status", __("System Status", contact_bank), "read", "system_status", "system_status" );
-		    add_submenu_page("dashboard", "Purchase PRO Edition", __("Purchase PRO Edition", contact_bank), "read", "pro_version", "pro_version" );
+		    add_submenu_page("dashboard", "Recommendations", __("Recommendations", contact_bank), "read", "contact_bank_recommended_plugins", "contact_bank_recommended_plugins");
+		    add_submenu_page("dashboard", "Premium Editions", __("Premium Editions", contact_bank), "read", "pro_version", "pro_version" );
+		    add_submenu_page("dashboard", " Our Other Services ", __("Our Other Services", contact_bank), "read", "contact_bank_other_services", "contact_bank_other_services");
 		    add_submenu_page("","","", "read", "add_contact_email_settings", "add_contact_email_settings" );
 			add_submenu_page("","","", "read", "form_preview", "form_preview" );
 		break;
@@ -71,7 +73,9 @@ function create_global_menus_for_contact_bank()
 		    add_submenu_page("dashboard", "Email Settings", __("Email Settings", contact_bank), "read", "contact_email", "contact_email");
 		    add_submenu_page("dashboard", "Global Settings", __("Global Settings", contact_bank), "read", "layout_settings", "layout_settings");
 			add_submenu_page("dashboard", "System Status", __("System Status", contact_bank), "read", "system_status", "system_status" );
-		    add_submenu_page("dashboard", "Purchase PRO Edition", __("Purchase PRO Edition", contact_bank), "read", "pro_version", "pro_version" );
+		    add_submenu_page("dashboard", "Recommendations", __("Recommendations", contact_bank), "read", "contact_bank_recommended_plugins", "contact_bank_recommended_plugins");
+		    add_submenu_page("dashboard", "Premium Editions", __("Premium Editions", contact_bank), "read", "pro_version", "pro_version" );
+		    add_submenu_page("dashboard", " Our Other Services ", __("Our Other Services", contact_bank), "read", "contact_bank_other_services", "gallery_bank_other_services");
 		    add_submenu_page("","","", "read", "add_contact_email_settings", "add_contact_email_settings" );
 			add_submenu_page("","","", "read", "form_preview", "form_preview" );
 		break;
@@ -84,7 +88,9 @@ function create_global_menus_for_contact_bank()
 			add_submenu_page("dashboard", "Email Settings", __("Email Settings", contact_bank), "read", "contact_email", "contact_email");
 			add_submenu_page("dashboard", "Global Settings", __("Global Settings", contact_bank), "read", "layout_settings", "layout_settings");
 			add_submenu_page("dashboard", "System Status", __("System Status", contact_bank), "read", "system_status", "system_status" );
-			add_submenu_page("dashboard", "Purchase PRO Edition", __("Purchase PRO Edition", contact_bank), "read", "pro_version", "pro_version" );
+			add_submenu_page("dashboard", "Recommendations", __("Recommendations", contact_bank), "read", "contact_bank_recommended_plugins", "contact_bank_recommended_plugins");
+		    add_submenu_page("dashboard", "Premium Editions", __("Premium Editions", contact_bank), "read", "pro_version", "pro_version" );
+		    add_submenu_page("dashboard", " Our Other Services ", __("Our Other Services", contact_bank), "read", "contact_bank_other_services", "gallery_bank_other_services");
 			add_submenu_page("","","", "read", "add_contact_email_settings", "add_contact_email_settings" );
 			add_submenu_page("","","", "read", "form_preview", "form_preview" );
 		break;
@@ -204,8 +210,28 @@ function pro_version()
 	$current_user->role = array_keys($current_user->$cb_role);
 	$cb_role = $current_user->role[0];
     include_once CONTACT_BK_PLUGIN_DIR ."/views/header.php";
-    include_once CONTACT_BK_PLUGIN_DIR ."/views/contact_bank_pro_version.php";
+    include_once CONTACT_BK_PLUGIN_DIR ."/views/purchase_pro_version.php";
     include_once CONTACT_BK_PLUGIN_DIR ."/views/footer.php";
+}
+function contact_bank_recommended_plugins()
+{
+	global $wpdb,$current_user,$cb_user_role_permission;
+	$cb_role = $wpdb->prefix . "capabilities";
+	$current_user->role = array_keys($current_user->$cb_role);
+	$cb_role = $current_user->role[0];
+	include_once CONTACT_BK_PLUGIN_DIR ."/views/header.php";
+	include_once CONTACT_BK_PLUGIN_DIR ."/views/recommended-plugins.php";
+	include_once CONTACT_BK_PLUGIN_DIR ."/views/footer.php";
+}
+function contact_bank_other_services()
+{
+	global $wpdb,$current_user,$cb_user_role_permission;
+	$cb_role = $wpdb->prefix . "capabilities";
+	$current_user->role = array_keys($current_user->$cb_role);
+	$cb_role = $current_user->role[0];
+	include_once CONTACT_BK_PLUGIN_DIR ."/views/header.php";
+	include_once CONTACT_BK_PLUGIN_DIR ."/views/other-services.php";
+	include_once CONTACT_BK_PLUGIN_DIR ."/views/footer.php";
 }
 function short_code()
 {
@@ -247,6 +273,9 @@ function backend_plugin_css_styles_contact_bank()
     wp_enqueue_style("system-message", plugins_url("/assets/css/system-message.css",__FILE__));
 	wp_enqueue_style("css3_grid_style", plugins_url("/assets/css/css3_grid_style.css",__FILE__));
 	wp_enqueue_style("prettyPhoto", plugins_url("/assets/css/prettyPhoto.css",__FILE__));
+	wp_enqueue_style("premium-edition.css", plugins_url("/assets/css/premium-edition.css",__FILE__));
+	wp_enqueue_style("responsive.css", plugins_url("/assets/css/responsive.css",__FILE__));
+	wp_enqueue_style("google-fonts-roboto", "//fonts.googleapis.com/css?family=Roboto Condensed:300|Roboto Condensed:300|Roboto Condensed:300|Roboto Condensed:regular|Roboto Condensed:300");
 }
 function frontend_plugin_css_styles_contact_bank()
 {
@@ -454,11 +483,25 @@ function add_contact_bank_icon($meta = TRUE)
 		    "href"  => site_url() ."/wp-admin/admin.php?page=system_status",
 		    "title" => __( "System Status", contact_bank))         /* set the sub-menu name */
 		);
-		$wp_admin_bar->add_menu( array(
+		$wp_admin_bar->add_menu(array(
+	    		"parent" => "contact_bank_links",
+	    		"id" => "gallery_bank_recommended_plugins_links",
+	    		"href" => site_url() . "/wp-admin/admin.php?page=contact_bank_recommended_plugins",
+	    		"title" => __("Recommendations", contact_bank))
+	    );
+	
+		$wp_admin_bar->add_menu(array(
 	        "parent" => "contact_bank_links",
-		    "id"     => "pro_version_data_links",
-		    "href"  => site_url() ."/wp-admin/admin.php?page=pro_version",
-		    "title" => __("Purchase PRO Edition", contact_bank))         /* set the sub-menu name */
+	        "id" => "pro_version_links",
+	        "href" => site_url() . "/wp-admin/admin.php?page=pro_version",
+	        "title" => __("Premium Editions", contact_bank))
+	    );
+		
+		$wp_admin_bar->add_menu(array(
+				"parent" => "contact_bank_links",
+				"id" => "gallery_bank_other_services_links",
+				"href" => site_url() . "/wp-admin/admin.php?page=contact_bank_other_services",
+				"title" => __("Our Other Services", contact_bank))
 		);
 		break;	
 		case "editor":
@@ -507,11 +550,25 @@ function add_contact_bank_icon($meta = TRUE)
 		    "href"  => site_url() ."/wp-admin/admin.php?page=system_status",
 		    "title" => __( "System Status", contact_bank))         /* set the sub-menu name */
 		);
-		$wp_admin_bar->add_menu( array(
+		$wp_admin_bar->add_menu(array(
+	    		"parent" => "contact_bank_links",
+	    		"id" => "gallery_bank_recommended_plugins_links",
+	    		"href" => site_url() . "/wp-admin/admin.php?page=contact_bank_recommended_plugins",
+	    		"title" => __("Recommendations", contact_bank))
+	    );
+	
+		$wp_admin_bar->add_menu(array(
 	        "parent" => "contact_bank_links",
-		    "id"     => "pro_version_data_links",
-		    "href"  => site_url() ."/wp-admin/admin.php?page=pro_version",
-		    "title" => __("Purchase PRO Edition", contact_bank))         /* set the sub-menu name */
+	        "id" => "pro_version_links",
+	        "href" => site_url() . "/wp-admin/admin.php?page=pro_version",
+	        "title" => __("Premium Editions", contact_bank))
+	    );
+		
+		$wp_admin_bar->add_menu(array(
+				"parent" => "contact_bank_links",
+				"id" => "gallery_bank_other_services_links",
+				"href" => site_url() . "/wp-admin/admin.php?page=contact_bank_other_services",
+				"title" => __("Our Other Services", contact_bank))
 		);
 		break;	
 		case "author":
@@ -551,11 +608,25 @@ function add_contact_bank_icon($meta = TRUE)
 			    "href"  => site_url() ."/wp-admin/admin.php?page=layout_settings",
 			    "title" => __( "Global Settings", contact_bank))         /* set the sub-menu name */
 			);	
-		 	$wp_admin_bar->add_menu( array(
+		 	$wp_admin_bar->add_menu(array(
+		    		"parent" => "contact_bank_links",
+		    		"id" => "gallery_bank_recommended_plugins_links",
+		    		"href" => site_url() . "/wp-admin/admin.php?page=contact_bank_recommended_plugins",
+		    		"title" => __("Recommendations", contact_bank))
+		    );
+		
+			$wp_admin_bar->add_menu(array(
 		        "parent" => "contact_bank_links",
-			    "id"     => "pro_version_data_links",
-			    "href"  => site_url() ."/wp-admin/admin.php?page=pro_version",
-			    "title" => __("Purchase PRO Edition", contact_bank))         /* set the sub-menu name */
+		        "id" => "pro_version_links",
+		        "href" => site_url() . "/wp-admin/admin.php?page=pro_version",
+		        "title" => __("Premium Editions", contact_bank))
+		    );
+			
+			$wp_admin_bar->add_menu(array(
+					"parent" => "contact_bank_links",
+					"id" => "gallery_bank_other_services_links",
+					"href" => site_url() . "/wp-admin/admin.php?page=contact_bank_other_services",
+					"title" => __("Our Other Services", contact_bank))
 			);
 		break;
 		case "contributor":
@@ -634,52 +705,6 @@ function add_contact_mce_popup(){
 			window.send_to_editor("[contact_bank form_id=" + form_id + " show_title=" + show_title +" ]");
 		}
 	</script>
-<?php
-}
-function contact_bank_enqueue_pointer_script_style()
-{
-
-    $enqueue_pointer_script_style = false;
-    $dismissed_pointers = explode( ",", get_user_meta( get_current_user_id(), "dismissed_wp_pointers", true ) );
-
-    // Check if our pointer is not among dismissed ones
-    if( !in_array( "thsp_contact_bank_pointer", $dismissed_pointers))
-    {
-        $enqueue_pointer_script_style = true;
-        // Add footer scripts using callback function
-        add_action( "admin_print_footer_scripts", "thsp_pointer_print_scripts" );
-    }
-    if( $enqueue_pointer_script_style )
-    {
-        wp_enqueue_style( "wp-pointer" );
-        wp_enqueue_script( "wp-pointer" );
-    }
-}
-add_action( "admin_enqueue_scripts", "contact_bank_enqueue_pointer_script_style" );
-
-function thsp_pointer_print_scripts() {
-
-    $pointer_content  = "<h3>Contact Bank</h3>";
-    $pointer_content .= "<p>If you are using Contact Bank for the first time, you can view this <a href='http://tech-banker.com/contact-bank/' target='_blank'>link</a> to know about the features.</p>";
-    ?>
-    <script type="text/javascript">
-        jQuery(document).ready( function($) {
-            $("#toplevel_page_dashboard").pointer({
-                content:"<?php echo $pointer_content; ?>",
-                position:{
-                    edge:   "left", // arrow direction
-                    align:  "center" // vertical alignment
-                },
-                pointerWidth: 350,
-                close:function() {
-                    $.post(ajaxurl, {
-                        pointer: "thsp_contact_bank_pointer", // pointer ID
-                        action: "dismiss-wp-pointer"
-                    });
-                }
-            }).pointer("open");
-        });
-    </script>
 <?php
 }
 function plugin_load_textdomain()

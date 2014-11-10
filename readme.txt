@@ -3,7 +3,7 @@ Contributors: contact-banker, Gallery-Bank
 Tags: admin, advanced form, AJAX, best contact form plugin, buddypress, category, comment, comments, contact, contact form, contact form builder, contact form plugin, contact forms, contact me, contact us, contacts, content, easy contact form, easy contact plugin, email, Facebook, feed, feedback, feedback form, form, form builder, forms, gallery, google, image, images, javascript, jquery, link, links, login, media, page, pages, plugin, Post, posts, request, shortcode, sidebar, stats, text, web form, widget, wordpress
 Requires at least: 3.3
 Tested up to: 4.0
-Stable tag: 2.0.73
+Stable tag: 2.0.74
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -11,7 +11,7 @@ Contact Bank is an ultimate wordpress plugin that lets you create contact forms 
 
 == Description ==
 
-### [WordPress Contact Bank - Best Contact Forms Builder](http://tech-banker.com/contact-bank/)    
+### [WordPress Contact Bank - Best Contact Forms Builder](http://tech-banker.com/products/wp-contact-bank/)    
 
 <h4>Contact Bank is a WordPress Plugin designed to create elegant and beautiful contact forms easily and hassle free within few seconds.</h4>
 
@@ -19,21 +19,16 @@ Contact Bank has become the **Best Plugin** in the world for WordPress sites to 
 
 It provides a powerful engine for uploading and managing dynamic forms with more than 100+ layout settings. It also provides different front-end display styles (top,right,left layouts), all of them comes with a wide array of options for controlling size, style, controls, and even much more.
 
+[vimeo https://vimeo.com/92488992]
+
 > #### **Live Demos & Documentation**
 
 > * [Tech Banker](http://tech-banker.com/)
-> * [Contact Bank](http://tech-banker.com/contact-bank/)
-> * [Contact Bank Demos](http://tech-banker.com/contact-bank/demo/)
+> * [Contact Bank](http://tech-banker.com/products/wp-contact-bank/)
+> * [Contact Bank Demos](http://tech-banker.com/products/wp-contact-bank/demo/)
 > * [Contact Bank Documentation](http://tech-banker.com/contact-bank/documentation/)
 
-[vimeo https://vimeo.com/92488992]
 
-###IMPORTANT: If you think you found a bug in the Contact Bank or have any problem or question concerning Contact Bank, do not hesitate to contact us at [support@tech-banker.com](mailto:support@tech-banker.com).  
-
-
-***The Contact Bank WordPress Plugin is now proudly maintained by <a href="http://www.tech-banker.com">Tech Banker</a> since March 2014.***
-
-***November 4, 2014: We're happy to announce that Contact Bank reached 124,300+ plugin downloads in only 1 year. We frequently receive positive feedback from people using our Contact Bank Plugin for WordPress. Thanks so much for your support!***
 
 <a href="http://tech-banker.com/forum/contact-bank-support/" target="_blank">Support Desk - feel free to ask your Queries</a>
 
@@ -543,6 +538,13 @@ In order to set Shortcode for a Form, you need to follow these steps :
 
 
 == Changelog ==
+
+= 2.0.74 =
+
+* Demo links Updated
+* Recommended Section Added
+* Pricing Section Added
+* Other Services Section Added
 
 = 2.0.73 =
 

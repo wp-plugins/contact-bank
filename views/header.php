@@ -1,20 +1,4 @@
 ﻿<?php
-$show_banner = get_option("contact-bank-banner");
-if($show_banner == "")
-{
- 	echo'<div id="ux_buy_pro" class="updated">
-     <div class="gb_buy_pro">
-      <div class="gb_text_control">
-       It\'s time to upgrade your <strong>Contact Bank Standard Edition</strong> to <strong>Premium</strong> Edition!<br />
-       <span>Extend standard plugin functionality with 200+ awesome features! <br/>Go for Premium Version Now! Starting at <strong>11£/- only</strong></span>
-      </div>
-      <a class="button gb_message_buttons" href="admin.php?page=pro_version&msg=no">CLOSE</a>
-      <a class="button gb_message_buttons" target="_blank" href="http://wordpress.org/support/view/plugin-reviews/contact-bank?filter=5">RATE US 5 ★</a>
-      <a class="button gb_message_buttons" target="_blank" href="http://tech-banker.com/contact-bank/demo/">LIVE DEMO</a>
-      <a class="button gb_message_buttons" target="_blank" href="http://tech-banker.com/contact-bank/">UPGRADE NOW</a>
-     </div>
-    </div>';
-}
 $cb_lang = array();
 $cb_lang_translated_languages = array();
 array_push($cb_lang_translated_languages,"fr_FR","ru_RU","en_US","es_ES", "nl_NL","hu_HU","de_DE", "pt_BR","pt_PT","he_IL", "tr","it_IT", "da_DK", "pl_PL", "sv_SE", "zh_CN","cs_CZ","en_GB", "sk_SK","el","hr");
@@ -28,7 +12,88 @@ jQuery(document).ready(function()
 	jQuery(".nav-tab-wrapper > a#<?php echo $_REQUEST["page"];?>").addClass("nav-tab-active");
 });
 </script>
-<img style="margin: 10px;" src="<?php echo plugins_url("/assets/images/cb-logo.png" , dirname(__FILE__));?>"/>
+<div id="welcome-panel" class="welcome-panel" style="padding:0px !important;background-color: #f9f9f9 !important">
+	<div class="welcome-panel-content">
+		<img src="<?php echo plugins_url("/assets/images/contact-bank.png" , dirname(__FILE__)); ?>" />
+		<div class="welcome-panel-column-container">
+			<div class="welcome-panel-column" style="width:240px !important;">
+				<h4 class="welcome-screen-margin">
+					<?php _e("Get Started", contact_bank); ?>
+				</h4>
+					<a class="button button-primary button-hero" target="_blank" href="http://vimeo.com/92488992">
+						<?php _e("Watch Contact Video!", contact_bank); ?>
+					</a>
+					<p>or, 
+						<a target="_blank" href="http://tech-banker.com/products/wp-contact-bank/knowledge-base/">
+							<?php _e("read documentation here", contact_bank); ?>
+						</a>
+					</p>
+			</div>
+			<div class="welcome-panel-column" style="width:250px !important;">
+				<h4 class="welcome-screen-margin"><?php _e("Go Premium", contact_bank); ?></h4>
+				<ul>
+					<li>
+						<a href="http://tech-banker.com/products/wp-contact-bank/" target="_blank" class="welcome-icon">
+							<?php _e("Features", contact_bank); ?>
+						</a>
+					</li>
+					<li>
+						<a href="http://tech-banker.com/products/wp-contact-bank/demo/" target="_blank" class="welcome-icon">
+							<?php _e("Online Demos", contact_bank); ?>
+						</a>
+					</li>
+					<li>
+						<a href="http://tech-banker.com/products/wp-contact-bank/pricing/" target="_blank" class="welcome-icon">
+							<?php _e("Why Go for Premium ?", contact_bank); ?>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="welcome-panel-column" style="width:240px !important;">
+				<h4 class="welcome-screen-margin">
+					<?php _e("Knowledge Base", contact_bank); ?>
+				</h4>
+				<ul>
+					<li>
+						<a href="http://tech-banker.com/forums/forum/contact-bank-support/" target="_blank" class="welcome-icon">
+							<?php _e("Support Forum", contact_bank); ?>
+						</a>
+					</li>
+					<li>
+						<a href="http://tech-banker.com/products/wp-contact-bank/knowledge-base/" target="_blank" class="welcome-icon">
+							<?php _e("FAQ's", contact_bank); ?>
+						</a>
+					</li>
+					<li>
+						<a href="http://tech-banker.com/products/wp-contact-bank/" target="_blank" class="welcome-icon">
+							<?php _e("Detailed Features", contact_bank); ?>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="welcome-panel-column welcome-panel-last" style="width:250px !important;">
+				<h4 class="welcome-screen-margin"><?php _e("More Actions", contact_bank); ?></h4>
+				<ul>
+					<li>
+						<a href="http://tech-banker.com/products/wp-contact-bank/pricing/" target="_blank" class="welcome-icon">
+							<?php _e("Premium Pricing Plans", contact_bank); ?>
+						</a>
+					</li>
+					<li>
+						<a href="admin.php?page=contact_bank_recommended_plugins" class="welcome-icon">
+							<?php _e("Recommendations", contact_bank); ?>
+						</a>
+					</li>
+					<li>
+						<a href="admin.php?page=contact_bank_other_services" class="welcome-icon">
+							<?php _e("Our Other Services", contact_bank); ?>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
 <?php
 global $wpdb,$current_user;
 $role = $wpdb->prefix . "capabilities";
@@ -43,8 +108,9 @@ switch ($role) {
 			<a class="nav-tab " id="frontend_data" href="admin.php?page=frontend_data">Form Entries</a>
 			<a class="nav-tab " id="contact_email" href="admin.php?page=contact_email">Email Settings</a>
 			<a class="nav-tab " id="layout_settings" href="admin.php?page=layout_settings">Global Settings</a>
-			<a class="nav-tab " id="system_status" href="admin.php?page=system_status">System Status</a>
-			<a class="nav-tab " id="pro_version" href="admin.php?page=pro_version">Purchase Pro Version</a>
+			<a class="nav-tab " id="contact_bank_recommended_plugins" href="admin.php?page=contact_bank_recommended_plugins">Recommendations</a>
+			<a class="nav-tab " id="pro_version" href="admin.php?page=pro_version">Premium Editions</a>
+			<a class="nav-tab " id="contact_bank_other_services" href="admin.php?page=contact_bank_other_services">Our Other Services</a>
 		</h2>
 		<?php
 	break;
@@ -56,8 +122,9 @@ switch ($role) {
 			<a class="nav-tab " id="frontend_data" href="admin.php?page=frontend_data">Form Entries</a>
 			<a class="nav-tab " id="contact_email" href="admin.php?page=contact_email">Email Settings</a>
 			<a class="nav-tab " id="layout_settings" href="admin.php?page=layout_settings">Global Settings</a>
-			<a class="nav-tab " id="system_status" href="admin.php?page=system_status">System Status</a>
-			<a class="nav-tab " id="pro_version" href="admin.php?page=pro_version">Purchase Pro Version</a>
+			<a class="nav-tab " id="contact_bank_recommended_plugins" href="admin.php?page=contact_bank_recommended_plugins">Recommendations</a>
+			<a class="nav-tab " id="pro_version" href="admin.php?page=pro_version">Premium Editions</a>
+			<a class="nav-tab " id="contact_bank_other_services" href="admin.php?page=contact_bank_other_services">Our Other Services</a>
 		</h2>
 		<?php
 	break;
@@ -69,19 +136,9 @@ switch ($role) {
 			<a class="nav-tab " id="frontend_data" href="admin.php?page=frontend_data">Form Entries</a>
 			<a class="nav-tab " id="contact_email" href="admin.php?page=contact_email">Email Settings</a>
 			<a class="nav-tab " id="layout_settings" href="admin.php?page=layout_settings">Global Settings</a>
-			<a class="nav-tab " id="pro_version" href="admin.php?page=pro_version">Purchase Pro Version</a>
-		</h2>
-		<?php
-	break;
-	case "contributor":
-		?>
-		<h2 class="nav-tab-wrapper">
-			<a class="nav-tab " id="dashboard" href="admin.php?page=dashboard">Dashboard</a>
-			<a class="nav-tab " id="short_code" href="admin.php?page=short_code">Short-Codes</a>
-			<a class="nav-tab " id="frontend_data" href="admin.php?page=frontend_data">Form Entries</a>
-			<a class="nav-tab " id="contact_email" href="admin.php?page=contact_email">Email Settings</a>
-			<a class="nav-tab " id="layout_settings" href="admin.php?page=layout_settings">Global Settings</a>
-			<a class="nav-tab " id="pro_version" href="admin.php?page=pro_version">Purchase Pro Version</a>
+			<a class="nav-tab " id="contact_bank_recommended_plugins" href="admin.php?page=contact_bank_recommended_plugins">Recommendations</a>
+			<a class="nav-tab " id="pro_version" href="admin.php?page=pro_version">Premium Editions</a>
+			<a class="nav-tab " id="contact_bank_other_services" href="admin.php?page=contact_bank_other_services">Our Other Services</a>
 		</h2>
 		<?php
 	break;
