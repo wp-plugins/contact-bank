@@ -30,18 +30,11 @@ It provides a powerful engine for uploading and managing dynamic forms with more
 
 
 
-<a href="http://tech-banker.com/forum/contact-bank-support/" target="_blank">Support Desk - feel free to ask your Queries</a>
+<a href="http://tech-banker.com/forums/forum/contact-bank-support/" target="_blank">Support Desk - feel free to ask your Queries</a>
 
-<a href="http://tech-banker.com/contact-bank/" target="_blank">Upgrade to Pro Version</a>
+<a href="http://tech-banker.com/products/wp-contact-bank/" target="_blank">Upgrade to Pro Version</a>
 
 <a href="https://www.facebook.com/TechBanker/" target="_blank">Like & Support us on Facebook</a>
-
-
-**The following are other famous Plugins developed and maintained by Tech Banker**
-
-* [Gallery Bank](http://wordpress.org/extend/plugins/gallery-bank/) - Gallery Bank is an easy to use Responsive WordPress Gallery Plugin for photos, videos, galleries and albums.
-* [Captcha Bank](http://wordpress.org/extend/plugins/captcha-bank/) - An easy to use powerful wordpress Captcha Plugin to prevent spam on your site
-
 
 ### Key Features of Contact Bank - WordPress Form Designer
 
@@ -129,7 +122,7 @@ Visit [here](http://tech-banker.com/contact-bank) to upgrade to Pro Version now.
 = Technical support =
 
 * Please email all your queries/issues at [support@tech-banker.com](mailto:support@tech-banker.com) or use
-* [Forum for Conntact Bank](http://tech-banker.com/forum/contact-bank-support/), feel free to ask  your queries.
+* [Forum for Conntact Bank](http://tech-banker.com/forums/forum/contact-bank-support/), feel free to ask  your queries.
 
 == Installation ==
 
