@@ -302,7 +302,7 @@ else
 										<div id="ux_form_email_div" class="contact_bank_layout">
 											<a class="btn btn-info" href="admin.php?page=dashboard"><?php _e("Back to Dashboard", contact_bank);?></a>
 											<div class="separator-doubled"></div>
-											<div id="form_success_message_frontend" class="message success_message" style="display: none;margin-bottom: 10px;">
+											<div id="form_success_message_frontend" class="custom-message success_message" style="display: none;margin-bottom: 10px;">
 												<span class="sucess_message_text" >
 													<strong><?php echo $form_settings_array[$form_id]["success_message"]; ?></strong>
 												</span>

@@ -34,8 +34,7 @@ else
 							<h3 class="hndle"><span><?php _e("Our Other Services", contact_bank); ?></span></h3>
 							<div class="inside">
 								<div id="ux_other_services" class="contact_bank_layout">
-									<a class="btn btn-inverse"
-									   href="admin.php?page=contact_bank"><?php _e("Back to Albums", contact_bank); ?></a>
+									<a class="btn btn-info" href="admin.php?page=dashboard"><?php _e("Back to Dashboard", contact_bank);?></a>
 									<div class="separator-doubled"></div>
 									<div class="fluid-layout ">
 										<div class="layout-span12">

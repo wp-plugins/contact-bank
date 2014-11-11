@@ -40,7 +40,7 @@ else
 								</a>
 								<input  class="btn btn-info layout-span1" type="button" onclick="ux_button_pro_version();"  id="submit_button" name="submit_button" style="float: right;"  value="<?php _e("Save", contact_bank); ?>" />
 								<div class="separator-doubled"></div>
-								<div id="form_success_message" class="message green" style="display: none;">
+								<div id="form_success_message" class="custom-message green" style="display: none;">
 									<span>
 										<strong><?php _e("Form Settings Saved. Kindly wait for the redirect.", contact_bank); ?></strong>
 									</span>

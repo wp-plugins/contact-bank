@@ -159,33 +159,7 @@ else
 		jQuery(".hovertip").tooltip();
 		jQuery(document).ready(function()
 		{
-			jQuery( ".contact-bank-video-link").click( function( event ) {
-		
-			event.preventDefault();
-			
-			var target = jQuery( this ).data( "video-id" );
-			
-			jQuery( "." + target ).dialog(
-				{
-					dialogClass: "wp-dialog contact-bank-video-popup",
-					modal: true,
-					closeOnEscape: true,
-					width: "auto",
-					resizable: false,
-					draggable: false,
-					create: function( event, ui ) {
-						jQuery(this).css("maxWidth", "853px");
-					},
-					open: function(event, ui) { 
-						jQuery(".ui-widget-overlay").bind("click", function () { 
-							jQuery(this).siblings(".ui-dialog").find(".ui-dialog-content").dialog("close"); 
-						}); 
-					}
-				}
-			);
-			jQuery(".ui-dialog :button").blur();
-			
-		});
+
 			jQuery("a[rel^=\"prettyPhoto\"]").prettyPhoto
 			({
 				animation_speed: 1000, 
@@ -194,35 +168,7 @@ else
 				opacity: 0.80, 
 				show_title: false,
 				allow_resize: true
-			});
-			<?php
-	 if($popup == "")
-	 {
-	 ?>
-	  jQuery("#contact_bank_popup").dialog(
-	  {
-	   dialogClass: "wp-dialog contact_bank_popup_box",
-	   modal: true,
-	   closeOnEscape: true,
-	   title: contact_bank_popup.title,
-	   width: "auto",
-	   resizable: true,
-	   draggable: false,
-	   create: function ( event, ui ) {
-	    jQuery( this ).css( "maxWidth", "600px" );
-	   },
-	   close: function(event)
-	   {
-	    jQuery( "#contact_bank_popup" ).dialog( "close" );
-	    jQuery.post(ajaxurl, "param=update_option&action=add_contact_form_library", function(data)
-	    {
-	    });
-	   }
-	   
-	  });
-	 <?php
-	 }
-	 ?>
+			});	
 		});
 		oTable = jQuery("#data-table-form").dataTable
 		({

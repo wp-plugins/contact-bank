@@ -39,7 +39,7 @@ else
 						</h3>
 						<div class="inside">
 							<div id="ux_purchase_pro" class="contact_bank_layout">
-								<a class="btn btn-inverse" href="admin.php?page=contact_bank"><?php _e("Back to Albums", contact_bank); ?></a>
+								<a class="btn btn-info" href="admin.php?page=dashboard"><?php _e("Back to Dashboard", contact_bank);?></a>
 								<div class="separator-doubled"></div>
 								<div class="fluid-layout">
 									<div class="layout-span12">

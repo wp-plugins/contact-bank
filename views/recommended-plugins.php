@@ -91,8 +91,7 @@ else
 							<h3 class="hndle"><span><?php _e("Recommendations", contact_bank); ?></span></h3>
 							<div class="inside">
 								<div id="ux_recommendation" class="contact_bank_layout">
-									<a class="btn btn-inverse"
-									   href="admin.php?page=contact_bank"><?php _e("Back to Albums", contact_bank); ?></a>
+									<a class="btn btn-info" href="admin.php?page=dashboard"><?php _e("Back to Dashboard", contact_bank);?></a>
 									<div class="separator-doubled"></div>
 									<div class="fluid-layout">
 										<div class="layout-span12">
@@ -223,7 +222,7 @@ else
 																							<a class="plugin-div-button install-now button" href="http://tech-banker.com/products/wp-captcha-bank/pricing/" target="_blank" >
 																								<?php _e("Premium Editions", contact_bank); ?>
 																							</a>
-																							<a class="plugin-div-button install-now button" href="http://tech-banker.com/products/wp-gallery-bank/" target="_blank" >
+																							<a class="plugin-div-button install-now button" href="http://tech-banker.com/products/wp-captcha-bank/" target="_blank" >
 																								<?php _e("Visit Website", contact_bank); ?>
 																							</a>
 																						<?php 

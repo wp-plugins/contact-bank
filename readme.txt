@@ -3,21 +3,19 @@ Contributors: contact-banker, Gallery-Bank
 Tags: admin, advanced form, AJAX, best contact form plugin, buddypress, category, comment, comments, contact, contact form, contact form builder, contact form plugin, contact forms, contact me, contact us, contacts, content, easy contact form, easy contact plugin, email, Facebook, feed, feedback, feedback form, form, form builder, forms, gallery, google, image, images, javascript, jquery, link, links, login, media, page, pages, plugin, Post, posts, request, shortcode, sidebar, stats, text, web form, widget, wordpress
 Requires at least: 3.3
 Tested up to: 4.0
-Stable tag: 2.0.74
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Stable tag: 2.0.75
+License: GPLv3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Contact Bank is an ultimate wordpress plugin that lets you create contact forms in seconds.
+Contact Bank is an ultimate form builder wordpress plugin that lets you create contact forms in seconds.
 
 == Description ==
 
-### [WordPress Contact Bank - Best Contact Forms Builder](http://tech-banker.com/products/wp-contact-bank/)    
+**Contact Bank** is an ultimate WordPress Plugin loaded with 200+ Features and designed to create simple but powerful contact forms easily and hassle free within few seconds.
 
-<h4>Contact Bank is a WordPress Plugin designed to create elegant and beautiful contact forms easily and hassle free within few seconds.</h4>
+**Contact Bank** provides you with powerfull Control Panel and Shortcode Manager make getting started super easy.
 
-Contact Bank has become the **Best Plugin** in the world for WordPress sites to display forms. It has been designed to provide easiness and simplicity to the end user. It is a very simple but fully loaded with 200+ features(**Premium Version**) Plugin.
-
-It provides a powerful engine for uploading and managing dynamic forms with more than 100+ layout settings. It also provides different front-end display styles (top,right,left layouts), all of them comes with a wide array of options for controlling size, style, controls, and even much more.
+**Contact Bank** has become the **Best Plugin** in the world for WordPress sites to display forms. It has been designed to provide easiness and simplicity to the end user. It is a very simple but fully loaded with 200+ features(**Premium Version**) Plugin.
 
 [vimeo https://vimeo.com/92488992]
 
@@ -26,66 +24,65 @@ It provides a powerful engine for uploading and managing dynamic forms with more
 > * [Tech Banker](http://tech-banker.com/)
 > * [Contact Bank](http://tech-banker.com/products/wp-contact-bank/)
 > * [Contact Bank Demos](http://tech-banker.com/products/wp-contact-bank/demo/)
-> * [Contact Bank Documentation](http://tech-banker.com/contact-bank/documentation/)
+> * [Dashboard Demo](http://tech-banker.com/products/wp-contact-bank/demo/dashboard/)
+> * [Add New Form Demo](http://tech-banker.com/products/wp-contact-bank/demo/add-new-form/)
+> * [Form Preview Demo](http://tech-banker.com/products/wp-contact-bank/demo/form-preview/)
+> * [Email Settings Demo](http://tech-banker.com/products/wp-contact-bank/demo/email-settings/)
+> * [Global Settings Demo](http://tech-banker.com/products/wp-contact-bank/demo/global-settings/)
+> * [Shortcode Demo](http://tech-banker.com/products/wp-contact-bank/demo/shortcode/)
+> * [Form Entries Demo](http://tech-banker.com/products/wp-contact-bank/demo/form-entries/)
+> * [Roles and Capabilities Demo](http://tech-banker.com/products/wp-contact-bank/demo/roles-and-capabilities/)
+> * [System Status Demo](http://tech-banker.com/products/wp-contact-bank/demo/system-status/)
 
 
+**[Support Desk - Feel Free to ask your Queries](http://tech-banker.com/forums/forum/contact-bank-support/)**
 
-<a href="http://tech-banker.com/forums/forum/contact-bank-support/" target="_blank">Support Desk - feel free to ask your Queries</a>
+**[Knowledge Base](http://tech-banker.com/products/wp-contact-bank/knowledge-base/)**
 
-<a href="http://tech-banker.com/products/wp-contact-bank/" target="_blank">Upgrade to Pro Version</a>
+**[Upgrade to Pro Version](http://tech-banker.com/products/wp-contact-bank/)**
 
-<a href="https://www.facebook.com/TechBanker/" target="_blank">Like & Support us on Facebook</a>
-
-### Key Features of Contact Bank - WordPress Form Designer
+**[Like & Support Us on Facebook](https://www.facebook.com/TechBanker/)**
 
 
-* <strong>Multi-Lingual. Available now in 30 Languages.</strong>
-* <strong>Responsive Forms</strong>
-* <strong>Shortcode Wizard in your Page/Post.</strong>
-* <strong>Unlimited Forms Creation(**Premium Versions**). With Free Standard Version, you can only create upto 1 form.</strong>
-* <strong>Unlimited Fields in each form</strong>
-* <strong>Edit Forms and add/edite/delete fields.</strong>
-* <strong>Bulk Upload of Fields</strong>
-* <strong>Standard Fields</strong>
-* <strong>Display Form Entries</strong>
-* <strong>Email Management</strong>
-* <strong>Advanced Fields(**Premium Versions**)</strong>
-* <strong>Widgets(**Premium Versions**)</strong>
-* <strong>Bulk Deletion of Forms(**Premium Versions**)</strong>
-* <strong>Restore Factory Settings(**Premium Versions**)</strong>
-* <strong>Global Settings(**Premium Versions**)</strong>
-* <strong>Label Settings(**Premium Versions**)</strong>
-* <strong>Input Control Settings(**Premium Versions**)</strong>
-* <strong>Button Settings(**Premium Versions**)</strong>
-* <strong>Pagination(**Premium Versions**)</strong>
-* <strong>Filter Settings(**Premium Versions**)</strong>
-* <strong>Roles & Capabilities(**Premium Versions**)</strong>
-* <strong>Front End Layout Settings(**Premium Versions**)</strong>
+= Key Features in Contact Bank Lite Edition =
+ 
+* Multi-Lingual. Available now in 36 Languages.
+* Responsive Forms
+* Shortcode Wizard in your Page/Post.
+* Unlimited Fields in each Form
+* Edit Forms and add/edite/delete fields.
+* Bulk Upload of Fields
+* Standard Fields
+* Display Form Entries
+* Email Management
 
-> #### **Upgrade to Contact Bank Premium Versions**
-> Take your media to the next level with Contact Bank Premium Versions](http://tech-banker.com/contact-bank/), which gives you 200+ features such as:
 
-> * <strong>Unlimited Forms Creation</strong>
-> * <strong>Display Form Entries</strong>
-> * <strong>Email Management</strong>
-> * <strong>Widgets</strong>
-> * <strong>Bulk Deletion of Forms</strong>
-> * <strong>Restore Factory Settings</strong>
-> * <strong>Global Settings</strong>
-> * <strong>Label Settings</strong>
-> * <strong>Input Control Settings</strong>
-> * <strong>Button Settings</strong>
-> * <strong>Pagination</strong>
-> * <strong>Filter Settings</strong>
-> * <strong>Roles & Capabilities</strong>
-> * <strong>Front End Layout Settings</strong>
-> * <strong>See your media on different theme and more.</strong>
-> * <strong>Powerfull control panel and Shortcode Manager make getting started super easy</strong>
-> * <strong>24/7 Technical Support</strong>
+= Key Features in Contact Bank Premium Editions =
 
-Visit [here](http://tech-banker.com/contact-bank) to upgrade to Pro Version now.
+Take your forms to the next level with Contact Bank Premium Editions](http://tech-banker.com/products/wp-contact-bank/), which gives you 200+ features such as:
 
-### Contact Bank is now available in the following Languages
+* Unlimited Forms Creation
+* Display Form Entries
+* Email Management
+* Widgets
+* Bulk Deletion of Forms
+* Restore Factory Settings
+* Global Settings
+* Label Settings
+* Input Control Settings
+* Button Settings
+* Pagination
+* Filter Settings
+* Roles & Capabilities
+* Front End Layout Settings
+* Advanced Fields
+* Widgets
+* 24/7 Technical Support
+
+Visit [here](http://tech-banker.com/products/wp-contact-bank/) to upgrade to Pro Editions now.
+
+
+= Contact Bank is now available in the following Languages =
 
 * Albanian (sq_AL)
 * Arabic (ar)
@@ -126,30 +123,25 @@ Visit [here](http://tech-banker.com/contact-bank) to upgrade to Pro Version now.
 
 == Installation ==
 
-### Minimum requirements.  
-*   Wordpress 3.3+  
-*   PHP 5.x  
-*   MySQL 5.x  
-
 ### Performing a new installation  
 
 After downloading the ZIP file,  
 
 1. Log in to the administrator panel.  
 2. Go to Plugins Add > New > Upload.  
-3. Click “Choose file” (“Browse”) and select the downloaded zip file.  
+3. Click "Choose file" ("Browse") and select the downloaded zip file.  
 
 *For Mac Users*  
 *Go to your Downloads folder and locate the folder with the plugin. Right-click on the folder and select Compress. Now you have a newly created .zip file which can be installed as described here.*  
 
-1. Click “Install Now” button.  
-2. Click “Activate Plugin” button for activating the plugin.  
+1. Click "Install Now" button.  
+2. Click "Activate Plugin" button for activating the plugin.  
 
 If any problem occurs, please contact us at [support@tech-banker.com](mailto:support@tech-banker.com).
 
 == Frequently Asked Questions ==
 
-### How to add New Contact Form in Contact Bank Plugin?
+= How to add New Contact Form in Contact Bank Plugin? =
 
 In order to add New Form in your Contact Bank, you need go to your Contact Bank 
 Dashboard Page located on the left side of WordPress Dashboard Menus.
@@ -165,7 +157,7 @@ Once you click on the button, this page will open.
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2013/11/Add_form_3-707x1024.png)
 
 
-### How to add Single Line Control in a Form?
+= How to add Single Line Control in a Form? =
 
 In order to add Single Line Text control in a Form, click on the Single Line Text button.
 
@@ -204,7 +196,7 @@ appear in the Form Layout Preview.
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2013/11/single_line_control4.png)
 
 
-### How to add Paragraph Control in a Form?
+= How to add Paragraph Control in a Form? =
 
 In order to add Paragraph Text control in a Form, click on the Paragraph Text button.
 
@@ -244,7 +236,7 @@ appear in the Form Layout Preview.
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2013/11/paragragh_control4.png)
 
 
-### How to add Email Address Control in a Form?
+= How to add Email Address Control in a Form? = 
 
 In order to add Email Address control in a Form, click on the Email Address button.
 
@@ -270,7 +262,7 @@ Once you fill the Inline Form, click on Save Settings button. A Preview of contr
 
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2013/11/Email4.png)
 
-### How to add Select Box Control in a Form?
+= How to add Select Box Control in a Form? =
 
 In order to add Select Box control in a Form, click on the Select Box button.
 
@@ -300,7 +292,7 @@ appear in the Form Layout Preview.
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2013/11/select_box_4.png)
 
 
-### How to add CheckBox Control in a Form?
+= How to add CheckBox Control in a Form? =
 
 In order to add CheckBox control in a Form, click on the Checkboxes button.
 
@@ -329,7 +321,7 @@ appear in the Form Layout Preview.
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2013/11/checkbox_4.png)
 
 
-### How to add Radio Buttons Control in a Form?
+= How to add Radio Buttons Control in a Form? =
 
 In order to add Radio Buttons control in a Form, click on the Radio Buttons.
 
@@ -358,7 +350,7 @@ will appear in the Form Layout Preview.
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2013/11/radio_4.png)
 
 
-### How to edit form?
+= How to edit form in Contact Bank? =
 
 In order to Edit a Form, you need to go to your Contact Bank Dashboard Page.
 
@@ -372,7 +364,7 @@ Once you click on the button, this page will open.
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2013/11/edit2-715x1024.png)
 
 
-### How to view Form Entries?
+= How to view Form Entries in Contact Bank? =
 
 Form Entries is the collection of data which you fill at the front end.
 In order to do Form Entries, you need to go to your Contact Bank Dashboard Page.
@@ -386,7 +378,7 @@ Once you click on the button, this page will open.
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2013/11/form-entries-1024x339.png)
 
 
-### How to Preview a Form?
+= How to Preview a Form in Contact Bank? =
 
 In order to Preview your Form, you need to go to your Contact Bank Dashboard Page.
 Then click on Preview Form button at the right side of each Form.
@@ -398,7 +390,7 @@ Once you click on the button, this page will open.
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2013/11/preview22-1024x916.png)
 
 
-### How to Delete a Form?
+= How to Delete a Form in Contact Bank? =
 
 You can Delete a Form if you want to. In order to perform this action, you need to go to your Contact Bank Dashboard Page.
 Then click on Delete Form button at the right side of each Form.
@@ -411,10 +403,9 @@ Click on "OK" to proceed and your Form will be deleted.
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2013/11/Delete_form2-1024x292.png)
 
 
-### What is Email Settings and how to use it?
+= What is Email Settings and how to use it? =
 
-Email Settings is used to create different Email Notifications. These Email Notifications will be sent
-to both Admin and Customer.
+Email Settings is used to create different Email Notifications. These Email Notifications will be sent to both Admin and Customer.
 
 In order to use Email Settings in Contact Bank Plugin, locate Contact Bank Menu on the left side of WordPress Dashboard Menus and then click on Email Settings.
 Alternatively, You can go to your Contact Bank Dashboard Page and then click on Email Settings button at the right side of each Form.
@@ -435,14 +426,14 @@ Here you can set various Email Settings.
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2013/11/email_message-1024x496.png)
 
 
-### What is the use of "Select a Field" Dropdown in Email Settings?
+= What is the use of "Select a Field" Dropdown in Email Settings? =
 
 This Dropdown contains all the Input Controls of your form.
 
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2013/11/all_fields-1024x830.png)
 
 
-### What is the use of "From Name" in Email Settings?
+= What is the use of "From Name" in Email Settings? =
 
 Here you can enter the Name by whom the Email is sent (Sender Name), which will be displayed in Email.
 
@@ -456,24 +447,24 @@ Here you can enter the Email Address by whom the mail is sent (Sender Email Addr
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2013/11/from_email-1024x826.png)
 
 
-### What is the use of "Cc" and "Bcc" in Email Settings?
+= What is the use of "Cc" and "Bcc" in Email Settings? =
 
-Cc stands for “Carbon Copy”. Anyone listed in the Cc field, will receive a copy of the message that you send. All other recipients of that message will be able to see that
+Cc stands for "Carbon Copy". Anyone listed in the Cc field, will receive a copy of the message that you send. All other recipients of that message will be able to see that
 the person you designated as a Cc recipient has received a copy of the message.
 
-Bcc stands for “Blind Carbon Copy”. This is similar to the Cc feature, except that Bcc recipients are invisible to all of the other recipients of the message (including other Bcc recipients).
+Bcc stands for "Blind Carbon Copy". This is similar to the Cc feature, except that Bcc recipients are invisible to all of the other recipients of the message (including other Bcc recipients).
 
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2013/11/Email_cc-1024x847.png)
 
 
-### What is the use of "Subject " in Email Settings?
+= What is the use of "Subject " in Email Settings? =
 
 Here you can enter the Subject for your Email.
 
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2013/11/email_setting_subject-1024x844.png)
 
 
-### What is the use of "Message " in Email Settings?
+= What is the use of "Message " in Email Settings? =
 
 Here you can add any Message which you want to show in your Email.
 You can also add different Fields from drop-down which is located at the right side of the Text Editor.
@@ -481,7 +472,7 @@ You can also add different Fields from drop-down which is located at the right s
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2013/11/email_message-1024x496.png)
 
 
-### How to view System Status?
+= How to view System Status? =
 
 In order to view your System Status your need to go to Contact Bank Menu on the left side of WordPress Dashboard Menus and then click on System Status.
 
@@ -494,7 +485,7 @@ Once you click on the link, this page will open. Here you can view the Status of
 [Click here to view the Image](http://tech-banker.com/wp-content/uploads/2013/11/system_status3-794x1024.png)
 
 
-### How to set Shortcode for a Form in Contact Bank Plugin?
+= How to set Shortcode for a Form in Contact Bank Plugin? =
 
 In order to set Shortcode for a Form, you need to follow these steps :
 

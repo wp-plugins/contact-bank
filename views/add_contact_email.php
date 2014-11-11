@@ -53,7 +53,7 @@ else
 									<a class="btn btn-info" href="admin.php?page=contact_email"><?php _e("Back to Email Settings", contact_bank);?></a>
 									<input  class="btn btn-info layout-span1" type="submit" id="submit_button" name="submit_button" style="float: right;"  value="<?php _e("Save", contact_bank); ?>" />
 									<div class="separator-doubled"></div>
-									<div id="email_success_message" class="message green" style="display: none;">
+									<div id="email_success_message" class="custom-message green" style="display: none;">
 										<span>
 											<strong><?php _e("Email Settings Saved. Kindly wait for the redirect.", contact_bank); ?></strong>
 										</span>

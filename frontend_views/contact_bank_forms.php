@@ -271,7 +271,7 @@ $forms_email_settings = $wpdb->get_row
     <form id="ux_frm_front_end_form" method="post" action="#" class="layout-form">
     	<div class="fluid-layout">
 			<div class="layout-span12">
-				<div id="form_success_message_frontend" class="message success_message" style="display: none;margin-bottom: 10px;">
+				<div id="form_success_message_frontend" class="custom-message success_message" style="display: none;margin-bottom: 10px;">
 					<span class="sucess_message_text" >
 						<strong><?php echo $form_settings_array[$form_id]["success_message"]; ?></strong>
 					</span>
