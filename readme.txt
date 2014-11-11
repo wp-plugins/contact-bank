@@ -139,6 +139,15 @@ After downloading the ZIP file,
 
 If any problem occurs, please contact us at [support@tech-banker.com](mailto:support@tech-banker.com).
 
+== Other Notes ==
+
+= Minimum requirements for Contact Bank. =  
+*   Wordpress 3.3+  
+*   PHP 5.x
+*   MySQL 5.x
+
+If any problem occurs, please contact us at [support@tech-banker.com](mailto:support@tech-banker.com).
+
 == Frequently Asked Questions ==
 
 = How to add New Contact Form in Contact Bank Plugin? =
