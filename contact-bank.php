@@ -1,10 +1,10 @@
 <?php
 /**
-Plugin Name: Contact Bank Standard Edition
+Plugin Name: Contact Bank Lite Edition
 Plugin URI: http://tech-banker.com
 Description: Build Complex, Powerful Contact Forms in Just Seconds. No Programming Knowledge Required! Yeah, It's Really That Easy.
 Author: Tech Banker
-Version: 2.0.75
+Version: 2.0.76
 Author URI: http://tech-banker.com
  */
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -13,6 +13,8 @@ Author URI: http://tech-banker.com
 if (!defined("CONTACT_BK_PLUGIN_DIR")) define("CONTACT_BK_PLUGIN_DIR",  plugin_dir_path( __FILE__ ));
 if (!defined("CONTACT_BK_PLUGIN_DIRNAME")) define("CONTACT_BK_PLUGIN_DIRNAME", plugin_basename(dirname(__FILE__)));
 if (!defined("contact_bank")) define("contact_bank", "contact_bank");
+if (!defined("tech_bank")) define("tech_bank", "tech-banker");
+if (!defined("CONTACT_BK_PLUGIN_BASENAME")) define("CONTACT_BK_PLUGIN_BASENAME", plugin_basename(__FILE__));
 
 function plugin_uninstall_script_for_contact_bank()
 {
@@ -707,20 +709,42 @@ function add_contact_mce_popup(){
 	</script>
 <?php
 }
-function plugin_load_textdomain()
+function plugin_load_textdomain_contact_bank()
 {
     if(function_exists( "load_plugin_textdomain" ))
     {
         load_plugin_textdomain(contact_bank, false, CONTACT_BK_PLUGIN_DIRNAME ."/languages");
     }
 }
-add_action("plugins_loaded", "plugin_load_textdomain");
+add_action("plugins_loaded", "plugin_load_textdomain_contact_bank");
+
+function plugin_load_textdomain_contact_bank_services()
+{
+	if(function_exists( "load_plugin_textdomain" ))
+	{
+		load_plugin_textdomain(tech_bank, false, CONTACT_BK_PLUGIN_DIRNAME ."/tech-banker-services");
+	}
+}
+add_action("plugins_loaded", "plugin_load_textdomain_contact_bank_services");
 $version = get_option("contact-bank-version-number");
 if($version != "")
 {
 	add_action('admin_init', 'plugin_install_script_for_contact_bank');
 }
 
+function contact_bank_plugin_row($links,$file)
+{
+	if ($file == CONTACT_BK_PLUGIN_BASENAME)
+	{
+		$cpo_row_meta = array(
+			"docs"  => "<a href='".esc_url( apply_filters("contact_bank_docs_url","http://tech-banker.com/products/wp-contact-bank/knowledge-base/"))."' title='".esc_attr(__( "View Contact Bank Documentation",contact_bank))."'>".__("Docs",contact_bank)."</a>",
+			"gopremium" => "<a href='" .esc_url( apply_filters("contact_bank_premium_editions_url", "http://tech-banker.com/products/wp-contact-bank/pricing/"))."' title='".esc_attr(__( "View Contact Bank Premium Editions",contact_bank))."'>".__("Go for Premium!",contact_bank)."</a>",
+		);
+		return array_merge($links,$cpo_row_meta);
+	}
+	return (array)$links;
+}
+add_filter("plugin_row_meta","contact_bank_plugin_row", 10, 2 );
 /*************************************************************************************/
 add_action("admin_bar_menu", "add_contact_bank_icon",100);
 // add_action Hook called for function frontend_plugin_css_scripts_contact_bank

@@ -103,42 +103,42 @@ switch ($role) {
 	case "administrator":
 		?>
 		<h2 class="nav-tab-wrapper">
-			<a class="nav-tab " id="dashboard" href="admin.php?page=dashboard">Dashboard</a>
-			<a class="nav-tab " id="short_code" href="admin.php?page=short_code">Short-Codes</a>
-			<a class="nav-tab " id="frontend_data" href="admin.php?page=frontend_data">Form Entries</a>
-			<a class="nav-tab " id="contact_email" href="admin.php?page=contact_email">Email Settings</a>
-			<a class="nav-tab " id="layout_settings" href="admin.php?page=layout_settings">Global Settings</a>
-			<a class="nav-tab " id="contact_bank_recommended_plugins" href="admin.php?page=contact_bank_recommended_plugins">Recommendations</a>
-			<a class="nav-tab " id="pro_version" href="admin.php?page=pro_version">Premium Editions</a>
-			<a class="nav-tab " id="contact_bank_other_services" href="admin.php?page=contact_bank_other_services">Our Other Services</a>
+			<a class="nav-tab custom-nav-tab" id="dashboard" href="admin.php?page=dashboard">Dashboard</a>
+			<a class="nav-tab custom-nav-tab" id="short_code" href="admin.php?page=short_code">Short-Codes</a>
+			<a class="nav-tab custom-nav-tab" id="frontend_data" href="admin.php?page=frontend_data">Form Entries</a>
+			<a class="nav-tab custom-nav-tab" id="contact_email" href="admin.php?page=contact_email">Email Settings</a>
+			<a class="nav-tab custom-nav-tab" id="layout_settings" href="admin.php?page=layout_settings">Global Settings</a>
+			<a class="nav-tab custom-nav-tab" id="contact_bank_recommended_plugins" href="admin.php?page=contact_bank_recommended_plugins">Recommendations</a>
+			<a class="nav-tab custom-nav-tab" id="pro_version" href="admin.php?page=pro_version">Premium Editions</a>
+			<a class="nav-tab custom-nav-tab" id="contact_bank_other_services" href="admin.php?page=contact_bank_other_services">Our Other Services</a>
 		</h2>
 		<?php
 	break;
 	case "editor":
 		?>
 		<h2 class="nav-tab-wrapper">
-			<a class="nav-tab " id="dashboard" href="admin.php?page=dashboard">Dashboard</a>
-			<a class="nav-tab " id="short_code" href="admin.php?page=short_code">Short-Codes</a>
-			<a class="nav-tab " id="frontend_data" href="admin.php?page=frontend_data">Form Entries</a>
-			<a class="nav-tab " id="contact_email" href="admin.php?page=contact_email">Email Settings</a>
-			<a class="nav-tab " id="layout_settings" href="admin.php?page=layout_settings">Global Settings</a>
-			<a class="nav-tab " id="contact_bank_recommended_plugins" href="admin.php?page=contact_bank_recommended_plugins">Recommendations</a>
-			<a class="nav-tab " id="pro_version" href="admin.php?page=pro_version">Premium Editions</a>
-			<a class="nav-tab " id="contact_bank_other_services" href="admin.php?page=contact_bank_other_services">Our Other Services</a>
+			<a class="nav-tab custom-nav-tab" id="dashboard" href="admin.php?page=dashboard">Dashboard</a>
+			<a class="nav-tab custom-nav-tab" id="short_code" href="admin.php?page=short_code">Short-Codes</a>
+			<a class="nav-tab custom-nav-tab" id="frontend_data" href="admin.php?page=frontend_data">Form Entries</a>
+			<a class="nav-tab custom-nav-tab" id="contact_email" href="admin.php?page=contact_email">Email Settings</a>
+			<a class="nav-tab custom-nav-tab" id="layout_settings" href="admin.php?page=layout_settings">Global Settings</a>
+			<a class="nav-tab custom-nav-tab" id="contact_bank_recommended_plugins" href="admin.php?page=contact_bank_recommended_plugins">Recommendations</a>
+			<a class="nav-tab custom-nav-tab" id="pro_version" href="admin.php?page=pro_version">Premium Editions</a>
+			<a class="nav-tab custom-nav-tab" id="contact_bank_other_services" href="admin.php?page=contact_bank_other_services">Our Other Services</a>
 		</h2>
 		<?php
 	break;
 	case "author":
 		?>
 		<h2 class="nav-tab-wrapper">
-			<a class="nav-tab " id="dashboard" href="admin.php?page=dashboard">Dashboard</a>
-			<a class="nav-tab " id="short_code" href="admin.php?page=short_code">Short-Codes</a>
-			<a class="nav-tab " id="frontend_data" href="admin.php?page=frontend_data">Form Entries</a>
-			<a class="nav-tab " id="contact_email" href="admin.php?page=contact_email">Email Settings</a>
-			<a class="nav-tab " id="layout_settings" href="admin.php?page=layout_settings">Global Settings</a>
-			<a class="nav-tab " id="contact_bank_recommended_plugins" href="admin.php?page=contact_bank_recommended_plugins">Recommendations</a>
-			<a class="nav-tab " id="pro_version" href="admin.php?page=pro_version">Premium Editions</a>
-			<a class="nav-tab " id="contact_bank_other_services" href="admin.php?page=contact_bank_other_services">Our Other Services</a>
+			<a class="nav-tab custom-nav-tab" id="dashboard" href="admin.php?page=dashboard">Dashboard</a>
+			<a class="nav-tab custom-nav-tab" id="short_code" href="admin.php?page=short_code">Short-Codes</a>
+			<a class="nav-tab custom-nav-tab" id="frontend_data" href="admin.php?page=frontend_data">Form Entries</a>
+			<a class="nav-tab custom-nav-tab" id="contact_email" href="admin.php?page=contact_email">Email Settings</a>
+			<a class="nav-tab custom-nav-tab" id="layout_settings" href="admin.php?page=layout_settings">Global Settings</a>
+			<a class="nav-tab custom-nav-tab" id="contact_bank_recommended_plugins" href="admin.php?page=contact_bank_recommended_plugins">Recommendations</a>
+			<a class="nav-tab custom-nav-tab" id="pro_version" href="admin.php?page=pro_version">Premium Editions</a>
+			<a class="nav-tab custom-nav-tab" id="contact_bank_other_services" href="admin.php?page=contact_bank_other_services">Our Other Services</a>
 		</h2>
 		<?php
 	break;
