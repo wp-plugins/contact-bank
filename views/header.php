@@ -34,7 +34,7 @@ jQuery(document).ready(function()
 				<ul>
 					<li>
 						<a href="http://tech-banker.com/products/wp-contact-bank/" target="_blank" class="welcome-icon">
-							<?php _e("Features", contact_bank); ?>
+							<?php _e("Feature", contact_bank); ?>
 						</a>
 					</li>
 					<li>
@@ -44,7 +44,7 @@ jQuery(document).ready(function()
 					</li>
 					<li>
 						<a href="http://tech-banker.com/products/wp-contact-bank/pricing/" target="_blank" class="welcome-icon">
-							<?php _e("Why Go for Premium ?", contact_bank); ?>
+							<?php _e("Premium Pricing Plan ?", contact_bank); ?>
 						</a>
 					</li>
 				</ul>
@@ -75,8 +75,8 @@ jQuery(document).ready(function()
 				<h4 class="welcome-screen-margin"><?php _e("More Actions", contact_bank); ?></h4>
 				<ul>
 					<li>
-						<a href="http://tech-banker.com/products/wp-contact-bank/pricing/" target="_blank" class="welcome-icon">
-							<?php _e("Premium Pricing Plans", contact_bank); ?>
+						<a href="http://tech-banker.com/shop/uncategorized/order-customization-wp-contact-bank/" target="_blank" class="welcome-icon">
+							<?php _e("Plugin Customization", contact_bank); ?>
 						</a>
 					</li>
 					<li>
@@ -103,42 +103,42 @@ switch ($role) {
 	case "administrator":
 		?>
 		<h2 class="nav-tab-wrapper">
-			<a class="nav-tab custom-nav-tab" id="dashboard" href="admin.php?page=dashboard">Dashboard</a>
-			<a class="nav-tab custom-nav-tab" id="short_code" href="admin.php?page=short_code">Short-Codes</a>
-			<a class="nav-tab custom-nav-tab" id="frontend_data" href="admin.php?page=frontend_data">Form Entries</a>
-			<a class="nav-tab custom-nav-tab" id="contact_email" href="admin.php?page=contact_email">Email Settings</a>
-			<a class="nav-tab custom-nav-tab" id="layout_settings" href="admin.php?page=layout_settings">Global Settings</a>
-			<a class="nav-tab custom-nav-tab" id="contact_bank_recommended_plugins" href="admin.php?page=contact_bank_recommended_plugins">Recommendations</a>
-			<a class="nav-tab custom-nav-tab" id="pro_version" href="admin.php?page=pro_version">Premium Editions</a>
-			<a class="nav-tab custom-nav-tab" id="contact_bank_other_services" href="admin.php?page=contact_bank_other_services">Our Other Services</a>
+			<a class="nav-tab custom-nav-tab" id="dashboard" href="admin.php?page=dashboard"><?php _e("Dashboard",contact_bank) ;?></a>
+			<a class="nav-tab custom-nav-tab" id="short_code" href="admin.php?page=short_code"><?php _e("Short-Codes",contact_bank) ;?></a>
+			<a class="nav-tab custom-nav-tab" id="frontend_data" href="admin.php?page=frontend_data"><?php _e("Form Entries",contact_bank) ;?></a>
+			<a class="nav-tab custom-nav-tab" id="contact_email" href="admin.php?page=contact_email"><?php _e("Email Settings",contact_bank) ;?></a>
+			<a class="nav-tab custom-nav-tab" id="layout_settings" href="admin.php?page=layout_settings"><?php _e("Global Settings",contact_bank) ;?></a>
+			<a class="nav-tab custom-nav-tab" id="contact_bank_recommended_plugins" href="admin.php?page=contact_bank_recommended_plugins"><?php _e("Recommendations",contact_bank) ;?></a>
+			<a class="nav-tab custom-nav-tab" id="pro_version" href="admin.php?page=pro_version"><?php _e("Premium Editions",contact_bank) ;?></a>
+			<a class="nav-tab custom-nav-tab" id="contact_bank_other_services" href="admin.php?page=contact_bank_other_services"><?php _e("Our Other Services",contact_bank) ;?></a>
 		</h2>
 		<?php
 	break;
 	case "editor":
 		?>
 		<h2 class="nav-tab-wrapper">
-			<a class="nav-tab custom-nav-tab" id="dashboard" href="admin.php?page=dashboard">Dashboard</a>
-			<a class="nav-tab custom-nav-tab" id="short_code" href="admin.php?page=short_code">Short-Codes</a>
-			<a class="nav-tab custom-nav-tab" id="frontend_data" href="admin.php?page=frontend_data">Form Entries</a>
-			<a class="nav-tab custom-nav-tab" id="contact_email" href="admin.php?page=contact_email">Email Settings</a>
-			<a class="nav-tab custom-nav-tab" id="layout_settings" href="admin.php?page=layout_settings">Global Settings</a>
-			<a class="nav-tab custom-nav-tab" id="contact_bank_recommended_plugins" href="admin.php?page=contact_bank_recommended_plugins">Recommendations</a>
-			<a class="nav-tab custom-nav-tab" id="pro_version" href="admin.php?page=pro_version">Premium Editions</a>
-			<a class="nav-tab custom-nav-tab" id="contact_bank_other_services" href="admin.php?page=contact_bank_other_services">Our Other Services</a>
+			<a class="nav-tab custom-nav-tab" id="dashboard" href="admin.php?page=dashboard"><?php _e("Dashboard",contact_bank) ;?></a>
+			<a class="nav-tab custom-nav-tab" id="short_code" href="admin.php?page=short_code"><?php _e("Short-Codes",contact_bank) ;?></a>
+			<a class="nav-tab custom-nav-tab" id="frontend_data" href="admin.php?page=frontend_data"><?php _e("Form Entries",contact_bank) ;?></a>
+			<a class="nav-tab custom-nav-tab" id="contact_email" href="admin.php?page=contact_email"><?php _e("Email Settings",contact_bank) ;?></a>
+			<a class="nav-tab custom-nav-tab" id="layout_settings" href="admin.php?page=layout_settings"><?php _e("Global Settings",contact_bank) ;?></a>
+			<a class="nav-tab custom-nav-tab" id="contact_bank_recommended_plugins" href="admin.php?page=contact_bank_recommended_plugins"><?php _e("Recommendations",contact_bank) ;?></a>
+			<a class="nav-tab custom-nav-tab" id="pro_version" href="admin.php?page=pro_version"><?php _e("Premium Editions",contact_bank) ;?></a>
+			<a class="nav-tab custom-nav-tab" id="contact_bank_other_services" href="admin.php?page=contact_bank_other_services"><?php _e("Our Other Services",contact_bank) ;?></a>
 		</h2>
 		<?php
 	break;
 	case "author":
 		?>
 		<h2 class="nav-tab-wrapper">
-			<a class="nav-tab custom-nav-tab" id="dashboard" href="admin.php?page=dashboard">Dashboard</a>
-			<a class="nav-tab custom-nav-tab" id="short_code" href="admin.php?page=short_code">Short-Codes</a>
-			<a class="nav-tab custom-nav-tab" id="frontend_data" href="admin.php?page=frontend_data">Form Entries</a>
-			<a class="nav-tab custom-nav-tab" id="contact_email" href="admin.php?page=contact_email">Email Settings</a>
-			<a class="nav-tab custom-nav-tab" id="layout_settings" href="admin.php?page=layout_settings">Global Settings</a>
-			<a class="nav-tab custom-nav-tab" id="contact_bank_recommended_plugins" href="admin.php?page=contact_bank_recommended_plugins">Recommendations</a>
-			<a class="nav-tab custom-nav-tab" id="pro_version" href="admin.php?page=pro_version">Premium Editions</a>
-			<a class="nav-tab custom-nav-tab" id="contact_bank_other_services" href="admin.php?page=contact_bank_other_services">Our Other Services</a>
+			<a class="nav-tab custom-nav-tab" id="dashboard" href="admin.php?page=dashboard"><?php _e("Dashboard",contact_bank) ;?></a>
+			<a class="nav-tab custom-nav-tab" id="short_code" href="admin.php?page=short_code"><?php _e("Short-Codes",contact_bank) ;?></a>
+			<a class="nav-tab custom-nav-tab" id="frontend_data" href="admin.php?page=frontend_data"><?php _e("Form Entries",contact_bank) ;?></a>
+			<a class="nav-tab custom-nav-tab" id="contact_email" href="admin.php?page=contact_email"><?php _e("Email Settings",contact_bank) ;?></a>
+			<a class="nav-tab custom-nav-tab" id="layout_settings" href="admin.php?page=layout_settings"><?php _e("Global Settings",contact_bank) ;?></a>
+			<a class="nav-tab custom-nav-tab" id="contact_bank_recommended_plugins" href="admin.php?page=contact_bank_recommended_plugins"><?php _e("Recommendations",contact_bank) ;?></a>
+			<a class="nav-tab custom-nav-tab" id="pro_version" href="admin.php?page=pro_version"><?php _e("Premium Editions",contact_bank) ;?></a>
+			<a class="nav-tab custom-nav-tab" id="contact_bank_other_services" href="admin.php?page=contact_bank_other_services"><?php _e("Our Other Services",contact_bank) ;?></a>
 		</h2>
 		<?php
 	break;

@@ -32,7 +32,7 @@ else
 					<div id="advanced" class="meta-box-sortables">
 						<div id="contact_bank_get_started" class="postbox" >
 							<div class="handlediv" data-target="#ux_shortcode" title="Click to toggle" data-toggle="collapse"><br></div>
-							<h3 class="hndle"><span><?php _e("Gallery Bank Short-Codes", contact_bank); ?></span></h3>
+							<h3 class="hndle"><span><?php _e("Contact Bank Short-Codes", contact_bank); ?></span></h3>
 							<div class="inside">
 								<div id="ux_dashboard" class="contact_bank_layout">
 									<?php

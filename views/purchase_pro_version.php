@@ -769,7 +769,7 @@ else
 														class="css3_grid_row_16 footer_row css3_grid_row_16_responsive"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><a
-																href="http://tech-banker/shop/wp-contact-bank/contact-bank-extended-edition/"
+																href="http://tech-banker.com/shop/wp-contact-bank/contact-bank-extended-edition/"
 																class="sign_up sign_up_orange radius3">Order Now!</a></span></span></li>
 												</ul>
 											</div>

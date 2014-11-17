@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Contact Bank\n"
-"POT-Creation-Date: 2014-07-19 14:44+0530\n"
+"POT-Creation-Date: 2014-11-18 05:24-0800\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -10,45 +10,121 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.6.6\n"
-"X-Poedit-KeywordsList: __e;_e;gettext\n"
+"X-Poedit-KeywordsList: __;_e;gettext\n"
 "X-Poedit-Basepath: C:\\xampp\\apps\\wordpress\\htdocs\\wp-content\\plugins"
 "\\contact-bank\\\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: contact-bank.php:527
+#: contact-bank.php:55 contact-bank.php:70 contact-bank.php:85
+msgid "Contact Bank"
+msgstr "联系表格"
+
+#: contact-bank.php:56 contact-bank.php:71 contact-bank.php:86
+#: contact-bank.php:456 contact-bank.php:521 contact-bank.php:587
+msgid "Dashboard"
+msgstr "控制面板"
+
+#: contact-bank.php:58 contact-bank.php:73 contact-bank.php:88
+#: contact-bank.php:462 contact-bank.php:527 contact-bank.php:593
+msgid "Short-Codes"
+msgstr "短码"
+
+#: contact-bank.php:59 contact-bank.php:74 contact-bank.php:89
+#: contact-bank.php:468 contact-bank.php:533 contact-bank.php:599
+#: views/contact_frontend_data.php:31 views/dashboard.php:125
+msgid "Form Entries"
+msgstr "表格"
+
+#: contact-bank.php:60 contact-bank.php:75 contact-bank.php:90
+#: contact-bank.php:474 contact-bank.php:539 contact-bank.php:605
+#: views/contact_email_settings.php:36 views/dashboard.php:120
+msgid "Email Settings"
+msgstr "Email设置"
+
+#: contact-bank.php:61 contact-bank.php:76 contact-bank.php:91
+#: contact-bank.php:480 contact-bank.php:545 contact-bank.php:611
+#: views/contact_bank_layout_settings.php:35 views/dashboard.php:115
+msgid "Global Settings"
+msgstr "设置"
+
+#: contact-bank.php:62 contact-bank.php:77 contact-bank.php:92
+#: contact-bank.php:486 contact-bank.php:553
+#: views/contact-bank-system-report.php:30
+msgid "System Status"
+msgstr "服务器状态"
+
+#: contact-bank.php:63 contact-bank.php:78 contact-bank.php:93
+#: contact-bank.php:492 contact-bank.php:559 contact-bank.php:617
+#: views/header.php:84
+msgid "Recommendations"
+msgstr "推荐"
+
+#: contact-bank.php:64 contact-bank.php:79 contact-bank.php:94
+#: contact-bank.php:499 contact-bank.php:566 contact-bank.php:624
+#: views/purchase_pro_version.php:38
+msgid "Premium Editions"
+msgstr "保费版"
+
+#: contact-bank.php:65 contact-bank.php:80 contact-bank.php:95
+#: contact-bank.php:506 contact-bank.php:573 contact-bank.php:631
+#: views/header.php:89
+msgid "Our Other Services"
+msgstr "我们的其他服务"
+
+#: contact-bank.php:646
+msgid "Add Contact Bank Form"
+msgstr "补充联系方式银行形态"
+
+#: contact-bank.php:658
 msgid "Insert Contact Bank Form"
 msgstr "插入联系表格"
 
-#: contact-bank.php:529
+#: contact-bank.php:660
 msgid "Select a form below to add it to your post or page."
 msgstr "选择下列表格插入到文章页或页面"
 
-#: contact-bank.php:534
+#: contact-bank.php:665
 msgid "Form Name"
 msgstr "表格标题"
 
-#: contact-bank.php:536
+#: contact-bank.php:667
 msgid "Select a Form"
 msgstr "选择一个表格"
 
-#: contact-bank.php:553
+#: contact-bank.php:684
 msgid "Show Form Title"
 msgstr "显示表格标题"
 
-#: contact-bank.php:558
+#: contact-bank.php:689
 msgid "Insert Form"
 msgstr "插入表格"
 
-#: contact-bank.php:561
+#: contact-bank.php:692
 msgid "Cancel"
 msgstr "取消"
 
-#: contact-bank.php:573
+#: contact-bank.php:704
 msgid "Please choose a Form to insert into Shortcode"
 msgstr "请选着一个表格，并插入对应短码"
 
+#: contact-bank.php:740
+msgid "View Contact Bank Documentation"
+msgstr "视图联系方式银行文档"
+
+#: contact-bank.php:740
+msgid "Docs"
+msgstr "文档"
+
+#: contact-bank.php:741
+msgid "View Contact Bank Premium Editions"
+msgstr "视图联系银行Premium版"
+
+#: contact-bank.php:741
+msgid "Go for Premium!"
+msgstr "去溢价！"
+
 #: frontend_views/contact_bank_forms.php:369
-#: views/contact_bank_form_preview.php:404 views/contact_controls_files.php:87
+#: views/contact_bank_form_preview.php:401 views/contact_controls_files.php:87
 msgid "Select Option"
 msgstr "选项"
 
@@ -108,8 +184,8 @@ msgstr "提示语"
 #: includes/cb_checkbox.php:97 includes/cb_dropdown.php:97
 #: includes/cb_email.php:115 includes/cb_multiple.php:108
 #: includes/cb_text.php:114 includes/cb_textarea.php:113
-#: views/contact_bank_layout_settings.php:955
-#: views/contact_frontend_data.php:179 views/dashboard.php:367
+#: views/contact_bank_layout_settings.php:952
+#: views/contact_frontend_data.php:171 views/dashboard.php:209
 #: views/includes_common_after.php:348 views/includes_common_after.php:351
 #: views/includes_common_after.php:354 views/includes_common_after.php:357
 #: views/includes_common_after.php:360 views/includes_common_after.php:363
@@ -166,7 +242,7 @@ msgstr "保存设置"
 msgid "Please Fill an Option."
 msgstr "请填写一个选项"
 
-#: includes/cb_dropdown.php:36 views/contact_view.php:468
+#: includes/cb_dropdown.php:36 views/contact_view.php:460
 msgid "Select Box"
 msgstr "选择框"
 
@@ -179,7 +255,7 @@ msgstr "输入标头"
 msgid "Enter Option"
 msgstr "增加选项"
 
-#: includes/cb_email.php:36 views/contact_view.php:465
+#: includes/cb_email.php:36 views/contact_view.php:457
 msgid "Email Address"
 msgstr "增加地址"
 
@@ -202,11 +278,11 @@ msgstr "占位"
 msgid "Enter Place Holder"
 msgstr "输入所占位置"
 
-#: includes/cb_multiple.php:36 views/contact_view.php:476
+#: includes/cb_multiple.php:36 views/contact_view.php:468
 msgid "Radio Buttons"
 msgstr "单选按钮"
 
-#: includes/cb_text.php:36 views/contact_view.php:457
+#: includes/cb_text.php:36 views/contact_view.php:449
 msgid "Single Line Text"
 msgstr "单行文字框"
 
@@ -235,15 +311,15 @@ msgid "Trim"
 msgstr "修剪"
 
 #: includes/cb_text.php:191 includes/cb_textarea.php:188
-#: views/contact_bank_layout_settings.php:92
-#: views/contact_bank_layout_settings.php:280
-#: views/contact_bank_layout_settings.php:490
-#: views/contact_bank_layout_settings.php:683
-#: views/contact_bank_layout_settings.php:811 views/contact_view.php:486
+#: views/contact_bank_layout_settings.php:89
+#: views/contact_bank_layout_settings.php:277
+#: views/contact_bank_layout_settings.php:487
+#: views/contact_bank_layout_settings.php:680
+#: views/contact_bank_layout_settings.php:808 views/contact_view.php:478
 msgid " (Available in Premium Edition)"
 msgstr "（可在高级版）"
 
-#: includes/cb_textarea.php:36 views/contact_view.php:460
+#: includes/cb_textarea.php:36 views/contact_view.php:452
 msgid "Paragraph Text"
 msgstr "多行文字框"
 
@@ -259,344 +335,336 @@ msgstr "输入描述"
 msgid "Tooltip text"
 msgstr "工具提示"
 
-#: lib/contact_bank_email-class.php:56 lib/contact_bank_email-class.php:66
-#: lib/contact_bank_email-class.php:76
+#: lib/contact_bank_email-class.php:47 lib/contact_bank_email-class.php:57
+#: lib/contact_bank_email-class.php:67
 msgid "Edit Email Settings"
 msgstr "编辑Email设置"
 
-#: lib/contact_bank_email-class.php:59 lib/contact_bank_email-class.php:69
-#: lib/contact_bank_email-class.php:79
+#: lib/contact_bank_email-class.php:50 lib/contact_bank_email-class.php:60
+#: lib/contact_bank_email-class.php:70
 msgid "Delete Email Settings"
 msgstr "删除Email设置"
 
-#: lib/contact_frontend_data_class.php:121
+#: lib/contact_frontend_data_class.php:113
 msgid "Delete Form Entry"
 msgstr "删除表格"
 
-#: views/add_contact_email.php:58 views/contact_email_settings.php:97
+#: views/add_contact_email.php:50 views/contact_email_settings.php:94
 msgid "Email Confirmation"
 msgstr "确认电邮地址"
 
-#: views/add_contact_email.php:61
+#: views/add_contact_email.php:53
 msgid "Back to Email Settings"
 msgstr "返回Email设置"
 
-#: views/add_contact_email.php:62 views/add_contact_email.php:242
-#: views/contact_bank_layout_settings.php:44
-#: views/contact_bank_layout_settings.php:529
-#: views/contact_bank_layout_settings.php:941
+#: views/add_contact_email.php:54 views/add_contact_email.php:234
+#: views/contact_bank_layout_settings.php:41
+#: views/contact_bank_layout_settings.php:526
+#: views/contact_bank_layout_settings.php:938
 msgid "Save"
 msgstr "保存"
 
-#: views/add_contact_email.php:66
+#: views/add_contact_email.php:58
 msgid "Email Settings Saved. Kindly wait for the redirect."
 msgstr "Email设置已保存。正在为您跳转。"
 
-#: views/add_contact_email.php:73 views/add_contact_email.php:130
+#: views/add_contact_email.php:65 views/add_contact_email.php:122
 #: views/contact_controls_files.php:66
 msgid "Email"
 msgstr "Email"
 
-#: views/add_contact_email.php:77 views/contact_view.php:493
+#: views/add_contact_email.php:69 views/contact_view.php:485
 msgid "Name"
 msgstr "名字"
 
-#: views/add_contact_email.php:81
+#: views/add_contact_email.php:73
 msgid "Enter Name"
 msgstr "输入名字"
 
-#: views/add_contact_email.php:87
+#: views/add_contact_email.php:79
 msgid "Send To"
 msgstr "发送"
 
-#: views/add_contact_email.php:96 views/add_contact_email.php:107
-#: views/add_contact_email.php:119 views/add_contact_email.php:179
+#: views/add_contact_email.php:88 views/add_contact_email.php:99
+#: views/add_contact_email.php:111 views/add_contact_email.php:171
 msgid "Enter Email"
 msgstr "输入Email"
 
-#: views/add_contact_email.php:98 views/add_contact_email.php:109
-#: views/add_contact_email.php:121
+#: views/add_contact_email.php:90 views/add_contact_email.php:101
+#: views/add_contact_email.php:113
 msgid "Select a Field"
 msgstr "选着一个字段"
 
-#: views/add_contact_email.php:134
+#: views/add_contact_email.php:126
 msgid "Enter Email "
 msgstr "输入Email"
 
-#: views/add_contact_email.php:138
+#: views/add_contact_email.php:130
 msgid "Send To Field"
 msgstr "发送字段"
 
-#: views/add_contact_email.php:142
+#: views/add_contact_email.php:134
 msgid "Enter Field "
 msgstr "输入字段"
 
-#: views/add_contact_email.php:144 views/add_contact_email.php:157
-#: views/add_contact_email.php:170 views/add_contact_email.php:181
-#: views/add_contact_email.php:192 views/add_contact_email.php:203
-#: views/add_contact_email.php:216
+#: views/add_contact_email.php:136 views/add_contact_email.php:149
+#: views/add_contact_email.php:162 views/add_contact_email.php:173
+#: views/add_contact_email.php:184 views/add_contact_email.php:195
+#: views/add_contact_email.php:208
 msgid "Select a field"
 msgstr "选择一个字段"
 
-#: views/add_contact_email.php:151
+#: views/add_contact_email.php:143
 msgid "From Name"
 msgstr "发送人名称"
 
-#: views/add_contact_email.php:155
+#: views/add_contact_email.php:147
 msgid "Enter from name "
 msgstr "输入发送人名称"
 
-#: views/add_contact_email.php:164
+#: views/add_contact_email.php:156
 msgid "From Email"
 msgstr "发送邮件地址"
 
-#: views/add_contact_email.php:168
+#: views/add_contact_email.php:160
 msgid "Enter from email"
 msgstr "输入发送邮件地址"
 
-#: views/add_contact_email.php:177
+#: views/add_contact_email.php:169
 msgid "Reply To"
 msgstr "回复"
 
-#: views/add_contact_email.php:188
+#: views/add_contact_email.php:180
 msgid "CC"
 msgstr "抄送"
 
-#: views/add_contact_email.php:190
+#: views/add_contact_email.php:182
 msgid "Enter CC Email "
 msgstr "输入抄送邮件地址"
 
-#: views/add_contact_email.php:199
+#: views/add_contact_email.php:191
 msgid "BCC"
 msgstr "密送"
 
-#: views/add_contact_email.php:201
+#: views/add_contact_email.php:193
 msgid "Enter Bcc Email"
 msgstr "输入密送邮件地址"
 
-#: views/add_contact_email.php:210
+#: views/add_contact_email.php:202
 msgid "Subject"
 msgstr "主题"
 
-#: views/add_contact_email.php:214
+#: views/add_contact_email.php:206
 msgid "Enter Subject"
 msgstr "输入主题"
 
-#: views/add_contact_email.php:223
+#: views/add_contact_email.php:215
 msgid "Message"
 msgstr "正文"
 
-#: views/add_contact_email.php:233
+#: views/add_contact_email.php:225
 msgid "Insert a Field into Your Form Message"
 msgstr "插入一字段到表体正文"
 
-#: views/contact-bank-system-report.php:38
-msgid "System Status"
-msgstr "服务器状态"
-
-#: views/contact-bank-system-report.php:41
+#: views/contact-bank-system-report.php:33
 msgid "Get System Report"
 msgstr "获取服务器报告"
 
-#: views/contact-bank-system-report.php:45
+#: views/contact-bank-system-report.php:37
 msgid "Close System Report"
 msgstr "关闭服务器报告"
 
-#: views/contact-bank-system-report.php:127
+#: views/contact-bank-system-report.php:124
 msgid "Default"
 msgstr "默认"
 
-#: views/contact_bank_form_preview.php:303 views/dashboard.php:208
+#: views/contact_bank_form_preview.php:300 views/dashboard.php:130
 msgid "Form Preview"
 msgstr "表格预览"
 
-#: views/contact_bank_form_preview.php:306
-#: views/contact_bank_layout_settings.php:41
-#: views/contact_email_settings.php:42 views/contact_frontend_data.php:42
-#: views/contact_view.php:269
+#: views/contact_bank_form_preview.php:303
+#: views/contact_bank_layout_settings.php:38
+#: views/contact_email_settings.php:39 views/contact_frontend_data.php:34
+#: views/contact_view.php:261 views/purchase_pro_version.php:42
 msgid "Back to Dashboard"
 msgstr "返回控制面板"
 
-#: views/contact_bank_layout_settings.php:38 views/dashboard.php:193
-msgid "Global Settings"
-msgstr "设置"
-
-#: views/contact_bank_layout_settings.php:38
+#: views/contact_bank_layout_settings.php:35
 msgid " (Premium Features available in Paid Edition)"
 msgstr "（在付费版中提供高级功能）"
 
-#: views/contact_bank_layout_settings.php:42
+#: views/contact_bank_layout_settings.php:39
 msgid "Restore Global Settings"
 msgstr "保存全局设置"
 
-#: views/contact_bank_layout_settings.php:48
+#: views/contact_bank_layout_settings.php:45
 msgid "Form Settings Saved. Kindly wait for the redirect."
 msgstr "表格设置保存。敬请等待重定向。"
 
-#: views/contact_bank_layout_settings.php:54
-#: views/contact_bank_layout_settings.php:64
-#: views/contact_email_settings.php:46 views/contact_email_settings.php:62
-#: views/contact_frontend_data.php:54 views/contact_frontend_data.php:64
+#: views/contact_bank_layout_settings.php:51
+#: views/contact_bank_layout_settings.php:61
+#: views/contact_email_settings.php:43 views/contact_email_settings.php:59
+#: views/contact_frontend_data.php:46 views/contact_frontend_data.php:56
 msgid "Select Form"
 msgstr "选择表格"
 
-#: views/contact_bank_layout_settings.php:91
+#: views/contact_bank_layout_settings.php:88
 msgid "Label Settings"
 msgstr "标题设置"
 
-#: views/contact_bank_layout_settings.php:103
-#: views/contact_bank_layout_settings.php:290
-#: views/contact_bank_layout_settings.php:500
-#: views/contact_bank_layout_settings.php:693
-#: views/contact_bank_layout_settings.php:821
+#: views/contact_bank_layout_settings.php:100
+#: views/contact_bank_layout_settings.php:287
+#: views/contact_bank_layout_settings.php:497
+#: views/contact_bank_layout_settings.php:690
+#: views/contact_bank_layout_settings.php:818
 msgid "Font Family :"
 msgstr "字体"
 
-#: views/contact_bank_layout_settings.php:128
+#: views/contact_bank_layout_settings.php:125
 msgid "Font Color :"
 msgstr "字体颜色"
 
-#: views/contact_bank_layout_settings.php:139
-#: views/contact_bank_layout_settings.php:326
+#: views/contact_bank_layout_settings.php:136
+#: views/contact_bank_layout_settings.php:323
 msgid "Font Style :"
 msgstr "字体风格"
 
-#: views/contact_bank_layout_settings.php:153
-#: views/contact_bank_layout_settings.php:340
-#: views/contact_bank_layout_settings.php:549
-#: views/contact_bank_layout_settings.php:718
-#: views/contact_bank_layout_settings.php:846
+#: views/contact_bank_layout_settings.php:150
+#: views/contact_bank_layout_settings.php:337
+#: views/contact_bank_layout_settings.php:546
+#: views/contact_bank_layout_settings.php:715
+#: views/contact_bank_layout_settings.php:843
 msgid "Font Size (px) :"
 msgstr "字体大小"
 
-#: views/contact_bank_layout_settings.php:184
-#: views/contact_bank_layout_settings.php:441
-#: views/contact_bank_layout_settings.php:654
-#: views/contact_bank_layout_settings.php:782
-#: views/contact_bank_layout_settings.php:910
+#: views/contact_bank_layout_settings.php:181
+#: views/contact_bank_layout_settings.php:438
+#: views/contact_bank_layout_settings.php:651
+#: views/contact_bank_layout_settings.php:779
+#: views/contact_bank_layout_settings.php:907
 msgid "Text Align :"
 msgstr "对齐方式"
 
-#: views/contact_bank_layout_settings.php:197
+#: views/contact_bank_layout_settings.php:194
 msgid "Label Position :"
 msgstr "标题位置"
 
-#: views/contact_bank_layout_settings.php:211
+#: views/contact_bank_layout_settings.php:208
 msgid "Field Desc Font Size :"
 msgstr "描述框字体大小"
 
-#: views/contact_bank_layout_settings.php:242
+#: views/contact_bank_layout_settings.php:239
 msgid "Field Description Align :"
 msgstr "描述框对齐方式"
 
-#: views/contact_bank_layout_settings.php:256
+#: views/contact_bank_layout_settings.php:253
 msgid "Hide Labels :"
 msgstr "隐藏标题"
 
-#: views/contact_bank_layout_settings.php:264
-#: views/contact_bank_layout_settings.php:454
-#: views/contact_bank_layout_settings.php:667
-#: views/contact_bank_layout_settings.php:795
-#: views/contact_bank_layout_settings.php:923
+#: views/contact_bank_layout_settings.php:261
+#: views/contact_bank_layout_settings.php:451
+#: views/contact_bank_layout_settings.php:664
+#: views/contact_bank_layout_settings.php:792
+#: views/contact_bank_layout_settings.php:920
 msgid "Text Direction :"
 msgstr "文字描述"
 
-#: views/contact_bank_layout_settings.php:280
+#: views/contact_bank_layout_settings.php:277
 msgid "Input Field Settings"
 msgstr "字段设置"
 
-#: views/contact_bank_layout_settings.php:315
-#: views/contact_bank_layout_settings.php:612
-#: views/contact_bank_layout_settings.php:771
-#: views/contact_bank_layout_settings.php:899
+#: views/contact_bank_layout_settings.php:312
+#: views/contact_bank_layout_settings.php:609
+#: views/contact_bank_layout_settings.php:768
+#: views/contact_bank_layout_settings.php:896
 msgid "Text Color :"
 msgstr "字体颜色"
 
-#: views/contact_bank_layout_settings.php:371
-#: views/contact_bank_layout_settings.php:644
+#: views/contact_bank_layout_settings.php:368
+#: views/contact_bank_layout_settings.php:641
 msgid "Border Radius (px) :"
 msgstr "边框圆角"
 
-#: views/contact_bank_layout_settings.php:381
-#: views/contact_bank_layout_settings.php:623
-#: views/contact_bank_layout_settings.php:760
-#: views/contact_bank_layout_settings.php:888
+#: views/contact_bank_layout_settings.php:378
+#: views/contact_bank_layout_settings.php:620
+#: views/contact_bank_layout_settings.php:757
+#: views/contact_bank_layout_settings.php:885
 msgid "Border Color :"
 msgstr "边框颜色"
 
-#: views/contact_bank_layout_settings.php:392
-#: views/contact_bank_layout_settings.php:634
+#: views/contact_bank_layout_settings.php:389
+#: views/contact_bank_layout_settings.php:631
 msgid "Border Size (px) :"
 msgstr "边框大小"
 
-#: views/contact_bank_layout_settings.php:402
+#: views/contact_bank_layout_settings.php:399
 msgid "Border Style :"
 msgstr "边框风格"
 
-#: views/contact_bank_layout_settings.php:417
-#: views/contact_bank_layout_settings.php:590
-#: views/contact_bank_layout_settings.php:749
-#: views/contact_bank_layout_settings.php:877
+#: views/contact_bank_layout_settings.php:414
+#: views/contact_bank_layout_settings.php:587
+#: views/contact_bank_layout_settings.php:746
+#: views/contact_bank_layout_settings.php:874
 msgid "Background Color :"
 msgstr "背景颜色"
 
-#: views/contact_bank_layout_settings.php:428
+#: views/contact_bank_layout_settings.php:425
 msgid "Radio Buttons :"
 msgstr "单选按钮"
 
-#: views/contact_bank_layout_settings.php:433
+#: views/contact_bank_layout_settings.php:430
 msgid "Multiple Rows"
 msgstr "多行"
 
-#: views/contact_bank_layout_settings.php:435
+#: views/contact_bank_layout_settings.php:432
 msgid "Single Row"
 msgstr "单行"
 
-#: views/contact_bank_layout_settings.php:468
+#: views/contact_bank_layout_settings.php:465
 msgid "Input Size :"
 msgstr "输入框大小"
 
-#: views/contact_bank_layout_settings.php:490
+#: views/contact_bank_layout_settings.php:487
 msgid "Submit Button Settings"
 msgstr "提交框设置"
 
-#: views/contact_bank_layout_settings.php:525
+#: views/contact_bank_layout_settings.php:522
 msgid "Text:"
 msgstr "文本框"
 
-#: views/contact_bank_layout_settings.php:535
+#: views/contact_bank_layout_settings.php:532
 msgid "Style :"
 msgstr "风格"
 
-#: views/contact_bank_layout_settings.php:580
+#: views/contact_bank_layout_settings.php:577
 msgid "Button Width (px) :"
 msgstr "按钮宽度"
 
-#: views/contact_bank_layout_settings.php:601
+#: views/contact_bank_layout_settings.php:598
 msgid "Hover Background Color:"
 msgstr "选中背景颜色"
 
-#: views/contact_bank_layout_settings.php:683
+#: views/contact_bank_layout_settings.php:680
 msgid "Success Message Settings"
 msgstr "成功发送信息设置"
 
-#: views/contact_bank_layout_settings.php:811
+#: views/contact_bank_layout_settings.php:808
 msgid "Error Message Settings"
 msgstr "错误发送信息设置"
 
-#: views/contact_bank_pro_version.php:53
+#: views/contact_bank_pro_version.php:50
 msgid "Contact Bank Pricing"
 msgstr "联系银行定价"
 
-#: views/contact_bank_pro_version.php:384 views/dashboard.php:237
+#: views/contact_bank_pro_version.php:381
 msgid "Need Support Help?"
 msgstr "需要支援帮助？"
 
-#: views/contact_bank_pro_version.php:396
+#: views/contact_bank_pro_version.php:393
 msgid "Lets get in touch!"
 msgstr "让我们取得联系！"
 
-#: views/contact_bank_pro_version.php:400 views/dashboard.php:253
+#: views/contact_bank_pro_version.php:397
 msgid "Order Now!"
 msgstr "立即订购！"
 
@@ -606,253 +674,293 @@ msgstr "立即订购！"
 msgid "Settings"
 msgstr "设置"
 
-#: views/contact_documentation.php:36
+#: views/contact_documentation.php:33
 msgid "Documentation - Contact Bank"
 msgstr "文件-联系表格"
 
-#: views/contact_email_settings.php:39 views/dashboard.php:198
-msgid "Email Settings"
-msgstr "Email设置"
-
-#: views/contact_email_settings.php:87
+#: views/contact_email_settings.php:84
 msgid "Add New"
 msgstr "新增"
 
-#: views/contact_email_settings.php:168
+#: views/contact_email_settings.php:165
 msgid "Are you sure, you want to delete this Email Setting?"
 msgstr "你是否确定删除该邮件设置？"
 
-#: views/contact_email_settings.php:186 views/contact_frontend_data.php:146
+#: views/contact_email_settings.php:183 views/contact_frontend_data.php:138
 msgid "Please select the Form first."
 msgstr "请先选中一个表格。"
 
-#: views/contact_frontend_data.php:39 views/dashboard.php:203
-msgid "Form Entries"
-msgstr "表格"
-
-#: views/contact_frontend_data.php:43
+#: views/contact_frontend_data.php:35
 msgid "Export to Excel"
 msgstr "导出到Excel中"
 
-#: views/contact_frontend_data.php:49 views/dashboard.php:143
-#: views/dashboard.php:150
+#: views/contact_frontend_data.php:41 views/dashboard.php:65
+#: views/dashboard.php:72
 msgid "Form"
 msgstr "表格"
 
-#: views/contact_view.php:266 views/dashboard.php:125
+#: views/contact_view.php:258 views/dashboard.php:47
 msgid "Add New Form"
 msgstr "新增表格"
 
-#: views/contact_view.php:272 views/contact_view.php:536
+#: views/contact_view.php:264 views/contact_view.php:528
 msgid "Save Form"
 msgstr "保存表格"
 
-#: views/contact_view.php:277
+#: views/contact_view.php:269
 msgid "Form Submitted. Kindly wait for the redirect."
 msgstr "已提交。正在为您跳转。"
 
-#: views/contact_view.php:286
+#: views/contact_view.php:278
 msgid "Form Settings"
 msgstr "表格设置"
 
-#: views/contact_view.php:290
+#: views/contact_view.php:282
 msgid "Form Name :"
 msgstr "表格名称"
 
-#: views/contact_view.php:296
+#: views/contact_view.php:288
 msgid "Enter Form Name"
 msgstr "输入表格名称"
 
-#: views/contact_view.php:300
+#: views/contact_view.php:292
 msgid "Form Description :"
 msgstr "表格描述"
 
-#: views/contact_view.php:302
+#: views/contact_view.php:294
 msgid "Enter Form Description"
 msgstr "输入表格描述"
 
-#: views/contact_view.php:306
+#: views/contact_view.php:298
 msgid "Blank Field Message:"
 msgstr "空白字段信息"
 
-#: views/contact_view.php:312
+#: views/contact_view.php:304
 msgid "Required field must not be blank"
 msgstr "必输字段不能为空"
 
-#: views/contact_view.php:314
+#: views/contact_view.php:306
 msgid "Enter Blank Field Message"
 msgstr "输入空白字段提示信息"
 
-#: views/contact_view.php:318
+#: views/contact_view.php:310
 msgid "Incorrect Email Message:"
 msgstr "错误邮件提示信息"
 
-#: views/contact_view.php:324
+#: views/contact_view.php:316
 msgid "Please enter a valid email address"
 msgstr "请输入有效的邮件地址"
 
-#: views/contact_view.php:326
+#: views/contact_view.php:318
 msgid "Enter Incorrect Email Message"
 msgstr "输入不正确的邮件提示信息"
 
-#: views/contact_view.php:330
+#: views/contact_view.php:322
 msgid "Success Message :"
 msgstr "成功发送提示信息"
 
-#: views/contact_view.php:334
+#: views/contact_view.php:326
 msgid "Enter Success Message"
 msgstr "输入成功发送提示信息"
 
-#: views/contact_view.php:338
+#: views/contact_view.php:330
 msgid "Redirect :"
 msgstr "跳转"
 
-#: views/contact_view.php:350 views/contact_view.php:361
-#: views/contact_view.php:373
+#: views/contact_view.php:342 views/contact_view.php:353
+#: views/contact_view.php:365
 msgid "Page"
 msgstr "页"
 
-#: views/contact_view.php:353 views/contact_view.php:364
-#: views/contact_view.php:376
+#: views/contact_view.php:345 views/contact_view.php:356
+#: views/contact_view.php:368
 msgid "URL"
 msgstr "链接"
 
-#: views/contact_view.php:383
+#: views/contact_view.php:375
 msgid "Page :"
 msgstr "页"
 
-#: views/contact_view.php:426
+#: views/contact_view.php:418
 msgid "URL :"
 msgstr "链接"
 
-#: views/contact_view.php:433
+#: views/contact_view.php:425
 msgid "Enter Redirect URL"
 msgstr "输入跳转链接"
 
-#: views/contact_view.php:440
+#: views/contact_view.php:432
 msgid "Form Layout Preview"
 msgstr "表格预览"
 
-#: views/contact_view.php:451
+#: views/contact_view.php:443
 msgid "Standard Fields"
 msgstr "标准字段"
 
-#: views/contact_view.php:454 views/contact_view.php:490
+#: views/contact_view.php:446 views/contact_view.php:482
 msgid "Click on a field to use into your form."
 msgstr "单击所选字段用于表格里。"
 
-#: views/contact_view.php:473
+#: views/contact_view.php:465
 msgid "Checkboxes"
 msgstr "多选项"
 
-#: views/contact_view.php:485
+#: views/contact_view.php:477
 msgid "Advanced Fields"
 msgstr "高级字段"
 
-#: views/contact_view.php:496
+#: views/contact_view.php:488
 msgid "Website / URL"
 msgstr "网址"
 
-#: views/contact_view.php:501
+#: views/contact_view.php:493
 msgid "Phone"
 msgstr "手机号码"
 
-#: views/contact_view.php:504
+#: views/contact_view.php:496
 msgid "Address"
 msgstr "地址"
 
-#: views/contact_view.php:509
+#: views/contact_view.php:501
 msgid "Number"
 msgstr "数量"
 
-#: views/contact_view.php:512
+#: views/contact_view.php:504
 msgid "File Upload"
 msgstr "上传文件"
 
-#: views/contact_view.php:517
+#: views/contact_view.php:509
 msgid "Date"
 msgstr "日期"
 
-#: views/contact_view.php:520
+#: views/contact_view.php:512
 msgid "Time"
 msgstr "时间"
 
-#: views/contact_view.php:525
+#: views/contact_view.php:517
 msgid "Password"
 msgstr "密码"
 
-#: views/dashboard.php:83
-msgid "Getting Started"
-msgstr "入门"
+#: views/dashboard.php:35
+msgid "Contact Bank Short-Codes"
+msgstr "联系本行短码"
 
-#: views/dashboard.php:87
-msgid "Watch the Walk-Through Video"
-msgstr "观看演练​​视频"
-
-#: views/dashboard.php:96
-msgid "Contact Bank, a Superlative High quality WordPress Plugin!"
-msgstr "联系银行，最高级的高品质的WordPress插件！"
-
-#: views/dashboard.php:103
-msgid "Get Contact Bank Pro Features"
-msgstr "获取联系银行临特点"
-
-#: views/dashboard.php:113
-msgid "Dashboard"
-msgstr "控制面板"
-
-#: views/dashboard.php:131
+#: views/dashboard.php:53
 msgid "Delete All Forms"
 msgstr "删除全有表格"
 
-#: views/dashboard.php:134
+#: views/dashboard.php:56
 msgid "Restore Factory Settings"
 msgstr "恢复默认设置"
 
-#: views/dashboard.php:151
+#: views/dashboard.php:73
 msgid "Shortcode"
 msgstr "简码"
 
-#: views/dashboard.php:152
+#: views/dashboard.php:74
 msgid "Total Controls"
 msgstr "全部控件"
 
-#: views/dashboard.php:188
+#: views/dashboard.php:110
 msgid "Edit Form"
 msgstr "编辑表格"
 
-#: views/dashboard.php:213
+#: views/dashboard.php:135
 msgid "Delete Form"
 msgstr "删除表格"
 
-#: views/dashboard.php:249
-msgid "Let's get in touch!"
-msgstr "让我们取得联系！"
-
-#: views/dashboard.php:348
+#: views/dashboard.php:190
 msgid "Are you sure, you want to delete this Form?"
 msgstr "您确定要删除该表格吗？"
 
-#: views/dashboard.php:358
+#: views/dashboard.php:200
 msgid "Are you sure, you want to delete all Forms?"
 msgstr "您确定要删除所有表格吗？"
 
-#: views/shortcode.php:38
+#: views/header.php:21
+msgid "Get Started"
+msgstr "入门"
+
+#: views/header.php:24
+msgid "Watch Contact Video!"
+msgstr "观看联系视频！"
+
+#: views/header.php:28
+msgid "read documentation here"
+msgstr "在这里阅读文档"
+
+#: views/header.php:33
+msgid "Go Premium"
+msgstr "围棋保费"
+
+#: views/header.php:37
+msgid "Features"
+msgstr "特点"
+
+#: views/header.php:42
+msgid "Online Demos"
+msgstr "在线演示"
+
+#: views/header.php:47
+msgid "Premium Pricing Plan ?"
+msgstr "的保费定价计划？"
+
+#: views/header.php:54
+msgid "Knowledge Base"
+msgstr "知识库"
+
+#: views/header.php:59
+msgid "Support Forum"
+msgstr "支持论坛"
+
+#: views/header.php:64
+msgid "FAQ's"
+msgstr "常见问题解答"
+
+#: views/header.php:69
+msgid "Detailed Features"
+msgstr "详细功能"
+
+#: views/header.php:75
+msgid "More Actions"
+msgstr "更多操作"
+
+#: views/header.php:79
+msgid "Plugin Customization"
+msgstr "外挂程式定制化"
+
+#: views/purchase_pro_version.php:47
+msgid "WP Contact Bank is an one time Investment. Its Worth it!"
+msgstr "WP联系本行是一次性投资。它的价值吧！"
+
+#: views/shortcode.php:29
 msgid ""
 "How to setup Short-Codes for Contact Bank into your WordPress Page/Post?"
 msgstr "如何设置短代码联系银行为你的WordPress页/发表？"
 
-#~ msgid "Contact Bank"
-#~ msgstr "联系表格"
+#~ msgid "By "
+#~ msgstr "由"
+
+#~ msgid "Visit Website"
+#~ msgstr "访问网站"
+
+#~ msgid "Last Updated:"
+#~ msgstr "最后更新："
+
+#~ msgid "Watch the Walk-Through Video"
+#~ msgstr "观看演练​​视频"
+
+#~ msgid "Contact Bank, a Superlative High quality WordPress Plugin!"
+#~ msgstr "联系银行，最高级的高品质的WordPress插件！"
+
+#~ msgid "Let's get in touch!"
+#~ msgstr "让我们取得联系！"
 
 #~ msgid "Roles & Capabilities"
 #~ msgstr "功能"
 
 #~ msgid "Licensing"
 #~ msgstr "证书"
-
-#~ msgid "Add Contact Bank Form"
-#~ msgstr "添加联系表格"
 
 #~ msgid "Select Form :"
 #~ msgstr "选择表格"
@@ -983,9 +1091,6 @@ msgstr "如何设置短代码联系银行为你的WordPress页/发表？"
 
 #~ msgid "Only One File Uploader can be used on a Form."
 #~ msgstr "一个表格只能使用一个上传文件控件。"
-
-#~ msgid "Update"
-#~ msgstr "更新"
 
 #~ msgid "Success! Settings have been updated."
 #~ msgstr "设置已成功更新！"

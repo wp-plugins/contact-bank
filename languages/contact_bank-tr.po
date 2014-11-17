@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Contact Bank\n"
-"POT-Creation-Date: 2014-07-09 10:13+0530\n"
+"POT-Creation-Date: 2014-11-18 05:24-0800\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -9,99 +9,122 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.6.6\n"
 "X-Poedit-KeywordsList: __;_e;gettext\n"
-"X-Poedit-Basepath: C:\\wamp\\www\\contact-bank-standard\\wp-content\\plugins"
-"\\contact-bank\n"
+"X-Poedit-Basepath: C:\\xampp\\apps\\wordpress\\htdocs\\wp-content\\plugins"
+"\\contact-bank\\\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: contact-bank.php:61 contact-bank.php:74 contact-bank.php:87
-#: contact-bank.php:98
+#: contact-bank.php:55 contact-bank.php:70 contact-bank.php:85
 msgid "Contact Bank"
 msgstr "Contact Bank"
 
-#: contact-bank.php:62 contact-bank.php:75 contact-bank.php:88
-#: contact-bank.php:99 contact-bank.php:371 contact-bank.php:421
-#: contact-bank.php:473 contact-bank.php:517 views/dashboard.php:88
+#: contact-bank.php:56 contact-bank.php:71 contact-bank.php:86
+#: contact-bank.php:456 contact-bank.php:521 contact-bank.php:587
 msgid "Dashboard"
 msgstr "Panel"
 
-#: contact-bank.php:64 contact-bank.php:77 contact-bank.php:89
-#: contact-bank.php:100 contact-bank.php:377 contact-bank.php:427
-#: contact-bank.php:479 contact-bank.php:523
+#: contact-bank.php:58 contact-bank.php:73 contact-bank.php:88
+#: contact-bank.php:462 contact-bank.php:527 contact-bank.php:593
 msgid "Short-Codes"
 msgstr "Kısa Kodlar"
 
-#: contact-bank.php:65 contact-bank.php:78 contact-bank.php:90
-#: contact-bank.php:101 contact-bank.php:383 contact-bank.php:433
-#: contact-bank.php:485 contact-bank.php:529 views/contact_frontend_data.php:8
-#: views/dashboard.php:229
+#: contact-bank.php:59 contact-bank.php:74 contact-bank.php:89
+#: contact-bank.php:468 contact-bank.php:533 contact-bank.php:599
+#: views/contact_frontend_data.php:31 views/dashboard.php:125
 msgid "Form Entries"
 msgstr "Form Girişleri"
 
-#: contact-bank.php:66 contact-bank.php:79 contact-bank.php:91
-#: contact-bank.php:102 contact-bank.php:389 contact-bank.php:439
-#: contact-bank.php:491 contact-bank.php:535
-#: views/contact_email_settings.php:8 views/dashboard.php:224
+#: contact-bank.php:60 contact-bank.php:75 contact-bank.php:90
+#: contact-bank.php:474 contact-bank.php:539 contact-bank.php:605
+#: views/contact_email_settings.php:36 views/dashboard.php:120
 msgid "Email Settings"
 msgstr "Email Ayarları"
 
-#: contact-bank.php:67 contact-bank.php:80 contact-bank.php:92
-#: contact-bank.php:103 contact-bank.php:395 contact-bank.php:445
-#: contact-bank.php:497 contact-bank.php:541
-#: views/contact_bank_layout_settings.php:8 views/dashboard.php:219
+#: contact-bank.php:61 contact-bank.php:76 contact-bank.php:91
+#: contact-bank.php:480 contact-bank.php:545 contact-bank.php:611
+#: views/contact_bank_layout_settings.php:35 views/dashboard.php:115
 msgid "Global Settings"
 msgstr "Genel Ayarlar"
 
-#: contact-bank.php:68 contact-bank.php:81 contact-bank.php:401
-#: contact-bank.php:453 views/contact-bank-system-report.php:11
+#: contact-bank.php:62 contact-bank.php:77 contact-bank.php:92
+#: contact-bank.php:486 contact-bank.php:553
+#: views/contact-bank-system-report.php:30
 msgid "System Status"
 msgstr "Sistem Ayarları"
 
-#: contact-bank.php:69 contact-bank.php:82 contact-bank.php:93
-#: contact-bank.php:104 contact-bank.php:407 contact-bank.php:459
-#: contact-bank.php:503 contact-bank.php:547
-msgid "Purchase PRO Edition"
-msgstr "PRO Edition'ı satın"
+#: contact-bank.php:63 contact-bank.php:78 contact-bank.php:93
+#: contact-bank.php:492 contact-bank.php:559 contact-bank.php:617
+#: views/header.php:84
+msgid "Recommendations"
+msgstr "öneriler"
 
-#: contact-bank.php:555
+#: contact-bank.php:64 contact-bank.php:79 contact-bank.php:94
+#: contact-bank.php:499 contact-bank.php:566 contact-bank.php:624
+#: views/purchase_pro_version.php:38
+msgid "Premium Editions"
+msgstr "primi Editions"
+
+#: contact-bank.php:65 contact-bank.php:80 contact-bank.php:95
+#: contact-bank.php:506 contact-bank.php:573 contact-bank.php:631
+#: views/header.php:89
+msgid "Our Other Services"
+msgstr "Bizim Diğer Hizmetler"
+
+#: contact-bank.php:646
 msgid "Add Contact Bank Form"
 msgstr "Contact Bank Formu Ekleyin"
 
-#: contact-bank.php:567
+#: contact-bank.php:658
 msgid "Insert Contact Bank Form"
 msgstr "Contact Bank Formu Yerleştirin"
 
-#: contact-bank.php:569
+#: contact-bank.php:660
 msgid "Select a form below to add it to your post or page."
 msgstr "Sayfa ya da yazınıza eklemek için aşağıdan bir form seçin"
 
-#: contact-bank.php:574
+#: contact-bank.php:665
 msgid "Form Name"
 msgstr "From İsmi"
 
-#: contact-bank.php:576
+#: contact-bank.php:667
 msgid "Select a Form"
 msgstr "Bir Form Seçin"
 
-#: contact-bank.php:593
+#: contact-bank.php:684
 msgid "Show Form Title"
 msgstr "Form Başlığını Gösterin"
 
-#: contact-bank.php:598
+#: contact-bank.php:689
 msgid "Insert Form"
 msgstr "Form Yerleştirin"
 
-#: contact-bank.php:601
+#: contact-bank.php:692
 msgid "Cancel"
 msgstr "İptal Et"
 
-#: contact-bank.php:613
+#: contact-bank.php:704
 msgid "Please choose a Form to insert into Shortcode"
 msgstr "Kısa koda yerleştirmek için bir form seçin"
 
+#: contact-bank.php:740
+msgid "View Contact Bank Documentation"
+msgstr "Görünüm İletişim Banka Dokümantasyon"
+
+#: contact-bank.php:740
+msgid "Docs"
+msgstr "Dokümanlar"
+
+#: contact-bank.php:741
+msgid "View Contact Bank Premium Editions"
+msgstr "İletişim Banka primi Editions"
+
+#: contact-bank.php:741
+msgid "Go for Premium!"
+msgstr "Premium için git!"
+
 #: frontend_views/contact_bank_forms.php:369
-#: views/contact_bank_form_preview.php:377 views/contact_controls_files.php:56
+#: views/contact_bank_form_preview.php:401 views/contact_controls_files.php:87
 msgid "Select Option"
 msgstr "Seçim Yapın"
 
@@ -121,9 +144,9 @@ msgstr "Etiket"
 #: includes/cb_multiple.php:44 includes/cb_multiple.php:164
 #: includes/cb_text.php:43 includes/cb_text.php:132
 #: includes/cb_textarea.php:42 includes/cb_textarea.php:130
-#: views/contact_controls_files.php:3 views/contact_controls_files.php:19
-#: views/contact_controls_files.php:52 views/contact_controls_files.php:68
-#: views/contact_controls_files.php:85
+#: views/contact_controls_files.php:34 views/contact_controls_files.php:50
+#: views/contact_controls_files.php:83 views/contact_controls_files.php:99
+#: views/contact_controls_files.php:116
 msgid "Untitled"
 msgstr "Başlıksız"
 
@@ -161,8 +184,8 @@ msgstr "İpucu Notu"
 #: includes/cb_checkbox.php:97 includes/cb_dropdown.php:97
 #: includes/cb_email.php:115 includes/cb_multiple.php:108
 #: includes/cb_text.php:114 includes/cb_textarea.php:113
-#: views/contact_bank_layout_settings.php:925
-#: views/contact_frontend_data.php:148 views/dashboard.php:413
+#: views/contact_bank_layout_settings.php:952
+#: views/contact_frontend_data.php:171 views/dashboard.php:209
 #: views/includes_common_after.php:348 views/includes_common_after.php:351
 #: views/includes_common_after.php:354 views/includes_common_after.php:357
 #: views/includes_common_after.php:360 views/includes_common_after.php:363
@@ -219,7 +242,7 @@ msgstr "Ayarları Kaydet"
 msgid "Please Fill an Option."
 msgstr "Lütfen bir seçim yapın."
 
-#: includes/cb_dropdown.php:36 views/contact_view.php:441
+#: includes/cb_dropdown.php:36 views/contact_view.php:460
 msgid "Select Box"
 msgstr "Seçim Kutucuğu"
 
@@ -232,7 +255,7 @@ msgstr "Etiket Girin"
 msgid "Enter Option"
 msgstr "Seçenek Girin"
 
-#: includes/cb_email.php:36 views/contact_view.php:438
+#: includes/cb_email.php:36 views/contact_view.php:457
 msgid "Email Address"
 msgstr "Email Adresi"
 
@@ -255,11 +278,11 @@ msgstr "Yer İşaretleyici"
 msgid "Enter Place Holder"
 msgstr "Yer İşaretleyici Girin"
 
-#: includes/cb_multiple.php:36 views/contact_view.php:449
+#: includes/cb_multiple.php:36 views/contact_view.php:468
 msgid "Radio Buttons"
 msgstr "Radio Butonları"
 
-#: includes/cb_text.php:36 views/contact_view.php:430
+#: includes/cb_text.php:36 views/contact_view.php:449
 msgid "Single Line Text"
 msgstr "Tek Sıra Yazı"
 
@@ -288,15 +311,15 @@ msgid "Trim"
 msgstr "Şekil"
 
 #: includes/cb_text.php:191 includes/cb_textarea.php:188
-#: views/contact_bank_layout_settings.php:62
-#: views/contact_bank_layout_settings.php:250
-#: views/contact_bank_layout_settings.php:460
-#: views/contact_bank_layout_settings.php:653
-#: views/contact_bank_layout_settings.php:781 views/contact_view.php:459
+#: views/contact_bank_layout_settings.php:89
+#: views/contact_bank_layout_settings.php:277
+#: views/contact_bank_layout_settings.php:487
+#: views/contact_bank_layout_settings.php:680
+#: views/contact_bank_layout_settings.php:808 views/contact_view.php:478
 msgid " (Available in Premium Edition)"
 msgstr "(Premium Edition mevcuttur)"
 
-#: includes/cb_textarea.php:36 views/contact_view.php:433
+#: includes/cb_textarea.php:36 views/contact_view.php:452
 msgid "Paragraph Text"
 msgstr "Paragraf Yazı"
 
@@ -312,568 +335,652 @@ msgstr "Tanım Girin"
 msgid "Tooltip text"
 msgstr "İpucu metni"
 
-#: lib/contact_bank_email-class.php:56 lib/contact_bank_email-class.php:66
+#: lib/contact_bank_email-class.php:47 lib/contact_bank_email-class.php:57
+#: lib/contact_bank_email-class.php:67
 msgid "Edit Email Settings"
 msgstr "Email Ayarlarını Düzenleyin"
 
-#: lib/contact_bank_email-class.php:59 lib/contact_bank_email-class.php:69
+#: lib/contact_bank_email-class.php:50 lib/contact_bank_email-class.php:60
+#: lib/contact_bank_email-class.php:70
 msgid "Delete Email Settings"
 msgstr "Email Ayarlarını Silin"
 
-#: lib/contact_frontend_data_class.php:94
+#: lib/contact_frontend_data_class.php:113
 msgid "Delete Form Entry"
 msgstr "Form Girişini Silin"
 
-#: views/add_contact_email.php:31 views/contact_email_settings.php:66
+#: views/add_contact_email.php:50 views/contact_email_settings.php:94
 msgid "Email Confirmation"
 msgstr "Email Onayı"
 
-#: views/add_contact_email.php:34
+#: views/add_contact_email.php:53
 msgid "Back to Email Settings"
 msgstr "Email Ayarlarına Dönün"
 
-#: views/add_contact_email.php:35 views/add_contact_email.php:215
-#: views/contact_bank_layout_settings.php:14
-#: views/contact_bank_layout_settings.php:499
-#: views/contact_bank_layout_settings.php:911
+#: views/add_contact_email.php:54 views/add_contact_email.php:234
+#: views/contact_bank_layout_settings.php:41
+#: views/contact_bank_layout_settings.php:526
+#: views/contact_bank_layout_settings.php:938
 msgid "Save"
 msgstr "Kaydet"
 
-#: views/add_contact_email.php:39
+#: views/add_contact_email.php:58
 msgid "Email Settings Saved. Kindly wait for the redirect."
 msgstr "Email Ayarları Kaydedildi. Lütfen yönlendirmeyi bekleyin."
 
-#: views/add_contact_email.php:46 views/add_contact_email.php:103
-#: views/contact_controls_files.php:35
+#: views/add_contact_email.php:65 views/add_contact_email.php:122
+#: views/contact_controls_files.php:66
 msgid "Email"
 msgstr "Email"
 
-#: views/add_contact_email.php:50 views/contact_view.php:466
+#: views/add_contact_email.php:69 views/contact_view.php:485
 msgid "Name"
 msgstr "İsim"
 
-#: views/add_contact_email.php:54
+#: views/add_contact_email.php:73
 msgid "Enter Name"
 msgstr "İsim Girin"
 
-#: views/add_contact_email.php:60
+#: views/add_contact_email.php:79
 msgid "Send To"
 msgstr "Gönderildi"
 
-#: views/add_contact_email.php:69 views/add_contact_email.php:80
-#: views/add_contact_email.php:92 views/add_contact_email.php:152
+#: views/add_contact_email.php:88 views/add_contact_email.php:99
+#: views/add_contact_email.php:111 views/add_contact_email.php:171
 msgid "Enter Email"
 msgstr "Email Girin"
 
-#: views/add_contact_email.php:71 views/add_contact_email.php:82
-#: views/add_contact_email.php:94
+#: views/add_contact_email.php:90 views/add_contact_email.php:101
+#: views/add_contact_email.php:113
 msgid "Select a Field"
 msgstr "Bir Alan Seçin"
 
-#: views/add_contact_email.php:107
+#: views/add_contact_email.php:126
 msgid "Enter Email "
 msgstr "Email Girin"
 
-#: views/add_contact_email.php:111
+#: views/add_contact_email.php:130
 msgid "Send To Field"
 msgstr "Alana Gönderin"
 
-#: views/add_contact_email.php:115
+#: views/add_contact_email.php:134
 msgid "Enter Field "
 msgstr "Alan Girin"
 
-#: views/add_contact_email.php:117 views/add_contact_email.php:130
-#: views/add_contact_email.php:143 views/add_contact_email.php:154
-#: views/add_contact_email.php:165 views/add_contact_email.php:176
-#: views/add_contact_email.php:189
+#: views/add_contact_email.php:136 views/add_contact_email.php:149
+#: views/add_contact_email.php:162 views/add_contact_email.php:173
+#: views/add_contact_email.php:184 views/add_contact_email.php:195
+#: views/add_contact_email.php:208
 msgid "Select a field"
 msgstr "Bir Alan Seçin"
 
-#: views/add_contact_email.php:124
+#: views/add_contact_email.php:143
 msgid "From Name"
 msgstr "Gönderen İsmi"
 
-#: views/add_contact_email.php:128
+#: views/add_contact_email.php:147
 msgid "Enter from name "
 msgstr "Gönderen isim girin"
 
-#: views/add_contact_email.php:137
+#: views/add_contact_email.php:156
 msgid "From Email"
 msgstr "Gönderen Emaili"
 
-#: views/add_contact_email.php:141
+#: views/add_contact_email.php:160
 msgid "Enter from email"
 msgstr "Gönderen emaili girin"
 
-#: views/add_contact_email.php:150
+#: views/add_contact_email.php:169
 msgid "Reply To"
 msgstr "Cevap Olarak"
 
-#: views/add_contact_email.php:161
+#: views/add_contact_email.php:180
 msgid "CC"
 msgstr "CC"
 
-#: views/add_contact_email.php:163
+#: views/add_contact_email.php:182
 msgid "Enter CC Email "
 msgstr "CC emailini girin"
 
-#: views/add_contact_email.php:172
+#: views/add_contact_email.php:191
 msgid "BCC"
 msgstr "BCC"
 
-#: views/add_contact_email.php:174
+#: views/add_contact_email.php:193
 msgid "Enter Bcc Email"
 msgstr "BCC emailini girin"
 
-#: views/add_contact_email.php:183
+#: views/add_contact_email.php:202
 msgid "Subject"
 msgstr "Konu"
 
-#: views/add_contact_email.php:187
+#: views/add_contact_email.php:206
 msgid "Enter Subject"
 msgstr "Konuyu Girin"
 
-#: views/add_contact_email.php:196
+#: views/add_contact_email.php:215
 msgid "Message"
 msgstr "Mesaj"
 
-#: views/add_contact_email.php:206
+#: views/add_contact_email.php:225
 msgid "Insert a Field into Your Form Message"
 msgstr "Mesajı Girin"
 
-#: views/contact-bank-system-report.php:14
+#: views/contact-bank-system-report.php:33
 msgid "Get System Report"
 msgstr "Sistem Raporunu Al"
 
-#: views/contact-bank-system-report.php:18
+#: views/contact-bank-system-report.php:37
 msgid "Close System Report"
 msgstr "Sistem Raporunu Kapat"
 
-#: views/contact-bank-system-report.php:100
+#: views/contact-bank-system-report.php:124
 msgid "Default"
 msgstr "Varsayılan"
 
-#: views/contact_bank_form_preview.php:276 views/dashboard.php:234
+#: views/contact_bank_form_preview.php:300 views/dashboard.php:130
 msgid "Form Preview"
 msgstr "Önizleme Formu"
 
-#: views/contact_bank_form_preview.php:279
-#: views/contact_bank_layout_settings.php:11
-#: views/contact_email_settings.php:11 views/contact_frontend_data.php:11
-#: views/contact_view.php:242
+#: views/contact_bank_form_preview.php:303
+#: views/contact_bank_layout_settings.php:38
+#: views/contact_email_settings.php:39 views/contact_frontend_data.php:34
+#: views/contact_view.php:261 views/purchase_pro_version.php:42
 msgid "Back to Dashboard"
 msgstr "Panele Geri Dön"
 
-#: views/contact_bank_layout_settings.php:8
+#: views/contact_bank_layout_settings.php:35
 msgid " (Premium Features available in Paid Edition)"
 msgstr "(Ücretli Edition'da mevcut Premium Özellikleri)"
 
-#: views/contact_bank_layout_settings.php:12
+#: views/contact_bank_layout_settings.php:39
 msgid "Restore Global Settings"
 msgstr "Genel Ayarları Geri Yükle"
 
-#: views/contact_bank_layout_settings.php:18
+#: views/contact_bank_layout_settings.php:45
 msgid "Form Settings Saved. Kindly wait for the redirect."
 msgstr "Form Ayarlar Kaydedildi. Lütfen yeniden yönlendirme için bekleyin."
 
-#: views/contact_bank_layout_settings.php:24
-#: views/contact_bank_layout_settings.php:34
-#: views/contact_email_settings.php:15 views/contact_email_settings.php:31
-#: views/contact_frontend_data.php:23 views/contact_frontend_data.php:33
+#: views/contact_bank_layout_settings.php:51
+#: views/contact_bank_layout_settings.php:61
+#: views/contact_email_settings.php:43 views/contact_email_settings.php:59
+#: views/contact_frontend_data.php:46 views/contact_frontend_data.php:56
 msgid "Select Form"
 msgstr "Form Seçin :"
 
-#: views/contact_bank_layout_settings.php:61
+#: views/contact_bank_layout_settings.php:88
 msgid "Label Settings"
 msgstr "Etiket Ayarları"
 
-#: views/contact_bank_layout_settings.php:73
-#: views/contact_bank_layout_settings.php:260
-#: views/contact_bank_layout_settings.php:470
-#: views/contact_bank_layout_settings.php:663
-#: views/contact_bank_layout_settings.php:791
+#: views/contact_bank_layout_settings.php:100
+#: views/contact_bank_layout_settings.php:287
+#: views/contact_bank_layout_settings.php:497
+#: views/contact_bank_layout_settings.php:690
+#: views/contact_bank_layout_settings.php:818
 msgid "Font Family :"
 msgstr "Font Grubu :"
 
-#: views/contact_bank_layout_settings.php:98
+#: views/contact_bank_layout_settings.php:125
 msgid "Font Color :"
 msgstr "Font Rengi :"
 
-#: views/contact_bank_layout_settings.php:109
-#: views/contact_bank_layout_settings.php:296
+#: views/contact_bank_layout_settings.php:136
+#: views/contact_bank_layout_settings.php:323
 msgid "Font Style :"
 msgstr "Font Stili :"
 
-#: views/contact_bank_layout_settings.php:123
-#: views/contact_bank_layout_settings.php:310
-#: views/contact_bank_layout_settings.php:519
-#: views/contact_bank_layout_settings.php:688
-#: views/contact_bank_layout_settings.php:816
+#: views/contact_bank_layout_settings.php:150
+#: views/contact_bank_layout_settings.php:337
+#: views/contact_bank_layout_settings.php:546
+#: views/contact_bank_layout_settings.php:715
+#: views/contact_bank_layout_settings.php:843
 msgid "Font Size (px) :"
 msgstr "Font Boyutu :"
 
-#: views/contact_bank_layout_settings.php:154
-#: views/contact_bank_layout_settings.php:411
-#: views/contact_bank_layout_settings.php:624
-#: views/contact_bank_layout_settings.php:752
-#: views/contact_bank_layout_settings.php:880
+#: views/contact_bank_layout_settings.php:181
+#: views/contact_bank_layout_settings.php:438
+#: views/contact_bank_layout_settings.php:651
+#: views/contact_bank_layout_settings.php:779
+#: views/contact_bank_layout_settings.php:907
 msgid "Text Align :"
 msgstr "Yazı Hizalama :"
 
-#: views/contact_bank_layout_settings.php:167
+#: views/contact_bank_layout_settings.php:194
 msgid "Label Position :"
 msgstr "Etiket Konumu :"
 
-#: views/contact_bank_layout_settings.php:181
+#: views/contact_bank_layout_settings.php:208
 msgid "Field Desc Font Size :"
 msgstr "Tanımlama Alanı Font Boyutu :"
 
-#: views/contact_bank_layout_settings.php:212
+#: views/contact_bank_layout_settings.php:239
 msgid "Field Description Align :"
 msgstr "Tanımlama Alanı Hizalama :"
 
-#: views/contact_bank_layout_settings.php:226
+#: views/contact_bank_layout_settings.php:253
 msgid "Hide Labels :"
 msgstr "Etiketleri Gizle"
 
-#: views/contact_bank_layout_settings.php:234
-#: views/contact_bank_layout_settings.php:424
-#: views/contact_bank_layout_settings.php:637
-#: views/contact_bank_layout_settings.php:765
-#: views/contact_bank_layout_settings.php:893
+#: views/contact_bank_layout_settings.php:261
+#: views/contact_bank_layout_settings.php:451
+#: views/contact_bank_layout_settings.php:664
+#: views/contact_bank_layout_settings.php:792
+#: views/contact_bank_layout_settings.php:920
 msgid "Text Direction :"
 msgstr "Yazı Yönlendirme"
 
-#: views/contact_bank_layout_settings.php:250
+#: views/contact_bank_layout_settings.php:277
 msgid "Input Field Settings"
 msgstr "Giriş Alanı Ayarları"
 
-#: views/contact_bank_layout_settings.php:285
-#: views/contact_bank_layout_settings.php:582
-#: views/contact_bank_layout_settings.php:741
-#: views/contact_bank_layout_settings.php:869
+#: views/contact_bank_layout_settings.php:312
+#: views/contact_bank_layout_settings.php:609
+#: views/contact_bank_layout_settings.php:768
+#: views/contact_bank_layout_settings.php:896
 msgid "Text Color :"
 msgstr "Metin Rengi"
 
-#: views/contact_bank_layout_settings.php:341
-#: views/contact_bank_layout_settings.php:614
+#: views/contact_bank_layout_settings.php:368
+#: views/contact_bank_layout_settings.php:641
 msgid "Border Radius (px) :"
 msgstr "Border Alanı (px)"
 
-#: views/contact_bank_layout_settings.php:351
-#: views/contact_bank_layout_settings.php:593
-#: views/contact_bank_layout_settings.php:730
-#: views/contact_bank_layout_settings.php:858
+#: views/contact_bank_layout_settings.php:378
+#: views/contact_bank_layout_settings.php:620
+#: views/contact_bank_layout_settings.php:757
+#: views/contact_bank_layout_settings.php:885
 msgid "Border Color :"
 msgstr "Border Rengi"
 
-#: views/contact_bank_layout_settings.php:362
-#: views/contact_bank_layout_settings.php:604
+#: views/contact_bank_layout_settings.php:389
+#: views/contact_bank_layout_settings.php:631
 msgid "Border Size (px) :"
 msgstr "Border Ölçüsü (px)"
 
-#: views/contact_bank_layout_settings.php:372
+#: views/contact_bank_layout_settings.php:399
 msgid "Border Style :"
 msgstr "Bordur Stili"
 
-#: views/contact_bank_layout_settings.php:387
-#: views/contact_bank_layout_settings.php:560
-#: views/contact_bank_layout_settings.php:719
-#: views/contact_bank_layout_settings.php:847
+#: views/contact_bank_layout_settings.php:414
+#: views/contact_bank_layout_settings.php:587
+#: views/contact_bank_layout_settings.php:746
+#: views/contact_bank_layout_settings.php:874
 msgid "Background Color :"
 msgstr "Arkaplan Rengi"
 
-#: views/contact_bank_layout_settings.php:398
+#: views/contact_bank_layout_settings.php:425
 msgid "Radio Buttons :"
 msgstr "Radio Butonları"
 
-#: views/contact_bank_layout_settings.php:403
+#: views/contact_bank_layout_settings.php:430
 msgid "Multiple Rows"
 msgstr "Çoklu Sıralar"
 
-#: views/contact_bank_layout_settings.php:405
+#: views/contact_bank_layout_settings.php:432
 msgid "Single Row"
 msgstr "Tekil Sıra"
 
-#: views/contact_bank_layout_settings.php:438
+#: views/contact_bank_layout_settings.php:465
 msgid "Input Size :"
 msgstr "Girdi Boyutu"
 
-#: views/contact_bank_layout_settings.php:460
+#: views/contact_bank_layout_settings.php:487
 msgid "Submit Button Settings"
 msgstr "Buton Ayarlarını Onaylayın"
 
-#: views/contact_bank_layout_settings.php:495
+#: views/contact_bank_layout_settings.php:522
 msgid "Text:"
 msgstr "Metin :"
 
-#: views/contact_bank_layout_settings.php:505
+#: views/contact_bank_layout_settings.php:532
 msgid "Style :"
 msgstr "Stil : "
 
-#: views/contact_bank_layout_settings.php:550
+#: views/contact_bank_layout_settings.php:577
 msgid "Button Width (px) :"
 msgstr "Buton Genişliği (px) :"
 
-#: views/contact_bank_layout_settings.php:571
+#: views/contact_bank_layout_settings.php:598
 msgid "Hover Background Color:"
 msgstr "Üstüne Gelindiğinde Arkaplan Rengi : "
 
-#: views/contact_bank_layout_settings.php:653
+#: views/contact_bank_layout_settings.php:680
 msgid "Success Message Settings"
 msgstr "Başarı Mesajı Ayarları"
 
-#: views/contact_bank_layout_settings.php:781
+#: views/contact_bank_layout_settings.php:808
 msgid "Error Message Settings"
 msgstr "Hata Mesajı Ayarları"
 
-#: views/contact_bank_pro_version.php:25
+#: views/contact_bank_pro_version.php:50
 msgid "Contact Bank Pricing"
 msgstr "Contact-Bank Fiyatlandırma"
 
-#: views/contact_bank_pro_version.php:356 views/dashboard.php:283
+#: views/contact_bank_pro_version.php:381
 msgid "Need Support Help?"
 msgstr "Destek Yardım Gerekir?"
 
-#: views/contact_bank_pro_version.php:368
+#: views/contact_bank_pro_version.php:393
 msgid "Lets get in touch!"
 msgstr "Temasa alalım!"
 
-#: views/contact_bank_pro_version.php:372 views/dashboard.php:299
+#: views/contact_bank_pro_version.php:397
 msgid "Order Now!"
 msgstr "Şimdi Sipariş!"
 
-#: views/contact_controls_files.php:8 views/contact_controls_files.php:24
-#: views/contact_controls_files.php:41 views/contact_controls_files.php:59
-#: views/contact_controls_files.php:75 views/contact_controls_files.php:92
+#: views/contact_controls_files.php:39 views/contact_controls_files.php:55
+#: views/contact_controls_files.php:72 views/contact_controls_files.php:90
+#: views/contact_controls_files.php:106 views/contact_controls_files.php:123
 msgid "Settings"
 msgstr "Ayarlar"
 
-#: views/contact_documentation.php:5
+#: views/contact_documentation.php:33
 msgid "Documentation - Contact Bank"
 msgstr "Belgeler - Contact Bank"
 
-#: views/contact_email_settings.php:56
+#: views/contact_email_settings.php:84
 msgid "Add New"
 msgstr "Yeni Ekle"
 
-#: views/contact_email_settings.php:137
+#: views/contact_email_settings.php:165
 msgid "Are you sure, you want to delete this Email Setting?"
 msgstr "Bu Email Ayarlarını silmek istediğinizden emin misiniz?"
 
-#: views/contact_email_settings.php:155 views/contact_frontend_data.php:115
+#: views/contact_email_settings.php:183 views/contact_frontend_data.php:138
 msgid "Please select the Form first."
 msgstr "Lütfen önce Formu seçin."
 
-#: views/contact_frontend_data.php:12
+#: views/contact_frontend_data.php:35
 msgid "Export to Excel"
 msgstr "Excel'e verme"
 
-#: views/contact_frontend_data.php:18 views/dashboard.php:150
-#: views/dashboard.php:157
+#: views/contact_frontend_data.php:41 views/dashboard.php:65
+#: views/dashboard.php:72
 msgid "Form"
 msgstr "Form"
 
-#: views/contact_view.php:239 views/dashboard.php:103 views/dashboard.php:113
+#: views/contact_view.php:258 views/dashboard.php:47
 msgid "Add New Form"
 msgstr "Yeni bir Form Ekle"
 
-#: views/contact_view.php:245 views/contact_view.php:509
+#: views/contact_view.php:264 views/contact_view.php:528
 msgid "Save Form"
 msgstr "Formu Kaydet"
 
-#: views/contact_view.php:250
+#: views/contact_view.php:269
 msgid "Form Submitted. Kindly wait for the redirect."
 msgstr "Form Onaylandı. Lütfen yönlendirme için bekleyin"
 
-#: views/contact_view.php:259
+#: views/contact_view.php:278
 msgid "Form Settings"
 msgstr "Form Ayarları"
 
-#: views/contact_view.php:263
+#: views/contact_view.php:282
 msgid "Form Name :"
 msgstr "Form İsmi :"
 
-#: views/contact_view.php:269
+#: views/contact_view.php:288
 msgid "Enter Form Name"
 msgstr "Form Adını Girin"
 
-#: views/contact_view.php:273
+#: views/contact_view.php:292
 msgid "Form Description :"
 msgstr "Form Tanımı :"
 
-#: views/contact_view.php:275
+#: views/contact_view.php:294
 msgid "Enter Form Description"
 msgstr "Form Tanımı Girin"
 
-#: views/contact_view.php:279
+#: views/contact_view.php:298
 msgid "Blank Field Message:"
 msgstr "Boş Mesaj Alanı :"
 
-#: views/contact_view.php:285
+#: views/contact_view.php:304
 msgid "Required field must not be blank"
 msgstr "Zorunlu alan boş olmamalı"
 
-#: views/contact_view.php:287
+#: views/contact_view.php:306
 msgid "Enter Blank Field Message"
 msgstr "Boş Alan Mesajı Girin"
 
-#: views/contact_view.php:291
+#: views/contact_view.php:310
 msgid "Incorrect Email Message:"
 msgstr "Yanlış Email Mesajı :"
 
-#: views/contact_view.php:297
+#: views/contact_view.php:316
 msgid "Please enter a valid email address"
 msgstr "Lütfen geçerli bir email adresi girin"
 
-#: views/contact_view.php:299
+#: views/contact_view.php:318
 msgid "Enter Incorrect Email Message"
 msgstr "Yanlış Email Mesajı Girin"
 
-#: views/contact_view.php:303
+#: views/contact_view.php:322
 msgid "Success Message :"
 msgstr "Başarılı Mesajı :"
 
-#: views/contact_view.php:307
+#: views/contact_view.php:326
 msgid "Enter Success Message"
 msgstr "Başarılı Gönderim Mesajı Girin"
 
-#: views/contact_view.php:311
+#: views/contact_view.php:330
 msgid "Redirect :"
 msgstr "Yönlendir :"
 
-#: views/contact_view.php:323 views/contact_view.php:334
-#: views/contact_view.php:346
+#: views/contact_view.php:342 views/contact_view.php:353
+#: views/contact_view.php:365
 msgid "Page"
 msgstr "Sayfa"
 
-#: views/contact_view.php:326 views/contact_view.php:337
-#: views/contact_view.php:349
+#: views/contact_view.php:345 views/contact_view.php:356
+#: views/contact_view.php:368
 msgid "URL"
 msgstr "URL"
 
-#: views/contact_view.php:356
+#: views/contact_view.php:375
 msgid "Page :"
 msgstr "Sayfa : "
 
-#: views/contact_view.php:399
+#: views/contact_view.php:418
 msgid "URL :"
 msgstr "URL : "
 
-#: views/contact_view.php:406
+#: views/contact_view.php:425
 msgid "Enter Redirect URL"
 msgstr "Yönlendirme URLi girin"
 
-#: views/contact_view.php:413
+#: views/contact_view.php:432
 msgid "Form Layout Preview"
 msgstr "Form Düzenleme Önizlemesi"
 
-#: views/contact_view.php:424
+#: views/contact_view.php:443
 msgid "Standard Fields"
 msgstr "Standart Alanlar"
 
-#: views/contact_view.php:427 views/contact_view.php:463
+#: views/contact_view.php:446 views/contact_view.php:482
 msgid "Click on a field to use into your form."
 msgstr "Formunuzda kullanmak istediğiniz alanı tıklayın."
 
-#: views/contact_view.php:446
+#: views/contact_view.php:465
 msgid "Checkboxes"
 msgstr "Kutucuklar"
 
-#: views/contact_view.php:458
+#: views/contact_view.php:477
 msgid "Advanced Fields"
 msgstr "Gelişmiş Alanlar"
 
-#: views/contact_view.php:469
+#: views/contact_view.php:488
 msgid "Website / URL"
 msgstr "Website / URL"
 
-#: views/contact_view.php:474
+#: views/contact_view.php:493
 msgid "Phone"
 msgstr "Telefon"
 
-#: views/contact_view.php:477
+#: views/contact_view.php:496
 msgid "Address"
 msgstr "Adres"
 
-#: views/contact_view.php:482
+#: views/contact_view.php:501
 msgid "Number"
 msgstr "Numara"
 
-#: views/contact_view.php:485
+#: views/contact_view.php:504
 msgid "File Upload"
 msgstr "Dosya Yükleyin"
 
-#: views/contact_view.php:490
+#: views/contact_view.php:509
 msgid "Date"
 msgstr "Tarih"
 
-#: views/contact_view.php:493
+#: views/contact_view.php:512
 msgid "Time"
 msgstr "Zaman"
 
-#: views/contact_view.php:498
+#: views/contact_view.php:517
 msgid "Password"
 msgstr "Şifre"
 
-#: views/dashboard.php:58
-msgid "Getting Started"
-msgstr "başlarken"
+#: views/dashboard.php:35
+msgid "Contact Bank Short-Codes"
+msgstr "İletişim Banka Kısa Kodlar"
 
-#: views/dashboard.php:62
-msgid "Watch the Walk-Through Video"
-msgstr "Walk-Through Video İzle"
-
-#: views/dashboard.php:71
-msgid "Contact Bank, a Superlative High quality WordPress Plugin!"
-msgstr "İletişime Banka, bir Üstünlük Yüksek kaliteli WordPress eklentisi!"
-
-#: views/dashboard.php:78
-msgid "Get Contact Bank Pro Features"
-msgstr "İletişime Banka Pro Özellikleri alın"
-
-#: views/dashboard.php:126 views/dashboard.php:133
+#: views/dashboard.php:53
 msgid "Delete All Forms"
 msgstr "Tüm Formları Silin"
 
-#: views/dashboard.php:141
+#: views/dashboard.php:56
 msgid "Restore Factory Settings"
 msgstr "Fabrika Ayarlarını Geri Yükleyin"
 
-#: views/dashboard.php:158
+#: views/dashboard.php:73
 msgid "Shortcode"
 msgstr "Kısakod"
 
-#: views/dashboard.php:159
+#: views/dashboard.php:74
 msgid "Total Controls"
 msgstr "Tüm Kontroller"
 
-#: views/dashboard.php:200 views/dashboard.php:209
+#: views/dashboard.php:110
 msgid "Edit Form"
 msgstr "Formu Düzenle"
 
-#: views/dashboard.php:245 views/dashboard.php:255
+#: views/dashboard.php:135
 msgid "Delete Form"
 msgstr "Formu Sil"
 
-#: views/dashboard.php:295
-msgid "Let's get in touch!"
-msgstr "Temasa alalım!"
-
-#: views/dashboard.php:394
+#: views/dashboard.php:190
 msgid "Are you sure, you want to delete this Form?"
 msgstr "Bu Formu silmek istediğinizden emin misiniz?"
 
-#: views/dashboard.php:404
+#: views/dashboard.php:200
 msgid "Are you sure, you want to delete all Forms?"
 msgstr "Tüm Formları silmek istediğinizden emin misiniz?"
 
-#: views/shortcode.php:8
+#: views/header.php:21
+msgid "Get Started"
+msgstr "Başlarken"
+
+#: views/header.php:24
+msgid "Watch Contact Video!"
+msgstr "Izle Video!"
+
+#: views/header.php:28
+msgid "read documentation here"
+msgstr "Burada belgelerini okuyun"
+
+#: views/header.php:33
+msgid "Go Premium"
+msgstr "git Premium"
+
+#: views/header.php:37
+msgid "Features"
+msgstr "Özellikleri"
+
+#: views/header.php:42
+msgid "Online Demos"
+msgstr "çevrimiçi Demos"
+
+#: views/header.php:47
+msgid "Premium Pricing Plan ?"
+msgstr "Premium Fiyatlandırma Planı?"
+
+#: views/header.php:54
+msgid "Knowledge Base"
+msgstr "Bilgi Tabanı"
+
+#: views/header.php:59
+msgid "Support Forum"
+msgstr "Destek Forumu"
+
+#: views/header.php:64
+msgid "FAQ's"
+msgstr "SSS"
+
+#: views/header.php:69
+msgid "Detailed Features"
+msgstr "Detaylı Özellikler"
+
+#: views/header.php:75
+msgid "More Actions"
+msgstr "Daha Eylemler"
+
+#: views/header.php:79
+msgid "Plugin Customization"
+msgstr "eklenti Özelleştirme"
+
+#: views/purchase_pro_version.php:47
+msgid "WP Contact Bank is an one time Investment. Its Worth it!"
+msgstr "WP İletişim Banka tek seferlik Yatırım olduğunu. Onun buna değer!"
+
+#: views/shortcode.php:29
 msgid ""
 "How to setup Short-Codes for Contact Bank into your WordPress Page/Post?"
 msgstr ""
 "Nasıl WordPress Sayfa / Post'a İletişime Bankası için kurulum Kısa Kodlar "
 "için?"
+
+#~ msgid "%s rating"
+#~ msgstr "%s değerlendirme"
+
+#~ msgid "More Details"
+#~ msgstr "daha fazla detay"
+
+#~ msgid "Install Now"
+#~ msgstr "Şimdi Yükle'yi"
+
+#~ msgid "Update Now"
+#~ msgstr "Şimdi Güncelle"
+
+#~ msgid "By "
+#~ msgstr "tarafından"
+
+#~ msgid "Visit Website"
+#~ msgstr "Web sitesini ziyaret edin"
+
+#~ msgid "Last Updated:"
+#~ msgstr "Son Güncelleme:"
+
+#~ msgid "<strong>Untested</strong> with your version of WordPress"
+#~ msgstr "WordPress sürümü ile denenmemiş"
+
+#~ msgid "Incompatible with your version of WordPress"
+#~ msgstr "WordPress sürümü ile uyumsuz"
+
+#~ msgid "Compatible with your version of WordPress"
+#~ msgstr "WordPress sürümü ile uyumlu"
+
+#~ msgid "Purchase PRO Edition"
+#~ msgstr "PRO Edition'ı satın"
+
+#~ msgid "Watch the Walk-Through Video"
+#~ msgstr "Walk-Through Video İzle"
+
+#~ msgid "Contact Bank, a Superlative High quality WordPress Plugin!"
+#~ msgstr "İletişime Banka, bir Üstünlük Yüksek kaliteli WordPress eklentisi!"
+
+#~ msgid "Let's get in touch!"
+#~ msgstr "Temasa alalım!"
 
 #~ msgid "Roles & Capabilities"
 #~ msgstr "Roller & Yetkinlikler"
@@ -1009,9 +1116,6 @@ msgstr ""
 
 #~ msgid "Only One File Uploader can be used on a Form."
 #~ msgstr "Bir formda en fazla bir dosya yükleyicisi kullanılabilir?"
-
-#~ msgid "Update"
-#~ msgstr "Güncelle"
 
 #~ msgid "Success! Settings have been updated."
 #~ msgstr "Başarılı! Ayarlar güncellendi."

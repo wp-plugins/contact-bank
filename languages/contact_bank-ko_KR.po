@@ -1,93 +1,130 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
-"POT-Creation-Date: 2014-05-06 09:57+0530\n"
-"PO-Revision-Date: 2014-05-06 10:26+0530\n"
+"Project-Id-Version: Contact Bank\n"
+"POT-Creation-Date: 2014-11-18 05:22-0800\n"
+"PO-Revision-Date: 2014-11-18 05:22-0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: ko_KR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.6.6\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
-"X-Poedit-Basepath: C:\\wamp\\www\\contact_bank_standard3.9\\wp-content"
-"\\plugins\\contact-bank\n"
+"X-Poedit-Basepath: C:\\xampp\\apps\\wordpress\\htdocs\\wp-content\\plugins"
+"\\contact-bank\\\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: contact-bank.php:54
+#: contact-bank.php:55 contact-bank.php:70 contact-bank.php:85
 msgid "Contact Bank"
 msgstr "Contact Bank"
 
-#: contact-bank.php:55 contact-bank.php:328 views/dashboard.php:84
+#: contact-bank.php:56 contact-bank.php:71 contact-bank.php:86
+#: contact-bank.php:456 contact-bank.php:521 contact-bank.php:587
 msgid "Dashboard"
 msgstr "계기판"
 
-#: contact-bank.php:57 contact-bank.php:334
+#: contact-bank.php:58 contact-bank.php:73 contact-bank.php:88
+#: contact-bank.php:462 contact-bank.php:527 contact-bank.php:593
 msgid "Short-Codes"
 msgstr "짧은 코드"
 
-#: contact-bank.php:58 contact-bank.php:340 views/contact_frontend_data.php:8
-#: views/dashboard.php:174
+#: contact-bank.php:59 contact-bank.php:74 contact-bank.php:89
+#: contact-bank.php:468 contact-bank.php:533 contact-bank.php:599
+#: views/contact_frontend_data.php:31 views/dashboard.php:125
 msgid "Form Entries"
 msgstr "양식 데이터"
 
-#: contact-bank.php:59 contact-bank.php:346 views/contact_email_settings.php:8
-#: views/dashboard.php:169
+#: contact-bank.php:60 contact-bank.php:75 contact-bank.php:90
+#: contact-bank.php:474 contact-bank.php:539 contact-bank.php:605
+#: views/contact_email_settings.php:36 views/dashboard.php:120
 msgid "Email Settings"
 msgstr "이메일 설정에"
 
-#: contact-bank.php:60 contact-bank.php:352
-#: views/contact_bank_layout_settings.php:8 views/dashboard.php:164
+#: contact-bank.php:61 contact-bank.php:76 contact-bank.php:91
+#: contact-bank.php:480 contact-bank.php:545 contact-bank.php:611
+#: views/contact_bank_layout_settings.php:35 views/dashboard.php:115
 msgid "Global Settings"
 msgstr "전역 설정"
 
-#: contact-bank.php:61 contact-bank.php:360
-#: views/contact-bank-system-report.php:11
+#: contact-bank.php:62 contact-bank.php:77 contact-bank.php:92
+#: contact-bank.php:486 contact-bank.php:553
+#: views/contact-bank-system-report.php:30
 msgid "System Status"
 msgstr "시스템 상태"
 
-#: contact-bank.php:63 contact-bank.php:372
-msgid "Purchase PRO Edition"
-msgstr "PRO 버전구매"
+#: contact-bank.php:63 contact-bank.php:78 contact-bank.php:93
+#: contact-bank.php:492 contact-bank.php:559 contact-bank.php:617
+#: views/header.php:84
+msgid "Recommendations"
+msgstr "추천"
 
-#: contact-bank.php:379
+#: contact-bank.php:64 contact-bank.php:79 contact-bank.php:94
+#: contact-bank.php:499 contact-bank.php:566 contact-bank.php:624
+#: views/purchase_pro_version.php:38
+msgid "Premium Editions"
+msgstr "프리미엄 에디션"
+
+#: contact-bank.php:65 contact-bank.php:80 contact-bank.php:95
+#: contact-bank.php:506 contact-bank.php:573 contact-bank.php:631
+#: views/header.php:89
+msgid "Our Other Services"
+msgstr "우리의 기타 서비스"
+
+#: contact-bank.php:646
 msgid "Add Contact Bank Form"
 msgstr "대시 보드 - 연락처 은행"
 
-#: contact-bank.php:391
+#: contact-bank.php:658
 msgid "Insert Contact Bank Form"
 msgstr "넣-접촉은행-양식"
 
-#: contact-bank.php:393
+#: contact-bank.php:660
 msgid "Select a form below to add it to your post or page."
 msgstr "를 선택 양식 이하 에 추가그것을 귀하의포스트 또는 페이지."
 
-#: contact-bank.php:398
+#: contact-bank.php:665
 msgid "Form Name"
 msgstr "양식 이름"
 
-#: contact-bank.php:400
+#: contact-bank.php:667
 msgid "Select a Form"
 msgstr "양식을 선택합니다"
 
-#: contact-bank.php:417
+#: contact-bank.php:684
 msgid "Show Form Title"
 msgstr "타이틀 을 양식  보여"
 
-#: contact-bank.php:422
+#: contact-bank.php:689
 msgid "Insert Form"
 msgstr "양식 삽입"
 
-#: contact-bank.php:425
+#: contact-bank.php:692
 msgid "Cancel"
 msgstr "취소"
 
-#: contact-bank.php:437
+#: contact-bank.php:704
 msgid "Please choose a Form to insert into Shortcode"
 msgstr "단축 코드로 양식 삽입 을 선택하세요"
 
+#: contact-bank.php:740
+msgid "View Contact Bank Documentation"
+msgstr "보기 Contact Bank 문서화"
+
+#: contact-bank.php:740
+msgid "Docs"
+msgstr "문서 도구"
+
+#: contact-bank.php:741
+msgid "View Contact Bank Premium Editions"
+msgstr "Contact Bank 프리미엄 에디션보기"
+
+#: contact-bank.php:741
+msgid "Go for Premium!"
+msgstr "프리미엄에 대한 이동!"
+
 #: frontend_views/contact_bank_forms.php:369
-#: views/contact_bank_form_preview.php:377 views/contact_controls_files.php:56
+#: views/contact_bank_form_preview.php:401 views/contact_controls_files.php:87
 msgid "Select Option"
 msgstr "구분 선택 사항"
 
@@ -107,9 +144,9 @@ msgstr "레이블이"
 #: includes/cb_multiple.php:44 includes/cb_multiple.php:164
 #: includes/cb_text.php:43 includes/cb_text.php:132
 #: includes/cb_textarea.php:42 includes/cb_textarea.php:130
-#: views/contact_controls_files.php:3 views/contact_controls_files.php:19
-#: views/contact_controls_files.php:52 views/contact_controls_files.php:68
-#: views/contact_controls_files.php:85
+#: views/contact_controls_files.php:34 views/contact_controls_files.php:50
+#: views/contact_controls_files.php:83 views/contact_controls_files.php:99
+#: views/contact_controls_files.php:116
 msgid "Untitled"
 msgstr "제목없는"
 
@@ -147,8 +184,8 @@ msgstr "도구 설명 텍스트를"
 #: includes/cb_checkbox.php:97 includes/cb_dropdown.php:97
 #: includes/cb_email.php:115 includes/cb_multiple.php:108
 #: includes/cb_text.php:114 includes/cb_textarea.php:113
-#: views/contact_bank_layout_settings.php:925
-#: views/contact_frontend_data.php:148 views/dashboard.php:338
+#: views/contact_bank_layout_settings.php:952
+#: views/contact_frontend_data.php:171 views/dashboard.php:209
 #: views/includes_common_after.php:348 views/includes_common_after.php:351
 #: views/includes_common_after.php:354 views/includes_common_after.php:357
 #: views/includes_common_after.php:360 views/includes_common_after.php:363
@@ -205,7 +242,7 @@ msgstr "을 저장설정"
 msgid "Please Fill an Option."
 msgstr "옵션을 기입 해주세요."
 
-#: includes/cb_dropdown.php:36 views/contact_view.php:441
+#: includes/cb_dropdown.php:36 views/contact_view.php:460
 msgid "Select Box"
 msgstr "상자 선택"
 
@@ -218,7 +255,7 @@ msgstr "입력하고 -레이블이"
 msgid "Enter Option"
 msgstr "옵션을을 입력합니다"
 
-#: includes/cb_email.php:36 views/contact_view.php:438
+#: includes/cb_email.php:36 views/contact_view.php:457
 msgid "Email Address"
 msgstr "이메일주소를"
 
@@ -241,11 +278,11 @@ msgstr "플레이스 홀더"
 msgid "Enter Place Holder"
 msgstr "장소 홀더를을 입력"
 
-#: includes/cb_multiple.php:36 views/contact_view.php:449
+#: includes/cb_multiple.php:36 views/contact_view.php:468
 msgid "Radio Buttons"
 msgstr "라디오- 선택 단추"
 
-#: includes/cb_text.php:36 views/contact_view.php:430
+#: includes/cb_text.php:36 views/contact_view.php:449
 msgid "Single Line Text"
 msgstr "한 줄 텍스트를"
 
@@ -274,15 +311,15 @@ msgid "Trim"
 msgstr "손질"
 
 #: includes/cb_text.php:191 includes/cb_textarea.php:188
-#: views/contact_bank_layout_settings.php:62
-#: views/contact_bank_layout_settings.php:250
-#: views/contact_bank_layout_settings.php:460
-#: views/contact_bank_layout_settings.php:653
-#: views/contact_bank_layout_settings.php:781 views/contact_view.php:459
+#: views/contact_bank_layout_settings.php:89
+#: views/contact_bank_layout_settings.php:277
+#: views/contact_bank_layout_settings.php:487
+#: views/contact_bank_layout_settings.php:680
+#: views/contact_bank_layout_settings.php:808 views/contact_view.php:478
 msgid " (Available in Premium Edition)"
 msgstr "(프리미엄 에디션에서 사용 가능)"
 
-#: includes/cb_textarea.php:36 views/contact_view.php:433
+#: includes/cb_textarea.php:36 views/contact_view.php:452
 msgid "Paragraph Text"
 msgstr "단락 텍스트"
 
@@ -298,577 +335,645 @@ msgstr "입력하십시오-설명이"
 msgid "Tooltip text"
 msgstr "툴팁이텍스트를"
 
-#: lib/contact_bank_email-class.php:52
+#: lib/contact_bank_email-class.php:47 lib/contact_bank_email-class.php:57
+#: lib/contact_bank_email-class.php:67
 msgid "Edit Email Settings"
 msgstr "이메일 설정 편집"
 
-#: lib/contact_bank_email-class.php:55
+#: lib/contact_bank_email-class.php:50 lib/contact_bank_email-class.php:60
+#: lib/contact_bank_email-class.php:70
 msgid "Delete Email Settings"
 msgstr "이메일 설정을 삭제"
 
-#: lib/contact_frontend_data_class.php:94
+#: lib/contact_frontend_data_class.php:113
 msgid "Delete Form Entry"
 msgstr "삭제양식-엔트리"
 
-#: views/add_contact_email.php:31 views/contact_email_settings.php:66
+#: views/add_contact_email.php:50 views/contact_email_settings.php:94
 msgid "Email Confirmation"
 msgstr "전자 메일- 확인서"
 
-#: views/add_contact_email.php:34
+#: views/add_contact_email.php:53
 msgid "Back to Email Settings"
 msgstr "돌아 가기-메일 설정에"
 
-#: views/add_contact_email.php:35 views/add_contact_email.php:215
-#: views/contact_bank_layout_settings.php:14
-#: views/contact_bank_layout_settings.php:499
-#: views/contact_bank_layout_settings.php:911
+#: views/add_contact_email.php:54 views/add_contact_email.php:234
+#: views/contact_bank_layout_settings.php:41
+#: views/contact_bank_layout_settings.php:526
+#: views/contact_bank_layout_settings.php:938
 msgid "Save"
 msgstr "저장할"
 
-#: views/add_contact_email.php:39
+#: views/add_contact_email.php:58
 msgid "Email Settings Saved. Kindly wait for the redirect."
 msgstr "이메일 설정 저장된..친절하게기다려야용리디렉션합니다.."
 
-#: views/add_contact_email.php:46 views/add_contact_email.php:103
-#: views/contact_controls_files.php:35
+#: views/add_contact_email.php:65 views/add_contact_email.php:122
+#: views/contact_controls_files.php:66
 msgid "Email"
 msgstr "이메일"
 
-#: views/add_contact_email.php:50 views/contact_view.php:466
+#: views/add_contact_email.php:69 views/contact_view.php:485
 msgid "Name"
 msgstr "이름"
 
-#: views/add_contact_email.php:54
+#: views/add_contact_email.php:73
 msgid "Enter Name"
 msgstr " 을 입력 이름"
 
-#: views/add_contact_email.php:60
+#: views/add_contact_email.php:79
 msgid "Send To"
 msgstr "에게 보내기"
 
-#: views/add_contact_email.php:69 views/add_contact_email.php:80
-#: views/add_contact_email.php:92 views/add_contact_email.php:152
+#: views/add_contact_email.php:88 views/add_contact_email.php:99
+#: views/add_contact_email.php:111 views/add_contact_email.php:171
 msgid "Enter Email"
 msgstr "이메일을 입력"
 
-#: views/add_contact_email.php:71 views/add_contact_email.php:82
-#: views/add_contact_email.php:94
+#: views/add_contact_email.php:90 views/add_contact_email.php:101
+#: views/add_contact_email.php:113
 msgid "Select a Field"
 msgstr "필드를 선택"
 
-#: views/add_contact_email.php:107
+#: views/add_contact_email.php:126
 msgid "Enter Email "
 msgstr "이메일을 입력"
 
-#: views/add_contact_email.php:111
+#: views/add_contact_email.php:130
 msgid "Send To Field"
 msgstr " 에게 보내기 필드"
 
-#: views/add_contact_email.php:115
+#: views/add_contact_email.php:134
 msgid "Enter Field "
 msgstr "필드 을 입력"
 
-#: views/add_contact_email.php:117 views/add_contact_email.php:130
-#: views/add_contact_email.php:143 views/add_contact_email.php:154
-#: views/add_contact_email.php:165 views/add_contact_email.php:176
-#: views/add_contact_email.php:189
+#: views/add_contact_email.php:136 views/add_contact_email.php:149
+#: views/add_contact_email.php:162 views/add_contact_email.php:173
+#: views/add_contact_email.php:184 views/add_contact_email.php:195
+#: views/add_contact_email.php:208
 msgid "Select a field"
 msgstr "필드를 선택"
 
-#: views/add_contact_email.php:124
+#: views/add_contact_email.php:143
 msgid "From Name"
 msgstr "부터이름"
 
-#: views/add_contact_email.php:128
+#: views/add_contact_email.php:147
 msgid "Enter from name "
 msgstr "이름에서 을 입력"
 
-#: views/add_contact_email.php:137
+#: views/add_contact_email.php:156
 msgid "From Email"
 msgstr "부터이메일"
 
-#: views/add_contact_email.php:141
+#: views/add_contact_email.php:160
 msgid "Enter from email"
 msgstr " 입력합니다- 부터이메일"
 
-#: views/add_contact_email.php:150
+#: views/add_contact_email.php:169
 msgid "Reply To"
 msgstr "답장 에게"
 
-#: views/add_contact_email.php:161
+#: views/add_contact_email.php:180
 msgid "CC"
 msgstr "CC"
 
-#: views/add_contact_email.php:163
+#: views/add_contact_email.php:182
 msgid "Enter CC Email "
 msgstr "입력합니다- CC 이메일"
 
-#: views/add_contact_email.php:172
+#: views/add_contact_email.php:191
 msgid "BCC"
 msgstr "BCC"
 
-#: views/add_contact_email.php:174
+#: views/add_contact_email.php:193
 msgid "Enter Bcc Email"
 msgstr " 입력합니다BCC 이메일"
 
-#: views/add_contact_email.php:183
+#: views/add_contact_email.php:202
 msgid "Subject"
 msgstr "제목"
 
-#: views/add_contact_email.php:187
+#: views/add_contact_email.php:206
 msgid "Enter Subject"
 msgstr "입력합니다피사체"
 
-#: views/add_contact_email.php:196
+#: views/add_contact_email.php:215
 msgid "Message"
 msgstr "메시지"
 
-#: views/add_contact_email.php:206
+#: views/add_contact_email.php:225
 msgid "Insert a Field into Your Form Message"
 msgstr "삽입 필드, 에 당신의 , 형태  메시지"
 
-#: views/contact-bank-system-report.php:14
+#: views/contact-bank-system-report.php:33
 msgid "Get System Report"
 msgstr "시스템 보고서 얻으십시오"
 
-#: views/contact-bank-system-report.php:18
+#: views/contact-bank-system-report.php:37
 msgid "Close System Report"
 msgstr "닫기 시스템 보고서"
 
-#: views/contact-bank-system-report.php:100
+#: views/contact-bank-system-report.php:124
 msgid "Default"
 msgstr "디폴트 값"
 
-#: views/contact_bank_form_preview.php:276 views/dashboard.php:179
+#: views/contact_bank_form_preview.php:300 views/dashboard.php:130
 msgid "Form Preview"
 msgstr "양식 미리보기"
 
-#: views/contact_bank_form_preview.php:279
-#: views/contact_bank_layout_settings.php:11
-#: views/contact_email_settings.php:11 views/contact_frontend_data.php:11
-#: views/contact_view.php:242
+#: views/contact_bank_form_preview.php:303
+#: views/contact_bank_layout_settings.php:38
+#: views/contact_email_settings.php:39 views/contact_frontend_data.php:34
+#: views/contact_view.php:261 views/purchase_pro_version.php:42
 msgid "Back to Dashboard"
 msgstr "등을 맞댄-대시 보드"
 
-#: views/contact_bank_layout_settings.php:8
+#: views/contact_bank_layout_settings.php:35
 msgid " (Premium Features available in Paid Edition)"
 msgstr "(유료 버전에서 사용할 수있는 프리미엄 기능)"
 
-#: views/contact_bank_layout_settings.php:12
+#: views/contact_bank_layout_settings.php:39
 msgid "Restore Global Settings"
 msgstr "전역 설정 복원"
 
-#: views/contact_bank_layout_settings.php:18
+#: views/contact_bank_layout_settings.php:45
 msgid "Form Settings Saved. Kindly wait for the redirect."
 msgstr "폼 설정을 -저장된.친절하게 리디렉션을 기다립니다."
 
-#: views/contact_bank_layout_settings.php:24
-#: views/contact_bank_layout_settings.php:34
-#: views/contact_email_settings.php:15 views/contact_email_settings.php:31
-#: views/contact_frontend_data.php:23 views/contact_frontend_data.php:33
+#: views/contact_bank_layout_settings.php:51
+#: views/contact_bank_layout_settings.php:61
+#: views/contact_email_settings.php:43 views/contact_email_settings.php:59
+#: views/contact_frontend_data.php:46 views/contact_frontend_data.php:56
 msgid "Select Form"
 msgstr "를 선택-형태"
 
-#: views/contact_bank_layout_settings.php:61
+#: views/contact_bank_layout_settings.php:88
 msgid "Label Settings"
 msgstr "레이블 설정에"
 
-#: views/contact_bank_layout_settings.php:73
-#: views/contact_bank_layout_settings.php:260
-#: views/contact_bank_layout_settings.php:470
-#: views/contact_bank_layout_settings.php:663
-#: views/contact_bank_layout_settings.php:791
+#: views/contact_bank_layout_settings.php:100
+#: views/contact_bank_layout_settings.php:287
+#: views/contact_bank_layout_settings.php:497
+#: views/contact_bank_layout_settings.php:690
+#: views/contact_bank_layout_settings.php:818
 msgid "Font Family :"
 msgstr "글꼴 가족 :"
 
-#: views/contact_bank_layout_settings.php:98
+#: views/contact_bank_layout_settings.php:125
 msgid "Font Color :"
 msgstr "글꼴 색상 :"
 
-#: views/contact_bank_layout_settings.php:109
-#: views/contact_bank_layout_settings.php:296
+#: views/contact_bank_layout_settings.php:136
+#: views/contact_bank_layout_settings.php:323
 msgid "Font Style :"
 msgstr "글꼴 스타일 :"
 
-#: views/contact_bank_layout_settings.php:123
-#: views/contact_bank_layout_settings.php:310
-#: views/contact_bank_layout_settings.php:519
-#: views/contact_bank_layout_settings.php:688
-#: views/contact_bank_layout_settings.php:816
+#: views/contact_bank_layout_settings.php:150
+#: views/contact_bank_layout_settings.php:337
+#: views/contact_bank_layout_settings.php:546
+#: views/contact_bank_layout_settings.php:715
+#: views/contact_bank_layout_settings.php:843
 msgid "Font Size (px) :"
 msgstr "글꼴 크기 (픽셀) :"
 
-#: views/contact_bank_layout_settings.php:154
-#: views/contact_bank_layout_settings.php:411
-#: views/contact_bank_layout_settings.php:624
-#: views/contact_bank_layout_settings.php:752
-#: views/contact_bank_layout_settings.php:880
+#: views/contact_bank_layout_settings.php:181
+#: views/contact_bank_layout_settings.php:438
+#: views/contact_bank_layout_settings.php:651
+#: views/contact_bank_layout_settings.php:779
+#: views/contact_bank_layout_settings.php:907
 msgid "Text Align :"
 msgstr "텍스트- 맞 춥니 :"
 
-#: views/contact_bank_layout_settings.php:167
+#: views/contact_bank_layout_settings.php:194
 msgid "Label Position :"
 msgstr "레이블이 -포지션 :"
 
-#: views/contact_bank_layout_settings.php:181
+#: views/contact_bank_layout_settings.php:208
 msgid "Field Desc Font Size :"
 msgstr "필드 내림차순 글꼴 크기 :"
 
-#: views/contact_bank_layout_settings.php:212
+#: views/contact_bank_layout_settings.php:239
 msgid "Field Description Align :"
 msgstr "필드 설명 -맞 춥니 :"
 
-#: views/contact_bank_layout_settings.php:226
+#: views/contact_bank_layout_settings.php:253
 msgid "Hide Labels :"
 msgstr "레이블 숨기기"
 
-#: views/contact_bank_layout_settings.php:234
-#: views/contact_bank_layout_settings.php:424
-#: views/contact_bank_layout_settings.php:637
-#: views/contact_bank_layout_settings.php:765
-#: views/contact_bank_layout_settings.php:893
+#: views/contact_bank_layout_settings.php:261
+#: views/contact_bank_layout_settings.php:451
+#: views/contact_bank_layout_settings.php:664
+#: views/contact_bank_layout_settings.php:792
+#: views/contact_bank_layout_settings.php:920
 msgid "Text Direction :"
 msgstr "텍스트 방향 :"
 
-#: views/contact_bank_layout_settings.php:250
+#: views/contact_bank_layout_settings.php:277
 msgid "Input Field Settings"
 msgstr "입력 필드- 설정을"
 
-#: views/contact_bank_layout_settings.php:285
-#: views/contact_bank_layout_settings.php:582
-#: views/contact_bank_layout_settings.php:741
-#: views/contact_bank_layout_settings.php:869
+#: views/contact_bank_layout_settings.php:312
+#: views/contact_bank_layout_settings.php:609
+#: views/contact_bank_layout_settings.php:768
+#: views/contact_bank_layout_settings.php:896
 msgid "Text Color :"
 msgstr "글자 색 :"
 
-#: views/contact_bank_layout_settings.php:341
-#: views/contact_bank_layout_settings.php:614
+#: views/contact_bank_layout_settings.php:368
+#: views/contact_bank_layout_settings.php:641
 msgid "Border Radius (px) :"
 msgstr "국경 반경 (픽셀) :"
 
-#: views/contact_bank_layout_settings.php:351
-#: views/contact_bank_layout_settings.php:593
-#: views/contact_bank_layout_settings.php:730
-#: views/contact_bank_layout_settings.php:858
+#: views/contact_bank_layout_settings.php:378
+#: views/contact_bank_layout_settings.php:620
+#: views/contact_bank_layout_settings.php:757
+#: views/contact_bank_layout_settings.php:885
 msgid "Border Color :"
 msgstr "테두리 색상 :"
 
-#: views/contact_bank_layout_settings.php:362
-#: views/contact_bank_layout_settings.php:604
+#: views/contact_bank_layout_settings.php:389
+#: views/contact_bank_layout_settings.php:631
 msgid "Border Size (px) :"
 msgstr "테두리 크기 (픽셀) :"
 
-#: views/contact_bank_layout_settings.php:372
+#: views/contact_bank_layout_settings.php:399
 msgid "Border Style :"
 msgstr "테두리 스타일 :"
 
-#: views/contact_bank_layout_settings.php:387
-#: views/contact_bank_layout_settings.php:560
-#: views/contact_bank_layout_settings.php:719
-#: views/contact_bank_layout_settings.php:847
+#: views/contact_bank_layout_settings.php:414
+#: views/contact_bank_layout_settings.php:587
+#: views/contact_bank_layout_settings.php:746
+#: views/contact_bank_layout_settings.php:874
 msgid "Background Color :"
 msgstr "배경 색상 :"
 
-#: views/contact_bank_layout_settings.php:398
+#: views/contact_bank_layout_settings.php:425
 msgid "Radio Buttons :"
 msgstr "라디오 단추 :"
 
-#: views/contact_bank_layout_settings.php:403
+#: views/contact_bank_layout_settings.php:430
 msgid "Multiple Rows"
 msgstr "여러 행"
 
-#: views/contact_bank_layout_settings.php:405
+#: views/contact_bank_layout_settings.php:432
 msgid "Single Row"
 msgstr "단일 행"
 
-#: views/contact_bank_layout_settings.php:438
+#: views/contact_bank_layout_settings.php:465
 msgid "Input Size :"
 msgstr "의 입력 크기 :"
 
-#: views/contact_bank_layout_settings.php:460
+#: views/contact_bank_layout_settings.php:487
 msgid "Submit Button Settings"
 msgstr "제출 버튼을-설정을"
 
-#: views/contact_bank_layout_settings.php:495
+#: views/contact_bank_layout_settings.php:522
 msgid "Text:"
 msgstr "텍스트 :"
 
-#: views/contact_bank_layout_settings.php:505
+#: views/contact_bank_layout_settings.php:532
 msgid "Style :"
 msgstr "스타일 :"
 
-#: views/contact_bank_layout_settings.php:550
+#: views/contact_bank_layout_settings.php:577
 msgid "Button Width (px) :"
 msgstr "버튼폭 (픽셀) :"
 
-#: views/contact_bank_layout_settings.php:571
+#: views/contact_bank_layout_settings.php:598
 msgid "Hover Background Color:"
 msgstr "배경 색상 가져 가면 :"
 
-#: views/contact_bank_layout_settings.php:653
+#: views/contact_bank_layout_settings.php:680
 msgid "Success Message Settings"
 msgstr "성공 - 메시지 설정"
 
-#: views/contact_bank_layout_settings.php:781
+#: views/contact_bank_layout_settings.php:808
 msgid "Error Message Settings"
 msgstr "오류 에서 메시지 설정"
 
-#: views/contact_bank_pro_version.php:25
+#: views/contact_bank_pro_version.php:50
 msgid "Contact Bank Pricing"
 msgstr "연락처 은행 가격"
 
-#: views/contact_bank_pro_version.php:355 views/dashboard.php:208
+#: views/contact_bank_pro_version.php:381
 msgid "Need Support Help?"
 msgstr "지원 도움이 필요하십니까?"
 
-#: views/contact_bank_pro_version.php:367
+#: views/contact_bank_pro_version.php:393
 msgid "Lets get in touch!"
 msgstr "하자 얻을 원터치에!"
 
-#: views/contact_bank_pro_version.php:371 views/dashboard.php:224
+#: views/contact_bank_pro_version.php:397
 msgid "Order Now!"
 msgstr "지금 주문하세요!"
 
-#: views/contact_controls_files.php:8 views/contact_controls_files.php:24
-#: views/contact_controls_files.php:41 views/contact_controls_files.php:59
-#: views/contact_controls_files.php:75 views/contact_controls_files.php:92
+#: views/contact_controls_files.php:39 views/contact_controls_files.php:55
+#: views/contact_controls_files.php:72 views/contact_controls_files.php:90
+#: views/contact_controls_files.php:106 views/contact_controls_files.php:123
 msgid "Settings"
 msgstr "설정 값"
 
-#: views/contact_documentation.php:5
+#: views/contact_documentation.php:33
 msgid "Documentation - Contact Bank"
 msgstr "문서 - 연락처 은행"
 
-#: views/contact_email_settings.php:56
+#: views/contact_email_settings.php:84
 msgid "Add New"
 msgstr "추가하기뉴"
 
-#: views/contact_email_settings.php:137
+#: views/contact_email_settings.php:165
 msgid "Are you sure, you want to delete this Email Setting?"
 msgstr "당신은 당신이 전자 메일 설정을 삭제 하시겠습니까?"
 
-#: views/contact_email_settings.php:155 views/contact_frontend_data.php:115
+#: views/contact_email_settings.php:183 views/contact_frontend_data.php:138
 msgid "Please select the Form first."
 msgstr " 먼저양식을  선택하십시오."
 
-#: views/contact_frontend_data.php:12
+#: views/contact_frontend_data.php:35
 msgid "Export to Excel"
 msgstr "엑셀로 내보내기"
 
-#: views/contact_frontend_data.php:18 views/dashboard.php:114
-#: views/dashboard.php:121
+#: views/contact_frontend_data.php:41 views/dashboard.php:65
+#: views/dashboard.php:72
 msgid "Form"
 msgstr "형태"
 
-#: views/contact_view.php:239 views/dashboard.php:96
+#: views/contact_view.php:258 views/dashboard.php:47
 msgid "Add New Form"
 msgstr "추가 ~ 뉴 형태"
 
-#: views/contact_view.php:245 views/contact_view.php:509
+#: views/contact_view.php:264 views/contact_view.php:528
 msgid "Save Form"
 msgstr "양식 저장"
 
-#: views/contact_view.php:250
+#: views/contact_view.php:269
 msgid "Form Submitted. Kindly wait for the redirect."
 msgstr "양식 제출. 친절하게 리디렉션을 기다립니다."
 
-#: views/contact_view.php:259
+#: views/contact_view.php:278
 msgid "Form Settings"
 msgstr "폼 설정을"
 
-#: views/contact_view.php:263
+#: views/contact_view.php:282
 msgid "Form Name :"
 msgstr "형태-이름 :"
 
-#: views/contact_view.php:269
+#: views/contact_view.php:288
 msgid "Enter Form Name"
 msgstr "입력합니다형태-이름 :"
 
-#: views/contact_view.php:273
+#: views/contact_view.php:292
 msgid "Form Description :"
 msgstr "양식 설명 :"
 
-#: views/contact_view.php:275
+#: views/contact_view.php:294
 msgid "Enter Form Description"
 msgstr "입력하고양식-설명 :"
 
-#: views/contact_view.php:279
+#: views/contact_view.php:298
 msgid "Blank Field Message:"
 msgstr "비어 필드의 메시지 :"
 
-#: views/contact_view.php:285
+#: views/contact_view.php:304
 msgid "Required field must not be blank"
 msgstr "필수 항목은 반드시 입력해야합니다"
 
-#: views/contact_view.php:287
+#: views/contact_view.php:306
 msgid "Enter Blank Field Message"
 msgstr "빈 필드 메시지를 입력"
 
-#: views/contact_view.php:291
+#: views/contact_view.php:310
 msgid "Incorrect Email Message:"
 msgstr "잘못된 이메일 메시지 :"
 
-#: views/contact_view.php:297
+#: views/contact_view.php:316
 msgid "Please enter a valid email address"
 msgstr "유효한 이메일 주소를 입력하십시오"
 
-#: views/contact_view.php:299
+#: views/contact_view.php:318
 msgid "Enter Incorrect Email Message"
 msgstr "입력하십시오-올바르지이메일메시지"
 
-#: views/contact_view.php:303
+#: views/contact_view.php:322
 msgid "Success Message :"
 msgstr "성공 메시지 :"
 
-#: views/contact_view.php:307
+#: views/contact_view.php:326
 msgid "Enter Success Message"
 msgstr "성공 메세지 입력하십시오"
 
-#: views/contact_view.php:311
+#: views/contact_view.php:330
 msgid "Redirect :"
 msgstr "리디렉션 :"
 
-#: views/contact_view.php:323 views/contact_view.php:334
-#: views/contact_view.php:346
+#: views/contact_view.php:342 views/contact_view.php:353
+#: views/contact_view.php:365
 msgid "Page"
 msgstr "페이지"
 
-#: views/contact_view.php:326 views/contact_view.php:337
-#: views/contact_view.php:349
+#: views/contact_view.php:345 views/contact_view.php:356
+#: views/contact_view.php:368
 msgid "URL"
 msgstr "URL "
 
-#: views/contact_view.php:356
+#: views/contact_view.php:375
 msgid "Page :"
 msgstr "페이지:"
 
-#: views/contact_view.php:399
+#: views/contact_view.php:418
 msgid "URL :"
 msgstr "URL :"
 
-#: views/contact_view.php:406
+#: views/contact_view.php:425
 msgid "Enter Redirect URL"
 msgstr "입력하십시오-리디렉션 URL :"
 
-#: views/contact_view.php:413
+#: views/contact_view.php:432
 msgid "Form Layout Preview"
 msgstr "폼 레이아웃 미리보기"
 
-#: views/contact_view.php:424
+#: views/contact_view.php:443
 msgid "Standard Fields"
 msgstr "표준 필드"
 
-#: views/contact_view.php:427 views/contact_view.php:463
+#: views/contact_view.php:446 views/contact_view.php:482
 msgid "Click on a field to use into your form."
 msgstr "양식에 사용할 필드를 클릭합니다."
 
-#: views/contact_view.php:446
+#: views/contact_view.php:465
 msgid "Checkboxes"
 msgstr "체크 박스"
 
-#: views/contact_view.php:458
+#: views/contact_view.php:477
 msgid "Advanced Fields"
 msgstr "고급 필드"
 
-#: views/contact_view.php:469
+#: views/contact_view.php:488
 msgid "Website / URL"
 msgstr "웹 사이트 / URL"
 
-#: views/contact_view.php:474
+#: views/contact_view.php:493
 msgid "Phone"
 msgstr "전화"
 
-#: views/contact_view.php:477
+#: views/contact_view.php:496
 msgid "Address"
 msgstr "주소"
 
-#: views/contact_view.php:482
+#: views/contact_view.php:501
 msgid "Number"
 msgstr "수"
 
-#: views/contact_view.php:485
+#: views/contact_view.php:504
 msgid "File Upload"
 msgstr "파일업로드"
 
-#: views/contact_view.php:490
+#: views/contact_view.php:509
 msgid "Date"
 msgstr "날짜"
 
-#: views/contact_view.php:493
+#: views/contact_view.php:512
 msgid "Time"
 msgstr "시간"
 
-#: views/contact_view.php:498
+#: views/contact_view.php:517
 msgid "Password"
 msgstr "암호"
 
-#: views/dashboard.php:54
-msgid "Getting Started"
-msgstr "시작하기"
+#: views/dashboard.php:35
+msgid "Contact Bank Short-Codes"
+msgstr "Contact Bank 짧은 코드"
 
-#: views/dashboard.php:58
-msgid "Watch the Walk-Through Video"
-msgstr "워크를 통해 동영상보기"
-
-#: views/dashboard.php:67
-msgid "Contact Bank, a Superlative High quality WordPress Plugin!"
-msgstr "연락처 은행, 최상급 고품질 워드 프레스 플러그인!"
-
-#: views/dashboard.php:74
-msgid "Get Contact Bank Pro Features"
-msgstr "접촉 은행 직업적인 기능을 얻을"
-
-#: views/dashboard.php:102
+#: views/dashboard.php:53
 msgid "Delete All Forms"
 msgstr "삭제할-모든양식"
 
-#: views/dashboard.php:105
+#: views/dashboard.php:56
 msgid "Restore Factory Settings"
 msgstr "공장 설정 복원"
 
-#: views/dashboard.php:122
+#: views/dashboard.php:73
 msgid "Shortcode"
 msgstr "단축 코드"
 
-#: views/dashboard.php:123
+#: views/dashboard.php:74
 msgid "Total Controls"
 msgstr "합계 컨트롤"
 
-#: views/dashboard.php:159
+#: views/dashboard.php:110
 msgid "Edit Form"
 msgstr "을 편집합니다-양식"
 
-#: views/dashboard.php:185
+#: views/dashboard.php:135
 msgid "Delete Form"
 msgstr "양식 삭제를"
 
-#: views/dashboard.php:220
-msgid "Let's get in touch!"
-msgstr "하자 얻을 원터치에!"
-
-#: views/dashboard.php:319
+#: views/dashboard.php:190
 msgid "Are you sure, you want to delete this Form?"
 msgstr "당신이 확신,이 양식을 삭제하려면?"
 
-#: views/dashboard.php:329
+#: views/dashboard.php:200
 msgid "Are you sure, you want to delete all Forms?"
 msgstr "당신은 확실하다, 당신은 모든 형태를 삭제하려면?"
 
-#: views/shortcode.php:8
+#: views/header.php:21
+msgid "Get Started"
+msgstr "가져 오기 시작"
+
+#: views/header.php:24
+msgid "Watch Contact Video!"
+msgstr "Contact 동영상보기!"
+
+#: views/header.php:28
+msgid "read documentation here"
+msgstr "여기 설명서를 참조하세요"
+
+#: views/header.php:33
+msgid "Go Premium"
+msgstr "이동 프리미엄"
+
+#: views/header.php:37
+msgid "Features"
+msgstr "특징"
+
+#: views/header.php:42
+msgid "Online Demos"
+msgstr "온라인 데모"
+
+#: views/header.php:47
+msgid "Premium Pricing Plan ?"
+msgstr "프리미엄 가격 계획?"
+
+#: views/header.php:54
+msgid "Knowledge Base"
+msgstr "기술 자료의"
+
+#: views/header.php:59
+msgid "Support Forum"
+msgstr "지원 포럼"
+
+#: views/header.php:64
+msgid "FAQ's"
+msgstr "자주 묻는 질문"
+
+#: views/header.php:69
+msgid "Detailed Features"
+msgstr "자세한 특징"
+
+#: views/header.php:75
+msgid "More Actions"
+msgstr "작업 더보기"
+
+#: views/header.php:79
+msgid "Plugin Customization"
+msgstr "플러그인사용자 화"
+
+#: views/purchase_pro_version.php:47
+msgid "WP Contact Bank is an one time Investment. Its Worth it!"
+msgstr "WP Contact Bank 한 번 투자입니다. 그것은 그것의 가치!"
+
+#: views/shortcode.php:29
 msgid ""
 "How to setup Short-Codes for Contact Bank into your WordPress Page/Post?"
 msgstr ""
 "설치 방법 짧은  코드  용 Contact bank, 로 당신의 워드 프레스 페이지 / 포스트"
 "에?"
 
+#~ msgid "%s rating"
+#~ msgstr "%s 등급"
+
+#~ msgid "More Details"
+#~ msgstr "상세 정보"
+
+#~ msgid "Install Now"
+#~ msgstr "지금 설치"
+
+#, fuzzy
+#~ msgid "Update Now"
+#~ msgstr "업데이트"
+
+#, fuzzy
+#~ msgid "Last Updated:"
+#~ msgstr "업데이트"
+
+#~ msgid "Purchase PRO Edition"
+#~ msgstr "PRO 버전구매"
+
+#~ msgid "Watch the Walk-Through Video"
+#~ msgstr "워크를 통해 동영상보기"
+
+#~ msgid "Contact Bank, a Superlative High quality WordPress Plugin!"
+#~ msgstr "연락처 은행, 최상급 고품질 워드 프레스 플러그인!"
+
+#~ msgid "Let's get in touch!"
+#~ msgstr "하자 얻을 원터치에!"
+
 #~ msgid "Purchase PRO Edition - Contact Bank"
 #~ msgstr " 구매PRO버전  - Contact Bank"
 
 #~ msgid "Dashboard - Contact Bank"
 #~ msgstr "대시 보드 - 연락처 은행"
-
-#~ msgid "Documentation"
-#~ msgstr "설명서를"
 
 #~ msgid "Roles & Capabilites"
 #~ msgstr "역할 및 기능"
@@ -989,6 +1094,3 @@ msgstr ""
 
 #~ msgid "Success! Settings have been updated."
 #~ msgstr "성공! 설정이 업데이트되었습니다."
-
-#~ msgid "Update"
-#~ msgstr "업데이트"
