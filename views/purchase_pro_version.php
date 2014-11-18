@@ -410,7 +410,7 @@ else
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><a
 																href="http://tech-banker.com/shop/wp-contact-bank/contact-bank-eco-edition/"
-																class="sign_up sign_up_orange radius3">Order Now!</a></span></span></li>
+																target="_blank" class="sign_up sign_up_orange radius3">Order Now!</a></span></span></li>
 												</ul>
 											</div>
 											<div class="column_3 column_3_responsive" style="width: 16%;">
@@ -530,7 +530,7 @@ else
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><a
 																href="http://tech-banker.com/shop/wp-contact-bank/contact-bank-pro-edition/"
-																class="sign_up sign_up_orange radius3">Order Now!</a></span></span></li>
+																target="_blank" class="sign_up sign_up_orange radius3">Order Now!</a></span></span></li>
 												</ul>
 											</div>
 											<div class="column_4 column_4_responsive" style="width: 16%;">
@@ -650,7 +650,7 @@ else
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><a
 																href="http://tech-banker.com/shop/wp-contact-bank/contact-bank-developer-edition/"
-																class="sign_up sign_up_orange radius3">Order Now!</a></span></span></li>
+																target="_blank" class="sign_up sign_up_orange radius3">Order Now!</a></span></span></li>
 												</ul>
 											</div>
 											<div class="column_1 column_5_responsive" style="width: 16%;">
@@ -770,7 +770,7 @@ else
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><a
 																href="http://tech-banker.com/shop/wp-contact-bank/contact-bank-extended-edition/"
-																class="sign_up sign_up_orange radius3">Order Now!</a></span></span></li>
+																target="_blank" class="sign_up sign_up_orange radius3">Order Now!</a></span></span></li>
 												</ul>
 											</div>
 										</div>
