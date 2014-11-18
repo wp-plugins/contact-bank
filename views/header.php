@@ -75,7 +75,7 @@ jQuery(document).ready(function()
 				<h4 class="welcome-screen-margin"><?php _e("More Actions", contact_bank); ?></h4>
 				<ul>
 					<li>
-						<a href="http://tech-banker.com/shop/uncategorized/order-customization-wp-contact-bank/" target="_blank" class="welcome-icon">
+						<a href="http://tech-banker.com/shop/plugin-customization/order-customization-wp-contact-bank/" target="_blank" class="welcome-icon">
 							<?php _e("Plugin Customization", contact_bank); ?>
 						</a>
 					</li>
