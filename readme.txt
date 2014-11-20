@@ -17,7 +17,7 @@ Contact Bank is an ultimate form builder wordpress plugin that lets you create c
 
 **Contact Bank** has become the **Best Plugin** in the world for WordPress sites to display forms. It has been designed to provide easiness and simplicity to the end user. It is a very simple but fully loaded with 200+ features(**Premium Version**) Plugin.
 
-http://youtu.be/yDYlsMhA3G0
+https://www.youtube.com/watch?v=yDYlsMhA3G0
 
 > #### **Live Demos & Documentation**
 
