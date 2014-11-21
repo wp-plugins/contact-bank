@@ -392,11 +392,10 @@ function backend_plugin_css_styles_contact_bank()
     wp_enqueue_style("stylesheet", plugins_url("/assets/css/stylesheet.css",__FILE__));
     wp_enqueue_style("font-awesome", plugins_url("/assets/css/font-awesome/css/font-awesome.css",__FILE__));
     wp_enqueue_style("system-message", plugins_url("/assets/css/system-message.css",__FILE__));
-	wp_enqueue_style("css3_grid_style", plugins_url("/assets/css/css3_grid_style.css",__FILE__));
-	wp_enqueue_style("prettyPhoto", plugins_url("/assets/css/prettyPhoto.css",__FILE__));
-	wp_enqueue_style("premium-edition.css", plugins_url("/assets/css/premium-edition.css",__FILE__));
-	wp_enqueue_style("responsive.css", plugins_url("/assets/css/responsive.css",__FILE__));
-	wp_enqueue_style("google-fonts-roboto", "//fonts.googleapis.com/css?family=Roboto Condensed:300|Roboto Condensed:300|Roboto Condensed:300|Roboto Condensed:regular|Roboto Condensed:300");
+    wp_enqueue_style("prettyPhoto", plugins_url("/assets/css/prettyPhoto.css",__FILE__));
+    wp_enqueue_style("premium-edition.css", plugins_url("/assets/css/premium-edition.css",__FILE__));
+    wp_enqueue_style("responsive.css", plugins_url("/assets/css/responsive.css",__FILE__));
+   wp_enqueue_style("google-fonts-roboto", "//fonts.googleapis.com/css?family=Roboto Condensed:300|Roboto Condensed:300|Roboto Condensed:300|Roboto Condensed:regular|Roboto Condensed:300");
 }
 function frontend_plugin_css_styles_contact_bank()
 {
