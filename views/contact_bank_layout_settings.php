@@ -11,12 +11,6 @@ switch($cb_role)
 	case "author":
 		$cb_user_role_permission = "publish_posts";
 		break;
-	case "contributor":
-		$cb_user_role_permission = "edit_posts";
-		break;
-	case "subscriber":
-		$cb_user_role_permission = "read";
-		break;
 }
 if (!current_user_can($cb_user_role_permission))
 {

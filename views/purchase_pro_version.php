@@ -10,12 +10,6 @@ switch($cb_role)
 	case "author":
 		$user_role_permission = "publish_posts";
 		break;
-	case "contributor":
-		$user_role_permission = "edit_posts";
-		break;
-	case "subscriber":
-		$user_role_permission = "read";
-		break;
 }
 if (!current_user_can($user_role_permission))
 {
@@ -173,6 +167,13 @@ else
 																	class="css3_grid_tooltip"><span>Allows you to set
 																			different tooltips for your fields of Contact Form</span>Tooltips</span></span></span></span></li>
 													<li
+														class="css3_grid_row_15 row_style_4 css3_grid_row_15_responsive"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Multisite Compatibility</span><span
+																	class="css3_grid_tooltip"><span>Allows you to set
+																			different tooltips for your fields of Contact Form</span>Multisite Compatibility</span></span></span></span></li>
+													<li
 														class="css3_grid_row_16 footer_row css3_grid_row_16_responsive"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"></span></span></li>
@@ -284,6 +285,13 @@ else
 															class="css3_grid_vertical_align"><span><span
 																	class="css3_hidden_caption">Tooltips</span><img
 																	src="<?php echo plugins_url("/assets/img/cross_04.png" , dirname(__FILE__)); ?>"
+																	alt="no"></span></span></span></li>
+													<li
+														class="css3_grid_row_15 row_style_3 css3_grid_row_15_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Multisite Compatibility</span><img
+																	src="<?php echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
 																	alt="no"></span></span></span></li>
 													<li
 														class="css3_grid_row_16 footer_row css3_grid_row_16_responsive"><span
@@ -403,6 +411,13 @@ else
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
 																	class="css3_hidden_caption">Tooltips</span><img
+																	src="<?php echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	alt="yes"></span></span></span></li>
+													<li
+														class="css3_grid_row_15 row_style_4 css3_grid_row_15_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Multisite Compatibility</span><img
 																	src="<?php echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
 																	alt="yes"></span></span></span></li>
 													<li
@@ -526,6 +541,13 @@ else
 																	src="<?php echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
 																	alt="yes"></span></span></span></li>
 													<li
+														class="css3_grid_row_15 row_style_3 css3_grid_row_15_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Multisite Compatibility</span><img
+																	src="<?php echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	alt="yes"></span></span></span></li>
+													<li
 														class="css3_grid_row_16 footer_row css3_grid_row_16_responsive"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><a
@@ -646,6 +668,13 @@ else
 																	src="<?php echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
 																	alt="yes"></span></span></span></li>
 													<li
+														class="css3_grid_row_15 row_style_4 css3_grid_row_15_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Multisite Compatibility</span><img
+																	src="<?php echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	alt="yes"></span></span></span></li>
+													<li
 														class="css3_grid_row_16 footer_row css3_grid_row_16_responsive"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><a
@@ -763,6 +792,13 @@ else
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
 																	class="css3_hidden_caption">Tooltips</span><img
+																	src="<?php echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	alt="yes"></span></span></span></li>
+													<li
+														class="css3_grid_row_15 row_style_3 css3_grid_row_15_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Multisite Compatibility</span><img
 																	src="<?php echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
 																	alt="yes"></span></span></span></li>
 													<li

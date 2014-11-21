@@ -2,8 +2,8 @@
 Contributors: contact-banker, Gallery-Bank
 Tags: admin, advanced form, AJAX, best contact form plugin, buddypress, category, comment, comments, contact, contact form, contact form builder, contact form plugin, contact forms, contact me, contact us, contacts, content, easy contact form, easy contact plugin, email, Facebook, feed, feedback, feedback form, form, form builder, forms, gallery, google, image, images, javascript, jquery, link, links, login, media, page, pages, plugin, Post, posts, request, shortcode, sidebar, stats, text, web form, widget, wordpress
 Requires at least: 3.3
-Tested up to: 4.0
-Stable tag: 2.0.78
+Tested up to: 4.0.1
+Stable tag: 2.0.79
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -531,6 +531,14 @@ In order to set Shortcode for a Form, you need to follow these steps :
 
 
 == Changelog ==
+
+= 2.0.79 =
+
+* Added Compatibility with Multisite WordPress
+* Added Compatible with WordPress 4.0.1
+* Updated Pricing Table
+* Optimized Code
+* Fixed other Bugs and Errors
 
 = 2.0.78 =
 

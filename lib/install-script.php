@@ -1,4 +1,167 @@
 <?php
+if(!function_exists("create_table_contact_bank_forms"))
+{
+	function create_table_contact_bank_forms()
+	{
+		$sql = 'CREATE TABLE ' . contact_bank_contact_form() . '(
+		form_id INTEGER(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+		form_name VARCHAR(200) NOT NULL,
+		PRIMARY KEY (form_id)
+		) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE utf8_general_ci';
+		dbDelta($sql);
+
+	}
+}
+if(!function_exists("create_table_contact_bank_dynamic_settings"))
+{
+	function create_table_contact_bank_dynamic_settings()
+	{
+		$sql = 'CREATE TABLE ' . contact_bank_dynamic_settings_form() . '(
+		dynamic_settings_id INTEGER(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+		dynamicId INTEGER(10) NOT NULL,
+		dynamic_settings_key VARCHAR(100) NOT NULL,
+		dynamic_settings_value TEXT NOT NULL,
+		PRIMARY KEY (dynamic_settings_id)
+		) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE utf8_general_ci';
+		dbDelta($sql);
+	}
+}
+if(!function_exists("create_table_contact_bank_controls"))
+{
+	function create_table_contact_bank_controls()
+	{
+		$sql = 'CREATE TABLE '.create_control_Table(). '(
+		control_id INTEGER(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+		field_id INTEGER(50) NOT NULL,
+		form_id INTEGER(10) NOT NULL,
+		column_dynamicId INTEGER(10) NOT NULL,
+		sorting_order INTEGER(10) NOT NULL,
+		PRIMARY KEY(control_id)
+		)ENGINE = MyISAM DEFAULT CHARSET=utf8 COLLATE utf8_general_ci';
+		dbDelta($sql);
+	}
+}
+
+if(!function_exists("create_table_front_end_data"))
+{
+	function create_table_front_end_data()
+	{
+		$sql = 'CREATE TABLE ' . frontend_controls_data_Table() . '(
+		id INTEGER(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+		form_id INTEGER(10) NOT NULL,
+		field_Id INTEGER(10) NOT NULL,
+		dynamic_control_id INTEGER(10) NOT NULL,
+		dynamic_frontend_value TEXT NOT NULL,
+		form_submit_id INTEGER(10) NOT NULL,
+		PRIMARY KEY (id)
+		) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE utf8_general_ci';
+		dbDelta($sql);
+	}
+}
+if(!function_exists("create_table_contact_bank_email_templates"))
+{
+	function create_table_contact_bank_email_templates()
+	{
+		$sql = 'CREATE TABLE ' . contact_bank_email_template_admin() . '(
+		email_id INTEGER(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+		email_to VARCHAR(100) NOT NULL,
+		email_from VARCHAR(100) NOT NULL,
+		body_content TEXT NOT NULL,
+		subject VARCHAR(400) NOT NULL,
+		send_to  INTEGER(1) NOT NULL,
+		form_id INTEGER(10) NOT NULL,
+		from_name  VARCHAR(200) NOT NULL,
+		reply_to  VARCHAR(200) NOT NULL,
+		cc  VARCHAR(200) NOT NULL,
+		bcc  VARCHAR(200) NOT NULL,
+		name VARCHAR(100) NOT NULL,
+		PRIMARY KEY (email_id)
+		) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE utf8_general_ci';
+		dbDelta($sql);
+	}
+}
+if(!function_exists("create_table_contact_bank_front_end_forms"))
+{
+	function create_table_contact_bank_front_end_forms()
+	{
+		$sql = 'CREATE TABLE ' . contact_bank_frontend_forms_Table() . '(
+		id INTEGER(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+		form_id INTEGER(10) NOT NULL,
+		submit_id INTEGER(10) NOT NULL,
+		PRIMARY KEY (id)
+		) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE utf8_general_ci';
+		dbDelta($sql);
+	}
+}
+if(!function_exists("create_contact_bank_layout_settings"))
+{
+	function create_contact_bank_layout_settings()
+	{
+		$sql = 'CREATE TABLE ' . contact_bank_layout_settings_Table() . '(
+		id INTEGER(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+		form_id INTEGER(10) NOT NULL,
+		form_settings_key VARCHAR(200) NOT NULL,
+		form_settings_value VARCHAR(200) NOT NULL,
+		PRIMARY KEY (id)
+		) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE utf8_general_ci';
+		dbDelta($sql);
+	}
+}
+if(!function_exists("create_contact_bank_form_settings"))
+{
+	function create_contact_bank_form_settings()
+	{
+		$sql = 'CREATE TABLE ' . contact_bank_form_settings_Table() . '(
+		id INTEGER(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+		form_id INTEGER(10) NOT NULL,
+		form_message_key VARCHAR(200) NOT NULL,
+		form_message_value TEXT NOT NULL,
+		PRIMARY KEY (id)
+		) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE utf8_general_ci';
+		dbDelta($sql);
+	}
+}
+if(!function_exists("create_cb_table_licensing"))
+{
+	function create_cb_table_licensing()
+	{
+		global $wpdb;
+		$sql = "CREATE TABLE " . contact_bank_licensing() . "(
+	        licensing_id INTEGER(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+	        version VARCHAR(10) NOT NULL,
+	        type VARCHAR(100) NOT NULL,
+	        url TEXT NOT NULL,
+	        api_key TEXT NOT NULL,
+	        order_id VARCHAR(100) NOT NULL,
+	        PRIMARY KEY (licensing_id)
+	        ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE utf8_general_ci";
+		dbDelta($sql);
+
+		$wpdb->query
+		(
+				$wpdb->prepare
+				(
+						"INSERT INTO " . contact_bank_licensing() . "(version, type, url) VALUES(%s, %s, %s)",
+						"2.1.0",
+						"Contact Bank",
+						"" . site_url() . ""
+				)
+		);
+	}
+}
+if(!function_exists("create_table_roles_capability"))
+{
+	function create_table_roles_capability()
+	{
+		$sql = 'CREATE TABLE ' . contact_bank_roles_capability() . '(
+		id INTEGER(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+		roles_capability_key VARCHAR(200) NOT NULL,
+		roles_capability_value VARCHAR(200) NOT NULL,
+		PRIMARY KEY (id)
+		) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE utf8_general_ci';
+		dbDelta($sql);
+	}
+}
 global $wpdb;
 require_once(ABSPATH . "wp-admin/includes/upgrade.php");
 update_option("contact-bank-updation-check-url","http://tech-banker.com/wp-admin/admin-ajax.php");
@@ -592,138 +755,5 @@ else if($version == "2.1")
         );
     }
 	 update_option("contact-bank-version-number","2.1");
-}
-function create_table_contact_bank_forms()
-{
-    $sql = 'CREATE TABLE ' . contact_bank_contact_form() . '(
-	form_id INTEGER(10) UNSIGNED NOT NULL AUTO_INCREMENT,
-	form_name VARCHAR(200) NOT NULL,
-	PRIMARY KEY (form_id)
-	) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE utf8_general_ci';
-    dbDelta($sql);
-
-}
-function create_table_contact_bank_dynamic_settings()
-{
-    $sql = 'CREATE TABLE ' . contact_bank_dynamic_settings_form() . '(
-	dynamic_settings_id INTEGER(10) UNSIGNED NOT NULL AUTO_INCREMENT,
-	dynamicId INTEGER(10) NOT NULL,
-	dynamic_settings_key VARCHAR(100) NOT NULL,
-	dynamic_settings_value TEXT NOT NULL,
-	PRIMARY KEY (dynamic_settings_id)
-	) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE utf8_general_ci';
-    dbDelta($sql);
-}
-function create_table_contact_bank_controls()
-{
-    $sql = 'CREATE TABLE '.create_control_Table(). '(
-	control_id INTEGER(10) UNSIGNED NOT NULL AUTO_INCREMENT,
-	field_id INTEGER(50) NOT NULL,
-	form_id INTEGER(10) NOT NULL,
-	column_dynamicId INTEGER(10) NOT NULL,
-	sorting_order INTEGER(10) NOT NULL,
-	PRIMARY KEY(control_id)
-	)ENGINE = MyISAM DEFAULT CHARSET=utf8 COLLATE utf8_general_ci';
-    dbDelta($sql);
-}
-
-function create_table_front_end_data()
-{
-    $sql = 'CREATE TABLE ' . frontend_controls_data_Table() . '(
-	id INTEGER(10) UNSIGNED NOT NULL AUTO_INCREMENT,
-	form_id INTEGER(10) NOT NULL,
-	field_Id INTEGER(10) NOT NULL,
-	dynamic_control_id INTEGER(10) NOT NULL,
-	dynamic_frontend_value TEXT NOT NULL,
-	form_submit_id INTEGER(10) NOT NULL,
-	PRIMARY KEY (id)
-	) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE utf8_general_ci';
-    dbDelta($sql);
-}
-function create_table_contact_bank_email_templates()
-{
-    $sql = 'CREATE TABLE ' . contact_bank_email_template_admin() . '(
-	email_id INTEGER(10) UNSIGNED NOT NULL AUTO_INCREMENT,
-	email_to VARCHAR(100) NOT NULL,
-	email_from VARCHAR(100) NOT NULL,
-	body_content TEXT NOT NULL,
-	subject VARCHAR(400) NOT NULL,
-	send_to  INTEGER(1) NOT NULL,
-	form_id INTEGER(10) NOT NULL,
-	from_name  VARCHAR(200) NOT NULL,
-	reply_to  VARCHAR(200) NOT NULL,
-	cc  VARCHAR(200) NOT NULL,
-	bcc  VARCHAR(200) NOT NULL,
-	name VARCHAR(100) NOT NULL,
-	PRIMARY KEY (email_id)
-	) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE utf8_general_ci';
-    dbDelta($sql);
-}
-function create_table_contact_bank_front_end_forms()
-{
-    $sql = 'CREATE TABLE ' . contact_bank_frontend_forms_Table() . '(
-	id INTEGER(10) UNSIGNED NOT NULL AUTO_INCREMENT,
-	form_id INTEGER(10) NOT NULL,
-	submit_id INTEGER(10) NOT NULL,
-	PRIMARY KEY (id)
-	) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE utf8_general_ci';
-    dbDelta($sql);
-}
-function create_contact_bank_layout_settings()
-{
-    $sql = 'CREATE TABLE ' . contact_bank_layout_settings_Table() . '(
-	id INTEGER(10) UNSIGNED NOT NULL AUTO_INCREMENT,
-	form_id INTEGER(10) NOT NULL,
-	form_settings_key VARCHAR(200) NOT NULL,
-	form_settings_value VARCHAR(200) NOT NULL,
-	PRIMARY KEY (id)
-	) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE utf8_general_ci';
-    dbDelta($sql);
-}
-function create_contact_bank_form_settings()
-{
-    $sql = 'CREATE TABLE ' . contact_bank_form_settings_Table() . '(
-	id INTEGER(10) UNSIGNED NOT NULL AUTO_INCREMENT,
-	form_id INTEGER(10) NOT NULL,
-	form_message_key VARCHAR(200) NOT NULL,
-	form_message_value TEXT NOT NULL,
-	PRIMARY KEY (id)
-	) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE utf8_general_ci';
-    dbDelta($sql);
-}
-function create_cb_table_licensing()
-{
-    global $wpdb;
-    $sql = "CREATE TABLE " . contact_bank_licensing() . "(
-        licensing_id INTEGER(10) UNSIGNED NOT NULL AUTO_INCREMENT,
-        version VARCHAR(10) NOT NULL,
-        type VARCHAR(100) NOT NULL,
-        url TEXT NOT NULL,
-        api_key TEXT NOT NULL,
-        order_id VARCHAR(100) NOT NULL,
-        PRIMARY KEY (licensing_id)
-        ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE utf8_general_ci";
-    dbDelta($sql);
-
-    $wpdb->query
-    (
-        $wpdb->prepare
-            (
-                "INSERT INTO " . contact_bank_licensing() . "(version, type, url) VALUES(%s, %s, %s)",
-                "2.1.0",
-                "Contact Bank",
-                "" . site_url() . ""
-            )
-    );
-}
-function create_table_roles_capability()
-{
-    $sql = 'CREATE TABLE ' . contact_bank_roles_capability() . '(
-	id INTEGER(10) UNSIGNED NOT NULL AUTO_INCREMENT,
-	roles_capability_key VARCHAR(200) NOT NULL,
-	roles_capability_value VARCHAR(200) NOT NULL,
-	PRIMARY KEY (id)
-	) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE utf8_general_ci';
-    dbDelta($sql);
 }
 ?>

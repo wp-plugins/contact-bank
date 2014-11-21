@@ -96,9 +96,18 @@ jQuery(document).ready(function()
 </div>
 <?php
 global $wpdb,$current_user;
-$role = $wpdb->prefix . "capabilities";
-$current_user->role = array_keys($current_user->$role);
-$role = $current_user->role[0];
+if (is_super_admin())
+{
+	$role = "administrator";
+}
+else
+{
+	$role = $wpdb->prefix . "capabilities";
+	$current_user->role = array_keys($current_user->$role);
+	$role = $current_user->role[0];
+}
+
+
 switch ($role) {
 	case "administrator":
 		?>
