@@ -3836,3 +3836,16 @@ li.active a, li.active a:hover
 {
 	line-height: 2em !important;
 }
+
+.framework_plugin_message
+{
+ font-weight: 400;
+ background: #d54d21;
+ padding: 1em;
+ margin: 10px 0;
+}
+.framework_plugin_message > p
+{
+ color: #fff;
+ margin: 0px !important;
+}

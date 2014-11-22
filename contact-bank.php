@@ -4,7 +4,7 @@ Plugin Name: Contact Bank Lite Edition
 Plugin URI: http://tech-banker.com
 Description: Build Complex, Powerful Contact Forms in Just Seconds. No Programming Knowledge Required! Yeah, It's Really That Easy.
 Author: Tech Banker
-Version: 2.0.79
+Version: 2.0.80
 Author URI: http://tech-banker.com
  */
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -12,6 +12,7 @@ Author URI: http://tech-banker.com
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 if (!defined("CONTACT_BK_PLUGIN_DIR")) define("CONTACT_BK_PLUGIN_DIR",  plugin_dir_path( __FILE__ ));
 if (!defined("CONTACT_BK_PLUGIN_DIRNAME")) define("CONTACT_BK_PLUGIN_DIRNAME", plugin_basename(dirname(__FILE__)));
+if (!defined("CONTACT_BK")) define("CONTACT_BK","contact-bank/contact-bank.php");
 if (!defined("contact_bank")) define("contact_bank", "contact_bank");
 if (!defined("tech_bank")) define("tech_bank", "tech-banker");
 if (!defined("CONTACT_BK_PLUGIN_BASENAME")) define("CONTACT_BK_PLUGIN_BASENAME", plugin_basename(__FILE__));
@@ -896,6 +897,30 @@ function contact_bank_plugin_row($links,$file)
 	}
 	return (array)$links;
 }
+//--------------------------------------------------------------------------------------------------------------//
+// CODE FOR PLUGIN UPDATE MESSAGE
+//--------------------------------------------------------------------------------------------------------------//
+function contact_bank_plugin_update_message($args)
+{
+	$response = wp_remote_get( 'http://plugins.svn.wordpress.org/contact-bank/trunk/readme.txt' );
+	if ( ! is_wp_error( $response ) && ! empty( $response['body'] ) )
+	{
+		// Output Upgrade Notice
+		$matches        = null;
+		$regexp         = '~==\s*Changelog\s*==\s*=\s*[0-9.]+\s*=(.*)(=\s*' . preg_quote($args['Version']) . '\s*=|$)~Uis';
+		$upgrade_notice = '';
+		if ( preg_match( $regexp, $response['body'], $matches ) ) {
+			$changelog = (array) preg_split('~[\r\n]+~', trim($matches[1]));
+			$upgrade_notice .= '<div class="framework_plugin_message">';
+			foreach ( $changelog as $index => $line ) {
+				$upgrade_notice .= "<p>".$line."</p>";
+			}
+			$upgrade_notice .= '</div> ';
+			echo $upgrade_notice;
+		}
+	}
+}
+
 add_filter("plugin_row_meta","contact_bank_plugin_row", 10, 2 );
 /*************************************************************************************/
 add_action("admin_bar_menu", "add_contact_bank_icon",100);
@@ -917,5 +942,7 @@ add_shortcode("contact_bank", "contact_bank_short_code");
 register_uninstall_hook(__FILE__,"plugin_uninstall_script_for_contact_bank");
 
 add_action( "network_admin_menu", "create_global_menus_for_contact_bank" );
+// in_plugin_update_message Hook called for function to check updates
+add_action("in_plugin_update_message-".CONTACT_BK,"contact_bank_plugin_update_message" );
 
 ?>
