@@ -98,17 +98,16 @@ jQuery(document).ready(function()
 global $wpdb,$current_user;
 if (is_super_admin())
 {
-	$role = "administrator";
+	$cb_role = "administrator";
 }
 else
 {
-	$role = $wpdb->prefix . "capabilities";
-	$current_user->role = array_keys($current_user->$role);
-	$role = $current_user->role[0];
+	$cb_role = $wpdb->prefix . "capabilities";
+	$current_user->role = array_keys($current_user->$cb_role);
+	$cb_role = $current_user->role[0];
 }
 
-
-switch ($role) {
+switch ($cb_role) {
 	case "administrator":
 		?>
 		<h2 class="nav-tab-wrapper">
