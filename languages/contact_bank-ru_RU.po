@@ -1,0 +1,1133 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Contact Bank\n"
+"POT-Creation-Date: 2014-11-18 05:23-0800\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.6\n"
+"X-Poedit-KeywordsList: _;gettext;__;_e\n"
+"X-Poedit-Basepath: C:\\xampp\\apps\\wordpress\\htdocs\\wp-content\\plugins"
+"\\contact-bank\\\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: contact-bank.php:55 contact-bank.php:70 contact-bank.php:85
+msgid "Contact Bank"
+msgstr "Contact Bank"
+
+#: contact-bank.php:56 contact-bank.php:71 contact-bank.php:86
+#: contact-bank.php:456 contact-bank.php:521 contact-bank.php:587
+msgid "Dashboard"
+msgstr "Панель управления"
+
+#: contact-bank.php:58 contact-bank.php:73 contact-bank.php:88
+#: contact-bank.php:462 contact-bank.php:527 contact-bank.php:593
+msgid "Short-Codes"
+msgstr "Короткие-коды"
+
+#: contact-bank.php:59 contact-bank.php:74 contact-bank.php:89
+#: contact-bank.php:468 contact-bank.php:533 contact-bank.php:599
+#: views/contact_frontend_data.php:31 views/dashboard.php:125
+msgid "Form Entries"
+msgstr "Список форм"
+
+#: contact-bank.php:60 contact-bank.php:75 contact-bank.php:90
+#: contact-bank.php:474 contact-bank.php:539 contact-bank.php:605
+#: views/contact_email_settings.php:36 views/dashboard.php:120
+msgid "Email Settings"
+msgstr "Настройки уведомлений"
+
+#: contact-bank.php:61 contact-bank.php:76 contact-bank.php:91
+#: contact-bank.php:480 contact-bank.php:545 contact-bank.php:611
+#: views/contact_bank_layout_settings.php:35 views/dashboard.php:115
+msgid "Global Settings"
+msgstr "Глобальные настройки"
+
+#: contact-bank.php:62 contact-bank.php:77 contact-bank.php:92
+#: contact-bank.php:486 contact-bank.php:553
+#: views/contact-bank-system-report.php:30
+msgid "System Status"
+msgstr "Состояние системы"
+
+#: contact-bank.php:63 contact-bank.php:78 contact-bank.php:93
+#: contact-bank.php:492 contact-bank.php:559 contact-bank.php:617
+#: views/header.php:84
+msgid "Recommendations"
+msgstr "Рекомендации"
+
+#: contact-bank.php:64 contact-bank.php:79 contact-bank.php:94
+#: contact-bank.php:499 contact-bank.php:566 contact-bank.php:624
+#: views/purchase_pro_version.php:38
+msgid "Premium Editions"
+msgstr "Премиум издания"
+
+#: contact-bank.php:65 contact-bank.php:80 contact-bank.php:95
+#: contact-bank.php:506 contact-bank.php:573 contact-bank.php:631
+#: views/header.php:89
+msgid "Our Other Services"
+msgstr "Наши Прочие услуги"
+
+#: contact-bank.php:646
+msgid "Add Contact Bank Form"
+msgstr "Добавить контактную форму"
+
+#: contact-bank.php:658
+msgid "Insert Contact Bank Form"
+msgstr "Вставьте форму Contact Bank"
+
+#: contact-bank.php:660
+msgid "Select a form below to add it to your post or page."
+msgstr "Выберите форму ниже, чтобы добавить его в пост или на страницу."
+
+#: contact-bank.php:665
+msgid "Form Name"
+msgstr "Название формы"
+
+#: contact-bank.php:667
+msgid "Select a Form"
+msgstr "Выберите форму"
+
+#: contact-bank.php:684
+msgid "Show Form Title"
+msgstr "Показать название формы"
+
+#: contact-bank.php:689
+msgid "Insert Form"
+msgstr "Вставить форму"
+
+#: contact-bank.php:692
+msgid "Cancel"
+msgstr "Отмена"
+
+#: contact-bank.php:704
+msgid "Please choose a Form to insert into Shortcode"
+msgstr "Пожалуйста, выберите форму, чтобы вставить в шорткод"
+
+#: contact-bank.php:740
+msgid "View Contact Bank Documentation"
+msgstr "Просмотреть Contact Банк документацию"
+
+#: contact-bank.php:740
+msgid "Docs"
+msgstr "Документы"
+
+#: contact-bank.php:741
+msgid "View Contact Bank Premium Editions"
+msgstr "Просмотреть Contact Bank Премиум Редакции"
+
+#: contact-bank.php:741
+msgid "Go for Premium!"
+msgstr "Перейти на Премиум!"
+
+#: frontend_views/contact_bank_forms.php:369
+#: views/contact_bank_form_preview.php:401 views/contact_controls_files.php:87
+msgid "Select Option"
+msgstr "Выберите опцию"
+
+#: includes/cb_checkbox.php:36
+msgid "Check Boxes"
+msgstr "Отметить"
+
+#: includes/cb_checkbox.php:40 includes/cb_dropdown.php:40
+#: includes/cb_email.php:40 includes/cb_multiple.php:40
+#: includes/cb_text.php:40 includes/cb_textarea.php:40
+msgid "Label"
+msgstr "Название"
+
+#: includes/cb_checkbox.php:42 includes/cb_checkbox.php:144
+#: includes/cb_dropdown.php:42 includes/cb_dropdown.php:144
+#: includes/cb_email.php:43 includes/cb_email.php:133
+#: includes/cb_multiple.php:44 includes/cb_multiple.php:164
+#: includes/cb_text.php:43 includes/cb_text.php:132
+#: includes/cb_textarea.php:42 includes/cb_textarea.php:130
+#: views/contact_controls_files.php:34 views/contact_controls_files.php:50
+#: views/contact_controls_files.php:83 views/contact_controls_files.php:99
+#: views/contact_controls_files.php:116
+msgid "Untitled"
+msgstr "Без названия"
+
+#: includes/cb_checkbox.php:46 includes/cb_checkbox.php:56
+#: includes/cb_checkbox.php:69 includes/cb_checkbox.php:83
+#: includes/cb_dropdown.php:46 includes/cb_dropdown.php:56
+#: includes/cb_dropdown.php:69 includes/cb_dropdown.php:83
+#: includes/cb_email.php:57 includes/cb_email.php:68 includes/cb_email.php:83
+#: includes/cb_email.php:99 includes/cb_multiple.php:49
+#: includes/cb_multiple.php:60 includes/cb_multiple.php:75
+#: includes/cb_multiple.php:91 includes/cb_text.php:56 includes/cb_text.php:67
+#: includes/cb_text.php:82 includes/cb_text.php:98 includes/cb_textarea.php:56
+#: includes/cb_textarea.php:67 includes/cb_textarea.php:82
+#: includes/cb_textarea.php:98
+msgid "Required"
+msgstr "Требуется"
+
+#: includes/cb_checkbox.php:60 includes/cb_checkbox.php:73
+#: includes/cb_checkbox.php:87 includes/cb_dropdown.php:60
+#: includes/cb_dropdown.php:73 includes/cb_dropdown.php:87
+#: includes/cb_email.php:73 includes/cb_email.php:88 includes/cb_email.php:104
+#: includes/cb_multiple.php:65 includes/cb_multiple.php:80
+#: includes/cb_multiple.php:96 includes/cb_text.php:72 includes/cb_text.php:87
+#: includes/cb_text.php:103 includes/cb_textarea.php:72
+#: includes/cb_textarea.php:87 includes/cb_textarea.php:103
+msgid "Not Required"
+msgstr "Не требуется"
+
+#: includes/cb_checkbox.php:95 includes/cb_dropdown.php:95
+#: includes/cb_email.php:112 includes/cb_multiple.php:104
+#: includes/cb_text.php:111
+msgid "Tooltip Text"
+msgstr "Текст всплывающей подсказки"
+
+#: includes/cb_checkbox.php:97 includes/cb_dropdown.php:97
+#: includes/cb_email.php:115 includes/cb_multiple.php:108
+#: includes/cb_text.php:114 includes/cb_textarea.php:113
+#: views/contact_bank_layout_settings.php:952
+#: views/contact_frontend_data.php:171 views/dashboard.php:209
+#: views/includes_common_after.php:348 views/includes_common_after.php:351
+#: views/includes_common_after.php:354 views/includes_common_after.php:357
+#: views/includes_common_after.php:360 views/includes_common_after.php:363
+#: views/includes_common_after.php:366 views/includes_common_after.php:369
+#: views/includes_common_after.php:372
+msgid "This Feature is only available in Paid Premium Edition!"
+msgstr "Эта функция доступна только в платной Premium Edition!"
+
+#: includes/cb_checkbox.php:101 includes/cb_dropdown.php:101
+#: includes/cb_multiple.php:113
+msgid "Options"
+msgstr "Опции"
+
+#: includes/cb_checkbox.php:103
+msgid "Enter Options"
+msgstr "Введите опции"
+
+#: includes/cb_checkbox.php:104 includes/cb_dropdown.php:104
+#: includes/cb_multiple.php:119
+msgid "Add"
+msgstr "Добавить"
+
+#: includes/cb_checkbox.php:135 includes/cb_dropdown.php:135
+#: includes/cb_multiple.php:153
+msgid "Delete"
+msgstr "Удалить"
+
+#: includes/cb_checkbox.php:142 includes/cb_dropdown.php:142
+#: includes/cb_email.php:130 includes/cb_multiple.php:160
+#: includes/cb_text.php:129 includes/cb_textarea.php:128
+msgid "Admin Label"
+msgstr "Название для администратора"
+
+#: includes/cb_checkbox.php:144 includes/cb_dropdown.php:144
+#: includes/cb_email.php:134 includes/cb_multiple.php:163
+#: includes/cb_text.php:131 includes/cb_textarea.php:131
+msgid "Enter Admin Label"
+msgstr "Введите название для админа"
+
+#: includes/cb_checkbox.php:148 includes/cb_dropdown.php:148
+#: includes/cb_email.php:139 includes/cb_multiple.php:168
+#: includes/cb_text.php:137 includes/cb_textarea.php:135
+msgid "Do not show in the email"
+msgstr "Не показывать в электронной почте"
+
+#: includes/cb_checkbox.php:179 includes/cb_dropdown.php:179
+#: includes/cb_email.php:173 includes/cb_multiple.php:202
+#: includes/cb_text.php:200 includes/cb_textarea.php:196
+msgid "Save Settings"
+msgstr "Сохранить настройки"
+
+#: includes/cb_checkbox.php:228 includes/cb_dropdown.php:219
+#: includes/cb_multiple.php:252
+msgid "Please Fill an Option."
+msgstr "Пожалуйста, заполните настройки"
+
+#: includes/cb_dropdown.php:36 views/contact_view.php:460
+msgid "Select Box"
+msgstr "Выбрать "
+
+#: includes/cb_dropdown.php:42 includes/cb_email.php:44
+#: includes/cb_multiple.php:45 includes/cb_text.php:44
+msgid "Enter Label"
+msgstr "Озаглавить"
+
+#: includes/cb_dropdown.php:103 includes/cb_multiple.php:116
+msgid "Enter Option"
+msgstr "Добавить опции"
+
+#: includes/cb_email.php:36 views/contact_view.php:457
+msgid "Email Address"
+msgstr "Адрес email"
+
+#: includes/cb_email.php:49 includes/cb_text.php:48
+#: includes/cb_textarea.php:48
+msgid "Description"
+msgstr "Описание"
+
+#: includes/cb_email.php:52 includes/cb_text.php:51
+msgid "Enter Description"
+msgstr "Добавьте описание"
+
+#: includes/cb_email.php:121 includes/cb_text.php:120
+#: includes/cb_textarea.php:120
+msgid "Place Holder"
+msgstr "Заполнитель"
+
+#: includes/cb_email.php:124 includes/cb_text.php:123
+#: includes/cb_textarea.php:122
+msgid "Enter Place Holder"
+msgstr "Выбрать заполнитель"
+
+#: includes/cb_multiple.php:36 views/contact_view.php:468
+msgid "Radio Buttons"
+msgstr "Радиокнопки"
+
+#: includes/cb_text.php:36 views/contact_view.php:449
+msgid "Single Line Text"
+msgstr "Линейный текст"
+
+#: includes/cb_text.php:168 includes/cb_textarea.php:166
+msgid "Add a filter"
+msgstr "Добавьте фильтр"
+
+#: includes/cb_text.php:173 includes/cb_textarea.php:170
+msgid "Alpha"
+msgstr "Буквенный"
+
+#: includes/cb_text.php:177 includes/cb_textarea.php:174
+msgid "Alpha Numeric"
+msgstr "Буквенно -цифровой"
+
+#: includes/cb_text.php:181 includes/cb_textarea.php:178
+msgid "Digits"
+msgstr "Цифровой"
+
+#: includes/cb_text.php:185 includes/cb_textarea.php:182
+msgid "Strip Tags"
+msgstr "Полоска тэгов"
+
+#: includes/cb_text.php:189 includes/cb_textarea.php:186
+msgid "Trim"
+msgstr "Обрезать"
+
+#: includes/cb_text.php:191 includes/cb_textarea.php:188
+#: views/contact_bank_layout_settings.php:89
+#: views/contact_bank_layout_settings.php:277
+#: views/contact_bank_layout_settings.php:487
+#: views/contact_bank_layout_settings.php:680
+#: views/contact_bank_layout_settings.php:808 views/contact_view.php:478
+msgid " (Available in Premium Edition)"
+msgstr "(Доступно только в подарочного варианта)"
+
+#: includes/cb_textarea.php:36 views/contact_view.php:452
+msgid "Paragraph Text"
+msgstr "Параграф текста"
+
+#: includes/cb_textarea.php:43
+msgid "Enter label"
+msgstr "Добавить название"
+
+#: includes/cb_textarea.php:50
+msgid "Enter  Description"
+msgstr "Добавить описание"
+
+#: includes/cb_textarea.php:111
+msgid "Tooltip text"
+msgstr "Текст всплывающей подсказки"
+
+#: lib/contact_bank_email-class.php:47 lib/contact_bank_email-class.php:57
+#: lib/contact_bank_email-class.php:67
+msgid "Edit Email Settings"
+msgstr "Редактировать свойства уведомления о регистрации"
+
+#: lib/contact_bank_email-class.php:50 lib/contact_bank_email-class.php:60
+#: lib/contact_bank_email-class.php:70
+msgid "Delete Email Settings"
+msgstr "Удалить образец уведомления о регистрации"
+
+#: lib/contact_frontend_data_class.php:113
+msgid "Delete Form Entry"
+msgstr "Удалить данные из формы"
+
+#: views/add_contact_email.php:50 views/contact_email_settings.php:94
+msgid "Email Confirmation"
+msgstr "Подтверждение E-mail"
+
+#: views/add_contact_email.php:53
+msgid "Back to Email Settings"
+msgstr "Вернуться к параметрам электронной почты"
+
+#: views/add_contact_email.php:54 views/add_contact_email.php:234
+#: views/contact_bank_layout_settings.php:41
+#: views/contact_bank_layout_settings.php:526
+#: views/contact_bank_layout_settings.php:938
+msgid "Save"
+msgstr "Сохранить"
+
+#: views/add_contact_email.php:58
+msgid "Email Settings Saved. Kindly wait for the redirect."
+msgstr ""
+"Настройки электронной почты сохранены. Подождите, сейчас вы будете "
+"перенаправлены."
+
+#: views/add_contact_email.php:65 views/add_contact_email.php:122
+#: views/contact_controls_files.php:66
+msgid "Email"
+msgstr "Электронная почта"
+
+#: views/add_contact_email.php:69 views/contact_view.php:485
+msgid "Name"
+msgstr "Имя"
+
+#: views/add_contact_email.php:73
+msgid "Enter Name"
+msgstr "Введите имя "
+
+#: views/add_contact_email.php:79
+msgid "Send To"
+msgstr "Отправить"
+
+#: views/add_contact_email.php:88 views/add_contact_email.php:99
+#: views/add_contact_email.php:111 views/add_contact_email.php:171
+msgid "Enter Email"
+msgstr "Введите e-mail"
+
+#: views/add_contact_email.php:90 views/add_contact_email.php:101
+#: views/add_contact_email.php:113
+msgid "Select a Field"
+msgstr "Выберите поле"
+
+#: views/add_contact_email.php:126
+msgid "Enter Email "
+msgstr "Введите e-mail"
+
+#: views/add_contact_email.php:130
+msgid "Send To Field"
+msgstr "Отправить"
+
+#: views/add_contact_email.php:134
+msgid "Enter Field "
+msgstr "Поле ввода"
+
+#: views/add_contact_email.php:136 views/add_contact_email.php:149
+#: views/add_contact_email.php:162 views/add_contact_email.php:173
+#: views/add_contact_email.php:184 views/add_contact_email.php:195
+#: views/add_contact_email.php:208
+msgid "Select a field"
+msgstr "Выберите поле"
+
+#: views/add_contact_email.php:143
+msgid "From Name"
+msgstr "От кого (имя отправителя):"
+
+#: views/add_contact_email.php:147
+msgid "Enter from name "
+msgstr "Кому:"
+
+#: views/add_contact_email.php:156
+msgid "From Email"
+msgstr "От кого (почта отправителя)"
+
+#: views/add_contact_email.php:160
+msgid "Enter from email"
+msgstr "Добавить от кого"
+
+#: views/add_contact_email.php:169
+msgid "Reply To"
+msgstr "отвечать на"
+
+#: views/add_contact_email.php:180
+msgid "CC"
+msgstr ""
+"CC (Содержит имена и адреса вторичных получателей письма, к которым "
+"направляется копия)"
+
+#: views/add_contact_email.php:182
+msgid "Enter CC Email "
+msgstr ""
+"Ввести имена и адреса вторичных получателей письма, к которым направляется "
+"копия"
+
+#: views/add_contact_email.php:191
+msgid "BCC"
+msgstr ""
+"Имена и адреса получателей письма, чьи адреса не следует показывать другим "
+"получателям."
+
+#: views/add_contact_email.php:193
+msgid "Enter Bcc Email"
+msgstr ""
+"Введите имена и адреса получателей письма, чьи адреса не следует показывать "
+"другим получателям."
+
+#: views/add_contact_email.php:202
+msgid "Subject"
+msgstr "Тема"
+
+#: views/add_contact_email.php:206
+msgid "Enter Subject"
+msgstr "Добавьте тему"
+
+#: views/add_contact_email.php:215
+msgid "Message"
+msgstr "Сообщение"
+
+#: views/add_contact_email.php:225
+msgid "Insert a Field into Your Form Message"
+msgstr "Вставить форму в ваше сообщение"
+
+#: views/contact-bank-system-report.php:33
+msgid "Get System Report"
+msgstr "Получить системный отчёт"
+
+#: views/contact-bank-system-report.php:37
+msgid "Close System Report"
+msgstr "Закрыть системный отчет"
+
+#: views/contact-bank-system-report.php:124
+msgid "Default"
+msgstr "По умолчанию"
+
+#: views/contact_bank_form_preview.php:300 views/dashboard.php:130
+msgid "Form Preview"
+msgstr "Предварительный просмотр формы"
+
+#: views/contact_bank_form_preview.php:303
+#: views/contact_bank_layout_settings.php:38
+#: views/contact_email_settings.php:39 views/contact_frontend_data.php:34
+#: views/contact_view.php:261 views/purchase_pro_version.php:42
+msgid "Back to Dashboard"
+msgstr "Назад к панели управления"
+
+#: views/contact_bank_layout_settings.php:35
+msgid " (Premium Features available in Paid Edition)"
+msgstr "(Особенности Премиум доступные в платной издание)"
+
+#: views/contact_bank_layout_settings.php:39
+msgid "Restore Global Settings"
+msgstr "Восстановить глобальные настройки"
+
+#: views/contact_bank_layout_settings.php:45
+msgid "Form Settings Saved. Kindly wait for the redirect."
+msgstr ""
+"образуют настроек, сохраненных в. Пожалуйста, подождите, пока редиректа."
+
+#: views/contact_bank_layout_settings.php:51
+#: views/contact_bank_layout_settings.php:61
+#: views/contact_email_settings.php:43 views/contact_email_settings.php:59
+#: views/contact_frontend_data.php:46 views/contact_frontend_data.php:56
+msgid "Select Form"
+msgstr "Выберите форму"
+
+#: views/contact_bank_layout_settings.php:88
+msgid "Label Settings"
+msgstr "Настройки названия"
+
+#: views/contact_bank_layout_settings.php:100
+#: views/contact_bank_layout_settings.php:287
+#: views/contact_bank_layout_settings.php:497
+#: views/contact_bank_layout_settings.php:690
+#: views/contact_bank_layout_settings.php:818
+msgid "Font Family :"
+msgstr "Семейство шрифтов:"
+
+#: views/contact_bank_layout_settings.php:125
+msgid "Font Color :"
+msgstr "Цвет шрифта:"
+
+#: views/contact_bank_layout_settings.php:136
+#: views/contact_bank_layout_settings.php:323
+msgid "Font Style :"
+msgstr "Стиль шрифта:"
+
+#: views/contact_bank_layout_settings.php:150
+#: views/contact_bank_layout_settings.php:337
+#: views/contact_bank_layout_settings.php:546
+#: views/contact_bank_layout_settings.php:715
+#: views/contact_bank_layout_settings.php:843
+msgid "Font Size (px) :"
+msgstr "Размер шрифта (пикс):"
+
+#: views/contact_bank_layout_settings.php:181
+#: views/contact_bank_layout_settings.php:438
+#: views/contact_bank_layout_settings.php:651
+#: views/contact_bank_layout_settings.php:779
+#: views/contact_bank_layout_settings.php:907
+msgid "Text Align :"
+msgstr "Выравнивание текста:"
+
+#: views/contact_bank_layout_settings.php:194
+msgid "Label Position :"
+msgstr "Положение названия:"
+
+#: views/contact_bank_layout_settings.php:208
+msgid "Field Desc Font Size :"
+msgstr "Размер шрифта в поле описания:"
+
+#: views/contact_bank_layout_settings.php:239
+msgid "Field Description Align :"
+msgstr "Положение поля описания:"
+
+#: views/contact_bank_layout_settings.php:253
+msgid "Hide Labels :"
+msgstr "Скрыть название:"
+
+#: views/contact_bank_layout_settings.php:261
+#: views/contact_bank_layout_settings.php:451
+#: views/contact_bank_layout_settings.php:664
+#: views/contact_bank_layout_settings.php:792
+#: views/contact_bank_layout_settings.php:920
+msgid "Text Direction :"
+msgstr "Направление текста:"
+
+#: views/contact_bank_layout_settings.php:277
+msgid "Input Field Settings"
+msgstr "Настройки поля ввода данных"
+
+#: views/contact_bank_layout_settings.php:312
+#: views/contact_bank_layout_settings.php:609
+#: views/contact_bank_layout_settings.php:768
+#: views/contact_bank_layout_settings.php:896
+msgid "Text Color :"
+msgstr "Цвет текста:"
+
+#: views/contact_bank_layout_settings.php:368
+#: views/contact_bank_layout_settings.php:641
+msgid "Border Radius (px) :"
+msgstr "Радиус рамки (пикс):"
+
+#: views/contact_bank_layout_settings.php:378
+#: views/contact_bank_layout_settings.php:620
+#: views/contact_bank_layout_settings.php:757
+#: views/contact_bank_layout_settings.php:885
+msgid "Border Color :"
+msgstr "Цвет рамки:"
+
+#: views/contact_bank_layout_settings.php:389
+#: views/contact_bank_layout_settings.php:631
+msgid "Border Size (px) :"
+msgstr "Размер рамки (пикс):"
+
+#: views/contact_bank_layout_settings.php:399
+msgid "Border Style :"
+msgstr "Стиль рамки:"
+
+#: views/contact_bank_layout_settings.php:414
+#: views/contact_bank_layout_settings.php:587
+#: views/contact_bank_layout_settings.php:746
+#: views/contact_bank_layout_settings.php:874
+msgid "Background Color :"
+msgstr "Цвет фона:"
+
+#: views/contact_bank_layout_settings.php:425
+msgid "Radio Buttons :"
+msgstr "Радиокнопки:"
+
+#: views/contact_bank_layout_settings.php:430
+msgid "Multiple Rows"
+msgstr "Многострочный"
+
+#: views/contact_bank_layout_settings.php:432
+msgid "Single Row"
+msgstr "Однострочный"
+
+#: views/contact_bank_layout_settings.php:465
+msgid "Input Size :"
+msgstr "Ввести размер:"
+
+#: views/contact_bank_layout_settings.php:487
+msgid "Submit Button Settings"
+msgstr "Настройки кнопок подтверждения"
+
+#: views/contact_bank_layout_settings.php:522
+msgid "Text:"
+msgstr "Текст:"
+
+#: views/contact_bank_layout_settings.php:532
+msgid "Style :"
+msgstr "Стиль:"
+
+#: views/contact_bank_layout_settings.php:577
+msgid "Button Width (px) :"
+msgstr "Ширина кнопки (пикс):"
+
+#: views/contact_bank_layout_settings.php:598
+msgid "Hover Background Color:"
+msgstr "Цвет фона при наведении:"
+
+#: views/contact_bank_layout_settings.php:680
+msgid "Success Message Settings"
+msgstr "Настройки сообщения об успехе "
+
+#: views/contact_bank_layout_settings.php:808
+msgid "Error Message Settings"
+msgstr "Настройки сообщения об ошибке"
+
+#: views/contact_bank_pro_version.php:50
+msgid "Contact Bank Pricing"
+msgstr "Contact Bank Ценообразование"
+
+#: views/contact_bank_pro_version.php:381
+msgid "Need Support Help?"
+msgstr "Нужна-поддержка Помощь?"
+
+#: views/contact_bank_pro_version.php:393
+msgid "Lets get in touch!"
+msgstr "Давайте войти в контакт!"
+
+#: views/contact_bank_pro_version.php:397
+msgid "Order Now!"
+msgstr "Заказать сейчас!"
+
+#: views/contact_controls_files.php:39 views/contact_controls_files.php:55
+#: views/contact_controls_files.php:72 views/contact_controls_files.php:90
+#: views/contact_controls_files.php:106 views/contact_controls_files.php:123
+msgid "Settings"
+msgstr "Настройки"
+
+#: views/contact_documentation.php:33
+msgid "Documentation - Contact Bank"
+msgstr "Документация - Contact Bank"
+
+#: views/contact_email_settings.php:84
+msgid "Add New"
+msgstr "Создать новую форму"
+
+#: views/contact_email_settings.php:165
+msgid "Are you sure, you want to delete this Email Setting?"
+msgstr "Вы уверены, что вы хотите удалить эти настроки E-mail?"
+
+#: views/contact_email_settings.php:183 views/contact_frontend_data.php:138
+msgid "Please select the Form first."
+msgstr "Сначала выделите форму"
+
+#: views/contact_frontend_data.php:35
+msgid "Export to Excel"
+msgstr "Экспорт в изощряться"
+
+#: views/contact_frontend_data.php:41 views/dashboard.php:65
+#: views/dashboard.php:72
+msgid "Form"
+msgstr "Форма"
+
+#: views/contact_view.php:258 views/dashboard.php:47
+msgid "Add New Form"
+msgstr "Добавить новую форму"
+
+#: views/contact_view.php:264 views/contact_view.php:528
+msgid "Save Form"
+msgstr "Сохранить форму"
+
+#: views/contact_view.php:269
+msgid "Form Submitted. Kindly wait for the redirect."
+msgstr "Форма утверждена. Пожалуйста, подождите перенаправления."
+
+#: views/contact_view.php:278
+msgid "Form Settings"
+msgstr "Настройки формы"
+
+#: views/contact_view.php:282
+msgid "Form Name :"
+msgstr "Название формы:"
+
+#: views/contact_view.php:288
+msgid "Enter Form Name"
+msgstr "Введите название формы"
+
+#: views/contact_view.php:292
+msgid "Form Description :"
+msgstr "Описание формы:"
+
+#: views/contact_view.php:294
+msgid "Enter Form Description"
+msgstr "Введите описание формы "
+
+#: views/contact_view.php:298
+msgid "Blank Field Message:"
+msgstr "Сообщение о незаполненной форме:"
+
+#: views/contact_view.php:304
+msgid "Required field must not be blank"
+msgstr "Обязательное поле не должно быть пустым"
+
+#: views/contact_view.php:306
+msgid "Enter Blank Field Message"
+msgstr "Сообщение о необходимости заполнения пустых полей"
+
+#: views/contact_view.php:310
+msgid "Incorrect Email Message:"
+msgstr "Сообщение о неверном адресе электронной почты:"
+
+#: views/contact_view.php:316
+msgid "Please enter a valid email address"
+msgstr "Пожалуйста, введите действующий адрес электронной почты"
+
+#: views/contact_view.php:318
+msgid "Enter Incorrect Email Message"
+msgstr "Сообщение о неправильно введённом E-mail "
+
+#: views/contact_view.php:322
+msgid "Success Message :"
+msgstr "Сообщение об успехе:"
+
+#: views/contact_view.php:326
+msgid "Enter Success Message"
+msgstr "Введите сообщение об успешном действии:"
+
+#: views/contact_view.php:330
+msgid "Redirect :"
+msgstr "Перенаправление:"
+
+#: views/contact_view.php:342 views/contact_view.php:353
+#: views/contact_view.php:365
+msgid "Page"
+msgstr "Страница"
+
+#: views/contact_view.php:345 views/contact_view.php:356
+#: views/contact_view.php:368
+msgid "URL"
+msgstr "Ссылка"
+
+#: views/contact_view.php:375
+msgid "Page :"
+msgstr "Страница:"
+
+#: views/contact_view.php:418
+msgid "URL :"
+msgstr "Ссылка:"
+
+#: views/contact_view.php:425
+msgid "Enter Redirect URL"
+msgstr "Введите ссылку перенаправления :"
+
+#: views/contact_view.php:432
+msgid "Form Layout Preview"
+msgstr "Предварительный просмотр компоновки формы "
+
+#: views/contact_view.php:443
+msgid "Standard Fields"
+msgstr "Стандартные поля"
+
+#: views/contact_view.php:446 views/contact_view.php:482
+msgid "Click on a field to use into your form."
+msgstr "Щелкните на поле, чтобы использовать его в вашей форме."
+
+#: views/contact_view.php:465
+msgid "Checkboxes"
+msgstr "Чекбоксы"
+
+#: views/contact_view.php:477
+msgid "Advanced Fields"
+msgstr "Дополнительные поля"
+
+#: views/contact_view.php:488
+msgid "Website / URL"
+msgstr "Сайт / URL"
+
+#: views/contact_view.php:493
+msgid "Phone"
+msgstr "Телефон"
+
+#: views/contact_view.php:496
+msgid "Address"
+msgstr "Адрес"
+
+#: views/contact_view.php:501
+msgid "Number"
+msgstr "Номер"
+
+#: views/contact_view.php:504
+msgid "File Upload"
+msgstr "Загрузить файл"
+
+#: views/contact_view.php:509
+msgid "Date"
+msgstr "Дата"
+
+#: views/contact_view.php:512
+msgid "Time"
+msgstr "Время"
+
+#: views/contact_view.php:517
+msgid "Password"
+msgstr "Пароль"
+
+#: views/dashboard.php:35
+msgid "Contact Bank Short-Codes"
+msgstr "Contact Bank Короткие коды"
+
+#: views/dashboard.php:53
+msgid "Delete All Forms"
+msgstr "Удалить все формы"
+
+#: views/dashboard.php:56
+msgid "Restore Factory Settings"
+msgstr "Восстановить заводские настройки"
+
+#: views/dashboard.php:73
+msgid "Shortcode"
+msgstr "шорткод"
+
+#: views/dashboard.php:74
+msgid "Total Controls"
+msgstr "Общее управление"
+
+#: views/dashboard.php:110
+msgid "Edit Form"
+msgstr "Редактировать форму"
+
+#: views/dashboard.php:135
+msgid "Delete Form"
+msgstr "Удалить форму"
+
+#: views/dashboard.php:190
+msgid "Are you sure, you want to delete this Form?"
+msgstr "Вы уверены, что вы хотите удалить эту форму?"
+
+#: views/dashboard.php:200
+msgid "Are you sure, you want to delete all Forms?"
+msgstr "Вы уверены, что вы хотите удалить все формы?"
+
+#: views/header.php:21
+msgid "Get Started"
+msgstr "Начало работы"
+
+#: views/header.php:24
+msgid "Watch Contact Video!"
+msgstr "cмотретье Контактная - видеосигнал!"
+
+#: views/header.php:28
+msgid "read documentation here"
+msgstr "читать документацию здесь"
+
+#: views/header.php:33
+msgid "Go Premium"
+msgstr "Перейти Премиум"
+
+#: views/header.php:37
+msgid "Features"
+msgstr "черты"
+
+#: views/header.php:42
+msgid "Online Demos"
+msgstr "Онлайн Демос"
+
+#: views/header.php:47
+msgid "Premium Pricing Plan ?"
+msgstr "Премиум ценообразование план?"
+
+#: views/header.php:54
+msgid "Knowledge Base"
+msgstr "База знаний"
+
+#: views/header.php:59
+msgid "Support Forum"
+msgstr "Поддержка Форум"
+
+#: views/header.php:64
+msgid "FAQ's"
+msgstr "Часто задаваемые вопросы"
+
+#: views/header.php:69
+msgid "Detailed Features"
+msgstr "Детальные характеристики"
+
+#: views/header.php:75
+msgid "More Actions"
+msgstr "Другие действия"
+
+#: views/header.php:79
+msgid "Plugin Customization"
+msgstr "Плагин Изготовление на заказ"
+
+#: views/purchase_pro_version.php:47
+msgid "WP Contact Bank is an one time Investment. Its Worth it!"
+msgstr "WP Контакт Bank является единовременных инвестиций. Оно того стоит!"
+
+#: views/shortcode.php:29
+msgid ""
+"How to setup Short-Codes for Contact Bank into your WordPress Page/Post?"
+msgstr ""
+"Как настроить короткого коды для Contact bank  в вашем WordPress страница / "
+"Post?"
+
+#~ msgid "%s rating"
+#~ msgstr "рейтинг"
+
+#~ msgid "More Details"
+#~ msgstr "Более детально"
+
+#~ msgid "Install Now"
+#~ msgstr "Установить сейчас"
+
+#~ msgid "Update Now"
+#~ msgstr "обновить сейчас"
+
+#~ msgid "By "
+#~ msgstr "путем"
+
+#~ msgid "Visit Website"
+#~ msgstr "Посетите веб-сайт"
+
+#~ msgid "Last Updated:"
+#~ msgstr "последнему обновлению"
+
+#~ msgid "<strong>Untested</strong> with your version of WordPress"
+#~ msgstr "Непроверенные с вашей версией WordPress"
+
+#~ msgid "Incompatible with your version of WordPress"
+#~ msgstr "Несовместимые с вашей версией WordPress"
+
+#~ msgid "Compatible with your version of WordPress"
+#~ msgstr "Совместимость с вашей версией WordPress"
+
+#~ msgid "Purchase PRO Edition"
+#~ msgstr "Закупка Pro Выпуском"
+
+#~ msgid "Watch the Walk-Through Video"
+#~ msgstr "Наблюдайте Мостик с проходом видео"
+
+#~ msgid "Contact Bank, a Superlative High quality WordPress Plugin!"
+#~ msgstr ""
+#~ "Contact Bank, Превосходная степень Высокое качество WordPress плагин!"
+
+#~ msgid "Let's get in touch!"
+#~ msgstr "Давайте свяжитесь с нами!"
+
+#~ msgid "Purchase PRO Edition - Contact Bank"
+#~ msgstr "Закупка Pro Выпуском - Contact Bank"
+
+#~ msgid "Dashboard - Contact Bank"
+#~ msgstr "Панель управления плагином Contact Bank"
+
+#~ msgid "Roles & Capabilities"
+#~ msgstr "Роли и возможности"
+
+#~ msgid "Licensing"
+#~ msgstr "Лицензия"
+
+#~ msgid "Select Form :"
+#~ msgstr "Выберите форму:"
+
+#~ msgid "Day"
+#~ msgstr "День"
+
+#~ msgid "Select Month"
+#~ msgstr "Выберите месяц"
+
+#~ msgid "Year"
+#~ msgstr "Год"
+
+#~ msgid "Hour"
+#~ msgstr "Час"
+
+#~ msgid "Minute"
+#~ msgstr "Минута"
+
+#~ msgid "Enter Tooltip Text"
+#~ msgstr "Введите текст всплывающей подсказки"
+
+#~ msgid "Enter Tooltip"
+#~ msgstr "Добавьте всплывающую подсказку"
+
+#~ msgid "Start Year"
+#~ msgstr "Минимальный год"
+
+#~ msgid "Enter Start Year"
+#~ msgstr "Введите минимальный год"
+
+#~ msgid "End Year"
+#~ msgstr "Максимальный год"
+
+#~ msgid "Enter End Year "
+#~ msgstr "Введите максимальный год"
+
+#~ msgid "Default Value"
+#~ msgstr "Значение по умолчанию"
+
+#~ msgid "Month"
+#~ msgstr "Месяц"
+
+#~ msgid "Date Format"
+#~ msgstr "Формат даты"
+
+#~ msgid "Allow Multiple Uploads"
+#~ msgstr "Разрешить многопоточную загрузку"
+
+#~ msgid "Allowed File Extensions"
+#~ msgstr "Разрешённые расширения файла"
+
+#~ msgid "Enter File Extensions"
+#~ msgstr "Добавьте расширения файлов"
+
+#~ msgid "The file extensions must be separated with comma(',')"
+#~ msgstr "Расширения должны быть разделены запятой (',')"
+
+#~ msgid "Allowed File Size"
+#~ msgstr "Разрешённый размер файла"
+
+#~ msgid "File Size must be in Mb"
+#~ msgstr "Размер файла должен быть в МБ"
+
+#~ msgid "Hour Format"
+#~ msgstr "Редактировать часы"
+
+#~ msgid "Minute Format"
+#~ msgstr "Редактировать минуты"
+
+#~ msgid "Roles and Capabilities Saved. Kindly wait for the redirect."
+#~ msgstr "Роли и возможности пользователя сохранены. Ждите перенаправления."
+
+#~ msgid "Privileges for Admin"
+#~ msgstr "Привилегии для администратора"
+
+#~ msgid "Full Control"
+#~ msgstr "Полный доступ"
+
+#~ msgid "Read"
+#~ msgstr "Прочитать"
+
+#~ msgid "Write"
+#~ msgstr "Записать"
+
+#~ msgid "Privileges for Editor"
+#~ msgstr "Привелегии для редактора"
+
+#~ msgid "Privileges for Author"
+#~ msgstr "Привилегии для автора"
+
+#~ msgid "Privileges for Contributor"
+#~ msgstr "Привелегии для участника"
+
+#~ msgid "Privileges for Subscriber"
+#~ msgstr "Привелегии для подписчика"
+
+#~ msgid "Global Settings Saved. Kindly wait for the redirect."
+#~ msgstr "Общие настройки сохранены. Ждите перенаправления."
+
+#~ msgid "Are you sure, you want to Restore Global Settings?"
+#~ msgstr "Вы уверены, что хотите сбросить общие настройки?"
+
+#~ msgid "Are you sure, you want to delete this Form Entry ?"
+#~ msgstr "Вы действительно хотите удалить эту форму?"
+
+#~ msgid "Attention! A new vesion of Contact Bank is available for download."
+#~ msgstr "Внимание! Доступна новая версия Contact Bank."
+
+#~ msgid "Click"
+#~ msgstr "Кликните"
+
+#~ msgid "here"
+#~ msgstr "здесь"
+
+#~ msgid "to upgrade your version of Contact Bank."
+#~ msgstr "чтобы установить новую версию Contact Bank."
+
+#~ msgid "Are you sure you want to Restore Factory Settings?"
+#~ msgstr "Вы уверены, что хотите восстановить заводские настройки?"
+
+#~ msgid "Only One File Uploader can be used on a Form."
+#~ msgstr "Только один загрузчик файлов может быть использован в форме."
+
+#~ msgid "Success! Settings have been updated."
+#~ msgstr "Успех! Настройки обновлены!"
