@@ -112,12 +112,12 @@ switch ($cb_role) {
 		?>
 		<h2 class="nav-tab-wrapper">
 			<a class="nav-tab custom-nav-tab" id="dashboard" href="admin.php?page=dashboard"><?php _e("Dashboard",contact_bank) ;?></a>
-			<a class="nav-tab custom-nav-tab" id="short_code" href="admin.php?page=short_code"><?php _e("Short-Codes",contact_bank) ;?></a>
-			<a class="nav-tab custom-nav-tab" id="frontend_data" href="admin.php?page=frontend_data"><?php _e("Form Entries",contact_bank) ;?></a>
+			<a class="nav-tab custom-nav-tab" id="contact_short_code" href="admin.php?page=contact_short_code"><?php _e("Short-Codes",contact_bank) ;?></a>
+			<a class="nav-tab custom-nav-tab" id="contact_frontend_data" href="admin.php?page=contact_frontend_data"><?php _e("Form Entries",contact_bank) ;?></a>
 			<a class="nav-tab custom-nav-tab" id="contact_email" href="admin.php?page=contact_email"><?php _e("Email Settings",contact_bank) ;?></a>
-			<a class="nav-tab custom-nav-tab" id="layout_settings" href="admin.php?page=layout_settings"><?php _e("Global Settings",contact_bank) ;?></a>
+			<a class="nav-tab custom-nav-tab" id="contact_layout_settings" href="admin.php?page=contact_layout_settings"><?php _e("Global Settings",contact_bank) ;?></a>
 			<a class="nav-tab custom-nav-tab" id="contact_bank_recommended_plugins" href="admin.php?page=contact_bank_recommended_plugins"><?php _e("Recommendations",contact_bank) ;?></a>
-			<a class="nav-tab custom-nav-tab" id="pro_version" href="admin.php?page=pro_version"><?php _e("Premium Editions",contact_bank) ;?></a>
+			<a class="nav-tab custom-nav-tab" id="contact_pro_version" href="admin.php?page=contact_pro_version"><?php _e("Premium Editions",contact_bank) ;?></a>
 			<a class="nav-tab custom-nav-tab" id="contact_bank_other_services" href="admin.php?page=contact_bank_other_services"><?php _e("Our Other Services",contact_bank) ;?></a>
 		</h2>
 		<?php
@@ -126,12 +126,12 @@ switch ($cb_role) {
 		?>
 		<h2 class="nav-tab-wrapper">
 			<a class="nav-tab custom-nav-tab" id="dashboard" href="admin.php?page=dashboard"><?php _e("Dashboard",contact_bank) ;?></a>
-			<a class="nav-tab custom-nav-tab" id="short_code" href="admin.php?page=short_code"><?php _e("Short-Codes",contact_bank) ;?></a>
-			<a class="nav-tab custom-nav-tab" id="frontend_data" href="admin.php?page=frontend_data"><?php _e("Form Entries",contact_bank) ;?></a>
+			<a class="nav-tab custom-nav-tab" id="contact_short_code" href="admin.php?page=contact_short_code"><?php _e("Short-Codes",contact_bank) ;?></a>
+			<a class="nav-tab custom-nav-tab" id="contact_frontend_data" href="admin.php?page=contact_frontend_data"><?php _e("Form Entries",contact_bank) ;?></a>
 			<a class="nav-tab custom-nav-tab" id="contact_email" href="admin.php?page=contact_email"><?php _e("Email Settings",contact_bank) ;?></a>
-			<a class="nav-tab custom-nav-tab" id="layout_settings" href="admin.php?page=layout_settings"><?php _e("Global Settings",contact_bank) ;?></a>
+			<a class="nav-tab custom-nav-tab" id="contact_layout_settings" href="admin.php?page=contact_layout_settings"><?php _e("Global Settings",contact_bank) ;?></a>
 			<a class="nav-tab custom-nav-tab" id="contact_bank_recommended_plugins" href="admin.php?page=contact_bank_recommended_plugins"><?php _e("Recommendations",contact_bank) ;?></a>
-			<a class="nav-tab custom-nav-tab" id="pro_version" href="admin.php?page=pro_version"><?php _e("Premium Editions",contact_bank) ;?></a>
+			<a class="nav-tab custom-nav-tab" id="contact_pro_version" href="admin.php?page=contact_pro_version"><?php _e("Premium Editions",contact_bank) ;?></a>
 			<a class="nav-tab custom-nav-tab" id="contact_bank_other_services" href="admin.php?page=contact_bank_other_services"><?php _e("Our Other Services",contact_bank) ;?></a>
 		</h2>
 		<?php
@@ -140,12 +140,12 @@ switch ($cb_role) {
 		?>
 		<h2 class="nav-tab-wrapper">
 			<a class="nav-tab custom-nav-tab" id="dashboard" href="admin.php?page=dashboard"><?php _e("Dashboard",contact_bank) ;?></a>
-			<a class="nav-tab custom-nav-tab" id="short_code" href="admin.php?page=short_code"><?php _e("Short-Codes",contact_bank) ;?></a>
-			<a class="nav-tab custom-nav-tab" id="frontend_data" href="admin.php?page=frontend_data"><?php _e("Form Entries",contact_bank) ;?></a>
+			<a class="nav-tab custom-nav-tab" id="contact_short_code" href="admin.php?page=contact_short_code"><?php _e("Short-Codes",contact_bank) ;?></a>
+			<a class="nav-tab custom-nav-tab" id="contact_frontend_data" href="admin.php?page=contact_frontend_data"><?php _e("Form Entries",contact_bank) ;?></a>
 			<a class="nav-tab custom-nav-tab" id="contact_email" href="admin.php?page=contact_email"><?php _e("Email Settings",contact_bank) ;?></a>
-			<a class="nav-tab custom-nav-tab" id="layout_settings" href="admin.php?page=layout_settings"><?php _e("Global Settings",contact_bank) ;?></a>
+			<a class="nav-tab custom-nav-tab" id="contact_layout_settings" href="admin.php?page=contact_layout_settings"><?php _e("Global Settings",contact_bank) ;?></a>
 			<a class="nav-tab custom-nav-tab" id="contact_bank_recommended_plugins" href="admin.php?page=contact_bank_recommended_plugins"><?php _e("Recommendations",contact_bank) ;?></a>
-			<a class="nav-tab custom-nav-tab" id="pro_version" href="admin.php?page=pro_version"><?php _e("Premium Editions",contact_bank) ;?></a>
+			<a class="nav-tab custom-nav-tab" id="contact_pro_version" href="admin.php?page=contact_pro_version"><?php _e("Premium Editions",contact_bank) ;?></a>
 			<a class="nav-tab custom-nav-tab" id="contact_bank_other_services" href="admin.php?page=contact_bank_other_services"><?php _e("Our Other Services",contact_bank) ;?></a>
 		</h2>
 		<?php

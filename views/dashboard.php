@@ -110,7 +110,7 @@ else
 																					data-original-title="<?php _e("Edit Form", contact_bank) ?>">
 																					<i class="icon-pencil"></i>
 																	</a>
-																	<a href="admin.php?page=layout_settings&form_id=<?php echo $form_data[$flag]->form_id; ?>"
+																	<a href="admin.php?page=contact_layout_settings&form_id=<?php echo $form_data[$flag]->form_id; ?>"
 																		class="btn hovertip"
 																		data-original-title="<?php _e("Global Settings", contact_bank) ?>">
 																		<i class="icon-wrench"></i>
@@ -120,7 +120,7 @@ else
 																		data-original-title="<?php _e("Email Settings", contact_bank) ?>">
 																		<i class="icon-envelope"></i>
 																	</a>
-																	<a href="admin.php?page=frontend_data&form_id=<?php echo $form_data[$flag]->form_id; ?>"
+																	<a href="admin.php?page=contact_frontend_data&form_id=<?php echo $form_data[$flag]->form_id; ?>"
 																		class="btn hovertip"
 																		data-original-title="<?php _e("Form Entries", contact_bank) ?>">
 																		<i class="icon-tasks"></i>
