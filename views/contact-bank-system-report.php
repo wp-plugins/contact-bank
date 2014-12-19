@@ -19,6 +19,7 @@ if (!current_user_can($cb_user_role_permission))
 }
 else
 {
+	global $wp_version;
 ?>
 <form id="system_settings" class="layout-form" method="post">
 	<div id="poststuff" style="width: 99% !important;">
