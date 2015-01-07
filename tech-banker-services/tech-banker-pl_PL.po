@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Tech Banker Services\n"
-"POT-Creation-Date: 2014-11-17 23:46-0800\n"
-"PO-Revision-Date: 2014-11-17 23:46-0800\n"
+"POT-Creation-Date: 2015-01-07 14:45+0530\n"
+"PO-Revision-Date: 2015-01-07 14:45+0530\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pl\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.6.6\n"
-"X-Poedit-Basepath: C:\\xampp\\apps\\wordpress\\htdocs\\wp-content\\plugins"
+"X-Poedit-Basepath: C:\\xampp\\htdocs\\wordpress4.0.1\\wp-content\\plugins"
 "\\contact-bank\\tech-banker-services\n"
 "Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
@@ -86,7 +86,7 @@ msgid "Read More"
 msgstr ""
 
 #: other-services.php:80 other-services.php:111 other-services.php:141
-msgid "Cost of this Service is 50 Pounds."
+msgid "Cost of this Service is 70 Euros."
 msgstr ""
 
 #: other-services.php:81
@@ -141,7 +141,7 @@ msgstr ""
 #: other-services.php:744 other-services.php:870 other-services.php:901
 #: other-services.php:932 other-services.php:960 other-services.php:1065
 #: other-services.php:1129
-msgid "Cost of this Service is 500 Pounds."
+msgid "Cost of this Service is 700 Euros."
 msgstr ""
 
 #: other-services.php:174 other-services.php:204 other-services.php:232
@@ -167,7 +167,7 @@ msgstr ""
 #: other-services.php:203 other-services.php:287 other-services.php:348
 #: other-services.php:616 other-services.php:680 other-services.php:712
 #: other-services.php:1031 other-services.php:1097 other-services.php:1227
-msgid "Cost of this Service is 800 Pounds."
+msgid "Cost of this Service is 1120 Euros."
 msgstr ""
 
 #: other-services.php:212
@@ -183,7 +183,7 @@ msgid ""
 msgstr ""
 
 #: other-services.php:231 other-services.php:999
-msgid "Cost of this Service is 100 Pounds."
+msgid "Cost of this Service is 140 Euros."
 msgstr ""
 
 #: other-services.php:240
@@ -250,7 +250,7 @@ msgstr ""
 
 #: other-services.php:382 other-services.php:410 other-services.php:438
 #: other-services.php:1195
-msgid "Cost of this Service is 400 Pounds."
+msgid "Cost of this Service is 560 Euros."
 msgstr ""
 
 #: other-services.php:383 other-services.php:1228
@@ -436,7 +436,7 @@ msgid ""
 msgstr ""
 
 #: other-services.php:776 other-services.php:1161
-msgid "Cost of this Service is 300 Pounds."
+msgid "Cost of this Service is 420 Euros."
 msgstr ""
 
 #: other-services.php:786
@@ -452,7 +452,7 @@ msgid ""
 msgstr ""
 
 #: other-services.php:806 other-services.php:836
-msgid "Cost of this Service is 2000 Pounds."
+msgid "Cost of this Service is 2800 Euros."
 msgstr ""
 
 #: other-services.php:807 other-services.php:837
@@ -637,56 +637,60 @@ msgid ""
 msgstr ""
 
 #. translators: 1: The rating
-#: recommended-plugins.php:72
+#: recommended-plugins.php:66
 #, php-format
 msgid "%s rating"
 msgstr ""
 
-#: recommended-plugins.php:91
+#: recommended-plugins.php:85
 msgid "Recommendations"
 msgstr ""
 
-#: recommended-plugins.php:94
+#: recommended-plugins.php:88
 msgid "Back to Dashboard"
 msgstr ""
 
 #. translators: 1: Plugin name and version.
-#: recommended-plugins.php:139
+#: recommended-plugins.php:133
 msgid "More Details"
 msgstr ""
 
 #. translators: 1: Plugin name and version.
-#: recommended-plugins.php:150
+#: recommended-plugins.php:144
 msgid "Install Now"
 msgstr ""
 
 #. translators: 1: Plugin name and version
-#: recommended-plugins.php:157
+#: recommended-plugins.php:151
 msgid "Update Now"
 msgstr ""
 
-#: recommended-plugins.php:203 recommended-plugins.php:213
-#: recommended-plugins.php:223 recommended-plugins.php:233
+#: recommended-plugins.php:178
+msgid "By "
+msgstr ""
+
+#: recommended-plugins.php:197 recommended-plugins.php:207
+#: recommended-plugins.php:217 recommended-plugins.php:227
 msgid "Premium Editions"
 msgstr ""
 
-#: recommended-plugins.php:206 recommended-plugins.php:216
-#: recommended-plugins.php:226 recommended-plugins.php:236
+#: recommended-plugins.php:200 recommended-plugins.php:210
+#: recommended-plugins.php:220 recommended-plugins.php:230
 msgid "Visit Website"
 msgstr ""
 
-#: recommended-plugins.php:254
+#: recommended-plugins.php:248
 msgid "Last Updated:"
 msgstr ""
 
-#: recommended-plugins.php:265
+#: recommended-plugins.php:259
 msgid "<strong>Untested</strong> with your version of WordPress"
 msgstr ""
 
-#: recommended-plugins.php:269
+#: recommended-plugins.php:263
 msgid "Incompatible with your version of WordPress"
 msgstr ""
 
-#: recommended-plugins.php:273
+#: recommended-plugins.php:267
 msgid "Compatible with your version of WordPress"
 msgstr ""

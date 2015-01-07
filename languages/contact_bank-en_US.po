@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Contact bank\n"
-"POT-Creation-Date: 2014-11-18 05:19-0800\n"
-"PO-Revision-Date: 2014-11-18 05:19-0800\n"
+"POT-Creation-Date: 2015-01-07 13:01+0530\n"
+"PO-Revision-Date: 2015-01-07 13:01+0530\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_US\n"
@@ -15,117 +15,109 @@ msgstr ""
 "\\contact-bank\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: contact-bank.php:55 contact-bank.php:70 contact-bank.php:85
+#: contact-bank.php:53 contact-bank.php:66 contact-bank.php:79
 msgid "Contact Bank"
 msgstr ""
 
-#: contact-bank.php:56 contact-bank.php:71 contact-bank.php:86
-#: contact-bank.php:456 contact-bank.php:521 contact-bank.php:587
+#: contact-bank.php:54 contact-bank.php:67 contact-bank.php:80
+#: contact-bank.php:425 contact-bank.php:476 contact-bank.php:528
+#: views/dashboard.php:104
 msgid "Dashboard"
 msgstr ""
 
-#: contact-bank.php:58 contact-bank.php:73 contact-bank.php:88
-#: contact-bank.php:462 contact-bank.php:527 contact-bank.php:593
+#: contact-bank.php:56 contact-bank.php:69 contact-bank.php:82
+#: contact-bank.php:431 contact-bank.php:482 contact-bank.php:534
 msgid "Short-Codes"
 msgstr ""
 
-#: contact-bank.php:59 contact-bank.php:74 contact-bank.php:89
-#: contact-bank.php:468 contact-bank.php:533 contact-bank.php:599
-#: views/contact_frontend_data.php:31 views/dashboard.php:125
+#: contact-bank.php:57 contact-bank.php:70 contact-bank.php:83
+#: contact-bank.php:437 contact-bank.php:488 contact-bank.php:540
+#: views/contact_frontend_data.php:31 views/dashboard.php:194
 msgid "Form Entries"
 msgstr ""
 
-#: contact-bank.php:60 contact-bank.php:75 contact-bank.php:90
-#: contact-bank.php:474 contact-bank.php:539 contact-bank.php:605
-#: views/contact_email_settings.php:36 views/dashboard.php:120
+#: contact-bank.php:58 contact-bank.php:71 contact-bank.php:84
+#: contact-bank.php:443 contact-bank.php:494 contact-bank.php:546
+#: views/contact_email_settings.php:36 views/dashboard.php:189
 msgid "Email Settings"
 msgstr ""
 
-#: contact-bank.php:61 contact-bank.php:76 contact-bank.php:91
-#: contact-bank.php:480 contact-bank.php:545 contact-bank.php:611
-#: views/contact_bank_layout_settings.php:35 views/dashboard.php:115
+#: contact-bank.php:59 contact-bank.php:72 contact-bank.php:85
+#: contact-bank.php:449 contact-bank.php:500 contact-bank.php:552
+#: views/contact_bank_layout_settings.php:35 views/dashboard.php:184
 msgid "Global Settings"
 msgstr ""
 
-#: contact-bank.php:62 contact-bank.php:77 contact-bank.php:92
-#: contact-bank.php:486 contact-bank.php:553
+#: contact-bank.php:60 contact-bank.php:73 contact-bank.php:86
+#: contact-bank.php:455 contact-bank.php:508
 #: views/contact-bank-system-report.php:30
 msgid "System Status"
 msgstr ""
 
-#: contact-bank.php:63 contact-bank.php:78 contact-bank.php:93
-#: contact-bank.php:492 contact-bank.php:559 contact-bank.php:617
-#: views/header.php:84
-msgid "Recommendations"
+#: contact-bank.php:61 contact-bank.php:74 contact-bank.php:87
+#: contact-bank.php:461 contact-bank.php:514 contact-bank.php:558
+msgid "Purchase PRO Edition"
 msgstr ""
 
-#: contact-bank.php:64 contact-bank.php:79 contact-bank.php:94
-#: contact-bank.php:499 contact-bank.php:566 contact-bank.php:624
-#: views/purchase_pro_version.php:38
-msgid "Premium Editions"
-msgstr ""
-
-#: contact-bank.php:65 contact-bank.php:80 contact-bank.php:95
-#: contact-bank.php:506 contact-bank.php:573 contact-bank.php:631
-#: views/header.php:89
-msgid "Our Other Services"
-msgstr ""
-
-#: contact-bank.php:646
+#: contact-bank.php:573
 msgid "Add Contact Bank Form"
 msgstr ""
 
-#: contact-bank.php:658
+#: contact-bank.php:585
 msgid "Insert Contact Bank Form"
 msgstr ""
 
-#: contact-bank.php:660
+#: contact-bank.php:587
 msgid "Select a form below to add it to your post or page."
 msgstr ""
 
-#: contact-bank.php:665
+#: contact-bank.php:592
 msgid "Form Name"
 msgstr ""
 
-#: contact-bank.php:667
+#: contact-bank.php:594
 msgid "Select a Form"
 msgstr ""
 
-#: contact-bank.php:684
+#: contact-bank.php:611
 msgid "Show Form Title"
 msgstr ""
 
-#: contact-bank.php:689
+#: contact-bank.php:616
 msgid "Insert Form"
 msgstr ""
 
-#: contact-bank.php:692
+#: contact-bank.php:619
 msgid "Cancel"
 msgstr ""
 
-#: contact-bank.php:704
+#: contact-bank.php:631
 msgid "Please choose a Form to insert into Shortcode"
 msgstr ""
 
-#: contact-bank.php:740
-msgid "View Contact Bank Documentation"
-msgstr ""
-
-#: contact-bank.php:740
-msgid "Docs"
-msgstr ""
-
-#: contact-bank.php:741
-msgid "View Contact Bank Premium Editions"
-msgstr ""
-
-#: contact-bank.php:741
-msgid "Go for Premium!"
-msgstr ""
-
-#: frontend_views/contact_bank_forms.php:369
+#: frontend_views/contact_bank_forms.php:405
 #: views/contact_bank_form_preview.php:401 views/contact_controls_files.php:87
 msgid "Select Option"
+msgstr ""
+
+#: frontend_views/contact_bank_forms.php:573
+msgid "Day"
+msgstr ""
+
+#: frontend_views/contact_bank_forms.php:610
+msgid "Select Month"
+msgstr ""
+
+#: frontend_views/contact_bank_forms.php:627
+msgid "Year"
+msgstr ""
+
+#: frontend_views/contact_bank_forms.php:641
+msgid "Hour"
+msgstr ""
+
+#: frontend_views/contact_bank_forms.php:645
+msgid "Minute"
 msgstr ""
 
 #: includes/cb_checkbox.php:36
@@ -185,7 +177,7 @@ msgstr ""
 #: includes/cb_email.php:115 includes/cb_multiple.php:108
 #: includes/cb_text.php:114 includes/cb_textarea.php:113
 #: views/contact_bank_layout_settings.php:952
-#: views/contact_frontend_data.php:171 views/dashboard.php:209
+#: views/contact_frontend_data.php:171 views/dashboard.php:358
 #: views/includes_common_after.php:348 views/includes_common_after.php:351
 #: views/includes_common_after.php:354 views/includes_common_after.php:357
 #: views/includes_common_after.php:360 views/includes_common_after.php:363
@@ -478,14 +470,14 @@ msgstr ""
 msgid "Default"
 msgstr ""
 
-#: views/contact_bank_form_preview.php:300 views/dashboard.php:130
+#: views/contact_bank_form_preview.php:300 views/dashboard.php:199
 msgid "Form Preview"
 msgstr ""
 
 #: views/contact_bank_form_preview.php:303
 #: views/contact_bank_layout_settings.php:38
 #: views/contact_email_settings.php:39 views/contact_frontend_data.php:34
-#: views/contact_view.php:261 views/purchase_pro_version.php:42
+#: views/contact_view.php:261
 msgid "Back to Dashboard"
 msgstr ""
 
@@ -656,7 +648,7 @@ msgstr ""
 msgid "Contact Bank Pricing"
 msgstr ""
 
-#: views/contact_bank_pro_version.php:381
+#: views/contact_bank_pro_version.php:381 views/dashboard.php:228
 msgid "Need Support Help?"
 msgstr ""
 
@@ -664,7 +656,7 @@ msgstr ""
 msgid "Lets get in touch!"
 msgstr ""
 
-#: views/contact_bank_pro_version.php:397
+#: views/contact_bank_pro_version.php:397 views/dashboard.php:244
 msgid "Order Now!"
 msgstr ""
 
@@ -694,12 +686,12 @@ msgstr ""
 msgid "Export to Excel"
 msgstr ""
 
-#: views/contact_frontend_data.php:41 views/dashboard.php:65
-#: views/dashboard.php:72
+#: views/contact_frontend_data.php:41 views/dashboard.php:134
+#: views/dashboard.php:141
 msgid "Form"
 msgstr ""
 
-#: views/contact_view.php:258 views/dashboard.php:47
+#: views/contact_view.php:258 views/dashboard.php:116
 msgid "Add New Form"
 msgstr ""
 
@@ -841,96 +833,56 @@ msgstr ""
 msgid "Password"
 msgstr ""
 
-#: views/dashboard.php:35
-msgid "Contact Bank Short-Codes"
+#: views/dashboard.php:74
+msgid "Getting Started"
 msgstr ""
 
-#: views/dashboard.php:53
+#: views/dashboard.php:78
+msgid "Watch the Walk-Through Video"
+msgstr ""
+
+#: views/dashboard.php:87
+msgid "Contact Bank, a Superlative High quality WordPress Plugin!"
+msgstr ""
+
+#: views/dashboard.php:94
+msgid "Get Contact Bank Pro Features"
+msgstr ""
+
+#: views/dashboard.php:122
 msgid "Delete All Forms"
 msgstr ""
 
-#: views/dashboard.php:56
+#: views/dashboard.php:125
 msgid "Restore Factory Settings"
 msgstr ""
 
-#: views/dashboard.php:73
+#: views/dashboard.php:142
 msgid "Shortcode"
 msgstr ""
 
-#: views/dashboard.php:74
+#: views/dashboard.php:143
 msgid "Total Controls"
 msgstr ""
 
-#: views/dashboard.php:110
+#: views/dashboard.php:179
 msgid "Edit Form"
 msgstr ""
 
-#: views/dashboard.php:135
+#: views/dashboard.php:204
 msgid "Delete Form"
 msgstr ""
 
-#: views/dashboard.php:190
+#: views/dashboard.php:240
+msgid "Let's get in touch!"
+msgstr ""
+
+#: views/dashboard.php:339
 msgid "Are you sure, you want to delete this Form?"
 msgstr ""
 
-#: views/dashboard.php:200
+#: views/dashboard.php:349
 msgid "Are you sure, you want to delete all Forms?"
-msgstr ""
-
-#: views/header.php:21
-msgid "Get Started"
-msgstr ""
-
-#: views/header.php:24
-msgid "Watch Contact Video!"
-msgstr ""
-
-#: views/header.php:28
-msgid "read documentation here"
-msgstr ""
-
-#: views/header.php:33
-msgid "Go Premium"
-msgstr ""
-
-#: views/header.php:37
-msgid "Features"
-msgstr ""
-
-#: views/header.php:42
-msgid "Online Demos"
-msgstr ""
-
-#: views/header.php:47
-msgid "Premium Pricing Plan ?"
-msgstr ""
-
-#: views/header.php:54
-msgid "Knowledge Base"
-msgstr ""
-
-#: views/header.php:59
-msgid "Support Forum"
-msgstr ""
-
-#: views/header.php:64
-msgid "FAQ's"
-msgstr ""
-
-#: views/header.php:69
-msgid "Detailed Features"
-msgstr ""
-
-#: views/header.php:75
-msgid "More Actions"
-msgstr ""
-
-#: views/header.php:79
-msgid "Plugin Customization"
-msgstr ""
-
-#: views/purchase_pro_version.php:47
-msgid "WP Contact Bank is an one time Investment. Its Worth it!"
 msgstr ""
 
 #: views/shortcode.php:29
