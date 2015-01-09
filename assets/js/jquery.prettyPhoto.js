@@ -6,11 +6,6 @@ http://www.no-margin-for-errors.com
 
 ============================= Released under =============================
 
-Creative Commons 2.5
-http://creativecommons.org/licenses/by/2.5/
-
-OR
-
 GPLV2 license
 http://www.gnu.org/licenses/gpl-2.0.html
 
