@@ -315,7 +315,7 @@ else
 																class="css3_grid_tooltip"><span>You just need to pay for
 																		once for life time.</span>
 																<h1 class="col1">
-																		&euro;<span>15</span>
+																		&euro;<span>18</span>
 																	</h1>
 																	<h3 class="col1">one time</h3></span></span></span></li>
 													<li
@@ -442,7 +442,7 @@ else
 																class="css3_grid_tooltip"><span>You just need to pay for
 																		once for life time.</span>
 																<h1 class="col1">
-																		&euro;<span>25</span>
+																		&euro;<span>28</span>
 																	</h1>
 																	<h3 class="col1">one time</h3></span></span></span></li>
 													<li
