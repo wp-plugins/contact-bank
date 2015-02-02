@@ -179,6 +179,6 @@ elseif(!(in_array($cb_language, $cb_lang_translated_languages)) && !(in_array($c
 ?>
 <div class="custom-message red" style="display: block;margin-top:10px;">
  <span>
-  <strong>You will be only allowed to add 1 Form. Kindly purchase Premium Edition for full access.</strong>
+  <strong>You will be only allowed to add 2 Forms. Kindly purchase Premium Edition for full access.</strong>
  </span>
 </div>

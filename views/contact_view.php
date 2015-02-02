@@ -132,7 +132,7 @@ else
 		        $settings["input_field_rdl_multiple_row"] = "1";
 				$settings["input_field_rdl_text_align"] = "0";
 				$settings["input_field_text_direction"] = "inherit";
-				$settings["input_field_input_size"] = "layout-span6";
+				$settings["input_field_input_size"] = "layout-span10";
 		
 				$settings["submit_button_font_family"] = "inherit";
 		        $settings["submit_button_text"] = "Submit ";

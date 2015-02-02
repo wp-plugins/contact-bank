@@ -532,6 +532,15 @@ In order to set Shortcode for a Form, you need to follow these steps :
 
 == Changelog ==
 
+= 2.0.90 =
+
+* Look & Feel of Front End Form changed
+* Fixed Few Bugs
+* Added Control Drag & Drop Sorting Functionality
+* Added Dummy Form for Beginners
+* Allow 2 Forms to be created in Lite Edition
+
+
 = 2.0.89 =
 
 * Added google-maps-bank in recommended-plugins file

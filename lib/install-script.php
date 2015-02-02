@@ -543,7 +543,7 @@ if($version == "" || $version == "1.0")
         $settings["input_field_rdl_multiple_row"] = "1";
         $settings["input_field_rdl_text_align"] = "0";
         $settings["input_field_text_direction"] = "inherit";
-        $settings["input_field_input_size"] = "layout-span6";
+        $settings["input_field_input_size"] = "layout-span10";
 
         $settings["submit_button_font_family"] = "inherit";
         $settings["submit_button_text"] = "Save ";
@@ -627,8 +627,403 @@ if($version == "" || $version == "1.0")
             "INSERT INTO " . contact_bank_roles_capability() . "(roles_capability_key,roles_capability_value) VALUES ".implode(',', $sql1),""
         );
     }
-	update_option("contact-bank-version-number","2.1");
-	 
+    
+
+    $wpdb->query
+    (
+    		$wpdb->prepare
+    		(
+    				"INSERT INTO " . contact_bank_contact_form() . "(form_id, form_name) VALUES(%d, %s)",
+    				1,
+    				"Contact Form Demo"
+    		)
+    );
+    $wpdb->query
+    (
+    		$wpdb->prepare
+    		(
+    				"INSERT INTO ". contact_bank_form_settings_Table() ."(form_id,form_message_key,form_message_value)VALUES(%d, %s, %s)",
+    				1,
+    				"redirect",
+    				"0"
+    		)
+    );
+    $wpdb->query
+    (
+    		$wpdb->prepare
+    		(
+    				"INSERT INTO ". contact_bank_form_settings_Table() ."(form_id,form_message_key,form_message_value)VALUES(%d, %s, %s)",
+    				1,
+    				"redirect_url",
+    				""
+    		)
+    );
+    $wpdb->query
+    (
+    		$wpdb->prepare
+    		(
+    				"INSERT INTO ". contact_bank_form_settings_Table() ."(form_id,form_message_key,form_message_value)VALUES(%d, %s, %s)",
+    				1,
+    				"success_message",
+    				"Your message was sent successfully. Thanks."
+    		)
+    );
+    $wpdb->query
+    (
+    		$wpdb->prepare
+    		(
+    				"INSERT INTO ". contact_bank_form_settings_Table() ."(form_id,form_message_key,form_message_value)VALUES(%d, %s, %s)",
+    				1,
+    				"blank_field_message",
+    				"Required field must not be blank"
+    		)
+    );
+    $wpdb->query
+    (
+    		$wpdb->prepare
+    		(
+    				"INSERT INTO ". contact_bank_form_settings_Table() ."(form_id,form_message_key,form_message_value)VALUES(%d, %s, %s)",
+    				1,
+    				"incorrect_email_message",
+    				"Please enter a valid email address"
+    		)
+    );
+    $wpdb->query
+    (
+    		$wpdb->prepare
+    		(
+    				"INSERT INTO ". contact_bank_form_settings_Table() ."(form_id,form_message_key,form_message_value)VALUES(%d, %s, %s)",
+    				1,
+    				"form_description",
+    				""
+    		)
+    );
+    
+    $wpdb->query
+    (
+    		$wpdb->prepare
+    		(
+    				"INSERT INTO " . create_control_Table() . "(control_id, field_id,form_id,
+					column_dynamicId, sorting_order) VALUES(%d, %d, %d, %d, %d)",
+    				1,
+    				1,
+    				1,
+    				1,
+    				1
+    		)
+    );
+    
+    
+    $dynamic_Id = 1;
+    $form_id = 1;
+    $form_settings = array();
+    $form_settings["dynamic_id"] = $dynamic_Id;
+    $form_settings["control_type"] = "1";
+    $form_settings["cb_label_value"] =  "Your Name";
+    $form_settings["cb_description"] = "";
+    $form_settings["cb_control_required"] = "1";
+    $form_settings["cb_tooltip_txt"] = "";
+    $form_settings["cb_default_txt_val"] = "Your Name";
+    $form_settings["cb_admin_label"] = "Your Name";
+    $form_settings["cb_show_email"] = "0";
+    $form_settings["cb_checkbox_alpha_filter"] = "0";
+    $form_settings["cb_ux_checkbox_alpha_num_filter"] = "0";
+    $form_settings["cb_checkbox_digit_filter"] = "0";
+    $form_settings["cb_checkbox_strip_tag_filter"] = "0";
+    $form_settings["cb_checkbox_trim_filter"] = "0";
+    
+    
+    foreach($form_settings as $key => $value)
+    {
+    	if($key == "dynamic_id" || $key == "control_type")
+    	{
+    		continue;
+    	}
+    	else
+    	{
+    		$sql[] = '('.$dynamic_Id.',"'.$key.'", "'.$value.'")';
+    
+    	}
+    }
+    $wpdb->query
+    (
+    		"INSERT INTO " . contact_bank_dynamic_settings_form() . "(dynamicId,dynamic_settings_key,dynamic_settings_value) VALUES ".implode(',', $sql),""
+    );
+    
+    
+    $wpdb->query
+    (
+    		$wpdb->prepare
+    		(
+    				"INSERT INTO " . create_control_Table() . "(control_id, field_id,form_id,
+					column_dynamicId, sorting_order) VALUES(%d, %d, %d, %d, %d)",
+    				2,
+    				3,
+    				1,
+    				2,
+    				2
+    		)
+    );
+    
+    $dynamic_Id = 2;
+    $form_id = 1;
+    $form_settings = array();
+    $form_settings["dynamic_id"] = $dynamic_Id;
+    $form_settings["control_type"] = "1";
+    $form_settings["cb_label_value"] =  "Your Email";
+    $form_settings["cb_description"] = "";
+    $form_settings["cb_control_required"] = "1";
+    $form_settings["cb_tooltip_txt"] = "";
+    $form_settings["cb_default_txt_val"] = "Your Email";
+    $form_settings["cb_admin_label"] = "Your Email";
+    $form_settings["cb_show_email"] = "0";
+    
+    
+    foreach($form_settings as $key => $value)
+    {
+    	if($key == "dynamic_id" || $key == "control_type")
+    	{
+    		continue;
+    	}
+    	else
+    	{
+    		$sql[] = '('.$dynamic_Id.',"'.$key.'", "'.$value.'")';
+    
+    	}
+    }
+    $wpdb->query
+    (
+    		"INSERT INTO " . contact_bank_dynamic_settings_form() . "(dynamicId,dynamic_settings_key,dynamic_settings_value) VALUES ".implode(',', $sql),""
+    );
+    
+    
+    $wpdb->query
+    (
+    		$wpdb->prepare
+    		(
+    				"INSERT INTO " . create_control_Table() . "(control_id, field_id,form_id,
+					column_dynamicId, sorting_order) VALUES(%d, %d, %d, %d, %d)",
+    				3,
+    				1,
+    				1,
+    				3,
+    				3
+    		)
+    );
+    
+    $dynamic_Id = 3;
+    $form_id = 1;
+    $form_settings = array();
+    $form_settings["dynamic_id"] = $dynamic_Id;
+    $form_settings["control_type"] = "1";
+    $form_settings["cb_label_value"] =  "Subject";
+    $form_settings["cb_description"] = "";
+    $form_settings["cb_control_required"] = "0";
+    $form_settings["cb_tooltip_txt"] = "";
+    $form_settings["cb_default_txt_val"] = "Subject";
+    $form_settings["cb_admin_label"] = "Subject";
+    $form_settings["cb_show_email"] = "0";
+    $form_settings["cb_checkbox_alpha_filter"] = "0";
+    $form_settings["cb_ux_checkbox_alpha_num_filter"] = "0";
+    $form_settings["cb_checkbox_digit_filter"] = "0";
+    $form_settings["cb_checkbox_strip_tag_filter"] = "0";
+    $form_settings["cb_checkbox_trim_filter"] = "0";
+    
+    
+    foreach($form_settings as $key => $value)
+    {
+    	if($key == "dynamic_id" || $key == "control_type")
+    	{
+    		continue;
+    	}
+    	else
+    	{
+    		$sql[] = '('.$dynamic_Id.',"'.$key.'", "'.$value.'")';
+    
+    	}
+    }
+    $wpdb->query
+    (
+    		"INSERT INTO " . contact_bank_dynamic_settings_form() . "(dynamicId,dynamic_settings_key,dynamic_settings_value) VALUES ".implode(',', $sql),""
+    );
+    
+    
+    
+    $wpdb->query
+    (
+    		$wpdb->prepare
+    		(
+    				"INSERT INTO " . create_control_Table() . "(control_id, field_id,form_id,
+					column_dynamicId, sorting_order) VALUES(%d, %d, %d, %d, %d)",
+    				4,
+    				2,
+    				1,
+    				4,
+    				4
+    		)
+    );
+    
+    
+    $dynamic_Id = 4;
+    $form_id = 1;
+    $form_settings = array();
+    $form_settings["dynamic_id"] = $dynamic_Id;
+    $form_settings["control_type"] = "2";
+    $form_settings["cb_label_value"] =  "Your Message";
+    $form_settings["cb_description"] = "";
+    $form_settings["cb_control_required"] = "0";
+    $form_settings["cb_tooltip_txt"] = "";
+    $form_settings["cb_default_txt_val"] = "Your Message";
+    $form_settings["cb_admin_label"] = "Your Message";
+    $form_settings["cb_show_email"] = "0";
+    $form_settings["cb_checkbox_alpha_filter"] = "0";
+    $form_settings["cb_ux_checkbox_alpha_num_filter"] = "0";
+    $form_settings["cb_checkbox_digit_filter"] = "0";
+    $form_settings["cb_checkbox_strip_tag_filter"] = "0";
+    $form_settings["cb_checkbox_trim_filter"] = "0";
+    
+    
+    foreach($form_settings as $key => $value)
+    {
+    	if($key == "dynamic_id" || $key == "control_type")
+    	{
+    		continue;
+    	}
+    	else
+    	{
+    		$sql[] = '('.$dynamic_Id.',"'.$key.'", "'.$value.'")';
+    
+    	}
+    }
+    $wpdb->query
+    (
+    		"INSERT INTO " . contact_bank_dynamic_settings_form() . "(dynamicId,dynamic_settings_key,dynamic_settings_value) VALUES ".implode(',', $sql),""
+    );
+    
+    
+    $settings = array();
+    $settings["label_setting_font_family"] = "inherit";
+    $settings["label_setting_font_color"] = "#000000";
+    $settings["label_setting_font_style"] =  "normal";
+    $settings["label_setting_font_size"] = "16";
+    $settings["label_setting_font_align_left"] =  "0";
+    $settings["label_setting_label_position"] =  "top";
+    $settings["label_setting_field_size"] = "11";
+    $settings["label_setting_field_align"] = "left";
+    $settings["label_setting_hide_label"] = "0";
+    $settings["label_setting_text_direction"] = "inherit";
+    
+    $settings["input_field_font_family"] = "inherit";
+    $settings["input_field_font_color"] = "#000000";
+    $settings["input_field_font_style"] = "normal";
+    $settings["input_field_font_size"] = "14";
+    $settings["input_field_border_radius"] = "0";
+    $settings["input_field_border_color"] = "#e5e5e5";
+    $settings["input_field_border_size"] = "1";
+    $settings["input_field_border_style"] = "solid";
+    $settings["input_field_clr_bg_color"] = "#ffffff";
+    $settings["input_field_rdl_multiple_row"] = "1";
+    $settings["input_field_rdl_text_align"] = "0";
+    $settings["input_field_text_direction"] = "inherit";
+    $settings["input_field_input_size"] = "layout-span10";
+    
+    $settings["submit_button_font_family"] = "inherit";
+    $settings["submit_button_text"] = "Save ";
+    $settings["submit_button_font_style"] = "normal";
+    $settings["submit_button_font_size"] = "12";
+    $settings["submit_button_button_width"] = "100";
+    $settings["submit_button_bg_color"] =  "#24890d";
+    $settings["submit_button_hover_bg_color"] = "#3dd41a";
+    $settings["submit_button_text_color"] =  "#ffffff";
+    $settings["submit_button_border_color"] = "#000000";
+    $settings["submit_button_border_size"] = "0";
+    $settings["submit_button_border_radius"] = "0";
+    $settings["submit_button_rdl_text_align"] = "0";
+    $settings["submit_button_text_direction"] = "inherit";
+    
+    $settings["success_msg_font_family"] = "inherit";
+    $settings["success_msg_font_size"] = "12";
+    $settings["success_msg_bg_color"] = "#e5ffd5";
+    $settings["success_msg_border_color"] =  "#e5ffd5";
+    $settings["success_msg_text_color"] =  "#6aa500";
+    $settings["success_msg_rdl_text_align"] = "0";
+    $settings["success_msg_text_direction"] = "inherit";
+    
+    $settings["error_msg_font_family"] =  "inherit";
+    $settings["error_msg_font_size"] = "12";
+    $settings["error_msg_bg_color"] = "#ffcaca";
+    $settings["error_msg_border_color"] = "#ffcaca";
+    $settings["error_msg_text_color"] = "#ff2c38";
+    $settings["error_msg_rdl_text_align"] = "0";
+    $settings["error_msg_text_direction"] = "inherit";
+    
+    $contact_forms_for_settings = $wpdb->get_results
+    (
+    		"SELECT * FROM ".contact_bank_contact_form()
+    );
+    for($flag = 0; $flag < count($contact_forms_for_settings); $flag++)
+    {
+   	 	$sql = "";
+    	foreach($settings as $key => $value)
+    	{
+    		$sql[] = '('.$contact_forms_for_settings[$flag]->form_id.',"'.$key.'", "'.$value.'")';
+    	}
+	    $wpdb->query
+	    (
+	    	"INSERT INTO " . contact_bank_layout_settings_Table() . "(form_id,form_settings_key,form_settings_value) VALUES ".implode(',', $sql),""
+    	);
+    }
+    
+	$email_name = "Admin Notification";
+	$send_to = get_option('admin_email');
+	$email_address = get_option('admin_email');
+	$email_from_name = "Site Administration";
+	$email_from_email = get_option('admin_email');
+    $email_subject  = "New Contact recieved from Website";
+	$uxDescription_email = "Hello Admin,<br><br>
+				A new user has visited your website.<br><br>
+				Here are the details :<br><br>
+				<br>Thanks,<br><br>
+				<strong>Technical Support Team</strong>";
+	$wpdb->query
+	(
+    	$wpdb->prepare
+    	(
+    			"INSERT INTO " . contact_bank_email_template_admin(). " (email_to,email_from,body_content,subject,form_id,from_name,name,send_to) VALUES(%s,%s,%s,%s,%d,%s,%s,%d)",
+					$email_address,
+    					$email_from_email,
+    					$uxDescription_email,
+    					$email_subject,
+    					1,
+    					$email_from_name,
+    					$email_name,
+    					$send_to
+    			)
+    	);
+	
+    $email_name_client = "Client Notification";
+    $email_subject_client  = "Thanks for visiting our website";
+	$email_from_name = "Site Administration";
+    $email_from_email = get_option('admin_email');
+    $uxDescription_email_client = "Hi,<br><br>
+    Thanks for visiting our website. We will be Contacting you soon next 24 hours.<br><br>
+	<br>Thanks,<br><br>
+	<strong>Support Team</strong>";
+	$wpdb->query
+	(
+		$wpdb->prepare
+		(
+			"INSERT INTO " . contact_bank_email_template_admin(). " (email_to,email_from,body_content,subject,form_id,from_name,name,send_to) VALUES(%s,%s,%s,%s,%d,%s,%s,%d)",
+			"",
+			$email_from_email,
+			$uxDescription_email_client,
+			$email_subject_client,
+			1,
+			$email_from_name,
+			$email_name_client,
+			""
+		)
+	);
 }
 else if($version == "2.0")
 {
@@ -718,7 +1113,6 @@ else if($version == "2.0")
 			}
 		}
 	}
-    update_option("contact-bank-version-number","2.1");
 }
 else if($version == "2.1")
 {
@@ -754,6 +1148,6 @@ else if($version == "2.1")
             "INSERT INTO " . contact_bank_roles_capability() . "(roles_capability_key,roles_capability_value) VALUES ".implode(',', $sql1),""
         );
     }
-	 update_option("contact-bank-version-number","2.1");
 }
+update_option("contact-bank-version-number","2.1");
 ?>

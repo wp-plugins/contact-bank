@@ -18,7 +18,6 @@ if (!current_user_can($cb_user_role_permission))
 }
 else
 {
-
 	$last_form_id = $wpdb->get_var
 	(
 		"SELECT form_id FROM " .contact_bank_contact_form(). " order by form_id desc limit 1"

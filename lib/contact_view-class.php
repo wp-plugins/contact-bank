@@ -923,6 +923,25 @@ else
 				update_option("contact-bank-info-popup", "no");
 				die();
 			break;
+			case "form_fields_sorting_order":
+				
+				$form_id = intval($_REQUEST["form_id"]);
+				$field_dynamic_id = isset($_REQUEST["field_dynamic_id"]) ? json_decode(stripcslashes($_REQUEST["field_dynamic_id"]),true) : array();
+				$sql= "";
+				foreach($field_dynamic_id as $key => $val)
+				{
+					$sql .= ' WHEN `column_dynamicId` = "'.$val.'" THEN "'.$key.'"';
+				}
+				$wpdb->query
+				(
+						$wpdb->prepare
+						(
+								"UPDATE " . create_control_Table() . " SET `sorting_order` = CASE " . $sql . " END where form_id = %d ",
+								$form_id
+						)
+				);
+				die();
+			
 		}
 	}
 }

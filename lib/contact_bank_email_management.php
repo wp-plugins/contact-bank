@@ -54,6 +54,8 @@ if(isset($_REQUEST["param"]))
 					$messageTxt = str_replace("[control_".$dynamicId."]",$frontend_control_value[$flag1]->dynamic_frontend_value, $messageTxt);
 				}
 			}
+			$body_content = "";
+			$body_content .= "\<div lang=\"ar\"> $messageTxt</div>";
 			$headers = "";
 			$headers .= "Content-Type: text/html; charset= utf-8". "\r\n";
 			if($email_from_name != "" && $email_from != "")
@@ -73,7 +75,7 @@ if(isset($_REQUEST["param"]))
 				$headers .= "Bcc: " .$email_bcc."\r\n";
 			}				 
 			get_option("blog_charset") . "\r\n";
-			wp_mail($email_to, $email_subject, $messageTxt, $headers);
+			wp_mail($email_to, $email_subject, $body_content, $headers);
 		}
 	die();
 	}
