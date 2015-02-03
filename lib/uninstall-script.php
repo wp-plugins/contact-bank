@@ -32,4 +32,5 @@
 	
 	delete_option("contact-bank-info-popup");
     delete_option("contact-bank-version-number");
+    delete_option("contact-bank-automatic_update");
 ?>

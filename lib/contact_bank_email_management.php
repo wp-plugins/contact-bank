@@ -55,7 +55,7 @@ if(isset($_REQUEST["param"]))
 				}
 			}
 			$body_content = "";
-			$body_content .= "\<div lang=\"ar\"> $messageTxt</div>";
+			$body_content .= "<div lang=\"ar\"> $messageTxt</div>";
 			$headers = "";
 			$headers .= "Content-Type: text/html; charset= utf-8". "\r\n";
 			if($email_from_name != "" && $email_from != "")
@@ -73,7 +73,8 @@ if(isset($_REQUEST["param"]))
 			if($email_bcc != "")
 			{
 				$headers .= "Bcc: " .$email_bcc."\r\n";
-			}				 
+			}	
+			echo 	$body_content;		 
 			get_option("blog_charset") . "\r\n";
 			wp_mail($email_to, $email_subject, $body_content, $headers);
 		}

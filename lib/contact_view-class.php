@@ -941,6 +941,11 @@ else
 						)
 				);
 				die();
+			break;
+			case "contact_plugin_updates":
+				$contact_updates = intval($_REQUEST["contact_updates"]);
+				update_option("contact-bank-automatic_update",$contact_updates);
+			break;
 			
 		}
 	}

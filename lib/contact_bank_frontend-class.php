@@ -5,6 +5,7 @@ if(isset($_REQUEST["param"]))
 	if($_REQUEST["param"] == "frontend_submit_controls")
 	{
 		$form_id = intval($_REQUEST["form_id"]);
+		$rand = intval($_REQUEST["rand"]);
 		$fields = $wpdb->get_results
 		(
 			$wpdb->prepare
@@ -39,7 +40,7 @@ if(isset($_REQUEST["param"]))
 			switch($field_id)
 			{
 				case 1:
-					$ux_txt = esc_attr(stripslashes($_REQUEST["ux_txt_control_".$dynamicId]));
+					$ux_txt = esc_attr(stripslashes($_REQUEST["ux_txt_control_".$dynamicId."_".$rand]));
 					$wpdb->query
 					(
 						$wpdb->prepare
@@ -54,7 +55,7 @@ if(isset($_REQUEST["param"]))
 					);
 				break;
 				case 2:
-					$ux_textarea = esc_attr(stripslashes($_REQUEST["ux_textarea_control_".$dynamicId]));
+					$ux_textarea = esc_attr(stripslashes($_REQUEST["ux_textarea_control_".$dynamicId."_".$rand]));
 					$wpdb->query
 					(
 						$wpdb->prepare
@@ -69,7 +70,7 @@ if(isset($_REQUEST["param"]))
 					);
 				break;
 				case 3:
-					$ux_email = esc_attr(stripslashes($_REQUEST["ux_txt_email_".$dynamicId]));
+					$ux_email = esc_attr(stripslashes($_REQUEST["ux_txt_email_".$dynamicId."_".$rand]));
 					$wpdb->query
 					(
 						$wpdb->prepare
@@ -85,13 +86,13 @@ if(isset($_REQUEST["param"]))
 				break;
 				case 4:
 					$ux_dropdown = "Untitled";
-					if(esc_attr($_REQUEST["ux_select_default_".$dynamicId]) == " ")
+					if(esc_attr($_REQUEST["ux_select_default_".$dynamicId."_".$rand]) == " ")
 					{
 						$ux_dropdown =  "Untitled";
 					}
 					else 
 					{
-						$ux_dropdown = esc_attr($_REQUEST["ux_select_default_".$dynamicId]);
+						$ux_dropdown = esc_attr($_REQUEST["ux_select_default_".$dynamicId."_".$rand]);
 					}
 					$wpdb->query
 					(
@@ -107,9 +108,9 @@ if(isset($_REQUEST["param"]))
 					);
 				break;
 				case 5:
-					if(isset($_REQUEST[$dynamicId."_chk"]))
+					if(isset($_REQUEST[$dynamicId."_".$rand."_chk"]))
 					{
-						$ux_checkbox = esc_sql($_REQUEST[$dynamicId."_chk"]);
+						$ux_checkbox = esc_sql($_REQUEST[$dynamicId ."_".$rand."_chk"]);
 						$checkbox_options = "";
 						for($flag1 =0;$flag1<count($ux_checkbox);$flag1++)
 						{
@@ -150,7 +151,7 @@ if(isset($_REQUEST["param"]))
 					}
 				break;
 				case 6:
-					$ux_multiple = isset($_REQUEST[$dynamicId."_rdl"]) ? esc_attr($_REQUEST[$dynamicId."_rdl"]) : "Untitled";
+					$ux_multiple = isset($_REQUEST[$dynamicId ."_".$rand."_rdl"]) ? esc_attr($_REQUEST[$dynamicId ."_".$rand."_rdl"]) : "Untitled";
 					$wpdb->query
 					(
 						$wpdb->prepare

@@ -4,7 +4,7 @@ Plugin Name: Contact Bank Lite Edition
 Plugin URI: http://tech-banker.com
 Description: Build Complex, Powerful Contact Forms in Just Seconds. No Programming Knowledge Required! Yeah, It's Really That Easy.
 Author: Tech Banker
-Version: 2.0.91
+Version: 2.0.92
 Author URI: http://tech-banker.com
  */
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -80,47 +80,50 @@ function create_global_menus_for_contact_bank()
 	}
 	switch ($cb_role) {
 		case "administrator":
-			add_menu_page("Contact Bank", __("Contact Bank", contact_bank), "read", "dashboard","",plugins_url("/assets/images/icon.png" , __FILE__));
-		    add_submenu_page("dashboard", "Dashboard", __("Dashboard", contact_bank), "read", "dashboard","dashboard");
+			add_menu_page("Contact Bank", __("Contact Bank", contact_bank), "read", "contact_dashboard","",plugins_url("/assets/images/icon.png" , __FILE__));
+		    add_submenu_page("contact_dashboard", "Dashboard", __("Dashboard", contact_bank), "read", "contact_dashboard","contact_dashboard");
 		    add_submenu_page("","","", "read", "contact_bank","contact_bank");
-			add_submenu_page("dashboard", "Short-Codes", __("Short-Codes", contact_bank), "read", "contact_short_code", "contact_short_code" );
-		    add_submenu_page("dashboard", "Form Entries", __("Form Entries", contact_bank), "read", "contact_frontend_data","contact_frontend_data");
-		    add_submenu_page("dashboard", "Email Settings", __("Email Settings", contact_bank), "read", "contact_email", "contact_email");
-		    add_submenu_page("dashboard", "Global Settings", __("Global Settings", contact_bank), "read", "contact_layout_settings", "contact_layout_settings");
-			add_submenu_page("dashboard", "System Status", __("System Status", contact_bank), "read", "contact_system_status", "contact_system_status" );
-		    add_submenu_page("dashboard", "Recommendations", __("Recommendations", contact_bank), "read", "contact_bank_recommended_plugins", "contact_bank_recommended_plugins");
-		    add_submenu_page("dashboard", "Premium Editions", __("Premium Editions", contact_bank), "read", "contact_pro_version", "contact_pro_version" );
-		    add_submenu_page("dashboard", " Our Other Services ", __("Our Other Services", contact_bank), "read", "contact_bank_other_services", "contact_bank_other_services");
+		    add_submenu_page("contact_dashboard", "Plugin Updates", __("Plugin Updates", contact_bank), "read", "contact_plugin_update", "contact_plugin_update" );
+			add_submenu_page("contact_dashboard", "Short-Codes", __("Short-Codes", contact_bank), "read", "contact_short_code", "contact_short_code" );
+		    add_submenu_page("contact_dashboard", "Form Entries", __("Form Entries", contact_bank), "read", "contact_frontend_data","contact_frontend_data");
+		    add_submenu_page("contact_dashboard", "Email Settings", __("Email Settings", contact_bank), "read", "contact_email", "contact_email");
+		    add_submenu_page("contact_dashboard", "Global Settings", __("Global Settings", contact_bank), "read", "contact_layout_settings", "contact_layout_settings");
+			add_submenu_page("contact_dashboard", "System Status", __("System Status", contact_bank), "read", "contact_system_status", "contact_system_status" );
+		    add_submenu_page("contact_dashboard", "Recommendations", __("Recommendations", contact_bank), "read", "contact_bank_recommended_plugins", "contact_bank_recommended_plugins");
+		    add_submenu_page("contact_dashboard", "Premium Editions", __("Premium Editions", contact_bank), "read", "contact_pro_version", "contact_pro_version" );
+		    add_submenu_page("contact_dashboard", " Our Other Services ", __("Our Other Services", contact_bank), "read", "contact_bank_other_services", "contact_bank_other_services");
 		    add_submenu_page("","","", "read", "add_contact_email_settings", "add_contact_email_settings" );
 			add_submenu_page("","","", "read", "form_preview", "form_preview" );
 		break;
 		case "editor":
-			add_menu_page("Contact Bank", __("Contact Bank", contact_bank), "read", "dashboard","",plugins_url("/assets/images/icon.png" , __FILE__));
-		    add_submenu_page("dashboard", "Dashboard", __("Dashboard", contact_bank), "read", "dashboard","dashboard");
+			add_menu_page("Contact Bank", __("Contact Bank", contact_bank), "read", "contact_dashboard","",plugins_url("/assets/images/icon.png" , __FILE__));
+		    add_submenu_page("contact_dashboard", "Dashboard", __("Dashboard", contact_bank), "read", "contact_dashboard","contact_dashboard");
 		    add_submenu_page("","","", "read", "contact_bank","contact_bank");
-			add_submenu_page("dashboard", "Short-Codes", __("Short-Codes", contact_bank), "read", "contact_short_code", "contact_short_code" );
-		    add_submenu_page("dashboard", "Form Entries", __("Form Entries", contact_bank), "read", "contact_frontend_data","contact_frontend_data");
-		    add_submenu_page("dashboard", "Email Settings", __("Email Settings", contact_bank), "read", "contact_email", "contact_email");
-		    add_submenu_page("dashboard", "Global Settings", __("Global Settings", contact_bank), "read", "contact_layout_settings", "contact_layout_settings");
-			add_submenu_page("dashboard", "System Status", __("System Status", contact_bank), "read", "contact_system_status", "contact_system_status" );
-		    add_submenu_page("dashboard", "Recommendations", __("Recommendations", contact_bank), "read", "contact_bank_recommended_plugins", "contact_bank_recommended_plugins");
-		    add_submenu_page("dashboard", "Premium Editions", __("Premium Editions", contact_bank), "read", "contact_pro_version", "contact_pro_version" );
-		    add_submenu_page("dashboard", " Our Other Services ", __("Our Other Services", contact_bank), "read", "contact_bank_other_services", "gallery_bank_other_services");
+		    add_submenu_page("contact_dashboard", "Plugin Updates", __("Plugin Updates", contact_bank), "read", "contact_plugin_update", "contact_plugin_update" );
+			add_submenu_page("contact_dashboard", "Short-Codes", __("Short-Codes", contact_bank), "read", "contact_short_code", "contact_short_code" );
+		    add_submenu_page("contact_dashboard", "Form Entries", __("Form Entries", contact_bank), "read", "contact_frontend_data","contact_frontend_data");
+		    add_submenu_page("contact_dashboard", "Email Settings", __("Email Settings", contact_bank), "read", "contact_email", "contact_email");
+		    add_submenu_page("contact_dashboard", "Global Settings", __("Global Settings", contact_bank), "read", "contact_layout_settings", "contact_layout_settings");
+			add_submenu_page("contact_dashboard", "System Status", __("System Status", contact_bank), "read", "contact_system_status", "contact_system_status" );
+		    add_submenu_page("contact_dashboard", "Recommendations", __("Recommendations", contact_bank), "read", "contact_bank_recommended_plugins", "contact_bank_recommended_plugins");
+		    add_submenu_page("contact_dashboard", "Premium Editions", __("Premium Editions", contact_bank), "read", "contact_pro_version", "contact_pro_version" );
+		    add_submenu_page("contact_dashboard", " Our Other Services ", __("Our Other Services", contact_bank), "read", "contact_bank_other_services", "contact_bank_other_services");
 		    add_submenu_page("","","", "read", "add_contact_email_settings", "add_contact_email_settings" );
 			add_submenu_page("","","", "read", "form_preview", "form_preview" );
 		break;
 		case "author":
-			add_menu_page("Contact Bank", __("Contact Bank", contact_bank), "read", "dashboard","",plugins_url("/assets/images/icon.png" , __FILE__));
-			add_submenu_page("dashboard", "Dashboard", __("Dashboard", contact_bank), "read", "dashboard","dashboard");
+			add_menu_page("Contact Bank", __("Contact Bank", contact_bank), "read", "contact_dashboard","",plugins_url("/assets/images/icon.png" , __FILE__));
+			add_submenu_page("contact_dashboard", "Dashboard", __("Dashboard", contact_bank), "read", "contact_dashboard","contact_dashboard");
 			add_submenu_page("","","", "read", "contact_bank","contact_bank");
-			add_submenu_page("dashboard", "Short-Codes", __("Short-Codes", contact_bank), "read", "contact_short_code", "contact_short_code" );
-			add_submenu_page("dashboard", "Form Entries", __("Form Entries", contact_bank), "read", "contact_frontend_data","contact_frontend_data");
-			add_submenu_page("dashboard", "Email Settings", __("Email Settings", contact_bank), "read", "contact_email", "contact_email");
-			add_submenu_page("dashboard", "Global Settings", __("Global Settings", contact_bank), "read", "contact_layout_settings", "contact_layout_settings");
-			add_submenu_page("dashboard", "System Status", __("System Status", contact_bank), "read", "contact_system_status", "contact_system_status" );
-			add_submenu_page("dashboard", "Recommendations", __("Recommendations", contact_bank), "read", "contact_bank_recommended_plugins", "contact_bank_recommended_plugins");
-		    add_submenu_page("dashboard", "Premium Editions", __("Premium Editions", contact_bank), "read", "contact_pro_version", "contact_pro_version" );
-		    add_submenu_page("dashboard", " Our Other Services ", __("Our Other Services", contact_bank), "read", "contact_bank_other_services", "gallery_bank_other_services");
+			add_submenu_page("contact_dashboard", "Plugin Updates", __("Plugin Updates", contact_bank), "read", "contact_plugin_update", "contact_plugin_update" );
+			add_submenu_page("contact_dashboard", "Short-Codes", __("Short-Codes", contact_bank), "read", "contact_short_code", "contact_short_code" );
+			add_submenu_page("contact_dashboard", "Form Entries", __("Form Entries", contact_bank), "read", "contact_frontend_data","contact_frontend_data");
+			add_submenu_page("contact_dashboard", "Email Settings", __("Email Settings", contact_bank), "read", "contact_email", "contact_email");
+			add_submenu_page("contact_dashboard", "Global Settings", __("Global Settings", contact_bank), "read", "contact_layout_settings", "contact_layout_settings");
+			add_submenu_page("contact_dashboard", "System Status", __("System Status", contact_bank), "read", "contact_system_status", "contact_system_status" );
+			add_submenu_page("contact_dashboard", "Recommendations", __("Recommendations", contact_bank), "read", "contact_bank_recommended_plugins", "contact_bank_recommended_plugins");
+		    add_submenu_page("contact_dashboard", "Premium Editions", __("Premium Editions", contact_bank), "read", "contact_pro_version", "contact_pro_version" );
+		    add_submenu_page("contact_dashboard", " Our Other Services ", __("Our Other Services", contact_bank), "read", "contact_bank_other_services", "contact_bank_other_services");
 			add_submenu_page("","","", "read", "add_contact_email_settings", "add_contact_email_settings" );
 			add_submenu_page("","","", "read", "form_preview", "form_preview" );
 		break;
@@ -159,7 +162,7 @@ function contact_bank()
 	include CONTACT_BK_PLUGIN_DIR . "/views/includes_common_after.php";
 	include CONTACT_BK_PLUGIN_DIR ."/views/footer.php";
 }
-function dashboard()
+function contact_dashboard()
 {
 	global $wpdb,$current_user,$cb_user_role_permission;
 	if (is_super_admin())
@@ -192,6 +195,24 @@ function edit_contact_view()
     include CONTACT_BK_PLUGIN_DIR ."/views/header.php";
     include CONTACT_BK_PLUGIN_DIR ."/views/contact_view.php";
     include CONTACT_BK_PLUGIN_DIR ."/views/footer.php";
+}
+
+function contact_plugin_update()
+{
+	global $wpdb,$current_user,$cb_user_role_permission;
+	if (is_super_admin())
+	{
+		$cb_role = "administrator";
+	}
+	else
+	{
+		$cb_role = $wpdb->prefix . "capabilities";
+		$current_user->role = array_keys($current_user->$cb_role);
+		$cb_role = $current_user->role[0];
+	}
+	include CONTACT_BK_PLUGIN_DIR ."/views/header.php";
+	include CONTACT_BK_PLUGIN_DIR ."/views/automatic-plugin-update.php";
+	include CONTACT_BK_PLUGIN_DIR ."/views/footer.php";
 }
 function contact_email()
 {
@@ -607,14 +628,20 @@ function add_contact_bank_icon($meta = TRUE)
 			$wp_admin_bar->add_menu( array(
 	    "id" => "contact_bank_links",
 	    "title" =>  "<img src=\"".plugins_url("/assets/images/icon.png",__FILE__)."\" width=\"25\" height=\"25\" style=\"vertical-align:text-top; margin-right:5px;\" />Contact Bank" ,
-	    "href" => site_url() ."/wp-admin/admin.php?page=dashboard",
+	    "href" => site_url() ."/wp-admin/admin.php?page=contact_dashboard",
 		));
 		$wp_admin_bar->add_menu( array(
 		    "parent" => "contact_bank_links",
 		    "id"     => "dashboard_links",
-		    "href"  => site_url() ."/wp-admin/admin.php?page=dashboard",
+		    "href"  => site_url() ."/wp-admin/admin.php?page=contact_dashboard",
 		    "title" => __( "Dashboard", contact_bank) )         /* set the sub-menu name */
 	    );
+		$wp_admin_bar->add_menu( array(
+			"parent" => "contact_bank_links",
+			"id"     => "plugin_updates_links",
+			"href"  => site_url() ."/wp-admin/admin.php?page=contact_plugin_update",
+			"title" => __( "Plugin Updates", contact_bank))         /* set the sub-menu name */
+		);
 		$wp_admin_bar->add_menu( array(
 	        "parent" => "contact_bank_links",
 		    "id"     => "short_code_links",
@@ -647,7 +674,7 @@ function add_contact_bank_icon($meta = TRUE)
 		);
 		$wp_admin_bar->add_menu(array(
 	    		"parent" => "contact_bank_links",
-	    		"id" => "gallery_bank_recommended_plugins_links",
+	    		"id" => "contact_bank_recommended_plugins_links",
 	    		"href" => site_url() . "/wp-admin/admin.php?page=contact_bank_recommended_plugins",
 	    		"title" => __("Recommendations", contact_bank))
 	    );
@@ -661,7 +688,7 @@ function add_contact_bank_icon($meta = TRUE)
 		
 		$wp_admin_bar->add_menu(array(
 				"parent" => "contact_bank_links",
-				"id" => "gallery_bank_other_services_links",
+				"id" => "contact_bank_other_services_links",
 				"href" => site_url() . "/wp-admin/admin.php?page=contact_bank_other_services",
 				"title" => __("Our Other Services", contact_bank))
 		);
@@ -671,15 +698,21 @@ function add_contact_bank_icon($meta = TRUE)
 	    "id" => "contact_bank_links",
 	    "title" =>  "<img src=\"".plugins_url("/assets/images/icon.png",__FILE__)."\" width=\"25\" height=\"25\" style=\"vertical-align:text-top; margin-right:5px;\" />Contact Bank" ,
 	    
-	    "href" => site_url() ."/wp-admin/admin.php?page=dashboard",
+	    "href" => site_url() ."/wp-admin/admin.php?page=contact_dashboard",
 		));
 	
 		$wp_admin_bar->add_menu( array(
 		    "parent" => "contact_bank_links",
 		    "id"     => "dashboard_links",
-		    "href"  => site_url() ."/wp-admin/admin.php?page=dashboard",
+		    "href"  => site_url() ."/wp-admin/admin.php?page=contact_dashboard",
 		    "title" => __( "Dashboard", contact_bank) )         /* set the sub-menu name */
 	    );
+		$wp_admin_bar->add_menu( array(
+			"parent" => "contact_bank_links",
+			"id"     => "plugin_updates_links",
+			"href"  => site_url() ."/wp-admin/admin.php?page=contact_plugin_update",
+			"title" => __( "Plugin Updates", contact_bank))         /* set the sub-menu name */
+		);
 		$wp_admin_bar->add_menu( array(
 	        "parent" => "contact_bank_links",
 		    "id"     => "short_code_links",
@@ -714,7 +747,7 @@ function add_contact_bank_icon($meta = TRUE)
 		);
 		$wp_admin_bar->add_menu(array(
 	    		"parent" => "contact_bank_links",
-	    		"id" => "gallery_bank_recommended_plugins_links",
+	    		"id" => "contact_bank_recommended_plugins_links",
 	    		"href" => site_url() . "/wp-admin/admin.php?page=contact_bank_recommended_plugins",
 	    		"title" => __("Recommendations", contact_bank))
 	    );
@@ -728,7 +761,7 @@ function add_contact_bank_icon($meta = TRUE)
 		
 		$wp_admin_bar->add_menu(array(
 				"parent" => "contact_bank_links",
-				"id" => "gallery_bank_other_services_links",
+				"id" => "contact_bank_other_services_links",
 				"href" => site_url() . "/wp-admin/admin.php?page=contact_bank_other_services",
 				"title" => __("Our Other Services", contact_bank))
 		);
@@ -737,15 +770,21 @@ function add_contact_bank_icon($meta = TRUE)
 			$wp_admin_bar->add_menu( array(
 		    "id" => "contact_bank_links",
 		    "title" =>  "<img src=\"".plugins_url("/assets/images/icon.png",__FILE__)."\" width=\"25\" height=\"25\" style=\"vertical-align:text-top; margin-right:5px;\" />Contact Bank" ,
-		    "href" => site_url() ."/wp-admin/admin.php?page=dashboard",
+		    "href" => site_url() ."/wp-admin/admin.php?page=contact_dashboard",
 			));
 		
 			$wp_admin_bar->add_menu( array(
 			    "parent" => "contact_bank_links",
 			    "id"     => "dashboard_links",
-			    "href"  => site_url() ."/wp-admin/admin.php?page=dashboard",
+			    "href"  => site_url() ."/wp-admin/admin.php?page=contact_dashboard",
 			    "title" => __( "Dashboard", contact_bank) )         /* set the sub-menu name */
 		    );
+			$wp_admin_bar->add_menu( array(
+				"parent" => "contact_bank_links",
+				"id"     => "plugin_updates_links",
+				"href"  => site_url() ."/wp-admin/admin.php?page=contact_plugin_update",
+				"title" => __( "Plugin Updates", contact_bank))         /* set the sub-menu name */
+			);
 			$wp_admin_bar->add_menu( array(
 		        "parent" => "contact_bank_links",
 			    "id"     => "short_code_links",
@@ -772,7 +811,7 @@ function add_contact_bank_icon($meta = TRUE)
 			);	
 		 	$wp_admin_bar->add_menu(array(
 		    		"parent" => "contact_bank_links",
-		    		"id" => "gallery_bank_recommended_plugins_links",
+		    		"id" => "contact_bank_recommended_plugins_links",
 		    		"href" => site_url() . "/wp-admin/admin.php?page=contact_bank_recommended_plugins",
 		    		"title" => __("Recommendations", contact_bank))
 		    );
@@ -786,7 +825,7 @@ function add_contact_bank_icon($meta = TRUE)
 			
 			$wp_admin_bar->add_menu(array(
 					"parent" => "contact_bank_links",
-					"id" => "gallery_bank_other_services_links",
+					"id" => "contact_bank_other_services_links",
 					"href" => site_url() . "/wp-admin/admin.php?page=contact_bank_other_services",
 					"title" => __("Our Other Services", contact_bank))
 			);
@@ -945,4 +984,111 @@ add_action( "network_admin_menu", "create_global_menus_for_contact_bank" );
 // in_plugin_update_message Hook called for function to check updates
 add_action("in_plugin_update_message-".CONTACT_BK,"contact_bank_plugin_update_message" );
 
+
+add_filter("widget_text", "do_shortcode");
+class Contact_Bank_Widget extends WP_Widget
+{
+	function Contact_Bank_Widget()
+	{
+		$widget_ops = array("classname" => "Contact_Bank_Widget", "description" => "Uses Contact Form" );
+		$this->WP_Widget("Contact_Bank_Widget", "Contact Bank", $widget_ops);
+	}
+	function form($instance)
+	{
+		$instance = wp_parse_args((array) $instance, array( "title" => "", "form_id" => "0" ) );
+		$title = $instance["title"];
+		global $wpdb;
+		$form_data = $wpdb->get_results
+		(
+				"SELECT * FROM " .contact_bank_contact_form()
+		);
+		?>
+        <p><label for="<?php echo $this->get_field_id("title"); ?>">Title: <input class="widefat" id="<?php echo $this->get_field_id("title"); ?>" name="<?php echo $this->get_field_name("title"); ?>" type="text" value="<?php echo esc_attr($title); ?>" /></label></p>
+        <p><label for="<?php echo $this->get_field_id("form_id"); ?>"><?php _e("Select Form :", contact_bank); ?></label>
+            <select size="1" name="<?php echo $this->get_field_name("form_id"); ?>" id="<?php echo $this->get_field_id("form_id"); ?>" class="widefat">
+                <option value="0"  ><?php _e("Select Form", contact_bank); ?></option>
+                <?php
+                if($form_data) {
+                    foreach($form_data as $form)
+                    {
+                        echo "<option value=\"" . $form->form_id . "\"";
+                    	if ($form->form_id == $instance["form_id"]) echo "selected=\"selected\"";
+                    	echo ">" . stripslashes(html_entity_decode($form->form_name)) . "</option>" . "\n\t";
+                    }
+                }
+                ?>
+            </select>
+        </p>
+    <?php
+    }
+    function update($new_instance, $old_instance)
+    {
+        $instance = $old_instance;
+        $instance["title"] = $new_instance["title"];
+        $instance["form_id"] = (int) $new_instance["form_id"];
+        return $instance;
+    }
+    function widget($args, $instance)
+    {
+        global $wpdb;
+        $form_data = $wpdb->get_var
+            (
+                $wpdb->prepare
+                (
+                    "SELECT count(*) FROM " .contact_bank_contact_form() . " WHERE form_id = %d",
+                    $instance["form_id"]
+                )
+            );
+
+        extract($args, EXTR_SKIP);
+        echo $before_widget;
+        $title = empty($instance["title"]) ? " " : apply_filters("widget_title", $instance["title"]);
+        if($form_data > 0)
+        {
+            if($instance["form_id"] != 0)
+            {
+                echo $before_title . $title . $after_title;
+                $shortcode_for_contact_bank_form = "[contact_bank form_id=" . $instance["form_id"] . "]";
+                echo do_shortcode( $shortcode_for_contact_bank_form );
+                echo $after_widget;
+            }
+        }
+    }
+}
+
+add_action( "widgets_init", create_function("", "return register_widget(\"Contact_Bank_Widget\");"));
+$is_option_auto_update = get_option("contact-bank-automatic_update");
+
+if($is_option_auto_update == "" || $is_option_auto_update == "1")
+{
+	if (!wp_next_scheduled("contact_bank_auto_update"))
+	{
+		wp_schedule_event(time(), "daily", "contact_bank_auto_update");
+	}
+	add_action("contact_bank_auto_update", "contact_plugin_autoUpdate");
+}
+else
+{
+	wp_clear_scheduled_hook("contact_bank_auto_update");
+}
+function contact_plugin_autoUpdate()
+{
+	try
+	{
+		require_once(ABSPATH . "wp-admin/includes/class-wp-upgrader.php");
+		require_once(ABSPATH . "wp-admin/includes/misc.php");
+		define("FS_METHOD", "direct");
+		require_once(ABSPATH . "wp-includes/update.php");
+		require_once(ABSPATH . "wp-admin/includes/file.php");
+		wp_update_plugins();
+		ob_start();
+		$plugin_upgrader = new Plugin_Upgrader();
+		$plugin_upgrader->upgrade("contact-bank/contact-bank.php");
+		$output = @ob_get_contents();
+		@ob_end_clean();
+	}
+	catch(Exception $e)
+	{
+	}
+}
 ?>

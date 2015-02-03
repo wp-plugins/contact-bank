@@ -1024,6 +1024,7 @@ if($version == "" || $version == "1.0")
 			""
 		)
 	);
+	
 }
 else if($version == "2.0")
 {
@@ -1150,4 +1151,9 @@ else if($version == "2.1")
     }
 }
 update_option("contact-bank-version-number","2.1");
+$option_auto_update_contact = get_option("contact-bank-automatic_update");
+if($option_auto_update_contact == "")
+{
+	update_option("contact-bank-automatic_update", "1");
+}
 ?>
