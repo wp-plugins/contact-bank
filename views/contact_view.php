@@ -25,7 +25,7 @@ else
 	(
 		"SELECT count(form_id) FROM ". contact_bank_contact_form()
 	);
-	if($count_forms < 1)
+	if($count_forms < 2)
 	{
 		
 			$last_form_id = $wpdb->get_var

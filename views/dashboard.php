@@ -39,7 +39,7 @@ else
 									(
 										"SELECT count(form_id) FROM ".contact_bank_contact_form()
 									);
-									if($form_count < 1)
+									if($form_count < 2)
 									{
 										?>
 											<a class="btn btn-info"
