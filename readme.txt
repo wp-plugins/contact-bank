@@ -531,6 +531,10 @@ In order to set Shortcode for a Form, you need to follow these steps :
 
 
 == Changelog ==
+= 2.0.91 =
+
+* Few Bugs Fixed
+* Allowed to Add upto 2 Forms in Lite Edition
 
 = 2.0.90 =
 
