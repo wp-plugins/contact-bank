@@ -4,7 +4,7 @@ Plugin Name: Contact Bank Lite Edition
 Plugin URI: http://tech-banker.com
 Description: Build Complex, Powerful Contact Forms in Just Seconds. No Programming Knowledge Required! Yeah, It's Really That Easy.
 Author: Tech Banker
-Version: 2.0.93
+Version: 2.0.94
 Author URI: http://tech-banker.com
  */
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -19,7 +19,8 @@ if (!defined("CONTACT_BK_PLUGIN_BASENAME")) define("CONTACT_BK_PLUGIN_BASENAME",
 
 function plugin_uninstall_script_for_contact_bank()
 {
-	// include CONTACT_BK_PLUGIN_DIR ."/lib/uninstall-script.php";
+	delete_option("contact-bank-automatic_update");
+	wp_clear_scheduled_hook("contact_bank_auto_update");
 }
 /* Function Name : plugin_install_script_for_contact_bank
  * Paramters : None
@@ -97,11 +98,11 @@ function create_global_menus_for_contact_bank()
 		break;
 		case "editor":
 			add_menu_page("Contact Bank", __("Contact Bank", contact_bank), "read", "contact_dashboard","",plugins_url("/assets/images/icon.png" , __FILE__));
-		    add_submenu_page("contact_dashboard", "Dashboard", __("Dashboard", contact_bank), "read", "contact_dashboard","contact_dashboard");
-		    add_submenu_page("","","", "read", "contact_bank","contact_bank");
-		    add_submenu_page("contact_dashboard", "Plugin Updates", __("Plugin Updates", contact_bank), "read", "contact_plugin_update", "contact_plugin_update" );
+			add_submenu_page("contact_dashboard", "Dashboard", __("Dashboard", contact_bank), "read", "contact_dashboard","contact_dashboard");
+			add_submenu_page("","","", "read", "contact_bank","contact_bank");
+			add_submenu_page("contact_dashboard", "Plugin Updates", __("Plugin Updates", contact_bank), "read", "contact_plugin_update", "contact_plugin_update" );
 			add_submenu_page("contact_dashboard", "Short-Codes", __("Short-Codes", contact_bank), "read", "contact_short_code", "contact_short_code" );
-		    add_submenu_page("contact_dashboard", "Form Entries", __("Form Entries", contact_bank), "read", "contact_frontend_data","contact_frontend_data");
+			add_submenu_page("contact_dashboard", "Form Entries", __("Form Entries", contact_bank), "read", "contact_frontend_data","contact_frontend_data");
 		    add_submenu_page("contact_dashboard", "Email Settings", __("Email Settings", contact_bank), "read", "contact_email", "contact_email");
 		    add_submenu_page("contact_dashboard", "Global Settings", __("Global Settings", contact_bank), "read", "contact_layout_settings", "contact_layout_settings");
 			add_submenu_page("contact_dashboard", "System Status", __("System Status", contact_bank), "read", "contact_system_status", "contact_system_status" );
@@ -697,7 +698,6 @@ function add_contact_bank_icon($meta = TRUE)
 			$wp_admin_bar->add_menu( array(
 	    "id" => "contact_bank_links",
 	    "title" =>  "<img src=\"".plugins_url("/assets/images/icon.png",__FILE__)."\" width=\"25\" height=\"25\" style=\"vertical-align:text-top; margin-right:5px;\" />Contact Bank" ,
-	    
 	    "href" => site_url() ."/wp-admin/admin.php?page=contact_dashboard",
 		));
 	
@@ -746,10 +746,10 @@ function add_contact_bank_icon($meta = TRUE)
 		    "title" => __( "System Status", contact_bank))         /* set the sub-menu name */
 		);
 		$wp_admin_bar->add_menu(array(
-	    		"parent" => "contact_bank_links",
-	    		"id" => "contact_bank_recommended_plugins_links",
-	    		"href" => site_url() . "/wp-admin/admin.php?page=contact_bank_recommended_plugins",
-	    		"title" => __("Recommendations", contact_bank))
+    		"parent" => "contact_bank_links",
+    		"id" => "contact_bank_recommended_plugins_links",
+    		"href" => site_url() . "/wp-admin/admin.php?page=contact_bank_recommended_plugins",
+    		"title" => __("Recommendations", contact_bank))
 	    );
 	
 		$wp_admin_bar->add_menu(array(
@@ -760,10 +760,10 @@ function add_contact_bank_icon($meta = TRUE)
 	    );
 		
 		$wp_admin_bar->add_menu(array(
-				"parent" => "contact_bank_links",
-				"id" => "contact_bank_other_services_links",
-				"href" => site_url() . "/wp-admin/admin.php?page=contact_bank_other_services",
-				"title" => __("Our Other Services", contact_bank))
+			"parent" => "contact_bank_links",
+			"id" => "contact_bank_other_services_links",
+			"href" => site_url() . "/wp-admin/admin.php?page=contact_bank_other_services",
+			"title" => __("Our Other Services", contact_bank))
 		);
 		break;	
 		case "author":
@@ -810,10 +810,10 @@ function add_contact_bank_icon($meta = TRUE)
 			    "title" => __( "Global Settings", contact_bank))         /* set the sub-menu name */
 			);	
 		 	$wp_admin_bar->add_menu(array(
-		    		"parent" => "contact_bank_links",
-		    		"id" => "contact_bank_recommended_plugins_links",
-		    		"href" => site_url() . "/wp-admin/admin.php?page=contact_bank_recommended_plugins",
-		    		"title" => __("Recommendations", contact_bank))
+	    		"parent" => "contact_bank_links",
+	    		"id" => "contact_bank_recommended_plugins_links",
+	    		"href" => site_url() . "/wp-admin/admin.php?page=contact_bank_recommended_plugins",
+	    		"title" => __("Recommendations", contact_bank))
 		    );
 		
 			$wp_admin_bar->add_menu(array(
@@ -824,10 +824,10 @@ function add_contact_bank_icon($meta = TRUE)
 		    );
 			
 			$wp_admin_bar->add_menu(array(
-					"parent" => "contact_bank_links",
-					"id" => "contact_bank_other_services_links",
-					"href" => site_url() . "/wp-admin/admin.php?page=contact_bank_other_services",
-					"title" => __("Our Other Services", contact_bank))
+				"parent" => "contact_bank_links",
+				"id" => "contact_bank_other_services_links",
+				"href" => site_url() . "/wp-admin/admin.php?page=contact_bank_other_services",
+				"title" => __("Our Other Services", contact_bank))
 			);
 		break;		
 	}

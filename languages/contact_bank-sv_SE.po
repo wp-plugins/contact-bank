@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Contact Bank\n"
-"POT-Creation-Date: 2015-01-07 13:13+0530\n"
+"POT-Creation-Date: 2015-02-04 18:17+0530\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -15,125 +15,140 @@ msgstr ""
 "\\contact-bank\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: contact-bank.php:83 contact-bank.php:98 contact-bank.php:113
+#: contact-bank.php:86 contact-bank.php:102 contact-bank.php:118
 msgid "Contact Bank"
 msgstr "Contact Bank"
 
-#: contact-bank.php:84 contact-bank.php:99 contact-bank.php:114
-#: contact-bank.php:616 contact-bank.php:681 contact-bank.php:747
+#: contact-bank.php:87 contact-bank.php:103 contact-bank.php:119
+#: contact-bank.php:640 contact-bank.php:710 contact-bank.php:782
 #: views/header.php:114 views/header.php:128 views/header.php:142
 msgid "Dashboard"
 msgstr "Kontrollpanel"
 
-#: contact-bank.php:86 contact-bank.php:101 contact-bank.php:116
-#: contact-bank.php:622 contact-bank.php:687 contact-bank.php:753
+#: contact-bank.php:89 contact-bank.php:105 contact-bank.php:121
+#: contact-bank.php:646 contact-bank.php:716 contact-bank.php:788
+#: views/automatic-plugin-update.php:28 views/automatic-plugin-update.php:32
+msgid "Plugin Updates"
+msgstr ""
+
+#: contact-bank.php:90 contact-bank.php:106 contact-bank.php:122
+#: contact-bank.php:652 contact-bank.php:722 contact-bank.php:794
 #: views/header.php:115 views/header.php:129 views/header.php:143
 msgid "Short-Codes"
 msgstr "Kort-koder"
 
-#: contact-bank.php:87 contact-bank.php:102 contact-bank.php:117
-#: contact-bank.php:628 contact-bank.php:693 contact-bank.php:759
-#: views/contact_frontend_data.php:31 views/dashboard.php:125
+#: contact-bank.php:91 contact-bank.php:107 contact-bank.php:123
+#: contact-bank.php:658 contact-bank.php:728 contact-bank.php:800
+#: views/contact_frontend_data.php:31 views/dashboard.php:124
 #: views/header.php:116 views/header.php:130 views/header.php:144
 msgid "Form Entries"
 msgstr "Formulär"
 
-#: contact-bank.php:88 contact-bank.php:103 contact-bank.php:118
-#: contact-bank.php:634 contact-bank.php:699 contact-bank.php:765
-#: views/contact_email_settings.php:30 views/dashboard.php:120
+#: contact-bank.php:92 contact-bank.php:108 contact-bank.php:124
+#: contact-bank.php:664 contact-bank.php:734 contact-bank.php:806
+#: views/contact_email_settings.php:30 views/dashboard.php:119
 #: views/header.php:117 views/header.php:131 views/header.php:145
 msgid "Email Settings"
 msgstr "E-postinställningar"
 
-#: contact-bank.php:89 contact-bank.php:104 contact-bank.php:119
-#: contact-bank.php:640 contact-bank.php:705 contact-bank.php:771
-#: views/contact_bank_layout_settings.php:29 views/dashboard.php:115
+#: contact-bank.php:93 contact-bank.php:109 contact-bank.php:125
+#: contact-bank.php:670 contact-bank.php:740 contact-bank.php:812
+#: views/contact_bank_layout_settings.php:29 views/dashboard.php:114
 #: views/header.php:118 views/header.php:132 views/header.php:146
 msgid "Global Settings"
 msgstr "Globala inställningar"
 
-#: contact-bank.php:90 contact-bank.php:105 contact-bank.php:120
-#: contact-bank.php:646 contact-bank.php:713
+#: contact-bank.php:94 contact-bank.php:110 contact-bank.php:126
+#: contact-bank.php:676 contact-bank.php:748
 #: views/contact-bank-system-report.php:31
 msgid "System Status"
 msgstr "Systemets status"
 
-#: contact-bank.php:91 contact-bank.php:106 contact-bank.php:121
-#: contact-bank.php:652 contact-bank.php:719 contact-bank.php:777
+#: contact-bank.php:95 contact-bank.php:111 contact-bank.php:127
+#: contact-bank.php:682 contact-bank.php:754 contact-bank.php:818
 #: views/header.php:84 views/header.php:119 views/header.php:133
-#: views/header.php:147 views/recommended-plugins.php:85
+#: views/header.php:147
 msgid "Recommendations"
 msgstr "Rekommendationer"
 
-#: contact-bank.php:92 contact-bank.php:107 contact-bank.php:122
-#: contact-bank.php:659 contact-bank.php:726 contact-bank.php:784
+#: contact-bank.php:96 contact-bank.php:112 contact-bank.php:128
+#: contact-bank.php:689 contact-bank.php:761 contact-bank.php:825
 #: views/header.php:120 views/header.php:134 views/header.php:148
-#: views/recommended-plugins.php:197 views/recommended-plugins.php:207
-#: views/recommended-plugins.php:217 views/recommended-plugins.php:227
 msgid "Premium Editions"
 msgstr "Premie utgåvor"
 
-#: contact-bank.php:93 contact-bank.php:108 contact-bank.php:123
-#: contact-bank.php:666 contact-bank.php:733 contact-bank.php:791
+#: contact-bank.php:97 contact-bank.php:113 contact-bank.php:129
+#: contact-bank.php:696 contact-bank.php:768 contact-bank.php:832
 #: views/header.php:89 views/header.php:121 views/header.php:135
 #: views/header.php:149
 msgid "Our Other Services"
 msgstr "Våra andra tjänster"
 
-#: contact-bank.php:799
+#: contact-bank.php:840
 msgid "Add Contact Bank Form"
 msgstr "Lägg till Contact Bank-formulär"
 
-#: contact-bank.php:811
+#: contact-bank.php:852
 msgid "Insert Contact Bank Form"
 msgstr "Infoga Contact Bank-formulär"
 
-#: contact-bank.php:813
+#: contact-bank.php:854
 msgid "Select a form below to add it to your post or page."
 msgstr ""
 "Välj ett formulär nedan för att lägga till det på din sida eller ditt inlägg"
 
-#: contact-bank.php:818
+#: contact-bank.php:859
 msgid "Form Name"
 msgstr "Formulärnamn"
 
-#: contact-bank.php:820
+#: contact-bank.php:861
 msgid "Select a Form"
 msgstr "Välj ett formulär"
 
-#: contact-bank.php:837
+#: contact-bank.php:878
 msgid "Show Form Title"
 msgstr "Visa formulärets titel"
 
-#: contact-bank.php:842
+#: contact-bank.php:883
 msgid "Insert Form"
 msgstr "Infoga formulär"
 
-#: contact-bank.php:845
+#: contact-bank.php:886
 msgid "Cancel"
 msgstr "Avbryt"
 
-#: contact-bank.php:857
+#: contact-bank.php:898
 msgid "Please choose a Form to insert into Shortcode"
 msgstr "Var god välj ett formulär att infoga till snabbkod"
 
-#: contact-bank.php:893
+#: contact-bank.php:934
 msgid "View Contact Bank Documentation"
 msgstr "Visa Contact Bank Dokumentation"
 
-#: contact-bank.php:893
+#: contact-bank.php:934
 msgid "Docs"
 msgstr "Dokument"
 
-#: contact-bank.php:894
+#: contact-bank.php:935
 msgid "View Contact Bank Premium Editions"
 msgstr "Visa Contact Bank premie upplagor"
 
-#: contact-bank.php:894
+#: contact-bank.php:935
 msgid "Go for Premium!"
 msgstr "gå för Premie!"
 
-#: frontend_views/contact_bank_forms.php:369
+#: contact-bank.php:1009
+msgid "Select Form :"
+msgstr "Välj formulär:"
+
+#: contact-bank.php:1011 views/contact_bank_layout_settings.php:45
+#: views/contact_bank_layout_settings.php:55
+#: views/contact_email_settings.php:37 views/contact_email_settings.php:53
+#: views/contact_frontend_data.php:46 views/contact_frontend_data.php:56
+msgid "Select Form"
+msgstr "Välj formulär"
+
+#: frontend_views/contact_bank_forms.php:326
 #: views/contact_bank_form_preview.php:395 views/contact_controls_files.php:89
 msgid "Select Option"
 msgstr "Välj alternativ"
@@ -195,12 +210,12 @@ msgstr "Verktygstips"
 #: includes/cb_email.php:115 includes/cb_multiple.php:108
 #: includes/cb_text.php:114 includes/cb_textarea.php:113
 #: views/contact_bank_layout_settings.php:946
-#: views/contact_frontend_data.php:171 views/dashboard.php:209
-#: views/includes_common_after.php:348 views/includes_common_after.php:351
-#: views/includes_common_after.php:354 views/includes_common_after.php:357
-#: views/includes_common_after.php:360 views/includes_common_after.php:363
-#: views/includes_common_after.php:366 views/includes_common_after.php:369
-#: views/includes_common_after.php:372
+#: views/contact_frontend_data.php:171 views/dashboard.php:208
+#: views/includes_common_after.php:349 views/includes_common_after.php:352
+#: views/includes_common_after.php:355 views/includes_common_after.php:358
+#: views/includes_common_after.php:361 views/includes_common_after.php:364
+#: views/includes_common_after.php:367 views/includes_common_after.php:370
+#: views/includes_common_after.php:373
 msgid "This Feature is only available in Paid Premium Edition!"
 msgstr "Den här funktionen är endast tillgänglig i betald Premium Edition!"
 
@@ -252,7 +267,7 @@ msgstr "Spara inställningar"
 msgid "Please Fill an Option."
 msgstr "Var god välj ett alternativ"
 
-#: includes/cb_dropdown.php:36 views/contact_view.php:460
+#: includes/cb_dropdown.php:36 views/contact_view.php:461
 msgid "Select Box"
 msgstr "Välj box"
 
@@ -265,7 +280,7 @@ msgstr "Ange etikett"
 msgid "Enter Option"
 msgstr "Ange alternativ"
 
-#: includes/cb_email.php:36 views/contact_view.php:457
+#: includes/cb_email.php:36 views/contact_view.php:458
 msgid "Email Address"
 msgstr "E-postadress"
 
@@ -288,11 +303,11 @@ msgstr "Exempeltext"
 msgid "Enter Place Holder"
 msgstr "Ange exempeltext"
 
-#: includes/cb_multiple.php:36 views/contact_view.php:468
+#: includes/cb_multiple.php:36 views/contact_view.php:469
 msgid "Radio Buttons"
 msgstr "Runda knappar"
 
-#: includes/cb_text.php:36 views/contact_view.php:449
+#: includes/cb_text.php:36 views/contact_view.php:450
 msgid "Single Line Text"
 msgstr "Enradstext"
 
@@ -325,11 +340,11 @@ msgstr "Trimma"
 #: views/contact_bank_layout_settings.php:271
 #: views/contact_bank_layout_settings.php:481
 #: views/contact_bank_layout_settings.php:674
-#: views/contact_bank_layout_settings.php:802 views/contact_view.php:478
+#: views/contact_bank_layout_settings.php:802 views/contact_view.php:479
 msgid " (Available in Premium Edition)"
 msgstr "(Finns i Premium Edition)"
 
-#: includes/cb_textarea.php:36 views/contact_view.php:452
+#: includes/cb_textarea.php:36 views/contact_view.php:453
 msgid "Paragraph Text"
 msgstr "Paragraf"
 
@@ -383,7 +398,7 @@ msgstr "E-postinställningar sparade. Var god vänta.."
 msgid "Email"
 msgstr "E-post"
 
-#: views/add_contact_email.php:69 views/contact_view.php:485
+#: views/add_contact_email.php:69 views/contact_view.php:486
 msgid "Name"
 msgstr "Namn"
 
@@ -476,6 +491,14 @@ msgstr "Meddelande"
 msgid "Insert a Field into Your Form Message"
 msgstr "Infoga ett fält till ditt formulärmeddelande"
 
+#: views/automatic-plugin-update.php:35
+msgid "Enable"
+msgstr ""
+
+#: views/automatic-plugin-update.php:36
+msgid "Disable"
+msgstr ""
+
 #: views/contact-bank-system-report.php:34
 msgid "Get System Report"
 msgstr "Hämta systemrapport"
@@ -488,14 +511,14 @@ msgstr "Stäng systemrapport"
 msgid "Default"
 msgstr "Standard"
 
-#: views/contact_bank_form_preview.php:294 views/dashboard.php:130
+#: views/contact_bank_form_preview.php:294 views/dashboard.php:129
 msgid "Form Preview"
 msgstr "Förhandsgranska"
 
 #: views/contact_bank_form_preview.php:297
 #: views/contact_bank_layout_settings.php:32
 #: views/contact_email_settings.php:33 views/contact_frontend_data.php:34
-#: views/contact_view.php:261 views/recommended-plugins.php:88
+#: views/contact_view.php:262
 msgid "Back to Dashboard"
 msgstr "Tillbaka till kontrollpanelen"
 
@@ -510,13 +533,6 @@ msgstr "Återställ globala inställningar"
 #: views/contact_bank_layout_settings.php:39
 msgid "Form Settings Saved. Kindly wait for the redirect."
 msgstr "Formulärinställningar sparade. Vänligen vänta omdirigeringen."
-
-#: views/contact_bank_layout_settings.php:45
-#: views/contact_bank_layout_settings.php:55
-#: views/contact_email_settings.php:37 views/contact_email_settings.php:53
-#: views/contact_frontend_data.php:46 views/contact_frontend_data.php:56
-msgid "Select Form"
-msgstr "Välj formulär"
 
 #: views/contact_bank_layout_settings.php:82
 msgid "Label Settings"
@@ -704,186 +720,186 @@ msgstr "Var god välj formulär först."
 msgid "Export to Excel"
 msgstr "Exportera till Excel"
 
-#: views/contact_frontend_data.php:41 views/dashboard.php:65
-#: views/dashboard.php:72
+#: views/contact_frontend_data.php:41 views/dashboard.php:64
+#: views/dashboard.php:71
 msgid "Form"
 msgstr "Formulär"
 
-#: views/contact_view.php:258 views/dashboard.php:47
+#: views/contact_view.php:259 views/dashboard.php:46
 msgid "Add New Form"
 msgstr "Lägg till nytt formulär"
 
-#: views/contact_view.php:264 views/contact_view.php:528
+#: views/contact_view.php:265 views/contact_view.php:529
 msgid "Save Form"
 msgstr "Spara formulär"
 
-#: views/contact_view.php:269
+#: views/contact_view.php:270
 msgid "Form Submitted. Kindly wait for the redirect."
 msgstr "Formulär skickat. Var god vänta.."
 
-#: views/contact_view.php:278
+#: views/contact_view.php:279
 msgid "Form Settings"
 msgstr "Formulärinställningar"
 
-#: views/contact_view.php:282
+#: views/contact_view.php:283
 msgid "Form Name :"
 msgstr "Formulärnamn"
 
-#: views/contact_view.php:288
+#: views/contact_view.php:289
 msgid "Enter Form Name"
 msgstr "Ange formulärnamn"
 
-#: views/contact_view.php:292
+#: views/contact_view.php:293
 msgid "Form Description :"
 msgstr "Formulärbeskrivning"
 
-#: views/contact_view.php:294
+#: views/contact_view.php:295
 msgid "Enter Form Description"
 msgstr "Ange formulärbeskrivning"
 
-#: views/contact_view.php:298
+#: views/contact_view.php:299
 msgid "Blank Field Message:"
 msgstr "Tomt fält-meddelande"
 
-#: views/contact_view.php:304
+#: views/contact_view.php:305
 msgid "Required field must not be blank"
 msgstr "Obligatoriska fält får inte vara tomma."
 
-#: views/contact_view.php:306
+#: views/contact_view.php:307
 msgid "Enter Blank Field Message"
 msgstr "Ange tomt fält-meddelande"
 
-#: views/contact_view.php:310
+#: views/contact_view.php:311
 msgid "Incorrect Email Message:"
 msgstr "\"Ogiltig e-post\"-meddelande:"
 
-#: views/contact_view.php:316
+#: views/contact_view.php:317
 msgid "Please enter a valid email address"
 msgstr "Var god ange giltig e-postadress"
 
-#: views/contact_view.php:318
+#: views/contact_view.php:319
 msgid "Enter Incorrect Email Message"
 msgstr "Ange \"ogiltigt e-post\"-meddelande"
 
-#: views/contact_view.php:322
+#: views/contact_view.php:323
 msgid "Success Message :"
 msgstr "Skickat-meddelande"
 
-#: views/contact_view.php:326
+#: views/contact_view.php:327
 msgid "Enter Success Message"
 msgstr "Ange Skickat-meddelande"
 
-#: views/contact_view.php:330
+#: views/contact_view.php:331
 msgid "Redirect :"
 msgstr "Omdirigera"
 
-#: views/contact_view.php:342 views/contact_view.php:353
-#: views/contact_view.php:365
+#: views/contact_view.php:343 views/contact_view.php:354
+#: views/contact_view.php:366
 msgid "Page"
 msgstr "Sida"
 
-#: views/contact_view.php:345 views/contact_view.php:356
-#: views/contact_view.php:368
+#: views/contact_view.php:346 views/contact_view.php:357
+#: views/contact_view.php:369
 msgid "URL"
 msgstr "URL"
 
-#: views/contact_view.php:375
+#: views/contact_view.php:376
 msgid "Page :"
 msgstr "Sida:"
 
-#: views/contact_view.php:418
+#: views/contact_view.php:419
 msgid "URL :"
 msgstr "URL:"
 
-#: views/contact_view.php:425
+#: views/contact_view.php:426
 msgid "Enter Redirect URL"
 msgstr "Ange omdirigeringsadress"
 
-#: views/contact_view.php:432
+#: views/contact_view.php:433
 msgid "Form Layout Preview"
 msgstr "Förhandsgranska formulärlayout"
 
-#: views/contact_view.php:443
+#: views/contact_view.php:444
 msgid "Standard Fields"
 msgstr "Standardfält"
 
-#: views/contact_view.php:446 views/contact_view.php:482
+#: views/contact_view.php:447 views/contact_view.php:483
 msgid "Click on a field to use into your form."
 msgstr "Klicka på ett fält för att använda det i formuläret."
 
-#: views/contact_view.php:465
+#: views/contact_view.php:466
 msgid "Checkboxes"
 msgstr "Checkrutor"
 
-#: views/contact_view.php:477
+#: views/contact_view.php:478
 msgid "Advanced Fields"
 msgstr "Avancerade fält"
 
-#: views/contact_view.php:488
+#: views/contact_view.php:489
 msgid "Website / URL"
 msgstr "Hemsida / URL"
 
-#: views/contact_view.php:493
+#: views/contact_view.php:494
 msgid "Phone"
 msgstr "Telefon"
 
-#: views/contact_view.php:496
+#: views/contact_view.php:497
 msgid "Address"
 msgstr "Adress"
 
-#: views/contact_view.php:501
+#: views/contact_view.php:502
 msgid "Number"
 msgstr "Nummer"
 
-#: views/contact_view.php:504
+#: views/contact_view.php:505
 msgid "File Upload"
 msgstr "Filuppladdning"
 
-#: views/contact_view.php:509
+#: views/contact_view.php:510
 msgid "Date"
 msgstr "Datum"
 
-#: views/contact_view.php:512
+#: views/contact_view.php:513
 msgid "Time"
 msgstr "Tid"
 
-#: views/contact_view.php:517
+#: views/contact_view.php:518
 msgid "Password"
 msgstr "Lösenord"
 
-#: views/dashboard.php:35
+#: views/dashboard.php:34
 msgid "Contact Bank Short-Codes"
 msgstr "Contact Bank Korta-koder"
 
-#: views/dashboard.php:53
+#: views/dashboard.php:52
 msgid "Delete All Forms"
 msgstr "Radera alla formulär"
 
-#: views/dashboard.php:56
+#: views/dashboard.php:55
 msgid "Restore Factory Settings"
 msgstr "Återställ fabriksinställningar"
 
-#: views/dashboard.php:73
+#: views/dashboard.php:72
 msgid "Shortcode"
 msgstr "Shortcode"
 
-#: views/dashboard.php:74
+#: views/dashboard.php:73
 msgid "Total Controls"
 msgstr "Totala kontroller"
 
-#: views/dashboard.php:110
+#: views/dashboard.php:109
 msgid "Edit Form"
 msgstr "Redigera formulär"
 
-#: views/dashboard.php:135
+#: views/dashboard.php:134
 msgid "Delete Form"
 msgstr "Radera formulär"
 
-#: views/dashboard.php:190
+#: views/dashboard.php:189
 msgid "Are you sure, you want to delete this Form?"
 msgstr "Är du säker på att du vill radera detta formulär?"
 
-#: views/dashboard.php:200
+#: views/dashboard.php:199
 msgid "Are you sure, you want to delete all Forms?"
 msgstr "Är du säker på att du vill radera alla formulär?"
 
@@ -940,58 +956,43 @@ msgstr "fler åtgärder"
 msgid "Plugin Customization"
 msgstr "insticksprogrammet Kundanpassning"
 
-#. translators: 1: The rating
-#: views/recommended-plugins.php:66
-#, fuzzy, php-format
-msgid "%s rating"
-msgstr "gradering"
-
-#. translators: 1: Plugin name and version.
-#: views/recommended-plugins.php:133
-msgid "More Details"
-msgstr "mer Detaljer"
-
-#. translators: 1: Plugin name and version.
-#: views/recommended-plugins.php:144
-msgid "Install Now"
-msgstr "installera nu"
-
-#. translators: 1: Plugin name and version
-#: views/recommended-plugins.php:151
-msgid "Update Now"
-msgstr "uppdatera nu"
-
-#: views/recommended-plugins.php:178
-msgid "By "
-msgstr "efter"
-
-#: views/recommended-plugins.php:200 views/recommended-plugins.php:210
-#: views/recommended-plugins.php:220 views/recommended-plugins.php:230
-msgid "Visit Website"
-msgstr "besök Webbsida"
-
-#: views/recommended-plugins.php:248
-msgid "Last Updated:"
-msgstr "Senast uppdaterad"
-
-#: views/recommended-plugins.php:259
-msgid "<strong>Untested</strong> with your version of WordPress"
-msgstr "Oprövade med din version av Wordpress"
-
-#: views/recommended-plugins.php:263
-msgid "Incompatible with your version of WordPress"
-msgstr "Oförenligt med din version av Wordpress"
-
-#: views/recommended-plugins.php:267
-msgid "Compatible with your version of WordPress"
-msgstr "Kompatibel med din version av Wordpress"
-
 #: views/shortcode.php:29
 msgid ""
 "How to setup Short-Codes for Contact Bank into your WordPress Page/Post?"
 msgstr ""
 "Hur man ställer in Short-koder för Kontakt Bank i din Wordpress sida / "
 "inlägg?"
+
+#, fuzzy
+#~ msgid "%s rating"
+#~ msgstr "gradering"
+
+#~ msgid "More Details"
+#~ msgstr "mer Detaljer"
+
+#~ msgid "Install Now"
+#~ msgstr "installera nu"
+
+#~ msgid "Update Now"
+#~ msgstr "uppdatera nu"
+
+#~ msgid "By "
+#~ msgstr "efter"
+
+#~ msgid "Visit Website"
+#~ msgstr "besök Webbsida"
+
+#~ msgid "Last Updated:"
+#~ msgstr "Senast uppdaterad"
+
+#~ msgid "<strong>Untested</strong> with your version of WordPress"
+#~ msgstr "Oprövade med din version av Wordpress"
+
+#~ msgid "Incompatible with your version of WordPress"
+#~ msgstr "Oförenligt med din version av Wordpress"
+
+#~ msgid "Compatible with your version of WordPress"
+#~ msgstr "Kompatibel med din version av Wordpress"
 
 #~ msgid "WP Contact Bank is an one time Investment. Its Worth it!"
 #~ msgstr "WP Contact Bank  är en engångs Investment. Dess Värt det!"
@@ -1013,9 +1014,6 @@ msgstr ""
 
 #~ msgid "Licensing"
 #~ msgstr "Licensiering"
-
-#~ msgid "Select Form :"
-#~ msgstr "Välj formulär:"
 
 #~ msgid "Day"
 #~ msgstr "Dag"

@@ -111,7 +111,7 @@ switch ($cb_role) {
 	case "administrator":
 		?>
 		<h2 class="nav-tab-wrapper">
-			<a class="nav-tab custom-nav-tab" id="dashboard" href="admin.php?page=dashboard"><?php _e("Dashboard",contact_bank) ;?></a>
+			<a class="nav-tab custom-nav-tab" id="dashboard" href="admin.php?page=contact_dashboard"><?php _e("Dashboard",contact_bank) ;?></a>
 			<a class="nav-tab custom-nav-tab" id="contact_short_code" href="admin.php?page=contact_short_code"><?php _e("Short-Codes",contact_bank) ;?></a>
 			<a class="nav-tab custom-nav-tab" id="contact_frontend_data" href="admin.php?page=contact_frontend_data"><?php _e("Form Entries",contact_bank) ;?></a>
 			<a class="nav-tab custom-nav-tab" id="contact_email" href="admin.php?page=contact_email"><?php _e("Email Settings",contact_bank) ;?></a>
@@ -125,7 +125,7 @@ switch ($cb_role) {
 	case "editor":
 		?>
 		<h2 class="nav-tab-wrapper">
-			<a class="nav-tab custom-nav-tab" id="dashboard" href="admin.php?page=dashboard"><?php _e("Dashboard",contact_bank) ;?></a>
+			<a class="nav-tab custom-nav-tab" id="dashboard" href="admin.php?page=contact_dashboard"><?php _e("Dashboard",contact_bank) ;?></a>
 			<a class="nav-tab custom-nav-tab" id="contact_short_code" href="admin.php?page=contact_short_code"><?php _e("Short-Codes",contact_bank) ;?></a>
 			<a class="nav-tab custom-nav-tab" id="contact_frontend_data" href="admin.php?page=contact_frontend_data"><?php _e("Form Entries",contact_bank) ;?></a>
 			<a class="nav-tab custom-nav-tab" id="contact_email" href="admin.php?page=contact_email"><?php _e("Email Settings",contact_bank) ;?></a>
@@ -139,7 +139,7 @@ switch ($cb_role) {
 	case "author":
 		?>
 		<h2 class="nav-tab-wrapper">
-			<a class="nav-tab custom-nav-tab" id="dashboard" href="admin.php?page=dashboard"><?php _e("Dashboard",contact_bank) ;?></a>
+			<a class="nav-tab custom-nav-tab" id="dashboard" href="admin.php?page=contact_dashboard"><?php _e("Dashboard",contact_bank) ;?></a>
 			<a class="nav-tab custom-nav-tab" id="contact_short_code" href="admin.php?page=contact_short_code"><?php _e("Short-Codes",contact_bank) ;?></a>
 			<a class="nav-tab custom-nav-tab" id="contact_frontend_data" href="admin.php?page=contact_frontend_data"><?php _e("Form Entries",contact_bank) ;?></a>
 			<a class="nav-tab custom-nav-tab" id="contact_email" href="admin.php?page=contact_email"><?php _e("Email Settings",contact_bank) ;?></a>

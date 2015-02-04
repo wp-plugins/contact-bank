@@ -99,6 +99,7 @@ function show_url_control()
 }
 function create_control(control_type,dynamicId,type)
 {
+	
     dynamicId = typeof dynamicId !== "undefined" ? dynamicId : Math.floor((Math.random()*100000)+1);
 	switch(parseInt(control_type))
 	{

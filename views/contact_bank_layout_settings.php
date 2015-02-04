@@ -29,7 +29,7 @@ else
 						<h3 class="hndle"><span><?php _e( "Global Settings", contact_bank ); ?></span><i class="widget_premium_feature_contact"><?php _e(" (Premium Features available in Paid Edition)", contact_bank); ?></i></h4>   </h3>
 						<div class="inside">
 							<div id="ux_form_email_div" class="contact_bank_layout">
-								<a class="btn btn-info" href="admin.php?page=dashboard"><?php _e("Back to Dashboard", contact_bank);?></a>
+								<a class="btn btn-info" href="admin.php?page=contact_dashboard"><?php _e("Back to Dashboard", contact_bank);?></a>
 								<a class="btn btn-danger" href="#" onclick="ux_button_pro_version();"><?php _e("Restore Global Settings", contact_bank); ?>
 								</a>
 								<input  class="btn btn-info layout-span1" type="button" onclick="ux_button_pro_version();"  id="submit_button" name="submit_button" style="float: right;"  value="<?php _e("Save", contact_bank); ?>" />

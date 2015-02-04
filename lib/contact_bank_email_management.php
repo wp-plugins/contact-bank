@@ -74,7 +74,6 @@ if(isset($_REQUEST["param"]))
 			{
 				$headers .= "Bcc: " .$email_bcc."\r\n";
 			}	
-			echo 	$body_content;		 
 			get_option("blog_charset") . "\r\n";
 			wp_mail($email_to, $email_subject, $body_content, $headers);
 		}

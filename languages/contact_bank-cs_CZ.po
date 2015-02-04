@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Contact Bank\n"
-"POT-Creation-Date: 2015-01-07 12:54+0530\n"
+"POT-Creation-Date: 2015-02-04 18:14+0530\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -15,39 +15,50 @@ msgstr ""
 "\\contact-bank\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: contact-bank.php:811
+#: contact-bank.php:852
 msgid "Insert Contact Bank Form"
 msgstr "Vložit formulář"
 
-#: contact-bank.php:813
+#: contact-bank.php:854
 msgid "Select a form below to add it to your post or page."
 msgstr "Vyberte dole formulář pro vložení do stránky nebo příspěvku."
 
-#: contact-bank.php:818
+#: contact-bank.php:859
 msgid "Form Name"
 msgstr "Jméno formuláře"
 
-#: contact-bank.php:820
+#: contact-bank.php:861
 msgid "Select a Form"
 msgstr "Vyberte formulář"
 
-#: contact-bank.php:837
+#: contact-bank.php:878
 msgid "Show Form Title"
 msgstr "Zobrazit nadpis formuláře"
 
-#: contact-bank.php:842
+#: contact-bank.php:883
 msgid "Insert Form"
 msgstr "Vložit formulář"
 
-#: contact-bank.php:845
+#: contact-bank.php:886
 msgid "Cancel"
 msgstr "Zrušit"
 
-#: contact-bank.php:857
+#: contact-bank.php:898
 msgid "Please choose a Form to insert into Shortcode"
 msgstr "Vyberte, prosím, formulář pro vložení do kódu"
 
-#: frontend_views/contact_bank_forms.php:369
+#: contact-bank.php:1009
+msgid "Select Form :"
+msgstr "Vyberte formulář"
+
+#: contact-bank.php:1011 views/contact_bank_layout_settings.php:45
+#: views/contact_bank_layout_settings.php:55
+#: views/contact_email_settings.php:37 views/contact_email_settings.php:53
+#: views/contact_frontend_data.php:46 views/contact_frontend_data.php:56
+msgid "Select Form"
+msgstr "Vyberte formulář"
+
+#: frontend_views/contact_bank_forms.php:326
 #: views/contact_bank_form_preview.php:395 views/contact_controls_files.php:89
 msgid "Select Option"
 msgstr "Vyberte volbu"
@@ -109,12 +120,12 @@ msgstr "Text popisku"
 #: includes/cb_email.php:115 includes/cb_multiple.php:108
 #: includes/cb_text.php:114 includes/cb_textarea.php:113
 #: views/contact_bank_layout_settings.php:946
-#: views/contact_frontend_data.php:171 views/dashboard.php:209
-#: views/includes_common_after.php:348 views/includes_common_after.php:351
-#: views/includes_common_after.php:354 views/includes_common_after.php:357
-#: views/includes_common_after.php:360 views/includes_common_after.php:363
-#: views/includes_common_after.php:366 views/includes_common_after.php:369
-#: views/includes_common_after.php:372
+#: views/contact_frontend_data.php:171 views/dashboard.php:208
+#: views/includes_common_after.php:349 views/includes_common_after.php:352
+#: views/includes_common_after.php:355 views/includes_common_after.php:358
+#: views/includes_common_after.php:361 views/includes_common_after.php:364
+#: views/includes_common_after.php:367 views/includes_common_after.php:370
+#: views/includes_common_after.php:373
 msgid "This Feature is only available in Paid Premium Edition!"
 msgstr "Tato funkce je k dispozici pouze v placené Premium Edition!"
 
@@ -166,7 +177,7 @@ msgstr "Uložit nastavení"
 msgid "Please Fill an Option."
 msgstr "Vyplňte, prosím, volbu"
 
-#: includes/cb_dropdown.php:36 views/contact_view.php:460
+#: includes/cb_dropdown.php:36 views/contact_view.php:461
 msgid "Select Box"
 msgstr "Vyberte položku"
 
@@ -179,7 +190,7 @@ msgstr "Vložte jmenovku"
 msgid "Enter Option"
 msgstr "Vložte volbu"
 
-#: includes/cb_email.php:36 views/contact_view.php:457
+#: includes/cb_email.php:36 views/contact_view.php:458
 msgid "Email Address"
 msgstr "Emailová adresa"
 
@@ -202,11 +213,11 @@ msgstr "místo Holder"
 msgid "Enter Place Holder"
 msgstr "Zadejte místa bydliště držitele"
 
-#: includes/cb_multiple.php:36 views/contact_view.php:468
+#: includes/cb_multiple.php:36 views/contact_view.php:469
 msgid "Radio Buttons"
 msgstr "rozhlasové Tlačítka"
 
-#: includes/cb_text.php:36 views/contact_view.php:449
+#: includes/cb_text.php:36 views/contact_view.php:450
 msgid "Single Line Text"
 msgstr "Jednořádkový text"
 
@@ -239,11 +250,11 @@ msgstr "Upravit"
 #: views/contact_bank_layout_settings.php:271
 #: views/contact_bank_layout_settings.php:481
 #: views/contact_bank_layout_settings.php:674
-#: views/contact_bank_layout_settings.php:802 views/contact_view.php:478
+#: views/contact_bank_layout_settings.php:802 views/contact_view.php:479
 msgid " (Available in Premium Edition)"
 msgstr "(K dispozici v Premium Edition)"
 
-#: includes/cb_textarea.php:36 views/contact_view.php:452
+#: includes/cb_textarea.php:36 views/contact_view.php:453
 msgid "Paragraph Text"
 msgstr "Odstavec"
 
@@ -297,7 +308,7 @@ msgstr "Nastavení emailu je uloženo. Počkejte, prosím, na přesměrování."
 msgid "Email"
 msgstr "Napsat"
 
-#: views/add_contact_email.php:69 views/contact_view.php:485
+#: views/add_contact_email.php:69 views/contact_view.php:486
 msgid "Name"
 msgstr "Jméno"
 
@@ -390,6 +401,18 @@ msgstr "Zpráva"
 msgid "Insert a Field into Your Form Message"
 msgstr "Vložte pole do vaší zprávy ve formuláři"
 
+#: views/automatic-plugin-update.php:28 views/automatic-plugin-update.php:32
+msgid "Plugin Updates"
+msgstr ""
+
+#: views/automatic-plugin-update.php:35
+msgid "Enable"
+msgstr ""
+
+#: views/automatic-plugin-update.php:36
+msgid "Disable"
+msgstr ""
+
 #: views/contact-bank-system-report.php:31
 msgid "System Status"
 msgstr "Systémové informace"
@@ -406,18 +429,18 @@ msgstr "Zavřít systémovou zprávu"
 msgid "Default"
 msgstr "Implicitní"
 
-#: views/contact_bank_form_preview.php:294 views/dashboard.php:130
+#: views/contact_bank_form_preview.php:294 views/dashboard.php:129
 msgid "Form Preview"
 msgstr "Náhled na formulář"
 
 #: views/contact_bank_form_preview.php:297
 #: views/contact_bank_layout_settings.php:32
 #: views/contact_email_settings.php:33 views/contact_frontend_data.php:34
-#: views/contact_view.php:261 views/recommended-plugins.php:88
+#: views/contact_view.php:262
 msgid "Back to Dashboard"
 msgstr "Zpět na palubní desku"
 
-#: views/contact_bank_layout_settings.php:29 views/dashboard.php:115
+#: views/contact_bank_layout_settings.php:29 views/dashboard.php:114
 #: views/header.php:118 views/header.php:132 views/header.php:146
 msgid "Global Settings"
 msgstr "Globální nastavení"
@@ -433,13 +456,6 @@ msgstr "Obnovit globální nastavení"
 #: views/contact_bank_layout_settings.php:39
 msgid "Form Settings Saved. Kindly wait for the redirect."
 msgstr "Formulář uložené nastavení. Laskavě vyčkejte na přesměrování."
-
-#: views/contact_bank_layout_settings.php:45
-#: views/contact_bank_layout_settings.php:55
-#: views/contact_email_settings.php:37 views/contact_email_settings.php:53
-#: views/contact_frontend_data.php:46 views/contact_frontend_data.php:56
-msgid "Select Form"
-msgstr "Vyberte formulář"
 
 #: views/contact_bank_layout_settings.php:82
 msgid "Label Settings"
@@ -611,7 +627,7 @@ msgstr "Nastavení"
 msgid "Documentation - Contact Bank"
 msgstr "Dokumentace - Contact Bank"
 
-#: views/contact_email_settings.php:30 views/dashboard.php:120
+#: views/contact_email_settings.php:30 views/dashboard.php:119
 #: views/header.php:117 views/header.php:131 views/header.php:145
 msgid "Email Settings"
 msgstr "Nastavení emailů"
@@ -628,7 +644,7 @@ msgstr "Jste si jisti, že chcete smazat toto nastavení emailu?"
 msgid "Please select the Form first."
 msgstr "Nejdříve, prosím, vyberte formulář."
 
-#: views/contact_frontend_data.php:31 views/dashboard.php:125
+#: views/contact_frontend_data.php:31 views/dashboard.php:124
 #: views/header.php:116 views/header.php:130 views/header.php:144
 msgid "Form Entries"
 msgstr "Položky formuláře"
@@ -637,186 +653,186 @@ msgstr "Položky formuláře"
 msgid "Export to Excel"
 msgstr "Export do Excelu"
 
-#: views/contact_frontend_data.php:41 views/dashboard.php:65
-#: views/dashboard.php:72
+#: views/contact_frontend_data.php:41 views/dashboard.php:64
+#: views/dashboard.php:71
 msgid "Form"
 msgstr "Formulář"
 
-#: views/contact_view.php:258 views/dashboard.php:47
+#: views/contact_view.php:259 views/dashboard.php:46
 msgid "Add New Form"
 msgstr "Přidat nový formulář"
 
-#: views/contact_view.php:264 views/contact_view.php:528
+#: views/contact_view.php:265 views/contact_view.php:529
 msgid "Save Form"
 msgstr "Uložit formulář"
 
-#: views/contact_view.php:269
+#: views/contact_view.php:270
 msgid "Form Submitted. Kindly wait for the redirect."
 msgstr "Formulář je odeslán. Počkejte, prosím, na přesměrování."
 
-#: views/contact_view.php:278
+#: views/contact_view.php:279
 msgid "Form Settings"
 msgstr "Nastavení formuláře"
 
-#: views/contact_view.php:282
+#: views/contact_view.php:283
 msgid "Form Name :"
 msgstr "Jméno formuláře:"
 
-#: views/contact_view.php:288
+#: views/contact_view.php:289
 msgid "Enter Form Name"
 msgstr "Vložte jméno formuláře"
 
-#: views/contact_view.php:292
+#: views/contact_view.php:293
 msgid "Form Description :"
 msgstr "Popis formuláře:"
 
-#: views/contact_view.php:294
+#: views/contact_view.php:295
 msgid "Enter Form Description"
 msgstr "Vložte popis formuláře"
 
-#: views/contact_view.php:298
+#: views/contact_view.php:299
 msgid "Blank Field Message:"
 msgstr "Zpráva pro prázdné pole:"
 
-#: views/contact_view.php:304
+#: views/contact_view.php:305
 msgid "Required field must not be blank"
 msgstr "Povinná pole nesmí být prázdná"
 
-#: views/contact_view.php:306
+#: views/contact_view.php:307
 msgid "Enter Blank Field Message"
 msgstr "Vložte zprávu pro prázdné pole"
 
-#: views/contact_view.php:310
+#: views/contact_view.php:311
 msgid "Incorrect Email Message:"
 msgstr "Nesprávná emailová zpráva:"
 
-#: views/contact_view.php:316
+#: views/contact_view.php:317
 msgid "Please enter a valid email address"
 msgstr "Vložte, prosím, platnou emailovou adresu"
 
-#: views/contact_view.php:318
+#: views/contact_view.php:319
 msgid "Enter Incorrect Email Message"
 msgstr "Zadejte nesprávné e-mailové zprávy"
 
-#: views/contact_view.php:322
+#: views/contact_view.php:323
 msgid "Success Message :"
 msgstr "Zpráva o úspěchu:"
 
-#: views/contact_view.php:326
+#: views/contact_view.php:327
 msgid "Enter Success Message"
 msgstr "Vložte zprávu o úspěchu"
 
-#: views/contact_view.php:330
+#: views/contact_view.php:331
 msgid "Redirect :"
 msgstr "Přesměrovat:"
 
-#: views/contact_view.php:342 views/contact_view.php:353
-#: views/contact_view.php:365
+#: views/contact_view.php:343 views/contact_view.php:354
+#: views/contact_view.php:366
 msgid "Page"
 msgstr "Strana"
 
-#: views/contact_view.php:345 views/contact_view.php:356
-#: views/contact_view.php:368
+#: views/contact_view.php:346 views/contact_view.php:357
+#: views/contact_view.php:369
 msgid "URL"
 msgstr "URL"
 
-#: views/contact_view.php:375
+#: views/contact_view.php:376
 msgid "Page :"
 msgstr "Strana:"
 
-#: views/contact_view.php:418
+#: views/contact_view.php:419
 msgid "URL :"
 msgstr "URL:"
 
-#: views/contact_view.php:425
+#: views/contact_view.php:426
 msgid "Enter Redirect URL"
 msgstr "Vložte URL pro přesměrování"
 
-#: views/contact_view.php:432
+#: views/contact_view.php:433
 msgid "Form Layout Preview"
 msgstr "Náhled na vzhled formuláře"
 
-#: views/contact_view.php:443
+#: views/contact_view.php:444
 msgid "Standard Fields"
 msgstr "Standardní pole"
 
-#: views/contact_view.php:446 views/contact_view.php:482
+#: views/contact_view.php:447 views/contact_view.php:483
 msgid "Click on a field to use into your form."
 msgstr "Pro použití ve formuláři klikněte na pole."
 
-#: views/contact_view.php:465
+#: views/contact_view.php:466
 msgid "Checkboxes"
 msgstr "Checkboxy"
 
-#: views/contact_view.php:477
+#: views/contact_view.php:478
 msgid "Advanced Fields"
 msgstr "Pokročilá pole"
 
-#: views/contact_view.php:488
+#: views/contact_view.php:489
 msgid "Website / URL"
 msgstr "Webová adresa"
 
-#: views/contact_view.php:493
+#: views/contact_view.php:494
 msgid "Phone"
 msgstr "Telefon"
 
-#: views/contact_view.php:496
+#: views/contact_view.php:497
 msgid "Address"
 msgstr "Adresa"
 
-#: views/contact_view.php:501
+#: views/contact_view.php:502
 msgid "Number"
 msgstr "Číslo"
 
-#: views/contact_view.php:504
+#: views/contact_view.php:505
 msgid "File Upload"
 msgstr "Odeslat soubor"
 
-#: views/contact_view.php:509
+#: views/contact_view.php:510
 msgid "Date"
 msgstr "Datum"
 
-#: views/contact_view.php:512
+#: views/contact_view.php:513
 msgid "Time"
 msgstr "Čas"
 
-#: views/contact_view.php:517
+#: views/contact_view.php:518
 msgid "Password"
 msgstr "Heslo"
 
-#: views/dashboard.php:35
+#: views/dashboard.php:34
 msgid "Contact Bank Short-Codes"
 msgstr "Kontakt Bankovní Krátké-Codes"
 
-#: views/dashboard.php:53
+#: views/dashboard.php:52
 msgid "Delete All Forms"
 msgstr "Smazat všechny formuláře"
 
-#: views/dashboard.php:56
+#: views/dashboard.php:55
 msgid "Restore Factory Settings"
 msgstr "Obnovit původní nastavení"
 
-#: views/dashboard.php:73
+#: views/dashboard.php:72
 msgid "Shortcode"
 msgstr "zkrácený"
 
-#: views/dashboard.php:74
+#: views/dashboard.php:73
 msgid "Total Controls"
 msgstr "celkové ovládání"
 
-#: views/dashboard.php:110
+#: views/dashboard.php:109
 msgid "Edit Form"
 msgstr "Upravit formulář"
 
-#: views/dashboard.php:135
+#: views/dashboard.php:134
 msgid "Delete Form"
 msgstr "Smazat formulář"
 
-#: views/dashboard.php:190
+#: views/dashboard.php:189
 msgid "Are you sure, you want to delete this Form?"
 msgstr "Jste si jisti, že chcete smazat tento formulář?"
 
-#: views/dashboard.php:200
+#: views/dashboard.php:199
 msgid "Are you sure, you want to delete all Forms?"
 msgstr "Jste si jisti, že chcete smazat všechny formuláře?"
 
@@ -874,7 +890,7 @@ msgid "Plugin Customization"
 msgstr "Plugin Přizpůsobení"
 
 #: views/header.php:84 views/header.php:119 views/header.php:133
-#: views/header.php:147 views/recommended-plugins.php:85
+#: views/header.php:147
 msgid "Recommendations"
 msgstr "Doporučení"
 
@@ -893,23 +909,8 @@ msgid "Short-Codes"
 msgstr "zkrácený"
 
 #: views/header.php:120 views/header.php:134 views/header.php:148
-#: views/recommended-plugins.php:197 views/recommended-plugins.php:207
-#: views/recommended-plugins.php:217 views/recommended-plugins.php:227
 msgid "Premium Editions"
 msgstr "Pojistné Edition"
-
-#: views/recommended-plugins.php:178
-msgid "By "
-msgstr "podle"
-
-#: views/recommended-plugins.php:200 views/recommended-plugins.php:210
-#: views/recommended-plugins.php:220 views/recommended-plugins.php:230
-msgid "Visit Website"
-msgstr "Navštivte webové stránky"
-
-#: views/recommended-plugins.php:248
-msgid "Last Updated:"
-msgstr "Poslední aktualizace:"
 
 #: views/shortcode.php:29
 msgid ""
@@ -917,6 +918,15 @@ msgid ""
 msgstr ""
 "Jak nastavit krátkodobé kódy pro styk s bankou do vašeho WordPress Page / "
 "Post?"
+
+#~ msgid "By "
+#~ msgstr "podle"
+
+#~ msgid "Visit Website"
+#~ msgstr "Navštivte webové stránky"
+
+#~ msgid "Last Updated:"
+#~ msgstr "Poslední aktualizace:"
 
 #~ msgid "WP Contact Bank is an one time Investment. Its Worth it!"
 #~ msgstr "WP Kontaktní Bank je jednou investice. Jeho stojí za to!"
@@ -942,9 +952,6 @@ msgstr ""
 
 #~ msgid "Licensing"
 #~ msgstr "Licence"
-
-#~ msgid "Select Form :"
-#~ msgstr "Vyberte formulář"
 
 #~ msgid "Day"
 #~ msgstr "Den"

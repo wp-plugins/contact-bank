@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Contact bank\n"
-"POT-Creation-Date: 2015-01-07 13:11+0530\n"
-"PO-Revision-Date: 2015-01-07 13:11+0530\n"
+"POT-Creation-Date: 2015-02-04 18:16+0530\n"
+"PO-Revision-Date: 2015-02-04 18:16+0530\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ro_RO\n"
@@ -15,125 +15,140 @@ msgstr ""
 "\\contact-bank\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: contact-bank.php:83 contact-bank.php:98 contact-bank.php:113
+#: contact-bank.php:86 contact-bank.php:102 contact-bank.php:118
 msgid "Contact Bank"
 msgstr "Contact Bank"
 
-#: contact-bank.php:84 contact-bank.php:99 contact-bank.php:114
-#: contact-bank.php:616 contact-bank.php:681 contact-bank.php:747
+#: contact-bank.php:87 contact-bank.php:103 contact-bank.php:119
+#: contact-bank.php:640 contact-bank.php:710 contact-bank.php:782
 #: views/header.php:114 views/header.php:128 views/header.php:142
 msgid "Dashboard"
 msgstr "Tablou de bord"
 
-#: contact-bank.php:86 contact-bank.php:101 contact-bank.php:116
-#: contact-bank.php:622 contact-bank.php:687 contact-bank.php:753
+#: contact-bank.php:89 contact-bank.php:105 contact-bank.php:121
+#: contact-bank.php:646 contact-bank.php:716 contact-bank.php:788
+#: views/automatic-plugin-update.php:28 views/automatic-plugin-update.php:32
+msgid "Plugin Updates"
+msgstr ""
+
+#: contact-bank.php:90 contact-bank.php:106 contact-bank.php:122
+#: contact-bank.php:652 contact-bank.php:722 contact-bank.php:794
 #: views/header.php:115 views/header.php:129 views/header.php:143
 msgid "Short-Codes"
 msgstr "Scurt-Codes"
 
-#: contact-bank.php:87 contact-bank.php:102 contact-bank.php:117
-#: contact-bank.php:628 contact-bank.php:693 contact-bank.php:759
-#: views/contact_frontend_data.php:31 views/dashboard.php:125
+#: contact-bank.php:91 contact-bank.php:107 contact-bank.php:123
+#: contact-bank.php:658 contact-bank.php:728 contact-bank.php:800
+#: views/contact_frontend_data.php:31 views/dashboard.php:124
 #: views/header.php:116 views/header.php:130 views/header.php:144
 msgid "Form Entries"
 msgstr "Formular  Intrările"
 
-#: contact-bank.php:88 contact-bank.php:103 contact-bank.php:118
-#: contact-bank.php:634 contact-bank.php:699 contact-bank.php:765
-#: views/contact_email_settings.php:30 views/dashboard.php:120
+#: contact-bank.php:92 contact-bank.php:108 contact-bank.php:124
+#: contact-bank.php:664 contact-bank.php:734 contact-bank.php:806
+#: views/contact_email_settings.php:30 views/dashboard.php:119
 #: views/header.php:117 views/header.php:131 views/header.php:145
 msgid "Email Settings"
 msgstr "Setări de email"
 
-#: contact-bank.php:89 contact-bank.php:104 contact-bank.php:119
-#: contact-bank.php:640 contact-bank.php:705 contact-bank.php:771
-#: views/contact_bank_layout_settings.php:29 views/dashboard.php:115
+#: contact-bank.php:93 contact-bank.php:109 contact-bank.php:125
+#: contact-bank.php:670 contact-bank.php:740 contact-bank.php:812
+#: views/contact_bank_layout_settings.php:29 views/dashboard.php:114
 #: views/header.php:118 views/header.php:132 views/header.php:146
 msgid "Global Settings"
 msgstr "Setări Globale"
 
-#: contact-bank.php:90 contact-bank.php:105 contact-bank.php:120
-#: contact-bank.php:646 contact-bank.php:713
+#: contact-bank.php:94 contact-bank.php:110 contact-bank.php:126
+#: contact-bank.php:676 contact-bank.php:748
 #: views/contact-bank-system-report.php:31
 msgid "System Status"
 msgstr "Stare Sistem"
 
-#: contact-bank.php:91 contact-bank.php:106 contact-bank.php:121
-#: contact-bank.php:652 contact-bank.php:719 contact-bank.php:777
+#: contact-bank.php:95 contact-bank.php:111 contact-bank.php:127
+#: contact-bank.php:682 contact-bank.php:754 contact-bank.php:818
 #: views/header.php:84 views/header.php:119 views/header.php:133
-#: views/header.php:147 views/recommended-plugins.php:85
+#: views/header.php:147
 msgid "Recommendations"
 msgstr "Recomandari"
 
-#: contact-bank.php:92 contact-bank.php:107 contact-bank.php:122
-#: contact-bank.php:659 contact-bank.php:726 contact-bank.php:784
+#: contact-bank.php:96 contact-bank.php:112 contact-bank.php:128
+#: contact-bank.php:689 contact-bank.php:761 contact-bank.php:825
 #: views/header.php:120 views/header.php:134 views/header.php:148
-#: views/recommended-plugins.php:197 views/recommended-plugins.php:207
-#: views/recommended-plugins.php:217 views/recommended-plugins.php:227
 msgid "Premium Editions"
 msgstr "primă de asigurare edițiile"
 
-#: contact-bank.php:93 contact-bank.php:108 contact-bank.php:123
-#: contact-bank.php:666 contact-bank.php:733 contact-bank.php:791
+#: contact-bank.php:97 contact-bank.php:113 contact-bank.php:129
+#: contact-bank.php:696 contact-bank.php:768 contact-bank.php:832
 #: views/header.php:89 views/header.php:121 views/header.php:135
 #: views/header.php:149
 msgid "Our Other Services"
 msgstr "Noastre Alte servicii"
 
-#: contact-bank.php:799
+#: contact-bank.php:840
 msgid "Add Contact Bank Form"
 msgstr "Adauga Contact Formular"
 
-#: contact-bank.php:811
+#: contact-bank.php:852
 msgid "Insert Contact Bank Form"
 msgstr "Introduceți Formular de contact"
 
-#: contact-bank.php:813
+#: contact-bank.php:854
 msgid "Select a form below to add it to your post or page."
 msgstr ""
 "Selectați un formular de mai jos pentru a adauga la posta sau pagina ta."
 
-#: contact-bank.php:818
+#: contact-bank.php:859
 msgid "Form Name"
 msgstr "Formular-Numele"
 
-#: contact-bank.php:820
+#: contact-bank.php:861
 msgid "Select a Form"
 msgstr "Selectați un formular"
 
-#: contact-bank.php:837
+#: contact-bank.php:878
 msgid "Show Form Title"
 msgstr "Arată Formular Titlu"
 
-#: contact-bank.php:842
+#: contact-bank.php:883
 msgid "Insert Form"
 msgstr "Inserați - Formular"
 
-#: contact-bank.php:845
+#: contact-bank.php:886
 msgid "Cancel"
 msgstr "Anula"
 
-#: contact-bank.php:857
+#: contact-bank.php:898
 msgid "Please choose a Form to insert into Shortcode"
 msgstr "Vă rugăm să alegeți un formular pentru a introduce în Codul Scurt"
 
-#: contact-bank.php:893
+#: contact-bank.php:934
 msgid "View Contact Bank Documentation"
 msgstr "Vizualizați Contact Bank Documentație "
 
-#: contact-bank.php:893
+#: contact-bank.php:934
 msgid "Docs"
 msgstr "Documente"
 
-#: contact-bank.php:894
+#: contact-bank.php:935
 msgid "View Contact Bank Premium Editions"
 msgstr "Vezi Contact Bank primă de asigurare edițiile"
 
-#: contact-bank.php:894
+#: contact-bank.php:935
 msgid "Go for Premium!"
 msgstr "Du-te pentru primă de asigurare!"
 
-#: frontend_views/contact_bank_forms.php:369
+#: contact-bank.php:1009
+msgid "Select Form :"
+msgstr "Selectați Formularul:"
+
+#: contact-bank.php:1011 views/contact_bank_layout_settings.php:45
+#: views/contact_bank_layout_settings.php:55
+#: views/contact_email_settings.php:37 views/contact_email_settings.php:53
+#: views/contact_frontend_data.php:46 views/contact_frontend_data.php:56
+msgid "Select Form"
+msgstr "Selectați Formular"
+
+#: frontend_views/contact_bank_forms.php:326
 #: views/contact_bank_form_preview.php:395 views/contact_controls_files.php:89
 msgid "Select Option"
 msgstr "Selectați Opțiune"
@@ -195,12 +210,12 @@ msgstr "Balon de ajutor Textul"
 #: includes/cb_email.php:115 includes/cb_multiple.php:108
 #: includes/cb_text.php:114 includes/cb_textarea.php:113
 #: views/contact_bank_layout_settings.php:946
-#: views/contact_frontend_data.php:171 views/dashboard.php:209
-#: views/includes_common_after.php:348 views/includes_common_after.php:351
-#: views/includes_common_after.php:354 views/includes_common_after.php:357
-#: views/includes_common_after.php:360 views/includes_common_after.php:363
-#: views/includes_common_after.php:366 views/includes_common_after.php:369
-#: views/includes_common_after.php:372
+#: views/contact_frontend_data.php:171 views/dashboard.php:208
+#: views/includes_common_after.php:349 views/includes_common_after.php:352
+#: views/includes_common_after.php:355 views/includes_common_after.php:358
+#: views/includes_common_after.php:361 views/includes_common_after.php:364
+#: views/includes_common_after.php:367 views/includes_common_after.php:370
+#: views/includes_common_after.php:373
 msgid "This Feature is only available in Paid Premium Edition!"
 msgstr ""
 "Această caracteristică este disponibilă doar într plătit Premium Ediția!"
@@ -253,7 +268,7 @@ msgstr "Salvați Setările"
 msgid "Please Fill an Option."
 msgstr "Rugăm să Umpleți o opțiune."
 
-#: includes/cb_dropdown.php:36 views/contact_view.php:460
+#: includes/cb_dropdown.php:36 views/contact_view.php:461
 msgid "Select Box"
 msgstr "Selectați trezorul"
 
@@ -266,7 +281,7 @@ msgstr "Introduceți Casa de discuri"
 msgid "Enter Option"
 msgstr "Opțiunea Introduceți "
 
-#: includes/cb_email.php:36 views/contact_view.php:457
+#: includes/cb_email.php:36 views/contact_view.php:458
 msgid "Email Address"
 msgstr "o adresă Email"
 
@@ -289,11 +304,11 @@ msgstr "Locul Deținătorul"
 msgid "Enter Place Holder"
 msgstr "Introduceți Locul Deținătorul"
 
-#: includes/cb_multiple.php:36 views/contact_view.php:468
+#: includes/cb_multiple.php:36 views/contact_view.php:469
 msgid "Radio Buttons"
 msgstr "de radio Butoanelor"
 
-#: includes/cb_text.php:36 views/contact_view.php:449
+#: includes/cb_text.php:36 views/contact_view.php:450
 msgid "Single Line Text"
 msgstr "Linia unică Textul"
 
@@ -326,11 +341,11 @@ msgstr "tunde"
 #: views/contact_bank_layout_settings.php:271
 #: views/contact_bank_layout_settings.php:481
 #: views/contact_bank_layout_settings.php:674
-#: views/contact_bank_layout_settings.php:802 views/contact_view.php:478
+#: views/contact_bank_layout_settings.php:802 views/contact_view.php:479
 msgid " (Available in Premium Edition)"
 msgstr "(Disponibil în Premium Ediția)"
 
-#: includes/cb_textarea.php:36 views/contact_view.php:452
+#: includes/cb_textarea.php:36 views/contact_view.php:453
 msgid "Paragraph Text"
 msgstr "paragraf Textul"
 
@@ -384,7 +399,7 @@ msgstr "Setări e-mail salvate. Vă rugăm să așteptați pentru redirecționar
 msgid "Email"
 msgstr "de Email"
 
-#: views/add_contact_email.php:69 views/contact_view.php:485
+#: views/add_contact_email.php:69 views/contact_view.php:486
 msgid "Name"
 msgstr "Numele"
 
@@ -477,6 +492,14 @@ msgstr "Mesajul"
 msgid "Insert a Field into Your Form Message"
 msgstr "Insera un câmp în mesaj Formă"
 
+#: views/automatic-plugin-update.php:35
+msgid "Enable"
+msgstr ""
+
+#: views/automatic-plugin-update.php:36
+msgid "Disable"
+msgstr ""
+
 #: views/contact-bank-system-report.php:34
 msgid "Get System Report"
 msgstr "Ia Raport Sistem"
@@ -489,14 +512,14 @@ msgstr "A trage Sistem Report "
 msgid "Default"
 msgstr "Implicită"
 
-#: views/contact_bank_form_preview.php:294 views/dashboard.php:130
+#: views/contact_bank_form_preview.php:294 views/dashboard.php:129
 msgid "Form Preview"
 msgstr "Formular-Previzualizare"
 
 #: views/contact_bank_form_preview.php:297
 #: views/contact_bank_layout_settings.php:32
 #: views/contact_email_settings.php:33 views/contact_frontend_data.php:34
-#: views/contact_view.php:261 views/recommended-plugins.php:88
+#: views/contact_view.php:262
 msgid "Back to Dashboard"
 msgstr "Înapoi la tabloul de bord"
 
@@ -512,13 +535,6 @@ msgstr "Restaurare-Setări Globale"
 msgid "Form Settings Saved. Kindly wait for the redirect."
 msgstr ""
 "Salvate Formularul Setări . Va rugam sa asteptati pentru redirecționare. "
-
-#: views/contact_bank_layout_settings.php:45
-#: views/contact_bank_layout_settings.php:55
-#: views/contact_email_settings.php:37 views/contact_email_settings.php:53
-#: views/contact_frontend_data.php:46 views/contact_frontend_data.php:56
-msgid "Select Form"
-msgstr "Selectați Formular"
 
 #: views/contact_bank_layout_settings.php:82
 msgid "Label Settings"
@@ -706,186 +722,186 @@ msgstr "Vă rugăm să selectați formularul primul."
 msgid "Export to Excel"
 msgstr "Exportul de Excela"
 
-#: views/contact_frontend_data.php:41 views/dashboard.php:65
-#: views/dashboard.php:72
+#: views/contact_frontend_data.php:41 views/dashboard.php:64
+#: views/dashboard.php:71
 msgid "Form"
 msgstr "Formular"
 
-#: views/contact_view.php:258 views/dashboard.php:47
+#: views/contact_view.php:259 views/dashboard.php:46
 msgid "Add New Form"
 msgstr "Adăugați Formular nou"
 
-#: views/contact_view.php:264 views/contact_view.php:528
+#: views/contact_view.php:265 views/contact_view.php:529
 msgid "Save Form"
 msgstr "Salvați-Formular"
 
-#: views/contact_view.php:269
+#: views/contact_view.php:270
 msgid "Form Submitted. Kindly wait for the redirect."
 msgstr "Formular depus. Va rugam sa asteptati pentru redirecționare."
 
-#: views/contact_view.php:278
+#: views/contact_view.php:279
 msgid "Form Settings"
 msgstr "Formularul -Setări de"
 
-#: views/contact_view.php:282
+#: views/contact_view.php:283
 msgid "Form Name :"
 msgstr "Formular Nume:"
 
-#: views/contact_view.php:288
+#: views/contact_view.php:289
 msgid "Enter Form Name"
 msgstr "Introduceți Formular Nume:"
 
-#: views/contact_view.php:292
+#: views/contact_view.php:293
 msgid "Form Description :"
 msgstr "Formă Descriere:"
 
-#: views/contact_view.php:294
+#: views/contact_view.php:295
 msgid "Enter Form Description"
 msgstr " Introduceți Formă Descriere"
 
-#: views/contact_view.php:298
+#: views/contact_view.php:299
 msgid "Blank Field Message:"
 msgstr "Goale Domeniul Mesajul:"
 
-#: views/contact_view.php:304
+#: views/contact_view.php:305
 msgid "Required field must not be blank"
 msgstr "Câmpul obligatoriu nu trebuie să fie gol"
 
-#: views/contact_view.php:306
+#: views/contact_view.php:307
 msgid "Enter Blank Field Message"
 msgstr "Introduceți Goale Domeniul Mesajul "
 
-#: views/contact_view.php:310
+#: views/contact_view.php:311
 msgid "Incorrect Email Message:"
 msgstr "Incorecte Email Mesaj:"
 
-#: views/contact_view.php:316
+#: views/contact_view.php:317
 msgid "Please enter a valid email address"
 msgstr "Va rugam sa introduceti o adresa de email valida"
 
-#: views/contact_view.php:318
+#: views/contact_view.php:319
 msgid "Enter Incorrect Email Message"
 msgstr "Să introduceți incorectă E-mail Mesajul"
 
-#: views/contact_view.php:322
+#: views/contact_view.php:323
 msgid "Success Message :"
 msgstr "Succesul Mesaj:"
 
-#: views/contact_view.php:326
+#: views/contact_view.php:327
 msgid "Enter Success Message"
 msgstr "Introduceți Succesul Mesaj"
 
-#: views/contact_view.php:330
+#: views/contact_view.php:331
 msgid "Redirect :"
 msgstr "redirecționare:"
 
-#: views/contact_view.php:342 views/contact_view.php:353
-#: views/contact_view.php:365
+#: views/contact_view.php:343 views/contact_view.php:354
+#: views/contact_view.php:366
 msgid "Page"
 msgstr "pagină"
 
-#: views/contact_view.php:345 views/contact_view.php:356
-#: views/contact_view.php:368
+#: views/contact_view.php:346 views/contact_view.php:357
+#: views/contact_view.php:369
 msgid "URL"
 msgstr "URL"
 
-#: views/contact_view.php:375
+#: views/contact_view.php:376
 msgid "Page :"
 msgstr "Pagina:"
 
-#: views/contact_view.php:418
+#: views/contact_view.php:419
 msgid "URL :"
 msgstr "URL :"
 
-#: views/contact_view.php:425
+#: views/contact_view.php:426
 msgid "Enter Redirect URL"
 msgstr "Introduceți De redirecționare URL:"
 
-#: views/contact_view.php:432
+#: views/contact_view.php:433
 msgid "Form Layout Preview"
 msgstr "Formă Dispunerea Previzualizare"
 
-#: views/contact_view.php:443
+#: views/contact_view.php:444
 msgid "Standard Fields"
 msgstr "Câmpurile forfetare de"
 
-#: views/contact_view.php:446 views/contact_view.php:482
+#: views/contact_view.php:447 views/contact_view.php:483
 msgid "Click on a field to use into your form."
 msgstr "Faceți clic pe un câmp de a utiliza în formularul dumneavoastră."
 
-#: views/contact_view.php:465
+#: views/contact_view.php:466
 msgid "Checkboxes"
 msgstr "Casete de selectare"
 
-#: views/contact_view.php:477
+#: views/contact_view.php:478
 msgid "Advanced Fields"
 msgstr "Câmpurile  Avansate"
 
-#: views/contact_view.php:488
+#: views/contact_view.php:489
 msgid "Website / URL"
 msgstr "Site-ul web / URL"
 
-#: views/contact_view.php:493
+#: views/contact_view.php:494
 msgid "Phone"
 msgstr "telefon"
 
-#: views/contact_view.php:496
+#: views/contact_view.php:497
 msgid "Address"
 msgstr "adresa"
 
-#: views/contact_view.php:501
+#: views/contact_view.php:502
 msgid "Number"
 msgstr "număr"
 
-#: views/contact_view.php:504
+#: views/contact_view.php:505
 msgid "File Upload"
 msgstr "fisierului Încarcă"
 
-#: views/contact_view.php:509
+#: views/contact_view.php:510
 msgid "Date"
 msgstr "data"
 
-#: views/contact_view.php:512
+#: views/contact_view.php:513
 msgid "Time"
 msgstr "timp"
 
-#: views/contact_view.php:517
+#: views/contact_view.php:518
 msgid "Password"
 msgstr "utilizator Parola"
 
-#: views/dashboard.php:35
+#: views/dashboard.php:34
 msgid "Contact Bank Short-Codes"
 msgstr "Contact Bank Scurt-coduri"
 
-#: views/dashboard.php:53
+#: views/dashboard.php:52
 msgid "Delete All Forms"
 msgstr "Ștergerea Tuturor Formelor"
 
-#: views/dashboard.php:56
+#: views/dashboard.php:55
 msgid "Restore Factory Settings"
 msgstr "Restabili Setările Din Fabrică"
 
-#: views/dashboard.php:73
+#: views/dashboard.php:72
 msgid "Shortcode"
 msgstr "codul scurt"
 
-#: views/dashboard.php:74
+#: views/dashboard.php:73
 msgid "Total Controls"
 msgstr "în total Controlul"
 
-#: views/dashboard.php:110
+#: views/dashboard.php:109
 msgid "Edit Form"
 msgstr "Formular Editare"
 
-#: views/dashboard.php:135
+#: views/dashboard.php:134
 msgid "Delete Form"
 msgstr "Sterge Formularul"
 
-#: views/dashboard.php:190
+#: views/dashboard.php:189
 msgid "Are you sure, you want to delete this Form?"
 msgstr "Sigur, doriți să ștergeți acest formular?"
 
-#: views/dashboard.php:200
+#: views/dashboard.php:199
 msgid "Are you sure, you want to delete all Forms?"
 msgstr "Sigur, doriți să ștergeți tuturor formelor?"
 
@@ -942,57 +958,42 @@ msgstr "Mai multe acțiuni"
 msgid "Plugin Customization"
 msgstr "de personalizare plugin"
 
-#. translators: 1: The rating
-#: views/recommended-plugins.php:66
-#, fuzzy, php-format
-msgid "%s rating"
-msgstr "% reiting"
-
-#. translators: 1: Plugin name and version.
-#: views/recommended-plugins.php:133
-msgid "More Details"
-msgstr "Mai multe detalii"
-
-#. translators: 1: Plugin name and version.
-#: views/recommended-plugins.php:144
-msgid "Install Now"
-msgstr "Instalati acum"
-
-#. translators: 1: Plugin name and version
-#: views/recommended-plugins.php:151
-msgid "Update Now"
-msgstr "Actualizați cu intreprinderea"
-
-#: views/recommended-plugins.php:178
-msgid "By "
-msgstr "prin"
-
-#: views/recommended-plugins.php:200 views/recommended-plugins.php:210
-#: views/recommended-plugins.php:220 views/recommended-plugins.php:230
-msgid "Visit Website"
-msgstr "Vizitați site-ul"
-
-#: views/recommended-plugins.php:248
-msgid "Last Updated:"
-msgstr "actualizată ultima dată"
-
-#: views/recommended-plugins.php:259
-msgid "<strong>Untested</strong> with your version of WordPress"
-msgstr "netestată cu versiunea dvs. de WordPress"
-
-#: views/recommended-plugins.php:263
-msgid "Incompatible with your version of WordPress"
-msgstr "Incompatibil cu versiunea dvs. de WordPress"
-
-#: views/recommended-plugins.php:267
-msgid "Compatible with your version of WordPress"
-msgstr "Compatibil cu versiunea dvs. de WordPress"
-
 #: views/shortcode.php:29
 msgid ""
 "How to setup Short-Codes for Contact Bank into your WordPress Page/Post?"
 msgstr ""
 "Cum să înființeze scurt Coduri de Contact Bank în WordPress Pagina / Post?"
+
+#, fuzzy
+#~ msgid "%s rating"
+#~ msgstr "% reiting"
+
+#~ msgid "More Details"
+#~ msgstr "Mai multe detalii"
+
+#~ msgid "Install Now"
+#~ msgstr "Instalati acum"
+
+#~ msgid "Update Now"
+#~ msgstr "Actualizați cu intreprinderea"
+
+#~ msgid "By "
+#~ msgstr "prin"
+
+#~ msgid "Visit Website"
+#~ msgstr "Vizitați site-ul"
+
+#~ msgid "Last Updated:"
+#~ msgstr "actualizată ultima dată"
+
+#~ msgid "<strong>Untested</strong> with your version of WordPress"
+#~ msgstr "netestată cu versiunea dvs. de WordPress"
+
+#~ msgid "Incompatible with your version of WordPress"
+#~ msgstr "Incompatibil cu versiunea dvs. de WordPress"
+
+#~ msgid "Compatible with your version of WordPress"
+#~ msgstr "Compatibil cu versiunea dvs. de WordPress"
 
 #~ msgid "WP Contact Bank is an one time Investment. Its Worth it!"
 #~ msgstr ""
@@ -1024,9 +1025,6 @@ msgstr ""
 
 #~ msgid "Roles & Capabilities"
 #~ msgstr "Roluri și capabilități"
-
-#~ msgid "Select Form :"
-#~ msgstr "Selectați Formularul:"
 
 #~ msgid "Day"
 #~ msgstr "zilei"

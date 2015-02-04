@@ -25,6 +25,7 @@ else
 	(
 		"SELECT count(form_id) FROM ". contact_bank_contact_form()
 	);
+	
 	if($count_forms < 2)
 	{
 		
@@ -222,30 +223,30 @@ else
 					)
 				);
 		    }
+		  
 	    }
-		else
+		
+		$form_data = $wpdb->get_results
+		(
+			$wpdb->prepare
+			(
+				"SELECT * FROM " .contact_bank_form_settings_Table(). " where form_id = %d",
+				$form_id
+			)
+		);
+		for($flag = 0; $flag<count($form_data);$flag++)
 		{
-			$form_data = $wpdb->get_results
-			(
-				$wpdb->prepare
-				(
-					"SELECT * FROM " .contact_bank_form_settings_Table(). " where form_id = %d",
-					$form_id
-				)
-			);
-			for($flag = 0; $flag<count($form_data);$flag++)
-			{
-				$form_settings[$form_id][$form_data[$flag]->form_message_key] = $form_data[$flag]->form_message_value;
-			}
-			$form_name = $wpdb->get_var
-			(
-				$wpdb->prepare
-				(
-					"SELECT form_name FROM " .contact_bank_contact_form(). " where form_id = %d",
-					$form_id
-				)
-			);
+			$form_settings[$form_id][$form_data[$flag]->form_message_key] = $form_data[$flag]->form_message_value;
 		}
+		$form_name = $wpdb->get_var
+		(
+			$wpdb->prepare
+			(
+				"SELECT form_name FROM " .contact_bank_contact_form(). " where form_id = %d",
+				$form_id
+			)
+		);
+		
 	//}
 ?>
 <form id="ux_dynamic_form_submit" class="layout-form">
@@ -258,7 +259,7 @@ else
 						<h3 class="hndle"><span><?php _e("Add New Form", contact_bank); ?></span></h3>
 						<div class="inside">
 							<div id="ux_form_entries_div" class="contact_bank_layout">
-								<a class="btn btn-info" href="admin.php?page=dashboard"><?php _e("Back to Dashboard", contact_bank); ?></a>
+								<a class="btn btn-info" href="admin.php?page=contact_dashboard"><?php _e("Back to Dashboard", contact_bank); ?></a>
 								<input class="btn btn-info layout-span2" style="float: right;" type="submit" id="submit_button"
 									name="submit_button"
 									value="<?php _e("Save Form", contact_bank); ?>"/>
@@ -598,7 +599,7 @@ jQuery("#ux_dynamic_form_submit").validate
 				setTimeout(function()
 				{
 					jQuery("#form_success_message").css("display","none");
-					window.location.href = "admin.php?page=dashboard";
+					window.location.href = "admin.php?page=contact_dashboard";
 				}, 2000);
 			}
 		});

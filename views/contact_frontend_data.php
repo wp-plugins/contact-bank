@@ -31,7 +31,7 @@ else
 						<h3 class="hndle"><span><?php _e( "Form Entries", contact_bank ); ?></span></h3>
 						<div class="inside">
 							<div id="ux_form_entries_div" class="contact_bank_layout">
-								<a class="btn btn-info" href="admin.php?page=dashboard"><?php _e("Back to Dashboard", contact_bank);?></a>
+								<a class="btn btn-info" href="admin.php?page=contact_dashboard"><?php _e("Back to Dashboard", contact_bank);?></a>
 								<a class="btn btn-info" id="export" ><?php _e("Export to Excel", contact_bank);?></a>
 								<div class="separator-doubled"></div>
 								<div class="fluid-layout">

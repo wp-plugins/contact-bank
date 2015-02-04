@@ -85,7 +85,7 @@ else
 							<h3 class="hndle"><span><?php _e("Recommendations", tech_bank); ?></span></h3>
 							<div class="inside">
 								<div id="ux_recommendation" class="tech_bank_layout">
-									<a class="btn btn-info" style="text-decoration:none" href="admin.php?page=dashboard"><?php _e("Back to Dashboard", tech_bank);?></a>
+									<a class="btn btn-info" style="text-decoration:none" href="admin.php?page=contact_dashboard"><?php _e("Back to Dashboard", tech_bank);?></a>
 									<div class="separator-doubled"></div>
 									<div class="fluid-layout">
 										<div class="layout-span12">
