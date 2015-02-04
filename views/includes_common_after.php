@@ -38,7 +38,6 @@ jQuery(document).ready(function()
 			}
 			jQuery.post(ajaxurl,"form_id="+form_id+"&field_dynamic_id="+JSON.stringify(field_dynamic_id)+"&param=form_fields_sorting_order&action=add_contact_form_library", function(data)
 			{
-				alert(data);
 			});
 		}
 	});

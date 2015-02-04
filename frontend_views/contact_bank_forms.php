@@ -581,7 +581,6 @@ jQuery("#ux_frm_front_end_form_<?php echo $form_id ."_". $rand_value; ?>").valid
 			var submit_id = data;
 			jQuery.post(ajaxurl, "form_id="+form_id+"&submit_id="+submit_id+"&param=email_management&action=email_management_contact_form_library", function(data) 
 			{
-				alert(data);
 				setTimeout(function()
 				{
 					jQuery("#form_success_message_frontend_<?php echo $rand_value;?>").css("display","none");
