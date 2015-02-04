@@ -1,0 +1,1120 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Contact Bank\n"
+"POT-Creation-Date: 2014-11-18 05:20-0800\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: et\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.6\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: C:\\xampp\\htdocs\\wordpress4.0.1\\wp-content\\plugins"
+"\\contact-bank\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: contact-bank.php:55 contact-bank.php:70 contact-bank.php:85
+msgid "Contact Bank"
+msgstr "COntact Bank"
+
+#: contact-bank.php:56 contact-bank.php:71 contact-bank.php:86
+#: contact-bank.php:456 contact-bank.php:521 contact-bank.php:587
+msgid "Dashboard"
+msgstr "Töölaud"
+
+#: contact-bank.php:58 contact-bank.php:73 contact-bank.php:88
+#: contact-bank.php:462 contact-bank.php:527 contact-bank.php:593
+msgid "Short-Codes"
+msgstr "Lühike-koodid"
+
+#: contact-bank.php:59 contact-bank.php:74 contact-bank.php:89
+#: contact-bank.php:468 contact-bank.php:533 contact-bank.php:599
+#: views/contact_frontend_data.php:31 views/dashboard.php:125
+msgid "Form Entries"
+msgstr "Vormi sisestused"
+
+#: contact-bank.php:60 contact-bank.php:75 contact-bank.php:90
+#: contact-bank.php:474 contact-bank.php:539 contact-bank.php:605
+#: views/contact_email_settings.php:36 views/dashboard.php:120
+msgid "Email Settings"
+msgstr "E-maili seaded"
+
+#: contact-bank.php:61 contact-bank.php:76 contact-bank.php:91
+#: contact-bank.php:480 contact-bank.php:545 contact-bank.php:611
+#: views/contact_bank_layout_settings.php:35 views/dashboard.php:115
+msgid "Global Settings"
+msgstr "Üldseaded"
+
+#: contact-bank.php:62 contact-bank.php:77 contact-bank.php:92
+#: contact-bank.php:486 contact-bank.php:553
+#: views/contact-bank-system-report.php:30
+msgid "System Status"
+msgstr "Süsteemi olek"
+
+#: contact-bank.php:63 contact-bank.php:78 contact-bank.php:93
+#: contact-bank.php:492 contact-bank.php:559 contact-bank.php:617
+#: views/header.php:84
+msgid "Recommendations"
+msgstr "Soovitused"
+
+#: contact-bank.php:64 contact-bank.php:79 contact-bank.php:94
+#: contact-bank.php:499 contact-bank.php:566 contact-bank.php:624
+#: views/purchase_pro_version.php:38
+msgid "Premium Editions"
+msgstr "Preemium Edition"
+
+#: contact-bank.php:65 contact-bank.php:80 contact-bank.php:95
+#: contact-bank.php:506 contact-bank.php:573 contact-bank.php:631
+#: views/header.php:89
+msgid "Our Other Services"
+msgstr "Meie Muud teenused"
+
+#: contact-bank.php:646
+msgid "Add Contact Bank Form"
+msgstr "Lisa Contact Bank vorm"
+
+#: contact-bank.php:658
+msgid "Insert Contact Bank Form"
+msgstr "Sisesta Contact Bank vorm"
+
+#: contact-bank.php:660
+msgid "Select a form below to add it to your post or page."
+msgstr "Vali vorm, mida soovid kuvada postituses või lehel."
+
+#: contact-bank.php:665
+msgid "Form Name"
+msgstr "Vormi nimi"
+
+#: contact-bank.php:667
+msgid "Select a Form"
+msgstr "Vali vorm"
+
+#: contact-bank.php:684
+msgid "Show Form Title"
+msgstr "Näita vormi pealkirja"
+
+#: contact-bank.php:689
+msgid "Insert Form"
+msgstr "Sisesta vorm"
+
+#: contact-bank.php:692
+msgid "Cancel"
+msgstr "Katkesta"
+
+#: contact-bank.php:704
+msgid "Please choose a Form to insert into Shortcode"
+msgstr "Palun vali vorm, mida soovid lisada lühikoodi"
+
+#: contact-bank.php:740
+msgid "View Contact Bank Documentation"
+msgstr "Vaata Kontakt Bank Dokumentatsiooni"
+
+#: contact-bank.php:740
+msgid "Docs"
+msgstr "Docs"
+
+#: contact-bank.php:741
+msgid "View Contact Bank Premium Editions"
+msgstr "Vaata Kontakt Bank Preemium Edition"
+
+#: contact-bank.php:741
+msgid "Go for Premium!"
+msgstr "Mine Premium!"
+
+#: frontend_views/contact_bank_forms.php:369
+#: views/contact_bank_form_preview.php:401 views/contact_controls_files.php:87
+msgid "Select Option"
+msgstr "Valikvastus"
+
+#: includes/cb_checkbox.php:36
+msgid "Check Boxes"
+msgstr "Märkeruudud"
+
+#: includes/cb_checkbox.php:40 includes/cb_dropdown.php:40
+#: includes/cb_email.php:40 includes/cb_multiple.php:40
+#: includes/cb_text.php:40 includes/cb_textarea.php:40
+msgid "Label"
+msgstr "Silt"
+
+#: includes/cb_checkbox.php:42 includes/cb_checkbox.php:144
+#: includes/cb_dropdown.php:42 includes/cb_dropdown.php:144
+#: includes/cb_email.php:43 includes/cb_email.php:133
+#: includes/cb_multiple.php:44 includes/cb_multiple.php:164
+#: includes/cb_text.php:43 includes/cb_text.php:132
+#: includes/cb_textarea.php:42 includes/cb_textarea.php:130
+#: views/contact_controls_files.php:34 views/contact_controls_files.php:50
+#: views/contact_controls_files.php:83 views/contact_controls_files.php:99
+#: views/contact_controls_files.php:116
+msgid "Untitled"
+msgstr "Pealkirjata"
+
+#: includes/cb_checkbox.php:46 includes/cb_checkbox.php:56
+#: includes/cb_checkbox.php:69 includes/cb_checkbox.php:83
+#: includes/cb_dropdown.php:46 includes/cb_dropdown.php:56
+#: includes/cb_dropdown.php:69 includes/cb_dropdown.php:83
+#: includes/cb_email.php:57 includes/cb_email.php:68 includes/cb_email.php:83
+#: includes/cb_email.php:99 includes/cb_multiple.php:49
+#: includes/cb_multiple.php:60 includes/cb_multiple.php:75
+#: includes/cb_multiple.php:91 includes/cb_text.php:56 includes/cb_text.php:67
+#: includes/cb_text.php:82 includes/cb_text.php:98 includes/cb_textarea.php:56
+#: includes/cb_textarea.php:67 includes/cb_textarea.php:82
+#: includes/cb_textarea.php:98
+msgid "Required"
+msgstr "Kohustuslik"
+
+#: includes/cb_checkbox.php:60 includes/cb_checkbox.php:73
+#: includes/cb_checkbox.php:87 includes/cb_dropdown.php:60
+#: includes/cb_dropdown.php:73 includes/cb_dropdown.php:87
+#: includes/cb_email.php:73 includes/cb_email.php:88 includes/cb_email.php:104
+#: includes/cb_multiple.php:65 includes/cb_multiple.php:80
+#: includes/cb_multiple.php:96 includes/cb_text.php:72 includes/cb_text.php:87
+#: includes/cb_text.php:103 includes/cb_textarea.php:72
+#: includes/cb_textarea.php:87 includes/cb_textarea.php:103
+msgid "Not Required"
+msgstr "Mittekohustuslik"
+
+#: includes/cb_checkbox.php:95 includes/cb_dropdown.php:95
+#: includes/cb_email.php:112 includes/cb_multiple.php:104
+#: includes/cb_text.php:111
+msgid "Tooltip Text"
+msgstr "Vihje tekst"
+
+#: includes/cb_checkbox.php:97 includes/cb_dropdown.php:97
+#: includes/cb_email.php:115 includes/cb_multiple.php:108
+#: includes/cb_text.php:114 includes/cb_textarea.php:113
+#: views/contact_bank_layout_settings.php:952
+#: views/contact_frontend_data.php:171 views/dashboard.php:209
+#: views/includes_common_after.php:348 views/includes_common_after.php:351
+#: views/includes_common_after.php:354 views/includes_common_after.php:357
+#: views/includes_common_after.php:360 views/includes_common_after.php:363
+#: views/includes_common_after.php:366 views/includes_common_after.php:369
+#: views/includes_common_after.php:372
+msgid "This Feature is only available in Paid Premium Edition!"
+msgstr "See funktsioon on saadaval ainult Paide Premium väljaanne!"
+
+#: includes/cb_checkbox.php:101 includes/cb_dropdown.php:101
+#: includes/cb_multiple.php:113
+msgid "Options"
+msgstr "Valikud"
+
+#: includes/cb_checkbox.php:103
+msgid "Enter Options"
+msgstr "Sisesta valikud"
+
+#: includes/cb_checkbox.php:104 includes/cb_dropdown.php:104
+#: includes/cb_multiple.php:119
+msgid "Add"
+msgstr "Lisa"
+
+#: includes/cb_checkbox.php:135 includes/cb_dropdown.php:135
+#: includes/cb_multiple.php:153
+msgid "Delete"
+msgstr "Kustuta"
+
+#: includes/cb_checkbox.php:142 includes/cb_dropdown.php:142
+#: includes/cb_email.php:130 includes/cb_multiple.php:160
+#: includes/cb_text.php:129 includes/cb_textarea.php:128
+msgid "Admin Label"
+msgstr "Adminni silt"
+
+#: includes/cb_checkbox.php:144 includes/cb_dropdown.php:144
+#: includes/cb_email.php:134 includes/cb_multiple.php:163
+#: includes/cb_text.php:131 includes/cb_textarea.php:131
+msgid "Enter Admin Label"
+msgstr "Sisesta adminni silt"
+
+#: includes/cb_checkbox.php:148 includes/cb_dropdown.php:148
+#: includes/cb_email.php:139 includes/cb_multiple.php:168
+#: includes/cb_text.php:137 includes/cb_textarea.php:135
+msgid "Do not show in the email"
+msgstr "Ära näita e-mailis"
+
+#: includes/cb_checkbox.php:179 includes/cb_dropdown.php:179
+#: includes/cb_email.php:173 includes/cb_multiple.php:202
+#: includes/cb_text.php:200 includes/cb_textarea.php:196
+msgid "Save Settings"
+msgstr "Salvesta seaded"
+
+#: includes/cb_checkbox.php:228 includes/cb_dropdown.php:219
+#: includes/cb_multiple.php:252
+msgid "Please Fill an Option."
+msgstr "Palun vali vähemalt üks vastus."
+
+#: includes/cb_dropdown.php:36 views/contact_view.php:460
+msgid "Select Box"
+msgstr "Valikuväli"
+
+#: includes/cb_dropdown.php:42 includes/cb_email.php:44
+#: includes/cb_multiple.php:45 includes/cb_text.php:44
+msgid "Enter Label"
+msgstr "Sisesta silt"
+
+#: includes/cb_dropdown.php:103 includes/cb_multiple.php:116
+msgid "Enter Option"
+msgstr "Sisesta valik"
+
+#: includes/cb_email.php:36 views/contact_view.php:457
+msgid "Email Address"
+msgstr "E-maili aadress"
+
+#: includes/cb_email.php:49 includes/cb_text.php:48
+#: includes/cb_textarea.php:48
+msgid "Description"
+msgstr "Kirjeldus"
+
+#: includes/cb_email.php:52 includes/cb_text.php:51
+msgid "Enter Description"
+msgstr "Sisesta kirjeldus"
+
+#: includes/cb_email.php:121 includes/cb_text.php:120
+#: includes/cb_textarea.php:120
+msgid "Place Holder"
+msgstr "Kohatäide"
+
+#: includes/cb_email.php:124 includes/cb_text.php:123
+#: includes/cb_textarea.php:122
+msgid "Enter Place Holder"
+msgstr "Sisesta kohatäide"
+
+#: includes/cb_multiple.php:36 views/contact_view.php:468
+msgid "Radio Buttons"
+msgstr "Radio-buttonid"
+
+#: includes/cb_text.php:36 views/contact_view.php:449
+msgid "Single Line Text"
+msgstr "Üherealine tekst"
+
+#: includes/cb_text.php:168 includes/cb_textarea.php:166
+msgid "Add a filter"
+msgstr "Lisa filter"
+
+#: includes/cb_text.php:173 includes/cb_textarea.php:170
+msgid "Alpha"
+msgstr "Ainult tähed"
+
+#: includes/cb_text.php:177 includes/cb_textarea.php:174
+msgid "Alpha Numeric"
+msgstr "Tähed ja numbrid"
+
+#: includes/cb_text.php:181 includes/cb_textarea.php:178
+msgid "Digits"
+msgstr "Numbrid"
+
+#: includes/cb_text.php:185 includes/cb_textarea.php:182
+msgid "Strip Tags"
+msgstr "Strip tagid"
+
+#: includes/cb_text.php:189 includes/cb_textarea.php:186
+msgid "Trim"
+msgstr "Kärbi"
+
+#: includes/cb_text.php:191 includes/cb_textarea.php:188
+#: views/contact_bank_layout_settings.php:89
+#: views/contact_bank_layout_settings.php:277
+#: views/contact_bank_layout_settings.php:487
+#: views/contact_bank_layout_settings.php:680
+#: views/contact_bank_layout_settings.php:808 views/contact_view.php:478
+msgid " (Available in Premium Edition)"
+msgstr "(Saadaval Premium Edition)"
+
+#: includes/cb_textarea.php:36 views/contact_view.php:452
+msgid "Paragraph Text"
+msgstr "Lõigu tekst"
+
+#: includes/cb_textarea.php:43
+msgid "Enter label"
+msgstr "Sisesta silt"
+
+#: includes/cb_textarea.php:50
+msgid "Enter  Description"
+msgstr "Sisesta kirjeldus"
+
+#: includes/cb_textarea.php:111
+msgid "Tooltip text"
+msgstr "Vihje tekst"
+
+#: lib/contact_bank_email-class.php:47 lib/contact_bank_email-class.php:57
+#: lib/contact_bank_email-class.php:67
+msgid "Edit Email Settings"
+msgstr "Muuda e-maili seadeid"
+
+#: lib/contact_bank_email-class.php:50 lib/contact_bank_email-class.php:60
+#: lib/contact_bank_email-class.php:70
+msgid "Delete Email Settings"
+msgstr "Kustuta e-maili seaded"
+
+#: lib/contact_frontend_data_class.php:113
+msgid "Delete Form Entry"
+msgstr "Kustuta vormi sisestus"
+
+#: views/add_contact_email.php:50 views/contact_email_settings.php:94
+msgid "Email Confirmation"
+msgstr "E-maili kinnitus"
+
+#: views/add_contact_email.php:53
+msgid "Back to Email Settings"
+msgstr "Tagasi e-maili seadetesse"
+
+#: views/add_contact_email.php:54 views/add_contact_email.php:234
+#: views/contact_bank_layout_settings.php:41
+#: views/contact_bank_layout_settings.php:526
+#: views/contact_bank_layout_settings.php:938
+msgid "Save"
+msgstr "Salvesta"
+
+#: views/add_contact_email.php:58
+msgid "Email Settings Saved. Kindly wait for the redirect."
+msgstr "E-maili seaded on salvestatud. Palun oota ümbersuunamist."
+
+#: views/add_contact_email.php:65 views/add_contact_email.php:122
+#: views/contact_controls_files.php:66
+msgid "Email"
+msgstr "E-mail"
+
+#: views/add_contact_email.php:69 views/contact_view.php:485
+msgid "Name"
+msgstr "Nimi"
+
+#: views/add_contact_email.php:73
+msgid "Enter Name"
+msgstr "Sisesta nimi"
+
+#: views/add_contact_email.php:79
+msgid "Send To"
+msgstr "Saaja"
+
+#: views/add_contact_email.php:88 views/add_contact_email.php:99
+#: views/add_contact_email.php:111 views/add_contact_email.php:171
+msgid "Enter Email"
+msgstr "Sisest e-mail"
+
+#: views/add_contact_email.php:90 views/add_contact_email.php:101
+#: views/add_contact_email.php:113
+msgid "Select a Field"
+msgstr "Vali väli"
+
+#: views/add_contact_email.php:126
+msgid "Enter Email "
+msgstr "Sisesta e-mail "
+
+#: views/add_contact_email.php:130
+msgid "Send To Field"
+msgstr "Saaja väli"
+
+#: views/add_contact_email.php:134
+msgid "Enter Field "
+msgstr "Sisesta väli "
+
+#: views/add_contact_email.php:136 views/add_contact_email.php:149
+#: views/add_contact_email.php:162 views/add_contact_email.php:173
+#: views/add_contact_email.php:184 views/add_contact_email.php:195
+#: views/add_contact_email.php:208
+msgid "Select a field"
+msgstr "Vali väli"
+
+#: views/add_contact_email.php:143
+msgid "From Name"
+msgstr "Saatja"
+
+#: views/add_contact_email.php:147
+msgid "Enter from name "
+msgstr "Sisesta saatja nimi "
+
+#: views/add_contact_email.php:156
+msgid "From Email"
+msgstr "Saatja e-mail"
+
+#: views/add_contact_email.php:160
+msgid "Enter from email"
+msgstr "Sisesta saatja e-mail"
+
+#: views/add_contact_email.php:169
+msgid "Reply To"
+msgstr "Vastuse aadress"
+
+#: views/add_contact_email.php:180
+msgid "CC"
+msgstr "CC"
+
+#: views/add_contact_email.php:182
+msgid "Enter CC Email "
+msgstr "Sisesta CC e-mail"
+
+#: views/add_contact_email.php:191
+msgid "BCC"
+msgstr "BCC"
+
+#: views/add_contact_email.php:193
+msgid "Enter Bcc Email"
+msgstr "Sisesta Bcc e-mail"
+
+#: views/add_contact_email.php:202
+msgid "Subject"
+msgstr "Kirja pealkiri"
+
+#: views/add_contact_email.php:206
+msgid "Enter Subject"
+msgstr "Sisesta kirja pealkiri"
+
+#: views/add_contact_email.php:215
+msgid "Message"
+msgstr "Sõnum"
+
+#: views/add_contact_email.php:225
+msgid "Insert a Field into Your Form Message"
+msgstr "Sisesta vormi sõnumisse väli"
+
+#: views/contact-bank-system-report.php:33
+msgid "Get System Report"
+msgstr "Vaata süsteemi olekut"
+
+#: views/contact-bank-system-report.php:37
+msgid "Close System Report"
+msgstr "Sulge süsteemi oleku info"
+
+#: views/contact-bank-system-report.php:124
+msgid "Default"
+msgstr "Vaikimisi"
+
+#: views/contact_bank_form_preview.php:300 views/dashboard.php:130
+msgid "Form Preview"
+msgstr "Vormi eelvaade"
+
+#: views/contact_bank_form_preview.php:303
+#: views/contact_bank_layout_settings.php:38
+#: views/contact_email_settings.php:39 views/contact_frontend_data.php:34
+#: views/contact_view.php:261 views/purchase_pro_version.php:42
+msgid "Back to Dashboard"
+msgstr "Tagasi töölauale"
+
+#: views/contact_bank_layout_settings.php:35
+msgid " (Premium Features available in Paid Edition)"
+msgstr "(Lisatasu funktsioonid saadaval Paide Edition)"
+
+#: views/contact_bank_layout_settings.php:39
+msgid "Restore Global Settings"
+msgstr "Taasta üldseaded"
+
+#: views/contact_bank_layout_settings.php:45
+msgid "Form Settings Saved. Kindly wait for the redirect."
+msgstr "Vorm seaded salvesatud. Palun oodake suunata."
+
+#: views/contact_bank_layout_settings.php:51
+#: views/contact_bank_layout_settings.php:61
+#: views/contact_email_settings.php:43 views/contact_email_settings.php:59
+#: views/contact_frontend_data.php:46 views/contact_frontend_data.php:56
+msgid "Select Form"
+msgstr "Vali vorm"
+
+#: views/contact_bank_layout_settings.php:88
+msgid "Label Settings"
+msgstr "Sildi seaded."
+
+#: views/contact_bank_layout_settings.php:100
+#: views/contact_bank_layout_settings.php:287
+#: views/contact_bank_layout_settings.php:497
+#: views/contact_bank_layout_settings.php:690
+#: views/contact_bank_layout_settings.php:818
+msgid "Font Family :"
+msgstr "Font:"
+
+#: views/contact_bank_layout_settings.php:125
+msgid "Font Color :"
+msgstr "Teksti värv:"
+
+#: views/contact_bank_layout_settings.php:136
+#: views/contact_bank_layout_settings.php:323
+msgid "Font Style :"
+msgstr "Teksti stiil:"
+
+#: views/contact_bank_layout_settings.php:150
+#: views/contact_bank_layout_settings.php:337
+#: views/contact_bank_layout_settings.php:546
+#: views/contact_bank_layout_settings.php:715
+#: views/contact_bank_layout_settings.php:843
+msgid "Font Size (px) :"
+msgstr "Teksti suurus (px):"
+
+#: views/contact_bank_layout_settings.php:181
+#: views/contact_bank_layout_settings.php:438
+#: views/contact_bank_layout_settings.php:651
+#: views/contact_bank_layout_settings.php:779
+#: views/contact_bank_layout_settings.php:907
+msgid "Text Align :"
+msgstr "Tekstijoondus:"
+
+#: views/contact_bank_layout_settings.php:194
+msgid "Label Position :"
+msgstr "Sildi paigutus:"
+
+#: views/contact_bank_layout_settings.php:208
+msgid "Field Desc Font Size :"
+msgstr "Välja kirjelduse teksti suurus:"
+
+#: views/contact_bank_layout_settings.php:239
+msgid "Field Description Align :"
+msgstr "Välja selgituse joondus:"
+
+#: views/contact_bank_layout_settings.php:253
+msgid "Hide Labels :"
+msgstr "Peida sildid:"
+
+#: views/contact_bank_layout_settings.php:261
+#: views/contact_bank_layout_settings.php:451
+#: views/contact_bank_layout_settings.php:664
+#: views/contact_bank_layout_settings.php:792
+#: views/contact_bank_layout_settings.php:920
+msgid "Text Direction :"
+msgstr "Teksti suund:"
+
+#: views/contact_bank_layout_settings.php:277
+msgid "Input Field Settings"
+msgstr "Väljad"
+
+#: views/contact_bank_layout_settings.php:312
+#: views/contact_bank_layout_settings.php:609
+#: views/contact_bank_layout_settings.php:768
+#: views/contact_bank_layout_settings.php:896
+msgid "Text Color :"
+msgstr "Teksti värv:"
+
+#: views/contact_bank_layout_settings.php:368
+#: views/contact_bank_layout_settings.php:641
+msgid "Border Radius (px) :"
+msgstr "Raami raadius (px):"
+
+#: views/contact_bank_layout_settings.php:378
+#: views/contact_bank_layout_settings.php:620
+#: views/contact_bank_layout_settings.php:757
+#: views/contact_bank_layout_settings.php:885
+msgid "Border Color :"
+msgstr "Raami värv:"
+
+#: views/contact_bank_layout_settings.php:389
+#: views/contact_bank_layout_settings.php:631
+msgid "Border Size (px) :"
+msgstr "Raami paksus (px):"
+
+#: views/contact_bank_layout_settings.php:399
+msgid "Border Style :"
+msgstr "Raami stiil:"
+
+#: views/contact_bank_layout_settings.php:414
+#: views/contact_bank_layout_settings.php:587
+#: views/contact_bank_layout_settings.php:746
+#: views/contact_bank_layout_settings.php:874
+msgid "Background Color :"
+msgstr "Taustavärv:"
+
+#: views/contact_bank_layout_settings.php:425
+msgid "Radio Buttons :"
+msgstr "Radio-buttonid:"
+
+#: views/contact_bank_layout_settings.php:430
+msgid "Multiple Rows"
+msgstr "Mitu rida"
+
+#: views/contact_bank_layout_settings.php:432
+msgid "Single Row"
+msgstr "Üks rida"
+
+#: views/contact_bank_layout_settings.php:465
+msgid "Input Size :"
+msgstr "Sisestuse suurus:"
+
+#: views/contact_bank_layout_settings.php:487
+msgid "Submit Button Settings"
+msgstr "Vormi saatmise nupu seaded"
+
+#: views/contact_bank_layout_settings.php:522
+msgid "Text:"
+msgstr "Tekst:"
+
+#: views/contact_bank_layout_settings.php:532
+msgid "Style :"
+msgstr "Stiil:"
+
+#: views/contact_bank_layout_settings.php:577
+msgid "Button Width (px) :"
+msgstr "Nupu laius (px):"
+
+#: views/contact_bank_layout_settings.php:598
+msgid "Hover Background Color:"
+msgstr "Taustavärv kursoriga üle liikudes:"
+
+#: views/contact_bank_layout_settings.php:680
+msgid "Success Message Settings"
+msgstr "Tänusõnumi seaded"
+
+#: views/contact_bank_layout_settings.php:808
+msgid "Error Message Settings"
+msgstr "Veateate seaded"
+
+#: views/contact_bank_pro_version.php:50
+msgid "Contact Bank Pricing"
+msgstr "Kontakt Bank Hinnakujundus"
+
+#: views/contact_bank_pro_version.php:381
+msgid "Need Support Help?"
+msgstr "Vajavad tuge abi?"
+
+#: views/contact_bank_pro_version.php:393
+msgid "Lets get in touch!"
+msgstr "Võimaldab saada in puutetundliku!"
+
+#: views/contact_bank_pro_version.php:397
+msgid "Order Now!"
+msgstr "Telli kohe!"
+
+#: views/contact_controls_files.php:39 views/contact_controls_files.php:55
+#: views/contact_controls_files.php:72 views/contact_controls_files.php:90
+#: views/contact_controls_files.php:106 views/contact_controls_files.php:123
+msgid "Settings"
+msgstr "Seaded"
+
+#: views/contact_documentation.php:33
+msgid "Documentation - Contact Bank"
+msgstr "Dokumentatsioon - Contact Bank"
+
+#: views/contact_email_settings.php:84
+msgid "Add New"
+msgstr "Lisa uus"
+
+#: views/contact_email_settings.php:165
+msgid "Are you sure, you want to delete this Email Setting?"
+msgstr "Kas oled kindel, et soovid seda e-maili seadet kustutada?"
+
+#: views/contact_email_settings.php:183 views/contact_frontend_data.php:138
+msgid "Please select the Form first."
+msgstr "Palun vali kõigepealt vorm."
+
+#: views/contact_frontend_data.php:35
+msgid "Export to Excel"
+msgstr "Ekspordi Excel"
+
+#: views/contact_frontend_data.php:41 views/dashboard.php:65
+#: views/dashboard.php:72
+msgid "Form"
+msgstr "Vorm"
+
+#: views/contact_view.php:258 views/dashboard.php:47
+msgid "Add New Form"
+msgstr "Lisa uus vorm"
+
+#: views/contact_view.php:264 views/contact_view.php:528
+msgid "Save Form"
+msgstr "Salvesta vorm"
+
+#: views/contact_view.php:269
+msgid "Form Submitted. Kindly wait for the redirect."
+msgstr "Vorm on saadetud. Palun oota ümbersuunamist."
+
+#: views/contact_view.php:278
+msgid "Form Settings"
+msgstr "Vormi seaded"
+
+#: views/contact_view.php:282
+msgid "Form Name :"
+msgstr "Vormi nimi:"
+
+#: views/contact_view.php:288
+msgid "Enter Form Name"
+msgstr "Sisesta vormi nimi"
+
+#: views/contact_view.php:292
+msgid "Form Description :"
+msgstr "Vormi kirjeldus:"
+
+#: views/contact_view.php:294
+msgid "Enter Form Description"
+msgstr "Sisesta vormi kirjeldus"
+
+#: views/contact_view.php:298
+msgid "Blank Field Message:"
+msgstr "Tühja välja teade:"
+
+#: views/contact_view.php:304
+msgid "Required field must not be blank"
+msgstr "Kohustuslik väli ei või olla tühi"
+
+#: views/contact_view.php:306
+msgid "Enter Blank Field Message"
+msgstr "Sisesta tühja välja teade"
+
+#: views/contact_view.php:310
+msgid "Incorrect Email Message:"
+msgstr "Ebatäpne e-maili aadress"
+
+#: views/contact_view.php:316
+msgid "Please enter a valid email address"
+msgstr "Palun sisesta kehtiv e-maili aadress"
+
+#: views/contact_view.php:318
+msgid "Enter Incorrect Email Message"
+msgstr "Sisesta teade ebatäpse e-maili kohta"
+
+#: views/contact_view.php:322
+msgid "Success Message :"
+msgstr "Tänusõnum:"
+
+#: views/contact_view.php:326
+msgid "Enter Success Message"
+msgstr "Sisesta tänusõnum"
+
+#: views/contact_view.php:330
+msgid "Redirect :"
+msgstr "Ümbersuunamine:"
+
+#: views/contact_view.php:342 views/contact_view.php:353
+#: views/contact_view.php:365
+msgid "Page"
+msgstr "Leht"
+
+#: views/contact_view.php:345 views/contact_view.php:356
+#: views/contact_view.php:368
+msgid "URL"
+msgstr "URL"
+
+#: views/contact_view.php:375
+msgid "Page :"
+msgstr "Leht:"
+
+#: views/contact_view.php:418
+msgid "URL :"
+msgstr "URL:"
+
+#: views/contact_view.php:425
+msgid "Enter Redirect URL"
+msgstr "Sisesta ümbersuunamise URL"
+
+#: views/contact_view.php:432
+msgid "Form Layout Preview"
+msgstr "Vormi paigutuse eelvaade"
+
+#: views/contact_view.php:443
+msgid "Standard Fields"
+msgstr "Standardsed väljad"
+
+#: views/contact_view.php:446 views/contact_view.php:482
+msgid "Click on a field to use into your form."
+msgstr "Vajuta väljal, et lisada see oma vormile."
+
+#: views/contact_view.php:465
+msgid "Checkboxes"
+msgstr "Märkeruudud"
+
+#: views/contact_view.php:477
+msgid "Advanced Fields"
+msgstr "Täpsemad väljad"
+
+#: views/contact_view.php:488
+msgid "Website / URL"
+msgstr "Koduleht / URL"
+
+#: views/contact_view.php:493
+msgid "Phone"
+msgstr "Telefoni nr"
+
+#: views/contact_view.php:496
+msgid "Address"
+msgstr "Aadress"
+
+#: views/contact_view.php:501
+msgid "Number"
+msgstr "Number"
+
+#: views/contact_view.php:504
+msgid "File Upload"
+msgstr "Faili üleslaadimine"
+
+#: views/contact_view.php:509
+msgid "Date"
+msgstr "Kuupäev"
+
+#: views/contact_view.php:512
+msgid "Time"
+msgstr "Aeg"
+
+#: views/contact_view.php:517
+msgid "Password"
+msgstr "Parool"
+
+#: views/dashboard.php:35
+msgid "Contact Bank Short-Codes"
+msgstr "Kontakt Bank Short-koodid"
+
+#: views/dashboard.php:53
+msgid "Delete All Forms"
+msgstr "Kustuta kõik vormid"
+
+#: views/dashboard.php:56
+msgid "Restore Factory Settings"
+msgstr "Taasta tehase algseaded"
+
+#: views/dashboard.php:73
+msgid "Shortcode"
+msgstr "Lühikood"
+
+#: views/dashboard.php:74
+msgid "Total Controls"
+msgstr "Kõik õigused"
+
+#: views/dashboard.php:110
+msgid "Edit Form"
+msgstr "Muuda vormi"
+
+#: views/dashboard.php:135
+msgid "Delete Form"
+msgstr "Kustuta vorm"
+
+#: views/dashboard.php:190
+msgid "Are you sure, you want to delete this Form?"
+msgstr "Kas oled kindel, et soovid seda vormi kustutada?"
+
+#: views/dashboard.php:200
+msgid "Are you sure, you want to delete all Forms?"
+msgstr "Kas oled kindel, et soovid kõik vormid kustutada?"
+
+#: views/header.php:21
+msgid "Get Started"
+msgstr "Alusta"
+
+#: views/header.php:24
+msgid "Watch Contact Video!"
+msgstr "Vaadata video!"
+
+#: views/header.php:28
+msgid "read documentation here"
+msgstr "dokumentatsiooni lugeda siit"
+
+#: views/header.php:33
+msgid "Go Premium"
+msgstr "Mine Preemium"
+
+#: views/header.php:37
+msgid "Features"
+msgstr "Features"
+
+#: views/header.php:42
+msgid "Online Demos"
+msgstr "Online Demod"
+
+#: views/header.php:47
+msgid "Premium Pricing Plan ?"
+msgstr "Preemium Hinnakujundus Plan?"
+
+#: views/header.php:54
+msgid "Knowledge Base"
+msgstr "alusteadmised"
+
+#: views/header.php:59
+msgid "Support Forum"
+msgstr "Probleemid foorum"
+
+#: views/header.php:64
+msgid "FAQ's"
+msgstr "KKK"
+
+#: views/header.php:69
+msgid "Detailed Features"
+msgstr "Täpne Features"
+
+#: views/header.php:75
+msgid "More Actions"
+msgstr "Rohkem Actions"
+
+#: views/header.php:79
+msgid "Plugin Customization"
+msgstr "Plugin kohandamine"
+
+#: views/purchase_pro_version.php:47
+msgid "WP Contact Bank is an one time Investment. Its Worth it!"
+msgstr "WP Kontakt Bank on üks kord investeeringuid. See on seda väärt!"
+
+#: views/shortcode.php:29
+msgid ""
+"How to setup Short-Codes for Contact Bank into your WordPress Page/Post?"
+msgstr "Kuidas setup Short-koodid contakt-pank oma WordPress Page / Post?"
+
+#~ msgid "%s rating"
+#~ msgstr "%s hinnang"
+
+#~ msgid "More Details"
+#~ msgstr "Üksikasjalikumalt"
+
+#~ msgid "Install Now"
+#~ msgstr "Installi kohe"
+
+#~ msgid "Update Now"
+#~ msgstr "Uuenda Now"
+
+#~ msgid "By "
+#~ msgstr "poolt "
+
+#~ msgid "Visit Website"
+#~ msgstr "Külasta Koduleht"
+
+#~ msgid "Last Updated:"
+#~ msgstr "Viimati uuendatud:"
+
+#~ msgid "<strong>Untested</strong> with your version of WordPress"
+#~ msgstr "Testimata oma versiooni WordPress"
+
+#~ msgid "Incompatible with your version of WordPress"
+#~ msgstr "Kokkusobimatu oma versiooni WordPress"
+
+#~ msgid "Compatible with your version of WordPress"
+#~ msgstr "Sobib sinu versiooni WordPress"
+
+#~ msgid "Purchase PRO Edition"
+#~ msgstr "Ostu PRO väljaanne"
+
+#~ msgid "Watch the Walk-Through Video"
+#~ msgstr "Vaata Walk-Through Video"
+
+#~ msgid "Contact Bank, a Superlative High quality WordPress Plugin!"
+#~ msgstr "Kontakt Bank, ülivõrdes Kvaliteetne WordPress Plugin!"
+
+#~ msgid "Let's get in touch!"
+#~ msgstr "Lähme ühendust!"
+
+#~ msgid "Purchase PRO Edition - Contact Bank"
+#~ msgstr "Ostu PRO väljaanne Contact Bank"
+
+#~ msgid "Dashboard - Contact Bank"
+#~ msgstr "Töölaud - Contact Bank"
+
+#~ msgid "Roles & Capabilities"
+#~ msgstr "Rollid & õigused"
+
+#~ msgid "Licensing"
+#~ msgstr "Litsentseerimine"
+
+#~ msgid "Select Form :"
+#~ msgstr "Vali vorm:"
+
+#~ msgid "Day"
+#~ msgstr "Päev"
+
+#~ msgid "Select Month"
+#~ msgstr "Vali kuu"
+
+#~ msgid "Year"
+#~ msgstr "Aasta"
+
+#~ msgid "Hour"
+#~ msgstr "Tund"
+
+#~ msgid "Minute"
+#~ msgstr "Minut"
+
+#~ msgid "Enter Tooltip Text"
+#~ msgstr "Sisesta vihje tekst"
+
+#~ msgid "Enter Tooltip"
+#~ msgstr "Sisesta vihje"
+
+#~ msgid "Start Year"
+#~ msgstr "Algusaasta"
+
+#~ msgid "Enter Start Year"
+#~ msgstr "Sisesta algusaasta"
+
+#~ msgid "End Year"
+#~ msgstr "Lõpu aasta"
+
+#~ msgid "Enter End Year "
+#~ msgstr "Sisesta lõpu aasta "
+
+#~ msgid "Default Value"
+#~ msgstr "Vaikimis väärtus"
+
+#~ msgid "Month"
+#~ msgstr "Kuu"
+
+#~ msgid "Date Format"
+#~ msgstr "Kuupäeva vorming"
+
+#~ msgid "Allow Multiple Uploads"
+#~ msgstr "Luba mitme faili samaaegset üleslaadimist"
+
+#~ msgid "Allowed File Extensions"
+#~ msgstr "Lubatud failiformaadid"
+
+#~ msgid "Enter File Extensions"
+#~ msgstr "Sisesta failiformaadid"
+
+#~ msgid "The file extensions must be separated with comma(',')"
+#~ msgstr "Failiformaadid peavad olema eraldatud komaga (\",\")"
+
+#~ msgid "Allowed File Size"
+#~ msgstr "Faili mahupiirang"
+
+#~ msgid "File Size must be in Mb"
+#~ msgstr "Faili suurus peab olema Mb-s"
+
+#~ msgid "Hour Format"
+#~ msgstr "Tunni vorming"
+
+#~ msgid "Minute Format"
+#~ msgstr "Minuti vorming"
+
+#~ msgid "Roles and Capabilities Saved. Kindly wait for the redirect."
+#~ msgstr "Rollid ja õigused on salvestatud. Palun oota ümbersuunamist."
+
+#~ msgid "Privileges for Admin"
+#~ msgstr "Adminni õigused"
+
+#~ msgid "Full Control"
+#~ msgstr "Täiskontroll"
+
+#~ msgid "Read"
+#~ msgstr "Loe"
+
+#~ msgid "Write"
+#~ msgstr "Kirjuta"
+
+#~ msgid "Privileges for Editor"
+#~ msgstr "Toimetaja õigused"
+
+#~ msgid "Privileges for Author"
+#~ msgstr "Autori õigused"
+
+#~ msgid "Privileges for Contributor"
+#~ msgstr "Kaastöötaja õigused"
+
+#~ msgid "Privileges for Subscriber"
+#~ msgstr "Lugeja õigused"
+
+#~ msgid "Global Settings Saved. Kindly wait for the redirect."
+#~ msgstr "Üldseaded salvestatud. Palun oota ümbersuunamist."
+
+#~ msgid "Are you sure, you want to Restore Global Settings?"
+#~ msgstr "Kas oled kindel, et soovid taastada üldseaded?"
+
+#~ msgid "Are you sure, you want to delete this Form Entry ?"
+#~ msgstr "Kas oled kindel, et soovid selle vormisisestuse kustutada?"
+
+#~ msgid "Attention! A new vesion of Contact Bank is available for download."
+#~ msgstr ""
+#~ "Tähelepanu! Contact Banki uus versioon on kättesaadav allalaadimiseks."
+
+#~ msgid "Click"
+#~ msgstr "Kliki"
+
+#~ msgid "here"
+#~ msgstr "siin,"
+
+#~ msgid "to upgrade your version of Contact Bank."
+#~ msgstr "et uuendada oma Contact Bank versiooni."
+
+#~ msgid "Are you sure you want to Restore Factory Settings?"
+#~ msgstr "Kas oled kindel, et soovid taastada tehase algseaded?"
+
+#~ msgid "Only One File Uploader can be used on a Form."
+#~ msgstr "Vormi juures võib kasutada ainult ühte failide üleslaadijat."
+
+#~ msgid "Success! Settings have been updated."
+#~ msgstr "Seaded on edukalt uuendatud."
