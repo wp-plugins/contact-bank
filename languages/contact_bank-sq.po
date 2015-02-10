@@ -1,166 +1,167 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Contact Bank\n"
-"POT-Creation-Date: 2015-02-09 17:15+0530\n"
-"PO-Revision-Date: \n"
+"POT-Creation-Date: 2015-02-09 17:36+0530\n"
+"PO-Revision-Date: 2015-02-10 18:03+0530\n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: da\n"
+"Language: sq_AL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.6.6\n"
-"X-Poedit-KeywordsList: __;_e;gettext\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
 "X-Poedit-Basepath: C:\\xampp\\htdocs\\wordpress4.0.1\\wp-content\\plugins"
 "\\contact-bank\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: contact-bank.php:84 contact-bank.php:100 contact-bank.php:116
 msgid "Contact Bank"
-msgstr "Kontaktbank"
+msgstr "Contact Bank"
 
 #: contact-bank.php:85 contact-bank.php:101 contact-bank.php:117
 #: contact-bank.php:638 contact-bank.php:708 contact-bank.php:780
 #: views/header.php:114 views/header.php:128 views/header.php:142
 msgid "Dashboard"
-msgstr "Dashboard"
+msgstr "baltëpritëse"
 
 #: contact-bank.php:87 contact-bank.php:103 contact-bank.php:119
 #: contact-bank.php:644 contact-bank.php:714 contact-bank.php:786
 #: views/automatic-plugin-update.php:28 views/automatic-plugin-update.php:32
 msgid "Plugin Updates"
-msgstr "Plugin'en opdateringer"
+msgstr "Freskimet Plugin"
 
 #: contact-bank.php:88 contact-bank.php:104 contact-bank.php:120
 #: contact-bank.php:650 contact-bank.php:720 contact-bank.php:792
 #: views/header.php:115 views/header.php:129 views/header.php:143
 msgid "Short-Codes"
-msgstr "Korte-Koder"
+msgstr "shkurtra-Kodeve"
 
 #: contact-bank.php:89 contact-bank.php:105 contact-bank.php:121
 #: contact-bank.php:656 contact-bank.php:726 contact-bank.php:798
 #: views/contact_frontend_data.php:31 views/dashboard.php:124
 #: views/header.php:116 views/header.php:130 views/header.php:144
 msgid "Form Entries"
-msgstr "Formularposter"
+msgstr " Forma hyrjet"
 
 #: contact-bank.php:90 contact-bank.php:106 contact-bank.php:122
 #: contact-bank.php:662 contact-bank.php:732 contact-bank.php:804
 #: views/contact_email_settings.php:30 views/dashboard.php:119
 #: views/header.php:117 views/header.php:131 views/header.php:145
 msgid "Email Settings"
-msgstr "E-mail indstillinger"
+msgstr " Email Cilësimet"
 
 #: contact-bank.php:91 contact-bank.php:107 contact-bank.php:123
 #: contact-bank.php:668 contact-bank.php:738 contact-bank.php:810
 #: views/contact_bank_layout_settings.php:29 views/dashboard.php:114
 #: views/header.php:118 views/header.php:132 views/header.php:146
 msgid "Global Settings"
-msgstr "Globale indstillinger"
+msgstr "Cilësimet Globale"
 
 #: contact-bank.php:92 contact-bank.php:108 contact-bank.php:124
 #: contact-bank.php:674 contact-bank.php:746
 #: views/contact-bank-system-report.php:31
 msgid "System Status"
-msgstr "Systemstatus"
+msgstr "Sistemit - Statusi"
 
 #: contact-bank.php:93 contact-bank.php:109 contact-bank.php:125
 #: contact-bank.php:680 contact-bank.php:752 contact-bank.php:816
 #: views/header.php:84 views/header.php:119 views/header.php:133
 #: views/header.php:147
 msgid "Recommendations"
-msgstr "Anbefalinger"
+msgstr "Rekomandime"
 
 #: contact-bank.php:94 contact-bank.php:110 contact-bank.php:126
 #: contact-bank.php:687 contact-bank.php:759 contact-bank.php:823
 #: views/header.php:120 views/header.php:134 views/header.php:148
 msgid "Premium Editions"
-msgstr "Præmie udgivelser"
+msgstr "Edicionet primeve"
 
 #: contact-bank.php:95 contact-bank.php:111 contact-bank.php:127
 #: contact-bank.php:694 contact-bank.php:766 contact-bank.php:830
 #: views/header.php:89 views/header.php:121 views/header.php:135
 #: views/header.php:149
 msgid "Our Other Services"
-msgstr "Vores andre Tjenester"
+msgstr "Shërbimet tona të tjera"
 
 #: contact-bank.php:838
 msgid "Add Contact Bank Form"
-msgstr "Tilføj Kontaktbank formular"
+msgstr "Shtoje Contact Bank formularin"
 
 #: contact-bank.php:850
 msgid "Insert Contact Bank Form"
-msgstr "Indsæt Kontaktbank formular"
+msgstr "Të futur, Contact Bank formularin"
 
 #: contact-bank.php:852
 msgid "Select a form below to add it to your post or page."
-msgstr "Vælg en formular herunder til indsætning i dit indlæg eller side"
+msgstr ""
+"Zgjidh një formularin më poshtë që të shtoni atë në postin tuaj ose faqe."
 
 #: contact-bank.php:857
 msgid "Form Name"
-msgstr "Formular navn"
+msgstr "Formulari Emri"
 
 #: contact-bank.php:859
 msgid "Select a Form"
-msgstr "Vælg en formular"
+msgstr "Përzgjidhni një formularin"
 
 #: contact-bank.php:876
 msgid "Show Form Title"
-msgstr "Vis formularens titel"
+msgstr "Trego Formulari Titulli"
 
 #: contact-bank.php:881
 msgid "Insert Form"
-msgstr "Indsæt formular"
+msgstr "Fut Formulari"
 
 #: contact-bank.php:884
 msgid "Cancel"
-msgstr "Annuller"
+msgstr "anuloj"
 
 #: contact-bank.php:896
 msgid "Please choose a Form to insert into Shortcode"
-msgstr "Vælg venligst den formular, der skal indsættes i Shortcode"
+msgstr "Ju lutem zgjidhni një Formulari për të Futur në në Shkurtër Kodin"
 
 #: contact-bank.php:932
 msgid "View Contact Bank Documentation"
-msgstr "Udsigt Contact Bank Dokumentation"
+msgstr "Dokumentacioni pikëpamje contact Bank"
 
 #: contact-bank.php:932
 msgid "Docs"
-msgstr "dok"
+msgstr "docs është"
 
 #: contact-bank.php:933
 msgid "View Contact Bank Premium Editions"
-msgstr "Udsigt Contact Bank - Præmie udgivelser"
+msgstr "Shiko të edicionet Contact Bank primeve"
 
 #: contact-bank.php:933
 msgid "Go for Premium!"
-msgstr "Gå efter præmie!"
+msgstr "Shkoni për primit!"
 
 #: contact-bank.php:1007
 msgid "Select Form :"
-msgstr "Vælg formular:"
+msgstr "Zgjidhni Formulari:"
 
 #: contact-bank.php:1009 views/contact_bank_layout_settings.php:45
 #: views/contact_bank_layout_settings.php:55
 #: views/contact_email_settings.php:37 views/contact_email_settings.php:53
 #: views/contact_frontend_data.php:46 views/contact_frontend_data.php:56
 msgid "Select Form"
-msgstr "Vælg formular"
+msgstr "Përzgjidhni formularin"
 
 #: frontend_views/contact_bank_forms.php:326
 #: views/contact_bank_form_preview.php:395 views/contact_controls_files.php:89
 msgid "Select Option"
-msgstr "Vælg en mulighed"
+msgstr "Zgjidh opsionin"
 
 #: includes/cb_checkbox.php:36
 msgid "Check Boxes"
-msgstr "Marker afkrydsningsfelter"
+msgstr "Kontrolloni-Kutitë"
 
 #: includes/cb_checkbox.php:40 includes/cb_dropdown.php:40
 #: includes/cb_email.php:40 includes/cb_multiple.php:40
 #: includes/cb_text.php:40 includes/cb_textarea.php:40
 msgid "Label"
-msgstr "Etiket"
+msgstr "etiketë"
 
 #: includes/cb_checkbox.php:42 includes/cb_checkbox.php:144
 #: includes/cb_dropdown.php:42 includes/cb_dropdown.php:144
@@ -172,7 +173,7 @@ msgstr "Etiket"
 #: views/contact_controls_files.php:85 views/contact_controls_files.php:101
 #: views/contact_controls_files.php:118
 msgid "Untitled"
-msgstr "Unavngivet"
+msgstr "patitulluar"
 
 #: includes/cb_checkbox.php:46 includes/cb_checkbox.php:56
 #: includes/cb_checkbox.php:69 includes/cb_checkbox.php:83
@@ -186,7 +187,7 @@ msgstr "Unavngivet"
 #: includes/cb_textarea.php:67 includes/cb_textarea.php:82
 #: includes/cb_textarea.php:98
 msgid "Required"
-msgstr "Påkrævet"
+msgstr "kërkohen"
 
 #: includes/cb_checkbox.php:60 includes/cb_checkbox.php:73
 #: includes/cb_checkbox.php:87 includes/cb_dropdown.php:60
@@ -197,13 +198,13 @@ msgstr "Påkrævet"
 #: includes/cb_text.php:103 includes/cb_textarea.php:72
 #: includes/cb_textarea.php:87 includes/cb_textarea.php:103
 msgid "Not Required"
-msgstr "Ikke påkrævet"
+msgstr "nuk kërkohet"
 
 #: includes/cb_checkbox.php:95 includes/cb_dropdown.php:95
 #: includes/cb_email.php:112 includes/cb_multiple.php:104
 #: includes/cb_text.php:111
 msgid "Tooltip Text"
-msgstr "Værktøjstip"
+msgstr "mjet tip i teksti"
 
 #: includes/cb_checkbox.php:97 includes/cb_dropdown.php:97
 #: includes/cb_email.php:115 includes/cb_multiple.php:108
@@ -216,123 +217,123 @@ msgstr "Værktøjstip"
 #: views/includes_common_after.php:367 views/includes_common_after.php:370
 #: views/includes_common_after.php:373
 msgid "This Feature is only available in Paid Premium Edition!"
-msgstr "Denne funktion er kun tilgængelig i Betalt præmie udgave!"
+msgstr "Ky Tipar është në dispozicion vetëm në Paid Premium Edition!"
 
 #: includes/cb_checkbox.php:101 includes/cb_dropdown.php:101
 #: includes/cb_multiple.php:113
 msgid "Options"
-msgstr "Muligheder"
+msgstr "Mundësitë"
 
 #: includes/cb_checkbox.php:103
 msgid "Enter Options"
-msgstr "Skriv muligheder"
+msgstr "Hyjnë mundësitë"
 
 #: includes/cb_checkbox.php:104 includes/cb_dropdown.php:104
 #: includes/cb_multiple.php:119
 msgid "Add"
-msgstr "Tilføj"
+msgstr "Shtoje"
 
 #: includes/cb_checkbox.php:135 includes/cb_dropdown.php:135
 #: includes/cb_multiple.php:153
 msgid "Delete"
-msgstr "Slet"
+msgstr "fshini"
 
 #: includes/cb_checkbox.php:142 includes/cb_dropdown.php:142
 #: includes/cb_email.php:130 includes/cb_multiple.php:160
 #: includes/cb_text.php:129 includes/cb_textarea.php:128
 msgid "Admin Label"
-msgstr "Administratoretiket"
+msgstr "Admin etiketë "
 
 #: includes/cb_checkbox.php:144 includes/cb_dropdown.php:144
 #: includes/cb_email.php:134 includes/cb_multiple.php:163
 #: includes/cb_text.php:131 includes/cb_textarea.php:131
 msgid "Enter Admin Label"
-msgstr "Indtast administratoretiket"
+msgstr "hyjnë admin etiketë "
 
 #: includes/cb_checkbox.php:148 includes/cb_dropdown.php:148
 #: includes/cb_email.php:139 includes/cb_multiple.php:168
 #: includes/cb_text.php:137 includes/cb_textarea.php:135
 msgid "Do not show in the email"
-msgstr "Vis ikke i emailen"
+msgstr "A nuk e tregojnë,në Email"
 
 #: includes/cb_checkbox.php:179 includes/cb_dropdown.php:179
 #: includes/cb_email.php:173 includes/cb_multiple.php:202
 #: includes/cb_text.php:200 includes/cb_textarea.php:196
 msgid "Save Settings"
-msgstr "Gem indstillinger"
+msgstr "Ruaj Cilësimet"
 
 #: includes/cb_checkbox.php:228 includes/cb_dropdown.php:219
 #: includes/cb_multiple.php:252
 msgid "Please Fill an Option."
-msgstr "Udfyld venligst en mulighed."
+msgstr "Ju lutem Plotësoni një opsion."
 
 #: includes/cb_dropdown.php:36 views/contact_view.php:461
 msgid "Select Box"
-msgstr "Vælg boks"
+msgstr "Përzgjidhni Kutine"
 
 #: includes/cb_dropdown.php:42 includes/cb_email.php:44
 #: includes/cb_multiple.php:45 includes/cb_text.php:44
 msgid "Enter Label"
-msgstr "Skriv etiket"
+msgstr "Hyjnë etiketë"
 
 #: includes/cb_dropdown.php:103 includes/cb_multiple.php:116
 msgid "Enter Option"
-msgstr "Skriv boks"
+msgstr "Futni opcioni"
 
 #: includes/cb_email.php:36 views/contact_view.php:458
 msgid "Email Address"
-msgstr "Emailadresse"
+msgstr "maili Adresa "
 
 #: includes/cb_email.php:49 includes/cb_text.php:48
 #: includes/cb_textarea.php:48
 msgid "Description"
-msgstr "Beskrivelse"
+msgstr "përshkrim"
 
 #: includes/cb_email.php:52 includes/cb_text.php:51
 msgid "Enter Description"
-msgstr "Skriv en beskrivelse"
+msgstr "Futni Përshkrimi"
 
 #: includes/cb_email.php:121 includes/cb_text.php:120
 #: includes/cb_textarea.php:120
 msgid "Place Holder"
-msgstr "Pladsholder"
+msgstr "Vendi Mbajtës"
 
 #: includes/cb_email.php:124 includes/cb_text.php:123
 #: includes/cb_textarea.php:122
 msgid "Enter Place Holder"
-msgstr "Indtast pladsholder"
+msgstr "Futni Vendi mbajtës"
 
 #: includes/cb_multiple.php:36 views/contact_view.php:469
 msgid "Radio Buttons"
-msgstr "Radioknapper"
+msgstr "butonat e radios"
 
 #: includes/cb_text.php:36 views/contact_view.php:450
 msgid "Single Line Text"
-msgstr "Tekstfelt - enkeltlinie"
+msgstr "Beqar Linja Tekst"
 
 #: includes/cb_text.php:168 includes/cb_textarea.php:166
 msgid "Add a filter"
-msgstr "Tilføj et filter"
+msgstr "Shto një filtër"
 
 #: includes/cb_text.php:173 includes/cb_textarea.php:170
 msgid "Alpha"
-msgstr "Alfa"
+msgstr "alfa"
 
 #: includes/cb_text.php:177 includes/cb_textarea.php:174
 msgid "Alpha Numeric"
-msgstr "Alfanumerisk"
+msgstr "alfa numerike"
 
 #: includes/cb_text.php:181 includes/cb_textarea.php:178
 msgid "Digits"
-msgstr "Tal"
+msgstr "numër"
 
 #: includes/cb_text.php:185 includes/cb_textarea.php:182
 msgid "Strip Tags"
-msgstr "strimler Tags på"
+msgstr "zhvesh etiketimet"
 
 #: includes/cb_text.php:189 includes/cb_textarea.php:186
 msgid "Trim"
-msgstr "Trim"
+msgstr "Gjendje e"
 
 #: includes/cb_text.php:191 includes/cb_textarea.php:188
 #: views/contact_bank_layout_settings.php:83
@@ -341,122 +342,122 @@ msgstr "Trim"
 #: views/contact_bank_layout_settings.php:674
 #: views/contact_bank_layout_settings.php:802 views/contact_view.php:479
 msgid " (Available in Premium Edition)"
-msgstr "(Fås i præmie udgaven)"
+msgstr "(Në dispozicion në Premium Edition)"
 
 #: includes/cb_textarea.php:36 views/contact_view.php:453
 msgid "Paragraph Text"
-msgstr "Tekstfelt - afsnit"
+msgstr "paragrafi Tekst"
 
 #: includes/cb_textarea.php:43
 msgid "Enter label"
-msgstr "Indtast etiket"
+msgstr "hyjë etiketë"
 
 #: includes/cb_textarea.php:50
 msgid "Enter  Description"
-msgstr "Indtast beskrivelse"
+msgstr "Futni Përshkrimi"
 
 #: includes/cb_textarea.php:111
 msgid "Tooltip text"
-msgstr "Værktøjstip tekst"
+msgstr "mjet tip i teksti"
 
 #: lib/contact_bank_email-class.php:47 lib/contact_bank_email-class.php:57
 #: lib/contact_bank_email-class.php:67
 msgid "Edit Email Settings"
-msgstr "Rediger e-mail indstillinger"
+msgstr "Ndysho Email Parametra "
 
 #: lib/contact_bank_email-class.php:50 lib/contact_bank_email-class.php:60
 #: lib/contact_bank_email-class.php:70
 msgid "Delete Email Settings"
-msgstr "Slet e-mail indstillinger"
+msgstr "Fshij Email Parametra"
 
 #: lib/contact_frontend_data_class.php:113
 msgid "Delete Form Entry"
-msgstr "Slet formular indtastning"
+msgstr "Fshij Formularin-hyrjen"
 
 #: views/add_contact_email.php:50 views/contact_email_settings.php:88
 msgid "Email Confirmation"
-msgstr "E-mail bekræftelse"
+msgstr "Email Konfirmimi"
 
 #: views/add_contact_email.php:53
 msgid "Back to Email Settings"
-msgstr "Tilbage til e-mail indstillinger"
+msgstr "Mbrapsht në Email Parametra"
 
 #: views/add_contact_email.php:54 views/add_contact_email.php:234
 #: views/contact_bank_layout_settings.php:35
 #: views/contact_bank_layout_settings.php:520
 #: views/contact_bank_layout_settings.php:932
 msgid "Save"
-msgstr "Gem"
+msgstr "ruaj"
 
 #: views/add_contact_email.php:58
 msgid "Email Settings Saved. Kindly wait for the redirect."
-msgstr "E-mail indstillinger gemt. Vent venligst på omdirigering."
+msgstr "Cilësimet maili shpëtova. Mirësi të presë për përcjellim."
 
 #: views/add_contact_email.php:65 views/add_contact_email.php:122
 #: views/contact_controls_files.php:68
 msgid "Email"
-msgstr "E-mail"
+msgstr "maili"
 
 #: views/add_contact_email.php:69 views/contact_view.php:486
 msgid "Name"
-msgstr "Navn"
+msgstr "emër"
 
 #: views/add_contact_email.php:73
 msgid "Enter Name"
-msgstr "Skriv navn"
+msgstr "Shkruani Emrin"
 
 #: views/add_contact_email.php:79
 msgid "Send To"
-msgstr "Send til"
+msgstr "Dërgo për Për"
 
 #: views/add_contact_email.php:88 views/add_contact_email.php:99
 #: views/add_contact_email.php:111 views/add_contact_email.php:171
 msgid "Enter Email"
-msgstr "Skriv e-mail"
+msgstr "Hyjë Email"
 
 #: views/add_contact_email.php:90 views/add_contact_email.php:101
 #: views/add_contact_email.php:113
 msgid "Select a Field"
-msgstr "Vælg et felt"
+msgstr "Cakto një Fusha"
 
 #: views/add_contact_email.php:126
 msgid "Enter Email "
-msgstr "Skriv e-mail_"
+msgstr "Futni-Email"
 
 #: views/add_contact_email.php:130
 msgid "Send To Field"
-msgstr "Send til felt"
+msgstr "Dërgo për Për Fusha"
 
 #: views/add_contact_email.php:134
 msgid "Enter Field "
-msgstr "Indtast felt_"
+msgstr "Futni në terren"
 
 #: views/add_contact_email.php:136 views/add_contact_email.php:149
 #: views/add_contact_email.php:162 views/add_contact_email.php:173
 #: views/add_contact_email.php:184 views/add_contact_email.php:195
 #: views/add_contact_email.php:208
 msgid "Select a field"
-msgstr "Vælg et felt"
+msgstr "Zgjidh një në terren"
 
 #: views/add_contact_email.php:143
 msgid "From Name"
-msgstr "Fra navn"
+msgstr " Emrin Prej"
 
 #: views/add_contact_email.php:147
 msgid "Enter from name "
-msgstr "Indtast fra navn_"
+msgstr "Hyjë Prej Emri "
 
 #: views/add_contact_email.php:156
 msgid "From Email"
-msgstr "Fra e-mail"
+msgstr "Email-Prej"
 
 #: views/add_contact_email.php:160
 msgid "Enter from email"
-msgstr "Indtast fra e-mail"
+msgstr "Hyjë Prej Email "
 
 #: views/add_contact_email.php:169
 msgid "Reply To"
-msgstr "Svar til"
+msgstr "Kthe përgjigje tek"
 
 #: views/add_contact_email.php:180
 msgid "CC"
@@ -464,7 +465,7 @@ msgstr "CC"
 
 #: views/add_contact_email.php:182
 msgid "Enter CC Email "
-msgstr "Skriv CC e-mail_"
+msgstr "Hyjë CC Email"
 
 #: views/add_contact_email.php:191
 msgid "BCC"
@@ -472,70 +473,70 @@ msgstr "BCC"
 
 #: views/add_contact_email.php:193
 msgid "Enter Bcc Email"
-msgstr "Skriv Bcc e-mail"
+msgstr "Hyjë BCC Email"
 
 #: views/add_contact_email.php:202
 msgid "Subject"
-msgstr "Emne"
+msgstr "lëndë"
 
 #: views/add_contact_email.php:206
 msgid "Enter Subject"
-msgstr "Skriv emne"
+msgstr "futni subjekt"
 
 #: views/add_contact_email.php:215
 msgid "Message"
-msgstr "Besked"
+msgstr "Mesazhesh"
 
 #: views/add_contact_email.php:225
 msgid "Insert a Field into Your Form Message"
-msgstr "Indsæt et felt i din meddelelsesform"
+msgstr "Fut një terren në formën tuaj Mesazh"
 
 #: views/automatic-plugin-update.php:35
 msgid "Enable"
-msgstr "Aktiver"
+msgstr "mundësoj"
 
 #: views/automatic-plugin-update.php:36
 msgid "Disable"
-msgstr "Deaktiver"
+msgstr "çaktivizoni"
 
 #: views/contact-bank-system-report.php:34
 msgid "Get System Report"
-msgstr "Hent systemrapport"
+msgstr "Bleni Sistem - Raportimi"
 
 #: views/contact-bank-system-report.php:38
 msgid "Close System Report"
-msgstr "Luk systemrapport"
+msgstr "Mbyll Sistemit Raporti"
 
 #: views/contact-bank-system-report.php:125
 msgid "Default"
-msgstr "Standard"
+msgstr "e albumit"
 
 #: views/contact_bank_form_preview.php:294 views/dashboard.php:129
 msgid "Form Preview"
-msgstr "Forhåndsvisning af formular"
+msgstr "Formulari Paraparje"
 
 #: views/contact_bank_form_preview.php:297
 #: views/contact_bank_layout_settings.php:32
 #: views/contact_email_settings.php:33 views/contact_frontend_data.php:34
 #: views/contact_view.php:262
 msgid "Back to Dashboard"
-msgstr "Tilbage til dashboard"
+msgstr "Mbrapsht në Paneli i drejtimit"
 
 #: views/contact_bank_layout_settings.php:29
 msgid " (Premium Features available in Paid Edition)"
-msgstr "(præmie funktioner tilgængelig i Betalt udgaven)"
+msgstr "(Karakteristika primit dispozicion në Paid Edition)"
 
 #: views/contact_bank_layout_settings.php:33
 msgid "Restore Global Settings"
-msgstr "Genskab globale indstillinger"
+msgstr "Rikthe Cilësimet globale"
 
 #: views/contact_bank_layout_settings.php:39
 msgid "Form Settings Saved. Kindly wait for the redirect."
-msgstr "Formularen Indstillinger Gemt. Venligst vente på omdirigeringen."
+msgstr "Formoni Cilësimet shpëtuar. Mirësi të prisni për përcjellimit."
 
 #: views/contact_bank_layout_settings.php:82
 msgid "Label Settings"
-msgstr "Etiket indstillinger"
+msgstr "Etiketë Cilësimet"
 
 #: views/contact_bank_layout_settings.php:94
 #: views/contact_bank_layout_settings.php:281
@@ -543,16 +544,16 @@ msgstr "Etiket indstillinger"
 #: views/contact_bank_layout_settings.php:684
 #: views/contact_bank_layout_settings.php:812
 msgid "Font Family :"
-msgstr "Font familie:"
+msgstr "Familjare e shkronjave:"
 
 #: views/contact_bank_layout_settings.php:119
 msgid "Font Color :"
-msgstr "Font farve:"
+msgstr "Color e shkronjave:"
 
 #: views/contact_bank_layout_settings.php:130
 #: views/contact_bank_layout_settings.php:317
 msgid "Font Style :"
-msgstr "Typografi:"
+msgstr "Stili e shkronjave:"
 
 #: views/contact_bank_layout_settings.php:144
 #: views/contact_bank_layout_settings.php:331
@@ -560,7 +561,7 @@ msgstr "Typografi:"
 #: views/contact_bank_layout_settings.php:709
 #: views/contact_bank_layout_settings.php:837
 msgid "Font Size (px) :"
-msgstr "Font størrelse (px):"
+msgstr "Madhësia e shkronjave (px):"
 
 #: views/contact_bank_layout_settings.php:175
 #: views/contact_bank_layout_settings.php:432
@@ -568,23 +569,23 @@ msgstr "Font størrelse (px):"
 #: views/contact_bank_layout_settings.php:773
 #: views/contact_bank_layout_settings.php:901
 msgid "Text Align :"
-msgstr "Tekstjustering:"
+msgstr "Tekst-Drejtvendos:"
 
 #: views/contact_bank_layout_settings.php:188
 msgid "Label Position :"
-msgstr "Etiket position:"
+msgstr "Etiketë Pozicioni:"
 
 #: views/contact_bank_layout_settings.php:202
 msgid "Field Desc Font Size :"
-msgstr "Feltbeskrivelse skrift størrelse:"
+msgstr "Fusha Përshkrimi shkronjës Madhësia:"
 
 #: views/contact_bank_layout_settings.php:233
 msgid "Field Description Align :"
-msgstr "Feltbeskrivelse justering :"
+msgstr "Në terren -Përshkrimi-Drejtvendos:"
 
 #: views/contact_bank_layout_settings.php:247
 msgid "Hide Labels :"
-msgstr "Skjul etiketter:"
+msgstr "Fshih etiketat:"
 
 #: views/contact_bank_layout_settings.php:255
 #: views/contact_bank_layout_settings.php:445
@@ -592,66 +593,66 @@ msgstr "Skjul etiketter:"
 #: views/contact_bank_layout_settings.php:786
 #: views/contact_bank_layout_settings.php:914
 msgid "Text Direction :"
-msgstr "Tekstretning:"
+msgstr "Tekst Drejtimi:"
 
 #: views/contact_bank_layout_settings.php:271
 msgid "Input Field Settings"
-msgstr "Indstillinger for indtastningsfelt"
+msgstr "Inputeve në terren Cilësimet"
 
 #: views/contact_bank_layout_settings.php:306
 #: views/contact_bank_layout_settings.php:603
 #: views/contact_bank_layout_settings.php:762
 #: views/contact_bank_layout_settings.php:890
 msgid "Text Color :"
-msgstr "Tekstfarve:"
+msgstr "Tekst Ngjyra:"
 
 #: views/contact_bank_layout_settings.php:362
 #: views/contact_bank_layout_settings.php:635
 msgid "Border Radius (px) :"
-msgstr "Ramme radius (px):"
+msgstr "Rrezja e Kufirit (px):"
 
 #: views/contact_bank_layout_settings.php:372
 #: views/contact_bank_layout_settings.php:614
 #: views/contact_bank_layout_settings.php:751
 #: views/contact_bank_layout_settings.php:879
 msgid "Border Color :"
-msgstr "Rammefarve:"
+msgstr "Ngjyra Kufitare:"
 
 #: views/contact_bank_layout_settings.php:383
 #: views/contact_bank_layout_settings.php:625
 msgid "Border Size (px) :"
-msgstr "Rammestørrelse (px):"
+msgstr "Madhësia kufitare (px):"
 
 #: views/contact_bank_layout_settings.php:393
 msgid "Border Style :"
-msgstr "Rammetypografi:"
+msgstr "Stili Kufitare:"
 
 #: views/contact_bank_layout_settings.php:408
 #: views/contact_bank_layout_settings.php:581
 #: views/contact_bank_layout_settings.php:740
 #: views/contact_bank_layout_settings.php:868
 msgid "Background Color :"
-msgstr "Baggrundsfarve:"
+msgstr "Historiku Ngjyra:"
 
 #: views/contact_bank_layout_settings.php:419
 msgid "Radio Buttons :"
-msgstr "Radioknapper:"
+msgstr "Radiofonike Butonat:"
 
 #: views/contact_bank_layout_settings.php:424
 msgid "Multiple Rows"
-msgstr "Flere rækker"
+msgstr "Rreshtat e shumëfishta"
 
 #: views/contact_bank_layout_settings.php:426
 msgid "Single Row"
-msgstr "Enkeltrække"
+msgstr "Rresht Beqar"
 
 #: views/contact_bank_layout_settings.php:459
 msgid "Input Size :"
-msgstr "Input størrelse:"
+msgstr "Inputeve Madhësia:"
 
 #: views/contact_bank_layout_settings.php:481
 msgid "Submit Button Settings"
-msgstr "Indstillinger for Send knap"
+msgstr "Dorëzojnë Butoni Cilësimet"
 
 #: views/contact_bank_layout_settings.php:516
 msgid "Text:"
@@ -659,143 +660,143 @@ msgstr "Tekst:"
 
 #: views/contact_bank_layout_settings.php:526
 msgid "Style :"
-msgstr "Typografi:"
+msgstr "Stili:"
 
 #: views/contact_bank_layout_settings.php:571
 msgid "Button Width (px) :"
-msgstr "Knapbredde (px):"
+msgstr "Butoni Gjerësia (px):"
 
 #: views/contact_bank_layout_settings.php:592
 msgid "Hover Background Color:"
-msgstr "Hover baggrundsfarve:"
+msgstr "Rri pezull ngjyrën e sfondit:"
 
 #: views/contact_bank_layout_settings.php:674
 msgid "Success Message Settings"
-msgstr "Succesbesked indstillinger"
+msgstr "Suksesi Mesazhesh Cilësimet"
 
 #: views/contact_bank_layout_settings.php:802
 msgid "Error Message Settings"
-msgstr "Fejlbesked indstillinger"
+msgstr "Gabim Mesazhesh Cilësimet"
 
 #: views/contact_bank_pro_version.php:44
 msgid "Contact Bank Pricing"
-msgstr "Contact Bank Priser På"
+msgstr "E Çmimeve Bank contact"
 
 #: views/contact_bank_pro_version.php:375
 msgid "Need Support Help?"
-msgstr "Brug for Support og hjælp?"
+msgstr "Nevojë për Mbështetje ndihmë?"
 
 #: views/contact_bank_pro_version.php:387
 msgid "Lets get in touch!"
-msgstr "Lad os komme i kontakt!"
+msgstr "Lejon të marrë në kontakt!"
 
 #: views/contact_bank_pro_version.php:391
 msgid "Order Now!"
-msgstr "Kendelse nu!"
+msgstr "Urdhër Tani!"
 
 #: views/contact_controls_files.php:41 views/contact_controls_files.php:57
 #: views/contact_controls_files.php:74 views/contact_controls_files.php:92
 #: views/contact_controls_files.php:108 views/contact_controls_files.php:125
 msgid "Settings"
-msgstr "Indstillinger"
+msgstr "Cilësimet"
 
 #: views/contact_documentation.php:27
 msgid "Documentation - Contact Bank"
-msgstr "Dokumentation - Kontaktbank"
+msgstr "Dokumentacioni -Contact Bank"
 
 #: views/contact_email_settings.php:78
 msgid "Add New"
-msgstr "Tilføj ny"
+msgstr "Shto të re"
 
 #: views/contact_email_settings.php:159
 msgid "Are you sure, you want to delete this Email Setting?"
-msgstr "Er du sikker på, at du vil slette denne e-mail indstilling?"
+msgstr "Jeni te sigurte, ju doni të fshini këtë Email Vendosja?"
 
 #: views/contact_email_settings.php:177 views/contact_frontend_data.php:138
 msgid "Please select the Form first."
-msgstr "Vælg venligst formular først"
+msgstr "Ju lutemi zgjidhni Formularin- Parë."
 
 #: views/contact_frontend_data.php:35
 msgid "Export to Excel"
-msgstr "Eksportere til Excel"
+msgstr "Eksporti në Excel"
 
 #: views/contact_frontend_data.php:41 views/dashboard.php:64
 #: views/dashboard.php:71
 msgid "Form"
-msgstr "Formular"
+msgstr "formë"
 
 #: views/contact_view.php:259 views/dashboard.php:46
 msgid "Add New Form"
-msgstr "Tilføj ny formular"
+msgstr "Shto Formularin e re"
 
 #: views/contact_view.php:265 views/contact_view.php:529
 msgid "Save Form"
-msgstr "Gem formular"
+msgstr "Ruaj Formulari"
 
 #: views/contact_view.php:270
 msgid "Form Submitted. Kindly wait for the redirect."
-msgstr "Formular indsendt. Vent venligst på omdirigering."
+msgstr "Formulari Dërguar. Mirësi të prisni për Përcjellimit."
 
 #: views/contact_view.php:279
 msgid "Form Settings"
-msgstr "Formularindstillinger"
+msgstr "Formë - Cilësimet"
 
 #: views/contact_view.php:283
 msgid "Form Name :"
-msgstr "Formularnavn:"
+msgstr "Formulari Emri :"
 
 #: views/contact_view.php:289
 msgid "Enter Form Name"
-msgstr "Skriv formularnavn"
+msgstr "hyj formulari emri"
 
 #: views/contact_view.php:293
 msgid "Form Description :"
-msgstr "Formularbeskrivelse"
+msgstr "Formulari Përshkrimi:"
 
 #: views/contact_view.php:295
 msgid "Enter Form Description"
-msgstr "Skriv formularbeskrivelse"
+msgstr "Futni  Formulari Përshkrimi"
 
 #: views/contact_view.php:299
 msgid "Blank Field Message:"
-msgstr "Besked ved tomt felt:"
+msgstr "Pipirelli -në terren Mesazh:"
 
 #: views/contact_view.php:305
 msgid "Required field must not be blank"
-msgstr "Påkrævet felt må ikke være tomt"
+msgstr "Fusha e kërkuar nuk duhet të jetë bosh"
 
 #: views/contact_view.php:307
 msgid "Enter Blank Field Message"
-msgstr "Skriv besked for tomt felt"
+msgstr "Hyjë - Pipirelli në terren Mesazhesh "
 
 #: views/contact_view.php:311
 msgid "Incorrect Email Message:"
-msgstr "Fejlagtig e-mail besked"
+msgstr "Gabuar Email Mesazh:"
 
 #: views/contact_view.php:317
 msgid "Please enter a valid email address"
-msgstr "Indtast en gyldig e-mailadresse"
+msgstr "Ju lutemi shkruani një adresë e vlefshme email"
 
 #: views/contact_view.php:319
 msgid "Enter Incorrect Email Message"
-msgstr "Indtast en ugyldig e-mail besked"
+msgstr "Hyjë - Keni gabuar Email Mesazhesh"
 
 #: views/contact_view.php:323
 msgid "Success Message :"
-msgstr "Succesbesked:"
+msgstr "Suksesi Mesazh:"
 
 #: views/contact_view.php:327
 msgid "Enter Success Message"
-msgstr "Indtast succesbesked"
+msgstr "Hyjnë, Sukses Mesazhi"
 
 #: views/contact_view.php:331
 msgid "Redirect :"
-msgstr "Omdiriger:"
+msgstr "përcjellim:"
 
 #: views/contact_view.php:343 views/contact_view.php:354
 #: views/contact_view.php:366
 msgid "Page"
-msgstr "Side"
+msgstr "faqe"
 
 #: views/contact_view.php:346 views/contact_view.php:357
 #: views/contact_view.php:369
@@ -804,335 +805,341 @@ msgstr "URL"
 
 #: views/contact_view.php:376
 msgid "Page :"
-msgstr "Side:"
+msgstr "faqe:"
 
 #: views/contact_view.php:419
 msgid "URL :"
-msgstr "URL:"
+msgstr "URL :"
 
 #: views/contact_view.php:426
 msgid "Enter Redirect URL"
-msgstr "Indtast omdirigerings URL"
+msgstr "Hyjë-ridrejto URL"
 
 #: views/contact_view.php:433
 msgid "Form Layout Preview"
-msgstr "Forhåndsvisning af formular layout"
+msgstr "Formulari Faqosja Paraparje"
 
 #: views/contact_view.php:444
 msgid "Standard Fields"
-msgstr "Standardfelter"
+msgstr "Fushat standarde"
 
 #: views/contact_view.php:447 views/contact_view.php:483
 msgid "Click on a field to use into your form."
-msgstr "Klik på et felt for at bruge det i din formular"
+msgstr "Kliko në një fushë për të përdorur në formën tuaj."
 
 #: views/contact_view.php:466
 msgid "Checkboxes"
-msgstr "Afkrydsningsfelter"
+msgstr "kutitë e zgjedhjes"
 
 #: views/contact_view.php:478
 msgid "Advanced Fields"
-msgstr "Avanceret felter"
+msgstr "Fushat Avancuar"
 
 #: views/contact_view.php:489
 msgid "Website / URL"
-msgstr "Hjemmeside / URL"
+msgstr "Faqja e internetit / URL"
 
 #: views/contact_view.php:494
 msgid "Phone"
-msgstr "Telefon"
+msgstr "telefon"
 
 #: views/contact_view.php:497
 msgid "Address"
-msgstr "Adresse"
+msgstr "adresë"
 
 #: views/contact_view.php:502
 msgid "Number"
-msgstr "Nummer"
+msgstr "numër"
 
 #: views/contact_view.php:505
 msgid "File Upload"
-msgstr "Fil upload"
+msgstr "Skedar-ngarko"
 
 #: views/contact_view.php:510
 msgid "Date"
-msgstr "Dato"
+msgstr "data"
 
 #: views/contact_view.php:513
 msgid "Time"
-msgstr "Tid"
+msgstr "kohë"
 
 #: views/contact_view.php:518
 msgid "Password"
-msgstr "Kodeord"
+msgstr "fjalëkalim"
 
 #: views/dashboard.php:34
 msgid "Contact Bank Short-Codes"
-msgstr "Contact Bank KorteKoder"
+msgstr "Bank contact shkurtra-Kodeve"
 
 #: views/dashboard.php:52
 msgid "Delete All Forms"
-msgstr "Slet alle formularer"
+msgstr "Fshijë të Gjitha Formave"
 
 #: views/dashboard.php:55
 msgid "Restore Factory Settings"
-msgstr "Genskab fabriksindstillinger"
+msgstr "Rikthe Cilësimet Fabrika"
 
 #: views/dashboard.php:72
 msgid "Shortcode"
-msgstr "Shortcode"
+msgstr "Kodi shkurtër"
 
 #: views/dashboard.php:73
 msgid "Total Controls"
-msgstr "Antal felter i formularen"
+msgstr "Gjithsej -Kontrollet"
 
 #: views/dashboard.php:109
 msgid "Edit Form"
-msgstr "Rediger formular"
+msgstr "Redakto formës "
 
 #: views/dashboard.php:134
 msgid "Delete Form"
-msgstr "Slet formular"
+msgstr "Fshij formë"
 
 #: views/dashboard.php:189
 msgid "Are you sure, you want to delete this Form?"
-msgstr "Er du sikker på, at du vil slette denne formular?"
+msgstr "Jeni te sigurte, ju doni të fshini këtë Formularin?"
 
 #: views/dashboard.php:199
 msgid "Are you sure, you want to delete all Forms?"
-msgstr "Er du sikker på, at du vil slette alle formularer?"
+msgstr "Jeni te sigurte, ju dëshironi të fshini të gjitha formave?"
 
 #: views/header.php:21
 msgid "Get Started"
-msgstr "Få godt i gang"
+msgstr "merrni filluar"
 
 #: views/header.php:24
 msgid "Watch Contact Video!"
-msgstr "Hold øje Contact for videoen!"
+msgstr "Shikojnë Contact Video!"
 
 #: views/header.php:28
 msgid "read documentation here"
-msgstr "Læs dokumentationen her"
+msgstr "lexoni dokumentacionin këtu"
 
 #: views/header.php:33
 msgid "Go Premium"
-msgstr "Gå præmie"
+msgstr "Shko Primi"
 
 #: views/header.php:37
 msgid "Feature"
-msgstr "Kronik"
+msgstr "Tipar"
 
 #: views/header.php:42
 msgid "Online Demos"
-msgstr "på besøg Demoer"
+msgstr "Demos në Linjë"
 
 #: views/header.php:47
 msgid "Premium Pricing Plan ?"
-msgstr "Præmie Priser På planen?"
+msgstr "Plani Primi Çmimet?"
 
 #: views/header.php:54
 msgid "Knowledge Base"
-msgstr "Viden Basen"
+msgstr "njohuria Base"
 
 #: views/header.php:59
 msgid "Support Forum"
-msgstr "Supportforum"
+msgstr "Mbështetje Forum"
 
 #: views/header.php:64
 msgid "FAQ's"
-msgstr "Hyppigt stillede spørgsmål"
+msgstr "Pytësori-së"
 
 #: views/header.php:69
 msgid "Detailed Features"
-msgstr "Detaljeret funktioner"
+msgstr "Karakteristika e detajuara"
 
 #: views/header.php:75
 msgid "More Actions"
-msgstr "på Flere handlinger"
+msgstr "Më shumë Actions"
 
 #: views/header.php:79
 msgid "Plugin Customization"
-msgstr "Plugin'en Brugerdefinering"
+msgstr "Suksesshmëri Përshtatje plugin të"
 
 #: views/shortcode.php:29
 msgid ""
 "How to setup Short-Codes for Contact Bank into your WordPress Page/Post?"
 msgstr ""
-"Sådan setup Korte-koder til Contact Bank ind i din WordPress side kan/stolpe?"
+"Si të instalimit shkurtra-Kodeve për Bank contact në WordPress juaj Page / "
+"Post?"
 
 #~ msgid "Roles & Capabilities"
-#~ msgstr "Roller & færdigheder"
+#~ msgstr "Rolet dhe Aftësitë"
 
 #~ msgid "Licensing"
-#~ msgstr "Licenser"
+#~ msgstr "Licencimi"
 
 #~ msgid "Day"
-#~ msgstr "Dag"
+#~ msgstr "ditë"
 
 #~ msgid "Select Month"
-#~ msgstr "Vælg måned"
+#~ msgstr "zgjidhni Muaji"
 
 #~ msgid "January"
-#~ msgstr "januar"
+#~ msgstr "janar"
 
 #~ msgid "February"
-#~ msgstr "februar"
+#~ msgstr "shkurt"
 
 #~ msgid "March"
-#~ msgstr "marts"
+#~ msgstr "mars"
 
 #~ msgid "April"
-#~ msgstr "april"
+#~ msgstr "prill"
 
 #~ msgid "May"
 #~ msgstr "maj"
 
 #~ msgid "June"
-#~ msgstr "juni"
+#~ msgstr "qershor"
 
 #~ msgid "July"
-#~ msgstr "juli"
+#~ msgstr "korrik"
 
 #~ msgid "August"
-#~ msgstr "august"
+#~ msgstr "gusht"
 
 #~ msgid "September"
-#~ msgstr "september"
+#~ msgstr "shtator"
 
 #~ msgid "October"
-#~ msgstr "oktober"
+#~ msgstr "tetor"
 
 #~ msgid "November"
-#~ msgstr "november"
+#~ msgstr "nëntor"
 
 #~ msgid "December"
-#~ msgstr "december"
+#~ msgstr "dhjetor"
 
 #~ msgid "Year"
-#~ msgstr "År"
+#~ msgstr "Viti"
 
 #~ msgid "Hour"
-#~ msgstr "Time"
+#~ msgstr "orë"
 
 #~ msgid "Minute"
-#~ msgstr "Minut"
+#~ msgstr "minutë"
 
 #~ msgid "Enter Tooltip Text"
-#~ msgstr "Skriv tekst til værktøjstip"
+#~ msgstr "Hyjnë mjet tip i,teksti"
 
 #~ msgid "Enter Tooltip"
-#~ msgstr "Skriv værktøjstip"
+#~ msgstr "Hyjnë mjet tip i"
 
 #~ msgid "Start Year"
-#~ msgstr "Start år"
+#~ msgstr "Filloni Vitin e"
 
 #~ msgid "Enter Start Year"
-#~ msgstr "Skriv start år"
+#~ msgstr "Futni filloni vit"
 
 #~ msgid "End Year"
-#~ msgstr "Slut år"
+#~ msgstr "Fund -Viti"
 
 #~ msgid "Enter End Year "
-#~ msgstr "Skriv slut år"
+#~ msgstr "Futni Fundi, vitit"
 
 #~ msgid "Default Value"
-#~ msgstr "Standard værdi"
+#~ msgstr "Vlera e albumit"
 
 #~ msgid "Month"
-#~ msgstr "Måned"
+#~ msgstr "muaj"
 
 #~ msgid "Date Format"
-#~ msgstr "Datoformat"
+#~ msgstr "Datë- Formati"
 
 #~ msgid "Allow Multiple Uploads"
-#~ msgstr "Tillad flere uploads"
+#~ msgstr "Lejo shumëfishta Ngarkimet "
 
 #~ msgid "Allowed File Extensions"
-#~ msgstr "Tilladte filtypenavne"
+#~ msgstr "Zgjerime Lejuara Kartelash"
 
 #~ msgid "Enter File Extensions"
-#~ msgstr "Skriv filtyper"
+#~ msgstr "Futni kartelash zgjerime"
 
 #~ msgid "The file extensions must be separated with comma(',')"
-#~ msgstr "Filtyperne skal være adskilt med komma (',')"
+#~ msgstr "Fotografi extensions duhet të jenë të ndara me presje (',')"
 
 #~ msgid "Allowed File Size"
-#~ msgstr "Tilladt filstørrelse"
+#~ msgstr "lejuar,skedar përmasa"
 
 #~ msgid "File Size must be in Mb"
-#~ msgstr "Filstørrelse skal angives i Mb"
+#~ msgstr "Madhësia e dokumentit duhet të jetë në në Mb"
 
 #~ msgid "Hour Format"
-#~ msgstr "Timeformat"
+#~ msgstr "Orë - formati"
 
 #~ msgid "Minute Format"
-#~ msgstr "Minutformat"
+#~ msgstr "Minutë - Formati"
 
 #~ msgid "Roles and Capabilities Saved. Kindly wait for the redirect."
-#~ msgstr "Roller & færdigheder gemt. Vent venligst på omdirigering."
+#~ msgstr "Rolet dhe Aftësitë E - Ruajtura. Mirësi të prisni për Redirect."
 
 #~ msgid "Privileges for Admin"
-#~ msgstr "Rettigheder for administrator"
+#~ msgstr "Privilegjet - Për Admin"
 
 #~ msgid "Full Control"
-#~ msgstr "Fuld kontrol"
+#~ msgstr "Kontrolli i plotë"
 
 #~ msgid "Read"
-#~ msgstr "Læs"
+#~ msgstr "Lexo"
 
 #~ msgid "Write"
-#~ msgstr "Skriv"
+#~ msgstr "Shëno"
 
 #~ msgid "Privileges for Editor"
-#~ msgstr "Rettigheder for redaktør"
+#~ msgstr "Privilegjet për redaktor"
 
 #~ msgid "Privileges for Author"
-#~ msgstr "Rettigheder for forfatter"
+#~ msgstr "Privilegjet për Autori"
 
 #~ msgid "Privileges for Contributor"
-#~ msgstr "Rettigheder for bidragsyder"
+#~ msgstr "Privilegjet për Kontribues"
 
 #~ msgid "Privileges for Subscriber"
-#~ msgstr "Rettigheder for abonnent"
+#~ msgstr "Privilegjet për pajtimtarit"
 
 #~ msgid "Global Settings Saved. Kindly wait for the redirect."
-#~ msgstr "Globale indstillinger gemt. Vent venligst på omdirigering."
+#~ msgstr "Global Settings ruajtura. Mirësi të prisni për përcjellimit."
 
 #~ msgid "Are you sure, you want to Restore Global Settings?"
-#~ msgstr "Er du sikker på, at du vil genskabe globale indstillinger ?"
+#~ msgstr "Jeni te sigurte, ju doni të Rikthe Globale Cilësimet?"
 
 #~ msgid "Check Plugin - Contact Bank"
-#~ msgstr "Kontroller plugin - Kontaktbank"
+#~ msgstr "Kontrolloni Plugin - Contact Bank"
 
 #~ msgid "Captcha"
-#~ msgstr "Captcha Ønsker"
+#~ msgstr "Captcha"
 
 #~ msgid "Are you sure, you want to delete this Form Entry ?"
-#~ msgstr "Er du sikker på, at du vil slette denne indtastning?"
+#~ msgstr "Jeni te sigurte, ju doni të fshini këtë formulari-hyrja?"
 
 #~ msgid "Attention! A new version of Contact Bank is available for download."
-#~ msgstr "OBS! En ny version af Kontakt Bank er tilgængelig for download."
+#~ msgstr ""
+#~ "Kujdes! Një version i ri i Bankës Kontaktit është në dispozicion për "
+#~ "shkarkim."
 
 #~ msgid "Click"
-#~ msgstr "Klik"
+#~ msgstr "Kliko"
 
 #~ msgid "here"
-#~ msgstr "her"
+#~ msgstr "këtu"
 
 #~ msgid "to upgrade your version of Contact Bank."
-#~ msgstr "for at opgradere din version af Kontaktbank"
+#~ msgstr "mirësuar versionin tuaj të Contact Bank."
 
 #~ msgid "Dashboard - Contact Bank"
-#~ msgstr "Dashboard - Kontaktbank"
+#~ msgstr "baltëpritëse - Kontakt  Banka"
 
 #~ msgid "Are you sure you want to Restore Factory Settings?"
-#~ msgstr "Er du sikker på, at du vil genskab fabriksindstillinger?"
+#~ msgstr "Jeni te sigurte qe doni te Rikthe Parametrat e fabrikës?"
 
 #~ msgid "Only One File Uploader can be used on a Form."
-#~ msgstr "Kun én fil uploader kan bruges på en formular."
+#~ msgstr "Vetmja - Njëri Dosjes Uploader mund të përdoret mbi një formular."
 
 #~ msgid "Only One Captcha can be used on a Form."
-#~ msgstr "Only One Captcha Ønsker kan bruges på en formular."
+#~ msgstr "Vetëm Një Captcha mund të përdoret në një formular."
 
 #~ msgid "Success! Settings have been updated."
-#~ msgstr "Succes! Indstillinger er opdaterede."
+#~ msgstr "Suksesi! Cilësimet kanë qenë të përditësuar."
+
+#~ msgid "Roles & Capabilites"
+#~ msgstr "Rolet dhe Aftësitë"

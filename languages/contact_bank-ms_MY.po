@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Contact bank\n"
-"POT-Creation-Date: 2015-02-04 18:16+0530\n"
-"PO-Revision-Date: 2015-02-04 18:16+0530\n"
+"Project-Id-Version: Contact Bank\n"
+"POT-Creation-Date: 2015-02-09 17:33+0530\n"
+"PO-Revision-Date: 2015-02-10 18:02+0530\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ms_MY\n"
@@ -15,133 +15,133 @@ msgstr ""
 "\\contact-bank\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: contact-bank.php:86 contact-bank.php:102 contact-bank.php:118
+#: contact-bank.php:84 contact-bank.php:100 contact-bank.php:116
 msgid "Contact Bank"
 msgstr "Contact Bank"
 
-#: contact-bank.php:87 contact-bank.php:103 contact-bank.php:119
-#: contact-bank.php:640 contact-bank.php:710 contact-bank.php:782
+#: contact-bank.php:85 contact-bank.php:101 contact-bank.php:117
+#: contact-bank.php:638 contact-bank.php:708 contact-bank.php:780
 #: views/header.php:114 views/header.php:128 views/header.php:142
 msgid "Dashboard"
 msgstr "papan pemuka"
 
-#: contact-bank.php:89 contact-bank.php:105 contact-bank.php:121
-#: contact-bank.php:646 contact-bank.php:716 contact-bank.php:788
+#: contact-bank.php:87 contact-bank.php:103 contact-bank.php:119
+#: contact-bank.php:644 contact-bank.php:714 contact-bank.php:786
 #: views/automatic-plugin-update.php:28 views/automatic-plugin-update.php:32
 msgid "Plugin Updates"
-msgstr ""
+msgstr "Maklumat Terbaru plugin"
 
-#: contact-bank.php:90 contact-bank.php:106 contact-bank.php:122
-#: contact-bank.php:652 contact-bank.php:722 contact-bank.php:794
+#: contact-bank.php:88 contact-bank.php:104 contact-bank.php:120
+#: contact-bank.php:650 contact-bank.php:720 contact-bank.php:792
 #: views/header.php:115 views/header.php:129 views/header.php:143
 msgid "Short-Codes"
 msgstr "Pendek Kod"
 
-#: contact-bank.php:91 contact-bank.php:107 contact-bank.php:123
-#: contact-bank.php:658 contact-bank.php:728 contact-bank.php:800
+#: contact-bank.php:89 contact-bank.php:105 contact-bank.php:121
+#: contact-bank.php:656 contact-bank.php:726 contact-bank.php:798
 #: views/contact_frontend_data.php:31 views/dashboard.php:124
 #: views/header.php:116 views/header.php:130 views/header.php:144
 msgid "Form Entries"
 msgstr "dengan borang-entri"
 
-#: contact-bank.php:92 contact-bank.php:108 contact-bank.php:124
-#: contact-bank.php:664 contact-bank.php:734 contact-bank.php:806
+#: contact-bank.php:90 contact-bank.php:106 contact-bank.php:122
+#: contact-bank.php:662 contact-bank.php:732 contact-bank.php:804
 #: views/contact_email_settings.php:30 views/dashboard.php:119
 #: views/header.php:117 views/header.php:131 views/header.php:145
 msgid "Email Settings"
 msgstr "Tetapan e-mel"
 
-#: contact-bank.php:93 contact-bank.php:109 contact-bank.php:125
-#: contact-bank.php:670 contact-bank.php:740 contact-bank.php:812
+#: contact-bank.php:91 contact-bank.php:107 contact-bank.php:123
+#: contact-bank.php:668 contact-bank.php:738 contact-bank.php:810
 #: views/contact_bank_layout_settings.php:29 views/dashboard.php:114
 #: views/header.php:118 views/header.php:132 views/header.php:146
 msgid "Global Settings"
 msgstr "Tetapan global"
 
-#: contact-bank.php:94 contact-bank.php:110 contact-bank.php:126
-#: contact-bank.php:676 contact-bank.php:748
+#: contact-bank.php:92 contact-bank.php:108 contact-bank.php:124
+#: contact-bank.php:674 contact-bank.php:746
 #: views/contact-bank-system-report.php:31
 msgid "System Status"
 msgstr "status sistem"
 
-#: contact-bank.php:95 contact-bank.php:111 contact-bank.php:127
-#: contact-bank.php:682 contact-bank.php:754 contact-bank.php:818
+#: contact-bank.php:93 contact-bank.php:109 contact-bank.php:125
+#: contact-bank.php:680 contact-bank.php:752 contact-bank.php:816
 #: views/header.php:84 views/header.php:119 views/header.php:133
 #: views/header.php:147
 msgid "Recommendations"
 msgstr "saranan"
 
-#: contact-bank.php:96 contact-bank.php:112 contact-bank.php:128
-#: contact-bank.php:689 contact-bank.php:761 contact-bank.php:825
+#: contact-bank.php:94 contact-bank.php:110 contact-bank.php:126
+#: contact-bank.php:687 contact-bank.php:759 contact-bank.php:823
 #: views/header.php:120 views/header.php:134 views/header.php:148
 msgid "Premium Editions"
-msgstr "Edisi premium"
+msgstr "Edisi premium yang"
 
-#: contact-bank.php:97 contact-bank.php:113 contact-bank.php:129
-#: contact-bank.php:696 contact-bank.php:768 contact-bank.php:832
+#: contact-bank.php:95 contact-bank.php:111 contact-bank.php:127
+#: contact-bank.php:694 contact-bank.php:766 contact-bank.php:830
 #: views/header.php:89 views/header.php:121 views/header.php:135
 #: views/header.php:149
 msgid "Our Other Services"
 msgstr "Perkhidmatan Lain kami"
 
-#: contact-bank.php:840
+#: contact-bank.php:838
 msgid "Add Contact Bank Form"
 msgstr "Tambah Kenalan Bank Borang "
 
-#: contact-bank.php:852
+#: contact-bank.php:850
 msgid "Insert Contact Bank Form"
 msgstr "Sisipan Hubungi Borang Bank"
 
-#: contact-bank.php:854
+#: contact-bank.php:852
 msgid "Select a form below to add it to your post or page."
 msgstr ""
 "Pilih bentuk yang di bawah untuk menambah kepada pos atau halaman anda."
 
-#: contact-bank.php:859
+#: contact-bank.php:857
 msgid "Form Name"
 msgstr "Borang Nama"
 
-#: contact-bank.php:861
+#: contact-bank.php:859
 msgid "Select a Form"
 msgstr "Pilih Borang yang"
 
-#: contact-bank.php:878
+#: contact-bank.php:876
 msgid "Show Form Title"
 msgstr "Tunjukkan Borang Tajuk"
 
-#: contact-bank.php:883
+#: contact-bank.php:881
 msgid "Insert Form"
 msgstr "Sisipan Borang"
 
-#: contact-bank.php:886
+#: contact-bank.php:884
 msgid "Cancel"
 msgstr "batalkan"
 
-#: contact-bank.php:898
+#: contact-bank.php:896
 msgid "Please choose a Form to insert into Shortcode"
 msgstr "Sila pilih Borang untuk memasukkan ke dalam Kod ringkas"
 
-#: contact-bank.php:934
+#: contact-bank.php:932
 msgid "View Contact Bank Documentation"
-msgstr "View Hubungi Bank Dokumentasi"
+msgstr "Dokumentasi pandangan Contact Bank"
 
-#: contact-bank.php:934
+#: contact-bank.php:932
 msgid "Docs"
 msgstr "Docs"
 
-#: contact-bank.php:935
+#: contact-bank.php:933
 msgid "View Contact Bank Premium Editions"
-msgstr "View Editions Hubungi Bank Premium"
+msgstr "Lht Edisi Contact Bank premium yang"
 
-#: contact-bank.php:935
+#: contact-bank.php:933
 msgid "Go for Premium!"
 msgstr "Pergi untuk Premium!"
 
-#: contact-bank.php:1009
+#: contact-bank.php:1007
 msgid "Select Form :"
 msgstr "Pilih Borang:"
 
-#: contact-bank.php:1011 views/contact_bank_layout_settings.php:45
+#: contact-bank.php:1009 views/contact_bank_layout_settings.php:45
 #: views/contact_bank_layout_settings.php:55
 #: views/contact_email_settings.php:37 views/contact_email_settings.php:53
 #: views/contact_frontend_data.php:46 views/contact_frontend_data.php:56
@@ -217,7 +217,7 @@ msgstr "Teks petua alat"
 #: views/includes_common_after.php:367 views/includes_common_after.php:370
 #: views/includes_common_after.php:373
 msgid "This Feature is only available in Paid Premium Edition!"
-msgstr "Ciri-ciri ini hanya ada dalam Dibayar Edisi Premium!"
+msgstr "Ciri ini hanya boleh didapati di Berbayar Edisi Premium!"
 
 #: includes/cb_checkbox.php:101 includes/cb_dropdown.php:101
 #: includes/cb_multiple.php:113
@@ -489,15 +489,15 @@ msgstr "mesej"
 
 #: views/add_contact_email.php:225
 msgid "Insert a Field into Your Form Message"
-msgstr "Sisipan Field ke dalam Borang Mesej Anda"
+msgstr "Masukkan Field ke dalam Borang Mesej Anda"
 
 #: views/automatic-plugin-update.php:35
 msgid "Enable"
-msgstr ""
+msgstr "membolehkan"
 
 #: views/automatic-plugin-update.php:36
 msgid "Disable"
-msgstr ""
+msgstr "Lumpuhkan"
 
 #: views/contact-bank-system-report.php:34
 msgid "Get System Report"
@@ -524,7 +524,7 @@ msgstr "Kembali ke Papan Pemuka"
 
 #: views/contact_bank_layout_settings.php:29
 msgid " (Premium Features available in Paid Edition)"
-msgstr "(Ciri-ciri yang terdapat di Premium Edisi Paid)"
+msgstr "(Ciri premium yang terdapat di Edisi Berbayar)"
 
 #: views/contact_bank_layout_settings.php:33
 msgid "Restore Global Settings"
@@ -680,19 +680,19 @@ msgstr "Mesej Ralat Seting"
 
 #: views/contact_bank_pro_version.php:44
 msgid "Contact Bank Pricing"
-msgstr "Hubungi Bank Harga"
+msgstr "Contact Bank Harga"
 
 #: views/contact_bank_pro_version.php:375
 msgid "Need Support Help?"
-msgstr "Perlu Sokongan Bantuan?"
+msgstr "Perlukan Menyokong Bantuan?"
 
 #: views/contact_bank_pro_version.php:387
 msgid "Lets get in touch!"
-msgstr "Membolehkan mendapatkan berhubung!"
+msgstr "Mari dapat berhubung!"
 
 #: views/contact_bank_pro_version.php:391
 msgid "Order Now!"
-msgstr "Memerintahkan Sekarang!"
+msgstr "Perintah Sekarang!"
 
 #: views/contact_controls_files.php:41 views/contact_controls_files.php:57
 #: views/contact_controls_files.php:74 views/contact_controls_files.php:92
@@ -755,7 +755,7 @@ msgstr "Borang Penerangan:"
 
 #: views/contact_view.php:295
 msgid "Enter Form Description"
-msgstr "Masukkan Borang Penerangan:"
+msgstr "Memasuki Tingkatan Huraian"
 
 #: views/contact_view.php:299
 msgid "Blank Field Message:"
@@ -869,7 +869,7 @@ msgstr "Kata laluan"
 
 #: views/dashboard.php:34
 msgid "Contact Bank Short-Codes"
-msgstr "Hubungi Bank Pendek Kod"
+msgstr "Contact Bank Pendek Kod"
 
 #: views/dashboard.php:52
 msgid "Delete All Forms"
@@ -909,7 +909,7 @@ msgstr "Bermula"
 
 #: views/header.php:24
 msgid "Watch Contact Video!"
-msgstr "Menonton Hubungi Video!"
+msgstr "Menonton Contact Video!"
 
 #: views/header.php:28
 msgid "read documentation here"
@@ -921,11 +921,11 @@ msgstr "Pergi Premium"
 
 #: views/header.php:37
 msgid "Feature"
-msgstr "ciri-ciri "
+msgstr "ciri"
 
 #: views/header.php:42
 msgid "Online Demos"
-msgstr "Tunjuk Cara talian"
+msgstr "Tunjuk Cara dalam talian"
 
 #: views/header.php:47
 msgid "Premium Pricing Plan ?"
@@ -953,80 +953,62 @@ msgstr "lebih banyak tindakan"
 
 #: views/header.php:79
 msgid "Plugin Customization"
-msgstr "Customization plugin"
+msgstr "Ubahsuaian pemalam"
 
 #: views/shortcode.php:29
 msgid ""
 "How to setup Short-Codes for Contact Bank into your WordPress Page/Post?"
 msgstr ""
-"Bagaimana persediaan Pendek Kod untuk Hubungi Bank ke dalam WordPress Page / "
-"Kirimkan?"
+"Bagaimana tetapan Pendek Kod untuk Contact Bank ke dalam WordPress Page / "
+"Post anda?"
 
-#~ msgid "%s rating"
-#~ msgstr "Kedudukan% s"
-
-#~ msgid "More Details"
-#~ msgstr "Maklumat Lanjut"
-
-#~ msgid "Install Now"
-#~ msgstr "memasang sekarang"
-
-#~ msgid "Update Now"
-#~ msgstr "Kemas kini Sekarang"
-
-#~ msgid "By "
-#~ msgstr "oleh"
-
-#~ msgid "Visit Website"
-#~ msgstr "Lawati Laman Web"
-
-#~ msgid "Last Updated:"
-#~ msgstr "Tarikh Kemaskini:"
-
-#~ msgid "<strong>Untested</strong> with your version of WordPress"
-#~ msgstr "<strong> belum dicuba </ strong> dengan versi WordPress"
-
-#~ msgid "Incompatible with your version of WordPress"
-#~ msgstr "Tidak serasi dengan versi WordPress"
-
-#~ msgid "Compatible with your version of WordPress"
-#~ msgstr "Serasi dengan versi WordPress"
-
-#~ msgid "WP Contact Bank is an one time Investment. Its Worth it!"
-#~ msgstr "WP Hubungi Bank adalah Pelaburan satu masa. Worth, ia!"
-
-#~ msgid "Purchase PRO Edition"
-#~ msgstr "Pembelian PRO Edisi"
-
-#~ msgid "Watch the Walk-Through Video"
-#~ msgstr "Watch Video Walk-Through"
-
-#~ msgid "Contact Bank, a Superlative High quality WordPress Plugin!"
-#~ msgstr "Hubungi Bank, yang superlatif berkualiti tinggi WordPress Plugin!"
-
-#~ msgid "Let's get in touch!"
-#~ msgstr "Membolehkan mendapatkan berhubung!"
-
-#~ msgid "Purchase PRO Edition - Contact Bank"
-#~ msgstr "Pembelian PRO Edisi - Contact Bank"
-
-#~ msgid "Dashboard - Contact Bank"
-#~ msgstr "papan pemuka - Contact Bank"
-
-#~ msgid "Roles & Capabilites"
+#~ msgid "Roles & Capabilities"
 #~ msgstr "Peranan & Keupayaan"
 
 #~ msgid "Licensing"
 #~ msgstr "pelesenan"
-
-#~ msgid "Roles & Capabilities"
-#~ msgstr "Peranan & Keupayaan"
 
 #~ msgid "Day"
 #~ msgstr "hari"
 
 #~ msgid "Select Month"
 #~ msgstr "Pilih Bulan"
+
+#~ msgid "January"
+#~ msgstr "januari"
+
+#~ msgid "February"
+#~ msgstr "februari"
+
+#~ msgid "March"
+#~ msgstr "Mac"
+
+#~ msgid "April"
+#~ msgstr "April"
+
+#~ msgid "May"
+#~ msgstr "Mei"
+
+#~ msgid "June"
+#~ msgstr "Jun"
+
+#~ msgid "July"
+#~ msgstr "Julai"
+
+#~ msgid "August"
+#~ msgstr "ogos"
+
+#~ msgid "September"
+#~ msgstr "September"
+
+#~ msgid "October"
+#~ msgstr "Oktober"
+
+#~ msgid "November"
+#~ msgstr "November"
+
+#~ msgid "December"
+#~ msgstr "Disember"
 
 #~ msgid "Year"
 #~ msgstr "tahun"
@@ -1073,7 +1055,7 @@ msgstr ""
 #~ msgid "Enter File Extensions"
 #~ msgstr "masukkan Extensions Fail"
 
-#~ msgid "The file extensions must be separated with semicolons(',')"
+#~ msgid "The file extensions must be separated with comma(',')"
 #~ msgstr "Sambungan fail perlu diasingkan dengan koma (',')"
 
 #~ msgid "Allowed File Size"
@@ -1115,11 +1097,35 @@ msgstr ""
 #~ msgid "Privileges for Subscriber"
 #~ msgstr "Keistimewaan bagi Subscriber"
 
+#~ msgid "Global Settings Saved. Kindly wait for the redirect."
+#~ msgstr "Tetapan Global disimpan. Sila tunggu ubah hala."
+
 #~ msgid "Are you sure, you want to Restore Global Settings?"
 #~ msgstr "Adakah anda pasti, anda mahu memulihkan Seting global?"
 
-#~ msgid "Are you sure, you want to delete this From Entry?"
-#~ msgstr "Adakah anda pasti, anda mahu Padam  Borang?"
+#~ msgid "Check Plugin - Contact Bank"
+#~ msgstr "Semak Pemalam - Contact Bank"
+
+#~ msgid "Captcha"
+#~ msgstr "Captcha"
+
+#~ msgid "Are you sure, you want to delete this Form Entry ?"
+#~ msgstr "Adakah anda pasti, anda mahu Padam Borang Penyertaan?"
+
+#~ msgid "Attention! A new version of Contact Bank is available for download."
+#~ msgstr "Perhatian! Versi baru Hubungi Bank boleh didapati untuk muat turun."
+
+#~ msgid "Click"
+#~ msgstr "Klik"
+
+#~ msgid "here"
+#~ msgstr "di sini"
+
+#~ msgid "to upgrade your version of Contact Bank."
+#~ msgstr "untuk meningkatkan versi Hubungi Bank."
+
+#~ msgid "Dashboard - Contact Bank"
+#~ msgstr "papan pemuka - Contact Bank"
 
 #~ msgid "Are you sure you want to Restore Factory Settings?"
 #~ msgstr "Adakah anda pasti anda mahu Mengembalikan tetapan Kilang?"
@@ -1127,5 +1133,11 @@ msgstr ""
 #~ msgid "Only One File Uploader can be used on a Form."
 #~ msgstr "Only One Uploader Fail boleh digunakan pada Borang a."
 
+#~ msgid "Only One Captcha can be used on a Form."
+#~ msgstr "Hanya Satu Captcha boleh digunakan pada Borang a."
+
 #~ msgid "Success! Settings have been updated."
 #~ msgstr "Kejayaan! Seting telah dikemaskini."
+
+#~ msgid "Roles & Capabilites"
+#~ msgstr "Peranan & Keupayaan"

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Contact Bank\n"
-"POT-Creation-Date: 2015-02-04 18:15+0530\n"
+"POT-Creation-Date: 2015-02-09 17:32+0530\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -15,134 +15,134 @@ msgstr ""
 "\\contact-bank\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: contact-bank.php:86 contact-bank.php:102 contact-bank.php:118
+#: contact-bank.php:84 contact-bank.php:100 contact-bank.php:116
 msgid "Contact Bank"
 msgstr "Contact Bank"
 
-#: contact-bank.php:87 contact-bank.php:103 contact-bank.php:119
-#: contact-bank.php:640 contact-bank.php:710 contact-bank.php:782
+#: contact-bank.php:85 contact-bank.php:101 contact-bank.php:117
+#: contact-bank.php:638 contact-bank.php:708 contact-bank.php:780
 #: views/header.php:114 views/header.php:128 views/header.php:142
 msgid "Dashboard"
 msgstr "Vezérlőpult"
 
-#: contact-bank.php:89 contact-bank.php:105 contact-bank.php:121
-#: contact-bank.php:646 contact-bank.php:716 contact-bank.php:788
+#: contact-bank.php:87 contact-bank.php:103 contact-bank.php:119
+#: contact-bank.php:644 contact-bank.php:714 contact-bank.php:786
 #: views/automatic-plugin-update.php:28 views/automatic-plugin-update.php:32
 msgid "Plugin Updates"
-msgstr ""
+msgstr "futtatókörnyezeted Frissítés"
 
-#: contact-bank.php:90 contact-bank.php:106 contact-bank.php:122
-#: contact-bank.php:652 contact-bank.php:722 contact-bank.php:794
+#: contact-bank.php:88 contact-bank.php:104 contact-bank.php:120
+#: contact-bank.php:650 contact-bank.php:720 contact-bank.php:792
 #: views/header.php:115 views/header.php:129 views/header.php:143
 msgid "Short-Codes"
-msgstr "Rövid kódok"
+msgstr "rövid kódok"
 
-#: contact-bank.php:91 contact-bank.php:107 contact-bank.php:123
-#: contact-bank.php:658 contact-bank.php:728 contact-bank.php:800
+#: contact-bank.php:89 contact-bank.php:105 contact-bank.php:121
+#: contact-bank.php:656 contact-bank.php:726 contact-bank.php:798
 #: views/contact_frontend_data.php:31 views/dashboard.php:124
 #: views/header.php:116 views/header.php:130 views/header.php:144
 msgid "Form Entries"
 msgstr "Űrlap mezők"
 
-#: contact-bank.php:92 contact-bank.php:108 contact-bank.php:124
-#: contact-bank.php:664 contact-bank.php:734 contact-bank.php:806
+#: contact-bank.php:90 contact-bank.php:106 contact-bank.php:122
+#: contact-bank.php:662 contact-bank.php:732 contact-bank.php:804
 #: views/contact_email_settings.php:30 views/dashboard.php:119
 #: views/header.php:117 views/header.php:131 views/header.php:145
 msgid "Email Settings"
 msgstr "Email beállítások"
 
-#: contact-bank.php:93 contact-bank.php:109 contact-bank.php:125
-#: contact-bank.php:670 contact-bank.php:740 contact-bank.php:812
+#: contact-bank.php:91 contact-bank.php:107 contact-bank.php:123
+#: contact-bank.php:668 contact-bank.php:738 contact-bank.php:810
 #: views/contact_bank_layout_settings.php:29 views/dashboard.php:114
 #: views/header.php:118 views/header.php:132 views/header.php:146
 msgid "Global Settings"
 msgstr "Globális beállítások"
 
-#: contact-bank.php:94 contact-bank.php:110 contact-bank.php:126
-#: contact-bank.php:676 contact-bank.php:748
+#: contact-bank.php:92 contact-bank.php:108 contact-bank.php:124
+#: contact-bank.php:674 contact-bank.php:746
 #: views/contact-bank-system-report.php:31
 msgid "System Status"
 msgstr "Rendszer állapota"
 
-#: contact-bank.php:95 contact-bank.php:111 contact-bank.php:127
-#: contact-bank.php:682 contact-bank.php:754 contact-bank.php:818
+#: contact-bank.php:93 contact-bank.php:109 contact-bank.php:125
+#: contact-bank.php:680 contact-bank.php:752 contact-bank.php:816
 #: views/header.php:84 views/header.php:119 views/header.php:133
 #: views/header.php:147
 msgid "Recommendations"
 msgstr "ajánlások"
 
-#: contact-bank.php:96 contact-bank.php:112 contact-bank.php:128
-#: contact-bank.php:689 contact-bank.php:761 contact-bank.php:825
+#: contact-bank.php:94 contact-bank.php:110 contact-bank.php:126
+#: contact-bank.php:687 contact-bank.php:759 contact-bank.php:823
 #: views/header.php:120 views/header.php:134 views/header.php:148
 msgid "Premium Editions"
-msgstr "felárat kiadás"
+msgstr "Felárat kiadás"
 
-#: contact-bank.php:97 contact-bank.php:113 contact-bank.php:129
-#: contact-bank.php:696 contact-bank.php:768 contact-bank.php:832
+#: contact-bank.php:95 contact-bank.php:111 contact-bank.php:127
+#: contact-bank.php:694 contact-bank.php:766 contact-bank.php:830
 #: views/header.php:89 views/header.php:121 views/header.php:135
 #: views/header.php:149
 msgid "Our Other Services"
-msgstr "A mi más szolgáltatások"
+msgstr "felárat kiadás"
 
-#: contact-bank.php:840
+#: contact-bank.php:838
 msgid "Add Contact Bank Form"
 msgstr "Contact Bank űrlap hozzáadása"
 
-#: contact-bank.php:852
+#: contact-bank.php:850
 msgid "Insert Contact Bank Form"
 msgstr "Contact Bank űrlap beillesztése"
 
-#: contact-bank.php:854
+#: contact-bank.php:852
 msgid "Select a form below to add it to your post or page."
 msgstr ""
 "Válasszon egy űrlapot a következők közül, ami a bejegyzéséhez vagy az "
 "oldalához lesz adva"
 
-#: contact-bank.php:859
+#: contact-bank.php:857
 msgid "Form Name"
 msgstr "Űrlap neve"
 
-#: contact-bank.php:861
+#: contact-bank.php:859
 msgid "Select a Form"
 msgstr "Válasszon egy űrlapot"
 
-#: contact-bank.php:878
+#: contact-bank.php:876
 msgid "Show Form Title"
 msgstr "Mutassa az űrlap címét"
 
-#: contact-bank.php:883
+#: contact-bank.php:881
 msgid "Insert Form"
 msgstr "Űrlap beillesztése"
 
-#: contact-bank.php:886
+#: contact-bank.php:884
 msgid "Cancel"
 msgstr "Mégse"
 
-#: contact-bank.php:898
+#: contact-bank.php:896
 msgid "Please choose a Form to insert into Shortcode"
 msgstr "Kérem válasszon űrlapot a kóddal való beillesztéshez"
 
-#: contact-bank.php:934
+#: contact-bank.php:932
 msgid "View Contact Bank Documentation"
-msgstr "Contact megtekintése bank Dokumentáció"
+msgstr "Contact megtekintése Bank Dokumentáció"
 
-#: contact-bank.php:934
+#: contact-bank.php:932
 msgid "Docs"
-msgstr "Dokumentumok"
+msgstr "Dokumentumokban"
 
-#: contact-bank.php:935
+#: contact-bank.php:933
 msgid "View Contact Bank Premium Editions"
 msgstr "Tekintse Contact Bank felárat kiadás"
 
-#: contact-bank.php:935
+#: contact-bank.php:933
 msgid "Go for Premium!"
-msgstr "Megy a Premium!"
+msgstr "Megy számára Prémium!"
 
-#: contact-bank.php:1009
+#: contact-bank.php:1007
 msgid "Select Form :"
 msgstr "Űrlap kiválasztása:"
 
-#: contact-bank.php:1011 views/contact_bank_layout_settings.php:45
+#: contact-bank.php:1009 views/contact_bank_layout_settings.php:45
 #: views/contact_bank_layout_settings.php:55
 #: views/contact_email_settings.php:37 views/contact_email_settings.php:53
 #: views/contact_frontend_data.php:46 views/contact_frontend_data.php:56
@@ -218,7 +218,7 @@ msgstr "Magyarázat szövege"
 #: views/includes_common_after.php:367 views/includes_common_after.php:370
 #: views/includes_common_after.php:373
 msgid "This Feature is only available in Paid Premium Edition!"
-msgstr "Ez a funkció csak a fizetős Premium kiadás!"
+msgstr "Ez a funkció csak a fizetett Premium Edition kiadás!"
 
 #: includes/cb_checkbox.php:101 includes/cb_dropdown.php:101
 #: includes/cb_multiple.php:113
@@ -343,7 +343,7 @@ msgstr "Igazítás"
 #: views/contact_bank_layout_settings.php:674
 #: views/contact_bank_layout_settings.php:802 views/contact_view.php:479
 msgid " (Available in Premium Edition)"
-msgstr "(Elérhető Premium Edition)"
+msgstr "(Elérhető Prémium kiadás)"
 
 #: includes/cb_textarea.php:36 views/contact_view.php:453
 msgid "Paragraph Text"
@@ -494,11 +494,11 @@ msgstr "Mező beszúrása az űrlap üzenetébe"
 
 #: views/automatic-plugin-update.php:35
 msgid "Enable"
-msgstr ""
+msgstr "engedélyezése"
 
 #: views/automatic-plugin-update.php:36
 msgid "Disable"
-msgstr ""
+msgstr "Letiltja"
 
 #: views/contact-bank-system-report.php:34
 msgid "Get System Report"
@@ -525,7 +525,7 @@ msgstr "Vissza a vezérlőpultra"
 
 #: views/contact_bank_layout_settings.php:29
 msgid " (Premium Features available in Paid Edition)"
-msgstr "(Prémium elérhető funkciók Fizetett Edition)"
+msgstr "(Prémium Jellemzők elérhető-ban Fizetett kiadás)"
 
 #: views/contact_bank_layout_settings.php:33
 msgid "Restore Global Settings"
@@ -533,7 +533,7 @@ msgstr "Globális beállítások visszaállítása"
 
 #: views/contact_bank_layout_settings.php:39
 msgid "Form Settings Saved. Kindly wait for the redirect."
-msgstr "Forma Beállítások elmentve. Kérjük várjon az átirányítás."
+msgstr "Forma beállítások mentése megtörtént. Kedves várni az átirányítás."
 
 #: views/contact_bank_layout_settings.php:82
 msgid "Label Settings"
@@ -681,15 +681,15 @@ msgstr "Hibás üdvözlő szöveg beállítása"
 
 #: views/contact_bank_pro_version.php:44
 msgid "Contact Bank Pricing"
-msgstr "Kapcsolat Bank árazás"
+msgstr "Contact Bank árazás"
 
 #: views/contact_bank_pro_version.php:375
 msgid "Need Support Help?"
-msgstr "Támogatásra van szüksége Help?"
+msgstr "Szüksége - Támogatás Segítség?"
 
 #: views/contact_bank_pro_version.php:387
 msgid "Lets get in touch!"
-msgstr "Akadályok kap a kapcsolatot!"
+msgstr "Lehetővé vegye fel a kapcsolatot!"
 
 #: views/contact_bank_pro_version.php:391
 msgid "Order Now!"
@@ -719,7 +719,7 @@ msgstr "Kérem először az űrlapot válassza ki"
 
 #: views/contact_frontend_data.php:35
 msgid "Export to Excel"
-msgstr "Exportálás az Excel"
+msgstr "Exportálás Excelben"
 
 #: views/contact_frontend_data.php:41 views/dashboard.php:64
 #: views/dashboard.php:71
@@ -870,7 +870,7 @@ msgstr "Jelszó"
 
 #: views/dashboard.php:34
 msgid "Contact Bank Short-Codes"
-msgstr "Contact Bank rövid kódok"
+msgstr "Contact Bank Rövid kódok"
 
 #: views/dashboard.php:52
 msgid "Delete All Forms"
@@ -906,32 +906,31 @@ msgstr "Biztos, hogy törölni szeretné az összes űrlapot?"
 
 #: views/header.php:21
 msgid "Get Started"
-msgstr "kap kezdett"
+msgstr "Az első lépések"
 
 #: views/header.php:24
 msgid "Watch Contact Video!"
-msgstr "Nézzen Contact Videó!"
+msgstr "Nézzen-Contact Videó!"
 
 #: views/header.php:28
 msgid "read documentation here"
-msgstr "olvasd el a dokumentációt"
+msgstr "olvas dokumentáció itt"
 
 #: views/header.php:33
 msgid "Go Premium"
-msgstr "Megosztás Ugrás Prémium"
+msgstr "Ugrás Prémium"
 
 #: views/header.php:37
-#, fuzzy
 msgid "Feature"
-msgstr "Plusz felszereltségek"
+msgstr "Funkciót"
 
 #: views/header.php:42
 msgid "Online Demos"
-msgstr "Feltöltve demók"
+msgstr "Feltöltve Demók"
 
 #: views/header.php:47
 msgid "Premium Pricing Plan ?"
-msgstr "Prémium árazás Tervezze?"
+msgstr "Prémium díjszabása terv?"
 
 #: views/header.php:54
 msgid "Knowledge Base"
@@ -939,7 +938,7 @@ msgstr "Tudásbázis"
 
 #: views/header.php:59
 msgid "Support Forum"
-msgstr "támogatás fórum"
+msgstr "Támogatási-Fórumot"
 
 #: views/header.php:64
 msgid "FAQ's"
@@ -961,58 +960,8 @@ msgstr "futtatókörnyezeted testreszabás"
 msgid ""
 "How to setup Short-Codes for Contact Bank into your WordPress Page/Post?"
 msgstr ""
-"Hogyan állítsuk rövid kódok Contact Bank a saját WordPress oldal / Post?"
-
-#~ msgid "%s rating"
-#~ msgstr "% s hitelminősítő"
-
-#~ msgid "More Details"
-#~ msgstr "További részletek"
-
-#~ msgid "Install Now"
-#~ msgstr "Telepítés most"
-
-#~ msgid "Update Now"
-#~ msgstr "frissítést most"
-
-#~ msgid "By "
-#~ msgstr "által"
-
-#~ msgid "Visit Website"
-#~ msgstr "Látogasson el a honlap"
-
-#~ msgid "Last Updated:"
-#~ msgstr "utolsó Frissítve:"
-
-#~ msgid "<strong>Untested</strong> with your version of WordPress"
-#~ msgstr "Kipróbálatlan az  Ön verziója WordPress"
-
-#~ msgid "Incompatible with your version of WordPress"
-#~ msgstr "Összeegyeztethetetlen a változata WordPress"
-
-#~ msgid "Compatible with your version of WordPress"
-#~ msgstr "Kompatibilis a WordPress változat"
-
-#~ msgid "WP Contact Bank is an one time Investment. Its Worth it!"
-#~ msgstr "WP Contact Bank egy egyszeri befektetés. Megéri!"
-
-#~ msgid "Purchase PRO Edition"
-#~ msgstr "Vásárlás PRO kiadás"
-
-#~ msgid "Watch the Walk-Through Video"
-#~ msgstr "Nézze meg a Walk-through videó"
-
-#~ msgid "Contact Bank, a Superlative High quality WordPress Plugin!"
-#~ msgstr "Kapcsolat Bank, a felsőfokú Kiváló minőségű WordPress Plugin!"
-
-#~ msgid "Let's get in touch!"
-#~ msgstr "Akadályok kap a kapcsolatot!"
-
-#~ msgid "Purchase PRO Edition - Contact Bank"
-#~ msgstr "Vásárlás PRO kiadás - Contact Bank"
-
-#~ msgid "Dashboard - Contact Bank"
-#~ msgstr "Vezérlőpult :: Contact Bank"
+"Hogyan állítsuk be a Short-kódok  Számára Contact Bank a WordPress oldal /"
+"posta?"
 
 #~ msgid "Roles & Capabilities"
 #~ msgstr "Szerepek & képességek"
@@ -1025,6 +974,42 @@ msgstr ""
 
 #~ msgid "Select Month"
 #~ msgstr "Válasszon hónapot"
+
+#~ msgid "January"
+#~ msgstr "január"
+
+#~ msgid "February"
+#~ msgstr "február"
+
+#~ msgid "March"
+#~ msgstr "március"
+
+#~ msgid "April"
+#~ msgstr "április"
+
+#~ msgid "May"
+#~ msgstr "május"
+
+#~ msgid "June"
+#~ msgstr "június"
+
+#~ msgid "July"
+#~ msgstr "július"
+
+#~ msgid "August"
+#~ msgstr "augusztus"
+
+#~ msgid "September"
+#~ msgstr "szeptember"
+
+#~ msgid "October"
+#~ msgstr "október"
+
+#~ msgid "November"
+#~ msgstr "novemberi"
+
+#~ msgid "December"
+#~ msgstr "decemberi"
 
 #~ msgid "Year"
 #~ msgstr "Év"
@@ -1119,11 +1104,17 @@ msgstr ""
 #~ msgid "Are you sure, you want to Restore Global Settings?"
 #~ msgstr "Biztosan vissza akarod állítani a Globális beállításokat?"
 
+#~ msgid "Check Plugin - Contact Bank"
+#~ msgstr "Bővítmény ellenörzése - Contact Bank"
+
+#~ msgid "Captcha"
+#~ msgstr "Captcha"
+
 #~ msgid "Are you sure, you want to delete this Form Entry ?"
 #~ msgstr "Biztos törölni akarod ezt az űrlap mezőt?"
 
-#~ msgid "Attention! A new vesion of Contact Bank is available for download."
-#~ msgstr "Figyelem! Egy újabb verzió létezik a Contact Bank-ból."
+#~ msgid "Attention! A new version of Contact Bank is available for download."
+#~ msgstr "Figyelem! Az új változat a Contact-Bank elérhető számára letöltés."
 
 #~ msgid "Click"
 #~ msgstr "Kattints"
@@ -1134,11 +1125,17 @@ msgstr ""
 #~ msgid "to upgrade your version of Contact Bank."
 #~ msgstr "a Contact Bank frissítéséhez."
 
+#~ msgid "Dashboard - Contact Bank"
+#~ msgstr "Vezérlőpult :: Contact Bank"
+
 #~ msgid "Are you sure you want to Restore Factory Settings?"
 #~ msgstr "Biztos, hogy alkalmazza a gyári beállításokat?"
 
 #~ msgid "Only One File Uploader can be used on a Form."
 #~ msgstr "Csak egy fájl feltöltő lehet egy űrlapon."
+
+#~ msgid "Only One Captcha can be used on a Form."
+#~ msgstr "Egyetlen egy captcha lehet használni a az Formája."
 
 #~ msgid "Success! Settings have been updated."
 #~ msgstr "Siker! A beállítások frissítve lettek."

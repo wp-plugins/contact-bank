@@ -374,27 +374,53 @@ $rand_value = RAND(10,10000);
 									?>
 									<div class="layout-controls layout_according_label_position hovertip" data-original-title="<?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_tooltip_txt"]; ?>">
 									<?php
-									foreach($rdl_ids as $key => $value )
-									{
-										if($layout_settings_array[$form_id]["input_field_rdl_multiple_row"] == "0")
+								foreach($rdl_ids as $key => $value )
 										{
-											?>
-											<input type="radio" id="ux_rdl_control_<?php echo $value ."_". $rand_value; ?>" name="<?php echo $form_fields[$flag]->column_dynamicId ."_". $rand_value; ?>_rdl" value ="<?php echo $rdl_values[$key]; ?>" />
-											<label style="margin:0px;vertical-align: middle;" id="rdl_id_<?php echo $value; ?>">
-												<?php echo $rdl_values[$key]; ?>
-											</label>
-											<?php
+											if($key == "0")
+											{
+												if($layout_settings_array[$form_id]["input_field_rdl_multiple_row"] == "0")
+												{
+													?>
+													<input type="radio" checked="checked" class="hovertip" id="ux_rdl_control_<?php echo $value ."_". $rand_value; ?>" name="<?php echo $form_fields[$flag]->column_dynamicId ."_". $rand_value; ?>_rdl" value ="<?php echo $rdl_values[$key]; ?>" />
+													<label style="margin:0px;vertical-align: sub;" id="rdl_id_<?php echo $value; ?>">
+														<?php echo $rdl_values[$key]; ?>
+													</label>
+													<br>
+													<?php
+												}
+												else
+												{
+													?>
+													<input type="radio" checked="checked" class="hovertip" id="ux_rdl_control_<?php echo $value ."_". $rand_value; ?>" name="<?php echo $form_fields[$flag]->column_dynamicId ."_". $rand_value; ?>_rdl" value ="<?php echo $rdl_values[$key]; ?>" />
+													<label style="margin:0px;vertical-align: sub;" id="rdl_id_<?php echo $value; ?>">
+														<?php echo $rdl_values[$key]; ?>
+													</label>
+													<?php
+												}
+											}
+											else
+											{
+												if($layout_settings_array[$form_id]["input_field_rdl_multiple_row"] == "0")
+												{
+													?>
+													<input type="radio" class="hovertip" id="ux_rdl_control_<?php echo $value ."_". $rand_value; ?>" name="<?php echo $form_fields[$flag]->column_dynamicId ."_". $rand_value; ?>_rdl" value ="<?php echo $rdl_values[$key]; ?>" />
+													<label style="margin:0px;vertical-align: sub;" id="rdl_id_<?php echo $value; ?>">
+														<?php echo $rdl_values[$key]; ?>
+													</label>
+													<br>
+													<?php
+												}
+												else
+												{
+													?>
+													<input type="radio" class="hovertip" id="ux_rdl_control_<?php echo $value ."_". $rand_value; ?>" name="<?php echo $form_fields[$flag]->column_dynamicId ."_". $rand_value; ?>_rdl" value ="<?php echo $rdl_values[$key]; ?>" />
+													<label style="margin:0px;vertical-align: sub;" id="rdl_id_<?php echo $value; ?>">
+														<?php echo $rdl_values[$key]; ?>
+													</label>
+													<?php
+												}
+											}
 										}
-										else
-										{
-											?>
-											<input  type="radio" id="ux_rdl_control_<?php echo $value ."_". $rand_value; ?>" name="<?php echo $form_fields[$flag]->column_dynamicId ."_". $rand_value; ?>_rdl" data-original-title="<?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_tooltip_txt"]; ?>" value ="<?php echo $rdl_values[$key]; ?>" />
-											<label style="margin:0px;vertical-align: middle;" id="rdl_id_<?php echo $value; ?>">
-												<?php echo $rdl_values[$key]; ?>
-											</label>
-											<?php
-										}
-									}
 									?>
 									</div>
 									<?php

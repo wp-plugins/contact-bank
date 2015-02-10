@@ -3,7 +3,7 @@ Contributors: contact-banker, Gallery-Bank
 Tags: admin, advanced form, AJAX, best contact form plugin, buddypress, category, comment, comments, contact, contact form, contact form builder, contact form plugin, contact forms, contact me, contact us, contacts, content, easy contact form, easy contact plugin, email, Facebook, feed, feedback, feedback form, feedback forms, form, form builder, forms, gallery, google, image, images, javascript, jquery, link, links, login, media, page, pages, plugin, Post, posts, request, shortcode, sidebar, stats, text, web form, widget, wordpress
 Requires at least: 3.3
 Tested up to: 4.1
-Stable tag: 2.0.94
+Stable tag: 2.0.95
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -84,36 +84,53 @@ Visit [here](http://tech-banker.com/products/wp-contact-bank/) to upgrade to Pro
 
 = Contact Bank is now available in the following Languages =
 
-* Albanian (sq_AL)
+* Albanian (sq)
 * Arabic (ar)
 * Brazilian Portuguese (pt_BR)
 * Bulgarian (bg_BG)
+* Croatian (hr)
 * Chinese (zh_CN)
+* Chinese - Hong Kong (zh_HK)
+* Chinese - Singapore (zh_sg)
+* Chinese - Taiwan (zh_TW)
+* Chinese - (zh)
 * Czech (cs_CZ)
 * Danish (da_DK)
 * Dutch (nl_NL)
+* Dutch - Belgium (nl_BE)
 * English (en_GB)
-* Estonian(et)
-* Finnish (fi_FI)
+* English (en_US)
+* Estonian (et)
+* Finnish (fi)
 * French (fr_FR)
+* French - Belgium (fr_BE)
+* French - Canada (fr_CA)
+* French - Switzerland (fr_ch)
 * German (de_DE)
+* Greek (el)
 * Hebrew (he_IL)
 * Hungarian (hu_HU)
-* Korean (ko_KR)
-* Malay Malaysia (ms_MY)
 * Indonesian (id_ID)
 * Italian (it_IT)
 * Japanese (ja)
+* Korean (ko_KR)
+* Malay Malaysia (ms_MY)
 * Polish (pl_PL)
 * Portuguese (pt_PT)
 * Romanian (ro_RO)
 * Russian (ru_RU)
+* Russian - Ukraine (ru_UA)
 * Serbian (sr_RS)
-* Slovenian (sl_SI)
+* Slovenian (sl_SL)
 * Slovak (sk_SK)
-* Spanish (es_ES)
+* Spanish - Chile (es_CL)
+* Spanish - Peru (es_PE)
+* Spanish - Puerto Rico (es_PR)
+* Spanish - Venezuela (es_VE)
+* Spanish - Columbia (es_CO)
+* Spanish - Spain (es_ES)
 * Swedish (sv_SE)
-* Turkish (tr)
+* Turkish (tr_TR)
 * Thai (th)
 
 = Technical support =
@@ -531,6 +548,13 @@ In order to set Shortcode for a Form, you need to follow these steps :
 
 
 == Changelog ==
+
+= 2.0.95 =
+
+* Layout Bugs Fixed.
+* Languages Updated.
+* New Languages Added
+* Coding Bug Fixed related to Radio Buttons
 
 = 2.0.94 =
 

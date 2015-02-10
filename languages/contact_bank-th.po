@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Contact bank\n"
-"POT-Creation-Date: 2015-02-04 18:17+0530\n"
-"PO-Revision-Date: 2015-02-04 18:17+0530\n"
+"Project-Id-Version: Contact Bank\n"
+"POT-Creation-Date: 2015-02-09 17:37+0530\n"
+"PO-Revision-Date: 2015-02-10 18:04+0530\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: th\n"
@@ -15,132 +15,132 @@ msgstr ""
 "\\contact-bank\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: contact-bank.php:86 contact-bank.php:102 contact-bank.php:118
+#: contact-bank.php:84 contact-bank.php:100 contact-bank.php:116
 msgid "Contact Bank"
 msgstr "Contact Bank"
 
-#: contact-bank.php:87 contact-bank.php:103 contact-bank.php:119
-#: contact-bank.php:640 contact-bank.php:710 contact-bank.php:782
+#: contact-bank.php:85 contact-bank.php:101 contact-bank.php:117
+#: contact-bank.php:638 contact-bank.php:708 contact-bank.php:780
 #: views/header.php:114 views/header.php:128 views/header.php:142
 msgid "Dashboard"
 msgstr "กระดานกันน้ำกระเด้น"
 
-#: contact-bank.php:89 contact-bank.php:105 contact-bank.php:121
-#: contact-bank.php:646 contact-bank.php:716 contact-bank.php:788
+#: contact-bank.php:87 contact-bank.php:103 contact-bank.php:119
+#: contact-bank.php:644 contact-bank.php:714 contact-bank.php:786
 #: views/automatic-plugin-update.php:28 views/automatic-plugin-update.php:32
 msgid "Plugin Updates"
-msgstr ""
+msgstr "อัพเดทปลั๊กอิน"
 
-#: contact-bank.php:90 contact-bank.php:106 contact-bank.php:122
-#: contact-bank.php:652 contact-bank.php:722 contact-bank.php:794
+#: contact-bank.php:88 contact-bank.php:104 contact-bank.php:120
+#: contact-bank.php:650 contact-bank.php:720 contact-bank.php:792
 #: views/header.php:115 views/header.php:129 views/header.php:143
 msgid "Short-Codes"
-msgstr "รหัสสั้น"
+msgstr "รหัสโทรศัพท์สั้น"
 
-#: contact-bank.php:91 contact-bank.php:107 contact-bank.php:123
-#: contact-bank.php:658 contact-bank.php:728 contact-bank.php:800
+#: contact-bank.php:89 contact-bank.php:105 contact-bank.php:121
+#: contact-bank.php:656 contact-bank.php:726 contact-bank.php:798
 #: views/contact_frontend_data.php:31 views/dashboard.php:124
 #: views/header.php:116 views/header.php:130 views/header.php:144
 msgid "Form Entries"
 msgstr "แบบฟอร์ม คอมเมนต์"
 
-#: contact-bank.php:92 contact-bank.php:108 contact-bank.php:124
-#: contact-bank.php:664 contact-bank.php:734 contact-bank.php:806
+#: contact-bank.php:90 contact-bank.php:106 contact-bank.php:122
+#: contact-bank.php:662 contact-bank.php:732 contact-bank.php:804
 #: views/contact_email_settings.php:30 views/dashboard.php:119
 #: views/header.php:117 views/header.php:131 views/header.php:145
 msgid "Email Settings"
 msgstr "อีเมล์ การตั้งค่า"
 
-#: contact-bank.php:93 contact-bank.php:109 contact-bank.php:125
-#: contact-bank.php:670 contact-bank.php:740 contact-bank.php:812
+#: contact-bank.php:91 contact-bank.php:107 contact-bank.php:123
+#: contact-bank.php:668 contact-bank.php:738 contact-bank.php:810
 #: views/contact_bank_layout_settings.php:29 views/dashboard.php:114
 #: views/header.php:118 views/header.php:132 views/header.php:146
 msgid "Global Settings"
 msgstr "การตั้งค่าสากล"
 
-#: contact-bank.php:94 contact-bank.php:110 contact-bank.php:126
-#: contact-bank.php:676 contact-bank.php:748
+#: contact-bank.php:92 contact-bank.php:108 contact-bank.php:124
+#: contact-bank.php:674 contact-bank.php:746
 #: views/contact-bank-system-report.php:31
 msgid "System Status"
 msgstr "สถานะระบบ"
 
-#: contact-bank.php:95 contact-bank.php:111 contact-bank.php:127
-#: contact-bank.php:682 contact-bank.php:754 contact-bank.php:818
+#: contact-bank.php:93 contact-bank.php:109 contact-bank.php:125
+#: contact-bank.php:680 contact-bank.php:752 contact-bank.php:816
 #: views/header.php:84 views/header.php:119 views/header.php:133
 #: views/header.php:147
 msgid "Recommendations"
 msgstr "เสนอแนะ"
 
-#: contact-bank.php:96 contact-bank.php:112 contact-bank.php:128
-#: contact-bank.php:689 contact-bank.php:761 contact-bank.php:825
+#: contact-bank.php:94 contact-bank.php:110 contact-bank.php:126
+#: contact-bank.php:687 contact-bank.php:759 contact-bank.php:823
 #: views/header.php:120 views/header.php:134 views/header.php:148
 msgid "Premium Editions"
-msgstr "รุ่นพรีเมี่ยม"
+msgstr "เวอร์ชันพรีเมี่ยม"
 
-#: contact-bank.php:97 contact-bank.php:113 contact-bank.php:129
-#: contact-bank.php:696 contact-bank.php:768 contact-bank.php:832
+#: contact-bank.php:95 contact-bank.php:111 contact-bank.php:127
+#: contact-bank.php:694 contact-bank.php:766 contact-bank.php:830
 #: views/header.php:89 views/header.php:121 views/header.php:135
 #: views/header.php:149
 msgid "Our Other Services"
 msgstr "บริการอื่น ๆ ของเรา"
 
-#: contact-bank.php:840
+#: contact-bank.php:838
 msgid "Add Contact Bank Form"
 msgstr "เพิ่มแบบฟอร์มContactBank"
 
-#: contact-bank.php:852
+#: contact-bank.php:850
 msgid "Insert Contact Bank Form"
 msgstr "แทรกแบบฟอร์มContactBank"
 
-#: contact-bank.php:854
+#: contact-bank.php:852
 msgid "Select a form below to add it to your post or page."
 msgstr "เลือกแบบฟอร์มด้านล่างเพื่อเพิ่มลงในการโพสต์หรือหน้าเว็บของคุณ"
 
-#: contact-bank.php:859
+#: contact-bank.php:857
 msgid "Form Name"
 msgstr "แบบฟอร์ม ชื่อที่"
 
-#: contact-bank.php:861
+#: contact-bank.php:859
 msgid "Select a Form"
 msgstr "เลือก-แบบฟอร์ม"
 
-#: contact-bank.php:878
+#: contact-bank.php:876
 msgid "Show Form Title"
 msgstr "แสดงให้ในแบบฟอร์มชื่อเรื่อง"
 
-#: contact-bank.php:883
+#: contact-bank.php:881
 msgid "Insert Form"
 msgstr "แทรกในแบบฟอร์ม"
 
-#: contact-bank.php:886
+#: contact-bank.php:884
 msgid "Cancel"
 msgstr "ยกเลิก"
 
-#: contact-bank.php:898
+#: contact-bank.php:896
 msgid "Please choose a Form to insert into Shortcode"
 msgstr "กรุณาเลือกในแบบฟอร์มเพื่อแทรกลงในรหัสย่อ"
 
-#: contact-bank.php:934
+#: contact-bank.php:932
 msgid "View Contact Bank Documentation"
-msgstr "ดูเอกสาร"
+msgstr "ติดต่อผู้Bankเอกสารประกอบ"
 
-#: contact-bank.php:934
+#: contact-bank.php:932
 msgid "Docs"
-msgstr "Docs"
+msgstr "เอกสาร"
 
-#: contact-bank.php:935
+#: contact-bank.php:933
 msgid "View Contact Bank Premium Editions"
-msgstr "เอกสาร Contact Bank"
+msgstr "ดูContact Bankรุ่นพรีเมี่ยม"
 
-#: contact-bank.php:935
+#: contact-bank.php:933
 msgid "Go for Premium!"
 msgstr "ไปสำหรับพรีเมี่ยม!"
 
-#: contact-bank.php:1009
+#: contact-bank.php:1007
 msgid "Select Form :"
 msgstr "เลือก-ฟอร์ม:"
 
-#: contact-bank.php:1011 views/contact_bank_layout_settings.php:45
+#: contact-bank.php:1009 views/contact_bank_layout_settings.php:45
 #: views/contact_bank_layout_settings.php:55
 #: views/contact_email_settings.php:37 views/contact_email_settings.php:53
 #: views/contact_frontend_data.php:46 views/contact_frontend_data.php:56
@@ -216,7 +216,7 @@ msgstr "คำแนะนำเครื่องมือ ข้อควา�
 #: views/includes_common_after.php:367 views/includes_common_after.php:370
 #: views/includes_common_after.php:373
 msgid "This Feature is only available in Paid Premium Edition!"
-msgstr "คุณลักษณะนี้จะใช้ได้เฉพาะในการชำระเงินค่า Edition!"
+msgstr "คุณลักษณะที่นี้จะใช้ได้เฉพาะในรุ่นพรีเมี่ยมที่เรียกชำระแล้ว!"
 
 #: includes/cb_checkbox.php:101 includes/cb_dropdown.php:101
 #: includes/cb_multiple.php:113
@@ -488,15 +488,15 @@ msgstr "ข่าวสาร"
 
 #: views/add_contact_email.php:225
 msgid "Insert a Field into Your Form Message"
-msgstr "แทรกลงไปในสนามข้อความแบบฟอร์มของคุณ"
+msgstr "แทรกฟิลด์ลงไปในของคุณรูปข่าวสาร"
 
 #: views/automatic-plugin-update.php:35
 msgid "Enable"
-msgstr ""
+msgstr "เปิดใช้งาน"
 
 #: views/automatic-plugin-update.php:36
 msgid "Disable"
-msgstr ""
+msgstr "ปิดการใช้"
 
 #: views/contact-bank-system-report.php:34
 msgid "Get System Report"
@@ -523,7 +523,7 @@ msgstr "กลับไปที่แดชบอร์ด"
 
 #: views/contact_bank_layout_settings.php:29
 msgid " (Premium Features available in Paid Edition)"
-msgstr "(คุณสมบัติพรีเมี่ยมที่มีอยู่ในรุ่นที่จ่าย)"
+msgstr "(สิ่งอำนวยความสะดวกพรีเมี่ยมที่มีอยู่ในข้อมูล Editionแล้ว)"
 
 #: views/contact_bank_layout_settings.php:33
 msgid "Restore Global Settings"
@@ -679,11 +679,11 @@ msgstr "ข้อความข้อผิดพลาด-การตั้�
 
 #: views/contact_bank_pro_version.php:44
 msgid "Contact Bank Pricing"
-msgstr "Contact Bank การกำหนดราคา"
+msgstr "Contact Bankกำหนดราคา"
 
 #: views/contact_bank_pro_version.php:375
 msgid "Need Support Help?"
-msgstr "ต้องการความสนับสนุนการ-ช่วยให้?"
+msgstr "ต้องการการสนับสนุนช่วยเหลือ?"
 
 #: views/contact_bank_pro_version.php:387
 msgid "Lets get in touch!"
@@ -691,7 +691,7 @@ msgstr "ช่วยให้ได้รับการติดต่อ!"
 
 #: views/contact_bank_pro_version.php:391
 msgid "Order Now!"
-msgstr "สั่งซื้อสินค้าเดี๋ยวนี้!"
+msgstr "ตอนนี้สั่งซื้อ!"
 
 #: views/contact_controls_files.php:41 views/contact_controls_files.php:57
 #: views/contact_controls_files.php:74 views/contact_controls_files.php:92
@@ -717,7 +717,7 @@ msgstr "กรุณาเลือกแบบฟอร์มแรก"
 
 #: views/contact_frontend_data.php:35
 msgid "Export to Excel"
-msgstr "ส่งออกไปยังสันทัด"
+msgstr "การส่งออกไปยัง Excel"
 
 #: views/contact_frontend_data.php:41 views/dashboard.php:64
 #: views/dashboard.php:71
@@ -750,11 +750,11 @@ msgstr "ใส่ชื่อของแบบฟอร์ม"
 
 #: views/contact_view.php:293
 msgid "Form Description :"
-msgstr "รูปพรรณ \tฟอร์ม"
+msgstr "ฟอร์ม-รายละเอียด:"
 
 #: views/contact_view.php:295
 msgid "Enter Form Description"
-msgstr "ใส่ฟอร์มรายละเอียด"
+msgstr "ป้อน ฟอร์ม-รายละเอียด:"
 
 #: views/contact_view.php:299
 msgid "Blank Field Message:"
@@ -868,7 +868,7 @@ msgstr "รหัสผ่าน"
 
 #: views/dashboard.php:34
 msgid "Contact Bank Short-Codes"
-msgstr "ติดต่อธนาคารแห่งระยะสั้นรหัส"
+msgstr "Contact Bankสั้นรหัส"
 
 #: views/dashboard.php:52
 msgid "Delete All Forms"
@@ -908,11 +908,11 @@ msgstr "เริ่มต้นทำงาน"
 
 #: views/header.php:24
 msgid "Watch Contact Video!"
-msgstr "ดูวิดีโอ!"
+msgstr "นาฬิกาวีดีโอContact !"
 
 #: views/header.php:28
 msgid "read documentation here"
-msgstr "อ่านเอกสารที่"
+msgstr "อ่านเอกสารที่นี่"
 
 #: views/header.php:33
 msgid "Go Premium"
@@ -920,7 +920,7 @@ msgstr "ไปพรีเมี่ยม"
 
 #: views/header.php:37
 msgid "Feature"
-msgstr "ภูมิประเทศ"
+msgstr "คุณลักษณะที่"
 
 #: views/header.php:42
 msgid "Online Demos"
@@ -928,7 +928,7 @@ msgstr "สาธิตการใช้งานออนไลน์"
 
 #: views/header.php:47
 msgid "Premium Pricing Plan ?"
-msgstr "พรีเมี่ยมแผนราคา?"
+msgstr "แผนการกำหนดราคาพรีเมี่?"
 
 #: views/header.php:54
 msgid "Knowledge Base"
@@ -936,7 +936,7 @@ msgstr "ฐานความรู้"
 
 #: views/header.php:59
 msgid "Support Forum"
-msgstr "ฟอรั่มการสนับสนุน"
+msgstr "ฟอรั่มสนับสนุน"
 
 #: views/header.php:64
 msgid "FAQ's"
@@ -944,11 +944,11 @@ msgstr "คำถามที่พบบ่อย"
 
 #: views/header.php:69
 msgid "Detailed Features"
-msgstr "คุณสมบัติโดยละเอียด"
+msgstr "สิ่งอำนวยความสะดวกที่รายละเอียด"
 
 #: views/header.php:75
 msgid "More Actions"
-msgstr "ดำเนินการอื่น ๆ"
+msgstr "การดำเนินการอื่น ๆ"
 
 #: views/header.php:79
 msgid "Plugin Customization"
@@ -957,70 +957,55 @@ msgstr "การปรับแต่งปลั๊กอิน"
 #: views/shortcode.php:29
 msgid ""
 "How to setup Short-Codes for Contact Bank into your WordPress Page/Post?"
-msgstr "วิธีการติดตั้งรหัสสั้นเพื่อ Contact Bank เป็น WordPress หน้า / โพสต์ของคุณหรือไม่"
+msgstr "การตั้งค่าวิธีรหัสโทรศัพท์สั้นสำหรับContact Bankเป็นเวิร์ดเพรสของคุณ หน้า / โพสต์?"
 
-#~ msgid "More Details"
-#~ msgstr "รายละเอียดเพิ่มเติม"
-
-#~ msgid "Install Now"
-#~ msgstr "ติดตั้งเดี๋ยวนี้"
-
-#~ msgid "Update Now"
-#~ msgstr "อัปเดตตอนนี้"
-
-#~ msgid "By "
-#~ msgstr "โดย"
-
-#~ msgid "Visit Website"
-#~ msgstr "ศึกษาเยี่ยมชมเว็บไซต์"
-
-#~ msgid "Last Updated:"
-#~ msgstr "ปรับปรุงล่าสุด:"
-
-#~ msgid "<strong>Untested</strong> with your version of WordPress"
-#~ msgstr "<strong> ยังไม่ทดลอง </ strong> กับรุ่นของ WordPress"
-
-#~ msgid "Incompatible with your version of WordPress"
-#~ msgstr "เข้ากันไม่ได้กับรุ่นของ WordPress"
-
-#~ msgid "Compatible with your version of WordPress"
-#~ msgstr "เข้ากันได้กับรุ่นของ WordPress"
-
-#~ msgid "WP Contact Bank is an one time Investment. Its Worth it!"
-#~ msgstr "WP ติดต่อธนาคารแห่งคือการลงทุนหนึ่งเวลามันคุ้มค่า"
-
-#~ msgid "Purchase PRO Edition"
-#~ msgstr "การซื้อรุ่น PRO"
-
-#~ msgid "Watch the Walk-Through Video"
-#~ msgstr "รับชม-เดินผ่านวีดีโอ"
-
-#~ msgid "Contact Bank, a Superlative High quality WordPress Plugin!"
-#~ msgstr "Contact Bank-สุพรีมที่มีคุณภาพสูงWordPressปลั๊กอิน!"
-
-#~ msgid "Let's get in touch!"
-#~ msgstr "ให้ของได้รับในการติดต่อ!"
-
-#~ msgid "Purchase PRO Edition - Contact Bank"
-#~ msgstr "การซื้อรุ่น PRO - Contact Bank"
-
-#~ msgid "Dashboard - Contact Bank"
-#~ msgstr "กระดานกันน้ำกระเด้น- Contact Bank"
-
-#~ msgid "Roles & Capabilites"
+#~ msgid "Roles & Capabilities"
 #~ msgstr "บทบาทและความสามารถ"
 
 #~ msgid "Licensing"
 #~ msgstr "การออกใบอนุญาต"
-
-#~ msgid "Roles & Capabilities"
-#~ msgstr "บทบาทและความสามารถ"
 
 #~ msgid "Day"
 #~ msgstr "วัน"
 
 #~ msgid "Select Month"
 #~ msgstr "เลือกเดือน"
+
+#~ msgid "January"
+#~ msgstr "มกราคม"
+
+#~ msgid "February"
+#~ msgstr "กุมภาพันธ์"
+
+#~ msgid "March"
+#~ msgstr "มีนาคม"
+
+#~ msgid "April"
+#~ msgstr "เมษายน"
+
+#~ msgid "May"
+#~ msgstr "วันMay"
+
+#~ msgid "June"
+#~ msgstr "มิถุนายน"
+
+#~ msgid "July"
+#~ msgstr "กรกฎาคม"
+
+#~ msgid "August"
+#~ msgstr "สิงหาคม"
+
+#~ msgid "September"
+#~ msgstr "กันยายน"
+
+#~ msgid "October"
+#~ msgstr "ตุลาคม"
+
+#~ msgid "November"
+#~ msgstr "พฤศจิกายน"
+
+#~ msgid "December"
+#~ msgstr "ธันวาคม"
 
 #~ msgid "Year"
 #~ msgstr "ปี"
@@ -1067,7 +1052,7 @@ msgstr "วิธีการติดตั้งรหัสสั้นเพ
 #~ msgid "Enter File Extensions"
 #~ msgstr "ป้อนนามสกุลไฟล์"
 
-#~ msgid "The file extensions must be separated with semicolons(',')"
+#~ msgid "The file extensions must be separated with comma(',')"
 #~ msgstr "นามสกุลไฟล์ที่ต้องแยกจากกันด้วยเครื่องหมายจุลภาค (',')"
 
 #~ msgid "Allowed File Size"
@@ -1109,11 +1094,35 @@ msgstr "วิธีการติดตั้งรหัสสั้นเพ
 #~ msgid "Privileges for Subscriber"
 #~ msgstr "สิทธิพิเศษ-ในการ-Subscribe"
 
+#~ msgid "Global Settings Saved. Kindly wait for the redirect."
+#~ msgstr "การตั้งค่าสากลที่บันทึกไว้ กรุณารอการเปลี่ยนเส้นทาง"
+
 #~ msgid "Are you sure, you want to Restore Global Settings?"
 #~ msgstr "คุณแน่ใจว่าคุณต้องการที่จะคืนค่าการตั้งค่าสากล?"
 
-#~ msgid "Are you sure, you want to delete this From Entry?"
-#~ msgstr "คุณแน่ใจหรือว่าคุณต้องการลบรายการนี้จาก-Entry?"
+#~ msgid "Check Plugin - Contact Bank"
+#~ msgstr "ตรวจสอบโปรแกรมเสริม- Contact Bank"
+
+#~ msgid "Captcha"
+#~ msgstr "captcha"
+
+#~ msgid "Are you sure, you want to delete this Form Entry ?"
+#~ msgstr "คุณแน่ใจหรือว่าคุณต้องการลบรายการแบบนี้ฟอร์มข้อมูลทาง-ข้อมูลทาง"
+
+#~ msgid "Attention! A new version of Contact Bank is available for download."
+#~ msgstr "ความสนใจ!รุ่นใหม่ของติดต่อธนาคารนี้สามารถดาวน์โหลดได้"
+
+#~ msgid "Click"
+#~ msgstr "คลิก"
+
+#~ msgid "here"
+#~ msgstr "ที่นี่"
+
+#~ msgid "to upgrade your version of Contact Bank."
+#~ msgstr "ที่จะปรับเวอร์ชันของคุณ Contact Bank."
+
+#~ msgid "Dashboard - Contact Bank"
+#~ msgstr "กระดานกันน้ำกระเด้น- Contact Bank"
 
 #~ msgid "Are you sure you want to Restore Factory Settings?"
 #~ msgstr "คุณแน่ใจว่าคุณต้องการที่จะคืนค่าตั้งค่าจากโรงงาน?"
@@ -1121,5 +1130,11 @@ msgstr "วิธีการติดตั้งรหัสสั้นเพ
 #~ msgid "Only One File Uploader can be used on a Form."
 #~ msgstr "เท่านั้นหนึ่งในใน Uploaderแฟ้มสามารถใช้ในแบบฟอร์ม"
 
+#~ msgid "Only One Captcha can be used on a Form."
+#~ msgstr "เพียงหนึ่ง captchaสามารถนำมาใช้ในแบบฟอร์ม"
+
 #~ msgid "Success! Settings have been updated."
 #~ msgstr "สำเร็จ! การตั้งค่าได้รับการปรับปรุง"
+
+#~ msgid "Roles & Capabilites"
+#~ msgstr "บทบาทและความสามารถ"

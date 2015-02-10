@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Contact Bank\n"
-"POT-Creation-Date: 2015-02-04 18:14+0530\n"
+"POT-Creation-Date: 2015-02-09 17:28+0530\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -10,139 +10,139 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.6.6\n"
-"X-Poedit-KeywordsList: __;_e;gettext\n"
+"X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: C:\\xampp\\htdocs\\wordpress4.0.1\\wp-content\\plugins"
 "\\contact-bank\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: contact-bank.php:86 contact-bank.php:102 contact-bank.php:118
+#: contact-bank.php:84 contact-bank.php:100 contact-bank.php:116
 msgid "Contact Bank"
 msgstr "Τράπεζα Επικοινωνίας"
 
-#: contact-bank.php:87 contact-bank.php:103 contact-bank.php:119
-#: contact-bank.php:640 contact-bank.php:710 contact-bank.php:782
+#: contact-bank.php:85 contact-bank.php:101 contact-bank.php:117
+#: contact-bank.php:638 contact-bank.php:708 contact-bank.php:780
 #: views/header.php:114 views/header.php:128 views/header.php:142
 msgid "Dashboard"
 msgstr "Πίνακας ελέγχου"
 
-#: contact-bank.php:89 contact-bank.php:105 contact-bank.php:121
-#: contact-bank.php:646 contact-bank.php:716 contact-bank.php:788
+#: contact-bank.php:87 contact-bank.php:103 contact-bank.php:119
+#: contact-bank.php:644 contact-bank.php:714 contact-bank.php:786
 #: views/automatic-plugin-update.php:28 views/automatic-plugin-update.php:32
 msgid "Plugin Updates"
-msgstr ""
+msgstr "plugin Ενημερώσεις"
 
-#: contact-bank.php:90 contact-bank.php:106 contact-bank.php:122
-#: contact-bank.php:652 contact-bank.php:722 contact-bank.php:794
+#: contact-bank.php:88 contact-bank.php:104 contact-bank.php:120
+#: contact-bank.php:650 contact-bank.php:720 contact-bank.php:792
 #: views/header.php:115 views/header.php:129 views/header.php:143
 msgid "Short-Codes"
-msgstr "Σύντομοι κωδικοί"
+msgstr "Σύντομη Κώδικες"
 
-#: contact-bank.php:91 contact-bank.php:107 contact-bank.php:123
-#: contact-bank.php:658 contact-bank.php:728 contact-bank.php:800
+#: contact-bank.php:89 contact-bank.php:105 contact-bank.php:121
+#: contact-bank.php:656 contact-bank.php:726 contact-bank.php:798
 #: views/contact_frontend_data.php:31 views/dashboard.php:124
 #: views/header.php:116 views/header.php:130 views/header.php:144
 msgid "Form Entries"
 msgstr "Πεδία καταχώρησης"
 
-#: contact-bank.php:92 contact-bank.php:108 contact-bank.php:124
-#: contact-bank.php:664 contact-bank.php:734 contact-bank.php:806
+#: contact-bank.php:90 contact-bank.php:106 contact-bank.php:122
+#: contact-bank.php:662 contact-bank.php:732 contact-bank.php:804
 #: views/contact_email_settings.php:30 views/dashboard.php:119
 #: views/header.php:117 views/header.php:131 views/header.php:145
 msgid "Email Settings"
 msgstr "Ρυθμίσεις email"
 
-#: contact-bank.php:93 contact-bank.php:109 contact-bank.php:125
-#: contact-bank.php:670 contact-bank.php:740 contact-bank.php:812
+#: contact-bank.php:91 contact-bank.php:107 contact-bank.php:123
+#: contact-bank.php:668 contact-bank.php:738 contact-bank.php:810
 #: views/contact_bank_layout_settings.php:29 views/dashboard.php:114
 #: views/header.php:118 views/header.php:132 views/header.php:146
 msgid "Global Settings"
 msgstr "Καθολικές ρυθμίσεις"
 
-#: contact-bank.php:94 contact-bank.php:110 contact-bank.php:126
-#: contact-bank.php:676 contact-bank.php:748
+#: contact-bank.php:92 contact-bank.php:108 contact-bank.php:124
+#: contact-bank.php:674 contact-bank.php:746
 #: views/contact-bank-system-report.php:31
 msgid "System Status"
 msgstr "Κατάσταση συστήματος"
 
-#: contact-bank.php:95 contact-bank.php:111 contact-bank.php:127
-#: contact-bank.php:682 contact-bank.php:754 contact-bank.php:818
+#: contact-bank.php:93 contact-bank.php:109 contact-bank.php:125
+#: contact-bank.php:680 contact-bank.php:752 contact-bank.php:816
 #: views/header.php:84 views/header.php:119 views/header.php:133
 #: views/header.php:147
 msgid "Recommendations"
-msgstr "Συστάσεις"
+msgstr "Οι συστάσεις"
 
-#: contact-bank.php:96 contact-bank.php:112 contact-bank.php:128
-#: contact-bank.php:689 contact-bank.php:761 contact-bank.php:825
+#: contact-bank.php:94 contact-bank.php:110 contact-bank.php:126
+#: contact-bank.php:687 contact-bank.php:759 contact-bank.php:823
 #: views/header.php:120 views/header.php:134 views/header.php:148
 msgid "Premium Editions"
-msgstr "πριμοδότηση Εκδόσεις"
+msgstr "ασφάλιστρο Εκδόσεις"
 
-#: contact-bank.php:97 contact-bank.php:113 contact-bank.php:129
-#: contact-bank.php:696 contact-bank.php:768 contact-bank.php:832
+#: contact-bank.php:95 contact-bank.php:111 contact-bank.php:127
+#: contact-bank.php:694 contact-bank.php:766 contact-bank.php:830
 #: views/header.php:89 views/header.php:121 views/header.php:135
 #: views/header.php:149
 msgid "Our Other Services"
 msgstr "Μας άλλα Υπηρεσίες"
 
-#: contact-bank.php:840
+#: contact-bank.php:838
 msgid "Add Contact Bank Form"
 msgstr "Προσθήκη φόρμας Τράπεζας Επικοινωνίας"
 
-#: contact-bank.php:852
+#: contact-bank.php:850
 msgid "Insert Contact Bank Form"
 msgstr "Εισαγωγή φόρμας Τράπεζας Επικοινωνίας"
 
-#: contact-bank.php:854
+#: contact-bank.php:852
 msgid "Select a form below to add it to your post or page."
 msgstr ""
 "Επιλέξτε μια από τις παρακάτω φόρμες για να την προσθέσετε στην σελίδα σας ή "
 "στο άρθρο σας."
 
-#: contact-bank.php:859
+#: contact-bank.php:857
 msgid "Form Name"
 msgstr "Ονομασία φόρμας"
 
-#: contact-bank.php:861
+#: contact-bank.php:859
 msgid "Select a Form"
 msgstr "Επιλέξτε μια φόρμα"
 
-#: contact-bank.php:878
+#: contact-bank.php:876
 msgid "Show Form Title"
 msgstr "Εμφάνιση τίτλου φόρμας"
 
-#: contact-bank.php:883
+#: contact-bank.php:881
 msgid "Insert Form"
 msgstr "Εισαγωγή φόρμας"
 
-#: contact-bank.php:886
+#: contact-bank.php:884
 msgid "Cancel"
 msgstr "Ακύρωση"
 
-#: contact-bank.php:898
+#: contact-bank.php:896
 msgid "Please choose a Form to insert into Shortcode"
 msgstr "Παρακαλώ επιλέξτεμία φόρμα για να την εισάγεται στον σύντομο κώδικα"
 
-#: contact-bank.php:934
+#: contact-bank.php:932
 msgid "View Contact Bank Documentation"
-msgstr "Προβολή Επικοινωνία Τράπεζα Τεκμηρίωση"
+msgstr "Προβολή Contact Bank Τεκμηρίωση"
 
-#: contact-bank.php:934
+#: contact-bank.php:932
 msgid "Docs"
 msgstr "τα Έγγραφα"
 
-#: contact-bank.php:935
+#: contact-bank.php:933
 msgid "View Contact Bank Premium Editions"
-msgstr "Προβάλετε Επικοινωνία με την Τράπεζα πριμοδότηση Εκδόσεις"
+msgstr "Δείτε Contact Bank ασφάλιστρο Εκδόσεις"
 
-#: contact-bank.php:935
+#: contact-bank.php:933
 msgid "Go for Premium!"
-msgstr "Πηγαίνετε για Premium!"
+msgstr "Πηγαίνετε για ασφάλιστρο!"
 
-#: contact-bank.php:1009
+#: contact-bank.php:1007
 msgid "Select Form :"
 msgstr "Επιλογή φόρμας:"
 
-#: contact-bank.php:1011 views/contact_bank_layout_settings.php:45
+#: contact-bank.php:1009 views/contact_bank_layout_settings.php:45
 #: views/contact_bank_layout_settings.php:55
 #: views/contact_email_settings.php:37 views/contact_email_settings.php:53
 #: views/contact_frontend_data.php:46 views/contact_frontend_data.php:56
@@ -219,7 +219,7 @@ msgstr "Κείμενο συμβουλής"
 #: views/includes_common_after.php:373
 msgid "This Feature is only available in Paid Premium Edition!"
 msgstr ""
-"Αυτό το χαρακτηριστικό είναι διαθέσιμο μόνο σε Αμειβόμενος Premium έκδοση!"
+"Αυτή η δυνατότητα είναι διαθέσιμη μόνο σε Αμειβόμενος ασφάλιστρο έκδοση!"
 
 #: includes/cb_checkbox.php:101 includes/cb_dropdown.php:101
 #: includes/cb_multiple.php:113
@@ -344,7 +344,7 @@ msgstr "Απαλοιφή κενών"
 #: views/contact_bank_layout_settings.php:674
 #: views/contact_bank_layout_settings.php:802 views/contact_view.php:479
 msgid " (Available in Premium Edition)"
-msgstr "(Διαθέσιμο στο πριμοδότηση έκδοση)"
+msgstr "(Διατίθεται σε ασφάλιστρο έκδοση)"
 
 #: includes/cb_textarea.php:36 views/contact_view.php:453
 msgid "Paragraph Text"
@@ -495,11 +495,11 @@ msgstr "Προσθέστε ένα πεδίο στο μήνυμα της φόρμ
 
 #: views/automatic-plugin-update.php:35
 msgid "Enable"
-msgstr ""
+msgstr "Ενεργοποίηση"
 
 #: views/automatic-plugin-update.php:36
 msgid "Disable"
-msgstr ""
+msgstr "Απενεργοποιήστε την"
 
 #: views/contact-bank-system-report.php:34
 msgid "Get System Report"
@@ -526,7 +526,7 @@ msgstr "Πίσω στον πίνακα ελέγχου"
 
 #: views/contact_bank_layout_settings.php:29
 msgid " (Premium Features available in Paid Edition)"
-msgstr "(πριμοδότηση χαρακτηριστικά που είναι διαθέσιμα σε Αμειβόμενος έκδοση)"
+msgstr "(ασφάλιστρο δυνατότητες που διατίθενται σε Αμειβόμενος έκδοση)"
 
 #: views/contact_bank_layout_settings.php:33
 msgid "Restore Global Settings"
@@ -535,7 +535,7 @@ msgstr "Επαναφορά καθολικών ρυθμίσεων"
 #: views/contact_bank_layout_settings.php:39
 msgid "Form Settings Saved. Kindly wait for the redirect."
 msgstr ""
-"Ρυθμίσεις Φόρμα Αποθηκεύτηκε. Παρακαλούμε να περιμένετε για την "
+"Φόρμα Ρυθμίσεις Αποθηκεύτηκε. Παρακαλούμε να περιμένετε για την "
 "ανακατεύθυνση."
 
 #: views/contact_bank_layout_settings.php:82
@@ -684,7 +684,7 @@ msgstr "Μήνυμα αποτυχίας στις ρυθμίσεις"
 
 #: views/contact_bank_pro_version.php:44
 msgid "Contact Bank Pricing"
-msgstr "Επικοινωνία Τράπεζα τιμολόγηση"
+msgstr "Contact Bank Τιμολόγηση"
 
 #: views/contact_bank_pro_version.php:375
 msgid "Need Support Help?"
@@ -873,7 +873,7 @@ msgstr "Κωδικός"
 
 #: views/dashboard.php:34
 msgid "Contact Bank Short-Codes"
-msgstr "Επικοινωνία Τράπεζα Short-Κώδικες"
+msgstr "Contact Bank Σύντομη-Κώδικες"
 
 #: views/dashboard.php:52
 msgid "Delete All Forms"
@@ -909,19 +909,19 @@ msgstr "Είστε σίγουροι ότι θέλετε να διαγράψετ�
 
 #: views/header.php:21
 msgid "Get Started"
-msgstr "Ξεκινώντας"
+msgstr "πάρτε αρχισμένος"
 
 #: views/header.php:24
 msgid "Watch Contact Video!"
-msgstr "Δείτε το βίντεο!"
+msgstr "Παρακολουθήστε-Contact Βίντεο!"
 
 #: views/header.php:28
 msgid "read documentation here"
-msgstr "διαβάζετε τη τεκμηρίωση του εδώ"
+msgstr "διαβάστε τα έγγραφα τεκμηρίωσης εδώ για"
 
 #: views/header.php:33
 msgid "Go Premium"
-msgstr "Μετάβαση πριμοδότηση"
+msgstr "Μετάβαση ασφάλιστρο"
 
 #: views/header.php:37
 msgid "Feature"
@@ -929,11 +929,11 @@ msgstr "χαρακτηριστικό"
 
 #: views/header.php:42
 msgid "Online Demos"
-msgstr "Συνδεδεμένοι παράδειγμα"
+msgstr "Συνδεδεμένοι Επιδείξεις"
 
 #: views/header.php:47
 msgid "Premium Pricing Plan ?"
-msgstr "πριμοδότηση Σχέδιο τιμολόγηση;"
+msgstr "ασφάλιστρο τιμολόγηση Σχέδιο;"
 
 #: views/header.php:54
 msgid "Knowledge Base"
@@ -945,7 +945,7 @@ msgstr "Φόρουμ υποστήριξης"
 
 #: views/header.php:64
 msgid "FAQ's"
-msgstr "Συνήθεις Ερωτήσεις"
+msgstr "Συχνές Ερωτήσεις"
 
 #: views/header.php:69
 msgid "Detailed Features"
@@ -957,61 +957,14 @@ msgstr "Περισσότερες ενέργειες"
 
 #: views/header.php:79
 msgid "Plugin Customization"
-msgstr "plugin Προσαρμογή"
+msgstr "Plugin Προσαρμογή"
 
 #: views/shortcode.php:29
 msgid ""
 "How to setup Short-Codes for Contact Bank into your WordPress Page/Post?"
 msgstr ""
-"Πώς να στήσετε Short-Κωδικοί Επικοινωνία Τράπεζα σε σας WordPress Σελίδα / "
-"Post;"
-
-#~ msgid "%s rating"
-#~ msgstr "Αξιολόγηση% s"
-
-#~ msgid "More Details"
-#~ msgstr "Περισσότερα"
-
-#~ msgid "Install Now"
-#~ msgstr "Εγκατάσταση Τώρα"
-
-#~ msgid "Update Now"
-#~ msgstr "Ενημέρωση Τώρα"
-
-#~ msgid "By "
-#~ msgstr "με"
-
-#~ msgid "Visit Website"
-#~ msgstr "Επισκεφθείτε την ιστοσελίδα"
-
-#~ msgid "Last Updated:"
-#~ msgstr "Τελευταία ενημέρωση:"
-
-#~ msgid "<strong>Untested</strong> with your version of WordPress"
-#~ msgstr "<strong> Μη δοκιμασμένος </ strong> με την έκδοση του WordPress"
-
-#~ msgid "Incompatible with your version of WordPress"
-#~ msgstr "Ασύμβατη με την έκδοση του WordPress"
-
-#~ msgid "Compatible with your version of WordPress"
-#~ msgstr "Συμβατό με την έκδοση του WordPress"
-
-#~ msgid "WP Contact Bank is an one time Investment. Its Worth it!"
-#~ msgstr ""
-#~ "WP Επικοινωνία Τράπεζα είναι ένας χρόνος Επενδύσεων. Αξίζει τον κόπο!"
-
-#~ msgid "Purchase PRO Edition"
-#~ msgstr "Αγοράστε PRO έκδοση"
-
-#~ msgid "Watch the Walk-Through Video"
-#~ msgstr "Παρακολουθήστε το Walk-Through Βίντεο"
-
-#~ msgid "Contact Bank, a Superlative High quality WordPress Plugin!"
-#~ msgstr ""
-#~ "Επικοινωνία Τράπεζα, μια Εξαιρετική υψηλής ποιότητας WordPress Plugin!"
-
-#~ msgid "Let's get in touch!"
-#~ msgstr "Αφήνει να έρθετε σε επαφή!"
+"Πώς να στήσετε Σύντομη Κωδικοί Contact Bank σε σας του WordPress Σελίδα/των "
+"υστέρων;"
 
 #~ msgid "Roles & Capabilities"
 #~ msgstr "Ρόλοι & δυνατότητες"
@@ -1024,6 +977,42 @@ msgstr ""
 
 #~ msgid "Select Month"
 #~ msgstr "Επιλέξτε μήνα"
+
+#~ msgid "January"
+#~ msgstr "Ιανουάριος"
+
+#~ msgid "February"
+#~ msgstr "Φεβρουάριος"
+
+#~ msgid "March"
+#~ msgstr "Μάρτιος"
+
+#~ msgid "April"
+#~ msgstr "Απρίλιος"
+
+#~ msgid "May"
+#~ msgstr "Μάιος"
+
+#~ msgid "June"
+#~ msgstr "Ιούνιος"
+
+#~ msgid "July"
+#~ msgstr "Ιούλιος"
+
+#~ msgid "August"
+#~ msgstr "Αύγουστος"
+
+#~ msgid "September"
+#~ msgstr "Σεπτέμβριος"
+
+#~ msgid "October"
+#~ msgstr "Οκτώβριος"
+
+#~ msgid "November"
+#~ msgstr "Νοέμβριος"
+
+#~ msgid "December"
+#~ msgstr "Δεκέμβριος"
 
 #~ msgid "Year"
 #~ msgstr "Χρονιά"
@@ -1121,12 +1110,15 @@ msgstr ""
 #~ msgid "Check Plugin - Contact Bank"
 #~ msgstr "Έλεγχος προσθέτου - Τράπεζα Επικοινωνίας"
 
+#~ msgid "Captcha"
+#~ msgstr "Κωδικός Captcha"
+
 #~ msgid "Are you sure, you want to delete this Form Entry ?"
 #~ msgstr "Είστε σίγουροι ότι θέλετε να διαγραφή αυτή η φόρμα;"
 
-#~ msgid "Attention! A new vesion of Contact Bank is available for download."
+#~ msgid "Attention! A new version of Contact Bank is available for download."
 #~ msgstr ""
-#~ "Προσοχή! Μια νέα έκδοση της Τράπεζας Επικοινωνίας είναι διαθέσιμη για "
+#~ "Προσοχή! Μια νέα έκδοση της Τράπεζας Επικοινωνίας είναι έτοιμοι για "
 #~ "μεταφόρτωση."
 
 #~ msgid "Click"
@@ -1148,16 +1140,13 @@ msgstr ""
 #~ msgid "Only One File Uploader can be used on a Form."
 #~ msgstr "Μόνο ένα στοιχείο μεταφόρτωσης μπορεί να χρησιμοποιηθεί σε φόρμα."
 
+#~ msgid "Only One Captcha can be used on a Form."
+#~ msgstr "Μόνο ένας κωδικός Captcha μπορεί να χρησιμοποιηθεί σε φόρμα."
+
 #~ msgid "Success! Settings have been updated."
 #~ msgstr "Επιτυχία: Οι ρυθμίσεις ενημερώθηκαν."
 
-#~ msgid "Captcha"
-#~ msgstr "Κωδικός Captcha"
-
-#~ msgid "Attention! A new version of Contact Bank is available for download."
+#~ msgid "Attention! A new vesion of Contact Bank is available for download."
 #~ msgstr ""
-#~ "Προσοχή! Μια νέα έκδοση της Τράπεζας Επικοινωνίας είναι έτοιμοι για "
+#~ "Προσοχή! Μια νέα έκδοση της Τράπεζας Επικοινωνίας είναι διαθέσιμη για "
 #~ "μεταφόρτωση."
-
-#~ msgid "Only One Captcha can be used on a Form."
-#~ msgstr "Μόνο ένας κωδικός Captcha μπορεί να χρησιμοποιηθεί σε φόρμα."
