@@ -1,6 +1,6 @@
 === WP Contact Bank - Contact Forms Builder ===
 Contributors: contact-banker, Gallery-Bank
-Tags: admin, advanced form, AJAX, best contact form plugin, buddypress, category, comment, comments, contact, contact form, contact form builder, contact form plugin, contact forms, contact me, contact us, contacts, content, easy contact form, easy contact plugin, email, Facebook, feed, feedback, feedback form, feedback forms, form, form builder, forms, gallery, google, image, images, javascript, jquery, link, links, login, media, page, pages, plugin, Post, posts, request, shortcode, sidebar, stats, text, web form, widget, wordpress
+Tags: admin, advanced form, best contact form plugin, buddypress, category, contact, contact form, contact form builder, contact form plugin, contact forms
 Requires at least: 3.3
 Tested up to: 4.1
 Stable tag: 2.0.95
