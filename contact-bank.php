@@ -4,7 +4,7 @@ Plugin Name: Contact Bank Lite Edition
 Plugin URI: http://tech-banker.com
 Description: Build Complex, Powerful Contact Forms in Just Seconds. No Programming Knowledge Required! Yeah, It's Really That Easy.
 Author: Tech Banker
-Version: 2.0.95
+Version: 2.0.96
 Author URI: http://tech-banker.com
  */
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -597,10 +597,11 @@ function contact_bank_short_code($atts)
     extract(shortcode_atts(array(
         "form_id" => "",
         "show_title" => "",
+        "show_desc" => "",
     ), $atts));
-    return extract_short_code($form_id,$show_title);
+    return extract_short_code($form_id,$show_title,$show_desc);
 }
-function extract_short_code($form_id,$show_title)
+function extract_short_code($form_id,$show_title,$show_desc)
 {
     ob_start();
     require CONTACT_BK_PLUGIN_DIR."/frontend_views/contact_bank_forms.php";
@@ -877,6 +878,10 @@ function add_contact_mce_popup(){
 					<input type="checkbox" checked="checked" name="ux_form_title" id="ux_form_title"/>
 				</div>
 				<div class="layout-control-group">
+					<label class="custom-layout-label"><?php _e("Show Form Description", contact_bank); ?> : </label>
+					<input type="checkbox"  name="ux_form_desc" id="ux_form_desc"/>
+				</div>
+				<div class="layout-control-group">
 					<label class="custom-layout-label"></label>
 					<input type="button" class="button-primary" value="<?php _e("Insert Form", contact_bank); ?>"
 						onclick="Insert_Contact_Form();"/>&nbsp;&nbsp;&nbsp;
@@ -891,12 +896,13 @@ function add_contact_mce_popup(){
 		{
 			var form_id = jQuery("#add_contact_form_id").val();
 			var show_title = jQuery("#ux_form_title").prop("checked");
+			var show_desc = jQuery("#ux_form_desc").prop("checked");
 			if(form_id == 0)
 			{
 			    alert("<?php _e("Please choose a Form to insert into Shortcode", contact_bank) ?>");
 			    return;
 			}
-			window.send_to_editor("[contact_bank form_id=" + form_id + " show_title=" + show_title +" ]");
+			window.send_to_editor("[contact_bank form_id=" + form_id + " show_title=" + show_title +" show_desc=" + show_desc +"]");
 		}
 	</script>
 <?php
@@ -1003,7 +1009,7 @@ class Contact_Bank_Widget extends WP_Widget
 				"SELECT * FROM " .contact_bank_contact_form()
 		);
 		?>
-        <p><label for="<?php echo $this->get_field_id("title"); ?>">Title: <input class="widefat" id="<?php echo $this->get_field_id("title"); ?>" name="<?php echo $this->get_field_name("title"); ?>" type="text" value="<?php echo esc_attr($title); ?>" /></label></p>
+        <p><label for="<?php echo $this->get_field_id("title"); ?>"> Widget Title: <input class="widefat" id="<?php echo $this->get_field_id("title"); ?>" name="<?php echo $this->get_field_name("title"); ?>" type="text" value="<?php echo esc_attr($title); ?>" /></label></p>
         <p><label for="<?php echo $this->get_field_id("form_id"); ?>"><?php _e("Select Form :", contact_bank); ?></label>
             <select size="1" name="<?php echo $this->get_field_name("form_id"); ?>" id="<?php echo $this->get_field_id("form_id"); ?>" class="widefat">
                 <option value="0"  ><?php _e("Select Form", contact_bank); ?></option>
@@ -1048,7 +1054,7 @@ class Contact_Bank_Widget extends WP_Widget
             if($instance["form_id"] != 0)
             {
                 echo $before_title . $title . $after_title;
-                $shortcode_for_contact_bank_form = "[contact_bank form_id=" . $instance["form_id"] . "]";
+                $shortcode_for_contact_bank_form = "[contact_bank form_id=" . $instance["form_id"] . " ]";
                 echo do_shortcode( $shortcode_for_contact_bank_form );
                 echo $after_widget;
             }

@@ -273,8 +273,26 @@ $rand_value = RAND(10,10000);
 				<strong><?php echo $form_settings_array[$form_id]["success_message"]; ?></strong>
 			</span>
 		</div>
+		
 		<div>
 			<?php
+				if($show_title == "true")
+				{
+					?>
+					<h4><?php echo $form_name; ?></h4>
+					<?php 
+				}
+				if($show_desc == "true")
+				{
+					?>
+					<div class="layout-control-group">
+						<span><?php echo $form_settings_array[$form_id]["form_description"]; ?></span>
+					</div>
+					<?php
+				}
+			?>
+			</div>
+			<?php 
 				for($flag=0;$flag<count($form_fields);$flag++)
 				{
 				?>
@@ -440,7 +458,6 @@ $rand_value = RAND(10,10000);
 				<?php
 				}
 			?>
-		</div>
 		<div class="layout-control-group">
 			<button type="submit"  class="btn_submit"><?php echo $layout_settings_array[$form_id]["submit_button_text"];?></button>
 		</div>
