@@ -947,7 +947,6 @@ else
 				update_option("contact-bank-automatic_update",$contact_updates);
 				die();
 			break;
-			
 		}
 	}
 }

@@ -4,7 +4,7 @@ Plugin Name: Contact Bank Lite Edition
 Plugin URI: http://tech-banker.com
 Description: Build Complex, Powerful Contact Forms in Just Seconds. No Programming Knowledge Required! Yeah, It's Really That Easy.
 Author: Tech Banker
-Version: 2.0.96
+Version: 2.0.97
 Author URI: http://tech-banker.com
  */
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -89,6 +89,7 @@ function create_global_menus_for_contact_bank()
 		    add_submenu_page("contact_dashboard", "Form Entries", __("Form Entries", contact_bank), "read", "contact_frontend_data","contact_frontend_data");
 		    add_submenu_page("contact_dashboard", "Email Settings", __("Email Settings", contact_bank), "read", "contact_email", "contact_email");
 		    add_submenu_page("contact_dashboard", "Global Settings", __("Global Settings", contact_bank), "read", "contact_layout_settings", "contact_layout_settings");
+		    add_submenu_page("contact_dashboard", "Feature Requests", __("Feature Requests", contact_bank), "read", "contact_feature_request", "contact_feature_request");
 			add_submenu_page("contact_dashboard", "System Status", __("System Status", contact_bank), "read", "contact_system_status", "contact_system_status" );
 		    add_submenu_page("contact_dashboard", "Recommendations", __("Recommendations", contact_bank), "read", "contact_bank_recommended_plugins", "contact_bank_recommended_plugins");
 		    add_submenu_page("contact_dashboard", "Premium Editions", __("Premium Editions", contact_bank), "read", "contact_pro_version", "contact_pro_version" );
@@ -105,6 +106,7 @@ function create_global_menus_for_contact_bank()
 			add_submenu_page("contact_dashboard", "Form Entries", __("Form Entries", contact_bank), "read", "contact_frontend_data","contact_frontend_data");
 		    add_submenu_page("contact_dashboard", "Email Settings", __("Email Settings", contact_bank), "read", "contact_email", "contact_email");
 		    add_submenu_page("contact_dashboard", "Global Settings", __("Global Settings", contact_bank), "read", "contact_layout_settings", "contact_layout_settings");
+		    add_submenu_page("contact_dashboard", "Feature Requests", __("Feature Requests", contact_bank), "read", "contact_feature_request", "contact_feature_request");
 			add_submenu_page("contact_dashboard", "System Status", __("System Status", contact_bank), "read", "contact_system_status", "contact_system_status" );
 		    add_submenu_page("contact_dashboard", "Recommendations", __("Recommendations", contact_bank), "read", "contact_bank_recommended_plugins", "contact_bank_recommended_plugins");
 		    add_submenu_page("contact_dashboard", "Premium Editions", __("Premium Editions", contact_bank), "read", "contact_pro_version", "contact_pro_version" );
@@ -121,6 +123,7 @@ function create_global_menus_for_contact_bank()
 			add_submenu_page("contact_dashboard", "Form Entries", __("Form Entries", contact_bank), "read", "contact_frontend_data","contact_frontend_data");
 			add_submenu_page("contact_dashboard", "Email Settings", __("Email Settings", contact_bank), "read", "contact_email", "contact_email");
 			add_submenu_page("contact_dashboard", "Global Settings", __("Global Settings", contact_bank), "read", "contact_layout_settings", "contact_layout_settings");
+			add_submenu_page("contact_dashboard", "Feature Requests", __("Feature Requests", contact_bank), "read", "contact_feature_request", "contact_feature_request");
 			add_submenu_page("contact_dashboard", "System Status", __("System Status", contact_bank), "read", "contact_system_status", "contact_system_status" );
 			add_submenu_page("contact_dashboard", "Recommendations", __("Recommendations", contact_bank), "read", "contact_bank_recommended_plugins", "contact_bank_recommended_plugins");
 		    add_submenu_page("contact_dashboard", "Premium Editions", __("Premium Editions", contact_bank), "read", "contact_pro_version", "contact_pro_version" );
@@ -283,7 +286,22 @@ function contact_layout_settings()
     include CONTACT_BK_PLUGIN_DIR ."/views/contact_bank_layout_settings.php";
     include CONTACT_BK_PLUGIN_DIR ."/views/footer.php";
 }
-
+function contact_feature_request()
+{
+	global $wpdb,$current_user,$user_role_permission;
+	if(is_super_admin())
+	{
+		$cb_role = "administrator";
+	}
+	else
+	{
+		$cb_role = $wpdb->prefix . "capabilities";
+		$current_user->role = array_keys($current_user->$cb_role);
+		$cb_role = $current_user->role[0];
+	}
+	include_once CONTACT_BK_PLUGIN_DIR . "/views/header.php";
+	include_once CONTACT_BK_PLUGIN_DIR . "/views/contact-feedback.php";
+}
 function contact_system_status()
 {
 	global $wpdb,$current_user,$cb_user_role_permission;
@@ -668,6 +686,12 @@ function add_contact_bank_icon($meta = TRUE)
 		    "href"  => site_url() ."/wp-admin/admin.php?page=contact_layout_settings",
 		    "title" => __( "Global Settings", contact_bank))         /* set the sub-menu name */
 		);	
+		$wp_admin_bar->add_menu( array(
+			"parent" => "contact_bank_links",
+			"id"     => "feature_request_data_links",
+			"href"  => site_url() ."/wp-admin/admin.php?page=contact_feature_request",
+			"title" => __( "Feature Requests", contact_bank))         /* set the sub-menu name */
+		);
 	 	$wp_admin_bar->add_menu( array(
 	        "parent" => "contact_bank_links",
 		    "id"     => "system_status_data_links",
@@ -738,7 +762,12 @@ function add_contact_bank_icon($meta = TRUE)
 		    "href"  => site_url() ."/wp-admin/admin.php?page=contact_layout_settings",
 		    "title" => __( "Global Settings", contact_bank))         /* set the sub-menu name */
 		);	
-	 	
+		$wp_admin_bar->add_menu( array(
+				"parent" => "contact_bank_links",
+				"id"     => "feature_request_data_links",
+				"href"  => site_url() ."/wp-admin/admin.php?page=contact_feature_request",
+				"title" => __( "Feature Requests", contact_bank))         /* set the sub-menu name */
+		);
 	   
 	    $wp_admin_bar->add_menu( array(
 	        "parent" => "contact_bank_links",
@@ -810,6 +839,12 @@ function add_contact_bank_icon($meta = TRUE)
 			    "href"  => site_url() ."/wp-admin/admin.php?page=contact_layout_settings",
 			    "title" => __( "Global Settings", contact_bank))         /* set the sub-menu name */
 			);	
+			$wp_admin_bar->add_menu( array(
+					"parent" => "contact_bank_links",
+					"id"     => "feature_request_data_links",
+					"href"  => site_url() ."/wp-admin/admin.php?page=contact_feature_request",
+					"title" => __( "Feature Requests", contact_bank))         /* set the sub-menu name */
+			);
 		 	$wp_admin_bar->add_menu(array(
 	    		"parent" => "contact_bank_links",
 	    		"id" => "contact_bank_recommended_plugins_links",

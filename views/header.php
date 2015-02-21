@@ -152,13 +152,24 @@ switch ($cb_role) {
 		<?php
 	break;
 }
+if($_REQUEST["page"] != "contact_feature_request")
+{
+	?>
+	<div class="custom-message green" style="display: block;margin-top:30px">
+		<div style="padding: 4px 0;">
+			<p style="font:12px/1.0em Arial !important;font-weight:bold;">If you don't find any features you were looking for in this Plugin, 
+				please write us <a target="_self" href="admin.php?page=contact_feature_request">here</a> and we shall try to implement this for you as soon as possible! We are looking forward for your valuable <a target="_self" href="admin.php?page=contact_feature_request">Feedback</a></p>
+		</div>
+	</div>
+	<?php
+}
 if(in_array($cb_language, $cb_lang))
 {
 	?>
 	<div class="custom-message red" style="display: block;margin-top:10px">
 		<span style="padding: 4px 0;">
 			<strong><p style="font:12px/1.0em Arial !important;">This plugin language is translated with the help of Google Translator.</p>
-				<p style="font:12px/1.0em Arial !important;">If you would like to translate & help us, we will reward you with a free Pro Edition License of Contact Bank worth 18£.</p>
+				<p style="font:12px/1.0em Arial !important;">If you would like to translate & help us, we will reward you with a free Eco Edition License of Contact Bank worth 18£.</p>
 				<p style="font:12px/1.0em Arial !important;">Contact Us at <a target="_blank" href="http://tech-banker.com">http://tech-banker.com</a> or email us at <a href="mailto:support@tech-banker.com">support@tech-banker.com</a></p>
 			</strong>
 		</span>
@@ -170,7 +181,7 @@ elseif(!(in_array($cb_language, $cb_lang_translated_languages)) && !(in_array($c
 	?>
 	<div class="custom-message red" style="display: block;margin-top:10px">
 		<span style="padding: 4px 0;">
-			<strong><p style="font:12px/1.0em Arial !important;">If you would like to translate Contact Bank in your native language, we will reward you with a free Pro Edition License of Contact Bank worth 18£.</p>
+			<strong><p style="font:12px/1.0em Arial !important;">If you would like to translate Contact Bank in your native language, we will reward you with a free Eco Edition License of Contact Bank worth 18£.</p>
 				<p style="font:12px/1.0em Arial !important;">Contact Us at <a target="_blank" href="http://tech-banker.com">http://tech-banker.com</a> or email us at <a href="mailto:support@tech-banker.com">support@tech-banker.com</a></p>
 			</strong>
 		</span>
