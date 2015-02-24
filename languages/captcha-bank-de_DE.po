@@ -1,0 +1,1240 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Captcha Bank\n"
+"POT-Creation-Date: 2015-01-16 16:07+0530\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.6\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: C:\\Users\\Developer\\Desktop\\2.1.9\\captcha-bank-pro-"
+"edition\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: captcha-bank-pro-edition.php:484
+msgid "View WP Captcha Bank Documentation"
+msgstr "WP Captcha Bank Handbuch anzeigen"
+
+#: captcha-bank-pro-edition.php:484
+msgid "Docs"
+msgstr "Dokumente"
+
+#: lib/admin-bar-menu.php:18 lib/menus.php:12 views/header.php:111
+#: views/settings.php:67
+msgid "Captcha Settings"
+msgstr "Captcha Einstellungen"
+
+#: lib/admin-bar-menu.php:24 lib/menus.php:13 views/header.php:114
+#: views/login-logs.php:45
+msgid "Login Logs"
+msgstr "Login Historie"
+
+#: lib/admin-bar-menu.php:30 lib/menus.php:14 views/header.php:117
+#: views/plugin-settings.php:46
+msgid "Plugin Settings"
+msgstr "Plugin Einstellungen"
+
+#: lib/admin-bar-menu.php:36 lib/menus.php:15
+msgid "System Status"
+msgstr "System Status"
+
+#: lib/admin-bar-menu.php:42 lib/menus.php:16 views/header.php:91
+#: views/header.php:120
+msgid "Recommendations"
+msgstr "Empfehlungen"
+
+#: lib/admin-bar-menu.php:48 lib/menus.php:17 views/header.php:96
+#: views/header.php:123
+msgid "Our Other Services"
+msgstr "Unsere weiteren Services"
+
+#: lib/admin-bar-menu.php:54 lib/menus.php:18
+msgid "Licensing"
+msgstr "Lizenzinformation"
+
+#: lib/install-script.php:233 lib/settings-include.php:48
+#: views/settings.php:1347
+msgid "Captcha Code is empty. Please enter captcha code."
+msgstr "Der Captcha Code ist leer. Bitte gebe den Code ein."
+
+#: lib/install-script.php:234 lib/settings-include.php:49
+#: views/settings.php:1348
+msgid "The Captcha Code does not match. Please Try Again."
+msgstr "Der eingegebene Code ist nicht korrekt. Bitte versuchen Sie es erneut."
+
+#: lib/install-script.php:235
+msgid "random :"
+msgstr "Zufälllig:"
+
+#: lib/install-script.php:238 lib/settings-include.php:53
+#: views/settings.php:1352
+msgid "Your IP has been blocked!"
+msgstr "Ihre IP-Adresse wurde blockiert!"
+
+#: lib/install-script.php:239 lib/settings-include.php:54
+#: views/settings.php:1353
+msgid "Maximum Login attempts left [maxAttempts]"
+msgstr "Verbleibende Anmeldeversuche [maxAttempts]"
+
+#: lib/install-script.php:240
+msgid ""
+"You have Exceeded Maximum Login Attempts.\n"
+" So, your IP has been blocked for today. \n"
+" Kindly, try again after 24 Hours."
+msgstr ""
+"Zu viele erfolglose Anmeldeversuche. Ihre IP-Adresse wurde vorläufig "
+"blockiert. Bitte versuchen Sie es in 24 Stunden erneut."
+
+#: lib/settings-include.php:16 views/settings.php:1315
+msgid "Captcha"
+msgstr "Captcha"
+
+#: lib/settings-include.php:17 views/settings.php:1316
+msgid "This is your Captcha tooltip"
+msgstr "Dies ist Ihr Captcha Hinweis"
+
+#: lib/settings-include.php:41 views/settings.php:1342
+msgid "Captcha-Bank"
+msgstr "Captcha-Bank"
+
+#: lib/settings-include.php:50
+msgid "random"
+msgstr "zufällig"
+
+#: lib/settings-include.php:55
+msgid ""
+"You have Exceeded Maximum Login Attempts.\n"
+"So, your IP has been blocked for today. \n"
+"Kindly, try again after 24 Hours."
+msgstr ""
+"Zu viele erfolglose Anmeldeversuche. Ihre IP-Adresse wurde vorläufig "
+"blockiert. Bitte versuchen Sie es in 24 Stunden erneut."
+
+#: views/frontend-captcha.php:65 views/frontend-captcha.php:125
+msgid "Enter Code"
+msgstr "Geben Sie den Code ein"
+
+#: views/header.php:33
+msgid "Get Started"
+msgstr "Starten Sie hier"
+
+#: views/header.php:36
+msgid "Watch Captcha Video!"
+msgstr "Schauen Sie sich das Captcha Video an!"
+
+#: views/header.php:40
+msgid "read documentation here"
+msgstr "Lesen Sie die Nutzerhandbücher hier"
+
+#: views/header.php:45
+msgid "Premium Editions"
+msgstr "Premium Versionen"
+
+#: views/header.php:49
+msgid "Features"
+msgstr "Funktionen"
+
+#: views/header.php:54
+msgid "Online Demos"
+msgstr "Online Demos"
+
+#: views/header.php:59
+msgid "Our Featured Products"
+msgstr "Usere Angebote"
+
+#: views/header.php:66
+msgid "Knowledge Base"
+msgstr "Knowledge Base"
+
+#: views/header.php:71
+msgid "Support Forum"
+msgstr "Hilfe Forum"
+
+#: views/header.php:76
+msgid "FAQ's"
+msgstr "FAQ's"
+
+#: views/header.php:81
+msgid "Renew Premium Support"
+msgstr "Premium Support verlängern"
+
+#: views/header.php:87
+msgid "More Actions"
+msgstr "Weitere Aktivitäten"
+
+#: views/header.php:101
+msgid "Plugin Customization"
+msgstr "Plugin anpassen"
+
+#: views/licensing.php:36 views/login-logs.php:37 views/plugin-settings.php:36
+#: views/settings.php:57
+msgid "Success!"
+msgstr "Erfolg!"
+
+#: views/licensing.php:44 views/settings.php:1138 views/settings.php:1144
+#: views/settings.php:1167 views/settings.php:1172 views/settings.php:1177
+#: views/settings.php:1182
+msgid "Error!"
+msgstr "Fehler!"
+
+#: views/licensing.php:53
+msgid "WP Captcha Bank Licensing Module"
+msgstr "WP Captcha Bank Lizensierungsmodule"
+
+#: views/licensing.php:59
+msgid "Version"
+msgstr "Version"
+
+#: views/licensing.php:66
+msgid "Type"
+msgstr "Typ"
+
+#: views/licensing.php:73
+msgid "URL"
+msgstr "URL"
+
+#: views/licensing.php:80
+msgid "API Key"
+msgstr "API Key"
+
+#: views/licensing.php:87
+msgid "Order ID"
+msgstr "Bestell-ID"
+
+#: views/licensing.php:95
+msgid "Update"
+msgstr "Update"
+
+#: views/licensing.php:139
+msgid "Success! License has been validated."
+msgstr "Erfolg! Ihre Lizenz wurde bestätigt."
+
+#: views/login-logs.php:38
+#, fuzzy
+msgid "Action has been updated "
+msgstr "Einstellungen sind aktualisiert worden"
+
+#: views/login-logs.php:53
+msgid "Recent Login Details on World Map"
+msgstr "Aktuelle Login Details zu Weltkarten"
+
+#: views/login-logs.php:106
+msgid "Recent Login Details"
+msgstr "Letzten AnmeldungenDetails zur"
+
+#: views/login-logs.php:113
+msgid "Username"
+msgstr "Nutzername"
+
+#: views/login-logs.php:114
+msgid "Allows you to view the username of recent logged in users."
+msgstr "Zeigt Ihnen die Nutzernamen kürzlich angemeldeter Nutzer."
+
+#: views/login-logs.php:119
+msgid "IP Address"
+msgstr "IP Adresse"
+
+#: views/login-logs.php:120
+msgid "Allows you to view the IP Address of the logged in users."
+msgstr "Zeigt Ihnen die IP Adressen angemeldeter Nutzer."
+
+#: views/login-logs.php:125
+msgid "Location"
+msgstr "Ort"
+
+#: views/login-logs.php:126
+msgid "Allows you to view the current location of the logged in users."
+msgstr "Zeigt Ihnen den aktuellen Ort angemeldeter Nutzer."
+
+#: views/login-logs.php:131
+msgid "Login Date & Time"
+msgstr "Datum und Zeit der Anmeldung"
+
+#: views/login-logs.php:132
+msgid "Allows you to view the logged in date and time of the users."
+msgstr "Zeigt Ihnen Anmeldezeit und -datum von Nutzern."
+
+#: views/login-logs.php:137
+msgid "Status"
+msgstr "Status"
+
+#: views/login-logs.php:138
+msgid ""
+"Lets, you know the status of the users, whether they have successfully "
+"logged in or not."
+msgstr "Zeigt Ihnen, ob sich nutzer erfolgreich anmelden konnten."
+
+#: views/login-logs.php:143
+msgid "Action"
+msgstr "Aktion"
+
+#: views/login-logs.php:144
+msgid ""
+"Allows you to block or whitelist IP Addresses for the logged in users as per "
+"your requirement."
+msgstr ""
+"Damit können Sie blockieren oder Whitelist von IP-Adressen für den "
+"eingeloggten Nutzern wie pro Ihre Anforderung."
+
+#: views/login-logs.php:174 views/system-status.php:181
+msgid "Success"
+msgstr "Erfolg"
+
+#: views/login-logs.php:180 views/system-status.php:185
+msgid "Failed"
+msgstr "Fehlgeschlagen"
+
+#: views/login-logs.php:190
+msgid "Whitelist IP Address"
+msgstr "IP-Adresse freigeben"
+
+#: views/login-logs.php:196 views/settings.php:799
+msgid "Block IP Address"
+msgstr "IP-Adresse blockieren"
+
+#: views/plugin-settings.php:37
+msgid "Plugin Settings has been updated "
+msgstr "Plugin Einstellungen wurden aktualisiert"
+
+#: views/plugin-settings.php:54
+msgid "Show Captcha Plugin Menu"
+msgstr "Zeige Captcha Plugin Menü"
+
+#: views/plugin-settings.php:55
+msgid ""
+"Allows you to control the capabilities of WP Captcha Bank among different "
+"roles of WordPress users."
+msgstr ""
+"Ermöglicht es Ihnen, Nutzern unterschiedliche Funktionen von WP Captcha Bank "
+"zuzuordnen"
+
+#: views/plugin-settings.php:63
+msgid "Administrator"
+msgstr "Administrator"
+
+#: views/plugin-settings.php:69
+msgid "Editor"
+msgstr "Redakteur"
+
+#: views/plugin-settings.php:75
+msgid "Author"
+msgstr "Autor"
+
+#: views/plugin-settings.php:81
+msgid "Contributor"
+msgstr "Mitarbeiter"
+
+#: views/plugin-settings.php:87
+msgid "Subscriber"
+msgstr "Abonnent"
+
+#: views/plugin-settings.php:94
+msgid "Captcha Menu Top Bar"
+msgstr "Captcha Menüleiste"
+
+#: views/plugin-settings.php:95
+msgid ""
+"Allows you to enable or disable WP Captcha Bank for top menu bar among "
+"different roles of WordPress users."
+msgstr ""
+"Ermöglicht es Ihnen, WP-Rollen Zugriff auf die WP Captcha Bank Menüleiste zu "
+"gewähren."
+
+#: views/plugin-settings.php:104 views/plugin-settings.php:111
+#: views/settings.php:386 views/settings.php:393 views/settings.php:440
+#: views/settings.php:447 views/settings.php:494 views/settings.php:501
+#: views/settings.php:548 views/settings.php:555 views/settings.php:587
+#: views/settings.php:594 views/settings.php:770 views/settings.php:777
+msgid "Enable"
+msgstr "Anzeigen"
+
+#: views/plugin-settings.php:105 views/plugin-settings.php:112
+#: views/settings.php:387 views/settings.php:394 views/settings.php:441
+#: views/settings.php:448 views/settings.php:495 views/settings.php:502
+#: views/settings.php:549 views/settings.php:556 views/settings.php:588
+#: views/settings.php:595 views/settings.php:771 views/settings.php:778
+msgid "Disable"
+msgstr "Nicht anzeigen"
+
+#: views/plugin-settings.php:119 views/settings.php:71 views/settings.php:995
+msgid "Save Changes"
+msgstr "Änderungen speichern"
+
+#: views/settings.php:58
+msgid "Settings has been updated"
+msgstr "Einstellungen sind aktualisiert worden"
+
+#: views/settings.php:78 views/settings.php:101
+msgid "General Settings"
+msgstr "Allgemeine Einstellungen"
+
+#: views/settings.php:81 views/settings.php:349
+msgid "Layout Settings"
+msgstr "Layout-Einstellungen"
+
+#: views/settings.php:84 views/settings.php:660
+msgid "Font Settings"
+msgstr "Schriftart-Einstellungen"
+
+#: views/settings.php:87
+msgid "Display Settings "
+msgstr "Darstellungseinstellungen"
+
+#: views/settings.php:90
+msgid "Security Settings "
+msgstr "Sicherheitseinstellungen"
+
+#: views/settings.php:93
+msgid "Message Settings "
+msgstr "Nachrichteneinstellungen"
+
+#: views/settings.php:107
+msgid "Captcha Title"
+msgstr "Captcha Titel"
+
+#: views/settings.php:108
+msgid ""
+"Allows you to add Title for the Captcha which is displayed above the Captcha "
+"Image."
+msgstr ""
+"Ermöglicht es Ihnen einen Titel einzugeben, der oberhalb des Captcha-Bildes "
+"angezeigt wird."
+
+#: views/settings.php:113
+msgid "Enter the title for your captcha here."
+msgstr "Geben Sie den Titel für Ihr Captcha hier ein."
+
+#: views/settings.php:118
+msgid "Captcha Tooltip"
+msgstr "Captcha Tooltip"
+
+#: views/settings.php:119
+msgid ""
+"Allows you to add Tooltip for Captcha which would be displayed when you "
+"hover on the Captcha Image."
+msgstr ""
+"Ermöglicht Ihnen die Eingabe eines kurzen Textes, der angezeigt wird, wenn "
+"Nutzer mit der Maus über Ihrem Captcha verharren."
+
+#: views/settings.php:124
+msgid "Enter the tooltip for your captcha."
+msgstr "Geben Sie den Tooltip für Ihr Captcha ein."
+
+#: views/settings.php:129
+msgid "Captcha Characters"
+msgstr "Captcha Zeichen"
+
+#: views/settings.php:130
+msgid ""
+"Allows you to enter the number of characters to be displayed on Captcha "
+"Image."
+msgstr ""
+"Ermöglicht Ihnen, die Anzahl der im Captcha verwendeten Zeichen festzulegen."
+
+#: views/settings.php:135
+msgid "Enter the number of characters you want to display on your captcha."
+msgstr ""
+"Geben Sie die Anzahl der Zeichen an, die im Captcha verwendet werden soll."
+
+#: views/settings.php:140
+msgid "Captcha Type"
+msgstr "Captcha Typ"
+
+#: views/settings.php:141
+msgid ""
+"Allows you to select type of Captcha to be displayed i.e. Only alphabets, "
+"Only Digits and both Alphabets and Digits."
+msgstr ""
+"Ermöglicht es Ihnen festzulegen, welche Zeichenarten (z.B. nur Buchstaben, "
+"Zahlen oder gemischt) im Captcha verwendet werden."
+
+#: views/settings.php:148
+msgid "Alphabets And Digits"
+msgstr "Buchstaben und Zahlen"
+
+#: views/settings.php:151
+msgid "Only Alphabets"
+msgstr "Nur Buchstaben"
+
+#: views/settings.php:154
+msgid "Only Digits "
+msgstr "Nur Zahlen"
+
+#: views/settings.php:161
+msgid "Text Case"
+msgstr "Groß- und Kleinschreibung"
+
+#: views/settings.php:162
+msgid ""
+"Allows you to set type of Captcha characters in three different cases i.e. "
+"Upper Case, Lower Case or Ramdom."
+msgstr ""
+"Ermöglicht es Ihnen festzulegen, ob nur große, nur kleine oder gemischte "
+"Buchstaben verwendet werden."
+
+#: views/settings.php:171 views/settings.php:179 views/settings.php:187
+msgid "Upper"
+msgstr "Ober-"
+
+#: views/settings.php:172 views/settings.php:180 views/settings.php:188
+msgid "Lower"
+msgstr "Kleinbuchstaben"
+
+#: views/settings.php:173 views/settings.php:181 views/settings.php:189
+msgid "Random"
+msgstr "Zufall"
+
+#: views/settings.php:197
+msgid "Captcha Width"
+msgstr "Captcha Breite"
+
+#: views/settings.php:198
+msgid "Allows you to set the width of Captcha Image as per the requirement."
+msgstr "Erlaubt Ihnen die Breite des Captcha-Bildes festzulegen."
+
+#: views/settings.php:203
+#, fuzzy
+msgid "Enter the width for your captcha image."
+msgstr "Geben sie die Breite Ihres Captcha-Bildes ein."
+
+#: views/settings.php:208
+msgid "Captcha Height"
+msgstr "Captcha Höhe"
+
+#: views/settings.php:209
+msgid "Allows you to set the height of Captcha Image as per the requirement."
+msgstr "Erlaubt Ihnen die Höhe des Captcha-Bildes festzulegen."
+
+#: views/settings.php:214
+#, fuzzy
+msgid "Enter the height for your captcha image."
+msgstr "Geben sie die Höhe Ihres Captcha-Bildes ein. "
+
+#: views/settings.php:219
+msgid "Case Sensitive"
+msgstr "Groß- und Kleinschreibung beachten"
+
+#: views/settings.php:220
+msgid ""
+"Allows you make the Captcha text Case Sensitive while typing the Captcha "
+"Code."
+msgstr ""
+"Ermöglicht Ihnen festzulegen, dass Groß- und Kleinschreibung beachtet wird."
+
+#: views/settings.php:225
+msgid "Yes, make it case sensitive."
+msgstr "Ja, beachte Groß- und Kleinschreibung."
+
+#: views/settings.php:230 views/settings.php:318 views/settings.php:631
+#: views/settings.php:726 views/settings.php:877 views/settings.php:966
+msgid "Captcha Preview"
+msgstr "Captcha Vorschau"
+
+#: views/settings.php:231 views/settings.php:319 views/settings.php:632
+#: views/settings.php:727 views/settings.php:878 views/settings.php:967
+msgid ""
+"Allows you to preview the Captcha Image once the above settings are saved."
+msgstr ""
+"Ermöglicht es Ihnen, eine Captcha-Vorschau mit Ihren Einstellungen zu sehen."
+
+#: views/settings.php:251 views/settings.php:339 views/settings.php:651
+#: views/settings.php:746 views/settings.php:897 views/settings.php:986
+msgid ""
+"Note* : Click on the Save Changes Button in order to view the Captcha "
+"Preview."
+msgstr ""
+"Hinweis*: Klicken Sie auf \"Änderungen Speichern\" um die Vorschau anzusehen"
+
+#: views/settings.php:261
+msgid "Display Settings"
+msgstr "Anzeige-Einstellungen"
+
+#: views/settings.php:266
+msgid "Enable Captcha For"
+msgstr "Nutze Captcha für"
+
+#: views/settings.php:267
+msgid ""
+"Allows you to display Captcha on Login Form, Registration Form, Comment "
+"Form, Admin Comment Form, Contact Bank Form, Reset Password Form and Hide "
+"Captcha for Registered User."
+msgstr ""
+"Ermöglicht es Ihnen die Formulare festzulegen, für die ein Captcha zur "
+"Prüfung verwendet wird (Login, Registrierung, Kommentar, Admin-Kommentar, "
+"Kontakt, Passwort zurücksetzen)"
+
+#: views/settings.php:275
+msgid "Login Form"
+msgstr "Anmeldung"
+
+#: views/settings.php:281
+msgid "Registration Form"
+msgstr "Registrierung"
+
+#: views/settings.php:287
+msgid "Reset Password Form"
+msgstr "Passwort zurücksetzen"
+
+#: views/settings.php:293
+msgid "Comment Form"
+msgstr "Kommentare"
+
+#: views/settings.php:299
+msgid "Admin Comment Form"
+msgstr "Administratorkommentare"
+
+#: views/settings.php:305
+msgid "Contact Bank Form"
+msgstr "Contact Bank Form"
+
+#: views/settings.php:311
+msgid "Hide Captcha for Registered User"
+msgstr "Captcha für registrierte Nutzer deaktivieren"
+
+#: views/settings.php:354
+msgid "Captcha Background"
+msgstr "Captcha Hintergrund"
+
+#: views/settings.php:355
+msgid "Allows you to set Background Image for the Captcha."
+msgstr "Ermöglicht es Ihnen, das Hintergrundbild für Ihr Captcha auszuwählen"
+
+#: views/settings.php:376
+msgid "Show Border"
+msgstr "Rahmen anzeigen"
+
+#: views/settings.php:377
+msgid ""
+"Allows you to set Border with different size and color for the Captcha Image."
+msgstr ""
+"Ermöglicht es Ihnen, einen Rahmen mit unterschiedlicher Farbe und Breite um "
+"das Captcha-Bild anzuzeigen."
+
+#: views/settings.php:403
+msgid "Border Size"
+msgstr "Rahmenbreite"
+
+#: views/settings.php:404
+msgid "Allows you to set the Border Size (in pixels) for the Captcha Image."
+msgstr ""
+"Ermöglicht es Ihnen, die Rahmenbreite (in Pixeln) für Ihr Captcha-Bild "
+"festzulegen."
+
+#: views/settings.php:409
+msgid "Enter the border size for your captcha image."
+msgstr "Geben Sie die Rahmenbreite für Ihr Captcha-Bild ein."
+
+#: views/settings.php:414
+msgid "Border Color"
+msgstr "Rahmenfarbe"
+
+#: views/settings.php:415
+msgid ""
+"Allows you to set the Border Color for the Captcha Image as per the "
+"requirement."
+msgstr "Ermöglicht es Ihnen die Rahmenfarbe für Ihre Captcha-Bild festzulegen."
+
+#: views/settings.php:420
+msgid "Select the color for Border on Captcha."
+msgstr "Wählen Sie die Rahmenfarbe für Ihr Captcha-Bild aus."
+
+#: views/settings.php:430
+msgid "Show Lines"
+msgstr "Linien zeigen"
+
+#: views/settings.php:431
+msgid ""
+"Allows you to set different colors and number of lines on the Captcha Image."
+msgstr ""
+"Ermöglicht es Ihnen, Anzahl und Farbe von Linien im Captcha-Bild festzulegen."
+
+#: views/settings.php:457
+msgid "No of Lines"
+msgstr "Anzahl Linien"
+
+#: views/settings.php:458
+msgid "Allows you to set number of lines to be displayed on the Captcha Image."
+msgstr ""
+"Ermöglicht es Ihnen, die Anzahl von Linien auf Ihrem Captcha-Bild "
+"festzulegen."
+
+#: views/settings.php:463
+msgid "Enter the number of lines you want to show on your captcha image."
+msgstr "Geben Sie die Anzahl von Linien auf Ihrem Captcha-Bild an."
+
+#: views/settings.php:468
+msgid "Line Color"
+msgstr "Linienfarbe"
+
+#: views/settings.php:469
+msgid ""
+"Allows you to select color for the lines to be displayed on the Captcha "
+"Image."
+msgstr ""
+"Ermöglicht Ihnen die Farbe der im Captcha-Bild angezeigten Linien "
+"festzulegen."
+
+#: views/settings.php:474
+msgid "Select the color for Lines on Captcha."
+msgstr "Wählen sie die Farbe für die Linien im Captcha-Bild"
+
+#: views/settings.php:484
+msgid "Show Noise"
+msgstr "Störelemente anzeigen"
+
+#: views/settings.php:485
+msgid ""
+"Allows you to set different colors and number of dots on the Captcha Image."
+msgstr "Ermöglicht Ihnen Anzahl und Farben der Störelemente festzulegen."
+
+#: views/settings.php:511
+msgid "Noise Level"
+msgstr "Stör-Intensität"
+
+#: views/settings.php:512
+msgid "Allows you to set number of dots to be displayed on the Captcha Image."
+msgstr "Ermöglicht Ihnen die Anzahl der Störelemente festzulegen."
+
+#: views/settings.php:517
+msgid ""
+"Enter the number of noise or dots you want to show on your captcha image."
+msgstr "Geben Sie die Anzahl der Störelemente ein."
+
+#: views/settings.php:522
+msgid "Noise Color"
+msgstr "Farbe der Störungen"
+
+#: views/settings.php:523
+msgid ""
+"Allows you to select the color for the dots to be displayed on the Captcha "
+"Image."
+msgstr "Ermöglicht Ihnen die die Farbe der Störelemente festzulegen."
+
+#: views/settings.php:528
+msgid "Select the color for Noise/Dots on Captcha."
+msgstr "Wählen sie die Farbe der Störelemente."
+
+#: views/settings.php:538
+msgid "Text Transparency"
+msgstr "Texttransparenz"
+
+#: views/settings.php:539
+msgid ""
+"Allows you to set the transparency of the Captcha text in percentage as per "
+"the requirement."
+msgstr ""
+"Ermöglicht Ihnen die die Transparenz des Captcha-Texts in Prozent "
+"festzulegen."
+
+#: views/settings.php:565
+msgid "Percentage"
+msgstr "Prozent"
+
+#: views/settings.php:566
+msgid ""
+"Allows you to set the percentage of the text transparency for the Captcha "
+"characters as per the requirement."
+msgstr "(***)"
+
+#: views/settings.php:571
+msgid ""
+"Enter the text transprancy percentage (1 to 100 ) for your captcha image "
+"here."
+msgstr "Geben sie die Texttransparenz in Prozent an."
+
+#: views/settings.php:577
+msgid "Signature"
+msgstr "Bildunterschrift"
+
+#: views/settings.php:578
+#, fuzzy
+msgid ""
+"Allows you to enable the Captcha Signature (a small text) below the captcha "
+"characters."
+msgstr ""
+"Ermöglicht Ihnen die Anzeige eines kurzen Textes unter dem Captcha-Bild."
+
+#: views/settings.php:604
+msgid "Signature Text"
+msgstr "Bildunterschrift Text"
+
+#: views/settings.php:605
+msgid ""
+"Allows you to set the Captcha Signature (a small text) displayed below the "
+"captcha characters."
+msgstr "Ermöglicht Ihnen die Eingabe des Textes der Bildunterschrift."
+
+#: views/settings.php:610
+msgid "Enter the signature text for your captcha image here."
+msgstr "Geben Sie den Text für die Bildunterschrift ein."
+
+#: views/settings.php:615
+msgid "Signature Color "
+msgstr "Farbe"
+
+#: views/settings.php:616
+msgid ""
+"Allows you to set the color for the Captcha Signature (a small text) "
+"displayed below the captcha characters."
+msgstr ""
+"Ermöglicht es Ihnen die Farbe für Ihre Captcha-Bildunterschrift festzulegen."
+
+#: views/settings.php:621
+msgid "Select the color for Signature on Captcha."
+msgstr "Wählen Sie die Farbe für die Bildunterschrift."
+
+#: views/settings.php:665
+msgid "Font Family"
+msgstr "Schriftart"
+
+#: views/settings.php:666
+msgid "Allows you to select Font Family for the Captcha Text."
+msgstr "Ermöglicht es Ihnen die Schriftart für Ihren Captcha-Text festzulegen."
+
+#: views/settings.php:687
+msgid "Font Size"
+msgstr "Schriftgröße"
+
+#: views/settings.php:688
+msgid "Allows you to select Font Size for the Captcha Text."
+msgstr ""
+"Ermöglicht es Ihnen die Schriftgröße für Ihren Captcha-Text festzulegen."
+
+#: views/settings.php:711
+msgid "Font Color"
+msgstr "Schriftfarbe"
+
+#: views/settings.php:712
+msgid ""
+"Allows you to select Font Color for the Captcha text making it more creative "
+"and attractive."
+msgstr "Ermöglicht es Ihnen die Schriftfarbe für Ihr Captcha festzulegen."
+
+#: views/settings.php:717
+msgid "Select the color for Captcha Text."
+msgstr "Wählen Sie die Farbe für den Captcha-Text"
+
+#: views/settings.php:755
+msgid "Security Settings"
+msgstr "Sicherheitseinstellungen"
+
+#: views/settings.php:760
+msgid "Auto IP Block"
+msgstr "Automatische IP-Bockade"
+
+#: views/settings.php:761
+msgid ""
+"Allows you to Blocks IP addresses for next 24 hours when the limit of login "
+"attempts is reached."
+msgstr ""
+"Ermöglicht es Ihnen IP-Adressen für 24 Stunden zu blockieren, wenn Sie zu "
+"viele Fehlversuche bei der Eingabe machen."
+
+#: views/settings.php:787 views/settings.php:944
+msgid "Max Login Attempts"
+msgstr "Höchstzahl Fehlversuche"
+
+#: views/settings.php:788
+msgid ""
+"Allows you to set number of login attempts left for the user incase Captcha "
+"code is left empty or filled invalid."
+msgstr ""
+"Ermöglicht es Ihnen die Höchstzahl für Fehlversuche (leeres oder falsches "
+"Captcha) festzulegen."
+
+#: views/settings.php:793
+msgid "Enter the number of login attempts for the user."
+msgstr "Geben Sie die Höchstzahl für Fehlversuche ein."
+
+#: views/settings.php:800
+msgid ""
+"Allows you to add single IP Addresses for blocking it that are considered "
+"undesirable or hostile."
+msgstr "Ermöglicht ihnen eine einzelne IP-Adresse zu blockieren."
+
+#: views/settings.php:805
+msgid "Enter the IP Address here which you want to block."
+msgstr "Geben Sie hier die Adresse ein, die blockiert werden soll."
+
+#: views/settings.php:806
+msgid "Add Block IP Address"
+msgstr "Blockierte Adresse hinzufügen"
+
+#: views/settings.php:811
+msgid "Blocked IP Addresses"
+msgstr "Blockierte IP Adressen"
+
+#: views/settings.php:812
+msgid ""
+"Blocked IP Addresses shows the complete list of IP Addresses that are "
+"blocked by the user. You can also delete these IP Addresses by selecting "
+"(multiple) it and the click on Delete Button."
+msgstr ""
+"Blockierte IP-Adressen zeigt eine Liste aller Adressen, die durch den Nutzer "
+"blockiert wurden. Zum Löschen wählen sie eine oder mehrere aus und klicken "
+"Sie auf \"Löschen\"."
+
+#: views/settings.php:827
+msgid "Delete Block IP Addresses"
+msgstr "Blockierte IP-Adressen löschen"
+
+#: views/settings.php:832
+msgid "Block Start IP Range"
+msgstr "Start blockierter Bereich"
+
+#: views/settings.php:833
+msgid ""
+"Allows you to enter Start IP Address of the IP Address Range to be blocked."
+msgstr ""
+"Ermöglicht es Ihnen die Start-Adresse für einen blockierten IP-Adressbereich "
+"einzugeben."
+
+#: views/settings.php:838
+msgid "Enter the Start IP Range to be blocked."
+msgstr "Geben Sie die Start-Adresse für den blockierten IP-Bereich hier ein."
+
+#: views/settings.php:843
+msgid "Block End IP Range"
+msgstr "Ende blockierter Bereich"
+
+#: views/settings.php:844
+msgid ""
+"Allows you to enter End IP Address of the IP Address Range to be blocked."
+msgstr ""
+"Ermöglicht es Ihnen die End-Adresse für einen blockierten IP-Adressbereich "
+"einzugeben."
+
+#: views/settings.php:849
+msgid "Enter the End IP Range to be blocked."
+msgstr "Geben Sie die End-Adresse für den blockierten IP-Bereich hier ein."
+
+#: views/settings.php:850
+msgid "Add Block IP Range"
+msgstr "Blockierten IP-Adressbereich hinzufügen"
+
+#: views/settings.php:855
+msgid "Blocked IP Range"
+msgstr "Blockierter IP-Adressbereich"
+
+#: views/settings.php:856
+msgid ""
+"Blocked IP Range show the list of all the IP Addresses range that are "
+"blocked by the user. You can also delete these IP Addresses by selecting "
+"(multiple) it and the click on Delete Button."
+msgstr ""
+"Blockierte IP-Adressbereiche zeigt eine Liste aller Bereiche, die durch den "
+"Nutzer blockiert wurden. Zum Löschen wählen sie einen oder mehrere aus und "
+"klicken Sie auf \"Löschen\"."
+
+#: views/settings.php:872
+msgid "Delete Block IP Range"
+msgstr "Lösche blockierten IP-Adressbereich"
+
+#: views/settings.php:906
+msgid "Message Settings"
+msgstr "Nachrichten-Einstellungen"
+
+#: views/settings.php:911
+msgid "Captcha Empty Error"
+msgstr "Meldung \"Captcha leer\""
+
+#: views/settings.php:912
+msgid ""
+"Allows you to set error message for captcha which is displayed when user "
+"fills the Captcha code empty."
+msgstr ""
+"Ermöglicht es Ihnen die Meldung festzulegen, wenn ein Nutzer ein leeres Feld "
+"abgesenet hat."
+
+#: views/settings.php:917
+msgid ""
+"Enter the error message here for the users who fill the captcha code empty."
+msgstr ""
+"Geben sie hier die Meldung für Nutzer ein, die ein leeres Feld abgesendet "
+"haben."
+
+#: views/settings.php:922
+msgid "Captcha Invalid Error"
+msgstr "Meldung \"Falsches Captcha\""
+
+#: views/settings.php:923
+msgid ""
+"Allows you to set error message for captcha which is displayed when user "
+"fills the Captcha code invalid."
+msgstr ""
+"Ermöglicht es Ihnen die Meldung festzulegen, wenn ein Nutzer ein falsches "
+"Captcha eingegeben hat."
+
+#: views/settings.php:928
+msgid ""
+"Enter the error message here for the users who fill the captcha code invalid."
+msgstr ""
+"Geben sie hier die Meldung für Nutzer ein, die ein falsches Captcha "
+"eingegeben haben."
+
+#: views/settings.php:933
+msgid "IP Block Message"
+msgstr "Meldung \"IP Adresse blockiert\""
+
+#: views/settings.php:934
+msgid ""
+"Allows you to set error message when IP Address is blocked from Login Logs "
+"or from Security Settings."
+msgstr ""
+"Ermöglicht es Ihnen, die Fehlermeldung für blockierte IP-Adressen "
+"festzulegen."
+
+#: views/settings.php:939
+msgid "Enter the error message here when the IP is Blocked."
+msgstr "Geben Sie hier die Fehlermeldung für blockierte IP-Adressen ein."
+
+#: views/settings.php:945
+msgid ""
+"Allows you to set error message for login attempts left incase the Captcha "
+"code is left empty or filled invalid by the user."
+msgstr ""
+"Ermöglicht es Ihnen, den Text einzugeben, der Nutzern mitteilt, wieviele "
+"Versuche er nach einem Fehlversuch noch hat."
+
+#: views/settings.php:950
+msgid "Enter the error message here for Maxium login Attempts."
+msgstr ""
+"Geben Sie hier den Text für die Meldung mit der Anzahl verbleibender "
+"Versuche ein."
+
+#: views/settings.php:955
+msgid "Max Login Exceeded Error"
+msgstr "Meldung über maximale Anzahl Fehlversuche"
+
+#: views/settings.php:956
+msgid ""
+"Allows you to set error message which is displayed when the user exceed the "
+"maximum login attempts and the IP gets blocked for 24 hours."
+msgstr ""
+"Ermöglicht es Ihnen die Meldung für Nutzer mit zu vielen Vehlversuchen "
+"festzulegen (IP wird für 24h gesperrt)."
+
+#: views/settings.php:961
+msgid "Enter the error message here for Maxium login Exceeded."
+msgstr "Geben Sie hier den Text für die Meldung \"Maximale Fehlversuche\" ein."
+
+#: views/settings.php:1138
+msgid "Please enter valid IP Address"
+msgstr "Bitte geben sie eine IP-Adresse ein."
+
+#: views/settings.php:1144
+msgid "IP Address cannnot be duplicate. Please enter different IP address"
+msgstr ""
+"IP-Adressen können nur einmal verwendet werden. Bitte geben Sie eine andere "
+"ein."
+
+#: views/settings.php:1167
+msgid "Please enter valid IP Range."
+msgstr "Bitte geben Sie einen IP-Adressbereich ein."
+
+#: views/settings.php:1172
+msgid ""
+"IP Address cannnot be duplicate. Please enter Start IP Address and End IP "
+"Address different!"
+msgstr ""
+"IP-Adressen können nicht gleich sein. Bitte geben sie unterschiedliche "
+"Start- und End-Adressen für den Bereich ein!"
+
+#: views/settings.php:1177
+msgid "Start Range cannot be greater than End Range."
+msgstr "Start-Adresse darf nicht größer als End-Adresse sein."
+
+#: views/settings.php:1182
+msgid ""
+"IP Address Range cannnot be duplicate. Please enter different IP addresses."
+msgstr ""
+"IP-Adressberech muss einzigartig sein. Bitte geben Sie einen anderen Bereich "
+"ein."
+
+#: views/settings.php:1354
+#, fuzzy
+msgid ""
+"You have Exceeded Maximum Login Attempts.<br>So, your IP has been blocked "
+"for today.<br>Kindly, try again after 24 Hours."
+msgstr ""
+"Zu viele erfolglose Anmeldeversuche. Ihre IP-Adresse wurde vorläufig "
+"blockiert. Bitte versuchen Sie es in 24 Stunden erneut."
+
+#: views/system-status.php:37
+msgid "Get System Report"
+msgstr "Zeige Systembericht an"
+
+#: views/system-status.php:41
+msgid "Close System Report"
+msgstr "Schließe Systembericht"
+
+#: views/system-status.php:47
+msgid "Environment"
+msgstr "Umfeld"
+
+#: views/system-status.php:52
+msgid "Home URL :"
+msgstr "Homepage URL:"
+
+#: views/system-status.php:62
+msgid "Site URL :"
+msgstr "Website URL:"
+
+#: views/system-status.php:72
+msgid "WP Version :"
+msgstr "WP Version:"
+
+#: views/system-status.php:82
+msgid "WP Multisite Enabled :"
+msgstr "WP Mutisite:"
+
+#: views/system-status.php:86 views/system-status.php:128
+msgid "Yes"
+msgstr "Ja"
+
+#: views/system-status.php:86 views/system-status.php:128
+msgid "No"
+msgstr "Nein"
+
+#: views/system-status.php:92
+msgid "Web Server Info :"
+msgstr "Web Server Info:"
+
+#: views/system-status.php:102
+msgid "PHP Version :"
+msgstr "PHP Version:"
+
+#: views/system-status.php:112
+msgid "MySQL Version :"
+msgstr "MySQL Version:"
+
+#: views/system-status.php:124
+msgid "WP Debug Mode :"
+msgstr "WP Debug Modus:"
+
+#: views/system-status.php:134
+msgid "WP Language :"
+msgstr "WP Sprache:"
+
+#: views/system-status.php:138
+msgid "Default"
+msgstr "Voreinstellungen"
+
+#: views/system-status.php:144
+msgid "PHP Post Max Size :"
+msgstr "PHP Post Max Größe:"
+
+#: views/system-status.php:156
+msgid "WP Max Upload Size :"
+msgstr "WP Max Upload Größe:"
+
+#: views/system-status.php:194
+msgid "PHP Max Script Execute Time"
+msgstr "PHP Max Script Execute Time"
+
+#: views/system-status.php:204
+msgid "PHP Max Input Vars :"
+msgstr "PHP Max Input Vars:"
+
+#: views/system-status.php:214
+msgid "SUHOSIN Installed :"
+msgstr "SUHOSIN Installiert:"
+
+#: views/system-status.php:225
+msgid "Default Timezone :"
+msgstr "Voreingestellte Zeitzone:"
+
+#: views/system-status.php:281
+msgid "Operating System :"
+msgstr "Betriebssystem:"
+
+#: views/system-status.php:291
+msgid "Memory usage :"
+msgstr "Speichernutzung:"
+
+#: views/system-status.php:301
+msgid "SQL Mode :"
+msgstr "SQL Modus:"
+
+#: views/system-status.php:311
+msgid "PHP Safe Mode :"
+msgstr "PHP Safe Modus:"
+
+#: views/system-status.php:321
+msgid "PHP Allow URL fopen :"
+msgstr "PHP URL fopen erlauben:"
+
+#: views/system-status.php:331
+msgid "PHP Memory Limit :"
+msgstr "PHP Speicherlimit:"
+
+#: views/system-status.php:341
+msgid "PHP Max Post Size :"
+msgstr "PHÜ Max Post Size:"
+
+#: views/system-status.php:351
+msgid "PCRE Backtracking Limit :"
+msgstr "PCRE Backtracking Limit:"
+
+#: views/system-status.php:361
+msgid "PHP Exif support :"
+msgstr "PHP Exif-Unterstützung:"
+
+#: views/system-status.php:371
+msgid "PHP IPTC support :"
+msgstr "PHP IPTC-Unterstützung:"
+
+#: views/system-status.php:381
+msgid "PHP XML support :"
+msgstr "PHP XML-Unterstützung:"
+
+#: views/system-status.php:400
+msgid "Installed Plugins :"
+msgstr "Installierte Plugins:"
+
+#: views/system-status.php:465
+msgid "Theme Name :"
+msgstr "Name der Theme:"
+
+#: views/system-status.php:475
+msgid "Theme Version :"
+msgstr "Version der Theme:"
+
+#: views/system-status.php:489
+msgid "Author URL :"
+msgstr "URL des Autors:"
+
+#, fuzzy
+#~ msgid "View WP Captcha Bank Editions"
+#~ msgstr "WP Captcha Bank Handbuch anzeigen"
+
+#~ msgid "Go for Premium!"
+#~ msgstr "Gehen Sie für Premium-!"
+
+#~ msgid "Go Premium"
+#~ msgstr "Gehen Premium-"
+
+#, fuzzy
+#~ msgid "Premium Pricing Plans"
+#~ msgstr "Premium Versionen"
+
+#, fuzzy
+#~ msgid "Detailed Features"
+#~ msgstr "Funktionen"
+
+#~ msgid "This feature is available in Premium Editions!"
+#~ msgstr "Diese Funktion ist in Prämie Editionen!"
+
+#~ msgid "This feature is only avaliable in Premium Versions."
+#~ msgstr "Sie Feature ist nur in Premium-Versionen"
+
+#, fuzzy
+#~ msgid " (Available in Premium Editions)"
+#~ msgstr "Premium Versionen"
+
+#~ msgid "This Feature is Available in Premium Editions!"
+#~ msgstr "Este recurso está disponível nas edições premium!"
