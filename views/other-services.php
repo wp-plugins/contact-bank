@@ -1,17 +1,18 @@
 <?php
-switch($captcha_role)
+switch($cb_role)
 {
 	case "administrator":
-		$user_role_permission = "manage_options";
+		$cb_user_role_permission = "manage_options";
 		break;
 	case "editor":
-		$user_role_permission = "publish_pages";
+		$cb_user_role_permission = "publish_pages";
 		break;
 	case "author":
-		$user_role_permission = "publish_posts";
+		$cb_user_role_permission = "publish_posts";
 		break;
+	
 }
-if (!current_user_can($user_role_permission))
+if (!current_user_can($cb_user_role_permission))
 {
 	return;
 }
@@ -956,7 +957,7 @@ else
 													</div>
 													<div class="plugin-card-bottom_settings">
 														<div class="column-downloaded">
-															<strong><?php _e("Cost of this Service is 700 Euros.", tech_bank); ?></strong>
+															<strong><?php _e("Cost of this Service is 700 Euros.", tech_bank); ?></strong><br />
 															<span><?php _e("The Time Frame would be 8 Business Days and upto 5 revisions.", tech_bank); ?></span>
 														</div>
 													</div>
@@ -1162,6 +1163,8 @@ else
 														</div>
 													</div>
 												</div>
+												
+												
 												<div class="service-div-settings">
 													<div class="service-div-settings-top">
 														<div class="service-div-inner-content">
@@ -1189,7 +1192,7 @@ else
 													</div>
 													<div class="plugin-card-bottom_settings">
 														<div class="column-downloaded">
-															<strong><?php _e("Cost of this Service is 560 Euros", tech_bank); ?></strong><br/>
+															<strong><?php _e("Cost of this Service is 560 Euros.", tech_bank); ?></strong><br/>
 															<span><?php _e("The Time Frame would be 5 Business Days and upto 3 revisions.", tech_bank); ?></span>
 														</div>
 													</div>
@@ -1221,7 +1224,7 @@ else
 													</div>
 													<div class="plugin-card-bottom_settings">
 														<div class="column-downloaded">
-															<strong><?php _e("Cost of this Service is 1120 Euros", tech_bank); ?></strong><br/>
+															<strong><?php _e("Cost of this Service is 1120 Euros.", tech_bank); ?></strong><br/>
 															<span><?php _e("The Time Frame would be 10 Business Days and upto 5 Revisions.", tech_bank); ?></span>
 														</div>
 													</div>
