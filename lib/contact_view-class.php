@@ -1,5 +1,4 @@
 <?php
-
 	switch($cb_role)
 	{
 		case "administrator":

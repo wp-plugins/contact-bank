@@ -1,4 +1,23 @@
 <?php
+switch($cb_role)
+{
+	case "administrator":
+		$cb_user_role_permission = "manage_options";
+		break;
+	case "editor":
+		$cb_user_role_permission = "publish_pages";
+		break;
+	case "author":
+		$cb_user_role_permission = "publish_posts";
+		break;
+	
+}
+if (!current_user_can($cb_user_role_permission))
+{
+	return;
+}
+else
+{
 	$form_settings = array();
 	$control_id = $wpdb->get_var
 	(
@@ -269,3 +288,6 @@
 		}
 	}
 </script>
+<?php 
+}
+?>

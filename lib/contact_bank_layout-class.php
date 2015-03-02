@@ -45,7 +45,7 @@ else
 	$settings["input_field_input_size"] = isset($_REQUEST["ux_input_size_input_field"]) ? esc_attr($_REQUEST["ux_input_size_input_field"]): "layout-span6";
 	
 	$settings["submit_button_font_family"] = isset($_REQUEST["ux_ddl_font_family_submit_button"]) ? esc_attr($_REQUEST["ux_ddl_font_family_submit_button"]): "inherit";
-	$settings["submit_button_text"] = isset($_REQUEST["ux_txt_text_submit_button"]) ? esc_attr($_REQUEST["ux_txt_text_submit_button"]): "Save ";
+	$settings["submit_button_text"] = isset($_REQUEST["ux_txt_text_submit_button"]) ? esc_attr($_REQUEST["ux_txt_text_submit_button"]): "Submit";
 	$settings["submit_button_font_style"] = isset($_REQUEST["ux_ddl_font_style_submit_button"]) ? esc_attr($_REQUEST["ux_ddl_font_style_submit_button"]): "normal";
 	$settings["submit_button_font_size"] = isset($_REQUEST["ux_ddl_font_size_submit_button"]) ? esc_attr($_REQUEST["ux_ddl_font_size_submit_button"]): "12";
 	$settings["submit_button_button_width"] = isset($_REQUEST["ux_txt_button_width_submit_button"]) ? esc_attr($_REQUEST["ux_txt_button_width_submit_button"]): "100";

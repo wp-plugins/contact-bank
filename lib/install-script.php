@@ -536,7 +536,7 @@ if (count($wpdb->get_var('SHOW TABLES LIKE "' . contact_bank_layout_settings_Tab
 	$settings["input_field_input_size"] = "layout-span10";
 	
 	$settings["submit_button_font_family"] = "inherit";
-	$settings["submit_button_text"] = "Save ";
+	$settings["submit_button_text"] = "Submit";
 	$settings["submit_button_font_style"] = "normal";
 	$settings["submit_button_font_size"] = "12";
 	$settings["submit_button_button_width"] = "100";
@@ -915,7 +915,7 @@ $settings["input_field_text_direction"] = "inherit";
 $settings["input_field_input_size"] = "layout-span10";
 
 $settings["submit_button_font_family"] = "inherit";
-$settings["submit_button_text"] = "Save ";
+$settings["submit_button_text"] = "Submit";
 $settings["submit_button_font_style"] = "normal";
 $settings["submit_button_font_size"] = "12";
 $settings["submit_button_button_width"] = "100";

@@ -60,7 +60,9 @@ else
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
 																	class="css3_hidden_caption">Installation per License</span><span
-																	class="css3_grid_tooltip"><span>Number of websites that can use the plugin on purchase of a License.</span>Installation per License</span></span></span></span></li>
+																	class="css3_grid_tooltip"><span>Number of websites that
+																			can use the plugin on purchase of a License.</span>Installation
+																		per License</span></span></span></span></li>
 													<li
 														class="css3_grid_row_3 row_style_2 css3_grid_row_3_responsive"><span
 														class="css3_grid_vertical_align_table"><span
@@ -92,38 +94,37 @@ else
 															class="css3_grid_vertical_align"><span><span
 																	class="css3_hidden_caption">Multi-Lingual</span><span
 																	class="css3_grid_tooltip"><span>Multi-Lingual Facility
-																			allows the plugin to be used in 36 languages.</span>Multi-Lingual</span></span></span></span></li>
+																			allows the plugin to be used in 48 languages.</span>Multi-Lingual</span></span></span></span></li>
 													<li
 														class="css3_grid_row_7 row_style_2 css3_grid_row_7_responsive"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
 																	class="css3_hidden_caption">Standard Fields</span><span
-																	class="css3_grid_tooltip"><span>Allows you to display
-																			Captcha on WordPress Login Form.</span>Standard
-																		Fields</span></span></span></span></li>
+																	class="css3_grid_tooltip"><span>Standard Fields allowed
+																			to be created in Contact Bank.</span>Standard Fields</span></span></span></span></li>
 													<li
 														class="css3_grid_row_8 row_style_4 css3_grid_row_8_responsive"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
 																	class="css3_hidden_caption">Notifications</span><span
-																	class="css3_grid_tooltip"><span>Allows you to display
-																			Captcha on WordPress Comments Form.</span>Notifications</span></span></span></span></li>
+																	class="css3_grid_tooltip"><span>Notifications to Admin
+																			and Confirmation Notification to Clients are enabled.</span>Notifications</span></span></span></span></li>
 													<li
 														class="css3_grid_row_9 row_style_2 css3_grid_row_9_responsive"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
 																	class="css3_hidden_caption">Form Settings</span><span
-																	class="css3_grid_tooltip"><span>Allows you to display
-																			Captcha on WordPress Admin Comment Form.</span>Form
-																		Settings</span></span></span></span></li>
+																	class="css3_grid_tooltip"><span>Form Settings allows to
+																			modify and customize the controls according to your
+																			requirements.</span>Form Settings</span></span></span></span></li>
 													<li
 														class="css3_grid_row_10 row_style_4 css3_grid_row_10_responsive"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
 																	class="css3_hidden_caption">Email Settings</span><span
-																	class="css3_grid_tooltip"><span>Allows you to display
-																			Captcha on WordPress Reset/Lost Password Form</span>Email
-																		Settings</span></span></span></span></li>
+																	class="css3_grid_tooltip"><span>Email Settings would
+																			allow to edit and customize the emails sent
+																			automatically by the system.</span>Email Settings</span></span></span></span></li>
 													<li
 														class="css3_grid_row_11 row_style_2 css3_grid_row_11_responsive"><span
 														class="css3_grid_vertical_align_table"><span
@@ -135,53 +136,121 @@ else
 														class="css3_grid_row_12 row_style_4 css3_grid_row_12_responsive"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
-																	class="css3_hidden_caption">Entry Management</span><span
-																	class="css3_grid_tooltip"><span>Allows you to hide
-																			Captcha for Admin Comment form when the user is other
-																			than Administrator.</span>Entry Management</span></span></span></span></li>
+																	class="css3_hidden_caption">Admin Notifications</span><span
+																	class="css3_grid_tooltip"><span>Email Notifications to
+																			the Administrator.</span>Admin Notifications</span></span></span></span></li>
 													<li
 														class="css3_grid_row_13 row_style_2 css3_grid_row_13_responsive"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
-																	class="css3_hidden_caption">Limit Entries</span><span
-																	class="css3_grid_tooltip"><span>Allows you to set
-																			various Layout Settings such as Background, Lines,
-																			Dots, Text Transparency, and Signature for Captcha.</span>Limit
-																		Entries</span></span></span></span></li>
+																	class="css3_hidden_caption">Client Notifications</span><span
+																	class="css3_grid_tooltip"><span>Email Notifications to
+																			the Client.</span>Client Notifications</span></span></span></span></li>
 													<li
 														class="css3_grid_row_14 row_style_4 css3_grid_row_14_responsive"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
-																	class="css3_hidden_caption">Advanced Fields</span><span
-																	class="css3_grid_tooltip"><span>Allows you to display
-																			Captcha on WordPress Registration Form.</span>Advanced
-																		Fields</span></span></span></span></li>
+																	class="css3_hidden_caption">Drag &amp; Drop</span><span
+																	class="css3_grid_tooltip"><span>Controls allows to
+																			simply Drag &amp; Drop fields to the Forms.</span>Drag
+																		&amp; Drop</span></span></span></span></li>
 													<li
 														class="css3_grid_row_15 row_style_2 css3_grid_row_15_responsive"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
-																	class="css3_hidden_caption">Customization</span><span
-																	class="css3_grid_tooltip"><span>Allows you to Integrate
-																			Captcha on Contact Bank Form. For this you need to
-																			purchase both the plugins separately.</span>Customization</span></span></span></span></li>
+																	class="css3_hidden_caption">No Coding Knowledge</span><span
+																	class="css3_grid_tooltip"><span>No knowledge of coding
+																			is required to set up the Form.</span>No Coding
+																		Knowledge</span></span></span></span></li>
 													<li
 														class="css3_grid_row_16 row_style_4 css3_grid_row_16_responsive"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
-																	class="css3_hidden_caption">Optional Filters</span><span
-																	class="css3_grid_tooltip"><span>Allows you to set
-																			filters such as Alpha, Alpha Numeric, Digits, Strip
-																			Tags, Trim for your input field</span>Optional
-																		Filters</span></span></span></span></li>
+																	class="css3_hidden_caption">Form Builder</span><span
+																	class="css3_grid_tooltip"><span>Allow to prepare Forms
+																			as per your need.</span>Form Builder</span></span></span></span></li>
 													<li
 														class="css3_grid_row_17 row_style_2 css3_grid_row_17_responsive"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Advanced Fields</span><span
+																	class="css3_grid_tooltip"><span>Advanced Fields allowed
+																			to be created in Contact Bank.</span>Advanced Fields</span></span></span></span></li>
+													<li
+														class="css3_grid_row_18 row_style_4 css3_grid_row_18_responsive"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Entry Management</span><span
+																	class="css3_grid_tooltip"><span>Entry Management to
+																			overview forms submitted by the customer.</span>Entry
+																		Management</span></span></span></span></li>
+													<li
+														class="css3_grid_row_19 row_style_2 css3_grid_row_19_responsive"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
 																	class="css3_hidden_caption">Tooltips</span><span
 																	class="css3_grid_tooltip"><span>Allows you to set
 																			different tooltips for your fields of Contact Form</span>Tooltips</span></span></span></span></li>
 													<li
-														class="css3_grid_row_18 footer_row css3_grid_row_18_responsive"><span
+														class="css3_grid_row_20 row_style_4 css3_grid_row_20_responsive"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Limit Entries</span><span
+																	class="css3_grid_tooltip"><span>Limit Entries to
+																			maximize number of clients which could fill up the
+																			form.</span>Limit Entries</span></span></span></span></li>
+													<li
+														class="css3_grid_row_21 row_style_2 css3_grid_row_21_responsive"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">File Uploader</span><span
+																	class="css3_grid_tooltip"><span>Upload the file as per
+																			your need.</span>File Uploader</span></span></span></span></li>
+													<li
+														class="css3_grid_row_22 row_style_4 css3_grid_row_22_responsive"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Layout Settings</span><span
+																	class="css3_grid_tooltip"><span>Layout Settings provide
+																			Styling to the forms.</span>Layout Settings</span></span></span></span></li>
+													<li
+														class="css3_grid_row_23 row_style_2 css3_grid_row_23_responsive"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Customization</span><span
+																	class="css3_grid_tooltip"><span>Customization to the
+																			layout of your Form.</span>Customization</span></span></span></span></li>
+													<li
+														class="css3_grid_row_24 row_style_4 css3_grid_row_24_responsive"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Optional Filters</span><span
+																	class="css3_grid_tooltip"><span>Optional Filters to
+																			filter the User Input.</span>Optional Filters</span></span></span></span></li>
+													<li
+														class="css3_grid_row_25 row_style_2 css3_grid_row_25_responsive"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Custom Notifications</span><span
+																	class="css3_grid_tooltip"><span>Email Notifications to
+																			the Custom needs.</span>Custom Notifications</span></span></span></span></li>
+													<li
+														class="css3_grid_row_26 row_style_4 css3_grid_row_26_responsive"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Form to DB</span><span
+																	class="css3_grid_tooltip"><span>Save Contact Form data
+																			back to the Data Base.</span>Form to DB</span></span></span></span></li>
+													<li
+														class="css3_grid_row_27 row_style_2 css3_grid_row_27_responsive"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Captcha with Contact Bank</span><span
+																	class="css3_grid_tooltip"><span>Implement Captcha Bank
+																			with Contact Bank forms.</span>Captcha with Contact
+																		Bank</span></span></span></span></li>
+													<li
+														class="css3_grid_row_28 footer_row css3_grid_row_28_responsive"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"></span></span></li>
 												</ul>
@@ -203,7 +272,7 @@ else
 														class="css3_grid_row_2 row_style_3 css3_grid_row_2_responsive align_center"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
-																	class="css3_hidden_caption">Domains per License</span>1</span></span></span></li>
+																	class="css3_hidden_caption">Installation per License</span>1</span></span></span></li>
 													<li
 														class="css3_grid_row_3 row_style_1 css3_grid_row_3_responsive align_center"><span
 														class="css3_grid_vertical_align_table"><span
@@ -263,52 +332,122 @@ else
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
 																	class="css3_hidden_caption">Widgets</span><img
-																	src="<?php echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	src="<?php  echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
 																	alt="yes"></span></span></span></li>
 													<li
 														class="css3_grid_row_12 row_style_3 css3_grid_row_12_responsive align_center"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
-																	class="css3_hidden_caption">Entry Management</span><img
-																	src="<?php echo plugins_url("/assets/img/cross_04.png" , dirname(__FILE__)); ?>"
-																	alt="no"></span></span></span></li>
+																	class="css3_hidden_caption">Admin Notifications</span><img
+																	src="<?php  echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	alt="yes"></span></span></span></li>
 													<li
 														class="css3_grid_row_13 row_style_1 css3_grid_row_13_responsive align_center"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
-																	class="css3_hidden_caption">Limit Entries</span><img
-																	src="<?php echo plugins_url("/assets/img/cross_04.png" , dirname(__FILE__)); ?>"
-																	alt="no"></span></span></span></li>
+																	class="css3_hidden_caption">Client Notifications</span><img
+																	src="<?php  echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	alt="yes"></span></span></span></li>
 													<li
 														class="css3_grid_row_14 row_style_3 css3_grid_row_14_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Drag &amp; Drop</span><img
+																	src="<?php  echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	alt="yes"></span></span></span></li>
+													<li
+														class="css3_grid_row_15 row_style_1 css3_grid_row_15_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">No Coding Knowledge</span><img
+																	src="<?php  echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	alt="yes"></span></span></span></li>
+													<li
+														class="css3_grid_row_16 row_style_3 css3_grid_row_16_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Form Builder</span><img
+																	src="<?php  echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	alt="yes"></span></span></span></li>
+													<li
+														class="css3_grid_row_17 row_style_1 css3_grid_row_17_responsive align_center"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
 																	class="css3_hidden_caption">Advanced Fields</span><img
 																	src="<?php echo plugins_url("/assets/img/cross_04.png" , dirname(__FILE__)); ?>"
 																	alt="no"></span></span></span></li>
 													<li
-														class="css3_grid_row_15 row_style_1 css3_grid_row_15_responsive align_center"><span
+														class="css3_grid_row_18 row_style_3 css3_grid_row_18_responsive align_center"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
-																	class="css3_hidden_caption">Customization</span><img
+																	class="css3_hidden_caption">Entry Management</span><img
 																	src="<?php echo plugins_url("/assets/img/cross_04.png" , dirname(__FILE__)); ?>"
 																	alt="no"></span></span></span></li>
 													<li
-														class="css3_grid_row_16 row_style_3 css3_grid_row_16_responsive align_center"><span
-														class="css3_grid_vertical_align_table"><span
-															class="css3_grid_vertical_align"><span><span
-																	class="css3_hidden_caption">Optional Filters</span><img
-																	src="<?php echo plugins_url("/assets/img/cross_04.png" , dirname(__FILE__)); ?>"
-																	alt="no"></span></span></span></li>
-													<li
-														class="css3_grid_row_17 row_style_1 css3_grid_row_17_responsive align_center"><span
+														class="css3_grid_row_19 row_style_1 css3_grid_row_19_responsive align_center"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
 																	class="css3_hidden_caption">Tooltips</span><img
 																	src="<?php echo plugins_url("/assets/img/cross_04.png" , dirname(__FILE__)); ?>"
 																	alt="no"></span></span></span></li>
 													<li
-														class="css3_grid_row_18 footer_row css3_grid_row_18_responsive"><span
+														class="css3_grid_row_20 row_style_3 css3_grid_row_20_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Limit Entries</span><img
+																	src="<?php echo plugins_url("/assets/img/cross_04.png" , dirname(__FILE__)); ?>"
+																	alt="no"></span></span></span></li>
+													<li
+														class="css3_grid_row_21 row_style_1 css3_grid_row_21_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">File Uploader</span><img
+																	src="<?php echo plugins_url("/assets/img/cross_04.png" , dirname(__FILE__)); ?>"
+																	alt="no"></span></span></span></li>
+													<li
+														class="css3_grid_row_22 row_style_3 css3_grid_row_22_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Layout Settings</span><img
+																	src="<?php echo plugins_url("/assets/img/cross_04.png" , dirname(__FILE__)); ?>"
+																	alt="no"></span></span></span></li>
+													<li
+														class="css3_grid_row_23 row_style_1 css3_grid_row_23_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Customization</span><img
+																	src="<?php echo plugins_url("/assets/img/cross_04.png" , dirname(__FILE__)); ?>"
+																	alt="no"></span></span></span></li>
+													<li
+														class="css3_grid_row_24 row_style_3 css3_grid_row_24_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Optional Filters</span><img
+																	src="<?php echo plugins_url("/assets/img/cross_04.png" , dirname(__FILE__)); ?>"
+																	alt="no"></span></span></span></li>
+													<li
+														class="css3_grid_row_25 row_style_1 css3_grid_row_25_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Custom Notifications</span><img
+																	src="<?php echo plugins_url("/assets/img/cross_04.png" , dirname(__FILE__)); ?>"
+																	alt="no"></span></span></span></li>
+													<li
+														class="css3_grid_row_26 row_style_3 css3_grid_row_26_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Form to DB</span><img
+																	src="<?php echo plugins_url("/assets/img/cross_04.png" , dirname(__FILE__)); ?>"
+																	alt="no"></span></span></span></li>
+													<li
+														class="css3_grid_row_27 row_style_1 css3_grid_row_27_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Captcha with Contact Bank</span><img
+																	src="<?php echo plugins_url("/assets/img/cross_04.png" , dirname(__FILE__)); ?>"
+																	alt="no"></span></span></span></li>
+													<li
+														class="css3_grid_row_28 footer_row css3_grid_row_28_responsive"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><a
 																href="https://wordpress.org/plugins/contact-bank/stats/"
@@ -336,7 +475,7 @@ else
 														class="css3_grid_row_2 row_style_4 css3_grid_row_2_responsive align_center"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
-																	class="css3_hidden_caption">Domains per License</span>1</span></span></span></li>
+																	class="css3_hidden_caption">Installation per License</span>1</span></span></span></li>
 													<li
 														class="css3_grid_row_3 row_style_2 css3_grid_row_3_responsive align_center"><span
 														class="css3_grid_vertical_align_table"><span
@@ -397,55 +536,125 @@ else
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
 																	class="css3_hidden_caption">Widgets</span><img
-																	src="<?php echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	src="<?php  echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
 																	alt="yes"></span></span></span></li>
 													<li
 														class="css3_grid_row_12 row_style_4 css3_grid_row_12_responsive align_center"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
-																	class="css3_hidden_caption">Entry Management</span><img
-																	src="<?php echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	class="css3_hidden_caption">Admin Notifications</span><img
+																	src="<?php  echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
 																	alt="yes"></span></span></span></li>
 													<li
 														class="css3_grid_row_13 row_style_2 css3_grid_row_13_responsive align_center"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
-																	class="css3_hidden_caption">Limit Entries</span><img
-																	src="<?php echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	class="css3_hidden_caption">Client Notifications</span><img
+																	src="<?php  echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
 																	alt="yes"></span></span></span></li>
 													<li
 														class="css3_grid_row_14 row_style_4 css3_grid_row_14_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Drag &amp; Drop</span><img
+																	src="<?php  echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	alt="yes"></span></span></span></li>
+													<li
+														class="css3_grid_row_15 row_style_2 css3_grid_row_15_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">No Coding Knowledge</span><img
+																	src="<?php  echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	alt="yes"></span></span></span></li>
+													<li
+														class="css3_grid_row_16 row_style_4 css3_grid_row_16_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Form Builder</span><img
+																	src="<?php  echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	alt="yes"></span></span></span></li>
+													<li
+														class="css3_grid_row_17 row_style_2 css3_grid_row_17_responsive align_center"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
 																	class="css3_hidden_caption">Advanced Fields</span><img
 																	src="<?php echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
 																	alt="yes"></span></span></span></li>
 													<li
-														class="css3_grid_row_15 row_style_2 css3_grid_row_15_responsive align_center"><span
+														class="css3_grid_row_18 row_style_4 css3_grid_row_18_responsive align_center"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
-																	class="css3_hidden_caption">Customization</span><img
+																	class="css3_hidden_caption">Entry Management</span><img
 																	src="<?php echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
 																	alt="yes"></span></span></span></li>
 													<li
-														class="css3_grid_row_16 row_style_4 css3_grid_row_16_responsive align_center"><span
-														class="css3_grid_vertical_align_table"><span
-															class="css3_grid_vertical_align"><span><span
-																	class="css3_hidden_caption">Optional Filters</span><img
-																	src="<?php echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
-																	alt="yes"></span></span></span></li>
-													<li
-														class="css3_grid_row_17 row_style_2 css3_grid_row_17_responsive align_center"><span
+														class="css3_grid_row_19 row_style_2 css3_grid_row_19_responsive align_center"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
 																	class="css3_hidden_caption">Tooltips</span><img
 																	src="<?php echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
 																	alt="yes"></span></span></span></li>
 													<li
-														class="css3_grid_row_18 footer_row css3_grid_row_18_responsive"><span
+														class="css3_grid_row_20 row_style_4 css3_grid_row_20_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Limit Entries</span><img
+																	src="<?php echo plugins_url("/assets/img/cross_04.png" , dirname(__FILE__)); ?>"
+																	alt="no"></span></span></span></li>
+													<li
+														class="css3_grid_row_21 row_style_2 css3_grid_row_21_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">File Uploader</span><img
+																	src="<?php echo plugins_url("/assets/img/cross_04.png" , dirname(__FILE__)); ?>"
+																	alt="no"></span></span></span></li>
+													<li
+														class="css3_grid_row_22 row_style_4 css3_grid_row_22_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Layout Settings</span><img
+																	src="<?php echo plugins_url("/assets/img/cross_04.png" , dirname(__FILE__)); ?>"
+																	alt="no"></span></span></span></li>
+													<li
+														class="css3_grid_row_23 row_style_2 css3_grid_row_23_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Customization</span><img
+																	src="<?php echo plugins_url("/assets/img/cross_04.png" , dirname(__FILE__)); ?>"
+																	alt="no"></span></span></span></li>
+													<li
+														class="css3_grid_row_24 row_style_4 css3_grid_row_24_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Optional Filters</span><img
+																	src="<?php echo plugins_url("/assets/img/cross_04.png" , dirname(__FILE__)); ?>"
+																	alt="no"></span></span></span></li>
+													<li
+														class="css3_grid_row_25 row_style_2 css3_grid_row_25_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Custom Notifications</span><img
+																	src="<?php echo plugins_url("/assets/img/cross_04.png" , dirname(__FILE__)); ?>"
+																	alt="no"></span></span></span></li>
+													<li
+														class="css3_grid_row_26 row_style_4 css3_grid_row_26_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Form to DB</span><img
+																	src="<?php echo plugins_url("/assets/img/cross_04.png" , dirname(__FILE__)); ?>"
+																	alt="no"></span></span></span></li>
+													<li
+														class="css3_grid_row_27 row_style_2 css3_grid_row_27_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Captcha with Contact Bank</span><img
+																	src="<?php echo plugins_url("/assets/img/cross_04.png" , dirname(__FILE__)); ?>"
+																	alt="no"></span></span></span></li>
+													<li
+														class="css3_grid_row_28 footer_row css3_grid_row_28_responsive"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><a
-																href="/shop/wp-contact-bank/contact-bank-eco-edition/"
+																href="http://tech-banker.com/shop/wp-contact-bank/contact-bank-eco-edition/"
 																class="sign_up sign_up_orange radius3">Order Now!</a></span></span></li>
 												</ul>
 											</div>
@@ -471,7 +680,7 @@ else
 														class="css3_grid_row_2 row_style_3 css3_grid_row_2_responsive align_center"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
-																	class="css3_hidden_caption">Domains per License</span>1</span></span></span></li>
+																	class="css3_hidden_caption">Installation per License</span>1</span></span></span></li>
 													<li
 														class="css3_grid_row_3 row_style_1 css3_grid_row_3_responsive align_center"><span
 														class="css3_grid_vertical_align_table"><span
@@ -532,55 +741,125 @@ else
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
 																	class="css3_hidden_caption">Widgets</span><img
-																	src="<?php echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	src="<?php  echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
 																	alt="yes"></span></span></span></li>
 													<li
 														class="css3_grid_row_12 row_style_3 css3_grid_row_12_responsive align_center"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
-																	class="css3_hidden_caption">Entry Management</span><img
-																	src="<?php echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	class="css3_hidden_caption">Admin Notifications</span><img
+																	src="<?php  echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
 																	alt="yes"></span></span></span></li>
 													<li
 														class="css3_grid_row_13 row_style_1 css3_grid_row_13_responsive align_center"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
-																	class="css3_hidden_caption">Limit Entries</span><img
-																	src="<?php echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	class="css3_hidden_caption">Client Notifications</span><img
+																	src="<?php  echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
 																	alt="yes"></span></span></span></li>
 													<li
 														class="css3_grid_row_14 row_style_3 css3_grid_row_14_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Drag &amp; Drop</span><img
+																	src="<?php  echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	alt="yes"></span></span></span></li>
+													<li
+														class="css3_grid_row_15 row_style_1 css3_grid_row_15_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">No Coding Knowledge</span><img
+																	src="<?php  echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	alt="yes"></span></span></span></li>
+													<li
+														class="css3_grid_row_16 row_style_3 css3_grid_row_16_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Form Builder</span><img
+																	src="<?php  echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	alt="yes"></span></span></span></li>
+													<li
+														class="css3_grid_row_17 row_style_1 css3_grid_row_17_responsive align_center"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
 																	class="css3_hidden_caption">Advanced Fields</span><img
 																	src="<?php echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
 																	alt="yes"></span></span></span></li>
 													<li
-														class="css3_grid_row_15 row_style_1 css3_grid_row_15_responsive align_center"><span
+														class="css3_grid_row_18 row_style_3 css3_grid_row_18_responsive align_center"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
-																	class="css3_hidden_caption">Customization</span><img
+																	class="css3_hidden_caption">Entry Management</span><img
 																	src="<?php echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
 																	alt="yes"></span></span></span></li>
 													<li
-														class="css3_grid_row_16 row_style_3 css3_grid_row_16_responsive align_center"><span
-														class="css3_grid_vertical_align_table"><span
-															class="css3_grid_vertical_align"><span><span
-																	class="css3_hidden_caption">Optional Filters</span><img
-																	src="<?php echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
-																	alt="yes"></span></span></span></li>
-													<li
-														class="css3_grid_row_17 row_style_1 css3_grid_row_17_responsive align_center"><span
+														class="css3_grid_row_19 row_style_1 css3_grid_row_19_responsive align_center"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
 																	class="css3_hidden_caption">Tooltips</span><img
 																	src="<?php echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
 																	alt="yes"></span></span></span></li>
 													<li
-														class="css3_grid_row_18 footer_row css3_grid_row_18_responsive"><span
+														class="css3_grid_row_20 row_style_3 css3_grid_row_20_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Limit Entries</span><img
+																	src="<?php echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	alt="yes"></span></span></span></li>
+													<li
+														class="css3_grid_row_21 row_style_1 css3_grid_row_21_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">File Uploader</span><img
+																	src="<?php  echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	alt="yes"></span></span></span></li>
+													<li
+														class="css3_grid_row_22 row_style_3 css3_grid_row_22_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Layout Settings</span><img
+																	src="<?php  echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	alt="yes"></span></span></span></li>
+													<li
+														class="css3_grid_row_23 row_style_1 css3_grid_row_23_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Customization</span><img
+																	src="<?php echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	alt="yes"></span></span></span></li>
+													<li
+														class="css3_grid_row_24 row_style_3 css3_grid_row_24_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Optional Filters</span><img
+																	src="<?php echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	alt="yes"></span></span></span></li>
+													<li
+														class="css3_grid_row_25 row_style_1 css3_grid_row_25_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Custom Notifications</span><img
+																	src="<?php  echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	alt="yes"></span></span></span></li>
+													<li
+														class="css3_grid_row_26 row_style_3 css3_grid_row_26_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Form to DB</span><img
+																	src="<?php  echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	alt="yes"></span></span></span></li>
+													<li
+														class="css3_grid_row_27 row_style_1 css3_grid_row_27_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Captcha with Contact Bank</span><img
+																	src="<?php echo plugins_url("/assets/img/cross_04.png" , dirname(__FILE__)); ?>"
+																	alt="no"></span></span></span></li>
+													<li
+														class="css3_grid_row_28 footer_row css3_grid_row_28_responsive"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><a
-																href="/shop/wp-contact-bank/contact-bank-pro-edition/"
+																href="http://tech-banker.com/shop/wp-contact-bank/contact-bank-pro-edition/"
 																class="sign_up sign_up_orange radius3">Order Now!</a></span></span></li>
 												</ul>
 											</div>
@@ -605,7 +884,7 @@ else
 														class="css3_grid_row_2 row_style_4 css3_grid_row_2_responsive align_center"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
-																	class="css3_hidden_caption">Domains per License</span>5</span></span></span></li>
+																	class="css3_hidden_caption">Installation per License</span>5</span></span></span></li>
 													<li
 														class="css3_grid_row_3 row_style_2 css3_grid_row_3_responsive align_center"><span
 														class="css3_grid_vertical_align_table"><span
@@ -666,55 +945,125 @@ else
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
 																	class="css3_hidden_caption">Widgets</span><img
-																	src="<?php echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	src="<?php  echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
 																	alt="yes"></span></span></span></li>
 													<li
 														class="css3_grid_row_12 row_style_4 css3_grid_row_12_responsive align_center"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
-																	class="css3_hidden_caption">Entry Management</span><img
-																	src="<?php echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	class="css3_hidden_caption">Admin Notifications</span><img
+																	src="<?php  echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
 																	alt="yes"></span></span></span></li>
 													<li
 														class="css3_grid_row_13 row_style_2 css3_grid_row_13_responsive align_center"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
-																	class="css3_hidden_caption">Limit Entries</span><img
-																	src="<?php echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	class="css3_hidden_caption">Client Notifications</span><img
+																	src="<?php  echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
 																	alt="yes"></span></span></span></li>
 													<li
 														class="css3_grid_row_14 row_style_4 css3_grid_row_14_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Drag &amp; Drop</span><img
+																	src="<?php  echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	alt="yes"></span></span></span></li>
+													<li
+														class="css3_grid_row_15 row_style_2 css3_grid_row_15_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">No Coding Knowledge</span><img
+																	src="<?php  echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	alt="yes"></span></span></span></li>
+													<li
+														class="css3_grid_row_16 row_style_4 css3_grid_row_16_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Form Builder</span><img
+																	src="<?php  echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	alt="yes"></span></span></span></li>
+													<li
+														class="css3_grid_row_17 row_style_2 css3_grid_row_17_responsive align_center"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
 																	class="css3_hidden_caption">Advanced Fields</span><img
 																	src="<?php echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
 																	alt="yes"></span></span></span></li>
 													<li
-														class="css3_grid_row_15 row_style_2 css3_grid_row_15_responsive align_center"><span
+														class="css3_grid_row_18 row_style_4 css3_grid_row_18_responsive align_center"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
-																	class="css3_hidden_caption">Customization</span><img
+																	class="css3_hidden_caption">Entry Management</span><img
 																	src="<?php echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
 																	alt="yes"></span></span></span></li>
 													<li
-														class="css3_grid_row_16 row_style_4 css3_grid_row_16_responsive align_center"><span
-														class="css3_grid_vertical_align_table"><span
-															class="css3_grid_vertical_align"><span><span
-																	class="css3_hidden_caption">Optional Filters</span><img
-																	src="<?php echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
-																	alt="yes"></span></span></span></li>
-													<li
-														class="css3_grid_row_17 row_style_2 css3_grid_row_17_responsive align_center"><span
+														class="css3_grid_row_19 row_style_2 css3_grid_row_19_responsive align_center"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
 																	class="css3_hidden_caption">Tooltips</span><img
 																	src="<?php echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
 																	alt="yes"></span></span></span></li>
 													<li
-														class="css3_grid_row_18 footer_row css3_grid_row_18_responsive"><span
+														class="css3_grid_row_20 row_style_4 css3_grid_row_20_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Limit Entries</span><img
+																	src="<?php echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	alt="yes"></span></span></span></li>
+													<li
+														class="css3_grid_row_21 row_style_2 css3_grid_row_21_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">File Uploader</span><img
+																	src="<?php  echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	alt="yes"></span></span></span></li>
+													<li
+														class="css3_grid_row_22 row_style_4 css3_grid_row_22_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Layout Settings</span><img
+																	src="<?php  echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	alt="yes"></span></span></span></li>
+													<li
+														class="css3_grid_row_23 row_style_2 css3_grid_row_23_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Customization</span><img
+																	src="<?php echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	alt="yes"></span></span></span></li>
+													<li
+														class="css3_grid_row_24 row_style_4 css3_grid_row_24_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Optional Filters</span><img
+																	src="<?php echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	alt="yes"></span></span></span></li>
+													<li
+														class="css3_grid_row_25 row_style_2 css3_grid_row_25_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Custom Notifications</span><img
+																	src="<?php  echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	alt="yes"></span></span></span></li>
+													<li
+														class="css3_grid_row_26 row_style_4 css3_grid_row_26_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Form to DB</span><img
+																	src="<?php  echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	alt="yes"></span></span></span></li>
+													<li
+														class="css3_grid_row_27 row_style_2 css3_grid_row_27_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Captcha with Contact Bank</span><img
+																	src="<?php  echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	alt="yes"></span></span></span></li>
+													<li
+														class="css3_grid_row_28 footer_row css3_grid_row_28_responsive"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><a
-																href="/shop/wp-contact-bank/contact-bank-developer-edition/"
+																href="http://tech-banker.com/shop/wp-contact-bank/contact-bank-developer-edition/"
 																class="sign_up sign_up_orange radius3">Order Now!</a></span></span></li>
 												</ul>
 											</div>
@@ -739,7 +1088,7 @@ else
 														class="css3_grid_row_2 row_style_3 css3_grid_row_2_responsive align_center"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
-																	class="css3_hidden_caption">Domains per License</span>50</span></span></span></li>
+																	class="css3_hidden_caption">Installation per License</span>50</span></span></span></li>
 													<li
 														class="css3_grid_row_3 row_style_1 css3_grid_row_3_responsive align_center"><span
 														class="css3_grid_vertical_align_table"><span
@@ -800,60 +1149,135 @@ else
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
 																	class="css3_hidden_caption">Widgets</span><img
-																	src="<?php echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	src="<?php  echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
 																	alt="yes"></span></span></span></li>
 													<li
 														class="css3_grid_row_12 row_style_3 css3_grid_row_12_responsive align_center"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
-																	class="css3_hidden_caption">Entry Management</span><img
-																	src="<?php echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	class="css3_hidden_caption">Admin Notifications</span><img
+																	src="<?php  echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
 																	alt="yes"></span></span></span></li>
 													<li
 														class="css3_grid_row_13 row_style_1 css3_grid_row_13_responsive align_center"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
-																	class="css3_hidden_caption">Limit Entries</span><img
-																	src="<?php echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	class="css3_hidden_caption">Client Notifications</span><img
+																	src="<?php  echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
 																	alt="yes"></span></span></span></li>
 													<li
 														class="css3_grid_row_14 row_style_3 css3_grid_row_14_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Drag &amp; Drop</span><img
+																	src="<?php  echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	alt="yes"></span></span></span></li>
+													<li
+														class="css3_grid_row_15 row_style_1 css3_grid_row_15_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">No Coding Knowledge</span><img
+																	src="<?php  echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	alt="yes"></span></span></span></li>
+													<li
+														class="css3_grid_row_16 row_style_3 css3_grid_row_16_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Form Builder</span><img
+																	src="<?php  echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	alt="yes"></span></span></span></li>
+													<li
+														class="css3_grid_row_17 row_style_1 css3_grid_row_17_responsive align_center"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
 																	class="css3_hidden_caption">Advanced Fields</span><img
 																	src="<?php echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
 																	alt="yes"></span></span></span></li>
 													<li
-														class="css3_grid_row_15 row_style_1 css3_grid_row_15_responsive align_center"><span
+														class="css3_grid_row_18 row_style_3 css3_grid_row_18_responsive align_center"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
-																	class="css3_hidden_caption">Customization</span><img
+																	class="css3_hidden_caption">Entry Management</span><img
 																	src="<?php echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
 																	alt="yes"></span></span></span></li>
 													<li
-														class="css3_grid_row_16 row_style_3 css3_grid_row_16_responsive align_center"><span
-														class="css3_grid_vertical_align_table"><span
-															class="css3_grid_vertical_align"><span><span
-																	class="css3_hidden_caption">Optional Filters</span><img
-																	src="<?php echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
-																	alt="yes"></span></span></span></li>
-													<li
-														class="css3_grid_row_17 row_style_1 css3_grid_row_17_responsive align_center"><span
+														class="css3_grid_row_19 row_style_1 css3_grid_row_19_responsive align_center"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><span><span
 																	class="css3_hidden_caption">Tooltips</span><img
 																	src="<?php echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
 																	alt="yes"></span></span></span></li>
 													<li
-														class="css3_grid_row_18 footer_row css3_grid_row_18_responsive"><span
+														class="css3_grid_row_20 row_style_3 css3_grid_row_20_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Limit Entries</span><img
+																	src="<?php echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	alt="yes"></span></span></span></li>
+													<li
+														class="css3_grid_row_21 row_style_1 css3_grid_row_21_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">File Uploader</span><img
+																	src="<?php  echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	alt="yes"></span></span></span></li>
+													<li
+														class="css3_grid_row_22 row_style_3 css3_grid_row_22_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Layout Settings</span><img
+																	src="<?php  echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	alt="yes"></span></span></span></li>
+													<li
+														class="css3_grid_row_23 row_style_1 css3_grid_row_23_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Customization</span><img
+																	src="<?php echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	alt="yes"></span></span></span></li>
+													<li
+														class="css3_grid_row_24 row_style_3 css3_grid_row_24_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Optional Filters</span><img
+																	src="<?php echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	alt="yes"></span></span></span></li>
+													<li
+														class="css3_grid_row_25 row_style_1 css3_grid_row_25_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Custom Notifications</span><img
+																	src="<?php  echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	alt="yes"></span></span></span></li>
+													<li
+														class="css3_grid_row_26 row_style_3 css3_grid_row_26_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Form to DB</span><img
+																	src="<?php  echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	alt="yes"></span></span></span></li>
+													<li
+														class="css3_grid_row_27 row_style_1 css3_grid_row_27_responsive align_center"><span
+														class="css3_grid_vertical_align_table"><span
+															class="css3_grid_vertical_align"><span><span
+																	class="css3_hidden_caption">Captcha with Contact Bank</span><img
+																	src="<?php  echo plugins_url("/assets/img/tick_10.png" , dirname(__FILE__)); ?>"
+																	alt="yes"></span></span></span></li>
+													<li
+														class="css3_grid_row_28 footer_row css3_grid_row_28_responsive"><span
 														class="css3_grid_vertical_align_table"><span
 															class="css3_grid_vertical_align"><a
-																href="/shop/wp-contact-bank/contact-bank-extended-edition/"
+																href="http://tech-banker.com/shop/wp-contact-bank/contact-bank-extended-edition/"
 																class="sign_up sign_up_orange radius3">Order Now!</a></span></span></li>
 												</ul>
 											</div>
 										</div>
 									</div>
+								</div>
+								<div class="wpb_text_column wpb_content_element ">
+									<div class="wpb_wrapper">
+										<strong><span style="text-decoration: underline;">NOTE FOR MULTISITE*</span> :</strong> Allows you to use this Plugin with network of sites / Multisites WordPress. But you need to have separate license for each domain.
+									</div> 
 								</div>
 							</div>
 						</div>

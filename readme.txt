@@ -3,7 +3,7 @@ Contributors: contact-banker, Gallery-Bank
 Tags: admin, advanced form, best contact form plugin, buddypress, category, contact, contact form, contact form builder, contact form plugin, contact forms
 Requires at least: 3.3
 Tested up to: 4.1.1
-Stable tag: 2.0.98
+Stable tag: 2.0.99
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -549,9 +549,16 @@ In order to set Shortcode for a Form, you need to follow these steps :
 
 == Changelog ==
 
+= 2.0.99 =
+
+* Layout Settings Updated.
+* Roles & Capabilities Updated
+* Save Button Changed to Submit Button
+* Install Script Modified.
+
 = 2.0.98 =
 
-* Finnish Language Updated
+* Finnish Language Updated.
 
 = 2.0.97 =
 
