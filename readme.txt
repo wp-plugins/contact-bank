@@ -1,6 +1,6 @@
 === WP Contact Bank - Contact Forms Builder ===
 Contributors: contact-banker, Gallery-Bank
-Tags: admin, advanced form, best contact form plugin, buddypress, category, contact, contact form, contact form builder, contact form plugin, contact forms,contact form, contact form builder, Contact Form Builder with recaptcha, contact form manager, contact form plugin, contact form with google map, contact forms, contact forms plugin, contact manager, contact me, contact us, contact us form, custom form, email, email form, feedback, feedback form, feedback forms, form, forms, forms plugin, multiple contact forms, web form, wordpress contact form
+Tags: admin, advanced form, best contact form plugin, buddypress, category, contact, contact form, contact form builder, Contact Form Builder with recaptcha, contact form manager, contact form plugin, contact form with google map, contact forms, contact forms plugin, contact manager, contact me, contact us, contact us form, custom form, email, email form, feedback, feedback form, feedback forms, form, forms, forms plugin, multiple contact forms, web form, wordpress contact form, wordpress contact form, Attachment, cnotact, conact, contact, contact button, contact form, contact form plugin, contact me, contacts, contacts form plugin, contatc, copy, feedback, feedback form, form, insert the shortcode, post feedback, request, send, send copy, send messages, shortcode, text, web-page feedback
 Requires at least: 3.3
 Tested up to: 4.1.1
 Stable tag: 2.0.100
