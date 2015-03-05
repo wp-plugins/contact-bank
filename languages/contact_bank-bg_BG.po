@@ -1,215 +1,228 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Contact Bank Pro Edition\n"
-"POT-Creation-Date: 2015-02-09 17:15+0530\n"
-"PO-Revision-Date: 2015-02-10 17:58+0530\n"
+"POT-Creation-Date: 2015-03-03 13:16+0530\n"
+"PO-Revision-Date: 2015-03-03 15:45+0530\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: bg_BG\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.6\n"
+"X-Generator: Poedit 1.7.4\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
 "X-Poedit-Basepath: C:\\xampp\\htdocs\\wordpress4.0.1\\wp-content\\plugins"
 "\\contact-bank\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: contact-bank.php:84 contact-bank.php:100 contact-bank.php:116
+#: contact-bank.php:84 contact-bank.php:101 contact-bank.php:118
 msgid "Contact Bank"
 msgstr "Contact Bank"
 
-#: contact-bank.php:85 contact-bank.php:101 contact-bank.php:117
-#: contact-bank.php:638 contact-bank.php:708 contact-bank.php:780
-#: views/header.php:114 views/header.php:128 views/header.php:142
+#: contact-bank.php:85 contact-bank.php:102 contact-bank.php:119
+#: contact-bank.php:657 contact-bank.php:733 contact-bank.php:810
+#: views/header.php:115 views/header.php:129 views/header.php:143
 msgid "Dashboard"
 msgstr "арматурно табло"
 
-#: contact-bank.php:87 contact-bank.php:103 contact-bank.php:119
-#: contact-bank.php:644 contact-bank.php:714 contact-bank.php:786
+#: contact-bank.php:87 contact-bank.php:104 contact-bank.php:121
+#: contact-bank.php:663 contact-bank.php:739 contact-bank.php:816
 #: views/automatic-plugin-update.php:28 views/automatic-plugin-update.php:32
 msgid "Plugin Updates"
 msgstr "приставка за актуализации"
 
-#: contact-bank.php:88 contact-bank.php:104 contact-bank.php:120
-#: contact-bank.php:650 contact-bank.php:720 contact-bank.php:792
-#: views/header.php:115 views/header.php:129 views/header.php:143
+#: contact-bank.php:88 contact-bank.php:105 contact-bank.php:122
+#: contact-bank.php:669 contact-bank.php:745 contact-bank.php:822
+#: views/header.php:116 views/header.php:130 views/header.php:144
 msgid "Short-Codes"
 msgstr "Кратки-кодове"
 
-#: contact-bank.php:89 contact-bank.php:105 contact-bank.php:121
-#: contact-bank.php:656 contact-bank.php:726 contact-bank.php:798
+#: contact-bank.php:89 contact-bank.php:106 contact-bank.php:123
+#: contact-bank.php:675 contact-bank.php:751 contact-bank.php:828
 #: views/contact_frontend_data.php:31 views/dashboard.php:124
-#: views/header.php:116 views/header.php:130 views/header.php:144
+#: views/header.php:117 views/header.php:131 views/header.php:145
 msgid "Form Entries"
 msgstr "Форма за влизания"
 
-#: contact-bank.php:90 contact-bank.php:106 contact-bank.php:122
-#: contact-bank.php:662 contact-bank.php:732 contact-bank.php:804
+#: contact-bank.php:90 contact-bank.php:107 contact-bank.php:124
+#: contact-bank.php:681 contact-bank.php:757 contact-bank.php:834
 #: views/contact_email_settings.php:30 views/dashboard.php:119
-#: views/header.php:117 views/header.php:131 views/header.php:145
+#: views/header.php:118 views/header.php:132 views/header.php:146
 msgid "Email Settings"
 msgstr "Имейл За Настройки"
 
-#: contact-bank.php:91 contact-bank.php:107 contact-bank.php:123
-#: contact-bank.php:668 contact-bank.php:738 contact-bank.php:810
+#: contact-bank.php:91 contact-bank.php:108 contact-bank.php:125
+#: contact-bank.php:687 contact-bank.php:763 contact-bank.php:840
 #: views/contact_bank_layout_settings.php:29 views/dashboard.php:114
-#: views/header.php:118 views/header.php:132 views/header.php:146
+#: views/header.php:119 views/header.php:133 views/header.php:147
 msgid "Global Settings"
 msgstr "Глобални Настройки"
 
-#: contact-bank.php:92 contact-bank.php:108 contact-bank.php:124
-#: contact-bank.php:674 contact-bank.php:746
+#: contact-bank.php:92 contact-bank.php:109 contact-bank.php:126
+#: contact-bank.php:693 contact-bank.php:769 contact-bank.php:846
+#: views/contact-feedback.php:33
+msgid "Feature Requests"
+msgstr "особеност Исканията"
+
+#: contact-bank.php:93 contact-bank.php:110 contact-bank.php:127
+#: contact-bank.php:699 contact-bank.php:776
 #: views/contact-bank-system-report.php:31
 msgid "System Status"
 msgstr "система Статус"
 
-#: contact-bank.php:93 contact-bank.php:109 contact-bank.php:125
-#: contact-bank.php:680 contact-bank.php:752 contact-bank.php:816
-#: views/header.php:84 views/header.php:119 views/header.php:133
-#: views/header.php:147
+#: contact-bank.php:94 contact-bank.php:111 contact-bank.php:128
+#: contact-bank.php:705 contact-bank.php:782 contact-bank.php:852
+#: views/header.php:85 views/header.php:120 views/header.php:134
+#: views/header.php:148
 msgid "Recommendations"
 msgstr "Препоръки за"
 
-#: contact-bank.php:94 contact-bank.php:110 contact-bank.php:126
-#: contact-bank.php:687 contact-bank.php:759 contact-bank.php:823
-#: views/header.php:120 views/header.php:134 views/header.php:148
+#: contact-bank.php:95 contact-bank.php:112 contact-bank.php:129
+#: contact-bank.php:712 contact-bank.php:789 contact-bank.php:859
+#: views/header.php:121 views/header.php:135 views/header.php:149
 msgid "Premium Editions"
 msgstr "Премиум издания"
 
-#: contact-bank.php:95 contact-bank.php:111 contact-bank.php:127
-#: contact-bank.php:694 contact-bank.php:766 contact-bank.php:830
-#: views/header.php:89 views/header.php:121 views/header.php:135
-#: views/header.php:149
+#: contact-bank.php:96 contact-bank.php:113 contact-bank.php:130
+#: contact-bank.php:719 contact-bank.php:796 contact-bank.php:866
+#: views/header.php:90 views/header.php:122 views/header.php:136
+#: views/header.php:150
 msgid "Our Other Services"
 msgstr "Нашите Други услуги"
 
-#: contact-bank.php:838
+#: contact-bank.php:874
 msgid "Add Contact Bank Form"
 msgstr " Добави Contact Bank Форма"
 
-#: contact-bank.php:850
+#: contact-bank.php:886
 msgid "Insert Contact Bank Form"
 msgstr "Вкарайте Contact Bank Форма"
 
-#: contact-bank.php:852
+#: contact-bank.php:888
 msgid "Select a form below to add it to your post or page."
 msgstr ""
 "Изберете някакъв форма по-долу, за да го добавите към вашия пост или "
 "страница."
 
-#: contact-bank.php:857
+#: contact-bank.php:893
 msgid "Form Name"
 msgstr "формуляр Име"
 
-#: contact-bank.php:859
+#: contact-bank.php:895
 msgid "Select a Form"
 msgstr "някакъв Изберете  Форма"
 
-#: contact-bank.php:876
+#: contact-bank.php:912
 msgid "Show Form Title"
 msgstr "Покажи Форма Заглавие"
 
-#: contact-bank.php:881
+#: contact-bank.php:916
+msgid "Show Form Description"
+msgstr "Покажи Форма Описание"
+
+#: contact-bank.php:921
 msgid "Insert Form"
 msgstr "Вкарайте формуляр"
 
-#: contact-bank.php:884
+#: contact-bank.php:924
 msgid "Cancel"
 msgstr "Отмени"
 
-#: contact-bank.php:896
+#: contact-bank.php:937
 msgid "Please choose a Form to insert into Shortcode"
 msgstr "Моля изберете формуляр да вмъкнете в Кратко-код"
 
-#: contact-bank.php:932
+#: contact-bank.php:973
 msgid "View Contact Bank Documentation"
 msgstr "Вижте Contact Bank Документация"
 
-#: contact-bank.php:932
+#: contact-bank.php:973
 msgid "Docs"
 msgstr "Документи"
 
-#: contact-bank.php:933
+#: contact-bank.php:974
 msgid "View Contact Bank Premium Editions"
 msgstr "Вижте Contact Bank Премиум издания"
 
-#: contact-bank.php:933
+#: contact-bank.php:974
 msgid "Go for Premium!"
 msgstr "Отидете за Премиум!"
 
-#: contact-bank.php:1007
+#: contact-bank.php:1048
 msgid "Select Form :"
 msgstr "Изберете Формуляр:"
 
-#: contact-bank.php:1009 views/contact_bank_layout_settings.php:45
+#: contact-bank.php:1050 views/contact_bank_layout_settings.php:45
 #: views/contact_bank_layout_settings.php:55
 #: views/contact_email_settings.php:37 views/contact_email_settings.php:53
 #: views/contact_frontend_data.php:46 views/contact_frontend_data.php:56
 msgid "Select Form"
 msgstr "Изберете Форма за"
 
-#: frontend_views/contact_bank_forms.php:326
-#: views/contact_bank_form_preview.php:395 views/contact_controls_files.php:89
+#: frontend_views/contact_bank_forms.php:344
+#: views/contact_bank_form_preview.php:395
+#: views/contact_controls_files.php:89
 msgid "Select Option"
 msgstr "опцията Избор"
 
-#: includes/cb_checkbox.php:36
+#: includes/cb_checkbox.php:55
 msgid "Check Boxes"
 msgstr "Проверете Кутии"
 
-#: includes/cb_checkbox.php:40 includes/cb_dropdown.php:40
-#: includes/cb_email.php:40 includes/cb_multiple.php:40
-#: includes/cb_text.php:40 includes/cb_textarea.php:40
+#: includes/cb_checkbox.php:59 includes/cb_dropdown.php:59
+#: includes/cb_email.php:59 includes/cb_multiple.php:59
+#: includes/cb_text.php:59 includes/cb_textarea.php:59
 msgid "Label"
 msgstr "етикет"
 
-#: includes/cb_checkbox.php:42 includes/cb_checkbox.php:144
-#: includes/cb_dropdown.php:42 includes/cb_dropdown.php:144
-#: includes/cb_email.php:43 includes/cb_email.php:133
-#: includes/cb_multiple.php:44 includes/cb_multiple.php:164
-#: includes/cb_text.php:43 includes/cb_text.php:132
-#: includes/cb_textarea.php:42 includes/cb_textarea.php:130
+#: includes/cb_checkbox.php:61 includes/cb_checkbox.php:163
+#: includes/cb_dropdown.php:61 includes/cb_dropdown.php:163
+#: includes/cb_email.php:62 includes/cb_email.php:152
+#: includes/cb_multiple.php:63 includes/cb_multiple.php:183
+#: includes/cb_text.php:62 includes/cb_text.php:151
+#: includes/cb_textarea.php:61 includes/cb_textarea.php:149
 #: views/contact_controls_files.php:36 views/contact_controls_files.php:52
 #: views/contact_controls_files.php:85 views/contact_controls_files.php:101
 #: views/contact_controls_files.php:118
 msgid "Untitled"
 msgstr "неозаглавен"
 
-#: includes/cb_checkbox.php:46 includes/cb_checkbox.php:56
-#: includes/cb_checkbox.php:69 includes/cb_checkbox.php:83
-#: includes/cb_dropdown.php:46 includes/cb_dropdown.php:56
-#: includes/cb_dropdown.php:69 includes/cb_dropdown.php:83
-#: includes/cb_email.php:57 includes/cb_email.php:68 includes/cb_email.php:83
-#: includes/cb_email.php:99 includes/cb_multiple.php:49
-#: includes/cb_multiple.php:60 includes/cb_multiple.php:75
-#: includes/cb_multiple.php:91 includes/cb_text.php:56 includes/cb_text.php:67
-#: includes/cb_text.php:82 includes/cb_text.php:98 includes/cb_textarea.php:56
-#: includes/cb_textarea.php:67 includes/cb_textarea.php:82
-#: includes/cb_textarea.php:98
+#: includes/cb_checkbox.php:65 includes/cb_checkbox.php:75
+#: includes/cb_checkbox.php:88 includes/cb_checkbox.php:102
+#: includes/cb_dropdown.php:65 includes/cb_dropdown.php:75
+#: includes/cb_dropdown.php:88 includes/cb_dropdown.php:102
+#: includes/cb_email.php:76 includes/cb_email.php:87
+#: includes/cb_email.php:102 includes/cb_email.php:118
+#: includes/cb_multiple.php:68 includes/cb_multiple.php:79
+#: includes/cb_multiple.php:94 includes/cb_multiple.php:110
+#: includes/cb_text.php:75 includes/cb_text.php:86 includes/cb_text.php:101
+#: includes/cb_text.php:117 includes/cb_textarea.php:75
+#: includes/cb_textarea.php:86 includes/cb_textarea.php:101
+#: includes/cb_textarea.php:117
 msgid "Required"
 msgstr "длъжен"
 
-#: includes/cb_checkbox.php:60 includes/cb_checkbox.php:73
-#: includes/cb_checkbox.php:87 includes/cb_dropdown.php:60
-#: includes/cb_dropdown.php:73 includes/cb_dropdown.php:87
-#: includes/cb_email.php:73 includes/cb_email.php:88 includes/cb_email.php:104
-#: includes/cb_multiple.php:65 includes/cb_multiple.php:80
-#: includes/cb_multiple.php:96 includes/cb_text.php:72 includes/cb_text.php:87
-#: includes/cb_text.php:103 includes/cb_textarea.php:72
-#: includes/cb_textarea.php:87 includes/cb_textarea.php:103
+#: includes/cb_checkbox.php:79 includes/cb_checkbox.php:92
+#: includes/cb_checkbox.php:106 includes/cb_dropdown.php:79
+#: includes/cb_dropdown.php:92 includes/cb_dropdown.php:106
+#: includes/cb_email.php:92 includes/cb_email.php:107
+#: includes/cb_email.php:123 includes/cb_multiple.php:84
+#: includes/cb_multiple.php:99 includes/cb_multiple.php:115
+#: includes/cb_text.php:91 includes/cb_text.php:106 includes/cb_text.php:122
+#: includes/cb_textarea.php:91 includes/cb_textarea.php:106
+#: includes/cb_textarea.php:122
 msgid "Not Required"
 msgstr "Не се изисква"
 
-#: includes/cb_checkbox.php:95 includes/cb_dropdown.php:95
-#: includes/cb_email.php:112 includes/cb_multiple.php:104
-#: includes/cb_text.php:111
+#: includes/cb_checkbox.php:114 includes/cb_dropdown.php:114
+#: includes/cb_email.php:131 includes/cb_multiple.php:123
+#: includes/cb_text.php:130
 msgid "Tooltip Text"
 msgstr "инструмент Подсказка Текст"
 
-#: includes/cb_checkbox.php:97 includes/cb_dropdown.php:97
-#: includes/cb_email.php:115 includes/cb_multiple.php:108
-#: includes/cb_text.php:114 includes/cb_textarea.php:113
+#: includes/cb_checkbox.php:116 includes/cb_dropdown.php:116
+#: includes/cb_email.php:134 includes/cb_multiple.php:127
+#: includes/cb_text.php:133 includes/cb_textarea.php:132
 #: views/contact_bank_layout_settings.php:946
 #: views/contact_frontend_data.php:171 views/dashboard.php:208
 #: views/includes_common_after.php:349 views/includes_common_after.php:352
@@ -220,123 +233,123 @@ msgstr "инструмент Подсказка Текст"
 msgid "This Feature is only available in Paid Premium Edition!"
 msgstr "Тази функция е достъпна само в платената премия издание на!"
 
-#: includes/cb_checkbox.php:101 includes/cb_dropdown.php:101
-#: includes/cb_multiple.php:113
+#: includes/cb_checkbox.php:120 includes/cb_dropdown.php:120
+#: includes/cb_multiple.php:132
 msgid "Options"
 msgstr "Опции"
 
-#: includes/cb_checkbox.php:103
+#: includes/cb_checkbox.php:122
 msgid "Enter Options"
 msgstr "Въведете oпции"
 
-#: includes/cb_checkbox.php:104 includes/cb_dropdown.php:104
-#: includes/cb_multiple.php:119
+#: includes/cb_checkbox.php:123 includes/cb_dropdown.php:123
+#: includes/cb_multiple.php:138
 msgid "Add"
 msgstr "Добави"
 
-#: includes/cb_checkbox.php:135 includes/cb_dropdown.php:135
-#: includes/cb_multiple.php:153
+#: includes/cb_checkbox.php:154 includes/cb_dropdown.php:154
+#: includes/cb_multiple.php:172
 msgid "Delete"
 msgstr "Изтрий"
 
-#: includes/cb_checkbox.php:142 includes/cb_dropdown.php:142
-#: includes/cb_email.php:130 includes/cb_multiple.php:160
-#: includes/cb_text.php:129 includes/cb_textarea.php:128
+#: includes/cb_checkbox.php:161 includes/cb_dropdown.php:161
+#: includes/cb_email.php:149 includes/cb_multiple.php:179
+#: includes/cb_text.php:148 includes/cb_textarea.php:147
 msgid "Admin Label"
 msgstr "Админ етикетът"
 
-#: includes/cb_checkbox.php:144 includes/cb_dropdown.php:144
-#: includes/cb_email.php:134 includes/cb_multiple.php:163
-#: includes/cb_text.php:131 includes/cb_textarea.php:131
+#: includes/cb_checkbox.php:163 includes/cb_dropdown.php:163
+#: includes/cb_email.php:153 includes/cb_multiple.php:182
+#: includes/cb_text.php:150 includes/cb_textarea.php:150
 msgid "Enter Admin Label"
 msgstr "Въведете Админ етикетът"
 
-#: includes/cb_checkbox.php:148 includes/cb_dropdown.php:148
-#: includes/cb_email.php:139 includes/cb_multiple.php:168
-#: includes/cb_text.php:137 includes/cb_textarea.php:135
+#: includes/cb_checkbox.php:167 includes/cb_dropdown.php:167
+#: includes/cb_email.php:158 includes/cb_multiple.php:187
+#: includes/cb_text.php:156 includes/cb_textarea.php:154
 msgid "Do not show in the email"
 msgstr "Не показвай в имейл"
 
-#: includes/cb_checkbox.php:179 includes/cb_dropdown.php:179
-#: includes/cb_email.php:173 includes/cb_multiple.php:202
-#: includes/cb_text.php:200 includes/cb_textarea.php:196
+#: includes/cb_checkbox.php:198 includes/cb_dropdown.php:198
+#: includes/cb_email.php:192 includes/cb_multiple.php:221
+#: includes/cb_text.php:219 includes/cb_textarea.php:215
 msgid "Save Settings"
 msgstr "спасявам Настройки на"
 
-#: includes/cb_checkbox.php:228 includes/cb_dropdown.php:219
-#: includes/cb_multiple.php:252
+#: includes/cb_checkbox.php:247 includes/cb_dropdown.php:238
+#: includes/cb_multiple.php:271
 msgid "Please Fill an Option."
 msgstr "Моля попълнете на опция."
 
-#: includes/cb_dropdown.php:36 views/contact_view.php:461
+#: includes/cb_dropdown.php:55 views/contact_view.php:461
 msgid "Select Box"
 msgstr "Изберете кутия"
 
-#: includes/cb_dropdown.php:42 includes/cb_email.php:44
-#: includes/cb_multiple.php:45 includes/cb_text.php:44
+#: includes/cb_dropdown.php:61 includes/cb_email.php:63
+#: includes/cb_multiple.php:64 includes/cb_text.php:63
 msgid "Enter Label"
 msgstr "Въведете Етикет"
 
-#: includes/cb_dropdown.php:103 includes/cb_multiple.php:116
+#: includes/cb_dropdown.php:122 includes/cb_multiple.php:135
 msgid "Enter Option"
 msgstr "Въведете Опция"
 
-#: includes/cb_email.php:36 views/contact_view.php:458
+#: includes/cb_email.php:55 views/contact_view.php:458
 msgid "Email Address"
 msgstr "имейл адрес"
 
-#: includes/cb_email.php:49 includes/cb_text.php:48
-#: includes/cb_textarea.php:48
+#: includes/cb_email.php:68 includes/cb_text.php:67
+#: includes/cb_textarea.php:67
 msgid "Description"
 msgstr "описание"
 
-#: includes/cb_email.php:52 includes/cb_text.php:51
+#: includes/cb_email.php:71 includes/cb_text.php:70
 msgid "Enter Description"
 msgstr "Въведете Oписание"
 
-#: includes/cb_email.php:121 includes/cb_text.php:120
-#: includes/cb_textarea.php:120
+#: includes/cb_email.php:140 includes/cb_text.php:139
+#: includes/cb_textarea.php:139
 msgid "Place Holder"
 msgstr "място Притежател"
 
-#: includes/cb_email.php:124 includes/cb_text.php:123
-#: includes/cb_textarea.php:122
+#: includes/cb_email.php:143 includes/cb_text.php:142
+#: includes/cb_textarea.php:141
 msgid "Enter Place Holder"
 msgstr "Въведете Поставете Държач"
 
-#: includes/cb_multiple.php:36 views/contact_view.php:469
+#: includes/cb_multiple.php:55 views/contact_view.php:469
 msgid "Radio Buttons"
 msgstr "радио бутони"
 
-#: includes/cb_text.php:36 views/contact_view.php:450
+#: includes/cb_text.php:55 views/contact_view.php:450
 msgid "Single Line Text"
 msgstr "Единичен линия Текст"
 
-#: includes/cb_text.php:168 includes/cb_textarea.php:166
+#: includes/cb_text.php:187 includes/cb_textarea.php:185
 msgid "Add a filter"
 msgstr "Добави на филтър"
 
-#: includes/cb_text.php:173 includes/cb_textarea.php:170
+#: includes/cb_text.php:192 includes/cb_textarea.php:189
 msgid "Alpha"
 msgstr "алфа"
 
-#: includes/cb_text.php:177 includes/cb_textarea.php:174
+#: includes/cb_text.php:196 includes/cb_textarea.php:193
 msgid "Alpha Numeric"
 msgstr "Алфа Числена"
 
-#: includes/cb_text.php:181 includes/cb_textarea.php:178
+#: includes/cb_text.php:200 includes/cb_textarea.php:197
 msgid "Digits"
 msgstr "Цифри на"
 
-#: includes/cb_text.php:185 includes/cb_textarea.php:182
+#: includes/cb_text.php:204 includes/cb_textarea.php:201
 msgid "Strip Tags"
 msgstr "Газа Етикети"
 
-#: includes/cb_text.php:189 includes/cb_textarea.php:186
+#: includes/cb_text.php:208 includes/cb_textarea.php:205
 msgid "Trim"
 msgstr "подкъсяване"
 
-#: includes/cb_text.php:191 includes/cb_textarea.php:188
+#: includes/cb_text.php:210 includes/cb_textarea.php:207
 #: views/contact_bank_layout_settings.php:83
 #: views/contact_bank_layout_settings.php:271
 #: views/contact_bank_layout_settings.php:481
@@ -345,19 +358,19 @@ msgstr "подкъсяване"
 msgid " (Available in Premium Edition)"
 msgstr "(Предлага се Премиум издание на)"
 
-#: includes/cb_textarea.php:36 views/contact_view.php:453
+#: includes/cb_textarea.php:55 views/contact_view.php:453
 msgid "Paragraph Text"
 msgstr "Параграф текст"
 
-#: includes/cb_textarea.php:43
+#: includes/cb_textarea.php:62
 msgid "Enter label"
 msgstr "Въведете етикетът"
 
-#: includes/cb_textarea.php:50
+#: includes/cb_textarea.php:69
 msgid "Enter  Description"
 msgstr "Въведете описание"
 
-#: includes/cb_textarea.php:111
+#: includes/cb_textarea.php:130
 msgid "Tooltip text"
 msgstr "инструмент-бакшиш Текст"
 
@@ -374,6 +387,76 @@ msgstr "Изтриване на мейл Настройки"
 #: lib/contact_frontend_data_class.php:113
 msgid "Delete Form Entry"
 msgstr "Изтрий Форма, влизане "
+
+#: lib/install-script.php:238
+msgid "blank_field_message"
+msgstr "Бланк Невярно на ЛС"
+
+#: lib/install-script.php:239 lib/install-script.php:666
+#: views/contact_view.php:305
+msgid "Required field must not be blank"
+msgstr "Задължително поле не трябва да е празно"
+
+#: lib/install-script.php:248
+msgid "incorrect_email_message"
+msgstr "Неправилно мейл Съобщение"
+
+#: lib/install-script.php:249 lib/install-script.php:676
+#: views/contact_view.php:317
+msgid "Please enter a valid email address"
+msgstr "Моля, въведете валиден имейл адрес"
+
+#: lib/install-script.php:539 lib/install-script.php:918
+msgid "Submit"
+msgstr "Пуснете"
+
+#: lib/install-script.php:626
+msgid "Contact Form Demo"
+msgstr "Форма за контакти Демо"
+
+#: lib/install-script.php:656
+msgid "Your message was sent successfully. Thanks."
+msgstr "Вашето съобщение е изпратено успешно. Благодаря."
+
+#: lib/install-script.php:710 lib/install-script.php:714
+#: lib/install-script.php:715
+msgid "Your Name"
+msgstr "Вашето име"
+
+#: lib/install-script.php:761 lib/install-script.php:765
+#: lib/install-script.php:766
+msgid "Your Email"
+msgstr "Вашият мейл"
+
+#: lib/install-script.php:807 lib/install-script.php:811
+#: lib/install-script.php:812 views/add_contact_email.php:202
+msgid "Subject"
+msgstr "предмет"
+
+#: lib/install-script.php:860 lib/install-script.php:864
+#: lib/install-script.php:865
+msgid "Your Message"
+msgstr "Включено съобщение"
+
+#: lib/install-script.php:992
+msgid "Admin Notification"
+msgstr "Админ Уведомяване"
+
+#: lib/install-script.php:995 lib/install-script.php:1022
+msgid "Site Administration"
+msgstr "на сайта Администрация"
+
+#: lib/install-script.php:997
+msgid "New Contact recieved from Website"
+msgstr "Нова Contact получил от уебсайт"
+
+#: lib/install-script.php:1020
+msgid "Client Notification"
+msgstr "Уведомление клиенти"
+
+#: lib/install-script.php:1021
+msgid "Thanks for visiting our website"
+msgstr "Благодаря за посещението на нашия сайт"
 
 #: views/add_contact_email.php:50 views/contact_email_settings.php:88
 msgid "Email Confirmation"
@@ -399,7 +482,8 @@ msgstr "Имейл Настройки на Запиши. Моля изчакай
 msgid "Email"
 msgstr "Имейл За"
 
-#: views/add_contact_email.php:69 views/contact_view.php:486
+#: views/add_contact_email.php:69 views/contact-feedback.php:51
+#: views/contact_view.php:486
 msgid "Name"
 msgstr "име"
 
@@ -476,10 +560,6 @@ msgstr "БКК"
 msgid "Enter Bcc Email"
 msgstr "Въведете Скрито копие мейл"
 
-#: views/add_contact_email.php:202
-msgid "Subject"
-msgstr "предмет"
-
 #: views/add_contact_email.php:206
 msgid "Enter Subject"
 msgstr "Въведете Относно"
@@ -512,16 +592,44 @@ msgstr "Затвори система Доклад"
 msgid "Default"
 msgstr "неустойка"
 
-#: views/contact_bank_form_preview.php:294 views/dashboard.php:129
-msgid "Form Preview"
-msgstr "формуляр Визуализация"
-
-#: views/contact_bank_form_preview.php:297
+#: views/contact-feedback.php:36 views/contact_bank_form_preview.php:297
 #: views/contact_bank_layout_settings.php:32
 #: views/contact_email_settings.php:33 views/contact_frontend_data.php:34
 #: views/contact_view.php:262
 msgid "Back to Dashboard"
 msgstr "Обратно към арматурно табло"
+
+#: views/contact-feedback.php:40
+msgid "Email has beens send successfully."
+msgstr "мейл има beens изпратят успешно."
+
+#: views/contact-feedback.php:47 views/contact-feedback.php:63
+msgid "Feature Requests / Suggestions"
+msgstr "С изисквания на функции / Предложения"
+
+#: views/contact-feedback.php:53
+msgid "Enter your Name"
+msgstr "Въведете Вашето име"
+
+#: views/contact-feedback.php:57
+msgid "Email Id"
+msgstr "мейл Идентификационен"
+
+#: views/contact-feedback.php:59
+msgid "Enter your Email Address"
+msgstr "Въведете своя имейл адрес"
+
+#: views/contact-feedback.php:65
+msgid "Enter your Feature Requests / Suggestions"
+msgstr "Въведете вашите заявки за функции / Предложения"
+
+#: views/contact-feedback.php:70
+msgid "Send"
+msgstr "изпращам"
+
+#: views/contact_bank_form_preview.php:294 views/dashboard.php:129
+msgid "Form Preview"
+msgstr "формуляр Визуализация"
 
 #: views/contact_bank_layout_settings.php:29
 msgid " (Premium Features available in Paid Edition)"
@@ -762,10 +870,6 @@ msgstr "Въведете Форма Описание"
 msgid "Blank Field Message:"
 msgstr "Остават празни полета Съобщение:"
 
-#: views/contact_view.php:305
-msgid "Required field must not be blank"
-msgstr "Задължително поле не трябва да е празно"
-
 #: views/contact_view.php:307
 msgid "Enter Blank Field Message"
 msgstr "Въведете Остават празни полета Съобщение"
@@ -773,10 +877,6 @@ msgstr "Въведете Остават празни полета Съобщен
 #: views/contact_view.php:311
 msgid "Incorrect Email Message:"
 msgstr "Неправилно мейл Съобщение:"
-
-#: views/contact_view.php:317
-msgid "Please enter a valid email address"
-msgstr "Моля, въведете валиден имейл адрес"
 
 #: views/contact_view.php:319
 msgid "Enter Incorrect Email Message"
@@ -904,55 +1004,55 @@ msgstr "Сигурни ли сте, че искате да изтриете та
 msgid "Are you sure, you want to delete all Forms?"
 msgstr "Сигурни ли сте, че искате да изтриете всички форми?"
 
-#: views/header.php:21
+#: views/header.php:22
 msgid "Get Started"
 msgstr "Вземи Започната"
 
-#: views/header.php:24
+#: views/header.php:25
 msgid "Watch Contact Video!"
 msgstr "Гледайте - Contact Видео!"
 
-#: views/header.php:28
+#: views/header.php:29
 msgid "read documentation here"
 msgstr "прочетете документацията тук"
 
-#: views/header.php:33
+#: views/header.php:34
 msgid "Go Premium"
 msgstr "Отиди Платени членове"
 
-#: views/header.php:37
+#: views/header.php:38
 msgid "Feature"
 msgstr "особеност"
 
-#: views/header.php:42
+#: views/header.php:43
 msgid "Online Demos"
 msgstr "Онлайн Демота"
 
-#: views/header.php:47
+#: views/header.php:48
 msgid "Premium Pricing Plan ?"
 msgstr "Платени членове ценообразуване план?"
 
-#: views/header.php:54
+#: views/header.php:55
 msgid "Knowledge Base"
 msgstr "базата знания"
 
-#: views/header.php:59
+#: views/header.php:60
 msgid "Support Forum"
 msgstr "Форум за поддръжка"
 
-#: views/header.php:64
+#: views/header.php:65
 msgid "FAQ's"
 msgstr "Често задавани въпроси"
 
-#: views/header.php:69
+#: views/header.php:70
 msgid "Detailed Features"
 msgstr "Детайлни Особености"
 
-#: views/header.php:75
+#: views/header.php:76
 msgid "More Actions"
 msgstr "Още действия"
 
-#: views/header.php:79
+#: views/header.php:80
 msgid "Plugin Customization"
 msgstr "плъгин персонализиране"
 

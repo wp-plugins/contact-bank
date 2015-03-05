@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Contact bank\n"
-"POT-Creation-Date: 2015-02-23 11:11+0530\n"
-"PO-Revision-Date: 2015-02-23 11:41+0530\n"
+"POT-Creation-Date: 2015-03-03 15:04+0530\n"
+"PO-Revision-Date: 2015-03-04 09:40+0530\n"
 "Last-Translator: Jari Wilenius <jari.wilenius@gmail.com>\n"
 "Language-Team: \n"
 "Language: fi_FI\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.6\n"
+"X-Generator: Poedit 1.7.4\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
 "X-Poedit-Basepath: C:\\xampp\\htdocs\\wordpress4.0.1\\wp-content\\plugins"
 "\\contact-bank\n"
@@ -162,62 +162,63 @@ msgstr "Valitse lomake"
 msgid "Select Option"
 msgstr "Valitse vaihtoehto"
 
-#: includes/cb_checkbox.php:36
+#: includes/cb_checkbox.php:55
 msgid "Check Boxes"
 msgstr "Rastita ruudut"
 
-#: includes/cb_checkbox.php:40 includes/cb_dropdown.php:40
-#: includes/cb_email.php:40 includes/cb_multiple.php:40
-#: includes/cb_text.php:40 includes/cb_textarea.php:40
+#: includes/cb_checkbox.php:59 includes/cb_dropdown.php:59
+#: includes/cb_email.php:59 includes/cb_multiple.php:59
+#: includes/cb_text.php:59 includes/cb_textarea.php:59
 msgid "Label"
 msgstr "Etiketti"
 
-#: includes/cb_checkbox.php:42 includes/cb_checkbox.php:144
-#: includes/cb_dropdown.php:42 includes/cb_dropdown.php:144
-#: includes/cb_email.php:43 includes/cb_email.php:133
-#: includes/cb_multiple.php:44 includes/cb_multiple.php:164
-#: includes/cb_text.php:43 includes/cb_text.php:132
-#: includes/cb_textarea.php:42 includes/cb_textarea.php:130
+#: includes/cb_checkbox.php:61 includes/cb_checkbox.php:163
+#: includes/cb_dropdown.php:61 includes/cb_dropdown.php:163
+#: includes/cb_email.php:62 includes/cb_email.php:152
+#: includes/cb_multiple.php:63 includes/cb_multiple.php:183
+#: includes/cb_text.php:62 includes/cb_text.php:151
+#: includes/cb_textarea.php:61 includes/cb_textarea.php:149
 #: views/contact_controls_files.php:36 views/contact_controls_files.php:52
 #: views/contact_controls_files.php:85 views/contact_controls_files.php:101
 #: views/contact_controls_files.php:118
 msgid "Untitled"
 msgstr "Nimetön"
 
-#: includes/cb_checkbox.php:46 includes/cb_checkbox.php:56
-#: includes/cb_checkbox.php:69 includes/cb_checkbox.php:83
-#: includes/cb_dropdown.php:46 includes/cb_dropdown.php:56
-#: includes/cb_dropdown.php:69 includes/cb_dropdown.php:83
-#: includes/cb_email.php:57 includes/cb_email.php:68 includes/cb_email.php:83
-#: includes/cb_email.php:99 includes/cb_multiple.php:49
-#: includes/cb_multiple.php:60 includes/cb_multiple.php:75
-#: includes/cb_multiple.php:91 includes/cb_text.php:56 includes/cb_text.php:67
-#: includes/cb_text.php:82 includes/cb_text.php:98 includes/cb_textarea.php:56
-#: includes/cb_textarea.php:67 includes/cb_textarea.php:82
-#: includes/cb_textarea.php:98
+#: includes/cb_checkbox.php:65 includes/cb_checkbox.php:75
+#: includes/cb_checkbox.php:88 includes/cb_checkbox.php:102
+#: includes/cb_dropdown.php:65 includes/cb_dropdown.php:75
+#: includes/cb_dropdown.php:88 includes/cb_dropdown.php:102
+#: includes/cb_email.php:76 includes/cb_email.php:87 includes/cb_email.php:102
+#: includes/cb_email.php:118 includes/cb_multiple.php:68
+#: includes/cb_multiple.php:79 includes/cb_multiple.php:94
+#: includes/cb_multiple.php:110 includes/cb_text.php:75
+#: includes/cb_text.php:86 includes/cb_text.php:101 includes/cb_text.php:117
+#: includes/cb_textarea.php:75 includes/cb_textarea.php:86
+#: includes/cb_textarea.php:101 includes/cb_textarea.php:117
 msgid "Required"
 msgstr "Pakollinen"
 
-#: includes/cb_checkbox.php:60 includes/cb_checkbox.php:73
-#: includes/cb_checkbox.php:87 includes/cb_dropdown.php:60
-#: includes/cb_dropdown.php:73 includes/cb_dropdown.php:87
-#: includes/cb_email.php:73 includes/cb_email.php:88 includes/cb_email.php:104
-#: includes/cb_multiple.php:65 includes/cb_multiple.php:80
-#: includes/cb_multiple.php:96 includes/cb_text.php:72 includes/cb_text.php:87
-#: includes/cb_text.php:103 includes/cb_textarea.php:72
-#: includes/cb_textarea.php:87 includes/cb_textarea.php:103
+#: includes/cb_checkbox.php:79 includes/cb_checkbox.php:92
+#: includes/cb_checkbox.php:106 includes/cb_dropdown.php:79
+#: includes/cb_dropdown.php:92 includes/cb_dropdown.php:106
+#: includes/cb_email.php:92 includes/cb_email.php:107
+#: includes/cb_email.php:123 includes/cb_multiple.php:84
+#: includes/cb_multiple.php:99 includes/cb_multiple.php:115
+#: includes/cb_text.php:91 includes/cb_text.php:106 includes/cb_text.php:122
+#: includes/cb_textarea.php:91 includes/cb_textarea.php:106
+#: includes/cb_textarea.php:122
 msgid "Not Required"
 msgstr "Valinnainen"
 
-#: includes/cb_checkbox.php:95 includes/cb_dropdown.php:95
-#: includes/cb_email.php:112 includes/cb_multiple.php:104
-#: includes/cb_text.php:111
+#: includes/cb_checkbox.php:114 includes/cb_dropdown.php:114
+#: includes/cb_email.php:131 includes/cb_multiple.php:123
+#: includes/cb_text.php:130
 msgid "Tooltip Text"
 msgstr "Työkaluvihjeen teksti"
 
-#: includes/cb_checkbox.php:97 includes/cb_dropdown.php:97
-#: includes/cb_email.php:115 includes/cb_multiple.php:108
-#: includes/cb_text.php:114 includes/cb_textarea.php:113
+#: includes/cb_checkbox.php:116 includes/cb_dropdown.php:116
+#: includes/cb_email.php:134 includes/cb_multiple.php:127
+#: includes/cb_text.php:133 includes/cb_textarea.php:132
 #: views/contact_bank_layout_settings.php:946
 #: views/contact_frontend_data.php:171 views/dashboard.php:208
 #: views/includes_common_after.php:349 views/includes_common_after.php:352
@@ -228,123 +229,123 @@ msgstr "Työkaluvihjeen teksti"
 msgid "This Feature is only available in Paid Premium Edition!"
 msgstr "Tämä ominaisuus on käytettävissä vain maksullisessa Premium versiossa!"
 
-#: includes/cb_checkbox.php:101 includes/cb_dropdown.php:101
-#: includes/cb_multiple.php:113
+#: includes/cb_checkbox.php:120 includes/cb_dropdown.php:120
+#: includes/cb_multiple.php:132
 msgid "Options"
 msgstr "Valinnat"
 
-#: includes/cb_checkbox.php:103
+#: includes/cb_checkbox.php:122
 msgid "Enter Options"
 msgstr "Anna valinnat"
 
-#: includes/cb_checkbox.php:104 includes/cb_dropdown.php:104
-#: includes/cb_multiple.php:119
+#: includes/cb_checkbox.php:123 includes/cb_dropdown.php:123
+#: includes/cb_multiple.php:138
 msgid "Add"
 msgstr "Lisää"
 
-#: includes/cb_checkbox.php:135 includes/cb_dropdown.php:135
-#: includes/cb_multiple.php:153
+#: includes/cb_checkbox.php:154 includes/cb_dropdown.php:154
+#: includes/cb_multiple.php:172
 msgid "Delete"
 msgstr "Poista"
 
-#: includes/cb_checkbox.php:142 includes/cb_dropdown.php:142
-#: includes/cb_email.php:130 includes/cb_multiple.php:160
-#: includes/cb_text.php:129 includes/cb_textarea.php:128
+#: includes/cb_checkbox.php:161 includes/cb_dropdown.php:161
+#: includes/cb_email.php:149 includes/cb_multiple.php:179
+#: includes/cb_text.php:148 includes/cb_textarea.php:147
 msgid "Admin Label"
 msgstr "Ylläpidon etiketti"
 
-#: includes/cb_checkbox.php:144 includes/cb_dropdown.php:144
-#: includes/cb_email.php:134 includes/cb_multiple.php:163
-#: includes/cb_text.php:131 includes/cb_textarea.php:131
+#: includes/cb_checkbox.php:163 includes/cb_dropdown.php:163
+#: includes/cb_email.php:153 includes/cb_multiple.php:182
+#: includes/cb_text.php:150 includes/cb_textarea.php:150
 msgid "Enter Admin Label"
 msgstr "Syötä ylläpidon etiketti"
 
-#: includes/cb_checkbox.php:148 includes/cb_dropdown.php:148
-#: includes/cb_email.php:139 includes/cb_multiple.php:168
-#: includes/cb_text.php:137 includes/cb_textarea.php:135
+#: includes/cb_checkbox.php:167 includes/cb_dropdown.php:167
+#: includes/cb_email.php:158 includes/cb_multiple.php:187
+#: includes/cb_text.php:156 includes/cb_textarea.php:154
 msgid "Do not show in the email"
 msgstr "Älä näytä sähköpostissa"
 
-#: includes/cb_checkbox.php:179 includes/cb_dropdown.php:179
-#: includes/cb_email.php:173 includes/cb_multiple.php:202
-#: includes/cb_text.php:200 includes/cb_textarea.php:196
+#: includes/cb_checkbox.php:198 includes/cb_dropdown.php:198
+#: includes/cb_email.php:192 includes/cb_multiple.php:221
+#: includes/cb_text.php:219 includes/cb_textarea.php:215
 msgid "Save Settings"
 msgstr "Tallenna asetukset"
 
-#: includes/cb_checkbox.php:228 includes/cb_dropdown.php:219
-#: includes/cb_multiple.php:252
+#: includes/cb_checkbox.php:247 includes/cb_dropdown.php:238
+#: includes/cb_multiple.php:271
 msgid "Please Fill an Option."
 msgstr "Täytä valinnat."
 
-#: includes/cb_dropdown.php:36 views/contact_view.php:461
+#: includes/cb_dropdown.php:55 views/contact_view.php:461
 msgid "Select Box"
 msgstr "Valitse ruutu"
 
-#: includes/cb_dropdown.php:42 includes/cb_email.php:44
-#: includes/cb_multiple.php:45 includes/cb_text.php:44
+#: includes/cb_dropdown.php:61 includes/cb_email.php:63
+#: includes/cb_multiple.php:64 includes/cb_text.php:63
 msgid "Enter Label"
 msgstr "Kirjoita etiketti"
 
-#: includes/cb_dropdown.php:103 includes/cb_multiple.php:116
+#: includes/cb_dropdown.php:122 includes/cb_multiple.php:135
 msgid "Enter Option"
 msgstr "Kirjoita vaihtoehto"
 
-#: includes/cb_email.php:36 views/contact_view.php:458
+#: includes/cb_email.php:55 views/contact_view.php:458
 msgid "Email Address"
 msgstr "Sähköpostiosoite"
 
-#: includes/cb_email.php:49 includes/cb_text.php:48
-#: includes/cb_textarea.php:48
+#: includes/cb_email.php:68 includes/cb_text.php:67
+#: includes/cb_textarea.php:67
 msgid "Description"
 msgstr "Kuvaus"
 
-#: includes/cb_email.php:52 includes/cb_text.php:51
+#: includes/cb_email.php:71 includes/cb_text.php:70
 msgid "Enter Description"
 msgstr "Kirjoita kuvaus"
 
-#: includes/cb_email.php:121 includes/cb_text.php:120
-#: includes/cb_textarea.php:120
+#: includes/cb_email.php:140 includes/cb_text.php:139
+#: includes/cb_textarea.php:139
 msgid "Place Holder"
 msgstr "Tekstin paikka"
 
-#: includes/cb_email.php:124 includes/cb_text.php:123
-#: includes/cb_textarea.php:122
+#: includes/cb_email.php:143 includes/cb_text.php:142
+#: includes/cb_textarea.php:141
 msgid "Enter Place Holder"
 msgstr "Kirjoita tekstin paikka"
 
-#: includes/cb_multiple.php:36 views/contact_view.php:469
+#: includes/cb_multiple.php:55 views/contact_view.php:469
 msgid "Radio Buttons"
 msgstr "Valintanapit"
 
-#: includes/cb_text.php:36 views/contact_view.php:450
+#: includes/cb_text.php:55 views/contact_view.php:450
 msgid "Single Line Text"
 msgstr "Yhden rivin teksti"
 
-#: includes/cb_text.php:168 includes/cb_textarea.php:166
+#: includes/cb_text.php:187 includes/cb_textarea.php:185
 msgid "Add a filter"
 msgstr "Lisää suodatin"
 
-#: includes/cb_text.php:173 includes/cb_textarea.php:170
+#: includes/cb_text.php:192 includes/cb_textarea.php:189
 msgid "Alpha"
 msgstr "Kirjaimet"
 
-#: includes/cb_text.php:177 includes/cb_textarea.php:174
+#: includes/cb_text.php:196 includes/cb_textarea.php:193
 msgid "Alpha Numeric"
 msgstr "Kirjaimet ja numerot"
 
-#: includes/cb_text.php:181 includes/cb_textarea.php:178
+#: includes/cb_text.php:200 includes/cb_textarea.php:197
 msgid "Digits"
 msgstr "Numerot"
 
-#: includes/cb_text.php:185 includes/cb_textarea.php:182
+#: includes/cb_text.php:204 includes/cb_textarea.php:201
 msgid "Strip Tags"
 msgstr "Tagit"
 
-#: includes/cb_text.php:189 includes/cb_textarea.php:186
+#: includes/cb_text.php:208 includes/cb_textarea.php:205
 msgid "Trim"
 msgstr "Trimmaa"
 
-#: includes/cb_text.php:191 includes/cb_textarea.php:188
+#: includes/cb_text.php:210 includes/cb_textarea.php:207
 #: views/contact_bank_layout_settings.php:83
 #: views/contact_bank_layout_settings.php:271
 #: views/contact_bank_layout_settings.php:481
@@ -353,19 +354,19 @@ msgstr "Trimmaa"
 msgid " (Available in Premium Edition)"
 msgstr " (Käytettävissä Premium versiossa)"
 
-#: includes/cb_textarea.php:36 views/contact_view.php:453
+#: includes/cb_textarea.php:55 views/contact_view.php:453
 msgid "Paragraph Text"
 msgstr "Kappaleen teksti"
 
-#: includes/cb_textarea.php:43
+#: includes/cb_textarea.php:62
 msgid "Enter label"
 msgstr "Kirjoita etiketti"
 
-#: includes/cb_textarea.php:50
+#: includes/cb_textarea.php:69
 msgid "Enter  Description"
 msgstr "Kirjoita kuvaus"
 
-#: includes/cb_textarea.php:111
+#: includes/cb_textarea.php:130
 msgid "Tooltip text"
 msgstr "Työkaluvinkin teksti"
 
@@ -382,6 +383,76 @@ msgstr "Poista sähköpostin asetukset"
 #: lib/contact_frontend_data_class.php:113
 msgid "Delete Form Entry"
 msgstr "Poista lomakkeen tiedot"
+
+#: lib/install-script.php:238
+msgid "blank_field_message"
+msgstr "Tyhjä Kenttä Viesti"
+
+#: lib/install-script.php:239 lib/install-script.php:666
+#: views/contact_view.php:305
+msgid "Required field must not be blank"
+msgstr "Pakollinen alue, ei saa olla tyhjä"
+
+#: lib/install-script.php:248
+msgid "incorrect_email_message"
+msgstr "virheellinen Sähköpostia Viesti"
+
+#: lib/install-script.php:249 lib/install-script.php:676
+#: views/contact_view.php:317
+msgid "Please enter a valid email address"
+msgstr "Kirjoita voimassa oleva sähköpostiosoite"
+
+#: lib/install-script.php:539 lib/install-script.php:918
+msgid "Submit"
+msgstr "Esittää"
+
+#: lib/install-script.php:626
+msgid "Contact Form Demo"
+msgstr "Yhteydenottolomake Demo"
+
+#: lib/install-script.php:656
+msgid "Your message was sent successfully. Thanks."
+msgstr "Viesti lähetettiin onnistuneesti. Kiitos."
+
+#: lib/install-script.php:710 lib/install-script.php:714
+#: lib/install-script.php:715
+msgid "Your Name"
+msgstr "Sinun Nimesi"
+
+#: lib/install-script.php:761 lib/install-script.php:765
+#: lib/install-script.php:766
+msgid "Your Email"
+msgstr "sähköpostiisi"
+
+#: lib/install-script.php:807 lib/install-script.php:811
+#: lib/install-script.php:812 views/add_contact_email.php:202
+msgid "Subject"
+msgstr "Aihe"
+
+#: lib/install-script.php:860 lib/install-script.php:864
+#: lib/install-script.php:865
+msgid "Your Message"
+msgstr "Viestisi"
+
+#: lib/install-script.php:992
+msgid "Admin Notification"
+msgstr "ylläpitäjän ilmoituksen"
+
+#: lib/install-script.php:995 lib/install-script.php:1022
+msgid "Site Administration"
+msgstr "vaan Sivuston ylläpitoon"
+
+#: lib/install-script.php:997
+msgid "New Contact recieved from Website"
+msgstr "uusi yhteyshenkilö saadulla alkaen verkkosivusto"
+
+#: lib/install-script.php:1020
+msgid "Client Notification"
+msgstr "Asiakkaan ilmoituksen"
+
+#: lib/install-script.php:1021
+msgid "Thanks for visiting our website"
+msgstr "Kiitos käynnistä sivuillamme"
 
 #: views/add_contact_email.php:50 views/contact_email_settings.php:88
 msgid "Email Confirmation"
@@ -484,10 +555,6 @@ msgstr "Piilokopio"
 #: views/add_contact_email.php:193
 msgid "Enter Bcc Email"
 msgstr "Kirjoita piilokopion sähköpostiosoite"
-
-#: views/add_contact_email.php:202
-msgid "Subject"
-msgstr "Aihe"
 
 #: views/add_contact_email.php:206
 msgid "Enter Subject"
@@ -799,10 +866,6 @@ msgstr "Kirjoita lomakkeen kuvaus"
 msgid "Blank Field Message:"
 msgstr "Tyhjän alueen viesti:"
 
-#: views/contact_view.php:305
-msgid "Required field must not be blank"
-msgstr "Pakollinen alue, ei saa olla tyhjä"
-
 #: views/contact_view.php:307
 msgid "Enter Blank Field Message"
 msgstr "Kirjoita tyhjän alueen viesti"
@@ -810,10 +873,6 @@ msgstr "Kirjoita tyhjän alueen viesti"
 #: views/contact_view.php:311
 msgid "Incorrect Email Message:"
 msgstr "Virheellinen sähköpostiviesti:"
-
-#: views/contact_view.php:317
-msgid "Please enter a valid email address"
-msgstr "Kirjoita voimassa oleva sähköpostiosoite"
 
 #: views/contact_view.php:319
 msgid "Enter Incorrect Email Message"

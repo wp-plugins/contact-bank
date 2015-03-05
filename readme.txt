@@ -1,9 +1,9 @@
 === WP Contact Bank - Contact Forms Builder ===
 Contributors: contact-banker, Gallery-Bank
-Tags: admin, advanced form, best contact form plugin, buddypress, category, contact, contact form, contact form builder, contact form plugin, contact forms
+Tags: admin, advanced form, best contact form plugin, buddypress, category, contact, contact form, contact form builder, contact form plugin, contact forms,contact form, contact form builder, Contact Form Builder with recaptcha, contact form manager, contact form plugin, contact form with google map, contact forms, contact forms plugin, contact manager, contact me, contact us, contact us form, custom form, email, email form, feedback, feedback form, feedback forms, form, forms, forms plugin, multiple contact forms, web form, wordpress contact form
 Requires at least: 3.3
 Tested up to: 4.1.1
-Stable tag: 2.0.99
+Stable tag: 2.0.100
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -548,6 +548,10 @@ In order to set Shortcode for a Form, you need to follow these steps :
 
 
 == Changelog ==
+
+= 2.0.100 =
+
+* Languages Updated.
 
 = 2.0.99 =
 

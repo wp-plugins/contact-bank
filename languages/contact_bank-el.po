@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Contact Bank\n"
-"POT-Creation-Date: 2015-02-09 17:28+0530\n"
+"POT-Creation-Date: 2015-03-03 15:03+0530\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -9,207 +9,218 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.6\n"
+"X-Generator: Poedit 1.7.4\n"
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: C:\\xampp\\htdocs\\wordpress4.0.1\\wp-content\\plugins"
 "\\contact-bank\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: contact-bank.php:84 contact-bank.php:100 contact-bank.php:116
+#: contact-bank.php:84 contact-bank.php:101 contact-bank.php:118
 msgid "Contact Bank"
 msgstr "Τράπεζα Επικοινωνίας"
 
-#: contact-bank.php:85 contact-bank.php:101 contact-bank.php:117
-#: contact-bank.php:638 contact-bank.php:708 contact-bank.php:780
-#: views/header.php:114 views/header.php:128 views/header.php:142
+#: contact-bank.php:85 contact-bank.php:102 contact-bank.php:119
+#: contact-bank.php:657 contact-bank.php:733 contact-bank.php:810
+#: views/header.php:115 views/header.php:129 views/header.php:143
 msgid "Dashboard"
 msgstr "Πίνακας ελέγχου"
 
-#: contact-bank.php:87 contact-bank.php:103 contact-bank.php:119
-#: contact-bank.php:644 contact-bank.php:714 contact-bank.php:786
+#: contact-bank.php:87 contact-bank.php:104 contact-bank.php:121
+#: contact-bank.php:663 contact-bank.php:739 contact-bank.php:816
 #: views/automatic-plugin-update.php:28 views/automatic-plugin-update.php:32
 msgid "Plugin Updates"
 msgstr "plugin Ενημερώσεις"
 
-#: contact-bank.php:88 contact-bank.php:104 contact-bank.php:120
-#: contact-bank.php:650 contact-bank.php:720 contact-bank.php:792
-#: views/header.php:115 views/header.php:129 views/header.php:143
+#: contact-bank.php:88 contact-bank.php:105 contact-bank.php:122
+#: contact-bank.php:669 contact-bank.php:745 contact-bank.php:822
+#: views/header.php:116 views/header.php:130 views/header.php:144
 msgid "Short-Codes"
 msgstr "Σύντομη Κώδικες"
 
-#: contact-bank.php:89 contact-bank.php:105 contact-bank.php:121
-#: contact-bank.php:656 contact-bank.php:726 contact-bank.php:798
+#: contact-bank.php:89 contact-bank.php:106 contact-bank.php:123
+#: contact-bank.php:675 contact-bank.php:751 contact-bank.php:828
 #: views/contact_frontend_data.php:31 views/dashboard.php:124
-#: views/header.php:116 views/header.php:130 views/header.php:144
+#: views/header.php:117 views/header.php:131 views/header.php:145
 msgid "Form Entries"
 msgstr "Πεδία καταχώρησης"
 
-#: contact-bank.php:90 contact-bank.php:106 contact-bank.php:122
-#: contact-bank.php:662 contact-bank.php:732 contact-bank.php:804
+#: contact-bank.php:90 contact-bank.php:107 contact-bank.php:124
+#: contact-bank.php:681 contact-bank.php:757 contact-bank.php:834
 #: views/contact_email_settings.php:30 views/dashboard.php:119
-#: views/header.php:117 views/header.php:131 views/header.php:145
+#: views/header.php:118 views/header.php:132 views/header.php:146
 msgid "Email Settings"
 msgstr "Ρυθμίσεις email"
 
-#: contact-bank.php:91 contact-bank.php:107 contact-bank.php:123
-#: contact-bank.php:668 contact-bank.php:738 contact-bank.php:810
+#: contact-bank.php:91 contact-bank.php:108 contact-bank.php:125
+#: contact-bank.php:687 contact-bank.php:763 contact-bank.php:840
 #: views/contact_bank_layout_settings.php:29 views/dashboard.php:114
-#: views/header.php:118 views/header.php:132 views/header.php:146
+#: views/header.php:119 views/header.php:133 views/header.php:147
 msgid "Global Settings"
 msgstr "Καθολικές ρυθμίσεις"
 
-#: contact-bank.php:92 contact-bank.php:108 contact-bank.php:124
-#: contact-bank.php:674 contact-bank.php:746
+#: contact-bank.php:92 contact-bank.php:109 contact-bank.php:126
+#: contact-bank.php:693 contact-bank.php:769 contact-bank.php:846
+#: views/contact-feedback.php:33
+msgid "Feature Requests"
+msgstr "αιτήσεις χαρακτηριστικό"
+
+#: contact-bank.php:93 contact-bank.php:110 contact-bank.php:127
+#: contact-bank.php:699 contact-bank.php:776
 #: views/contact-bank-system-report.php:31
 msgid "System Status"
 msgstr "Κατάσταση συστήματος"
 
-#: contact-bank.php:93 contact-bank.php:109 contact-bank.php:125
-#: contact-bank.php:680 contact-bank.php:752 contact-bank.php:816
-#: views/header.php:84 views/header.php:119 views/header.php:133
-#: views/header.php:147
+#: contact-bank.php:94 contact-bank.php:111 contact-bank.php:128
+#: contact-bank.php:705 contact-bank.php:782 contact-bank.php:852
+#: views/header.php:85 views/header.php:120 views/header.php:134
+#: views/header.php:148
 msgid "Recommendations"
 msgstr "Οι συστάσεις"
 
-#: contact-bank.php:94 contact-bank.php:110 contact-bank.php:126
-#: contact-bank.php:687 contact-bank.php:759 contact-bank.php:823
-#: views/header.php:120 views/header.php:134 views/header.php:148
+#: contact-bank.php:95 contact-bank.php:112 contact-bank.php:129
+#: contact-bank.php:712 contact-bank.php:789 contact-bank.php:859
+#: views/header.php:121 views/header.php:135 views/header.php:149
 msgid "Premium Editions"
 msgstr "ασφάλιστρο Εκδόσεις"
 
-#: contact-bank.php:95 contact-bank.php:111 contact-bank.php:127
-#: contact-bank.php:694 contact-bank.php:766 contact-bank.php:830
-#: views/header.php:89 views/header.php:121 views/header.php:135
-#: views/header.php:149
+#: contact-bank.php:96 contact-bank.php:113 contact-bank.php:130
+#: contact-bank.php:719 contact-bank.php:796 contact-bank.php:866
+#: views/header.php:90 views/header.php:122 views/header.php:136
+#: views/header.php:150
 msgid "Our Other Services"
 msgstr "Μας άλλα Υπηρεσίες"
 
-#: contact-bank.php:838
+#: contact-bank.php:874
 msgid "Add Contact Bank Form"
 msgstr "Προσθήκη φόρμας Τράπεζας Επικοινωνίας"
 
-#: contact-bank.php:850
+#: contact-bank.php:886
 msgid "Insert Contact Bank Form"
 msgstr "Εισαγωγή φόρμας Τράπεζας Επικοινωνίας"
 
-#: contact-bank.php:852
+#: contact-bank.php:888
 msgid "Select a form below to add it to your post or page."
 msgstr ""
 "Επιλέξτε μια από τις παρακάτω φόρμες για να την προσθέσετε στην σελίδα σας ή "
 "στο άρθρο σας."
 
-#: contact-bank.php:857
+#: contact-bank.php:893
 msgid "Form Name"
 msgstr "Ονομασία φόρμας"
 
-#: contact-bank.php:859
+#: contact-bank.php:895
 msgid "Select a Form"
 msgstr "Επιλέξτε μια φόρμα"
 
-#: contact-bank.php:876
+#: contact-bank.php:912
 msgid "Show Form Title"
 msgstr "Εμφάνιση τίτλου φόρμας"
 
-#: contact-bank.php:881
+#: contact-bank.php:916
+msgid "Show Form Description"
+msgstr "Εμφάνιση Φόρμα Περιγραφή"
+
+#: contact-bank.php:921
 msgid "Insert Form"
 msgstr "Εισαγωγή φόρμας"
 
-#: contact-bank.php:884
+#: contact-bank.php:924
 msgid "Cancel"
 msgstr "Ακύρωση"
 
-#: contact-bank.php:896
+#: contact-bank.php:937
 msgid "Please choose a Form to insert into Shortcode"
 msgstr "Παρακαλώ επιλέξτεμία φόρμα για να την εισάγεται στον σύντομο κώδικα"
 
-#: contact-bank.php:932
+#: contact-bank.php:973
 msgid "View Contact Bank Documentation"
 msgstr "Προβολή Contact Bank Τεκμηρίωση"
 
-#: contact-bank.php:932
+#: contact-bank.php:973
 msgid "Docs"
 msgstr "τα Έγγραφα"
 
-#: contact-bank.php:933
+#: contact-bank.php:974
 msgid "View Contact Bank Premium Editions"
 msgstr "Δείτε Contact Bank ασφάλιστρο Εκδόσεις"
 
-#: contact-bank.php:933
+#: contact-bank.php:974
 msgid "Go for Premium!"
 msgstr "Πηγαίνετε για ασφάλιστρο!"
 
-#: contact-bank.php:1007
+#: contact-bank.php:1048
 msgid "Select Form :"
 msgstr "Επιλογή φόρμας:"
 
-#: contact-bank.php:1009 views/contact_bank_layout_settings.php:45
+#: contact-bank.php:1050 views/contact_bank_layout_settings.php:45
 #: views/contact_bank_layout_settings.php:55
 #: views/contact_email_settings.php:37 views/contact_email_settings.php:53
 #: views/contact_frontend_data.php:46 views/contact_frontend_data.php:56
 msgid "Select Form"
 msgstr "Επιλογή φόρμας"
 
-#: frontend_views/contact_bank_forms.php:326
+#: frontend_views/contact_bank_forms.php:344
 #: views/contact_bank_form_preview.php:395 views/contact_controls_files.php:89
 msgid "Select Option"
 msgstr "Επιλέξτε κάτι"
 
-#: includes/cb_checkbox.php:36
+#: includes/cb_checkbox.php:55
 msgid "Check Boxes"
 msgstr "Κουτί τσεκαρίσματος"
 
-#: includes/cb_checkbox.php:40 includes/cb_dropdown.php:40
-#: includes/cb_email.php:40 includes/cb_multiple.php:40
-#: includes/cb_text.php:40 includes/cb_textarea.php:40
+#: includes/cb_checkbox.php:59 includes/cb_dropdown.php:59
+#: includes/cb_email.php:59 includes/cb_multiple.php:59
+#: includes/cb_text.php:59 includes/cb_textarea.php:59
 msgid "Label"
 msgstr "Ετικέτα"
 
-#: includes/cb_checkbox.php:42 includes/cb_checkbox.php:144
-#: includes/cb_dropdown.php:42 includes/cb_dropdown.php:144
-#: includes/cb_email.php:43 includes/cb_email.php:133
-#: includes/cb_multiple.php:44 includes/cb_multiple.php:164
-#: includes/cb_text.php:43 includes/cb_text.php:132
-#: includes/cb_textarea.php:42 includes/cb_textarea.php:130
+#: includes/cb_checkbox.php:61 includes/cb_checkbox.php:163
+#: includes/cb_dropdown.php:61 includes/cb_dropdown.php:163
+#: includes/cb_email.php:62 includes/cb_email.php:152
+#: includes/cb_multiple.php:63 includes/cb_multiple.php:183
+#: includes/cb_text.php:62 includes/cb_text.php:151
+#: includes/cb_textarea.php:61 includes/cb_textarea.php:149
 #: views/contact_controls_files.php:36 views/contact_controls_files.php:52
 #: views/contact_controls_files.php:85 views/contact_controls_files.php:101
 #: views/contact_controls_files.php:118
 msgid "Untitled"
 msgstr "Χωρίς τίτλο"
 
-#: includes/cb_checkbox.php:46 includes/cb_checkbox.php:56
-#: includes/cb_checkbox.php:69 includes/cb_checkbox.php:83
-#: includes/cb_dropdown.php:46 includes/cb_dropdown.php:56
-#: includes/cb_dropdown.php:69 includes/cb_dropdown.php:83
-#: includes/cb_email.php:57 includes/cb_email.php:68 includes/cb_email.php:83
-#: includes/cb_email.php:99 includes/cb_multiple.php:49
-#: includes/cb_multiple.php:60 includes/cb_multiple.php:75
-#: includes/cb_multiple.php:91 includes/cb_text.php:56 includes/cb_text.php:67
-#: includes/cb_text.php:82 includes/cb_text.php:98 includes/cb_textarea.php:56
-#: includes/cb_textarea.php:67 includes/cb_textarea.php:82
-#: includes/cb_textarea.php:98
+#: includes/cb_checkbox.php:65 includes/cb_checkbox.php:75
+#: includes/cb_checkbox.php:88 includes/cb_checkbox.php:102
+#: includes/cb_dropdown.php:65 includes/cb_dropdown.php:75
+#: includes/cb_dropdown.php:88 includes/cb_dropdown.php:102
+#: includes/cb_email.php:76 includes/cb_email.php:87 includes/cb_email.php:102
+#: includes/cb_email.php:118 includes/cb_multiple.php:68
+#: includes/cb_multiple.php:79 includes/cb_multiple.php:94
+#: includes/cb_multiple.php:110 includes/cb_text.php:75
+#: includes/cb_text.php:86 includes/cb_text.php:101 includes/cb_text.php:117
+#: includes/cb_textarea.php:75 includes/cb_textarea.php:86
+#: includes/cb_textarea.php:101 includes/cb_textarea.php:117
 msgid "Required"
 msgstr "Υποχρεωτικό"
 
-#: includes/cb_checkbox.php:60 includes/cb_checkbox.php:73
-#: includes/cb_checkbox.php:87 includes/cb_dropdown.php:60
-#: includes/cb_dropdown.php:73 includes/cb_dropdown.php:87
-#: includes/cb_email.php:73 includes/cb_email.php:88 includes/cb_email.php:104
-#: includes/cb_multiple.php:65 includes/cb_multiple.php:80
-#: includes/cb_multiple.php:96 includes/cb_text.php:72 includes/cb_text.php:87
-#: includes/cb_text.php:103 includes/cb_textarea.php:72
-#: includes/cb_textarea.php:87 includes/cb_textarea.php:103
+#: includes/cb_checkbox.php:79 includes/cb_checkbox.php:92
+#: includes/cb_checkbox.php:106 includes/cb_dropdown.php:79
+#: includes/cb_dropdown.php:92 includes/cb_dropdown.php:106
+#: includes/cb_email.php:92 includes/cb_email.php:107
+#: includes/cb_email.php:123 includes/cb_multiple.php:84
+#: includes/cb_multiple.php:99 includes/cb_multiple.php:115
+#: includes/cb_text.php:91 includes/cb_text.php:106 includes/cb_text.php:122
+#: includes/cb_textarea.php:91 includes/cb_textarea.php:106
+#: includes/cb_textarea.php:122
 msgid "Not Required"
 msgstr "Μη υποχρεωτικό"
 
-#: includes/cb_checkbox.php:95 includes/cb_dropdown.php:95
-#: includes/cb_email.php:112 includes/cb_multiple.php:104
-#: includes/cb_text.php:111
+#: includes/cb_checkbox.php:114 includes/cb_dropdown.php:114
+#: includes/cb_email.php:131 includes/cb_multiple.php:123
+#: includes/cb_text.php:130
 msgid "Tooltip Text"
 msgstr "Κείμενο συμβουλής"
 
-#: includes/cb_checkbox.php:97 includes/cb_dropdown.php:97
-#: includes/cb_email.php:115 includes/cb_multiple.php:108
-#: includes/cb_text.php:114 includes/cb_textarea.php:113
+#: includes/cb_checkbox.php:116 includes/cb_dropdown.php:116
+#: includes/cb_email.php:134 includes/cb_multiple.php:127
+#: includes/cb_text.php:133 includes/cb_textarea.php:132
 #: views/contact_bank_layout_settings.php:946
 #: views/contact_frontend_data.php:171 views/dashboard.php:208
 #: views/includes_common_after.php:349 views/includes_common_after.php:352
@@ -221,123 +232,123 @@ msgid "This Feature is only available in Paid Premium Edition!"
 msgstr ""
 "Αυτή η δυνατότητα είναι διαθέσιμη μόνο σε Αμειβόμενος ασφάλιστρο έκδοση!"
 
-#: includes/cb_checkbox.php:101 includes/cb_dropdown.php:101
-#: includes/cb_multiple.php:113
+#: includes/cb_checkbox.php:120 includes/cb_dropdown.php:120
+#: includes/cb_multiple.php:132
 msgid "Options"
 msgstr "Επιλογές"
 
-#: includes/cb_checkbox.php:103
+#: includes/cb_checkbox.php:122
 msgid "Enter Options"
 msgstr "Προσθήκη επιλογών"
 
-#: includes/cb_checkbox.php:104 includes/cb_dropdown.php:104
-#: includes/cb_multiple.php:119
+#: includes/cb_checkbox.php:123 includes/cb_dropdown.php:123
+#: includes/cb_multiple.php:138
 msgid "Add"
 msgstr "Εισαγωγή"
 
-#: includes/cb_checkbox.php:135 includes/cb_dropdown.php:135
-#: includes/cb_multiple.php:153
+#: includes/cb_checkbox.php:154 includes/cb_dropdown.php:154
+#: includes/cb_multiple.php:172
 msgid "Delete"
 msgstr "Διαγραφή"
 
-#: includes/cb_checkbox.php:142 includes/cb_dropdown.php:142
-#: includes/cb_email.php:130 includes/cb_multiple.php:160
-#: includes/cb_text.php:129 includes/cb_textarea.php:128
+#: includes/cb_checkbox.php:161 includes/cb_dropdown.php:161
+#: includes/cb_email.php:149 includes/cb_multiple.php:179
+#: includes/cb_text.php:148 includes/cb_textarea.php:147
 msgid "Admin Label"
 msgstr "Ετικέτα Admin"
 
-#: includes/cb_checkbox.php:144 includes/cb_dropdown.php:144
-#: includes/cb_email.php:134 includes/cb_multiple.php:163
-#: includes/cb_text.php:131 includes/cb_textarea.php:131
+#: includes/cb_checkbox.php:163 includes/cb_dropdown.php:163
+#: includes/cb_email.php:153 includes/cb_multiple.php:182
+#: includes/cb_text.php:150 includes/cb_textarea.php:150
 msgid "Enter Admin Label"
 msgstr "Εισαγωγή ετικέτα Admin"
 
-#: includes/cb_checkbox.php:148 includes/cb_dropdown.php:148
-#: includes/cb_email.php:139 includes/cb_multiple.php:168
-#: includes/cb_text.php:137 includes/cb_textarea.php:135
+#: includes/cb_checkbox.php:167 includes/cb_dropdown.php:167
+#: includes/cb_email.php:158 includes/cb_multiple.php:187
+#: includes/cb_text.php:156 includes/cb_textarea.php:154
 msgid "Do not show in the email"
 msgstr "Να μην εμφανίζεται στο email"
 
-#: includes/cb_checkbox.php:179 includes/cb_dropdown.php:179
-#: includes/cb_email.php:173 includes/cb_multiple.php:202
-#: includes/cb_text.php:200 includes/cb_textarea.php:196
+#: includes/cb_checkbox.php:198 includes/cb_dropdown.php:198
+#: includes/cb_email.php:192 includes/cb_multiple.php:221
+#: includes/cb_text.php:219 includes/cb_textarea.php:215
 msgid "Save Settings"
 msgstr "Αποθήκευση ρυθμίσεων"
 
-#: includes/cb_checkbox.php:228 includes/cb_dropdown.php:219
-#: includes/cb_multiple.php:252
+#: includes/cb_checkbox.php:247 includes/cb_dropdown.php:238
+#: includes/cb_multiple.php:271
 msgid "Please Fill an Option."
 msgstr "Παρακαλώ κάντε μια επιλογή."
 
-#: includes/cb_dropdown.php:36 views/contact_view.php:461
+#: includes/cb_dropdown.php:55 views/contact_view.php:461
 msgid "Select Box"
 msgstr "Κιτίο επιλογής"
 
-#: includes/cb_dropdown.php:42 includes/cb_email.php:44
-#: includes/cb_multiple.php:45 includes/cb_text.php:44
+#: includes/cb_dropdown.php:61 includes/cb_email.php:63
+#: includes/cb_multiple.php:64 includes/cb_text.php:63
 msgid "Enter Label"
 msgstr "Προσθήκη ετικέτας"
 
-#: includes/cb_dropdown.php:103 includes/cb_multiple.php:116
+#: includes/cb_dropdown.php:122 includes/cb_multiple.php:135
 msgid "Enter Option"
 msgstr "Προσθήκη επιλογής"
 
-#: includes/cb_email.php:36 views/contact_view.php:458
+#: includes/cb_email.php:55 views/contact_view.php:458
 msgid "Email Address"
 msgstr "Διεύθυνση email"
 
-#: includes/cb_email.php:49 includes/cb_text.php:48
-#: includes/cb_textarea.php:48
+#: includes/cb_email.php:68 includes/cb_text.php:67
+#: includes/cb_textarea.php:67
 msgid "Description"
 msgstr "Περιγραφή"
 
-#: includes/cb_email.php:52 includes/cb_text.php:51
+#: includes/cb_email.php:71 includes/cb_text.php:70
 msgid "Enter Description"
 msgstr "Προσθέστε περιγραφή"
 
-#: includes/cb_email.php:121 includes/cb_text.php:120
-#: includes/cb_textarea.php:120
+#: includes/cb_email.php:140 includes/cb_text.php:139
+#: includes/cb_textarea.php:139
 msgid "Place Holder"
 msgstr "Χαρακτήρας κράτησης θέσης"
 
-#: includes/cb_email.php:124 includes/cb_text.php:123
-#: includes/cb_textarea.php:122
+#: includes/cb_email.php:143 includes/cb_text.php:142
+#: includes/cb_textarea.php:141
 msgid "Enter Place Holder"
 msgstr "Προσθήκη χαρακτήρα κράτησης θέσης"
 
-#: includes/cb_multiple.php:36 views/contact_view.php:469
+#: includes/cb_multiple.php:55 views/contact_view.php:469
 msgid "Radio Buttons"
 msgstr "Κουμπιά radio"
 
-#: includes/cb_text.php:36 views/contact_view.php:450
+#: includes/cb_text.php:55 views/contact_view.php:450
 msgid "Single Line Text"
 msgstr "Κείμενο μίας γραμμής"
 
-#: includes/cb_text.php:168 includes/cb_textarea.php:166
+#: includes/cb_text.php:187 includes/cb_textarea.php:185
 msgid "Add a filter"
 msgstr "Προσθήκη φίλτρου"
 
-#: includes/cb_text.php:173 includes/cb_textarea.php:170
+#: includes/cb_text.php:192 includes/cb_textarea.php:189
 msgid "Alpha"
 msgstr "Κείμενο"
 
-#: includes/cb_text.php:177 includes/cb_textarea.php:174
+#: includes/cb_text.php:196 includes/cb_textarea.php:193
 msgid "Alpha Numeric"
 msgstr "Αλφαρηθμητικό"
 
-#: includes/cb_text.php:181 includes/cb_textarea.php:178
+#: includes/cb_text.php:200 includes/cb_textarea.php:197
 msgid "Digits"
 msgstr "Ψηφία"
 
-#: includes/cb_text.php:185 includes/cb_textarea.php:182
+#: includes/cb_text.php:204 includes/cb_textarea.php:201
 msgid "Strip Tags"
 msgstr "Απαλοιφή ετικετών"
 
-#: includes/cb_text.php:189 includes/cb_textarea.php:186
+#: includes/cb_text.php:208 includes/cb_textarea.php:205
 msgid "Trim"
 msgstr "Απαλοιφή κενών"
 
-#: includes/cb_text.php:191 includes/cb_textarea.php:188
+#: includes/cb_text.php:210 includes/cb_textarea.php:207
 #: views/contact_bank_layout_settings.php:83
 #: views/contact_bank_layout_settings.php:271
 #: views/contact_bank_layout_settings.php:481
@@ -346,19 +357,19 @@ msgstr "Απαλοιφή κενών"
 msgid " (Available in Premium Edition)"
 msgstr "(Διατίθεται σε ασφάλιστρο έκδοση)"
 
-#: includes/cb_textarea.php:36 views/contact_view.php:453
+#: includes/cb_textarea.php:55 views/contact_view.php:453
 msgid "Paragraph Text"
 msgstr "Κείμενο παραγράφου"
 
-#: includes/cb_textarea.php:43
+#: includes/cb_textarea.php:62
 msgid "Enter label"
 msgstr "Προσθήκη ετικέτας"
 
-#: includes/cb_textarea.php:50
+#: includes/cb_textarea.php:69
 msgid "Enter  Description"
 msgstr "Προσθήκη περιγραφής"
 
-#: includes/cb_textarea.php:111
+#: includes/cb_textarea.php:130
 msgid "Tooltip text"
 msgstr "Κείμενο συμβουλής"
 
@@ -375,6 +386,76 @@ msgstr "Διαγραφή ρυθμίσεων email"
 #: lib/contact_frontend_data_class.php:113
 msgid "Delete Form Entry"
 msgstr "Διαγραφή εγγραφής φόρμας"
+
+#: lib/install-script.php:238
+msgid "blank_field_message"
+msgstr "κενό πεδίο μηνύματος"
+
+#: lib/install-script.php:239 lib/install-script.php:666
+#: views/contact_view.php:305
+msgid "Required field must not be blank"
+msgstr "Το υποχρεωτικό πεδίο δεν μπορεί να είναι κενό"
+
+#: lib/install-script.php:248
+msgid "incorrect_email_message"
+msgstr "Λάθος Email Μήνυμα"
+
+#: lib/install-script.php:249 lib/install-script.php:676
+#: views/contact_view.php:317
+msgid "Please enter a valid email address"
+msgstr "Παρακαλώ εισάγετε σωστή διεύθυνση email"
+
+#: lib/install-script.php:539 lib/install-script.php:918
+msgid "Submit"
+msgstr "Δώστε"
+
+#: lib/install-script.php:626
+msgid "Contact Form Demo"
+msgstr "Φόρμα Επικοινωνίας Επίδειξη"
+
+#: lib/install-script.php:656
+msgid "Your message was sent successfully. Thanks."
+msgstr "Το μήνυμά σας εστάλη επιτυχώς. Ευχαριστώ."
+
+#: lib/install-script.php:710 lib/install-script.php:714
+#: lib/install-script.php:715
+msgid "Your Name"
+msgstr "Το όνομά σας"
+
+#: lib/install-script.php:761 lib/install-script.php:765
+#: lib/install-script.php:766
+msgid "Your Email"
+msgstr "Email σας Το"
+
+#: lib/install-script.php:807 lib/install-script.php:811
+#: lib/install-script.php:812 views/add_contact_email.php:202
+msgid "Subject"
+msgstr "Θέμα"
+
+#: lib/install-script.php:860 lib/install-script.php:864
+#: lib/install-script.php:865
+msgid "Your Message"
+msgstr "μήνυμά σας"
+
+#: lib/install-script.php:992
+msgid "Admin Notification"
+msgstr "Υποστηρικτικοί γνωστοποίηση"
+
+#: lib/install-script.php:995 lib/install-script.php:1022
+msgid "Site Administration"
+msgstr "του δικτυακού τόπου Διοίκησης"
+
+#: lib/install-script.php:997
+msgid "New Contact recieved from Website"
+msgstr "Νέα επαφή λάβαμε από την ιστοσελίδα"
+
+#: lib/install-script.php:1020
+msgid "Client Notification"
+msgstr "Κοινοποίηση πελάτη"
+
+#: lib/install-script.php:1021
+msgid "Thanks for visiting our website"
+msgstr "Ευχαριστίες για την επίσκεψη στην ιστοσελίδα μας"
 
 #: views/add_contact_email.php:50 views/contact_email_settings.php:88
 msgid "Email Confirmation"
@@ -400,7 +481,8 @@ msgstr "Οι ρυθμίσεις email αποθηκεύτηκαν. Παρακαλ
 msgid "Email"
 msgstr "Email"
 
-#: views/add_contact_email.php:69 views/contact_view.php:486
+#: views/add_contact_email.php:69 views/contact-feedback.php:51
+#: views/contact_view.php:486
 msgid "Name"
 msgstr "Όνομα"
 
@@ -477,10 +559,6 @@ msgstr "Δεύτερη κοινοποίηση"
 msgid "Enter Bcc Email"
 msgstr "Προσθέστε email δεύτερης κοινοποίησης"
 
-#: views/add_contact_email.php:202
-msgid "Subject"
-msgstr "Θέμα"
-
 #: views/add_contact_email.php:206
 msgid "Enter Subject"
 msgstr "Προσθέστε θέμα"
@@ -513,16 +591,44 @@ msgstr "Κλείσιμο αναφοράς συστήματος"
 msgid "Default"
 msgstr "Προεπιλογή"
 
-#: views/contact_bank_form_preview.php:294 views/dashboard.php:129
-msgid "Form Preview"
-msgstr "Προεπισκόπιση φόρμας"
-
-#: views/contact_bank_form_preview.php:297
+#: views/contact-feedback.php:36 views/contact_bank_form_preview.php:297
 #: views/contact_bank_layout_settings.php:32
 #: views/contact_email_settings.php:33 views/contact_frontend_data.php:34
 #: views/contact_view.php:262
 msgid "Back to Dashboard"
 msgstr "Πίσω στον πίνακα ελέγχου"
+
+#: views/contact-feedback.php:40
+msgid "Email has beens send successfully."
+msgstr "Email έχει στείλετε με επιτυχία."
+
+#: views/contact-feedback.php:47 views/contact-feedback.php:63
+msgid "Feature Requests / Suggestions"
+msgstr "Αιτήματα χαρακτηριστικό / Προτάσεις"
+
+#: views/contact-feedback.php:53
+msgid "Enter your Name"
+msgstr "Πληκτρολογήστε το Το όνομά σας"
+
+#: views/contact-feedback.php:57
+msgid "Email Id"
+msgstr "ταυτότητα ηλεκτρονικού ταχυδρομείου"
+
+#: views/contact-feedback.php:59
+msgid "Enter your Email Address"
+msgstr "Εισάγετε το email σας"
+
+#: views/contact-feedback.php:65
+msgid "Enter your Feature Requests / Suggestions"
+msgstr "Εισάγετε σας αιτήματα χαρακτηριστικό / Προτάσεις"
+
+#: views/contact-feedback.php:70
+msgid "Send"
+msgstr "Στείλτε"
+
+#: views/contact_bank_form_preview.php:294 views/dashboard.php:129
+msgid "Form Preview"
+msgstr "Προεπισκόπιση φόρμας"
 
 #: views/contact_bank_layout_settings.php:29
 msgid " (Premium Features available in Paid Edition)"
@@ -765,10 +871,6 @@ msgstr "Προσθήκη περιγραφής φόρμας"
 msgid "Blank Field Message:"
 msgstr "Μήνυμα κενού πεδίου:"
 
-#: views/contact_view.php:305
-msgid "Required field must not be blank"
-msgstr "Το υποχρεωτικό πεδίο δεν μπορεί να είναι κενό"
-
 #: views/contact_view.php:307
 msgid "Enter Blank Field Message"
 msgstr "Προσθήκη μηνύματος κενού πεδίου"
@@ -776,10 +878,6 @@ msgstr "Προσθήκη μηνύματος κενού πεδίου"
 #: views/contact_view.php:311
 msgid "Incorrect Email Message:"
 msgstr "Μήνυμα λάθους email:"
-
-#: views/contact_view.php:317
-msgid "Please enter a valid email address"
-msgstr "Παρακαλώ εισάγετε σωστή διεύθυνση email"
 
 #: views/contact_view.php:319
 msgid "Enter Incorrect Email Message"
@@ -907,55 +1005,55 @@ msgstr "Είστε σίγουροι ότι θέλετε να διαγράψετ�
 msgid "Are you sure, you want to delete all Forms?"
 msgstr "Είστε σίγουροι ότι θέλετε να διαγράψετε όλες τις φόρμες;"
 
-#: views/header.php:21
+#: views/header.php:22
 msgid "Get Started"
 msgstr "πάρτε αρχισμένος"
 
-#: views/header.php:24
+#: views/header.php:25
 msgid "Watch Contact Video!"
 msgstr "Παρακολουθήστε-Contact Βίντεο!"
 
-#: views/header.php:28
+#: views/header.php:29
 msgid "read documentation here"
 msgstr "διαβάστε τα έγγραφα τεκμηρίωσης εδώ για"
 
-#: views/header.php:33
+#: views/header.php:34
 msgid "Go Premium"
 msgstr "Μετάβαση ασφάλιστρο"
 
-#: views/header.php:37
+#: views/header.php:38
 msgid "Feature"
 msgstr "χαρακτηριστικό"
 
-#: views/header.php:42
+#: views/header.php:43
 msgid "Online Demos"
 msgstr "Συνδεδεμένοι Επιδείξεις"
 
-#: views/header.php:47
+#: views/header.php:48
 msgid "Premium Pricing Plan ?"
 msgstr "ασφάλιστρο τιμολόγηση Σχέδιο;"
 
-#: views/header.php:54
+#: views/header.php:55
 msgid "Knowledge Base"
 msgstr "Γνωσιακή Βάση"
 
-#: views/header.php:59
+#: views/header.php:60
 msgid "Support Forum"
 msgstr "Φόρουμ υποστήριξης"
 
-#: views/header.php:64
+#: views/header.php:65
 msgid "FAQ's"
 msgstr "Συχνές Ερωτήσεις"
 
-#: views/header.php:69
+#: views/header.php:70
 msgid "Detailed Features"
 msgstr "Λεπτομερή Χαρακτηριστικά"
 
-#: views/header.php:75
+#: views/header.php:76
 msgid "More Actions"
 msgstr "Περισσότερες ενέργειες"
 
-#: views/header.php:79
+#: views/header.php:80
 msgid "Plugin Customization"
 msgstr "Plugin Προσαρμογή"
 

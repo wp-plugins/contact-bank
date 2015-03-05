@@ -279,7 +279,7 @@ $rand_value = RAND(10,10000);
 				if($show_title == "true")
 				{
 					?>
-					<h4><?php echo $form_name; ?></h4>
+					<h4><?php _e($form_name, contact_bank ); ?></h4>
 					<?php 
 				}
 				if($show_desc == "true")
@@ -299,7 +299,7 @@ $rand_value = RAND(10,10000);
 					<div class="layout-control-group">
 						<label class="label_control layout-control-label">
 						<?php
-							echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_label_value"] . " :";
+							_e($control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_label_value"], contact_bank ) . " :";
 							if($control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_control_required"] == "1")
 							{
 							?>
@@ -314,7 +314,7 @@ $rand_value = RAND(10,10000);
 							case 1:
 							?>
 								<div class="layout-controls layout_according_label_position">
-									<input class="hovertip input_control" type="text"  id="ux_txt_control_<?php echo $form_fields[$flag]->column_dynamicId ."_". $rand_value; ?>" name="ux_txt_control_<?php echo $form_fields[$flag]->column_dynamicId ."_". $rand_value; ?>" data-original-title="<?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_tooltip_txt"]; ?>" placeholder="<?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_default_txt_val"];?>" data-alpha="<?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_checkbox_alpha_filter"];?>" data-alpha_num="<?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_ux_checkbox_alpha_num_filter"];?>" data-digit="<?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_checkbox_digit_filter"];?>" data-strip="<?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_checkbox_strip_tag_filter"];?>" data-trim="<?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_checkbox_trim_filter"];?>" onfocus="prevent_paste(this.id);" />
+									<input class="hovertip input_control" type="text"  id="ux_txt_control_<?php echo $form_fields[$flag]->column_dynamicId ."_". $rand_value; ?>" name="ux_txt_control_<?php echo $form_fields[$flag]->column_dynamicId ."_". $rand_value; ?>" data-original-title="<?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_tooltip_txt"]; ?>" placeholder="<?php _e($control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_default_txt_val"], contact_bank );?>" data-alpha="<?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_checkbox_alpha_filter"];?>" data-alpha_num="<?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_ux_checkbox_alpha_num_filter"];?>" data-digit="<?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_checkbox_digit_filter"];?>" data-strip="<?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_checkbox_strip_tag_filter"];?>" data-trim="<?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_checkbox_trim_filter"];?>" onfocus="prevent_paste(this.id);" />
 									<span class="field_description" id="txt_description_"><?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_description"]; ?></span>
 								</div>
 							<?php
@@ -322,7 +322,7 @@ $rand_value = RAND(10,10000);
 							case 2:
 								?>
 								<div class="layout-controls layout_according_label_position">
-									<textarea class="hovertip input_control" id="ux_textarea_control_<?php echo $form_fields[$flag]->column_dynamicId."_". $rand_value; ?>" placeholder="<?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_default_txt_val"];?>" name="ux_textarea_control_<?php echo $form_fields[$flag]->column_dynamicId ."_". $rand_value; ?>" onfocus="prevent_paste(this.id);" data-alpha="<?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_checkbox_alpha_filter"];?>" data-alpha_num="<?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_ux_checkbox_alpha_num_filter"];?>" data-digit="<?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_checkbox_digit_filter"];?>" data-strip="<?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_checkbox_strip_tag_filter"];?>" data-trim="<?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_checkbox_trim_filter"];?>" data-original-title="<?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_tooltip_txt"]; ?>"></textarea>
+									<textarea class="hovertip input_control" id="ux_textarea_control_<?php echo $form_fields[$flag]->column_dynamicId."_". $rand_value; ?>" placeholder="<?php _e($control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_default_txt_val"], contact_bank );?>" name="ux_textarea_control_<?php echo $form_fields[$flag]->column_dynamicId ."_". $rand_value; ?>" onfocus="prevent_paste(this.id);" data-alpha="<?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_checkbox_alpha_filter"];?>" data-alpha_num="<?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_ux_checkbox_alpha_num_filter"];?>" data-digit="<?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_checkbox_digit_filter"];?>" data-strip="<?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_checkbox_strip_tag_filter"];?>" data-trim="<?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_checkbox_trim_filter"];?>" data-original-title="<?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_tooltip_txt"]; ?>"></textarea>
 									<span class="field_description" id="txt_description_"><?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_description"]; ?></span>
 								</div>
 								<?php
@@ -330,7 +330,7 @@ $rand_value = RAND(10,10000);
 							case 3:
 									?>
 									<div class="layout-controls layout_according_label_position">
-										<input class="hovertip input_control" type="text"  id="ux_txt_email_<?php echo $form_fields[$flag]->column_dynamicId ."_". $rand_value; ?>" name="ux_txt_email_<?php echo $form_fields[$flag]->column_dynamicId ."_". $rand_value; ?>" data-original-title="<?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_tooltip_txt"]; ?>" placeholder="<?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_default_txt_val"];?>"onfocus="prevent_paste(this.id);"/>
+										<input class="hovertip input_control" type="text"  id="ux_txt_email_<?php echo $form_fields[$flag]->column_dynamicId ."_". $rand_value; ?>" name="ux_txt_email_<?php echo $form_fields[$flag]->column_dynamicId ."_". $rand_value; ?>" data-original-title="<?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_tooltip_txt"]; ?>" placeholder="<?php _e($control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_default_txt_val"], contact_bank );?>"onfocus="prevent_paste(this.id);"/>
 										<span class="field_description" id="txt_description_"><?php echo $control_settings_array[$form_fields[$flag]->column_dynamicId]["cb_description"]; ?></span>
 									</div>
 									<?php
@@ -459,7 +459,7 @@ $rand_value = RAND(10,10000);
 				}
 			?>
 		<div class="layout-control-group">
-			<button type="submit"  class="btn_submit"><?php echo $layout_settings_array[$form_id]["submit_button_text"];?></button>
+			<button type="submit"  class="btn_submit"><?php _e($layout_settings_array[$form_id]["submit_button_text"],contact_bank);?></button>
 		</div>
 	</form>
 </div>
