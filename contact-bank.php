@@ -4,7 +4,7 @@ Plugin Name: Contact Bank Lite Edition
 Plugin URI: http://tech-banker.com
 Description: Build Complex, Powerful Contact Forms in Just Seconds. No Programming Knowledge Required! Yeah, It's Really That Easy.
 Author: Tech Banker
-Version: 2.0.101
+Version: 2.0.102
 Author URI: http://tech-banker.com
  */
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -161,10 +161,22 @@ function contact_bank()
 		$current_user->role = array_keys($current_user->$cb_role);
 		$cb_role = $current_user->role[0];
 	}
-	include CONTACT_BK_PLUGIN_DIR ."/views/header.php";
-	include CONTACT_BK_PLUGIN_DIR ."/views/contact_view.php";
-	include CONTACT_BK_PLUGIN_DIR . "/views/includes_common_after.php";
-	include CONTACT_BK_PLUGIN_DIR ."/views/footer.php";
+	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/views/header.php"))
+	{
+		include_once CONTACT_BK_PLUGIN_DIR ."/views/header.php";
+	}
+	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/views/contact_view.php"))
+	{
+		include_once CONTACT_BK_PLUGIN_DIR ."/views/contact_view.php";
+	}
+	if(file_exists(CONTACT_BK_PLUGIN_DIR . "/views/includes_common_after.php"))
+	{
+		include_once CONTACT_BK_PLUGIN_DIR . "/views/includes_common_after.php";
+	}
+	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/views/footer.php"))
+	{
+		include_once CONTACT_BK_PLUGIN_DIR ."/views/footer.php";
+	}
 }
 function contact_dashboard()
 {
@@ -179,9 +191,18 @@ function contact_dashboard()
 		$current_user->role = array_keys($current_user->$cb_role);
 		$cb_role = $current_user->role[0];
 	}	
-	include CONTACT_BK_PLUGIN_DIR ."/views/header.php";
-	include CONTACT_BK_PLUGIN_DIR ."/views/dashboard.php";
-	include CONTACT_BK_PLUGIN_DIR ."/views/footer.php";
+	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/views/header.php"))
+	{
+		include_once CONTACT_BK_PLUGIN_DIR ."/views/header.php";
+	}
+	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/views/dashboard.php"))
+	{
+		include_once CONTACT_BK_PLUGIN_DIR ."/views/dashboard.php";
+	}
+	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/views/footer.php"))
+	{
+		include_once CONTACT_BK_PLUGIN_DIR ."/views/footer.php";
+	}
 }
 function edit_contact_view()
 {
@@ -196,9 +217,18 @@ function edit_contact_view()
 		$current_user->role = array_keys($current_user->$cb_role);
 		$cb_role = $current_user->role[0];
 	}
-    include CONTACT_BK_PLUGIN_DIR ."/views/header.php";
-    include CONTACT_BK_PLUGIN_DIR ."/views/contact_view.php";
-    include CONTACT_BK_PLUGIN_DIR ."/views/footer.php";
+	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/views/header.php"))
+	{
+		include_once CONTACT_BK_PLUGIN_DIR ."/views/header.php";
+	}
+	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/views/contact_view.php"))
+	{
+		include_once CONTACT_BK_PLUGIN_DIR ."/views/contact_view.php";
+	}
+	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/views/footer.php"))
+	{
+		include_once CONTACT_BK_PLUGIN_DIR ."/views/footer.php";
+	}
 }
 
 function contact_plugin_update()
@@ -214,9 +244,18 @@ function contact_plugin_update()
 		$current_user->role = array_keys($current_user->$cb_role);
 		$cb_role = $current_user->role[0];
 	}
-	include CONTACT_BK_PLUGIN_DIR ."/views/header.php";
-	include CONTACT_BK_PLUGIN_DIR ."/views/automatic-plugin-update.php";
-	include CONTACT_BK_PLUGIN_DIR ."/views/footer.php";
+	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/views/header.php"))
+	{
+		include_once CONTACT_BK_PLUGIN_DIR ."/views/header.php";
+	}
+	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/views/automatic-plugin-update.php"))
+	{
+		include_once CONTACT_BK_PLUGIN_DIR ."/views/automatic-plugin-update.php";
+	}
+	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/views/footer.php"))
+	{
+		include_once CONTACT_BK_PLUGIN_DIR ."/views/footer.php";
+	}
 }
 function contact_email()
 {
@@ -231,9 +270,18 @@ function contact_email()
 		$current_user->role = array_keys($current_user->$cb_role);
 		$cb_role = $current_user->role[0];
 	}
-    include CONTACT_BK_PLUGIN_DIR ."/views/header.php";
-    include CONTACT_BK_PLUGIN_DIR ."/views/contact_email_settings.php";
-    include CONTACT_BK_PLUGIN_DIR ."/views/footer.php";
+	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/views/header.php"))
+	{
+		include_once CONTACT_BK_PLUGIN_DIR ."/views/header.php";
+	}
+	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/views/contact_email_settings.php"))
+	{
+		include_once CONTACT_BK_PLUGIN_DIR ."/views/contact_email_settings.php";
+	}
+	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/views/footer.php"))
+	{
+		include_once CONTACT_BK_PLUGIN_DIR ."/views/footer.php";
+	}
 }
 function contact_frontend_data()
 {
@@ -248,9 +296,18 @@ function contact_frontend_data()
 		$current_user->role = array_keys($current_user->$cb_role);
 		$cb_role = $current_user->role[0];
 	}
-    include CONTACT_BK_PLUGIN_DIR ."/views/header.php";
-    include CONTACT_BK_PLUGIN_DIR ."/views/contact_frontend_data.php";
-    include CONTACT_BK_PLUGIN_DIR ."/views/footer.php";
+	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/views/header.php"))
+	{
+		include_once CONTACT_BK_PLUGIN_DIR ."/views/header.php";
+	}
+	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/views/contact_frontend_data.php"))
+	{
+		include_once CONTACT_BK_PLUGIN_DIR ."/views/contact_frontend_data.php";
+	}
+	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/views/footer.php"))
+	{
+		include_once CONTACT_BK_PLUGIN_DIR ."/views/footer.php";
+	}
 }
 function add_contact_email_settings()
 {
@@ -265,9 +322,18 @@ function add_contact_email_settings()
 		$current_user->role = array_keys($current_user->$cb_role);
 		$cb_role = $current_user->role[0];
 	}
-    include CONTACT_BK_PLUGIN_DIR ."/views/header.php";
-    include CONTACT_BK_PLUGIN_DIR ."/views/add_contact_email.php";
-    include CONTACT_BK_PLUGIN_DIR ."/views/footer.php";
+	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/views/header.php"))
+	{
+		include_once CONTACT_BK_PLUGIN_DIR ."/views/header.php";
+	}
+	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/views/add_contact_email.php"))
+	{
+		include_once CONTACT_BK_PLUGIN_DIR ."/views/add_contact_email.php";
+	}
+	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/views/footer.php"))
+	{
+		include_once CONTACT_BK_PLUGIN_DIR ."/views/footer.php";
+	}
 }
 function contact_layout_settings()
 {
@@ -282,9 +348,18 @@ function contact_layout_settings()
 		$current_user->role = array_keys($current_user->$cb_role);
 		$cb_role = $current_user->role[0];
 	}
-    include CONTACT_BK_PLUGIN_DIR ."/views/header.php";
-    include CONTACT_BK_PLUGIN_DIR ."/views/contact_bank_layout_settings.php";
-    include CONTACT_BK_PLUGIN_DIR ."/views/footer.php";
+	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/views/header.php"))
+	{
+		include_once CONTACT_BK_PLUGIN_DIR ."/views/header.php";
+	}
+	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/views/contact_bank_layout_settings.php"))
+	{
+		include_once CONTACT_BK_PLUGIN_DIR ."/views/contact_bank_layout_settings.php";
+	}
+	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/views/footer.php"))
+	{
+		include_once CONTACT_BK_PLUGIN_DIR ."/views/footer.php";
+	}
 }
 function contact_feature_request()
 {
@@ -299,8 +374,14 @@ function contact_feature_request()
 		$current_user->role = array_keys($current_user->$cb_role);
 		$cb_role = $current_user->role[0];
 	}
-	include_once CONTACT_BK_PLUGIN_DIR . "/views/header.php";
-	include_once CONTACT_BK_PLUGIN_DIR . "/views/contact-feedback.php";
+	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/views/header.php"))
+	{
+		include_once CONTACT_BK_PLUGIN_DIR ."/views/header.php";
+	}
+	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/views/contact-feedback.php"))
+	{
+		include_once CONTACT_BK_PLUGIN_DIR ."/views/contact-feedback.php";
+	}
 }
 function contact_system_status()
 {
@@ -315,9 +396,18 @@ function contact_system_status()
 		$current_user->role = array_keys($current_user->$cb_role);
 		$cb_role = $current_user->role[0];
 	}
-    include CONTACT_BK_PLUGIN_DIR ."/views/header.php";
-    include CONTACT_BK_PLUGIN_DIR ."/views/contact-bank-system-report.php";
-    include CONTACT_BK_PLUGIN_DIR ."/views/footer.php";
+	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/views/header.php"))
+	{
+		include_once CONTACT_BK_PLUGIN_DIR ."/views/header.php";
+	}
+	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/views/contact-bank-system-report.php"))
+	{
+		include_once CONTACT_BK_PLUGIN_DIR ."/views/contact-bank-system-report.php";
+	}
+	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/views/footer.php"))
+	{
+		include_once CONTACT_BK_PLUGIN_DIR ."/views/footer.php";
+	}
 }
 
 function form_preview()
@@ -333,9 +423,18 @@ function form_preview()
 		$current_user->role = array_keys($current_user->$cb_role);
 		$cb_role = $current_user->role[0];
 	}
-    include CONTACT_BK_PLUGIN_DIR ."/views/header.php";
-    include CONTACT_BK_PLUGIN_DIR ."/views/contact_bank_form_preview.php";
-    include CONTACT_BK_PLUGIN_DIR ."/views/footer.php";
+	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/views/header.php"))
+	{
+		include_once CONTACT_BK_PLUGIN_DIR ."/views/header.php";
+	}
+	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/views/contact_bank_form_preview.php"))
+	{
+		include_once CONTACT_BK_PLUGIN_DIR ."/views/contact_bank_form_preview.php";
+	}
+	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/views/footer.php"))
+	{
+		include_once CONTACT_BK_PLUGIN_DIR ."/views/footer.php";
+	}
 }
 function contact_pro_version()
 {
@@ -350,9 +449,18 @@ function contact_pro_version()
 		$current_user->role = array_keys($current_user->$cb_role);
 		$cb_role = $current_user->role[0];
 	}
-    include CONTACT_BK_PLUGIN_DIR ."/views/header.php";
-    include CONTACT_BK_PLUGIN_DIR ."/views/purchase_pro_version.php";
-    include CONTACT_BK_PLUGIN_DIR ."/views/footer.php";
+	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/views/header.php"))
+	{
+		include_once CONTACT_BK_PLUGIN_DIR ."/views/header.php";
+	}
+	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/views/purchase_pro_version.php"))
+	{
+		include_once CONTACT_BK_PLUGIN_DIR ."/views/purchase_pro_version.php";
+	}
+	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/views/footer.php"))
+	{
+		include_once CONTACT_BK_PLUGIN_DIR ."/views/footer.php";
+	}
 }
 function contact_bank_recommended_plugins()
 {
@@ -367,9 +475,18 @@ function contact_bank_recommended_plugins()
 		$current_user->role = array_keys($current_user->$cb_role);
 		$cb_role = $current_user->role[0];
 	}
-	include CONTACT_BK_PLUGIN_DIR ."/views/header.php";
-	include CONTACT_BK_PLUGIN_DIR ."/views/recommended-plugins.php";
-	include CONTACT_BK_PLUGIN_DIR ."/views/footer.php";
+	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/views/header.php"))
+	{
+		include_once CONTACT_BK_PLUGIN_DIR ."/views/header.php";
+	}
+	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/views/recommended-plugins.php"))
+	{
+		include_once CONTACT_BK_PLUGIN_DIR ."/views/recommended-plugins.php";
+	}
+	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/views/footer.php"))
+	{
+		include_once CONTACT_BK_PLUGIN_DIR ."/views/footer.php";
+	}
 }
 function contact_bank_other_services()
 {
@@ -384,9 +501,18 @@ function contact_bank_other_services()
 		$current_user->role = array_keys($current_user->$cb_role);
 		$cb_role = $current_user->role[0];
 	}
-	include CONTACT_BK_PLUGIN_DIR ."/views/header.php";
-	include CONTACT_BK_PLUGIN_DIR ."/views/other-services.php";
-	include CONTACT_BK_PLUGIN_DIR ."/views/footer.php";
+	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/views/header.php"))
+	{
+		include_once CONTACT_BK_PLUGIN_DIR ."/views/header.php";
+	}
+	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/views/other-services.php"))
+	{
+		include_once CONTACT_BK_PLUGIN_DIR ."/views/other-services.php";
+	}
+	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/views/footer.php"))
+	{
+		include_once CONTACT_BK_PLUGIN_DIR ."/views/footer.php";
+	}
 }
 function contact_short_code()
 {
@@ -401,9 +527,18 @@ function contact_short_code()
 		$current_user->role = array_keys($current_user->$cb_role);
 		$cb_role = $current_user->role[0];
 	}
-    include CONTACT_BK_PLUGIN_DIR ."/views/header.php";
-    include CONTACT_BK_PLUGIN_DIR ."/views/shortcode.php";
-    include CONTACT_BK_PLUGIN_DIR ."/views/footer.php";
+	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/views/header.php"))
+	{
+		include_once CONTACT_BK_PLUGIN_DIR ."/views/header.php";
+	}
+	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/views/shortcode.php"))
+	{
+		include_once CONTACT_BK_PLUGIN_DIR ."/views/shortcode.php";
+	}
+	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/views/footer.php"))
+	{
+		include_once CONTACT_BK_PLUGIN_DIR ."/views/footer.php";
+	}
 }
 
 function backend_plugin_js_scripts_contact_bank()
@@ -462,14 +597,20 @@ if(isset($_REQUEST["action"]))
             		$current_user->role = array_keys($current_user->$cb_role);
             		$cb_role = $current_user->role[0];
             	}
-                include CONTACT_BK_PLUGIN_DIR . "/lib/contact_view-class.php";
+            	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/lib/contact_view-class.php"))
+            	{
+                	include_once CONTACT_BK_PLUGIN_DIR . "/lib/contact_view-class.php";
+            	}
             }
             break;
         case "frontend_contact_form_library":
             add_action( "admin_init", "frontend_contact_form_library");
             function frontend_contact_form_library()
             {
-                include CONTACT_BK_PLUGIN_DIR . "/lib/contact_bank_frontend-class.php";
+            	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/lib/contact_bank_frontend-class.php"))
+            	{
+					include_once CONTACT_BK_PLUGIN_DIR . "/lib/contact_bank_frontend-class.php";
+            	}
             }
             break;
         case "email_contact_form_library":
@@ -487,14 +628,21 @@ if(isset($_REQUEST["action"]))
             		$current_user->role = array_keys($current_user->$cb_role);
             		$cb_role = $current_user->role[0];
             	}
-                include CONTACT_BK_PLUGIN_DIR . "/lib/contact_bank_email-class.php";
+            	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/lib/contact_bank_email-class.php"))
+            	{
+                	include_once CONTACT_BK_PLUGIN_DIR . "/lib/contact_bank_email-class.php";
+            	}
             }
             break;
         case "email_management_contact_form_library":
             add_action( "admin_init", "email_management_contact_form_library");
             function email_management_contact_form_library()
             {
-                include CONTACT_BK_PLUGIN_DIR . "/lib/contact_bank_email_management.php";
+            	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/lib/contact_bank_email_management.php"))
+            	{
+                	include_once CONTACT_BK_PLUGIN_DIR . "/lib/contact_bank_email_management.php";
+                	
+            	}
             }
             break;
         case "frontend_data_contact_library":
@@ -512,7 +660,10 @@ if(isset($_REQUEST["action"]))
             		$current_user->role = array_keys($current_user->$cb_role);
             		$cb_role = $current_user->role[0];
             	}
-                include CONTACT_BK_PLUGIN_DIR . "/lib/contact_frontend_data_class.php";
+            	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/lib/contact_frontend_data_class.php"))
+            	{
+                	include CONTACT_BK_PLUGIN_DIR . "/lib/contact_frontend_data_class.php";
+            	}
             }
             break;
         
@@ -531,7 +682,10 @@ if(isset($_REQUEST["action"]))
             		$current_user->role = array_keys($current_user->$cb_role);
             		$cb_role = $current_user->role[0];
             	}
-                include CONTACT_BK_PLUGIN_DIR . "/lib/contact_bank_show_form_control_data-class.php";
+            	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/lib/contact_bank_show_form_control_data-class.php"))
+            	{
+                	include CONTACT_BK_PLUGIN_DIR . "/lib/contact_bank_show_form_control_data-class.php";
+            	}
             }
             break;
             case "layout_settings_contact_library":
@@ -549,7 +703,10 @@ if(isset($_REQUEST["action"]))
             		$current_user->role = array_keys($current_user->$cb_role);
             		$cb_role = $current_user->role[0];
             	}
-                include CONTACT_BK_PLUGIN_DIR . "/lib/contact_bank_layout_settings-class.php";
+            	if(file_exists(CONTACT_BK_PLUGIN_DIR ."/lib/contact_bank_layout_settings-class.php"))
+            	{
+                	include CONTACT_BK_PLUGIN_DIR . "/lib/contact_bank_layout_settings-class.php";
+            	}
             }
             break;
     }
@@ -629,186 +786,116 @@ function extract_short_code($form_id,$show_title,$show_desc)
 }
 function add_contact_bank_icon($meta = TRUE)
 {
-	global $wp_admin_bar,$wpdb,$current_user;
-	if (is_super_admin())
+	if (!is_user_logged_in() ) 
 	{
-		$cb_role = "administrator";
+		return;
 	}
-	else
+	else 
 	{
-		$cb_role = $wpdb->prefix . "capabilities";
-		$current_user->role = array_keys($current_user->$cb_role);
-		$cb_role = $current_user->role[0];
-	}
-	if (!is_user_logged_in() ) { return; }
-	switch ($cb_role)
-	{
-		case "administrator":
+		global $wp_admin_bar,$wpdb,$current_user;
+		if (is_super_admin())
+		{
+			$cb_role = "administrator";
+		}
+		else
+		{
+			$cb_role = $wpdb->prefix . "capabilities";
+			$current_user->role = array_keys($current_user->$cb_role);
+			$cb_role = $current_user->role[0];
+		}
+		
+		switch ($cb_role)
+		{
+			case "administrator":
+				
+			$wp_admin_bar->add_menu( array(
+			"id" => "contact_bank_links",
+			"title" =>  "<img src=\"".plugins_url("/assets/images/icon.png",__FILE__)."\" width=\"25\" height=\"25\" style=\"vertical-align:text-top; margin-right:5px;\" />Contact Bank" ,
+			"href" => site_url() ."/wp-admin/admin.php?page=contact_dashboard",
+			));
+			$wp_admin_bar->add_menu( array(
+					"parent" => "contact_bank_links",
+					"id"     => "dashboard_links",
+					"href"  => site_url() ."/wp-admin/admin.php?page=contact_dashboard",
+					"title" => __( "Dashboard", contact_bank) )         /* set the sub-menu name */
+			);
+			$wp_admin_bar->add_menu( array(
+					"parent" => "contact_bank_links",
+					"id"     => "plugin_updates_links",
+					"href"  => site_url() ."/wp-admin/admin.php?page=contact_plugin_update",
+					"title" => __( "Plugin Updates", contact_bank))         /* set the sub-menu name */
+			);
+			$wp_admin_bar->add_menu( array(
+					"parent" => "contact_bank_links",
+					"id"     => "short_code_links",
+					"href"  => site_url() ."/wp-admin/admin.php?page=contact_short_code",
+					"title" => __( "Short-Codes", contact_bank))         /* set the sub-menu name */
+			);
+			$wp_admin_bar->add_menu( array(
+					"parent" => "contact_bank_links",
+					"id"     => "frontend_data_links",
+					"href"  => site_url() ."/wp-admin/admin.php?page=contact_frontend_data",
+					"title" => __( "Form Entries", contact_bank))         /* set the sub-menu name */
+			);
+			$wp_admin_bar->add_menu( array(
+					"parent" => "contact_bank_links",
+					"id"     => "email_links",
+					"href"  => site_url() ."/wp-admin/admin.php?page=contact_email",
+					"title" => __( "Email Settings", contact_bank) )         /* set the sub-menu name */
+			);
+			$wp_admin_bar->add_menu( array(
+					"parent" => "contact_bank_links",
+					"id"     => "form_settings_data_links",
+					"href"  => site_url() ."/wp-admin/admin.php?page=contact_layout_settings",
+					"title" => __( "Global Settings", contact_bank))         /* set the sub-menu name */
+			);
+			$wp_admin_bar->add_menu( array(
+					"parent" => "contact_bank_links",
+					"id"     => "feature_request_data_links",
+					"href"  => site_url() ."/wp-admin/admin.php?page=contact_feature_request",
+					"title" => __( "Feature Requests", contact_bank))         /* set the sub-menu name */
+			);
+			$wp_admin_bar->add_menu( array(
+					"parent" => "contact_bank_links",
+					"id"     => "system_status_data_links",
+					"href"  => site_url() ."/wp-admin/admin.php?page=contact_system_status",
+					"title" => __( "System Status", contact_bank))         /* set the sub-menu name */
+			);
+			$wp_admin_bar->add_menu(array(
+					"parent" => "contact_bank_links",
+					"id" => "contact_bank_recommended_plugins_links",
+					"href" => site_url() . "/wp-admin/admin.php?page=contact_bank_recommended_plugins",
+					"title" => __("Recommendations", contact_bank))
+			);
+		
+			$wp_admin_bar->add_menu(array(
+					"parent" => "contact_bank_links",
+					"id" => "pro_version_links",
+					"href" => site_url() . "/wp-admin/admin.php?page=contact_pro_version",
+					"title" => __("Premium Editions", contact_bank))
+			);
+		
+			$wp_admin_bar->add_menu(array(
+					"parent" => "contact_bank_links",
+					"id" => "contact_bank_other_services_links",
+					"href" => site_url() . "/wp-admin/admin.php?page=contact_bank_other_services",
+					"title" => __("Our Other Services", contact_bank))
+			);
+			break;
 			
+			case "editor":
 			$wp_admin_bar->add_menu( array(
-	    "id" => "contact_bank_links",
-	    "title" =>  "<img src=\"".plugins_url("/assets/images/icon.png",__FILE__)."\" width=\"25\" height=\"25\" style=\"vertical-align:text-top; margin-right:5px;\" />Contact Bank" ,
-	    "href" => site_url() ."/wp-admin/admin.php?page=contact_dashboard",
-		));
-		$wp_admin_bar->add_menu( array(
-		    "parent" => "contact_bank_links",
-		    "id"     => "dashboard_links",
-		    "href"  => site_url() ."/wp-admin/admin.php?page=contact_dashboard",
-		    "title" => __( "Dashboard", contact_bank) )         /* set the sub-menu name */
-	    );
-		$wp_admin_bar->add_menu( array(
-			"parent" => "contact_bank_links",
-			"id"     => "plugin_updates_links",
-			"href"  => site_url() ."/wp-admin/admin.php?page=contact_plugin_update",
-			"title" => __( "Plugin Updates", contact_bank))         /* set the sub-menu name */
-		);
-		$wp_admin_bar->add_menu( array(
-	        "parent" => "contact_bank_links",
-		    "id"     => "short_code_links",
-		    "href"  => site_url() ."/wp-admin/admin.php?page=contact_short_code",
-		    "title" => __( "Short-Codes", contact_bank))         /* set the sub-menu name */
-		);
-	   $wp_admin_bar->add_menu( array(
-	        "parent" => "contact_bank_links",
-		    "id"     => "frontend_data_links",
-		    "href"  => site_url() ."/wp-admin/admin.php?page=contact_frontend_data",
-		    "title" => __( "Form Entries", contact_bank))         /* set the sub-menu name */
-		);
-		$wp_admin_bar->add_menu( array(
-		    "parent" => "contact_bank_links",
-		    "id"     => "email_links",
-		    "href"  => site_url() ."/wp-admin/admin.php?page=contact_email",
-		    "title" => __( "Email Settings", contact_bank) )         /* set the sub-menu name */
-		);
-		$wp_admin_bar->add_menu( array(
-		    "parent" => "contact_bank_links",
-		    "id"     => "form_settings_data_links",
-		    "href"  => site_url() ."/wp-admin/admin.php?page=contact_layout_settings",
-		    "title" => __( "Global Settings", contact_bank))         /* set the sub-menu name */
-		);	
-		$wp_admin_bar->add_menu( array(
-			"parent" => "contact_bank_links",
-			"id"     => "feature_request_data_links",
-			"href"  => site_url() ."/wp-admin/admin.php?page=contact_feature_request",
-			"title" => __( "Feature Requests", contact_bank))         /* set the sub-menu name */
-		);
-	 	$wp_admin_bar->add_menu( array(
-	        "parent" => "contact_bank_links",
-		    "id"     => "system_status_data_links",
-		    "href"  => site_url() ."/wp-admin/admin.php?page=contact_system_status",
-		    "title" => __( "System Status", contact_bank))         /* set the sub-menu name */
-		);
-		$wp_admin_bar->add_menu(array(
-	    		"parent" => "contact_bank_links",
-	    		"id" => "contact_bank_recommended_plugins_links",
-	    		"href" => site_url() . "/wp-admin/admin.php?page=contact_bank_recommended_plugins",
-	    		"title" => __("Recommendations", contact_bank))
-	    );
-	
-		$wp_admin_bar->add_menu(array(
-	        "parent" => "contact_bank_links",
-	        "id" => "pro_version_links",
-	        "href" => site_url() . "/wp-admin/admin.php?page=contact_pro_version",
-	        "title" => __("Premium Editions", contact_bank))
-	    );
-		
-		$wp_admin_bar->add_menu(array(
-				"parent" => "contact_bank_links",
-				"id" => "contact_bank_other_services_links",
-				"href" => site_url() . "/wp-admin/admin.php?page=contact_bank_other_services",
-				"title" => __("Our Other Services", contact_bank))
-		);
-		break;	
-		case "editor":
-			$wp_admin_bar->add_menu( array(
-	    "id" => "contact_bank_links",
-	    "title" =>  "<img src=\"".plugins_url("/assets/images/icon.png",__FILE__)."\" width=\"25\" height=\"25\" style=\"vertical-align:text-top; margin-right:5px;\" />Contact Bank" ,
-	    "href" => site_url() ."/wp-admin/admin.php?page=contact_dashboard",
-		));
-	
-		$wp_admin_bar->add_menu( array(
-		    "parent" => "contact_bank_links",
-		    "id"     => "dashboard_links",
-		    "href"  => site_url() ."/wp-admin/admin.php?page=contact_dashboard",
-		    "title" => __( "Dashboard", contact_bank) )         /* set the sub-menu name */
-	    );
-		$wp_admin_bar->add_menu( array(
-			"parent" => "contact_bank_links",
-			"id"     => "plugin_updates_links",
-			"href"  => site_url() ."/wp-admin/admin.php?page=contact_plugin_update",
-			"title" => __( "Plugin Updates", contact_bank))         /* set the sub-menu name */
-		);
-		$wp_admin_bar->add_menu( array(
-	        "parent" => "contact_bank_links",
-		    "id"     => "short_code_links",
-		    "href"  => site_url() ."/wp-admin/admin.php?page=contact_short_code",
-		    "title" => __( "Short-Codes", contact_bank))         /* set the sub-menu name */
-		);
-	   $wp_admin_bar->add_menu( array(
-	        "parent" => "contact_bank_links",
-		    "id"     => "frontend_data_links",
-		    "href"  => site_url() ."/wp-admin/admin.php?page=contact_frontend_data",
-		    "title" => __( "Form Entries", contact_bank))         /* set the sub-menu name */
-		);
-		$wp_admin_bar->add_menu( array(
-		    "parent" => "contact_bank_links",
-		    "id"     => "email_links",
-		    "href"  => site_url() ."/wp-admin/admin.php?page=contact_email",
-		    "title" => __( "Email Settings", contact_bank) )         /* set the sub-menu name */
-		);
-		$wp_admin_bar->add_menu( array(
-		    "parent" => "contact_bank_links",
-		    "id"     => "form_settings_data_links",
-		    "href"  => site_url() ."/wp-admin/admin.php?page=contact_layout_settings",
-		    "title" => __( "Global Settings", contact_bank))         /* set the sub-menu name */
-		);	
-		$wp_admin_bar->add_menu( array(
-				"parent" => "contact_bank_links",
-				"id"     => "feature_request_data_links",
-				"href"  => site_url() ."/wp-admin/admin.php?page=contact_feature_request",
-				"title" => __( "Feature Requests", contact_bank))         /* set the sub-menu name */
-		);
-	   
-	    $wp_admin_bar->add_menu( array(
-	        "parent" => "contact_bank_links",
-		    "id"     => "system_status_data_links",
-		    "href"  => site_url() ."/wp-admin/admin.php?page=contact_system_status",
-		    "title" => __( "System Status", contact_bank))         /* set the sub-menu name */
-		);
-		$wp_admin_bar->add_menu(array(
-    		"parent" => "contact_bank_links",
-    		"id" => "contact_bank_recommended_plugins_links",
-    		"href" => site_url() . "/wp-admin/admin.php?page=contact_bank_recommended_plugins",
-    		"title" => __("Recommendations", contact_bank))
-	    );
-	
-		$wp_admin_bar->add_menu(array(
-	        "parent" => "contact_bank_links",
-	        "id" => "pro_version_links",
-	        "href" => site_url() . "/wp-admin/admin.php?page=contact_pro_version",
-	        "title" => __("Premium Editions", contact_bank))
-	    );
-		
-		$wp_admin_bar->add_menu(array(
-			"parent" => "contact_bank_links",
-			"id" => "contact_bank_other_services_links",
-			"href" => site_url() . "/wp-admin/admin.php?page=contact_bank_other_services",
-			"title" => __("Our Other Services", contact_bank))
-		);
-		break;	
-		case "author":
-			$wp_admin_bar->add_menu( array(
-		    "id" => "contact_bank_links",
-		    "title" =>  "<img src=\"".plugins_url("/assets/images/icon.png",__FILE__)."\" width=\"25\" height=\"25\" style=\"vertical-align:text-top; margin-right:5px;\" />Contact Bank" ,
-		    "href" => site_url() ."/wp-admin/admin.php?page=contact_dashboard",
+				"id" => "contact_bank_links",
+				"title" =>  "<img src=\"".plugins_url("/assets/images/icon.png",__FILE__)."\" width=\"25\" height=\"25\" style=\"vertical-align:text-top; margin-right:5px;\" />Contact Bank" ,
+				"href" => site_url() ."/wp-admin/admin.php?page=contact_dashboard",
 			));
 		
 			$wp_admin_bar->add_menu( array(
-			    "parent" => "contact_bank_links",
-			    "id"     => "dashboard_links",
-			    "href"  => site_url() ."/wp-admin/admin.php?page=contact_dashboard",
-			    "title" => __( "Dashboard", contact_bank) )         /* set the sub-menu name */
-		    );
+				"parent" => "contact_bank_links",
+				"id"     => "dashboard_links",
+				"href"  => site_url() ."/wp-admin/admin.php?page=contact_dashboard",
+				"title" => __( "Dashboard", contact_bank) )         /* set the sub-menu name */
+			);
 			$wp_admin_bar->add_menu( array(
 				"parent" => "contact_bank_links",
 				"id"     => "plugin_updates_links",
@@ -816,64 +903,143 @@ function add_contact_bank_icon($meta = TRUE)
 				"title" => __( "Plugin Updates", contact_bank))         /* set the sub-menu name */
 			);
 			$wp_admin_bar->add_menu( array(
-		        "parent" => "contact_bank_links",
-			    "id"     => "short_code_links",
-			    "href"  => site_url() ."/wp-admin/admin.php?page=contact_short_code",
-			    "title" => __( "Short-Codes", contact_bank))         /* set the sub-menu name */
-			);
-		   $wp_admin_bar->add_menu( array(
-		        "parent" => "contact_bank_links",
-			    "id"     => "frontend_data_links",
-			    "href"  => site_url() ."/wp-admin/admin.php?page=contact_frontend_data",
-			    "title" => __( "Form Entries", contact_bank))         /* set the sub-menu name */
+				"parent" => "contact_bank_links",
+				"id"     => "short_code_links",
+				"href"  => site_url() ."/wp-admin/admin.php?page=contact_short_code",
+				"title" => __( "Short-Codes", contact_bank))         /* set the sub-menu name */
 			);
 			$wp_admin_bar->add_menu( array(
-			    "parent" => "contact_bank_links",
-			    "id"     => "email_links",
-			    "href"  => site_url() ."/wp-admin/admin.php?page=contact_email",
-			    "title" => __( "Email Settings", contact_bank) )         /* set the sub-menu name */
+				"parent" => "contact_bank_links",
+				"id"     => "frontend_data_links",
+				"href"  => site_url() ."/wp-admin/admin.php?page=contact_frontend_data",
+				"title" => __( "Form Entries", contact_bank))         /* set the sub-menu name */
 			);
 			$wp_admin_bar->add_menu( array(
-			    "parent" => "contact_bank_links",
-			    "id"     => "form_settings_data_links",
-			    "href"  => site_url() ."/wp-admin/admin.php?page=contact_layout_settings",
-			    "title" => __( "Global Settings", contact_bank))         /* set the sub-menu name */
-			);	
-			$wp_admin_bar->add_menu( array(
-					"parent" => "contact_bank_links",
-					"id"     => "feature_request_data_links",
-					"href"  => site_url() ."/wp-admin/admin.php?page=contact_feature_request",
-					"title" => __( "Feature Requests", contact_bank))         /* set the sub-menu name */
+				"parent" => "contact_bank_links",
+				"id"     => "email_links",
+				"href"  => site_url() ."/wp-admin/admin.php?page=contact_email",
+				"title" => __( "Email Settings", contact_bank) )         /* set the sub-menu name */
 			);
-		 	$wp_admin_bar->add_menu(array(
-	    		"parent" => "contact_bank_links",
-	    		"id" => "contact_bank_recommended_plugins_links",
-	    		"href" => site_url() . "/wp-admin/admin.php?page=contact_bank_recommended_plugins",
-	    		"title" => __("Recommendations", contact_bank))
-		    );
+			$wp_admin_bar->add_menu( array(
+				"parent" => "contact_bank_links",
+				"id"     => "form_settings_data_links",
+				"href"  => site_url() ."/wp-admin/admin.php?page=contact_layout_settings",
+				"title" => __( "Global Settings", contact_bank))         /* set the sub-menu name */
+			);
+			$wp_admin_bar->add_menu( array(
+				"parent" => "contact_bank_links",
+				"id"     => "feature_request_data_links",
+				"href"  => site_url() ."/wp-admin/admin.php?page=contact_feature_request",
+				"title" => __( "Feature Requests", contact_bank))         /* set the sub-menu name */
+			);
+		
+			$wp_admin_bar->add_menu( array(
+				"parent" => "contact_bank_links",
+				"id"     => "system_status_data_links",
+				"href"  => site_url() ."/wp-admin/admin.php?page=contact_system_status",
+				"title" => __( "System Status", contact_bank))         /* set the sub-menu name */
+			);
+			$wp_admin_bar->add_menu(array(
+				"parent" => "contact_bank_links",
+				"id" => "contact_bank_recommended_plugins_links",
+				"href" => site_url() . "/wp-admin/admin.php?page=contact_bank_recommended_plugins",
+				"title" => __("Recommendations", contact_bank))
+			);
 		
 			$wp_admin_bar->add_menu(array(
-		        "parent" => "contact_bank_links",
-		        "id" => "pro_version_links",
-		        "href" => site_url() . "/wp-admin/admin.php?page=contact_pro_version",
-		        "title" => __("Premium Editions", contact_bank))
-		    );
-			
+				"parent" => "contact_bank_links",
+				"id" => "pro_version_links",
+				"href" => site_url() . "/wp-admin/admin.php?page=contact_pro_version",
+				"title" => __("Premium Editions", contact_bank))
+			);
+		
 			$wp_admin_bar->add_menu(array(
 				"parent" => "contact_bank_links",
 				"id" => "contact_bank_other_services_links",
 				"href" => site_url() . "/wp-admin/admin.php?page=contact_bank_other_services",
 				"title" => __("Our Other Services", contact_bank))
 			);
-		break;		
+			break;
+			
+			case "author":
+			$wp_admin_bar->add_menu( array(
+				"id" => "contact_bank_links",
+				"title" =>  "<img src=\"".plugins_url("/assets/images/icon.png",__FILE__)."\" width=\"25\" height=\"25\" style=\"vertical-align:text-top; margin-right:5px;\" />Contact Bank" ,
+				"href" => site_url() ."/wp-admin/admin.php?page=contact_dashboard",
+			));
+			$wp_admin_bar->add_menu( array(
+				"parent" => "contact_bank_links",
+				"id"     => "dashboard_links",
+				"href"  => site_url() ."/wp-admin/admin.php?page=contact_dashboard",
+				"title" => __( "Dashboard", contact_bank) )         /* set the sub-menu name */
+			);
+			$wp_admin_bar->add_menu( array(
+				"parent" => "contact_bank_links",
+				"id"     => "plugin_updates_links",
+				"href"  => site_url() ."/wp-admin/admin.php?page=contact_plugin_update",
+				"title" => __( "Plugin Updates", contact_bank))         /* set the sub-menu name */
+			);
+			$wp_admin_bar->add_menu( array(
+				"parent" => "contact_bank_links",
+				"id"     => "short_code_links",
+				"href"  => site_url() ."/wp-admin/admin.php?page=contact_short_code",
+				"title" => __( "Short-Codes", contact_bank))         /* set the sub-menu name */
+			);
+			$wp_admin_bar->add_menu( array(
+				"parent" => "contact_bank_links",
+				"id"     => "frontend_data_links",
+				"href"  => site_url() ."/wp-admin/admin.php?page=contact_frontend_data",
+				"title" => __( "Form Entries", contact_bank))         /* set the sub-menu name */
+			);
+			$wp_admin_bar->add_menu( array(
+				"parent" => "contact_bank_links",
+				"id"     => "email_links",
+				"href"  => site_url() ."/wp-admin/admin.php?page=contact_email",
+				"title" => __( "Email Settings", contact_bank) )         /* set the sub-menu name */
+			);
+			$wp_admin_bar->add_menu( array(
+				"parent" => "contact_bank_links",
+				"id"     => "form_settings_data_links",
+				"href"  => site_url() ."/wp-admin/admin.php?page=contact_layout_settings",
+				"title" => __( "Global Settings", contact_bank))         /* set the sub-menu name */
+			);
+			$wp_admin_bar->add_menu( array(
+				"parent" => "contact_bank_links",
+				"id"     => "feature_request_data_links",
+				"href"  => site_url() ."/wp-admin/admin.php?page=contact_feature_request",
+				"title" => __( "Feature Requests", contact_bank))         /* set the sub-menu name */
+			);
+			$wp_admin_bar->add_menu(array(
+				"parent" => "contact_bank_links",
+				"id" => "contact_bank_recommended_plugins_links",
+				"href" => site_url() . "/wp-admin/admin.php?page=contact_bank_recommended_plugins",
+				"title" => __("Recommendations", contact_bank))
+			);
+		
+			$wp_admin_bar->add_menu(array(
+				"parent" => "contact_bank_links",
+				"id" => "pro_version_links",
+				"href" => site_url() . "/wp-admin/admin.php?page=contact_pro_version",
+				"title" => __("Premium Editions", contact_bank))
+			);
+				
+			$wp_admin_bar->add_menu(array(
+				"parent" => "contact_bank_links",
+				"id" => "contact_bank_other_services_links",
+				"href" => site_url() . "/wp-admin/admin.php?page=contact_bank_other_services",
+				"title" => __("Our Other Services", contact_bank))
+			);
+			break;
+		}
 	}
 }
 add_action( "media_buttons_context", "add_contact_shortcode_button", 1);
-function add_contact_shortcode_button($context) {
-    add_thickbox();
-    $context .= "<a href=\"#TB_inline?width=300&height=400&inlineId=contact-bank\"  class=\"button thickbox\"  title=\"" . __("Add Contact Bank Form", contact_bank) . "\">
-    <span class=\"contact_icon\"></span> Add Contact Bank Form</a>";
-    return $context;
+function add_contact_shortcode_button($context) 
+{
+add_thickbox();
+$context .= "<a href=\"#TB_inline?width=300&height=400&inlineId=contact-bank\"  class=\"button thickbox\"  title=\"" . __("Add Contact Bank Form", contact_bank) . "\">
+<span class=\"contact_icon\"></span> Add Contact Bank Form</a>";
+return $context;
 }
 add_action("admin_footer","add_contact_mce_popup");
 
@@ -883,7 +1049,7 @@ function add_contact_mce_popup(){
 	<div id="contact-bank" style="display:none;">
 		<div class="fluid-layout responsive">
 			<div style="padding:20px 0 10px 15px;">
-			    <h3 class="label-shortcode"><?php _e("Insert Contact Bank Form", contact_bank); ?></h3>
+			<h3 class="label-shortcode"><?php _e("Insert Contact Bank Form", contact_bank); ?></h3>
 					<span>
 						<i><?php _e("Select a form below to add it to your post or page.", contact_bank); ?></i>
 					</span>
@@ -934,8 +1100,8 @@ function add_contact_mce_popup(){
 			var show_desc = jQuery("#ux_form_desc").prop("checked");
 			if(form_id == 0)
 			{
-			    alert("<?php _e("Please choose a Form to insert into Shortcode", contact_bank) ?>");
-			    return;
+			alert("<?php _e("Please choose a Form to insert into Shortcode", contact_bank) ?>");
+			return;
 			}
 			window.send_to_editor("[contact_bank form_id=" + form_id + " show_title=" + show_title +" show_desc=" + show_desc +"]");
 		}
