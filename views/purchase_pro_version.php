@@ -1276,7 +1276,7 @@ else
 								</div>
 								<div class="wpb_text_column wpb_content_element ">
 									<div class="wpb_wrapper">
-										<strong><span style="text-decoration: underline;">NOTE FOR MULTISITE*</span> :</strong> Allows you to use this Plugin with network of sites / Multisites WordPress. But you need to have separate license for each domain.
+										<strong><span style="text-decoration: underline;">NOTE FOR MULTISITE*</span> :</strong>  Allows you to use this Plugin with network of sites / Multisites WordPress. But you need to have separate license for each Installation.
 									</div> 
 								</div>
 							</div>
