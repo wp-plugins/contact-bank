@@ -468,7 +468,7 @@ else
 																class="css3_grid_tooltip"><span>You just need to pay for
 																		once for life time.</span>
 																<h1 class="col1">
-																		&pound;<span>14</span>
+																		&pound;<span>17</span>
 																	</h1>
 																	<h3 class="col1">one time</h3></span></span></span></li>
 													<li
@@ -1276,7 +1276,7 @@ else
 								</div>
 								<div class="wpb_text_column wpb_content_element ">
 									<div class="wpb_wrapper">
-										<strong><span style="text-decoration: underline;">NOTE FOR MULTISITE*</span> :</strong>  Allows you to use this Plugin with network of sites / Multisites WordPress. But you need to have separate license for each Installation.
+										<strong><span style="text-decoration: underline;">NOTE FOR MULTISITE*</span> :</strong>   Allows you to use this Plugin with network of sites / Multisites WordPress. But you need to purchase separate license for each Installation / Instance.
 									</div> 
 								</div>
 							</div>
