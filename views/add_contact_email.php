@@ -366,7 +366,7 @@ else
 				setTimeout(function()
 				{
 					jQuery("#email_success_message").css("display","none");
-					window.location.href = "admin.php?page=contact_dashboard";
+					window.location.href = "admin.php?page=contact_email";
 				}, 2000);
 			});
 		}

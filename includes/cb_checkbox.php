@@ -201,6 +201,7 @@ else
 		</div>
 	</form>
 	<a class="closeButtonLightbox" onclick="CloseLightbox();"></a>
+	
 	<script type="text/javascript">
 	
 	var dynamicId = "<?php echo $dynamicId; ?>";
