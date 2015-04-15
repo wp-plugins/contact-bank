@@ -194,8 +194,9 @@ else
 							<input type="hidden" id="ux_hd_textbox_dynamic_id" name="ux_hd_textbox_dynamic_id" value="<?php echo $dynamicId; ?>"/>
 						</div>
 					</div>
-				<div class="layout-control-group">
-					<input type="submit" class="btn btn-info layout-span3" value="<?php _e( "Save Settings", contact_bank ); ?>" />
+					<div class="layout-control-group">
+						<input type="submit" class="btn btn-info layout-span3" value="<?php _e( "Save Settings", contact_bank ); ?>" />
+					</div>
 				</div>
 			</div>
 		</div>
