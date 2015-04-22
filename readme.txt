@@ -2,8 +2,8 @@
 Contributors: contact-banker, Gallery-Bank
 Tags: admin, advanced form, Attachment, best contact form plugin, buddypress, category, cnotact, conact, contact, contact button, contact form, contact form builder, Contact Form Builder with recaptcha, contact form manager, contact form plugin, contact form with google map, contact forms, contact forms plugin, contact manager, contact me, contact us, contact us form, contacts, contacts form plugin, contatc, copy, custom form, email, email form, feedback, feedback form, feedback forms, form, forms, forms plugin, insert the shortcode, multiple contact forms, post feedback, request, send, send copy, send messages, shortcode, text, web form, web-page feedback, wordpress contact form
 Requires at least: 3.3
-Tested up to: 4.1.1
-Stable tag: 2.0.107
+Tested up to: 4.1.2
+Stable tag: 2.0.108
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -280,7 +280,7 @@ To save your Inline Form you can follow these steps :
 
 1) Label : Enter Label name for your control.
 2) Description : Enter Description for your control, which would appear below the input field.
-3) Required : This field to be mandatory, you can’t choose Not Required.
+3) Required : This field to be mandatory, you canï¿½t choose Not Required.
 4) Tooltip Text : Enter Tooltip Text for your control, which would appear when you hover on input field.
 5) Place Holder : Enter the text you want to show in your input field by Default.
 6) Do not show in the email : If you do not want to show this control appear in your Email then tick this checkbox.
@@ -548,6 +548,10 @@ In order to set Shortcode for a Form, you need to follow these steps :
 
 
 == Changelog ==
+
+= 2.0.108 =
+
+* Added Compatible with WordPress 4.1.2
 
 = 2.0.107 =
 
