@@ -2,7 +2,7 @@
 $cb_lang = array();
 $cb_lang_translated_languages = array();
 array_push($cb_lang_translated_languages,"fr_BE","fr_BE","fr_CA","fr_CH","fr_FR","ru_RU","ru_UA","en_US","en_GB","es_ES","es_CL","es_PE","es_PR","es_VE","es_CO","nl_NL","nl_BE",
-"hu_HU","de_DE", "pt_BR","pt_PT","he_IL", "tr","it_IT", "da_DK", "pl_PL", "sv_SE", "zh_CN","zh_HK","zh_sg","zh_TW","zh","cs_CZ","sk_SK","el","hr","fi");
+"hu_HU","de_DE", "pt_BR","pt_PT","he_IL", "tr_TR","it_IT", "da_DK", "pl_PL", "sv_SE", "zh_CN","zh_HK","zh_sg","zh_TW","zh","cs_CZ","sk_SK","el","hr","fi");
 
 array_push($cb_lang, "ar", "et", "bg_BG", "id_ID", "ja", "ko_KR", "ms_MY", "ro_RO", "sl_SL", "sq", "sr_RS", "th", "et");
 $cb_language = get_locale();
