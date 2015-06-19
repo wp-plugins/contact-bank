@@ -4,7 +4,7 @@ Plugin Name: Contact Bank Lite Edition
 Plugin URI: http://tech-banker.com
 Description: Build Complex, Powerful Contact Forms in Just Seconds. No Programming Knowledge Required! Yeah, It's Really That Easy.
 Author: Tech Banker
-Version: 2.0.115
+Version: 2.0.116
 Author URI: http://tech-banker.com
 License: GPLv3 or later
  */
@@ -793,7 +793,10 @@ function contact_bank_short_code($atts)
         "show_title" => "",
         "show_desc" => "",
     ), $atts));
-    return extract_short_code($form_id,$show_title,$show_desc);
+    if(!is_feed())
+    {
+    	return extract_short_code($form_id,$show_title,$show_desc);
+    }
 }
 function extract_short_code($form_id,$show_title,$show_desc)
 {
