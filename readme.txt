@@ -3,7 +3,7 @@ Contributors: contact-banker, Gallery-Bank
 Tags: admin, advanced form, Attachment, best contact form plugin, buddypress, category, cnotact, conact, contact, contact button, contact form, contact form builder, Contact Form Builder with recaptcha, contact form manager, contact form plugin, contact form with google map, contact forms, contact forms plugin, contact manager, contact me, contact us, contact us form, contacts, contacts form plugin, contatc, copy, custom form, email, email form, feedback, feedback form, feedback forms, form, forms, forms plugin, insert the shortcode, multiple contact forms, post feedback, request, send, send copy, send messages, shortcode, text, web form, web-page feedback, wordpress contact form
 Requires at least: 3.3
 Tested up to: 4.2.2
-Stable tag: 2.0.116
+Stable tag: 2.0.117
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -50,7 +50,7 @@ https://www.youtube.com/watch?v=yDYlsMhA3G0
 * Responsive Forms
 * Shortcode Wizard in your Page/Post.
 * Unlimited Fields in each Form
-* Edit Forms and add/edite/delete fields.
+* Edit Forms and add/edit/delete fields.
 * Bulk Upload of Fields
 * Standard Fields
 * Display Form Entries
@@ -133,10 +133,10 @@ Visit [here](http://tech-banker.com/products/wp-contact-bank/) to upgrade to Pro
 * Turkish (tr_TR)
 * Thai (th)
 
-= Technical support =
+= Technical Support =
 
 * Please email all your queries/issues at [support@tech-banker.com](mailto:support@tech-banker.com) or use
-* [Forum for Conntact Bank](http://tech-banker.com/forums/forum/contact-bank-support/), feel free to ask  your queries.
+* [Forum for Contact Bank](http://tech-banker.com/forums/forum/contact-bank-support/), feel free to ask  your queries.
 
 == Installation ==
 
@@ -548,6 +548,10 @@ In order to set Shortcode for a Form, you need to follow these steps :
 
 
 == Changelog ==
+
+= 2.0.117 =
+
+* Few Urgent Bugs Fixed
 
 = 2.0.116 =
 
