@@ -4,7 +4,7 @@ Plugin Name: Contact Bank Lite Edition
 Plugin URI: http://tech-banker.com
 Description: Build Complex, Powerful Contact Forms in Just Seconds. No Programming Knowledge Required! Yeah, It's Really That Easy.
 Author: Tech Banker
-Version: 2.0.118
+Version: 2.0.119
 Author URI: http://tech-banker.com
 License: GPLv3 or later
  */
@@ -1148,11 +1148,13 @@ function plugin_load_textdomain_contact_bank_services()
 }
 add_action("plugins_loaded", "plugin_load_textdomain_contact_bank_services");
 $version = get_option("contact-bank-version-number");
-if($version != "")
+if (is_admin() && !request_is_frontend_ajax())
 {
-	add_action('admin_init', 'plugin_install_script_for_contact_bank');
+	if($version != "")
+	{
+		add_action("admin_init", "plugin_install_script_for_contact_bank");
+	}
 }
-
 function contact_bank_plugin_row($links,$file)
 {
 	if ($file == CONTACT_BK_PLUGIN_BASENAME)
@@ -1164,6 +1166,28 @@ function contact_bank_plugin_row($links,$file)
 		return array_merge($links,$cpo_row_meta);
 	}
 	return (array)$links;
+}
+function request_is_frontend_ajax()
+{
+	$script_filename = isset($_SERVER['SCRIPT_FILENAME']) ? $_SERVER['SCRIPT_FILENAME'] : '';
+
+	//Try to figure out if frontend AJAX request... If we are DOING_AJAX; let's look closer
+	if((defined('DOING_AJAX') && DOING_AJAX))
+	{
+		//From wp-includes/functions.php, wp_get_referer() function.
+		//Required to fix: https://core.trac.wordpress.org/ticket/25294
+		$ref = '';
+		if ( ! empty( $_REQUEST['_wp_http_referer'] ) )
+			$ref = wp_unslash( $_REQUEST['_wp_http_referer'] );
+		elseif ( ! empty( $_SERVER['HTTP_REFERER'] ) )
+		$ref = wp_unslash( $_SERVER['HTTP_REFERER'] );
+		//If referer does not contain admin URL and we are using the admin-ajax.php endpoint, this is likely a frontend AJAX request
+		if(((strpos($ref, admin_url()) === false) && (basename($script_filename) === 'admin-ajax.php')))
+			return true;
+	}
+
+	//If no checks triggered, we end up here - not an AJAX request.
+	return false;
 }
 //--------------------------------------------------------------------------------------------------------------//
 // CODE FOR PLUGIN UPDATE MESSAGE

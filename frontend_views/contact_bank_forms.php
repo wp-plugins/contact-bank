@@ -458,7 +458,7 @@ $rand_value = RAND(10,10000);
 				}
 			?>
 		<div class="layout-control-group">
-			<button type="submit"  class="btn_submit"><?php _e($layout_settings_array[$form_id]["submit_button_text"],contact_bank);?></button>
+			<button type="submit"  class="btn_submit"><?php _e(trim($layout_settings_array[$form_id]["submit_button_text"]),contact_bank);?></button>
 		</div>
 	</form>
 </div>
