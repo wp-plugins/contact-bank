@@ -155,7 +155,7 @@ else
 		</div>
 	</form>
 	<script type="text/javascript">
-		jQuery(".hovertip").tooltip();
+		
 		jQuery(document).ready(function()
 		{
 

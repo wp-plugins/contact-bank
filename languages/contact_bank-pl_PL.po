@@ -404,7 +404,7 @@ msgstr "Proszę podać poprawny adres e-mail"
 
 #: lib/install-script.php:539 lib/install-script.php:918
 msgid "Submit"
-msgstr "przedkładać"
+msgstr "Wyślij"
 
 #: lib/install-script.php:626
 msgid "Contact Form Demo"

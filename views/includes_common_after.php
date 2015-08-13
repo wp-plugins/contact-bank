@@ -114,7 +114,7 @@ function create_control(control_type,dynamicId,type)
 			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
 			jQuery("#show_tooltip"+dynamicId).children("span").attr("id","txt_description_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_1").attr("style","display:block");
-			jQuery(".hovertip").tooltip({placement: "left"});
+			
 			if(typeof type == "undefined")
 			{
 				jQuery.post(ajaxurl,"form_id="+form_id+"&ux_hd_textbox_dynamic_id="+dynamicId+"&event=add&param=save_text_control&action=add_contact_form_library", function(data)
@@ -152,7 +152,7 @@ function create_control(control_type,dynamicId,type)
 			jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
 			jQuery("#show_tooltip"+dynamicId).children("span").attr("id","txt_description_"+dynamicId);
 			jQuery("#div_"+dynamicId+"_2").attr("style","display:block");
-			jQuery(".hovertip").tooltip({placement: "left"});
+			
 			if(typeof type == "undefined")
 			{
 				jQuery.post(ajaxurl,"form_id="+form_id+"&ux_hd_textbox_dynamic_id="+dynamicId+"&event=add&param=save_textarea_control&action=add_contact_form_library", function(data)
@@ -189,7 +189,7 @@ function create_control(control_type,dynamicId,type)
             jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
             jQuery("#show_tooltip"+dynamicId).children("span").attr("id","txt_description_"+dynamicId);
             jQuery("#div_"+dynamicId+"_3").attr("style","display:block");
-            jQuery(".hovertip").tooltip({placement: "left"});
+            
             if(typeof type == "undefined")
 			{
 				jQuery.post(ajaxurl,"form_id="+form_id+"&ux_hd_textbox_dynamic_id="+dynamicId+"&event=add&param=save_email_control&action=add_contact_form_library", function(data)
@@ -225,7 +225,7 @@ function create_control(control_type,dynamicId,type)
             jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+",4)");
             jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
             jQuery("#div_"+dynamicId+"_4").attr("style","display:block");
-            jQuery(".hovertip").tooltip({placement: "left"});
+            
             if(typeof type == "undefined")
 			{
 				jQuery.post(ajaxurl,"form_id="+form_id+"&ux_hd_textbox_dynamic_id="+dynamicId+"&event=add&param=save_drop_down_control&action=add_contact_form_library", function(data)
@@ -267,7 +267,7 @@ function create_control(control_type,dynamicId,type)
             jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+",5)");
             jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
             jQuery("#div_"+dynamicId+"_5").attr("style","display:block");
-            jQuery(".hovertip").tooltip({placement: "left"});
+            
             if(typeof type == "undefined")
             {
                 jQuery.post(ajaxurl,"form_id="+form_id+"&ux_hd_textbox_dynamic_id="+dynamicId+"&event=add&param=save_check_box_control&action=add_contact_form_library", function(data)
@@ -310,7 +310,7 @@ function create_control(control_type,dynamicId,type)
             jQuery("#show_tooltip"+dynamicId).children("a.btn").attr("onclick","add_settings("+dynamicId+",6)");
             jQuery("#show_tooltip"+dynamicId).children("#anchor_del_").attr("id","anchor_del_"+dynamicId);
             jQuery("#div_"+dynamicId+"_6").attr("style","display:block");
-            jQuery(".hovertip").tooltip({placement: "left"});
+            
             if(typeof type == "undefined")
             {
                 jQuery.post(ajaxurl,"form_id="+form_id+"&ux_hd_textbox_dynamic_id="+dynamicId+"&event=add&param=save_multiple_control&action=add_contact_form_library", function(data)

@@ -112,7 +112,7 @@ else
 </form>
 
 <script type="text/javascript">
-jQuery(".hovertip").tooltip();
+
 jQuery(document).ready(function()
 {
 	select_form();
@@ -130,7 +130,7 @@ function select_form()
  			oTable.fnDestroy();
 			jQuery("#ux_email_settings_postback").empty();
 			jQuery("#ux_email_settings_postback").append(data);
-			jQuery(".hovertip").tooltip();
+		
 			oTable.fnDraw();
 		});
 	}
